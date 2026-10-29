@@ -1,0 +1,551 @@
+{
+  "url": "https://gogloby.com/terms-and-conditions/",
+  "page_type": "legal",
+  "checked_at": "2026-10-29T11:21:32.738Z",
+  "content_hash": "b91154b8e93bfa7fb4d71dfe1c4cece0d47bdaea150e8a22e297aca57dfa265c",
+  "sources_hash": "60f07aa71f13cac715dd96e85e0e6e07dc7bf4706289f1cfca2c21f7856a4c72",
+  "checklist_hash": "cfe732f7a9e8cb12a2686d2e5271daf669c1680a53fed24cf0461cde9b07622d",
+  "audit_hash": "8fc5ef296e11d8ce90e35e9eba0835d016dbc23ad25014a79864eb815451fbf0",
+  "first_paragraph": "",
+  "results": {
+    "A1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "HTTP 200"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A1"
+    },
+    "A2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "24 characters: \"Terms of Service | Globy...\""
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": null,
+      "fix": "Adjust title to 50-60 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "A3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "122 characters"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "1 H1"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A5": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/terms-and-conditions/"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A5"
+    },
+    "A6": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Indexable"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A6"
+    },
+    "A7": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "og:title, og:description, og:image present"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A7"
+    },
+    "A8": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A9": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A10": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "All main images have alt"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A10"
+    },
+    "A11": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/cdn-cgi/l/email-protection#ee828b898f82ae89818982818c97c08d8183 (404)"
+      ],
+      "locations": [
+        "link_text"
+      ],
+      "count": 1,
+      "fix": "Fix or remove broken internal links.",
+      "source_ref": "checklist: A11"
+    },
+    "A12": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A12"
+    },
+    "B1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "Required types present: "
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "B2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Organization: legalName “Gogloby LLC” conflicts with Fact Sheet “GoGloby LLC”; slogan “Applied AI Engineering Partner” conflicts with Glossary §7 restriction; description “US-based talent acquisition agency” conflicts with approved description “staffing and recruiting agency”; knowsAbout/keywords and offer catalog use “Applied AI Engineering,” “AI Intelligence Layer,” and “AI Staff Augmentation,” contrary to Glossary §7; aggregateRating reviewCount “4.9” conflicts with Fact Sheet “4.9 / 5 from 10 reviews.”",
+        "Website: description “GoGloby is an Applied AI Engineering partner” conflicts with approved company description."
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 2,
+      "fix": "Align Organization and WebSite schema fields with the approved company name, legal name, company description, permitted terminology, service names, and verified review count. Check schema claims and URLs against the source documents before retaining them.",
+      "source_ref": "decisions.md: Company description; Fact Sheet: Identity, What clients say; Glossary §7"
+    },
+    "B3": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "Sergey’s jobTitle “Co-founder & CTO” matches “Co-Founder and CTO” after normalizing “&” and case. Vit Koval’s “Co-founder” matches “Co-Founder”; alternateName “Vitaly Koval” is consistent with the approved founder name. Descriptions contain claims not verified by the founder source entries."
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 2,
+      "fix": "Keep the matching names and normalized job titles; verify or remove founder-description claims not substantiated by the founder source entries.",
+      "source_ref": "decisions.md: Founders; Fact Sheet: Founders"
+    },
+    "B4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "The page identifies the entity as “GoGloby LLC” in its terms text."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "C1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No banned phrases found."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: exact_phrases"
+    },
+    "C2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "The page uses “GoGloby” in the body and OG site name."
+      ],
+      "locations": [
+        "body",
+        "meta"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "decisions.md: Spelling"
+    },
+    "C3": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Terms of Service | Globy",
+        "erms of service for Globy. Understand the rul"
+      ],
+      "locations": [
+        "title",
+        "meta",
+        "schema"
+      ],
+      "count": 3,
+      "fix": "Use \"GoGloby\" consistently.",
+      "source_ref": "audit.json: brand_spelling"
+    },
+    "C4": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Phone matches official digits or none listed."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: code_facts.phone_digits"
+    },
+    "C5": {
+      "status": "fail",
+      "severity": "low",
+      "evidence": [
+        "2 em dash(es) found."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 2,
+      "fix": "Replace em dashes with commas or periods.",
+      "source_ref": "Glossary §9"
+    },
+    "D1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "The page states “Effective Date: June 2, 2026” and “Last Updated: June 2, 2026”; no conflicting source-date claim is supplied."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Page content"
+    },
+    "D2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "The page contains no Fact Sheet client metrics; its “one hundred U.S. dollars (US$100)” liability cap is not a client metric."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Fact Sheet: Key metrics"
+    },
+    "D3": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No client logos or client cards are shown in the supplied page content."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Fact Sheet: Selected clients; Featured clients"
+    },
+    "D4": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "The page states “8 The Green, Ste. R, Dover, Delaware (DE) 19901, United States,” consistent with the Fact Sheet headquarters."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "E1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "both"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "The terms page describes the company, not a specific service page; its wording does not contradict staffing and recruiting as the company’s service fit.",
+      "source_ref": "Fact Sheet: Identity, Services"
+    },
+    "E2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "“They do not, by themselves, create any client, service, advisory, employment, or contractual engagement” appropriately limits the legal terms to website use."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Fact Sheet: Services"
+    },
+    "E3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "The page describes the website as “provided for general informational purposes”; this is legal-purpose language, not an informational content strategy or service claim."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Glossary §9"
+    },
+    "E4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "The page makes no separate recruiting or staffing guarantee claim; it says services require “a separate written agreement signed by both parties.”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Fact Sheet: Services"
+    },
+    "F1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "The H1 is “Terms and Conditions,” matching the legal page subject."
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Page content"
+    },
+    "F2": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "The H2 sequence runs from “1. About GoGloby and Scope of These Terms” through “17. Contact Us,” providing a clear legal-document structure."
+      ],
+      "locations": [
+        "h2"
+      ],
+      "count": 17,
+      "fix": "",
+      "source_ref": "Page content"
+    },
+    "F3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "The opening body identifies the document as “These Terms and Conditions” and states what they govern."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Page content"
+    },
+    "F4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "The page provides “GoGloby LLC” and the Dover, Delaware address in its contact section."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "F5": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "The contact section lists “Phone: +1-781-343-1777,” matching the Fact Sheet phone digits."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "F6": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "not_targeted"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "This is a legal terms page, not a buyer-acquisition page; no audience or service positioning change is needed.",
+      "source_ref": "Glossary §9"
+    },
+    "G1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "none"
+      ],
+      "locations": [
+        "title",
+        "h1"
+      ],
+      "count": 0,
+      "fix": "No service-target keyword is appropriate for this legal page.",
+      "source_ref": "Glossary §6"
+    },
+    "G2": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No target keyword from G1"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G2"
+    },
+    "G3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "The page’s “Terms and Conditions” heading is plainly descriptive of its legal-document purpose."
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Page content"
+    },
+    "G4": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No target keyword"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G4"
+    },
+    "H1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "keep"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": 1,
+      "fix": "Keep the legal-page H1 “Terms and Conditions”; it accurately identifies the document.",
+      "source_ref": "Page content"
+    },
+    "H2": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "low"
+      ],
+      "locations": [
+        "title",
+        "meta"
+      ],
+      "count": 2,
+      "fix": "Low priority: replace the former name “Globy” in the title and meta description with the current company name. The title is also flagged as short by the supplied code check.",
+      "source_ref": "decisions.md: Spelling"
+    },
+    "H3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "Title spelling needs correction: “Terms of Service | Globy” uses the former name (C3).",
+        "Schema identity and positioning fields need review: “Applied AI Engineering Partner” conflicts with approved terminology (B2).",
+        "The title length is flagged: “24 characters” (A2)."
+      ],
+      "locations": [
+        "title",
+        "schema"
+      ],
+      "count": 3,
+      "fix": "Prioritize the current company name in the title and audit the outdated schema fields; title length is a lower-priority legal-page SEO issue.",
+      "source_ref": "decisions.md: Spelling; Glossary §7"
+    }
+  },
+  "recommendation": {
+    "action": "keep",
+    "priority": "low",
+    "reasons": [
+      "Title spelling needs correction: “Terms of Service | Globy” uses the former name (C3).",
+      "Schema identity and positioning fields need review: “Applied AI Engineering Partner” conflicts with approved terminology (B2).",
+      "The title length is flagged: “24 characters” (A2)."
+    ]
+  }
+}

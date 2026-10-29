@@ -1,0 +1,563 @@
+{
+  "url": "https://gogloby.com/podcast/jason-zoltak/",
+  "page_type": "other",
+  "checked_at": "2026-10-29T10:53:12.424Z",
+  "content_hash": "8f7c9f4194489a8e26a30c928d66bd9a115ea49056a26c55156c4aea2bc3401c",
+  "sources_hash": "60f07aa71f13cac715dd96e85e0e6e07dc7bf4706289f1cfca2c21f7856a4c72",
+  "checklist_hash": "cfe732f7a9e8cb12a2686d2e5271daf669c1680a53fed24cf0461cde9b07622d",
+  "audit_hash": "8fc5ef296e11d8ce90e35e9eba0835d016dbc23ad25014a79864eb815451fbf0",
+  "first_paragraph": "",
+  "results": {
+    "A1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "HTTP 200"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A1"
+    },
+    "A2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "74 characters: \"The Power of Networks: Exploring tofu's ...\""
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": null,
+      "fix": "Adjust title to 50-60 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "A3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Missing meta description"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "Add meta description (120-158 characters).",
+      "source_ref": "audit.json: seo"
+    },
+    "A4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "1 H1"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A5": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/podcast/jason-zoltak/"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A5"
+    },
+    "A6": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Indexable"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A6"
+    },
+    "A7": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "og:title, og:description, og:image present"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A7"
+    },
+    "A8": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A9": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A10": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "All main images have alt"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A10"
+    },
+    "A11": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No broken internal links"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A11"
+    },
+    "A12": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "No link to staffing or recruiting service pages"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "Add links to staffing and/or recruiting service pages in main content.",
+      "source_ref": "checklist: A12"
+    },
+    "B1": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Missing: BreadcrumbList",
+        "Found: Organization, WebSite, Article"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "Add JSON-LD types: BreadcrumbList.",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "B2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "“GoGloby” appears in the page title."
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "decisions.md: Spelling"
+    },
+    "B3": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "“Co-Founder & CEO at tofu” identifies the guest, not GoGloby’s founders."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "No GoGloby founder claim is made in the page content; avoid inferring founder details from this podcast page.",
+      "source_ref": "decisions.md: Founders"
+    },
+    "B4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "“TATA” is not presented as a page client or as a target audience."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "decisions.md: Clients"
+    },
+    "C1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "towards hiring for mid-level roles rather than s"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Replace \"mid-level\" with senior.",
+      "source_ref": "audit.json: exact_phrases"
+    },
+    "C2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "“Tofu operates on a success fee or subscription fee basis” describes tofu, not GoGloby."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "C3": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Globy\",\"legalName\":\"Gogloby LLC\",\"url\":\"https:/"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Use \"GoGloby\" consistently.",
+      "source_ref": "audit.json: brand_spelling"
+    },
+    "C4": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Phone matches official digits or none listed."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: code_facts.phone_digits"
+    },
+    "C5": {
+      "status": "fail",
+      "severity": "low",
+      "evidence": [
+        "2 em dash(es) found."
+      ],
+      "locations": [
+        "h2",
+        "body"
+      ],
+      "count": 2,
+      "fix": "Replace em dashes with commas or periods.",
+      "source_ref": "Glossary §9"
+    },
+    "D1": {
+      "status": "warn",
+      "severity": "high",
+      "evidence": [
+        "“Meet Jason Zoltak” introduces a podcast guest and episode."
+      ],
+      "locations": [
+        "h1",
+        "body"
+      ],
+      "count": null,
+      "fix": "This is a podcast episode rather than a service page; it does not explain GoGloby’s staffing or recruiting offer.",
+      "source_ref": "Fact Sheet: Services"
+    },
+    "D2": {
+      "status": "warn",
+      "severity": "high",
+      "evidence": [
+        "“The Power of Networks” is the page’s headline."
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "The headline focuses on the guest’s topic, not a buyer hiring problem or GoGloby service.",
+      "source_ref": "Glossary §9"
+    },
+    "D3": {
+      "status": "warn",
+      "severity": "high",
+      "evidence": [
+        "“Jason’s journey in entrepreneurship began in Toronto” opens the interview summary."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "The opening is guest biography rather than a direct answer about GoGloby’s services; this is a podcast page, so assess against its editorial purpose.",
+      "source_ref": "Glossary §9"
+    },
+    "D4": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "“Full Podcast Episode on Spotify” labels the episode content."
+      ],
+      "locations": [
+        "h2"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Page content"
+    },
+    "E1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "none"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "The page discusses tofu’s hiring platform, not GoGloby’s recruiting or staffing services.",
+      "source_ref": "Fact Sheet: Services"
+    },
+    "E2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "“tofu, a unique marketplace” makes clear the hiring model discussed belongs to the guest’s company."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Fact Sheet: Services"
+    },
+    "E3": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "“Latest podcasts” links to other episodes."
+      ],
+      "locations": [
+        "h2",
+        "link_text"
+      ],
+      "count": 6,
+      "fix": "The supplied internal links are to podcast episodes; no service-page links are shown.",
+      "source_ref": "decisions.md: Service pages"
+    },
+    "E4": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "“Listen Up” and “Watch Now” are episode prompts."
+      ],
+      "locations": [
+        "h2"
+      ],
+      "count": 2,
+      "fix": "The page’s calls to action are episode-focused rather than service-conversion prompts; retain or revise according to the podcast page’s purpose.",
+      "source_ref": "Glossary §7"
+    },
+    "F1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "“Jason Zoltak, Co-Founder & CEO at tofu” names the interview subject."
+      ],
+      "locations": [
+        "h1",
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Page content"
+    },
+    "F2": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "“Jason’s journey in entrepreneurship began in Toronto” is about the guest."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Page content"
+    },
+    "F3": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "“within that short span, they’ve attracted over 115 venture-backed companies” is a claim about tofu."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Keep guest-company claims clearly attributed to the guest or tofu; they are not GoGloby facts.",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "F4": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "“aims to have 500 companies on the platform by June 2024” is a dated, forward-looking statement about tofu."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Review the dated future-tense claim for current editorial accuracy or clarify that it was stated at the time of the interview.",
+      "source_ref": "Page content"
+    },
+    "F5": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "“September 27, 2024” gives a visible publication date."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Page content"
+    },
+    "F6": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "informational"
+      ],
+      "locations": [
+        "title",
+        "h1",
+        "body"
+      ],
+      "count": null,
+      "fix": "This episode interview is informational editorial content, not a direct service landing page.",
+      "source_ref": "Glossary §9"
+    },
+    "G1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "none"
+      ],
+      "locations": [
+        "title",
+        "h1",
+        "body"
+      ],
+      "count": 0,
+      "fix": "No supplied target keyword is specified for this podcast page; do not infer one from the page text.",
+      "source_ref": "Glossary §6"
+    },
+    "G2": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No target keyword from G1"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G2"
+    },
+    "G3": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "“Recruitment Model” appears in the title, but the page is about tofu’s model."
+      ],
+      "locations": [
+        "title",
+        "h1"
+      ],
+      "count": 1,
+      "fix": "Do not treat the guest’s recruitment topic as a GoGloby service keyword target.",
+      "source_ref": "Glossary §6"
+    },
+    "G4": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No target keyword"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G4"
+    },
+    "H1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "keep"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": 1,
+      "fix": "The H1 accurately identifies the episode topic and guest; this is an editorial podcast page, not a service page.",
+      "source_ref": "Page content"
+    },
+    "H2": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "low"
+      ],
+      "locations": [
+        "h2"
+      ],
+      "count": 6,
+      "fix": "Headings are suitable for navigating an episode page, but the page has low priority for buyer-ready service content.",
+      "source_ref": "Glossary §9"
+    },
+    "H3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "The episode topic and guest are explicit in the H1 (A4).",
+        "The page has no meta description (A3).",
+        "The title exceeds the suggested length (A2).",
+        "No service-page links are present in the supplied links (A12).",
+        "The page is informational podcast content rather than a hire-ready service page (F6)."
+      ],
+      "locations": [
+        "title",
+        "meta",
+        "h1",
+        "body",
+        "link_text"
+      ],
+      "count": 5,
+      "fix": "Prioritize metadata and service-linking improvements only if consistent with the editorial purpose of this podcast page.",
+      "source_ref": "audit.json: seo; checklist: A12; Glossary §9"
+    }
+  },
+  "recommendation": {
+    "action": "keep",
+    "priority": "low",
+    "reasons": [
+      "The episode topic and guest are explicit in the H1 (A4).",
+      "The page has no meta description (A3).",
+      "The title exceeds the suggested length (A2).",
+      "No service-page links are present in the supplied links (A12).",
+      "The page is informational podcast content rather than a hire-ready service page (F6)."
+    ]
+  }
+}

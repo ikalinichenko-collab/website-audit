@@ -1,0 +1,970 @@
+{
+  "url": "https://gogloby.com/insights/ai-consulting-cost/",
+  "page_type": "post",
+  "checked_at": "2026-10-29T11:51:30.935Z",
+  "content_hash": "d603f9123bdbaa89d1876848c4448750336d14b245f1978be35133936e40ea6b",
+  "sources_hash": "60f07aa71f13cac715dd96e85e0e6e07dc7bf4706289f1cfca2c21f7856a4c72",
+  "checklist_hash": "6b6099f5bd56830329215b56166d854d63febdf934903c560627c4c6ca4ba783",
+  "audit_hash": "8fc5ef296e11d8ce90e35e9eba0835d016dbc23ad25014a79864eb815451fbf0",
+  "first_paragraph": "",
+  "results": {
+    "A1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "HTTP 200"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A1"
+    },
+    "A2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "80 characters: \"How Much Does AI Consulting Cost in 2026...\""
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": null,
+      "fix": "Adjust title to 50-60 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "A3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "96 characters"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "Adjust meta description to 120-158 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "A4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "1 H1"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A5": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/insights/ai-consulting-cost/"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A5"
+    },
+    "A6": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Indexable"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A6"
+    },
+    "A7": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "og:title, og:description, og:image present"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A7"
+    },
+    "A8": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "2026-09-18T13:20:11+03:00",
+        "2026-09-18T13:20:14+03:00"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A9": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Sergey"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "Show author full name (first and last).",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A10": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "All main images have alt"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A10"
+    },
+    "A11": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No broken internal links"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A11"
+    },
+    "A12": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "No link to staffing or recruiting service pages"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "Add links to staffing and/or recruiting service pages in main content.",
+      "source_ref": "checklist: A12"
+    },
+    "B1": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Missing: BreadcrumbList",
+        "Found: Organization, WebSite, Article, FAQPage"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "Add JSON-LD types: BreadcrumbList.",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "B2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "“AI Intelligence Layer”",
+        "“$60M+ in value”"
+      ],
+      "locations": [
+        "body",
+        "schema"
+      ],
+      "count": 3,
+      "fix": "Correct claims and terminology that conflict with approved company sources.",
+      "source_ref": "GoGloby Fact Sheet: Identity, Services, Key metrics, Legal and security; Glossary §7",
+      "items": [
+        {
+          "name": "Legacy product name in body",
+          "status": "fail",
+          "evidence": [
+            "“The AI Intelligence Layer acts on what it finds.”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 2,
+          "fix": "Replace legacy product-name references with the approved product name."
+        },
+        {
+          "name": "Unsupported founder claim in schema",
+          "status": "fail",
+          "evidence": [
+            "“generating $60M+ in value”"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Remove or verify the unsupported founder claim."
+        }
+      ]
+    },
+    "B3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "“Leads the Agentic SDLC methodology”",
+        "“board-ready proof of AI-driven engineering velocity”"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 2,
+      "fix": "Review Person descriptions and knowsAbout fields for approved factual fit and disallowed positioning.",
+      "source_ref": "GoGloby Fact Sheet: Founders; decisions.md: Founders; Glossary §7",
+      "items": [
+        {
+          "name": "Sergey Matikaynen",
+          "status": "fail",
+          "evidence": [
+            "“technical architecture behind the Applied AI Engineering system”"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Revise the Person description and knowsAbout terms to remove unapproved positioning."
+        },
+        {
+          "name": "Vit (Vitaly) Koval",
+          "status": "fail",
+          "evidence": [
+            "“Built the Applied AI Engineering system”"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Revise the Person description and knowsAbout terms to remove unapproved positioning."
+        }
+      ]
+    },
+    "B4": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "“US-based talent acquisition agency”"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Use the approved one-sentence company description in Organization schema.",
+      "source_ref": "decisions.md: Company description"
+    },
+    "C1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "AI Intelligence Layer: th of delivery. The AI Intelligence Layer deploys inside the",
+        "AI-native production: ns engineering into AI-native production. It puts Claude int"
+      ],
+      "locations": [
+        "body",
+        "schema"
+      ],
+      "count": 14,
+      "fix": "Replace \"AI Intelligence Layer\" with AI Development Intelligence Layer. Remove or rephrase \"AI-native production\". Replace \"Applied AI Engineering partner\" with the approved company description.",
+      "source_ref": "audit.json: exact_phrases",
+      "items": [
+        {
+          "name": "AI Intelligence Layer",
+          "status": "fail",
+          "evidence": [
+            "th of delivery. The AI Intelligence Layer deploys inside the",
+            "ready in place. The AI Intelligence Layer acts on what it fin"
+          ],
+          "locations": [
+            "body",
+            "schema"
+          ],
+          "count": 5,
+          "fix": "Replace \"AI Intelligence Layer\" with AI Development Intelligence Layer."
+        },
+        {
+          "name": "Performance Dashboard",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Performance Center",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Secure Development Environment",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Engineering Visibility",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Cost Management",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "safe AI adoption",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI-native production",
+          "status": "fail",
+          "evidence": [
+            "ns engineering into AI-native production. It puts Claude int",
+            "ng engineering into AI-native production: every AI dollar vi"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 2,
+          "fix": "Remove or rephrase \"AI-native production\"."
+        },
+        {
+          "name": "Applied AI Engineering partner",
+          "status": "fail",
+          "evidence": [
+            "1-01.png\",\"slogan\":\"Applied AI Engineering Partner\",\"description\":\"We",
+            "en\"],\"knowsAbout\":[\"Applied AI Engineering Partner\",\"Applied AI Engine"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 6,
+          "fix": "Replace \"Applied AI Engineering partner\" with the approved company description."
+        },
+        {
+          "name": "Applied AI Company",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Production Engineering",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Leadership Search",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "every AI dollar visible",
+          "status": "fail",
+          "evidence": [
+            "-native production: every AI dollar visible, every feature ship"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Remove or rephrase \"every AI dollar visible\"."
+        },
+        {
+          "name": "AI talent staffing",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Staffing gives capacity",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "owns outcomes",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "free trial",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "hire in 48 hours",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "mid-level",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "mid level",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        }
+      ]
+    },
+    "C2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "“Get Your Benchmark”",
+        "“AI Solutions Architect”"
+      ],
+      "locations": [
+        "body",
+        "h2"
+      ],
+      "count": 7,
+      "fix": "Remove or rework the listed Glossary §7 term uses that violate positioning or CTA guidance.",
+      "source_ref": "GoGloby Glossary §7",
+      "items": [
+        {
+          "name": "Benchmark as CTA",
+          "status": "fail",
+          "evidence": [
+            "“Get Your Benchmark”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Change the CTA to follow the approved CTA guidance."
+        },
+        {
+          "name": "Benchmark-led CTA",
+          "status": "fail",
+          "evidence": [
+            "“GoGloby starts with a benchmark”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Remove benchmark as the main CTA or offer."
+        },
+        {
+          "name": "AI Solutions Architect as positioning",
+          "status": "fail",
+          "evidence": [
+            "“forward-deploy an AI Solutions Architect”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Rework the offer positioning and describe the role only as a role where appropriate."
+        },
+        {
+          "name": "Applied AI Engineering as positioning",
+          "status": "fail",
+          "evidence": [
+            "“engineering standard behind 4x Applied AI Engineering”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Remove the disallowed positioning phrase."
+        },
+        {
+          "name": "Forward-Deployed Engineers as offer positioning",
+          "status": "fail",
+          "evidence": [
+            "“GoGloby puts AI into production with Forward-Deployed Engineers”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Rework the offer language; keep the role term only as a role reference."
+        },
+        {
+          "name": "Agentic SDLC as offer positioning",
+          "status": "fail",
+          "evidence": [
+            "“who installs the Agentic SDLC”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Remove Agentic SDLC as a named positioning or offer."
+        },
+        {
+          "name": "AI spend-led headline",
+          "status": "fail",
+          "evidence": [
+            "“Is Your AI Spend Growing Without Clear ROI?”"
+          ],
+          "locations": [
+            "h2"
+          ],
+          "count": 1,
+          "fix": "Rework the headline so it does not lead with AI spend or ROI."
+        }
+      ]
+    },
+    "C3": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Globy\",\"legalName\":\"Gogloby LLC\",\"url\":\"https:/"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Use \"GoGloby\" consistently.",
+      "source_ref": "audit.json: brand_spelling"
+    },
+    "C4": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Phone matches official digits or none listed."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: code_facts.phone_digits"
+    },
+    "C5": {
+      "status": "fail",
+      "severity": "low",
+      "evidence": [
+        "1 em dash(es) found."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Replace em dashes with commas or periods.",
+      "source_ref": "Glossary §9"
+    },
+    "D1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "“$250/hour for 20 hours costs $5K”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 2,
+      "fix": "Verify or qualify third-party market-rate and cost claims; the company source documents do not establish them.",
+      "source_ref": "GoGloby Fact Sheet: source of truth for company facts and numbers",
+      "items": [
+        {
+          "name": "Third-party market cost figures",
+          "status": "fail",
+          "evidence": [
+            "“Rates run $150–$350/hour.”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": null,
+          "fix": "Provide an authoritative support source for the market figures or remove unsupported figures."
+        },
+        {
+          "name": "Illustrative project-cost figures",
+          "status": "fail",
+          "evidence": [
+            "“about $1.92M over 6 months”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": null,
+          "fix": "Validate the calculations and assumptions behind the stated cost examples."
+        }
+      ]
+    },
+    "D2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "“The return grows every month”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 2,
+      "fix": "Remove or substantiate unsupported performance and comparative claims.",
+      "source_ref": "GoGloby Fact Sheet: Services, Key metrics, Legal and security; Glossary §7",
+      "items": [
+        {
+          "name": "Unsubstantiated return claim",
+          "status": "fail",
+          "evidence": [
+            "“The return grows every month”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Substantiate the performance claim or remove it."
+        },
+        {
+          "name": "Unsupported delivery claim",
+          "status": "fail",
+          "evidence": [
+            "“ships features through the team’s pipeline”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Align delivery claims with documented services and evidence."
+        }
+      ]
+    },
+    "D3": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "“AI-Consulting-Cost-Models.png”"
+      ],
+      "locations": [
+        "image_alt"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet: Featured clients; audit data: main_content_images",
+      "items": []
+    },
+    "D4": {
+      "status": "fail",
+      "severity": "low",
+      "evidence": [
+        "“AI Intelligence Layer”"
+      ],
+      "locations": [
+        "body",
+        "schema"
+      ],
+      "count": 2,
+      "fix": "Correct the product name and review schema service representations against the approved service descriptions.",
+      "source_ref": "GoGloby Fact Sheet: Services; Glossary §7",
+      "items": [
+        {
+          "name": "Service/product naming",
+          "status": "fail",
+          "evidence": [
+            "“AI Intelligence Layer deploys inside the team’s environment”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Use the approved product name and avoid presenting it as a standalone service."
+        },
+        {
+          "name": "Schema service catalog",
+          "status": "fail",
+          "evidence": [
+            "“name\":\"AI Staff Augmentation”"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Review catalog entries and URLs against the approved service names and pages."
+        }
+      ]
+    },
+    "E1": {
+      "status": "warn",
+      "severity": "high",
+      "evidence": [
+        "Informational cost guide"
+      ],
+      "locations": [
+        "title",
+        "body"
+      ],
+      "count": null,
+      "fix": "Make the buyer relevance to recruiting or staffing clearer and connect the discussion to the services GoGloby provides.",
+      "source_ref": "GoGloby Glossary §9"
+    },
+    "E2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "“There is no single price for AI consulting”"
+      ],
+      "locations": [
+        "first_paragraph"
+      ],
+      "count": 1,
+      "fix": "Align the opening with the glossary instruction to begin with a buyer hiring problem.",
+      "source_ref": "GoGloby Glossary §9"
+    },
+    "E3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "“AI consulting”"
+      ],
+      "locations": [
+        "title",
+        "h1",
+        "body"
+      ],
+      "count": 1,
+      "fix": "Reassess whether the page is aimed at companies ready to hire rather than general consulting-cost research.",
+      "source_ref": "GoGloby Glossary §9"
+    },
+    "E4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "“This guide explains how AI consulting costs change”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "GoGloby Glossary §9"
+    },
+    "F1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "“How Much Does AI Consulting Cost in 2026?”"
+      ],
+      "locations": [
+        "title",
+        "h1"
+      ],
+      "count": 1,
+      "fix": "Reassess the topic and targeting against the Glossary’s hiring-buyer focus.",
+      "source_ref": "GoGloby Glossary §9"
+    },
+    "F2": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "“Updated on September 18, 2026”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "F3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "“one of the largest global accounting and professional services firms”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Review third-party company and market assertions for sourcing and accuracy.",
+      "source_ref": "GoGloby Fact Sheet: source of truth for company facts and numbers"
+    },
+    "F4": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "“AI consultants rates run 10–20% below comparable US rates”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Provide a credible source for regional rate claims or remove them.",
+      "source_ref": "GoGloby Fact Sheet: source of truth for company facts and numbers"
+    },
+    "F5": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "“Sergey Matikaynen”"
+      ],
+      "locations": [
+        "body",
+        "schema"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet: Founders"
+    },
+    "F6": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "enterprise software buyers"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "Clarify the intended buyer audience; distinguish the article's research audience from GoGloby’s service buyers.",
+      "source_ref": "GoGloby Fact Sheet: Ideal Customer Profile; Glossary §9"
+    },
+    "G1": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "none"
+      ],
+      "locations": [
+        "title",
+        "h1"
+      ],
+      "count": null,
+      "fix": "Review keyword targeting against the Glossary’s approved role- and service-led terms.",
+      "source_ref": "GoGloby Glossary §6"
+    },
+    "G2": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No target keyword from G1"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G2"
+    },
+    "G3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "“AI consulting”"
+      ],
+      "locations": [
+        "title",
+        "h1",
+        "body"
+      ],
+      "count": 1,
+      "fix": "Reconsider using a topic not identified as a priority buyer-intent service term.",
+      "source_ref": "GoGloby Glossary §§6, 9"
+    },
+    "G4": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No target keyword"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G4"
+    },
+    "H1": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "benchmark"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Remove the prohibited benchmark-led call to action.",
+      "source_ref": "GoGloby Glossary §7"
+    },
+    "H2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Priority 2"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Reduce priority and redirect effort toward approved hiring-service content.",
+      "source_ref": "GoGloby Glossary §§3, 6"
+    },
+    "H3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "“AI consulting”",
+        "“AI Intelligence Layer”",
+        "“Applied AI Engineering partner”"
+      ],
+      "locations": [
+        "title",
+        "body",
+        "schema"
+      ],
+      "count": 3,
+      "fix": "Prioritize correcting outdated positioning, unsupported claims, and the mismatch with approved hiring-buyer guidance.",
+      "source_ref": "GoGloby Glossary §§7, 9"
+    }
+  },
+  "recommendation": {
+    "action": "needs_decision",
+    "priority": "medium",
+    "reasons": [
+      "“AI consulting”",
+      "“AI Intelligence Layer”",
+      "“Applied AI Engineering partner”"
+    ]
+  }
+}

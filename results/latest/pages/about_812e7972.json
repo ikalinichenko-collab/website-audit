@@ -1,0 +1,1371 @@
+{
+  "url": "https://gogloby.com/about/",
+  "page_type": "other",
+  "checked_at": "2026-10-29T13:37:20.774Z",
+  "content_hash": "7c20d03a7960136bc4a4b837657a8d29d8e71a907423a1c3198afd7552b28c49",
+  "sources_hash": "60f07aa71f13cac715dd96e85e0e6e07dc7bf4706289f1cfca2c21f7856a4c72",
+  "checklist_hash": "c4ce937150f0e21cd51e95dd32873e728d253015310bdc0f940908df994b3e0a",
+  "audit_hash": "953e1db5e52348f8965a8cdd94e3accad5f00495da455d0baa57f0acdfa19fde",
+  "first_paragraph": "GoGloby is an Applied AI Engineering partner. We turn engineering into AI-native production for established software companies, making every AI dollar visible, shipping features at AI speed against your own baseline, and growing the return every month.",
+  "results": {
+    "A1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "HTTP 200"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A1"
+    },
+    "A2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "46 characters: \"About GoGloby | Applied AI Engineering P...\""
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": null,
+      "fix": "Adjust title to 50-60 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "A3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "146 characters"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "1 H1"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A5": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/about/"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A5"
+    },
+    "A6": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Indexable"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A6"
+    },
+    "A7": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "og:title, og:description, og:image present"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A7"
+    },
+    "A8": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A9": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A10": {
+      "status": "warn",
+      "severity": "low",
+      "evidence": [
+        "19 images without alt"
+      ],
+      "locations": [
+        "image_alt"
+      ],
+      "count": 19,
+      "fix": "Add alt text to main content images.",
+      "source_ref": "checklist: A10"
+    },
+    "A11": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/cdn-cgi/l/email-protection#cca4be8caba3aba0a3aeb5e2afa3a1 (404)",
+        "https://gogloby.com/cdn-cgi/l/email-protection#49213b092e262e25262b30672a2624 (404)"
+      ],
+      "locations": [
+        "link_text"
+      ],
+      "count": 4,
+      "fix": "Fix or remove broken internal links.",
+      "source_ref": "checklist: A11"
+    },
+    "A12": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "No link to staffing or recruiting service pages"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "Add links to staffing and/or recruiting service pages in main content.",
+      "source_ref": "checklist: A12"
+    },
+    "B1": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Missing: BreadcrumbList",
+        "Found: Organization, ImageObject, Brand, PostalAddress, ContactPoint, Person, QuantitativeValue, AggregateRating, OfferCatalog, Offer, Service, BusinessAudience, WebSite, AboutPage"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "Add JSON-LD types: BreadcrumbList.",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "B2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "name: \"GoGloby\"",
+        "legalName: \"Gogloby LLC\""
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 12,
+      "fix": "Correct each Organization field that differs from the approved company information.",
+      "source_ref": "decisions.md: Company description; GoGloby Fact Sheet: Identity, Official profiles (sameAs), Founders",
+      "items": [
+        {
+          "name": "Organization 1 — name",
+          "status": "pass",
+          "evidence": [
+            "Organization schema: \"GoGloby\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "Organization 1 — legalName",
+          "status": "fail",
+          "evidence": [
+            "Organization schema: \"Gogloby LLC\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Correct the legal name to match the Fact Sheet."
+        },
+        {
+          "name": "Organization 1 — description",
+          "status": "fail",
+          "evidence": [
+            "Organization schema: \"US-based talent acquisition agency specializing in assisting tech companies\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Replace the description with the approved one-sentence company description."
+        },
+        {
+          "name": "Organization 1 — slogan",
+          "status": "fail",
+          "evidence": [
+            "Organization schema: \"Applied AI Engineering Partner\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Remove the disallowed positioning claim from the slogan."
+        },
+        {
+          "name": "Organization 1 — url",
+          "status": "pass",
+          "evidence": [
+            "Organization schema: \"https://gogloby.com/\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "Organization 1 — logo",
+          "status": "warn",
+          "evidence": [
+            "Organization schema logo file: \"globy-logo-square-1-01.png\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Verify that the logo asset uses the current company branding rather than the former name."
+        },
+        {
+          "name": "Organization 1 — sameAs",
+          "status": "fail",
+          "evidence": [
+            "Organization schema includes \"https://www.g2.com/products/gogloby/reviews\" and \"https://www.trustpilot.com/review/gogloby.com\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Remove profile URLs marked unavailable in the Fact Sheet and retain only verified official profiles."
+        },
+        {
+          "name": "Organization 1 — address",
+          "status": "pass",
+          "evidence": [
+            "Organization schema: \"8 The Green\", \"Dover\", \"DE\", \"19901\", \"US\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "Organization 1 — founders and jobTitle",
+          "status": "fail",
+          "evidence": [
+            "Organization schema founder: \"Sergey Matikaynen\" — \"Co-founder & CTO\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Align founder names and titles with the confirmed founder details."
+        },
+        {
+          "name": "Organization 1 — foundingDate",
+          "status": "pass",
+          "evidence": [
+            "Organization schema: \"foundingDate\": \"2021\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "Organization 1 — telephone",
+          "status": "pass",
+          "evidence": [
+            "Organization schema: \"+1-781-343-1777\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "Organization 1 — knowsAbout",
+          "status": "fail",
+          "evidence": [
+            "Organization schema includes \"Applied AI Engineering Partner\" and \"AI Intelligence Layer (engineering telemetry)\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Remove outdated or disallowed positioning and product terminology from knowsAbout."
+        }
+      ]
+    },
+    "B3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Sergey Matikaynen: \"Leads the Agentic SDLC methodology\"",
+        "Vit Koval: \"generating $60M+ in value\""
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 2,
+      "fix": "Correct the Person schema descriptions and fields that are inconsistent with approved founder information.",
+      "source_ref": "decisions.md: Founders; GoGloby Fact Sheet: Founders; GoGloby Glossary: §7 Terms and claims we do not use",
+      "items": [
+        {
+          "name": "Sergey Matikaynen",
+          "status": "fail",
+          "evidence": [
+            "Description: \"Leads the Agentic SDLC methodology, secure development environment design\"",
+            "knowsAbout: \"Applied AI Engineering\", \"Secure AI development environments\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Remove the unsupported or disallowed description and knowsAbout claims; align them with the approved founder information."
+        },
+        {
+          "name": "Vit Koval",
+          "status": "fail",
+          "evidence": [
+            "Description: \"generating $60M+ in value\"",
+            "Description: \"Built the Applied AI Engineering system\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Remove unsupported and disallowed claims from the founder description and knowsAbout."
+        }
+      ]
+    },
+    "B4": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Visible page: \"The AI Intelligence Layer, deployed inside your VPC\"",
+        "Service schema: \"Vetted profiles delivered in 72 hours\""
+      ],
+      "locations": [
+        "body",
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Align schema service descriptions and claims with the visible page and approved service information; remove unsupported service offers and claims.",
+      "source_ref": "GoGloby Fact Sheet: Services; GoGloby Glossary: §7 Terms and claims we do not use"
+    },
+    "C1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "AI Intelligence Layer: work together. The AI Intelligence Layer, deployed inside yo",
+        "AI-native production: ng engineering into AI-native production: every AI dollar vi"
+      ],
+      "locations": [
+        "body",
+        "schema",
+        "meta",
+        "first_paragraph",
+        "title",
+        "h1"
+      ],
+      "count": 32,
+      "fix": "Replace \"AI Intelligence Layer\" with AI Development Intelligence Layer. Remove or rephrase \"AI-native production\". Replace \"Applied AI Engineering partner\" with the approved company description.",
+      "source_ref": "audit.json: exact_phrases",
+      "items": [
+        {
+          "name": "AI Intelligence Layer",
+          "status": "fail",
+          "evidence": [
+            "work together. The AI Intelligence Layer, deployed inside yo",
+            "every month, as the AI Intelligence Layer cuts waste, the eng"
+          ],
+          "locations": [
+            "body",
+            "schema"
+          ],
+          "count": 6,
+          "fix": "Replace \"AI Intelligence Layer\" with AI Development Intelligence Layer."
+        },
+        {
+          "name": "Performance Dashboard",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Performance Center",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Secure Development Environment",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Engineering Visibility",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Cost Management",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "safe AI adoption",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI-native production",
+          "status": "fail",
+          "evidence": [
+            "ng engineering into AI-native production: every AI dollar vi",
+            "rn engineering into AI-native production for established sof"
+          ],
+          "locations": [
+            "meta",
+            "first_paragraph",
+            "body",
+            "schema"
+          ],
+          "count": 7,
+          "fix": "Remove or rephrase \"AI-native production\"."
+        },
+        {
+          "name": "Applied AI Engineering partner",
+          "status": "fail",
+          "evidence": [
+            "About GoGloby | Applied AI Engineering Partner",
+            "GoGloby is an Applied AI Engineering partner turning engineering"
+          ],
+          "locations": [
+            "title",
+            "meta",
+            "h1",
+            "first_paragraph",
+            "body",
+            "schema"
+          ],
+          "count": 14,
+          "fix": "Replace \"Applied AI Engineering partner\" with the approved company description."
+        },
+        {
+          "name": "Applied AI Company",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Production Engineering",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Leadership Search",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "every AI dollar visible",
+          "status": "fail",
+          "evidence": [
+            "-native production: every AI dollar visible, every feature ship",
+            "e companies, making every AI dollar visible, shipping features"
+          ],
+          "locations": [
+            "meta",
+            "first_paragraph",
+            "body",
+            "schema"
+          ],
+          "count": 5,
+          "fix": "Remove or rephrase \"every AI dollar visible\"."
+        },
+        {
+          "name": "AI talent staffing",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Staffing gives capacity",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "owns outcomes",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "free trial",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "hire in 48 hours",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "mid-level",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "mid level",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        }
+      ]
+    },
+    "C2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "“GoGloby is an Applied AI Engineering partner”",
+        "“walk you through the Benchmark”"
+      ],
+      "locations": [
+        "body",
+        "title",
+        "meta",
+        "h1",
+        "h2",
+        "first_paragraph"
+      ],
+      "count": 12,
+      "fix": "Remove positioning of GoGloby as an Applied AI Engineering partner and remove Benchmark as the call to action. Review each listed occurrence.",
+      "source_ref": "Glossary §7",
+      "items": [
+        {
+          "name": "c2:Benchmark:body:0",
+          "status": "fail",
+          "evidence": [
+            "“walk you through the Benchmark”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Remove Benchmark as the call to action."
+        },
+        {
+          "name": "c2:Applied AI Engineering:title:1",
+          "status": "fail",
+          "evidence": [
+            "“About GoGloby | Applied AI Engineering Partner”"
+          ],
+          "locations": [
+            "title"
+          ],
+          "count": 1,
+          "fix": "Remove the description of GoGloby as an Applied AI Engineering partner."
+        },
+        {
+          "name": "c2:Applied AI Engineering:meta:2",
+          "status": "fail",
+          "evidence": [
+            "“GoGloby is an Applied AI Engineering partner”"
+          ],
+          "locations": [
+            "meta"
+          ],
+          "count": 1,
+          "fix": "Remove the description of GoGloby as an Applied AI Engineering partner."
+        },
+        {
+          "name": "c2:Applied AI Engineering:h1:3",
+          "status": "fail",
+          "evidence": [
+            "“The Applied AI Engineering Partner for Established Software”"
+          ],
+          "locations": [
+            "h1"
+          ],
+          "count": 1,
+          "fix": "Remove the description of GoGloby as an Applied AI Engineering partner."
+        },
+        {
+          "name": "c2:Applied AI Engineering:h2:4",
+          "status": "pass",
+          "evidence": [
+            "“US-Aligned Applied AI Engineering Hubs”"
+          ],
+          "locations": [
+            "h2"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "c2:Applied AI Engineering:first_paragraph:5",
+          "status": "fail",
+          "evidence": [
+            "“GoGloby is an Applied AI Engineering partner.”"
+          ],
+          "locations": [
+            "first_paragraph"
+          ],
+          "count": 1,
+          "fix": "Remove the description of GoGloby as an Applied AI Engineering partner."
+        },
+        {
+          "name": "c2:Applied AI Engineering:body:6",
+          "status": "fail",
+          "evidence": [
+            "“APPLIED AI ENGINEERING PARTNER”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Remove the description of GoGloby as an Applied AI Engineering partner."
+        },
+        {
+          "name": "c2:Applied AI Engineering:body:7",
+          "status": "fail",
+          "evidence": [
+            "“The Applied AI Engineering Partner for Established”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Remove the description of GoGloby as an Applied AI Engineering partner."
+        },
+        {
+          "name": "c2:Applied AI Engineering:body:8",
+          "status": "pass",
+          "evidence": [
+            "“from traditional staffing to Applied AI Engineering”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "c2:Applied AI Engineering:body:9",
+          "status": "pass",
+          "evidence": [
+            "“US-Aligned Applied AI Engineering Hubs”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "c2:Forward-Deployed Engineers:body:10",
+          "status": "pass",
+          "evidence": [
+            "“Forward-Deployed Engineers work inside your team”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "c2:Agentic SDLC:body:11",
+          "status": "pass",
+          "evidence": [
+            "“an Architect installs the Agentic SDLC”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        }
+      ]
+    },
+    "C3": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Globy\",\"legalName\":\"Gogloby LLC\",\"url\":\"https:/"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Use \"GoGloby\" consistently.",
+      "source_ref": "audit.json: brand_spelling"
+    },
+    "C4": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Phone matches official digits or none listed."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: code_facts.phone_digits"
+    },
+    "C5": {
+      "status": "fail",
+      "severity": "low",
+      "evidence": [
+        "2 em dash(es) found."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 2,
+      "fix": "Replace em dashes with commas or periods.",
+      "source_ref": "Glossary §9"
+    },
+    "D1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Page: \"GoGloby is an Applied AI Engineering partner\"",
+        "Page: \"we made a deliberate shift, from traditional staffing to Applied AI Engineering\""
+      ],
+      "locations": [
+        "title",
+        "meta",
+        "h1",
+        "first_paragraph",
+        "body"
+      ],
+      "count": 12,
+      "fix": "Correct company-description, service, metric, timeline, and other company-fact claims that conflict with or lack support in the approved sources.",
+      "source_ref": "decisions.md: Company description; GoGloby Fact Sheet: Identity, Services, How we vet, Key metrics, Legal and security",
+      "items": [
+        {
+          "name": "Company description and category",
+          "status": "fail",
+          "evidence": [
+            "Page: \"Applied AI Engineering partner\"; approved description: \"staffing and recruiting agency specializing in hiring Data & AI Engineers.\""
+          ],
+          "locations": [
+            "title",
+            "meta",
+            "h1",
+            "first_paragraph",
+            "body"
+          ],
+          "count": 1,
+          "fix": "Correct the description and category to match the approved company description."
+        },
+        {
+          "name": "Shift from staffing",
+          "status": "fail",
+          "evidence": [
+            "Page: \"a deliberate shift, from traditional staffing to Applied AI Engineering\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Remove the claim that GoGloby shifted away from staffing."
+        },
+        {
+          "name": "AI Intelligence Layer and VPC deployment",
+          "status": "fail",
+          "evidence": [
+            "Page: \"The AI Intelligence Layer, deployed inside your VPC\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Use the approved product name and remove unsupported deployment claims."
+        },
+        {
+          "name": "Services and delivery model",
+          "status": "fail",
+          "evidence": [
+            "Page: \"one offer with 3 deliverables\"; Fact Sheet: \"US Data & AI Engineers Recruiting\" and \"Nearshore Data & AI Engineers Staffing\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Correct the stated offer and delivery model to match the two approved services."
+        },
+        {
+          "name": "Return, cost, and output claims",
+          "status": "fail",
+          "evidence": [
+            "Page: \"30 to 40% lower cost\" and \"ROI that grows every month\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Remove or verify the unsupported cost-saving and return claims."
+        },
+        {
+          "name": "Client count",
+          "status": "fail",
+          "evidence": [
+            "Page: \"100+ companies across 10+ industries\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Remove or verify the unsupported client and industry counts."
+        },
+        {
+          "name": "Insurance",
+          "status": "fail",
+          "evidence": [
+            "Page: \"$3M combined liability coverage (cyber, data and professional)\"; Fact Sheet: \"$3M data and cyber liability\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Align the coverage description with the Fact Sheet."
+        },
+        {
+          "name": "Shortlist timeline",
+          "status": "fail",
+          "evidence": [
+            "Page: \"Shortlist in 3–5 days\"; Fact Sheet recruiting timeline: \"4–6 weeks to offer\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Remove or verify the shortlist timeline."
+        },
+        {
+          "name": "Assessment claims",
+          "status": "fail",
+          "evidence": [
+            "Page: \"The 4-stage elimination funnel runs in full — every time\"; Fact Sheet: \"Approximately 4% of candidates pass\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Use assessment claims supported by the Fact Sheet and remove unsupported process claims."
+        },
+        {
+          "name": "Measurable-output and AI adoption claims",
+          "status": "fail",
+          "evidence": [
+            "Page: \"real AI adoption, and Agentic AI commit rate\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Remove or verify the unsupported metrics and performance claims."
+        },
+        {
+          "name": "Operating hubs and time zones",
+          "status": "fail",
+          "evidence": [
+            "Page: \"North America, Latin America, and Europe\" and \"Our hubs: USA Argentina Brazil Mexico EU\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Remove or verify the operating-hub and time-zone claims against approved company facts."
+        },
+        {
+          "name": "Technical briefing and benchmark",
+          "status": "fail",
+          "evidence": [
+            "Page: \"schedule a technical briefing\" and \"walk you through the Benchmark\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Remove or correct unsupported service and call-to-action claims."
+        }
+      ]
+    },
+    "D2": {
+      "status": "warn",
+      "severity": "high",
+      "evidence": [
+        "Hasbro: \"Trusted by Hasbro\"",
+        "TATA: \"Trusted by Hasbro, TATA, EverCommerce\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 4,
+      "fix": "Remove or substantiate client-attributed figures not supported by the Fact Sheet.",
+      "source_ref": "GoGloby Fact Sheet: Featured clients; decisions.md: Clients",
+      "items": [
+        {
+          "name": "d2:hasbro — Hasbro",
+          "status": "warn",
+          "evidence": [
+            "Client cue: \"Trusted by Hasbro\"; nearby page figure: \"30 to 40% lower cost\" (not a Hasbro-specific figure in the Fact Sheet)."
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Clarify that the general cost claim is not a Hasbro-specific metric, or substantiate it."
+        },
+        {
+          "name": "d2:tata — TATA",
+          "status": "warn",
+          "evidence": [
+            "Client cue: \"Trusted by Hasbro, TATA, EverCommerce\"; nearby page figure: \"30 to 40% lower cost\" (not a TATA-specific figure in the Fact Sheet)."
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Clarify that the general cost claim is not a TATA-specific metric, or substantiate it."
+        },
+        {
+          "name": "d2:evercommerce — EverCommerce",
+          "status": "warn",
+          "evidence": [
+            "Client cue: \"Trusted by Hasbro, TATA, EverCommerce\"; nearby page figure: \"30 to 40% lower cost\" (not an EverCommerce-specific figure in the Fact Sheet)."
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Clarify that the general cost claim is not an EverCommerce-specific metric, or substantiate it."
+        },
+        {
+          "name": "d2:every.io — Every.io",
+          "status": "warn",
+          "evidence": [
+            "Nearby page text: \"30 to 40% lower cost\"; the page does not show an Every.io-specific metric, and the Fact Sheet contains no matching cost-saving figure for Every.io."
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Remove or substantiate any implication that the cost figure is specific to Every.io."
+        }
+      ]
+    },
+    "D3": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "TATA: \"Trusted by Hasbro, TATA, EverCommerce\"",
+        "Background: \"file_name: block-bg-1-01.png; alt: Background\""
+      ],
+      "locations": [
+        "image_alt",
+        "body"
+      ],
+      "count": 4,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet: Featured clients, External recognition; decisions.md: Clients",
+      "items": [
+        {
+          "name": "logo_image:background",
+          "status": "pass",
+          "evidence": [
+            "Verdict: not_a_client. Image candidate: \"file_name: block-bg-1-01.png; alt: Background\"."
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "text_cue:tata",
+          "status": "pass",
+          "evidence": [
+            "Verdict: fact_sheet_client. Page: \"Trusted by Hasbro, TATA, EverCommerce\"; TATA is confirmed as a client by decisions.md."
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "text_cue:soc2-",
+          "status": "pass",
+          "evidence": [
+            "Verdict: not_a_client. Page text: \"SOC2-aligned controls\"."
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "text_cue:vpc",
+          "status": "pass",
+          "evidence": [
+            "Verdict: not_a_client. Page text: \"deployed inside your VPC\"."
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        }
+      ]
+    },
+    "D4": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "Page: \"Trusted by Hasbro, TATA, EverCommerce\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet: External recognition",
+      "items": []
+    },
+    "E1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "“In 2025 we made a deliberate shift, from traditional staffing to Applied AI Engineering”",
+        "“So we built one offer with 3 deliverables that only work together.”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 2,
+      "fix": "Reassess the page’s service positioning against GoGloby’s recruiting and staffing services.",
+      "source_ref": "decisions.md: Company description; GoGloby Fact Sheet: Services",
+      "value": "contradicts"
+    },
+    "E2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "“GoGloby is an Applied AI Engineering partner”",
+        "“Industry AI & Software Development”"
+      ],
+      "locations": [
+        "title",
+        "meta",
+        "h1",
+        "first_paragraph",
+        "body"
+      ],
+      "count": 2,
+      "fix": "Correct the company positioning and industry description to match the approved company description.",
+      "source_ref": "decisions.md: Company description; GoGloby Fact Sheet: Identity, What GoGloby is not"
+    },
+    "E3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "“Submit your information to schedule a technical briefing.”",
+        "“We will walk you through the Benchmark”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 2,
+      "fix": "Review the CTA against Glossary §7 and the CTA appropriate to the service promoted.",
+      "source_ref": "Glossary §7"
+    },
+    "E4": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "“GoGloby is an Applied AI Engineering partner”",
+        "“We built one offer with 3 deliverables that only work together.”"
+      ],
+      "locations": [
+        "first_paragraph",
+        "body"
+      ],
+      "count": 2,
+      "fix": "Reorder the opening to lead with the hire and service details before proof, assessment, guarantees, and Intelligence Layer material.",
+      "source_ref": "Glossary §9"
+    },
+    "F1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "First sentence: “GoGloby is an Applied AI Engineering partner.”",
+        "Second sentence: “We turn engineering into AI-native production for established software companies”"
+      ],
+      "locations": [
+        "first_paragraph"
+      ],
+      "count": 2,
+      "fix": "Revise the opening so its first two sentences directly and accurately answer the page title.",
+      "source_ref": "Glossary §9; decisions.md — Company description"
+    },
+    "F2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Opening: “GoGloby is an Applied AI Engineering partner.”",
+        "Buyer problems appear later: “They could not find engineers who actually shipped AI in production.”"
+      ],
+      "locations": [
+        "first_paragraph",
+        "body"
+      ],
+      "count": 0,
+      "fix": "Open with one of the buyer problems identified in Glossary §1.",
+      "source_ref": "Glossary §1 — The three problems buyers bring us"
+    },
+    "F3": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Page title: “About GoGloby | Applied AI Engineering Partner”"
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Glossary §9 — On recruiting pages"
+    },
+    "F4": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "“We built one offer with 3 deliverables that only work together.”",
+        "“We will walk you through the Benchmark”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 2,
+      "fix": "Make the company name explicit in key claims that currently rely on “we.”",
+      "source_ref": "Glossary §9 — Aim for the answers that name companies"
+    },
+    "F5": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Page type: “other”"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "Checks for LLM call 3 — F5"
+    },
+    "F6": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "“Why We Built GoGloby”",
+        "“Our mission is to turn engineering into AI-native production”"
+      ],
+      "locations": [
+        "h2",
+        "body"
+      ],
+      "count": 2,
+      "fix": "Align the page’s positioning and claims with the approved company description and services.",
+      "source_ref": "Glossary §5 and §9",
+      "value": "informational"
+    },
+    "G1": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "Title: “About GoGloby | Applied AI Engineering Partner”",
+        "H1: “The Applied AI Engineering Partner for Established Software”"
+      ],
+      "locations": [
+        "title",
+        "h1"
+      ],
+      "count": 0,
+      "fix": "Do not assign this About page a target keyword from Glossary §6; none is an appropriate match.",
+      "source_ref": "Glossary §6 — Terms we use",
+      "value": "none"
+    },
+    "G2": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "title: no",
+        "h1: no",
+        "h2: no",
+        "meta: no",
+        "first_paragraph: no"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "Place target keyword in title, H1, H2, meta, and first paragraph.",
+      "source_ref": "checklist: G2"
+    },
+    "G3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "Title: “About GoGloby | Applied AI Engineering Partner”",
+        "H1: “The Applied AI Engineering Partner for Established Software”"
+      ],
+      "locations": [
+        "title",
+        "h1"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Glossary §8 — Trap terms"
+    },
+    "G4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "No competing pages for this keyword"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G4"
+    },
+    "H1": {
+      "status": "info",
+      "severity": "medium",
+      "evidence": [
+        "“In 2025 we made a deliberate shift, from traditional staffing to Applied AI Engineering”",
+        "“The AI Intelligence Layer, deployed inside your VPC”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 2,
+      "fix": "Rewrite the page to reflect the approved company description and services, and remove claims that conflict with the source of truth.",
+      "source_ref": "decisions.md — Company description; Fact Sheet — Identity and Services; Glossary §§1, 2, 7",
+      "value": "rewrite"
+    },
+    "H2": {
+      "status": "info",
+      "severity": "medium",
+      "evidence": [
+        "“a deliberate shift, from traditional staffing to Applied AI Engineering”",
+        "“one offer with 3 deliverables that only work together”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 2,
+      "fix": "Prioritize correcting the core company and service positioning.",
+      "source_ref": "decisions.md — Company description; Fact Sheet — Identity and Services",
+      "value": "high"
+    },
+    "H3": {
+      "status": "info",
+      "severity": "medium",
+      "evidence": [
+        "“GoGloby is an Applied AI Engineering partner.”",
+        "“we made a deliberate shift, from traditional staffing to Applied AI Engineering”"
+      ],
+      "locations": [
+        "first_paragraph",
+        "body"
+      ],
+      "count": 5,
+      "fix": "Address the listed positioning and opening issues.",
+      "source_ref": "Glossary §§1, 5, 9; decisions.md — Company description; Fact Sheet — Identity and Services",
+      "value": "F1: opening does not answer the page title accurately; F2: opening does not lead with a buyer problem; F4: key claims rely on “we” rather than naming GoGloby; F6: page reads as informational rather than buyer-ready; H1: company and service positioning conflicts with approved sources"
+    }
+  },
+  "recommendation": {
+    "action": "rewrite",
+    "priority": "high",
+    "reasons": [
+      "F1: opening does not answer the page title accurately",
+      "F2: opening does not lead with a buyer problem",
+      "F4: key claims rely on “we” rather than naming GoGloby",
+      "F6: page reads as informational rather than buyer-ready",
+      "H1: company and service positioning conflicts with approved sources"
+    ]
+  }
+}

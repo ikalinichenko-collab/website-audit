@@ -1,0 +1,11 @@
+url,page_type,action,priority,A_fail,A_warn,B_fail,B_warn,C_fail,C_warn,D_fail,D_warn,E_fail,E_warn,F_fail,F_warn,G_fail,G_warn,H_fail,H_warn,top_failing_checks
+https://gogloby.com/podcast/tara-vasdani/,other,keep,low,3,0,2,1,3,0,1,2,1,1,1,2,0,1,0,0,"A2;A3;A12"
+https://gogloby.com/podcast/philippe-noel/,other,noindex,low,3,0,3,0,3,0,4,0,1,1,4,2,1,0,0,0,"A2;A3;A12"
+https://gogloby.com/podcast/jason-zoltak/,other,keep,low,3,0,1,1,3,0,0,3,0,2,0,2,0,1,0,0,"A2;A3;A12"
+https://gogloby.com/podcast/ashwin-baskaran/,other,keep,low,3,0,1,0,2,1,0,1,0,2,2,1,0,1,0,0,"A2;A3;A12"
+https://gogloby.com/podcast/anthony-onesto/,other,keep,low,3,0,3,0,2,1,2,1,0,2,0,2,0,1,0,0,"A2;A3;A12"
+https://gogloby.com/podcast/joliz-cedeno/,other,keep,low,3,0,1,1,2,1,0,1,0,1,0,2,0,0,0,0,"A2;A3;A12"
+https://gogloby.com/podcast/jason-loyola/,other,needs_decision,low,3,0,3,1,2,0,0,3,0,2,5,0,0,1,0,0,"A2;A3;A12"
+https://gogloby.com/podcast/ian-crosby/,other,keep,medium,3,0,4,0,3,0,2,2,0,2,0,3,0,1,0,0,"A2;A3;A12"
+https://gogloby.com/podcast/william-uranga/,other,keep,low,3,0,1,1,3,0,0,1,0,1,0,3,0,1,0,0,"A2;A3;A12"
+https://gogloby.com/podcast/karim-fanous/,other,keep,medium,3,0,1,1,2,1,0,2,0,3,3,1,0,1,0,0,"A2;A3;A12"

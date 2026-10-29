@@ -1,0 +1,562 @@
+{
+  "url": "https://gogloby.com/podcast/philippe-noel/",
+  "page_type": "other",
+  "checked_at": "2026-10-29T10:52:51.960Z",
+  "content_hash": "41a9e7859c1ad8d11ed465ae5c407ddfae6b38865213b4df844bb7e29d51f7f6",
+  "sources_hash": "60f07aa71f13cac715dd96e85e0e6e07dc7bf4706289f1cfca2c21f7856a4c72",
+  "checklist_hash": "cfe732f7a9e8cb12a2686d2e5271daf669c1680a53fed24cf0461cde9b07622d",
+  "audit_hash": "8fc5ef296e11d8ce90e35e9eba0835d016dbc23ad25014a79864eb815451fbf0",
+  "first_paragraph": "",
+  "results": {
+    "A1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "HTTP 200"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A1"
+    },
+    "A2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "80 characters: \"How to Join YC, Raise $2M, and Land Fort...\""
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": null,
+      "fix": "Adjust title to 50-60 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "A3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Missing meta description"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "Add meta description (120-158 characters).",
+      "source_ref": "audit.json: seo"
+    },
+    "A4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "1 H1"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A5": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/podcast/philippe-noel/"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A5"
+    },
+    "A6": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Indexable"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A6"
+    },
+    "A7": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "og:title, og:description, og:image present"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A7"
+    },
+    "A8": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A9": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A10": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "All main images have alt"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A10"
+    },
+    "A11": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No broken internal links"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A11"
+    },
+    "A12": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "No link to staffing or recruiting service pages"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "Add links to staffing and/or recruiting service pages in main content.",
+      "source_ref": "checklist: A12"
+    },
+    "B1": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Missing: BreadcrumbList",
+        "Found: Organization, WebSite, Article"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "Add JSON-LD types: BreadcrumbList.",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "B2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Title ends with “| GoGloby”."
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "decisions.md: Spelling"
+    },
+    "B3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Schema legal name is “Gogloby LLC”."
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Correct the company-name spelling in the schema to match the approved company name.",
+      "source_ref": "decisions.md: Spelling"
+    },
+    "B4": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Schema slogan: “Applied AI Engineering Partner”."
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Remove the prohibited positioning from the organization schema.",
+      "source_ref": "Glossary §7"
+    },
+    "C1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No banned phrases found."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: exact_phrases"
+    },
+    "C2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Schema description calls GoGloby a “talent acquisition agency”."
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Align the organization description in schema with the approved company description.",
+      "source_ref": "decisions.md: Company description"
+    },
+    "C3": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Globy\",\"legalName\":\"Gogloby LLC\",\"url\":\"https:/"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Use \"GoGloby\" consistently.",
+      "source_ref": "audit.json: brand_spelling"
+    },
+    "C4": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Phone matches official digits or none listed."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: code_facts.phone_digits"
+    },
+    "C5": {
+      "status": "fail",
+      "severity": "low",
+      "evidence": [
+        "2 em dash(es) found."
+      ],
+      "locations": [
+        "h2",
+        "body"
+      ],
+      "count": 2,
+      "fix": "Replace em dashes with commas or periods.",
+      "source_ref": "Glossary §9"
+    },
+    "D1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Schema description says “within the US & EU time zones”."
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Correct the unsupported service-area claim in schema against the approved company facts.",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "D2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Schema includes “Vetted profiles delivered in 72 hours.”"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Remove or substantiate the delivery-time claim; the approved service facts specify 2–3 weeks to start for staffing and 4–6 weeks to offer for recruiting.",
+      "source_ref": "Fact Sheet: Services"
+    },
+    "D3": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Schema includes “Shortlist delivered in 5 days.”"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Remove or substantiate the shortlist-time claim; the approved recruiting time is 4–6 weeks to offer.",
+      "source_ref": "Fact Sheet: Services"
+    },
+    "D4": {
+      "status": "fail",
+      "severity": "low",
+      "evidence": [
+        "Schema rating uses “reviewCount”: 4.9."
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Correct the review count to match the approved review information; the Fact Sheet says 4.9 / 5 from 10 reviews.",
+      "source_ref": "Fact Sheet: What clients say"
+    },
+    "E1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "none"
+      ],
+      "locations": [
+        "title",
+        "h1",
+        "body"
+      ],
+      "count": 0,
+      "fix": "This page discusses an entrepreneur and podcast episode, not GoGloby's recruiting or staffing services.",
+      "source_ref": "Fact Sheet: Services"
+    },
+    "E2": {
+      "status": "warn",
+      "severity": "high",
+      "evidence": [
+        "The episode describes Philippe's “journey from Whist to ParadeDB”."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Keep the editorial focus, but clarify the page's relationship to GoGloby if it is intended to support company-service discovery.",
+      "source_ref": "Glossary §9"
+    },
+    "E3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "“No link to staffing or recruiting service pages” (supplied code check A12)."
+      ],
+      "locations": [
+        "body",
+        "link_text"
+      ],
+      "count": 0,
+      "fix": "Add an in-content link to the relevant service page if this page is intended to direct readers to GoGloby's services.",
+      "source_ref": "code_check_results: A12; decisions.md: Service pages"
+    },
+    "E4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "“Philippe Noël, Co-founder and CEO of ParadeDB”."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Page body"
+    },
+    "F1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "“AI Era Is Now!Lead or Fall Behind?”"
+      ],
+      "locations": [
+        "h2"
+      ],
+      "count": 1,
+      "fix": "Correct the joined words and punctuation in this heading.",
+      "source_ref": "Page H2"
+    },
+    "F2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "“149 Rejections, 1 Yes: The Truth About Fundraising”."
+      ],
+      "locations": [
+        "h2"
+      ],
+      "count": 1,
+      "fix": "Review headings for consistent spacing and date formatting; the supplied heading text includes inconsistent spacing in other page elements.",
+      "source_ref": "Page H2 and H3"
+    },
+    "F3": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "“Quick Read: Philippe Noël, Co-founder & CEO at ParadeDB, Interview Highlight”."
+      ],
+      "locations": [
+        "h2"
+      ],
+      "count": 1,
+      "fix": "Use consistent spelling and styling for role titles and symbols across headings.",
+      "source_ref": "Page H2; Glossary §9"
+    },
+    "F4": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "“Our conversation today was enlightening and filled with practical wisdom.”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Review the article for repetitive, generic closing language and remove material that does not add specific information.",
+      "source_ref": "Page body; Glossary §9"
+    },
+    "F5": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "“Our very first client was a fellow startup from the YC batch we were part of.”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Check whether the interview article's claims and quotations have supporting source material before retaining them as factual statements.",
+      "source_ref": "Page body; Fact Sheet: What clients say"
+    },
+    "F6": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "informational"
+      ],
+      "locations": [
+        "title",
+        "h1",
+        "body"
+      ],
+      "count": 1,
+      "fix": "The page is an entrepreneurship podcast article, not content for buyers ready to hire GoGloby; assess whether it should remain indexable as an editorial page.",
+      "source_ref": "Glossary §9"
+    },
+    "G1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "none"
+      ],
+      "locations": [
+        "title",
+        "h1",
+        "body"
+      ],
+      "count": 0,
+      "fix": "No service-target keyword is evidenced for this editorial podcast page; do not force a hiring keyword onto it.",
+      "source_ref": "Glossary §6; supplied trap_term_context"
+    },
+    "G2": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No target keyword from G1"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G2"
+    },
+    "G3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Meta description is empty; the supplied code check reports “Missing meta description”."
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": 0,
+      "fix": "Add a page-specific meta description that accurately summarizes the podcast episode.",
+      "source_ref": "code_check_results: A3"
+    },
+    "G4": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No target keyword"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G4"
+    },
+    "H1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "noindex"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": 1,
+      "fix": "The H1 “How to Join YC, Raise $2M, and Land Fortune 500 Clients After Setbacks” targets an informational founder audience rather than buyers ready to hire. Consider noindexing this page unless it has a deliberate editorial-search purpose.",
+      "source_ref": "Glossary §9"
+    },
+    "H2": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "low"
+      ],
+      "locations": [
+        "h1",
+        "body"
+      ],
+      "count": 1,
+      "fix": "Low priority: this is a podcast editorial page, not a service page. The supplied code check reports a title length of 80 characters; review title length only if retaining it as an indexable page.",
+      "source_ref": "code_check_results: A2; Glossary §9"
+    },
+    "H3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "Informational rather than buyer-ready topic: “How to Join YC, Raise $2M” (F6).",
+        "No service-target keyword evidenced: “Default Global Episode #109” (G1).",
+        "No in-content service-page link reported (E3).",
+        "Schema contains disallowed company positioning: “Applied AI Engineering Partner” (B4).",
+        "Missing meta description reported by the supplied code check (G3)."
+      ],
+      "locations": [
+        "title",
+        "meta",
+        "h1",
+        "body",
+        "schema",
+        "link_text"
+      ],
+      "count": 5,
+      "fix": "Review indexation and service-discovery intent; correct the identified schema and metadata issues if the page is retained.",
+      "source_ref": "Glossary §§7, 9; code_check_results: A3, A12"
+    }
+  },
+  "recommendation": {
+    "action": "noindex",
+    "priority": "low",
+    "reasons": [
+      "Informational rather than buyer-ready topic: “How to Join YC, Raise $2M” (F6).",
+      "No service-target keyword evidenced: “Default Global Episode #109” (G1).",
+      "No in-content service-page link reported (E3).",
+      "Schema contains disallowed company positioning: “Applied AI Engineering Partner” (B4).",
+      "Missing meta description reported by the supplied code check (G3)."
+    ]
+  }
+}

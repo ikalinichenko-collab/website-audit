@@ -1,0 +1,819 @@
+{
+  "url": "https://gogloby.com/terms-and-conditions/",
+  "page_type": "legal",
+  "checked_at": "2026-10-29T11:57:33.115Z",
+  "content_hash": "b91154b8e93bfa7fb4d71dfe1c4cece0d47bdaea150e8a22e297aca57dfa265c",
+  "sources_hash": "60f07aa71f13cac715dd96e85e0e6e07dc7bf4706289f1cfca2c21f7856a4c72",
+  "checklist_hash": "6b6099f5bd56830329215b56166d854d63febdf934903c560627c4c6ca4ba783",
+  "audit_hash": "8fc5ef296e11d8ce90e35e9eba0835d016dbc23ad25014a79864eb815451fbf0",
+  "first_paragraph": "",
+  "results": {
+    "A1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "HTTP 200"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A1"
+    },
+    "A2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "24 characters: \"Terms of Service | Globy...\""
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": null,
+      "fix": "Adjust title to 50-60 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "A3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "122 characters"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "1 H1"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A5": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/terms-and-conditions/"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A5"
+    },
+    "A6": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Indexable"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A6"
+    },
+    "A7": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "og:title, og:description, og:image present"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A7"
+    },
+    "A8": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A9": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A10": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "All main images have alt"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A10"
+    },
+    "A11": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/cdn-cgi/l/email-protection#b1ddd4d6d0ddf1d6ded6ddded3c89fd2dedc (404)"
+      ],
+      "locations": [
+        "link_text"
+      ],
+      "count": 1,
+      "fix": "Fix or remove broken internal links.",
+      "source_ref": "checklist: A11"
+    },
+    "A12": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A12"
+    },
+    "B1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "Required types present: "
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "B2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "\"name\":\"GoGloby\"",
+        "\"legalName\":\"Gogloby LLC\""
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 4,
+      "fix": "Correct the Organization schema fields that conflict with the approved company identity, description, and positioning.",
+      "source_ref": "decisions.md: Company description; Spelling; GoGloby Fact Sheet: Identity",
+      "items": [
+        {
+          "name": "Organization name",
+          "status": "pass",
+          "evidence": [
+            "\"name\":\"GoGloby\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "Organization legalName",
+          "status": "fail",
+          "evidence": [
+            "\"legalName\":\"Gogloby LLC\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Correct the legal name to match the approved company spelling and legal name."
+        },
+        {
+          "name": "Organization slogan",
+          "status": "fail",
+          "evidence": [
+            "\"slogan\":\"Applied AI Engineering Partner\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Remove the prohibited positioning from the Organization schema."
+        },
+        {
+          "name": "Organization description",
+          "status": "fail",
+          "evidence": [
+            "\"description\":\"We are a US-based talent acquisition agency specializing in assisting tech companies...\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Use the approved company description in the Organization schema."
+        }
+      ]
+    },
+    "B3": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No Person nodes are listed in b3_person_evidence."
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Page audit data: b3_person_evidence",
+      "items": []
+    },
+    "B4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "\"name\":\"GoGloby\"",
+        "\"url\":\"https://gogloby.com/\""
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet: Identity"
+    },
+    "C1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "AI Intelligence Layer: \"Agentic Workflow\",\"AI Intelligence Layer (engineering teleme",
+        "AI-native production: ns engineering into AI-native production. It puts Claude int"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 12,
+      "fix": "Replace \"AI Intelligence Layer\" with AI Development Intelligence Layer. Remove or rephrase \"AI-native production\". Replace \"Applied AI Engineering partner\" with the approved company description.",
+      "source_ref": "audit.json: exact_phrases",
+      "items": [
+        {
+          "name": "AI Intelligence Layer",
+          "status": "fail",
+          "evidence": [
+            "\"Agentic Workflow\",\"AI Intelligence Layer (engineering teleme",
+            "\"Agentic Workflow\",\"AI Intelligence Layer\",\"AI development in"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 3,
+          "fix": "Replace \"AI Intelligence Layer\" with AI Development Intelligence Layer."
+        },
+        {
+          "name": "Performance Dashboard",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Performance Center",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Secure Development Environment",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Engineering Visibility",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Cost Management",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "safe AI adoption",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI-native production",
+          "status": "fail",
+          "evidence": [
+            "ns engineering into AI-native production. It puts Claude int",
+            "ng engineering into AI-native production: every AI dollar vi"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 2,
+          "fix": "Remove or rephrase \"AI-native production\"."
+        },
+        {
+          "name": "Applied AI Engineering partner",
+          "status": "fail",
+          "evidence": [
+            "1-01.png\",\"slogan\":\"Applied AI Engineering Partner\",\"description\":\"We",
+            "en\"],\"knowsAbout\":[\"Applied AI Engineering Partner\",\"Applied AI Engine"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 6,
+          "fix": "Replace \"Applied AI Engineering partner\" with the approved company description."
+        },
+        {
+          "name": "Applied AI Company",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Production Engineering",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Leadership Search",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "every AI dollar visible",
+          "status": "fail",
+          "evidence": [
+            "-native production: every AI dollar visible, every feature ship"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Remove or rephrase \"every AI dollar visible\"."
+        },
+        {
+          "name": "AI talent staffing",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Staffing gives capacity",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "owns outcomes",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "free trial",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "hire in 48 hours",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "mid-level",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "mid level",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        }
+      ]
+    },
+    "C2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "The supplied context_term_occurrences array is empty."
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "GoGloby Glossary §7; Page audit data: context_term_occurrences",
+      "items": []
+    },
+    "C3": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Terms of Service | Globy",
+        "erms of service for Globy. Understand the rul"
+      ],
+      "locations": [
+        "title",
+        "meta",
+        "schema"
+      ],
+      "count": 3,
+      "fix": "Use \"GoGloby\" consistently.",
+      "source_ref": "audit.json: brand_spelling"
+    },
+    "C4": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Phone matches official digits or none listed."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: code_facts.phone_digits"
+    },
+    "C5": {
+      "status": "fail",
+      "severity": "low",
+      "evidence": [
+        "2 em dash(es) found."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 2,
+      "fix": "Replace em dashes with commas or periods.",
+      "source_ref": "Glossary §9"
+    },
+    "D1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "\"GoGloby LLC is a company founded in 2021\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet: Identity",
+      "items": [
+        {
+          "name": "Company founding year",
+          "status": "pass",
+          "evidence": [
+            "\"founded in 2021\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        }
+      ]
+    },
+    "D2": {
+      "status": "na",
+      "severity": "high",
+      "evidence": [
+        "No Fact Sheet client company is shown with a metric in the page body."
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet: Featured clients; Page audit data: body",
+      "items": []
+    },
+    "D3": {
+      "status": "na",
+      "severity": "high",
+      "evidence": [
+        "The page images are listed as background images, not client representations."
+      ],
+      "locations": [
+        "image_alt"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet: Featured clients; Page audit data: main_content_images",
+      "items": []
+    },
+    "D4": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "\"GoGloby LLC8 The Green, Ste. R, Dover, Delaware (DE) 19901, United States\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet: Identity",
+      "items": [
+        {
+          "name": "Headquarters address",
+          "status": "pass",
+          "evidence": [
+            "\"8 The Green, Ste. R, Dover, Delaware (DE) 19901\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        }
+      ]
+    },
+    "E1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "informational"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "GoGloby Glossary §9"
+    },
+    "E2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "\"Terms and Conditions\""
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "GoGloby Glossary §9"
+    },
+    "E3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "\"These Terms apply solely to your use of the Website.\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Page audit data: body"
+    },
+    "E4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "\"They do not, by themselves, create any client, service, advisory, employment, or contractual engagement\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Page audit data: body"
+    },
+    "F1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "\"Terms and Conditions\""
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Page audit data: h1"
+    },
+    "F2": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "\"Please read these Terms carefully.\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Page audit data: body"
+    },
+    "F3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "\"If you do not agree to these Terms, you must not access or use the Website.\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Page audit data: body"
+    },
+    "F4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "\"These Terms and Conditions\""
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Page audit data: h1"
+    },
+    "F5": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "\"If you have any questions about these Terms, you may contact us at\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Page audit data: body"
+    },
+    "F6": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "informational",
+        "The page states that the terms govern website use and are for general informational context."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "GoGloby Glossary §9; Page audit data: body"
+    },
+    "G1": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "none",
+        "\"Terms and Conditions\""
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Page audit data: trap_term_context"
+    },
+    "G2": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "title: no",
+        "h1: no",
+        "h2: no",
+        "meta: no",
+        "first_paragraph: no"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "Place target keyword in title, H1, H2, meta, and first paragraph.",
+      "source_ref": "checklist: G2"
+    },
+    "G3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "\"GoGloby LLC is a company founded in 2021\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet: Identity"
+    },
+    "G4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "No competing pages for this keyword"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G4"
+    },
+    "H1": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "fix"
+      ],
+      "locations": [
+        "title",
+        "meta"
+      ],
+      "count": 3,
+      "fix": "Correct the former company name in the title and meta description, and update the Organization schema's mismatched identity and prohibited positioning fields.",
+      "source_ref": "decisions.md: Spelling; Company description; GoGloby Glossary §7"
+    },
+    "H2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "high"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Address the identity and prohibited positioning inconsistencies in structured data; the page is legal content and does not require keyword-targeting changes.",
+      "source_ref": "decisions.md: Company description; Spelling; GoGloby Glossary §7"
+    },
+    "H3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Title and meta description use the former name: \"Terms of Service | Globy\" and \"terms of service for Globy.\"",
+        "Schema uses the incorrect legal-name casing: \"legalName\":\"Gogloby LLC\".",
+        "Schema contains prohibited positioning: \"Applied AI Engineering Partner\"."
+      ],
+      "locations": [
+        "title",
+        "meta",
+        "schema"
+      ],
+      "count": 3,
+      "fix": "Correct the legacy company-name references, legal-name casing, and prohibited schema positioning.",
+      "source_ref": "decisions.md: Spelling; Company description; GoGloby Glossary §7"
+    }
+  },
+  "recommendation": {
+    "action": "fix",
+    "priority": "high",
+    "reasons": [
+      "Title and meta description use the former name: \"Terms of Service | Globy\" and \"terms of service for Globy.\"",
+      "Schema uses the incorrect legal-name casing: \"legalName\":\"Gogloby LLC\".",
+      "Schema contains prohibited positioning: \"Applied AI Engineering Partner\"."
+    ]
+  }
+}

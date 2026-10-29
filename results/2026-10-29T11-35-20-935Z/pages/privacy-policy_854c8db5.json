@@ -1,0 +1,557 @@
+{
+  "url": "https://gogloby.com/privacy-policy/",
+  "page_type": "legal",
+  "checked_at": "2026-10-29T11:35:47.854Z",
+  "content_hash": "949cc1900e424cef91324f9e5c8b1f489670c7341422cbdb6c511886d262da7a",
+  "sources_hash": "60f07aa71f13cac715dd96e85e0e6e07dc7bf4706289f1cfca2c21f7856a4c72",
+  "checklist_hash": "cfe732f7a9e8cb12a2686d2e5271daf669c1680a53fed24cf0461cde9b07622d",
+  "audit_hash": "8fc5ef296e11d8ce90e35e9eba0835d016dbc23ad25014a79864eb815451fbf0",
+  "first_paragraph": "",
+  "results": {
+    "A1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "HTTP 200"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A1"
+    },
+    "A2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "22 characters: \"Privacy Policy | Globy...\""
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": null,
+      "fix": "Adjust title to 50-60 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "A3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "116 characters"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "Adjust meta description to 120-158 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "A4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "1 H1"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A5": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/privacy-policy/"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A5"
+    },
+    "A6": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Indexable"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A6"
+    },
+    "A7": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "og:title, og:description, og:image present"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A7"
+    },
+    "A8": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A9": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A10": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "All main images have alt"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A10"
+    },
+    "A11": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/cdn-cgi/l/email-protection#d9b1ab99beb6beb5b6bba0f7bab6b4 (404)",
+        "https://gogloby.com/cdn-cgi/l/email-protection#c0a8b280a7afa7acafa2b9eea3afad (404)"
+      ],
+      "locations": [
+        "link_text"
+      ],
+      "count": 3,
+      "fix": "Fix or remove broken internal links.",
+      "source_ref": "checklist: A11"
+    },
+    "A12": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A12"
+    },
+    "B1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "Required types present: "
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "B2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Organization “GoGloby”: legalName “Gogloby LLC” differs in spelling from Fact Sheet “GoGloby LLC”; slogan “Applied AI Engineering Partner” conflicts with the approved positioning.",
+        "Organization description says “talent acquisition agency” and “US & EU time zones,” rather than the approved Fact Sheet definition.",
+        "Founder Sergey description includes “Applied AI Engineering system”; Vit description claims “generating $60M+ in value” and building that system, which are not supported by the source facts.",
+        "Schema lists reviewCount “4.9”; Fact Sheet gives “4.9 / 5 from 10 reviews.”",
+        "OfferCatalog includes “Applied AI Engineering” services, “AI Staff Augmentation,” and “Hire Applied AI Engineers,” with claims including “Vetted profiles delivered in 72 hours” and “Shortlist delivered in 5 days”; these conflict with approved service names and are unsupported or disallowed claims.",
+        "Schema includes unsupported or unavailable sameAs profiles including G2, Trustpilot, DesignRush, and YouTube; Fact Sheet marks G2 and YouTube unavailable, and does not list the other two as official profiles."
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Align the Organization fields and service catalog with approved company facts, service names, and claims. Correct the rating review count and remove unsupported or unavailable profile links and claims.",
+      "source_ref": "decisions.md: Company description; Fact Sheet: Identity, Official profiles, Founders, What clients say, Services; Glossary §§2, 7"
+    },
+    "B3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Sergey jobTitle “Co-founder & CTO” matches “Co-Founder and CTO” after normalizing ampersand and case; his description includes unsupported “Applied AI Engineering system.”",
+        "Vit’s name “Vit Koval” and jobTitle “Co-founder” match the approved “Vitaly (Vit) Koval: Co-Founder”; his description claims “$60M+ in value” and an “Applied AI Engineering system,” unsupported by the founder source."
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 2,
+      "fix": "Keep the matching founder titles; revise founder schema descriptions to remove unsupported claims and align with the approved founder information.",
+      "source_ref": "decisions.md: Founders; Fact Sheet: Founders"
+    },
+    "B4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "The page identifies the organization as “GoGloby LLC” and gives its Dover, Delaware address."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "C1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No banned phrases found."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: exact_phrases"
+    },
+    "C2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "The body states “GoGloby LLC” and “GoGloby,” using the current company name."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "decisions.md: Spelling"
+    },
+    "C3": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Privacy Policy | Globy",
+        "Read Globy's privacy policy to"
+      ],
+      "locations": [
+        "title",
+        "meta",
+        "schema"
+      ],
+      "count": 3,
+      "fix": "Use \"GoGloby\" consistently.",
+      "source_ref": "audit.json: brand_spelling"
+    },
+    "C4": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Phone matches official digits or none listed."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: code_facts.phone_digits"
+    },
+    "C5": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "No em dashes found."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "Glossary §9"
+    },
+    "D1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "The policy states “GoGloby LLC is generally the controller or business responsible” for the covered information."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "D2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "The page includes retention periods such as “up to 12 months”; it does not show a Fact Sheet client metric."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Fact Sheet: Key metrics"
+    },
+    "D3": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "The supplied page content contains no client logos or client cards."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Fact Sheet: Selected clients; Featured clients"
+    },
+    "D4": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "The policy describes candidate-data handling and states, “We do not sell candidate application information for monetary consideration.”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Fact Sheet: Legal and security"
+    },
+    "E1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "none"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "This legal/privacy page does not present a recruiting or staffing service offer.",
+      "source_ref": "Fact Sheet: Services"
+    },
+    "E2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "The policy describes candidate applications and recruiting processes: “apply for a job, contractor position, project, placement, or other professional opportunity.”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Fact Sheet: Services"
+    },
+    "E3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "The page says, “We will not use candidate personal information for unrelated advertising purposes.”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Fact Sheet: Legal and security"
+    },
+    "E4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "The page states, “GoGloby does not make final hiring, engagement, or placement decisions based solely on automated processing.”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Fact Sheet: Services"
+    },
+    "F1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "The page is explicitly headed “Privacy Policy and Candidate Privacy Notice.”"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "F2": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "The policy says it applies to people who “visit or interact with gogloby.com” and submit forms or applications."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "F3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "The page states, “GoGloby LLC is generally the controller or business responsible” for covered personal information."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "F4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "The policy names several collection categories, including “Identity and contact information” and “Professional and career information.”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Fact Sheet: Legal and security"
+    },
+    "F5": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "The page includes a “Contact and Privacy Requests” section and says requests may be submitted by email."
+      ],
+      "locations": [
+        "h2",
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "F6": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "informational"
+      ],
+      "locations": [
+        "h1",
+        "body"
+      ],
+      "count": null,
+      "fix": "This is a legal notice, not a buyer-facing service page.",
+      "source_ref": "Glossary §9"
+    },
+    "G1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "none"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "No target keyword is supplied for this legal page.",
+      "source_ref": "Glossary §6"
+    },
+    "G2": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No target keyword from G1"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G2"
+    },
+    "G3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "The H1 is “Privacy Policy and Candidate Privacy Notice,” which accurately describes the page."
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Glossary §9"
+    },
+    "G4": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No target keyword"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G4"
+    },
+    "H1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "keep"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": 1,
+      "fix": "The H1 accurately identifies the legal notice. No H1 change is needed.",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "H2": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "low"
+      ],
+      "locations": [
+        "title",
+        "meta"
+      ],
+      "count": 2,
+      "fix": "Low priority: update the title and meta description to use the current company name “GoGloby” instead of “Globy.”",
+      "source_ref": "decisions.md: Spelling"
+    },
+    "H3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "C3: Page metadata says “Privacy Policy | Globy”; company spelling should be GoGloby.",
+        "A11: The supplied link-check evidence reports email links returning “404.”",
+        "B2: Organization schema contains unsupported service catalog claims and outdated positioning.",
+        "B3: Founder schema descriptions contain unsupported claims.",
+        "A2/A3: Supplied checks flag title length and meta-description length."
+      ],
+      "locations": [
+        "title",
+        "meta",
+        "schema",
+        "link_text"
+      ],
+      "count": 5,
+      "fix": "Resolve the cited issues in the title/meta, email links, and structured data.",
+      "source_ref": "decisions.md: Spelling; Fact Sheet: Founders, Services; audit evidence A2, A3, A11, C3"
+    }
+  },
+  "recommendation": {
+    "action": "keep",
+    "priority": "low",
+    "reasons": [
+      "C3: Page metadata says “Privacy Policy | Globy”; company spelling should be GoGloby.",
+      "A11: The supplied link-check evidence reports email links returning “404.”",
+      "B2: Organization schema contains unsupported service catalog claims and outdated positioning.",
+      "B3: Founder schema descriptions contain unsupported claims.",
+      "A2/A3: Supplied checks flag title length and meta-description length."
+    ]
+  }
+}

@@ -1,0 +1,565 @@
+{
+  "url": "https://gogloby.com/podcast/jason-loyola/",
+  "page_type": "other",
+  "checked_at": "2026-10-29T10:54:36.586Z",
+  "content_hash": "a7c54fb64349932be04c9bdf9a8cc20f9783254e7e6af0a3dac10ee395f38b04",
+  "sources_hash": "60f07aa71f13cac715dd96e85e0e6e07dc7bf4706289f1cfca2c21f7856a4c72",
+  "checklist_hash": "cfe732f7a9e8cb12a2686d2e5271daf669c1680a53fed24cf0461cde9b07622d",
+  "audit_hash": "8fc5ef296e11d8ce90e35e9eba0835d016dbc23ad25014a79864eb815451fbf0",
+  "first_paragraph": "",
+  "results": {
+    "A1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "HTTP 200"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A1"
+    },
+    "A2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "62 characters: \"How We Create a Tech-Culture that Transc...\""
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": null,
+      "fix": "Adjust title to 50-60 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "A3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Missing meta description"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "Add meta description (120-158 characters).",
+      "source_ref": "audit.json: seo"
+    },
+    "A4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "1 H1"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A5": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/podcast/jason-loyola/"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A5"
+    },
+    "A6": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Indexable"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A6"
+    },
+    "A7": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "og:title, og:description, og:image present"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A7"
+    },
+    "A8": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A9": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A10": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "All main images have alt"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A10"
+    },
+    "A11": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No broken internal links"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A11"
+    },
+    "A12": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "No link to staffing or recruiting service pages"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "Add links to staffing and/or recruiting service pages in main content.",
+      "source_ref": "checklist: A12"
+    },
+    "B1": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Missing: BreadcrumbList",
+        "Found: Organization, WebSite, Article"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "Add JSON-LD types: BreadcrumbList.",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "B2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Title: “How We Create a Tech-Culture that Transcends Borders”"
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": null,
+      "fix": "The title is broad and does not make the podcast guest or topic clear to a prospective buyer.",
+      "source_ref": "Glossary §9"
+    },
+    "B3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Meta description: “”"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "Add a page-specific meta description; the supplied page data has no meta description.",
+      "source_ref": "Page audit data: meta_description"
+    },
+    "B4": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "Article description: “”"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "Add a concise description to the Article schema that reflects the podcast page.",
+      "source_ref": "Page audit data: JSON-LD Article"
+    },
+    "C1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No banned phrases found."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: exact_phrases"
+    },
+    "C2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "“AI Era Is Now!Lead or Fall Behind?”"
+      ],
+      "locations": [
+        "h2"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Glossary §7"
+    },
+    "C3": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Globy\",\"legalName\":\"Gogloby LLC\",\"url\":\"https:/"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Use \"GoGloby\" consistently.",
+      "source_ref": "audit.json: brand_spelling"
+    },
+    "C4": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Phone matches official digits or none listed."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: code_facts.phone_digits"
+    },
+    "C5": {
+      "status": "fail",
+      "severity": "low",
+      "evidence": [
+        "2 em dash(es) found."
+      ],
+      "locations": [
+        "h2",
+        "body"
+      ],
+      "count": 2,
+      "fix": "Replace em dashes with commas or periods.",
+      "source_ref": "Glossary §9"
+    },
+    "D1": {
+      "status": "warn",
+      "severity": "high",
+      "evidence": [
+        "“Jason Loyola, Head Of Information Technology at InDebted”"
+      ],
+      "locations": [
+        "h1",
+        "body"
+      ],
+      "count": null,
+      "fix": "This episode focuses on a guest and topics that are not clearly tied to GoGloby’s hiring services or buyer audience.",
+      "source_ref": "Glossary §9"
+    },
+    "D2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "“Jason’s rise to leadership at InDebted”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Page audit data: body"
+    },
+    "D3": {
+      "status": "warn",
+      "severity": "high",
+      "evidence": [
+        "“Latest podcasts”"
+      ],
+      "locations": [
+        "h2",
+        "body"
+      ],
+      "count": null,
+      "fix": "The page includes links to related podcast episodes, but no supplied link points to either service page.",
+      "source_ref": "Page audit data: internal_links; decisions.md: Service pages"
+    },
+    "D4": {
+      "status": "warn",
+      "severity": "low",
+      "evidence": [
+        "“Listen Up: Jason Loyola”"
+      ],
+      "locations": [
+        "h2",
+        "body"
+      ],
+      "count": null,
+      "fix": "Ensure the episode player or media link is available and clearly accessible; the supplied data does not include a destination link.",
+      "source_ref": "Page audit data: h2 and external_links"
+    },
+    "E1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "none"
+      ],
+      "locations": [
+        "h1",
+        "body"
+      ],
+      "count": null,
+      "fix": "The page discusses a podcast guest’s career and leadership, not GoGloby recruiting or staffing services.",
+      "source_ref": "Page audit data: h1 and body; Fact Sheet: Services"
+    },
+    "E2": {
+      "status": "warn",
+      "severity": "high",
+      "evidence": [
+        "“AI Era Is Now!Lead or Fall Behind?”"
+      ],
+      "locations": [
+        "h2",
+        "body"
+      ],
+      "count": null,
+      "fix": "The closing AI-related heading does not establish a hiring-service context; clarify the page’s relevance to GoGloby’s audience or remove the unrelated heading.",
+      "source_ref": "Glossary §9"
+    },
+    "E3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "“Jason Loyola, Head Of Information Technology at InDebted”"
+      ],
+      "locations": [
+        "h2",
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Page audit data: h2 and body"
+    },
+    "E4": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "“communication and trust are key to managing a global team”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "The episode discusses global-team management, but does not connect the topic to GoGloby’s service or hiring expertise.",
+      "source_ref": "Glossary §9"
+    },
+    "F1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Organization description: “We are a US-based talent acquisition agency specializing in assisting tech companies”"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "Align the Organization description with the approved company description in decisions.md.",
+      "source_ref": "decisions.md: Company description"
+    },
+    "F2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "“Applied AI Engineering Partner”"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Remove the disallowed positioning phrase from the Organization schema.",
+      "source_ref": "Glossary §7"
+    },
+    "F3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "“AI Intelligence Layer (engineering telemetry)”"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Replace the obsolete product name in the Organization schema with the current terminology, or remove it if not needed.",
+      "source_ref": "Glossary §7"
+    },
+    "F4": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "“Claude Certified Architect” is not present; schema describes “Forward-deployed AI Solutions Architects”"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "Remove or revise the service-catalog claims and offers that position GoGloby as an AI development provider rather than a recruiting and staffing agency.",
+      "source_ref": "Glossary §7; Fact Sheet: Services"
+    },
+    "F5": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Schema service description: “Vetted profiles delivered in 72 hours.”"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "Remove unsupported service claims and use the approved service details and timelines from the Fact Sheet.",
+      "source_ref": "Fact Sheet: Services; Glossary §7"
+    },
+    "F6": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "informational"
+      ],
+      "locations": [
+        "h1",
+        "body"
+      ],
+      "count": null,
+      "fix": "This is an informational podcast page, not a service page aimed at a buyer ready to hire.",
+      "source_ref": "Page audit data: h1 and body; Glossary §9"
+    },
+    "G1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "none"
+      ],
+      "locations": [
+        "title",
+        "h1",
+        "body"
+      ],
+      "count": null,
+      "fix": "No target keyword is supplied for this page, and the page content does not establish a relevant GoGloby hiring-service target phrase.",
+      "source_ref": "Page audit data: trap_term_context; Glossary §6"
+    },
+    "G2": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No target keyword from G1"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G2"
+    },
+    "G3": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "“How We Create a Tech-Culture that Transcends Borders”"
+      ],
+      "locations": [
+        "title",
+        "h1"
+      ],
+      "count": null,
+      "fix": "The title and H1 are aligned, but the topic does not clearly serve the intended hiring-buyer audience.",
+      "source_ref": "Glossary §9"
+    },
+    "G4": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No target keyword"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G4"
+    },
+    "H1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "needs_decision"
+      ],
+      "locations": [
+        "title",
+        "h1"
+      ],
+      "count": null,
+      "fix": "The title and H1 are “How We Create a Tech-Culture that Transcends Borders,” and the page is an informational podcast feature rather than a service page. Decide whether to retain it as an indexed archive page or take another action.",
+      "source_ref": "Glossary §9"
+    },
+    "H2": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "low"
+      ],
+      "locations": [
+        "title",
+        "h1",
+        "body"
+      ],
+      "count": null,
+      "fix": "Low priority: the page is an informational podcast episode about “Jason Loyola, Head Of Information Technology at InDebted,” not a core staffing or recruiting service page.",
+      "source_ref": "Glossary §9"
+    },
+    "H3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "The title is 62 characters and the supplied audit flags it as outside its target range (A2: “62 characters”).",
+        "The meta description is missing (A3: “Missing meta description”).",
+        "There is no link to a staffing or recruiting service page in the supplied links (A12: “No link to staffing or recruiting service pages”).",
+        "The Organization schema uses the disallowed phrase “Applied AI Engineering Partner” (F2).",
+        "The page’s podcast topic is informational rather than buyer-ready (F6: “Jason Loyola, Head Of Information Technology at InDebted”)."
+      ],
+      "locations": [
+        "title",
+        "meta",
+        "schema",
+        "body"
+      ],
+      "count": 5,
+      "fix": "Address the cited issues according to their check-level fixes.",
+      "source_ref": "Page audit data: code_check_results; Glossary §7 and §9"
+    }
+  },
+  "recommendation": {
+    "action": "needs_decision",
+    "priority": "low",
+    "reasons": [
+      "The title is 62 characters and the supplied audit flags it as outside its target range (A2: “62 characters”).",
+      "The meta description is missing (A3: “Missing meta description”).",
+      "There is no link to a staffing or recruiting service page in the supplied links (A12: “No link to staffing or recruiting service pages”).",
+      "The Organization schema uses the disallowed phrase “Applied AI Engineering Partner” (F2).",
+      "The page’s podcast topic is informational rather than buyer-ready (F6: “Jason Loyola, Head Of Information Technology at InDebted”)."
+    ]
+  }
+}

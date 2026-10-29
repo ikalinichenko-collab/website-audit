@@ -1,0 +1,556 @@
+{
+  "url": "https://gogloby.com/podcast/ashwin-baskaran/",
+  "page_type": "other",
+  "checked_at": "2026-10-29T10:53:32.418Z",
+  "content_hash": "2a89b3ef39db5d64eef6b17107ea35c68d6cd688c9d7773f1b6e0009251de2c2",
+  "sources_hash": "60f07aa71f13cac715dd96e85e0e6e07dc7bf4706289f1cfca2c21f7856a4c72",
+  "checklist_hash": "cfe732f7a9e8cb12a2686d2e5271daf669c1680a53fed24cf0461cde9b07622d",
+  "audit_hash": "8fc5ef296e11d8ce90e35e9eba0835d016dbc23ad25014a79864eb815451fbf0",
+  "first_paragraph": "",
+  "results": {
+    "A1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "HTTP 200"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A1"
+    },
+    "A2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "63 characters: \"Engineering Leadership in the Age of Dec...\""
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": null,
+      "fix": "Adjust title to 50-60 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "A3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Missing meta description"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "Add meta description (120-158 characters).",
+      "source_ref": "audit.json: seo"
+    },
+    "A4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "1 H1"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A5": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/podcast/ashwin-baskaran/"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A5"
+    },
+    "A6": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Indexable"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A6"
+    },
+    "A7": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "og:title, og:description, og:image present"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A7"
+    },
+    "A8": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A9": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A10": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "All main images have alt"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A10"
+    },
+    "A11": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No broken internal links"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A11"
+    },
+    "A12": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "No link to staffing or recruiting service pages"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "Add links to staffing and/or recruiting service pages in main content.",
+      "source_ref": "checklist: A12"
+    },
+    "B1": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Missing: BreadcrumbList",
+        "Found: Organization, WebSite, Article"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "Add JSON-LD types: BreadcrumbList.",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "B2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "“Default Global Episode #85 with Ashwin Baskaran”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Fact Sheet: Official profiles"
+    },
+    "B3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "“Vit Koval”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Fact Sheet: Founders"
+    },
+    "B4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "“global hiring, remote work, employment compliance”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "C1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No banned phrases found."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: exact_phrases"
+    },
+    "C2": {
+      "status": "warn",
+      "severity": "high",
+      "evidence": [
+        "“Engineering Leadership in the Age of Decentralization”"
+      ],
+      "locations": [
+        "title",
+        "h1"
+      ],
+      "count": null,
+      "fix": "This episode-focused headline does not identify GoGloby’s staffing and recruiting services; assess whether the page needs clearer company context.",
+      "source_ref": "decisions.md: Company description"
+    },
+    "C3": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Globy\",\"legalName\":\"Gogloby LLC\",\"url\":\"https:/"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Use \"GoGloby\" consistently.",
+      "source_ref": "audit.json: brand_spelling"
+    },
+    "C4": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Phone matches official digits or none listed."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: code_facts.phone_digits"
+    },
+    "C5": {
+      "status": "fail",
+      "severity": "low",
+      "evidence": [
+        "2 em dash(es) found."
+      ],
+      "locations": [
+        "h2",
+        "body"
+      ],
+      "count": 2,
+      "fix": "Replace em dashes with commas or periods.",
+      "source_ref": "Glossary §9"
+    },
+    "D1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "“VP of Engineering at 0x”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "D2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "“VMware, Citrix, and Cisco”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Page content"
+    },
+    "D3": {
+      "status": "warn",
+      "severity": "high",
+      "evidence": [
+        "“a year and a half ago, he embraced the crypto realm”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "The supplied sources do not verify this guest-specific biographical detail; verify it before relying on it as a factual claim.",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "D4": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "“global-first companies”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Page content"
+    },
+    "E1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "none"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "This episode page does not present a recruiting or staffing service offer; it is not a service-fit claim.",
+      "source_ref": "Fact Sheet: Services"
+    },
+    "E2": {
+      "status": "warn",
+      "severity": "high",
+      "evidence": [
+        "“Hiring Strategy for Engineering Talent”"
+      ],
+      "locations": [
+        "h2",
+        "body"
+      ],
+      "count": null,
+      "fix": "The hiring discussion is about the guest’s approach, not GoGloby’s recruiting offer; make that distinction clear if readers could confuse them.",
+      "source_ref": "Fact Sheet: Services"
+    },
+    "E3": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "“valuable perspective for both leaders and aspiring professionals”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "The closing broadens the audience beyond buyer-ready companies; review whether that audience framing is appropriate for the page.",
+      "source_ref": "Glossary §9"
+    },
+    "E4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "“remote-first, globally distributed team”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Page content"
+    },
+    "F1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "“Latest podcasts”"
+      ],
+      "locations": [
+        "h2",
+        "link_text"
+      ],
+      "count": 6,
+      "fix": "",
+      "source_ref": "Page content"
+    },
+    "F2": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "“September 27, 2024”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "The episode is dated 2024; check whether the date and page status should be kept current for the intended use.",
+      "source_ref": "Page content"
+    },
+    "F3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "“Quick Read: Ashwin Baskaran”"
+      ],
+      "locations": [
+        "h2",
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Page content"
+    },
+    "F4": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "“Missing meta description”"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "Add a meta description that accurately summarizes this episode page.",
+      "source_ref": "code_check_results: A3"
+    },
+    "F5": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "“No link to staffing or recruiting service pages”"
+      ],
+      "locations": [
+        "link_text"
+      ],
+      "count": null,
+      "fix": "Add a relevant in-content link to the applicable service page, if appropriate for this episode page.",
+      "source_ref": "code_check_results: A12"
+    },
+    "F6": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "informational"
+      ],
+      "locations": [
+        "h1",
+        "body"
+      ],
+      "count": null,
+      "fix": "This is an informational podcast episode, not buyer-ready service content: “Engineering Leadership in the Age of Decentralization.”",
+      "source_ref": "Glossary §9"
+    },
+    "G1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "none"
+      ],
+      "locations": [
+        "title",
+        "h1"
+      ],
+      "count": null,
+      "fix": "No target keyword is supplied for this page; do not infer one from the supplied occurrence data.",
+      "source_ref": "Page audit data: trap_term_context"
+    },
+    "G2": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No target keyword from G1"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G2"
+    },
+    "G3": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "“Engineering Leadership in the Age of Decentralization”"
+      ],
+      "locations": [
+        "title",
+        "h1"
+      ],
+      "count": null,
+      "fix": "The title and H1 describe the episode but do not explicitly identify the podcast or guest; assess whether that context should be clearer.",
+      "source_ref": "Page content"
+    },
+    "G4": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No target keyword"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G4"
+    },
+    "H1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "keep"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "Keep the episode-specific heading; the page is a podcast episode and the supplied data does not establish a need to merge or redirect it. The heading is “Engineering Leadership in the Age of Decentralization.”",
+      "source_ref": "Page content"
+    },
+    "H2": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "low"
+      ],
+      "locations": [
+        "title",
+        "meta"
+      ],
+      "count": null,
+      "fix": "Low priority: this is an informational podcast page rather than a core service page. The page identifies itself as “Default Global Episode #85.”",
+      "source_ref": "Glossary §9"
+    },
+    "H3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "Low commercial relevance for the core services (F6, E1): “Default Global Episode #85.”",
+        "Missing meta description (F4): “meta_description”: “”.",
+        "No service-page links reported (F5): “No link to staffing or recruiting service pages.”"
+      ],
+      "locations": [
+        "title",
+        "meta",
+        "body",
+        "link_text"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Glossary §9"
+    }
+  },
+  "recommendation": {
+    "action": "keep",
+    "priority": "low",
+    "reasons": [
+      "Low commercial relevance for the core services (F6, E1): “Default Global Episode #85.”",
+      "Missing meta description (F4): “meta_description”: “”.",
+      "No service-page links reported (F5): “No link to staffing or recruiting service pages.”"
+    ]
+  }
+}

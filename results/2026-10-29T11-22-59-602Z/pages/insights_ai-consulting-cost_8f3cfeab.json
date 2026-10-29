@@ -1,0 +1,582 @@
+{
+  "url": "https://gogloby.com/insights/ai-consulting-cost/",
+  "page_type": "post",
+  "checked_at": "2026-10-29T11:23:32.044Z",
+  "content_hash": "d603f9123bdbaa89d1876848c4448750336d14b245f1978be35133936e40ea6b",
+  "sources_hash": "60f07aa71f13cac715dd96e85e0e6e07dc7bf4706289f1cfca2c21f7856a4c72",
+  "checklist_hash": "cfe732f7a9e8cb12a2686d2e5271daf669c1680a53fed24cf0461cde9b07622d",
+  "audit_hash": "8fc5ef296e11d8ce90e35e9eba0835d016dbc23ad25014a79864eb815451fbf0",
+  "first_paragraph": "",
+  "results": {
+    "A1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "HTTP 200"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A1"
+    },
+    "A2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "80 characters: \"How Much Does AI Consulting Cost in 2026...\""
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": null,
+      "fix": "Adjust title to 50-60 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "A3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "96 characters"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "Adjust meta description to 120-158 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "A4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "1 H1"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A5": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/insights/ai-consulting-cost/"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A5"
+    },
+    "A6": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Indexable"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A6"
+    },
+    "A7": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "og:title, og:description, og:image present"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A7"
+    },
+    "A8": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "2026-09-18T13:20:11+03:00",
+        "2026-09-18T13:20:14+03:00"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A9": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "Sergey Matikaynen / CTO Article author Sergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development. View profile"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A10": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "All main images have alt"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A10"
+    },
+    "A11": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No broken internal links"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A11"
+    },
+    "A12": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "No link to staffing or recruiting service pages"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "Add links to staffing and/or recruiting service pages in main content.",
+      "source_ref": "checklist: A12"
+    },
+    "B1": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Missing: BreadcrumbList",
+        "Found: Organization, WebSite, Article, FAQPage"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "Add JSON-LD types: BreadcrumbList.",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "B2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Organization schema has legalName “Gogloby LLC”, slogan “Applied AI Engineering Partner”, and description “US-based talent acquisition agency”; approved sources specify “GoGloby LLC” and “staffing and recruiting agency specializing in hiring Data & AI Engineers.”",
+        "OfferCatalog includes “Applied AI Engineering”, “Generative AI Development Services”, and “AI Staff Augmentation”; approved service names are “US Data & AI Engineers Recruiting” and “Nearshore Data & AI Engineers Staffing”."
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Align the Organization node’s legal name, slogan, description, and service catalog with the approved company identity and service definitions. Remove or revise unsupported service positioning.",
+      "source_ref": "decisions.md: Company description; Fact Sheet: Identity and Services; Glossary §§2, 7"
+    },
+    "B3": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "Founder schema gives Sergey the title “Co-founder & CTO”; the approved title is “Co-Founder and CTO” (equivalent after normalizing “&” and case).",
+        "Article author schema names “Sergey Matikaynen” but has no jobTitle; page author text says “Co-Founder and CTO”."
+      ],
+      "locations": [
+        "schema",
+        "body"
+      ],
+      "count": 2,
+      "fix": "Add the author’s approved job title to the Article Person node. Founder title wording otherwise matches after normalization.",
+      "source_ref": "decisions.md: Founders; Fact Sheet: Founders"
+    },
+    "B4": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "The Organization schema includes “https://www.g2.com/products/gogloby/reviews” and “https://www.trustpilot.com/review/gogloby.com”; the Fact Sheet marks G2 as “Not available yet” and does not list Trustpilot among official profiles."
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 2,
+      "fix": "Verify whether these profile URLs are approved for the Organization sameAs list; remove any that are not confirmed official profiles.",
+      "source_ref": "Fact Sheet: Official profiles (sameAs)"
+    },
+    "C1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "AI Intelligence Layer: th of delivery. The AI Intelligence Layer deploys inside the"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 2,
+      "fix": "Replace \"AI Intelligence Layer\" with AI Development Intelligence Layer. Replace \"AI Intelligence Layer\" with AI Development Intelligence Layer.",
+      "source_ref": "audit.json: exact_phrases"
+    },
+    "C2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "The page describes GoGloby as “AI Solutions Architect” and says it “installs the Agentic SDLC”; the approved description is an agency that “recruits and staffs engineers; clients run the work.”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Remove or revise claims that position GoGloby as an AI consulting, implementation, or software-delivery provider rather than a staffing and recruiting agency.",
+      "source_ref": "decisions.md: Company description; Fact Sheet: Identity; Glossary §§1, 7"
+    },
+    "C3": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Globy\",\"legalName\":\"Gogloby LLC\",\"url\":\"https:/"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Use \"GoGloby\" consistently.",
+      "source_ref": "audit.json: brand_spelling"
+    },
+    "C4": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Phone matches official digits or none listed."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: code_facts.phone_digits"
+    },
+    "C5": {
+      "status": "fail",
+      "severity": "low",
+      "evidence": [
+        "1 em dash(es) found."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Replace em dashes with commas or periods.",
+      "source_ref": "Glossary §9"
+    },
+    "D1": {
+      "status": "warn",
+      "severity": "high",
+      "evidence": [
+        "The author bio says Sergey “has spent 16+ years”; the Fact Sheet says he “has spent 17 years”."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Check the author biography’s experience figure against the Fact Sheet and align it with the approved figure.",
+      "source_ref": "Fact Sheet: Founders"
+    },
+    "D2": {
+      "status": "warn",
+      "severity": "high",
+      "evidence": [
+        "The page states “$60M+ in value” in the schema founder description and “16+ years” in the author bio; neither claim is verified in the Fact Sheet.",
+        "The page says the company “starts with a benchmark” and describes a “one month, fixed fee” engagement; these are not verified as GoGloby client metrics or approved service terms in the Fact Sheet."
+      ],
+      "locations": [
+        "schema",
+        "body"
+      ],
+      "count": 2,
+      "fix": "Verify or remove unsupported company-specific performance and engagement claims. No Fact Sheet client metric conflict is identified in the supplied page text.",
+      "source_ref": "Fact Sheet: Founders, Services, and Key metrics"
+    },
+    "D3": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "The page discusses firms such as “Deloitte, PwC, EY, and KPMG” as provider examples, not as GoGloby client cards or logos. No unlisted client logo or client card is evidenced."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Fact Sheet: Selected clients and Featured clients"
+    },
+    "D4": {
+      "status": "fail",
+      "severity": "low",
+      "evidence": [
+        "The page says “GoGloby starts with a benchmark” and “The engagement starts with a benchmark”; the Glossary says “Benchmark” should not be the main call to action and specifies “Get vetted profiles” for staffing and “Start a search” for recruiting."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 2,
+      "fix": "Remove the benchmark-led GoGloby engagement and CTA framing, which also presents an unapproved service offer.",
+      "source_ref": "Glossary §7"
+    },
+    "E1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "The page says GoGloby “puts engineers inside the team to improve delivery” and that an “AI Solutions Architect” installs a process; this presents delivery/consulting services rather than the approved staffing and recruiting services."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Revise the page’s GoGloby service positioning to reflect staffing and recruiting only.",
+      "source_ref": "Fact Sheet: Identity and Services; Glossary §§1–2"
+    },
+    "E2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "The page says “GoGloby starts with a benchmark” and “Get Your Benchmark”; the Glossary explicitly says not to use “Benchmark” as the main call to action."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 2,
+      "fix": "Remove the benchmark CTA and review other benchmark-led descriptions of the GoGloby offer.",
+      "source_ref": "Glossary §7"
+    },
+    "E3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "The page uses the former product name “AI Intelligence Layer” in “The AI Intelligence Layer deploys inside the team’s environment”."
+      ],
+      "locations": [
+        "body",
+        "link_text"
+      ],
+      "count": 2,
+      "fix": "Use the current product name where the product is accurately described; remove claims that imply it is sold separately or with recruiting.",
+      "source_ref": "Fact Sheet: Services; Glossary §§2, 7"
+    },
+    "E4": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "The page says “Forward-deploy an AI Solutions Architect” and “The Architect ships features through the team’s pipeline”; the Glossary says not to position “AI Solutions Architect” or “Forward Deployed Engineering” as an offer."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Remove the unapproved architect-led implementation offer and associated delivery claims.",
+      "source_ref": "Glossary §7"
+    },
+    "F1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "The page’s title and H1 both identify the topic as “How Much Does AI Consulting Cost in 2026?”"
+      ],
+      "locations": [
+        "title",
+        "h1"
+      ],
+      "count": 2,
+      "fix": "",
+      "source_ref": "Page title and H1"
+    },
+    "F2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "The title is “How Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees | GoGloby”; the Glossary says to write “only for buyers who are ready to hire,” not people seeking informational content."
+      ],
+      "locations": [
+        "title",
+        "h1",
+        "body"
+      ],
+      "count": 1,
+      "fix": "Reassess whether this informational AI-consulting-cost topic belongs on the site’s buyer-ready staffing and recruiting content plan.",
+      "source_ref": "Glossary §9"
+    },
+    "F3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "The opening says “There is no single price for AI consulting” and explains consulting cost; it does not open with a buyer problem related to hiring or staffing Data & AI Engineers."
+      ],
+      "locations": [
+        "first_paragraph",
+        "body"
+      ],
+      "count": 1,
+      "fix": "Reassess the opening against the approved buyer problems and the page’s fit with GoGloby’s services.",
+      "source_ref": "Glossary §1, §9"
+    },
+    "F4": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "The page describes “AI consulting” and “engineering and integration firms”; it does not lead with either approved service name."
+      ],
+      "locations": [
+        "title",
+        "h1",
+        "first_paragraph",
+        "body"
+      ],
+      "count": 1,
+      "fix": "Review the page’s service relevance and ensure GoGloby’s staffing and recruiting role is not presented as consulting or implementation.",
+      "source_ref": "Fact Sheet: Services; Glossary §§2, 9"
+    },
+    "F5": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "The page’s CTA is “Get Your Benchmark” and later “Book a Call”; the Glossary specifies “Get vetted profiles” for staffing and “Start a search” for recruiting, and disallows benchmark as the main CTA."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 2,
+      "fix": "Review the CTA against the approved staffing and recruiting actions; remove the benchmark CTA.",
+      "source_ref": "Glossary §7"
+    },
+    "F6": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "informational"
+      ],
+      "locations": [
+        "title",
+        "h1",
+        "body"
+      ],
+      "count": 1,
+      "fix": "The page answers broad cost and pricing questions rather than directly addressing a buyer ready to hire through GoGloby’s approved services.",
+      "source_ref": "Glossary §9"
+    },
+    "G1": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "none"
+      ],
+      "locations": [
+        "title",
+        "meta",
+        "h1"
+      ],
+      "count": 1,
+      "fix": "No target keyword was supplied for this page. The current “AI consulting cost” topic is informational and does not align with the approved buyer-ready service positioning.",
+      "source_ref": "Glossary §§6, 9; supplied trap_term_context"
+    },
+    "G2": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No target keyword from G1"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G2"
+    },
+    "G3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "The body uses “AI Intelligence Layer” and the internal link text is “AI Intelligence Layer”; the approved current name is “AI Development Intelligence Layer”."
+      ],
+      "locations": [
+        "body",
+        "link_text"
+      ],
+      "count": 2,
+      "fix": "Update the old product name where it refers to the current product, and verify that the linked page is still an approved destination.",
+      "source_ref": "Fact Sheet: Services; Glossary §7"
+    },
+    "G4": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No target keyword"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G4"
+    },
+    "H1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "needs_decision"
+      ],
+      "locations": [
+        "title",
+        "h1"
+      ],
+      "count": 1,
+      "fix": "The page is an informational AI consulting-cost guide, while the approved content strategy targets buyers ready to hire Data & AI Engineers. Decide whether to retain it, redirect it, or remove it from the index before changing its heading.",
+      "source_ref": "Glossary §9"
+    },
+    "H2": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "high"
+      ],
+      "locations": [
+        "title",
+        "h1",
+        "body",
+        "schema"
+      ],
+      "count": 1,
+      "fix": "High priority because the page repeatedly describes GoGloby as an AI consulting, implementation, or engineering-delivery provider, contrary to the approved staffing and recruiting positioning.",
+      "source_ref": "decisions.md: Company description; Fact Sheet: Identity and Services; Glossary §§1, 7"
+    },
+    "H3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "Misrepresents GoGloby as a consulting and implementation provider: “GoGloby starts with a benchmark” and “puts engineers inside the team” (C2, E1).",
+        "Uses the prohibited benchmark-led CTA and offer framing: “Get Your Benchmark” (D4, E2, F5).",
+        "Uses the deprecated “AI Intelligence Layer” name in body copy and link text (E3, G3).",
+        "Organization schema conflicts with the approved identity, description, legal name, and service names (B2).",
+        "Page targets informational consulting-price research rather than the approved buyer-ready hiring audience (F2, F6, G1)."
+      ],
+      "locations": [
+        "title",
+        "body",
+        "schema",
+        "link_text"
+      ],
+      "count": 5,
+      "fix": "Address these issues before making lower-priority editorial changes.",
+      "source_ref": "decisions.md: Company description; Fact Sheet: Identity and Services; Glossary §§7, 9"
+    }
+  },
+  "recommendation": {
+    "action": "needs_decision",
+    "priority": "high",
+    "reasons": [
+      "Misrepresents GoGloby as a consulting and implementation provider: “GoGloby starts with a benchmark” and “puts engineers inside the team” (C2, E1).",
+      "Uses the prohibited benchmark-led CTA and offer framing: “Get Your Benchmark” (D4, E2, F5).",
+      "Uses the deprecated “AI Intelligence Layer” name in body copy and link text (E3, G3).",
+      "Organization schema conflicts with the approved identity, description, legal name, and service names (B2).",
+      "Page targets informational consulting-price research rather than the approved buyer-ready hiring audience (F2, F6, G1)."
+    ]
+  }
+}

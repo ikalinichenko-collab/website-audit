@@ -1,0 +1,562 @@
+{
+  "url": "https://gogloby.com/terms-and-conditions/",
+  "page_type": "legal",
+  "checked_at": "2026-10-29T11:35:20.927Z",
+  "content_hash": "b91154b8e93bfa7fb4d71dfe1c4cece0d47bdaea150e8a22e297aca57dfa265c",
+  "sources_hash": "60f07aa71f13cac715dd96e85e0e6e07dc7bf4706289f1cfca2c21f7856a4c72",
+  "checklist_hash": "cfe732f7a9e8cb12a2686d2e5271daf669c1680a53fed24cf0461cde9b07622d",
+  "audit_hash": "8fc5ef296e11d8ce90e35e9eba0835d016dbc23ad25014a79864eb815451fbf0",
+  "first_paragraph": "",
+  "results": {
+    "A1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "HTTP 200"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A1"
+    },
+    "A2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "24 characters: \"Terms of Service | Globy...\""
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": null,
+      "fix": "Adjust title to 50-60 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "A3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "122 characters"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "1 H1"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A5": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/terms-and-conditions/"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A5"
+    },
+    "A6": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Indexable"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A6"
+    },
+    "A7": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "og:title, og:description, og:image present"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A7"
+    },
+    "A8": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A9": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A10": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "All main images have alt"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A10"
+    },
+    "A11": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/cdn-cgi/l/email-protection#761a1311171a361119111a19140f5815191b (404)"
+      ],
+      "locations": [
+        "link_text"
+      ],
+      "count": 1,
+      "fix": "Fix or remove broken internal links.",
+      "source_ref": "checklist: A11"
+    },
+    "A12": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A12"
+    },
+    "B1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "Required types present: "
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "B2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Organization schema says legalName “Gogloby LLC”; the page body says “GoGloby LLC.”",
+        "Schema slogan is “Applied AI Engineering Partner”; schema description calls GoGloby a “talent acquisition agency.”",
+        "Schema hasOfferCatalog includes “Generative AI Development Services”; the page says services are governed by “a separate written agreement.”"
+      ],
+      "locations": [
+        "schema",
+        "body"
+      ],
+      "count": 3,
+      "fix": "Correct the legal name and remove or update conflicting positioning and service-catalog fields. The approved description is in decisions.md.",
+      "source_ref": "decisions.md: Company description; Fact Sheet: Identity and Services"
+    },
+    "B3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "Sergey’s schema jobTitle “Co-founder & CTO” matches the approved “Co-Founder and CTO” after normalizing ampersand and case.",
+        "Vit Koval’s schema jobTitle “Co-founder” matches the approved “Co-Founder.”"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 2,
+      "fix": "",
+      "source_ref": "decisions.md: Founders"
+    },
+    "B4": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Page body says “Terms and Conditions.”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "Not applicable to this legal page.",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "C1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No banned phrases found."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: exact_phrases"
+    },
+    "C2": {
+      "status": "na",
+      "severity": "high",
+      "evidence": [
+        "Page H1 is “Terms and Conditions.”"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "Not applicable to this legal page.",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "C3": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Terms of Service | Globy",
+        "erms of service for Globy. Understand the rul"
+      ],
+      "locations": [
+        "title",
+        "meta",
+        "schema"
+      ],
+      "count": 3,
+      "fix": "Use \"GoGloby\" consistently.",
+      "source_ref": "audit.json: brand_spelling"
+    },
+    "C4": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Phone matches official digits or none listed."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: code_facts.phone_digits"
+    },
+    "C5": {
+      "status": "fail",
+      "severity": "low",
+      "evidence": [
+        "2 em dash(es) found."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 2,
+      "fix": "Replace em dashes with commas or periods.",
+      "source_ref": "Glossary §9"
+    },
+    "D1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "The page identifies the company as “GoGloby LLC.”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "D2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "The page contains no Fact Sheet client metrics; its body discusses terms and “general informational purposes.”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Fact Sheet: Key metrics"
+    },
+    "D3": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No client logos or client cards appear in the supplied page content; the body describes “your use of the Website.”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Fact Sheet: Featured clients"
+    },
+    "D4": {
+      "status": "na",
+      "severity": "low",
+      "evidence": [
+        "The page says “These Terms and Conditions govern your access to and use of the website.”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "Not applicable to this legal page.",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "E1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "none"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "No service-fit claim is made in the page content.",
+      "source_ref": "Fact Sheet: Services"
+    },
+    "E2": {
+      "status": "na",
+      "severity": "high",
+      "evidence": [
+        "The page states services are governed by “a separate written agreement.”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "Not applicable to this legal page.",
+      "source_ref": "Fact Sheet: Services"
+    },
+    "E3": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "The page says it is for “general informational purposes.”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "Not applicable to this legal page.",
+      "source_ref": "Fact Sheet: Services"
+    },
+    "E4": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "The page discusses “your use of the Website.”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "Not applicable to this legal page.",
+      "source_ref": "Fact Sheet: Services"
+    },
+    "F1": {
+      "status": "na",
+      "severity": "high",
+      "evidence": [
+        "The page is titled “Terms and Conditions.”"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "Not applicable to this legal page.",
+      "source_ref": "Glossary §9"
+    },
+    "F2": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "The page says it is for “general informational purposes.”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "Not applicable to this legal page.",
+      "source_ref": "Glossary §9"
+    },
+    "F3": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "The page concerns “access to and use of the Website.”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "Not applicable to this legal page.",
+      "source_ref": "Glossary §9"
+    },
+    "F4": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "The page says service provision is governed by “a separate written agreement.”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "Not applicable to this legal page.",
+      "source_ref": "Fact Sheet: Services"
+    },
+    "F5": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "The page says it applies “solely to your use of the Website.”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "Not applicable to this legal page.",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "F6": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "not_targeted"
+      ],
+      "locations": [
+        "h1",
+        "body"
+      ],
+      "count": null,
+      "fix": "Legal terms page; it is not intended as a buyer acquisition page.",
+      "source_ref": "Glossary §9"
+    },
+    "G1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "none"
+      ],
+      "locations": [
+        "title",
+        "h1"
+      ],
+      "count": null,
+      "fix": "No buyer-intent target keyword is appropriate for this legal page.",
+      "source_ref": "Glossary §6"
+    },
+    "G2": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No target keyword from G1"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G2"
+    },
+    "G3": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "The H1 is “Terms and Conditions.”"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "Not applicable to this legal page.",
+      "source_ref": "Glossary §9"
+    },
+    "G4": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No target keyword"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G4"
+    },
+    "H1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "keep"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": 1,
+      "fix": "Keep the legal page. Correct the stale former-name use in the title and meta, and address the schema discrepancies separately.",
+      "source_ref": "decisions.md: Spelling"
+    },
+    "H2": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "low"
+      ],
+      "locations": [
+        "title",
+        "meta",
+        "schema"
+      ],
+      "count": 3,
+      "fix": "Low priority: the page is a legal document, but update the title and meta to use the current company name and correct the conflicting Organization schema.",
+      "source_ref": "decisions.md: Spelling; Fact Sheet: Identity"
+    },
+    "H3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "C3: Title says “Terms of Service | Globy”; use the approved company spelling.",
+        "B2: Schema legalName is “Gogloby LLC”; the page body says “GoGloby LLC.”",
+        "B2: Schema positioning says “Applied AI Engineering Partner”; the page body describes GoGloby as operating in “the AI and software development industry.”",
+        "C5: Body includes em dashes in “content — including” and “rights — are”; replace the punctuation per writing guidance.",
+        "A11: The contact link text is “[email protected]”; supplied code check reports its destination returns 404."
+      ],
+      "locations": [
+        "title",
+        "meta",
+        "schema",
+        "body",
+        "link_text"
+      ],
+      "count": 5,
+      "fix": "Resolve these issues as noted in the cited checks.",
+      "source_ref": "decisions.md: Spelling; Fact Sheet: Identity; Glossary §9"
+    }
+  },
+  "recommendation": {
+    "action": "keep",
+    "priority": "low",
+    "reasons": [
+      "C3: Title says “Terms of Service | Globy”; use the approved company spelling.",
+      "B2: Schema legalName is “Gogloby LLC”; the page body says “GoGloby LLC.”",
+      "B2: Schema positioning says “Applied AI Engineering Partner”; the page body describes GoGloby as operating in “the AI and software development industry.”",
+      "C5: Body includes em dashes in “content — including” and “rights — are”; replace the punctuation per writing guidance.",
+      "A11: The contact link text is “[email protected]”; supplied code check reports its destination returns 404."
+    ]
+  }
+}

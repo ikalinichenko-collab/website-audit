@@ -1,0 +1,2067 @@
+{
+  "url": "https://gogloby.com/solutions/ai-engineering-visibility/",
+  "page_type": "service",
+  "checked_at": "2026-10-29T12:54:54.244Z",
+  "content_hash": "524b37ad6b571a2feb3a8a81779ccdd28de03c94300ab31e677d595fbc064eee",
+  "sources_hash": "60f07aa71f13cac715dd96e85e0e6e07dc7bf4706289f1cfca2c21f7856a4c72",
+  "checklist_hash": "2b83d663e4fc88ed5767fd09136cf80ea7a152bad7ebacf54289566d5e14f379",
+  "audit_hash": "953e1db5e52348f8965a8cdd94e3accad5f00495da455d0baa57f0acdfa19fde",
+  "first_paragraph": "",
+  "results": {
+    "A1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "HTTP 200"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A1"
+    },
+    "A2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "64 characters: \"AI Cost Management and Engineering Visib...\""
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": null,
+      "fix": "Adjust title to 50-60 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "A3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "148 characters"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "1 H1"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A5": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/solutions/ai-engineering-visibility/"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A5"
+    },
+    "A6": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Indexable"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A6"
+    },
+    "A7": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "og:title, og:description, og:image present"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A7"
+    },
+    "A8": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "A9": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "A10": {
+      "status": "warn",
+      "severity": "low",
+      "evidence": [
+        "41 images without alt"
+      ],
+      "locations": [
+        "image_alt"
+      ],
+      "count": 41,
+      "fix": "Add alt text to main content images.",
+      "source_ref": "checklist: A10"
+    },
+    "A11": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No broken internal links"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A11"
+    },
+    "A12": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A12"
+    },
+    "B1": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Missing: BreadcrumbList",
+        "Found: Organization, ImageObject, Brand, PostalAddress, ContactPoint, Person, QuantitativeValue, AggregateRating, OfferCatalog, Offer, Service, BusinessAudience, WebSite, FAQPage, Question, Answer"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "Add JSON-LD types: BreadcrumbList.",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "B2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Organization schema: slogan \"Applied AI Engineering Partner\"; description \"We are a US-based talent acquisition agency...\"; legalName \"Gogloby LLC\""
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 3,
+      "fix": "Review the Organization schema fields slogan, description, and legalName against the approved company facts and spelling.",
+      "source_ref": "decisions.md: Company description and Spelling; GoGloby Fact Sheet: Identity",
+      "items": [
+        {
+          "name": "Organization slogan",
+          "status": "fail",
+          "evidence": [
+            "\"Applied AI Engineering Partner\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Review the slogan against approved company positioning."
+        },
+        {
+          "name": "Organization description",
+          "status": "fail",
+          "evidence": [
+            "\"US-based talent acquisition agency specializing in assisting tech companies\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Review the schema description against the approved company description."
+        },
+        {
+          "name": "Organization legalName",
+          "status": "fail",
+          "evidence": [
+            "\"Gogloby LLC\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Correct the schema legal name to match the approved spelling and legal name."
+        }
+      ]
+    },
+    "B3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Sergey: \"Leads the Agentic SDLC methodology... technical architecture behind the Applied AI Engineering system.\"",
+        "Vit: \"Built the Applied AI Engineering system\""
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 2,
+      "fix": "Review Person descriptions and knowsAbout fields for disallowed positioning and align them with approved founder information.",
+      "source_ref": "decisions.md: Founders; GoGloby Fact Sheet: Founders; Glossary §7",
+      "items": [
+        {
+          "name": "Sergey Matikaynen",
+          "status": "fail",
+          "evidence": [
+            "\"technical architecture behind the Applied AI Engineering system\"",
+            "knowsAbout includes \"Applied AI Engineering\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Review the description and knowsAbout terms against approved founder facts and terminology."
+        },
+        {
+          "name": "Vit Koval",
+          "status": "fail",
+          "evidence": [
+            "\"Built the Applied AI Engineering system\"",
+            "knowsAbout includes \"Applied AI Engineering Partnerships\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Review the description and knowsAbout terms against approved founder facts and terminology."
+        }
+      ]
+    },
+    "B4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "The title and H1 both identify an AI cost management solution."
+      ],
+      "locations": [
+        "title",
+        "h1"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Glossary §9"
+    },
+    "C1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "AI Intelligence Layer: hipped feature. The AI Intelligence Layer joins your AI spend",
+        "AI Engineering Visibility: AI ENGINEERING VISIBILITY AI Cost Management"
+      ],
+      "locations": [
+        "body",
+        "schema",
+        "title",
+        "h1",
+        "h2"
+      ],
+      "count": 69,
+      "fix": "Replace \"AI Intelligence Layer\" with AI Development Intelligence Layer. Replace \"AI Engineering Visibility\" with AI Development Intelligence Layer. Replace \"AI Cost Management\" with AI Development Intelligence Layer.",
+      "source_ref": "audit.json: exact_phrases",
+      "items": [
+        {
+          "name": "AI Intelligence Layer",
+          "status": "fail",
+          "evidence": [
+            "hipped feature. The AI Intelligence Layer joins your AI spend",
+            "he Org We built the AI Intelligence Layer for the people who"
+          ],
+          "locations": [
+            "body",
+            "schema"
+          ],
+          "count": 16,
+          "fix": "Replace \"AI Intelligence Layer\" with AI Development Intelligence Layer."
+        },
+        {
+          "name": "Performance Dashboard",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Performance Center",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Secure Development Environment",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Engineering Visibility",
+          "status": "fail",
+          "evidence": [
+            "AI ENGINEERING VISIBILITY AI Cost Management"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Replace \"AI Engineering Visibility\" with AI Development Intelligence Layer."
+        },
+        {
+          "name": "AI Cost Management",
+          "status": "fail",
+          "evidence": [
+            "AI Cost Management and Engineering Vis",
+            "AI Cost Management and Engineering Vis"
+          ],
+          "locations": [
+            "title",
+            "h1",
+            "h2",
+            "body",
+            "schema"
+          ],
+          "count": 40,
+          "fix": "Replace \"AI Cost Management\" with AI Development Intelligence Layer."
+        },
+        {
+          "name": "safe AI adoption",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI-native production",
+          "status": "fail",
+          "evidence": [
+            "ns engineering into AI-native production. It puts Claude int",
+            "ng engineering into AI-native production: every AI dollar vi"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 2,
+          "fix": "Remove or rephrase \"AI-native production\"."
+        },
+        {
+          "name": "Applied AI Engineering partner",
+          "status": "fail",
+          "evidence": [
+            "A long-term GoGloby Applied AI Engineering partner. K Gaming KEYWORDS",
+            "A long-term GoGloby Applied AI Engineering partner. N Oil & Gas NOVILA"
+          ],
+          "locations": [
+            "body",
+            "schema"
+          ],
+          "count": 9,
+          "fix": "Replace \"Applied AI Engineering partner\" with the approved company description."
+        },
+        {
+          "name": "Applied AI Company",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Production Engineering",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Leadership Search",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "every AI dollar visible",
+          "status": "fail",
+          "evidence": [
+            "-native production: every AI dollar visible, every feature ship"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Remove or rephrase \"every AI dollar visible\"."
+        },
+        {
+          "name": "AI talent staffing",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Staffing gives capacity",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "owns outcomes",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "free trial",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "hire in 48 hours",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "mid-level",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "mid level",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        }
+      ]
+    },
+    "C2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Get Your AI Cost Benchmark",
+        "A GoGloby Applied AI Engineering client"
+      ],
+      "locations": [
+        "h2",
+        "body"
+      ],
+      "count": 33,
+      "fix": "Remove Benchmark as a CTA and revise the company/client descriptions that use Applied AI Engineering as positioning.",
+      "source_ref": "GoGloby Glossary §7",
+      "items": [
+        {
+          "name": "c2:Benchmark:h2:0",
+          "status": "fail",
+          "evidence": [
+            "Your AI Cost Management Benchmark"
+          ],
+          "locations": [
+            "h2"
+          ],
+          "count": 1,
+          "fix": "Remove Benchmark as a call to action."
+        },
+        {
+          "name": "c2:Benchmark:body:1",
+          "status": "fail",
+          "evidence": [
+            "Get Your AI Cost Benchmark"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Remove Benchmark as a call to action."
+        },
+        {
+          "name": "c2:Benchmark:body:2",
+          "status": "pass",
+          "evidence": [
+            "Benchmark Setup Outcome"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "c2:Benchmark:body:3",
+          "status": "fail",
+          "evidence": [
+            "START WITH A FREE BENCHMARK"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Remove Benchmark as a call to action."
+        },
+        {
+          "name": "c2:Benchmark:body:4",
+          "status": "fail",
+          "evidence": [
+            "Your AI Cost Management Benchmark"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Remove Benchmark as a call to action."
+        },
+        {
+          "name": "c2:Benchmark:body:5",
+          "status": "pass",
+          "evidence": [
+            "If you stop after the Benchmark"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "c2:Benchmark:body:6",
+          "status": "fail",
+          "evidence": [
+            "Get Your AI Cost Benchmark"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Remove Benchmark as a call to action."
+        },
+        {
+          "name": "c2:Benchmark:body:7",
+          "status": "pass",
+          "evidence": [
+            "That’s the Benchmark. One week"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "c2:Benchmark:body:8",
+          "status": "pass",
+          "evidence": [
+            "What happens after the Benchmark?"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "c2:Benchmark:body:9",
+          "status": "pass",
+          "evidence": [
+            "If you stop after the Benchmark"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "c2:Applied AI Engineering:body:10",
+          "status": "fail",
+          "evidence": [
+            "A GoGloby Applied AI Engineering client"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Revise this description of GoGloby’s client relationship."
+        },
+        {
+          "name": "c2:Applied AI Engineering:body:11",
+          "status": "fail",
+          "evidence": [
+            "An active GoGloby Applied AI Engineering engagement"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Revise this description of GoGloby’s client relationship."
+        },
+        {
+          "name": "c2:Applied AI Engineering:body:12",
+          "status": "fail",
+          "evidence": [
+            "A long-term GoGloby Applied AI Engineering partner"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Revise this description of GoGloby’s client relationship."
+        },
+        {
+          "name": "c2:Applied AI Engineering:body:13",
+          "status": "fail",
+          "evidence": [
+            "A GoGloby Applied AI Engineering client"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Revise this description of GoGloby’s client relationship."
+        },
+        {
+          "name": "c2:Applied AI Engineering:body:14",
+          "status": "fail",
+          "evidence": [
+            "A GoGloby Applied AI Engineering client"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Revise this description of GoGloby’s client relationship."
+        },
+        {
+          "name": "c2:Applied AI Engineering:body:15",
+          "status": "fail",
+          "evidence": [
+            "A long-term GoGloby Applied AI Engineering partner"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Revise this description of GoGloby’s client relationship."
+        },
+        {
+          "name": "c2:Applied AI Engineering:body:16",
+          "status": "fail",
+          "evidence": [
+            "An active GoGloby Applied AI Engineering engagement"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Revise this description of GoGloby’s client relationship."
+        },
+        {
+          "name": "c2:Applied AI Engineering:body:17",
+          "status": "fail",
+          "evidence": [
+            "A GoGloby Applied AI Engineering client"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Revise this description of GoGloby’s client relationship."
+        },
+        {
+          "name": "c2:Applied AI Engineering:body:18",
+          "status": "fail",
+          "evidence": [
+            "A long-term GoGloby Applied AI Engineering partner"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Revise this description of GoGloby’s client relationship."
+        },
+        {
+          "name": "c2:Applied AI Engineering:body:19",
+          "status": "fail",
+          "evidence": [
+            "A GoGloby Applied AI Engineering client"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Revise this description of GoGloby’s client relationship."
+        },
+        {
+          "name": "c2:Applied AI Engineering:body:20",
+          "status": "fail",
+          "evidence": [
+            "A GoGloby Applied AI Engineering client"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Revise this description of GoGloby’s client relationship."
+        },
+        {
+          "name": "c2:Forward-Deployed Engineers:body:21",
+          "status": "pass",
+          "evidence": [
+            "forward-deployed engineers work inside your team"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "c2:Agentic SDLC:body:22",
+          "status": "fail",
+          "evidence": [
+            "set up the Agentic SDLC"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Remove Agentic SDLC as a promoted offer/positioning."
+        },
+        {
+          "name": "c2:AI spend:body:23",
+          "status": "pass",
+          "evidence": [
+            "optimizing AI spend across models"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "c2:AI spend:body:24",
+          "status": "pass",
+          "evidence": [
+            "joins your AI spend to your actual work"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "c2:AI spend:body:25",
+          "status": "pass",
+          "evidence": [
+            "AI Spend Is Untraceable at Source"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "c2:AI spend:body:26",
+          "status": "pass",
+          "evidence": [
+            "makes AI spend comparable across teams"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "c2:AI spend:body:27",
+          "status": "pass",
+          "evidence": [
+            "forecasted AI spend to what each team actually consumed"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "c2:AI spend:body:28",
+          "status": "pass",
+          "evidence": [
+            "turn AI spend into shipped code"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "c2:AI spend:body:29",
+          "status": "pass",
+          "evidence": [
+            "need AI spend broken down to the feature"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "c2:AI spend:body:30",
+          "status": "pass",
+          "evidence": [
+            "joins your AI spend to your actual work"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "c2:AI spend:body:31",
+          "status": "pass",
+          "evidence": [
+            "optimizing AI spend across models"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "c2:AI spend:body:32",
+          "status": "pass",
+          "evidence": [
+            "joining AI spend to engineering output"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        }
+      ]
+    },
+    "C3": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Globy\",\"legalName\":\"Gogloby LLC\",\"url\":\"https:/"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Use \"GoGloby\" consistently.",
+      "source_ref": "audit.json: brand_spelling"
+    },
+    "C4": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Phone matches official digits or none listed."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: code_facts.phone_digits"
+    },
+    "C5": {
+      "status": "fail",
+      "severity": "low",
+      "evidence": [
+        "21 em dash(es) found."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 21,
+      "fix": "Replace em dashes with commas or periods.",
+      "source_ref": "Glossary §9"
+    },
+    "D1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "\"The whole pipeline deploys into your VPC\"",
+        "\"Telemetry never leaves the account\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Verify that these product and security claims are supported by approved company facts before publishing.",
+      "source_ref": "GoGloby Fact Sheet: Legal and security; Glossary §7",
+      "items": [
+        {
+          "name": "Unverified product/security claims",
+          "status": "fail",
+          "evidence": [
+            "\"The whole pipeline deploys into your VPC\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Verify the claim against approved product and security facts."
+        }
+      ]
+    },
+    "D2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Hasbro: \"$4.7B revenue\"; TATA: \"$30B revenue\"; EverCommerce: \"700,000+ business clients\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 11,
+      "fix": "Check each displayed client metric against the Fact Sheet; remove, correct, or substantiate conflicting and unverified figures.",
+      "source_ref": "GoGloby Fact Sheet: Featured clients",
+      "items": [
+        {
+          "name": "d2:hasbro",
+          "status": "fail",
+          "evidence": [
+            "Hasbro: \"$4.7B revenue\"; Fact Sheet: \"~$5B revenue\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Reconcile the revenue and market-cap figures with the Fact Sheet."
+        },
+        {
+          "name": "d2:tata",
+          "status": "pass",
+          "evidence": [
+            "TATA: \"$30B revenue · 600,000+ employees\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "d2:evercommerce",
+          "status": "warn",
+          "evidence": [
+            "EverCommerce: \"700,000+ business clients\"; Fact Sheet says \"700K+ clients\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Verify the wording and additional market-cap figure against an approved source."
+        },
+        {
+          "name": "d2:devsisters",
+          "status": "warn",
+          "evidence": [
+            "Devsisters: \"200M+ users\"; Fact Sheet: \"200M+ players\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Verify the users wording and extra figures against the Fact Sheet."
+        },
+        {
+          "name": "d2:drchrono",
+          "status": "pass",
+          "evidence": [
+            "DrChrono: \"17M+ patients · $3B+ medical claims annually\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "d2:mikeworldwide",
+          "status": "warn",
+          "evidence": [
+            "MikeWorldWide: \"$57M fee income · 230+ staff\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Verify the financial and employee metrics against an approved source."
+        },
+        {
+          "name": "d2:every.io",
+          "status": "warn",
+          "evidence": [
+            "Every: \"$60M+ payroll processed\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Verify the figure against an approved source; it is not listed in the Fact Sheet."
+        },
+        {
+          "name": "d2:sydecar",
+          "status": "fail",
+          "evidence": [
+            "Sydecar: \"$3B+ AUA\"; Fact Sheet: \"$1B+ assets under administration\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Reconcile the AUA figure with the Fact Sheet."
+        },
+        {
+          "name": "d2:bonusly",
+          "status": "warn",
+          "evidence": [
+            "Bonusly: \"$32.4M raised\"; Fact Sheet: \"$20M Series B\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Verify and reconcile the funding figure with the Fact Sheet."
+        },
+        {
+          "name": "d2:alchemy health",
+          "status": "pass",
+          "evidence": [
+            "Alchemy Health: \"$31M seed · 25M+ prescriptions\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "d2:canopy",
+          "status": "pass",
+          "evidence": [
+            "Canopy: \"Series F · $236.5M raised\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        }
+      ]
+    },
+    "D3": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "not_in_fact_sheet",
+        "NOVILAB"
+      ],
+      "locations": [
+        "body",
+        "image_alt"
+      ],
+      "count": 51,
+      "fix": "Remove or verify client claims for names not present in the Fact Sheet; retain non-client labels and decorative image items as non-clients.",
+      "source_ref": "GoGloby Fact Sheet.md — Featured clients",
+      "items": [
+        {
+          "name": "client_card:who uses it",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "WHO USES IT"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "client_card:dr. chrono 17m",
+          "status": "pass",
+          "evidence": [
+            "fact_sheet_client",
+            "DR. CHRONO 17M+ patients"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "client_card:evercommerce",
+          "status": "pass",
+          "evidence": [
+            "fact_sheet_client",
+            "EVERCOMMERCE"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "client_card:keywords",
+          "status": "pass",
+          "evidence": [
+            "fact_sheet_client",
+            "KEYWORDS"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "client_card:eqt",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "EQT acquisition"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "client_card:tata",
+          "status": "pass",
+          "evidence": [
+            "fact_sheet_client",
+            "TATA"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "client_card:canopy",
+          "status": "pass",
+          "evidence": [
+            "fact_sheet_client",
+            "CANOPY"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "client_card:sydecar",
+          "status": "pass",
+          "evidence": [
+            "fact_sheet_client",
+            "SYDECAR"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "client_card:novilab",
+          "status": "fail",
+          "evidence": [
+            "not_in_fact_sheet",
+            "NOVILAB Series B"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Verify the client claim against the Fact Sheet or remove it."
+        },
+        {
+          "name": "client_card:bonusly",
+          "status": "pass",
+          "evidence": [
+            "fact_sheet_client",
+            "BONUSLY"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "client_card:every",
+          "status": "pass",
+          "evidence": [
+            "fact_sheet_client",
+            "EVERY"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "client_card:alchemy",
+          "status": "pass",
+          "evidence": [
+            "fact_sheet_client",
+            "ALCHEMY"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "client_card:devsisters",
+          "status": "pass",
+          "evidence": [
+            "fact_sheet_client",
+            "DEVSISTERS"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:background",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: Background"
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:anthropic",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: Anthropic"
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:nvidia",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: Nvidia"
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:augment code",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: Augment Code"
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:snowflake",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: Snowflake"
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:cursor",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: Cursor"
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:gemini",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: Gemini"
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%20157%20143%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%20175%20158%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%20120%20158%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%20900%20496%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%2035%2035%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%2035%2034%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%2035%2031%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%2031%2035%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%2035%2032%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%2035%2027%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%2033%2035%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%2032%2032%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%20228%2072%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%20348%20102%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%20294%20126%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%20337%2091%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%20210%2075%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%20708%2072%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%20357%2090%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%20708%20102%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%20603%20138%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%20156%20156%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%20201%20168%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%20312%2087%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%20540%20132%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%20432%20108%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:svg+xml,%3csvg%20xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22%20viewbox%3d%220%200%20242%20242%22%3e%3c%2fsvg%3e",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "alt: "
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "text_cue:hasbro",
+          "status": "pass",
+          "evidence": [
+            "fact_sheet_client",
+            "HASBRO"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "text_cue:nyse",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "NYSE"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "text_cue:nfl",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "NFL"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "text_cue:wnba",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "WNBA"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        }
+      ]
+    },
+    "D4": {
+      "status": "fail",
+      "severity": "low",
+      "evidence": [
+        "\"NOVILAB ... An active GoGloby Applied AI Engineering engagement\"",
+        "\"An active GoGloby Applied AI Engineering client\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Review the client and engagement claims for entities not included in the Fact Sheet. TATA is explicitly approved as a client by decisions.md.",
+      "source_ref": "decisions.md: Clients; GoGloby Fact Sheet: Featured clients",
+      "items": [
+        {
+          "name": "Non-verified client claim",
+          "status": "fail",
+          "evidence": [
+            "\"NOVILAB ... An active GoGloby Applied AI Engineering engagement\""
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Verify or remove the unlisted client and engagement claim."
+        }
+      ]
+    },
+    "E1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "\"Only GoGloby prices shipped features and deploys engineers to fix what the AI Intelligence Layer finds.\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Review the page’s service fit: the page presents software/product and forward-deployed engineering services rather than the approved recruiting or staffing offers.",
+      "source_ref": "GoGloby Fact Sheet: Services; Glossary §2"
+    },
+    "E2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "\"Get Your AI Cost Benchmark\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Review the call to action against the approved service-page CTA guidance in Glossary §7.",
+      "source_ref": "Glossary §7"
+    },
+    "E3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "\"CTOs, VPs of Engineering, platform leaders, and finance leaders\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet: Services; Glossary §2"
+    },
+    "E4": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "\"Who needs AI cost management software?\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Review informational FAQ content against the buyer-ready audience and page-writing guidance.",
+      "source_ref": "Glossary §9"
+    },
+    "F1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "\"What Is AI Cost Management?\""
+      ],
+      "locations": [
+        "h2"
+      ],
+      "count": 1,
+      "fix": "Review the page focus against approved GoGloby recruiting and staffing services.",
+      "source_ref": "GoGloby Fact Sheet: Services"
+    },
+    "F2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "\"AI Cost Management and Engineering Visibility Solution\""
+      ],
+      "locations": [
+        "title",
+        "h1"
+      ],
+      "count": 1,
+      "fix": "Review the title and H1 for terminology and service alignment.",
+      "source_ref": "Glossary §7"
+    },
+    "F3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "\"AI Intelligence Layer\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 16,
+      "fix": "Use the approved product name where the product is referenced.",
+      "source_ref": "Glossary §7"
+    },
+    "F4": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "\"WHAT WE BUILT Enterprise AI Cost Management Dashboard\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Review claims about product offerings against approved service and product facts.",
+      "source_ref": "GoGloby Fact Sheet: Services"
+    },
+    "F5": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "\"First numbers in one week\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Verify timelines and offer claims against approved service facts.",
+      "source_ref": "GoGloby Fact Sheet: Services"
+    },
+    "F6": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "not_targeted",
+        "\"Who needs AI cost management software?\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Refocus the page on companies ready to hire GoGloby for its approved recruiting or staffing services rather than software/product buyers.",
+      "source_ref": "Glossary §9"
+    },
+    "G1": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "none",
+        "\"AI Cost Management and Engineering Visibility Solution\""
+      ],
+      "locations": [
+        "title",
+        "h1"
+      ],
+      "count": 1,
+      "fix": "Review the target keyword and title against the approved service-page keyword strategy; trap terms should not lead page targeting.",
+      "source_ref": "Glossary §§6, 8"
+    },
+    "G2": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "title: no",
+        "h1: no",
+        "h2: no",
+        "meta: no",
+        "first_paragraph: no"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "Place target keyword in title, H1, H2, meta, and first paragraph.",
+      "source_ref": "checklist: G2"
+    },
+    "G3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "\"Get Your AI Cost Benchmark\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Review the CTA against Glossary §7 guidance on Benchmark as the main call to action.",
+      "source_ref": "Glossary §7"
+    },
+    "G4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "No competing pages for this keyword"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G4"
+    },
+    "H1": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "action token only: remove"
+      ],
+      "locations": [
+        "title",
+        "h1",
+        "body",
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Review title, H1, product naming, schema positioning, and CTA for alignment with approved company terminology and services.",
+      "source_ref": "decisions.md: Company description; Glossary §§2, 7"
+    },
+    "H2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "high"
+      ],
+      "locations": [
+        "title",
+        "h1",
+        "body",
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Prioritize removal or review of prohibited product names and company-positioning claims, then validate unsupported client figures and software/service claims.",
+      "source_ref": "Glossary §§2, 7; GoGloby Fact Sheet: Featured clients"
+    },
+    "H3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "- The page promotes AI cost-management software and engineering visibility rather than the approved staffing and recruiting services.",
+        "- Page language includes prohibited positioning such as “Applied AI Engineering” and legacy “AI Intelligence Layer.”",
+        "- Multiple client metrics conflict with or are absent from the Fact Sheet; NOVILAB is not listed there."
+      ],
+      "locations": [
+        "title",
+        "h1",
+        "body",
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Review product/service fit, terminology, client metrics, and unsupported client claims before publication.",
+      "source_ref": "GoGloby Fact Sheet: Services and Featured clients; Glossary §§2, 7, 9"
+    }
+  },
+  "recommendation": {
+    "action": "needs_decision",
+    "priority": "high",
+    "reasons": [
+      "- The page promotes AI cost-management software and engineering visibility rather than the approved staffing and recruiting services.",
+      "- Page language includes prohibited positioning such as “Applied AI Engineering” and legacy “AI Intelligence Layer.”",
+      "- Multiple client metrics conflict with or are absent from the Fact Sheet; NOVILAB is not listed there."
+    ]
+  }
+}

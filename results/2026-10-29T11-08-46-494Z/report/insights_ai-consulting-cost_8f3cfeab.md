@@ -1,0 +1,76 @@
+# Page report
+
+- **URL:** https://gogloby.com/insights/ai-consulting-cost/
+- **Type:** post
+- **Action:** needs_decision
+- **Priority:** high
+
+## First paragraph
+
+_(empty)_
+
+## A. Technical SEO
+
+✅ **A1** HTTP status — evidence: HTTP 200 — source: checklist: A1
+❌ **A2** Title length — evidence: 80 characters: "How Much Does AI Consulting Cost in 2026..." — locations: title — fix: Adjust title to 50-60 characters. — source: audit.json: seo
+❌ **A3** Meta description length — evidence: 96 characters — locations: meta — fix: Adjust meta description to 120-158 characters. — source: audit.json: seo
+✅ **A4** Exactly one H1 — evidence: 1 H1 — locations: h1 — source: audit.json: seo
+✅ **A5** Canonical — evidence: https://gogloby.com/insights/ai-consulting-cost/ — locations: meta — source: checklist: A5
+✅ **A6** Indexable — evidence: Indexable — source: checklist: A6
+✅ **A7** Open Graph — evidence: og:title, og:description, og:image present — locations: meta — source: checklist: A7
+✅ **A8** Dates — evidence: 2026-09-18T13:20:11+03:00 | 2026-09-18T13:20:14+03:00 — locations: schema — source: audit.json: requirements_by_type
+✅ **A9** Author — evidence: Sergey Matikaynen — source: audit.json: requirements_by_type
+✅ **A10** Image alt text — evidence: All main images have alt — count: 0 — source: checklist: A10
+✅ **A11** Broken internal links — evidence: No broken internal links — count: 0 — source: checklist: A11
+❌ **A12** Links to service pages — evidence: No link to staffing or recruiting service pages — fix: Add links to staffing and/or recruiting service pages in main content. — source: checklist: A12
+
+## B. Structured data
+
+❌ **B1** Expected schema types — evidence: Missing: BreadcrumbList | Found: Organization, WebSite, Article, FAQPage — locations: schema — fix: Add JSON-LD types: BreadcrumbList. — source: audit.json: requirements_by_type
+❌ **B2** Organization data — evidence: Organization legalName: “Gogloby LLC” conflicts with “GoGloby LLC.” | Organization slogan: “Applied AI Engineering Partner” conflicts with the approved staffing and recruiting positioning. | Organization description: “talent acquisition agency” and “US & EU time zones” do not match the approved description, “GoGloby is a staffing and recruiting agency specializing in hiring Data & AI Engineers.” | Organization offer catalog describes “Applied AI Engineering,” “Generative AI Development Services,” and “AI Staff Augmentation,” rather than the approved recruiting and staffing services. — locations: schema — count: 1 — fix: Correct the Organization node’s legalName, slogan, description, and service catalog to match the approved company identity and service definitions. Review related schema fields that repeat the disallowed positioning. — source: decisions.md: Company description; Fact Sheet: Identity; Fact Sheet: Services; Glossary §7
+❌ **B3** Person data — evidence: Sergey’s schema jobTitle, “Co-founder & CTO,” matches “Co-Founder and CTO” after normalizing “&” and case; the page author text instead says “16+ years,” while the Fact Sheet says “17 years.” | Vit’s schema jobTitle, “Co-founder,” matches the approved “Co-Founder”; the schema description claims “$60M+ in value,” which is not supported by the founder information in the Fact Sheet. — locations: schema, body — count: 2 — fix: Align the author/founder descriptions with confirmed founder facts; correct Sergey’s stated experience and remove or verify Vit’s unsupported value claim. — source: decisions.md: Founders; Fact Sheet: Founders
+⚠️ **B4** Schema matches the page — evidence: Article schema names “Sergey Matikaynen” as author; the page also displays “Article author Sergey Matikaynen.” — locations: schema, body — count: 1 — fix: The author identity is consistent, but align the author biography’s factual claims with the founder source information. — source: Fact Sheet: Founders
+
+## C. Wording
+
+❌ **C1** Banned phrases — evidence: AI Intelligence Layer: th of delivery. The AI Intelligence Layer deploys inside the — locations: body — count: 2 — fix: Replace "AI Intelligence Layer" with AI Development Intelligence Layer. Replace "AI Intelligence Layer" with AI Development Intelligence Layer. — source: audit.json: exact_phrases
+❌ **C2** Context terms — evidence: Page copy uses the disallowed product name “AI Intelligence Layer.” | The H2 “Is Your AI Spend Growing Without Clear ROI?” leads with AI spend/ROI, which the Glossary says not to use as a hero or headline. — locations: h2, body, link_text — count: 2 — fix: Use the approved product name wherever the old name appears, and revise headlines that lead with AI spend or ROI. Also review the related link text “AI Intelligence Layer.” — source: Glossary §7
+❌ **C3** Brand spelling — evidence: Globy","legalName":"Gogloby LLC","url":"https:/ — locations: schema — count: 1 — fix: Use "GoGloby" consistently. — source: audit.json: brand_spelling
+✅ **C4** Phone number — evidence: Phone matches official digits or none listed. — source: audit.json: code_facts.phone_digits
+❌ **C5** Em dash — evidence: 1 em dash(es) found. — locations: body — count: 1 — fix: Replace em dashes with commas or periods. — source: Glossary §9
+
+## D. Facts
+
+❌ **D1** Company facts — evidence: The author bio says “16+ years”; the Fact Sheet says Sergey “has spent 17 years.” | The author bio describes “certified Agentic SDLC mastery”; the supplied sources do not establish that certification. — locations: body — count: 2 — fix: Correct the experience figure to the confirmed source and remove or verify the certification claim before publishing. — source: Fact Sheet: Founders; Glossary §10
+✅ **D2** Client figures — evidence: The page includes market-cost examples such as “$250 per hour for 20 hours costs $5K,” but shows no Fact Sheet client metrics. — locations: body — count: 0 — fix: No Fact Sheet client-metric conflict is identified in the supplied page content. — source: Fact Sheet: Key metrics; Fact Sheet: Featured clients
+✅ **D3** Clients not in the Fact Sheet — evidence: The supplied page content includes no client logos or client cards; it names consulting providers such as “Deloitte, PwC, EY, and KPMG.” — locations: body — count: 0 — fix: No unlisted client logos or cards are identified in the supplied evidence. — source: Fact Sheet: Featured clients
+⚠️ **D4** Press and partners — evidence: The article says “Ranges in this table and throughout this guide were compiled from Alice Labs, Nicklpass, and Bosio Digital.” — locations: body — count: 1 — fix: Verify the cited external cost ranges and claims; the supplied company sources do not substantiate them. — source: Fact Sheet: Key metrics; Glossary §10
+
+## E. Positioning
+
+❌ **E1** Service fit — evidence: contradicts — locations: h1, body — count: 1 — fix: The article is framed around AI consulting, and its GoGloby sections present consulting/implementation and AI engineering services rather than the approved recruiting and staffing services. Rework the GoGloby positioning to reflect the actual service fit. — source: decisions.md: Company description; Fact Sheet: Services; Glossary §2
+❌ **E2** Positioning — evidence: The page says “GoGloby deploys a measurement layer inside the team’s environment” and “puts engineers inside the team,” describing delivery of engineering work. — locations: body — count: 1 — fix: Remove or correct descriptions that position GoGloby as an engineering delivery or consulting provider; describe only the approved staffing and recruiting offer. — source: Fact Sheet: Identity; Glossary §1, §7
+❌ **E3** Call to action — evidence: The page CTA says “Get Your Benchmark”; the approved CTAs are “Get vetted profiles” for staffing and “Start a search” for recruiting. — locations: body — count: 1 — fix: Replace the benchmark-led call to action with the appropriate approved service CTA. — source: Glossary §7
+❌ **E4** Lead order — evidence: The page says “One month, fixed fee, fully credited toward the first month of delivery,” presenting an engagement and fee structure absent from the approved services. — locations: body — count: 1 — fix: Remove or verify the offer and pricing arrangement; public content must not present GoGloby fees or an unapproved service engagement. — source: Fact Sheet: Services; Glossary §7
+
+## F. GEO
+
+❌ **F1** Answer first — evidence: The opening says “This guide explains how AI consulting costs change,” positioning the page as a broad educational guide rather than opening with a buyer’s hiring problem. — locations: first_paragraph, body — count: 1 — fix: Reassess the page’s purpose and opening against the buyer-ready editorial direction; the current article is informational about consulting prices. — source: Glossary §9
+❌ **F2** Buyer problem — evidence: The article repeatedly discusses “AI consulting” and “AI consulting rates,” rather than GoGloby’s approved Data & AI Engineer recruiting and staffing services. — locations: title, h1, body — count: 1 — fix: Align the page topic and GoGloby references with the services GoGloby actually provides. — source: decisions.md: Company description; Fact Sheet: Services
+❌ **F3** Recruiting firm stated early — evidence: The page says “GoGloby starts with a benchmark” and “We forward-deploy an AI Solutions Architect,” presenting unapproved consulting and implementation offers. — locations: body — count: 1 — fix: Remove or correct the consulting/implementation offer and retain only confirmed service descriptions. — source: Fact Sheet: Services; Glossary §2, §7
+❌ **F4** GoGloby named near claims — evidence: The H2 “Is Your AI Spend Growing Without Clear ROI?” leads with AI spend/ROI, contrary to the instruction not to lead with AI ROI or AI spend. — locations: h2 — count: 1 — fix: Change the section framing so it does not lead with AI spend or ROI. — source: Glossary §7
+❌ **F5** FAQ — evidence: The page makes broad informational claims such as “There is no single price for AI consulting” and gives extensive pricing guidance, while the writing guidance says to write for buyers ready to hire. — locations: body — count: 1 — fix: Review whether this informational consulting-cost topic serves the intended buyer-ready audience and GoGloby service strategy. — source: Glossary §9
+⚠️ **F6** Audience — evidence: informational — locations: title, h1, body — count: 1 — fix: The page is an informational cost guide, not a direct buyer-ready page for GoGloby’s recruiting or staffing services. Decide whether it should remain within the site’s buyer-ready content strategy. — source: Glossary §9
+
+## G. Target keyword
+
+⚠️ **G1** Target keyword — evidence: AI consulting cost — locations: title, h1, body — count: 1 — fix: The target phrase is clear from the title and content, but it targets consulting-cost information rather than GoGloby’s approved service positioning. — source: Glossary §6, §9
+⚠️ **G2** Keyword placement — evidence: title: yes | h1: yes | h2: yes | meta: yes | first_paragraph: no — locations: title, h1, h2, meta — fix: Place target keyword in title, H1, H2, meta, and first paragraph. — source: checklist: G2
+❌ **G3** Trap terms in title or H1 — evidence: “AI Solutions Architect” and “Applied AI Engineering” are used as GoGloby positioning/offers; the glossary says not to use these as positioning or an offer. — locations: body — count: 1 — fix: Remove disallowed positioning and offer language; retain role names only where they accurately describe roles GoGloby recruits or staffs. — source: Glossary §7
+✅ **G4** Competing pages — evidence: No competing pages for this keyword — source: checklist: G4
+
+## H. Recommendation
+
+✅ **H1** Action — evidence: needs_decision — locations: title, h1 — count: 1 — fix: The H1 clearly describes the informational topic, but the page’s AI consulting-cost focus does not align with the approved services or buyer-ready content direction. Decide whether to retain this topic or consolidate/redirect it. — source: Glossary §6, §9
+✅ **H2** Priority — evidence: high — locations: h2 — count: 1 — fix: Prioritize review because the page’s GoGloby positioning describes unapproved consulting/engineering offers, includes disallowed product naming, and uses an unapproved CTA. — source: Fact Sheet: Services; Glossary §7
+✅ **H3** Reasons — evidence: B2: Organization schema uses “Gogloby LLC” and the “Applied AI Engineering Partner” positioning. | B3: Sergey’s author bio states “16+ years,” versus the Fact Sheet’s 17 years; Vit’s “$60M+ in value” claim is unsupported by the supplied founder source. | C2: The body uses “AI Intelligence Layer” and an AI-spend/ROI headline. | E1: GoGloby is framed as providing AI consulting/engineering delivery, not the approved recruiting and staffing services. | E3: The CTA “Get Your Benchmark” conflicts with the approved service CTAs. — locations: schema, h2, body — count: 5 — fix: Address the schema, founder facts, prohibited terms, service positioning, and CTA issues identified above. — source: decisions.md: Company description; Fact Sheet: Identity, Founders, Services; Glossary §7, §9

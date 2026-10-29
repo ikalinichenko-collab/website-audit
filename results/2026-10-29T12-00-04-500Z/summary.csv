@@ -1,0 +1,2 @@
+url,page_type,action,priority,A_fail,A_warn,B_fail,B_warn,C_fail,C_warn,D_fail,D_warn,E_fail,E_warn,F_fail,F_warn,G_fail,G_warn,H_fail,H_warn,top_failing_checks
+https://gogloby.com/terms-and-conditions/,legal,needs_decision,high,2,0,2,0,3,0,1,0,0,0,0,0,1,1,3,0,"A2;A11;B2"

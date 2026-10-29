@@ -1,0 +1,2 @@
+url,page_type,action,priority,A_fail,A_warn,B_fail,B_warn,C_fail,C_warn,D_fail,D_warn,E_fail,E_warn,F_fail,F_warn,G_fail,G_warn,H_fail,H_warn,top_failing_checks
+https://gogloby.com/,homepage,LLM error: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'm,LLM error: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'm,2,1,0,0,3,0,0,0,0,0,0,0,0,1,0,0,"A11;A12;C1"

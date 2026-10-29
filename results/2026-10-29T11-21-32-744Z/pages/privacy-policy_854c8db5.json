@@ -1,0 +1,557 @@
+{
+  "url": "https://gogloby.com/privacy-policy/",
+  "page_type": "legal",
+  "checked_at": "2026-10-29T11:21:59.811Z",
+  "content_hash": "949cc1900e424cef91324f9e5c8b1f489670c7341422cbdb6c511886d262da7a",
+  "sources_hash": "60f07aa71f13cac715dd96e85e0e6e07dc7bf4706289f1cfca2c21f7856a4c72",
+  "checklist_hash": "cfe732f7a9e8cb12a2686d2e5271daf669c1680a53fed24cf0461cde9b07622d",
+  "audit_hash": "8fc5ef296e11d8ce90e35e9eba0835d016dbc23ad25014a79864eb815451fbf0",
+  "first_paragraph": "",
+  "results": {
+    "A1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "HTTP 200"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A1"
+    },
+    "A2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "22 characters: \"Privacy Policy | Globy...\""
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": null,
+      "fix": "Adjust title to 50-60 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "A3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "116 characters"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "Adjust meta description to 120-158 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "A4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "1 H1"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A5": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/privacy-policy/"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A5"
+    },
+    "A6": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Indexable"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A6"
+    },
+    "A7": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "og:title, og:description, og:image present"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A7"
+    },
+    "A8": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A9": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A10": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "All main images have alt"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A10"
+    },
+    "A11": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/cdn-cgi/l/email-protection#e9819ba98e868e85868b90c78a8684 (404)",
+        "https://gogloby.com/cdn-cgi/l/email-protection#264e54664149414a49445f0845494b (404)"
+      ],
+      "locations": [
+        "link_text"
+      ],
+      "count": 3,
+      "fix": "Fix or remove broken internal links.",
+      "source_ref": "checklist: A11"
+    },
+    "A12": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A12"
+    },
+    "B1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "Required types present: "
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "B2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Organization «GoGloby»: legalName «Gogloby LLC» conflicts with Fact Sheet «GoGloby LLC»; slogan «Applied AI Engineering Partner» conflicts with Glossary §7; description «US-based talent acquisition agency» conflicts with approved company description. Other notable mismatches: award uses «Applied AI Engineering Partner»; aggregateRating reviewCount is 4.9, while Fact Sheet says 10 reviews. The page also has legacy service/catalog claims, including «Vetted profiles delivered in 72 hours» and «120-day telemetry-backed replacement guarantee»."
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Correct the mismatched Organization fields against the approved company description and Fact Sheet; remove or verify unsupported catalog claims and values.",
+      "source_ref": "decisions.md: Company description; Fact Sheet: Identity, What clients say, External recognition; Glossary §7"
+    },
+    "B3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "Sergey: «Co-founder & CTO» matches «Co-Founder and CTO» after normalizing ampersand and case.",
+        "Vit Koval: «Co-founder» matches the approved «Co-Founder» title; alternateName «Vitaly Koval» matches the approved founder name."
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 2,
+      "fix": "",
+      "source_ref": "decisions.md: Founders"
+    },
+    "B4": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "«GoGloby LLC (“GoGloby,” “we,” “us,” or “our”)»; the page does not provide a separate author."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "No page author is supplied to validate; confirm whether a named author or reviewer is required for this legal page.",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "C1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No banned phrases found."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: exact_phrases"
+    },
+    "C2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "The title is «Privacy Policy | Globy» and the meta description begins «Read Globy's privacy policy»; the page body also states «GoGloby LLC»."
+      ],
+      "locations": [
+        "title",
+        "meta",
+        "body"
+      ],
+      "count": 2,
+      "fix": "Use the current company spelling consistently in the title and meta description.",
+      "source_ref": "decisions.md: Spelling"
+    },
+    "C3": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Privacy Policy | Globy",
+        "Read Globy's privacy policy to"
+      ],
+      "locations": [
+        "title",
+        "meta",
+        "schema"
+      ],
+      "count": 3,
+      "fix": "Use \"GoGloby\" consistently.",
+      "source_ref": "audit.json: brand_spelling"
+    },
+    "C4": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Phone matches official digits or none listed."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: code_facts.phone_digits"
+    },
+    "C5": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "No em dashes found."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "Glossary §9"
+    },
+    "D1": {
+      "status": "warn",
+      "severity": "high",
+      "evidence": [
+        "The notice says «GoGloby also operates through teams and business locations in Latin America and Europe»; these operating-location details are not established in the Fact Sheet."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "Verify the operating-location statement against an approved source or remove it if it cannot be substantiated.",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "D2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No Fact Sheet client metrics are shown in the page text; the page includes the retention period «up to 24 months», which is not a Fact Sheet client metric."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Fact Sheet: Key metrics"
+    },
+    "D3": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No client logos or client cards are present in the supplied page content; the text refers generically to «a GoGloby client»."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Fact Sheet: Featured clients"
+    },
+    "D4": {
+      "status": "warn",
+      "severity": "low",
+      "evidence": [
+        "The privacy notice gives an «Effective Date: September 16, 2026» and describes processing practices; these legal details are not independently verifiable from the supplied company sources."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "Have the relevant legal/privacy owner verify the notice date and processing statements.",
+      "source_ref": "Fact Sheet: Legal and security"
+    },
+    "E1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "none"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "This is a privacy notice, not a service page; the incidental reference to «recruiting or selection process» does not establish service targeting.",
+      "source_ref": "Fact Sheet: Services"
+    },
+    "E2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "«This Privacy Policy and Candidate Privacy Notice explains how we collect, use, disclose, store, and protect personal information» clearly states the legal page's subject."
+      ],
+      "locations": [
+        "h1",
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "E3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "«For privacy questions or requests, contact» gives a clear route for privacy inquiries."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "E4": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "The notice says «Privacy email: [email protected]»; the supplied page data shows the email links as protected links returning 404."
+      ],
+      "locations": [
+        "link_text"
+      ],
+      "count": 3,
+      "fix": "Check and repair the privacy-contact links so readers can use them.",
+      "source_ref": "Fact Sheet: Identity; supplied code check A11"
+    },
+    "F1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "«Privacy Policy and Candidate Privacy Notice» accurately identifies the page as a privacy notice."
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Fact Sheet: Legal and security"
+    },
+    "F2": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "The page explains «how we collect, use, disclose, store, and protect personal information» and sets out collection, use, sharing, retention, and rights sections."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Fact Sheet: Legal and security"
+    },
+    "F3": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "The notice states «GoGloby LLC is generally the controller» but also refers to «a GoGloby affiliate or another entity»; the responsible entities are not detailed in the supplied sources."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "Confirm the controller and affiliate details with the legal/privacy owner.",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "F4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "«Depending on where you live» introduces privacy rights and the notice provides jurisdiction-specific sections."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Fact Sheet: Legal and security"
+    },
+    "F5": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "The page identifies «GoGloby LLC» and gives «8 The Green, Ste. R» and «Delaware 19901» as the headquarters address."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "F6": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "informational"
+      ],
+      "locations": [
+        "h1",
+        "body"
+      ],
+      "count": 1,
+      "fix": "The page is a legal notice rather than a buyer-facing service page; its H1 is «Privacy Policy and Candidate Privacy Notice».",
+      "source_ref": "Glossary §9"
+    },
+    "G1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "none"
+      ],
+      "locations": [
+        "title",
+        "h1"
+      ],
+      "count": 0,
+      "fix": "No service-targeting keyword is appropriate for this legal page; its title is «Privacy Policy | Globy».",
+      "source_ref": "Glossary §6"
+    },
+    "G2": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No target keyword from G1"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G2"
+    },
+    "G3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "«Privacy Policy and Candidate Privacy Notice» is a clear legal-page title, though the page title still uses the former company name."
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": 1,
+      "fix": "Correct the legacy brand spelling in the title metadata; no service keyword targeting is needed.",
+      "source_ref": "decisions.md: Spelling; Glossary §6"
+    },
+    "G4": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No target keyword"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G4"
+    },
+    "H1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "keep"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": 1,
+      "fix": "Keep the legal-page H1 «Privacy Policy and Candidate Privacy Notice»; it describes the notice's scope.",
+      "source_ref": "Fact Sheet: Legal and security"
+    },
+    "H2": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "low"
+      ],
+      "locations": [
+        "h2"
+      ],
+      "count": 17,
+      "fix": "Low priority: the headings are organized and descriptive, for example «2. Personal Information We Collect» and «12. Your Privacy Rights».",
+      "source_ref": "Fact Sheet: Legal and security"
+    },
+    "H3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "C2: title/meta use former name: «Privacy Policy | Globy».",
+        "B2: Organization schema conflicts on legalName and description: «Gogloby LLC» and «US-based talent acquisition agency».",
+        "D2: no Fact Sheet client metrics appear; the page says «up to 24 months», a retention period.",
+        "E4: privacy contact links fail per supplied code check A11; page text shows «Privacy email: [email protected]»."
+      ],
+      "locations": [
+        "title",
+        "meta",
+        "schema",
+        "body",
+        "link_text"
+      ],
+      "count": 4,
+      "fix": "Address the cited brand, schema, and contact-link issues; no client-metric conflict was found.",
+      "source_ref": "decisions.md: Spelling; Fact Sheet: Identity, Key metrics; supplied code check A11"
+    }
+  },
+  "recommendation": {
+    "action": "keep",
+    "priority": "low",
+    "reasons": [
+      "C2: title/meta use former name: «Privacy Policy | Globy».",
+      "B2: Organization schema conflicts on legalName and description: «Gogloby LLC» and «US-based talent acquisition agency».",
+      "D2: no Fact Sheet client metrics appear; the page says «up to 24 months», a retention period.",
+      "E4: privacy contact links fail per supplied code check A11; page text shows «Privacy email: [email protected]»."
+    ]
+  }
+}

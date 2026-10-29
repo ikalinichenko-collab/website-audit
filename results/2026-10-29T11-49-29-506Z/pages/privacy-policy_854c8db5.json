@@ -1,0 +1,800 @@
+{
+  "url": "https://gogloby.com/privacy-policy/",
+  "page_type": "legal",
+  "checked_at": "2026-10-29T11:49:52.121Z",
+  "content_hash": "949cc1900e424cef91324f9e5c8b1f489670c7341422cbdb6c511886d262da7a",
+  "sources_hash": "60f07aa71f13cac715dd96e85e0e6e07dc7bf4706289f1cfca2c21f7856a4c72",
+  "checklist_hash": "6b6099f5bd56830329215b56166d854d63febdf934903c560627c4c6ca4ba783",
+  "audit_hash": "8fc5ef296e11d8ce90e35e9eba0835d016dbc23ad25014a79864eb815451fbf0",
+  "first_paragraph": "",
+  "results": {
+    "A1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "HTTP 200"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A1"
+    },
+    "A2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "22 characters: \"Privacy Policy | Globy...\""
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": null,
+      "fix": "Adjust title to 50-60 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "A3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "116 characters"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "Adjust meta description to 120-158 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "A4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "1 H1"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A5": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/privacy-policy/"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A5"
+    },
+    "A6": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Indexable"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A6"
+    },
+    "A7": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "og:title, og:description, og:image present"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A7"
+    },
+    "A8": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A9": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A10": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "All main images have alt"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A10"
+    },
+    "A11": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/cdn-cgi/l/email-protection#f69e84b69199919a99948fd895999b (404)",
+        "https://gogloby.com/cdn-cgi/l/email-protection#e28a90a2858d858e8d809bcc818d8f (404)"
+      ],
+      "locations": [
+        "link_text"
+      ],
+      "count": 3,
+      "fix": "Fix or remove broken internal links.",
+      "source_ref": "checklist: A11"
+    },
+    "A12": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A12"
+    },
+    "B1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "Required types present: "
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "B2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "\"legalName\":\"Gogloby LLC\"",
+        "\"email\":\"hr@gogloby.com\""
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 3,
+      "fix": "Correct the legal name and review count to match approved sources; use the approved company email where the schema represents the company contact.",
+      "source_ref": "GoGloby Fact Sheet §Identity; §What clients say; decisions.md §Company description",
+      "items": [
+        {
+          "name": "Legal name",
+          "status": "fail",
+          "evidence": [
+            "\"legalName\":\"Gogloby LLC\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Correct the schema legal name to match the Fact Sheet."
+        },
+        {
+          "name": "Contact email",
+          "status": "fail",
+          "evidence": [
+            "\"email\":\"hr@gogloby.com\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Use the approved sales email for the organization-level contact, or clarify that this is candidate support."
+        },
+        {
+          "name": "Review count",
+          "status": "fail",
+          "evidence": [
+            "\"reviewCount\":4.9"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Correct or remove the review count; the Fact Sheet specifies 10 verified Clutch reviews."
+        }
+      ]
+    },
+    "B3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "\"description\":\"Co-founder & CTO of GoGloby. Leads the Agentic SDLC methodology\"",
+        "\"description\":\"Co-founder of GoGloby. For the past decade, has helped engineering leaders scale teams\""
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 2,
+      "fix": "Update Person descriptions and knowsAbout fields to remove unsupported or disallowed positioning and align founder information with approved sources.",
+      "source_ref": "GoGloby Fact Sheet §Founders; decisions.md §Founders; Glossary §7 Terms and claims we do not use",
+      "items": [
+        {
+          "name": "Sergey Matikaynen",
+          "status": "fail",
+          "evidence": [
+            "\"description\":\"Co-founder & CTO of GoGloby. Leads the Agentic SDLC methodology\"",
+            "\"Applied AI Engineering\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Revise the description and knowsAbout entries to use approved founder facts and avoid disallowed positioning."
+        },
+        {
+          "name": "Vit Koval / Vitaly Koval",
+          "status": "fail",
+          "evidence": [
+            "\"description\":\"Co-founder of GoGloby. For the past decade, has helped engineering leaders scale teams\"",
+            "\"Applied AI Engineering Partnerships\""
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Revise the description and knowsAbout entries to align with approved founder facts and avoid disallowed positioning."
+        }
+      ]
+    },
+    "B4": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "\"slogan\":\"Applied AI Engineering Partner\"",
+        "\"description\":\"We are a US-based talent acquisition agency\""
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 2,
+      "fix": "Replace the unsupported slogan and organization description with the approved company description.",
+      "source_ref": "decisions.md §Company description; GoGloby Fact Sheet §Identity"
+    },
+    "C1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "AI Intelligence Layer: \"Agentic Workflow\",\"AI Intelligence Layer (engineering teleme",
+        "AI-native production: ns engineering into AI-native production. It puts Claude int"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 12,
+      "fix": "Replace \"AI Intelligence Layer\" with AI Development Intelligence Layer. Remove or rephrase \"AI-native production\". Replace \"Applied AI Engineering partner\" with the approved company description.",
+      "source_ref": "audit.json: exact_phrases",
+      "items": [
+        {
+          "name": "AI Intelligence Layer",
+          "status": "fail",
+          "evidence": [
+            "\"Agentic Workflow\",\"AI Intelligence Layer (engineering teleme",
+            "\"Agentic Workflow\",\"AI Intelligence Layer\",\"AI development in"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 3,
+          "fix": "Replace \"AI Intelligence Layer\" with AI Development Intelligence Layer."
+        },
+        {
+          "name": "Performance Dashboard",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Performance Center",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Secure Development Environment",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Engineering Visibility",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Cost Management",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "safe AI adoption",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI-native production",
+          "status": "fail",
+          "evidence": [
+            "ns engineering into AI-native production. It puts Claude int",
+            "ng engineering into AI-native production: every AI dollar vi"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 2,
+          "fix": "Remove or rephrase \"AI-native production\"."
+        },
+        {
+          "name": "Applied AI Engineering partner",
+          "status": "fail",
+          "evidence": [
+            "1-01.png\",\"slogan\":\"Applied AI Engineering Partner\",\"description\":\"We",
+            "en\"],\"knowsAbout\":[\"Applied AI Engineering Partner\",\"Applied AI Engine"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 6,
+          "fix": "Replace \"Applied AI Engineering partner\" with the approved company description."
+        },
+        {
+          "name": "Applied AI Company",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Production Engineering",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Leadership Search",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "every AI dollar visible",
+          "status": "fail",
+          "evidence": [
+            "-native production: every AI dollar visible, every feature ship"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Remove or rephrase \"every AI dollar visible\"."
+        },
+        {
+          "name": "AI talent staffing",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Staffing gives capacity",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "owns outcomes",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "free trial",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "hire in 48 hours",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "mid-level",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "mid level",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        }
+      ]
+    },
+    "C2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "\"h1\":\"Privacy Policy and Candidate Privacy Notice\""
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Glossary §7 Terms and claims we do not use; supplied context_term_occurrences",
+      "items": []
+    },
+    "C3": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Privacy Policy | Globy",
+        "Read Globy's privacy policy to"
+      ],
+      "locations": [
+        "title",
+        "meta",
+        "schema"
+      ],
+      "count": 3,
+      "fix": "Use \"GoGloby\" consistently.",
+      "source_ref": "audit.json: brand_spelling"
+    },
+    "C4": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Phone matches official digits or none listed."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: code_facts.phone_digits"
+    },
+    "C5": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "No em dashes found."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "Glossary §9"
+    },
+    "D1": {
+      "status": "na",
+      "severity": "high",
+      "evidence": [
+        "\"Privacy Policy and Candidate Privacy Notice\""
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": 0,
+      "fix": "No client-claim assessment applies to this legal policy page.",
+      "source_ref": "GoGloby Fact Sheet §Featured clients",
+      "items": []
+    },
+    "D2": {
+      "status": "na",
+      "severity": "high",
+      "evidence": [
+        "\"GoGloby does not sell candidate application information\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "No client-figure assessment applies to this legal policy page.",
+      "source_ref": "GoGloby Fact Sheet §Featured clients; §Key metrics",
+      "items": []
+    },
+    "D3": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "\"alt\":\"Background\""
+      ],
+      "locations": [
+        "image_alt"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet §Featured clients; supplied main_content_images",
+      "items": []
+    },
+    "D4": {
+      "status": "na",
+      "severity": "low",
+      "evidence": [
+        "\"external_links\": []"
+      ],
+      "locations": [
+        "link_text"
+      ],
+      "count": 0,
+      "fix": "No press or partner claim assessment applies to this legal policy page.",
+      "source_ref": "GoGloby Fact Sheet §External recognition",
+      "items": []
+    },
+    "E1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "legal"
+      ],
+      "locations": [],
+      "count": 1,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet §Identity; supplied page_type"
+    },
+    "E2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "\"Privacy Policy and Candidate Privacy Notice explains how we collect, use, disclose, store, and protect personal information\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet §Legal and security"
+    },
+    "E3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "\"GoGloby LLC is generally the controller or business responsible\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet §Identity"
+    },
+    "E4": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "\"GoGloby also operates through teams and business locations in Latin America and Europe.\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Verify the operational-location claim against an approved source before retaining it.",
+      "source_ref": "GoGloby Fact Sheet §Identity"
+    },
+    "F1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "\"This Notice is intended to apply to individuals in the United States, the European Economic Area (“EEA”), and Latin America\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet §Identity; §Services"
+    },
+    "F2": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "\"Effective Date: September 16, 2026\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Confirm the effective and last-updated dates before publication; the Fact Sheet does not establish a policy date.",
+      "source_ref": "GoGloby Fact Sheet §Last updated"
+    },
+    "F3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "\"Questions, concerns, and requests relating to personal information may be submitted to\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet §Identity"
+    },
+    "F4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "\"GoGloby does not make final hiring, engagement, or placement decisions based solely on automated processing\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet §Legal and security"
+    },
+    "F5": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "\"For EEA-related inquiries, you may also contact us through our European business location\""
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Verify the listed European location and contact details against an approved source.",
+      "source_ref": "GoGloby Fact Sheet §Identity"
+    },
+    "F6": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "Candidates and applicants"
+      ],
+      "locations": [
+        "h1",
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet §Identity; supplied page body"
+    },
+    "G1": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "none"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "No target keyword is supplied for this legal page.",
+      "source_ref": "Glossary §6 Terms we use; supplied trap_term_context"
+    },
+    "G2": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No target keyword from G1"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G2"
+    },
+    "G3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "\"Privacy Policy and Candidate Privacy Notice\""
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Glossary §9 How we write"
+    },
+    "G4": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No target keyword"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G4"
+    },
+    "H1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "none"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Glossary §9 How we write"
+    },
+    "H2": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "low"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet §Identity"
+    },
+    "H3": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "The title and meta description use the former name: “Privacy Policy | Globy”.",
+        "Organization schema has a misspelled legal name: “Gogloby LLC”.",
+        "Organization schema includes disallowed or outdated positioning, including “Applied AI Engineering Partner” and “AI-native production”.",
+        "Schema contains unsupported operational and service claims not established by the approved sources."
+      ],
+      "locations": [
+        "title",
+        "meta",
+        "schema"
+      ],
+      "count": 4,
+      "fix": "Prioritize brand consistency and schema accuracy; verify unsupported legal and operational details before publication.",
+      "source_ref": "decisions.md §Spelling; §Company description; GoGloby Fact Sheet §Identity; Glossary §7 Terms and claims we do not use"
+    }
+  },
+  "recommendation": {
+    "action": "needs_decision",
+    "priority": "low",
+    "reasons": [
+      "The title and meta description use the former name: “Privacy Policy | Globy”.",
+      "Organization schema has a misspelled legal name: “Gogloby LLC”.",
+      "Organization schema includes disallowed or outdated positioning, including “Applied AI Engineering Partner” and “AI-native production”.",
+      "Schema contains unsupported operational and service claims not established by the approved sources."
+    ]
+  }
+}

@@ -1,0 +1,563 @@
+{
+  "url": "https://gogloby.com/podcast/karim-fanous/",
+  "page_type": "other",
+  "checked_at": "2026-10-29T10:55:39.165Z",
+  "content_hash": "f19266b6514039dc10578d54d232c1db2c015baaab88363f577604d525da5af9",
+  "sources_hash": "60f07aa71f13cac715dd96e85e0e6e07dc7bf4706289f1cfca2c21f7856a4c72",
+  "checklist_hash": "cfe732f7a9e8cb12a2686d2e5271daf669c1680a53fed24cf0461cde9b07622d",
+  "audit_hash": "8fc5ef296e11d8ce90e35e9eba0835d016dbc23ad25014a79864eb815451fbf0",
+  "first_paragraph": "",
+  "results": {
+    "A1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "HTTP 200"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A1"
+    },
+    "A2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "67 characters: \"Engineering Greatness: Tactics for Effic...\""
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": null,
+      "fix": "Adjust title to 50-60 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "A3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Missing meta description"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "Add meta description (120-158 characters).",
+      "source_ref": "audit.json: seo"
+    },
+    "A4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "1 H1"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A5": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/podcast/karim-fanous/"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A5"
+    },
+    "A6": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Indexable"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A6"
+    },
+    "A7": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "og:title, og:description, og:image present"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A7"
+    },
+    "A8": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A9": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A10": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "All main images have alt"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A10"
+    },
+    "A11": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No broken internal links"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A11"
+    },
+    "A12": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "No link to staffing or recruiting service pages"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "Add links to staffing and/or recruiting service pages in main content.",
+      "source_ref": "checklist: A12"
+    },
+    "B1": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Missing: BreadcrumbList",
+        "Found: Organization, WebSite, Article"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "Add JSON-LD types: BreadcrumbList.",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "B2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "“GoGloby” appears in the page title and organization name."
+      ],
+      "locations": [
+        "title",
+        "schema"
+      ],
+      "count": 2,
+      "fix": "",
+      "source_ref": "decisions.md: Spelling"
+    },
+    "B3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "“Karim Fanous” and “StrongDM” are consistently identified in the page content."
+      ],
+      "locations": [
+        "h1",
+        "h2",
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "B4": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "“AI in the Interview Processes” is relevant to AI, but the page mainly discusses engineering leadership and remote work."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "Clarify the podcast page’s relationship to GoGloby’s hiring services; the supplied page content does not establish that connection.",
+      "source_ref": "Glossary §9"
+    },
+    "C1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No banned phrases found."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: exact_phrases"
+    },
+    "C2": {
+      "status": "warn",
+      "severity": "high",
+      "evidence": [
+        "“AI Era Is Now!Lead or Fall Behind?” appears in the page body."
+      ],
+      "locations": [
+        "h2",
+        "body"
+      ],
+      "count": null,
+      "fix": "Review this adjacent headline for relevance to the podcast page and correct the missing separation between “Now!” and “Lead.”",
+      "source_ref": "Glossary §9"
+    },
+    "C3": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Globy\",\"legalName\":\"Gogloby LLC\",\"url\":\"https:/"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "Use \"GoGloby\" consistently.",
+      "source_ref": "audit.json: brand_spelling"
+    },
+    "C4": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Phone matches official digits or none listed."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: code_facts.phone_digits"
+    },
+    "C5": {
+      "status": "fail",
+      "severity": "low",
+      "evidence": [
+        "2 em dash(es) found."
+      ],
+      "locations": [
+        "h2",
+        "body"
+      ],
+      "count": 2,
+      "fix": "Replace em dashes with commas or periods.",
+      "source_ref": "Glossary §9"
+    },
+    "D1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "“Vit Koval” is listed as the article author."
+      ],
+      "locations": [
+        "body",
+        "schema"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "decisions.md: Founders"
+    },
+    "D2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "“September 27, 2024” appears as the page date."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "D3": {
+      "status": "warn",
+      "severity": "high",
+      "evidence": [
+        "“Presently, as the Senior Vice President of Engineering at StrongDM” identifies the guest and role."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "Check the guest-role and biographical details against an authoritative source; the supplied GoGloby source documents do not verify them.",
+      "source_ref": "Fact Sheet: Identity"
+    },
+    "D4": {
+      "status": "warn",
+      "severity": "low",
+      "evidence": [
+        "“Full Podcast Episode on Spotify” is shown, but no external links are supplied."
+      ],
+      "locations": [
+        "h2"
+      ],
+      "count": null,
+      "fix": "Verify that the podcast destination is linked and accessible; no external link evidence was provided.",
+      "source_ref": "Glossary §9"
+    },
+    "E1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "none"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "This is a podcast episode page, not a recruiting or staffing service page; no service-fit claim is made in the supplied page text.",
+      "source_ref": "Fact Sheet: Services"
+    },
+    "E2": {
+      "status": "warn",
+      "severity": "high",
+      "evidence": [
+        "“global hiring practices” is mentioned in the guest introduction."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "Keep the discussion clearly framed as the guest’s experience rather than a description of GoGloby’s service offering.",
+      "source_ref": "Fact Sheet: Services"
+    },
+    "E3": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "“offshore teams” appears in the episode summary."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "Avoid implying that offshore delivery is GoGloby’s staffing model; clarify the distinction if this passage is meant to describe GoGloby.",
+      "source_ref": "Fact Sheet: Services"
+    },
+    "E4": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "“AI in the Interview Processes” is one of the episode topics."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "Do not present the episode’s discussion as GoGloby’s hiring methodology without supporting company-specific evidence.",
+      "source_ref": "Fact Sheet: How we vet"
+    },
+    "F1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "“meta_description”: “ ”"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "Add a page-specific meta description. The supplied code check also reports “Missing meta description.”",
+      "source_ref": "audit.json: seo"
+    },
+    "F2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "“Engineering Greatness: Tactics for Efficient Team Scaling | GoGloby”"
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": 67,
+      "fix": "Shorten the title to the recommended 50–60 characters; the supplied code check reports 67 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "F3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "“1 H1”"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "F4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "“https://gogloby.com/podcast/karim-fanous/”"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A5"
+    },
+    "F5": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "“No link to staffing or recruiting service pages”"
+      ],
+      "locations": [
+        "link_text"
+      ],
+      "count": 0,
+      "fix": "Add a relevant link to the applicable service page in the main content.",
+      "source_ref": "checklist: A12"
+    },
+    "F6": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "informational"
+      ],
+      "locations": [
+        "h1",
+        "body"
+      ],
+      "count": null,
+      "fix": "This is an informational podcast page, not a buyer-ready service page. Keep its purpose distinct from service pages intended for companies ready to hire.",
+      "source_ref": "Glossary §9"
+    },
+    "G1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "none"
+      ],
+      "locations": [
+        "title",
+        "h1"
+      ],
+      "count": null,
+      "fix": "No target keyword is supplied, and the page is an interview episode rather than a service page. Do not infer a target keyword from the page text.",
+      "source_ref": "Glossary §6"
+    },
+    "G2": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No target keyword from G1"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G2"
+    },
+    "G3": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "“Engineering Greatness: Tactics for Efficient Team Scaling”"
+      ],
+      "locations": [
+        "title",
+        "h1"
+      ],
+      "count": null,
+      "fix": "The supplied evidence does not identify a target keyword or establish that this episode title supports a hiring-focused search intent.",
+      "source_ref": "Glossary §6"
+    },
+    "G4": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "No target keyword"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G4"
+    },
+    "H1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "keep"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "The H1 accurately names the episode: “Engineering Greatness: Tactics for Efficient Team Scaling.” The page is an informational podcast page, so no service-keyword rewrite is indicated.",
+      "source_ref": "Glossary §9"
+    },
+    "H2": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "medium"
+      ],
+      "locations": [
+        "title",
+        "meta",
+        "body"
+      ],
+      "count": null,
+      "fix": "Address the missing meta description and overlong title (F1, F2); also review the lack of a service-page link (F5).",
+      "source_ref": "audit.json: seo; checklist: A12"
+    },
+    "H3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "F1: “meta_description”: “ ” indicates the page lacks a meta description.",
+        "F2: “Engineering Greatness: Tactics for Efficient Team Scaling | GoGloby” is reported as 67 characters.",
+        "F5: “No link to staffing or recruiting service pages” is reported.",
+        "C2: “AI Era Is Now!Lead or Fall Behind?” appears in the supplied headings/body.",
+        "E1: “Full Podcast Episode on Spotify” indicates episode content, not a recruiting or staffing offer."
+      ],
+      "locations": [
+        "title",
+        "meta",
+        "h2",
+        "body",
+        "link_text"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo; checklist: A12; Fact Sheet: Services"
+    }
+  },
+  "recommendation": {
+    "action": "keep",
+    "priority": "medium",
+    "reasons": [
+      "F1: “meta_description”: “ ” indicates the page lacks a meta description.",
+      "F2: “Engineering Greatness: Tactics for Efficient Team Scaling | GoGloby” is reported as 67 characters.",
+      "F5: “No link to staffing or recruiting service pages” is reported.",
+      "C2: “AI Era Is Now!Lead or Fall Behind?” appears in the supplied headings/body.",
+      "E1: “Full Podcast Episode on Spotify” indicates episode content, not a recruiting or staffing offer."
+    ]
+  }
+}
