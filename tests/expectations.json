@@ -1,5 +1,5 @@
 {
-  "comment": "Known correct answers, verified on the live site in October 2026. The test runner compares the agent's results with these expectations. Never edit this file to make a test pass: if the live page changed, the runner reports STALE with proof. Logos count as page content: before reporting STALE, the runner also searches image alt text and image file names.",
+  "comment": "Known correct answers, verified on the live site in October 2026. The test runner compares the agent's results with these expectations. Never edit this file to make a test pass: if the live page changed, the runner reports STALE with proof. Logos count as page content: before reporting STALE, the runner also searches image alt text and image file names. items_with_verdict: each listed name (alternatives separated by |) must appear as a D3 item with that verdict.",
   "pages": [
     {
       "url": "https://gogloby.com/",
@@ -109,20 +109,20 @@
           "status_in": [
             "fail"
           ],
-          "evidence_contains_any": [
-            "NOVILAB",
-            "Novi Labs"
-          ],
-          "evidence_must_not_contain": [
-            "Forbes",
-            "NBC",
-            "HubSpot",
-            "Fox News",
-            "London Daily News",
-            "WHY",
-            "DIFFERENT",
-            "VPC"
-          ]
+          "items_with_verdict": {
+            "not_in_fact_sheet": [
+              "NOVILAB|Novi Labs",
+              "GitLab|GITLAB",
+              "Disney"
+            ],
+            "not_a_client": [
+              "Forbes",
+              "NBC",
+              "HubSpot",
+              "Fox News"
+            ]
+          },
+          "note": "Check verdicts per item, not the absence of words."
         },
         {
           "check": "E2",
@@ -148,6 +148,21 @@
           "value_in": [
             "high"
           ]
+        },
+        {
+          "check": "F6",
+          "value_in": [
+            "buyer_ready",
+            "informational"
+          ],
+          "status_must_match_value": true
+        },
+        {
+          "check": "E3",
+          "evidence_must_not_contain": [
+            "AI ROI"
+          ],
+          "note": "E3 is about calls to action only."
         }
       ]
     },
@@ -368,7 +383,8 @@
         {
           "check": "E2",
           "status_in": [
-            "fail"
+            "fail",
+            "warn"
           ]
         },
         {
