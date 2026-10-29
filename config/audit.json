@@ -1,0 +1,137 @@
+{
+  "version": "1.0",
+
+  "site": {
+    "base_url": "https://gogloby.com",
+    "sitemap": "https://gogloby.com/sitemap_index.xml",
+    "exclude_url_patterns": ["/feed/", "/tag/", "/category/", "/page/", "/wp-json/", "?"],
+    "service_pages": {
+      "staffing": "https://gogloby.com/services/ai-staff-augmentation/",
+      "recruiting": "https://gogloby.com/services/hire-ai-engineers/"
+    }
+  },
+
+  "sources": {
+    "comment": "Read in this order. Earlier files override later ones.",
+    "files": [
+      "sources/decisions.md",
+      "sources/GoGloby Fact Sheet.md",
+      "sources/GoGloby Glossary.md"
+    ]
+  },
+
+  "llm": {
+    "provider": "openai",
+    "model": "gpt-6-luna",
+    "reasoning_effort": "low",
+    "max_output_tokens": 6000
+  },
+
+  "fetch": {
+    "user_agent": "GoGloby-SiteAudit/1.0 (internal audit)",
+    "delay_ms": 1000,
+    "timeout_ms": 20000,
+    "main_content_selectors": ["main", "article", ".entry-content"],
+    "exclude_selectors": ["header", "nav", "footer", ".site-header", ".site-footer"]
+  },
+
+  "page_types": {
+    "comment": "First matching rule wins. Matched against the URL path.",
+    "rules": [
+      { "type": "homepage", "path_equals": "/" },
+      { "type": "service", "path_starts_with": ["/services/", "/solutions/"] },
+      { "type": "post", "path_starts_with": ["/insights/"] },
+      { "type": "case_study", "path_starts_with": ["/case-study/"] },
+      { "type": "legal", "path_starts_with": ["/terms-and-conditions/", "/privacy-policy/"] },
+      { "type": "author", "path_starts_with": ["/author/"] },
+      { "type": "other", "default": true }
+    ]
+  },
+
+  "requirements_by_type": {
+    "homepage":   { "author": false, "dates": false, "schema": ["Organization", "WebSite"] },
+    "service":    { "author": false, "dates": false, "schema": ["Service", "BreadcrumbList"] },
+    "post":       { "author": true,  "dates": true,  "schema": ["Article", "BreadcrumbList"] },
+    "case_study": { "author": false, "dates": true,  "schema": ["Article", "BreadcrumbList"] },
+    "legal":      { "author": false, "dates": false, "schema": [] },
+    "author":     { "author": false, "dates": false, "schema": ["Person"] },
+    "other":      { "author": false, "dates": false, "schema": ["BreadcrumbList"] }
+  },
+
+  "seo": {
+    "title_length": { "min": 50, "max": 60 },
+    "meta_description_length": { "min": 120, "max": 158 },
+    "h1_count": 1,
+    "first_paragraph_max_words": 80
+  },
+
+  "code_facts": {
+    "comment": "Only the facts code needs. Everything else the LLM reads from the source files.",
+    "brand_name": "GoGloby",
+    "phone_digits": "17813431777"
+  },
+
+  "exact_phrases": {
+    "comment": "Literal phrases from Glossary section 7. Case-insensitive unless case_sensitive is true. A match is ignored when it is part of a phrase in not_inside.",
+    "items": [
+      { "phrase": "AI Intelligence Layer", "not_inside": ["AI Development Intelligence Layer"], "replace_with": "AI Development Intelligence Layer" },
+      { "phrase": "Performance Dashboard", "replace_with": "AI Development Intelligence Layer" },
+      { "phrase": "Performance Center", "replace_with": "AI Development Intelligence Layer" },
+      { "phrase": "Secure Development Environment", "case_sensitive": true, "replace_with": "the client's secure development environment (plain description, not a product name)" },
+      { "phrase": "AI Engineering Visibility", "replace_with": "AI Development Intelligence Layer" },
+      { "phrase": "AI Cost Management", "replace_with": "AI Development Intelligence Layer" },
+      { "phrase": "safe AI adoption", "replace_with": null },
+      { "phrase": "AI-native production", "replace_with": null },
+      { "phrase": "Applied AI Engineering partner", "not_inside": ["Clutch Top Applied AI Engineering Partner"], "replace_with": "the approved company description" },
+      { "phrase": "Applied AI Company", "replace_with": "the approved company description" },
+      { "phrase": "AI Production Engineering", "replace_with": null },
+      { "phrase": "AI Leadership Search", "replace_with": null },
+      { "phrase": "every AI dollar visible", "replace_with": null },
+      { "phrase": "AI talent staffing", "replace_with": "Nearshore Data & AI Engineers Staffing" },
+      { "phrase": "Staffing gives capacity", "replace_with": null },
+      { "phrase": "owns outcomes", "replace_with": null },
+      { "phrase": "free trial", "replace_with": null },
+      { "phrase": "hire in 48 hours", "replace_with": null },
+      { "phrase": "mid-level", "replace_with": "senior" },
+      { "phrase": "mid level", "replace_with": "senior" }
+    ]
+  },
+
+  "brand_spelling": {
+    "comment": "Whole-word, case-sensitive. Checked in visible text, title, meta and JSON-LD; never in URLs, emails or file names.",
+    "wrong_spellings": ["Gogloby", "GoGLoby", "Go Globy", "Go-Globy", "Globy"],
+    "allowed_phrases": ["formerly Globy", "former name, Globy", "former name Globy"]
+  },
+
+  "context_terms": {
+    "comment": "Not failures by themselves. Code finds every occurrence and passes them to the LLM, which decides from context whether the use breaks the Glossary.",
+    "items": [
+      "Benchmark",
+      "Claude Certified Architect",
+      "AI Solutions Architect",
+      "Applied AI Engineering",
+      "Forward Deployed Engineering",
+      "Forward-Deployed Engineering",
+      "Forward-Deployed Engineers",
+      "Agentic SDLC",
+      "AI ROI",
+      "AI spend",
+      "AI talent",
+      "AI staffing"
+    ]
+  },
+
+  "style": {
+    "em_dash": true
+  },
+
+  "site_checks": {
+    "ai_bots": ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "PerplexityBot", "Google-Extended", "Bingbot"],
+    "llms_txt_url": "https://gogloby.com/llms.txt"
+  },
+
+  "paths": {
+    "data_dir": "data/pages",
+    "results_dir": "results"
+  }
+}
