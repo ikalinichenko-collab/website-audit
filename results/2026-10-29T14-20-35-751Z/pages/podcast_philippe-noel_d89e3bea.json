@@ -1,0 +1,876 @@
+{
+  "url": "https://gogloby.com/podcast/philippe-noel/",
+  "page_type": "podcast",
+  "checked_at": "2026-10-29T14:27:44.887Z",
+  "content_hash": "41a9e7859c1ad8d11ed465ae5c407ddfae6b38865213b4df844bb7e29d51f7f6",
+  "sources_hash": "60f07aa71f13cac715dd96e85e0e6e07dc7bf4706289f1cfca2c21f7856a4c72",
+  "checklist_hash": "305bd026166f2daaf676c9472ca99954ee96d65128a176442fa0106c7684ac7d",
+  "audit_hash": "953e1db5e52348f8965a8cdd94e3accad5f00495da455d0baa57f0acdfa19fde",
+  "first_paragraph": "Default Global Episode #109 with Philippe Noël, Co-founder & CEO at ParadeDB",
+  "results": {
+    "A1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "HTTP 200"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A1"
+    },
+    "A2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "80 characters: \"How to Join YC, Raise $2M, and Land Fort...\""
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": null,
+      "fix": "Adjust title to 50-60 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "A3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Missing meta description"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "Add meta description (120-158 characters).",
+      "source_ref": "audit.json: seo"
+    },
+    "A4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "1 H1"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A5": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/podcast/philippe-noel/"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A5"
+    },
+    "A6": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Indexable"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A6"
+    },
+    "A7": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "og:title, og:description, og:image present"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A7"
+    },
+    "A8": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "2024-07-01T13:04:05+03:00",
+        "2024-09-27T14:56:49+03:00"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A9": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "A10": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "All main images have alt"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A10"
+    },
+    "A11": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No broken internal links"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A11"
+    },
+    "A12": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "B1": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Missing: PodcastEpisode, BreadcrumbList",
+        "Found: Organization, ImageObject, Brand, PostalAddress, ContactPoint, Person, QuantitativeValue, AggregateRating, OfferCatalog, Offer, Service, BusinessAudience, WebSite, Article"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "Add JSON-LD types: PodcastEpisode, BreadcrumbList.",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "B2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Organization node name: “GoGloby” matches the company name in the source.",
+        "No other Organization node is supplied."
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 2,
+      "fix": "",
+      "source_ref": "decisions.md: Spelling; GoGloby Fact Sheet: Identity",
+      "items": [
+        {
+          "name": "Organization 1 — name",
+          "status": "pass",
+          "evidence": [
+            "Schema: “GoGloby”; approved name: “GoGloby”."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "Organization 1 — legalName",
+          "status": "na",
+          "evidence": [
+            "No legalName is present in the supplied Organization node."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 0,
+          "fix": ""
+        },
+        {
+          "name": "Organization 1 — description",
+          "status": "na",
+          "evidence": [
+            "No description is present in the supplied Organization node."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 0,
+          "fix": ""
+        },
+        {
+          "name": "Organization 1 — slogan",
+          "status": "na",
+          "evidence": [
+            "No slogan is present in the supplied Organization node."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 0,
+          "fix": ""
+        },
+        {
+          "name": "Organization 1 — url",
+          "status": "na",
+          "evidence": [
+            "No url is present in the supplied Organization node."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 0,
+          "fix": ""
+        },
+        {
+          "name": "Organization 1 — logo",
+          "status": "na",
+          "evidence": [
+            "The node provides a logo URL, but no approved logo URL is given in the supplied sources."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "Organization 1 — sameAs",
+          "status": "na",
+          "evidence": [
+            "No sameAs is present in the supplied Organization node."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 0,
+          "fix": ""
+        },
+        {
+          "name": "Organization 1 — address",
+          "status": "na",
+          "evidence": [
+            "No address is present in the supplied Organization node."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 0,
+          "fix": ""
+        },
+        {
+          "name": "Organization 1 — founders and jobTitle",
+          "status": "na",
+          "evidence": [
+            "No founders or jobTitle are present in the supplied Organization node."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 0,
+          "fix": ""
+        },
+        {
+          "name": "Organization 1 — foundingDate",
+          "status": "na",
+          "evidence": [
+            "No foundingDate is present in the supplied Organization node."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 0,
+          "fix": ""
+        },
+        {
+          "name": "Organization 1 — telephone",
+          "status": "na",
+          "evidence": [
+            "No telephone is present in the supplied Organization node."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 0,
+          "fix": ""
+        },
+        {
+          "name": "Organization 1 — knowsAbout",
+          "status": "na",
+          "evidence": [
+            "No knowsAbout is present in the supplied Organization node."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 0,
+          "fix": ""
+        }
+      ]
+    },
+    "B3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "Person node: “Vit Koval”; no jobTitle, description, knowsAbout, or sameAs values are present to conflict with the sources."
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "decisions.md: Founders, Official profiles; GoGloby Fact Sheet: Founders, Official profiles",
+      "items": [
+        {
+          "name": "Vit Koval",
+          "status": "pass",
+          "evidence": [
+            "Person node name: “Vit Koval”; approved founder name: “Vitaly (Vit) Koval”.",
+            "Person fields jobTitle, description, knowsAbout, and sameAs are absent."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": ""
+        }
+      ]
+    },
+    "B4": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "The page text includes “Navigating the Entrepreneurial Journey: Insights from Philippe Noël” and the schema inventory includes an Article, but no FAQ questions or Service schema details are supplied for comparison."
+      ],
+      "locations": [
+        "body",
+        "schema"
+      ],
+      "count": null,
+      "fix": "Verify that any FAQPage questions are visible on the page and that Service schema, if present, accurately describes a visible service; inspect all schema claims against the page.",
+      "source_ref": "Page audit data: body; code_check_results B1 (schema types found)"
+    },
+    "C1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No banned phrases found."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: exact_phrases",
+      "items": [
+        {
+          "name": "AI Intelligence Layer",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Performance Dashboard",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Performance Center",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Secure Development Environment",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Engineering Visibility",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Cost Management",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "safe AI adoption",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI-native production",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Applied AI Engineering partner",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Applied AI Company",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Production Engineering",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Leadership Search",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "every AI dollar visible",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI talent staffing",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Staffing gives capacity",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "owns outcomes",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "free trial",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "hire in 48 hours",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "mid-level",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "mid level",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        }
+      ]
+    },
+    "C2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "“global hiring, remote work” — no Glossary §7 prohibited context-term use identified; code reports no context-term occurrences."
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "GoGloby Glossary §7 — Terms and claims we do not use",
+      "items": []
+    },
+    "C3": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Brand spelling \"GoGloby\" is consistent."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: brand_spelling"
+    },
+    "C4": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Phone matches official digits or none listed."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: code_facts.phone_digits"
+    },
+    "C5": {
+      "status": "fail",
+      "severity": "low",
+      "evidence": [
+        "2 em dash(es) found."
+      ],
+      "locations": [
+        "h2",
+        "body"
+      ],
+      "count": 2,
+      "fix": "Replace em dashes with commas or periods.",
+      "source_ref": "Glossary §9"
+    },
+    "D1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "The body describes Philippe Noël and ParadeDB; no GoGloby company facts or metrics are stated in the supplied page text."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet: Identity, Services, How we vet, Key metrics, Legal and security; page body",
+      "items": []
+    },
+    "D2": {
+      "status": "na",
+      "severity": "high",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "D3": {
+      "status": "na",
+      "severity": "high",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "D4": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "The page mentions “Y Combinator” as ParadeDB's backer; no GoGloby press, partner, or award claims are present in the supplied page text."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet: External recognition; page body",
+      "items": []
+    },
+    "E1": {
+      "status": "na",
+      "severity": "high",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "E2": {
+      "status": "na",
+      "severity": "high",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "E3": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "E4": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "F1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Title: “How to Join YC, Raise $2M, and Land Fortune 500 Clients After Setbacks.”",
+        "Opening: “Default Global Episode #109 with Philippe Noël, Co-founder & CEO at ParadeDB.”"
+      ],
+      "locations": [
+        "title",
+        "first_paragraph"
+      ],
+      "count": 2,
+      "fix": "Revise the opening so its first two sentences directly answer the question posed by the title and can stand alone.",
+      "source_ref": "Glossary §9, Answer first"
+    },
+    "F2": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "F3": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "F4": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "“We just wanted to get the best people, wherever they live.”",
+        "“Today, I had the pleasure of hosting Philippe Noël”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 2,
+      "fix": "Name GoGloby in key claim passages that currently rely on “we” or “I” without identifying the company.",
+      "source_ref": "Checks for LLM call 3, F4"
+    },
+    "F5": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "F6": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "“Advice for YCombinator Aspiring Founders”",
+        "“his insights are invaluable”"
+      ],
+      "locations": [
+        "title",
+        "h2",
+        "body"
+      ],
+      "count": null,
+      "fix": "Reassess the page's audience and framing against the buyer-ready guidance.",
+      "source_ref": "Glossary §§5, 9",
+      "value": "informational"
+    },
+    "G1": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "G2": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "G3": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "G4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "No competing pages for this keyword"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G4"
+    },
+    "H1": {
+      "status": "info",
+      "severity": "medium",
+      "evidence": [
+        "The title promises “How to Join YC,” while the page focuses on an interview with Philippe Noël about his founder journey.",
+        "The content is an episode page: “Full Podcast Episode on Spotify.”"
+      ],
+      "locations": [
+        "title",
+        "h1",
+        "body"
+      ],
+      "count": null,
+      "fix": "Edit the title and opening, add the missing meta description and relevant service-page links, and review the podcast schema.",
+      "source_ref": "Checks for LLM call 3, H1 rules; supplied code results A2, A3, A12, B1",
+      "value": "fix"
+    },
+    "H2": {
+      "status": "info",
+      "severity": "medium",
+      "evidence": [
+        "The title is 80 characters: “How to Join YC, Raise $2M, and Land Fortune 500 Clients After Setbacks.”",
+        "“No link to staffing or recruiting service pages”"
+      ],
+      "locations": [
+        "title",
+        "meta",
+        "body",
+        "schema"
+      ],
+      "count": null,
+      "fix": "Prioritize edits to the title, meta description, service links and podcast schema; the page is a podcast episode rather than a service page.",
+      "source_ref": "Supplied code results A2, A3, A12, B1; Checks for LLM call 3, H2",
+      "value": "medium"
+    },
+    "H3": {
+      "status": "info",
+      "severity": "medium",
+      "evidence": [
+        "Opening: “Default Global Episode #109 with Philippe Noël, Co-founder & CEO at ParadeDB.”",
+        "“We just wanted to get the best people, wherever they live.”",
+        "“No link to staffing or recruiting service pages”; “Missing: PodcastEpisode, BreadcrumbList”"
+      ],
+      "locations": [
+        "title",
+        "meta",
+        "first_paragraph",
+        "body",
+        "schema"
+      ],
+      "count": null,
+      "fix": "Address the listed opening, attribution, metadata, service-link and schema issues.",
+      "source_ref": "Checks for LLM call 3, F1/F4/F6; supplied code results A2, A3, A12, B1",
+      "value": "F1: opening does not answer the title's question; F4: key passages use first-person language without naming GoGloby; F6: content is informational rather than buyer-ready; A2/A3/A12/B1: title length, missing meta description and service links, and missing podcast schema types need review."
+    }
+  },
+  "recommendation": {
+    "action": "fix",
+    "priority": "medium",
+    "reasons": [
+      "F1: opening does not answer the title's question",
+      "F4: key passages use first-person language without naming GoGloby",
+      "F6: content is informational rather than buyer-ready",
+      "A2/A3/A12/B1: title length, missing meta description and service links, and missing podcast schema types need review."
+    ]
+  }
+}

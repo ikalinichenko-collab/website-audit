@@ -91,7 +91,7 @@ function walkJsonLdTypedNodes(value: unknown, out: Record<string, unknown>[]): v
   }
 }
 
-function flattenJsonLd(nodes: unknown[]): Record<string, unknown>[] {
+export function flattenJsonLd(nodes: unknown[]): Record<string, unknown>[] {
   const out: Record<string, unknown>[] = [];
   for (const n of nodes) walkJsonLdTypedNodes(n, out);
   return out;

@@ -7,7 +7,8 @@
     "scan": "tsx src/cli.ts",
     "scan:test": "tsx src/test-runner.ts",
     "scan:clean": "tsx src/clean-cli.ts",
-    "report": "tsx src/report-cli.ts"
+    "report": "tsx src/report-cli.ts",
+    "scan:site": "tsx src/site-scan-cli.ts"
   },
   "engines": {
     "node": ">=20"

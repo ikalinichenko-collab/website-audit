@@ -1,9 +1,21 @@
 import * as fs from "node:fs";
 import path from "node:path";
-import { CHECK_NAMES, REPORT_SECTIONS } from "../checklist-meta.js";
+import { CHECK_NAMES, REPORT_SECTIONS, SITE_CHECK_IDS } from "../checklist-meta.js";
 import { projectRoot } from "../config.js";
-import type { CheckResult, PageResult } from "../types.js";
-import { ensureDirSync } from "../utils.js";
+import type { CheckItem, CheckResult, PageResult, SiteResult } from "../types.js";
+import { ensureDirSync, urlToSlug } from "../utils.js";
+import {
+  detectSiteWideIssues,
+  isSiteWideFinding,
+  siteWideKeySet,
+  type SiteWideIssue,
+} from "./site-wide.js";
+import {
+  compareChecksBySeverity,
+  countFailsWarnsPageLevel,
+  pageLevelFailingCheckIds,
+  topFailingChecks,
+} from "./severity-order.js";
 
 function statusIcon(status: string): string {
   switch (status) {
@@ -24,20 +36,52 @@ function statusIcon(status: string): string {
   }
 }
 
-function formatCheckLine(id: string, r: CheckResult): string[] {
-  const lines = [
-    [
-      `${statusIcon(r.status)} **${id}** ${CHECK_NAMES[id] ?? id}`,
-      r.value ? ` — value: ${r.value}` : "",
-      r.evidence.length ? ` — evidence: ${r.evidence.join(" | ")}` : "",
-      r.locations.length ? ` — locations: ${r.locations.join(", ")}` : "",
-      r.count != null ? ` — count: ${r.count}` : "",
-      r.fix ? ` — fix: ${r.fix}` : "",
-      r.source_ref ? ` — source: ${r.source_ref}` : "",
-    ].join(""),
-  ];
+function siteWideLine(checkId: string): string {
+  return `Site-wide issue, see site.md (${checkId})`;
+}
+
+function formatCheckLine(
+  id: string,
+  r: CheckResult,
+  siteWideKeys: Set<string>,
+): string[] {
+  const lines: string[] = [];
+
   if (r.items?.length) {
+    const visibleItems: CheckItem[] = [];
     for (const item of r.items) {
+      if (isSiteWideFinding(id, r, item, siteWideKeys)) {
+        visibleItems.push({
+          ...item,
+          name: siteWideLine(id),
+          evidence: [],
+          fix: "",
+          locations: [],
+          count: null,
+        });
+      } else {
+        visibleItems.push(item);
+      }
+    }
+    const worst = visibleItems.reduce(
+      (acc, i) => {
+        const rank = { fail: 4, warn: 3, skip: 2, pass: 1, na: 0, info: 0 } as const;
+        return rank[i.status] >= rank[acc] ? i.status : acc;
+      },
+      "pass" as CheckResult["status"],
+    );
+    lines.push(
+      [
+        `${statusIcon(worst)} **${id}** ${CHECK_NAMES[id] ?? id}`,
+        r.value ? ` — value: ${r.value}` : "",
+        r.evidence.length ? ` — evidence: ${r.evidence.join(" | ")}` : "",
+        r.locations.length ? ` — locations: ${r.locations.join(", ")}` : "",
+        r.count != null ? ` — count: ${r.count}` : "",
+        r.fix ? ` — fix: ${r.fix}` : "",
+        r.source_ref ? ` — source: ${r.source_ref}` : "",
+      ].join(""),
+    );
+    for (const item of visibleItems) {
       lines.push(
         [
           `  ${statusIcon(item.status)} _${item.name}_`,
@@ -48,11 +92,35 @@ function formatCheckLine(id: string, r: CheckResult): string[] {
         ].join(""),
       );
     }
+    return lines;
   }
+
+  if (isSiteWideFinding(id, r, undefined, siteWideKeys)) {
+    lines.push(
+      `${statusIcon(r.status)} **${id}** ${CHECK_NAMES[id] ?? id} — ${siteWideLine(id)}`,
+    );
+    return lines;
+  }
+
+  lines.push(
+    [
+      `${statusIcon(r.status)} **${id}** ${CHECK_NAMES[id] ?? id}`,
+      r.value ? ` — value: ${r.value}` : "",
+      r.evidence.length ? ` — evidence: ${r.evidence.join(" | ")}` : "",
+      r.locations.length ? ` — locations: ${r.locations.join(", ")}` : "",
+      r.count != null ? ` — count: ${r.count}` : "",
+      r.fix ? ` — fix: ${r.fix}` : "",
+      r.source_ref ? ` — source: ${r.source_ref}` : "",
+    ].join(""),
+  );
   return lines;
 }
 
-export function writePageReport(result: PageResult, outPath: string): void {
+export function writePageReport(
+  result: PageResult,
+  outPath: string,
+  siteWideKeys: Set<string> = new Set(),
+): void {
   ensureDirSync(fs, path.dirname(outPath));
   const lines: string[] = [
     `# Page report`,
@@ -72,7 +140,7 @@ export function writePageReport(result: PageResult, outPath: string): void {
     lines.push(`## ${sec.letter}. ${sectionTitle(sec.letter)}`, "");
     for (const id of sec.ids) {
       const r = result.results[id as keyof typeof result.results];
-      if (r) lines.push(...formatCheckLine(id, r));
+      if (r) lines.push(...formatCheckLine(id, r, siteWideKeys));
     }
     lines.push("");
   }
@@ -94,28 +162,105 @@ function sectionTitle(letter: string): string {
   return titles[letter] ?? letter;
 }
 
-function countFailsWarns(result: PageResult): Record<string, { fail: number; warn: number }> {
-  const out: Record<string, { fail: number; warn: number }> = {};
-  for (const sec of REPORT_SECTIONS) {
-    out[sec.letter] = { fail: 0, warn: 0 };
-    for (const id of sec.ids) {
-      const r = result.results[id as keyof typeof result.results];
-      if (r?.status === "fail") out[sec.letter]!.fail++;
-      if (r?.status === "warn") out[sec.letter]!.warn++;
+function writeSiteMd(
+  runDir: string,
+  siteWide: SiteWideIssue[],
+  site: SiteResult | null,
+): void {
+  const lines: string[] = ["# Site report", ""];
+
+  const schemaManifestPath = path.join(runDir, "site-wide-schema.json");
+  if (fs.existsSync(schemaManifestPath)) {
+    const manifest = JSON.parse(fs.readFileSync(schemaManifestPath, "utf8")) as {
+      nodes: Array<{ type: string; name: string; page_count: number; pages: string[] }>;
+    };
+    lines.push("## Site-wide JSON-LD nodes", "");
+    if (!manifest.nodes?.length) {
+      lines.push("_(none in this run)_", "");
+    } else {
+      for (const n of manifest.nodes) {
+        lines.push(
+          `- **${n.type}** — ${n.name} — ${n.page_count} page(s)`,
+          `  - Example: ${n.pages[0] ?? ""}`,
+          "",
+        );
+      }
     }
   }
-  return out;
+
+  lines.push("## Site-wide issues", "");
+  if (!siteWide.length) {
+    lines.push("_(none)_", "");
+  } else {
+    for (const issue of siteWide) {
+      const label =
+        issue.kind === "item" && issue.itemName
+          ? `${issue.checkId} — ${issue.itemName}`
+          : `${issue.checkId} — ${CHECK_NAMES[issue.checkId] ?? issue.checkId}`;
+      lines.push(
+        `- **${label}** — ${issue.pageCount}/${issue.totalPages} pages`,
+        `  - Example: ${issue.exampleUrl}`,
+        `  - Evidence: ${issue.evidence}`,
+        "",
+      );
+    }
+  }
+
+  if (site?.results) {
+    lines.push("## Site-level checks", "");
+    for (const id of SITE_CHECK_IDS) {
+      if (id === "S6") continue;
+      const r = site.results[id];
+      if (!r) continue;
+      lines.push(
+        [
+          `${statusIcon(r.status)} **${id}** ${CHECK_NAMES[id] ?? id}`,
+          r.evidence.length ? ` — ${r.evidence.join(" | ")}` : "",
+          r.fix ? ` — fix: ${r.fix}` : "",
+        ].join(""),
+      );
+    }
+    lines.push("");
+  }
+
+  const s6 = site?.results?.S6;
+  if (s6) {
+    lines.push("## S6 — Site-wide schema", "");
+    lines.push(
+      [
+        `${statusIcon(s6.status)} **S6** ${CHECK_NAMES.S6 ?? "Site-wide schema"}`,
+        s6.evidence.length ? ` — ${s6.evidence.join(" | ")}` : "",
+        s6.fix ? ` — fix: ${s6.fix}` : "",
+      ].join(""),
+      "",
+    );
+    if (s6.items?.length) {
+      lines.push("### Problems", "");
+      for (const item of s6.items) {
+        lines.push(
+          [
+            `- ${statusIcon(item.status)} **${item.name}**`,
+            item.evidence.length ? `\n  - ${item.evidence.join("\n  - ")}` : "",
+            item.fix ? `\n  - fix: ${item.fix}` : "",
+          ].join(""),
+          "",
+        );
+      }
+    } else {
+      lines.push("_(no problems)_", "");
+    }
+  }
+
+  fs.writeFileSync(path.join(runDir, "site.md"), lines.join("\n"));
 }
 
-function topFailingChecks(result: PageResult, n: number): string[] {
-  const fails: string[] = [];
-  for (const sec of REPORT_SECTIONS) {
-    for (const id of sec.ids) {
-      const r = result.results[id as keyof typeof result.results];
-      if (r?.status === "fail") fails.push(id);
-    }
-  }
-  return fails.slice(0, n);
+export function rebuildSiteMd(
+  runDir: string,
+  pageResults: PageResult[],
+  site: SiteResult | null,
+): void {
+  const siteWide = detectSiteWideIssues(pageResults);
+  writeSiteMd(runDir, siteWide, site);
 }
 
 export function writeRunReports(
@@ -123,19 +268,44 @@ export function writeRunReports(
   pageResults: PageResult[],
   hasSite: boolean,
 ): void {
+  generateRunReports(runId, pageResults, hasSite);
+}
+
+export function generateRunReports(
+  runId: string,
+  pageResults: PageResult[],
+  hasSiteJson: boolean,
+): void {
   const root = projectRoot();
   const runDir = path.join(root, "results", runId);
+  const reportDir = path.join(runDir, "report");
   ensureDirSync(fs, runDir);
+  ensureDirSync(fs, reportDir);
 
-  // summary.csv
+  const siteWide = detectSiteWideIssues(pageResults);
+  const siteWideKeys = siteWideKeySet(siteWide);
+
+  let site: SiteResult | null = null;
+  const sitePath = path.join(runDir, "site.json");
+  if (hasSiteJson && fs.existsSync(sitePath)) {
+    site = JSON.parse(fs.readFileSync(sitePath, "utf8")) as SiteResult;
+  }
+
+  writeSiteMd(runDir, siteWide, site);
+
+  for (const pr of pageResults) {
+    const slug = urlToSlug(pr.url);
+    writePageReport(pr, path.join(reportDir, `${slug}.md`), siteWideKeys);
+  }
+
   const csvLines = [
     "url,page_type,action,priority," +
       REPORT_SECTIONS.map((s) => `${s.letter}_fail,${s.letter}_warn`).join(",") +
       ",top_failing_checks",
   ];
   for (const pr of pageResults) {
-    const counts = countFailsWarns(pr);
-    const top = topFailingChecks(pr, 3).join(";");
+    const counts = countFailsWarnsPageLevel(pr, siteWideKeys);
+    const top = topFailingChecks(pr, siteWideKeys, 3).join(";");
     csvLines.push(
       [
         pr.url,
@@ -152,7 +322,7 @@ export function writeRunReports(
   }
   fs.writeFileSync(path.join(runDir, "summary.csv"), csvLines.join("\n"));
 
-  writeReadme(runId, pageResults, hasSite);
+  writeReadme(runId, pageResults, siteWideKeys);
 }
 
 function previousRunPages(): Map<string, PageResult> | null {
@@ -175,7 +345,11 @@ function previousRunPages(): Map<string, PageResult> | null {
   return map;
 }
 
-function writeReadme(runId: string, pageResults: PageResult[], _hasSite: boolean): void {
+function writeReadme(
+  runId: string,
+  pageResults: PageResult[],
+  siteWideKeys: Set<string>,
+): void {
   const runDir = path.join(projectRoot(), "results", runId);
   const byAction = new Map<string, number>();
   const byPriority = new Map<string, number>();
@@ -184,12 +358,14 @@ function writeReadme(runId: string, pageResults: PageResult[], _hasSite: boolean
   for (const pr of pageResults) {
     byAction.set(pr.recommendation.action, (byAction.get(pr.recommendation.action) ?? 0) + 1);
     byPriority.set(pr.recommendation.priority, (byPriority.get(pr.recommendation.priority) ?? 0) + 1);
-    for (const [id, r] of Object.entries(pr.results)) {
-      if (r.status === "fail") failCounts.set(id, (failCounts.get(id) ?? 0) + 1);
+    for (const id of pageLevelFailingCheckIds(pr, siteWideKeys)) {
+      failCounts.set(id, (failCounts.get(id) ?? 0) + 1);
     }
   }
 
-  const topFails = [...failCounts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 20);
+  const topFails = [...failCounts.entries()]
+    .sort((a, b) => b[1] - a[1] || compareChecksBySeverity(a[0], b[0]))
+    .slice(0, 20);
   const needsDecision = pageResults.filter((p) =>
     p.recommendation.action.includes("needs_decision"),
   );
@@ -221,7 +397,7 @@ function writeReadme(runId: string, pageResults: PageResult[], _hasSite: boolean
     "",
     ...[...byPriority.entries()].map(([k, v]) => `- ${k}: ${v}`),
     "",
-    "## 20 most frequent failing checks",
+    "## 20 most frequent failing checks (page-level)",
     "",
     ...topFails.map(([id, n]) => `- ${id} (${CHECK_NAMES[id]}): ${n}`),
     "",

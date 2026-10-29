@@ -11,7 +11,7 @@ export const PAGE_CHECK_IDS = [
   "H1", "H2", "H3",
 ] as const;
 
-export const SITE_CHECK_IDS = ["S1", "S2", "S3", "S4", "S5"] as const;
+export const SITE_CHECK_IDS = ["S1", "S2", "S3", "S4", "S5", "S6"] as const;
 
 export type PageCheckId = (typeof PAGE_CHECK_IDS)[number];
 export type SiteCheckId = (typeof SITE_CHECK_IDS)[number];
@@ -64,6 +64,7 @@ export const CHECK_NAMES: Record<string, string> = {
   S3: "Sitemaps",
   S4: "Content in raw HTML",
   S5: "Competing pages summary",
+  S6: "Site-wide schema",
 };
 
 export const SEVERITIES: Record<string, "high" | "medium" | "low"> = {
@@ -75,7 +76,7 @@ export const SEVERITIES: Record<string, "high" | "medium" | "low"> = {
   E1: "high", E2: "high", E3: "medium", E4: "medium",
   F1: "high", F2: "medium", F3: "medium", F4: "medium", F5: "medium", F6: "medium",
   G1: "medium", G2: "medium", G3: "medium", G4: "medium",
-  S1: "high", S2: "low", S3: "high", S4: "high", S5: "medium",
+  S1: "high", S2: "low", S3: "high", S4: "high", S5: "medium", S6: "high",
 };
 
 export const LLM_CHECK_IDS = [

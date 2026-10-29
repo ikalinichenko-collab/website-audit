@@ -1,0 +1,820 @@
+{
+  "url": "https://gogloby.com/author/vit_koval/",
+  "page_type": "author",
+  "checked_at": "2026-10-29T14:27:20.315Z",
+  "content_hash": "ed4d10821a368b68423d2df02c4fb018a043bd59ce476776f4088985da7bc8a7",
+  "sources_hash": "60f07aa71f13cac715dd96e85e0e6e07dc7bf4706289f1cfca2c21f7856a4c72",
+  "checklist_hash": "305bd026166f2daaf676c9472ca99954ee96d65128a176442fa0106c7684ac7d",
+  "audit_hash": "953e1db5e52348f8965a8cdd94e3accad5f00495da455d0baa57f0acdfa19fde",
+  "first_paragraph": "Vit Koval is Co-Founder of GoGloby. He works with US and European tech companies on AI adoption and global team-building — the operating side of GoGloby's 4x Applied AI Engineering model. His focus is getting Applied AI Engineering into production, with measurable adoption rather than stalled pilots. He is a LinkedIn Top Voice.",
+  "results": {
+    "A1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "HTTP 200"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A1"
+    },
+    "A2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "9 characters: \"Vit Koval...\""
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": null,
+      "fix": "Adjust title to 50-60 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "A3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "329 characters"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "Adjust meta description to 120-158 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "A4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "1 H1"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A5": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/author/vit_koval/"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A5"
+    },
+    "A6": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Indexable"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A6"
+    },
+    "A7": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "og:title, og:description, og:image present"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A7"
+    },
+    "A8": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "A9": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A10": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "All main images have alt"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A10"
+    },
+    "A11": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No broken internal links"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A11"
+    },
+    "A12": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "B1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "Required types present: Person"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "B2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Organization name: “GoGloby”"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet §Identity; decisions.md §Spelling",
+      "items": [
+        {
+          "name": "Organization 1 — name",
+          "status": "pass",
+          "evidence": [
+            "Schema: “GoGloby”"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": ""
+        }
+      ]
+    },
+    "B3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "Person name and job title: “Vit Koval”, “Co-Founder”"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "decisions.md §Founders; GoGloby Fact Sheet §Founders",
+      "items": [
+        {
+          "name": "Vit Koval",
+          "status": "pass",
+          "evidence": [
+            "Schema: “Vit Koval”; “Co-Founder”"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": ""
+        }
+      ]
+    },
+    "B4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "Page heading: “Vit Koval”; Person schema identifies “Vit Koval” as “Co-Founder”."
+      ],
+      "locations": [
+        "h1",
+        "schema"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Page content; GoGloby Fact Sheet §Founders"
+    },
+    "C1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No banned phrases found."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: exact_phrases",
+      "items": [
+        {
+          "name": "AI Intelligence Layer",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Performance Dashboard",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Performance Center",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Secure Development Environment",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Engineering Visibility",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Cost Management",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "safe AI adoption",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI-native production",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Applied AI Engineering partner",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Applied AI Company",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Production Engineering",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Leadership Search",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "every AI dollar visible",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI talent staffing",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Staffing gives capacity",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "owns outcomes",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "free trial",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "hire in 48 hours",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "mid-level",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "mid level",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        }
+      ]
+    },
+    "C2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "“GoGloby's 4x Applied AI Engineering model”",
+        "“getting Applied AI Engineering into production”"
+      ],
+      "locations": [
+        "meta",
+        "first_paragraph"
+      ],
+      "count": 4,
+      "fix": "Remove the prohibited “4x” model reference and the positioning of Applied AI Engineering as a GoGloby offer.",
+      "source_ref": "Glossary §7",
+      "items": [
+        {
+          "name": "c2:Applied AI Engineering:meta:0",
+          "status": "fail",
+          "evidence": [
+            "“GoGloby's 4x Applied AI Engineering model”"
+          ],
+          "locations": [
+            "meta"
+          ],
+          "count": 1,
+          "fix": "Remove the prohibited “4x” model reference."
+        },
+        {
+          "name": "c2:Applied AI Engineering:meta:1",
+          "status": "fail",
+          "evidence": [
+            "“getting Applied AI Engineering into production”"
+          ],
+          "locations": [
+            "meta"
+          ],
+          "count": 1,
+          "fix": "Remove the positioning of Applied AI Engineering as a GoGloby offer."
+        },
+        {
+          "name": "c2:Applied AI Engineering:first_paragraph:2",
+          "status": "fail",
+          "evidence": [
+            "“GoGloby's 4x Applied AI Engineering model”"
+          ],
+          "locations": [
+            "first_paragraph"
+          ],
+          "count": 1,
+          "fix": "Remove the prohibited “4x” model reference."
+        },
+        {
+          "name": "c2:Applied AI Engineering:first_paragraph:3",
+          "status": "fail",
+          "evidence": [
+            "“getting Applied AI Engineering into production”"
+          ],
+          "locations": [
+            "first_paragraph"
+          ],
+          "count": 1,
+          "fix": "Remove the positioning of Applied AI Engineering as a GoGloby offer."
+        }
+      ]
+    },
+    "C3": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Brand spelling \"GoGloby\" is consistent."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: brand_spelling"
+    },
+    "C4": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Phone matches official digits or none listed."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: code_facts.phone_digits"
+    },
+    "C5": {
+      "status": "fail",
+      "severity": "low",
+      "evidence": [
+        "2 em dash(es) found."
+      ],
+      "locations": [
+        "meta",
+        "first_paragraph"
+      ],
+      "count": 2,
+      "fix": "Replace em dashes with commas or periods.",
+      "source_ref": "Glossary §9"
+    },
+    "D1": {
+      "status": "warn",
+      "severity": "high",
+      "evidence": [
+        "Meta: “US and European tech companies on AI adoption”",
+        "Meta: “GoGloby's 4x Applied AI Engineering model”"
+      ],
+      "locations": [
+        "meta",
+        "first_paragraph"
+      ],
+      "count": 2,
+      "fix": "Verify or remove the unsupported company claims and clarify the meaning of “4x” against the approved assessment facts.",
+      "source_ref": "GoGloby Fact Sheet §Identity; §How we vet: GoGloby Talent Assessment Model; Glossary §7",
+      "items": [
+        {
+          "name": "Company work with US and European tech companies on AI adoption",
+          "status": "warn",
+          "evidence": [
+            "Page: “works with US and European tech companies on AI adoption”"
+          ],
+          "locations": [
+            "meta",
+            "first_paragraph"
+          ],
+          "count": 1,
+          "fix": "Verify this company claim against an approved source or remove it."
+        },
+        {
+          "name": "“4x Applied AI Engineering model”",
+          "status": "warn",
+          "evidence": [
+            "Page: “GoGloby's 4x Applied AI Engineering model”",
+            "Fact Sheet: “4-stage technical assessment”"
+          ],
+          "locations": [
+            "meta",
+            "first_paragraph"
+          ],
+          "count": 1,
+          "fix": "Clarify the “4x” claim against the approved assessment facts or remove it."
+        }
+      ]
+    },
+    "D2": {
+      "status": "na",
+      "severity": "high",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "D3": {
+      "status": "na",
+      "severity": "high",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "D4": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "Page: “He is a LinkedIn Top Voice.”"
+      ],
+      "locations": [
+        "meta",
+        "first_paragraph"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet §Founders; §External recognition",
+      "items": []
+    },
+    "E1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "The page identifies Vit Koval as a “Co-Founder of GoGloby” and describes his focus as “AI adoption and global team-building”; it does not describe or support either service."
+      ],
+      "locations": [
+        "meta",
+        "first_paragraph"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet — Services",
+      "value": "none"
+    },
+    "E2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "“the operating side of GoGloby's 4x Applied AI Engineering model”",
+        "“His focus is getting Applied AI Engineering into production”"
+      ],
+      "locations": [
+        "meta",
+        "first_paragraph"
+      ],
+      "count": 2,
+      "fix": "Revise the description so it does not position GoGloby as an Applied AI Engineering model or production engineering provider; align it with the approved staffing and recruiting description.",
+      "source_ref": "decisions.md — Company description; Glossary §1; GoGloby Fact Sheet — Identity / What GoGloby is not"
+    },
+    "E3": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "E4": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "F1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "“Vit Koval is Co-Founder of GoGloby.”",
+        "“He works with US and European tech companies on AI adoption and global team-building — the operating side of GoGloby's 4x Applied AI Engineering model.”"
+      ],
+      "locations": [
+        "first_paragraph"
+      ],
+      "count": 2,
+      "fix": "Revise the opening so its first two sentences directly answer the page title, using approved facts about Vit Koval.",
+      "source_ref": "Glossary §9; Fact Sheet: Founders"
+    },
+    "F2": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "F3": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "F4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "“the operating side of GoGloby's 4x Applied AI Engineering model”"
+      ],
+      "locations": [
+        "meta",
+        "first_paragraph"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "Check F4: GoGloby named near claims"
+    },
+    "F5": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "F6": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "“Articles by Vit Koval”",
+        "“From $1Billion to $100 Billion: Secrets to Scaling Globally”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 9,
+      "fix": "Keep the author page focused on author identification and article listings rather than treating it as a buyer-facing service page.",
+      "source_ref": "Glossary §9",
+      "value": "informational"
+    },
+    "G1": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "G2": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "G3": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "Not applicable to this page type."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: not_applicable_by_type"
+    },
+    "G4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "No competing pages for this keyword"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G4"
+    },
+    "H1": {
+      "status": "info",
+      "severity": "medium",
+      "evidence": [
+        "“Vit Koval is Co-Founder of GoGloby.”",
+        "“getting Applied AI Engineering into production”"
+      ],
+      "locations": [
+        "first_paragraph",
+        "meta"
+      ],
+      "count": 2,
+      "fix": "Correct the page copy and meta description, including unsupported or disallowed positioning; update the author bio with approved founder information.",
+      "source_ref": "decisions.md: Founders; Glossary §7; Fact Sheet: Founders",
+      "value": "fix"
+    },
+    "H2": {
+      "status": "info",
+      "severity": "medium",
+      "evidence": [
+        "“9 Best Virtual Assistant Companies for Hiring Internationally in 2026”",
+        "“How GoGloby Turned Idle AI Tools Into Board-Visible Engineering Performance”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 9,
+      "fix": "Prioritize correcting the author bio, metadata, and link to a relevant service page; the page has an existing author profile and article archive.",
+      "source_ref": "Glossary §9",
+      "value": "medium"
+    },
+    "H3": {
+      "status": "info",
+      "severity": "medium",
+      "evidence": [
+        "“Vit Koval is Co-Founder of GoGloby.”",
+        "“GoGloby's 4x Applied AI Engineering model”",
+        "“No link to staffing or recruiting service pages”"
+      ],
+      "locations": [
+        "first_paragraph",
+        "meta",
+        "body"
+      ],
+      "count": 3,
+      "fix": "Revise the author bio and metadata using approved founder facts, and add an appropriate link to a relevant service page.",
+      "source_ref": "decisions.md: Founders; Glossary §§7, 9; code_check_results A12",
+      "value": "F1: opening does not directly answer the page title with approved founder information; F4: GoGloby is named beside a claim; F6: article archive is informational rather than buyer-ready; H1: author bio and metadata need correction, including Glossary §7 disallowed positioning; A12: no service-page links detected"
+    }
+  },
+  "recommendation": {
+    "action": "fix",
+    "priority": "medium",
+    "reasons": [
+      "F1: opening does not directly answer the page title with approved founder information",
+      "F4: GoGloby is named beside a claim",
+      "F6: article archive is informational rather than buyer-ready",
+      "H1: author bio and metadata need correction, including Glossary §7 disallowed positioning",
+      "A12: no service-page links detected"
+    ]
+  }
+}

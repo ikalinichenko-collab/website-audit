@@ -1,0 +1,1154 @@
+{
+  "url": "https://gogloby.com/insights/talent-acquisition-companies/",
+  "page_type": "post",
+  "checked_at": "2026-10-29T14:23:12.247Z",
+  "content_hash": "8087c7b6866e3714ec1c3fc1dd9a555f253d06e1f688cc387421baea2a13f0df",
+  "sources_hash": "60f07aa71f13cac715dd96e85e0e6e07dc7bf4706289f1cfca2c21f7856a4c72",
+  "checklist_hash": "305bd026166f2daaf676c9472ca99954ee96d65128a176442fa0106c7684ac7d",
+  "audit_hash": "953e1db5e52348f8965a8cdd94e3accad5f00495da455d0baa57f0acdfa19fde",
+  "first_paragraph": "Table of Contents What is Talent Acquisition? What is the difference between talent acquisition and recruitment? What Are the Benefits of Partnering with Talent Acquisition Companies? Top 12 Talent Acquisition Companies Struggling to Find Top Talent? Best International Talent Acquisition Companies Best Talent Acquisition Companies in the USA Best Talent Acquisition Companies for Startups How to Choose the Right Talent Acquisition Partner 4 Future Trends in Talent Acquisition Conclusion Ready to Build a High-Performing Team? FAQs Filling key roles fast",
+  "results": {
+    "A1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "HTTP 200"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A1"
+    },
+    "A2": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "52 characters"
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "125 characters"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "1 H1"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A5": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/insights/talent-acquisition-companies/"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A5"
+    },
+    "A6": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Indexable"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A6"
+    },
+    "A7": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "og:title, og:description, og:image present"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A7"
+    },
+    "A8": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "2026-03-17T19:23:54+03:00",
+        "2026-06-15T17:23:29+03:00"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A9": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Sergey"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "Show author full name (first and last).",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A10": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "All main images have alt"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A10"
+    },
+    "A11": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No broken internal links"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A11"
+    },
+    "A12": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "No link to staffing or recruiting service pages"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "Add links to staffing and/or recruiting service pages in main content.",
+      "source_ref": "checklist: A12"
+    },
+    "B1": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Missing: BreadcrumbList",
+        "Found: Organization, ImageObject, Brand, PostalAddress, ContactPoint, Person, QuantitativeValue, AggregateRating, OfferCatalog, Offer, Service, BusinessAudience, WebSite, Article, FAQPage, Question, Answer"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "Add JSON-LD types: BreadcrumbList.",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "B2": {
+      "status": "warn",
+      "severity": "high",
+      "evidence": [
+        "Organization node: “name”: “GoGloby”",
+        "The node includes a logo URL ending “globy-logo-square-1-01.png”."
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 12,
+      "fix": "Review the Organization node for missing source-backed fields and verify the logo URL and asset reflect the approved company identity.",
+      "source_ref": "decisions.md: Company description, Spelling; GoGloby Fact Sheet: Identity, Official profiles, Founders",
+      "items": [
+        {
+          "name": "Organization 1 — name",
+          "status": "pass",
+          "evidence": [
+            "Schema says “GoGloby”; decisions.md specifies the company name is always “GoGloby”."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "Organization 1 — legalName",
+          "status": "warn",
+          "evidence": [
+            "The Organization node has no “legalName” field; the Fact Sheet gives “GoGloby LLC”."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Add or verify the legalName field against the Fact Sheet."
+        },
+        {
+          "name": "Organization 1 — description",
+          "status": "warn",
+          "evidence": [
+            "The Organization node has no “description” field; the approved description begins “GoGloby is a staffing and recruiting agency”."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Add or verify the Organization description against the approved sentence."
+        },
+        {
+          "name": "Organization 1 — slogan",
+          "status": "warn",
+          "evidence": [
+            "The Organization node has no “slogan” field; no approved slogan is provided in the sources."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Confirm whether a source-backed slogan should be present."
+        },
+        {
+          "name": "Organization 1 — url",
+          "status": "warn",
+          "evidence": [
+            "The Organization node has no “url” field; the Fact Sheet lists “https://gogloby.com/”."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Add or verify the organization URL."
+        },
+        {
+          "name": "Organization 1 — logo",
+          "status": "warn",
+          "evidence": [
+            "Logo URL includes “globy-logo-square”; the Fact Sheet says the former name was Globy, while the current name is GoGloby."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Verify that the referenced logo asset is the current approved GoGloby logo."
+        },
+        {
+          "name": "Organization 1 — sameAs",
+          "status": "warn",
+          "evidence": [
+            "The Organization node has no “sameAs” field; the Fact Sheet lists official profiles."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Add or verify only source-approved official profiles."
+        },
+        {
+          "name": "Organization 1 — address",
+          "status": "warn",
+          "evidence": [
+            "The Organization node has no address; the Fact Sheet lists “8 The Green, Ste. R, Dover, DE 19901, USA”."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Add or verify the headquarters address."
+        },
+        {
+          "name": "Organization 1 — founders and jobTitle",
+          "status": "warn",
+          "evidence": [
+            "The Organization node has no founder data; decisions.md identifies Sergey Matikaynen as “Co-Founder and CTO” and Vitaly Koval as “Co-Founder”."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Add or verify source-approved founder details and titles."
+        },
+        {
+          "name": "Organization 1 — foundingDate",
+          "status": "warn",
+          "evidence": [
+            "The Organization node has no foundingDate; the Fact Sheet says “Founded | 2021”."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Add or verify the founding date."
+        },
+        {
+          "name": "Organization 1 — telephone",
+          "status": "warn",
+          "evidence": [
+            "The Organization node has no telephone; the Fact Sheet lists “+17813431777”."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Add or verify the official telephone."
+        },
+        {
+          "name": "Organization 1 — knowsAbout",
+          "status": "warn",
+          "evidence": [
+            "The Organization node has no “knowsAbout” field; the Fact Sheet describes GoGloby as a “staffing and recruiting” agency specializing in Data & AI Engineers."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Add or verify source-backed areas of expertise."
+        }
+      ]
+    },
+    "B3": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "Person schema name: “Sergey Matikaynen”."
+      ],
+      "locations": [
+        "schema",
+        "body"
+      ],
+      "count": 1,
+      "fix": "Verify the Person schema fields against the approved founder information and remove unsupported or outdated claims from Person fields.",
+      "source_ref": "decisions.md: Founders; GoGloby Fact Sheet: Founders",
+      "items": [
+        {
+          "name": "Sergey Matikaynen",
+          "status": "warn",
+          "evidence": [
+            "Schema contains “name”: “Sergey Matikaynen” but no jobTitle, description, knowsAbout, or sameAs.",
+            "Visible author text says “Co-Founder and CTO of GoGloby”."
+          ],
+          "locations": [
+            "schema",
+            "body"
+          ],
+          "count": 1,
+          "fix": "Verify the Person fields against the approved title and source-backed founder details; avoid unsupported claims."
+        }
+      ]
+    },
+    "B4": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "Visible FAQ section includes “What’s the difference between talent acquisition and recruitment?”",
+        "Page body identifies GoGloby as “a talent acquisition company” and describes nearshore hiring."
+      ],
+      "locations": [
+        "body",
+        "schema"
+      ],
+      "count": null,
+      "fix": "Verify that FAQPage questions and answers match the visible FAQ content, and that Service schema describes only the service presented on the page.",
+      "source_ref": "Checklist B4; GoGloby Fact Sheet: Services"
+    },
+    "C1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "mid-level: at filling junior, mid-level, and senior-level r"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 2,
+      "fix": "Replace \"mid-level\" with senior.",
+      "source_ref": "audit.json: exact_phrases",
+      "items": [
+        {
+          "name": "AI Intelligence Layer",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Performance Dashboard",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Performance Center",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Secure Development Environment",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Engineering Visibility",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Cost Management",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "safe AI adoption",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI-native production",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Applied AI Engineering partner",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Applied AI Company",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Production Engineering",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Leadership Search",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "every AI dollar visible",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI talent staffing",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Staffing gives capacity",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "owns outcomes",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "free trial",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "hire in 48 hours",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "mid-level",
+          "status": "fail",
+          "evidence": [
+            "at filling junior, mid-level, and senior-level r",
+            "ole tier: Entry and mid-level hires keep velocity"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 2,
+          "fix": "Replace \"mid-level\" with senior."
+        },
+        {
+          "name": "mid level",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        }
+      ]
+    },
+    "C2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "“salary benchmarks”",
+        "“skill and culture benchmarks”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 4,
+      "fix": "",
+      "source_ref": "GoGloby Glossary §7",
+      "items": [
+        {
+          "name": "c2:Benchmark:body:0",
+          "status": "pass",
+          "evidence": [
+            "“salary benchmarks that directly impact hiring speed and retention”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "c2:Benchmark:body:1",
+          "status": "pass",
+          "evidence": [
+            "“skill and culture benchmarks”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "c2:Applied AI Engineering:body:2",
+          "status": "pass",
+          "evidence": [
+            "“the engineering standard behind 4x Applied AI Engineering”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "c2:Agentic SDLC:body:3",
+          "status": "pass",
+          "evidence": [
+            "“including certified Agentic SDLC mastery”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        }
+      ]
+    },
+    "C3": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Brand spelling \"GoGloby\" is consistent."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: brand_spelling"
+    },
+    "C4": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Phone matches official digits or none listed."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: code_facts.phone_digits"
+    },
+    "C5": {
+      "status": "fail",
+      "severity": "low",
+      "evidence": [
+        "9 em dash(es) found."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 9,
+      "fix": "Replace em dashes with commas or periods.",
+      "source_ref": "Glossary §9"
+    },
+    "D1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "The page calls GoGloby’s model “nearshore engineering and operations teams” and claims “95% of roles are filled within 4 weeks”."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 10,
+      "fix": "Review the GoGloby company claims and metrics against the Fact Sheet; remove or correct conflicting and unsupported statements.",
+      "source_ref": "GoGloby Fact Sheet: Identity, Services, Key metrics; decisions.md: Company description",
+      "items": [
+        {
+          "name": "Company description / service focus",
+          "status": "fail",
+          "evidence": [
+            "Page: “nearshore engineering and operations teams across Latin America.”",
+            "Approved description: “GoGloby is a staffing and recruiting agency specializing in hiring Data & AI Engineers.”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Align the company description and service focus with the approved description and Fact Sheet."
+        },
+        {
+          "name": "Company service / geography",
+          "status": "fail",
+          "evidence": [
+            "Page: “across Latin America and Europe.”",
+            "Fact Sheet defines nearshore staffing as engineers “from Latin America” and lists the location as “Latin America, remote, US hours.”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Review the stated service geography against the approved service details."
+        },
+        {
+          "name": "Placement speed",
+          "status": "fail",
+          "evidence": [
+            "Page: “95% of roles are filled within 4 weeks.”",
+            "Fact Sheet recruiting timeline: “4–6 weeks to offer”; staffing timeline: “2–3 weeks to start”."
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Correct or remove the unsupported 95%-within-four-weeks claim and use source-backed timelines."
+        },
+        {
+          "name": "Annual cost savings",
+          "status": "fail",
+          "evidence": [
+            "Page: “Clients typically save around $1.5 million per year” and “up to $10 million annually.”",
+            "No such client savings metrics are listed in the Fact Sheet."
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Remove or verify the savings claims against an approved source."
+        },
+        {
+          "name": "Compliance coverage",
+          "status": "fail",
+          "evidence": [
+            "Page: “localized payroll in more than 20 countries.”",
+            "The Fact Sheet describes the staffing model as engineers from Latin America and gives no coverage figure of 20 countries."
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Remove or verify the country-count claim against an approved source."
+        },
+        {
+          "name": "Shortlist timeline",
+          "status": "fail",
+          "evidence": [
+            "Page: “Shortlist within 3–5 days.”",
+            "The Fact Sheet lists staffing start time as “2–3 weeks” and recruiting time to offer as “4–6 weeks”; it does not substantiate this shortlist claim."
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Remove or verify the shortlist timeline."
+        },
+        {
+          "name": "Client outcome / retention",
+          "status": "fail",
+          "evidence": [
+            "Page: “1 fintech client built a 6-person senior squad with 94% 90-day retention.”",
+            "The Fact Sheet has no 90-day retention metric or this client outcome."
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Remove or verify the client outcome and retention figure."
+        },
+        {
+          "name": "Placement metric in comparison table",
+          "status": "fail",
+          "evidence": [
+            "Page table: “95% placement in 4 weeks.”",
+            "Fact Sheet does not list this metric; its service timelines are recruiting “4–6 weeks to offer” and staffing “2–3 weeks to start”."
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Correct or remove the table metric using approved service timelines."
+        },
+        {
+          "name": "Claimed hiring reach",
+          "status": "fail",
+          "evidence": [
+            "Page: “connecting companies with pre-vetted engineers and operations talent across Latin America and Europe.”",
+            "The Fact Sheet describes GoGloby’s services as Data & AI Engineer recruiting and staffing, with staffing engineers from Latin America."
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Review the role and geographic scope claims against the Fact Sheet."
+        },
+        {
+          "name": "Claimed positioning",
+          "status": "fail",
+          "evidence": [
+            "Page: “leading partner for FAANG-level Latin American talent acquisition.”",
+            "The approved company description is “a staffing and recruiting agency specializing in hiring Data & AI Engineers.”"
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Review this positioning claim against the approved company description and remove unsupported claims."
+        }
+      ]
+    },
+    "D2": {
+      "status": "warn",
+      "severity": "high",
+      "evidence": [
+        "The supplied candidate is “Every.io”; its context gives no client-specific figure or identifiable Every.io mention."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "Verify whether the candidate corresponds to a client figure on the page; do not attribute unrelated metrics to a client.",
+      "source_ref": "GoGloby Fact Sheet: Featured clients; Page audit data: d2_candidates",
+      "items": [
+        {
+          "name": "d2:every.io",
+          "status": "warn",
+          "evidence": [
+            "Candidate context: “global talent acquisition and staffing technology market is projected to reach $290 billion by 2034” — this is a market figure, not a stated Every.io metric.",
+            "Fact Sheet lists Every.io as a client but provides no $290 billion figure for it."
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": "Check the client-to-figure association; remove or correct any attribution of the market figure to Every.io."
+        }
+      ]
+    },
+    "D3": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "The candidate MSH is presented as a listed talent acquisition provider, not as a GoGloby client.",
+        "The image candidate is labeled “Background”."
+      ],
+      "locations": [
+        "body",
+        "image_alt"
+      ],
+      "count": 2,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet: Featured clients, External recognition; Page audit data: d3_candidates",
+      "items": [
+        {
+          "name": "client_card:msh",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "Page calls MSH a “talent acquisition partner” in a comparison list; it does not present MSH as a GoGloby client."
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        },
+        {
+          "name": "logo_image:background",
+          "status": "pass",
+          "evidence": [
+            "not_a_client",
+            "Image alt text: “Background”."
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        }
+      ]
+    },
+    "D4": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "The page mentions “4.9 (Clutch)” in the GoGloby comparison-table row; the Fact Sheet lists a “Clutch rating | 4.9 / 5”."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet: External recognition",
+      "items": [
+        {
+          "name": "Clutch rating",
+          "status": "pass",
+          "evidence": [
+            "Page: “4.9 (Clutch)”.",
+            "Fact Sheet: “Clutch rating | 4.9 / 5”."
+          ],
+          "locations": [
+            "body"
+          ],
+          "count": 1,
+          "fix": ""
+        }
+      ]
+    },
+    "E1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "“GoGloby streamlines hiring by providing top-tier candidates”",
+        "“GoGloby helps U.S. companies build and manage nearshore engineering ... teams across Latin America”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 2,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet — Services",
+      "value": "both"
+    },
+    "E2": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "“GoGloby helps U.S. companies build and manage nearshore engineering and operations teams”",
+        "“GoGloby ... connecting companies with pre-vetted engineers and operations talent”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 2,
+      "fix": "Revise the passages that describe GoGloby as building or managing operations teams/talent so its positioning matches the approved company description.",
+      "source_ref": "decisions.md — Company description; GoGloby Fact Sheet — Identity, What GoGloby is not"
+    },
+    "E3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "“Discover Talent”",
+        "“Start Hiring”"
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 2,
+      "fix": "Review the GoGloby calls to action against Glossary §7: the page uses calls to action other than the approved recruiting and staffing calls to action.",
+      "source_ref": "GoGloby Glossary §7"
+    },
+    "E4": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "“has become one of the biggest growth challenges for scaling companies”",
+        "“some specialize in nearshore tech hiring across Latin America and Europe”"
+      ],
+      "locations": [
+        "first_paragraph",
+        "body"
+      ],
+      "count": 2,
+      "fix": "Reorder the opening to lead with the specific hire and service, then proof and assessment; keep nearshore/Latin America details out of the first line and hero.",
+      "source_ref": "GoGloby Glossary §9"
+    },
+    "F1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "The opening begins with the fragment “has become one of the biggest growth challenges for scaling companies.”",
+        "The next sentence is “Even well-funded teams are losing momentum as senior positions stay open for weeks.”"
+      ],
+      "locations": [
+        "first_paragraph"
+      ],
+      "count": 2,
+      "fix": "Rewrite the opening so its first two sentences directly answer the page title and can stand alone.",
+      "source_ref": "Glossary §9 (Answer first)"
+    },
+    "F2": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "The opening says “senior positions stay open for weeks,” but does not identify one of the defined buyer problems."
+      ],
+      "locations": [
+        "first_paragraph"
+      ],
+      "count": 1,
+      "fix": "Make the opening explicitly address one of the buyer problems defined in the Glossary.",
+      "source_ref": "Glossary §1 (The three problems buyers bring us)"
+    },
+    "F3": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "The title is “Top Talent Acquisition Companies for U.S. Businesses,” a listicle rather than a recruiting service page."
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Glossary §9 (On recruiting pages)"
+    },
+    "F4": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "The page claims “Clients typically save around $1.5 million per year” without naming GoGloby in that sentence.",
+        "It says “According to company data, 95% of roles are filled within 4 weeks,” without identifying GoGloby as the source in the sentence."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 2,
+      "fix": "Revise key claims so each quoted claim identifies GoGloby by name.",
+      "source_ref": "Glossary §9 (Aim for the answers that name companies)"
+    },
+    "F5": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "The page has an “FAQs” section.",
+        "The answer to “What is RPO and when should you use it?” begins “RPO (Recruitment Process Outsourcing) means outsourcing all or part of your hiring”."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 5,
+      "fix": "",
+      "source_ref": "Glossary §9 (Answer first)"
+    },
+    "F6": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "The page explains “What is Talent Acquisition?” and “What is the difference between talent acquisition and recruitment?”",
+        "It includes broad educational sections such as “4 Future Trends in Talent Acquisition.”"
+      ],
+      "locations": [
+        "h2",
+        "body"
+      ],
+      "count": 2,
+      "fix": "Refocus the page on buyers ready to hire rather than general talent-acquisition education.",
+      "source_ref": "Glossary §9 (Write only for buyers who are ready to hire)",
+      "value": "informational"
+    },
+    "G1": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "The H1 is “Top 12 Talent Acquisition Companies in 2026.”",
+        "Glossary §6 lists “AI talent acquisition companies” as a term for the existing AI recruiting listicle."
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": 1,
+      "fix": "Check whether this page is intended to target the Glossary’s specified AI recruiting listicle term.",
+      "source_ref": "Glossary §6 (US Data & AI Engineers Recruiting)",
+      "value": "AI talent acquisition companies"
+    },
+    "G2": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "title: no",
+        "h1: no",
+        "h2: no",
+        "meta: no",
+        "first_paragraph: no"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "Place target keyword in title, H1, H2, meta, and first paragraph.",
+      "source_ref": "checklist: G2"
+    },
+    "G3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "The title is “Top Talent Acquisition Companies for U.S. Businesses” and does not contain the trap phrase “AI talent acquisition.”",
+        "The H1 is “Top 12 Talent Acquisition Companies in 2026.”"
+      ],
+      "locations": [
+        "title",
+        "h1"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Glossary §8 (Trap terms)"
+    },
+    "G4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "No competing pages for this keyword"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G4"
+    },
+    "H1": {
+      "status": "info",
+      "severity": "medium",
+      "evidence": [
+        "The page presents GoGloby as helping build “nearshore engineering and operations teams across Latin America,” rather than using the approved focus on Data & AI Engineer staffing and recruiting.",
+        "The page claims “95% of roles are filled within 4 weeks,” a figure not supported by the Fact Sheet."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 2,
+      "fix": "Rework the page’s core positioning and unsupported claims to align with the approved company description and verified service facts.",
+      "source_ref": "decisions.md (Company description); GoGloby Fact Sheet, Identity and Services",
+      "value": "rewrite"
+    },
+    "H2": {
+      "status": "info",
+      "severity": "medium",
+      "evidence": [
+        "The page includes unsupported GoGloby claims such as “Clients typically save around $1.5 million per year.”",
+        "The content is informational, while the Glossary directs pages to target buyers ready to hire."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": 2,
+      "fix": "Prioritize correcting the company positioning and unsupported claims, then align the page with the intended commercial audience.",
+      "source_ref": "GoGloby Fact Sheet, Identity and Services; Glossary §9",
+      "value": "high"
+    },
+    "H3": {
+      "status": "info",
+      "severity": "medium",
+      "evidence": [
+        "The opening starts “has become one of the biggest growth challenges for scaling companies.”",
+        "The page includes general sections titled “What is Talent Acquisition?” and “4 Future Trends in Talent Acquisition.”"
+      ],
+      "locations": [
+        "first_paragraph",
+        "h2",
+        "body"
+      ],
+      "count": 4,
+      "fix": "Address the opening, claim attribution, and informational focus.",
+      "source_ref": "Glossary §1; Glossary §9",
+      "value": "F1: The opening does not answer the title and begins with a fragment; F2: The opening does not clearly name a defined buyer problem; F4: Key claims do not consistently name GoGloby; F6: Broad educational content makes the page informational rather than buyer-ready"
+    }
+  },
+  "recommendation": {
+    "action": "rewrite",
+    "priority": "high",
+    "reasons": [
+      "F1: The opening does not answer the title and begins with a fragment",
+      "F2: The opening does not clearly name a defined buyer problem",
+      "F4: Key claims do not consistently name GoGloby",
+      "F6: Broad educational content makes the page informational rather than buyer-ready"
+    ]
+  }
+}

@@ -441,6 +441,79 @@ export async function runLlmChecks(
   return out;
 }
 
+const s6ItemSchema = {
+  type: "object",
+  properties: {
+    name: { type: "string" },
+    status: { type: "string", enum: ["pass", "fail", "warn", "na", "skip"] },
+    evidence: { type: "array", items: { type: "string" } },
+    locations: { type: "array", items: { type: "string", enum: [...locationEnum] } },
+    count: { type: ["integer", "null"] },
+    fix: { type: "string" },
+  },
+  required: ["name", "status", "evidence", "locations", "count", "fix"],
+  additionalProperties: false,
+};
+
+export async function runS6SchemaJudgement(
+  config: AuditConfig,
+  input: {
+    nodes: Array<{ type: string; name: string; page_count: number; node: Record<string, unknown> }>;
+    b3PersonEvidence: B3PersonEvidence[];
+    codeProblemNames: string[];
+  },
+): Promise<CheckItem[]> {
+  const apiKey = process.env.OPENAI_API_KEY;
+  if (!apiKey) return [];
+
+  const client = new OpenAI({ apiKey });
+  const rules = formatChecksForPrompt(["S6", "B2", "B3"]);
+  const messages: OpenAI.Chat.ChatCompletionMessageParam[] = [
+    { role: "system", content: `${SYSTEM_PROMPT}\n\nFor S6 return only problems as items. Do not repeat problems already reported by code (same node, field, and issue). Item name format: "{type}: {name} — {field}". evidence[0] = current value; evidence[1] = expected value or rule.` },
+    { role: "user", content: getCachedPrefix() },
+    { role: "user", content: `# Check rules\n\n${rules}` },
+    {
+      role: "user",
+      content: `# Site-wide JSON-LD nodes\n\n${JSON.stringify({
+        site_wide_nodes: input.nodes,
+        b3_person_evidence: input.b3PersonEvidence,
+        code_problems_already_reported: input.codeProblemNames,
+      })}`,
+    },
+  ];
+
+  try {
+    const completion = await client.chat.completions.create({
+      model: config.llm.model,
+      max_completion_tokens: config.llm.max_output_tokens,
+      messages,
+      response_format: {
+        type: "json_schema",
+        json_schema: {
+          name: "s6_site_wide_schema",
+          strict: true,
+          schema: {
+            type: "object",
+            properties: { items: { type: "array", items: s6ItemSchema } },
+            required: ["items"],
+            additionalProperties: false,
+          },
+        },
+      },
+      ...(config.llm.reasoning_effort
+        ? { reasoning_effort: config.llm.reasoning_effort as "low" }
+        : {}),
+    } as OpenAI.Chat.ChatCompletionCreateParamsNonStreaming);
+
+    const text = completion.choices[0]?.message?.content;
+    if (!text?.trim()) return [];
+    const parsed = JSON.parse(text) as { items?: CheckItem[] };
+    return (parsed.items ?? []).filter((i) => i.status !== "pass");
+  } catch {
+    return [];
+  }
+}
+
 export function extractG1(llmResults: Record<string, CheckResult>): string | null {
   const v = llmResults.G1?.value?.trim();
   if (v && !/^none$/i.test(v)) return v.replace(/^target:\s*/i, "").trim();

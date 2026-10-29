@@ -12,7 +12,6 @@ import { runCodeChecks, runG2, runG4 } from "./checks/code-checks.js";
 import {
   buildB3PersonEvidence,
   collectContextTermEvidence,
-  collectSchemaEvidence,
   titleH1ForG3,
 } from "./checks/evidence.js";
 import { makeResult } from "./checks/result-factory.js";
@@ -27,7 +26,7 @@ import { runSiteChecks } from "./site-checks.js";
 import { collectSitemapUrls } from "./sitemap.js";
 import type { CheckResult, PageData, PageResult } from "./types.js";
 import { ensureDirSync, runIdNow, sleep, urlToSlug } from "./utils.js";
-import { writePageReport, writeRunReports } from "./report/index.js";
+import { generateRunReports } from "./report/index.js";
 import {
   buildD2Candidates,
   buildD3Candidates,
@@ -36,6 +35,17 @@ import {
 import { naChecksForPageType, applyNotApplicable } from "./na-checks.js";
 import { sampleUrlsRoundRobin } from "./url-sample.js";
 import { logDetail, logLine } from "./log.js";
+import {
+  detectSiteWideSchema,
+  type SiteWideSchemaManifest,
+} from "./checks/schema-fingerprint.js";
+import {
+  excludeSiteWideFromLlmIds,
+  filteredSchemaEvidence,
+  pageLocalSchemaJson,
+  siteWideSchemaNaResults,
+} from "./checks/site-wide-schema-apply.js";
+import { runS6SiteWideSchema } from "./s6-site-schema.js";
 
 export interface ScanOptions {
   urls?: string[];
@@ -47,19 +57,16 @@ export interface ScanOptions {
   useCachedPage?: boolean;
 }
 
-function rebuildLatestReportsFromPages(): void {
-  const root = projectRoot();
-  const pagesDir = path.join(root, "results", "latest", "pages");
-  const reportDir = path.join(root, "results", "latest", "report");
-  if (!fs.existsSync(pagesDir)) return;
-  ensureDirSync(fs, reportDir);
+export function loadAllPageResultsFromDir(pagesDir: string): PageResult[] {
+  const pageResults: PageResult[] = [];
+  if (!fs.existsSync(pagesDir)) return pageResults;
   for (const f of fs.readdirSync(pagesDir)) {
     if (!f.endsWith(".json")) continue;
-    const result = JSON.parse(
-      fs.readFileSync(path.join(pagesDir, f), "utf8"),
-    ) as PageResult;
-    writePageReport(result, path.join(reportDir, f.replace(/\.json$/, ".md")));
+    pageResults.push(
+      JSON.parse(fs.readFileSync(path.join(pagesDir, f), "utf8")) as PageResult,
+    );
   }
+  return pageResults;
 }
 
 function dataPath(slug: string): string {
@@ -86,19 +93,20 @@ function loadCachedPageData(slug: string): PageData | null {
   return JSON.parse(fs.readFileSync(p, "utf8")) as PageData;
 }
 
-async function processOnePage(
+function loadSiteWideFingerprintsFromLatest(): Set<string> {
+  const p = path.join(projectRoot(), "results", "latest", "site-wide-schema.json");
+  if (!fs.existsSync(p)) return new Set();
+  const manifest = JSON.parse(fs.readFileSync(p, "utf8")) as SiteWideSchemaManifest;
+  return new Set(manifest.fingerprints);
+}
+
+async function loadOrFetchPage(
   url: string,
   force: boolean,
-  keywordByUrl: Map<string, string>,
-  fullSiteRun: boolean,
-  skipLlm: boolean,
   useCachedPage: boolean,
-): Promise<{ page: PageData; result: PageResult }> {
+): Promise<PageData> {
   const config = loadAuditConfig();
-  const sources = loadSources();
   const slug = urlToSlug(url);
-  const prev = loadPreviousResult(slug);
-
   let page: PageData;
   if (useCachedPage) {
     const cached = loadCachedPageData(slug);
@@ -109,19 +117,48 @@ async function processOnePage(
     } else {
       page = cached;
     }
-  } else {
+  } else if (force) {
     const fetchResult = await httpGet(url, config);
     page = extractPageData(url, fetchResult, config);
     savePageData(slug, page);
+  } else {
+    const cached = loadCachedPageData(slug);
+    if (cached) page = cached;
+    else {
+      const fetchResult = await httpGet(url, config);
+      page = extractPageData(url, fetchResult, config);
+      savePageData(slug, page);
+    }
   }
-  if (!page.main_content_images) {
-    page.main_content_images = [];
-  }
+  if (!page.main_content_images) page.main_content_images = [];
+  return page;
+}
+
+async function processOnePage(
+  url: string,
+  force: boolean,
+  keywordByUrl: Map<string, string>,
+  fullSiteRun: boolean,
+  skipLlm: boolean,
+  useCachedPage: boolean,
+  siteWideFingerprints: Set<string> = new Set(),
+  preloadedPage?: PageData,
+): Promise<{ page: PageData; result: PageResult }> {
+  const config = loadAuditConfig();
+  const sources = loadSources();
+  const slug = urlToSlug(url);
+  const prev = loadPreviousResult(slug);
+
+  const page =
+    preloadedPage ?? (await loadOrFetchPage(url, force, useCachedPage));
 
   const linkChecker = (u: string) => checkUrl(u, config);
-  const codeResults = await runCodeChecks(page, config, linkChecker);
+  const localSchemaJson = pageLocalSchemaJson(page, siteWideFingerprints);
+  const codeResults = await runCodeChecks(page, config, linkChecker, {
+    pageLocalSchemaJson: localSchemaJson,
+  });
 
-  const schemaEv = collectSchemaEvidence(page);
+  const schemaEv = filteredSchemaEvidence(page, siteWideFingerprints);
   const contextTerms = collectContextTermEvidence(page, config);
   const b3PersonEvidence = buildB3PersonEvidence(schemaEv.persons);
   const c2Candidates = c2CandidatesFromOccurrences(contextTerms);
@@ -129,7 +166,12 @@ async function processOnePage(
   const d3Candidates = buildD3Candidates(page, config);
   const g3 = titleH1ForG3(page);
   const naList = new Set(naChecksForPageType(page.page_type, config));
-  const activeLlmCheckIds = LLM_CHECK_IDS.filter((id) => !naList.has(id));
+  let activeLlmCheckIds = LLM_CHECK_IDS.filter((id) => !naList.has(id));
+  activeLlmCheckIds = excludeSiteWideFromLlmIds(
+    activeLlmCheckIds,
+    page,
+    siteWideFingerprints,
+  ) as typeof LLM_CHECK_IDS[number][];
 
   const hashes = {
     content_hash: page.content_hash,
@@ -202,6 +244,11 @@ async function processOnePage(
   }
 
   applyNotApplicable(page.page_type, config, results);
+
+  const schemaNa = siteWideSchemaNaResults(page, siteWideFingerprints, naList);
+  for (const [id, r] of Object.entries(schemaNa)) {
+    if (r) results[id as keyof typeof results] = r;
+  }
 
   const recommendation = buildRecommendation(llmResults);
 
@@ -280,25 +327,68 @@ export async function runScan(options: ScanOptions): Promise<string> {
 
   const pageResults: PageResult[] = [];
   const pageDataList: PageData[] = [];
+  let siteWideFingerprints = new Set<string>();
+  let siteWideManifest: SiteWideSchemaManifest | null = null;
 
-  for (let i = 0; i < urls.length; i++) {
-    const url = urls[i]!;
-    logLine(`Scan ${i + 1}/${urls.length} ${url}`);
-    if (i > 0) await sleep(config.fetch.delay_ms);
-    const { page, result } = await processOnePage(
-      url,
-      options.force ?? false,
-      keywordByUrl,
-      fullSiteRun,
-      options.skipLlm ?? false,
-      options.useCachedPage ?? false,
+  if (fullSiteRun) {
+    for (let i = 0; i < urls.length; i++) {
+      const url = urls[i]!;
+      logLine(`Fetch ${i + 1}/${urls.length} ${url}`);
+      if (i > 0) await sleep(config.fetch.delay_ms);
+      pageDataList.push(
+        await loadOrFetchPage(url, options.force ?? false, options.useCachedPage ?? false),
+      );
+    }
+    const detected = detectSiteWideSchema(pageDataList);
+    siteWideFingerprints = detected.fingerprints;
+    siteWideManifest = detected.manifest;
+    fs.writeFileSync(
+      path.join(runDir, "site-wide-schema.json"),
+      JSON.stringify(siteWideManifest, null, 2),
     );
-    pageDataList.push(page);
-    pageResults.push(result);
-    const slug = urlToSlug(url);
-    fs.writeFileSync(path.join(pagesDir, `${slug}.json`), JSON.stringify(result, null, 2));
-    writePageReport(result, path.join(reportDir, `${slug}.md`));
-    logDetail(`  type=${page.page_type} action=${result.recommendation.action}`);
+    logDetail(
+      `Site-wide schema: ${siteWideManifest.nodes.length} node(s), threshold ${siteWideManifest.min_pages_threshold} pages`,
+    );
+
+    for (let i = 0; i < pageDataList.length; i++) {
+      const page = pageDataList[i]!;
+      logLine(`Audit ${i + 1}/${pageDataList.length} ${page.url}`);
+      const { result } = await processOnePage(
+        page.url,
+        options.force ?? false,
+        keywordByUrl,
+        fullSiteRun,
+        options.skipLlm ?? false,
+        options.useCachedPage ?? false,
+        siteWideFingerprints,
+        page,
+      );
+      pageResults.push(result);
+      const slug = urlToSlug(page.url);
+      fs.writeFileSync(path.join(pagesDir, `${slug}.json`), JSON.stringify(result, null, 2));
+      logDetail(`  type=${page.page_type} action=${result.recommendation.action}`);
+    }
+  } else {
+    siteWideFingerprints = loadSiteWideFingerprintsFromLatest();
+    for (let i = 0; i < urls.length; i++) {
+      const url = urls[i]!;
+      logLine(`Scan ${i + 1}/${urls.length} ${url}`);
+      if (i > 0) await sleep(config.fetch.delay_ms);
+      const { page, result } = await processOnePage(
+        url,
+        options.force ?? false,
+        keywordByUrl,
+        fullSiteRun,
+        options.skipLlm ?? false,
+        options.useCachedPage ?? false,
+        siteWideFingerprints,
+      );
+      pageDataList.push(page);
+      pageResults.push(result);
+      const slug = urlToSlug(url);
+      fs.writeFileSync(path.join(pagesDir, `${slug}.json`), JSON.stringify(result, null, 2));
+      logDetail(`  type=${page.page_type} action=${result.recommendation.action}`);
+    }
   }
 
   // Refresh G4 after all keywords known (full run)
@@ -313,28 +403,49 @@ export async function runScan(options: ScanOptions): Promise<string> {
       );
       const slug = urlToSlug(result.url);
       fs.writeFileSync(path.join(pagesDir, `${slug}.json`), JSON.stringify(result, null, 2));
-      writePageReport(result, path.join(reportDir, `${slug}.md`));
     }
   }
 
+  let hasSiteJson = false;
   if (fullSiteRun) {
     const site = await runSiteChecks(config, pageDataList, keywordByUrl);
+    site.results.S6 = await runS6SiteWideSchema(
+      config,
+      siteWideManifest?.nodes ?? [],
+      options.skipLlm ?? false,
+      (u) => checkUrl(u, config),
+    );
     fs.writeFileSync(path.join(runDir, "site.json"), JSON.stringify(site, null, 2));
+    hasSiteJson = true;
+    generateRunReports(runId, pageResults, true);
     copyRunToLatest(runId);
   } else {
     for (const result of pageResults) {
       mergeLatestPage(urlToSlug(result.url), result);
     }
     mergeSinglePagesIntoLatest(runId);
+    generateRunReports(runId, pageResults, false);
+    const latestPages = loadAllPageResultsFromDir(
+      path.join(projectRoot(), "results", "latest", "pages"),
+    );
+    generateRunReports(
+      "latest",
+      latestPages,
+      fs.existsSync(path.join(projectRoot(), "results", "latest", "site.json")),
+    );
   }
 
-  writeRunReports(runId, pageResults, fullSiteRun);
-  rebuildLatestReportsFromPages();
   return runId;
 }
 
 export function rebuildLatestReportsFromPagesPublic(): void {
-  rebuildLatestReportsFromPages();
+  const pagesDir = path.join(projectRoot(), "results", "latest", "pages");
+  const pageResults = loadAllPageResultsFromDir(pagesDir);
+  generateRunReports(
+    "latest",
+    pageResults,
+    fs.existsSync(path.join(projectRoot(), "results", "latest", "site.json")),
+  );
 }
 
 export function rebuildReports(runId?: string): void {
@@ -346,10 +457,10 @@ export function rebuildReports(runId?: string): void {
       : null);
   if (!id) throw new Error("No results to report");
   const pagesDir = path.join(root, "results", id, "pages");
-  const pageResults: PageResult[] = [];
-  for (const f of fs.readdirSync(pagesDir)) {
-    if (!f.endsWith(".json")) continue;
-    pageResults.push(JSON.parse(fs.readFileSync(path.join(pagesDir, f), "utf8")));
-  }
-  writeRunReports(id, pageResults, fs.existsSync(path.join(root, "results", id, "site.json")));
+  const pageResults = loadAllPageResultsFromDir(pagesDir);
+  generateRunReports(
+    id,
+    pageResults,
+    fs.existsSync(path.join(root, "results", id, "site.json")),
+  );
 }

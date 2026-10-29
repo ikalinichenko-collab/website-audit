@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-29T10:55:39.206Z",
+  "checked_at": "2026-10-29T14:33:57.980Z",
   "results": {
     "S1": {
       "status": "pass",
@@ -39,7 +39,7 @@
       "status": "pass",
       "severity": "high",
       "evidence": [
-        "Sampled 1 page types with main content in HTML"
+        "Sampled 5 page types with main content in HTML"
       ],
       "locations": [],
       "count": null,
@@ -47,15 +47,928 @@
       "source_ref": "checklist: S4"
     },
     "S5": {
-      "status": "pass",
+      "status": "warn",
       "severity": "medium",
       "evidence": [
-        "No duplicate target keywords across site"
+        "not applicable to this page type.: 4 URLs"
       ],
       "locations": [],
-      "count": 0,
-      "fix": "",
+      "count": 1,
+      "fix": "Consolidate or differentiate competing keyword pages.",
       "source_ref": "checklist: S5"
+    },
+    "S6": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "current: AI-native production",
+        "current: AI Intelligence Layer"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 48,
+      "fix": "Remove or rephrase \"AI-native production\" in site-wide schema. Replace \"AI Intelligence Layer\" with AI Development Intelligence Layer in site-wide schema. Replace \"AI Intelligence Layer\" with AI Development Intelligence Layer in site-wide schema.",
+      "source_ref": "checklist: S6",
+      "items": [
+        {
+          "name": "Offer: Offer — text (C1)",
+          "status": "fail",
+          "evidence": [
+            "current: AI-native production",
+            "expected: must not appear (audit.json exact_phrases)"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Remove or rephrase \"AI-native production\" in site-wide schema."
+        },
+        {
+          "name": "Offer: Offer — text (C1)",
+          "status": "fail",
+          "evidence": [
+            "current: AI Intelligence Layer",
+            "expected: must not appear (audit.json exact_phrases)"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Replace \"AI Intelligence Layer\" with AI Development Intelligence Layer in site-wide schema."
+        },
+        {
+          "name": "OfferCatalog: GoGloby Applied AI Engineering Service Catalog — text (C1)",
+          "status": "fail",
+          "evidence": [
+            "current: AI Intelligence Layer",
+            "expected: must not appear (audit.json exact_phrases)"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Replace \"AI Intelligence Layer\" with AI Development Intelligence Layer in site-wide schema."
+        },
+        {
+          "name": "OfferCatalog: GoGloby Applied AI Engineering Service Catalog — text (C1)",
+          "status": "fail",
+          "evidence": [
+            "current: AI-native production",
+            "expected: must not appear (audit.json exact_phrases)"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Remove or rephrase \"AI-native production\" in site-wide schema."
+        },
+        {
+          "name": "Organization: GoGloby — text (C1)",
+          "status": "fail",
+          "evidence": [
+            "current: AI Intelligence Layer",
+            "expected: must not appear (audit.json exact_phrases)"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Replace \"AI Intelligence Layer\" with AI Development Intelligence Layer in site-wide schema."
+        },
+        {
+          "name": "Organization: GoGloby — text (C1)",
+          "status": "fail",
+          "evidence": [
+            "current: AI-native production",
+            "expected: must not appear (audit.json exact_phrases)"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Remove or rephrase \"AI-native production\" in site-wide schema."
+        },
+        {
+          "name": "Organization: GoGloby — text (C1)",
+          "status": "fail",
+          "evidence": [
+            "current: Applied AI Engineering partner",
+            "expected: must not appear (audit.json exact_phrases)"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Replace \"Applied AI Engineering partner\" with the approved company description in site-wide schema."
+        },
+        {
+          "name": "Organization: GoGloby — text (C3)",
+          "status": "fail",
+          "evidence": [
+            "current: Gogloby",
+            "expected: correct brand spelling (GoGloby)"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix brand spelling \"Gogloby\" in site-wide schema."
+        },
+        {
+          "name": "Person: Vit Koval — text (C1)",
+          "status": "fail",
+          "evidence": [
+            "current: Applied AI Engineering partner",
+            "expected: must not appear (audit.json exact_phrases)"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Replace \"Applied AI Engineering partner\" with the approved company description in site-wide schema."
+        },
+        {
+          "name": "Service: Applied AI Engineering — text (C1)",
+          "status": "fail",
+          "evidence": [
+            "current: AI-native production",
+            "expected: must not appear (audit.json exact_phrases)"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Remove or rephrase \"AI-native production\" in site-wide schema."
+        },
+        {
+          "name": "Service: Generative AI Development Services — text (C1)",
+          "status": "fail",
+          "evidence": [
+            "current: AI Intelligence Layer",
+            "expected: must not appear (audit.json exact_phrases)"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Replace \"AI Intelligence Layer\" with AI Development Intelligence Layer in site-wide schema."
+        },
+        {
+          "name": "WebSite: GoGloby — text (C1)",
+          "status": "fail",
+          "evidence": [
+            "current: AI-native production",
+            "expected: must not appear (audit.json exact_phrases)"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Remove or rephrase \"AI-native production\" in site-wide schema."
+        },
+        {
+          "name": "WebSite: GoGloby — text (C1)",
+          "status": "fail",
+          "evidence": [
+            "current: Applied AI Engineering partner",
+            "expected: must not appear (audit.json exact_phrases)"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Replace \"Applied AI Engineering partner\" with the approved company description in site-wide schema."
+        },
+        {
+          "name": "WebSite: GoGloby — text (C1)",
+          "status": "fail",
+          "evidence": [
+            "current: every AI dollar visible",
+            "expected: must not appear (audit.json exact_phrases)"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Remove or rephrase \"every AI dollar visible\" in site-wide schema."
+        },
+        {
+          "name": "AggregateRating: AggregateRating — reviewCount",
+          "status": "fail",
+          "evidence": [
+            "current: 4.9",
+            "expected: integer 10 (Fact Sheet: 10 reviews)"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "reviewCount must be an integer (10)."
+        },
+        {
+          "name": "Offer: Offer — url",
+          "status": "warn",
+          "evidence": [
+            "current: https://gogloby.com/services/claude-in-production/#service",
+            "expected: service page from decisions.md (https://gogloby.com/services/ai-staff-augmentation or https://gogloby.com/services/hire-ai-engineers)"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Point schema URL to an approved service page."
+        },
+        {
+          "name": "Offer: Offer — url",
+          "status": "warn",
+          "evidence": [
+            "current: https://gogloby.com/services/claude-in-production/",
+            "expected: service page from decisions.md (https://gogloby.com/services/ai-staff-augmentation or https://gogloby.com/services/hire-ai-engineers)"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Point schema URL to an approved service page."
+        },
+        {
+          "name": "Offer: Offer — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://gogloby.com/generative-ai-development-services/#service",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 404)."
+        },
+        {
+          "name": "Offer: Offer — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://gogloby.com/generative-ai-development-services/",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 404)."
+        },
+        {
+          "name": "Offer: Offer — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://gogloby.com/ai-staff-augmentation/#service",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 404)."
+        },
+        {
+          "name": "Offer: Offer — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://gogloby.com/ai-staff-augmentation/",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 404)."
+        },
+        {
+          "name": "Offer: Offer — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://gogloby.com/hire-ai-engineers/#service",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 404)."
+        },
+        {
+          "name": "Offer: Offer — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://gogloby.com/hire-ai-engineers/",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 404)."
+        },
+        {
+          "name": "OfferCatalog: GoGloby Applied AI Engineering Service Catalog — url",
+          "status": "warn",
+          "evidence": [
+            "current: https://gogloby.com/services/claude-in-production/#service",
+            "expected: service page from decisions.md (https://gogloby.com/services/ai-staff-augmentation or https://gogloby.com/services/hire-ai-engineers)"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Point schema URL to an approved service page."
+        },
+        {
+          "name": "OfferCatalog: GoGloby Applied AI Engineering Service Catalog — url",
+          "status": "warn",
+          "evidence": [
+            "current: https://gogloby.com/services/claude-in-production/",
+            "expected: service page from decisions.md (https://gogloby.com/services/ai-staff-augmentation or https://gogloby.com/services/hire-ai-engineers)"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Point schema URL to an approved service page."
+        },
+        {
+          "name": "OfferCatalog: GoGloby Applied AI Engineering Service Catalog — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://gogloby.com/generative-ai-development-services/#service",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 404)."
+        },
+        {
+          "name": "OfferCatalog: GoGloby Applied AI Engineering Service Catalog — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://gogloby.com/generative-ai-development-services/",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 404)."
+        },
+        {
+          "name": "OfferCatalog: GoGloby Applied AI Engineering Service Catalog — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://gogloby.com/ai-staff-augmentation/#service",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 404)."
+        },
+        {
+          "name": "OfferCatalog: GoGloby Applied AI Engineering Service Catalog — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://gogloby.com/ai-staff-augmentation/",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 404)."
+        },
+        {
+          "name": "OfferCatalog: GoGloby Applied AI Engineering Service Catalog — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://gogloby.com/hire-ai-engineers/#service",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 404)."
+        },
+        {
+          "name": "OfferCatalog: GoGloby Applied AI Engineering Service Catalog — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://gogloby.com/hire-ai-engineers/",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 404)."
+        },
+        {
+          "name": "Organization: GoGloby — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://www.trustpilot.com/review/gogloby.com",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 403)."
+        },
+        {
+          "name": "Organization: GoGloby — url",
+          "status": "warn",
+          "evidence": [
+            "current: https://gogloby.com/services/claude-in-production/#service",
+            "expected: service page from decisions.md (https://gogloby.com/services/ai-staff-augmentation or https://gogloby.com/services/hire-ai-engineers)"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Point schema URL to an approved service page."
+        },
+        {
+          "name": "Organization: GoGloby — url",
+          "status": "warn",
+          "evidence": [
+            "current: https://gogloby.com/services/claude-in-production/",
+            "expected: service page from decisions.md (https://gogloby.com/services/ai-staff-augmentation or https://gogloby.com/services/hire-ai-engineers)"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Point schema URL to an approved service page."
+        },
+        {
+          "name": "Organization: GoGloby — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://gogloby.com/generative-ai-development-services/#service",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 404)."
+        },
+        {
+          "name": "Organization: GoGloby — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://gogloby.com/generative-ai-development-services/",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 404)."
+        },
+        {
+          "name": "Organization: GoGloby — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://gogloby.com/ai-staff-augmentation/#service",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 404)."
+        },
+        {
+          "name": "Organization: GoGloby — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://gogloby.com/ai-staff-augmentation/",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 404)."
+        },
+        {
+          "name": "Organization: GoGloby — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://gogloby.com/hire-ai-engineers/#service",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 404)."
+        },
+        {
+          "name": "Organization: GoGloby — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://gogloby.com/hire-ai-engineers/",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 404)."
+        },
+        {
+          "name": "Service: AI Staff Augmentation — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://gogloby.com/ai-staff-augmentation/#service",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 404)."
+        },
+        {
+          "name": "Service: AI Staff Augmentation — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://gogloby.com/ai-staff-augmentation/",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 404)."
+        },
+        {
+          "name": "Service: Applied AI Engineering — url",
+          "status": "warn",
+          "evidence": [
+            "current: https://gogloby.com/services/claude-in-production/#service",
+            "expected: service page from decisions.md (https://gogloby.com/services/ai-staff-augmentation or https://gogloby.com/services/hire-ai-engineers)"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Point schema URL to an approved service page."
+        },
+        {
+          "name": "Service: Applied AI Engineering — url",
+          "status": "warn",
+          "evidence": [
+            "current: https://gogloby.com/services/claude-in-production/",
+            "expected: service page from decisions.md (https://gogloby.com/services/ai-staff-augmentation or https://gogloby.com/services/hire-ai-engineers)"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Point schema URL to an approved service page."
+        },
+        {
+          "name": "Service: Generative AI Development Services — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://gogloby.com/generative-ai-development-services/#service",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 404)."
+        },
+        {
+          "name": "Service: Generative AI Development Services — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://gogloby.com/generative-ai-development-services/",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 404)."
+        },
+        {
+          "name": "Service: Hire Applied AI Engineers — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://gogloby.com/hire-ai-engineers/#service",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 404)."
+        },
+        {
+          "name": "Service: Hire Applied AI Engineers — url",
+          "status": "fail",
+          "evidence": [
+            "current: https://gogloby.com/hire-ai-engineers/",
+            "expected: HTTP 200"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 1,
+          "fix": "Fix or remove URL in site-wide schema (got HTTP 404)."
+        },
+        {
+          "name": "Organization: GoGloby — legalName",
+          "status": "fail",
+          "evidence": [
+            "Current: “Gogloby LLC”",
+            "Expected: “GoGloby LLC” (Fact Sheet, Identity)"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": null,
+          "fix": "Correct the legal-name capitalization to match the Fact Sheet."
+        },
+        {
+          "name": "Organization: GoGloby — slogan",
+          "status": "fail",
+          "evidence": [
+            "Current: “Applied AI Engineering Partner”",
+            "Glossary §7 says not to use “Applied AI Engineering partner” as a way to describe GoGloby."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": null,
+          "fix": "Remove the prohibited slogan."
+        },
+        {
+          "name": "Organization: GoGloby — email",
+          "status": "fail",
+          "evidence": [
+            "Current: “hr@gogloby.com”",
+            "Expected company email: “sales@gogloby.com” (Fact Sheet, Identity)."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": null,
+          "fix": "Use the Fact Sheet company email for the Organization email field."
+        },
+        {
+          "name": "Organization: GoGloby — knowsAbout",
+          "status": "fail",
+          "evidence": [
+            "Current entries include “AI Intelligence Layer (engineering telemetry)” and “Applied AI Engineering Partner”.",
+            "Glossary §7 gives the current product name as “AI Development Intelligence Layer” and prohibits “Applied AI Engineering partner” as a company description."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": null,
+          "fix": "Remove prohibited or outdated terms from knowsAbout and use only approved terminology."
+        },
+        {
+          "name": "Organization: GoGloby — sameAs",
+          "status": "fail",
+          "evidence": [
+            "Current entries include “https://www.g2.com/products/gogloby/reviews” and “https://www.trustpilot.com/review/gogloby.com”.",
+            "Fact Sheet, Official profiles: G2 is “Not available yet”; Trustpilot is not listed as an official profile. Decisions.md, Official profiles additionally approves Facebook and X."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": null,
+          "fix": "Remove profiles not approved as official sameAs links and retain only verified official profiles."
+        },
+        {
+          "name": "Person: Sergey Matikaynen — description",
+          "status": "fail",
+          "evidence": [
+            "Current: “Leads the Agentic SDLC methodology, secure development environment design, and the technical architecture behind the Applied AI Engineering system.”",
+            "Fact Sheet, Founders: Sergey leads “the infrastructure behind AI-native engineering: agent orchestration, SDLC automation, developer telemetry, policy enforcement, observability, security and engineering economics.”"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": null,
+          "fix": "Align the description with the founder information in the Fact Sheet and remove outdated product or positioning terminology."
+        },
+        {
+          "name": "Person: Sergey Matikaynen — knowsAbout",
+          "status": "fail",
+          "evidence": [
+            "Current includes “Applied AI Engineering” and “Secure AI development environments”.",
+            "Fact Sheet, Founders describes his work in AI-native engineering infrastructure, including agent orchestration, SDLC automation, telemetry, policy enforcement, observability, security and engineering economics."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": null,
+          "fix": "Align knowsAbout with the Fact Sheet founder information and approved terminology."
+        },
+        {
+          "name": "Person: Sergey Matikaynen — sameAs",
+          "status": "warn",
+          "evidence": [
+            "Current: “https://www.linkedin.com/in/sergeymatikaynen/”",
+            "Fact Sheet, Founders: “LinkedIn: not available yet”."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": null,
+          "fix": "Verify the profile as an official profile before including it in sameAs."
+        },
+        {
+          "name": "Person: Vit Koval — description",
+          "status": "fail",
+          "evidence": [
+            "Current: “generating $60M+ in value” and “Built the Applied AI Engineering system”.",
+            "Fact Sheet, Founders describes Vit as an entrepreneur, industry speaker, LinkedIn Top Voice and podcast host who shapes company vision, growth strategy, sales and marketing."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": null,
+          "fix": "Align the description with the Fact Sheet founder information and remove unsupported claims and prohibited positioning."
+        },
+        {
+          "name": "Person: Vit Koval — knowsAbout",
+          "status": "fail",
+          "evidence": [
+            "Current includes “Applied AI Engineering Partnerships”, “Nearshore AI talent” and “Agentic SDLC adoption”.",
+            "Glossary §7 prohibits “AI talent” on its own; the Fact Sheet, Founders describes Vit’s focus as vision, growth strategy, sales and marketing."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": null,
+          "fix": "Align knowsAbout with the Fact Sheet founder information and remove prohibited terminology."
+        },
+        {
+          "name": "Person: Vit Koval — sameAs",
+          "status": "warn",
+          "evidence": [
+            "Current: “https://www.linkedin.com/in/vitalykoval/”",
+            "Fact Sheet, Founders: “LinkedIn: not available yet”."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": null,
+          "fix": "Verify the profile as an official profile before including it in sameAs."
+        },
+        {
+          "name": "Service: AI Staff Augmentation — name",
+          "status": "fail",
+          "evidence": [
+            "Current: “AI Staff Augmentation”",
+            "Approved service name: “Nearshore Data & AI Engineers Staffing” (decisions.md, Service pages; Fact Sheet, Services)."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": null,
+          "fix": "Use the approved service name in the Service node."
+        },
+        {
+          "name": "Service: Applied AI Engineering — name",
+          "status": "fail",
+          "evidence": [
+            "Current: “Applied AI Engineering”",
+            "Approved services are “US Data & AI Engineers Recruiting” and “Nearshore Data & AI Engineers Staffing” (decisions.md, Spelling and Service pages)."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": null,
+          "fix": "Remove this unapproved service node or align it with an approved service."
+        },
+        {
+          "name": "Service: Hire Applied AI Engineers — name",
+          "status": "fail",
+          "evidence": [
+            "Current: “Hire Applied AI Engineers”",
+            "Approved service name: “US Data & AI Engineers Recruiting” (decisions.md, Service pages; Fact Sheet, Services)."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": null,
+          "fix": "Use the approved service name in the Service node."
+        },
+        {
+          "name": "Service: Generative AI Development Services — name",
+          "status": "fail",
+          "evidence": [
+            "Current: “Generative AI Development Services”",
+            "The Fact Sheet lists only “US Data & AI Engineers Recruiting” and “Nearshore Data & AI Engineers Staffing” as services."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": null,
+          "fix": "Remove this unapproved service node or align it with an approved service."
+        },
+        {
+          "name": "OfferCatalog: GoGloby Applied AI Engineering Service Catalog — name",
+          "status": "fail",
+          "evidence": [
+            "Current: “GoGloby Applied AI Engineering Service Catalog”",
+            "The Fact Sheet, Services lists “US Data & AI Engineers Recruiting” and “Nearshore Data & AI Engineers Staffing”."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": null,
+          "fix": "Rename or remove the catalog so it represents only the approved services."
+        },
+        {
+          "name": "Offer: Offer — service",
+          "status": "fail",
+          "evidence": [
+            "Current itemOffered name: “Applied AI Engineering”",
+            "Approved service names: “US Data & AI Engineers Recruiting” and “Nearshore Data & AI Engineers Staffing” (Fact Sheet, Services)."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": null,
+          "fix": "Remove the unapproved offer or align it with an approved service."
+        },
+        {
+          "name": "Offer: Offer — service",
+          "status": "fail",
+          "evidence": [
+            "Current itemOffered name: “Generative AI Development Services”",
+            "The Fact Sheet, Services lists only recruiting and nearshore staffing."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": null,
+          "fix": "Remove the unapproved offer or align it with an approved service."
+        },
+        {
+          "name": "Offer: Offer — service",
+          "status": "fail",
+          "evidence": [
+            "Current itemOffered name: “AI Staff Augmentation”",
+            "Approved service name: “Nearshore Data & AI Engineers Staffing” (decisions.md, Service pages; Fact Sheet, Services)."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": null,
+          "fix": "Use the approved staffing service name and description."
+        },
+        {
+          "name": "Offer: Offer — service",
+          "status": "fail",
+          "evidence": [
+            "Current itemOffered name: “Hire Applied AI Engineers”",
+            "Approved service name: “US Data & AI Engineers Recruiting” (decisions.md, Service pages; Fact Sheet, Services)."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": null,
+          "fix": "Use the approved recruiting service name and description."
+        },
+        {
+          "name": "WebSite: GoGloby — description",
+          "status": "fail",
+          "evidence": [
+            "Current: “GoGloby is an Applied AI Engineering partner turning engineering into AI-native production”",
+            "Glossary §7 prohibits “Applied AI Engineering partner” and “turn engineering into AI-native production”."
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": null,
+          "fix": "Remove the prohibited claims from the WebSite description."
+        }
+      ]
     }
   }
 }

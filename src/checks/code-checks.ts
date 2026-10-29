@@ -6,7 +6,11 @@ import { urlsMatch, isInternal } from "../utils.js";
 
 type LinkChecker = (url: string) => Promise<{ status: number; finalUrl: string }>;
 
-function searchTexts(page: PageData, includeSchema = false): { text: string; location: Location }[] {
+function searchTexts(
+  page: PageData,
+  includeSchema = false,
+  schemaJson?: string,
+): { text: string; location: Location }[] {
   const base = [
     { text: page.title, location: "title" as Location },
     { text: page.meta_description, location: "meta" as Location },
@@ -16,7 +20,10 @@ function searchTexts(page: PageData, includeSchema = false): { text: string; loc
     { text: page.body, location: "body" as Location },
   ];
   if (includeSchema) {
-    base.push({ text: JSON.stringify(page.json_ld), location: "schema" });
+    base.push({
+      text: schemaJson ?? JSON.stringify(page.json_ld),
+      location: "schema",
+    });
   }
   return base;
 }
@@ -60,11 +67,12 @@ function findPhraseOccurrences(
   phrase: string,
   cs: boolean,
   notInside?: string[],
+  schemaJson?: string,
 ): { count: number; locations: Location[]; snippets: string[] } {
   const locations: Location[] = [];
   const snippets: string[] = [];
   let count = 0;
-  for (const { text, location } of searchTexts(page, true)) {
+  for (const { text, location } of searchTexts(page, true, schemaJson)) {
     if (!text) continue;
     let searchFrom = 0;
     while (searchFrom < text.length) {
@@ -88,7 +96,7 @@ function findPhraseOccurrences(
   return { count, locations, snippets };
 }
 
-export function runC1(page: PageData, config: AuditConfig): CheckResult {
+export function runC1(page: PageData, config: AuditConfig, schemaJson?: string): CheckResult {
   const items: import("../types.js").CheckItem[] = [];
   let totalCount = 0;
 
@@ -99,6 +107,7 @@ export function runC1(page: PageData, config: AuditConfig): CheckResult {
       rule.phrase,
       cs,
       rule.not_inside,
+      schemaJson,
     );
     totalCount += count;
     let fix = "";
@@ -136,7 +145,7 @@ export function runC1(page: PageData, config: AuditConfig): CheckResult {
   });
 }
 
-export function runC3(page: PageData, config: AuditConfig): CheckResult {
+export function runC3(page: PageData, config: AuditConfig, schemaJson?: string): CheckResult {
   const allowed = config.brand_spelling.allowed_phrases;
   const wrong = config.brand_spelling.wrong_spellings;
   const evidence: string[] = [];
@@ -164,7 +173,7 @@ export function runC3(page: PageData, config: AuditConfig): CheckResult {
   for (const { text, location } of searchTexts(page)) {
     checkText(text, location, false);
   }
-  const schemaStr = JSON.stringify(page.json_ld);
+  const schemaStr = schemaJson ?? JSON.stringify(page.json_ld);
   checkText(schemaStr, "schema", true);
 
   if (count === 0) {
@@ -268,7 +277,9 @@ export async function runCodeChecks(
   page: PageData,
   config: AuditConfig,
   linkChecker: LinkChecker,
+  opts?: { pageLocalSchemaJson?: string },
 ): Promise<Record<string, CheckResult>> {
+  const schemaJson = opts?.pageLocalSchemaJson;
   const r: Record<string, CheckResult> = {};
 
   // A1
@@ -530,8 +541,8 @@ export async function runCodeChecks(
     source_ref: "audit.json: requirements_by_type",
   });
 
-  r.C1 = runC1(page, config);
-  r.C3 = runC3(page, config);
+  r.C1 = runC1(page, config, schemaJson);
+  r.C3 = runC3(page, config, schemaJson);
   r.C4 = runC4(page, config);
   r.C5 = runC5(page);
 

@@ -1,0 +1,329 @@
+{
+  "checked_at": "2026-10-29T14:28:25.977Z",
+  "results": {
+    "S1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "All configured AI bots allowed"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: site_checks.ai_bots"
+    },
+    "S2": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "llms.txt present"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: site_checks.llms_txt_url"
+    },
+    "S3": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Sitemap URLs: 689",
+        "No sampled issues"
+      ],
+      "locations": [],
+      "count": 689,
+      "fix": "",
+      "source_ref": "checklist: S3"
+    },
+    "S4": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Sampled 5 page types with main content in HTML"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: S4"
+    },
+    "S5": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "No duplicate target keywords across site"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: S5"
+    },
+    "S6": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "21 site-wide node(s)",
+        "AI Intelligence Layer: th sprint-by-sprint AI Intelligence Layer reporting.\",\"audien"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": 210,
+      "fix": "Correct the Organization node’s legalName, slogan, description, knowsAbout, and sameAs values to match approved sources. One Organization node was found; no differing Organization names to flag. Update each Person node’s description, knowsAbout, and sameAs fields to remove disallowed or unsupported claims and match approved sources.",
+      "source_ref": "checklist: S6",
+      "items": [
+        {
+          "name": "AggregateRating: AggregateRating",
+          "status": "pass",
+          "evidence": [
+            "10 pages"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 10,
+          "fix": ""
+        },
+        {
+          "name": "Brand: GoGloby",
+          "status": "pass",
+          "evidence": [
+            "10 pages"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 10,
+          "fix": ""
+        },
+        {
+          "name": "BusinessAudience: BusinessAudience",
+          "status": "pass",
+          "evidence": [
+            "10 pages"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 10,
+          "fix": ""
+        },
+        {
+          "name": "ContactPoint: ContactPoint",
+          "status": "pass",
+          "evidence": [
+            "10 pages"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 10,
+          "fix": ""
+        },
+        {
+          "name": "ContactPoint: ContactPoint",
+          "status": "pass",
+          "evidence": [
+            "10 pages"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 10,
+          "fix": ""
+        },
+        {
+          "name": "ImageObject: ImageObject",
+          "status": "pass",
+          "evidence": [
+            "10 pages"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 10,
+          "fix": ""
+        },
+        {
+          "name": "Offer: Offer",
+          "status": "pass",
+          "evidence": [
+            "10 pages"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 10,
+          "fix": ""
+        },
+        {
+          "name": "Offer: Offer",
+          "status": "pass",
+          "evidence": [
+            "10 pages"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 10,
+          "fix": ""
+        },
+        {
+          "name": "Offer: Offer",
+          "status": "pass",
+          "evidence": [
+            "10 pages"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 10,
+          "fix": ""
+        },
+        {
+          "name": "Offer: Offer",
+          "status": "pass",
+          "evidence": [
+            "10 pages"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 10,
+          "fix": ""
+        },
+        {
+          "name": "OfferCatalog: GoGloby Applied AI Engineering Service Catalog",
+          "status": "pass",
+          "evidence": [
+            "10 pages"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 10,
+          "fix": ""
+        },
+        {
+          "name": "Organization: GoGloby",
+          "status": "pass",
+          "evidence": [
+            "10 pages"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 10,
+          "fix": ""
+        },
+        {
+          "name": "Person: Sergey Matikaynen",
+          "status": "pass",
+          "evidence": [
+            "10 pages"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 10,
+          "fix": ""
+        },
+        {
+          "name": "Person: Vit Koval",
+          "status": "pass",
+          "evidence": [
+            "10 pages"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 10,
+          "fix": ""
+        },
+        {
+          "name": "PostalAddress: GoGloby Headquarters",
+          "status": "pass",
+          "evidence": [
+            "10 pages"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 10,
+          "fix": ""
+        },
+        {
+          "name": "QuantitativeValue: QuantitativeValue",
+          "status": "pass",
+          "evidence": [
+            "10 pages"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 10,
+          "fix": ""
+        },
+        {
+          "name": "Service: AI Staff Augmentation",
+          "status": "pass",
+          "evidence": [
+            "10 pages"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 10,
+          "fix": ""
+        },
+        {
+          "name": "Service: Applied AI Engineering",
+          "status": "pass",
+          "evidence": [
+            "10 pages"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 10,
+          "fix": ""
+        },
+        {
+          "name": "Service: Generative AI Development Services",
+          "status": "pass",
+          "evidence": [
+            "10 pages"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 10,
+          "fix": ""
+        },
+        {
+          "name": "Service: Hire Applied AI Engineers",
+          "status": "pass",
+          "evidence": [
+            "10 pages"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 10,
+          "fix": ""
+        },
+        {
+          "name": "WebSite: GoGloby",
+          "status": "pass",
+          "evidence": [
+            "10 pages"
+          ],
+          "locations": [
+            "schema"
+          ],
+          "count": 10,
+          "fix": ""
+        }
+      ]
+    }
+  }
+}

@@ -1,13 +1,13 @@
 # Page report
 
 - **URL:** https://gogloby.com/podcast/philippe-noel/
-- **Type:** other
-- **Action:** noindex
-- **Priority:** low
+- **Type:** podcast
+- **Action:** fix
+- **Priority:** medium
 
 ## First paragraph
 
-_(empty)_
+Default Global Episode #109 with Philippe Noël, Co-founder & CEO at ParadeDB
 
 ## A. Technical SEO
 
@@ -18,59 +18,92 @@ _(empty)_
 ✅ **A5** Canonical — evidence: https://gogloby.com/podcast/philippe-noel/ — locations: meta — source: checklist: A5
 ✅ **A6** Indexable — evidence: Indexable — source: checklist: A6
 ✅ **A7** Open Graph — evidence: og:title, og:description, og:image present — locations: meta — source: checklist: A7
-➖ **A8** Dates — source: audit.json: requirements_by_type
-➖ **A9** Author — source: audit.json: requirements_by_type
+✅ **A8** Dates — evidence: 2024-07-01T13:04:05+03:00 | 2024-09-27T14:56:49+03:00 — locations: schema — source: audit.json: requirements_by_type
+➖ **A9** Author — evidence: Not applicable to this page type. — source: audit.json: not_applicable_by_type
 ✅ **A10** Image alt text — evidence: All main images have alt — count: 0 — source: checklist: A10
 ✅ **A11** Broken internal links — evidence: No broken internal links — count: 0 — source: checklist: A11
-❌ **A12** Links to service pages — evidence: No link to staffing or recruiting service pages — fix: Add links to staffing and/or recruiting service pages in main content. — source: checklist: A12
+➖ **A12** Links to service pages — evidence: Not applicable to this page type. — source: audit.json: not_applicable_by_type
 
 ## B. Structured data
 
-❌ **B1** Expected schema types — evidence: Missing: BreadcrumbList | Found: Organization, WebSite, Article — locations: schema — fix: Add JSON-LD types: BreadcrumbList. — source: audit.json: requirements_by_type
-✅ **B2** Organization data — evidence: Title ends with “| GoGloby”. — locations: title — count: 1 — source: decisions.md: Spelling
-❌ **B3** Person data — evidence: Schema legal name is “Gogloby LLC”. — locations: schema — count: 1 — fix: Correct the company-name spelling in the schema to match the approved company name. — source: decisions.md: Spelling
-❌ **B4** Schema matches the page — evidence: Schema slogan: “Applied AI Engineering Partner”. — locations: schema — count: 1 — fix: Remove the prohibited positioning from the organization schema. — source: Glossary §7
+❌ **B1** Expected schema types — evidence: Missing: PodcastEpisode, BreadcrumbList | Found: Organization, ImageObject, Brand, PostalAddress, ContactPoint, Person, QuantitativeValue, AggregateRating, OfferCatalog, Offer, Service, BusinessAudience, WebSite, Article — locations: schema — fix: Add JSON-LD types: PodcastEpisode, BreadcrumbList. — source: audit.json: requirements_by_type
+✅ **B2** Organization data — evidence: Organization node name: “GoGloby” matches the company name in the source. | No other Organization node is supplied. — locations: schema — count: 2 — source: decisions.md: Spelling; GoGloby Fact Sheet: Identity
+  ✅ _Organization 1 — name_ — Schema: “GoGloby”; approved name: “GoGloby”. — locations: schema — count: 1
+  ➖ _Organization 1 — legalName_ — No legalName is present in the supplied Organization node. — locations: schema — count: 0
+  ➖ _Organization 1 — description_ — No description is present in the supplied Organization node. — locations: schema — count: 0
+  ➖ _Organization 1 — slogan_ — No slogan is present in the supplied Organization node. — locations: schema — count: 0
+  ➖ _Organization 1 — url_ — No url is present in the supplied Organization node. — locations: schema — count: 0
+  ➖ _Organization 1 — logo_ — The node provides a logo URL, but no approved logo URL is given in the supplied sources. — locations: schema — count: 1
+  ➖ _Organization 1 — sameAs_ — No sameAs is present in the supplied Organization node. — locations: schema — count: 0
+  ➖ _Organization 1 — address_ — No address is present in the supplied Organization node. — locations: schema — count: 0
+  ➖ _Organization 1 — founders and jobTitle_ — No founders or jobTitle are present in the supplied Organization node. — locations: schema — count: 0
+  ➖ _Organization 1 — foundingDate_ — No foundingDate is present in the supplied Organization node. — locations: schema — count: 0
+  ➖ _Organization 1 — telephone_ — No telephone is present in the supplied Organization node. — locations: schema — count: 0
+  ➖ _Organization 1 — knowsAbout_ — No knowsAbout is present in the supplied Organization node. — locations: schema — count: 0
+✅ **B3** Person data — evidence: Person node: “Vit Koval”; no jobTitle, description, knowsAbout, or sameAs values are present to conflict with the sources. — locations: schema — count: 1 — source: decisions.md: Founders, Official profiles; GoGloby Fact Sheet: Founders, Official profiles
+  ✅ _Vit Koval_ — Person node name: “Vit Koval”; approved founder name: “Vitaly (Vit) Koval”. | Person fields jobTitle, description, knowsAbout, and sameAs are absent. — locations: schema — count: 1
+⚠️ **B4** Schema matches the page — evidence: The page text includes “Navigating the Entrepreneurial Journey: Insights from Philippe Noël” and the schema inventory includes an Article, but no FAQ questions or Service schema details are supplied for comparison. — locations: body, schema — fix: Verify that any FAQPage questions are visible on the page and that Service schema, if present, accurately describes a visible service; inspect all schema claims against the page. — source: Page audit data: body; code_check_results B1 (schema types found)
 
 ## C. Wording
 
 ✅ **C1** Banned phrases — evidence: No banned phrases found. — source: audit.json: exact_phrases
-❌ **C2** Context terms — evidence: Schema description calls GoGloby a “talent acquisition agency”. — locations: schema — count: 1 — fix: Align the organization description in schema with the approved company description. — source: decisions.md: Company description
-❌ **C3** Brand spelling — evidence: Globy","legalName":"Gogloby LLC","url":"https:/ — locations: schema — count: 1 — fix: Use "GoGloby" consistently. — source: audit.json: brand_spelling
+  ✅ _AI Intelligence Layer_
+  ✅ _Performance Dashboard_
+  ✅ _Performance Center_
+  ✅ _Secure Development Environment_
+  ✅ _AI Engineering Visibility_
+  ✅ _AI Cost Management_
+  ✅ _safe AI adoption_
+  ✅ _AI-native production_
+  ✅ _Applied AI Engineering partner_
+  ✅ _Applied AI Company_
+  ✅ _AI Production Engineering_
+  ✅ _AI Leadership Search_
+  ✅ _every AI dollar visible_
+  ✅ _AI talent staffing_
+  ✅ _Staffing gives capacity_
+  ✅ _owns outcomes_
+  ✅ _free trial_
+  ✅ _hire in 48 hours_
+  ✅ _mid-level_
+  ✅ _mid level_
+✅ **C2** Context terms — evidence: “global hiring, remote work” — no Glossary §7 prohibited context-term use identified; code reports no context-term occurrences. — count: 0 — source: GoGloby Glossary §7 — Terms and claims we do not use
+✅ **C3** Brand spelling — evidence: Brand spelling "GoGloby" is consistent. — source: audit.json: brand_spelling
 ✅ **C4** Phone number — evidence: Phone matches official digits or none listed. — source: audit.json: code_facts.phone_digits
 ❌ **C5** Em dash — evidence: 2 em dash(es) found. — locations: h2, body — count: 2 — fix: Replace em dashes with commas or periods. — source: Glossary §9
 
 ## D. Facts
 
-❌ **D1** Company facts — evidence: Schema description says “within the US & EU time zones”. — locations: schema — count: 1 — fix: Correct the unsupported service-area claim in schema against the approved company facts. — source: Fact Sheet: Identity
-❌ **D2** Client figures — evidence: Schema includes “Vetted profiles delivered in 72 hours.” — locations: schema — count: 1 — fix: Remove or substantiate the delivery-time claim; the approved service facts specify 2–3 weeks to start for staffing and 4–6 weeks to offer for recruiting. — source: Fact Sheet: Services
-❌ **D3** Clients not in the Fact Sheet — evidence: Schema includes “Shortlist delivered in 5 days.” — locations: schema — count: 1 — fix: Remove or substantiate the shortlist-time claim; the approved recruiting time is 4–6 weeks to offer. — source: Fact Sheet: Services
-❌ **D4** Press and partners — evidence: Schema rating uses “reviewCount”: 4.9. — locations: schema — count: 1 — fix: Correct the review count to match the approved review information; the Fact Sheet says 4.9 / 5 from 10 reviews. — source: Fact Sheet: What clients say
+✅ **D1** Company facts — evidence: The body describes Philippe Noël and ParadeDB; no GoGloby company facts or metrics are stated in the supplied page text. — locations: body — count: 0 — source: GoGloby Fact Sheet: Identity, Services, How we vet, Key metrics, Legal and security; page body
+➖ **D2** Client figures — evidence: Not applicable to this page type. — source: audit.json: not_applicable_by_type
+➖ **D3** Clients not in the Fact Sheet — evidence: Not applicable to this page type. — source: audit.json: not_applicable_by_type
+✅ **D4** Press and partners — evidence: The page mentions “Y Combinator” as ParadeDB's backer; no GoGloby press, partner, or award claims are present in the supplied page text. — locations: body — count: 0 — source: GoGloby Fact Sheet: External recognition; page body
 
 ## E. Positioning
 
-✅ **E1** Service fit — evidence: none — locations: title, h1, body — count: 0 — fix: This page discusses an entrepreneur and podcast episode, not GoGloby's recruiting or staffing services. — source: Fact Sheet: Services
-⚠️ **E2** Positioning — evidence: The episode describes Philippe's “journey from Whist to ParadeDB”. — locations: body — count: 1 — fix: Keep the editorial focus, but clarify the page's relationship to GoGloby if it is intended to support company-service discovery. — source: Glossary §9
-❌ **E3** Call to action — evidence: “No link to staffing or recruiting service pages” (supplied code check A12). — locations: body, link_text — count: 0 — fix: Add an in-content link to the relevant service page if this page is intended to direct readers to GoGloby's services. — source: code_check_results: A12; decisions.md: Service pages
-✅ **E4** Lead order — evidence: “Philippe Noël, Co-founder and CEO of ParadeDB”. — locations: body — count: 1 — source: Page body
+➖ **E1** Service fit — evidence: Not applicable to this page type. — source: audit.json: not_applicable_by_type
+➖ **E2** Positioning — evidence: Not applicable to this page type. — source: audit.json: not_applicable_by_type
+➖ **E3** Call to action — evidence: Not applicable to this page type. — source: audit.json: not_applicable_by_type
+➖ **E4** Lead order — evidence: Not applicable to this page type. — source: audit.json: not_applicable_by_type
 
 ## F. GEO
 
-❌ **F1** Answer first — evidence: “AI Era Is Now!Lead or Fall Behind?” — locations: h2 — count: 1 — fix: Correct the joined words and punctuation in this heading. — source: Page H2
-❌ **F2** Buyer problem — evidence: “149 Rejections, 1 Yes: The Truth About Fundraising”. — locations: h2 — count: 1 — fix: Review headings for consistent spacing and date formatting; the supplied heading text includes inconsistent spacing in other page elements. — source: Page H2 and H3
-⚠️ **F3** Recruiting firm stated early — evidence: “Quick Read: Philippe Noël, Co-founder & CEO at ParadeDB, Interview Highlight”. — locations: h2 — count: 1 — fix: Use consistent spelling and styling for role titles and symbols across headings. — source: Page H2; Glossary §9
-❌ **F4** GoGloby named near claims — evidence: “Our conversation today was enlightening and filled with practical wisdom.” — locations: body — count: 1 — fix: Review the article for repetitive, generic closing language and remove material that does not add specific information. — source: Page body; Glossary §9
-❌ **F5** FAQ — evidence: “Our very first client was a fellow startup from the YC batch we were part of.” — locations: body — count: 1 — fix: Check whether the interview article's claims and quotations have supporting source material before retaining them as factual statements. — source: Page body; Fact Sheet: What clients say
-⚠️ **F6** Audience — evidence: informational — locations: title, h1, body — count: 1 — fix: The page is an entrepreneurship podcast article, not content for buyers ready to hire GoGloby; assess whether it should remain indexable as an editorial page. — source: Glossary §9
+❌ **F1** Answer first — evidence: Title: “How to Join YC, Raise $2M, and Land Fortune 500 Clients After Setbacks.” | Opening: “Default Global Episode #109 with Philippe Noël, Co-founder & CEO at ParadeDB.” — locations: title, first_paragraph — count: 2 — fix: Revise the opening so its first two sentences directly answer the question posed by the title and can stand alone. — source: Glossary §9, Answer first
+➖ **F2** Buyer problem — evidence: Not applicable to this page type. — source: audit.json: not_applicable_by_type
+➖ **F3** Recruiting firm stated early — evidence: Not applicable to this page type. — source: audit.json: not_applicable_by_type
+❌ **F4** GoGloby named near claims — evidence: “We just wanted to get the best people, wherever they live.” | “Today, I had the pleasure of hosting Philippe Noël” — locations: body — count: 2 — fix: Name GoGloby in key claim passages that currently rely on “we” or “I” without identifying the company. — source: Checks for LLM call 3, F4
+➖ **F5** FAQ — evidence: Not applicable to this page type. — source: audit.json: not_applicable_by_type
+⚠️ **F6** Audience — value: informational — evidence: “Advice for YCombinator Aspiring Founders” | “his insights are invaluable” — locations: title, h2, body — fix: Reassess the page's audience and framing against the buyer-ready guidance. — source: Glossary §§5, 9
 
 ## G. Target keyword
 
-✅ **G1** Target keyword — evidence: none — locations: title, h1, body — count: 0 — fix: No service-target keyword is evidenced for this editorial podcast page; do not force a hiring keyword onto it. — source: Glossary §6; supplied trap_term_context
-➖ **G2** Keyword placement — evidence: No target keyword from G1 — source: checklist: G2
-❌ **G3** Trap terms in title or H1 — evidence: Meta description is empty; the supplied code check reports “Missing meta description”. — locations: meta — count: 0 — fix: Add a page-specific meta description that accurately summarizes the podcast episode. — source: code_check_results: A3
-➖ **G4** Competing pages — evidence: No target keyword — source: checklist: G4
+➖ **G1** Target keyword — evidence: Not applicable to this page type. — source: audit.json: not_applicable_by_type
+➖ **G2** Keyword placement — evidence: Not applicable to this page type. — source: audit.json: not_applicable_by_type
+➖ **G3** Trap terms in title or H1 — evidence: Not applicable to this page type. — source: audit.json: not_applicable_by_type
+✅ **G4** Competing pages — evidence: No competing pages for this keyword — source: checklist: G4
 
 ## H. Recommendation
 
-✅ **H1** Action — evidence: noindex — locations: h1 — count: 1 — fix: The H1 “How to Join YC, Raise $2M, and Land Fortune 500 Clients After Setbacks” targets an informational founder audience rather than buyers ready to hire. Consider noindexing this page unless it has a deliberate editorial-search purpose. — source: Glossary §9
-✅ **H2** Priority — evidence: low — locations: h1, body — count: 1 — fix: Low priority: this is a podcast editorial page, not a service page. The supplied code check reports a title length of 80 characters; review title length only if retaining it as an indexable page. — source: code_check_results: A2; Glossary §9
-✅ **H3** Reasons — evidence: Informational rather than buyer-ready topic: “How to Join YC, Raise $2M” (F6). | No service-target keyword evidenced: “Default Global Episode #109” (G1). | No in-content service-page link reported (E3). | Schema contains disallowed company positioning: “Applied AI Engineering Partner” (B4). | Missing meta description reported by the supplied code check (G3). — locations: title, meta, h1, body, schema, link_text — count: 5 — fix: Review indexation and service-discovery intent; correct the identified schema and metadata issues if the page is retained. — source: Glossary §§7, 9; code_check_results: A3, A12
+ℹ️ **H1** Action — value: fix — evidence: The title promises “How to Join YC,” while the page focuses on an interview with Philippe Noël about his founder journey. | The content is an episode page: “Full Podcast Episode on Spotify.” — locations: title, h1, body — fix: Edit the title and opening, add the missing meta description and relevant service-page links, and review the podcast schema. — source: Checks for LLM call 3, H1 rules; supplied code results A2, A3, A12, B1
+ℹ️ **H2** Priority — value: medium — evidence: The title is 80 characters: “How to Join YC, Raise $2M, and Land Fortune 500 Clients After Setbacks.” | “No link to staffing or recruiting service pages” — locations: title, meta, body, schema — fix: Prioritize edits to the title, meta description, service links and podcast schema; the page is a podcast episode rather than a service page. — source: Supplied code results A2, A3, A12, B1; Checks for LLM call 3, H2
+ℹ️ **H3** Reasons — value: F1: opening does not answer the title's question; F4: key passages use first-person language without naming GoGloby; F6: content is informational rather than buyer-ready; A2/A3/A12/B1: title length, missing meta description and service links, and missing podcast schema types need review. — evidence: Opening: “Default Global Episode #109 with Philippe Noël, Co-founder & CEO at ParadeDB.” | “We just wanted to get the best people, wherever they live.” | “No link to staffing or recruiting service pages”; “Missing: PodcastEpisode, BreadcrumbList” — locations: title, meta, first_paragraph, body, schema — fix: Address the listed opening, attribution, metadata, service-link and schema issues. — source: Checks for LLM call 3, F1/F4/F6; supplied code results A2, A3, A12, B1

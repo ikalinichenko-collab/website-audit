@@ -1,0 +1,739 @@
+{
+  "url": "https://gogloby.com/captive-team-calculation/",
+  "page_type": "other",
+  "checked_at": "2026-10-29T14:25:15.859Z",
+  "content_hash": "987e59f1c41df83d6867e3e82905b7cde56c47c2b4039f0ba8828d072a449141",
+  "sources_hash": "60f07aa71f13cac715dd96e85e0e6e07dc7bf4706289f1cfca2c21f7856a4c72",
+  "checklist_hash": "305bd026166f2daaf676c9472ca99954ee96d65128a176442fa0106c7684ac7d",
+  "audit_hash": "953e1db5e52348f8965a8cdd94e3accad5f00495da455d0baa57f0acdfa19fde",
+  "first_paragraph": "var d=document,w=\"https://tally.so/widgets/embed.js\",v=function(){\"undefined\"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll(\"iframe[data-tally-src]:not([src])\").forEach((function(e){e.src=e.dataset.tallySrc}))};if(\"undefined\"!=typeof Tally)v();else if(d.querySelector('script[src=\"'+w+'\"]')==null){var s=d.createElement(\"script\");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}",
+  "results": {
+    "A1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "HTTP 200"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A1"
+    },
+    "A2": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "34 characters: \"Captive Team Calculation | GoGloby...\""
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": null,
+      "fix": "Adjust title to 50-60 characters.",
+      "source_ref": "audit.json: seo"
+    },
+    "A3": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Missing meta description"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "Add meta description (120-158 characters).",
+      "source_ref": "audit.json: seo"
+    },
+    "A4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "1 H1"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: seo"
+    },
+    "A5": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "https://gogloby.com/captive-team-calculation/"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A5"
+    },
+    "A6": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Indexable"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: A6"
+    },
+    "A7": {
+      "status": "fail",
+      "severity": "low",
+      "evidence": [
+        "Missing one or more og:title, og:description, og:image"
+      ],
+      "locations": [
+        "meta"
+      ],
+      "count": null,
+      "fix": "Add complete Open Graph tags.",
+      "source_ref": "checklist: A7"
+    },
+    "A8": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A9": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "A10": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "All main images have alt"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A10"
+    },
+    "A11": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No broken internal links"
+      ],
+      "locations": [],
+      "count": 0,
+      "fix": "",
+      "source_ref": "checklist: A11"
+    },
+    "A12": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "No link to staffing or recruiting service pages"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "Add links to staffing and/or recruiting service pages in main content.",
+      "source_ref": "checklist: A12"
+    },
+    "B1": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Missing: BreadcrumbList",
+        "Found: Organization, ImageObject, Brand, PostalAddress, ContactPoint, Person, QuantitativeValue, AggregateRating, OfferCatalog, Offer, Service, BusinessAudience, WebSite"
+      ],
+      "locations": [
+        "schema"
+      ],
+      "count": null,
+      "fix": "Add JSON-LD types: BreadcrumbList.",
+      "source_ref": "audit.json: requirements_by_type"
+    },
+    "B2": {
+      "status": "na",
+      "severity": "high",
+      "evidence": [
+        "only site-wide schema, see S6"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: site-wide schema"
+    },
+    "B3": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "only site-wide schema, see S6"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: site-wide schema"
+    },
+    "B4": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "only site-wide schema, see S6"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: site-wide schema"
+    },
+    "C1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "No banned phrases found."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: exact_phrases",
+      "items": [
+        {
+          "name": "AI Intelligence Layer",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Performance Dashboard",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Performance Center",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Secure Development Environment",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Engineering Visibility",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Cost Management",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "safe AI adoption",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI-native production",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Applied AI Engineering partner",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Applied AI Company",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Production Engineering",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI Leadership Search",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "every AI dollar visible",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "AI talent staffing",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "Staffing gives capacity",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "owns outcomes",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "free trial",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "hire in 48 hours",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "mid-level",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        },
+        {
+          "name": "mid level",
+          "status": "pass",
+          "evidence": [],
+          "locations": [],
+          "count": null,
+          "fix": ""
+        }
+      ]
+    },
+    "C2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Title: “Captive Team Calculation”; no Glossary §7 context-term occurrences were supplied."
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "GoGloby Glossary §7 — Terms and claims we do not use",
+      "items": []
+    },
+    "C3": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Brand spelling \"GoGloby\" is consistent."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: brand_spelling"
+    },
+    "C4": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Phone matches official digits or none listed."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "audit.json: code_facts.phone_digits"
+    },
+    "C5": {
+      "status": "pass",
+      "severity": "low",
+      "evidence": [
+        "No em dashes found."
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "Glossary §9"
+    },
+    "D1": {
+      "status": "na",
+      "severity": "high",
+      "evidence": [
+        "Page text: “Captive Team Calculation”"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet — Identity; Services; Key metrics",
+      "items": []
+    },
+    "D2": {
+      "status": "na",
+      "severity": "high",
+      "evidence": [
+        "Page text: “Captive Team Calculation”"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet — Featured clients",
+      "items": []
+    },
+    "D3": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Image alt: “Background”"
+      ],
+      "locations": [
+        "image_alt"
+      ],
+      "count": 1,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet — Featured clients; External recognition",
+      "items": [
+        {
+          "name": "logo_image:background",
+          "status": "pass",
+          "evidence": [
+            "Image alt: “Background”"
+          ],
+          "locations": [
+            "image_alt"
+          ],
+          "count": 1,
+          "fix": ""
+        }
+      ]
+    },
+    "D4": {
+      "status": "na",
+      "severity": "low",
+      "evidence": [
+        "Page text: “Captive Team Calculation”"
+      ],
+      "locations": [
+        "h1"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "GoGloby Fact Sheet — External recognition",
+      "items": []
+    },
+    "E1": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "The page title is “Captive Team Calculation”; the available page text contains no recruiting or staffing service content."
+      ],
+      "locations": [
+        "title",
+        "h1",
+        "body"
+      ],
+      "count": null,
+      "fix": "Clarify whether this page supports recruiting or staffing, or treat it as a non-service page.",
+      "source_ref": "GoGloby Fact Sheet — Services; GoGloby Glossary §2 — The two services",
+      "value": "none"
+    },
+    "E2": {
+      "status": "pass",
+      "severity": "high",
+      "evidence": [
+        "Available page text is “Captive Team Calculation”; it does not describe GoGloby as a different type of company."
+      ],
+      "locations": [
+        "title",
+        "h1",
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "decisions.md — Company description; GoGloby Fact Sheet — Identity, What GoGloby is not"
+    },
+    "E3": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "The available page text is “Captive Team Calculation”; no call to action is present in the supplied page content."
+      ],
+      "locations": [
+        "title",
+        "h1",
+        "body"
+      ],
+      "count": 0,
+      "fix": "Clarify the page’s service purpose and provide the corresponding service-specific call to action if applicable.",
+      "source_ref": "GoGloby Glossary §7 — Terms and claims we do not use"
+    },
+    "E4": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "The H1 is “Captive Team Calculation”; the supplied content contains no substantive copy to assess for lead order."
+      ],
+      "locations": [
+        "h1",
+        "first_paragraph",
+        "body"
+      ],
+      "count": null,
+      "fix": "Provide substantive page content so its lead order can be assessed against the required sequence.",
+      "source_ref": "GoGloby Glossary §9 — How we write"
+    },
+    "F1": {
+      "status": "fail",
+      "severity": "high",
+      "evidence": [
+        "Title: “Captive Team Calculation”; page body contains only “Captive Team Calculation”."
+      ],
+      "locations": [
+        "title",
+        "h1",
+        "body"
+      ],
+      "count": 1,
+      "fix": "Add an opening that directly answers the page’s title.",
+      "source_ref": "Checks for LLM call 3: F1"
+    },
+    "F2": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "The available page text is “Captive Team Calculation”; it does not establish this as a commercial page."
+      ],
+      "locations": [
+        "title",
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Glossary §1; Checks for LLM call 3: F2"
+    },
+    "F3": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "The page title is “Captive Team Calculation”; it is not identified as a recruiting page."
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Glossary §9; Checks for LLM call 3: F3"
+    },
+    "F4": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "The available page text is “Captive Team Calculation”; no key claims are supplied."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Checks for LLM call 3: F4"
+    },
+    "F5": {
+      "status": "na",
+      "severity": "medium",
+      "evidence": [
+        "The available page text is “Captive Team Calculation”; no FAQ or commercial-page content is supplied."
+      ],
+      "locations": [
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Checks for LLM call 3: F5"
+    },
+    "F6": {
+      "status": "fail",
+      "severity": "medium",
+      "evidence": [
+        "Title: “Captive Team Calculation”; supplied body contains only embed-script code and no buyer-facing content."
+      ],
+      "locations": [
+        "title",
+        "body"
+      ],
+      "count": null,
+      "fix": "Clarify the page’s intended audience and purpose.",
+      "source_ref": "Glossary §§5, 9; Checks for LLM call 3: F6",
+      "value": "not_targeted"
+    },
+    "G1": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "Title: “Captive Team Calculation”; no Glossary §6 target term appears in the supplied page text."
+      ],
+      "locations": [
+        "title"
+      ],
+      "count": 0,
+      "fix": "Review whether the page should target a Glossary §6 term.",
+      "source_ref": "Glossary §6; Checks for LLM call 3: G1",
+      "value": "none"
+    },
+    "G2": {
+      "status": "warn",
+      "severity": "medium",
+      "evidence": [
+        "title: no",
+        "h1: no",
+        "h2: no",
+        "meta: no",
+        "first_paragraph: no"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "Place target keyword in title, H1, H2, meta, and first paragraph.",
+      "source_ref": "checklist: G2"
+    },
+    "G3": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "Title: “Captive Team Calculation”; H1: “Captive Team Calculation.”"
+      ],
+      "locations": [
+        "title",
+        "h1"
+      ],
+      "count": 0,
+      "fix": "",
+      "source_ref": "Glossary §8; Checks for LLM call 3: G3"
+    },
+    "G4": {
+      "status": "pass",
+      "severity": "medium",
+      "evidence": [
+        "No competing pages for this keyword"
+      ],
+      "locations": [],
+      "count": null,
+      "fix": "",
+      "source_ref": "checklist: G4"
+    },
+    "H1": {
+      "status": "info",
+      "severity": "medium",
+      "evidence": [
+        "The page’s main content is “Captive Team Calculation”; the supplied page text contains no substantive content."
+      ],
+      "locations": [
+        "title",
+        "h1",
+        "body"
+      ],
+      "count": null,
+      "fix": "Keep the page out of search while it remains a thin utility page.",
+      "source_ref": "Checks for LLM call 3: H1",
+      "value": "noindex"
+    },
+    "H2": {
+      "status": "info",
+      "severity": "medium",
+      "evidence": [
+        "Title: “Captive Team Calculation”; the supplied body contains only embed-script code."
+      ],
+      "locations": [
+        "title",
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Checks for LLM call 3: H2",
+      "value": "low"
+    },
+    "H3": {
+      "status": "info",
+      "severity": "medium",
+      "evidence": [
+        "Title: “Captive Team Calculation”; body contains only “Captive Team Calculation” and embed-script code."
+      ],
+      "locations": [
+        "title",
+        "body"
+      ],
+      "count": null,
+      "fix": "",
+      "source_ref": "Checks for LLM call 3: H3",
+      "value": "F1: opening does not answer the title; F6: no buyer-facing audience or content is evident; H1: thin utility page"
+    }
+  },
+  "recommendation": {
+    "action": "noindex",
+    "priority": "low",
+    "reasons": [
+      "F1: opening does not answer the title",
+      "F6: no buyer-facing audience or content is evident",
+      "H1: thin utility page"
+    ]
+  }
+}

@@ -1,0 +1,1073 @@
+{
+  "run_page_count": 10,
+  "min_pages_threshold": 8,
+  "fingerprints": [
+    "8790574645c70b3b46d2b303892c2b3c507b32da1038300b0949378c62dc306d",
+    "64ddce2148612f44519c3ae320a74e8f08abedae0646ffb18e7ea7ac9d441f85",
+    "035f2cf39bf6443833b05fd11eb34ed5d26b04ef32db2fa0607efb64525a69f5",
+    "d7b345474232071035d2087a839ba9b423090f24bf7773005bd48fe43a9474d4",
+    "e8498631147ef9fa4648fa96b0ed9158a8a069c8263670679f2ec45260ea16ec",
+    "9f8dda2fee3096de9ee29f62de0af9215d1e54120bb8c49325bf48090c3f821e",
+    "de4bbf37fe2a69d8b145d981a2ec20dfdc6eb718167458a548f4a9059f48f5b9",
+    "89b001e58540e84e1a15590cc7bf4ab470d4544639d546a648528e7209b7c41f",
+    "0a823097cdb3287a4ee6ba58d2d2d2dd61c197c3e5e5cda7785b8e17d9d0b6a9",
+    "1045024ac9fe6130e2f5aeaf359eb077eea55dca9ebd67e67b2a057228ae8b02",
+    "3a67e24a04fcb9ca74f1df0c2f0906a4806a909059835f6d5cd5531caf888810",
+    "55e4b65a3af8bfc088921a380e07656449684612595528d8f22c3966c4c429ec",
+    "d9778b6acb3ea0247c37b699914f2d5619e248be24492f79df81100604815f09",
+    "d1fe42abcdd8e3bdb2a60555a13bf9a5e3187a326ad9d0fbc0915e0b583120c8",
+    "96adca751a6fe07375e58d0c0c04b97ec29e0ce07fb434d1d1b3e5ff83a421c2",
+    "34227f70b2bdc4f81b5e2a14307e5aca4eb0fc9cdad25f0c308d941f3d107d83",
+    "4d91148cb055157353674156c7ffe4b5ab154e67381ba19673f36cb48e5c6bc7",
+    "6d5f72053fbadd40a4616ee84f3414e5e317aa7e1a7d99d3aed03892b5363cba",
+    "47957e485463da7b6629c28b37f504344dfdc183bad3fe6b097f5b1fd381001e",
+    "0faef226a9edcfb67be583db01f1f74eacf6a89f5de9e551cdc3f81123857960",
+    "c8390648a06cd9a7c3d461c549731f469756b84d6eca8c5a3d11422436ea71a6"
+  ],
+  "nodes": [
+    {
+      "fingerprint": "1045024ac9fe6130e2f5aeaf359eb077eea55dca9ebd67e67b2a057228ae8b02",
+      "type": "AggregateRating",
+      "name": "AggregateRating",
+      "page_count": 10,
+      "pages": [
+        "https://gogloby.com/",
+        "https://gogloby.com/author/vit_koval/",
+        "https://gogloby.com/captive-team-calculation/",
+        "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+        "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+        "https://gogloby.com/insights/talent-acquisition-companies/",
+        "https://gogloby.com/podcast/philippe-noel/",
+        "https://gogloby.com/podcast/tara-vasdani/",
+        "https://gogloby.com/solutions/ai-engineering-visibility/",
+        "https://gogloby.com/terms-and-conditions/"
+      ],
+      "sample": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "reviewCount": 4.9
+      }
+    },
+    {
+      "fingerprint": "035f2cf39bf6443833b05fd11eb34ed5d26b04ef32db2fa0607efb64525a69f5",
+      "type": "Brand",
+      "name": "GoGloby",
+      "page_count": 10,
+      "pages": [
+        "https://gogloby.com/",
+        "https://gogloby.com/author/vit_koval/",
+        "https://gogloby.com/captive-team-calculation/",
+        "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+        "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+        "https://gogloby.com/insights/talent-acquisition-companies/",
+        "https://gogloby.com/podcast/philippe-noel/",
+        "https://gogloby.com/podcast/tara-vasdani/",
+        "https://gogloby.com/solutions/ai-engineering-visibility/",
+        "https://gogloby.com/terms-and-conditions/"
+      ],
+      "sample": {
+        "@type": "Brand",
+        "name": "GoGloby"
+      }
+    },
+    {
+      "fingerprint": "d1fe42abcdd8e3bdb2a60555a13bf9a5e3187a326ad9d0fbc0915e0b583120c8",
+      "type": "BusinessAudience",
+      "name": "BusinessAudience",
+      "page_count": 10,
+      "pages": [
+        "https://gogloby.com/",
+        "https://gogloby.com/author/vit_koval/",
+        "https://gogloby.com/captive-team-calculation/",
+        "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+        "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+        "https://gogloby.com/insights/talent-acquisition-companies/",
+        "https://gogloby.com/podcast/philippe-noel/",
+        "https://gogloby.com/podcast/tara-vasdani/",
+        "https://gogloby.com/solutions/ai-engineering-visibility/",
+        "https://gogloby.com/terms-and-conditions/"
+      ],
+      "sample": {
+        "@type": "BusinessAudience",
+        "audienceType": "VP of Engineering, SVP Engineering, CTO at US-based Established software companies (100 to 3,000 employees)"
+      }
+    },
+    {
+      "fingerprint": "e8498631147ef9fa4648fa96b0ed9158a8a069c8263670679f2ec45260ea16ec",
+      "type": "ContactPoint",
+      "name": "ContactPoint",
+      "page_count": 10,
+      "pages": [
+        "https://gogloby.com/",
+        "https://gogloby.com/author/vit_koval/",
+        "https://gogloby.com/captive-team-calculation/",
+        "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+        "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+        "https://gogloby.com/insights/talent-acquisition-companies/",
+        "https://gogloby.com/podcast/philippe-noel/",
+        "https://gogloby.com/podcast/tara-vasdani/",
+        "https://gogloby.com/solutions/ai-engineering-visibility/",
+        "https://gogloby.com/terms-and-conditions/"
+      ],
+      "sample": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "email": "sales@gogloby.com",
+        "telephone": "+1-781-343-1777",
+        "contactOption": "https://gogloby.com/contacts/",
+        "areaServed": [
+          "US",
+          "CA",
+          "GB",
+          "EU"
+        ],
+        "availableLanguage": [
+          "en"
+        ]
+      }
+    },
+    {
+      "fingerprint": "9f8dda2fee3096de9ee29f62de0af9215d1e54120bb8c49325bf48090c3f821e",
+      "type": "ContactPoint",
+      "name": "ContactPoint",
+      "page_count": 10,
+      "pages": [
+        "https://gogloby.com/",
+        "https://gogloby.com/author/vit_koval/",
+        "https://gogloby.com/captive-team-calculation/",
+        "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+        "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+        "https://gogloby.com/insights/talent-acquisition-companies/",
+        "https://gogloby.com/podcast/philippe-noel/",
+        "https://gogloby.com/podcast/tara-vasdani/",
+        "https://gogloby.com/solutions/ai-engineering-visibility/",
+        "https://gogloby.com/terms-and-conditions/"
+      ],
+      "sample": {
+        "@type": "ContactPoint",
+        "contactType": "candidate support",
+        "email": "hr@gogloby.com",
+        "contactOption": "https://gogloby.com//contacts/",
+        "areaServed": [
+          "US",
+          "AR",
+          "MX"
+        ],
+        "availableLanguage": [
+          "en",
+          "es"
+        ]
+      }
+    },
+    {
+      "fingerprint": "64ddce2148612f44519c3ae320a74e8f08abedae0646ffb18e7ea7ac9d441f85",
+      "type": "ImageObject",
+      "name": "ImageObject",
+      "page_count": 10,
+      "pages": [
+        "https://gogloby.com/",
+        "https://gogloby.com/author/vit_koval/",
+        "https://gogloby.com/captive-team-calculation/",
+        "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+        "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+        "https://gogloby.com/insights/talent-acquisition-companies/",
+        "https://gogloby.com/podcast/philippe-noel/",
+        "https://gogloby.com/podcast/tara-vasdani/",
+        "https://gogloby.com/solutions/ai-engineering-visibility/",
+        "https://gogloby.com/terms-and-conditions/"
+      ],
+      "sample": {
+        "@type": "ImageObject",
+        "url": "https://gogloby.com/wp-content/uploads/2026/05/globy-logo-square-1-01.png"
+      }
+    },
+    {
+      "fingerprint": "55e4b65a3af8bfc088921a380e07656449684612595528d8f22c3966c4c429ec",
+      "type": "Offer",
+      "name": "Offer",
+      "page_count": 10,
+      "pages": [
+        "https://gogloby.com/",
+        "https://gogloby.com/author/vit_koval/",
+        "https://gogloby.com/captive-team-calculation/",
+        "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+        "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+        "https://gogloby.com/insights/talent-acquisition-companies/",
+        "https://gogloby.com/podcast/philippe-noel/",
+        "https://gogloby.com/podcast/tara-vasdani/",
+        "https://gogloby.com/solutions/ai-engineering-visibility/",
+        "https://gogloby.com/terms-and-conditions/"
+      ],
+      "sample": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "@id": "https://gogloby.com/services/claude-in-production/#service",
+          "url": "https://gogloby.com/services/claude-in-production/",
+          "name": "Applied AI Engineering",
+          "serviceType": "Applied AI Engineering",
+          "description": "GoGloby turns engineering into AI-native production. It puts Claude into production for established software, without risking the codebase. Forward-deployed AI Solutions Architects, safe by design.",
+          "provider": {
+            "@id": "https://gogloby.com/#organization"
+          },
+          "areaServed": [
+            "US",
+            "CA",
+            "GB",
+            "EU"
+          ],
+          "serviceOutput": "Claude running in production inside the established codebase, delivering shipped features under engineer oversight, without risking the platform, with board-ready proof that the AI budget is producing output.",
+          "audience": {
+            "@type": "BusinessAudience",
+            "audienceType": "VP of Engineering, SVP Engineering, CTO at US-based Established software companies (100 to 3,000 employees)"
+          }
+        }
+      }
+    },
+    {
+      "fingerprint": "96adca751a6fe07375e58d0c0c04b97ec29e0ce07fb434d1d1b3e5ff83a421c2",
+      "type": "Offer",
+      "name": "Offer",
+      "page_count": 10,
+      "pages": [
+        "https://gogloby.com/",
+        "https://gogloby.com/author/vit_koval/",
+        "https://gogloby.com/captive-team-calculation/",
+        "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+        "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+        "https://gogloby.com/insights/talent-acquisition-companies/",
+        "https://gogloby.com/podcast/philippe-noel/",
+        "https://gogloby.com/podcast/tara-vasdani/",
+        "https://gogloby.com/solutions/ai-engineering-visibility/",
+        "https://gogloby.com/terms-and-conditions/"
+      ],
+      "sample": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "@id": "https://gogloby.com/generative-ai-development-services/#service",
+          "url": "https://gogloby.com/generative-ai-development-services/",
+          "name": "Generative AI Development Services",
+          "serviceType": "Generative AI Development",
+          "description": "Production-ready generative AI delivery covering GenAI integration, multi-agent orchestration, optimization and evaluation, and ongoing support and governance. GoGloby's Applied AI Software Engineers build copilots, AI agents, RAG applications, and agentic workflows using LangChain, LangGraph, CrewAI, and AutoGen. Forward-deployed into your team in under 4 weeks. Zero IP exposure. $3M combined liability (cyber, data and professional) from day one.",
+          "provider": {
+            "@id": "https://gogloby.com/#organization"
+          },
+          "areaServed": [
+            "US",
+            "CA",
+            "GB",
+            "EU"
+          ],
+          "serviceOutput": "Production-ready generative AI products including copilots, AI agents, RAG applications, and multi-agent systems shipped inside the client's AI development inside the client perimeter with sprint-by-sprint AI Intelligence Layer reporting.",
+          "audience": {
+            "@type": "BusinessAudience",
+            "audienceType": "VP of Engineering, SVP Engineering, CTO at US-based Established software companies (100 to 3,000 employees)"
+          }
+        }
+      }
+    },
+    {
+      "fingerprint": "4d91148cb055157353674156c7ffe4b5ab154e67381ba19673f36cb48e5c6bc7",
+      "type": "Offer",
+      "name": "Offer",
+      "page_count": 10,
+      "pages": [
+        "https://gogloby.com/",
+        "https://gogloby.com/author/vit_koval/",
+        "https://gogloby.com/captive-team-calculation/",
+        "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+        "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+        "https://gogloby.com/insights/talent-acquisition-companies/",
+        "https://gogloby.com/podcast/philippe-noel/",
+        "https://gogloby.com/podcast/tara-vasdani/",
+        "https://gogloby.com/solutions/ai-engineering-visibility/",
+        "https://gogloby.com/terms-and-conditions/"
+      ],
+      "sample": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "@id": "https://gogloby.com/ai-staff-augmentation/#service",
+          "url": "https://gogloby.com/ai-staff-augmentation/",
+          "name": "AI Staff Augmentation",
+          "serviceType": "AI Staff Augmentation",
+          "description": "Embed the top 4 percent of Applied AI Software Engineers directly into your team, your sprints, your tools, and your codebase. Every engineer is vetted through a 4-stage technical funnel covering Specify, Navigate, Architect, and Govern. Vetted profiles delivered in 72 hours. First validated feature in 3 to 5 business days. 120-day telemetry-backed replacement guarantee. $3M combined liability (cyber, data and professional) included.",
+          "provider": {
+            "@id": "https://gogloby.com/#organization"
+          },
+          "areaServed": [
+            "US",
+            "CA",
+            "GB",
+            "EU"
+          ],
+          "serviceOutput": "Vetted Applied AI Software Engineers forward-deployed in under 4 weeks, with the first validated feature in 3 to 5 business days and median time to first production commit of 23 days.",
+          "audience": {
+            "@type": "BusinessAudience",
+            "audienceType": "VP of Engineering, SVP Engineering, CTO at US-based Established software companies (100 to 3,000 employees)"
+          }
+        }
+      }
+    },
+    {
+      "fingerprint": "47957e485463da7b6629c28b37f504344dfdc183bad3fe6b097f5b1fd381001e",
+      "type": "Offer",
+      "name": "Offer",
+      "page_count": 10,
+      "pages": [
+        "https://gogloby.com/",
+        "https://gogloby.com/author/vit_koval/",
+        "https://gogloby.com/captive-team-calculation/",
+        "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+        "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+        "https://gogloby.com/insights/talent-acquisition-companies/",
+        "https://gogloby.com/podcast/philippe-noel/",
+        "https://gogloby.com/podcast/tara-vasdani/",
+        "https://gogloby.com/solutions/ai-engineering-visibility/",
+        "https://gogloby.com/terms-and-conditions/"
+      ],
+      "sample": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "@id": "https://gogloby.com/hire-ai-engineers/#service",
+          "url": "https://gogloby.com/hire-ai-engineers/",
+          "name": "Hire Applied AI Engineers",
+          "serviceType": "Applied AI Engineering Recruitment",
+          "description": "Direct hire recruitment for senior Applied AI Engineers brought directly into your headcount. Every candidate runs GoGloby's 4-stage vetting funnel (Specify, Navigate, Architect, Govern) with only 4 percent passing. Shortlist delivered in 5 days. 50 percent faster time-to-hire than US job boards. 120-day replacement guarantee. No fee until you hire. Talent network spans 5 plus US-timezone countries.",
+          "provider": {
+            "@id": "https://gogloby.com/#organization"
+          },
+          "areaServed": [
+            "US",
+            "CA",
+            "GB",
+            "EU"
+          ],
+          "serviceOutput": "Shortlist of production-proven Applied AI Engineers delivered in 5 business days, with 1 in 3 candidates hired and retained.",
+          "audience": {
+            "@type": "BusinessAudience",
+            "audienceType": "VP of Engineering, SVP Engineering, CTO at US-based Established software companies (100 to 3,000 employees)"
+          }
+        }
+      }
+    },
+    {
+      "fingerprint": "3a67e24a04fcb9ca74f1df0c2f0906a4806a909059835f6d5cd5531caf888810",
+      "type": "OfferCatalog",
+      "name": "GoGloby Applied AI Engineering Service Catalog",
+      "page_count": 10,
+      "pages": [
+        "https://gogloby.com/",
+        "https://gogloby.com/author/vit_koval/",
+        "https://gogloby.com/captive-team-calculation/",
+        "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+        "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+        "https://gogloby.com/insights/talent-acquisition-companies/",
+        "https://gogloby.com/podcast/philippe-noel/",
+        "https://gogloby.com/podcast/tara-vasdani/",
+        "https://gogloby.com/solutions/ai-engineering-visibility/",
+        "https://gogloby.com/terms-and-conditions/"
+      ],
+      "sample": {
+        "@type": "OfferCatalog",
+        "name": "GoGloby Applied AI Engineering Service Catalog",
+        "url": " https://gogloby.com/services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://gogloby.com/services/claude-in-production/#service",
+              "url": "https://gogloby.com/services/claude-in-production/",
+              "name": "Applied AI Engineering",
+              "serviceType": "Applied AI Engineering",
+              "description": "GoGloby turns engineering into AI-native production. It puts Claude into production for established software, without risking the codebase. Forward-deployed AI Solutions Architects, safe by design.",
+              "provider": {
+                "@id": "https://gogloby.com/#organization"
+              },
+              "areaServed": [
+                "US",
+                "CA",
+                "GB",
+                "EU"
+              ],
+              "serviceOutput": "Claude running in production inside the established codebase, delivering shipped features under engineer oversight, without risking the platform, with board-ready proof that the AI budget is producing output.",
+              "audience": {
+                "@type": "BusinessAudience",
+                "audienceType": "VP of Engineering, SVP Engineering, CTO at US-based Established software companies (100 to 3,000 employees)"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://gogloby.com/generative-ai-development-services/#service",
+              "url": "https://gogloby.com/generative-ai-development-services/",
+              "name": "Generative AI Development Services",
+              "serviceType": "Generative AI Development",
+              "description": "Production-ready generative AI delivery covering GenAI integration, multi-agent orchestration, optimization and evaluation, and ongoing support and governance. GoGloby's Applied AI Software Engineers build copilots, AI agents, RAG applications, and agentic workflows using LangChain, LangGraph, CrewAI, and AutoGen. Forward-deployed into your team in under 4 weeks. Zero IP exposure. $3M combined liability (cyber, data and professional) from day one.",
+              "provider": {
+                "@id": "https://gogloby.com/#organization"
+              },
+              "areaServed": [
+                "US",
+                "CA",
+                "GB",
+                "EU"
+              ],
+              "serviceOutput": "Production-ready generative AI products including copilots, AI agents, RAG applications, and multi-agent systems shipped inside the client's AI development inside the client perimeter with sprint-by-sprint AI Intelligence Layer reporting.",
+              "audience": {
+                "@type": "BusinessAudience",
+                "audienceType": "VP of Engineering, SVP Engineering, CTO at US-based Established software companies (100 to 3,000 employees)"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://gogloby.com/ai-staff-augmentation/#service",
+              "url": "https://gogloby.com/ai-staff-augmentation/",
+              "name": "AI Staff Augmentation",
+              "serviceType": "AI Staff Augmentation",
+              "description": "Embed the top 4 percent of Applied AI Software Engineers directly into your team, your sprints, your tools, and your codebase. Every engineer is vetted through a 4-stage technical funnel covering Specify, Navigate, Architect, and Govern. Vetted profiles delivered in 72 hours. First validated feature in 3 to 5 business days. 120-day telemetry-backed replacement guarantee. $3M combined liability (cyber, data and professional) included.",
+              "provider": {
+                "@id": "https://gogloby.com/#organization"
+              },
+              "areaServed": [
+                "US",
+                "CA",
+                "GB",
+                "EU"
+              ],
+              "serviceOutput": "Vetted Applied AI Software Engineers forward-deployed in under 4 weeks, with the first validated feature in 3 to 5 business days and median time to first production commit of 23 days.",
+              "audience": {
+                "@type": "BusinessAudience",
+                "audienceType": "VP of Engineering, SVP Engineering, CTO at US-based Established software companies (100 to 3,000 employees)"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://gogloby.com/hire-ai-engineers/#service",
+              "url": "https://gogloby.com/hire-ai-engineers/",
+              "name": "Hire Applied AI Engineers",
+              "serviceType": "Applied AI Engineering Recruitment",
+              "description": "Direct hire recruitment for senior Applied AI Engineers brought directly into your headcount. Every candidate runs GoGloby's 4-stage vetting funnel (Specify, Navigate, Architect, Govern) with only 4 percent passing. Shortlist delivered in 5 days. 50 percent faster time-to-hire than US job boards. 120-day replacement guarantee. No fee until you hire. Talent network spans 5 plus US-timezone countries.",
+              "provider": {
+                "@id": "https://gogloby.com/#organization"
+              },
+              "areaServed": [
+                "US",
+                "CA",
+                "GB",
+                "EU"
+              ],
+              "serviceOutput": "Shortlist of production-proven Applied AI Engineers delivered in 5 business days, with 1 in 3 candidates hired and retained.",
+              "audience": {
+                "@type": "BusinessAudience",
+                "audienceType": "VP of Engineering, SVP Engineering, CTO at US-based Established software companies (100 to 3,000 employees)"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fingerprint": "8790574645c70b3b46d2b303892c2b3c507b32da1038300b0949378c62dc306d",
+      "type": "Organization",
+      "name": "GoGloby",
+      "page_count": 10,
+      "pages": [
+        "https://gogloby.com/",
+        "https://gogloby.com/author/vit_koval/",
+        "https://gogloby.com/captive-team-calculation/",
+        "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+        "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+        "https://gogloby.com/insights/talent-acquisition-companies/",
+        "https://gogloby.com/podcast/philippe-noel/",
+        "https://gogloby.com/podcast/tara-vasdani/",
+        "https://gogloby.com/solutions/ai-engineering-visibility/",
+        "https://gogloby.com/terms-and-conditions/"
+      ],
+      "sample": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://gogloby.com/#organization",
+        "name": "GoGloby",
+        "legalName": "Gogloby LLC",
+        "url": "https://gogloby.com/",
+        "email": "hr@gogloby.com",
+        "telephone": "+1-781-343-1777",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://gogloby.com/wp-content/uploads/2026/05/globy-logo-square-1-01.png"
+        },
+        "image": "https://gogloby.com/wp-content/uploads/2026/05/gogloby-banner-1-01.png",
+        "slogan": "Applied AI Engineering Partner",
+        "description": "We are a US-based talent acquisition agency specializing in assisting tech companies to discover, assess, and hire the world's most thoroughly vetted talent within the US & EU time zones.",
+        "foundingDate": "2021",
+        "knowsLanguage": [
+          "en"
+        ],
+        "knowsAbout": [
+          "Applied AI Engineering Partner",
+          "Applied AI Engineering",
+          "Applied AI Software Engineers",
+          "Agentic SDLC",
+          "Agentic Workflow",
+          "AI Intelligence Layer (engineering telemetry)",
+          "AI development inside the client perimeter",
+          "AI Agent Development",
+          "Generative ai development services",
+          "GenAI Integration",
+          "AI Orchestration",
+          "Agentic Software Development",
+          "Engineering Performance Telemetry",
+          "Nearshore AI Development",
+          "Applied AI Engineering Pod",
+          "Receruitment of Applied AI Engineer",
+          "Applied AI Staff Augmentation"
+        ],
+        "keywords": [
+          "Applied AI Engineering Partner",
+          "Applied AI Engineering",
+          "Applied AI Software Engineers",
+          "Agentic SDLC",
+          "Agentic Workflow",
+          "AI Intelligence Layer",
+          "AI development inside the client perimeter",
+          "AI Engineering Pod"
+        ],
+        "brand": {
+          "@type": "Brand",
+          "name": "GoGloby"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "name": "GoGloby Headquarters",
+          "streetAddress": "8 The Green",
+          "addressLocality": "Dover",
+          "addressRegion": "DE",
+          "postalCode": "19901",
+          "addressCountry": "US"
+        },
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "sales",
+            "email": "sales@gogloby.com",
+            "telephone": "+1-781-343-1777",
+            "contactOption": "https://gogloby.com/contacts/",
+            "areaServed": [
+              "US",
+              "CA",
+              "GB",
+              "EU"
+            ],
+            "availableLanguage": [
+              "en"
+            ]
+          },
+          {
+            "@type": "ContactPoint",
+            "contactType": "candidate support",
+            "email": "hr@gogloby.com",
+            "contactOption": "https://gogloby.com//contacts/",
+            "areaServed": [
+              "US",
+              "AR",
+              "MX"
+            ],
+            "availableLanguage": [
+              "en",
+              "es"
+            ]
+          }
+        ],
+        "founder": [
+          {
+            "@type": "Person",
+            "name": "Sergey Matikaynen",
+            "jobTitle": "Co-founder & CTO",
+            "description": "Co-founder & CTO of GoGloby. Leads the Agentic SDLC methodology, secure development environment design, and the technical architecture behind the Applied AI Engineering system.",
+            "knowsAbout": [
+              "Agentic SDLC",
+              "Applied AI Engineering",
+              "Multi-agent systems",
+              "Secure AI development environments"
+            ],
+            "sameAs": [
+              "https://www.linkedin.com/in/sergeymatikaynen/"
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "Vit Koval",
+            "alternateName": "Vitaly Koval",
+            "jobTitle": "Co-founder",
+            "description": "Co-founder of GoGloby. For the past decade, has helped engineering leaders scale teams across the US, Canada, Argentina, Brazil, Mexico, and Europe — generating $60M+ in value. Built the Applied AI Engineering system to give tech leaders board-ready proof of AI-driven engineering velocity.",
+            "knowsAbout": [
+              "Applied AI Engineering Partnerships",
+              "Engineering team scaling",
+              "Nearshore AI talent",
+              "Agentic SDLC adoption"
+            ],
+            "sameAs": [
+              "https://www.linkedin.com/in/vitalykoval/"
+            ]
+          }
+        ],
+        "numberOfEmployees": {
+          "@type": "QuantitativeValue",
+          "minValue": 50,
+          "maxValue": 100
+        },
+        "award": [
+          "Clutch TOP Applied AI Engineering Partner 2025"
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "bestRating": "5",
+          "reviewCount": 4.9
+        },
+        "sameAs": [
+          "https://www.linkedin.com/company/gogloby/",
+          "https://www.crunchbase.com/organization/gogloby",
+          "https://x.com/GoGloby",
+          "https://www.g2.com/products/gogloby/reviews",
+          "https://clutch.co/profile/gogloby",
+          "https://www.trustpilot.com/review/gogloby.com",
+          "https://www.designrush.com/agency/profile/gogloby",
+          "https://github.com/gogloby",
+          "https://www.facebook.com/gogloby",
+          "https://www.youtube.com/@DefaultGlobal"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "GoGloby Applied AI Engineering Service Catalog",
+          "url": " https://gogloby.com/services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "@id": "https://gogloby.com/services/claude-in-production/#service",
+                "url": "https://gogloby.com/services/claude-in-production/",
+                "name": "Applied AI Engineering",
+                "serviceType": "Applied AI Engineering",
+                "description": "GoGloby turns engineering into AI-native production. It puts Claude into production for established software, without risking the codebase. Forward-deployed AI Solutions Architects, safe by design.",
+                "provider": {
+                  "@id": "https://gogloby.com/#organization"
+                },
+                "areaServed": [
+                  "US",
+                  "CA",
+                  "GB",
+                  "EU"
+                ],
+                "serviceOutput": "Claude running in production inside the established codebase, delivering shipped features under engineer oversight, without risking the platform, with board-ready proof that the AI budget is producing output.",
+                "audience": {
+                  "@type": "BusinessAudience",
+                  "audienceType": "VP of Engineering, SVP Engineering, CTO at US-based Established software companies (100 to 3,000 employees)"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "@id": "https://gogloby.com/generative-ai-development-services/#service",
+                "url": "https://gogloby.com/generative-ai-development-services/",
+                "name": "Generative AI Development Services",
+                "serviceType": "Generative AI Development",
+                "description": "Production-ready generative AI delivery covering GenAI integration, multi-agent orchestration, optimization and evaluation, and ongoing support and governance. GoGloby's Applied AI Software Engineers build copilots, AI agents, RAG applications, and agentic workflows using LangChain, LangGraph, CrewAI, and AutoGen. Forward-deployed into your team in under 4 weeks. Zero IP exposure. $3M combined liability (cyber, data and professional) from day one.",
+                "provider": {
+                  "@id": "https://gogloby.com/#organization"
+                },
+                "areaServed": [
+                  "US",
+                  "CA",
+                  "GB",
+                  "EU"
+                ],
+                "serviceOutput": "Production-ready generative AI products including copilots, AI agents, RAG applications, and multi-agent systems shipped inside the client's AI development inside the client perimeter with sprint-by-sprint AI Intelligence Layer reporting.",
+                "audience": {
+                  "@type": "BusinessAudience",
+                  "audienceType": "VP of Engineering, SVP Engineering, CTO at US-based Established software companies (100 to 3,000 employees)"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "@id": "https://gogloby.com/ai-staff-augmentation/#service",
+                "url": "https://gogloby.com/ai-staff-augmentation/",
+                "name": "AI Staff Augmentation",
+                "serviceType": "AI Staff Augmentation",
+                "description": "Embed the top 4 percent of Applied AI Software Engineers directly into your team, your sprints, your tools, and your codebase. Every engineer is vetted through a 4-stage technical funnel covering Specify, Navigate, Architect, and Govern. Vetted profiles delivered in 72 hours. First validated feature in 3 to 5 business days. 120-day telemetry-backed replacement guarantee. $3M combined liability (cyber, data and professional) included.",
+                "provider": {
+                  "@id": "https://gogloby.com/#organization"
+                },
+                "areaServed": [
+                  "US",
+                  "CA",
+                  "GB",
+                  "EU"
+                ],
+                "serviceOutput": "Vetted Applied AI Software Engineers forward-deployed in under 4 weeks, with the first validated feature in 3 to 5 business days and median time to first production commit of 23 days.",
+                "audience": {
+                  "@type": "BusinessAudience",
+                  "audienceType": "VP of Engineering, SVP Engineering, CTO at US-based Established software companies (100 to 3,000 employees)"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "@id": "https://gogloby.com/hire-ai-engineers/#service",
+                "url": "https://gogloby.com/hire-ai-engineers/",
+                "name": "Hire Applied AI Engineers",
+                "serviceType": "Applied AI Engineering Recruitment",
+                "description": "Direct hire recruitment for senior Applied AI Engineers brought directly into your headcount. Every candidate runs GoGloby's 4-stage vetting funnel (Specify, Navigate, Architect, Govern) with only 4 percent passing. Shortlist delivered in 5 days. 50 percent faster time-to-hire than US job boards. 120-day replacement guarantee. No fee until you hire. Talent network spans 5 plus US-timezone countries.",
+                "provider": {
+                  "@id": "https://gogloby.com/#organization"
+                },
+                "areaServed": [
+                  "US",
+                  "CA",
+                  "GB",
+                  "EU"
+                ],
+                "serviceOutput": "Shortlist of production-proven Applied AI Engineers delivered in 5 business days, with 1 in 3 candidates hired and retained.",
+                "audience": {
+                  "@type": "BusinessAudience",
+                  "audienceType": "VP of Engineering, SVP Engineering, CTO at US-based Established software companies (100 to 3,000 employees)"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fingerprint": "de4bbf37fe2a69d8b145d981a2ec20dfdc6eb718167458a548f4a9059f48f5b9",
+      "type": "Person",
+      "name": "Sergey Matikaynen",
+      "page_count": 10,
+      "pages": [
+        "https://gogloby.com/",
+        "https://gogloby.com/author/vit_koval/",
+        "https://gogloby.com/captive-team-calculation/",
+        "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+        "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+        "https://gogloby.com/insights/talent-acquisition-companies/",
+        "https://gogloby.com/podcast/philippe-noel/",
+        "https://gogloby.com/podcast/tara-vasdani/",
+        "https://gogloby.com/solutions/ai-engineering-visibility/",
+        "https://gogloby.com/terms-and-conditions/"
+      ],
+      "sample": {
+        "@type": "Person",
+        "name": "Sergey Matikaynen",
+        "jobTitle": "Co-founder & CTO",
+        "description": "Co-founder & CTO of GoGloby. Leads the Agentic SDLC methodology, secure development environment design, and the technical architecture behind the Applied AI Engineering system.",
+        "knowsAbout": [
+          "Agentic SDLC",
+          "Applied AI Engineering",
+          "Multi-agent systems",
+          "Secure AI development environments"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/sergeymatikaynen/"
+        ]
+      }
+    },
+    {
+      "fingerprint": "89b001e58540e84e1a15590cc7bf4ab470d4544639d546a648528e7209b7c41f",
+      "type": "Person",
+      "name": "Vit Koval",
+      "page_count": 10,
+      "pages": [
+        "https://gogloby.com/",
+        "https://gogloby.com/author/vit_koval/",
+        "https://gogloby.com/captive-team-calculation/",
+        "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+        "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+        "https://gogloby.com/insights/talent-acquisition-companies/",
+        "https://gogloby.com/podcast/philippe-noel/",
+        "https://gogloby.com/podcast/tara-vasdani/",
+        "https://gogloby.com/solutions/ai-engineering-visibility/",
+        "https://gogloby.com/terms-and-conditions/"
+      ],
+      "sample": {
+        "@type": "Person",
+        "name": "Vit Koval",
+        "alternateName": "Vitaly Koval",
+        "jobTitle": "Co-founder",
+        "description": "Co-founder of GoGloby. For the past decade, has helped engineering leaders scale teams across the US, Canada, Argentina, Brazil, Mexico, and Europe — generating $60M+ in value. Built the Applied AI Engineering system to give tech leaders board-ready proof of AI-driven engineering velocity.",
+        "knowsAbout": [
+          "Applied AI Engineering Partnerships",
+          "Engineering team scaling",
+          "Nearshore AI talent",
+          "Agentic SDLC adoption"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/vitalykoval/"
+        ]
+      }
+    },
+    {
+      "fingerprint": "d7b345474232071035d2087a839ba9b423090f24bf7773005bd48fe43a9474d4",
+      "type": "PostalAddress",
+      "name": "GoGloby Headquarters",
+      "page_count": 10,
+      "pages": [
+        "https://gogloby.com/",
+        "https://gogloby.com/author/vit_koval/",
+        "https://gogloby.com/captive-team-calculation/",
+        "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+        "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+        "https://gogloby.com/insights/talent-acquisition-companies/",
+        "https://gogloby.com/podcast/philippe-noel/",
+        "https://gogloby.com/podcast/tara-vasdani/",
+        "https://gogloby.com/solutions/ai-engineering-visibility/",
+        "https://gogloby.com/terms-and-conditions/"
+      ],
+      "sample": {
+        "@type": "PostalAddress",
+        "name": "GoGloby Headquarters",
+        "streetAddress": "8 The Green",
+        "addressLocality": "Dover",
+        "addressRegion": "DE",
+        "postalCode": "19901",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "fingerprint": "0a823097cdb3287a4ee6ba58d2d2d2dd61c197c3e5e5cda7785b8e17d9d0b6a9",
+      "type": "QuantitativeValue",
+      "name": "QuantitativeValue",
+      "page_count": 10,
+      "pages": [
+        "https://gogloby.com/",
+        "https://gogloby.com/author/vit_koval/",
+        "https://gogloby.com/captive-team-calculation/",
+        "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+        "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+        "https://gogloby.com/insights/talent-acquisition-companies/",
+        "https://gogloby.com/podcast/philippe-noel/",
+        "https://gogloby.com/podcast/tara-vasdani/",
+        "https://gogloby.com/solutions/ai-engineering-visibility/",
+        "https://gogloby.com/terms-and-conditions/"
+      ],
+      "sample": {
+        "@type": "QuantitativeValue",
+        "minValue": 50,
+        "maxValue": 100
+      }
+    },
+    {
+      "fingerprint": "6d5f72053fbadd40a4616ee84f3414e5e317aa7e1a7d99d3aed03892b5363cba",
+      "type": "Service",
+      "name": "AI Staff Augmentation",
+      "page_count": 10,
+      "pages": [
+        "https://gogloby.com/",
+        "https://gogloby.com/author/vit_koval/",
+        "https://gogloby.com/captive-team-calculation/",
+        "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+        "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+        "https://gogloby.com/insights/talent-acquisition-companies/",
+        "https://gogloby.com/podcast/philippe-noel/",
+        "https://gogloby.com/podcast/tara-vasdani/",
+        "https://gogloby.com/solutions/ai-engineering-visibility/",
+        "https://gogloby.com/terms-and-conditions/"
+      ],
+      "sample": {
+        "@type": "Service",
+        "@id": "https://gogloby.com/ai-staff-augmentation/#service",
+        "url": "https://gogloby.com/ai-staff-augmentation/",
+        "name": "AI Staff Augmentation",
+        "serviceType": "AI Staff Augmentation",
+        "description": "Embed the top 4 percent of Applied AI Software Engineers directly into your team, your sprints, your tools, and your codebase. Every engineer is vetted through a 4-stage technical funnel covering Specify, Navigate, Architect, and Govern. Vetted profiles delivered in 72 hours. First validated feature in 3 to 5 business days. 120-day telemetry-backed replacement guarantee. $3M combined liability (cyber, data and professional) included.",
+        "provider": {
+          "@id": "https://gogloby.com/#organization"
+        },
+        "areaServed": [
+          "US",
+          "CA",
+          "GB",
+          "EU"
+        ],
+        "serviceOutput": "Vetted Applied AI Software Engineers forward-deployed in under 4 weeks, with the first validated feature in 3 to 5 business days and median time to first production commit of 23 days.",
+        "audience": {
+          "@type": "BusinessAudience",
+          "audienceType": "VP of Engineering, SVP Engineering, CTO at US-based Established software companies (100 to 3,000 employees)"
+        }
+      }
+    },
+    {
+      "fingerprint": "d9778b6acb3ea0247c37b699914f2d5619e248be24492f79df81100604815f09",
+      "type": "Service",
+      "name": "Applied AI Engineering",
+      "page_count": 10,
+      "pages": [
+        "https://gogloby.com/",
+        "https://gogloby.com/author/vit_koval/",
+        "https://gogloby.com/captive-team-calculation/",
+        "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+        "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+        "https://gogloby.com/insights/talent-acquisition-companies/",
+        "https://gogloby.com/podcast/philippe-noel/",
+        "https://gogloby.com/podcast/tara-vasdani/",
+        "https://gogloby.com/solutions/ai-engineering-visibility/",
+        "https://gogloby.com/terms-and-conditions/"
+      ],
+      "sample": {
+        "@type": "Service",
+        "@id": "https://gogloby.com/services/claude-in-production/#service",
+        "url": "https://gogloby.com/services/claude-in-production/",
+        "name": "Applied AI Engineering",
+        "serviceType": "Applied AI Engineering",
+        "description": "GoGloby turns engineering into AI-native production. It puts Claude into production for established software, without risking the codebase. Forward-deployed AI Solutions Architects, safe by design.",
+        "provider": {
+          "@id": "https://gogloby.com/#organization"
+        },
+        "areaServed": [
+          "US",
+          "CA",
+          "GB",
+          "EU"
+        ],
+        "serviceOutput": "Claude running in production inside the established codebase, delivering shipped features under engineer oversight, without risking the platform, with board-ready proof that the AI budget is producing output.",
+        "audience": {
+          "@type": "BusinessAudience",
+          "audienceType": "VP of Engineering, SVP Engineering, CTO at US-based Established software companies (100 to 3,000 employees)"
+        }
+      }
+    },
+    {
+      "fingerprint": "34227f70b2bdc4f81b5e2a14307e5aca4eb0fc9cdad25f0c308d941f3d107d83",
+      "type": "Service",
+      "name": "Generative AI Development Services",
+      "page_count": 10,
+      "pages": [
+        "https://gogloby.com/",
+        "https://gogloby.com/author/vit_koval/",
+        "https://gogloby.com/captive-team-calculation/",
+        "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+        "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+        "https://gogloby.com/insights/talent-acquisition-companies/",
+        "https://gogloby.com/podcast/philippe-noel/",
+        "https://gogloby.com/podcast/tara-vasdani/",
+        "https://gogloby.com/solutions/ai-engineering-visibility/",
+        "https://gogloby.com/terms-and-conditions/"
+      ],
+      "sample": {
+        "@type": "Service",
+        "@id": "https://gogloby.com/generative-ai-development-services/#service",
+        "url": "https://gogloby.com/generative-ai-development-services/",
+        "name": "Generative AI Development Services",
+        "serviceType": "Generative AI Development",
+        "description": "Production-ready generative AI delivery covering GenAI integration, multi-agent orchestration, optimization and evaluation, and ongoing support and governance. GoGloby's Applied AI Software Engineers build copilots, AI agents, RAG applications, and agentic workflows using LangChain, LangGraph, CrewAI, and AutoGen. Forward-deployed into your team in under 4 weeks. Zero IP exposure. $3M combined liability (cyber, data and professional) from day one.",
+        "provider": {
+          "@id": "https://gogloby.com/#organization"
+        },
+        "areaServed": [
+          "US",
+          "CA",
+          "GB",
+          "EU"
+        ],
+        "serviceOutput": "Production-ready generative AI products including copilots, AI agents, RAG applications, and multi-agent systems shipped inside the client's AI development inside the client perimeter with sprint-by-sprint AI Intelligence Layer reporting.",
+        "audience": {
+          "@type": "BusinessAudience",
+          "audienceType": "VP of Engineering, SVP Engineering, CTO at US-based Established software companies (100 to 3,000 employees)"
+        }
+      }
+    },
+    {
+      "fingerprint": "0faef226a9edcfb67be583db01f1f74eacf6a89f5de9e551cdc3f81123857960",
+      "type": "Service",
+      "name": "Hire Applied AI Engineers",
+      "page_count": 10,
+      "pages": [
+        "https://gogloby.com/",
+        "https://gogloby.com/author/vit_koval/",
+        "https://gogloby.com/captive-team-calculation/",
+        "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+        "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+        "https://gogloby.com/insights/talent-acquisition-companies/",
+        "https://gogloby.com/podcast/philippe-noel/",
+        "https://gogloby.com/podcast/tara-vasdani/",
+        "https://gogloby.com/solutions/ai-engineering-visibility/",
+        "https://gogloby.com/terms-and-conditions/"
+      ],
+      "sample": {
+        "@type": "Service",
+        "@id": "https://gogloby.com/hire-ai-engineers/#service",
+        "url": "https://gogloby.com/hire-ai-engineers/",
+        "name": "Hire Applied AI Engineers",
+        "serviceType": "Applied AI Engineering Recruitment",
+        "description": "Direct hire recruitment for senior Applied AI Engineers brought directly into your headcount. Every candidate runs GoGloby's 4-stage vetting funnel (Specify, Navigate, Architect, Govern) with only 4 percent passing. Shortlist delivered in 5 days. 50 percent faster time-to-hire than US job boards. 120-day replacement guarantee. No fee until you hire. Talent network spans 5 plus US-timezone countries.",
+        "provider": {
+          "@id": "https://gogloby.com/#organization"
+        },
+        "areaServed": [
+          "US",
+          "CA",
+          "GB",
+          "EU"
+        ],
+        "serviceOutput": "Shortlist of production-proven Applied AI Engineers delivered in 5 business days, with 1 in 3 candidates hired and retained.",
+        "audience": {
+          "@type": "BusinessAudience",
+          "audienceType": "VP of Engineering, SVP Engineering, CTO at US-based Established software companies (100 to 3,000 employees)"
+        }
+      }
+    },
+    {
+      "fingerprint": "c8390648a06cd9a7c3d461c549731f469756b84d6eca8c5a3d11422436ea71a6",
+      "type": "WebSite",
+      "name": "GoGloby",
+      "page_count": 10,
+      "pages": [
+        "https://gogloby.com/",
+        "https://gogloby.com/author/vit_koval/",
+        "https://gogloby.com/captive-team-calculation/",
+        "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+        "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+        "https://gogloby.com/insights/talent-acquisition-companies/",
+        "https://gogloby.com/podcast/philippe-noel/",
+        "https://gogloby.com/podcast/tara-vasdani/",
+        "https://gogloby.com/solutions/ai-engineering-visibility/",
+        "https://gogloby.com/terms-and-conditions/"
+      ],
+      "sample": {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "@id": "https://gogloby.com#website",
+        "url": "https://gogloby.com",
+        "name": "GoGloby",
+        "description": "GoGloby is an Applied AI Engineering partner turning engineering into AI-native production: every AI dollar visible, every feature shipped faster.",
+        "publisher": {
+          "@id": "https://gogloby.com#organization"
+        },
+        "inLanguage": "en-US",
+        "copyrightHolder": {
+          "@id": "https://gogloby.com#organization"
+        }
+      }
+    }
+  ]
+}
