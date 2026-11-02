@@ -1,0 +1,39 @@
+{
+  "severity": {
+    "positioning": "high",
+    "company_facts": "high",
+    "contacts": "high",
+    "unknown_client": "high",
+    "discontinued_offer": "high",
+    "client_figures": "medium",
+    "cta": "medium",
+    "wrong_audience": "medium",
+    "old_terms": "medium",
+    "other": "low"
+  },
+  "unverified_severity": {
+    "company_facts": "medium",
+    "client_figures": "low"
+  },
+  "old_terms_high_kinds": ["title", "meta_description", "og_title", "og_description", "h1"],
+  "old_terms_high_zone_prefixes": ["block:hero"],
+  "max_locations": 15,
+  "banned_terms": [
+    { "id": "ai_native_production", "term": "AI-native production", "pattern": "\\bAI[- ]native production\\b", "category": "old_terms", "rule": "Glossary §7" },
+    { "id": "applied_ai_company", "term": "Applied AI Company", "pattern": "\\bApplied AI Company\\b", "category": "old_terms", "rule": "Glossary §7", "note": "\"Applied AI Company\" is no longer how GoGloby describes itself." },
+    { "id": "applied_ai_partner", "term": "Applied AI Engineering partner", "pattern": "\\bApplied AI Engineering partner\\b", "category": "old_terms", "rule": "Glossary §7", "note": "\"Applied AI Engineering partner\" is no longer how GoGloby describes itself." },
+    { "id": "ai_staffing_alone", "term": "AI staffing (alone)", "pattern": "\\bAI staffing\\b(?! agency)", "category": "old_terms", "rule": "Glossary §7", "note": "Use \"AI engineer staffing\" or the service name, not \"AI staffing\" on its own." },
+    { "id": "ai_talent_staffing", "term": "AI talent staffing", "pattern": "\\bAI talent staffing\\b", "category": "old_terms", "rule": "Glossary §7" },
+    { "id": "old_layer_name", "term": "AI Intelligence Layer", "pattern": "(?<!Development )\\bAI Intelligence Layer\\b", "category": "old_terms", "rule": "Glossary §7", "note": "The product is now called the AI Development Intelligence Layer." },
+    { "id": "performance_dashboard", "term": "Performance Dashboard / Center", "pattern": "\\bPerformance (?:Dashboard|Center)\\b", "category": "old_terms", "rule": "Glossary §7" },
+    { "id": "secure_dev_env", "term": "Secure Development Environment", "pattern": "\\bSecure Development Environment\\b", "category": "old_terms", "rule": "Glossary §7" },
+    { "id": "four_x", "term": "4x (product name)", "pattern": "\\b4x (?:Applied|AI|Engineering)\\b", "category": "old_terms", "rule": "Glossary §7" },
+    { "id": "safe_ai_adoption", "term": "safe AI adoption", "pattern": "\\bsafe AI adoption\\b", "category": "old_terms", "rule": "Glossary §7" },
+    { "id": "ai_eng_visibility", "term": "AI Engineering Visibility", "pattern": "\\bAI Engineering Visibility\\b", "category": "old_terms", "rule": "Glossary §7" },
+    { "id": "ai_cost_management", "term": "AI Cost Management", "pattern": "\\bAI Cost Management\\b", "category": "old_terms", "rule": "Glossary §7" },
+    { "id": "staffing_capacity", "term": "Staffing gives capacity", "pattern": "\\bStaffing (?:gives|adds) capacity\\b", "category": "old_terms", "rule": "Glossary §7", "note": "Copy that argues against staffing: staffing is what GoGloby sells." },
+    { "id": "benchmark_cta", "term": "Benchmark call to action", "pattern": "\\b(?:Start With a|Get Your|Free|Book a|Request a)\\b[^.\\n]{0,40}\\bBenchmark\\b", "category": "discontinued_offer", "rule": "Glossary §7", "note": "Benchmark is not used as the main call to action. Use \"Get vetted profiles\" for staffing and \"Start a search\" for recruiting." },
+    { "id": "free_trial", "term": "free trial", "pattern": "\\bfree trial\\b", "category": "discontinued_offer", "rule": "Glossary §7", "note": "GoGloby does not offer a free trial." },
+    { "id": "hire_in_48_hours", "term": "hire in 48 hours", "pattern": "\\b(?:hire|hired|hiring|matched?|profiles?|engineers?)\\b[^.\\n]{0,40}\\b48[- ]hours?\\b|\\b48[- ]hours?\\b[^.\\n]{0,30}\\b(?:hire|hiring|match)", "category": "discontinued_offer", "rule": "Glossary §7", "note": "GoGloby does not promise hiring in 48 hours." }
+  ]
+}

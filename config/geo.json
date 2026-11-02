@@ -1,0 +1,31 @@
+{
+  "ai_bots": ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "PerplexityBot", "Google-Extended", "Bingbot"],
+  "llms_txt_url": "https://gogloby.com/llms.txt",
+  "home_title": "Data and AI Engineer Staffing and Recruiting Agency",
+  "trap_terms": [
+    { "term": "AI talent agency", "pattern": "\\bAI talent agenc(y|ies)\\b" },
+    { "term": "AI talent acquisition", "pattern": "\\bAI talent acquisition\\b(?! companies)" },
+    { "term": "AI recruiters", "pattern": "\\bAI recruiters?\\b" },
+    { "term": "executive search", "pattern": "(?<!\\bAI )\\bexecutive search\\b(?! firms for AI)" },
+    { "term": "hire AI engineer (singular)", "pattern": "\\bhire (an? )?AI engineer\\b" },
+    { "term": "hire data engineer(s)", "pattern": "\\bhire data engineers?\\b" },
+    { "term": "remote AI developers", "pattern": "\\bremote AI developers?\\b" }
+  ],
+  "nearshore_words": ["nearshore", "latin america", "latam"],
+  "faq_min_question_headings": 3,
+  "ampersand_allowlist": ["Data & AI", "Q&A", "R&D", "M&A", "AT&T", "Johnson & Johnson", "S&P", "P&G", "P&L", "B&B", "H&M"],
+  "uk_spelling_words": [
+    "colour", "colours", "coloured", "favour", "favours", "favourite", "favourites", "behaviour", "behaviours",
+    "centre", "centres", "programme", "programmes", "defence", "licence", "judgement", "labour", "neighbour",
+    "grey", "whilst", "learnt", "fulfil", "enrol", 
+    "aluminium", "sceptic", "ageing", "artefact", "artefacts", "cheque", "tyre"
+  ],
+  "uk_spelling_stems": [
+    "organis", "optimis", "recognis", "realis", "specialis", "prioritis", "utilis", "standardis", "customis",
+    "summaris", "minimis", "maximis", "normalis", "categoris", "characteris", "centralis", "synchronis",
+    "visualis", "personalis", "monetis", "capitalis", "finalis", "localis", "modernis", "operationalis",
+    "digitalis", "harmonis", "authoris", "emphasis(?=e|ed|es|ing)", "apologis", "criticis", "generalis",
+    "industrialis", "internationalis", "materialis", "mobilis", "rationalis", "stabilis", "sensitis", "systematis"
+  ],
+  "uk_spelling_endings": ["e", "es", "ed", "er", "ers", "ing", "ation", "ations"]
+}

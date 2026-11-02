@@ -1,0 +1,107 @@
+{
+  "base_url": "https://gogloby.com",
+  "sitemap": "https://gogloby.com/sitemap_index.xml",
+  "exclude_url_patterns": [
+    "/feed/",
+    "/tag/",
+    "/category/",
+    "/page/",
+    "/wp-json/",
+    "?"
+  ],
+  "report_language": "English",
+  "llm": {
+    "provider": "openai",
+    "model": "gpt-6-luna",
+    "reasoning_effort": {
+      "compliance": "medium",
+      "geo": "medium"
+    },
+    "max_output_tokens": 16000,
+    "concurrency": 4,
+    "price_per_million_tokens": {
+      "input": null,
+      "cached_input": null,
+      "output": null
+    }
+  },
+  "fetch": {
+    "user_agent": "GoGloby-SiteAudit/1.0 (internal audit)",
+    "delay_ms": 1000,
+    "timeout_ms": 20000,
+    "content_exclude_selectors": [],
+    "hidden_selectors": [
+      ".elementor-hidden-desktop",
+      ".elementor-hidden-mobile",
+      ".elementor-hidden-tablet",
+      ".swiper-slide-duplicate",
+      ".slick-cloned",
+      ".sr-only",
+      ".screen-reader-text",
+      "[hidden]",
+      "[aria-hidden='true']"
+    ]
+  },
+  "scope": [
+    { "category": "Services", "subsection": "Services", "profile": "service", "path_starts_with": ["/services/"] },
+    { "category": "Company", "subsection": "Home", "profile": "home", "path_equals": "/" },
+    { "category": "Company", "subsection": "About", "profile": "company", "path_equals": "/about/" },
+    { "category": "Company", "subsection": "Contacts", "profile": "company", "path_equals": "/contacts/" },
+    { "category": "Company", "subsection": "Privacy", "profile": "legal", "path_equals": "/privacy-policy/" },
+    { "category": "Company", "subsection": "Terms", "profile": "legal", "path_equals": "/terms-and-conditions/" },
+    { "category": "Resources", "subsection": "Insights", "profile": "article", "path_starts_with": ["/insights/"] },
+    { "category": "Resources", "subsection": "Use cases", "profile": "article", "path_starts_with": ["/use-cases/"], "exclude_path_equals": ["/use-cases/"] },
+    { "category": "Resources", "subsection": "Podcast", "profile": "podcast", "path_starts_with": ["/podcast/"] },
+    { "category": "Resources", "subsection": "Case studies", "profile": "case_study", "path_starts_with": ["/case-study/"] },
+    { "category": "Solutions", "subsection": "Solutions", "profile": "service", "path_starts_with": ["/solutions/"] }
+  ],
+  "site_wide_schema_share": 0.8,
+  "page_types": [
+    {
+      "type": "homepage",
+      "path_equals": "/"
+    },
+    {
+      "type": "service",
+      "path_starts_with": [
+        "/services/",
+        "/solutions/"
+      ]
+    },
+    {
+      "type": "post",
+      "path_starts_with": [
+        "/insights/"
+      ]
+    },
+    {
+      "type": "case_study",
+      "path_starts_with": [
+        "/case-study/"
+      ]
+    },
+    {
+      "type": "legal",
+      "path_starts_with": [
+        "/terms-and-conditions/",
+        "/privacy-policy/"
+      ]
+    },
+    {
+      "type": "author",
+      "path_starts_with": [
+        "/author/"
+      ]
+    },
+    {
+      "type": "podcast",
+      "path_starts_with": [
+        "/podcast/"
+      ]
+    },
+    {
+      "type": "other",
+      "default": true
+    }
+  ]
+}

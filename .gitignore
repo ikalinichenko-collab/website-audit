@@ -1,4 +1,6 @@
 .env
 node_modules/
+viewer/dist/
 data/
 *.log
+.history/

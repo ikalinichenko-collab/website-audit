@@ -27,23 +27,15 @@ export function runIdNow(): string {
 }
 
 export function truncateWords(text: string, max: number): string {
-  const words = text.trim().split(/\s+/);
-  if (words.length <= max) return text.trim();
+  const words = text.trim().split(/\s+/).filter(Boolean);
+  if (words.length <= max) return words.join(" ");
   return words.slice(0, max).join(" ");
-}
-
-export function normalizeUrl(url: string, base: string): string {
-  try {
-    return new URL(url, base).href.replace(/\/$/, "") + (url.endsWith("/") ? "/" : "");
-  } catch {
-    return url;
-  }
 }
 
 export function urlsMatch(a: string, b: string): boolean {
   const na = a.replace(/\/$/, "");
   const nb = b.replace(/\/$/, "");
-  return na === nb || na + "/" === b || nb + "/" === a;
+  return na === nb || `${na}/` === b || `${nb}/` === a;
 }
 
 export function isInternal(href: string, baseUrl: string): boolean {
@@ -56,10 +48,14 @@ export function isInternal(href: string, baseUrl: string): boolean {
   }
 }
 
-export function ensureDirSync(fs: typeof import("node:fs"), dir: string): void {
-  fs.mkdirSync(dir, { recursive: true });
+export function collapseWhitespace(text: string): string {
+  return text.replace(/\s+/g, " ").trim();
 }
 
-export function joinRoot(root: string, ...parts: string[]): string {
-  return path.join(root, ...parts);
+export function projectRoot(): string {
+  return path.resolve(import.meta.dirname, "..");
+}
+
+export function draftSlug(filePath: string): string {
+  return path.basename(filePath);
 }

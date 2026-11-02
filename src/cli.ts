@@ -1,67 +1,54 @@
-import "dotenv/config";
-import { runScan } from "./pipeline.js";
-import { setVerbose } from "./log.js";
+import { runAudit, runAuditDraft } from "./audit.js";
 
 function parseArgs(argv: string[]): {
   urls: string[];
-  all: boolean;
+  draftFile?: string;
+  draftType?: string;
   limit?: number;
-  force: boolean;
-  skipLlm: boolean;
-  useCachedPage: boolean;
-  verbose: boolean;
+  all?: boolean;
+  force?: boolean;
+  noLlm?: boolean;
 } {
-  const filtered = argv.filter((a) => a !== "--");
-  let all = false;
-  let limit: number | undefined;
-  let force = false;
-  let skipLlm = false;
-  let useCachedPage = false;
-  let verbose = false;
   const urls: string[] = [];
-
-  for (let i = 0; i < filtered.length; i++) {
-    const a = filtered[i]!;
-    if (a === "--all") all = true;
-    else if (a === "--force") force = true;
-    else if (a === "--skip-llm") skipLlm = true;
-    else if (a === "--use-cached") useCachedPage = true;
-    else if (a === "--verbose") verbose = true;
-    else if (a === "--limit") {
-      limit = parseInt(filtered[i + 1] ?? "", 10);
-      i++;
-    } else if (a.startsWith("http://") || a.startsWith("https://")) {
+  let draftFile: string | undefined;
+  let draftType: string | undefined;
+  let limit: number | undefined;
+  let all = false;
+  let force = false;
+  let noLlm = false;
+  for (let i = 0; i < argv.length; i++) {
+    const a = argv[i]!;
+    if (a === "--file") {
+      draftFile = argv[++i];
+    } else if (a === "--type") {
+      draftType = argv[++i];
+    } else if (a === "--limit") {
+      limit = Number(argv[++i]);
+    } else if (a === "--all") {
+      all = true;
+    } else if (a === "--force") {
+      force = true;
+    } else if (a === "--no-llm") {
+      noLlm = true;
+    } else if (a.startsWith("http")) {
       urls.push(a);
+    } else if (a.startsWith("-")) {
+      console.error(`Unknown option: ${a}`);
+      process.exit(1);
     }
   }
-
-  return { urls, all, limit, force, skipLlm, useCachedPage, verbose };
+  return { urls, draftFile, draftType, limit, all, force, noLlm };
 }
 
-async function main(): Promise<void> {
-  const { urls, all, limit, force, skipLlm, useCachedPage, verbose } = parseArgs(
-    process.argv.slice(2),
-  );
-  setVerbose(verbose);
-
-  if (!all && !limit && urls.length === 0) {
-    console.error("Usage: pnpm scan --all | pnpm scan --limit N | pnpm scan <url> [...]");
-    process.exit(1);
-  }
-
-  const runId = await runScan({
-    urls: urls.length ? urls : undefined,
-    all: all || Boolean(limit),
-    limit,
-    force,
-    skipLlm,
-    useCachedPage,
-  });
-
-  console.log(`Run complete: results/${runId}`);
-}
-
-main().catch((e) => {
-  console.error(e);
+const opts = parseArgs(process.argv.slice(2));
+if (!opts.draftFile && !opts.all && !opts.limit && !opts.urls.length) {
+  console.error("Usage: pnpm scan <url>... | --file <path> | --limit N | --all [--force] [--no-llm]");
   process.exit(1);
-});
+}
+
+(opts.draftFile ? runAuditDraft(opts.draftFile, opts.draftType) : runAudit(opts))
+  .then((runId) => console.log(`Run: results/${runId}`))
+  .catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });

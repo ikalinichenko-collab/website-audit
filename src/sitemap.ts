@@ -1,5 +1,5 @@
 import { XMLParser } from "fast-xml-parser";
-import type { AuditConfig } from "./types.js";
+import type { Settings } from "./types.js";
 
 const parser = new XMLParser({ ignoreAttributes: false });
 
@@ -19,18 +19,15 @@ function extractLocs(obj: unknown): string[] {
 }
 
 export function shouldExcludeUrl(url: string, patterns: string[]): boolean {
-  for (const p of patterns) {
-    if (url.includes(p)) return true;
-  }
-  return false;
+  return patterns.some((p) => url.includes(p));
 }
 
-export async function fetchText(url: string, userAgent: string, timeoutMs: number): Promise<string> {
+async function fetchTextUrl(url: string, settings: Settings): Promise<string> {
   const ctrl = new AbortController();
-  const t = setTimeout(() => ctrl.abort(), timeoutMs);
+  const t = setTimeout(() => ctrl.abort(), settings.fetch.timeout_ms);
   try {
     const res = await fetch(url, {
-      headers: { "User-Agent": userAgent },
+      headers: { "User-Agent": settings.fetch.user_agent },
       signal: ctrl.signal,
       redirect: "follow",
     });
@@ -40,33 +37,25 @@ export async function fetchText(url: string, userAgent: string, timeoutMs: numbe
   }
 }
 
-export async function collectSitemapUrls(config: AuditConfig): Promise<string[]> {
-  const xml = await fetchText(
-    config.site.sitemap,
-    config.fetch.user_agent,
-    config.fetch.timeout_ms,
-  );
+export async function collectSitemapUrls(settings: Settings): Promise<string[]> {
+  const xml = await fetchTextUrl(settings.sitemap, settings);
   const parsed = parser.parse(xml);
   const allLocs = [...new Set(extractLocs(parsed))];
   const sitemapUrls = allLocs.filter((u) => u.endsWith(".xml"));
   const pageUrls: string[] = [];
-
-  const toFetch = sitemapUrls.length > 0 ? sitemapUrls : [config.site.sitemap];
+  const toFetch = sitemapUrls.length > 0 ? sitemapUrls : [settings.sitemap];
   for (const sm of toFetch) {
-    if (sm === config.site.sitemap && sitemapUrls.length === 0) {
+    if (sm === settings.sitemap && sitemapUrls.length === 0) {
       pageUrls.push(...allLocs.filter((u) => !u.endsWith(".xml")));
       continue;
     }
     if (!sm.endsWith(".xml")) continue;
     try {
-      const inner = await fetchText(sm, config.fetch.user_agent, config.fetch.timeout_ms);
-      const innerParsed = parser.parse(inner);
-      pageUrls.push(...extractLocs(innerParsed).filter((u) => !u.endsWith(".xml")));
+      const inner = await fetchTextUrl(sm, settings);
+      pageUrls.push(...extractLocs(parser.parse(inner)).filter((u) => !u.endsWith(".xml")));
     } catch {
-      /* skip broken sitemap */
+      /* skip */
     }
   }
-
-  const unique = [...new Set(pageUrls)];
-  return unique.filter((u) => !shouldExcludeUrl(u, config.site.exclude_url_patterns));
+  return [...new Set(pageUrls)].filter((u) => !shouldExcludeUrl(u, settings.exclude_url_patterns));
 }

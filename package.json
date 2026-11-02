@@ -1,14 +1,14 @@
 {
   "name": "website-audit",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "scan": "tsx src/cli.ts",
-    "scan:test": "tsx src/test-runner.ts",
-    "scan:clean": "tsx src/clean-cli.ts",
     "report": "tsx src/report-cli.ts",
-    "scan:site": "tsx src/site-scan-cli.ts"
+    "viewer": "vite --config viewer/vite.config.ts",
+    "app": "vite build --config viewer/vite.config.ts && tsx src/server.ts",
+    "server": "tsx src/server.ts"
   },
   "engines": {
     "node": ">=20"
@@ -21,7 +21,17 @@
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.1",
+    "tailwindcss": "^3.4.17",
     "tsx": "^4.19.2",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "vite": "^6.0.6"
   }
 }
