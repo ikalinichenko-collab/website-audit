@@ -187,7 +187,6 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
         subsections?: string[];
         layers?: Partial<Layers>;
         model?: string;
-        draft?: { name?: string; content?: string; type?: string };
       }>(req);
       const settings = loadSettings();
       const layers: Layers = { ...ALL_LAYERS, ...(body.layers ?? {}) };
@@ -196,13 +195,7 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
       if (!layers.compliance && !layers.geo && !layers.seo) throw new ValidationError("Turn on at least one layer");
       let options: JobOptions;
       let rejected: string[] = [];
-      if (body.draft) {
-        const name = String(body.draft.name ?? "draft.md");
-        if (!/\.(md|txt|html?)$/i.test(name)) throw new ValidationError("A draft must be a .md, .txt or .html file");
-        if (!body.draft.content?.trim()) throw new ValidationError("The draft is empty");
-        if (!layers.compliance && !layers.geo) throw new ValidationError("A draft needs Compliance or GEO (SEO needs a live page)");
-        options = { ...common, urls: [], draft: { name, content: body.draft.content, type: body.draft.type ?? "post" } };
-      } else if (body.subsections?.length) {
+      if (body.subsections?.length) {
         const known = new Set(scopeGroups(settings).flatMap((g) => g.subsections.map((s) => s.key)));
         const bad = body.subsections.filter((k) => !known.has(k));
         if (bad.length) throw new ValidationError(`Unknown subsection: ${bad.join(", ")}`);

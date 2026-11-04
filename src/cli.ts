@@ -1,12 +1,10 @@
-import { runAudit, runAuditDraft } from "./audit.js";
+import { runAudit } from "./audit.js";
 import { loadSettings } from "./config.js";
 import { scopeGroups } from "./scope.js";
 import { ALL_LAYERS, type Layers } from "./types.js";
 
 function parseArgs(argv: string[]): {
   urls: string[];
-  draftFile?: string;
-  draftType?: string;
   limit?: number;
   all?: boolean;
   force?: boolean;
@@ -16,8 +14,6 @@ function parseArgs(argv: string[]): {
   subsections?: string[];
 } {
   const urls: string[] = [];
-  let draftFile: string | undefined;
-  let draftType: string | undefined;
   let limit: number | undefined;
   let all = false;
   let force = false;
@@ -32,11 +28,7 @@ function parseArgs(argv: string[]): {
   };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i]!;
-    if (a === "--file") {
-      draftFile = argv[++i];
-    } else if (a === "--type") {
-      draftType = argv[++i];
-    } else if (a === "--limit") {
+    if (a === "--limit") {
       limit = Number(argv[++i]);
     } else if (a === "--all") {
       all = true;
@@ -69,19 +61,19 @@ function parseArgs(argv: string[]): {
       fail(`Unknown option: ${a}`);
     }
   }
-  return { urls, draftFile, draftType, limit, all, force, noLlm, layers, model, subsections: subsections.length ? [...new Set(subsections)] : undefined };
+  return { urls, limit, all, force, noLlm, layers, model, subsections: subsections.length ? [...new Set(subsections)] : undefined };
 }
 
 const opts = parseArgs(process.argv.slice(2));
-if (!opts.draftFile && !opts.all && !opts.limit && !opts.urls.length && !opts.subsections) {
+if (!opts.all && !opts.limit && !opts.urls.length && !opts.subsections) {
   console.error(
-    "Usage: pnpm scan <url>... | --file <path> | --limit N | --all | --category <name>... | --subsection <name>...\n" +
+    "Usage: pnpm scan <url>... | --limit N | --all | --category <name>... | --subsection <name>...\n" +
       "       [--force] [--no-llm] [--no-compliance] [--no-geo] [--no-seo] [--model <id>]",
   );
   process.exit(1);
 }
 
-(opts.draftFile ? runAuditDraft(opts.draftFile, opts.draftType, { layers: opts.layers, model: opts.model }) : runAudit(opts))
+runAudit(opts)
   .then((runId) => console.log(`Run: results/${runId}`))
   .catch((e) => {
     console.error(e);

@@ -4,9 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-Internal audit tool for gogloby.com. It crawls the audited part of the site (or a local draft), splits every page into zones, and runs three separate layers on each page: **Compliance** (LLM, against the company documents in `sources/`), **GEO** (LLM questions plus code checks) and **SEO** (code only). Every finding names its zone, so the report says where to change something. Node 20+, pnpm, ESM TypeScript run directly with `tsx` (no build step, imports use `.js` suffixes). Needs `OPENAI_API_KEY` in `.env`.
+Internal audit tool for gogloby.com. It crawls the audited part of the site, splits every page into zones, and runs three separate layers on each page: **Compliance** (LLM, against the company documents in `sources/`), **GEO** (LLM questions plus code checks) and **SEO** (code only). Every finding names its zone, so the report says where to change something. Node 20+, pnpm, ESM TypeScript run directly with `tsx` (no build step, imports use `.js` suffixes). Needs `OPENAI_API_KEY` in `.env`.
 
 The full design, the decisions behind it and the measured results are in `docs/zones.md`. Read it before changing a layer.
+
+The plan for the database, Google sign-in and deploy (stages B and C) and what is already done is in `docs/roadmap.md`.
 
 ## Commands
 
@@ -14,7 +16,6 @@ The full design, the decisions behind it and the measured results are in `docs/z
 - `pnpm scan <url>...` — audit specific pages (a URL outside the scope is audited with a neutral profile)
 - `pnpm scan --limit N` — N URLs spread over the subsections
 - `pnpm scan --category <name>... | --subsection <name>...` — audit chosen categories (Services, Company, Resources, Solutions) or subsections (`Resources/Insights` or just `Insights`); repeatable, combines with `--limit N` for a sample
-- `pnpm scan --file <path> [--type <post|service|homepage|podcast|legal|company>]` — audit a draft (markdown, text or HTML; Compliance and GEO only)
 - `pnpm scan ... --force` — ignore the per-layer cache
 - `pnpm scan ... --no-compliance --no-geo --no-seo` — turn a layer off (at least one must stay on). An off layer is recorded as not checked (`skipped: true`, shown as "off" in the viewer) and its site-pass part is skipped too
 - `pnpm scan ... --model <id>` — model from `llm.models` in `config/settings.json` (default `llm.model`); cost is computed from that model's price
@@ -27,7 +28,7 @@ The full design, the decisions behind it and the measured results are in `docs/z
 
 ## Architecture
 
-`src/cli.ts` calls `runAudit` (or `runAuditDraft`) in `src/audit.ts`:
+`src/cli.ts` calls `runAudit` in `src/audit.ts`:
 
 1. **URLs**: `sitemap.ts` reads the sitemap, `scope.ts` keeps only URLs matching the `scope` allow-list (each rule gives category, subsection and SEO profile). `--limit` samples across subsections.
 2. **Fetch and extract**: `fetch.ts` (throttled), `extract.ts` and `html-content.ts` build an `ExtractedPage` (title, meta, canonical, JSON-LD, author, dates, links). Site-wide JSON-LD nodes are found by fingerprint (`schema-fingerprint.ts`, shared by at least `site_wide_schema_share` of pages) and removed from per-page checks.
@@ -45,7 +46,7 @@ The company documents the LLM compares against live in `sources/` (`decisions.md
 
 **App server** (`src/server.ts`, Node `http`, no framework, bound to 127.0.0.1): serves `viewer/dist`, `results/` under `/data/`, and a JSON API:
 - `resources.ts` is the allow-list of editable files (the three `sources/` documents, `prompts/geo-questions.json`, `config/{seo,geo,compliance,settings}.json`, the two prompts). `writeResource` validates the content per file (JSON shape, regex patterns, placeholders, scope profiles), keeps the previous version in `.history/<id>/` (30 kept) and clears the sources cache. Endpoints: `GET/PUT /api/resources/:id`, `.../history`, `.../restore`.
-- `jobs.ts` runs one audit at a time in the server process (`POST /api/jobs` with pasted URLs, a sample, chosen `subsections`, the whole scope, or a draft text, plus `layers` and `model`; `GET /api/scope` returns the subsection groups with page counts; `GET /api/jobs/:id` returns the log; `POST .../stop`). URLs must be on the site host. `DELETE /api/runs/:id` removes a run.
+- `jobs.ts` runs one audit at a time in the server process (`POST /api/jobs` with pasted URLs, a sample, chosen `subsections`, the whole scope, plus `layers` and `model`; `GET /api/scope` returns the subsection groups with page counts; `GET /api/jobs/:id` returns the log; `POST .../stop`). URLs must be on the site host. `DELETE /api/runs/:id` removes a run.
 
 The viewer (`viewer/`, React + react-router + Tailwind) has pages Run, Overview, Pages, Site, Documents (sources) and Settings (GEO questions, SEO, compliance severity, GEO code checks, prompts, general and scope). It reads results through `/data/...` and talks to the API through `viewer/src/api.ts`. Its types in `viewer/src/types.ts` mirror `src/run-output.ts`, `src/report-types.ts` and `src/findings.ts`; keep them in sync. Runs made before the zone redesign are not readable by the viewer.
 

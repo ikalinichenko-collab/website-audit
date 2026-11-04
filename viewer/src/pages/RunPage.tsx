@@ -5,7 +5,7 @@ import type { Layers } from "../types.js";
 import { useRunContext } from "../context/RunContext.js";
 import { Notice, buttonClass, primaryClass } from "../components/ResourceEditor.js";
 
-type Mode = "urls" | "draft" | "scope";
+type Mode = "urls" | "scope";
 
 // Measured on real runs (results/*/run.json): both LLM layers on one page use about 30k input and 7k output
 // tokens (output includes reasoning). Half of the input counts as cached; small runs cache less, big ones more.
@@ -52,9 +52,6 @@ export function RunPage() {
   const [force, setForce] = useState(false);
   const [layers, setLayers] = useState<Layers>({ compliance: true, geo: true, seo: true });
   const [modelId, setModelId] = useState("");
-  const [draftName, setDraftName] = useState("draft.md");
-  const [draftText, setDraftText] = useState("");
-  const [draftType, setDraftType] = useState("post");
   const [scope, setScope] = useState<{ total: number; groups: ScopeGroup[] } | null>(null);
   const [picked, setPicked] = useState<Set<string>>(new Set());
   const [scopeOk, setScopeOk] = useState(false);
@@ -64,7 +61,6 @@ export function RunPage() {
   const [job, setJob] = useState<JobDetail | null>(null);
   const [log, setLog] = useState<string[]>([]);
   const jobId = useRef<string | null>(null);
-  const draftFile = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     api
@@ -206,14 +202,12 @@ export function RunPage() {
           </p>
         )}
         {noLayer && <Notice kind="warn">Turn on at least one layer.</Notice>}
-        {mode === "draft" && layers.seo && <p className="text-xs text-slate-500">SEO is skipped for a draft: it needs a live page.</p>}
       </section>
 
       <div className="flex gap-2 border-b border-slate-200 dark:border-slate-700">
         {(
           [
             ["urls", "Pages by link"],
-            ["draft", "Draft text"],
             ["scope", "Sections or whole site"],
           ] as const
         ).map(([k, label]) => (
@@ -251,61 +245,6 @@ export function RunPage() {
             onClick={() => start({ text, force, ...runOpts })}
           >
             Run {pages > 1 ? `${pages} pages` : "page"}
-          </button>
-        </div>
-      )}
-
-      {mode === "draft" && (
-        <div className="space-y-3">
-          <p className="text-sm text-slate-600 dark:text-slate-400">
-            Check text that is not on the site yet. Compliance and GEO run; SEO needs a live page, so it is skipped.
-          </p>
-          <div className="flex flex-wrap items-center gap-2 text-sm">
-            <input
-              ref={draftFile}
-              type="file"
-              accept=".md,.txt,.html,.htm"
-              className="hidden"
-              onChange={async (e) => {
-                const f = e.target.files?.[0];
-                if (!f) return;
-                setDraftName(f.name);
-                setDraftText(await f.text());
-                e.target.value = "";
-              }}
-            />
-            <button type="button" className={buttonClass} onClick={() => draftFile.current?.click()}>
-              Load a file...
-            </button>
-            <label className="flex items-center gap-1">
-              File name <input className={`${field} w-48`} value={draftName} onChange={(e) => setDraftName(e.target.value)} />
-            </label>
-            <label className="flex items-center gap-1">
-              Page type
-              <select className={field} value={draftType} onChange={(e) => setDraftType(e.target.value)}>
-                <option value="post">Article</option>
-                <option value="service">Service</option>
-                <option value="homepage">Home</option>
-                <option value="company">Company</option>
-                <option value="podcast">Podcast</option>
-                <option value="legal">Legal</option>
-              </select>
-            </label>
-          </div>
-          <textarea
-            className={`${field} w-full font-mono`}
-            rows={14}
-            placeholder="# Title&#10;&#10;Text of the draft in markdown..."
-            value={draftText}
-            onChange={(e) => setDraftText(e.target.value)}
-          />
-          <button
-            type="button"
-            className={primaryClass}
-            disabled={!draftText.trim() || running || keyMissing || (!layers.compliance && !layers.geo)}
-            onClick={() => start({ draft: { name: draftName, content: draftText, type: draftType }, ...runOpts })}
-          >
-            Run draft
           </button>
         </div>
       )}

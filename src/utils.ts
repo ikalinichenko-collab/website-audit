@@ -55,7 +55,3 @@ export function collapseWhitespace(text: string): string {
 export function projectRoot(): string {
   return path.resolve(import.meta.dirname, "..");
 }
-
-export function draftSlug(filePath: string): string {
-  return path.basename(filePath);
-}

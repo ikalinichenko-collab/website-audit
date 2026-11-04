@@ -1,7 +1,4 @@
-import * as fs from "node:fs";
-import * as os from "node:os";
-import path from "node:path";
-import { runAudit, runAuditDraft } from "./audit.js";
+import { runAudit } from "./audit.js";
 import { loadSettings } from "./config.js";
 import type { Layers } from "./types.js";
 
@@ -16,8 +13,6 @@ export interface JobOptions {
   model?: string;
   force?: boolean;
   noLlm?: boolean;
-  /** Text of a draft instead of URLs. */
-  draft?: { name: string; content: string; type: string };
 }
 
 export interface Job {
@@ -102,18 +97,7 @@ export function startJob(options: JobOptions): Job {
     if (job.log.length > MAX_LOG) job.log.splice(0, job.log.length - MAX_LOG);
   };
 
-  const runDraft = async (draft: NonNullable<JobOptions["draft"]>): Promise<string> => {
-    const dir = fs.mkdtempSync(path.join(os.tmpdir(), "audit-draft-"));
-    try {
-      const file = path.join(dir, path.basename(draft.name));
-      fs.writeFileSync(file, draft.content);
-      onLog(`Auditing draft ${draft.name}`);
-      return await runAuditDraft(file, draft.type, { layers: options.layers, model: options.model });
-    } finally {
-      fs.rmSync(dir, { recursive: true, force: true });
-    }
-  };
-  const work = options.draft ? runDraft(options.draft) : runAudit({ ...options, onLog, isCancelled: () => stopRequested });
+  const work = runAudit({ ...options, onLog, isCancelled: () => stopRequested });
 
   work
     .then((runId) => {

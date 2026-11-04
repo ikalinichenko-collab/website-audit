@@ -16,7 +16,6 @@ import { httpGet, headOrGetStatus, type FetchResult } from "./fetch.js";
 import { collectSitemapUrls } from "./sitemap.js";
 import { classifyUrl, filterBySubsections, filterInScope, OUT_OF_SCOPE, sampleAcrossSubsections, type UrlScope } from "./scope.js";
 import { buildZones, jsonLdZone } from "./zones.js";
-import { draftZones } from "./draft.js";
 import { runSeoChecks } from "./seo.js";
 import { seoSiteChecks } from "./seo-site.js";
 import { checkTargetKeywordPlacement, geoTypeOf, runGeoCodeChecks } from "./geo-code.js";
@@ -469,97 +468,5 @@ export async function runAudit(options: AuditOptions): Promise<string> {
   log(
     `${cancelled() ? "Stopped" : "Done"}. ${reports.length} pages, ${llmCalls} LLM calls (${llmErrors} errors), ${cachedLayers} cached layers. Tokens in ${tokens.input}, cached ${tokens.cached_input}, out ${tokens.output}. Cost $${cost.toFixed(4)} (${model.id})`,
   );
-  return runId;
-}
-
-const DRAFT_GEO_TYPE: Record<string, string> = {
-  homepage: "home",
-  home: "home",
-  service: "service",
-  podcast: "podcast",
-  legal: "legal",
-  company: "company",
-};
-
-/** Audit a local draft (markdown, text or HTML): Compliance and GEO only, no SEO and no site pass. */
-export async function runAuditDraft(file: string, type = "post", opts: { layers?: Layers; model?: string } = {}): Promise<string> {
-  const { settings, model } = settingsForModel(opts.model);
-  const layers = opts.layers ?? ALL_LAYERS;
-  if (!layers.compliance && !layers.geo) throw new Error("A draft needs Compliance or GEO turned on (SEO needs a live page)");
-  const geoCfg = loadGeoCodeConfig();
-  const runId = runIdNow();
-  const startedAt = new Date().toISOString();
-  const outRoot = runDir(runId);
-  fs.mkdirSync(path.join(outRoot, "pages"), { recursive: true });
-  const client = createOpenAiClient();
-
-  const abs = path.resolve(file);
-  const name = path.basename(abs);
-  const zones = draftZones(fs.readFileSync(abs, "utf8"), path.extname(abs).toLowerCase(), settings);
-  const geoType = geoTypeOf(DRAFT_GEO_TYPE[type] ?? "article");
-  const url = `draft://${name}`;
-  const title = zones.zones.find((z) => z.kind === "h1")?.text || name;
-
-  const geoCode = layers.geo ? runGeoCodeChecks(zones, geoType, geoCfg, new Set()) : [];
-  let tokens: TokenUsage = ZERO;
-  let calls = 0;
-  let errors = 0;
-
-  let compliance: ComplianceLayerResult = { hash: "", cached: false, action: null, summary: null, llm_problems: [], problems: finalizeCompliance([], zones), usage: null, error: "OPENAI_API_KEY not set" };
-  let geo: GeoLayerResult = { hash: "", cached: false, code: geoCode, llm: [], placement: null, usage: null, error: "OPENAI_API_KEY not set" };
-  if (!layers.compliance) compliance = { ...compliance, skipped: true, problems: [], error: LAYER_OFF };
-  if (!layers.geo) geo = { ...geo, skipped: true, code: [], error: LAYER_OFF };
-  if (client && layers.compliance) {
-    calls++;
-    const r = await runComplianceLayer(client, settings, compliancePayload(url, type, zones), zones);
-    if (r.error) errors++;
-    tokens = add(tokens, r.usage);
-    const dProblems = finalizeCompliance(r.problems, zones);
-    compliance = { hash: "", cached: false, action: r.error ? null : deriveAction(r.action, dProblems, zones), model_action: r.action, summary: r.summary, llm_problems: r.problems, problems: dProblems, usage: r.usage, error: r.error };
-  }
-  if (client && layers.geo) {
-    const g = await runGeoLlm(client, settings, url, geoType, zones, geoCode);
-    if (g.usage.input + g.usage.cached_input + g.usage.output > 0) calls++;
-    if (g.error) errors++;
-    tokens = add(tokens, g.usage);
-    geo = { hash: "", cached: false, code: geoCode, llm: g.answers, placement: g.placement, usage: g.usage, error: g.error };
-  }
-
-  const report: PageReport = {
-    schema_version: 2,
-    url,
-    final_url: url,
-    status: null,
-    title,
-    category: "Drafts",
-    subsection: "Drafts",
-    profile: type,
-    geo_type: geoType,
-    template: "draft",
-    checked_at: new Date().toISOString(),
-    zones: zones.zones.map((z) => ({ id: z.id, label: z.label, kind: z.kind })),
-    zone_warnings: zones.warnings,
-    shared_variants: [],
-    compliance,
-    geo,
-    seo: { checks: [], skipped: true },
-  };
-  fs.writeFileSync(path.join(outRoot, "pages", `draft_${name.replace(/[^a-z0-9.-]+/gi, "_")}.json`), JSON.stringify(report, null, 2));
-  const meta: RunMeta = {
-    run_id: runId,
-    started_at: startedAt,
-    ended_at: new Date().toISOString(),
-    pages_checked: 1,
-    pages_skipped: 0,
-    llm_calls: calls,
-    llm_errors: errors,
-    tokens,
-    cost_usd: usageCost(tokens, model),
-    model: model.id,
-    layers: { ...layers, seo: false },
-  };
-  fs.writeFileSync(path.join(outRoot, "run.json"), JSON.stringify(meta, null, 2));
-  writeRunOutputs(outRoot, settings);
-  setLatestRun(runId);
   return runId;
 }

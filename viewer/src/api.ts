@@ -45,7 +45,6 @@ export interface JobSummary {
     noLlm?: boolean;
     layers?: Layers;
     model?: string;
-    draft?: { name: string };
   };
   run_id: string | null;
   error: string | null;
@@ -106,7 +105,6 @@ export const api = {
     subsections?: string[];
     layers?: Layers;
     model?: string;
-    draft?: { name: string; content: string; type: string };
   }) => call<{ id: string; rejected: string[] }>("POST", "/api/jobs", body),
   jobs: () => call<JobSummary[]>("GET", "/api/jobs"),
   job: (id: string, from: number) => call<JobDetail>("GET", `/api/jobs/${id}?from=${from}`),
