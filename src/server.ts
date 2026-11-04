@@ -5,7 +5,8 @@ import dotenv from "dotenv";
 import { projectRoot } from "./utils.js";
 import { loadSettings } from "./config.js";
 import { collectSitemapUrls } from "./sitemap.js";
-import { classifyUrl, filterInScope } from "./scope.js";
+import { classifyUrl, filterInScope, scopeGroups, subsectionKey } from "./scope.js";
+import { ALL_LAYERS, type Layers } from "./types.js";
 import {
   RESOURCES,
   ValidationError,
@@ -99,6 +100,7 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
     send(res, 200, {
       base_url: s.base_url,
       model: s.llm.model,
+      models: s.llm.models.map((m) => ({ id: m.id, label: m.label, price_per_million_tokens: m.price_per_million_tokens })),
       has_api_key: Boolean(process.env.OPENAI_API_KEY),
       running_job: running?.id ?? null,
       latest_run: resolveLatestRunId(),
@@ -160,9 +162,13 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
     const by: Record<string, number> = {};
     for (const u of urls) {
       const s = classifyUrl(u, settings);
-      if (s) by[`${s.category} / ${s.subsection}`] = (by[`${s.category} / ${s.subsection}`] ?? 0) + 1;
+      if (s) by[subsectionKey(s)] = (by[subsectionKey(s)] ?? 0) + 1;
     }
-    send(res, 200, { total: urls.length, by_subsection: by });
+    const groups = scopeGroups(settings).map((g) => ({
+      category: g.category,
+      subsections: g.subsections.map((s) => ({ ...s, count: by[s.key] ?? 0 })),
+    }));
+    send(res, 200, { total: urls.length, groups });
     return;
   }
 
@@ -178,27 +184,44 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
         limit?: number;
         force?: boolean;
         noLlm?: boolean;
+        subsections?: string[];
+        layers?: Partial<Layers>;
+        model?: string;
         draft?: { name?: string; content?: string; type?: string };
       }>(req);
+      const settings = loadSettings();
+      const layers: Layers = { ...ALL_LAYERS, ...(body.layers ?? {}) };
+      const common = { layers, model: body.model || settings.llm.model, force: body.force, noLlm: body.noLlm };
+      if (!settings.llm.models.some((m) => m.id === common.model)) throw new ValidationError(`Unknown model "${common.model}"`);
+      if (!layers.compliance && !layers.geo && !layers.seo) throw new ValidationError("Turn on at least one layer");
       let options: JobOptions;
       let rejected: string[] = [];
       if (body.draft) {
         const name = String(body.draft.name ?? "draft.md");
         if (!/\.(md|txt|html?)$/i.test(name)) throw new ValidationError("A draft must be a .md, .txt or .html file");
         if (!body.draft.content?.trim()) throw new ValidationError("The draft is empty");
-        options = { urls: [], draft: { name, content: body.draft.content, type: body.draft.type ?? "post" } };
+        if (!layers.compliance && !layers.geo) throw new ValidationError("A draft needs Compliance or GEO (SEO needs a live page)");
+        options = { ...common, urls: [], draft: { name, content: body.draft.content, type: body.draft.type ?? "post" } };
+      } else if (body.subsections?.length) {
+        const known = new Set(scopeGroups(settings).flatMap((g) => g.subsections.map((s) => s.key)));
+        const bad = body.subsections.filter((k) => !known.has(k));
+        if (bad.length) throw new ValidationError(`Unknown subsection: ${bad.join(", ")}`);
+        const limit = body.limit ? Math.max(1, Math.min(500, Number(body.limit))) : undefined;
+        options = { ...common, urls: [], subsections: body.subsections, limit };
       } else if (body.all) {
-        options = { urls: [], all: true, force: body.force, noLlm: body.noLlm };
+        options = { ...common, urls: [], all: true };
       } else if (body.limit) {
-        options = { urls: [], limit: Math.max(1, Math.min(500, Number(body.limit))), force: body.force, noLlm: body.noLlm };
+        options = { ...common, urls: [], limit: Math.max(1, Math.min(500, Number(body.limit))) };
       } else {
         const parsed = parseUrls(String(body.text ?? ""));
         rejected = parsed.rejected;
         if (!parsed.urls.length) throw new ValidationError(rejected.length ? `No valid URLs. Not accepted: ${rejected.join(", ")}` : "Enter at least one URL");
         if (parsed.urls.length > 500) throw new ValidationError("At most 500 URLs at a time");
-        options = { urls: parsed.urls, force: body.force, noLlm: body.noLlm };
+        options = { ...common, urls: parsed.urls };
       }
-      if (!options.noLlm && !options.draft && !process.env.OPENAI_API_KEY) throw new ValidationError("OPENAI_API_KEY is not set in .env. Tick \"Skip LLM\" or add the key.");
+      if (!options.noLlm && (layers.compliance || layers.geo) && !process.env.OPENAI_API_KEY) {
+        throw new ValidationError("OPENAI_API_KEY is not set in .env. Turn off Compliance and GEO, or add the key.");
+      }
       if (runningJob()) {
         send(res, 409, { error: "Another audit is already running" });
         return;

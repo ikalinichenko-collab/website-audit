@@ -38,7 +38,9 @@
     "question": "The page has an FAQ. Are its answers direct and can each be quoted alone? Judge directness only, never offers or facts.",
     "applies_to": [
       "home",
-      "service"
+      "service",
+      "article",
+      "podcast"
     ],
     "requires": "faq_present"
   },

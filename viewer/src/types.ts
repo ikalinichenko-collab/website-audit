@@ -14,6 +14,16 @@ export interface RunMeta {
   llm_errors: number;
   tokens: TokenUsage;
   cost_usd: number | null;
+  /** absent in runs made before models and layers could be chosen */
+  model?: string;
+  layers?: Layers;
+  subsections?: string[];
+}
+
+export interface Layers {
+  compliance: boolean;
+  geo: boolean;
+  seo: boolean;
 }
 
 export interface RunListEntry {
@@ -23,6 +33,8 @@ export interface RunListEntry {
   pages_checked: number;
   cost_usd: number | null;
   tokens: TokenUsage;
+  model?: string;
+  layers?: Layers;
   format?: 1 | 2;
 }
 
@@ -63,6 +75,7 @@ export interface RunIndexFile {
   by_group: Record<string, GroupTotals>;
   by_subsection: Record<string, GroupTotals>;
   site: { compliance: Sev; seo: number; geo: number };
+  layers?: Layers;
 }
 
 export type Layer = "compliance" | "geo" | "seo";
@@ -86,7 +99,10 @@ export interface Finding {
   verified: boolean;
   fragment: string | null;
   basis?: "contradicts sources" | "not in sources" | "term list";
+  fix_where: FixWhere;
 }
+
+export type FixWhere = "template" | "page" | "author";
 
 export interface GeoAnswerView {
   id: string;
@@ -127,3 +143,16 @@ export interface SiteReport {
 }
 
 export type ActionKey = "rewrite" | "needs_decision" | "fix" | "keep" | "not_checked";
+
+/** Same shape as `SiteSources` in src/site-sources.ts. */
+export interface SiteSources {
+  schema_nodes: {
+    type: string;
+    name: string;
+    pages: number;
+    pages_total: number;
+    sample_url: string;
+    json: Record<string, unknown>;
+  }[];
+  variants: { id: string; zone: string; label: string; text: string; pages: string[] }[];
+}

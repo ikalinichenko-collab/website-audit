@@ -38,6 +38,32 @@ export function filterInScope(urls: string[], settings: Settings): string[] {
   return urls.filter((u) => classifyUrl(u, settings) !== null);
 }
 
+/** Key of a subsection in run options and counts: "Category/Subsection". */
+export function subsectionKey(s: { category: string; subsection: string }): string {
+  return `${s.category}/${s.subsection}`;
+}
+
+/** The scope as category groups with their subsections, in settings order. */
+export function scopeGroups(settings: Settings): { category: string; subsections: { key: string; name: string }[] }[] {
+  const groups: { category: string; subsections: { key: string; name: string }[] }[] = [];
+  for (const r of settings.scope) {
+    let g = groups.find((x) => x.category === r.category);
+    if (!g) groups.push((g = { category: r.category, subsections: [] }));
+    const key = subsectionKey(r);
+    if (!g.subsections.some((s) => s.key === key)) g.subsections.push({ key, name: r.subsection });
+  }
+  return groups;
+}
+
+/** Only the URLs whose subsection is in `keys`. */
+export function filterBySubsections(urls: string[], keys: string[], settings: Settings): string[] {
+  const want = new Set(keys);
+  return urls.filter((u) => {
+    const s = classifyUrl(u, settings);
+    return s !== null && want.has(subsectionKey(s));
+  });
+}
+
 /** Scope used for a URL given by hand that matches no rule: no schema, author or date requirements. */
 export const OUT_OF_SCOPE: UrlScope = { category: "Other", subsection: "Other", profile: "legal" };
 
@@ -47,7 +73,7 @@ export function sampleAcrossSubsections(urls: string[], limit: number, settings:
   for (const u of urls) {
     const s = classifyUrl(u, settings);
     if (!s) continue;
-    const key = `${s.category}/${s.subsection}`;
+    const key = subsectionKey(s);
     bySub.set(key, [...(bySub.get(key) ?? []), u]);
   }
   const keys = [...bySub.keys()];

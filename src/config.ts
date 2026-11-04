@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import path from "node:path";
-import type { Settings } from "./types.js";
+import type { ModelInfo, Settings, TokenUsage } from "./types.js";
 import type { SeoConfig } from "./seo.js";
 import { projectRoot, sha256 } from "./utils.js";
 
@@ -9,6 +9,20 @@ const ROOT = projectRoot();
 export function loadSettings(): Settings {
   const raw = readFileSync(path.join(ROOT, "config", "settings.json"), "utf8");
   return JSON.parse(raw) as Settings;
+}
+
+/** The registered model with this id (default model when none is given). Throws on an unknown id. */
+export function resolveModel(settings: Settings, id?: string): ModelInfo {
+  const want = id || settings.llm.model;
+  const m = settings.llm.models.find((x) => x.id === want);
+  if (!m) throw new Error(`Unknown model "${want}". Known: ${settings.llm.models.map((x) => x.id).join(", ")}`);
+  return m;
+}
+
+/** Dollar cost of the tokens at the model's price. */
+export function usageCost(u: TokenUsage, m: ModelInfo): number {
+  const p = m.price_per_million_tokens;
+  return (u.input * p.input + u.cached_input * p.cached_input + u.output * p.output) / 1_000_000;
 }
 
 export function loadSeoConfig(): SeoConfig {

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { Finding } from "../types.js";
+import type { Finding, FixWhere } from "../types.js";
 import { SeverityBadge } from "./Badges.js";
 import { categoryLabel } from "../labels.js";
 import { showOnPageUrl } from "../utils.js";
@@ -47,7 +47,9 @@ function PlaceLine({ f }: { f: Finding }) {
 function ProblemCard({ group }: { group: Finding[] }) {
   const [all, setAll] = useState(false);
   const f = group[0]!;
-  const shown = all ? group : group.slice(0, 5);
+  // the same quote in the same place twice is one place
+  const places = group.filter((p, i) => group.findIndex((q) => q.zone_id === p.zone_id && q.part === p.part && q.quote === p.quote) === i);
+  const shown = all ? places : places.slice(0, 5);
   return (
     <div className="rounded-lg border border-slate-200 bg-white p-3 dark:border-slate-700 dark:bg-slate-900">
       <div className="mb-1 flex flex-wrap items-center gap-2">
@@ -61,7 +63,7 @@ function ProblemCard({ group }: { group: Finding[] }) {
           <span className="rounded bg-sky-50 px-1.5 py-0.5 text-xs text-sky-700 dark:bg-sky-950 dark:text-sky-300">{f.basis}</span>
         )}
         <span className="font-semibold">{f.title}</span>
-        {group.length > 1 && <span className="text-xs text-slate-500">{group.length} places</span>}
+        {places.length > 1 && <span className="text-xs text-slate-500">{places.length} places</span>}
       </div>
       {f.issue && <p className="text-sm">{f.issue}</p>}
       {f.fix && (
@@ -75,22 +77,48 @@ function ProblemCard({ group }: { group: Finding[] }) {
           <PlaceLine key={i} f={p} />
         ))}
       </ul>
-      {group.length > 5 && (
+      {places.length > 5 && (
         <button type="button" className="mt-1 text-xs text-blue-600 hover:underline dark:text-blue-400" onClick={() => setAll(!all)}>
-          {all ? "show first 5" : `show all ${group.length}`}
+          {all ? "show first 5" : `show all ${places.length}`}
         </button>
       )}
     </div>
   );
 }
 
-/** Findings grouped into problems (by layer view). */
+const FIX_WHERE_ORDER: FixWhere[] = ["template", "page", "author"];
+const FIX_WHERE_LABELS: Record<FixWhere, string> = {
+  template: "Site template and settings",
+  page: "This page",
+  author: "Author profile",
+};
+
+/** Findings grouped into problems (by layer view); split by who edits them when more than one kind is present. */
 export function FindingList({ findings, empty }: { findings: Finding[]; empty: string }) {
   if (!findings.length) return <p className="text-sm text-slate-500">{empty}</p>;
+  // runs made before fix_where existed have none: those are page findings
+  const where = (f: Finding): FixWhere => f.fix_where ?? "page";
+  const kinds = FIX_WHERE_ORDER.filter((w) => findings.some((f) => where(f) === w));
+  if (kinds.length < 2) {
+    return (
+      <div className="space-y-3">
+        {groupProblems(findings).map((g, i) => (
+          <ProblemCard key={i} group={g} />
+        ))}
+      </div>
+    );
+  }
   return (
-    <div className="space-y-3">
-      {groupProblems(findings).map((g, i) => (
-        <ProblemCard key={i} group={g} />
+    <div className="space-y-5">
+      {kinds.map((w) => (
+        <section key={w}>
+          <h3 className="mb-2 text-sm font-semibold text-slate-700 dark:text-slate-300">{FIX_WHERE_LABELS[w]}</h3>
+          <div className="space-y-3">
+            {groupProblems(findings.filter((f) => where(f) === w)).map((g, i) => (
+              <ProblemCard key={i} group={g} />
+            ))}
+          </div>
+        </section>
       ))}
     </div>
   );

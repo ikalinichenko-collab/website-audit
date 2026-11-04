@@ -40,6 +40,11 @@ export function setLatestRun(runId: string): void {
   }
 }
 
+/** Site-wide JSON-LD fingerprints of the last multi-page run: single-page runs reuse them. */
+export function siteWideFingerprintsPath(): string {
+  return path.join(projectRoot(), "results", "site-wide-fingerprints.json");
+}
+
 export function readJson<T>(filePath: string): T | null {
   if (!fs.existsSync(filePath)) return null;
   return JSON.parse(fs.readFileSync(filePath, "utf8")) as T;

@@ -44,6 +44,7 @@ export function PagesTable() {
   }
 
   if (!index) return <p className="text-slate-500">Loading...</p>;
+  const layers = index.layers ?? { compliance: true, geo: true, seo: true };
   const groups = Object.keys(index.by_group).sort((a, b) => GROUP_ORDER.indexOf(a) - GROUP_ORDER.indexOf(b));
   const field = "rounded border border-slate-300 bg-white px-2 py-1 text-sm dark:border-slate-600 dark:bg-slate-900";
 
@@ -116,11 +117,11 @@ export function PagesTable() {
                   <ActionBadge action={actionKey(e)} />
                 </td>
                 <td className="px-3 py-2">
-                  <Counts {...e.compliance} />
+                  <Counts {...e.compliance} off={!layers.compliance} />
                 </td>
-                <td className="px-3 py-2 tabular-nums">{e.geo.to_fix}</td>
+                <td className="px-3 py-2 tabular-nums">{layers.geo ? e.geo.to_fix : <Counts high={0} medium={0} low={0} off />}</td>
                 <td className="px-3 py-2">
-                  <Counts {...e.seo} />
+                  <Counts {...e.seo} off={!layers.seo} />
                 </td>
               </tr>
             ))}

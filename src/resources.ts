@@ -273,6 +273,15 @@ export function validateResource(r: Resource, content: string): void {
       if (typeof data.base_url !== "string" || !/^https?:\/\//.test(data.base_url)) fail("base_url must be a URL");
       if (typeof data.sitemap !== "string") fail("sitemap is required");
       if (!isObj(data.llm) || typeof data.llm.model !== "string" || !data.llm.model.trim()) fail("llm.model is required");
+      const llm = data.llm as Record<string, unknown>;
+      const models = llm.models;
+      if (!Array.isArray(models) || !models.length) fail("llm.models must list at least one model");
+      for (const [i, m] of (models as unknown[]).entries()) {
+        const p = isObj(m) && isObj(m.price_per_million_tokens) ? m.price_per_million_tokens : null;
+        if (!isObj(m) || typeof m.id !== "string" || !m.id.trim() || typeof m.label !== "string") fail(`model ${i + 1} needs id and label`);
+        if (!p || !["input", "cached_input", "output"].every((k) => typeof p[k] === "number" && (p[k] as number) >= 0)) fail(`model ${i + 1}: price_per_million_tokens needs numeric input, cached_input and output`);
+      }
+      if (!(models as { id: string }[]).some((m) => m.id === llm.model)) fail("llm.model must be one of llm.models");
       if (!isObj(data.fetch) || typeof data.fetch.delay_ms !== "number") fail("fetch.delay_ms is required");
       if (!Array.isArray(data.scope) || !data.scope.length) fail("scope must be a non-empty list");
       const profiles = seoProfiles();

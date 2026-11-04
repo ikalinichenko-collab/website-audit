@@ -18,11 +18,14 @@ export interface ComplianceLayerResult {
   problems: ComplianceFinding[];
   usage: TokenUsage | null;
   error: string | null;
+  /** the layer was turned off for this run (`error` says so too, so readers show "not checked") */
+  skipped?: boolean;
 }
 
 export interface GeoLayerResult {
   hash: string;
   cached: boolean;
+  skipped?: boolean;
   /** code checks and the keyword placement are recomputed on every run; only `llm` is cached */
   code: GeoCodeCheck[];
   llm: GeoLlmResult[];
@@ -33,6 +36,7 @@ export interface GeoLayerResult {
 
 export interface SeoLayerResult {
   checks: SeoCheck[];
+  skipped?: boolean;
 }
 
 export interface PageReport {

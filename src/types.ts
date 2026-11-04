@@ -15,6 +15,21 @@ export interface ScopeRule {
   exclude_path_equals?: string[];
 }
 
+export interface ModelInfo {
+  id: string;
+  label: string;
+  price_per_million_tokens: { input: number; cached_input: number; output: number };
+}
+
+/** Which of the three layers a run executes. */
+export interface Layers {
+  compliance: boolean;
+  geo: boolean;
+  seo: boolean;
+}
+
+export const ALL_LAYERS: Layers = { compliance: true, geo: true, seo: true };
+
 export interface Settings {
   base_url: string;
   sitemap: string;
@@ -27,11 +42,8 @@ export interface Settings {
     max_output_tokens: number;
     /** Pages processed in parallel (LLM calls are slow). */
     concurrency?: number;
-    price_per_million_tokens: {
-      input: number | null;
-      cached_input: number | null;
-      output: number | null;
-    };
+    /** Models a run can use; `model` above is the default. */
+    models: ModelInfo[];
   };
   fetch: {
     user_agent: string;
@@ -163,4 +175,9 @@ export interface RunMeta {
   llm_errors: number;
   tokens: TokenUsage;
   cost_usd: number | null;
+  /** Absent in runs made before models and layers could be chosen (luna, all layers). */
+  model?: string;
+  layers?: Layers;
+  /** "Category/Subsection" keys when the run was started for chosen subsections. */
+  subsections?: string[];
 }

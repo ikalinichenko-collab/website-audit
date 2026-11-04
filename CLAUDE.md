@@ -13,9 +13,12 @@ The full design, the decisions behind it and the measured results are in `docs/z
 - `pnpm scan --all` — audit every in-scope URL from the sitemap (scope is the allow-list in `config/settings.json`)
 - `pnpm scan <url>...` — audit specific pages (a URL outside the scope is audited with a neutral profile)
 - `pnpm scan --limit N` — N URLs spread over the subsections
+- `pnpm scan --category <name>... | --subsection <name>...` — audit chosen categories (Services, Company, Resources, Solutions) or subsections (`Resources/Insights` or just `Insights`); repeatable, combines with `--limit N` for a sample
 - `pnpm scan --file <path> [--type <post|service|homepage|podcast|legal|company>]` — audit a draft (markdown, text or HTML; Compliance and GEO only)
 - `pnpm scan ... --force` — ignore the per-layer cache
-- `pnpm scan ... --no-llm` — skip both LLM layers (SEO and GEO code checks, zones and site pass only)
+- `pnpm scan ... --no-compliance --no-geo --no-seo` — turn a layer off (at least one must stay on). An off layer is recorded as not checked (`skipped: true`, shown as "off" in the viewer) and its site-pass part is skipped too
+- `pnpm scan ... --model <id>` — model from `llm.models` in `config/settings.json` (default `llm.model`); cost is computed from that model's price
+- `pnpm scan ... --no-llm` — skip the LLM calls but keep the layers (SEO and GEO code checks, term list, zones and site pass only)
 - `pnpm report [run_id|path]` — rebuild per-page `.md`, `site.md`, `summary.csv`, `findings.csv` and the viewer index from the JSON of a run (default `latest`)
 - `pnpm app` — build the viewer and start the app server (`src/server.ts`, http://127.0.0.1:8787): run audits, edit documents and settings, browse results. `PORT=...` changes the port
 - `pnpm viewer` — Vite dev server for `viewer/` with hot reload (proxies `/api` to the app server on 8787, so start `pnpm server` too)
@@ -33,21 +36,22 @@ The full design, the decisions behind it and the measured results are in `docs/z
 5. **SEO** (`seo.ts`, `config/seo.json`): 17 page checks plus regression guards, severity fixed per check in config. `seo-site.ts` adds duplicates, failures collapsed per profile and sitemap hygiene.
 6. **GEO**: `geo-code.ts` (`config/geo.json`: home title, trap terms, nearshore in hero, FAQ, em dash, `&`, UK spelling) and `geo-llm.ts` (`prompts/geo-questions.json`, `prompts/geo-llm.md`). The `answer_first` text and the keyword placement come from code. `buyer_ready` answer is derived from its value.
 7. **Compliance** (`compliance.ts`, `prompts/compliance-zones.md`, `config/compliance.json`): the model returns problems with `locations[{zone_id, quote}]` and a `basis` (contradicts or not in sources); code finds the part, checks the quote and the cited rule, sets severity by category, zone and basis, counts places, adds every occurrence of the banned terms in `config/compliance.json` (`finalizeCompliance`) and derives the page verdict (`deriveAction`). Only the raw model output is cached (`llm_problems`), so editing the term list or severity table does not ask the model again.
-8. **Cache**: each LLM layer is keyed by a hash of its payload, prompts, config, sources, model and reasoning (`layerFingerprint` in `config.ts`). SEO and GEO code checks always rerun.
-9. **Site pass**: robots and llms.txt (`site.ts`), shared variants, site-wide schema (one Compliance call each), SEO site checks.
-10. **Output** under `results/<run_id>/`: per page `pages/<slug>.json` (`PageReport`, `src/report-types.ts`), `.findings.json`, `.md`, `.html` snapshot, `.zones.json`; run-level `site.json`, `site.md`, `site.findings.json`, `summary.csv`, `findings.csv`, `index.json`, `run.json`. `results/runs.json` lists runs and `results/latest` points to the newest. `run-output.ts` builds all derived files, `findings.ts` flattens a report into findings, `render.ts` writes markdown and CSV, `quote-fragments.ts` makes text-fragment links to the live page.
+8. **Run options** (`AuditOptions`): `layers` (which of the three run), `model`, `subsections` (`Category/Subsection` keys, from `scopeGroups` in `scope.ts`), `limit`, `force`. A run stores `model`, `layers` and the cost (`usageCost` in `config.ts`) in `run.json`; one run uses one model. The layer cache key includes the model, so another model asks again.
+9. **Cache**: each LLM layer is keyed by a hash of its payload, prompts, config, sources, model and reasoning (`layerFingerprint` in `config.ts`). SEO and GEO code checks always rerun.
+10. **Site pass**: robots and llms.txt (`site.ts`), shared variants, site-wide schema (one Compliance call each), SEO site checks.
+11. **Output** under `results/<run_id>/`: per page `pages/<slug>.json` (`PageReport`, `src/report-types.ts`), `.findings.json`, `.md`, `.html` snapshot, `.zones.json`; run-level `site.json`, `site.md`, `site.findings.json`, `summary.csv`, `findings.csv`, `index.json`, `run.json`. `results/runs.json` lists runs and `results/latest` points to the newest. `run-output.ts` builds all derived files, `findings.ts` flattens a report into findings, `render.ts` writes markdown and CSV, `quote-fragments.ts` makes text-fragment links to the live page.
 
 The company documents the LLM compares against live in `sources/` (`decisions.md` wins over the Fact Sheet, which wins over the Glossary). Code never parses them except `verifyRule`, which checks that a cited rule names a real heading. Changing them changes the layer hashes and triggers LLM reruns.
 
 **App server** (`src/server.ts`, Node `http`, no framework, bound to 127.0.0.1): serves `viewer/dist`, `results/` under `/data/`, and a JSON API:
 - `resources.ts` is the allow-list of editable files (the three `sources/` documents, `prompts/geo-questions.json`, `config/{seo,geo,compliance,settings}.json`, the two prompts). `writeResource` validates the content per file (JSON shape, regex patterns, placeholders, scope profiles), keeps the previous version in `.history/<id>/` (30 kept) and clears the sources cache. Endpoints: `GET/PUT /api/resources/:id`, `.../history`, `.../restore`.
-- `jobs.ts` runs one audit at a time in the server process (`POST /api/jobs` with pasted URLs, a sample, the whole scope, or a draft text; `GET /api/jobs/:id` returns the log; `POST .../stop`). URLs must be on the site host. `DELETE /api/runs/:id` removes a run.
+- `jobs.ts` runs one audit at a time in the server process (`POST /api/jobs` with pasted URLs, a sample, chosen `subsections`, the whole scope, or a draft text, plus `layers` and `model`; `GET /api/scope` returns the subsection groups with page counts; `GET /api/jobs/:id` returns the log; `POST .../stop`). URLs must be on the site host. `DELETE /api/runs/:id` removes a run.
 
 The viewer (`viewer/`, React + react-router + Tailwind) has pages Run, Overview, Pages, Site, Documents (sources) and Settings (GEO questions, SEO, compliance severity, GEO code checks, prompts, general and scope). It reads results through `/data/...` and talks to the API through `viewer/src/api.ts`. Its types in `viewer/src/types.ts` mirror `src/run-output.ts`, `src/report-types.ts` and `src/findings.ts`; keep them in sync. Runs made before the zone redesign are not readable by the viewer.
 
 ## Config
 
-- `config/settings.json`: site URLs, `scope` allow-list, LLM model, reasoning effort and concurrency, fetch settings, hidden-content selectors, legacy `page_types` (only used for `ExtractedPage.page_type`).
+- `config/settings.json`: site URLs, `scope` allow-list, LLM default model, `llm.models` (id, label and price per million input, cached input and output tokens: the choices in the Run page), reasoning effort and concurrency, fetch settings, hidden-content selectors, legacy `page_types` (only used for `ExtractedPage.page_type`).
 - `config/seo.json`, `config/geo.json`, `config/compliance.json`: per-layer thresholds, lists and severities.
 - Prompts use placeholders such as `{{report_language}}` and `{{questions}}`.
 - Gotcha: when editing JSON with regex patterns, backslashes must stay doubled (`\\b`); a single `\b` in JSON is a backspace character and the pattern silently matches nothing.

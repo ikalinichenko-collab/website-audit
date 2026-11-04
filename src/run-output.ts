@@ -1,12 +1,13 @@
 import * as fs from "node:fs";
 import path from "node:path";
-import type { RunMeta, Settings } from "./types.js";
+import type { Layers, RunMeta, Settings } from "./types.js";
 import type { PageReport, SiteReport } from "./report-types.js";
 import { countBy, fragmentAllowed, pageFindings, siteFindings, type Finding } from "./findings.js";
 import { buildFindingsCsv, buildSummaryCsv, renderPageReport, renderSiteReport } from "./render.js";
 import { fragmentForQuote } from "./quote-fragments.js";
 import { projectRoot } from "./utils.js";
 import { readJson } from "./paths.js";
+import { buildSiteSources } from "./site-sources.js";
 
 export interface PageIndexEntry {
   slug: string;
@@ -39,6 +40,8 @@ export interface RunIndexFile {
   by_group: Record<string, GroupTotals>;
   by_subsection: Record<string, GroupTotals>;
   site: { compliance: { high: number; medium: number; low: number }; seo: number; geo: number };
+  /** layers that ran; absent in runs made before layers could be turned off (all three) */
+  layers?: Layers;
 }
 
 export interface RunListEntry {
@@ -48,6 +51,8 @@ export interface RunListEntry {
   pages_checked: number;
   cost_usd: number | null;
   tokens: RunMeta["tokens"];
+  model?: string;
+  layers?: Layers;
   /** 2 = readable by the viewer; 1 = made before the zone redesign */
   format: 1 | 2;
 }
@@ -162,11 +167,13 @@ export function writeRunOutputs(runPath: string, settings: Settings): { pages: n
     const c = countBy(sf, "compliance");
     siteCounts = { compliance: { high: c.high, medium: c.medium, low: c.low }, seo: countBy(sf, "seo").high + countBy(sf, "seo").medium + countBy(sf, "seo").low, geo: countBy(sf, "geo").other };
     fs.writeFileSync(path.join(runPath, "site.md"), renderSiteReport(site, reports));
+    fs.writeFileSync(path.join(runPath, "site-sources.json"), JSON.stringify(buildSiteSources(runPath, site, loaded), null, 1));
   }
 
   fs.writeFileSync(path.join(runPath, "summary.csv"), buildSummaryCsv(reports, site));
   fs.writeFileSync(path.join(runPath, "findings.csv"), buildFindingsCsv(allFindings));
-  const index: RunIndexFile = { schema_version: 2, pages: entries, totals, by_group: byGroup, by_subsection: bySub, site: siteCounts };
+  const layers = readJson<RunMeta>(path.join(runPath, "run.json"))?.layers;
+  const index: RunIndexFile = { schema_version: 2, pages: entries, totals, by_group: byGroup, by_subsection: bySub, site: siteCounts, ...(layers ? { layers } : {}) };
   fs.writeFileSync(path.join(runPath, "index.json"), JSON.stringify(index, null, 2));
   writeRunsManifest();
   return { pages: entries.length };
@@ -189,6 +196,8 @@ export function writeRunsManifest(): RunListEntry[] {
       pages_checked: meta.pages_checked,
       cost_usd: meta.cost_usd,
       tokens: meta.tokens,
+      ...(meta.model ? { model: meta.model } : {}),
+      ...(meta.layers ? { layers: meta.layers } : {}),
       format: readJson<{ schema_version?: number }>(path.join(runPath, "index.json"))?.schema_version === 2 ? 2 : 1,
     });
   }

@@ -1,9 +1,11 @@
 import * as fs from "node:fs";
 import path from "node:path";
 import dotenv from "dotenv";
-import type { ExtractedPage, PageZones, RunMeta, Settings, TokenUsage, Zone } from "./types.js";
+import { ALL_LAYERS, type ExtractedPage, type Layers, type PageZones, type RunMeta, type Settings, type TokenUsage, type Zone } from "./types.js";
 import type { PageReport, SiteReport, ComplianceLayerResult, GeoLayerResult, SharedVariant } from "./report-types.js";
 import {
+  resolveModel,
+  usageCost,
   layerFingerprint,
   loadGeoCodeConfig,
   loadSeoConfig,
@@ -12,7 +14,7 @@ import {
 import { extractFromHtml, flattenJsonLd, parseJsonLdBlocks } from "./extract.js";
 import { httpGet, headOrGetStatus, type FetchResult } from "./fetch.js";
 import { collectSitemapUrls } from "./sitemap.js";
-import { classifyUrl, filterInScope, OUT_OF_SCOPE, sampleAcrossSubsections, type UrlScope } from "./scope.js";
+import { classifyUrl, filterBySubsections, filterInScope, OUT_OF_SCOPE, sampleAcrossSubsections, type UrlScope } from "./scope.js";
 import { buildZones, jsonLdZone } from "./zones.js";
 import { draftZones } from "./draft.js";
 import { runSeoChecks } from "./seo.js";
@@ -23,7 +25,7 @@ import { compliancePayload, deriveAction, finalizeCompliance, runComplianceLayer
 import { createOpenAiClient } from "./llm.js";
 import { detectSiteWideFingerprints, fingerprintJsonLdNode } from "./schema-fingerprint.js";
 import { runSiteBasics } from "./site.js";
-import { latestPointerPath, readJson, resolveLatestRunId, runDir, setLatestRun } from "./paths.js";
+import { latestPointerPath, readJson, resolveLatestRunId, runDir, setLatestRun, siteWideFingerprintsPath } from "./paths.js";
 import { writeRunOutputs } from "./run-output.js";
 import { projectRoot, runIdNow, sha256, sleep, urlToSlug } from "./utils.js";
 
@@ -33,6 +35,12 @@ export interface AuditOptions {
   urls: string[];
   limit?: number;
   all?: boolean;
+  /** "Category/Subsection" keys: audit the in-scope URLs of these subsections (with `limit`, a sample of them). */
+  subsections?: string[];
+  /** Layers to run (default all three). A layer that is off is recorded as not checked. */
+  layers?: Layers;
+  /** Model id from `llm.models` in settings (default `llm.model`). */
+  model?: string;
   force?: boolean;
   /** Skip both LLM layers (smoke tests, SEO and GEO code checks only). */
   noLlm?: boolean;
@@ -46,11 +54,19 @@ const SOURCE_FILES = ["sources/decisions.md", "sources/GoGloby Fact Sheet.md", "
 const SHARED_IDS = ["banner_cta", "modals"];
 /** A shared-zone text carried by fewer pages than this is page-specific (many article banners are written per article) and is audited with its page. */
 const SHARED_MIN_PAGES = 2;
+const LAYER_OFF = "Layer turned off for this run";
 const ZERO: TokenUsage = { input: 0, cached_input: 0, output: 0 };
 
 function add(a: TokenUsage, b: TokenUsage | null | undefined): TokenUsage {
   if (!b) return a;
   return { input: a.input + b.input, cached_input: a.cached_input + b.cached_input, output: a.output + b.output };
+}
+
+/** Settings with the run's model in `llm.model`, so every fingerprint and LLM call uses it. */
+function settingsForModel(modelId?: string): { settings: Settings; model: ReturnType<typeof resolveModel> } {
+  const base = loadSettings();
+  const model = resolveModel(base, modelId);
+  return { settings: { ...base, llm: { ...base.llm, model: model.id } }, model };
 }
 
 function reasoning(settings: Settings, layer: "compliance" | "geo"): string {
@@ -71,13 +87,9 @@ async function pool<T>(items: T[], n: number, fn: (item: T, i: number) => Promis
 }
 
 function loadSavedSiteWideFingerprints(): Set<string> {
-  const latest = latestPointerPath();
-  let fpPath = path.join(latest, "site-wide-fingerprints.json");
-  if (!fs.existsSync(fpPath)) {
-    const id = resolveLatestRunId();
-    if (id) fpPath = path.join(runDir(id), "site-wide-fingerprints.json");
-  }
-  const data = readJson<{ fingerprints: string[] }>(fpPath);
+  // a single-page run writes no file of its own, so results/latest may point to a run without one
+  const data = readJson<{ fingerprints: string[] }>(siteWideFingerprintsPath())
+    ?? readJson<{ fingerprints: string[] }>(path.join(latestPointerPath(), "site-wide-fingerprints.json"));
   return new Set(data?.fingerprints ?? []);
 }
 
@@ -101,14 +113,16 @@ function zoneHash(z: Zone): string {
 }
 
 export async function runAudit(options: AuditOptions): Promise<string> {
-  const settings = loadSettings();
+  const { settings, model } = settingsForModel(options.model);
+  const layers = options.layers ?? ALL_LAYERS;
+  if (!layers.compliance && !layers.geo && !layers.seo) throw new Error("Turn on at least one layer");
   const seoCfg = loadSeoConfig();
   const geoCfg = loadGeoCodeConfig();
   const runId = runIdNow();
   const startedAt = new Date().toISOString();
   const outRoot = runDir(runId);
   fs.mkdirSync(path.join(outRoot, "pages"), { recursive: true });
-  const client = options.noLlm ? null : createOpenAiClient();
+  const client = options.noLlm || !(layers.compliance || layers.geo) ? null : createOpenAiClient();
   const concurrency = settings.llm.concurrency ?? 4;
   const log = (line: string): void => {
     console.log(line);
@@ -118,12 +132,15 @@ export async function runAudit(options: AuditOptions): Promise<string> {
 
   // ---- 1. which URLs --------------------------------------------------------
   let urls = options.urls;
-  if (options.all || options.limit) {
-    const inScope = filterInScope(await collectSitemapUrls(settings), settings);
-    urls = options.all ? inScope : sampleAcrossSubsections(inScope, options.limit ?? 10, settings);
+  const subsections = options.subsections?.length ? options.subsections : undefined;
+  if (options.all || options.limit || subsections) {
+    let inScope = filterInScope(await collectSitemapUrls(settings), settings);
+    if (subsections) inScope = filterBySubsections(inScope, subsections, settings);
+    urls = options.limit && !options.all ? sampleAcrossSubsections(inScope, options.limit, settings) : inScope;
   }
   const multi = urls.length > 1;
-  log(`Auditing ${urls.length} URL(s), run ${runId}`);
+  const layerNames = (["compliance", "geo", "seo"] as const).filter((l) => layers[l]).join(", ");
+  log(`Auditing ${urls.length} URL(s), run ${runId}, model ${model.id}, layers: ${layerNames}`);
 
   // ---- 2. fetch ---------------------------------------------------------------
   const fetchedAll: { url: string; fetched: FetchResult }[] = [];
@@ -157,10 +174,9 @@ export async function runAudit(options: AuditOptions): Promise<string> {
       }
     }
     siteWide = detectSiteWideFingerprints(counts, fetchedPages.length, settings.site_wide_schema_share);
-    fs.writeFileSync(
-      path.join(outRoot, "site-wide-fingerprints.json"),
-      JSON.stringify({ fingerprints: [...siteWide] }, null, 2),
-    );
+    const fingerprintsJson = JSON.stringify({ fingerprints: [...siteWide] }, null, 2);
+    fs.writeFileSync(path.join(outRoot, "site-wide-fingerprints.json"), fingerprintsJson);
+    fs.writeFileSync(siteWideFingerprintsPath(), fingerprintsJson);
   }
 
   // ---- 4. extract and build zones -------------------------------------------------
@@ -233,23 +249,25 @@ export async function runAudit(options: AuditOptions): Promise<string> {
     const prev = options.force ? null : previousReport(url);
     const finalUrl = fetched.finalUrl;
 
-    const seo = await runSeoChecks({
-      html: fetched.html,
-      requestedUrl: url,
-      baseUrl: settings.base_url,
-      page,
-      zones,
-      profile: scope.profile,
-      config: seoCfg,
-      linkChecker,
-    });
+    const seo = layers.seo
+      ? await runSeoChecks({
+          html: fetched.html,
+          requestedUrl: url,
+          baseUrl: settings.base_url,
+          page,
+          zones,
+          profile: scope.profile,
+          config: seoCfg,
+          linkChecker,
+        })
+      : { checks: [] };
 
     const geoType = geoTypeOf(scope.profile);
     const types = new Set<string>();
     for (const n of flattenJsonLd(page.json_ld)) {
       [n["@type"]].flat().forEach((t) => typeof t === "string" && types.add(t));
     }
-    const geoCode = runGeoCodeChecks(zones, geoType, geoCfg, types);
+    const geoCode = layers.geo ? runGeoCodeChecks(zones, geoType, geoCfg, types) : [];
 
     // compliance (LLM, cached by layer hash)
     const cPayload = compliancePayload(finalUrl, scope.profile, zones);
@@ -257,7 +275,9 @@ export async function runAudit(options: AuditOptions): Promise<string> {
     // The term list and the severity table are applied on every run (finalizeCompliance), so editing them
     // does not ask the model again; only the prompt, the documents, the model and the page text do.
     let compliance: ComplianceLayerResult;
-    if (prev && prev.compliance.hash === cHash && !prev.compliance.error && prev.compliance.llm_problems) {
+    if (!layers.compliance) {
+      compliance = { hash: cHash, cached: false, skipped: true, action: null, summary: null, llm_problems: [], problems: [], usage: null, error: LAYER_OFF };
+    } else if (prev && prev.compliance.hash === cHash && !prev.compliance.error && prev.compliance.llm_problems) {
       const problems = finalizeCompliance(prev.compliance.llm_problems, zones);
       const modelAction = prev.compliance.model_action ?? prev.compliance.action;
       compliance = {
@@ -302,7 +322,9 @@ export async function runAudit(options: AuditOptions): Promise<string> {
     const passed = geoCode.filter((c) => c.status === "pass").map((c) => c.id).sort();
     const gHash = sha256(geoFp + geoType + passed.join(",") + JSON.stringify(geoPayload(finalUrl, geoType, zones)));
     let geo: GeoLayerResult;
-    if (prev && prev.geo.hash === gHash && !prev.geo.error) {
+    if (!layers.geo) {
+      geo = { hash: gHash, cached: false, skipped: true, code: [], llm: [], placement: null, usage: null, error: LAYER_OFF };
+    } else if (prev && prev.geo.hash === gHash && !prev.geo.error) {
       const kw = prev.geo.llm.find((a) => a.id === "target_keyword");
       geo = {
         hash: gHash,
@@ -341,7 +363,7 @@ export async function runAudit(options: AuditOptions): Promise<string> {
       shared_variants: variantsByPage.get(prep) ?? [],
       compliance,
       geo,
-      seo: { checks: seo.checks },
+      seo: { checks: seo.checks, ...(layers.seo ? {} : { skipped: true }) },
     };
     const slug = urlToSlug(url);
     fs.writeFileSync(path.join(outRoot, "pages", `${slug}.json`), JSON.stringify(report, null, 2));
@@ -357,9 +379,13 @@ export async function runAudit(options: AuditOptions): Promise<string> {
 
   // ---- 6. site pass -------------------------------------------------------------------
   const basics = await runSiteBasics(settings, geoCfg);
+  if (!layers.geo) {
+    basics.robots = { value: "not checked (GEO off)", ok: true };
+    basics.llms_txt = { value: "not checked (GEO off)", ok: true };
+  }
 
   let sharedCompliance: ComplianceLayerResult | null = null;
-  if (variantZones.length && client) {
+  if (variantZones.length && client && layers.compliance) {
     const zonesObj: PageZones = { template: "unknown", zones: variantZones, warnings: [] };
     llmCalls++;
     const r = await runComplianceLayer(client, settings, sharedPayload(zonesObj), zonesObj);
@@ -369,7 +395,7 @@ export async function runAudit(options: AuditOptions): Promise<string> {
   }
 
   let siteSchema: ComplianceLayerResult | null = null;
-  if (multi && siteWide.size && client) {
+  if (multi && siteWide.size && client && layers.compliance) {
     const nodes: Record<string, unknown>[] = [];
     const seen = new Set<string>();
     for (const p of preps) {
@@ -397,11 +423,13 @@ export async function runAudit(options: AuditOptions): Promise<string> {
     }
   }
 
-  const seoSite = seoSiteChecks(
-    reports,
-    preps.map((p) => ({ url: p.fetched.finalUrl, title: p.page.title, meta: p.page.meta_description, h1: p.page.h1[0] ?? "" })),
-  );
-  seoSite.sitemap_hygiene.push(...redirectOnly);
+  const seoSite: SiteReport["seo"] = layers.seo
+    ? seoSiteChecks(
+        reports,
+        preps.map((p) => ({ url: p.fetched.finalUrl, title: p.page.title, meta: p.page.meta_description, h1: p.page.h1[0] ?? "" })),
+      )
+    : { duplicates: [], collapsed: [], sitemap_hygiene: [] };
+  if (layers.seo) seoSite.sitemap_hygiene.push(...redirectOnly);
 
   const scopeCounts: Record<string, number> = {};
   for (const r of reports) {
@@ -420,11 +448,7 @@ export async function runAudit(options: AuditOptions): Promise<string> {
   };
   fs.writeFileSync(path.join(outRoot, "site.json"), JSON.stringify(site, null, 2));
 
-  const p = settings.llm.price_per_million_tokens;
-  const cost =
-    p.input == null && p.cached_input == null && p.output == null
-      ? null
-      : (tokens.input * (p.input ?? 0) + tokens.cached_input * (p.cached_input ?? 0) + tokens.output * (p.output ?? 0)) / 1_000_000;
+  const cost = usageCost(tokens, model);
   const meta: RunMeta = {
     run_id: runId,
     started_at: startedAt,
@@ -435,12 +459,15 @@ export async function runAudit(options: AuditOptions): Promise<string> {
     llm_errors: llmErrors,
     tokens,
     cost_usd: cost,
+    model: model.id,
+    layers,
+    ...(subsections ? { subsections } : {}),
   };
   fs.writeFileSync(path.join(outRoot, "run.json"), JSON.stringify(meta, null, 2));
   writeRunOutputs(outRoot, settings);
   setLatestRun(runId);
   log(
-    `${cancelled() ? "Stopped" : "Done"}. ${reports.length} pages, ${llmCalls} LLM calls (${llmErrors} errors), ${cachedLayers} cached layers. Tokens in ${tokens.input}, cached ${tokens.cached_input}, out ${tokens.output}`,
+    `${cancelled() ? "Stopped" : "Done"}. ${reports.length} pages, ${llmCalls} LLM calls (${llmErrors} errors), ${cachedLayers} cached layers. Tokens in ${tokens.input}, cached ${tokens.cached_input}, out ${tokens.output}. Cost $${cost.toFixed(4)} (${model.id})`,
   );
   return runId;
 }
@@ -455,8 +482,10 @@ const DRAFT_GEO_TYPE: Record<string, string> = {
 };
 
 /** Audit a local draft (markdown, text or HTML): Compliance and GEO only, no SEO and no site pass. */
-export async function runAuditDraft(file: string, type = "post"): Promise<string> {
-  const settings = loadSettings();
+export async function runAuditDraft(file: string, type = "post", opts: { layers?: Layers; model?: string } = {}): Promise<string> {
+  const { settings, model } = settingsForModel(opts.model);
+  const layers = opts.layers ?? ALL_LAYERS;
+  if (!layers.compliance && !layers.geo) throw new Error("A draft needs Compliance or GEO turned on (SEO needs a live page)");
   const geoCfg = loadGeoCodeConfig();
   const runId = runIdNow();
   const startedAt = new Date().toISOString();
@@ -471,20 +500,24 @@ export async function runAuditDraft(file: string, type = "post"): Promise<string
   const url = `draft://${name}`;
   const title = zones.zones.find((z) => z.kind === "h1")?.text || name;
 
-  const geoCode = runGeoCodeChecks(zones, geoType, geoCfg, new Set());
+  const geoCode = layers.geo ? runGeoCodeChecks(zones, geoType, geoCfg, new Set()) : [];
   let tokens: TokenUsage = ZERO;
   let calls = 0;
   let errors = 0;
 
   let compliance: ComplianceLayerResult = { hash: "", cached: false, action: null, summary: null, llm_problems: [], problems: finalizeCompliance([], zones), usage: null, error: "OPENAI_API_KEY not set" };
   let geo: GeoLayerResult = { hash: "", cached: false, code: geoCode, llm: [], placement: null, usage: null, error: "OPENAI_API_KEY not set" };
-  if (client) {
+  if (!layers.compliance) compliance = { ...compliance, skipped: true, problems: [], error: LAYER_OFF };
+  if (!layers.geo) geo = { ...geo, skipped: true, code: [], error: LAYER_OFF };
+  if (client && layers.compliance) {
     calls++;
     const r = await runComplianceLayer(client, settings, compliancePayload(url, type, zones), zones);
     if (r.error) errors++;
     tokens = add(tokens, r.usage);
     const dProblems = finalizeCompliance(r.problems, zones);
     compliance = { hash: "", cached: false, action: r.error ? null : deriveAction(r.action, dProblems, zones), model_action: r.action, summary: r.summary, llm_problems: r.problems, problems: dProblems, usage: r.usage, error: r.error };
+  }
+  if (client && layers.geo) {
     const g = await runGeoLlm(client, settings, url, geoType, zones, geoCode);
     if (g.usage.input + g.usage.cached_input + g.usage.output > 0) calls++;
     if (g.error) errors++;
@@ -509,7 +542,7 @@ export async function runAuditDraft(file: string, type = "post"): Promise<string
     shared_variants: [],
     compliance,
     geo,
-    seo: { checks: [] },
+    seo: { checks: [], skipped: true },
   };
   fs.writeFileSync(path.join(outRoot, "pages", `draft_${name.replace(/[^a-z0-9.-]+/gi, "_")}.json`), JSON.stringify(report, null, 2));
   const meta: RunMeta = {
@@ -521,7 +554,9 @@ export async function runAuditDraft(file: string, type = "post"): Promise<string
     llm_calls: calls,
     llm_errors: errors,
     tokens,
-    cost_usd: null,
+    cost_usd: usageCost(tokens, model),
+    model: model.id,
+    layers: { ...layers, seo: false },
   };
   fs.writeFileSync(path.join(outRoot, "run.json"), JSON.stringify(meta, null, 2));
   writeRunOutputs(outRoot, settings);

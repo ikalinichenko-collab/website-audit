@@ -1,4 +1,4 @@
-import type { Finding, PageReport, RunIndexFile, RunListEntry, RunMeta, SiteReport } from "./types.js";
+import type { Finding, PageReport, RunIndexFile, RunListEntry, RunMeta, SiteReport, SiteSources } from "./types.js";
 
 async function fetchJson<T>(path: string): Promise<T> {
   const res = await fetch(path);
@@ -17,3 +17,4 @@ export const getPage = (id: string, slug: string) =>
   fetchJson<PageReport>(`${run(id)}/pages/${encodeURIComponent(slug)}.json`);
 export const getPageFindings = (id: string, slug: string) =>
   fetchJson<Finding[]>(`${run(id)}/pages/${encodeURIComponent(slug)}.findings.json`);
+export const getSiteSources = (id: string) => fetchJson<SiteSources>(`${run(id)}/site-sources.json`);

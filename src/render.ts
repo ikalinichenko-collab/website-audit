@@ -1,5 +1,5 @@
 import type { PageReport, SiteReport } from "./report-types.js";
-import { countBy, kindLabel, pageFindings, siteFindings, type Finding, type Layer } from "./findings.js";
+import { countBy, FIX_WHERE_LABELS, kindLabel, pageFindings, siteFindings, type Finding, type Layer } from "./findings.js";
 import { textFragmentUrl } from "./quote-fragments.js";
 import { categoryLabel } from "./categories.js";
 
@@ -79,6 +79,12 @@ export function renderPageReport(r: PageReport, site: SiteReport | null): string
   L.push(`- GEO: ${counts(findings, "geo")} to fix`);
   L.push(`- SEO: ${counts(findings, "seo")}`);
   if (r.shared_variants.length) L.push(`- Shared zones on this page: ${r.shared_variants.join(", ")} (checked in the site report)`);
+  const authorPlaces = findings.filter((f) => f.fix_where === "author").length;
+  if (authorPlaces) L.push(`- ${authorPlaces} place(s) are in the author profile, not in the page text (zone "Author")`);
+  const templateProblems = site ? countBy(siteFindings(site), "compliance") : null;
+  if (templateProblems && templateProblems.high + templateProblems.medium + templateProblems.low) {
+    L.push(`- Site template and settings (shared banner, forms, site-wide JSON-LD) are checked once for the whole site, see site.md`);
+  }
   L.push("");
 
   const toReview = findings.filter((f) => !f.verified);
@@ -186,12 +192,12 @@ export function renderSiteReport(site: SiteReport, reports: PageReport[]): strin
   return L.join("\n");
 }
 
-const FINDINGS_HEADER = ["url", "group", "layer", "severity", "category", "zone", "part", "quote", "issue", "fix", "rule", "basis"];
+const FINDINGS_HEADER = ["url", "group", "layer", "severity", "category", "zone", "part", "quote", "issue", "fix", "rule", "basis", "fix_where"];
 
 export function buildFindingsCsv(all: Finding[]): string {
   const rows = [csvRow(FINDINGS_HEADER)];
   for (const f of all) {
-    rows.push(csvRow([f.url, f.group, f.layer, f.severity, kindLabel(f), f.zone_label || f.zone_id, f.part, f.quote, f.issue || f.title, f.fix, f.rule, f.basis ?? ""]));
+    rows.push(csvRow([f.url, f.group, f.layer, f.severity, kindLabel(f), f.zone_label || f.zone_id, f.part, f.quote, f.issue || f.title, f.fix, f.rule, f.basis ?? "", FIX_WHERE_LABELS[f.fix_where]]));
   }
   return rows.join("\n") + "\n";
 }

@@ -1,23 +1,38 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { api, type AppState, type JobDetail } from "../api.js";
+import { api, type AppState, type JobDetail, type ModelOption, type ScopeGroup } from "../api.js";
+import type { Layers } from "../types.js";
 import { useRunContext } from "../context/RunContext.js";
 import { Notice, buttonClass, primaryClass } from "../components/ResourceEditor.js";
 
 type Mode = "urls" | "draft" | "scope";
 
-const TOKENS_PER_PAGE = 27_000;
+// Measured on real runs (results/*/run.json): both LLM layers on one page use about 30k input and 7k output
+// tokens (output includes reasoning). Half of the input counts as cached; small runs cache less, big ones more.
+const INPUT_PER_PAGE = 30_000;
+const OUTPUT_PER_PAGE = 7_000;
+const CACHED_SHARE = 0.5;
 const SECONDS_PER_PAGE = 25;
 
 function countUrls(text: string): number {
   return new Set(text.split(/[\s,]+/).filter((s) => /^https?:\/\//.test(s))).size;
 }
 
-function estimate(pages: number, noLlm: boolean): string {
-  if (noLlm) return `${pages} page${pages === 1 ? "" : "s"}, no LLM calls`;
-  const tokens = Math.round((pages * TOKENS_PER_PAGE + 20_000) / 1000);
+function money(v: number): string {
+  return v < 0.01 ? "under $0.01" : `$${v < 10 ? v.toFixed(2) : Math.round(v)}`;
+}
+
+function estimate(pages: number, layers: Layers, model: ModelOption | undefined): string {
+  const word = `${pages} page${pages === 1 ? "" : "s"}`;
+  const llm = Number(layers.compliance) + Number(layers.geo);
+  if (!llm || !model) return `${word}, no LLM calls`;
+  const share = llm / 2;
+  const inTok = pages * INPUT_PER_PAGE * share;
+  const outTok = pages * OUTPUT_PER_PAGE * share;
+  const p = model.price_per_million_tokens;
+  const cost = (inTok * ((1 - CACHED_SHARE) * p.input + CACHED_SHARE * p.cached_input) + outTok * p.output) / 1_000_000;
   const minutes = Math.max(1, Math.round((pages * SECONDS_PER_PAGE) / 4 / 60));
-  return `${pages} page${pages === 1 ? "" : "s"}, about ${2 * pages + 2} LLM calls, roughly ${tokens} thousand input tokens, about ${minutes} min`;
+  return `${word}, about ${llm * pages} LLM calls, roughly ${Math.round(inTok / 1000)} thousand input tokens, about ${money(cost)} on ${model.label}, about ${minutes} min`;
 }
 
 function progressOf(log: string[]): { done: number; total: number } | null {
@@ -35,11 +50,13 @@ export function RunPage() {
   const [mode, setMode] = useState<Mode>("urls");
   const [text, setText] = useState("");
   const [force, setForce] = useState(false);
-  const [noLlm, setNoLlm] = useState(false);
+  const [layers, setLayers] = useState<Layers>({ compliance: true, geo: true, seo: true });
+  const [modelId, setModelId] = useState("");
   const [draftName, setDraftName] = useState("draft.md");
   const [draftText, setDraftText] = useState("");
   const [draftType, setDraftType] = useState("post");
-  const [scope, setScope] = useState<{ total: number; by_subsection: Record<string, number> } | null>(null);
+  const [scope, setScope] = useState<{ total: number; groups: ScopeGroup[] } | null>(null);
+  const [picked, setPicked] = useState<Set<string>>(new Set());
   const [scopeOk, setScopeOk] = useState(false);
   const [limit, setLimit] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -54,6 +71,7 @@ export function RunPage() {
       .state()
       .then((s) => {
         setState(s);
+        setModelId((cur) => cur || s.model);
         if (s.running_job) attach(s.running_job);
       })
       .catch((e) => setError(String(e instanceof Error ? e.message : e)));
@@ -63,6 +81,12 @@ export function RunPage() {
     jobId.current = id;
     setLog([]);
   }, []);
+
+  // the subsection list is loaded when the sections tab opens
+  useEffect(() => {
+    if (mode !== "scope" || scope) return;
+    api.scope().then(setScope).catch((e) => setError(String(e instanceof Error ? e.message : e)));
+  }, [mode, scope]);
 
   // poll the running job
   useEffect(() => {
@@ -87,7 +111,26 @@ export function RunPage() {
 
   const running = job?.status === "running" || (state?.running_job != null && jobId.current !== null);
   const pages = countUrls(text);
-  const keyMissing = state !== null && !state.has_api_key && !noLlm;
+  const llmLayers = layers.compliance || layers.geo;
+  const keyMissing = state !== null && !state.has_api_key && llmLayers;
+  const model = state?.models.find((m) => m.id === modelId);
+  const noLayer = !layers.compliance && !layers.geo && !layers.seo;
+  const runOpts = { layers, model: modelId || undefined };
+  const allKeys = scope ? scope.groups.flatMap((g) => g.subsections.map((x) => x.key)) : [];
+  const pickedPages = scope ? scope.groups.flatMap((g) => g.subsections).filter((x) => picked.has(x.key)).reduce((n, x) => n + x.count, 0) : 0;
+  const sampleN = Number(limit) || 0;
+  const plannedPages = sampleN ? Math.min(sampleN, pickedPages) : pickedPages;
+
+  function togglePicked(keys: string[], on: boolean) {
+    setPicked((cur) => {
+      const next = new Set(cur);
+      for (const k of keys) {
+        if (on) next.add(k);
+        else next.delete(k);
+      }
+      return next;
+    });
+  }
 
   async function start(body: Parameters<typeof api.startJob>[0]) {
     setError(null);
@@ -129,12 +172,49 @@ export function RunPage() {
         <Notice kind="warn">OPENAI_API_KEY is not set in .env. You can still run with "Skip LLM" (SEO and code checks only).</Notice>
       )}
 
+      <section className="space-y-2 rounded-lg border border-slate-200 bg-white p-3 text-sm dark:border-slate-700 dark:bg-slate-900">
+        <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+          <span className="font-medium">Layers</span>
+          {(
+            [
+              ["compliance", "Compliance (LLM)"],
+              ["geo", "GEO (LLM and code)"],
+              ["seo", "SEO (code)"],
+            ] as const
+          ).map(([k, label]) => (
+            <label key={k} className="flex items-center gap-1">
+              <input type="checkbox" checked={layers[k]} onChange={(e) => setLayers((l) => ({ ...l, [k]: e.target.checked }))} /> {label}
+            </label>
+          ))}
+          <span className="ml-auto flex items-center gap-2">
+            <label htmlFor="model" className="font-medium">
+              Model
+            </label>
+            <select id="model" className={field} value={modelId} onChange={(e) => setModelId(e.target.value)} disabled={!llmLayers}>
+              {(state?.models ?? []).map((m) => (
+                <option key={m.id} value={m.id}>
+                  {m.label}
+                </option>
+              ))}
+            </select>
+          </span>
+        </div>
+        {model && llmLayers && (
+          <p className="text-xs text-slate-500">
+            {model.label}: ${model.price_per_million_tokens.input} input, ${model.price_per_million_tokens.cached_input} cached input,{" "}
+            ${model.price_per_million_tokens.output} output per million tokens.
+          </p>
+        )}
+        {noLayer && <Notice kind="warn">Turn on at least one layer.</Notice>}
+        {mode === "draft" && layers.seo && <p className="text-xs text-slate-500">SEO is skipped for a draft: it needs a live page.</p>}
+      </section>
+
       <div className="flex gap-2 border-b border-slate-200 dark:border-slate-700">
         {(
           [
             ["urls", "Pages by link"],
             ["draft", "Draft text"],
-            ["scope", "Whole site"],
+            ["scope", "Sections or whole site"],
           ] as const
         ).map(([k, label]) => (
           <button
@@ -161,17 +241,14 @@ export function RunPage() {
             <label className="flex items-center gap-1">
               <input type="checkbox" checked={force} onChange={(e) => setForce(e.target.checked)} /> Ignore saved results
             </label>
-            <label className="flex items-center gap-1">
-              <input type="checkbox" checked={noLlm} onChange={(e) => setNoLlm(e.target.checked)} /> Skip LLM
-            </label>
-            <span className="text-slate-500">{pages ? estimate(pages, noLlm) : "Paste at least one link"}</span>
+            <span className="text-slate-500">{pages ? estimate(pages, layers, model) : "Paste at least one link"}</span>
           </div>
-          {pages > 20 && !noLlm && <Notice kind="warn">More than 20 pages with the LLM takes a while and uses many tokens.</Notice>}
+          {pages > 20 && llmLayers && <Notice kind="warn">More than 20 pages with the LLM takes a while and uses many tokens.</Notice>}
           <button
             type="button"
             className={primaryClass}
-            disabled={!pages || running || keyMissing}
-            onClick={() => start({ text, force, noLlm })}
+            disabled={!pages || running || keyMissing || noLayer}
+            onClick={() => start({ text, force, ...runOpts })}
           >
             Run {pages > 1 ? `${pages} pages` : "page"}
           </button>
@@ -181,7 +258,7 @@ export function RunPage() {
       {mode === "draft" && (
         <div className="space-y-3">
           <p className="text-sm text-slate-600 dark:text-slate-400">
-            Check text that is not on the site yet. Compliance and GEO run; SEO needs a live page.
+            Check text that is not on the site yet. Compliance and GEO run; SEO needs a live page, so it is skipped.
           </p>
           <div className="flex flex-wrap items-center gap-2 text-sm">
             <input
@@ -225,79 +302,94 @@ export function RunPage() {
           <button
             type="button"
             className={primaryClass}
-            disabled={!draftText.trim() || running || !state?.has_api_key}
-            onClick={() => start({ draft: { name: draftName, content: draftText, type: draftType } })}
+            disabled={!draftText.trim() || running || keyMissing || (!layers.compliance && !layers.geo)}
+            onClick={() => start({ draft: { name: draftName, content: draftText, type: draftType }, ...runOpts })}
           >
             Run draft
           </button>
-          {state && !state.has_api_key && <p className="text-xs text-slate-500">A draft needs the LLM, so OPENAI_API_KEY must be set.</p>}
         </div>
       )}
 
       {mode === "scope" && (
         <div className="space-y-3">
           <p className="text-sm text-slate-600 dark:text-slate-400">
-            Audits every page in the scope from the sitemap (Settings, General and scope). This is the full audit.
+            Pick whole categories or single subsections from the sitemap. Select everything for the full audit. The scope itself is set in
+            Settings, General and scope.
           </p>
-          <div className="flex flex-wrap items-center gap-2">
-            <button
-              type="button"
-              className={buttonClass}
-              onClick={() => {
-                setError(null);
-                api.scope().then(setScope).catch((e) => setError(String(e instanceof Error ? e.message : e)));
-              }}
-            >
-              Count pages
-            </button>
-            <label className="flex items-center gap-1 text-sm">
-              or a sample of
-              <input className={`${field} w-16`} value={limit} onChange={(e) => setLimit(e.target.value.replace(/\D/g, ""))} />
-              pages
-            </label>
-            <label className="flex items-center gap-1 text-sm">
-              <input type="checkbox" checked={force} onChange={(e) => setForce(e.target.checked)} /> Ignore saved results
-            </label>
-            <label className="flex items-center gap-1 text-sm">
-              <input type="checkbox" checked={noLlm} onChange={(e) => setNoLlm(e.target.checked)} /> Skip LLM
-            </label>
-          </div>
+          {!scope && <p className="text-sm text-slate-500">Loading the sitemap...</p>}
           {scope && (
-            <div className="rounded-lg border border-slate-200 bg-white p-3 text-sm dark:border-slate-700 dark:bg-slate-900">
-              <p className="font-medium">{estimate(scope.total, noLlm)}</p>
-              <ul className="mt-1 text-slate-600 dark:text-slate-400">
-                {Object.entries(scope.by_subsection).sort().map(([k, n]) => (
-                  <li key={k}>
-                    {k}: {n}
-                  </li>
-                ))}
-              </ul>
-              {!noLlm && (
-                <label className="mt-2 flex items-center gap-1">
+            <div className="space-y-3 rounded-lg border border-slate-200 bg-white p-3 text-sm dark:border-slate-700 dark:bg-slate-900">
+              <div className="flex flex-wrap items-center gap-3">
+                <button type="button" className={buttonClass} onClick={() => togglePicked(allKeys, true)}>
+                  Select all ({scope.total})
+                </button>
+                <button type="button" className={buttonClass} onClick={() => setPicked(new Set())}>
+                  Clear
+                </button>
+              </div>
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+                {scope.groups.map((g) => {
+                  const keys = g.subsections.map((x) => x.key);
+                  const on = keys.filter((k) => picked.has(k)).length;
+                  return (
+                    <fieldset key={g.category} className="space-y-1">
+                      <label className="flex items-center gap-1 font-semibold">
+                        <input
+                          type="checkbox"
+                          checked={on === keys.length}
+                          ref={(el) => {
+                            if (el) el.indeterminate = on > 0 && on < keys.length;
+                          }}
+                          onChange={(e) => togglePicked(keys, e.target.checked)}
+                        />
+                        {g.category}
+                        <span className="font-normal text-slate-500">{g.subsections.reduce((n, x) => n + x.count, 0)}</span>
+                      </label>
+                      {g.subsections.map((x) => (
+                        <label key={x.key} className="ml-5 flex items-center gap-1">
+                          <input type="checkbox" checked={picked.has(x.key)} onChange={(e) => togglePicked([x.key], e.target.checked)} />
+                          {x.name}
+                          <span className="text-slate-500">{x.count}</span>
+                        </label>
+                      ))}
+                    </fieldset>
+                  );
+                })}
+              </div>
+              <div className="flex flex-wrap items-center gap-4">
+                <label className="flex items-center gap-1">
+                  only a sample of
+                  <input className={`${field} w-16`} value={limit} onChange={(e) => setLimit(e.target.value.replace(/\D/g, ""))} />
+                  pages, spread over the selected subsections
+                </label>
+                <label className="flex items-center gap-1">
+                  <input type="checkbox" checked={force} onChange={(e) => setForce(e.target.checked)} /> Ignore saved results
+                </label>
+              </div>
+              <p className="font-medium">{plannedPages ? estimate(plannedPages, layers, model) : "Select at least one subsection"}</p>
+              {llmLayers && plannedPages > 50 && (
+                <label className="flex items-center gap-1">
                   <input type="checkbox" checked={scopeOk} onChange={(e) => setScopeOk(e.target.checked)} />
-                  I understand this uses many tokens and runs for hours
+                  I understand this uses many tokens and runs for a long time
                 </label>
               )}
             </div>
           )}
-          <div className="flex gap-2">
-            <button
-              type="button"
-              className={primaryClass}
-              disabled={running || keyMissing || !scope || (!noLlm && !scopeOk)}
-              onClick={() => start({ all: true, force, noLlm })}
-            >
-              Run the whole scope
-            </button>
-            <button
-              type="button"
-              className={buttonClass}
-              disabled={running || keyMissing || !limit}
-              onClick={() => start({ limit: Number(limit), force, noLlm })}
-            >
-              Run a sample of {limit || "N"}
-            </button>
-          </div>
+          <button
+            type="button"
+            className={primaryClass}
+            disabled={running || keyMissing || noLayer || !plannedPages || (llmLayers && plannedPages > 50 && !scopeOk)}
+            onClick={() => {
+              const everything = picked.size === allKeys.length;
+              start({
+                ...(everything && !sampleN ? { all: true } : { subsections: [...picked], limit: sampleN || undefined }),
+                force,
+                ...runOpts,
+              });
+            }}
+          >
+            Run {plannedPages ? `${plannedPages} page${plannedPages === 1 ? "" : "s"}` : "selected"}
+          </button>
         </div>
       )}
 
@@ -346,7 +438,7 @@ function RunList({
   onSelect,
   onDeleted,
 }: {
-  runs: { id: string; pages_checked: number; started_at: string; format?: 1 | 2 }[];
+  runs: { id: string; pages_checked: number; started_at: string; model?: string; cost_usd?: number | null; format?: 1 | 2 }[];
   onSelect: (id: string) => void;
   onDeleted: () => void;
 }) {
@@ -361,6 +453,8 @@ function RunList({
           <li key={r.id} className="flex items-center gap-3 px-3 py-2">
             <span className="tabular-nums">{r.id.replace(/T/, " ").slice(0, 19)}</span>
             <span className="text-slate-500">{r.pages_checked} pages</span>
+            {r.model && <span className="text-xs text-slate-500">{r.model}</span>}
+            {r.cost_usd != null && r.cost_usd > 0 && <span className="text-xs text-slate-500">${r.cost_usd.toFixed(r.cost_usd < 1 ? 3 : 2)}</span>}
             {r.format === 1 ? (
               <span className="text-xs text-slate-500">old format, cannot be opened</span>
             ) : (

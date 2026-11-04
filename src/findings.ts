@@ -28,7 +28,19 @@ export interface Finding {
   fragment: string | null;
   /** Compliance only: why it is a finding */
   basis?: "contradicts sources" | "not in sources" | "term list";
+  /** who edits it: site template and settings, this page's own content, or the author profile */
+  fix_where: FixWhere;
 }
+
+export type FixWhere = "template" | "page" | "author";
+
+export const FIX_WHERE_LABELS: Record<FixWhere, string> = {
+  template: "Site template and settings",
+  page: "This page",
+  author: "Author profile",
+};
+
+type FindingDraft = Omit<Finding, "fix_where">;
 
 export const SEO_LABELS: Record<string, string> = {
   http_status: "Page does not return a clean 200",
@@ -115,7 +127,12 @@ function base(r: PageReport): Pick<Finding, "url" | "group" | "subsection"> {
 
 /** Findings of one page across the three layers. Checks collapsed into a site-wide entry are left out. */
 export function pageFindings(r: PageReport, site: SiteReport | null): Finding[] {
-  const out: Finding[] = [];
+  // site-wide JSON-LD nodes are already removed from the page zones, so what is left is the page's own
+  return pageFindingDrafts(r, site).map((f) => ({ ...f, fix_where: f.zone_id === "author" ? "author" : "page" }));
+}
+
+function pageFindingDrafts(r: PageReport, site: SiteReport | null): FindingDraft[] {
+  const out: FindingDraft[] = [];
   const collapsed = new Set((site?.seo.collapsed ?? []).filter((c) => c.profile === r.profile).map((c) => c.id));
 
   for (const p of r.compliance.problems) {
@@ -232,7 +249,11 @@ export function pageFindings(r: PageReport, site: SiteReport | null): Finding[] 
 
 /** Site-level findings: shared zones, site-wide schema, SEO site checks, collapsed failures. */
 export function siteFindings(site: SiteReport): Finding[] {
-  const out: Finding[] = [];
+  return siteFindingDrafts(site).map((f) => ({ ...f, fix_where: "template" }));
+}
+
+function siteFindingDrafts(site: SiteReport): FindingDraft[] {
+  const out: FindingDraft[] = [];
   const baseSite = { url: "site", group: "Site", subsection: "" };
   const fromCompliance = (res: NonNullable<SiteReport["site_schema"]>, source: string, label: string, pagesOf?: (zone: string) => string[]) => {
     for (const p of res.problems) {

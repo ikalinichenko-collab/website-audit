@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useRunContext } from "../context/RunContext.js";
 import { getIndex, getRun } from "../data.js";
-import type { GroupTotals, RunIndexFile, RunMeta } from "../types.js";
+import type { GroupTotals, Layers, RunIndexFile, RunMeta } from "../types.js";
 import { ACTION_COLUMNS, GROUP_ORDER } from "../labels.js";
 import { Counts } from "../components/Badges.js";
 import { formatDuration, formatTokens } from "../utils.js";
@@ -16,7 +16,7 @@ function Card({ title, children }: { title: string; children: React.ReactNode })
   );
 }
 
-function Row({ name, t, link }: { name: string; t: GroupTotals; link: string }) {
+function Row({ name, t, link, layers }: { name: string; t: GroupTotals; link: string; layers: Layers }) {
   return (
     <tr className="border-t border-slate-100 dark:border-slate-800">
       <td className="px-3 py-2">
@@ -26,11 +26,11 @@ function Row({ name, t, link }: { name: string; t: GroupTotals; link: string }) 
       </td>
       <td className="px-3 py-2 tabular-nums">{t.pages}</td>
       <td className="px-3 py-2">
-        <Counts {...t.compliance} />
+        <Counts {...t.compliance} off={!layers.compliance} />
       </td>
-      <td className="px-3 py-2 tabular-nums">{t.geo}</td>
+      <td className="px-3 py-2 tabular-nums">{layers.geo ? t.geo : <Counts high={0} medium={0} low={0} off />}</td>
       <td className="px-3 py-2">
-        <Counts {...t.seo} />
+        <Counts {...t.seo} off={!layers.seo} />
       </td>
       {ACTION_COLUMNS.map((a) => (
         <td key={a.key} className="px-3 py-2 tabular-nums text-slate-600 dark:text-slate-400">
@@ -63,17 +63,18 @@ export function Overview() {
   const groups = Object.keys(index.by_group).sort((a, b) => GROUP_ORDER.indexOf(a) - GROUP_ORDER.indexOf(b));
   const subs = Object.keys(index.by_subsection).sort();
   const t = index.totals;
+  const layers: Layers = index.layers ?? { compliance: true, geo: true, seo: true };
 
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
         <Card title="Pages">{t.pages}</Card>
         <Card title="Compliance (high / medium / low)">
-          <Counts {...t.compliance} />
+          <Counts {...t.compliance} off={!layers.compliance} />
         </Card>
-        <Card title="GEO to fix">{t.geo}</Card>
+        <Card title="GEO to fix">{layers.geo ? t.geo : <Counts high={0} medium={0} low={0} off />}</Card>
         <Card title="SEO (high / medium / low)">
-          <Counts {...t.seo} />
+          <Counts {...t.seo} off={!layers.seo} />
         </Card>
       </div>
       <p className="text-sm text-slate-600 dark:text-slate-400">
@@ -85,6 +86,8 @@ export function Overview() {
           <span className="ml-3 text-xs text-slate-500">
             {meta.llm_calls} LLM calls, {formatTokens(meta.tokens.input + meta.tokens.cached_input)} input and{" "}
             {formatTokens(meta.tokens.output)} output tokens, {formatDuration(meta.started_at, meta.ended_at)}
+            {meta.model && `, model ${meta.model}`}
+            {meta.cost_usd != null && meta.llm_calls > 0 && `, $${meta.cost_usd.toFixed(meta.cost_usd < 1 ? 3 : 2)}`}
           </span>
         )}
       </p>
@@ -106,7 +109,7 @@ export function Overview() {
           </thead>
           <tbody>
             {groups.map((g) => (
-              <Row key={g} name={g} t={index.by_group[g]!} link={`/pages?group=${encodeURIComponent(g)}`} />
+              <Row key={g} name={g} t={index.by_group[g]!} link={`/pages?group=${encodeURIComponent(g)}`} layers={layers} />
             ))}
             <tr>
               <td colSpan={9} className="bg-slate-50 px-3 py-1 text-xs uppercase text-slate-500 dark:bg-slate-800">
@@ -114,7 +117,7 @@ export function Overview() {
               </td>
             </tr>
             {subs.map((s) => (
-              <Row key={s} name={s} t={index.by_subsection[s]!} link={`/pages?sub=${encodeURIComponent(s)}`} />
+              <Row key={s} name={s} t={index.by_subsection[s]!} link={`/pages?sub=${encodeURIComponent(s)}`} layers={layers} />
             ))}
           </tbody>
         </table>

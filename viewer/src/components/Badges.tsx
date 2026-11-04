@@ -23,7 +23,8 @@ export function SeverityBadge({ severity }: { severity: string }) {
   return <span className={`${pill} ${SEV_CLASS[severity]}`}>{severity}</span>;
 }
 
-export function Counts({ high, medium, low }: { high: number; medium: number; low: number }) {
+export function Counts({ high, medium, low, off }: { high: number; medium: number; low: number; off?: boolean }) {
+  if (off) return <span className="text-xs text-slate-400 dark:text-slate-500">off</span>;
   const cls = (n: number, c: string) => (n === 0 ? "text-slate-400 dark:text-slate-500" : c);
   return (
     <span className="tabular-nums">

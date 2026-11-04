@@ -3,12 +3,17 @@ import * as os from "node:os";
 import path from "node:path";
 import { runAudit, runAuditDraft } from "./audit.js";
 import { loadSettings } from "./config.js";
+import type { Layers } from "./types.js";
 
 export interface JobOptions {
   /** URLs to audit. Empty with `all` set means the whole scope. */
   urls: string[];
   all?: boolean;
+  /** "Category/Subsection" keys. */
+  subsections?: string[];
   limit?: number;
+  layers?: Layers;
+  model?: string;
   force?: boolean;
   noLlm?: boolean;
   /** Text of a draft instead of URLs. */
@@ -103,7 +108,7 @@ export function startJob(options: JobOptions): Job {
       const file = path.join(dir, path.basename(draft.name));
       fs.writeFileSync(file, draft.content);
       onLog(`Auditing draft ${draft.name}`);
-      return await runAuditDraft(file, draft.type);
+      return await runAuditDraft(file, draft.type, { layers: options.layers, model: options.model });
     } finally {
       fs.rmSync(dir, { recursive: true, force: true });
     }
