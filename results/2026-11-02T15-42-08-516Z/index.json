@@ -1,0 +1,841 @@
+{
+  "schema_version": 2,
+  "pages": [
+    {
+      "slug": "home_ffe28d62",
+      "url": "https://gogloby.com/",
+      "title": "Applied AI Company for Established Software | GoGloby",
+      "group": "Company",
+      "subsection": "Home",
+      "profile": "home",
+      "template": "block",
+      "action": "rewrite",
+      "summary": "The homepage presents GoGloby as an Applied AI company that sells AI measurement and delivery services, rather than the approved staffing and recruiting agency. Rebuild the main message around the two approved services, and verify or remove the unsupported company claims, client figures and contact details listed below.",
+      "compliance": {
+        "high": 9,
+        "medium": 11,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 8,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 2
+      },
+      "checked_at": "2026-11-02T15:43:45.492Z"
+    },
+    {
+      "slug": "about_812e7972",
+      "url": "https://gogloby.com/about/",
+      "title": "About GoGloby | Applied AI Engineering Partner",
+      "group": "Company",
+      "subsection": "About",
+      "profile": "company",
+      "template": "block",
+      "action": "rewrite",
+      "summary": "The About page presents GoGloby as an Applied AI Engineering and software-delivery company, rather than the staffing and recruiting agency in the approved description. It also promotes an outdated bundled offer and includes unsupported company claims, client totals, and office contacts.",
+      "compliance": {
+        "high": 6,
+        "medium": 3,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 2,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 3
+      },
+      "checked_at": "2026-11-02T15:44:44.741Z"
+    },
+    {
+      "slug": "case-study_applied-ai-engineering-roi-case-study_f62ad50f",
+      "url": "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+      "title": "How GoGloby’s Applied AI Engineering Delivered Measurable ROI",
+      "group": "Resources",
+      "subsection": "Case studies",
+      "profile": "case_study",
+      "template": "article",
+      "action": "needs_decision",
+      "summary": "The case study sells a former Applied AI implementation offer, not GoGloby’s approved staffing and recruiting services. Its anonymous client metrics and additional performance and security claims are not supported by the Fact Sheet.",
+      "compliance": {
+        "high": 2,
+        "medium": 1,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 2,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 1
+      },
+      "checked_at": "2026-11-02T15:45:06.701Z"
+    },
+    {
+      "slug": "case-study_building-semantic-ml-pipeline-recruitment-automation_89be991d",
+      "url": "https://gogloby.com/case-study/building-semantic-ml-pipeline-recruitment-automation/",
+      "title": "A Semantic ML Pipeline: How GoGloby Cut Screening Time by 85%",
+      "group": "Resources",
+      "subsection": "Case studies",
+      "profile": "case_study",
+      "template": "article",
+      "action": "rewrite",
+      "summary": "The case study presents GoGloby as an Applied AI engineering and product-building company, rather than the approved staffing and recruiting agency. Its performance figures and pipeline claims are not substantiated by the Fact Sheet, and a section addresses engineers rather than hiring buyers.",
+      "compliance": {
+        "high": 2,
+        "medium": 1,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 5,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 0
+      },
+      "checked_at": "2026-11-02T15:46:17.359Z"
+    },
+    {
+      "slug": "case-study_healthtech-company-applied-ai-engineers_be1851cb",
+      "url": "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+      "title": "A Nasdaq HealthTech Company Integrated a $3B Platform",
+      "group": "Resources",
+      "subsection": "Case studies",
+      "profile": "case_study",
+      "template": "article",
+      "action": "fix",
+      "summary": "The page contains substantial case-specific claims about placements, savings, compliance and client outcomes that are not supported by the company sources, alongside a few direct conflicts in assessment, retention and insurance figures. Verify or remove those claims and correct the public rate and service-location statements.",
+      "compliance": {
+        "high": 6,
+        "medium": 3,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 4,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 1
+      },
+      "checked_at": "2026-11-02T15:43:57.067Z"
+    },
+    {
+      "slug": "contacts_6e9c1b44",
+      "url": "https://gogloby.com/contacts/",
+      "title": "Contact GoGloby: Expert Guidance on Global Scaling & AI Teams",
+      "group": "Company",
+      "subsection": "Contacts",
+      "profile": "company",
+      "template": "block",
+      "action": "rewrite",
+      "summary": "The page’s main message centers on global scaling and Applied AI engineering, and its contact CTA promotes a Benchmark rather than an approved service CTA. Remove or verify the unsupported regional office and security-certification claims before publishing a revised page.",
+      "compliance": {
+        "high": 4,
+        "medium": 1,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 1,
+        "error": null
+      },
+      "seo": {
+        "high": 1,
+        "medium": 2,
+        "low": 2
+      },
+      "checked_at": "2026-11-02T15:43:14.745Z"
+    },
+    {
+      "slug": "insights_best-tech-recruiting-firms_5fd71129",
+      "url": "https://gogloby.com/insights/best-tech-recruiting-firms/",
+      "title": "17 Best Tech Recruiting Companies to Hire Top Talent in 2026",
+      "group": "Resources",
+      "subsection": "Insights",
+      "profile": "article",
+      "template": "article",
+      "action": "fix",
+      "summary": "The article’s GoGloby entry presents the company as a general tech/software recruiter and nearshore squad provider, rather than a staffing and recruiting agency specializing in Data & AI Engineers. It also includes unsupported performance claims and outdated positioning that should be corrected in the GoGloby-specific sections.",
+      "compliance": {
+        "high": 9,
+        "medium": 1,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 6,
+        "error": null
+      },
+      "seo": {
+        "high": 1,
+        "medium": 0,
+        "low": 1
+      },
+      "checked_at": "2026-11-02T15:45:41.771Z"
+    },
+    {
+      "slug": "insights_marketing-recruitment-and-staffing-agencies_a470b468",
+      "url": "https://gogloby.com/insights/marketing-recruitment-and-staffing-agencies/",
+      "title": "15 Marketing Recruitment and Staffing Agencies in 2026",
+      "group": "Resources",
+      "subsection": "Insights",
+      "profile": "article",
+      "template": "article",
+      "action": "fix",
+      "summary": "The article presents GoGloby as a marketing recruitment and staffing agency, contrary to its Data & AI Engineer services. Its GoGloby entry also contains unsupported service claims, an incorrect founding year, and outdated positioning language.",
+      "compliance": {
+        "high": 4,
+        "medium": 1,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 7,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      },
+      "checked_at": "2026-11-02T15:47:02.105Z"
+    },
+    {
+      "slug": "insights_talent-acquisition-companies_5dae0777",
+      "url": "https://gogloby.com/insights/talent-acquisition-companies/",
+      "title": "Top Talent Acquisition Companies for U.S. Businesses",
+      "group": "Resources",
+      "subsection": "Insights",
+      "profile": "article",
+      "template": "article",
+      "action": "fix",
+      "summary": "The GoGloby entries describe a broader global staffing and operations offer, use outdated positioning, and make unsupported performance and client-outcome claims. Correct the GoGloby-specific text and verify or remove its unsupported facts; the article itself does not need a full rewrite.",
+      "compliance": {
+        "high": 7,
+        "medium": 3,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 7,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      },
+      "checked_at": "2026-11-02T15:43:46.101Z"
+    },
+    {
+      "slug": "podcast_jason-zoltak_1f34a115",
+      "url": "https://gogloby.com/podcast/jason-zoltak/",
+      "title": "The Power of Networks: Exploring tofu's Unique Recruitment Model | GoGloby",
+      "group": "Resources",
+      "subsection": "Podcast",
+      "profile": "podcast",
+      "template": "article",
+      "action": "keep",
+      "summary": "The page describes the podcast guest and tofu; it makes no claims about GoGloby that contradict the company documents.",
+      "compliance": {
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 2,
+        "error": null
+      },
+      "seo": {
+        "high": 1,
+        "medium": 1,
+        "low": 0
+      },
+      "checked_at": "2026-11-02T15:45:44.649Z"
+    },
+    {
+      "slug": "podcast_philippe-noel_d89e3bea",
+      "url": "https://gogloby.com/podcast/philippe-noel/",
+      "title": "How to Join YC, Raise $2M, and Land Fortune 500 Clients After Setbacks | GoGloby",
+      "group": "Resources",
+      "subsection": "Podcast",
+      "profile": "podcast",
+      "template": "article",
+      "action": "keep",
+      "summary": "The page does not make claims about GoGloby that contradict the company documents.",
+      "compliance": {
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 2,
+        "error": null
+      },
+      "seo": {
+        "high": 1,
+        "medium": 1,
+        "low": 0
+      },
+      "checked_at": "2026-11-02T15:44:30.937Z"
+    },
+    {
+      "slug": "podcast_tara-vasdani_f96c6211",
+      "url": "https://gogloby.com/podcast/tara-vasdani/",
+      "title": "EORs and Digital Nomads: Redefining Global Hiring Legally with Tara Vasdani | GoGloby",
+      "group": "Resources",
+      "subsection": "Podcast",
+      "profile": "podcast",
+      "template": "article",
+      "action": "keep",
+      "summary": "The page is an interview about remote-work law and does not make claims about GoGloby that conflict with the company sources.",
+      "compliance": {
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 1,
+        "error": null
+      },
+      "seo": {
+        "high": 1,
+        "medium": 1,
+        "low": 0
+      },
+      "checked_at": "2026-11-02T15:42:38.398Z"
+    },
+    {
+      "slug": "privacy-policy_854c8db5",
+      "url": "https://gogloby.com/privacy-policy/",
+      "title": "Privacy Policy | Globy",
+      "group": "Company",
+      "subsection": "Privacy",
+      "profile": "legal",
+      "template": "legal",
+      "action": "fix",
+      "summary": "The privacy policy uses the former brand in its metadata and includes contact details and operational or service claims that are not supported by the company sources. Update the name and verify or remove the unsupported details.",
+      "compliance": {
+        "high": 6,
+        "medium": 0,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 0,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 2
+      },
+      "checked_at": "2026-11-02T15:44:28.662Z"
+    },
+    {
+      "slug": "services_generative-ai-development_6416f06b",
+      "url": "https://gogloby.com/services/generative-ai-development/",
+      "title": "Generative AI Development Services | GoGloby",
+      "group": "Services",
+      "subsection": "Services",
+      "profile": "service",
+      "template": "block",
+      "action": "needs_decision",
+      "summary": "This page sells generative AI development and an integrated engineering pod, rather than GoGloby’s current staffing and recruiting services. Decide whether to retire it or replace it with content for a current service; do not carry forward the unsupported claims, figures, client details, or old offers noted below.",
+      "compliance": {
+        "high": 13,
+        "medium": 14,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 5,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 1
+      },
+      "checked_at": "2026-11-02T15:46:45.155Z"
+    },
+    {
+      "slug": "services_hire-ai-engineers_23353448",
+      "url": "https://gogloby.com/services/hire-ai-engineers/",
+      "title": "Hire AI Engineers Who Can Ship With Claude in Production | GoGloby",
+      "group": "Services",
+      "subsection": "Services",
+      "profile": "service",
+      "template": "block",
+      "action": "rewrite",
+      "summary": "The page’s central offer and terminology frame GoGloby as an Applied AI Engineering and Claude-focused provider, rather than the approved Data & AI Engineers recruiting service. The page also promotes a discontinued Benchmark offer and contains unsupported recruiting claims, client claims, and client figures that must not carry into a rewrite.",
+      "compliance": {
+        "high": 15,
+        "medium": 15,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 6,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 1
+      },
+      "checked_at": "2026-11-02T15:45:24.500Z"
+    },
+    {
+      "slug": "solutions_ai-engineering-visibility_1c98b18d",
+      "url": "https://gogloby.com/solutions/ai-engineering-visibility/",
+      "title": "AI Cost Management and Engineering Visibility Solution | GoGloby",
+      "group": "Solutions",
+      "subsection": "Solutions",
+      "profile": "service",
+      "template": "block",
+      "action": "needs_decision",
+      "summary": "This page is built around selling AI cost-management and engineering-visibility software, plus forward-deployed engineering services. The sources say the AI Development Intelligence Layer is bundled only with nearshore staffing and is never sold separately, so decide whether to remove or repurpose the page; its standalone offer and claims should not be carried forward.",
+      "compliance": {
+        "high": 4,
+        "medium": 13,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 7,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 1
+      },
+      "checked_at": "2026-11-02T15:44:28.859Z"
+    },
+    {
+      "slug": "solutions_forward-deployed-engineering_5c944ddd",
+      "url": "https://gogloby.com/solutions/forward-deployed-engineering/",
+      "title": "Forward Deployed Engineering Solution | GoGloby",
+      "group": "Solutions",
+      "subsection": "Solutions",
+      "profile": "service",
+      "template": "block",
+      "action": "needs_decision",
+      "summary": "This page sells a forward-deployed engineering delivery offer, including implementation and measurement services, rather than GoGloby’s recruiting and staffing services. It also contains unsupported or conflicting client figures and claims about guarantees, insurance, and service timelines.",
+      "compliance": {
+        "high": 6,
+        "medium": 15,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 5,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 2
+      },
+      "checked_at": "2026-11-02T15:46:21.172Z"
+    },
+    {
+      "slug": "terms-and-conditions_ff6ab751",
+      "url": "https://gogloby.com/terms-and-conditions/",
+      "title": "Terms of Service | Globy",
+      "group": "Company",
+      "subsection": "Terms",
+      "profile": "legal",
+      "template": "legal",
+      "action": "fix",
+      "summary": "The page uses the former company name in its metadata, describes GoGloby as operating in software development, and lists an email address not supported by the company sources. Update those items while leaving the legal terms otherwise unchanged.",
+      "compliance": {
+        "high": 3,
+        "medium": 0,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 1,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 1
+      },
+      "checked_at": "2026-11-02T15:43:54.042Z"
+    },
+    {
+      "slug": "use-cases_ai-in-customer-experience_de23800b",
+      "url": "https://gogloby.com/use-cases/ai-in-customer-experience/",
+      "title": "AI in Customer Experience: 20+ Use Cases 2025 | GoGloby",
+      "group": "Resources",
+      "subsection": "Use cases",
+      "profile": "article",
+      "template": "article",
+      "action": "fix",
+      "summary": "The article’s GoGloby section presents an outdated CX BPO staffing and software-build offer, and directly courts a customer-experience BPO audience outside the stated target. The page also contains unsupported or conflicting claims about guarantees and Sergey Matikaynen’s experience and credentials.",
+      "compliance": {
+        "high": 7,
+        "medium": 2,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 7,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      },
+      "checked_at": "2026-11-02T15:46:17.330Z"
+    },
+    {
+      "slug": "use-cases_ai-in-it_61b887c7",
+      "url": "https://gogloby.com/use-cases/ai-in-it/",
+      "title": "AI in IT: 140+ Use Cases and Case Studies 2025 | GoGloby",
+      "group": "Resources",
+      "subsection": "Use cases",
+      "profile": "article",
+      "template": "article",
+      "action": "fix",
+      "summary": "The article is mostly a guide to AI use cases, but its conclusion and About GoGloby section describe a delivery partner embedding AI squads rather than the approved staffing and recruiting agency. The author bio also contains an outdated positioning term and a founder-tenure figure that conflicts with the Fact Sheet.",
+      "compliance": {
+        "high": 4,
+        "medium": 2,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 6,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 1
+      },
+      "checked_at": "2026-11-02T15:45:17.864Z"
+    }
+  ],
+  "totals": {
+    "pages": 20,
+    "compliance": {
+      "high": 107,
+      "medium": 86,
+      "low": 0
+    },
+    "geo": 84,
+    "seo": {
+      "high": 5,
+      "medium": 11,
+      "low": 19
+    },
+    "actions": {
+      "rewrite": 5,
+      "needs_decision": 4,
+      "fix": 8,
+      "keep": 3
+    }
+  },
+  "by_group": {
+    "Company": {
+      "pages": 5,
+      "compliance": {
+        "high": 28,
+        "medium": 15,
+        "low": 0
+      },
+      "geo": 12,
+      "seo": {
+        "high": 1,
+        "medium": 4,
+        "low": 10
+      },
+      "actions": {
+        "rewrite": 3,
+        "fix": 2
+      }
+    },
+    "Resources": {
+      "pages": 11,
+      "compliance": {
+        "high": 41,
+        "medium": 14,
+        "low": 0
+      },
+      "geo": 49,
+      "seo": {
+        "high": 4,
+        "medium": 5,
+        "low": 4
+      },
+      "actions": {
+        "needs_decision": 1,
+        "rewrite": 1,
+        "fix": 6,
+        "keep": 3
+      }
+    },
+    "Services": {
+      "pages": 2,
+      "compliance": {
+        "high": 28,
+        "medium": 29,
+        "low": 0
+      },
+      "geo": 11,
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 2
+      },
+      "actions": {
+        "needs_decision": 1,
+        "rewrite": 1
+      }
+    },
+    "Solutions": {
+      "pages": 2,
+      "compliance": {
+        "high": 10,
+        "medium": 28,
+        "low": 0
+      },
+      "geo": 12,
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 3
+      },
+      "actions": {
+        "needs_decision": 2
+      }
+    }
+  },
+  "by_subsection": {
+    "Company/Home": {
+      "pages": 1,
+      "compliance": {
+        "high": 9,
+        "medium": 11,
+        "low": 0
+      },
+      "geo": 8,
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 2
+      },
+      "actions": {
+        "rewrite": 1
+      }
+    },
+    "Company/About": {
+      "pages": 1,
+      "compliance": {
+        "high": 6,
+        "medium": 3,
+        "low": 0
+      },
+      "geo": 2,
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 3
+      },
+      "actions": {
+        "rewrite": 1
+      }
+    },
+    "Resources/Case studies": {
+      "pages": 3,
+      "compliance": {
+        "high": 10,
+        "medium": 5,
+        "low": 0
+      },
+      "geo": 11,
+      "seo": {
+        "high": 0,
+        "medium": 2,
+        "low": 2
+      },
+      "actions": {
+        "needs_decision": 1,
+        "rewrite": 1,
+        "fix": 1
+      }
+    },
+    "Company/Contacts": {
+      "pages": 1,
+      "compliance": {
+        "high": 4,
+        "medium": 1,
+        "low": 0
+      },
+      "geo": 1,
+      "seo": {
+        "high": 1,
+        "medium": 2,
+        "low": 2
+      },
+      "actions": {
+        "rewrite": 1
+      }
+    },
+    "Resources/Insights": {
+      "pages": 3,
+      "compliance": {
+        "high": 20,
+        "medium": 5,
+        "low": 0
+      },
+      "geo": 20,
+      "seo": {
+        "high": 1,
+        "medium": 0,
+        "low": 1
+      },
+      "actions": {
+        "fix": 3
+      }
+    },
+    "Resources/Podcast": {
+      "pages": 3,
+      "compliance": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      },
+      "geo": 5,
+      "seo": {
+        "high": 3,
+        "medium": 3,
+        "low": 0
+      },
+      "actions": {
+        "keep": 3
+      }
+    },
+    "Company/Privacy": {
+      "pages": 1,
+      "compliance": {
+        "high": 6,
+        "medium": 0,
+        "low": 0
+      },
+      "geo": 0,
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 2
+      },
+      "actions": {
+        "fix": 1
+      }
+    },
+    "Services/Services": {
+      "pages": 2,
+      "compliance": {
+        "high": 28,
+        "medium": 29,
+        "low": 0
+      },
+      "geo": 11,
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 2
+      },
+      "actions": {
+        "needs_decision": 1,
+        "rewrite": 1
+      }
+    },
+    "Solutions/Solutions": {
+      "pages": 2,
+      "compliance": {
+        "high": 10,
+        "medium": 28,
+        "low": 0
+      },
+      "geo": 12,
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 3
+      },
+      "actions": {
+        "needs_decision": 2
+      }
+    },
+    "Company/Terms": {
+      "pages": 1,
+      "compliance": {
+        "high": 3,
+        "medium": 0,
+        "low": 0
+      },
+      "geo": 1,
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 1
+      },
+      "actions": {
+        "fix": 1
+      }
+    },
+    "Resources/Use cases": {
+      "pages": 2,
+      "compliance": {
+        "high": 11,
+        "medium": 4,
+        "low": 0
+      },
+      "geo": 13,
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 1
+      },
+      "actions": {
+        "fix": 2
+      }
+    }
+  },
+  "site": {
+    "compliance": {
+      "high": 12,
+      "medium": 6,
+      "low": 0
+    },
+    "seo": 5,
+    "geo": 0
+  }
+}

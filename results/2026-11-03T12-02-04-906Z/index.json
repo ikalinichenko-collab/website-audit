@@ -1,0 +1,96 @@
+{
+  "schema_version": 2,
+  "pages": [
+    {
+      "slug": "insights_ai-compliance-consulting_e9e1c20a",
+      "url": "https://gogloby.com/insights/ai-compliance-consulting/",
+      "title": "What Is AI Compliance Consulting: Process, Benefits & How to Implement It | GoGloby",
+      "group": "Resources",
+      "subsection": "Insights",
+      "profile": "article",
+      "template": "article",
+      "action": "fix",
+      "summary": "The article’s GoGloby entry presents the company as an AI engineering and compliance implementation provider, rather than a staffing and recruiting agency. It also promotes unsupported product, performance, author, and response-time claims that should be corrected.",
+      "compliance": {
+        "high": 4,
+        "medium": 8,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 6,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 3,
+        "low": 2
+      },
+      "checked_at": "2026-11-03T12:02:57.591Z"
+    }
+  ],
+  "totals": {
+    "pages": 1,
+    "compliance": {
+      "high": 4,
+      "medium": 8,
+      "low": 0
+    },
+    "geo": 6,
+    "seo": {
+      "high": 0,
+      "medium": 3,
+      "low": 2
+    },
+    "actions": {
+      "fix": 1
+    }
+  },
+  "by_group": {
+    "Resources": {
+      "pages": 1,
+      "compliance": {
+        "high": 4,
+        "medium": 8,
+        "low": 0
+      },
+      "geo": 6,
+      "seo": {
+        "high": 0,
+        "medium": 3,
+        "low": 2
+      },
+      "actions": {
+        "fix": 1
+      }
+    }
+  },
+  "by_subsection": {
+    "Resources/Insights": {
+      "pages": 1,
+      "compliance": {
+        "high": 4,
+        "medium": 8,
+        "low": 0
+      },
+      "geo": 6,
+      "seo": {
+        "high": 0,
+        "medium": 3,
+        "low": 2
+      },
+      "actions": {
+        "fix": 1
+      }
+    }
+  },
+  "site": {
+    "compliance": {
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "seo": 0,
+    "geo": 0
+  }
+}

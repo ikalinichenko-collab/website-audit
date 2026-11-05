@@ -1,0 +1,318 @@
+{
+  "schema_version": 2,
+  "url": "https://gogloby.com/podcast/alice-barker/",
+  "final_url": "https://gogloby.com/podcast/alice-barker/",
+  "status": 200,
+  "title": "Behind the Scenes of Thesis: Global Teams, Crypto Ventures and More | GoGloby",
+  "category": "Resources",
+  "subsection": "Podcast",
+  "profile": "podcast",
+  "geo_type": "podcast",
+  "template": "article",
+  "checked_at": "2026-11-02T15:12:23.204Z",
+  "zones": [
+    {
+      "id": "title",
+      "label": "Title",
+      "kind": "title"
+    },
+    {
+      "id": "meta_description",
+      "label": "Meta description",
+      "kind": "meta_description"
+    },
+    {
+      "id": "og_title",
+      "label": "og:title",
+      "kind": "og_title"
+    },
+    {
+      "id": "og_description",
+      "label": "og:description",
+      "kind": "og_description"
+    },
+    {
+      "id": "json_ld",
+      "label": "Structured data (JSON-LD)",
+      "kind": "json_ld"
+    },
+    {
+      "id": "h1",
+      "label": "H1",
+      "kind": "h1"
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "kind": "date"
+    },
+    {
+      "id": "article:meet-alice-barker-director-of-engineering-at-the",
+      "label": "Meet Alice Barker, Director Of Engineering at Thesis:",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:listen-up-alice-barker-director-of-engineering-a",
+      "label": "Listen Up: Alice Barker, Director Of Engineering at Thesis — Full Pod…",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:watch-now-vit-s-in-depth-talk-with-alice-barker",
+      "label": "Watch Now: Vit’s In-Depth Talk with Alice Barker",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:quick-read-alice-barker-director-of-engineering-",
+      "label": "Quick Read: Alice Barker, Director Of Engineering at Thesis, Intervie…",
+      "kind": "article_section"
+    }
+  ],
+  "zone_warnings": [],
+  "shared_variants": [
+    "banner_cta@2",
+    "modals@2"
+  ],
+  "compliance": {
+    "hash": "b5db77e2c2907167828f2077205dddc29c8415ddc8f8063b23749909f9aa3c1f",
+    "cached": true,
+    "action": "keep",
+    "summary": "No contradictions about GoGloby were identified. The remaining content describes the podcast guest and her company, so it is not flagged.",
+    "problems": [],
+    "usage": {
+      "input": 10989,
+      "cached_input": 0,
+      "output": 226
+    },
+    "error": null
+  },
+  "geo": {
+    "hash": "f130a31d84bfc4ed282ad4981e94815857b1bb28f37922642331fc11efc810ab",
+    "cached": true,
+    "code": [
+      {
+        "id": "em_dash",
+        "status": "fail",
+        "value": "1 found",
+        "places": [
+          {
+            "zone_id": "article:listen-up-alice-barker-director-of-engineering-a",
+            "part": "heading 1",
+            "value": "— | …ctor Of Engineering at Thesis — Full Podcast Episode on Spoti…"
+          }
+        ]
+      },
+      {
+        "id": "ampersand",
+        "status": "pass",
+        "value": "none",
+        "places": []
+      },
+      {
+        "id": "uk_spelling",
+        "status": "pass",
+        "value": "none",
+        "places": []
+      }
+    ],
+    "llm": [],
+    "placement": null,
+    "usage": {
+      "input": 0,
+      "cached_input": 0,
+      "output": 0
+    },
+    "error": null
+  },
+  "seo": {
+    "checks": [
+      {
+        "id": "http_status",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "200",
+        "severity": "high"
+      },
+      {
+        "id": "title_length",
+        "status": "fail",
+        "severity": "medium",
+        "zone_id": "title",
+        "value": "77 characters (max 60)"
+      },
+      {
+        "id": "meta_present",
+        "status": "fail",
+        "zone_id": "meta_description",
+        "value": "missing",
+        "severity": "high"
+      },
+      {
+        "id": "h1_count",
+        "status": "pass",
+        "zone_id": "h1",
+        "value": "1",
+        "severity": "high"
+      },
+      {
+        "id": "canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "https://gogloby.com/podcast/alice-barker/",
+        "severity": "high"
+      },
+      {
+        "id": "indexable",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "severity": "high"
+      },
+      {
+        "id": "schema_required",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "present",
+        "severity": "medium"
+      },
+      {
+        "id": "schema_recommended",
+        "status": "fail",
+        "zone_id": "json_ld",
+        "value": "missing: PodcastEpisode, BreadcrumbList",
+        "severity": "medium"
+      },
+      {
+        "id": "dates",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "published: 2023-09-28T18:08:28+03:00; modified: 2024-09-27T15:36:43+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "date_mismatch",
+        "status": "pass",
+        "zone_id": "date",
+        "value": "visible \"September 27, 2024\" vs dateModified 2024-09-27T15:36:43+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "broken_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 checked",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "redirecting_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "none",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_missing",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without alt",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_empty",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 with empty alt",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "image_dimensions",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without width/height",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "heading_order",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "1 skipped levels",
+        "places": [
+          {
+            "zone_id": "article:quick-read-alice-barker-director-of-engineering-",
+            "part": "heading 2",
+            "value": "h2 -> h4: Journey in Tech Industry"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "og_present",
+        "status": "pass",
+        "zone_id": "og_title",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "og_url_canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "og:url https://gogloby.com/podcast/alice-barker/ vs canonical https://gogloby.com/podcast/alice-barker/",
+        "severity": "low"
+      },
+      {
+        "id": "twitter_card",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "summary_large_image",
+        "severity": "low"
+      },
+      {
+        "id": "html_lang",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "en-US",
+        "severity": "low"
+      },
+      {
+        "id": "viewport",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "jsonld_valid",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "3 block(s)",
+        "severity": "high"
+      },
+      {
+        "id": "article_fields",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "anchors_resolve",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 checked",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "faq_schema_matches_dom",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "accordion block: false, FAQPage schema: false",
+        "severity": "low"
+      }
+    ]
+  }
+}

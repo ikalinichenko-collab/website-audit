@@ -1,0 +1,96 @@
+{
+  "schema_version": 2,
+  "pages": [
+    {
+      "slug": "services_hire-ai-engineers_23353448",
+      "url": "https://gogloby.com/services/hire-ai-engineers/",
+      "title": "Hire AI Engineers Who Can Ship With Claude in Production | GoGloby",
+      "group": "Services",
+      "subsection": "Services",
+      "profile": "service",
+      "template": "block",
+      "action": null,
+      "summary": null,
+      "compliance": {
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "error": "OPENAI_API_KEY not set"
+      },
+      "geo": {
+        "to_fix": 2,
+        "error": "OPENAI_API_KEY not set"
+      },
+      "seo": {
+        "high": 0,
+        "medium": 2,
+        "low": 2
+      },
+      "checked_at": "2026-11-02T15:34:24.068Z"
+    }
+  ],
+  "totals": {
+    "pages": 1,
+    "compliance": {
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "geo": 2,
+    "seo": {
+      "high": 0,
+      "medium": 2,
+      "low": 2
+    },
+    "actions": {
+      "not_checked": 1
+    }
+  },
+  "by_group": {
+    "Services": {
+      "pages": 1,
+      "compliance": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      },
+      "geo": 2,
+      "seo": {
+        "high": 0,
+        "medium": 2,
+        "low": 2
+      },
+      "actions": {
+        "not_checked": 1
+      }
+    }
+  },
+  "by_subsection": {
+    "Services/Services": {
+      "pages": 1,
+      "compliance": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      },
+      "geo": 2,
+      "seo": {
+        "high": 0,
+        "medium": 2,
+        "low": 2
+      },
+      "actions": {
+        "not_checked": 1
+      }
+    }
+  },
+  "site": {
+    "compliance": {
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "seo": 0,
+    "geo": 0
+  }
+}

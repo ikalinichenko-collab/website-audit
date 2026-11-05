@@ -1,0 +1,1838 @@
+{
+ "template": "article",
+ "zones": [
+  {
+   "id": "title",
+   "kind": "title",
+   "label": "Title",
+   "scope": "page",
+   "skipped": false,
+   "text": "A Nasdaq HealthTech Company Integrated a $3B Platform",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "A Nasdaq HealthTech Company Integrated a $3B Platform"
+    }
+   ]
+  },
+  {
+   "id": "meta_description",
+   "kind": "meta_description",
+   "label": "Meta description",
+   "scope": "page",
+   "skipped": false,
+   "text": "GoGloby placed 25 Senior Applied AI Engineers in 58 days. 12 months later, 96% of the team was still in place.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "GoGloby placed 25 Senior Applied AI Engineers in 58 days. 12 months later, 96% of the team was still in place."
+    }
+   ]
+  },
+  {
+   "id": "og_title",
+   "kind": "og_title",
+   "label": "og:title",
+   "scope": "page",
+   "skipped": false,
+   "text": "A Nasdaq HealthTech Company Integrated a $3B Platform",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "A Nasdaq HealthTech Company Integrated a $3B Platform"
+    }
+   ]
+  },
+  {
+   "id": "og_description",
+   "kind": "og_description",
+   "label": "og:description",
+   "scope": "page",
+   "skipped": false,
+   "text": "GoGloby placed 25 Senior Applied AI Engineers in 58 days. 12 months later, 96% of the team was still in place.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "GoGloby placed 25 Senior Applied AI Engineers in 58 days. 12 months later, 96% of the team was still in place."
+    }
+   ]
+  },
+  {
+   "id": "json_ld",
+   "kind": "json_ld",
+   "label": "Structured data (JSON-LD)",
+   "scope": "page",
+   "skipped": false,
+   "text": "How a Nasdaq HealthTech Company Met a Board Deadline and Integrated a $3B Platform\nHow a Nasdaq HealthTech Company Met a Board Deadline and Integrated a $3B Platform\nGoGloby placed 25 Senior Applied AI Engineers in 58 days. 12 months later, 96% of the team was still\nVit Koval\nGoGloby",
+   "parts": [
+    {
+     "type": "field",
+     "text": "How a Nasdaq HealthTech Company Met a Board Deadline and Integrated a $3B Platform",
+     "area": "Article.name",
+     "index": 1
+    },
+    {
+     "type": "field",
+     "text": "How a Nasdaq HealthTech Company Met a Board Deadline and Integrated a $3B Platform",
+     "area": "Article.headline",
+     "index": 2
+    },
+    {
+     "type": "field",
+     "text": "GoGloby placed 25 Senior Applied AI Engineers in 58 days. 12 months later, 96% of the team was still",
+     "area": "Article.description",
+     "index": 3
+    },
+    {
+     "type": "field",
+     "text": "Vit Koval",
+     "area": "Person.name",
+     "index": 4
+    },
+    {
+     "type": "field",
+     "text": "GoGloby",
+     "area": "Organization.name",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "h1",
+   "kind": "h1",
+   "label": "H1",
+   "scope": "page",
+   "skipped": false,
+   "text": "How a Nasdaq HealthTech Company Met a Board Deadline and Integrated a $3B Platform",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "How a Nasdaq HealthTech Company Met a Board Deadline and Integrated a $3B Platform"
+    }
+   ]
+  },
+  {
+   "id": "date",
+   "kind": "date",
+   "label": "Date",
+   "scope": "page",
+   "skipped": false,
+   "text": "Updated on May 12, 2026",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Updated on May 12, 2026"
+    }
+   ]
+  },
+  {
+   "id": "toc",
+   "kind": "toc",
+   "label": "Table of contents",
+   "scope": "page",
+   "skipped": false,
+   "text": "Table of Contents\nAchievements After Partnering With GoGloby\nCompany Profile\nThe Challenge\nThe GoGloby Model\nThe Testimonial\nThe Numbers\nThe Compliance Infrastructure\nThe Team the Client Now Has\nEngagement Metrics\nWhy This Case Study Matters\nNeed To Scale Engineering Under A Hard Deadline?",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Table of Contents",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Achievements After Partnering With GoGloby",
+     "links": [
+      {
+       "href": "#achievements-after-partnering-with-gogloby",
+       "text": "Achievements After Partnering With GoGloby"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Company Profile",
+     "links": [
+      {
+       "href": "#company-profile",
+       "text": "Company Profile"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "The Challenge",
+     "links": [
+      {
+       "href": "#the-challenge",
+       "text": "The Challenge"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "The GoGloby Model",
+     "links": [
+      {
+       "href": "#the-gogloby-model",
+       "text": "The GoGloby Model"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "The Testimonial",
+     "links": [
+      {
+       "href": "#the-testimonial",
+       "text": "The Testimonial"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "The Numbers",
+     "links": [
+      {
+       "href": "#the-numbers",
+       "text": "The Numbers"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "The Compliance Infrastructure",
+     "links": [
+      {
+       "href": "#the-compliance-infrastructure",
+       "text": "The Compliance Infrastructure"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "The Team the Client Now Has",
+     "links": [
+      {
+       "href": "#the-team-the-client-now-has",
+       "text": "The Team the Client Now Has"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Engagement Metrics",
+     "links": [
+      {
+       "href": "#engagement-metrics",
+       "text": "Engagement Metrics"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "Why This Case Study Matters",
+     "links": [
+      {
+       "href": "#why-this-case-study-matters",
+       "text": "Why This Case Study Matters"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "Need To Scale Engineering Under A Hard Deadline?",
+     "links": [
+      {
+       "href": "#need-to-scale-engineering-under-a-hard-deadline",
+       "text": "Need To Scale Engineering Under A Hard Deadline?"
+      }
+     ],
+     "index": 11
+    }
+   ]
+  },
+  {
+   "id": "article:intro",
+   "kind": "article_section",
+   "label": "Intro",
+   "scope": "page",
+   "skipped": false,
+   "text": "When a Nasdaq-listed HealthTech company acquired a leading cloud EHR platform serving 17 million patients and processing $3 billion in medical claims annually — the integration clock started immediately.\nThe engineering challenge was real: multiple teams, multiple technical disciplines, a hard board deadline, and a platform where every bug has real consequences for real patients.\nStandard US hiring timelines would have missed the deadline by months. GoGloby placed 25 senior engineers across DevOps, Python/Data, Fullstack, and iOS in 58 days. 12 months later, 96% of the team was still in place — now building the AI-powered features that define the platform’s next chapter.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "When a Nasdaq-listed HealthTech company acquired a leading cloud EHR platform serving 17 million patients and processing $3 billion in medical claims annually — the integration clock started immediately.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The engineering challenge was real: multiple teams, multiple technical disciplines, a hard board deadline, and a platform where every bug has real consequences for real patients.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Standard US hiring timelines would have missed the deadline by months. GoGloby placed 25 senior engineers across DevOps, Python/Data, Fullstack, and iOS in 58 days. 12 months later, 96% of the team was still in place — now building the AI-powered features that define the platform’s next chapter.",
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "article:achievements-after-partnering-with-gogloby",
+   "kind": "article_section",
+   "label": "Achievements After Partnering With GoGloby",
+   "scope": "page",
+   "skipped": false,
+   "text": "Achievements After Partnering With GoGloby\nThe following table summarizes the key milestones and performance metrics achieved through the GoGloby partnership. By prioritizing rigorous vetting and rapid placement, the engagement delivered a highly stable, compliant engineering team while generating substantial bottom-line savings.\nMetric\nResult\nEngineers Placed\n25 in 58 days\n12-Month Retention\n~96%\nClient Interview Conversion\n55.6%\nInternal Vetting Rate\n3.2% pass rate\nHIPAA Compliance\n25 of 25 cleared\nAnnual Savings\n~$2M vs. US hiring",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Achievements After Partnering With GoGloby",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The following table summarizes the key milestones and performance metrics achieved through the GoGloby partnership. By prioritizing rigorous vetting and rapid placement, the engagement delivered a highly stable, compliant engineering team while generating substantial bottom-line savings.",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Metric",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Result",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "Engineers Placed",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "25 in 58 days",
+     "index": 4
+    },
+    {
+     "type": "table_cell",
+     "text": "12-Month Retention",
+     "index": 5
+    },
+    {
+     "type": "table_cell",
+     "text": "~96%",
+     "index": 6
+    },
+    {
+     "type": "table_cell",
+     "text": "Client Interview Conversion",
+     "index": 7
+    },
+    {
+     "type": "table_cell",
+     "text": "55.6%",
+     "index": 8
+    },
+    {
+     "type": "table_cell",
+     "text": "Internal Vetting Rate",
+     "index": 9
+    },
+    {
+     "type": "table_cell",
+     "text": "3.2% pass rate",
+     "index": 10
+    },
+    {
+     "type": "table_cell",
+     "text": "HIPAA Compliance",
+     "index": 11
+    },
+    {
+     "type": "table_cell",
+     "text": "25 of 25 cleared",
+     "index": 12
+    },
+    {
+     "type": "table_cell",
+     "text": "Annual Savings",
+     "index": 13
+    },
+    {
+     "type": "table_cell",
+     "text": "~$2M vs. US hiring",
+     "index": 14
+    }
+   ]
+  },
+  {
+   "id": "article:company-profile",
+   "kind": "article_section",
+   "label": "Company Profile",
+   "scope": "page",
+   "skipped": false,
+   "text": "Company Profile\nThe following profile outlines the operational landscape and high-stakes requirements of a Nasdaq-listed HealthTech leader during a critical acquisition phase. Faced with a 58-day board mandate for EHR integration, the company partnered with GoGloby to rapidly scale a multidisciplinary engineering team capable of supporting a platform that processes $3B in annual claims for over 17M patients.\nClient\nNasdaq-listed HealthTech SaaS company — US-based, 2,300+ employees, 45+ global offices\nMarket Cap\n$1.98B market cap · $703M revenue · Home Services, Health, and Wellness verticals\nPlatform\nAcquired cloud EHR platform — EHR, practice management, medical billing, telehealth for 72,000+ practices\nScale\n17M+ patients · $3B in medical claims processed annually · primary care, specialties, urgent care\nTrigger\nPost-acquisition EHR integration — board-mandated 58-day delivery window. Partnership started March 2025, ongoing.\nRoles Placed\nSenior DevOps · Senior Python Developers · Fullstack Engineers (TypeScript/React/Django/GraphQL) · Senior iOS Mobile · Senior Data Engineers · Scrum Master",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Company Profile",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The following profile outlines the operational landscape and high-stakes requirements of a Nasdaq-listed HealthTech leader during a critical acquisition phase. Faced with a 58-day board mandate for EHR integration, the company partnered with GoGloby to rapidly scale a multidisciplinary engineering team capable of supporting a platform that processes $3B in annual claims for over 17M patients.",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Client",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Nasdaq-listed HealthTech SaaS company — US-based, 2,300+ employees, 45+ global offices",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "Market Cap",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "$1.98B market cap · $703M revenue · Home Services, Health, and Wellness verticals",
+     "index": 4
+    },
+    {
+     "type": "table_cell",
+     "text": "Platform",
+     "index": 5
+    },
+    {
+     "type": "table_cell",
+     "text": "Acquired cloud EHR platform — EHR, practice management, medical billing, telehealth for 72,000+ practices",
+     "index": 6
+    },
+    {
+     "type": "table_cell",
+     "text": "Scale",
+     "index": 7
+    },
+    {
+     "type": "table_cell",
+     "text": "17M+ patients · $3B in medical claims processed annually · primary care, specialties, urgent care",
+     "index": 8
+    },
+    {
+     "type": "table_cell",
+     "text": "Trigger",
+     "index": 9
+    },
+    {
+     "type": "table_cell",
+     "text": "Post-acquisition EHR integration — board-mandated 58-day delivery window. Partnership started March 2025, ongoing.",
+     "index": 10
+    },
+    {
+     "type": "table_cell",
+     "text": "Roles Placed",
+     "index": 11
+    },
+    {
+     "type": "table_cell",
+     "text": "Senior DevOps · Senior Python Developers · Fullstack Engineers (TypeScript/React/Django/GraphQL) · Senior iOS Mobile · Senior Data Engineers · Scrum Master",
+     "index": 12
+    }
+   ]
+  },
+  {
+   "id": "article:the-challenge",
+   "kind": "article_section",
+   "label": "The Challenge",
+   "scope": "page",
+   "skipped": false,
+   "text": "The Challenge\nA board deadline that US hiring cannot meet .\nThis Nasdaq-listed HealthTech company’s acquisition of a leading EHR platform created an engineering integration challenge that most Nasdaq-listed companies face and most underestimate. The two platforms had to work together. New features had to ship. Existing systems — serving 17 million patients and processing $3 billion in annual medical claims — could not degrade during the transition. And the engineering team needed to grow by 25 people, across multiple disciplines, faster than US hiring has ever been designed to move.\nThe math was unworkable in the US market. 25 senior engineers at US rates — $160K to $200K per role across DevOps, Python/Data, Fullstack, and iOS — would have cost the company over $4M annually. The standard recruiting timeline for 25 roles, even with aggressive agency support, runs 4 to 8 months. The board had set a different timeline: 58 days.\nThe compliance constraint was non-negotiable. Every engineer who would access the client’s EHR systems was touching Protected Health Information under HIPAA. GoGloby’s answer was a model built specifically for this situation: four parallel sourcing squads, one per discipline, each with a dedicated sourcer, recruiter, and senior domain expert — running simultaneously from day one. The partnership began in March 2025 and remains active today.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "The Challenge",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "A board deadline that US hiring cannot meet .",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "This Nasdaq-listed HealthTech company’s acquisition of a leading EHR platform created an engineering integration challenge that most Nasdaq-listed companies face and most underestimate. The two platforms had to work together. New features had to ship. Existing systems — serving 17 million patients and processing $3 billion in annual medical claims — could not degrade during the transition. And the engineering team needed to grow by 25 people, across multiple disciplines, faster than US hiring has ever been designed to move.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "The math was unworkable in the US market. 25 senior engineers at US rates — $160K to $200K per role across DevOps, Python/Data, Fullstack, and iOS — would have cost the company over $4M annually. The standard recruiting timeline for 25 roles, even with aggressive agency support, runs 4 to 8 months. The board had set a different timeline: 58 days.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "The compliance constraint was non-negotiable. Every engineer who would access the client’s EHR systems was touching Protected Health Information under HIPAA. GoGloby’s answer was a model built specifically for this situation: four parallel sourcing squads, one per discipline, each with a dedicated sourcer, recruiter, and senior domain expert — running simultaneously from day one. The partnership began in March 2025 and remains active today.",
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "article:the-gogloby-model",
+   "kind": "article_section",
+   "label": "The GoGloby Model",
+   "scope": "page",
+   "skipped": false,
+   "text": "The GoGloby Model\nBefore any sourcing began, GoGloby conducted 6 deep-dive calibration sessions across the client’s four hiring managers. Each session produced a precise brief: technical stack requirements, HIPAA context depth expected, cultural fit markers, AI tooling proficiency baseline, and communication standards for engineers working directly with US senior leadership. These sessions are what compressed GoGloby’s internal pass rate to 3.2% — the filter was precise before a single candidate was screened.\nSquad / Track\nTechnical Scope & Compliance Requirements\nDevOps / Infrastructure\nAWS monitoring consolidation across the EHR platform—migrating fragmented third-party tools to native AWS solutions and building self-service implementation patterns. Focus on security: VPN, firewall hardening, audit logging, and intrusion detection.\nPython / Data Engineering\nETL pipelines and data infrastructure for healthcare data migration and analytics using Python, dbt Core, AWS Redshift/Snowflake, Kafka, and Spark. AI/ML solution development managed under HIPAA minimum-necessary data access protocols.\nFullstack Engineering\nHIPAA-compliant high-traffic application development using TypeScript, React, Django, GraphQL, and Redux/Apollo Client. Includes EHR feature development, WCAG-compliant UI, New Relic for APM, and Sentry for error monitoring.\niOS Mobile Engineering\nNative iOS development for the EHR mobile platform using Swift, SwiftUI, UIKit, and Objective-C. Supports physicians accessing patient records, clinical workflows, telehealth, and billing features on mobile devices.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "The GoGloby Model",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Before any sourcing began, GoGloby conducted 6 deep-dive calibration sessions across the client’s four hiring managers. Each session produced a precise brief: technical stack requirements, HIPAA context depth expected, cultural fit markers, AI tooling proficiency baseline, and communication standards for engineers working directly with US senior leadership. These sessions are what compressed GoGloby’s internal pass rate to 3.2% — the filter was precise before a single candidate was screened.",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Squad / Track",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Technical Scope & Compliance Requirements",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "DevOps / Infrastructure",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "AWS monitoring consolidation across the EHR platform—migrating fragmented third-party tools to native AWS solutions and building self-service implementation patterns. Focus on security: VPN, firewall hardening, audit logging, and intrusion detection.",
+     "index": 4
+    },
+    {
+     "type": "table_cell",
+     "text": "Python / Data Engineering",
+     "index": 5
+    },
+    {
+     "type": "table_cell",
+     "text": "ETL pipelines and data infrastructure for healthcare data migration and analytics using Python, dbt Core, AWS Redshift/Snowflake, Kafka, and Spark. AI/ML solution development managed under HIPAA minimum-necessary data access protocols.",
+     "index": 6
+    },
+    {
+     "type": "table_cell",
+     "text": "Fullstack Engineering",
+     "index": 7
+    },
+    {
+     "type": "table_cell",
+     "text": "HIPAA-compliant high-traffic application development using TypeScript, React, Django, GraphQL, and Redux/Apollo Client. Includes EHR feature development, WCAG-compliant UI, New Relic for APM, and Sentry for error monitoring.",
+     "index": 8
+    },
+    {
+     "type": "table_cell",
+     "text": "iOS Mobile Engineering",
+     "index": 9
+    },
+    {
+     "type": "table_cell",
+     "text": "Native iOS development for the EHR mobile platform using Swift, SwiftUI, UIKit, and Objective-C. Supports physicians accessing patient records, clinical workflows, telehealth, and billing features on mobile devices.",
+     "index": 10
+    }
+   ]
+  },
+  {
+   "id": "article:the-testimonial",
+   "kind": "article_section",
+   "label": "The Testimonial",
+   "scope": "page",
+   "skipped": false,
+   "text": "The Testimonial\n“The quality of the 25 engineers delivered on time speaks for itself. What really stands out is the proactive communication from the GoGloby team — they consistently flagged issues early and responded quickly, which was critical to keeping us on track.” — Engineering Manager, Nasdaq-listed HealthTech Company",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "The Testimonial",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "“The quality of the 25 engineers delivered on time speaks for itself. What really stands out is the proactive communication from the GoGloby team — they consistently flagged issues early and responded quickly, which was critical to keeping us on track.” — Engineering Manager, Nasdaq-listed HealthTech Company",
+     "index": 1
+    }
+   ]
+  },
+  {
+   "id": "article:the-numbers",
+   "kind": "article_section",
+   "label": "The Numbers",
+   "scope": "page",
+   "skipped": false,
+   "text": "The Numbers\nThe following breakdown highlights the efficiency of the GoGloby recruitment and onboarding funnel. By conducting rigorous pre-vetting and specialized compliance training before client engagement, the process achieved an interview-to-hire rate nearly five times the industry average while meeting a critical 58-day board deadline.\nPipeline Stage\nVolume and What Happened\nTotal candidates sourced\n773 — Processed internally across 4 parallel tracks. Includes technical assessment, AI proficiency checks, HIPAA awareness, and communication reviews—all before the client’s involvement.\nPresented to client\n45 — Across 8 roles and 4 hiring managers (5.8% of the total pipeline). This allowed the client to spend time deciding rather than filtering.\nHired\n25 — Represents a 55.6% conversion rate. This significantly outperforms the industry standard interview-to-hire rate of 10–15% for contract engineering.\nCompliance-cleared\n25 of 25 — Every engineer completed HIPAA certification, background checks, and PHI handling training, including setup for VPN, 2FA, and island.io before gaining system access.\nTotal elapsed time\n58 days — Successfully met the board-mandated delivery window.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "The Numbers",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The following breakdown highlights the efficiency of the GoGloby recruitment and onboarding funnel. By conducting rigorous pre-vetting and specialized compliance training before client engagement, the process achieved an interview-to-hire rate nearly five times the industry average while meeting a critical 58-day board deadline.",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Pipeline Stage",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Volume and What Happened",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "Total candidates sourced",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "773 — Processed internally across 4 parallel tracks. Includes technical assessment, AI proficiency checks, HIPAA awareness, and communication reviews—all before the client’s involvement.",
+     "index": 4
+    },
+    {
+     "type": "table_cell",
+     "text": "Presented to client",
+     "index": 5
+    },
+    {
+     "type": "table_cell",
+     "text": "45 — Across 8 roles and 4 hiring managers (5.8% of the total pipeline). This allowed the client to spend time deciding rather than filtering.",
+     "index": 6
+    },
+    {
+     "type": "table_cell",
+     "text": "Hired",
+     "index": 7
+    },
+    {
+     "type": "table_cell",
+     "text": "25 — Represents a 55.6% conversion rate. This significantly outperforms the industry standard interview-to-hire rate of 10–15% for contract engineering.",
+     "index": 8
+    },
+    {
+     "type": "table_cell",
+     "text": "Compliance-cleared",
+     "index": 9
+    },
+    {
+     "type": "table_cell",
+     "text": "25 of 25 — Every engineer completed HIPAA certification, background checks, and PHI handling training, including setup for VPN, 2FA, and island.io before gaining system access.",
+     "index": 10
+    },
+    {
+     "type": "table_cell",
+     "text": "Total elapsed time",
+     "index": 11
+    },
+    {
+     "type": "table_cell",
+     "text": "58 days — Successfully met the board-mandated delivery window.",
+     "index": 12
+    }
+   ]
+  },
+  {
+   "id": "article:the-compliance-infrastructure",
+   "kind": "article_section",
+   "label": "The Compliance Infrastructure",
+   "scope": "page",
+   "skipped": false,
+   "text": "The Compliance Infrastructure\nWorking with a Nasdaq-listed healthcare company operating under HIPAA is not the same as working with a standard SaaS company. The Master Services Agreement with GoGloby included provisions that most staffing partners cannot meet — and that GoGloby built its engagement model to satisfy in full.\nBusiness Associate Agreement (BAA) : Every GoGloby-placed engineer covered under a signed BAA, establishing GoGloby as a HIPAA Business Associate with full PHI protection obligations, 24-hour breach reporting, and HHS audit rights.\nPre-Onboarding HIPAA certification : All 25 engineers completed HIPAA Security Rule training and received certification before first system access. GoGloby holds documented evidence per BAA requirements.\nBackground checks in 6 countries : Education, employment, address, 7-year criminal history, and OFAC screening across Argentina, Brazil, Chile, Mexico, Portugal, and Ukraine.\nSecure access infrastructure : VPN with 2FA, island.io secure browser for Virtual Environment, company-issued hardware only, firewall-enabled workstations with automatic patch updates.\nPHI access restrictions : No PHI stored or transmitted outside US jurisdictions. Minimum-necessary access enforced. All Sensitive Personal Data encrypted in transit and at rest per HHS specifications.\nCyber liability coverage : $5M cyber liability insurance (first and third party), $3M professional liability, $5M general liability — contractual financial protection against any security incident.\nThis compliance infrastructure is the reason the client’s engineering leadership could grant GoGloby engineers access to a platform handling 17 million patient records on day 58 rather than month 6.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "The Compliance Infrastructure",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Working with a Nasdaq-listed healthcare company operating under HIPAA is not the same as working with a standard SaaS company. The Master Services Agreement with GoGloby included provisions that most staffing partners cannot meet — and that GoGloby built its engagement model to satisfy in full.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Business Associate Agreement (BAA) : Every GoGloby-placed engineer covered under a signed BAA, establishing GoGloby as a HIPAA Business Associate with full PHI protection obligations, 24-hour breach reporting, and HHS audit rights.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Pre-Onboarding HIPAA certification : All 25 engineers completed HIPAA Security Rule training and received certification before first system access. GoGloby holds documented evidence per BAA requirements.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Background checks in 6 countries : Education, employment, address, 7-year criminal history, and OFAC screening across Argentina, Brazil, Chile, Mexico, Portugal, and Ukraine.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Secure access infrastructure : VPN with 2FA, island.io secure browser for Virtual Environment, company-issued hardware only, firewall-enabled workstations with automatic patch updates.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "PHI access restrictions : No PHI stored or transmitted outside US jurisdictions. Minimum-necessary access enforced. All Sensitive Personal Data encrypted in transit and at rest per HHS specifications.",
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Cyber liability coverage : $5M cyber liability insurance (first and third party), $3M professional liability, $5M general liability — contractual financial protection against any security incident.",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "This compliance infrastructure is the reason the client’s engineering leadership could grant GoGloby engineers access to a platform handling 17 million patient records on day 58 rather than month 6.",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "article:the-team-the-client-now-has",
+   "kind": "article_section",
+   "label": "The Team the Client Now Has",
+   "scope": "page",
+   "skipped": false,
+   "text": "The Team the Client Now Has\nWhen the engagement began, the requirement was for senior engineers who could execute on a post-acquisition integration timeline. Over the course of the engagement, the entire GoGloby-placed team transitioned to applied AI engineering as standard operating practice. Every engineer now uses Cursor and GitHub Copilot as primary development tools — not as experiments, but as the default workflow for the client’s platform.\nProduct Area\nWhat the Client Is Shipping — GoGloby Engineer Contribution\nAI ambient documentation (launched March 2026)\nAI listens to provider-patient conversations and auto-generates HIPAA-compliant visit notes. Eliminates 8 minutes of documentation per visit. Increases same-day claim submissions by 32%. GoGloby’s Python, Fullstack, and Data engineers support the underlying EHR data infrastructure.\nNo show predictor\nAI-powered appointment risk scoring — assigns no-show probability to upcoming appointments, enabling proactive outreach. Reduces empty slots, improves care continuity. GoGloby’s data engineers contribute to the ML pipeline.\nRevenue cycle and billing AI\nAI-powered claim rejection simplification, EDI Preview, Billing Summary reporting, Insurance Waterfall analytics, and Underpaid Items detection. GoGloby’s Fullstack and Python engineers work across the $3B billing platform.\nAWS infrastructure\nMonitoring consolidation from fragmented third-party tools to native AWS — self-service patterns for development teams. API migration (drchrono.com sunset, December 2025) and USCDI v3 / ONC HTI-1 compliance updates.\niOS EHR Mobile Platform\nNative iOS app serving physicians across primary care, specialties, and urgent care — clinical form management, advanced text editor, real-time patient record access, appointment management.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "The Team the Client Now Has",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "When the engagement began, the requirement was for senior engineers who could execute on a post-acquisition integration timeline. Over the course of the engagement, the entire GoGloby-placed team transitioned to applied AI engineering as standard operating practice. Every engineer now uses Cursor and GitHub Copilot as primary development tools — not as experiments, but as the default workflow for the client’s platform.",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Product Area",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "What the Client Is Shipping — GoGloby Engineer Contribution",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "AI ambient documentation (launched March 2026)",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "AI listens to provider-patient conversations and auto-generates HIPAA-compliant visit notes. Eliminates 8 minutes of documentation per visit. Increases same-day claim submissions by 32%. GoGloby’s Python, Fullstack, and Data engineers support the underlying EHR data infrastructure.",
+     "index": 4
+    },
+    {
+     "type": "table_cell",
+     "text": "No show predictor",
+     "index": 5
+    },
+    {
+     "type": "table_cell",
+     "text": "AI-powered appointment risk scoring — assigns no-show probability to upcoming appointments, enabling proactive outreach. Reduces empty slots, improves care continuity. GoGloby’s data engineers contribute to the ML pipeline.",
+     "index": 6
+    },
+    {
+     "type": "table_cell",
+     "text": "Revenue cycle and billing AI",
+     "index": 7
+    },
+    {
+     "type": "table_cell",
+     "text": "AI-powered claim rejection simplification, EDI Preview, Billing Summary reporting, Insurance Waterfall analytics, and Underpaid Items detection. GoGloby’s Fullstack and Python engineers work across the $3B billing platform.",
+     "index": 8
+    },
+    {
+     "type": "table_cell",
+     "text": "AWS infrastructure",
+     "index": 9
+    },
+    {
+     "type": "table_cell",
+     "text": "Monitoring consolidation from fragmented third-party tools to native AWS — self-service patterns for development teams. API migration (drchrono.com sunset, December 2025) and USCDI v3 / ONC HTI-1 compliance updates.",
+     "index": 10
+    },
+    {
+     "type": "table_cell",
+     "text": "iOS EHR Mobile Platform",
+     "index": 11
+    },
+    {
+     "type": "table_cell",
+     "text": "Native iOS app serving physicians across primary care, specialties, and urgent care — clinical form management, advanced text editor, real-time patient record access, appointment management.",
+     "index": 12
+    }
+   ]
+  },
+  {
+   "id": "article:engagement-metrics",
+   "kind": "article_section",
+   "label": "Engagement Metrics",
+   "scope": "page",
+   "skipped": false,
+   "text": "Engagement Metrics\nMetric\nResult\nWhat This Means\nIndustry Benchmark\nTeam retention\n~96% (12-month)\n23 of 25 placed engineers active at 12 months — no mass attrition under post-acquisition pressure.\nPost-acquisition contractor retention: 60–70% in Year 1. GoGloby: ~96%.\nOnboarding burden\n~25–30 hrs vs 60–120 avg\nEngineers arrived compliant, cleared, and context-aware — not working through orientation.\nExternal healthcare engineer without HIPAA pre-clearance: 60–120 hrs. GoGloby: 25–30 hrs.\nInternal vetting conversion\n3.2% (25 of 773)\n3.2% internal pass rate across 4 disciplines simultaneously — the client only saw pre-validated profiles.\nStandard staffing: 20–40% internal screening. GoGloby’s 3.2% means higher signal on every presented candidate.\nClient interview conversion\n55.6% (25 of 45)\nOver half of every candidate presented became a hire. The shortlist was already the decision.\nIndustry: 10–15% interview-to-hire for contract engineering. GoGloby: 55.6%.\nTime to hire\n58 days\n25 engineers across 4 disciplines, 4 hiring managers, hard board deadline — placed on time.\nPost-acquisition 25-person scale-up via US hiring: 4–8 months minimum. GoGloby: 58 days.\nCost vs. US equivalent\n~$2M saved annually\nGoGloby avg $75K–85K/yr vs US market $160K–200K across the discipline mix — no reduction in seniority or HIPAA standard.\nUS Sr. DevOps/Data/Fullstack/iOS (healthcare): $160K–$200K. GoGloby LatAm/EU: $75K–$85K.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Engagement Metrics",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Metric",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Result",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "What This Means",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "Industry Benchmark",
+     "index": 4
+    },
+    {
+     "type": "table_cell",
+     "text": "Team retention",
+     "index": 5
+    },
+    {
+     "type": "table_cell",
+     "text": "~96% (12-month)",
+     "index": 6
+    },
+    {
+     "type": "table_cell",
+     "text": "23 of 25 placed engineers active at 12 months — no mass attrition under post-acquisition pressure.",
+     "index": 7
+    },
+    {
+     "type": "table_cell",
+     "text": "Post-acquisition contractor retention: 60–70% in Year 1. GoGloby: ~96%.",
+     "index": 8
+    },
+    {
+     "type": "table_cell",
+     "text": "Onboarding burden",
+     "index": 9
+    },
+    {
+     "type": "table_cell",
+     "text": "~25–30 hrs vs 60–120 avg",
+     "index": 10
+    },
+    {
+     "type": "table_cell",
+     "text": "Engineers arrived compliant, cleared, and context-aware — not working through orientation.",
+     "index": 11
+    },
+    {
+     "type": "table_cell",
+     "text": "External healthcare engineer without HIPAA pre-clearance: 60–120 hrs. GoGloby: 25–30 hrs.",
+     "index": 12
+    },
+    {
+     "type": "table_cell",
+     "text": "Internal vetting conversion",
+     "index": 13
+    },
+    {
+     "type": "table_cell",
+     "text": "3.2% (25 of 773)",
+     "index": 14
+    },
+    {
+     "type": "table_cell",
+     "text": "3.2% internal pass rate across 4 disciplines simultaneously — the client only saw pre-validated profiles.",
+     "index": 15
+    },
+    {
+     "type": "table_cell",
+     "text": "Standard staffing: 20–40% internal screening. GoGloby’s 3.2% means higher signal on every presented candidate.",
+     "index": 16
+    },
+    {
+     "type": "table_cell",
+     "text": "Client interview conversion",
+     "index": 17
+    },
+    {
+     "type": "table_cell",
+     "text": "55.6% (25 of 45)",
+     "index": 18
+    },
+    {
+     "type": "table_cell",
+     "text": "Over half of every candidate presented became a hire. The shortlist was already the decision.",
+     "index": 19
+    },
+    {
+     "type": "table_cell",
+     "text": "Industry: 10–15% interview-to-hire for contract engineering. GoGloby: 55.6%.",
+     "index": 20
+    },
+    {
+     "type": "table_cell",
+     "text": "Time to hire",
+     "index": 21
+    },
+    {
+     "type": "table_cell",
+     "text": "58 days",
+     "index": 22
+    },
+    {
+     "type": "table_cell",
+     "text": "25 engineers across 4 disciplines, 4 hiring managers, hard board deadline — placed on time.",
+     "index": 23
+    },
+    {
+     "type": "table_cell",
+     "text": "Post-acquisition 25-person scale-up via US hiring: 4–8 months minimum. GoGloby: 58 days.",
+     "index": 24
+    },
+    {
+     "type": "table_cell",
+     "text": "Cost vs. US equivalent",
+     "index": 25
+    },
+    {
+     "type": "table_cell",
+     "text": "~$2M saved annually",
+     "index": 26
+    },
+    {
+     "type": "table_cell",
+     "text": "GoGloby avg $75K–85K/yr vs US market $160K–200K across the discipline mix — no reduction in seniority or HIPAA standard.",
+     "index": 27
+    },
+    {
+     "type": "table_cell",
+     "text": "US Sr. DevOps/Data/Fullstack/iOS (healthcare): $160K–$200K. GoGloby LatAm/EU: $75K–$85K.",
+     "index": 28
+    }
+   ]
+  },
+  {
+   "id": "article:why-this-case-study-matters",
+   "kind": "article_section",
+   "label": "Why This Case Study Matters",
+   "scope": "page",
+   "skipped": false,
+   "text": "Why This Case Study Matters\nBy integrating deep HIPAA compliance and an AI-native engineering workforce, the partnership provided the speed, security, and efficiency required for a high-stakes post-acquisition integration.\nPost-Acquisition Engineering Scale-Up Has a Hard Timeline That Standard US Hiring Cannot Meet\nThe client’s board deadline was not negotiable. Standard US hiring — 60 to 90 days per senior role, at $160K to $200K per engineer — would have cost the integration timeline and likely the board’s confidence. GoGloby’s parallel squad model exists specifically for situations where sequential hiring is not an option.\nHIPAA Compliance Is a Gate\nMost staffing partners cannot operate under a Nasdaq-listed healthcare company’s MSA. GoGloby can — because the compliance infrastructure (BAA, background checks, HIPAA certification, VPN/2FA/island.io, $5M cyber liability coverage) is built into the engagement model before the first candidate is screened.\n55.6% Client Interview Conversion Means the Hiring Manager’s Time Is Spent Deciding\nSVPs of Engineering at companies of this scale have only a few hours per week for interviews. At 55.6% conversion, every interview the client conducted produced more than one hire on average — protecting the bandwidth of an SVP managing 100+ engineers, 3–5 active projects, and board-level delivery pressure.\nApplied AI Engineering Is Now Table Stakes\nThe team GoGloby built is already operating with Cursor and GitHub Copilot as standard tooling — building the features (AI ambient documentation, No Show Predictor, claim automation) that define the client’s AI roadmap. Hiring engineers who arrive AI-capable is how 25 people can do the work that previously required many more.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Why This Case Study Matters",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "By integrating deep HIPAA compliance and an AI-native engineering workforce, the partnership provided the speed, security, and efficiency required for a high-stakes post-acquisition integration.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Post-Acquisition Engineering Scale-Up Has a Hard Timeline That Standard US Hiring Cannot Meet",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "The client’s board deadline was not negotiable. Standard US hiring — 60 to 90 days per senior role, at $160K to $200K per engineer — would have cost the integration timeline and likely the board’s confidence. GoGloby’s parallel squad model exists specifically for situations where sequential hiring is not an option.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "HIPAA Compliance Is a Gate",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Most staffing partners cannot operate under a Nasdaq-listed healthcare company’s MSA. GoGloby can — because the compliance infrastructure (BAA, background checks, HIPAA certification, VPN/2FA/island.io, $5M cyber liability coverage) is built into the engagement model before the first candidate is screened.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "55.6% Client Interview Conversion Means the Hiring Manager’s Time Is Spent Deciding",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "SVPs of Engineering at companies of this scale have only a few hours per week for interviews. At 55.6% conversion, every interview the client conducted produced more than one hire on average — protecting the bandwidth of an SVP managing 100+ engineers, 3–5 active projects, and board-level delivery pressure.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Applied AI Engineering Is Now Table Stakes",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "The team GoGloby built is already operating with Cursor and GitHub Copilot as standard tooling — building the features (AI ambient documentation, No Show Predictor, claim automation) that define the client’s AI roadmap. Hiring engineers who arrive AI-capable is how 25 people can do the work that previously required many more.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "banner_cta",
+   "kind": "banner_cta",
+   "label": "Banner CTA",
+   "scope": "page",
+   "skipped": false,
+   "text": "Need To Scale Engineering Under A Hard Deadline?\nIf you’re integrating a platform, replacing a vendor, or under board pressure to deliver — the constraint is execution. GoGloby builds fully compliant, AI-capable engineering teams in parallel.\nBook A Call",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Need To Scale Engineering Under A Hard Deadline?",
+     "area": "block-main",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "If you’re integrating a platform, replacing a vendor, or under board pressure to deliver — the constraint is execution. GoGloby builds fully compliant, AI-capable engineering teams in parallel.",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Book A Call",
+     "area": "block-aside",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "modals",
+   "kind": "modals",
+   "label": "Forms and modals",
+   "scope": "shared",
+   "skipped": false,
+   "text": "Thank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend\nThank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "site_header",
+   "kind": "site_header",
+   "label": "Site header",
+   "scope": "page",
+   "skipped": true,
+   "text": "Site logo\nSolutions\nAI Engineering Visibility\nForward Deployed Engineering\nServices\nAI Engineers Staff Augmentation\nHire AI Engineers\nAI Development Services\nGenerative AI Consulting Services\nAgentic AI Consulting Services\nAI Production Engineering\nGenerative AI Development Services\nAI Agent Development Services\nAI Custom Software Development Services\nRAG Application Development Services\nLLM Development Services\nApplication AI Modernization Services\nLegacy Application Modernization Services\nSoftware Maintenance Services\nCompany\nAbout us\nJobs\nResources\nInsights\nUse Cases\nPodcast\nContact\nTalk to Us",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Site logo",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/globy-logo-1-01.svg",
+     "file": "globy-logo-1-01.svg",
+     "alt": "Site logo",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Solutions",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineering Visibility",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/ai-engineering-visibility/",
+       "text": "AI Engineering Visibility"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Forward Deployed Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/forward-deployed-engineering/",
+       "text": "Forward Deployed Engineering"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineers Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Engineers Staff Augmentation"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "link",
+     "text": "AI Development Services",
+     "href": "https://gogloby.com/services/ai-development/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-development/",
+       "text": "AI Development Services"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-consulting/",
+       "text": "Generative AI Consulting Services"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Agentic AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/agentic-ai-consulting/",
+       "text": "Agentic AI Consulting Services"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "AI Production Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "AI Production Engineering"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "AI Agent Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-agent-development/",
+       "text": "AI Agent Development Services"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "AI Custom Software Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-custom-software-development/",
+       "text": "AI Custom Software Development Services"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "RAG Application Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/rag-application-development/",
+       "text": "RAG Application Development Services"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "LLM Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/llm-development/",
+       "text": "LLM Development Services"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "link",
+     "text": "Application AI Modernization Services",
+     "href": "https://gogloby.com/services/application-modernization/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/application-modernization/",
+       "text": "Application AI Modernization Services"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Legacy Application Modernization Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/legacy-application-modernization/",
+       "text": "Legacy Application Modernization Services"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "Software Maintenance Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/software-maintenance/",
+       "text": "Software Maintenance Services"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "Talk to Us",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "site_footer",
+   "kind": "site_footer",
+   "label": "Site footer",
+   "scope": "page",
+   "skipped": true,
+   "text": "Background logo\nServices\nApplied AI Engineering\nAI Staff Augmentation\nHire AI Engineers\nGenerative AI Development Services\nCompany\nAbout us\nJobs\nContact\nPrivacy Policy and Candidate Privacy Notice\nTerms and Conditions\nResources\nInsights\nUse Cases\nPodcast\nCase Studies\nConnections\nCrunchbase\nLinkedIn\nX\nG2\nClutch\nTrustpilot\nDesignRush\nGitHub\nFacebook\nYouTube\n© Copyright 2026, GoGloby. All Rights Reserved.",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background logo",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/logos/globy-logo-outline-1-01.svg",
+     "file": "globy-logo-outline-1-01.svg",
+     "alt": "Background logo",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Applied AI Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "Applied AI Engineering"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Staff Augmentation"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Privacy Policy and Candidate Privacy Notice",
+     "links": [
+      {
+       "href": "https://gogloby.com/privacy-policy/",
+       "text": "Privacy Policy and Candidate Privacy Notice"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Terms and Conditions",
+     "links": [
+      {
+       "href": "https://gogloby.com/terms-and-conditions/",
+       "text": "Terms and Conditions"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "Case Studies",
+     "links": [
+      {
+       "href": "https://gogloby.com/case-study/",
+       "text": "Case Studies"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Connections",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Crunchbase",
+     "links": [
+      {
+       "href": "https://www.crunchbase.com/organization/gogloby",
+       "text": "Crunchbase"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "LinkedIn",
+     "links": [
+      {
+       "href": "https://www.linkedin.com/company/gogloby/",
+       "text": "LinkedIn"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "X",
+     "links": [
+      {
+       "href": "https://x.com/GoGloby",
+       "text": "X"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "list_item",
+     "text": "G2",
+     "links": [
+      {
+       "href": "https://www.g2.com/products/gogloby/reviews",
+       "text": "G2"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Clutch",
+     "links": [
+      {
+       "href": "https://clutch.co/profile/gogloby",
+       "text": "Clutch"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Trustpilot",
+     "links": [
+      {
+       "href": "https://www.trustpilot.com/review/gogloby.com",
+       "text": "Trustpilot"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "DesignRush",
+     "links": [
+      {
+       "href": "https://www.designrush.com/agency/profile/gogloby",
+       "text": "DesignRush"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "list_item",
+     "text": "GitHub",
+     "links": [
+      {
+       "href": "https://github.com/gogloby",
+       "text": "GitHub"
+      }
+     ],
+     "index": 21
+    },
+    {
+     "type": "list_item",
+     "text": "Facebook",
+     "links": [
+      {
+       "href": "https://www.facebook.com/gogloby",
+       "text": "Facebook"
+      }
+     ],
+     "index": 22
+    },
+    {
+     "type": "list_item",
+     "text": "YouTube",
+     "links": [
+      {
+       "href": "https://www.youtube.com/@DefaultGlobal",
+       "text": "YouTube"
+      }
+     ],
+     "index": 23
+    },
+    {
+     "type": "paragraph",
+     "text": "© Copyright 2026, GoGloby. All Rights Reserved.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "related",
+   "kind": "related",
+   "label": "Related content",
+   "scope": "page",
+   "skipped": true,
+   "text": "Latest posts\nHow GoGloby Replaced Fragmented Recruiting Workflows With a Slack-Native AI Agent\nHow GoGloby Replaced Fragmented Recruiting Workflows With a Slack-Native AI Agent\nMay 6,2026\nHow GoGloby Engineered a Production Voice AI System That Screens Candidates 85% Faster at 96% Lower Cost\nHow GoGloby Engineered a Production Voice AI System That Screens Candidates 85% Faster at 96% Lower Cost\nMay 6,2026\nHow GoGloby Replaced Manual Candidate Review With a Semantic ML Pipeline\nHow GoGloby Replaced Manual Candidate Review With a Semantic ML Pipeline\nMay 6,2026\nHow GoGloby Turned Idle AI Tools Into Board-Visible Engineering Performance\nHow GoGloby Turned Idle AI Tools Into Board-Visible Engineering Performance\nMay 6,2026",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Latest posts",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "How GoGloby Replaced Fragmented Recruiting Workflows With a Slack-Native AI Agent",
+     "src": "https://gogloby.com/wp-content/uploads/2026/05/How-GoGloby-Replaced-Fragmented-Recruiting-Workflows-With-a-Slack-Native-AI-Agent.png",
+     "file": "How-GoGloby-Replaced-Fragmented-Recruiting-Workflows-With-a-Slack-Native-AI-Agent.png",
+     "alt": "How GoGloby Replaced Fragmented Recruiting Workflows With a Slack-Native AI Agent",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "How GoGloby Replaced Fragmented Recruiting Workflows With a Slack-Native AI Agent",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "May 6,2026",
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "How GoGloby Engineered a Production Voice AI System That Screens Candidates 85% Faster at 96% Lower Cost",
+     "src": "https://gogloby.com/wp-content/uploads/2026/05/How-GoGloby-Engineered-a-Production-Voice-AI-System-That-Screens-Candidates-85-Faster-at-96-Lower-Cost.png",
+     "file": "How-GoGloby-Engineered-a-Production-Voice-AI-System-That-Screens-Candidates-85-Faster-at-96-Lower-Cost.png",
+     "alt": "How GoGloby Engineered a Production Voice AI System That Screens Candidates 85% Faster at 96% Lower Cost",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 2",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "How GoGloby Engineered a Production Voice AI System That Screens Candidates 85% Faster at 96% Lower Cost",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "May 6,2026",
+     "area": "slide 2",
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "How GoGloby Replaced Manual Candidate Review With a Semantic ML Pipeline",
+     "src": "https://gogloby.com/wp-content/uploads/2026/05/How-GoGloby-Replaced-Manual-Candidate-Review-With-a-Semantic-ML-Pipeline.png",
+     "file": "How-GoGloby-Replaced-Manual-Candidate-Review-With-a-Semantic-ML-Pipeline.png",
+     "alt": "How GoGloby Replaced Manual Candidate Review With a Semantic ML Pipeline",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 3",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "How GoGloby Replaced Manual Candidate Review With a Semantic ML Pipeline",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "May 6,2026",
+     "area": "slide 3",
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "How GoGloby Turned Idle AI Tools Into Board-Visible Engineering Performance",
+     "src": "https://gogloby.com/wp-content/uploads/2026/05/GoGloby-Turned-AI-Tools-Into-Board-Visible-Engineering-performance.png",
+     "file": "GoGloby-Turned-AI-Tools-Into-Board-Visible-Engineering-performance.png",
+     "alt": "How GoGloby Turned Idle AI Tools Into Board-Visible Engineering Performance",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 4",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "How GoGloby Turned Idle AI Tools Into Board-Visible Engineering Performance",
+     "area": "slide 4",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "May 6,2026",
+     "area": "slide 4",
+     "index": 4
+    }
+   ]
+  }
+ ],
+ "warnings": []
+}

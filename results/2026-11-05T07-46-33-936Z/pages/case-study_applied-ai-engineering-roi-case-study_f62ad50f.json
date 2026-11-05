@@ -1,0 +1,1445 @@
+{
+  "schema_version": 2,
+  "url": "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+  "final_url": "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+  "status": 200,
+  "title": "How GoGloby’s Applied AI Engineering Delivered Measurable ROI",
+  "category": "Resources",
+  "subsection": "Case studies",
+  "profile": "case_study",
+  "geo_type": "article",
+  "template": "article",
+  "checked_at": "2026-11-05T07:47:33.064Z",
+  "zones": [
+    {
+      "id": "title",
+      "label": "Title",
+      "kind": "title"
+    },
+    {
+      "id": "meta_description",
+      "label": "Meta description",
+      "kind": "meta_description"
+    },
+    {
+      "id": "og_title",
+      "label": "og:title",
+      "kind": "og_title"
+    },
+    {
+      "id": "og_description",
+      "label": "og:description",
+      "kind": "og_description"
+    },
+    {
+      "id": "json_ld",
+      "label": "Structured data (JSON-LD)",
+      "kind": "json_ld"
+    },
+    {
+      "id": "h1",
+      "label": "H1",
+      "kind": "h1"
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "kind": "date"
+    },
+    {
+      "id": "toc",
+      "label": "Table of contents",
+      "kind": "toc"
+    },
+    {
+      "id": "article:intro",
+      "label": "Intro",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:achievements-after-partnering-with-gogloby",
+      "label": "Achievements After Partnering With GoGloby",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:company-profile",
+      "label": "Company Profile",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:the-problem",
+      "label": "The Problem",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+      "label": "The GoGloby Approach: 4x Applied AI Engineering",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:results",
+      "label": "Results",
+      "kind": "article_section"
+    },
+    {
+      "id": "banner_cta",
+      "label": "Banner CTA",
+      "kind": "banner_cta"
+    }
+  ],
+  "zone_warnings": [],
+  "shared_variants": [
+    "modals@1"
+  ],
+  "compliance": {
+    "hash": "3787a135581bc7e2af3f3d718294bc9b81c164c4a120184b7092826874304ee7",
+    "cached": false,
+    "action": "needs_decision",
+    "model_action": "needs_decision",
+    "summary": "The case study promotes a discontinued Applied AI Engineering integration offer rather than GoGloby’s current staffing and recruiting services. The reported engagement results and several operational claims are not supported by the company sources.",
+    "llm_problems": [
+      {
+        "title": "Discontinued Applied AI integration offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §7",
+        "rule_verified": true,
+        "issue": "The case study presents AI workflow integration and measurement infrastructure as GoGloby’s offer, rather than its current staffing and recruiting services.",
+        "fix": "Decide whether to retire the case study or rebuild it around a supported current service and verified engagement.",
+        "subject": "Applied AI Engineering offer",
+        "page_value": "AI practice integration and measurement infrastructure",
+        "source_value": "Staffing and recruiting Data & AI Engineers",
+        "count": 8,
+        "locations": [
+          {
+            "zone_id": "title",
+            "part": "field 1",
+            "quote": "How GoGloby’s Applied AI Engineering Delivered Measurable ROI",
+            "verified": true
+          },
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "AI tool adoption reporting with GoGloby’s infrastructure",
+            "verified": true
+          },
+          {
+            "zone_id": "og_title",
+            "part": "field 1",
+            "quote": "How GoGloby’s Applied AI Engineering Delivered Measurable ROI",
+            "verified": true
+          },
+          {
+            "zone_id": "og_description",
+            "part": "field 1",
+            "quote": "AI tool adoption reporting with GoGloby’s infrastructure",
+            "verified": true
+          },
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 1",
+            "quote": "This is how GoGloby answered that question by building infrastructure.",
+            "verified": true
+          },
+          {
+            "zone_id": "article:company-profile",
+            "part": "table_cell 10",
+            "quote": "4x Applied AI Engineering™: Talent · Workflow · Observability · Security",
+            "verified": true
+          },
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "paragraph 1",
+            "quote": "It’s a structured integration that embeds AI-native practice into the engineering organization from the inside.",
+            "verified": true
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "GoGloby embeds Applied AI Engineering practice directly into your engineering organization",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "AI adoption result is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients and Key metrics",
+        "rule_verified": true,
+        "issue": "The sources do not substantiate the case study’s claimed increase in active AI tool usage from 28% to 91%.",
+        "fix": "Verify the result before retaining it in any revised case study.",
+        "subject": "AI tool adoption result",
+        "page_value": "28% to 91%",
+        "source_value": "not in Fact Sheet",
+        "count": 5,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "moved from 28% to 91% AI tool adoption reporting with GoGloby’s infrastructure.",
+            "verified": true
+          },
+          {
+            "zone_id": "og_description",
+            "part": "field 1",
+            "quote": "moved from 28% to 91% AI tool adoption reporting with GoGloby’s infrastructure.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Article.description",
+            "quote": "moved from 28% to 91% AI tool adoption reporting with GoGloby’s i",
+            "verified": true
+          },
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "Active AI tool usage\n28% → 91%",
+            "verified": true
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "Active AI tool usage\n~28%\n91%",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Throughput result is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients and Key metrics",
+        "rule_verified": true,
+        "issue": "The sources do not substantiate the claimed 2.4-times team throughput result.",
+        "fix": "Verify the throughput result before retaining it.",
+        "subject": "Sprint throughput result",
+        "page_value": "2.4 times baseline",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "Sprint throughput\n+2.4× baseline",
+            "verified": true
+          },
+          {
+            "zone_id": "article:results",
+            "part": "paragraph 1",
+            "quote": "The 2.4x throughput improvement is a team-level output metric.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "PR cycle result is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients and Key metrics",
+        "rule_verified": true,
+        "issue": "The sources do not substantiate the claimed 37% reduction in PR cycle time.",
+        "fix": "Verify the PR cycle result before retaining it.",
+        "subject": "PR cycle time result",
+        "page_value": "37% reduction",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "PR cycle time\n−37%",
+            "verified": true
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "PR cycle time\nBaseline\n−37%",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Test coverage result is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients and Key metrics",
+        "rule_verified": true,
+        "issue": "The sources do not substantiate the claimed increase in test coverage from 44% to 61%.",
+        "fix": "Verify the test coverage result before retaining it.",
+        "subject": "Test coverage result",
+        "page_value": "44% to 61%",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "Test coverage\n44% → 61%",
+            "verified": true
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "Test coverage\n44%\n61%",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Board dashboard result is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients and Services",
+        "rule_verified": true,
+        "issue": "The sources do not substantiate the claim that this client received its first live board performance dashboard through the engagement.",
+        "fix": "Verify the dashboard result before retaining it.",
+        "subject": "Client board dashboard",
+        "page_value": "Live dashboard, first in company history",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "Board performance dashboard\nLive — first in company history",
+            "verified": true
+          },
+          {
+            "zone_id": "article:results",
+            "part": "table_cell 18",
+            "quote": "Live Performance Center dashboard",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Quantified AI ROI is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients and Key metrics",
+        "rule_verified": true,
+        "issue": "The sources do not substantiate the case study’s claim of demonstrable and quantified AI investment ROI.",
+        "fix": "Verify the ROI result before retaining it.",
+        "subject": "Client AI investment ROI",
+        "page_value": "Demonstrable and quantified",
+        "source_value": "not in Fact Sheet",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "title",
+            "part": "field 1",
+            "quote": "How GoGloby’s Applied AI Engineering Delivered Measurable ROI",
+            "verified": true
+          },
+          {
+            "zone_id": "og_title",
+            "part": "field 1",
+            "quote": "How GoGloby’s Applied AI Engineering Delivered Measurable ROI",
+            "verified": true
+          },
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "AI Investment ROI\nDemonstrable and quantified",
+            "verified": true
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "AI investment ROI\nUnknown — no measurement existed\nDemonstrable and quantified",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Engineer output multiple is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services and Key metrics",
+        "rule_verified": true,
+        "issue": "The sources do not substantiate the claim that each GoGloby engineer operates at two to five times a conventional engineer’s output.",
+        "fix": "Remove the output multiple unless it is verified and approved.",
+        "subject": "GoGloby engineer output",
+        "page_value": "2–5 times conventional engineer output",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "paragraph 4",
+            "quote": "each operating at 2–5x the output of a conventional engineer.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Monthly guideline updates are unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The sources do not state that GoGloby updates client development guidelines monthly.",
+        "fix": "Verify this service commitment before retaining it.",
+        "subject": "Development guideline updates",
+        "page_value": "Updated monthly by GoGloby",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "paragraph 6",
+            "quote": "GoGloby updates these monthly as new capabilities become available in Cursor, GitHub Copilot, and Claude Code.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Identifiable telemetry conflicts with policy",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The dashboard is said to identify exactly which engineers are stuck at autocomplete, while the Fact Sheet says telemetry is aggregated and anonymized.",
+        "fix": "Remove or correct the identifiable telemetry claim to match the approved security position.",
+        "subject": "Telemetry privacy",
+        "page_value": "Identifies exactly which engineers are stuck at autocomplete",
+        "source_value": "Telemetry aggregated and anonymized",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "list_item 6",
+            "quote": "revealing exactly who was stuck at autocomplete-only",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Security incident claim is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The sources do not substantiate the claim of zero security incidents across this engagement.",
+        "fix": "Verify the engagement’s security record before retaining the claim.",
+        "subject": "Engagement security incidents",
+        "page_value": "Zero security incidents",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "list_item 9",
+            "quote": "Zero security incidents across the engagement.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      }
+    ],
+    "problems": [
+      {
+        "title": "Discontinued Applied AI integration offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §7",
+        "rule_verified": true,
+        "issue": "The case study presents AI workflow integration and measurement infrastructure as GoGloby’s offer, rather than its current staffing and recruiting services.",
+        "fix": "Decide whether to retire the case study or rebuild it around a supported current service and verified engagement.",
+        "subject": "Applied AI Engineering offer",
+        "page_value": "AI practice integration and measurement infrastructure",
+        "source_value": "Staffing and recruiting Data & AI Engineers",
+        "count": 8,
+        "locations": [
+          {
+            "zone_id": "title",
+            "part": "field 1",
+            "quote": "How GoGloby’s Applied AI Engineering Delivered Measurable ROI",
+            "verified": true
+          },
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "AI tool adoption reporting with GoGloby’s infrastructure",
+            "verified": true
+          },
+          {
+            "zone_id": "og_title",
+            "part": "field 1",
+            "quote": "How GoGloby’s Applied AI Engineering Delivered Measurable ROI",
+            "verified": true
+          },
+          {
+            "zone_id": "og_description",
+            "part": "field 1",
+            "quote": "AI tool adoption reporting with GoGloby’s infrastructure",
+            "verified": true
+          },
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 1",
+            "quote": "This is how GoGloby answered that question by building infrastructure.",
+            "verified": true,
+            "fragment": "This is how GoGloby answered that",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:company-profile",
+            "part": "table_cell 10",
+            "quote": "4x Applied AI Engineering™: Talent · Workflow · Observability · Security",
+            "verified": true,
+            "fragment": "4x Applied AI Engineering™: Talent",
+            "place": "table, row \"GoGloby approach\"",
+            "locator": 3
+          },
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "paragraph 1",
+            "quote": "It’s a structured integration that embeds AI-native practice into the engineering organization from the inside.",
+            "verified": true,
+            "fragment": "It’s a structured integration that embeds",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "GoGloby embeds Applied AI Engineering practice directly into your engineering organization",
+            "verified": true,
+            "fragment": "GoGloby embeds Applied AI Engineering practice",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "AI adoption result is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients and Key metrics",
+        "rule_verified": true,
+        "issue": "The sources do not substantiate the case study’s claimed increase in active AI tool usage from 28% to 91%.",
+        "fix": "Verify the result before retaining it in any revised case study.",
+        "subject": "AI tool adoption result",
+        "page_value": "28% to 91%",
+        "source_value": "not in Fact Sheet",
+        "count": 5,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "moved from 28% to 91% AI tool adoption reporting with GoGloby’s infrastructure.",
+            "verified": true
+          },
+          {
+            "zone_id": "og_description",
+            "part": "field 1",
+            "quote": "moved from 28% to 91% AI tool adoption reporting with GoGloby’s infrastructure.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Article.description",
+            "quote": "moved from 28% to 91% AI tool adoption reporting with GoGloby’s i",
+            "verified": true
+          },
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "Active AI tool usage\n28% → 91%",
+            "verified": true,
+            "fragment": "Active AI tool usage",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "Active AI tool usage\n~28%\n91%",
+            "verified": true,
+            "fragment": "Active AI tool usage",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Throughput result is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients and Key metrics",
+        "rule_verified": true,
+        "issue": "The sources do not substantiate the claimed 2.4-times team throughput result.",
+        "fix": "Verify the throughput result before retaining it.",
+        "subject": "Sprint throughput result",
+        "page_value": "2.4 times baseline",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "Sprint throughput\n+2.4× baseline",
+            "verified": true,
+            "fragment": "Sprint throughput",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:results",
+            "part": "paragraph 1",
+            "quote": "The 2.4x throughput improvement is a team-level output metric.",
+            "verified": true,
+            "fragment": "The 2.4x throughput improvement is a",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "PR cycle result is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients and Key metrics",
+        "rule_verified": true,
+        "issue": "The sources do not substantiate the claimed 37% reduction in PR cycle time.",
+        "fix": "Verify the PR cycle result before retaining it.",
+        "subject": "PR cycle time result",
+        "page_value": "37% reduction",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "PR cycle time\n−37%",
+            "verified": true,
+            "fragment": "PR cycle time",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "PR cycle time\nBaseline\n−37%",
+            "verified": true,
+            "fragment": "PR cycle time",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Test coverage result is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients and Key metrics",
+        "rule_verified": true,
+        "issue": "The sources do not substantiate the claimed increase in test coverage from 44% to 61%.",
+        "fix": "Verify the test coverage result before retaining it.",
+        "subject": "Test coverage result",
+        "page_value": "44% to 61%",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "Test coverage\n44% → 61%",
+            "verified": true,
+            "fragment": "Test coverage",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "Test coverage\n44%\n61%",
+            "verified": true,
+            "fragment": "Test coverage",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Board dashboard result is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients and Services",
+        "rule_verified": true,
+        "issue": "The sources do not substantiate the claim that this client received its first live board performance dashboard through the engagement.",
+        "fix": "Verify the dashboard result before retaining it.",
+        "subject": "Client board dashboard",
+        "page_value": "Live dashboard, first in company history",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "Board performance dashboard\nLive — first in company history",
+            "verified": true,
+            "fragment": "Board performance dashboard",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:results",
+            "part": "table_cell 18",
+            "quote": "Live Performance Center dashboard",
+            "verified": true,
+            "fragment": "Live Performance Center dashboard",
+            "place": "table, row \"Board performance data\", column \"After\"",
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Quantified AI ROI is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients and Key metrics",
+        "rule_verified": true,
+        "issue": "The sources do not substantiate the case study’s claim of demonstrable and quantified AI investment ROI.",
+        "fix": "Verify the ROI result before retaining it.",
+        "subject": "Client AI investment ROI",
+        "page_value": "Demonstrable and quantified",
+        "source_value": "not in Fact Sheet",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "title",
+            "part": "field 1",
+            "quote": "How GoGloby’s Applied AI Engineering Delivered Measurable ROI",
+            "verified": true
+          },
+          {
+            "zone_id": "og_title",
+            "part": "field 1",
+            "quote": "How GoGloby’s Applied AI Engineering Delivered Measurable ROI",
+            "verified": true
+          },
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "AI Investment ROI\nDemonstrable and quantified",
+            "verified": true,
+            "fragment": "AI Investment ROI",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "AI investment ROI\nUnknown — no measurement existed\nDemonstrable and quantified",
+            "verified": true,
+            "fragment": "AI Investment ROI",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Engineer output multiple is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services and Key metrics",
+        "rule_verified": true,
+        "issue": "The sources do not substantiate the claim that each GoGloby engineer operates at two to five times a conventional engineer’s output.",
+        "fix": "Remove the output multiple unless it is verified and approved.",
+        "subject": "GoGloby engineer output",
+        "page_value": "2–5 times conventional engineer output",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "paragraph 4",
+            "quote": "each operating at 2–5x the output of a conventional engineer.",
+            "verified": true,
+            "fragment": "each operating at 2–5x the output",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Monthly guideline updates are unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The sources do not state that GoGloby updates client development guidelines monthly.",
+        "fix": "Verify this service commitment before retaining it.",
+        "subject": "Development guideline updates",
+        "page_value": "Updated monthly by GoGloby",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "paragraph 6",
+            "quote": "GoGloby updates these monthly as new capabilities become available in Cursor, GitHub Copilot, and Claude Code.",
+            "verified": true,
+            "fragment": "GoGloby updates these monthly as new",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Identifiable telemetry conflicts with policy",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The dashboard is said to identify exactly which engineers are stuck at autocomplete, while the Fact Sheet says telemetry is aggregated and anonymized.",
+        "fix": "Remove or correct the identifiable telemetry claim to match the approved security position.",
+        "subject": "Telemetry privacy",
+        "page_value": "Identifies exactly which engineers are stuck at autocomplete",
+        "source_value": "Telemetry aggregated and anonymized",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "list_item 6",
+            "quote": "revealing exactly who was stuck at autocomplete-only",
+            "verified": true,
+            "fragment": "revealing exactly who was stuck at",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Security incident claim is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The sources do not substantiate the claim of zero security incidents across this engagement.",
+        "fix": "Verify the engagement’s security record before retaining the claim.",
+        "subject": "Engagement security incidents",
+        "page_value": "Zero security incidents",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "list_item 9",
+            "quote": "Zero security incidents across the engagement.",
+            "verified": true,
+            "fragment": "Zero security incidents across the engagement.",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Term not used: Performance Dashboard / Center",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"Performance Dashboard / Center\" is a term or name the company no longer uses.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "Performance Dashboard / Center",
+        "page_value": null,
+        "source_value": null,
+        "count": 6,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": "table_cell 11",
+            "quote": "performance dashboard",
+            "verified": true,
+            "fragment": "performance dashboard",
+            "place": "table, column \"Metric\"",
+            "locator": 3
+          },
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "heading 4",
+            "quote": "Performance Center",
+            "verified": true,
+            "fragment": "3 — Observability:-,Performance Center",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "paragraph 7",
+            "quote": "Performance Center",
+            "verified": true,
+            "fragment": "GoGloby deployed the-,Performance Center,-from day one",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "paragraph 9",
+            "quote": "Performance Center",
+            "verified": true,
+            "fragment": "3 — Observability:-,Performance Center",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:results",
+            "part": "table_cell 18",
+            "quote": "Performance Center",
+            "verified": true,
+            "fragment": "Live-,Performance Center,-dashboard",
+            "place": "table, row \"Board performance data\", column \"After\"",
+            "locator": 3
+          },
+          {
+            "zone_id": "article:results",
+            "part": "paragraph 3",
+            "quote": "Performance Center",
+            "verified": true,
+            "fragment": "VP opened the-,Performance Center,-live, showed the",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      },
+      {
+        "title": "Term not used: 4x (product name)",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"4x (product name)\" is a term or name the company no longer uses.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "4x (product name)",
+        "page_value": null,
+        "source_value": null,
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:company-profile",
+            "part": "table_cell 10",
+            "quote": "4x Applied",
+            "verified": true,
+            "fragment": "4x Applied,-AI Engineering™: Talent",
+            "place": "table, row \"GoGloby approach\"",
+            "locator": 3
+          },
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "heading 1",
+            "quote": "4x Applied",
+            "verified": true,
+            "fragment": "The GoGloby Approach:-,4x Applied,-AI Engineering",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      }
+    ],
+    "usage": {
+      "input": 2452,
+      "cached_input": 10066,
+      "output": 3261
+    },
+    "error": null
+  },
+  "geo": {
+    "hash": "c1d43e58537cd3621f9ca75697bd0c10bc90c4b00765066f6449ceb48fe38e1b",
+    "cached": false,
+    "code": [
+      {
+        "id": "trap_terms",
+        "status": "pass",
+        "value": "none in title, H1, meta, og",
+        "places": []
+      },
+      {
+        "id": "em_dash",
+        "status": "fail",
+        "value": "18 found",
+        "places": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": "table_cell 12",
+            "value": "— | Live — first in company history",
+            "place": "table, row \"Board performance dashboard\", column \"Result\""
+          },
+          {
+            "zone_id": "article:company-profile",
+            "part": "table_cell 2",
+            "value": "— | PE-backed vertical SaaS — workforce compliance software…",
+            "place": "table, row \"Client\""
+          },
+          {
+            "zone_id": "article:the-problem",
+            "part": "list_item 1",
+            "value": "— | …or agentic multi-file editing — the features that drive real …"
+          },
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "heading 2",
+            "value": "— | Layer 1 — Talent: One Lead, Then a Full…"
+          },
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "paragraph 3",
+            "value": "— | … visibly on the real codebase — context-configured generation…"
+          },
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "paragraph 3",
+            "value": "— | … AI-assisted test scaffolding — the lead creates observable p…"
+          },
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "paragraph 4",
+            "value": "— | …lied AI Engineers to the team — each selected for the specifi…"
+          },
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "heading 3",
+            "value": "— | Layer 2 — Workflow: Agentic SDLC"
+          },
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "list_item 1",
+            "value": "— | …tions are a different product — one senior engineer actually …"
+          },
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "paragraph 6",
+            "value": "— | …Agentic Development Guideline — specific to the team’s stack,…"
+          },
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "heading 4",
+            "value": "— | Layer 3 — Observability: Performance Ce…"
+          },
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "paragraph 7",
+            "value": "— | …rformance Center from day one — before any workflow changes w…"
+          },
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "list_item 4",
+            "value": "— | …ed workflows and which hadn’t — without self-reporting."
+          },
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "list_item 6",
+            "value": "— | …h features each engineer uses — revealing exactly who was stu…"
+          },
+          {
+            "zone_id": "article:the-gogloby-approach-4x-applied-ai-engineering",
+            "part": "heading 5",
+            "value": "— | Layer 4 — Security: Controlled AI Devel…"
+          },
+          {
+            "zone_id": "article:results",
+            "part": "paragraph 1",
+            "value": "— | …stained over multiple sprints — which is why it reads higher …"
+          },
+          {
+            "zone_id": "article:results",
+            "part": "table_cell 20",
+            "value": "— | Unknown — no measurement existed",
+            "place": "table, row \"AI investment ROI\", column \"Before\""
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "value": "— | …but not the data to answer it — the gap is structural. GoGlob…"
+          }
+        ]
+      },
+      {
+        "id": "ampersand",
+        "status": "pass",
+        "value": "none",
+        "places": []
+      },
+      {
+        "id": "uk_spelling",
+        "status": "pass",
+        "value": "none",
+        "places": []
+      }
+    ],
+    "llm": [
+      {
+        "id": "answer_first",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "The licenses were purchased and the tools were installed.",
+        "note": "The opening sets up the problem but does not explain how GoGloby improved engineering performance; answer that question in the first two sentences.",
+        "evidence_verified": true,
+        "fragment": "The licenses were purchased and the"
+      },
+      {
+        "id": "recruiting_firm_early",
+        "answer": "na",
+        "value": null,
+        "zone_id": "page",
+        "evidence": null,
+        "note": "This is a case study, so the recruiting-firm check does not apply.",
+        "evidence_verified": null
+      },
+      {
+        "id": "buyer_ready",
+        "answer": "yes",
+        "value": "buyer_ready",
+        "zone_id": "page",
+        "evidence": null,
+        "note": "The case study addresses an engineering buyer considering embedded engineers and is not aimed at job seekers or learners.",
+        "evidence_verified": null
+      },
+      {
+        "id": "target_keyword",
+        "answer": "na",
+        "value": null,
+        "zone_id": "page",
+        "evidence": null,
+        "note": "The case study focuses on AI tool adoption and engineering performance rather than a specific Glossary §6 search term.",
+        "evidence_verified": null
+      },
+      {
+        "id": "uses_data",
+        "answer": "yes",
+        "value": null,
+        "zone_id": "article:results",
+        "evidence": "Microsoft, Google, and Accenture studies show 21–55% acceleration on specific tasks in controlled conditions",
+        "note": "The article gives a numerical range and names the sources alongside it.",
+        "evidence_verified": true,
+        "fragment": "Google, and Accenture studies show 21–55%"
+      },
+      {
+        "id": "proof_background",
+        "answer": "na",
+        "value": null,
+        "zone_id": "page",
+        "evidence": null,
+        "note": "The background-as-proof check does not apply to case studies.",
+        "evidence_verified": null
+      },
+      {
+        "id": "sell_against_open_role",
+        "answer": "na",
+        "value": null,
+        "zone_id": "page",
+        "evidence": null,
+        "note": "The open-role comparison check does not apply to case studies.",
+        "evidence_verified": null
+      }
+    ],
+    "placement": null,
+    "usage": {
+      "input": 11111,
+      "cached_input": 0,
+      "output": 668
+    },
+    "error": null
+  },
+  "seo": {
+    "checks": [
+      {
+        "id": "http_status",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "200",
+        "severity": "high"
+      },
+      {
+        "id": "title_length",
+        "status": "fail",
+        "severity": "medium",
+        "zone_id": "title",
+        "value": "61 characters (max 60)"
+      },
+      {
+        "id": "meta_present",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "112 characters",
+        "severity": "high"
+      },
+      {
+        "id": "meta_length",
+        "status": "fail",
+        "zone_id": "meta_description",
+        "value": "112 characters (120-158)",
+        "severity": "low"
+      },
+      {
+        "id": "h1_count",
+        "status": "pass",
+        "zone_id": "h1",
+        "value": "1",
+        "severity": "high"
+      },
+      {
+        "id": "canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+        "severity": "high"
+      },
+      {
+        "id": "indexable",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "severity": "high"
+      },
+      {
+        "id": "schema_required",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "present",
+        "severity": "medium"
+      },
+      {
+        "id": "schema_recommended",
+        "status": "fail",
+        "zone_id": "json_ld",
+        "value": "missing: BreadcrumbList",
+        "severity": "medium"
+      },
+      {
+        "id": "dates",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "published: 2026-05-06T21:02:35+03:00; modified: 2026-05-12T16:39:31+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "date_mismatch",
+        "status": "pass",
+        "zone_id": "date",
+        "value": "visible \"Updated on May 12, 2026\" vs dateModified 2026-05-12T16:39:31+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "broken_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 checked",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "redirecting_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "none",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "link_to_services",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "no link to /services/*",
+        "severity": "medium"
+      },
+      {
+        "id": "alt_missing",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without alt",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_empty",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 with empty alt",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "image_dimensions",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without width/height",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "heading_order",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "og_present",
+        "status": "pass",
+        "zone_id": "og_title",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "og_url_canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "og:url https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/ vs canonical https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+        "severity": "low"
+      },
+      {
+        "id": "twitter_card",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "summary_large_image",
+        "severity": "low"
+      },
+      {
+        "id": "html_lang",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "en-US",
+        "severity": "low"
+      },
+      {
+        "id": "viewport",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "jsonld_valid",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "3 block(s)",
+        "severity": "high"
+      },
+      {
+        "id": "article_fields",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "anchors_resolve",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "6 checked",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "faq_schema_matches_dom",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "accordion block: false, FAQPage schema: false",
+        "severity": "low"
+      }
+    ]
+  }
+}

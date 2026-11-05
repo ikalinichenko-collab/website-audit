@@ -175,6 +175,7 @@ const SEO_LABELS: Record<string, string> = {
   meta_present: "Meta description missing",
   meta_length: "Meta description length",
   h1_count: "H1 count is not one",
+  title_h1_match: "Title and H1 say different things",
   canonical: "Canonical",
   indexable: "Page is noindex",
   schema_required: "Required structured data missing",

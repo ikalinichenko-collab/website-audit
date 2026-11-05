@@ -17,6 +17,8 @@ export interface SeoConfig {
   severity: Record<string, Severity>;
   title: { min: number; max: number };
   meta: { min: number; max: number };
+  /** Title and H1 share too few words: below `min_overlap` of the shorter one's words; not checked on `skip_profiles` */
+  title_h1?: { min_overlap: number; skip_profiles: string[] };
   article_schema_fields: string[];
   skip_link_patterns: string[];
   /** A link whose path starts with this counts as a link to a service page. */
@@ -55,6 +57,30 @@ export interface SeoInput {
   profile: string;
   config: SeoConfig;
   linkChecker: LinkChecker;
+}
+
+const STOP_WORDS = new Set(
+  "a an and are as at be by for from gogloby how in into is it of on or our that the this to we what when why with your you".split(" "),
+);
+
+/** Words that carry meaning: lower case, without the site suffix and common function words. */
+function contentWords(text: string): Set<string> {
+  const t = text.replace(/\s*[|\-–—]\s*GoGloby\s*$/i, "").toLowerCase();
+  // "engineer" and "engineers" are one word
+  const words = (t.match(/[\p{L}\p{N}]+/gu) ?? []).map((w) => (w.length > 3 ? w.replace(/s$/, "") : w));
+  return new Set(words.filter((w) => w.length > 1 && !STOP_WORDS.has(w)));
+}
+
+/** Share of the shorter text's words found in the other one: 1 when one text contains the other's words. Null when a text has no words. */
+export function wordOverlap(a: string, b: string): number | null {
+  const wa = contentWords(a);
+  const wb = contentWords(b);
+  const shorter = wa.size <= wb.size ? wa : wb;
+  const longer = shorter === wa ? wb : wa;
+  if (!shorter.size) return null;
+  let common = 0;
+  for (const w of shorter) if (longer.has(w)) common++;
+  return common / shorter.size;
 }
 
 const ARTICLE_TYPES = ["Article", "BlogPosting", "NewsArticle"];
@@ -147,6 +173,28 @@ export async function runSeoChecks(input: SeoInput): Promise<SeoResult> {
     zone_id: "h1",
     value: String(page.h1.length),
   });
+
+  const th = config.title_h1 ?? { min_overlap: 0.5, skip_profiles: ["home"] };
+  if (page.title && page.h1.length === 1 && !th.skip_profiles.includes(profileName)) {
+    const overlap = wordOverlap(page.title, page.h1[0]!);
+    if (overlap !== null) {
+      const fail = overlap < th.min_overlap;
+      add({
+        id: "title_h1_match",
+        status: fail ? "fail" : "pass",
+        zone_id: "title",
+        value: fail ? `Title and H1 share ${Math.round(overlap * 100)}% of their words` : "Title and H1 agree",
+        ...(fail
+          ? {
+              places: [
+                { zone_id: "title", value: page.title },
+                { zone_id: "h1", value: page.h1[0]! },
+              ],
+            }
+          : {}),
+      });
+    }
+  }
 
   let canonOk = false;
   if (page.canonical) {

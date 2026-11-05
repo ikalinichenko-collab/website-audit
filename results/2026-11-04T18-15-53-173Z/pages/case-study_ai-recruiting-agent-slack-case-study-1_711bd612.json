@@ -1,0 +1,1686 @@
+{
+  "schema_version": 2,
+  "url": "https://gogloby.com/case-study/ai-recruiting-agent-slack-case-study-1/",
+  "final_url": "https://gogloby.com/case-study/ai-recruiting-agent-slack-case-study-1/",
+  "status": 200,
+  "title": "AI Recruiting Agent in Slack: GoGloby Reduced Scheduling by 75%",
+  "category": "Resources",
+  "subsection": "Case studies",
+  "profile": "case_study",
+  "geo_type": "article",
+  "template": "article",
+  "checked_at": "2026-11-04T18:16:56.430Z",
+  "zones": [
+    {
+      "id": "title",
+      "label": "Title",
+      "kind": "title"
+    },
+    {
+      "id": "meta_description",
+      "label": "Meta description",
+      "kind": "meta_description"
+    },
+    {
+      "id": "og_title",
+      "label": "og:title",
+      "kind": "og_title"
+    },
+    {
+      "id": "og_description",
+      "label": "og:description",
+      "kind": "og_description"
+    },
+    {
+      "id": "json_ld",
+      "label": "Structured data (JSON-LD)",
+      "kind": "json_ld"
+    },
+    {
+      "id": "h1",
+      "label": "H1",
+      "kind": "h1"
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "kind": "date"
+    },
+    {
+      "id": "toc",
+      "label": "Table of contents",
+      "kind": "toc"
+    },
+    {
+      "id": "article:intro",
+      "label": "Intro",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:summary-metrics",
+      "label": "Summary Metrics",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:the-situation",
+      "label": "The Situation",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:the-engineering-challenge",
+      "label": "The Engineering Challenge",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:technology-stack-decisions",
+      "label": "Technology Stack Decisions",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:system-architecture",
+      "label": "System Architecture",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:results",
+      "label": "Results",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-clients-say",
+      "label": "What Clients Say",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:engineering-lessons",
+      "label": "Engineering Lessons",
+      "kind": "article_section"
+    },
+    {
+      "id": "banner_cta",
+      "label": "Banner CTA",
+      "kind": "banner_cta"
+    }
+  ],
+  "zone_warnings": [],
+  "shared_variants": [
+    "modals@1"
+  ],
+  "compliance": {
+    "hash": "35df66df43bbe65af6b6a9cbe060a116a2d718e284287c6f97aebccc8ed610a3",
+    "cached": false,
+    "action": "needs_decision",
+    "model_action": "needs_decision",
+    "summary": "The page presents GoGloby as an AI software builder and standalone SaaS provider, an offer that conflicts with its staffing and recruiting positioning. Its product metrics and client testimonials are also unsupported by the company sources, so decide whether to remove or substantially revise the case study before keeping it live.",
+    "llm_problems": [
+      {
+        "title": "Standalone AI SaaS offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity; Glossary §§1–2, 7",
+        "rule_verified": true,
+        "issue": "The page presents GoGloby as building and selling an AI recruiting product, rather than recruiting and staffing engineers.",
+        "fix": "Decide whether to remove this case study or revise it so it does not present software development or a standalone SaaS as a GoGloby offer.",
+        "subject": "GoGloby's offer",
+        "page_value": "AI recruiting agent and standalone SaaS",
+        "source_value": "Staffing and recruiting agency; the client runs the work",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 1",
+            "quote": "GoGloby built a Slack-based AI recruiting agent for internal use — then productized it",
+            "verified": true
+          },
+          {
+            "zone_id": "article:summary-metrics",
+            "part": null,
+            "quote": "Service\nAgent Building",
+            "verified": true
+          },
+          {
+            "zone_id": "article:the-situation",
+            "part": "paragraph 4",
+            "quote": "GoGloby’s Applied AI Engineering team replaced that workflow fragmentation",
+            "verified": true
+          },
+          {
+            "zone_id": "article:engineering-lessons",
+            "part": "list_item 4",
+            "quote": "The system evolved from internal use to a SaaS offering",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Scheduling reduction claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed 75% reduction in scheduling effort is not supported by the company sources.",
+        "fix": "Remove the percentage unless GoGloby can verify it and approve its use.",
+        "subject": "Scheduling reduction",
+        "page_value": "75%",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "title",
+            "part": "field 1",
+            "quote": "GoGloby Reduced Scheduling by 75%",
+            "verified": true
+          },
+          {
+            "zone_id": "article:summary-metrics",
+            "part": null,
+            "quote": "Scheduling coordination effort\n↓ 75%",
+            "verified": true
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "Scheduling messages\n6–8\n1–2\n↓ 75%",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Recruiter productivity claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claim that the agent doubled recruiter productivity is not supported by the company sources.",
+        "fix": "Remove the productivity claim unless GoGloby can verify and approve it.",
+        "subject": "Recruiter productivity",
+        "page_value": "2× baseline",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "doubled recruiter productivity",
+            "verified": true
+          },
+          {
+            "zone_id": "article:summary-metrics",
+            "part": null,
+            "quote": "Recruiter productivity\n↑ 100% (2× baseline)",
+            "verified": true
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "Recruiter productivity\nBaseline\n2×\n↑ 100%",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "User count is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claim that the product has 1,200+ users is not supported by the company sources.",
+        "fix": "Remove the user count unless GoGloby can verify and approve it.",
+        "subject": "Product users",
+        "page_value": "1,200+ users",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "scaled to 1,200+ users",
+            "verified": true
+          },
+          {
+            "zone_id": "article:summary-metrics",
+            "part": null,
+            "quote": "Active users\n1,200+ across 45 organizations",
+            "verified": true
+          },
+          {
+            "zone_id": "article:engineering-lessons",
+            "part": "list_item 1",
+            "quote": "scaling to 1,200 users at $600/month",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Organization count is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claim that the product serves 45 organizations is not supported by the company sources.",
+        "fix": "Remove the organization count unless GoGloby can verify and approve it.",
+        "subject": "Product organizations",
+        "page_value": "45 organizations",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "across 45 organizations",
+            "verified": true
+          },
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 1",
+            "quote": "onboarded 45 organizations",
+            "verified": true
+          },
+          {
+            "zone_id": "article:engineering-lessons",
+            "part": "list_item 4",
+            "quote": "a SaaS offering with 45 organizations",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Retention rate is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed 94% monthly user retention is not supported by the company sources.",
+        "fix": "Remove the retention figure unless GoGloby can verify and approve it.",
+        "subject": "Monthly user retention",
+        "page_value": "94%",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 1",
+            "quote": "94% monthly user retention",
+            "verified": true
+          },
+          {
+            "zone_id": "article:summary-metrics",
+            "part": null,
+            "quote": "Monthly user retention\n94%",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Daily conversation count",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed volume of 3,500+ daily conversations is not supported by the company sources.",
+        "fix": "Remove the volume claim unless GoGloby can verify and approve it.",
+        "subject": "Daily conversations",
+        "page_value": "3,500+",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:summary-metrics",
+            "part": null,
+            "quote": "Daily conversations\n3,500+",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "User satisfaction score",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed average user satisfaction score is not supported by the company sources.",
+        "fix": "Remove the score unless GoGloby can verify and approve it.",
+        "subject": "User satisfaction",
+        "page_value": "9.1 / 10",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:summary-metrics",
+            "part": null,
+            "quote": "Average user satisfaction\n9.1 / 10",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Error rate is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed 0.3% error rate and its comparison with a 1% target are not supported by the company sources.",
+        "fix": "Remove the rate and target unless GoGloby can verify and approve them.",
+        "subject": "Product error rate",
+        "page_value": "0.3% (vs. 1% target)",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:summary-metrics",
+            "part": null,
+            "quote": "Error rate\n0.3% (vs. 1% target)",
+            "verified": true
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "Error rate\n—\n0.3%\nvs 1% target",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Response time claims",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The response-time results and targets are not supported by the company sources.",
+        "fix": "Remove the response-time figures and targets unless GoGloby can verify and approve them.",
+        "subject": "Product response time",
+        "page_value": "1.8 seconds; 3-second target",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:summary-metrics",
+            "part": null,
+            "quote": "API response time\n1.8 seconds (vs. 3s target)",
+            "verified": true
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "Response time\n—\n1.8s\nvs 3s target",
+            "verified": true
+          },
+          {
+            "zone_id": "article:the-engineering-challenge",
+            "part": "list_item 1",
+            "quote": "Sub-3-second response time",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Candidate review reduction",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed reduction in candidate review time is not supported by the company sources.",
+        "fix": "Remove the review-time comparison unless GoGloby can verify and approve it.",
+        "subject": "Candidate review time",
+        "page_value": "15 min to 3.5 min, down 77%",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "Candidate review time\n15 min\n3.5 min\n↓ 77%",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Weekly workload claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claim that a team could spend 30–40 hours per week on operational tasks is not supported by the company sources.",
+        "fix": "Remove the weekly workload figure unless GoGloby can verify and approve it.",
+        "subject": "Recruiting operational workload",
+        "page_value": "30–40 hours per week",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:the-situation",
+            "part": "paragraph 2",
+            "quote": "A team handling multiple open roles could spend 30–40 hours per week",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Infrastructure cost claims",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The monthly infrastructure cost, per-user cost, and component cost breakdown are not supported by the company sources.",
+        "fix": "Remove these cost figures unless GoGloby can verify and approve them.",
+        "subject": "Product infrastructure costs",
+        "page_value": "$600 per month; $0.49 per user",
+        "source_value": "not in Fact Sheet",
+        "count": 5,
+        "locations": [
+          {
+            "zone_id": "article:summary-metrics",
+            "part": null,
+            "quote": "Infrastructure cost\n$600 / month",
+            "verified": true
+          },
+          {
+            "zone_id": "article:summary-metrics",
+            "part": null,
+            "quote": "Infrastructure cost per user\n$0.49",
+            "verified": true
+          },
+          {
+            "zone_id": "article:system-architecture",
+            "part": null,
+            "quote": "GPT-4-turbo API\n$280\n$0.23",
+            "verified": true
+          },
+          {
+            "zone_id": "article:system-architecture",
+            "part": null,
+            "quote": "TOTAL\n$600\n$0.49",
+            "verified": true
+          },
+          {
+            "zone_id": "article:engineering-lessons",
+            "part": "list_item 1",
+            "quote": "at $600/month",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified AI implementation",
+        "category": "other",
+        "severity": "low",
+        "rule": "Fact Sheet: Services; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed product architecture, technologies, model selection, and comparative model test results are not documented in the company sources.",
+        "fix": "Remove these implementation claims unless GoGloby can verify and approve them for publication.",
+        "subject": "Recruiting agent implementation",
+        "page_value": "GPT-4-turbo, Slack, Node.js, PostgreSQL, Redis, and pgvector",
+        "source_value": "not in Fact Sheet",
+        "count": 5,
+        "locations": [
+          {
+            "zone_id": "article:summary-metrics",
+            "part": "paragraph 3",
+            "quote": "Powered by GPT-4-turbo, a vector-based candidate search system",
+            "verified": true
+          },
+          {
+            "zone_id": "article:technology-stack-decisions",
+            "part": "paragraph 1",
+            "quote": "A Slack-native, real-time AI agent built around GPT-4-turbo",
+            "verified": true
+          },
+          {
+            "zone_id": "article:technology-stack-decisions",
+            "part": null,
+            "quote": "Llama 2 (7B)\n8–12 sec\n7.2/10\n$1,200",
+            "verified": true
+          },
+          {
+            "zone_id": "article:system-architecture",
+            "part": "table_cell 7",
+            "quote": "Node.js + Slack API",
+            "verified": true
+          },
+          {
+            "zone_id": "article:system-architecture",
+            "part": "table_cell 15",
+            "quote": "PostgreSQL + Redis",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "API uptime claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claim that 99.9% API uptime enabled production SLA commitments is not supported by the company sources.",
+        "fix": "Remove the uptime and SLA claim unless GoGloby can verify and approve it.",
+        "subject": "API uptime",
+        "page_value": "99.9%",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:technology-stack-decisions",
+            "part": "list_item 1",
+            "quote": "99.9% API uptime enabled production SLA commitments.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Client testimonials unavailable",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: What clients say",
+        "rule_verified": true,
+        "issue": "The page presents client testimonials, while the Fact Sheet says client quotes are not available yet.",
+        "fix": "Remove the testimonials unless they can be verified and approved for publication.",
+        "subject": "Client testimonials",
+        "page_value": "Two client quotes",
+        "source_value": "Client quotes: not available yet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:what-clients-say",
+            "part": "paragraph 2",
+            "quote": "Our time-to-hire dropped by more than half and my recruiters stopped drowning in coordination work.",
+            "verified": true
+          },
+          {
+            "zone_id": "article:what-clients-say",
+            "part": "paragraph 4",
+            "quote": "Within two weeks it was doing the heavy lifting — surfacing ranked candidates",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "CTA does not match service",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §§2, 7",
+        "rule_verified": true,
+        "issue": "The page's CTA invites prospects to discuss workflow redesign rather than using the approved recruiting or staffing CTA wording.",
+        "fix": "Replace the CTA with the approved wording for the relevant GoGloby service.",
+        "subject": "Banner CTA",
+        "page_value": "Talk To GoGloby",
+        "source_value": "Start a search; Get vetted profiles",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "Redesign your hiring workflow for speed, consistency, and real throughput.",
+            "verified": true
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 2",
+            "quote": "Talk To GoGloby",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      }
+    ],
+    "problems": [
+      {
+        "title": "Standalone AI SaaS offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity; Glossary §§1–2, 7",
+        "rule_verified": true,
+        "issue": "The page presents GoGloby as building and selling an AI recruiting product, rather than recruiting and staffing engineers.",
+        "fix": "Decide whether to remove this case study or revise it so it does not present software development or a standalone SaaS as a GoGloby offer.",
+        "subject": "GoGloby's offer",
+        "page_value": "AI recruiting agent and standalone SaaS",
+        "source_value": "Staffing and recruiting agency; the client runs the work",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 1",
+            "quote": "GoGloby built a Slack-based AI recruiting agent for internal use — then productized it",
+            "verified": true,
+            "fragment": "GoGloby built a Slack-based AI recruiting"
+          },
+          {
+            "zone_id": "article:summary-metrics",
+            "part": null,
+            "quote": "Service\nAgent Building",
+            "verified": true,
+            "fragment": "Agent Building"
+          },
+          {
+            "zone_id": "article:the-situation",
+            "part": "paragraph 4",
+            "quote": "GoGloby’s Applied AI Engineering team replaced that workflow fragmentation",
+            "verified": true,
+            "fragment": "GoGloby’s Applied AI Engineering team replaced"
+          },
+          {
+            "zone_id": "article:engineering-lessons",
+            "part": "list_item 4",
+            "quote": "The system evolved from internal use to a SaaS offering",
+            "verified": true,
+            "fragment": "The system evolved from internal use"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Scheduling reduction claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed 75% reduction in scheduling effort is not supported by the company sources.",
+        "fix": "Remove the percentage unless GoGloby can verify it and approve its use.",
+        "subject": "Scheduling reduction",
+        "page_value": "75%",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "title",
+            "part": "field 1",
+            "quote": "GoGloby Reduced Scheduling by 75%",
+            "verified": true
+          },
+          {
+            "zone_id": "article:summary-metrics",
+            "part": null,
+            "quote": "Scheduling coordination effort\n↓ 75%",
+            "verified": true,
+            "fragment": "Scheduling coordination effort"
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "Scheduling messages\n6–8\n1–2\n↓ 75%",
+            "verified": true,
+            "fragment": "↓ 75%"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Recruiter productivity claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claim that the agent doubled recruiter productivity is not supported by the company sources.",
+        "fix": "Remove the productivity claim unless GoGloby can verify and approve it.",
+        "subject": "Recruiter productivity",
+        "page_value": "2× baseline",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "doubled recruiter productivity",
+            "verified": true
+          },
+          {
+            "zone_id": "article:summary-metrics",
+            "part": null,
+            "quote": "Recruiter productivity\n↑ 100% (2× baseline)",
+            "verified": true,
+            "fragment": "Recruiter productivity"
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "Recruiter productivity\nBaseline\n2×\n↑ 100%",
+            "verified": true,
+            "fragment": "Recruiter productivity"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "User count is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claim that the product has 1,200+ users is not supported by the company sources.",
+        "fix": "Remove the user count unless GoGloby can verify and approve it.",
+        "subject": "Product users",
+        "page_value": "1,200+ users",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "scaled to 1,200+ users",
+            "verified": true
+          },
+          {
+            "zone_id": "article:summary-metrics",
+            "part": null,
+            "quote": "Active users\n1,200+ across 45 organizations",
+            "verified": true,
+            "fragment": "Active users"
+          },
+          {
+            "zone_id": "article:engineering-lessons",
+            "part": "list_item 1",
+            "quote": "scaling to 1,200 users at $600/month",
+            "verified": true,
+            "fragment": "scaling to 1,200 users at"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Organization count is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claim that the product serves 45 organizations is not supported by the company sources.",
+        "fix": "Remove the organization count unless GoGloby can verify and approve it.",
+        "subject": "Product organizations",
+        "page_value": "45 organizations",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "across 45 organizations",
+            "verified": true
+          },
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 1",
+            "quote": "onboarded 45 organizations",
+            "verified": true,
+            "fragment": "onboarded 45"
+          },
+          {
+            "zone_id": "article:engineering-lessons",
+            "part": "list_item 4",
+            "quote": "a SaaS offering with 45 organizations",
+            "verified": true,
+            "fragment": "a SaaS offering with 45"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Retention rate is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed 94% monthly user retention is not supported by the company sources.",
+        "fix": "Remove the retention figure unless GoGloby can verify and approve it.",
+        "subject": "Monthly user retention",
+        "page_value": "94%",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 1",
+            "quote": "94% monthly user retention",
+            "verified": true,
+            "fragment": "94% monthly user"
+          },
+          {
+            "zone_id": "article:summary-metrics",
+            "part": null,
+            "quote": "Monthly user retention\n94%",
+            "verified": true,
+            "fragment": "Monthly user retention"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Daily conversation count",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed volume of 3,500+ daily conversations is not supported by the company sources.",
+        "fix": "Remove the volume claim unless GoGloby can verify and approve it.",
+        "subject": "Daily conversations",
+        "page_value": "3,500+",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:summary-metrics",
+            "part": null,
+            "quote": "Daily conversations\n3,500+",
+            "verified": true,
+            "fragment": "Daily conversations"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "User satisfaction score",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed average user satisfaction score is not supported by the company sources.",
+        "fix": "Remove the score unless GoGloby can verify and approve it.",
+        "subject": "User satisfaction",
+        "page_value": "9.1 / 10",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:summary-metrics",
+            "part": null,
+            "quote": "Average user satisfaction\n9.1 / 10",
+            "verified": true,
+            "fragment": "Average user satisfaction"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Error rate is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed 0.3% error rate and its comparison with a 1% target are not supported by the company sources.",
+        "fix": "Remove the rate and target unless GoGloby can verify and approve them.",
+        "subject": "Product error rate",
+        "page_value": "0.3% (vs. 1% target)",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:summary-metrics",
+            "part": null,
+            "quote": "Error rate\n0.3% (vs. 1% target)",
+            "verified": true,
+            "fragment": "Error rate"
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "Error rate\n—\n0.3%\nvs 1% target",
+            "verified": true,
+            "fragment": "Error rate"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Response time claims",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The response-time results and targets are not supported by the company sources.",
+        "fix": "Remove the response-time figures and targets unless GoGloby can verify and approve them.",
+        "subject": "Product response time",
+        "page_value": "1.8 seconds; 3-second target",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:summary-metrics",
+            "part": null,
+            "quote": "API response time\n1.8 seconds (vs. 3s target)",
+            "verified": true,
+            "fragment": "API response time"
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "Response time\n—\n1.8s\nvs 3s target",
+            "verified": true,
+            "fragment": "API-,response time"
+          },
+          {
+            "zone_id": "article:the-engineering-challenge",
+            "part": "list_item 1",
+            "quote": "Sub-3-second response time",
+            "verified": true,
+            "fragment": "Sub-3-second response time"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Candidate review reduction",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed reduction in candidate review time is not supported by the company sources.",
+        "fix": "Remove the review-time comparison unless GoGloby can verify and approve it.",
+        "subject": "Candidate review time",
+        "page_value": "15 min to 3.5 min, down 77%",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "Candidate review time\n15 min\n3.5 min\n↓ 77%",
+            "verified": true,
+            "fragment": "Candidate review time"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Weekly workload claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claim that a team could spend 30–40 hours per week on operational tasks is not supported by the company sources.",
+        "fix": "Remove the weekly workload figure unless GoGloby can verify and approve it.",
+        "subject": "Recruiting operational workload",
+        "page_value": "30–40 hours per week",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:the-situation",
+            "part": "paragraph 2",
+            "quote": "A team handling multiple open roles could spend 30–40 hours per week",
+            "verified": true,
+            "fragment": "30–40 hours per week"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Infrastructure cost claims",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The monthly infrastructure cost, per-user cost, and component cost breakdown are not supported by the company sources.",
+        "fix": "Remove these cost figures unless GoGloby can verify and approve them.",
+        "subject": "Product infrastructure costs",
+        "page_value": "$600 per month; $0.49 per user",
+        "source_value": "not in Fact Sheet",
+        "count": 5,
+        "locations": [
+          {
+            "zone_id": "article:summary-metrics",
+            "part": null,
+            "quote": "Infrastructure cost\n$600 / month",
+            "verified": true,
+            "fragment": "Infrastructure cost"
+          },
+          {
+            "zone_id": "article:summary-metrics",
+            "part": null,
+            "quote": "Infrastructure cost per user\n$0.49",
+            "verified": true,
+            "fragment": "Infrastructure cost per user"
+          },
+          {
+            "zone_id": "article:system-architecture",
+            "part": null,
+            "quote": "GPT-4-turbo API\n$280\n$0.23",
+            "verified": true,
+            "fragment": "GPT-4-turbo API"
+          },
+          {
+            "zone_id": "article:system-architecture",
+            "part": null,
+            "quote": "TOTAL\n$600\n$0.49",
+            "verified": true,
+            "fragment": null
+          },
+          {
+            "zone_id": "article:engineering-lessons",
+            "part": "list_item 1",
+            "quote": "at $600/month",
+            "verified": true,
+            "fragment": null
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified AI implementation",
+        "category": "other",
+        "severity": "low",
+        "rule": "Fact Sheet: Services; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed product architecture, technologies, model selection, and comparative model test results are not documented in the company sources.",
+        "fix": "Remove these implementation claims unless GoGloby can verify and approve them for publication.",
+        "subject": "Recruiting agent implementation",
+        "page_value": "GPT-4-turbo, Slack, Node.js, PostgreSQL, Redis, and pgvector",
+        "source_value": "not in Fact Sheet",
+        "count": 5,
+        "locations": [
+          {
+            "zone_id": "article:summary-metrics",
+            "part": "paragraph 3",
+            "quote": "Powered by GPT-4-turbo, a vector-based candidate search system",
+            "verified": true,
+            "fragment": "Powered by GPT-4-turbo, a vector-based candidate"
+          },
+          {
+            "zone_id": "article:technology-stack-decisions",
+            "part": "paragraph 1",
+            "quote": "A Slack-native, real-time AI agent built around GPT-4-turbo",
+            "verified": true,
+            "fragment": "A Slack-native, real-time AI agent built"
+          },
+          {
+            "zone_id": "article:technology-stack-decisions",
+            "part": null,
+            "quote": "Llama 2 (7B)\n8–12 sec\n7.2/10\n$1,200",
+            "verified": true,
+            "fragment": "Llama 2 (7B)"
+          },
+          {
+            "zone_id": "article:system-architecture",
+            "part": "table_cell 7",
+            "quote": "Node.js + Slack API",
+            "verified": true,
+            "fragment": "Node.js + Slack API"
+          },
+          {
+            "zone_id": "article:system-architecture",
+            "part": "table_cell 15",
+            "quote": "PostgreSQL + Redis",
+            "verified": true,
+            "fragment": "PostgreSQL + Redis"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "API uptime claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claim that 99.9% API uptime enabled production SLA commitments is not supported by the company sources.",
+        "fix": "Remove the uptime and SLA claim unless GoGloby can verify and approve it.",
+        "subject": "API uptime",
+        "page_value": "99.9%",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:technology-stack-decisions",
+            "part": "list_item 1",
+            "quote": "99.9% API uptime enabled production SLA commitments.",
+            "verified": true,
+            "fragment": "99.9% API uptime enabled production SLA"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Client testimonials unavailable",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: What clients say",
+        "rule_verified": true,
+        "issue": "The page presents client testimonials, while the Fact Sheet says client quotes are not available yet.",
+        "fix": "Remove the testimonials unless they can be verified and approved for publication.",
+        "subject": "Client testimonials",
+        "page_value": "Two client quotes",
+        "source_value": "Client quotes: not available yet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:what-clients-say",
+            "part": "paragraph 2",
+            "quote": "Our time-to-hire dropped by more than half and my recruiters stopped drowning in coordination work.",
+            "verified": true,
+            "fragment": "Our time-to-hire dropped by more than"
+          },
+          {
+            "zone_id": "article:what-clients-say",
+            "part": "paragraph 4",
+            "quote": "Within two weeks it was doing the heavy lifting — surfacing ranked candidates",
+            "verified": true,
+            "fragment": "Within two weeks it was doing"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "CTA does not match service",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §§2, 7",
+        "rule_verified": true,
+        "issue": "The page's CTA invites prospects to discuss workflow redesign rather than using the approved recruiting or staffing CTA wording.",
+        "fix": "Replace the CTA with the approved wording for the relevant GoGloby service.",
+        "subject": "Banner CTA",
+        "page_value": "Talk To GoGloby",
+        "source_value": "Start a search; Get vetted profiles",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "Redesign your hiring workflow for speed, consistency, and real throughput.",
+            "verified": true,
+            "fragment": "Redesign your hiring workflow for speed,"
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 2",
+            "quote": "Talk To GoGloby",
+            "verified": true,
+            "fragment": "Talk To GoGloby"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      }
+    ],
+    "usage": {
+      "input": 1974,
+      "cached_input": 10066,
+      "output": 6126
+    },
+    "error": null
+  },
+  "geo": {
+    "hash": "0bfb84ef3bd1cbb153621a1e5e54f0f75ada74f9d49b9ddc796312a5418def74",
+    "cached": false,
+    "code": [
+      {
+        "id": "trap_terms",
+        "status": "pass",
+        "value": "none in title, H1, meta, og",
+        "places": []
+      },
+      {
+        "id": "em_dash",
+        "status": "fail",
+        "value": "12 found",
+        "places": [
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 1",
+            "value": "— | …uiting agent for internal use — then productized it, onboarde…"
+          },
+          {
+            "zone_id": "article:summary-metrics",
+            "part": "paragraph 2",
+            "value": "— | …g team communication channels — handling candidate review, sh…"
+          },
+          {
+            "zone_id": "article:the-situation",
+            "part": "paragraph 2",
+            "value": "— | …ontribute to hiring decisions — only preparing information fo…"
+          },
+          {
+            "zone_id": "article:technology-stack-decisions",
+            "part": "paragraph 1",
+            "value": "— | … modular backend architecture — optimized for latency, reliab…"
+          },
+          {
+            "zone_id": "article:results",
+            "part": "table_cell 18",
+            "value": "— | —"
+          },
+          {
+            "zone_id": "article:results",
+            "part": "table_cell 20",
+            "value": "— | —"
+          },
+          {
+            "zone_id": "article:results",
+            "part": "table_cell 22",
+            "value": "— | —"
+          },
+          {
+            "zone_id": "article:results",
+            "part": "table_cell 26",
+            "value": "— | —"
+          },
+          {
+            "zone_id": "article:what-clients-say",
+            "part": "paragraph 3",
+            "value": "— | — Co-Founder, Growth-Stage SaaS…"
+          },
+          {
+            "zone_id": "article:what-clients-say",
+            "part": "paragraph 4",
+            "value": "— | …t was doing the heavy lifting — surfacing ranked candidates, …"
+          },
+          {
+            "zone_id": "article:what-clients-say",
+            "part": "paragraph 5",
+            "value": "— | — Founder & CEO, B2B SaaS Compa…"
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "value": "— | …ms don’t hit a talent ceiling — they hit an operational one. …"
+          }
+        ]
+      },
+      {
+        "id": "ampersand",
+        "status": "fail",
+        "value": "1 found",
+        "places": [
+          {
+            "zone_id": "article:what-clients-say",
+            "part": "paragraph 5",
+            "value": "& | — Founder & CEO, B2B SaaS Company"
+          }
+        ]
+      },
+      {
+        "id": "uk_spelling",
+        "status": "pass",
+        "value": "none",
+        "places": []
+      }
+    ],
+    "llm": [
+      {
+        "id": "answer_first",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "GoGloby built a Slack-based AI recruiting agent for internal use — then productized it, onboarded 45 organizations, and turned it into a standalone SaaS revenue stream with 94% monthly user retention.",
+        "note": "The intro says what GoGloby built and reports outcomes, but does not explain how the agent replaced fragmented workflows as the H1 asks.",
+        "evidence_verified": true,
+        "fragment": "GoGloby built a Slack-based AI recruiting"
+      },
+      {
+        "id": "recruiting_firm_early",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "This is a case study, so the recruiting-firm requirement does not apply.",
+        "evidence_verified": null
+      },
+      {
+        "id": "buyer_ready",
+        "answer": "no",
+        "value": "not_targeted",
+        "zone_id": "page",
+        "evidence": "GoGloby built a Slack-native AI recruiting agent that operates directly inside existing team communication channels",
+        "note": "The page addresses teams interested in an AI recruiting agent, not companies ready to hire Data and AI engineers.",
+        "evidence_verified": true,
+        "fragment": "GoGloby built a,-Slack-based AI recruiting"
+      },
+      {
+        "id": "target_keyword",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "No Glossary §6 target keyword matches this case study.",
+        "evidence_verified": null
+      },
+      {
+        "id": "uses_data",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:summary-metrics",
+        "evidence": "Active users\n1,200+ across 45 organizations",
+        "note": "The article includes quotable numbers but provides no nearby source or date for them.",
+        "evidence_verified": true,
+        "fragment": "Active users"
+      },
+      {
+        "id": "proof_background",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "This is a case study, so founder background as proof does not apply.",
+        "evidence_verified": null
+      },
+      {
+        "id": "sell_against_open_role",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "This is a case study, so comparison with the cost and wait of an open full-time US role does not apply.",
+        "evidence_verified": null
+      }
+    ],
+    "placement": null,
+    "usage": {
+      "input": 1802,
+      "cached_input": 8847,
+      "output": 688
+    },
+    "error": null
+  },
+  "seo": {
+    "checks": [
+      {
+        "id": "http_status",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "200",
+        "severity": "high"
+      },
+      {
+        "id": "title_length",
+        "status": "fail",
+        "severity": "medium",
+        "zone_id": "title",
+        "value": "63 characters (max 60)"
+      },
+      {
+        "id": "meta_present",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "137 characters",
+        "severity": "high"
+      },
+      {
+        "id": "meta_length",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "137 characters (120-158)",
+        "severity": "low"
+      },
+      {
+        "id": "h1_count",
+        "status": "pass",
+        "zone_id": "h1",
+        "value": "1",
+        "severity": "high"
+      },
+      {
+        "id": "canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "https://gogloby.com/case-study/ai-recruiting-agent-slack-case-study-1/",
+        "severity": "high"
+      },
+      {
+        "id": "indexable",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "severity": "high"
+      },
+      {
+        "id": "schema_required",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "present",
+        "severity": "medium"
+      },
+      {
+        "id": "schema_recommended",
+        "status": "fail",
+        "zone_id": "json_ld",
+        "value": "missing: BreadcrumbList",
+        "severity": "medium"
+      },
+      {
+        "id": "dates",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "published: 2026-05-06T21:11:58+03:00; modified: 2026-06-08T19:39:12+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "date_mismatch",
+        "status": "pass",
+        "zone_id": "date",
+        "value": "visible \"Updated on June 8, 2026\" vs dateModified 2026-06-08T19:39:12+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "broken_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 checked",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "redirecting_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "none",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "link_to_services",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "no link to /services/*",
+        "severity": "medium"
+      },
+      {
+        "id": "alt_missing",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without alt",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_empty",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 with empty alt",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "image_dimensions",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without width/height",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "heading_order",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "og_present",
+        "status": "pass",
+        "zone_id": "og_title",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "og_url_canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "og:url https://gogloby.com/case-study/ai-recruiting-agent-slack-case-study-1/ vs canonical https://gogloby.com/case-study/ai-recruiting-agent-slack-case-study-1/",
+        "severity": "low"
+      },
+      {
+        "id": "twitter_card",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "summary_large_image",
+        "severity": "low"
+      },
+      {
+        "id": "html_lang",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "en-US",
+        "severity": "low"
+      },
+      {
+        "id": "viewport",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "jsonld_valid",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "3 block(s)",
+        "severity": "high"
+      },
+      {
+        "id": "article_fields",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "anchors_resolve",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "9 checked",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "faq_schema_matches_dom",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "accordion block: false, FAQPage schema: false",
+        "severity": "low"
+      }
+    ]
+  }
+}

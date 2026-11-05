@@ -1,0 +1,15 @@
+{
+  "run_id": "2026-11-03T12-58-10-186Z",
+  "started_at": "2026-11-03T12:58:10.186Z",
+  "ended_at": "2026-11-03T12:59:20.453Z",
+  "pages_checked": 1,
+  "pages_skipped": 0,
+  "llm_calls": 2,
+  "llm_errors": 0,
+  "tokens": {
+    "input": 17868,
+    "cached_input": 18913,
+    "output": 9408
+  },
+  "cost_usd": null
+}

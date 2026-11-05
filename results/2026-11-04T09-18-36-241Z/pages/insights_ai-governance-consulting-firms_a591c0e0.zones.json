@@ -1,0 +1,3259 @@
+{
+ "template": "article",
+ "zones": [
+  {
+   "id": "title",
+   "kind": "title",
+   "label": "Title",
+   "scope": "page",
+   "skipped": false,
+   "text": "10 AI Governance Consulting Firms to Evaluate in 2026 | GoGloby",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "10 AI Governance Consulting Firms to Evaluate in 2026 | GoGloby"
+    }
+   ]
+  },
+  {
+   "id": "meta_description",
+   "kind": "meta_description",
+   "label": "Meta description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Review 10 AI governance consulting firms in 2026 by services, frameworks, pricing, and best use cases for different governance needs.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Review 10 AI governance consulting firms in 2026 by services, frameworks, pricing, and best use cases for different governance needs."
+    }
+   ]
+  },
+  {
+   "id": "og_title",
+   "kind": "og_title",
+   "label": "og:title",
+   "scope": "page",
+   "skipped": false,
+   "text": "10 AI Governance Consulting Firms to Evaluate in 2026 | GoGloby",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "10 AI Governance Consulting Firms to Evaluate in 2026 | GoGloby"
+    }
+   ]
+  },
+  {
+   "id": "og_description",
+   "kind": "og_description",
+   "label": "og:description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Review 10 AI governance consulting firms in 2026 by services, frameworks, pricing, and best use cases for different governance needs.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Review 10 AI governance consulting firms in 2026 by services, frameworks, pricing, and best use cases for different governance needs."
+    }
+   ]
+  },
+  {
+   "id": "json_ld",
+   "kind": "json_ld",
+   "label": "Structured data (JSON-LD)",
+   "scope": "page",
+   "skipped": false,
+   "text": "10 AI Governance Consulting Firms to Evaluate in 2026\n10 AI Governance Consulting Firms to Evaluate in 2026\nReview 10 AI governance consulting firms in 2026 by services, frameworks, pricing, and best use case\nSergey Matikaynen\nGoGloby\nWhat does an AI governance consulting firm do?\nAn AI governance consulting firm helps organizations establish how AI systems are identified, assessed, controlled, and monitored. The work connects governance requirements to the processes teams use to approve, deploy, and oversee AI systems.\nDo companies need AI governance consulting?\nCompanies need AI governance consulting when internal teams lack the experience or capacity to build governance at the required scope. Organizations with established risk, legal, and engineering capabilities can handle lower-risk programs internally.\nIs AI governance the same as compliance?\nAI governance and compliance address different needs. Compliance focuses on meeting specific regulatory requirements, while governance provides the processes and accountability used to meet those requirements. An organization can satisfy a regulatory requirement without having a mature governance program.\nIs AI governance the same as data governance?\nAI governance and data governance cover different areas of responsibility. Data governance focuses on how data is managed, while AI governance addresses how AI systems are developed, deployed, and controlled. The two need to work together when data decisions affect AI systems.\nCan AI governance speed up AI adoption?\nA well-designed governance program can speed up adoption by giving low-risk AI systems a clear path through review and approval. Higher-risk systems still require deeper assessment, but predefined processes reduce unnecessary review for simpler use cases.\nDo you need an AI governance platform?\nAn AI governance platform becomes useful when governance needs to operate across many systems or teams. Processes and ownership should be defined first so the platform supports established governance rather than becoming a substitute for it.",
+   "parts": [
+    {
+     "type": "field",
+     "text": "10 AI Governance Consulting Firms to Evaluate in 2026",
+     "area": "Article.name",
+     "index": 1
+    },
+    {
+     "type": "field",
+     "text": "10 AI Governance Consulting Firms to Evaluate in 2026",
+     "area": "Article.headline",
+     "index": 2
+    },
+    {
+     "type": "field",
+     "text": "Review 10 AI governance consulting firms in 2026 by services, frameworks, pricing, and best use case",
+     "area": "Article.description",
+     "index": 3
+    },
+    {
+     "type": "field",
+     "text": "Sergey Matikaynen",
+     "area": "Person.name",
+     "index": 4
+    },
+    {
+     "type": "field",
+     "text": "GoGloby",
+     "area": "Organization.name",
+     "index": 5
+    },
+    {
+     "type": "field",
+     "text": "What does an AI governance consulting firm do?",
+     "area": "Question.name",
+     "index": 6
+    },
+    {
+     "type": "field",
+     "text": "An AI governance consulting firm helps organizations establish how AI systems are identified, assessed, controlled, and monitored. The work connects governance requirements to the processes teams use to approve, deploy, and oversee AI systems.",
+     "area": "Answer.text",
+     "index": 7
+    },
+    {
+     "type": "field",
+     "text": "Do companies need AI governance consulting?",
+     "area": "Question.name",
+     "index": 8
+    },
+    {
+     "type": "field",
+     "text": "Companies need AI governance consulting when internal teams lack the experience or capacity to build governance at the required scope. Organizations with established risk, legal, and engineering capabilities can handle lower-risk programs internally.",
+     "area": "Answer.text",
+     "index": 9
+    },
+    {
+     "type": "field",
+     "text": "Is AI governance the same as compliance?",
+     "area": "Question.name",
+     "index": 10
+    },
+    {
+     "type": "field",
+     "text": "AI governance and compliance address different needs. Compliance focuses on meeting specific regulatory requirements, while governance provides the processes and accountability used to meet those requirements. An organization can satisfy a regulatory requirement without having a mature governance program.",
+     "area": "Answer.text",
+     "index": 11
+    },
+    {
+     "type": "field",
+     "text": "Is AI governance the same as data governance?",
+     "area": "Question.name",
+     "index": 12
+    },
+    {
+     "type": "field",
+     "text": "AI governance and data governance cover different areas of responsibility. Data governance focuses on how data is managed, while AI governance addresses how AI systems are developed, deployed, and controlled. The two need to work together when data decisions affect AI systems.",
+     "area": "Answer.text",
+     "index": 13
+    },
+    {
+     "type": "field",
+     "text": "Can AI governance speed up AI adoption?",
+     "area": "Question.name",
+     "index": 14
+    },
+    {
+     "type": "field",
+     "text": "A well-designed governance program can speed up adoption by giving low-risk AI systems a clear path through review and approval. Higher-risk systems still require deeper assessment, but predefined processes reduce unnecessary review for simpler use cases.",
+     "area": "Answer.text",
+     "index": 15
+    },
+    {
+     "type": "field",
+     "text": "Do you need an AI governance platform?",
+     "area": "Question.name",
+     "index": 16
+    },
+    {
+     "type": "field",
+     "text": "An AI governance platform becomes useful when governance needs to operate across many systems or teams. Processes and ownership should be defined first so the platform supports established governance rather than becoming a substitute for it.",
+     "area": "Answer.text",
+     "index": 17
+    }
+   ]
+  },
+  {
+   "id": "h1",
+   "kind": "h1",
+   "label": "H1",
+   "scope": "page",
+   "skipped": false,
+   "text": "10 AI Governance Consulting Firms to Evaluate in 2026",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "10 AI Governance Consulting Firms to Evaluate in 2026"
+    }
+   ]
+  },
+  {
+   "id": "date",
+   "kind": "date",
+   "label": "Date",
+   "scope": "page",
+   "skipped": false,
+   "text": "Updated on September 25, 2026",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Updated on September 25, 2026"
+    }
+   ]
+  },
+  {
+   "id": "author",
+   "kind": "author",
+   "label": "Author",
+   "scope": "page",
+   "skipped": false,
+   "text": "Author avatar\nSergey Matikaynen / CTO\nArticle author\nSergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.\nView profile",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Author avatar",
+     "src": "https://gogloby.com/wp-content/uploads/2024/02/1706550966241.jpeg",
+     "file": "1706550966241.jpeg",
+     "alt": "Author avatar",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen / CTO",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Article author",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "View profile",
+     "links": [
+      {
+       "href": "https://gogloby.com/author/sergey/",
+       "text": "View profile"
+      }
+     ],
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "toc",
+   "kind": "toc",
+   "label": "Table of contents",
+   "scope": "page",
+   "skipped": false,
+   "text": "Table of Contents\nWhat Is AI Governance Consulting?\nWhat AI Governance Consulting Services Do Providers Offer?\nWhich AI Governance Consulting Firms Should You Evaluate in 2026?\nHow Do AI Governance Firms Compare by Use Case?\nWhich AI Governance Frameworks Matter?\nHow Do AI Governance Platforms Support Consulting?\nDo You Need to Put AI Governance Into Practice?\nHow Does AI Governance Consulting Pricing Vary?\nHow Do You Choose an AI Governance Consulting Firm?\nWhat Are the Most Common AI Governance Mistakes?\nConclusion\nReady to Implement Governance Controls in Your Pipelines?\nFAQs",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Table of Contents",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "What Is AI Governance Consulting?",
+     "links": [
+      {
+       "href": "#what-is-ai-governance-consulting",
+       "text": "What Is AI Governance Consulting?"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "What AI Governance Consulting Services Do Providers Offer?",
+     "links": [
+      {
+       "href": "#what-ai-governance-consulting-services-do-providers-offer",
+       "text": "What AI Governance Consulting Services Do Providers Offer?"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Which AI Governance Consulting Firms Should You Evaluate in 2026?",
+     "links": [
+      {
+       "href": "#which-ai-governance-consulting-firms-should-you-evaluate-in-2026",
+       "text": "Which AI Governance Consulting Firms Should You Evaluate in 2026?"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "How Do AI Governance Firms Compare by Use Case?",
+     "links": [
+      {
+       "href": "#how-do-ai-governance-firms-compare-by-use-case",
+       "text": "How Do AI Governance Firms Compare by Use Case?"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Which AI Governance Frameworks Matter?",
+     "links": [
+      {
+       "href": "#which-ai-governance-frameworks-matter",
+       "text": "Which AI Governance Frameworks Matter?"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "How Do AI Governance Platforms Support Consulting?",
+     "links": [
+      {
+       "href": "#how-do-ai-governance-platforms-support-consulting",
+       "text": "How Do AI Governance Platforms Support Consulting?"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Do You Need to Put AI Governance Into Practice?",
+     "links": [
+      {
+       "href": "#do-you-need-to-put-ai-governance-into-practice",
+       "text": "Do You Need to Put AI Governance Into Practice?"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "How Does AI Governance Consulting Pricing Vary?",
+     "links": [
+      {
+       "href": "#how-does-ai-governance-consulting-pricing-vary",
+       "text": "How Does AI Governance Consulting Pricing Vary?"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "How Do You Choose an AI Governance Consulting Firm?",
+     "links": [
+      {
+       "href": "#how-do-you-choose-an-ai-governance-consulting-firm",
+       "text": "How Do You Choose an AI Governance Consulting Firm?"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "What Are the Most Common AI Governance Mistakes?",
+     "links": [
+      {
+       "href": "#what-are-the-most-common-ai-governance-mistakes",
+       "text": "What Are the Most Common AI Governance Mistakes?"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "Conclusion",
+     "links": [
+      {
+       "href": "#conclusion",
+       "text": "Conclusion"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Ready to Implement Governance Controls in Your Pipelines?",
+     "links": [
+      {
+       "href": "#ready-to-implement-governance-controls-in-your-pipelines",
+       "text": "Ready to Implement Governance Controls in Your Pipelines?"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "FAQs",
+     "links": [
+      {
+       "href": "#faqs",
+       "text": "FAQs"
+      }
+     ],
+     "index": 13
+    }
+   ]
+  },
+  {
+   "id": "article:intro",
+   "kind": "article_section",
+   "label": "Intro",
+   "scope": "page",
+   "skipped": false,
+   "text": "AI governance consulting firms help organizations make sure their AI policies are applied to the systems and workflows using AI in production. Policies can define how AI should be developed, deployed, and monitored, but those rules still need to reach the teams and systems putting them into practice. Grant Thornton’s 2026 survey found that 46% of business executives cite governance and compliance failures as the leading cause of AI underperformance. This puts governance directly into the day-to-day work of managing AI, where teams need to know how systems are being used and who is responsible for them.\nThat becomes more difficult as AI spreads across an organization. One team might develop an internal model, while another adds an AI feature from a software vendor to the same business process. Different teams can then control different aspects of how AI works, making it harder to apply a single set of rules across the entire process. Governance has to account for those connections and clearly define where responsibility sits.\nThis guide compares 10 AI governance consulting firms and what each provider offers. Each profile looks at the firm’s services, limitations, and the types of organizations it serves. It also covers AI governance services, relevant frameworks, and engagement costs to help you evaluate potential providers.\nKey Takeaways:\nGoGloby focuses on putting governance requirements into engineering workflows and production systems. That makes the firm relevant when governance needs to move from policy into technical implementation.\nDeloitte, PwC, and KPMG are relevant when governance must hold up under scrutiny from regulators, auditors, or boards. Before engaging, confirm whether you need implementation or independent assurance, since the same firm can face restrictions doing both.\nIBM, Accenture, and EY support governance programs spanning multiple AI vendors, platforms, business units, or geographies. Confirm whether the governance problem actually operates at that scale before engaging.\nFTI Consulting fits governance programs where legal or compliance teams are driving the conversation. That starting point creates a different problem definition than when engineering or risk teams are leading it.\nRSM and Crowe fit mid-market regulated organizations with focused governance needs. Both firms build governance programs around the organization’s risk profile and operational capacity.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "AI governance consulting firms help organizations make sure their AI policies are applied to the systems and workflows using AI in production. Policies can define how AI should be developed, deployed, and monitored, but those rules still need to reach the teams and systems putting them into practice. Grant Thornton’s 2026 survey found that 46% of business executives cite governance and compliance failures as the leading cause of AI underperformance. This puts governance directly into the day-to-day work of managing AI, where teams need to know how systems are being used and who is responsible for them.",
+     "links": [
+      {
+       "href": "https://www.grantthornton.com/content/dam/grantthornton/website/assets/content-page-files/advisory/ai-lp/infographic/ai-impact-survey-2026/pdf/grant-thornton-2026-ai-impact-survey.pdf",
+       "text": "Grant Thornton’s 2026 survey"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "That becomes more difficult as AI spreads across an organization. One team might develop an internal model, while another adds an AI feature from a software vendor to the same business process. Different teams can then control different aspects of how AI works, making it harder to apply a single set of rules across the entire process. Governance has to account for those connections and clearly define where responsibility sits.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "This guide compares 10 AI governance consulting firms and what each provider offers. Each profile looks at the firm’s services, limitations, and the types of organizations it serves. It also covers AI governance services, relevant frameworks, and engagement costs to help you evaluate potential providers.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Key Takeaways:",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "GoGloby focuses on putting governance requirements into engineering workflows and production systems. That makes the firm relevant when governance needs to move from policy into technical implementation.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Deloitte, PwC, and KPMG are relevant when governance must hold up under scrutiny from regulators, auditors, or boards. Before engaging, confirm whether you need implementation or independent assurance, since the same firm can face restrictions doing both.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "IBM, Accenture, and EY support governance programs spanning multiple AI vendors, platforms, business units, or geographies. Confirm whether the governance problem actually operates at that scale before engaging.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "FTI Consulting fits governance programs where legal or compliance teams are driving the conversation. That starting point creates a different problem definition than when engineering or risk teams are leading it.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "RSM and Crowe fit mid-market regulated organizations with focused governance needs. Both firms build governance programs around the organization’s risk profile and operational capacity.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:what-is-ai-governance-consulting",
+   "kind": "article_section",
+   "label": "What Is AI Governance Consulting?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Is AI Governance Consulting?\nAI governance consulting is a professional service that helps organizations design and implement the structures they use to govern AI. It connects policies and risk requirements with the decisions teams make as AI systems are developed, deployed, and changed. OneTrust’s 2026 survey reported that 47% of senior business decision-makers still describe governance as reactive, fragmented, slow, or manual. Governance consulting helps organizations turn those policies and principles into a working structure.\nAI governance also has a different role from the other functions involved in managing technology. Compliance focuses on meeting regulatory requirements, while ethics defines the principles that guide responsible use. Cybersecurity protects systems and data from threats, and data governance controls how data is managed. AI governance brings those responsibilities into decisions about how a specific AI system is used and managed.\nStrategy\nGovernance strategy sets the direction for how an organization wants to use AI and how much risk it is willing to accept. It gives teams a basis for deciding how much governance a particular use case requires.\nConsider an internal coding assistant that helps engineers with routine development tasks. Its risk is different from an AI system that influences credit decisions. The coding assistant might need basic documentation and access controls, while the credit system could require explainability, fairness testing, human review, and audit trails. Applying the same requirements to both creates unnecessary controls for one use case and insufficient controls for the other.\nOperating Model\nAn AI governance operating model defines who can approve a new AI system, who can block it, and who owns the decision after launch. This matters when engineering, legal, security, and risk all have a role in the same AI system.\nA policy can assign responsibilities on paper, but teams still need to know who has final authority when a decision needs to be made. For example, Agentic AI shows why that ownership needs to be clear. An agent can take actions without a person approving every individual step, so a human owner needs to define what it is allowed to do and approve changes to those boundaries.\nControls\nControls are how governance principles and policies become requirements that teams can apply to an AI system. A principle like “AI must be explainable” tells engineering little about what they need to build. A control turns that principle into a specific requirement. For example, an AI system that influences a customer-facing decision might need to surface the top three factors behind its output. Product and legal then review those factors before approving the release.\nOversight\nGovernance needs to continue after an AI system is deployed because the system and its use can change. A model is updated, its business purpose shifts, a vendor changes its tool, or the system starts using a new data source. Effective oversight defines what happens when those changes occur, including when a system needs reassessment, who handles incidents, and how exceptions are reviewed. An incident can also trigger a review, even when none of those planned changes have occurred.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Is AI Governance Consulting?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI governance consulting is a professional service that helps organizations design and implement the structures they use to govern AI. It connects policies and risk requirements with the decisions teams make as AI systems are developed, deployed, and changed. OneTrust’s 2026 survey reported that 47% of senior business decision-makers still describe governance as reactive, fragmented, slow, or manual. Governance consulting helps organizations turn those policies and principles into a working structure.",
+     "links": [
+      {
+       "href": "https://www.onetrust.com/content/dam/onetrust/brand/content/asset/report/ot-aig-survey-report/ot-aig-survey-report.pdf",
+       "text": "OneTrust’s 2026 survey"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI governance also has a different role from the other functions involved in managing technology. Compliance focuses on meeting regulatory requirements, while ethics defines the principles that guide responsible use. Cybersecurity protects systems and data from threats, and data governance controls how data is managed. AI governance brings those responsibilities into decisions about how a specific AI system is used and managed.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Strategy",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Governance strategy sets the direction for how an organization wants to use AI and how much risk it is willing to accept. It gives teams a basis for deciding how much governance a particular use case requires.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Consider an internal coding assistant that helps engineers with routine development tasks. Its risk is different from an AI system that influences credit decisions. The coding assistant might need basic documentation and access controls, while the credit system could require explainability, fairness testing, human review, and audit trails. Applying the same requirements to both creates unnecessary controls for one use case and insufficient controls for the other.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Operating Model",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "An AI governance operating model defines who can approve a new AI system, who can block it, and who owns the decision after launch. This matters when engineering, legal, security, and risk all have a role in the same AI system.",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "A policy can assign responsibilities on paper, but teams still need to know who has final authority when a decision needs to be made. For example, Agentic AI shows why that ownership needs to be clear. An agent can take actions without a person approving every individual step, so a human owner needs to define what it is allowed to do and approve changes to those boundaries.",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Controls",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Controls are how governance principles and policies become requirements that teams can apply to an AI system. A principle like “AI must be explainable” tells engineering little about what they need to build. A control turns that principle into a specific requirement. For example, an AI system that influences a customer-facing decision might need to surface the top three factors behind its output. Product and legal then review those factors before approving the release.",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "Oversight",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Governance needs to continue after an AI system is deployed because the system and its use can change. A model is updated, its business purpose shifts, a vendor changes its tool, or the system starts using a new data source. Effective oversight defines what happens when those changes occur, including when a system needs reassessment, who handles incidents, and how exceptions are reviewed. An incident can also trigger a review, even when none of those planned changes have occurred.",
+     "index": 8
+    }
+   ]
+  },
+  {
+   "id": "article:what-ai-governance-consulting-services-do-provid",
+   "kind": "article_section",
+   "label": "What AI Governance Consulting Services Do Providers Offer?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What AI Governance Consulting Services Do Providers Offer?\nAI governance consulting providers offer services that design, implement, and maintain AI governance across an organization’s use of AI. The scope varies by provider, but the work connects governance requirements to how an organization manages AI over time.\nGovernance Strategy\nA strategy engagement defines how an organization will govern AI across different use cases and risk levels. It starts by assessing the current governance approach, then sets objectives and risk tolerance based on how the organization uses AI. From there, the provider defines roles, policies, a roadmap, and KPIs to give teams a clear framework for applying those decisions. The result is a documented governance plan that establishes how the program will operate and how progress will be measured.\nAI Inventory\nAn AI inventory identifies and catalogs every AI system the organization runs or relies on. That includes internally built models, GenAI applications, autonomous agents, third-party AI features, AI-enabled SaaS tools, and external APIs. Each entry records the system’s owner, business purpose, data inputs, vendor, deployment status, and risk classification. Organizing it around use cases and business decisions also shows why the same model can carry different risks.\nRisk and Controls\nRisk and controls services determine how much governance each AI system needs. Providers classify systems by impact and probability, assign the appropriate level of review, design controls, and document evidence. For example, a document summarization tool does not need the same requirements as an automated hiring system that makes consequential decisions. Applying deep review to every AI system overwhelms governance teams and creates pressure to approve quickly rather than carefully.\nData and Model Governance\nAI adds new governance questions around training data, retrieval data, model changes, and third-party models. This service extends existing data governance to address those questions. Providers define how teams track where data comes from, who owns it, and whether the data is suitable for the system’s use. They also define how models are documented and evaluated, and how changes to models or third-party models are handled.\nThe goal is to build on existing governance structures rather than create a separate process for AI. This approach lets organizations address AI-specific risks within governance processes teams already use.\nRollout\nRollout moves governance requirements from documents into actual workflows. Providers identify where those requirements apply within the processes teams already use to develop, approve, and introduce AI. They then incorporate the requirements into those workflow steps, so teams know when governance applies and what they need to do at that point.\nMonitoring\nPost-deployment governance covers how an organization keeps AI systems under governance after release. Providers define how teams respond when a system or vendor changes, an exception occurs, or an incident requires review. They also establish how risk is reassessed, regulatory changes are handled, and ongoing governance is managed after the initial project ends.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What AI Governance Consulting Services Do Providers Offer?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI governance consulting providers offer services that design, implement, and maintain AI governance across an organization’s use of AI. The scope varies by provider, but the work connects governance requirements to how an organization manages AI over time.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Governance Strategy",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "A strategy engagement defines how an organization will govern AI across different use cases and risk levels. It starts by assessing the current governance approach, then sets objectives and risk tolerance based on how the organization uses AI. From there, the provider defines roles, policies, a roadmap, and KPIs to give teams a clear framework for applying those decisions. The result is a documented governance plan that establishes how the program will operate and how progress will be measured.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "AI Inventory",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "An AI inventory identifies and catalogs every AI system the organization runs or relies on. That includes internally built models, GenAI applications, autonomous agents, third-party AI features, AI-enabled SaaS tools, and external APIs. Each entry records the system’s owner, business purpose, data inputs, vendor, deployment status, and risk classification. Organizing it around use cases and business decisions also shows why the same model can carry different risks.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Risk and Controls",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Risk and controls services determine how much governance each AI system needs. Providers classify systems by impact and probability, assign the appropriate level of review, design controls, and document evidence. For example, a document summarization tool does not need the same requirements as an automated hiring system that makes consequential decisions. Applying deep review to every AI system overwhelms governance teams and creates pressure to approve quickly rather than carefully.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Data and Model Governance",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "AI adds new governance questions around training data, retrieval data, model changes, and third-party models. This service extends existing data governance to address those questions. Providers define how teams track where data comes from, who owns it, and whether the data is suitable for the system’s use. They also define how models are documented and evaluated, and how changes to models or third-party models are handled.",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "The goal is to build on existing governance structures rather than create a separate process for AI. This approach lets organizations address AI-specific risks within governance processes teams already use.",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Rollout",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Rollout moves governance requirements from documents into actual workflows. Providers identify where those requirements apply within the processes teams already use to develop, approve, and introduce AI. They then incorporate the requirements into those workflow steps, so teams know when governance applies and what they need to do at that point.",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "Monitoring",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Post-deployment governance covers how an organization keeps AI systems under governance after release. Providers define how teams respond when a system or vendor changes, an exception occurs, or an incident requires review. They also establish how risk is reassessed, regulatory changes are handled, and ongoing governance is managed after the initial project ends.",
+     "index": 8
+    }
+   ]
+  },
+  {
+   "id": "article:which-ai-governance-consulting-firms-should-you-",
+   "kind": "article_section",
+   "label": "Which AI Governance Consulting Firms Should You Evaluate in 2026?",
+   "scope": "page",
+   "skipped": false,
+   "text": "Which AI Governance Consulting Firms Should You Evaluate in 2026?\nThe firms below cover different parts of AI governance, from technical implementation and engineering rollout to enterprise risk, regulatory requirements, and independent assurance. Compare providers based on the governance problem, implementation needs, industry, and level of support required.\nGoGloby: Applied AI Engineering partner that translates governance requirements into implemented controls inside engineering workflows and production systems.\nIBM Consulting: Multi-model enterprise governance combining advisory depth with watsonx.governance for complex model, agent, and vendor environments.\nDeloitte: Multidisciplinary governance for large organizations where AI requirements cross organizational and regulatory boundaries.\nAccenture: Enterprise-scale Responsible AI deployed across the full organization inside larger AI transformation programs.\nPwC: Risk and assurance methodology applied to AI governance programs requiring defensible evidence for regulated organizations.\nEY: Full-lifecycle AI governance from design through deployment and monitoring, with platform-based implementation capability.\nKPMG: Formal Trusted AI services built around defensible management controls and documented risk oversight for regulated environments.\nRSM US: Proportional governance programs scoped to mid-market organizations that need implementation without enterprise complexity.\nFTI Consulting: Governance for programs where legal exposure or regulatory requirements are the primary driver.\nCrowe: AI governance integrated into existing enterprise risk management frameworks for regulated financial services and healthcare.\nComparison Criteria\nThe firms are compared across eight criteria that reflect what an enterprise AI governance program requires in practice. The comparison covers different parts of governance, from technical implementation and rollout to enterprise risk, industry experience, and ongoing support. These criteria provide a consistent basis for evaluating how each provider fits different governance needs.\nGovernance Strategy: Evaluates operating model and accountability design capability.\nTechnical Implementation: Measures the ability to translate governance into production controls.\nData and Model Governance: Evaluates AI asset oversight from initial inventory through ongoing lifecycle controls.\nRollout Capability: Measures the move from recommendations into operating workflows.\nFramework Expertise: Covers standards and regulatory mappings.\nIndustry Depth: Measures experience in relevant high-risk sectors.\nOngoing Support: Covers monitoring and governance operations.\nBest Fit: Identifies the specific buyer or problem where the provider is strongest.\nAI Governance Consulting Firms Comparison Table\nThe table below summarizes how each firm approaches AI governance, including core services, industry experience, and key limitations. Use these differences to identify providers that match your governance needs, then apply the use-case section to build a shortlist.\nFirm\nBest For\nCore Services\nIndustry Strength\nMain Differentiator\nKey Limitation\nGoGloby\nEngineering rollout for software companies\nAgentic SDLC, AI adoption visibility, engineering controls\nSoftware, FinTech, HealthTech\nOperationalizes governance inside engineering workflows\nNot a regulatory advisory or independent assurance provider\nIBM Consulting\nMulti-model, multi-vendor enterprise\nGovernance strategy, risk advisory, multi-model oversight\nCross-industry\nwatsonx.governance + advisory\nPlatform depth tied to IBM product stack\nDeloitte\nLarge orgs with cross-functional governance\nStrategy, lifecycle controls, regulatory, risk, audit\nFinancial services, regulated industries\nMultidisciplinary coverage across legal, cyber, audit\nMay exceed what a narrower engineering problem needs\nAccenture\nEnterprise-wide AI transformation\nResponsible AI, risk assessments, enterprise rollout\nCross-industry at scale\nScale across platforms, business units, geographies\nBroad scope may not suit targeted programs\nPwC\nRisk, assurance, and evidence for regulators\nFrameworks, inventories, lifecycle docs, monitoring\nRegulated industries\nRisk and assurance methodology\nAdvisory-weighted, less hands-on engineering\nEY\nLifecycle governance and platform implementation\nReadiness, third-party risk, inventories, controls, testing\nFinancial services, government\nSpans design through deployment\nPlatform implementations vary in depth\nKPMG\nFormal risk oversight and defensible controls\nFrameworks, operating models, policies, risk management, evidence\nFinancial services, public sector\nFormal control and evidence methodology\nLess differentiated for technical engineering rollout\nRSM US\nMid-market and regulated organizations\nStrategy, inventories, use-case assessments, third-party AI risk\nHealthcare, financial services\nProportional governance programs\nLimited global delivery capability\nFTI Consulting\nLegal, privacy, and high-scrutiny environments\nOperating models, compliance assessments, lifecycle controls\nFinancial services, legal-adjacent sectors\nRisk, legal, and regulatory depth\nNot positioned as an engineering implementation firm\nCrowe\nRegulated businesses integrating with ERM\nGovernance frameworks, maturity assessment, model validation, audit\nBanking, insurance, healthcare\nIntegration with enterprise risk management\nSmaller scale than global consultancies\nGoGloby\nGoGloby , founded in 2021 and headquartered in Dover, Delaware, is an Applied AI Engineering partner. Its Agentic SDLC establishes controlled, repeatable AI-assisted development workflows with defined review boundaries and human ownership at key decision points. Forward-deployed AI Solutions Architects work inside the client’s existing development environment to implement governance controls at the workflow level. The AI Intelligence Layer gives leadership visibility into AI adoption, engineering activity, and spend across the organization.\nBest For: Established software companies with governance requirements already defined that need those controls operationalized inside engineering workflows and production systems.\nLimitation: GoGloby implements governance inside engineering workflows, not at the regulatory or audit layer. Buyers that need legal interpretation, independent assurance, or formal certification will need to cover those gaps separately.\nIBM Consulting\nIBM Consulting is the services arm of IBM, founded in 1911 and headquartered in Armonk, New York. It governs AI across multi-model, multi-vendor, and agentic environments in large enterprises. Its watsonx.governance platform consolidates model oversight and policy enforcement into a single system. IBM moved toward an AI assurance framing in 2026, addressing the gap between AI deployment and verifiable governance evidence.\nBest For: Large enterprises with complex, multi-vendor AI environments that need governance advisory paired with platform-based policy enforcement and continuous monitoring.\nLimitation: IBM’s technical implementation is built around the watsonx.governance platform. Buyers not planning to adopt IBM tooling should assess upfront how much of the proposed solution depends on it.\nDeloitte\nFounded in 1845 and globally headquartered in London, Deloitte expanded its end-to-end AI controls and assurance services in 2026. The practice integrates regulatory, technical, and audit disciplines into one engagement. It’s designed for organizations where AI governance requirements cross multiple internal functions and jurisdictions simultaneously. Governance strategy, lifecycle controls, and audit-ready evidence are all in scope.\nBest For: Large regulated organizations where AI governance must satisfy regulators, internal audit, and legal simultaneously across multiple jurisdictions.\nLimitation: Deloitte’s multidisciplinary model is its strength for complex programs. Organizations with a narrower engineering governance problem may find the scope more than the situation requires.\nAccenture\nAccenture, founded in 1989 and headquartered in Dublin, runs AI governance through its Responsible AI practice. It partnered with AWS to develop a dedicated Responsible AI platform to extend governance capabilities across client AI environments. Scale is Accenture’s core advantage. It can deploy programs across many platforms, business units, and geographies simultaneously.\nBest For: Large enterprises rolling out AI governance as part of a broader transformation program spanning multiple platforms and organizational units.\nLimitation: Accenture’s governance work is strongest inside a larger transformation engagement. Organizations with a targeted, bounded governance problem may find the engagement model broader than what they need.\nPwC\nRisk and assurance is PwC’s primary lens for AI governance. The firm is globally headquartered in London and formed its current structure in 1998. Its Trust AI approach builds governance programs around documented evidence, control testing, and lifecycle documentation. PwC Canada launched ISO 42001 certification services in 2025, extending the assurance methodology into formal AI management system certification.\nBest For: Regulated organizations where board or regulator demands for documented AI controls and assurance evidence are the primary governance driver.\nLimitation: PwC’s risk and assurance methodology is well developed. Its hands-on technical implementation inside engineering workflows is less prominent than its advisory and assurance capabilities.\nEY\nAI governance at EY spans the full lifecycle, from design decisions to production monitoring. The firm was founded in 1989 and is globally headquartered in London. Its Responsible AI practice covers readiness assessments, accountability design, and regulatory mapping. The 2026 approach focuses on closing the confidence gap between deployment pace and governance maturity. Platform-based workflow automation is part of the implementation model.\nBest For: Organizations that need governance spanning the full AI lifecycle, from initial accountability design through production monitoring.\nLimitation: Platform implementation depth varies by engagement team and geography. Buyers should confirm technical implementation capability in their specific region before engaging.\nKPMG\nFormal control and evidence methodology is what defines KPMG’s AI governance work. The firm was formed in 1987 and is globally headquartered in Amstelveen, Netherlands. In 2026, KPMG expanded its Trusted AI services into AI Assurance, adding independent verification of AI controls. Platform support includes IBM watsonx.governance and ServiceNow for implementation.\nBest For: Regulated organizations that need formal control documentation, risk management evidence, and governance reporting for board oversight or regulatory examination.\nLimitation: KPMG’s formal risk management methodology suits audit readiness and defensible controls well. It’s less differentiated for technical engineering rollout inside active software development workflows.\nRSM US\nRSM US, founded in 1926 and headquartered in Chicago, built its AI governance practice around mid-market organizations. The approach is proportional. Programs are scoped to organizational size and risk exposure, not adapted down from enterprise frameworks. RSM’s 2026 mid-market survey found that governance is now the primary AI concern for companies past initial adoption.\nBest For: Mid-market organizations in regulated industries that need a governance program scoped to their size, not an enterprise framework scaled down.\nLimitation: RSM’s domestic delivery network is strong for US mid-market buyers. Its global delivery capability is more limited than the Big Four for organizations operating across multiple countries.\nFTI Consulting\nFTI Consulting, founded in 1982 and headquartered in Washington, D.C., approaches AI governance through its FTI Technology division. Its IQ.AI platform is built for legal and compliance teams managing AI risk in high-scrutiny environments. The practice centers on compliance assessments, lifecycle controls, and human oversight design. FTI’s legal, forensic, and regulatory background sets it apart from firms that lead with technical engineering implementation.\nBest For: Organizations where AI governance intersects with active regulatory scrutiny, legal risk, or significant privacy obligations.\nLimitation: FTI is not primarily positioned as a technical engineering implementation firm. Buyers that need governance controls implemented inside software development workflows will need to supplement with a technical delivery partner.\nCrowe\nCrowe was founded in 1942 and is headquartered in Chicago. It integrates AI governance into existing enterprise risk management frameworks, rather than building a separate program. The practice covers maturity assessments, AI inventories, and model validation, with internal audit support included. Its strength is most visible in banking, insurance, and healthcare organizations with mature ERM structures already in place.\nBest For: Regulated banking and healthcare organizations that want AI governance woven into their existing ERM structures rather than run separately.\nLimitation: Crowe’s delivery scale is smaller than the global consultancies. Complex multi-country governance programs may exceed what its team size can efficiently support.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Which AI Governance Consulting Firms Should You Evaluate in 2026?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The firms below cover different parts of AI governance, from technical implementation and engineering rollout to enterprise risk, regulatory requirements, and independent assurance. Compare providers based on the governance problem, implementation needs, industry, and level of support required.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "GoGloby: Applied AI Engineering partner that translates governance requirements into implemented controls inside engineering workflows and production systems.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "IBM Consulting: Multi-model enterprise governance combining advisory depth with watsonx.governance for complex model, agent, and vendor environments.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Deloitte: Multidisciplinary governance for large organizations where AI requirements cross organizational and regulatory boundaries.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Accenture: Enterprise-scale Responsible AI deployed across the full organization inside larger AI transformation programs.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "PwC: Risk and assurance methodology applied to AI governance programs requiring defensible evidence for regulated organizations.",
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "EY: Full-lifecycle AI governance from design through deployment and monitoring, with platform-based implementation capability.",
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "KPMG: Formal Trusted AI services built around defensible management controls and documented risk oversight for regulated environments.",
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "RSM US: Proportional governance programs scoped to mid-market organizations that need implementation without enterprise complexity.",
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "FTI Consulting: Governance for programs where legal exposure or regulatory requirements are the primary driver.",
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "Crowe: AI governance integrated into existing enterprise risk management frameworks for regulated financial services and healthcare.",
+     "index": 10
+    },
+    {
+     "type": "heading",
+     "text": "Comparison Criteria",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "The firms are compared across eight criteria that reflect what an enterprise AI governance program requires in practice. The comparison covers different parts of governance, from technical implementation and rollout to enterprise risk, industry experience, and ongoing support. These criteria provide a consistent basis for evaluating how each provider fits different governance needs.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Governance Strategy: Evaluates operating model and accountability design capability.",
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Technical Implementation: Measures the ability to translate governance into production controls.",
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "Data and Model Governance: Evaluates AI asset oversight from initial inventory through ongoing lifecycle controls.",
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "Rollout Capability: Measures the move from recommendations into operating workflows.",
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "Framework Expertise: Covers standards and regulatory mappings.",
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "Industry Depth: Measures experience in relevant high-risk sectors.",
+     "index": 16
+    },
+    {
+     "type": "list_item",
+     "text": "Ongoing Support: Covers monitoring and governance operations.",
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Best Fit: Identifies the specific buyer or problem where the provider is strongest.",
+     "index": 18
+    },
+    {
+     "type": "heading",
+     "text": "AI Governance Consulting Firms Comparison Table",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "The table below summarizes how each firm approaches AI governance, including core services, industry experience, and key limitations. Use these differences to identify providers that match your governance needs, then apply the use-case section to build a shortlist.",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "Firm",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Best For",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "Core Services",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "Industry Strength",
+     "index": 4
+    },
+    {
+     "type": "table_cell",
+     "text": "Main Differentiator",
+     "index": 5
+    },
+    {
+     "type": "table_cell",
+     "text": "Key Limitation",
+     "index": 6
+    },
+    {
+     "type": "table_cell",
+     "text": "GoGloby",
+     "index": 7
+    },
+    {
+     "type": "table_cell",
+     "text": "Engineering rollout for software companies",
+     "index": 8
+    },
+    {
+     "type": "table_cell",
+     "text": "Agentic SDLC, AI adoption visibility, engineering controls",
+     "index": 9
+    },
+    {
+     "type": "table_cell",
+     "text": "Software, FinTech, HealthTech",
+     "index": 10
+    },
+    {
+     "type": "table_cell",
+     "text": "Operationalizes governance inside engineering workflows",
+     "index": 11
+    },
+    {
+     "type": "table_cell",
+     "text": "Not a regulatory advisory or independent assurance provider",
+     "index": 12
+    },
+    {
+     "type": "table_cell",
+     "text": "IBM Consulting",
+     "index": 13
+    },
+    {
+     "type": "table_cell",
+     "text": "Multi-model, multi-vendor enterprise",
+     "index": 14
+    },
+    {
+     "type": "table_cell",
+     "text": "Governance strategy, risk advisory, multi-model oversight",
+     "index": 15
+    },
+    {
+     "type": "table_cell",
+     "text": "Cross-industry",
+     "index": 16
+    },
+    {
+     "type": "table_cell",
+     "text": "watsonx.governance + advisory",
+     "index": 17
+    },
+    {
+     "type": "table_cell",
+     "text": "Platform depth tied to IBM product stack",
+     "index": 18
+    },
+    {
+     "type": "table_cell",
+     "text": "Deloitte",
+     "index": 19
+    },
+    {
+     "type": "table_cell",
+     "text": "Large orgs with cross-functional governance",
+     "index": 20
+    },
+    {
+     "type": "table_cell",
+     "text": "Strategy, lifecycle controls, regulatory, risk, audit",
+     "index": 21
+    },
+    {
+     "type": "table_cell",
+     "text": "Financial services, regulated industries",
+     "index": 22
+    },
+    {
+     "type": "table_cell",
+     "text": "Multidisciplinary coverage across legal, cyber, audit",
+     "index": 23
+    },
+    {
+     "type": "table_cell",
+     "text": "May exceed what a narrower engineering problem needs",
+     "index": 24
+    },
+    {
+     "type": "table_cell",
+     "text": "Accenture",
+     "index": 25
+    },
+    {
+     "type": "table_cell",
+     "text": "Enterprise-wide AI transformation",
+     "index": 26
+    },
+    {
+     "type": "table_cell",
+     "text": "Responsible AI, risk assessments, enterprise rollout",
+     "index": 27
+    },
+    {
+     "type": "table_cell",
+     "text": "Cross-industry at scale",
+     "index": 28
+    },
+    {
+     "type": "table_cell",
+     "text": "Scale across platforms, business units, geographies",
+     "index": 29
+    },
+    {
+     "type": "table_cell",
+     "text": "Broad scope may not suit targeted programs",
+     "index": 30
+    },
+    {
+     "type": "table_cell",
+     "text": "PwC",
+     "index": 31
+    },
+    {
+     "type": "table_cell",
+     "text": "Risk, assurance, and evidence for regulators",
+     "index": 32
+    },
+    {
+     "type": "table_cell",
+     "text": "Frameworks, inventories, lifecycle docs, monitoring",
+     "index": 33
+    },
+    {
+     "type": "table_cell",
+     "text": "Regulated industries",
+     "index": 34
+    },
+    {
+     "type": "table_cell",
+     "text": "Risk and assurance methodology",
+     "index": 35
+    },
+    {
+     "type": "table_cell",
+     "text": "Advisory-weighted, less hands-on engineering",
+     "index": 36
+    },
+    {
+     "type": "table_cell",
+     "text": "EY",
+     "index": 37
+    },
+    {
+     "type": "table_cell",
+     "text": "Lifecycle governance and platform implementation",
+     "index": 38
+    },
+    {
+     "type": "table_cell",
+     "text": "Readiness, third-party risk, inventories, controls, testing",
+     "index": 39
+    },
+    {
+     "type": "table_cell",
+     "text": "Financial services, government",
+     "index": 40
+    },
+    {
+     "type": "table_cell",
+     "text": "Spans design through deployment",
+     "index": 41
+    },
+    {
+     "type": "table_cell",
+     "text": "Platform implementations vary in depth",
+     "index": 42
+    },
+    {
+     "type": "table_cell",
+     "text": "KPMG",
+     "index": 43
+    },
+    {
+     "type": "table_cell",
+     "text": "Formal risk oversight and defensible controls",
+     "index": 44
+    },
+    {
+     "type": "table_cell",
+     "text": "Frameworks, operating models, policies, risk management, evidence",
+     "index": 45
+    },
+    {
+     "type": "table_cell",
+     "text": "Financial services, public sector",
+     "index": 46
+    },
+    {
+     "type": "table_cell",
+     "text": "Formal control and evidence methodology",
+     "index": 47
+    },
+    {
+     "type": "table_cell",
+     "text": "Less differentiated for technical engineering rollout",
+     "index": 48
+    },
+    {
+     "type": "table_cell",
+     "text": "RSM US",
+     "index": 49
+    },
+    {
+     "type": "table_cell",
+     "text": "Mid-market and regulated organizations",
+     "index": 50
+    },
+    {
+     "type": "table_cell",
+     "text": "Strategy, inventories, use-case assessments, third-party AI risk",
+     "index": 51
+    },
+    {
+     "type": "table_cell",
+     "text": "Healthcare, financial services",
+     "index": 52
+    },
+    {
+     "type": "table_cell",
+     "text": "Proportional governance programs",
+     "index": 53
+    },
+    {
+     "type": "table_cell",
+     "text": "Limited global delivery capability",
+     "index": 54
+    },
+    {
+     "type": "table_cell",
+     "text": "FTI Consulting",
+     "index": 55
+    },
+    {
+     "type": "table_cell",
+     "text": "Legal, privacy, and high-scrutiny environments",
+     "index": 56
+    },
+    {
+     "type": "table_cell",
+     "text": "Operating models, compliance assessments, lifecycle controls",
+     "index": 57
+    },
+    {
+     "type": "table_cell",
+     "text": "Financial services, legal-adjacent sectors",
+     "index": 58
+    },
+    {
+     "type": "table_cell",
+     "text": "Risk, legal, and regulatory depth",
+     "index": 59
+    },
+    {
+     "type": "table_cell",
+     "text": "Not positioned as an engineering implementation firm",
+     "index": 60
+    },
+    {
+     "type": "table_cell",
+     "text": "Crowe",
+     "index": 61
+    },
+    {
+     "type": "table_cell",
+     "text": "Regulated businesses integrating with ERM",
+     "index": 62
+    },
+    {
+     "type": "table_cell",
+     "text": "Governance frameworks, maturity assessment, model validation, audit",
+     "index": 63
+    },
+    {
+     "type": "table_cell",
+     "text": "Banking, insurance, healthcare",
+     "index": 64
+    },
+    {
+     "type": "table_cell",
+     "text": "Integration with enterprise risk management",
+     "index": 65
+    },
+    {
+     "type": "table_cell",
+     "text": "Smaller scale than global consultancies",
+     "index": 66
+    },
+    {
+     "type": "heading",
+     "text": "GoGloby",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/image-66-1024x549.png",
+     "file": "image-66-1024x549.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby , founded in 2021 and headquartered in Dover, Delaware, is an Applied AI Engineering partner. Its Agentic SDLC establishes controlled, repeatable AI-assisted development workflows with defined review boundaries and human ownership at key decision points. Forward-deployed AI Solutions Architects work inside the client’s existing development environment to implement governance controls at the workflow level. The AI Intelligence Layer gives leadership visibility into AI adoption, engineering activity, and spend across the organization.",
+     "links": [
+      {
+       "href": "https://gogloby.com/",
+       "text": "GoGloby"
+      },
+      {
+       "href": "https://gogloby.com/solutions/ai-engineering-visibility/",
+       "text": "AI Intelligence Layer"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Best For: Established software companies with governance requirements already defined that need those controls operationalized inside engineering workflows and production systems.",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Limitation: GoGloby implements governance inside engineering workflows, not at the regulatory or audit layer. Buyers that need legal interpretation, independent assurance, or formal certification will need to cover those gaps separately.",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "IBM Consulting",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/image-65-1024x469.png",
+     "file": "image-65-1024x469.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "IBM Consulting is the services arm of IBM, founded in 1911 and headquartered in Armonk, New York. It governs AI across multi-model, multi-vendor, and agentic environments in large enterprises. Its watsonx.governance platform consolidates model oversight and policy enforcement into a single system. IBM moved toward an AI assurance framing in 2026, addressing the gap between AI deployment and verifiable governance evidence.",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Best For: Large enterprises with complex, multi-vendor AI environments that need governance advisory paired with platform-based policy enforcement and continuous monitoring.",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Limitation: IBM’s technical implementation is built around the watsonx.governance platform. Buyers not planning to adopt IBM tooling should assess upfront how much of the proposed solution depends on it.",
+     "index": 9
+    },
+    {
+     "type": "heading",
+     "text": "Deloitte",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/Screenshot-2026-09-24-135717-1024x470.png",
+     "file": "Screenshot-2026-09-24-135717-1024x470.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Founded in 1845 and globally headquartered in London, Deloitte expanded its end-to-end AI controls and assurance services in 2026. The practice integrates regulatory, technical, and audit disciplines into one engagement. It’s designed for organizations where AI governance requirements cross multiple internal functions and jurisdictions simultaneously. Governance strategy, lifecycle controls, and audit-ready evidence are all in scope.",
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "Best For: Large regulated organizations where AI governance must satisfy regulators, internal audit, and legal simultaneously across multiple jurisdictions.",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "Limitation: Deloitte’s multidisciplinary model is its strength for complex programs. Organizations with a narrower engineering governance problem may find the scope more than the situation requires.",
+     "index": 12
+    },
+    {
+     "type": "heading",
+     "text": "Accenture",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/image-68-1024x359.png",
+     "file": "image-68-1024x359.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Accenture, founded in 1989 and headquartered in Dublin, runs AI governance through its Responsible AI practice. It partnered with AWS to develop a dedicated Responsible AI platform to extend governance capabilities across client AI environments. Scale is Accenture’s core advantage. It can deploy programs across many platforms, business units, and geographies simultaneously.",
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Best For: Large enterprises rolling out AI governance as part of a broader transformation program spanning multiple platforms and organizational units.",
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Limitation: Accenture’s governance work is strongest inside a larger transformation engagement. Organizations with a targeted, bounded governance problem may find the engagement model broader than what they need.",
+     "index": 15
+    },
+    {
+     "type": "heading",
+     "text": "PwC",
+     "level": 3,
+     "index": 8
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/Screenshot-2026-09-11-120032-1024x488.png",
+     "file": "Screenshot-2026-09-11-120032-1024x488.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Risk and assurance is PwC’s primary lens for AI governance. The firm is globally headquartered in London and formed its current structure in 1998. Its Trust AI approach builds governance programs around documented evidence, control testing, and lifecycle documentation. PwC Canada launched ISO 42001 certification services in 2025, extending the assurance methodology into formal AI management system certification.",
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "Best For: Regulated organizations where board or regulator demands for documented AI controls and assurance evidence are the primary governance driver.",
+     "index": 17
+    },
+    {
+     "type": "paragraph",
+     "text": "Limitation: PwC’s risk and assurance methodology is well developed. Its hands-on technical implementation inside engineering workflows is less prominent than its advisory and assurance capabilities.",
+     "index": 18
+    },
+    {
+     "type": "heading",
+     "text": "EY",
+     "level": 3,
+     "index": 9
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/Screenshot-2026-09-10-210745-1024x483.png",
+     "file": "Screenshot-2026-09-10-210745-1024x483.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "AI governance at EY spans the full lifecycle, from design decisions to production monitoring. The firm was founded in 1989 and is globally headquartered in London. Its Responsible AI practice covers readiness assessments, accountability design, and regulatory mapping. The 2026 approach focuses on closing the confidence gap between deployment pace and governance maturity. Platform-based workflow automation is part of the implementation model.",
+     "index": 19
+    },
+    {
+     "type": "paragraph",
+     "text": "Best For: Organizations that need governance spanning the full AI lifecycle, from initial accountability design through production monitoring.",
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "Limitation: Platform implementation depth varies by engagement team and geography. Buyers should confirm technical implementation capability in their specific region before engaging.",
+     "index": 21
+    },
+    {
+     "type": "heading",
+     "text": "KPMG",
+     "level": 3,
+     "index": 10
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/Screenshot-2026-09-10-210852-1024x422.png",
+     "file": "Screenshot-2026-09-10-210852-1024x422.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Formal control and evidence methodology is what defines KPMG’s AI governance work. The firm was formed in 1987 and is globally headquartered in Amstelveen, Netherlands. In 2026, KPMG expanded its Trusted AI services into AI Assurance, adding independent verification of AI controls. Platform support includes IBM watsonx.governance and ServiceNow for implementation.",
+     "index": 22
+    },
+    {
+     "type": "paragraph",
+     "text": "Best For: Regulated organizations that need formal control documentation, risk management evidence, and governance reporting for board oversight or regulatory examination.",
+     "index": 23
+    },
+    {
+     "type": "paragraph",
+     "text": "Limitation: KPMG’s formal risk management methodology suits audit readiness and defensible controls well. It’s less differentiated for technical engineering rollout inside active software development workflows.",
+     "index": 24
+    },
+    {
+     "type": "heading",
+     "text": "RSM US",
+     "level": 3,
+     "index": 11
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/Screenshot-2026-09-24-140146-1024x490.png",
+     "file": "Screenshot-2026-09-24-140146-1024x490.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "RSM US, founded in 1926 and headquartered in Chicago, built its AI governance practice around mid-market organizations. The approach is proportional. Programs are scoped to organizational size and risk exposure, not adapted down from enterprise frameworks. RSM’s 2026 mid-market survey found that governance is now the primary AI concern for companies past initial adoption.",
+     "index": 25
+    },
+    {
+     "type": "paragraph",
+     "text": "Best For: Mid-market organizations in regulated industries that need a governance program scoped to their size, not an enterprise framework scaled down.",
+     "index": 26
+    },
+    {
+     "type": "paragraph",
+     "text": "Limitation: RSM’s domestic delivery network is strong for US mid-market buyers. Its global delivery capability is more limited than the Big Four for organizations operating across multiple countries.",
+     "index": 27
+    },
+    {
+     "type": "heading",
+     "text": "FTI Consulting",
+     "level": 3,
+     "index": 12
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/Screenshot-2026-09-24-140230-1024x456.png",
+     "file": "Screenshot-2026-09-24-140230-1024x456.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "FTI Consulting, founded in 1982 and headquartered in Washington, D.C., approaches AI governance through its FTI Technology division. Its IQ.AI platform is built for legal and compliance teams managing AI risk in high-scrutiny environments. The practice centers on compliance assessments, lifecycle controls, and human oversight design. FTI’s legal, forensic, and regulatory background sets it apart from firms that lead with technical engineering implementation.",
+     "index": 28
+    },
+    {
+     "type": "paragraph",
+     "text": "Best For: Organizations where AI governance intersects with active regulatory scrutiny, legal risk, or significant privacy obligations.",
+     "index": 29
+    },
+    {
+     "type": "paragraph",
+     "text": "Limitation: FTI is not primarily positioned as a technical engineering implementation firm. Buyers that need governance controls implemented inside software development workflows will need to supplement with a technical delivery partner.",
+     "index": 30
+    },
+    {
+     "type": "heading",
+     "text": "Crowe",
+     "level": 3,
+     "index": 13
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/Screenshot-2026-09-24-140314-1024x469.png",
+     "file": "Screenshot-2026-09-24-140314-1024x469.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "Crowe was founded in 1942 and is headquartered in Chicago. It integrates AI governance into existing enterprise risk management frameworks, rather than building a separate program. The practice covers maturity assessments, AI inventories, and model validation, with internal audit support included. Its strength is most visible in banking, insurance, and healthcare organizations with mature ERM structures already in place.",
+     "index": 31
+    },
+    {
+     "type": "paragraph",
+     "text": "Best For: Regulated banking and healthcare organizations that want AI governance woven into their existing ERM structures rather than run separately.",
+     "index": 32
+    },
+    {
+     "type": "paragraph",
+     "text": "Limitation: Crowe’s delivery scale is smaller than the global consultancies. Complex multi-country governance programs may exceed what its team size can efficiently support.",
+     "index": 33
+    }
+   ]
+  },
+  {
+   "id": "article:how-do-ai-governance-firms-compare-by-use-case",
+   "kind": "article_section",
+   "label": "How Do AI Governance Firms Compare by Use Case?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Do AI Governance Firms Compare by Use Case?\nAI governance firms compare by use case based on where their governance capabilities fit the problem an organization needs to solve. The sections below show which providers align with different governance needs, industries, and assurance requirements.\nEngineering Rollout\nThis scenario applies when governance principles and policies already exist, but engineering teams need to apply them throughout AI development and production. The work requires governance controls to fit existing engineering workflows, including agentic development, deployment, testing, and production monitoring.\nGoGloby is the primary shortlist entry because its delivery model places engineers inside the client’s actual development environment. IBM and Accenture also offer implementation capability for larger engineering programs that require coordination across platforms. Evaluate providers by asking for specific examples of governance controls they implemented inside production systems.\nGlobal Enterprise\nA multinational needs governance that works across jurisdictions and business units without forcing every AI use case into the same process. Different regulatory requirements, operating models, and risk owners make a single approval path difficult to apply consistently.\nIBM, Deloitte, Accenture, PwC, and EY are relevant shortlist entries because they combine global delivery with experience across regulatory environments. The decision then depends on whether the organization needs deeper strategy, risk, technical implementation, or assurance support.\nFinancial Services\nFinancial services AI governance has to connect model risk and automated decision controls with regulatory and customer obligations. A provider also needs to address how AI systems are reviewed, documented, and defended when regulators or internal risk teams examine them.\nDeloitte, IBM, EY, KPMG, FTI, and Crowe all have financial services governance experience. KPMG and Crowe fit programs where formal evidence and independent review are central, while FTI is relevant when legal or regulatory investigation risk is part of the engagement.\nHealthcare\nHealthcare AI requires governance that reflects the consequences of each use case. An administrative scheduling system creates different governance requirements from a clinical decision support tool that influences patient care. Providers therefore need to account for privacy, bias, human oversight, and safety requirements without applying the same controls to every system.\nDeloitte, EY, KPMG, and RSM are relevant shortlist entries depending on whether the priority is regulatory readiness, risk framework design, or program implementation. Verify healthcare governance experience through specific case examples.\nCISO-Led Governance\nSecurity-led AI governance starts with understanding where AI is being used, what data those systems can access, and what permissions they receive. The work then connects AI-specific risks, such as third-party model exposure and prompt injection, to the organization’s existing security controls.\nIBM, Deloitte, EY, and KPMG combine governance and cybersecurity capabilities relevant to this model. The key question is whether the provider can integrate AI governance into the existing security program instead of creating a separate structure.\nAudit and Assurance\nAI governance assurance examines whether controls are appropriately designed, operating as intended, and supported by evidence. That requires organizations to demonstrate that governance requirements are consistently applied in practice, not only documented in policies. Grant Thornton’s 2026 survey found that 78% of organizations lack strong confidence that they could pass an independent AI governance audit. Independent assurance helps address this by testing controls, accountability structures, and governance processes against evidence from actual operations.\nThe assurance role differs from implementation consulting because the reviewer needs sufficient independence to assess controls it did not design or operate. A firm that implemented the controls may therefore face independence restrictions when asked to assure the same work.\nPwC, KPMG, EY, Crowe, and Deloitte offer assurance capabilities. The relevant choice depends on the scope of the review and any applicable independence restrictions.\nMid-Market\nMid-market organizations need governance that matches their risk profile without adopting the structure built for a global enterprise. RSM and Crowe offer scoped programs that address governance design, risk classification, third-party AI review, and implementation at a more targeted scale. GoGloby is relevant when the primary need is to operationalize governance inside software engineering. The key consideration is whether the provider can address the current governance problem without requiring a broader transformation than the organization needs.\nAI Governance Firms by Use Case\nThe table below maps each use case to the firms that align with its specific governance needs. Use the final column to identify the key question to ask before moving a provider to the next stage of evaluation.\nUse Case\nWhat the Buyer Needs\nBest-Fit Firms\nWhy They Fit\nMain Buying Question\nEngineering Rollout\nGovernance embedded into AI development and production systems\nGoGloby, IBM, Accenture\nHands-on implementation inside actual engineering workflows\nCan you show controls you implemented inside a production system?\nGlobal Enterprise\nFederated governance across jurisdictions, business units, and vendors\nIBM, Deloitte, Accenture, PwC, EY\nGlobal delivery, multi-regulatory footprint, cross-function advisory\nHow do you balance centralized visibility with local governance requirements?\nFinancial Services\nModel risk, explainability, auditability, regulatory readiness\nDeloitte, IBM, EY, KPMG, FTI, Crowe\nFinancial services regulatory and risk depth\nWhat financial services governance engagements have you completed?\nHealthcare\nPrivacy, clinical risk, human oversight, safety documentation\nDeloitte, EY, KPMG, RSM\nHealthcare regulatory knowledge and risk framework capability\nCan you distinguish governance requirements between administrative and clinical AI?\nCISO-Led Governance\nShadow AI, data exposure, third-party AI risk, security integration\nIBM, Deloitte, EY, KPMG\nCombined governance and cybersecurity capability\nHow does your AI governance work integrate with our existing security program?\nAudit and Assurance\nEvidence, control testing, independence, examination readiness\nPwC, KPMG, EY, Crowe, Deloitte\nAssurance methodology and independence standards\nDo you have any independence restrictions given other work you might do for us?\nMid-Market\nProportional governance without enterprise-scale complexity\nRSM, Crowe, GoGloby (engineering-specific)\nScoped implementation programs matched to organizational size\nCan your governance model scale with us without requiring a full transformation?",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Do AI Governance Firms Compare by Use Case?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI governance firms compare by use case based on where their governance capabilities fit the problem an organization needs to solve. The sections below show which providers align with different governance needs, industries, and assurance requirements.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Engineering Rollout",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "This scenario applies when governance principles and policies already exist, but engineering teams need to apply them throughout AI development and production. The work requires governance controls to fit existing engineering workflows, including agentic development, deployment, testing, and production monitoring.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby is the primary shortlist entry because its delivery model places engineers inside the client’s actual development environment. IBM and Accenture also offer implementation capability for larger engineering programs that require coordination across platforms. Evaluate providers by asking for specific examples of governance controls they implemented inside production systems.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Global Enterprise",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "A multinational needs governance that works across jurisdictions and business units without forcing every AI use case into the same process. Different regulatory requirements, operating models, and risk owners make a single approval path difficult to apply consistently.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "IBM, Deloitte, Accenture, PwC, and EY are relevant shortlist entries because they combine global delivery with experience across regulatory environments. The decision then depends on whether the organization needs deeper strategy, risk, technical implementation, or assurance support.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Financial Services",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Financial services AI governance has to connect model risk and automated decision controls with regulatory and customer obligations. A provider also needs to address how AI systems are reviewed, documented, and defended when regulators or internal risk teams examine them.",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Deloitte, IBM, EY, KPMG, FTI, and Crowe all have financial services governance experience. KPMG and Crowe fit programs where formal evidence and independent review are central, while FTI is relevant when legal or regulatory investigation risk is part of the engagement.",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "Healthcare",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Healthcare AI requires governance that reflects the consequences of each use case. An administrative scheduling system creates different governance requirements from a clinical decision support tool that influences patient care. Providers therefore need to account for privacy, bias, human oversight, and safety requirements without applying the same controls to every system.",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Deloitte, EY, KPMG, and RSM are relevant shortlist entries depending on whether the priority is regulatory readiness, risk framework design, or program implementation. Verify healthcare governance experience through specific case examples.",
+     "index": 9
+    },
+    {
+     "type": "heading",
+     "text": "CISO-Led Governance",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Security-led AI governance starts with understanding where AI is being used, what data those systems can access, and what permissions they receive. The work then connects AI-specific risks, such as third-party model exposure and prompt injection, to the organization’s existing security controls.",
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "IBM, Deloitte, EY, and KPMG combine governance and cybersecurity capabilities relevant to this model. The key question is whether the provider can integrate AI governance into the existing security program instead of creating a separate structure.",
+     "index": 11
+    },
+    {
+     "type": "heading",
+     "text": "Audit and Assurance",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "AI governance assurance examines whether controls are appropriately designed, operating as intended, and supported by evidence. That requires organizations to demonstrate that governance requirements are consistently applied in practice, not only documented in policies. Grant Thornton’s 2026 survey found that 78% of organizations lack strong confidence that they could pass an independent AI governance audit. Independent assurance helps address this by testing controls, accountability structures, and governance processes against evidence from actual operations.",
+     "links": [
+      {
+       "href": "https://www.grantthornton.com/content/dam/grantthornton/website/assets/content-page-files/advisory/ai-lp/infographic/ai-impact-survey-2026/pdf/grant-thornton-2026-ai-impact-survey.pdf",
+       "text": "Grant Thornton’s 2026 survey"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "The assurance role differs from implementation consulting because the reviewer needs sufficient independence to assess controls it did not design or operate. A firm that implemented the controls may therefore face independence restrictions when asked to assure the same work.",
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "PwC, KPMG, EY, Crowe, and Deloitte offer assurance capabilities. The relevant choice depends on the scope of the review and any applicable independence restrictions.",
+     "index": 14
+    },
+    {
+     "type": "heading",
+     "text": "Mid-Market",
+     "level": 3,
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Mid-market organizations need governance that matches their risk profile without adopting the structure built for a global enterprise. RSM and Crowe offer scoped programs that address governance design, risk classification, third-party AI review, and implementation at a more targeted scale. GoGloby is relevant when the primary need is to operationalize governance inside software engineering. The key consideration is whether the provider can address the current governance problem without requiring a broader transformation than the organization needs.",
+     "index": 15
+    },
+    {
+     "type": "heading",
+     "text": "AI Governance Firms by Use Case",
+     "level": 3,
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "The table below maps each use case to the firms that align with its specific governance needs. Use the final column to identify the key question to ask before moving a provider to the next stage of evaluation.",
+     "index": 16
+    },
+    {
+     "type": "table_cell",
+     "text": "Use Case",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "What the Buyer Needs",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "Best-Fit Firms",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "Why They Fit",
+     "index": 4
+    },
+    {
+     "type": "table_cell",
+     "text": "Main Buying Question",
+     "index": 5
+    },
+    {
+     "type": "table_cell",
+     "text": "Engineering Rollout",
+     "index": 6
+    },
+    {
+     "type": "table_cell",
+     "text": "Governance embedded into AI development and production systems",
+     "index": 7
+    },
+    {
+     "type": "table_cell",
+     "text": "GoGloby, IBM, Accenture",
+     "index": 8
+    },
+    {
+     "type": "table_cell",
+     "text": "Hands-on implementation inside actual engineering workflows",
+     "index": 9
+    },
+    {
+     "type": "table_cell",
+     "text": "Can you show controls you implemented inside a production system?",
+     "index": 10
+    },
+    {
+     "type": "table_cell",
+     "text": "Global Enterprise",
+     "index": 11
+    },
+    {
+     "type": "table_cell",
+     "text": "Federated governance across jurisdictions, business units, and vendors",
+     "index": 12
+    },
+    {
+     "type": "table_cell",
+     "text": "IBM, Deloitte, Accenture, PwC, EY",
+     "index": 13
+    },
+    {
+     "type": "table_cell",
+     "text": "Global delivery, multi-regulatory footprint, cross-function advisory",
+     "index": 14
+    },
+    {
+     "type": "table_cell",
+     "text": "How do you balance centralized visibility with local governance requirements?",
+     "index": 15
+    },
+    {
+     "type": "table_cell",
+     "text": "Financial Services",
+     "index": 16
+    },
+    {
+     "type": "table_cell",
+     "text": "Model risk, explainability, auditability, regulatory readiness",
+     "index": 17
+    },
+    {
+     "type": "table_cell",
+     "text": "Deloitte, IBM, EY, KPMG, FTI, Crowe",
+     "index": 18
+    },
+    {
+     "type": "table_cell",
+     "text": "Financial services regulatory and risk depth",
+     "index": 19
+    },
+    {
+     "type": "table_cell",
+     "text": "What financial services governance engagements have you completed?",
+     "index": 20
+    },
+    {
+     "type": "table_cell",
+     "text": "Healthcare",
+     "index": 21
+    },
+    {
+     "type": "table_cell",
+     "text": "Privacy, clinical risk, human oversight, safety documentation",
+     "index": 22
+    },
+    {
+     "type": "table_cell",
+     "text": "Deloitte, EY, KPMG, RSM",
+     "index": 23
+    },
+    {
+     "type": "table_cell",
+     "text": "Healthcare regulatory knowledge and risk framework capability",
+     "index": 24
+    },
+    {
+     "type": "table_cell",
+     "text": "Can you distinguish governance requirements between administrative and clinical AI?",
+     "index": 25
+    },
+    {
+     "type": "table_cell",
+     "text": "CISO-Led Governance",
+     "index": 26
+    },
+    {
+     "type": "table_cell",
+     "text": "Shadow AI, data exposure, third-party AI risk, security integration",
+     "index": 27
+    },
+    {
+     "type": "table_cell",
+     "text": "IBM, Deloitte, EY, KPMG",
+     "index": 28
+    },
+    {
+     "type": "table_cell",
+     "text": "Combined governance and cybersecurity capability",
+     "index": 29
+    },
+    {
+     "type": "table_cell",
+     "text": "How does your AI governance work integrate with our existing security program?",
+     "index": 30
+    },
+    {
+     "type": "table_cell",
+     "text": "Audit and Assurance",
+     "index": 31
+    },
+    {
+     "type": "table_cell",
+     "text": "Evidence, control testing, independence, examination readiness",
+     "index": 32
+    },
+    {
+     "type": "table_cell",
+     "text": "PwC, KPMG, EY, Crowe, Deloitte",
+     "index": 33
+    },
+    {
+     "type": "table_cell",
+     "text": "Assurance methodology and independence standards",
+     "index": 34
+    },
+    {
+     "type": "table_cell",
+     "text": "Do you have any independence restrictions given other work you might do for us?",
+     "index": 35
+    },
+    {
+     "type": "table_cell",
+     "text": "Mid-Market",
+     "index": 36
+    },
+    {
+     "type": "table_cell",
+     "text": "Proportional governance without enterprise-scale complexity",
+     "index": 37
+    },
+    {
+     "type": "table_cell",
+     "text": "RSM, Crowe, GoGloby (engineering-specific)",
+     "index": 38
+    },
+    {
+     "type": "table_cell",
+     "text": "Scoped implementation programs matched to organizational size",
+     "index": 39
+    },
+    {
+     "type": "table_cell",
+     "text": "Can your governance model scale with us without requiring a full transformation?",
+     "index": 40
+    }
+   ]
+  },
+  {
+   "id": "article:which-ai-governance-frameworks-matter",
+   "kind": "article_section",
+   "label": "Which AI Governance Frameworks Matter?",
+   "scope": "page",
+   "skipped": false,
+   "text": "Which AI Governance Frameworks Matter?\nThe AI governance frameworks that matter depend on the risks an organization manages, the AI systems it operates, and the rules that apply to the business. Different frameworks address different governance needs, so organizations often use more than one. A consulting firm needs to connect those requirements into one operating model instead of making teams manage separate programs.\nNIST AI RMF\nThe NIST AI Risk Management Framework gives teams a flexible way to identify and manage AI risk without requiring certification. It organizes the work around four functions. Govern sets policies and responsibilities. Map establishes the context and risks around an AI system. Measure evaluates those risks. Manage defines how the organization responds through controls and ongoing monitoring.\nThe framework does not prescribe a fixed set of controls. That makes it adaptable to different industries and risk levels. It is voluntary, so it does not replace legislation or create a certification.\nISO/IEC 42001\nISO/IEC 42001 provides a formal management system for running and improving AI governance. It is relevant when an organization needs defined processes and wants the option of third-party certification.\nCertification provides evidence that the management system meets the standard’s requirements. It does not demonstrate compliance with every AI law that applies to the organization. Regulatory obligations still need to be identified and addressed separately.\nEU AI Act\nThe EU AI Act applies different obligations based on the risk of an AI system and the role an organization plays in using or supplying it. This matters when an organization develops, deploys, imports, or distributes AI systems within the regulation’s scope.\nHigh-risk systems face requirements for risk management, human oversight, data governance, documentation, and post-market monitoring. The specific obligations depend on the system and the organization’s role, so governance teams need to connect the regulation to actual AI use cases.\nIndustry Requirements\nIndustry requirements add rules that general AI frameworks do not fully address. A financial institution, for example, needs governance that accounts for model risk when AI affects credit decisions. A healthcare organization needs privacy and oversight controls when AI supports patient-facing tools. Employment AI can also trigger bias audit requirements under certain US laws.\nThese requirements need to fit into the broader governance program rather than sit alongside it as a separate process. The organization needs to determine which rules apply to each use case and what controls demonstrate compliance\nAI Governance Frameworks Comparison\nUse the table to compare each framework based on the governance need it addresses. Start with the “Choose it when” column to identify the frameworks that fit your situation, then review the key consideration before deciding which requirements need further evaluation.\nFramework\nChoose it when\nWhat it helps establish\nKey consideration\nNIST AI RMF\nYou need a flexible structure for managing AI risk\nA common approach to identifying, measuring, and managing risk\nVoluntary and not certifiable\nISO/IEC 42001\nYou need a formal AI management system\nDefined governance processes and a path to certification\nCertification does not establish legal compliance\nEU AI Act\nAI systems fall within the regulation’s scope\nRisk-based requirements for covered AI systems\nObligations depend on risk and organizational role\nIndustry requirements\nAI operates in a regulated sector\nControls tied to sector-specific obligations\nRequirements vary by sector and jurisdiction",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Which AI Governance Frameworks Matter?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The AI governance frameworks that matter depend on the risks an organization manages, the AI systems it operates, and the rules that apply to the business. Different frameworks address different governance needs, so organizations often use more than one. A consulting firm needs to connect those requirements into one operating model instead of making teams manage separate programs.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "NIST AI RMF",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "The NIST AI Risk Management Framework gives teams a flexible way to identify and manage AI risk without requiring certification. It organizes the work around four functions. Govern sets policies and responsibilities. Map establishes the context and risks around an AI system. Measure evaluates those risks. Manage defines how the organization responds through controls and ongoing monitoring.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "The framework does not prescribe a fixed set of controls. That makes it adaptable to different industries and risk levels. It is voluntary, so it does not replace legislation or create a certification.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "ISO/IEC 42001",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "ISO/IEC 42001 provides a formal management system for running and improving AI governance. It is relevant when an organization needs defined processes and wants the option of third-party certification.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Certification provides evidence that the management system meets the standard’s requirements. It does not demonstrate compliance with every AI law that applies to the organization. Regulatory obligations still need to be identified and addressed separately.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "EU AI Act",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "The EU AI Act applies different obligations based on the risk of an AI system and the role an organization plays in using or supplying it. This matters when an organization develops, deploys, imports, or distributes AI systems within the regulation’s scope.",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "High-risk systems face requirements for risk management, human oversight, data governance, documentation, and post-market monitoring. The specific obligations depend on the system and the organization’s role, so governance teams need to connect the regulation to actual AI use cases.",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "Industry Requirements",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Industry requirements add rules that general AI frameworks do not fully address. A financial institution, for example, needs governance that accounts for model risk when AI affects credit decisions. A healthcare organization needs privacy and oversight controls when AI supports patient-facing tools. Employment AI can also trigger bias audit requirements under certain US laws.",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "These requirements need to fit into the broader governance program rather than sit alongside it as a separate process. The organization needs to determine which rules apply to each use case and what controls demonstrate compliance",
+     "index": 9
+    },
+    {
+     "type": "heading",
+     "text": "AI Governance Frameworks Comparison",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Use the table to compare each framework based on the governance need it addresses. Start with the “Choose it when” column to identify the frameworks that fit your situation, then review the key consideration before deciding which requirements need further evaluation.",
+     "index": 10
+    },
+    {
+     "type": "table_cell",
+     "text": "Framework",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Choose it when",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "What it helps establish",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "Key consideration",
+     "index": 4
+    },
+    {
+     "type": "table_cell",
+     "text": "NIST AI RMF",
+     "index": 5
+    },
+    {
+     "type": "table_cell",
+     "text": "You need a flexible structure for managing AI risk",
+     "index": 6
+    },
+    {
+     "type": "table_cell",
+     "text": "A common approach to identifying, measuring, and managing risk",
+     "index": 7
+    },
+    {
+     "type": "table_cell",
+     "text": "Voluntary and not certifiable",
+     "index": 8
+    },
+    {
+     "type": "table_cell",
+     "text": "ISO/IEC 42001",
+     "index": 9
+    },
+    {
+     "type": "table_cell",
+     "text": "You need a formal AI management system",
+     "index": 10
+    },
+    {
+     "type": "table_cell",
+     "text": "Defined governance processes and a path to certification",
+     "index": 11
+    },
+    {
+     "type": "table_cell",
+     "text": "Certification does not establish legal compliance",
+     "index": 12
+    },
+    {
+     "type": "table_cell",
+     "text": "EU AI Act",
+     "index": 13
+    },
+    {
+     "type": "table_cell",
+     "text": "AI systems fall within the regulation’s scope",
+     "index": 14
+    },
+    {
+     "type": "table_cell",
+     "text": "Risk-based requirements for covered AI systems",
+     "index": 15
+    },
+    {
+     "type": "table_cell",
+     "text": "Obligations depend on risk and organizational role",
+     "index": 16
+    },
+    {
+     "type": "table_cell",
+     "text": "Industry requirements",
+     "index": 17
+    },
+    {
+     "type": "table_cell",
+     "text": "AI operates in a regulated sector",
+     "index": 18
+    },
+    {
+     "type": "table_cell",
+     "text": "Controls tied to sector-specific obligations",
+     "index": 19
+    },
+    {
+     "type": "table_cell",
+     "text": "Requirements vary by sector and jurisdiction",
+     "index": 20
+    }
+   ]
+  },
+  {
+   "id": "article:how-do-ai-governance-platforms-support-consultin",
+   "kind": "article_section",
+   "label": "How Do AI Governance Platforms Support Consulting?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Do AI Governance Platforms Support Consulting?\nAI governance platforms support consulting by turning governance processes into a system that runs consistently across teams. They make governance programs easier to operate at scale without relying on spreadsheets, shared drives, or manual coordination. These platforms can organize and support governance processes, but they do not establish organizational accountability, define risk appetite, or interpret regulatory obligations. Those decisions require people with authority and expertise in the organization’s specific context.\nPlatform Selection\nPlatform selection should start with the company’s governance requirements. Those requirements determine what the platform needs to support and how it should fit into the existing technology environment. Buying a platform before the operating model is defined leaves teams with software but no clear process for using it.\nImplementation\nBuying a governance platform does not put governance processes into practice. Implementation connects the platform to existing systems and adapts it to how teams review AI systems, make decisions, and document those decisions. Teams also need training and clear processes for using the platform as part of their existing work.\nMonitoring\nGovernance platforms help teams track whether governance requirements still apply as AI systems and their surrounding controls change. They give teams a central view of changes and issues that need attention, while keeping governance records and metrics updated over time. Monitoring also requires clear ownership so teams know who reviews those changes and decides when further action is needed.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Do AI Governance Platforms Support Consulting?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI governance platforms support consulting by turning governance processes into a system that runs consistently across teams. They make governance programs easier to operate at scale without relying on spreadsheets, shared drives, or manual coordination. These platforms can organize and support governance processes, but they do not establish organizational accountability, define risk appetite, or interpret regulatory obligations. Those decisions require people with authority and expertise in the organization’s specific context.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Platform Selection",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Platform selection should start with the company’s governance requirements. Those requirements determine what the platform needs to support and how it should fit into the existing technology environment. Buying a platform before the operating model is defined leaves teams with software but no clear process for using it.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Implementation",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Buying a governance platform does not put governance processes into practice. Implementation connects the platform to existing systems and adapts it to how teams review AI systems, make decisions, and document those decisions. Teams also need training and clear processes for using the platform as part of their existing work.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Monitoring",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Governance platforms help teams track whether governance requirements still apply as AI systems and their surrounding controls change. They give teams a central view of changes and issues that need attention, while keeping governance records and metrics updated over time. Monitoring also requires clear ownership so teams know who reviews those changes and decides when further action is needed.",
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "article:how-does-ai-governance-consulting-pricing-vary",
+   "kind": "article_section",
+   "label": "How Does AI Governance Consulting Pricing Vary?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Does AI Governance Consulting Pricing Vary?\nAI governance consulting pricing varies based on the scope of the engagement and the complexity of the AI environment being governed. A maturity assessment requires a defined period of analysis, while a full governance rollout involves implementation work over a longer engagement. Managed governance adds ongoing work after the initial program is in place.\nAssessment\nA governance maturity assessment examines how the company manages AI and where its governance needs development. The provider reviews existing documentation, samples the AI inventory, assesses risks, maps relevant frameworks, and uses those findings to build a prioritized roadmap. For example, a focused assessment of a single AI program has a different cost from an enterprise-wide review covering dozens of systems and multiple jurisdictions.\nImplementation\nImplementation puts the governance model into the workflows and systems teams use to manage AI. The provider turns governance requirements into controls, configures workflows and tooling, makes technical changes, and helps teams adopt the new processes. Cost increases as more stakeholders, systems, business units, and technical environments are included.\nManaged Governance\nManaged governance extends the engagement after the initial program is established. The provider takes responsibility for defined governance activities over time, while the client retains the responsibilities agreed at the start. The scope depends on how much ongoing work the provider handles, such as recurring reviews, control testing, vendor assessments, and regulatory monitoring.\nCost Drivers\nThe main cost drivers are the amount of governance work in scope and the complexity of the environment it must cover. More AI systems or higher-risk use cases increase the work required. Existing governance maturity also affects the effort because a mature program requires less foundational development than one starting with limited governance. These factors make AI complexity more relevant to cost than company size alone. For example, a 200-person company operating AI across regulated workflows can require more governance work than a 2,000-person company using AI for internal productivity.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Does AI Governance Consulting Pricing Vary?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI governance consulting pricing varies based on the scope of the engagement and the complexity of the AI environment being governed. A maturity assessment requires a defined period of analysis, while a full governance rollout involves implementation work over a longer engagement. Managed governance adds ongoing work after the initial program is in place.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Assessment",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "A governance maturity assessment examines how the company manages AI and where its governance needs development. The provider reviews existing documentation, samples the AI inventory, assesses risks, maps relevant frameworks, and uses those findings to build a prioritized roadmap. For example, a focused assessment of a single AI program has a different cost from an enterprise-wide review covering dozens of systems and multiple jurisdictions.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Implementation",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Implementation puts the governance model into the workflows and systems teams use to manage AI. The provider turns governance requirements into controls, configures workflows and tooling, makes technical changes, and helps teams adopt the new processes. Cost increases as more stakeholders, systems, business units, and technical environments are included.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Managed Governance",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Managed governance extends the engagement after the initial program is established. The provider takes responsibility for defined governance activities over time, while the client retains the responsibilities agreed at the start. The scope depends on how much ongoing work the provider handles, such as recurring reviews, control testing, vendor assessments, and regulatory monitoring.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Cost Drivers",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "The main cost drivers are the amount of governance work in scope and the complexity of the environment it must cover. More AI systems or higher-risk use cases increase the work required. Existing governance maturity also affects the effort because a mature program requires less foundational development than one starting with limited governance. These factors make AI complexity more relevant to cost than company size alone. For example, a 200-person company operating AI across regulated workflows can require more governance work than a 2,000-person company using AI for internal productivity.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:how-do-you-choose-an-ai-governance-consulting-fi",
+   "kind": "article_section",
+   "label": "How Do You Choose an AI Governance Consulting Firm?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Do You Choose an AI Governance Consulting Firm?\nTeams should choose an AI governance consulting firm by evaluating whether the provider has the experience, technical capabilities, and delivery model required for the engagement. The evaluation should focus on how the firm has handled comparable governance work and what responsibility it will retain after the engagement begins.\nDefine the Need\nStart with the result the engagement needs to produce. A company that needs a governance strategy has a different problem from one preparing for an audit or implementing controls in production. Defining that outcome first makes it easier to identify which providers have the right delivery model.\nVerify Experience\nAsk for examples involving AI systems and governance problems similar to yours. A familiar industry name on a credentials slide does not show how the firm handled comparable work. Look for evidence that the provider has governed systems with similar risk, technical complexity, or regulatory requirements.\nTest Technical Depth\nProduction governance needs to work inside the systems and processes that engineers already use. Ask how the provider would connect governance requirements to AI inventories, development workflows, monitoring, security controls, and governance platforms. A firm that designs controls but cannot put them into engineering workflows will need another partner to complete the implementation.\nCheck Rollout Ownership\nClarify what happens after the recommendations are delivered. Some firms define the operating model and controls, while others also configure systems, train teams, or continue operating the governance process. The contract should make clear who owns each part of the rollout and what happens when the initial engagement ends.\nReview Independence\nConsider whether the engagement includes independent assurance, formal audit, or regulatory review. A firm that designs or implements controls may face independence restrictions when later assessing those same controls. Clarify those boundaries before contracting so the engagement does not create a conflict later.\nCheck Platform Fit\nThe governance approach should work with the technology environment already in place unless replacement is part of the engagement. Ask whether the firm can work with the client’s existing models, cloud environment, vendors, and GRC systems. If a provider recommends replacing the platform, ask what requirement drives that recommendation and whether other implementation paths were considered.\nFor a deeper look at how governance works inside software development, see our guide on Enterprise AI Governance .",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Do You Choose an AI Governance Consulting Firm?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Teams should choose an AI governance consulting firm by evaluating whether the provider has the experience, technical capabilities, and delivery model required for the engagement. The evaluation should focus on how the firm has handled comparable governance work and what responsibility it will retain after the engagement begins.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Define the Need",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Start with the result the engagement needs to produce. A company that needs a governance strategy has a different problem from one preparing for an audit or implementing controls in production. Defining that outcome first makes it easier to identify which providers have the right delivery model.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Verify Experience",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Ask for examples involving AI systems and governance problems similar to yours. A familiar industry name on a credentials slide does not show how the firm handled comparable work. Look for evidence that the provider has governed systems with similar risk, technical complexity, or regulatory requirements.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Test Technical Depth",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Production governance needs to work inside the systems and processes that engineers already use. Ask how the provider would connect governance requirements to AI inventories, development workflows, monitoring, security controls, and governance platforms. A firm that designs controls but cannot put them into engineering workflows will need another partner to complete the implementation.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Check Rollout Ownership",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Clarify what happens after the recommendations are delivered. Some firms define the operating model and controls, while others also configure systems, train teams, or continue operating the governance process. The contract should make clear who owns each part of the rollout and what happens when the initial engagement ends.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Review Independence",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Consider whether the engagement includes independent assurance, formal audit, or regulatory review. A firm that designs or implements controls may face independence restrictions when later assessing those same controls. Clarify those boundaries before contracting so the engagement does not create a conflict later.",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Check Platform Fit",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "The governance approach should work with the technology environment already in place unless replacement is part of the engagement. Ask whether the firm can work with the client’s existing models, cloud environment, vendors, and GRC systems. If a provider recommends replacing the platform, ask what requirement drives that recommendation and whether other implementation paths were considered.",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "For a deeper look at how governance works inside software development, see our guide on Enterprise AI Governance .",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/enterprise-ai-governance/",
+       "text": "Enterprise AI Governance"
+      }
+     ],
+     "index": 8
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-the-most-common-ai-governance-mistakes",
+   "kind": "article_section",
+   "label": "What Are the Most Common AI Governance Mistakes?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are the Most Common AI Governance Mistakes?\nThe most common AI governance mistakes happen when governance exists as a formal requirement but does not become part of how AI work is managed. A policy, platform, or review process only has value when it changes what teams do and provides a clear way to maintain those practices as AI use changes.\nPolicy only: Publishing AI principles without connecting them to day-to-day decisions leaves teams without a way to apply those principles. A policy that says “AI must be fair” does not tell engineers what to test or when a system needs additional review. Governance needs a process that activates when an AI system is proposed.\nTool first: Buying a governance platform before defining how governance decisions will be made creates a repository without a working process behind it. Teams still need to know how systems are approved, who owns decisions, and how exceptions are handled before software can support those activities.\nNo inventory: AI use that is not documented cannot be governed consistently. A team might build a model internally while another adds AI through a software vendor, leaving no central view of what systems exist or who is responsible for them. An inventory needs to capture the purpose and ownership of each system because those details determine how the system should be governed.\nOne risk level: Treating every AI system as equally risky creates unnecessary work for low-risk use cases while giving consequential systems too little attention. A proportional approach lets simpler systems follow lighter processes while directing deeper review toward systems with greater potential impact.\nOne-time review: Approving an AI system once does not account for changes after deployment. A model can change, a vendor can update a product, or the business purpose can shift, creating new governance requirements. The program needs defined triggers for reassessment so those changes do not go unnoticed.\nNo clear owner: Governance becomes difficult to execute when responsibility is shared across several functions without a clear decision owner. The organization needs someone accountable for running the governance program and a named owner for each AI system so decisions do not stall between teams.\nClear policies give teams a practical foundation for applying governance consistently. See AI Policy for Software Teams: How to Build One in 2026 for a closer look at what an effective AI policy should cover.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are the Most Common AI Governance Mistakes?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The most common AI governance mistakes happen when governance exists as a formal requirement but does not become part of how AI work is managed. A policy, platform, or review process only has value when it changes what teams do and provides a clear way to maintain those practices as AI use changes.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Policy only: Publishing AI principles without connecting them to day-to-day decisions leaves teams without a way to apply those principles. A policy that says “AI must be fair” does not tell engineers what to test or when a system needs additional review. Governance needs a process that activates when an AI system is proposed.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Tool first: Buying a governance platform before defining how governance decisions will be made creates a repository without a working process behind it. Teams still need to know how systems are approved, who owns decisions, and how exceptions are handled before software can support those activities.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "No inventory: AI use that is not documented cannot be governed consistently. A team might build a model internally while another adds AI through a software vendor, leaving no central view of what systems exist or who is responsible for them. An inventory needs to capture the purpose and ownership of each system because those details determine how the system should be governed.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "One risk level: Treating every AI system as equally risky creates unnecessary work for low-risk use cases while giving consequential systems too little attention. A proportional approach lets simpler systems follow lighter processes while directing deeper review toward systems with greater potential impact.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "One-time review: Approving an AI system once does not account for changes after deployment. A model can change, a vendor can update a product, or the business purpose can shift, creating new governance requirements. The program needs defined triggers for reassessment so those changes do not go unnoticed.",
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "No clear owner: Governance becomes difficult to execute when responsibility is shared across several functions without a clear decision owner. The organization needs someone accountable for running the governance program and a named owner for each AI system so decisions do not stall between teams.",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Clear policies give teams a practical foundation for applying governance consistently. See AI Policy for Software Teams: How to Build One in 2026 for a closer look at what an effective AI policy should cover.",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/ai-policy/",
+       "text": "AI Policy for Software Teams: How to Build One in 2026"
+      }
+     ],
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "article:conclusion",
+   "kind": "article_section",
+   "label": "Conclusion",
+   "scope": "page",
+   "skipped": false,
+   "text": "Conclusion\nAI governance consulting firms approach governance from different angles, including governance design, risk and assurance, enterprise transformation, and technical implementation. The right provider depends on what needs to change inside the company.\nThe next step is to take the governance problem you need to solve and turn it into a concrete engagement scope. Define the AI systems, workflows, and governance outcomes that need to be addressed, then ask shortlisted firms to show how the work would operate in practice. This gives you a clearer basis for comparing providers than firm reputation or service lists alone.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Conclusion",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI governance consulting firms approach governance from different angles, including governance design, risk and assurance, enterprise transformation, and technical implementation. The right provider depends on what needs to change inside the company.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The next step is to take the governance problem you need to solve and turn it into a concrete engagement scope. Define the AI systems, workflows, and governance outcomes that need to be addressed, then ask shortlisted firms to show how the work would operate in practice. This gives you a clearer basis for comparing providers than firm reputation or service lists alone.",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "article:faqs",
+   "kind": "article_section",
+   "label": "FAQs",
+   "scope": "page",
+   "skipped": false,
+   "text": "FAQs\nWhat does an AI governance consulting firm do?\nAn AI governance consulting firm helps organizations establish how AI systems are identified, assessed, controlled, and monitored. The work connects governance requirements to the processes teams use to approve, deploy, and oversee AI systems.\nDo companies need AI governance consulting?\nCompanies need AI governance consulting when internal teams lack the experience or capacity to build governance at the required scope. Organizations with established risk, legal, and engineering capabilities can handle lower-risk programs internally.\nIs AI governance the same as compliance?\nAI governance and compliance address different needs. Compliance focuses on meeting specific regulatory requirements, while governance provides the processes and accountability used to meet those requirements. An organization can satisfy a regulatory requirement without having a mature governance program.\nIs AI governance the same as data governance?\nAI governance and data governance cover different areas of responsibility. Data governance focuses on how data is managed, while AI governance addresses how AI systems are developed, deployed, and controlled. The two need to work together when data decisions affect AI systems.\nCan AI governance speed up AI adoption?\nA well-designed governance program can speed up adoption by giving low-risk AI systems a clear path through review and approval. Higher-risk systems still require deeper assessment, but predefined processes reduce unnecessary review for simpler use cases.\nDo you need an AI governance platform?\nAn AI governance platform becomes useful when governance needs to operate across many systems or teams. Processes and ownership should be defined first so the platform supports established governance rather than becoming a substitute for it.\nAuthor avatar\nSergey Matikaynen / CTO\nArticle author\nSergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.\nView profile",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "FAQs",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "What does an AI governance consulting firm do?",
+     "area": "item 1",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "An AI governance consulting firm helps organizations establish how AI systems are identified, assessed, controlled, and monitored. The work connects governance requirements to the processes teams use to approve, deploy, and oversee AI systems.",
+     "area": "item 1",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Do companies need AI governance consulting?",
+     "area": "item 1",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Companies need AI governance consulting when internal teams lack the experience or capacity to build governance at the required scope. Organizations with established risk, legal, and engineering capabilities can handle lower-risk programs internally.",
+     "area": "item 1",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Is AI governance the same as compliance?",
+     "area": "item 1",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "AI governance and compliance address different needs. Compliance focuses on meeting specific regulatory requirements, while governance provides the processes and accountability used to meet those requirements. An organization can satisfy a regulatory requirement without having a mature governance program.",
+     "area": "item 1",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Is AI governance the same as data governance?",
+     "area": "item 1",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "AI governance and data governance cover different areas of responsibility. Data governance focuses on how data is managed, while AI governance addresses how AI systems are developed, deployed, and controlled. The two need to work together when data decisions affect AI systems.",
+     "area": "item 1",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Can AI governance speed up AI adoption?",
+     "area": "item 1",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "A well-designed governance program can speed up adoption by giving low-risk AI systems a clear path through review and approval. Higher-risk systems still require deeper assessment, but predefined processes reduce unnecessary review for simpler use cases.",
+     "area": "item 1",
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "Do you need an AI governance platform?",
+     "area": "item 1",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "An AI governance platform becomes useful when governance needs to operate across many systems or teams. Processes and ownership should be defined first so the platform supports established governance rather than becoming a substitute for it.",
+     "area": "item 1",
+     "index": 12
+    },
+    {
+     "type": "image",
+     "text": "Author avatar",
+     "src": "https://gogloby.com/wp-content/uploads/2024/02/1706550966241.jpeg",
+     "file": "1706550966241.jpeg",
+     "alt": "Author avatar",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen / CTO",
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Article author",
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.",
+     "index": 15
+    },
+    {
+     "type": "paragraph",
+     "text": "View profile",
+     "links": [
+      {
+       "href": "https://gogloby.com/author/sergey/",
+       "text": "View profile"
+      }
+     ],
+     "index": 16
+    }
+   ]
+  },
+  {
+   "id": "banner_cta",
+   "kind": "banner_cta",
+   "label": "Banner CTA",
+   "scope": "page",
+   "skipped": false,
+   "text": "Do You Need to Put AI Governance Into Practice?\nGoGloby turns governance requirements into working controls across the AI development workflows your team already uses.\nTalk to Us",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Do You Need to Put AI Governance Into Practice?",
+     "area": "block-main",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby turns governance requirements into working controls across the AI development workflows your team already uses.",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Talk to Us",
+     "area": "block-aside",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "modals",
+   "kind": "modals",
+   "label": "Forms and modals",
+   "scope": "shared",
+   "skipped": false,
+   "text": "Thank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend\nThank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "site_header",
+   "kind": "site_header",
+   "label": "Site header",
+   "scope": "page",
+   "skipped": true,
+   "text": "Site logo\nSolutions\nAI Engineering Visibility\nForward Deployed Engineering\nServices\nAI Engineers Staff Augmentation\nHire AI Engineers\nAI Development Services\nGenerative AI Consulting Services\nAgentic AI Consulting Services\nAI Production Engineering\nGenerative AI Development Services\nAI Agent Development Services\nAI Custom Software Development Services\nRAG Application Development Services\nLLM Development Services\nApplication AI Modernization Services\nLegacy Application Modernization Services\nSoftware Maintenance Services\nCompany\nAbout us\nJobs\nResources\nInsights\nUse Cases\nPodcast\nContact\nTalk to Us",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Site logo",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/globy-logo-1-01.svg",
+     "file": "globy-logo-1-01.svg",
+     "alt": "Site logo",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Solutions",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineering Visibility",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/ai-engineering-visibility/",
+       "text": "AI Engineering Visibility"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Forward Deployed Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/forward-deployed-engineering/",
+       "text": "Forward Deployed Engineering"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineers Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Engineers Staff Augmentation"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "link",
+     "text": "AI Development Services",
+     "href": "https://gogloby.com/services/ai-development/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-development/",
+       "text": "AI Development Services"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-consulting/",
+       "text": "Generative AI Consulting Services"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Agentic AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/agentic-ai-consulting/",
+       "text": "Agentic AI Consulting Services"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "AI Production Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "AI Production Engineering"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "AI Agent Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-agent-development/",
+       "text": "AI Agent Development Services"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "AI Custom Software Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-custom-software-development/",
+       "text": "AI Custom Software Development Services"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "RAG Application Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/rag-application-development/",
+       "text": "RAG Application Development Services"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "LLM Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/llm-development/",
+       "text": "LLM Development Services"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "link",
+     "text": "Application AI Modernization Services",
+     "href": "https://gogloby.com/services/application-modernization/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/application-modernization/",
+       "text": "Application AI Modernization Services"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Legacy Application Modernization Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/legacy-application-modernization/",
+       "text": "Legacy Application Modernization Services"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "Software Maintenance Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/software-maintenance/",
+       "text": "Software Maintenance Services"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "Talk to Us",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "site_footer",
+   "kind": "site_footer",
+   "label": "Site footer",
+   "scope": "page",
+   "skipped": true,
+   "text": "Background logo\nServices\nApplied AI Engineering\nAI Staff Augmentation\nHire AI Engineers\nGenerative AI Development Services\nCompany\nAbout us\nJobs\nContact\nPrivacy Policy and Candidate Privacy Notice\nTerms and Conditions\nResources\nInsights\nUse Cases\nPodcast\nCase Studies\nConnections\nCrunchbase\nLinkedIn\nX\nG2\nClutch\nTrustpilot\nDesignRush\nGitHub\nFacebook\nYouTube\n© Copyright 2026, GoGloby. All Rights Reserved.",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background logo",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/logos/globy-logo-outline-1-01.svg",
+     "file": "globy-logo-outline-1-01.svg",
+     "alt": "Background logo",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Applied AI Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "Applied AI Engineering"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Staff Augmentation"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Privacy Policy and Candidate Privacy Notice",
+     "links": [
+      {
+       "href": "https://gogloby.com/privacy-policy/",
+       "text": "Privacy Policy and Candidate Privacy Notice"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Terms and Conditions",
+     "links": [
+      {
+       "href": "https://gogloby.com/terms-and-conditions/",
+       "text": "Terms and Conditions"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "Case Studies",
+     "links": [
+      {
+       "href": "https://gogloby.com/case-study/",
+       "text": "Case Studies"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Connections",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Crunchbase",
+     "links": [
+      {
+       "href": "https://www.crunchbase.com/organization/gogloby",
+       "text": "Crunchbase"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "LinkedIn",
+     "links": [
+      {
+       "href": "https://www.linkedin.com/company/gogloby/",
+       "text": "LinkedIn"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "X",
+     "links": [
+      {
+       "href": "https://x.com/GoGloby",
+       "text": "X"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "list_item",
+     "text": "G2",
+     "links": [
+      {
+       "href": "https://www.g2.com/products/gogloby/reviews",
+       "text": "G2"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Clutch",
+     "links": [
+      {
+       "href": "https://clutch.co/profile/gogloby",
+       "text": "Clutch"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Trustpilot",
+     "links": [
+      {
+       "href": "https://www.trustpilot.com/review/gogloby.com",
+       "text": "Trustpilot"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "DesignRush",
+     "links": [
+      {
+       "href": "https://www.designrush.com/agency/profile/gogloby",
+       "text": "DesignRush"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "list_item",
+     "text": "GitHub",
+     "links": [
+      {
+       "href": "https://github.com/gogloby",
+       "text": "GitHub"
+      }
+     ],
+     "index": 21
+    },
+    {
+     "type": "list_item",
+     "text": "Facebook",
+     "links": [
+      {
+       "href": "https://www.facebook.com/gogloby",
+       "text": "Facebook"
+      }
+     ],
+     "index": 22
+    },
+    {
+     "type": "list_item",
+     "text": "YouTube",
+     "links": [
+      {
+       "href": "https://www.youtube.com/@DefaultGlobal",
+       "text": "YouTube"
+      }
+     ],
+     "index": 23
+    },
+    {
+     "type": "paragraph",
+     "text": "© Copyright 2026, GoGloby. All Rights Reserved.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "related",
+   "kind": "related",
+   "label": "Related content",
+   "scope": "page",
+   "skipped": true,
+   "text": "Latest posts\nWhat Is AI Compliance Consulting: Process, Benefits & How to Implement It\nWhat Is AI Compliance Consulting: Process, Benefits & How to Implement It\nOctober 2,2026\nAI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI\nAI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI\nOctober 2,2026\nWhat Is Embedded AI? How It Works, Benefits, Use Cases & Tools\nWhat Is Embedded AI? How It Works, Benefits, Use Cases & Tools\nSeptember 25,2026\nAI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose\nAI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose\nSeptember 23,2026\nHow Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees\nHow Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees\nSeptember 18,2026\nAI Pilot Program: How to Plan, Run, and Scale It in 2026\nAI Pilot Program: How to Plan, Run, and Scale It in 2026\nSeptember 18,2026",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Latest posts",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "What Is AI Compliance Consulting: Process, Benefits & How to Implement It",
+     "src": "https://gogloby.com/wp-content/uploads/2026/10/Gemini_Generated_Image_vth5k8vth5k8vth5-scaled.jpeg",
+     "file": "Gemini_Generated_Image_vth5k8vth5k8vth5-scaled.jpeg",
+     "alt": "What Is AI Compliance Consulting: Process, Benefits & How to Implement It",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "What Is AI Compliance Consulting: Process, Benefits & How to Implement It",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "October 2,2026",
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "AI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI",
+     "src": "https://gogloby.com/wp-content/uploads/2026/10/Integracion-de-datos-futurista.png",
+     "file": "Integracion-de-datos-futurista.png",
+     "alt": "AI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 2",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "AI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "October 2,2026",
+     "area": "slide 2",
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "What Is Embedded AI? How It Works, Benefits, Use Cases & Tools",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-25-2026-01_26_43-PM.png",
+     "file": "ChatGPT-Image-Sep-25-2026-01_26_43-PM.png",
+     "alt": "What Is Embedded AI? How It Works, Benefits, Use Cases & Tools",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 3",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "What Is Embedded AI? How It Works, Benefits, Use Cases & Tools",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "September 25,2026",
+     "area": "slide 3",
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "AI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-23-sept-2026-16_43_07.png",
+     "file": "ChatGPT-Image-23-sept-2026-16_43_07.png",
+     "alt": "AI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 4",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "AI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose",
+     "area": "slide 4",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "September 23,2026",
+     "area": "slide 4",
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "How Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/AI-Consulting-Cost-Models.png",
+     "file": "AI-Consulting-Cost-Models.png",
+     "alt": "How Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 5",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "How Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees",
+     "area": "slide 5",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "September 18,2026",
+     "area": "slide 5",
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "AI Pilot Program: How to Plan, Run, and Scale It in 2026",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/AI-Pilot-Program-Planning-and-Scale.png",
+     "file": "AI-Pilot-Program-Planning-and-Scale.png",
+     "alt": "AI Pilot Program: How to Plan, Run, and Scale It in 2026",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 6",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "AI Pilot Program: How to Plan, Run, and Scale It in 2026",
+     "area": "slide 6",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "September 18,2026",
+     "area": "slide 6",
+     "index": 6
+    }
+   ]
+  }
+ ],
+ "warnings": []
+}

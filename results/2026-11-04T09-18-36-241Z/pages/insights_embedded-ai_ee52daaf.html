@@ -1,0 +1,1752 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><link rel="stylesheet" href="https://gogloby.com/wp-content/cache/minify/2d926.default.include.b8dfbc.css" media="all" />
+<style>img.lazy{min-height:1px}</style><link href="https://gogloby.com/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js" as="script">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v28.8 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>What Is Embedded AI? How It Works, Benefits, Use Cases &amp; Tools | GoGloby</title>
+	<meta name="description" content="Learn what embedded AI is, how it works inside products, where it should run, and how to choose the right models and deployment approach." />
+	<link rel="canonical" href="https://gogloby.com/insights/embedded-ai/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="What Is Embedded AI? How It Works, Benefits, Use Cases &amp; Tools | GoGloby" />
+	<meta property="og:description" content="Learn what embedded AI is, how it works inside products, where it should run, and how to choose the right models and deployment approach." />
+	<meta property="og:url" content="https://gogloby.com/insights/embedded-ai/" />
+	<meta property="og:site_name" content="GoGloby" />
+	<meta property="article:publisher" content="https://www.facebook.com/gogloby" />
+	<meta property="article:published_time" content="2026-09-25T16:28:24+00:00" />
+	<meta property="article:modified_time" content="2026-09-25T16:28:28+00:00" />
+	<meta property="og:image" content="https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-25-2026-01_26_43-PM.png" />
+	<meta property="og:image:width" content="1774" />
+	<meta property="og:image:height" content="887" />
+	<meta property="og:image:type" content="image/png" />
+	<meta name="author" content="Sergey" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@GoGloby" />
+	<meta name="twitter:site" content="@GoGloby" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="Sergey" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="25 minutes" />
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//js-eu1.hs-scripts.com' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://gogloby.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgogloby.com%2Finsights%2Fembedded-ai%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://gogloby.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgogloby.com%2Finsights%2Fembedded-ai%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=https://gogloby.com/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id="wp-block-list-inline-css">
+ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em}
+/*# sourceURL=https://gogloby.com/wp-includes/blocks/list/style.min.css */
+</style>
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=https://gogloby.com/wp-includes/blocks/paragraph/style.min.css */
+</style>
+<style id="wp-block-table-inline-css">
+.wp-block-table{overflow-x:auto}.wp-block-table table{border-collapse:collapse;width:100%}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{border:1px solid;padding:.5em}.wp-block-table .has-fixed-layout{table-layout:fixed;width:100%}.wp-block-table .has-fixed-layout td,.wp-block-table .has-fixed-layout th{word-break:break-word}.wp-block-table.aligncenter,.wp-block-table.alignleft,.wp-block-table.alignright{display:table;width:auto}.wp-block-table.aligncenter td,.wp-block-table.aligncenter th,.wp-block-table.alignleft td,.wp-block-table.alignleft th,.wp-block-table.alignright td,.wp-block-table.alignright th{word-break:break-word}.wp-block-table .has-subtle-light-gray-background-color{background-color:#f3f4f5}.wp-block-table .has-subtle-pale-green-background-color{background-color:#e9fbe5}.wp-block-table .has-subtle-pale-blue-background-color{background-color:#e7f5fe}.wp-block-table .has-subtle-pale-pink-background-color{background-color:#fcf0ef}.wp-block-table.is-style-stripes{background-color:transparent;border-collapse:inherit;border-spacing:0}.wp-block-table.is-style-stripes tbody tr:nth-child(odd){background-color:#f0f0f0}.wp-block-table.is-style-stripes.has-subtle-light-gray-background-color tbody tr:nth-child(odd){background-color:#f3f4f5}.wp-block-table.is-style-stripes.has-subtle-pale-green-background-color tbody tr:nth-child(odd){background-color:#e9fbe5}.wp-block-table.is-style-stripes.has-subtle-pale-blue-background-color tbody tr:nth-child(odd){background-color:#e7f5fe}.wp-block-table.is-style-stripes.has-subtle-pale-pink-background-color tbody tr:nth-child(odd){background-color:#fcf0ef}.wp-block-table.is-style-stripes td,.wp-block-table.is-style-stripes th{border-color:transparent}.wp-block-table.is-style-stripes{border-bottom:1px solid #f0f0f0}.wp-block-table .has-border-color td,.wp-block-table .has-border-color th,.wp-block-table .has-border-color tr,.wp-block-table .has-border-color>*{border-color:inherit}.wp-block-table table[style*=border-top-color] tr:first-child,.wp-block-table table[style*=border-top-color] tr:first-child td,.wp-block-table table[style*=border-top-color] tr:first-child th,.wp-block-table table[style*=border-top-color]>*,.wp-block-table table[style*=border-top-color]>* td,.wp-block-table table[style*=border-top-color]>* th{border-top-color:inherit}.wp-block-table table[style*=border-top-color] tr:not(:first-child){border-top-color:currentColor}.wp-block-table table[style*=border-right-color] td:last-child,.wp-block-table table[style*=border-right-color] th,.wp-block-table table[style*=border-right-color] tr,.wp-block-table table[style*=border-right-color]>*{border-right-color:inherit}.wp-block-table table[style*=border-bottom-color] tr:last-child,.wp-block-table table[style*=border-bottom-color] tr:last-child td,.wp-block-table table[style*=border-bottom-color] tr:last-child th,.wp-block-table table[style*=border-bottom-color]>*,.wp-block-table table[style*=border-bottom-color]>* td,.wp-block-table table[style*=border-bottom-color]>* th{border-bottom-color:inherit}.wp-block-table table[style*=border-bottom-color] tr:not(:last-child){border-bottom-color:currentColor}.wp-block-table table[style*=border-left-color] td:first-child,.wp-block-table table[style*=border-left-color] th,.wp-block-table table[style*=border-left-color] tr,.wp-block-table table[style*=border-left-color]>*{border-left-color:inherit}.wp-block-table table[style*=border-style] td,.wp-block-table table[style*=border-style] th,.wp-block-table table[style*=border-style] tr,.wp-block-table table[style*=border-style]>*{border-style:inherit}.wp-block-table table[style*=border-width] td,.wp-block-table table[style*=border-width] th,.wp-block-table table[style*=border-width] tr,.wp-block-table table[style*=border-width]>*{border-style:inherit;border-width:inherit}
+/*# sourceURL=https://gogloby.com/wp-includes/blocks/table/style.min.css */
+</style>
+
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<style type="text/css" id="google-font-rubik-css" media="all">@font-face {font-family:'Rubik';font-style:normal;font-weight:300 900;src:url(/cf-fonts/v/rubik/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:300 900;src:url(/cf-fonts/v/rubik/5.2.8/hebrew/wght/normal.woff2);unicode-range:U+0307-0308,U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:300 900;src:url(/cf-fonts/v/rubik/5.2.8/arabic/wght/normal.woff2);unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC,U+102E0-102FB,U+10E60-10E7E,U+10EC2-10EC4,U+10EFC-10EFF,U+1EE00-1EE03,U+1EE05-1EE1F,U+1EE21-1EE22,U+1EE24,U+1EE27,U+1EE29-1EE32,U+1EE34-1EE37,U+1EE39,U+1EE3B,U+1EE42,U+1EE47,U+1EE49,U+1EE4B,U+1EE4D-1EE4F,U+1EE51-1EE52,U+1EE54,U+1EE57,U+1EE59,U+1EE5B,U+1EE5D,U+1EE5F,U+1EE61-1EE62,U+1EE64,U+1EE67-1EE6A,U+1EE6C-1EE72,U+1EE74-1EE77,U+1EE79-1EE7C,U+1EE7E,U+1EE80-1EE89,U+1EE8B-1EE9B,U+1EEA1-1EEA3,U+1EEA5-1EEA9,U+1EEAB-1EEBB,U+1EEF0-1EEF1;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:300 900;src:url(/cf-fonts/v/rubik/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:300 900;src:url(/cf-fonts/v/rubik/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Rubik';font-style:normal;font-weight:300 900;src:url(/cf-fonts/v/rubik/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}</style>
+<style type="text/css" id="google-font-inter-css" media="all">@font-face {font-family:'Inter';font-style:normal;font-weight:300 500;src:url(/cf-fonts/v/inter/5.2.8/latin-ext/opsz/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:300 500;src:url(/cf-fonts/v/inter/5.2.8/vietnamese/opsz/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:300 500;src:url(/cf-fonts/v/inter/5.2.8/greek-ext/opsz/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:300 500;src:url(/cf-fonts/v/inter/5.2.8/cyrillic-ext/opsz/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:300 500;src:url(/cf-fonts/v/inter/5.2.8/greek/opsz/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:300 500;src:url(/cf-fonts/v/inter/5.2.8/latin/opsz/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:300 500;src:url(/cf-fonts/v/inter/5.2.8/cyrillic/opsz/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}</style>
+
+<link rel='stylesheet' id='swiper-styles-css' href='https://gogloby.com/wp-content/themes/gogloby-theme/assets/js/swiper/12.1.4/swiper-bundle.min.css' media='print' onload="this.media='all'" />
+
+<!-- Google tag (gtag.js) snippet added by Site Kit -->
+<!-- Google Analytics snippet added by Site Kit -->
+<script id="google_gtagjs-js" src="https://www.googletagmanager.com/gtag/js?id=GT-PLWBTGBQ" async></script>
+<script id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["gogloby.com"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-PLWBTGBQ");
+ window._googlesitekit = window._googlesitekit || {}; window._googlesitekit.throttledEvents = []; window._googlesitekit.gtagEvent = (name, data) => { var key = JSON.stringify( { name, data } ); if ( !! window._googlesitekit.throttledEvents[ key ] ) { return; } window._googlesitekit.throttledEvents[ key ] = true; setTimeout( () => { delete window._googlesitekit.throttledEvents[ key ]; }, 5 ); gtag( "event", name, { ...data, event_source: "site-kit", ...( data && data.user_data ? {"developer_id.dZjRkOT":true} : {} ) } ); }; 
+//# sourceURL=google_gtagjs-js-after
+</script>
+<style type="text/css" id="gg-block-accordion">.gg-block__accordion-1 .block-inner{display:flex;flex-direction:column;row-gap:var(--row-gap);padding:0 var(--padding-block)}.gg-block__accordion-1 .gg-accordion__item{padding-bottom:var(--row-gap-xs);border-bottom:1px solid rgba(var(--color-gray-rgb-value), 0.3)}.gg-block__accordion-1 .gg-accordion__item:not(:last-child){margin-bottom:var(--row-gap-md)}.gg-block__accordion-1 .gg-accordion__item-header{display:flex;justify-content:space-between;align-items:flex-start;column-gap:.75rem;width:100%;padding:0;color:var(--color-gray);font-family:var(----font-family-1);font-size:1.375rem;font-weight:500;line-height:1.4;text-align:left;cursor:pointer;transition:color .3s ease-in-out}.gg-block__accordion-1 .gg-accordion__item-header:hover{color:var(--color-white)}.gg-block__accordion-1 .gg-accordion__item-icon{flex-shrink:0;width:.8125rem;height:auto;margin-top:.75rem;fill:var(--color-gray);transition:all .3s ease-in-out}.gg-block__accordion-1 .gg-accordion__item-body{height:0;transition:height .3s ease-in-out;overflow:hidden}.gg-block__accordion-1 .gg-accordion__item-content{padding-top:var(--row-gap-sm);color:var(--color-gray);transition:opacity .3s ease-in-out;opacity:0}.gg-block__accordion-1 .gg-accordion__item--active .gg-accordion__item-header{color:var(--color-white)}.gg-block__accordion-1 .gg-accordion__item--active .gg-accordion__item-icon{fill:var(--color-white);transform:rotateZ(180deg)}.gg-block__accordion-1 .gg-accordion__item--active .gg-accordion__item-content{opacity:1}.gg-block__accordion-1.gg-block--contrast .block-inner,.post-content .gg-block__accordion-1 .block-inner{font-weight:400;color:var(--color-black);background-color:var(--color-white);border:var(--border-block);border-color:var(--color-white);border-radius:var(--border-radius);overflow:hidden}.gg-block__accordion-1.gg-block--contrast .gg-accordion__item-header,.post-content .gg-block__accordion-1 .gg-accordion__item-header{font-weight:500;color:var(--color-black)}.gg-block__accordion-1.gg-block--contrast .gg-accordion__item-header:hover,.post-content .gg-block__accordion-1 .gg-accordion__item-header:hover{color:var(--color-black)}.gg-block__accordion-1.gg-block--contrast .gg-accordion__item-icon,.post-content .gg-block__accordion-1 .gg-accordion__item-icon{fill:var(--color-black)}.gg-block__accordion-1.gg-block--contrast .gg-accordion__item-content,.post-content .gg-block__accordion-1 .gg-accordion__item-content{color:var(--color-black)}.gg-block__accordion-1.gg-block--contrast .gg-accordion__item-header,.post-content .gg-block__accordion-1 .gg-accordion__item-header{color:var(--color-black)}.gg-block__accordion-1.gg-block--contrast .gg-accordion__item-icon,.post-content .gg-block__accordion-1 .gg-accordion__item-icon{fill:var(--color-black)}.gg-block__accordion-1.gg-block--contrast .gg-accordion__item--active .gg-accordion__item-header,.post-content .gg-block__accordion-1 .gg-accordion__item--active .gg-accordion__item-header{color:var(--color-black)}.gg-block__accordion-1.gg-block--contrast .gg-accordion__item--active .gg-accordion__item-icon,.post-content .gg-block__accordion-1 .gg-accordion__item--active .gg-accordion__item-icon{fill:var(--color-black)}.gg-block__accordion-1.gg-block--contrast .block-inner{padding:var(--padding-block)}.post-content .gg-block__accordion-1 .block-inner{padding:var(--padding-block-md)}.post-content--contrast .gg-block__accordion-1 .block-inner{background-color:rgba(var(--color-bg-elements-rgb-value), 0.2);border:none}@media screen and (max-width: 990px){.gg-block__accordion-1 .block-inner{padding:var(--padding-block-top) var(--padding-block);color:var(--color-black);background-color:var(--color-white);border:var(--border-block);border-color:var(--color-white);border-radius:var(--border-radius);overflow:hidden}.gg-block__accordion-1 .gg-accordion__item-header{color:var(--color-black)}.gg-block__accordion-1 .gg-accordion__item-header:hover{color:var(--color-black)}.gg-block__accordion-1 .gg-accordion__item-icon{fill:var(--color-black)}.gg-block__accordion-1 .gg-accordion__item-content{color:var(--color-black)}.gg-block__accordion-1 .gg-accordion__item-header{color:var(--color-black)}.gg-block__accordion-1 .gg-accordion__item-icon{fill:var(--color-black)}.gg-block__accordion-1 .gg-accordion__item--active .gg-accordion__item-header{color:var(--color-black)}.gg-block__accordion-1 .gg-accordion__item--active .gg-accordion__item-icon{fill:var(--color-black)}}@media screen and (max-width: 660px){.gg-block__accordion-1 .block-inner{padding:var(--padding-block-top) var(--padding-block)}.post-content .gg-block__accordion-1 .block-inner{padding:var(--padding-block)}}</style>
+<link rel="https://api.w.org/" href="https://gogloby.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://gogloby.com/wp-json/wp/v2/posts/9821" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://gogloby.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.1.4" />
+<link rel='shortlink' href='https://gogloby.com/?p=9821' />
+<meta name="generator" content="Site Kit by Google 1.191.0" />			<!-- DO NOT COPY THIS SNIPPET! Start of Page Analytics Tracking for HubSpot WordPress plugin v11.3.75-->
+			<script class="hsq-set-content-id" data-content-id="blog-post">
+				var _hsq = _hsq || [];
+				_hsq.push(["setContentType", "blog-post"]);
+			</script>
+			<!-- DO NOT COPY THIS SNIPPET! End of Page Analytics Tracking for HubSpot WordPress plugin -->
+			<script>document.createElement( "picture" );if(!window.HTMLPictureElement && document.addEventListener) {window.addEventListener("DOMContentLoaded", function() {var s = document.createElement("script");s.src = "https://gogloby.com/wp-content/plugins/webp-express/js/picturefill.min.js";document.body.appendChild(s);});}</script><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P9HDF2M2');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Hotjar/Contentsquare -->
+<script src="https://t.contentsquare.net/uxa/22fe25f4081b3.js" defer></script>
+<!-- End Hotjar/Contentsquare --><script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "Organization",
+	"@id": "https://gogloby.com/#organization",
+	"name": "GoGloby",
+	"legalName": "Gogloby LLC",
+	"url": "https://gogloby.com/",
+	"email": "hr@gogloby.com",
+	"telephone": "+1-781-343-1777",
+	"logo": {	
+		"@type": "ImageObject",
+		"url": "https://gogloby.com/wp-content/uploads/2026/05/globy-logo-square-1-01.png"
+	},
+	"image": "https://gogloby.com/wp-content/uploads/2026/05/gogloby-banner-1-01.png",
+	"slogan": "Applied AI Engineering Partner",
+	"description": "We are a US-based talent acquisition agency specializing in assisting tech companies to discover, assess, and hire the world's most thoroughly vetted talent within the US & EU time zones.",
+	"foundingDate": "2021",
+	"knowsLanguage": ["en"],
+	"knowsAbout": [
+		"Applied AI Engineering Partner",
+		"Applied AI Engineering",
+		"Applied AI Software Engineers",
+		"Agentic SDLC",
+		"Agentic Workflow",
+		"AI Intelligence Layer (engineering telemetry)",
+		"AI development inside the client perimeter",
+		"AI Agent Development",
+		"Generative ai development services",
+		"GenAI Integration",
+		"AI Orchestration",
+		"Agentic Software Development",
+		"Engineering Performance Telemetry",
+		"Nearshore AI Development",
+		"Applied AI Engineering Pod",
+		"Receruitment of Applied AI Engineer",
+		"Applied AI Staff Augmentation"
+	],
+	"keywords": [
+		"Applied AI Engineering Partner",
+		"Applied AI Engineering",
+		"Applied AI Software Engineers",
+		"Agentic SDLC",
+		"Agentic Workflow",
+		"AI Intelligence Layer",
+		"AI development inside the client perimeter",
+		"AI Engineering Pod"
+	],
+	"brand": {
+		"@type": "Brand",
+		"name": "GoGloby"
+	},
+	"address": {
+		"@type": "PostalAddress",
+		"name": "GoGloby Headquarters",
+		"streetAddress": "8 The Green",
+		"addressLocality": "Dover",
+		"addressRegion": "DE",
+		"postalCode": "19901",
+		"addressCountry": "US"
+	},
+	"contactPoint": [
+		{
+			"@type": "ContactPoint",
+			"contactType": "sales",
+			"email": "sales@gogloby.com",
+			"telephone": "+1-781-343-1777",
+			"contactOption": "https://gogloby.com/contacts/",
+			"areaServed": ["US", "CA", "GB", "EU"],
+			"availableLanguage": ["en"]
+		},
+		{
+			"@type": "ContactPoint",
+			"contactType": "candidate support",
+			"email": "hr@gogloby.com",
+			"contactOption": "https://gogloby.com//contacts/",
+			"areaServed": ["US", "AR", "MX"],
+			"availableLanguage": ["en", "es"]
+		}
+	],
+	"founder": [
+		{
+			"@type": "Person",
+			"name": "Sergey Matikaynen",
+			"jobTitle": "Co-founder & CTO",
+			"description": "Co-founder & CTO of GoGloby. Leads the Agentic SDLC methodology, secure development environment design, and the technical architecture behind the Applied AI Engineering system.",
+			"knowsAbout": ["Agentic SDLC", "Applied AI Engineering", "Multi-agent systems", "Secure AI development environments"],
+			"sameAs": ["https://www.linkedin.com/in/sergeymatikaynen/"]
+		},
+		{
+			"@type": "Person",
+			"name": "Vit Koval",
+			"alternateName": "Vitaly Koval",
+			"jobTitle": "Co-founder",
+			"description": "Co-founder of GoGloby. For the past decade, has helped engineering leaders scale teams across the US, Canada, Argentina, Brazil, Mexico, and Europe — generating $60M+ in value. Built the Applied AI Engineering system to give tech leaders board-ready proof of AI-driven engineering velocity.",
+			"knowsAbout": ["Applied AI Engineering Partnerships", "Engineering team scaling", "Nearshore AI talent", "Agentic SDLC adoption"],
+			"sameAs": ["https://www.linkedin.com/in/vitalykoval/"]
+		}
+	],
+	"numberOfEmployees": {
+		"@type": "QuantitativeValue",
+		"minValue": 50,
+		"maxValue": 100
+	},
+	"award": ["Clutch TOP Applied AI Engineering Partner 2025"],
+	"aggregateRating": {
+		"@type": "AggregateRating",
+		"ratingValue": "4.9",
+		"bestRating": "5",
+		"reviewCount": 4.9
+	},
+	"sameAs": [
+		"https://www.linkedin.com/company/gogloby/",
+		"https://www.crunchbase.com/organization/gogloby",
+		"https://x.com/GoGloby",
+		"https://www.g2.com/products/gogloby/reviews",
+		"https://clutch.co/profile/gogloby",
+		"https://www.trustpilot.com/review/gogloby.com",
+		"https://www.designrush.com/agency/profile/gogloby",
+		"https://github.com/gogloby",
+		"https://www.facebook.com/gogloby",
+		"https://www.youtube.com/@DefaultGlobal"
+	],
+	"hasOfferCatalog": {
+		"@type": "OfferCatalog",
+		"name": "GoGloby Applied AI Engineering Service Catalog",
+		"url": " https://gogloby.com/services",
+		"itemListElement": [
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"@id": "https://gogloby.com/services/claude-in-production/#service",
+					"url": "https://gogloby.com/services/claude-in-production/",
+					"name": "Applied AI Engineering",
+					"serviceType": "Applied AI Engineering",
+					"description": "GoGloby turns engineering into AI-native production. It puts Claude into production for established software, without risking the codebase. Forward-deployed AI Solutions Architects, safe by design.",
+					"provider": {
+						"@id": "https://gogloby.com/#organization"
+					},
+					"areaServed": ["US","CA","GB","EU"],
+					"serviceOutput": "Claude running in production inside the established codebase, delivering shipped features under engineer oversight, without risking the platform, with board-ready proof that the AI budget is producing output.",
+					"audience": {
+						"@type": "BusinessAudience",
+						"audienceType": "VP of Engineering, SVP Engineering, CTO at US-based Established software companies (100 to 3,000 employees)"
+					}
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"@id": "https://gogloby.com/generative-ai-development-services/#service",
+					"url": "https://gogloby.com/generative-ai-development-services/",
+					"name": "Generative AI Development Services",
+					"serviceType": "Generative AI Development",
+					"description": "Production-ready generative AI delivery covering GenAI integration, multi-agent orchestration, optimization and evaluation, and ongoing support and governance. GoGloby's Applied AI Software Engineers build copilots, AI agents, RAG applications, and agentic workflows using LangChain, LangGraph, CrewAI, and AutoGen. Forward-deployed into your team in under 4 weeks. Zero IP exposure. $3M combined liability (cyber, data and professional) from day one.",
+					"provider": {
+						"@id": "https://gogloby.com/#organization"
+					},
+					"areaServed": ["US","CA","GB","EU"],
+					"serviceOutput": "Production-ready generative AI products including copilots, AI agents, RAG applications, and multi-agent systems shipped inside the client's AI development inside the client perimeter with sprint-by-sprint AI Intelligence Layer reporting.",
+					"audience": {
+						"@type": "BusinessAudience",
+						"audienceType": "VP of Engineering, SVP Engineering, CTO at US-based Established software companies (100 to 3,000 employees)"
+					}
+	
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"@id": "https://gogloby.com/ai-staff-augmentation/#service",
+					"url": "https://gogloby.com/ai-staff-augmentation/",
+					"name": "AI Staff Augmentation",
+					"serviceType": "AI Staff Augmentation",
+					"description": "Embed the top 4 percent of Applied AI Software Engineers directly into your team, your sprints, your tools, and your codebase. Every engineer is vetted through a 4-stage technical funnel covering Specify, Navigate, Architect, and Govern. Vetted profiles delivered in 72 hours. First validated feature in 3 to 5 business days. 120-day telemetry-backed replacement guarantee. $3M combined liability (cyber, data and professional) included.",
+					"provider": {
+						"@id": "https://gogloby.com/#organization"
+					},
+					"areaServed": ["US","CA","GB","EU"],
+					"serviceOutput": "Vetted Applied AI Software Engineers forward-deployed in under 4 weeks, with the first validated feature in 3 to 5 business days and median time to first production commit of 23 days.",
+					"audience": {
+						"@type": "BusinessAudience",
+						"audienceType": "VP of Engineering, SVP Engineering, CTO at US-based Established software companies (100 to 3,000 employees)"
+					}
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"@id": "https://gogloby.com/hire-ai-engineers/#service",
+					"url": "https://gogloby.com/hire-ai-engineers/",
+					"name": "Hire Applied AI Engineers",
+					"serviceType": "Applied AI Engineering Recruitment",
+					"description": "Direct hire recruitment for senior Applied AI Engineers brought directly into your headcount. Every candidate runs GoGloby's 4-stage vetting funnel (Specify, Navigate, Architect, Govern) with only 4 percent passing. Shortlist delivered in 5 days. 50 percent faster time-to-hire than US job boards. 120-day replacement guarantee. No fee until you hire. Talent network spans 5 plus US-timezone countries.",
+					"provider": {
+						"@id": "https://gogloby.com/#organization"
+					},
+					"areaServed": ["US","CA","GB","EU"],
+					"serviceOutput": "Shortlist of production-proven Applied AI Engineers delivered in 5 business days, with 1 in 3 candidates hired and retained.",
+					"audience": {
+						"@type": "BusinessAudience",
+						"audienceType": "VP of Engineering, SVP Engineering, CTO at US-based Established software companies (100 to 3,000 employees)"
+					}
+				}
+			}
+		]
+	}
+}
+</script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org/",
+		"@type": "WebSite",
+		"@id": "https://gogloby.com#website",
+		"url": "https://gogloby.com",
+		"name": "GoGloby",
+		"description": "GoGloby is an Applied AI Engineering partner turning engineering into AI-native production: every AI dollar visible, every feature shipped faster.",
+		"publisher": {
+			"@id": "https://gogloby.com#organization"
+		},
+		"inLanguage": "en-US",
+		"copyrightHolder": {
+			"@id": "https://gogloby.com#organization"
+		}
+	}
+	</script>
+
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org/",
+		"@type": "Article",
+		"@id": "https://gogloby.com/insights/embedded-ai/#article",
+		"url": "https://gogloby.com/insights/embedded-ai/",
+		"name": "What Is Embedded AI? How It Works, Benefits, Use Cases &amp; Tools",
+		"headline": "What Is Embedded AI? How It Works, Benefits, Use Cases &amp; Tools",
+		"description": "Learn what embedded AI is, how it works inside products, where it should run, and how to choose the ",
+		"datePublished": "2026-09-25T19:28:24+03:00",
+		"dateModified": "2026-09-25T19:28:28+03:00",
+		"image": "https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-25-2026-01_26_43-PM.png",
+		"author": {
+			"@type": "Person",
+			"@id": "https://gogloby.com",
+			"url": "https://gogloby.com",
+			"name": "Sergey Matikaynen"
+		},
+		"publisher": {
+			"@type": "Organization",
+			"@id": "https://gogloby.com/#organization",
+			"name": "GoGloby",
+			"logo": {
+				"@type": "ImageObject",
+				"@id": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/logos/globy-logo-square-1-01.png",
+				"url": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/logos/globy-logo-square-1-01.png"
+			}
+		}
+	}
+	</script>
+
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "FAQPage",
+		"mainEntity": [
+
+			
+				{
+					"@type": "Question",
+					"name": "Does embedded AI need the cloud?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "No, embedded AI can run entirely without the cloud when the device has enough local computing capacity. Cloud services become useful when a product needs more compute, shared data, or capabilities that do not fit locally. Using the cloud does not stop an AI feature from being embedded in the product."
+					}
+				}
+				
+				,{
+					"@type": "Question",
+					"name": "What CPUs support embedded AI?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Most modern CPUs can support embedded AI, but the workload determines which CPU class fits. Arm Cortex-M processors target low-power systems with tight memory limits, while Cortex-A and embedded x86 processors support more demanding workloads. The key distinction is the compute required by the model, not a specific CPU brand."
+					}
+				}
+				
+				,{
+					"@type": "Question",
+					"name": "What is an embedded AI accelerator?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "An embedded AI accelerator is dedicated hardware designed to speed up neural network operations. It can appear as an NPU inside an SoC, an accelerator IP block, or a separate processor. The CPU still runs the surrounding software, while the accelerator handles supported model operations more efficiently."
+					}
+				}
+				
+				,{
+					"@type": "Question",
+					"name": "Can generative AI run on embedded devices?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Yes, generative AI can run on embedded devices when the hardware provides enough memory and compute for the chosen model. Small quantized models are more practical on local hardware than large models. The usable model size depends on available memory, supported operations, response-time requirements, and power limits."
+					}
+				}
+				
+				,{
+					"@type": "Question",
+					"name": "Is embedded AI the same as TinyML?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "No, TinyML refers specifically to machine learning running on resource-constrained microcontrollers. Embedded AI is broader and also includes systems built around CPUs, GPUs, and NPUs. TinyML is therefore one category within embedded AI, rather than a separate approach to integrating AI into products."
+					}
+				}
+				
+				,{
+					"@type": "Question",
+					"name": "How do you start an embedded AI project?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Start an embedded AI project by assigning ownership for the model, device software, and post-launch updates. That ownership determines who validates model changes, manages releases, and responds when field behavior changes. Without clear ownership, a working prototype can become difficult to maintain once the product reaches customers."
+					}
+				}
+				
+		]
+	}
+	</script>
+
+	<link rel="icon" href="https://gogloby.com/wp-content/uploads/2026/04/cropped-favicon-transparent-1-01-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://gogloby.com/wp-content/uploads/2026/04/cropped-favicon-transparent-1-01-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://gogloby.com/wp-content/uploads/2026/04/cropped-favicon-transparent-1-01-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://gogloby.com/wp-content/uploads/2026/04/cropped-favicon-transparent-1-01-1-270x270.png" />
+</head>
+
+<body class="wp-singular post-template-default single single-post postid-9821 single-format-standard wp-theme-gogloby-theme">
+
+	<header class="site-header">
+		<div class="container">
+			<div class="header-inner">
+				<div class="mobile-wrapper">
+
+					<div class="site-logo">
+						<a href="https://gogloby.com" aria-label="GoGloby">
+
+							<img width="120" height="40" src="https://gogloby.com/wp-content/uploads/2026/04/globy-logo-1-01.svg" class="no-lazy" alt="Site logo" decoding="async" />
+						</a>
+					</div>
+
+					<button class="mobile-menu-button" aria-label="Main Menu"><div></div><div></div><div></div></button>
+				</div>
+				<nav class="site-navigation">
+
+					<ul id="2" class="primary-menu"><li id="menu-item-9269" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9269"><div class="nolink">Solutions<svg class="icon menu-item-arrow" width="13" height="13" viewBox="0 0 13 13" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M0 11.6256L1.21049 12.836L11.1175 2.92938V11.6256H12.8364V0H1.21082V1.71889H9.90692L0 11.6256Z"></path></svg></div>
+<div class="sub-menu-wrapper"><ul class="sub-menu">
+	<li id="menu-item-9270" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9270"><a href="https://gogloby.com/solutions/ai-engineering-visibility/">AI Engineering Visibility</a></li>
+	<li id="menu-item-9271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9271"><a href="https://gogloby.com/solutions/forward-deployed-engineering/">Forward Deployed Engineering</a></li>
+</ul></div>
+</li>
+<li id="menu-item-7418" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7418"><div class="nolink">Services<svg class="icon menu-item-arrow" width="13" height="13" viewBox="0 0 13 13" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M0 11.6256L1.21049 12.836L11.1175 2.92938V11.6256H12.8364V0H1.21082V1.71889H9.90692L0 11.6256Z"></path></svg></div>
+<div class="sub-menu-wrapper"><ul class="sub-menu">
+	<li id="menu-item-7416" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7416"><a href="https://gogloby.com/services/ai-staff-augmentation/">AI Engineers Staff Augmentation</a></li>
+	<li id="menu-item-7415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7415"><a href="https://gogloby.com/services/hire-ai-engineers/">Hire AI Engineers</a></li>
+	<li id="menu-item-8710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-8710"><a href="https://gogloby.com/services/ai-development/">AI Development Services<svg class="icon menu-item-arrow" width="13" height="13" viewBox="0 0 13 13" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M0 11.6256L1.21049 12.836L11.1175 2.92938V11.6256H12.8364V0H1.21082V1.71889H9.90692L0 11.6256Z"></path></svg></a>
+	<div class="sub-menu-wrapper"><ul class="sub-menu">
+		<li id="menu-item-8708" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8708"><a href="https://gogloby.com/services/generative-ai-consulting/">Generative AI Consulting Services</a></li>
+		<li id="menu-item-8707" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8707"><a href="https://gogloby.com/services/agentic-ai-consulting/">Agentic AI Consulting Services</a></li>
+		<li id="menu-item-7417" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7417"><a href="https://gogloby.com/services/applied-ai-engineering/">AI Production Engineering</a></li>
+		<li id="menu-item-7639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7639"><a href="https://gogloby.com/services/generative-ai-development/">Generative AI Development Services</a></li>
+		<li id="menu-item-8709" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8709"><a href="https://gogloby.com/services/ai-agent-development/">AI Agent Development Services</a></li>
+		<li id="menu-item-8711" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8711"><a href="https://gogloby.com/services/ai-custom-software-development/">AI Custom Software Development Services</a></li>
+		<li id="menu-item-8715" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8715"><a href="https://gogloby.com/services/rag-application-development/">RAG Application Development Services</a></li>
+		<li id="menu-item-8712" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8712"><a href="https://gogloby.com/services/llm-development/">LLM Development Services</a></li>
+	</ul></div>
+</li>
+	<li id="menu-item-8759" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-8759"><a href="https://gogloby.com/services/application-modernization/">Application AI Modernization Services<svg class="icon menu-item-arrow" width="13" height="13" viewBox="0 0 13 13" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M0 11.6256L1.21049 12.836L11.1175 2.92938V11.6256H12.8364V0H1.21082V1.71889H9.90692L0 11.6256Z"></path></svg></a>
+	<div class="sub-menu-wrapper"><ul class="sub-menu">
+		<li id="menu-item-8761" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8761"><a href="https://gogloby.com/services/legacy-application-modernization/">Legacy Application Modernization Services</a></li>
+		<li id="menu-item-8760" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8760"><a href="https://gogloby.com/services/software-maintenance/">Software Maintenance Services</a></li>
+	</ul></div>
+</li>
+</ul></div>
+</li>
+<li id="menu-item-7390" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7390"><div class="nolink">Company<svg class="icon menu-item-arrow" width="13" height="13" viewBox="0 0 13 13" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M0 11.6256L1.21049 12.836L11.1175 2.92938V11.6256H12.8364V0H1.21082V1.71889H9.90692L0 11.6256Z"></path></svg></div>
+<div class="sub-menu-wrapper"><ul class="sub-menu">
+	<li id="menu-item-7412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7412"><a href="https://gogloby.com/about/">About us</a></li>
+	<li id="menu-item-7410" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7410"><a href="https://gogloby.com/jobs/">Jobs</a></li>
+</ul></div>
+</li>
+<li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12"><div class="nolink">Resources<svg class="icon menu-item-arrow" width="13" height="13" viewBox="0 0 13 13" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M0 11.6256L1.21049 12.836L11.1175 2.92938V11.6256H12.8364V0H1.21082V1.71889H9.90692L0 11.6256Z"></path></svg></div>
+<div class="sub-menu-wrapper"><ul class="sub-menu">
+	<li id="menu-item-7387" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-7387"><a href="https://gogloby.com/insights/">Insights</a></li>
+	<li id="menu-item-7389" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7389"><a href="/use-cases/">Use Cases</a></li>
+	<li id="menu-item-7386" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7386"><a href="https://gogloby.com/podcast/">Podcast</a></li>
+</ul></div>
+</li>
+<li id="menu-item-7411" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7411"><a href="https://gogloby.com/contacts/">Contact</a></li>
+</ul>
+				</nav>
+				<nav class="uility-navigation">
+
+					
+					<button class="button button--outline button--menu button--contact-form" aria-label="Talk to Us" data-modal-open="modal-contact-form">Talk to Us</button>
+
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<main class="site-content">
+<section class="section page-header page-header-single page-head-single-insights" is-solid="true">
+	<div class="container">
+		<div class="header-inner">
+			<div class="header-background">
+								<picture><source srcset="https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/09/ChatGPT-Image-Sep-25-2026-01_26_43-PM.png.webp" type="image/webp"><img src="https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-25-2026-01_26_43-PM.png" class="bg-image no-lazy webpexpress-processed" alt="Background" fetchpriority="high"></picture>
+							</div>
+			<div class="header-content">
+
+				<div class="content-main">
+					<div class="page-caption">Updated on September 25, 2026</div>					<h1 class="page-title">What Is Embedded AI? How It Works, Benefits, Use Cases &amp; Tools</h1>									</div>
+
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="section post-main post-main-insights" is-solid="false">
+	<div class="container">
+		<div class="post-inner post-has-sidebar">
+
+			
+			<aside class="sidebar post-sidebar"><div id="gg_table_of_contents-6" class="widget sidebar-widget widget__toc"><h3 class="h5 widget-title">Table of Contents</h3>
+			<ul class="toc">
+
+				
+						<li class="toc-item toc-item--h2 toc-item--active">
+							<a href="#what-is-embedded-ai" class="toc-link">What Is Embedded AI?</a>
+						</li>
+					
+						<li class="toc-item toc-item--h2">
+							<a href="#how-does-embedded-ai-architecture-work" class="toc-link">How Does Embedded AI Architecture Work?</a>
+						</li>
+					
+						<li class="toc-item toc-item--h2">
+							<a href="#what-is-the-difference-between-embedded-ai-edge-ai-generative-ai-and-embedded-analytics" class="toc-link">What Is the Difference Between Embedded AI, Edge AI, Generative AI, and Embedded Analytics?</a>
+						</li>
+					
+						<li class="toc-item toc-item--h2">
+							<a href="#what-are-the-benefits-of-embedded-ai" class="toc-link">What Are the Benefits of Embedded AI?</a>
+						</li>
+					
+						<li class="toc-item toc-item--h2">
+							<a href="#what-are-the-primary-embedded-ai-use-cases" class="toc-link">What Are the Primary Embedded AI Use Cases?</a>
+						</li>
+					
+						<li class="toc-item toc-item--h2">
+							<a href="#is-your-ai-feature-still-outside-the-product" class="toc-link">Is Your AI Feature Still Outside the Product?</a>
+						</li>
+					
+						<li class="toc-item toc-item--h2">
+							<a href="#how-do-you-implement-ai-in-embedded-systems" class="toc-link">How Do You Implement AI in Embedded Systems?</a>
+						</li>
+					
+						<li class="toc-item toc-item--h2">
+							<a href="#what-are-the-best-embedded-ai-tools" class="toc-link">What Are the Best Embedded AI Tools?</a>
+						</li>
+					
+						<li class="toc-item toc-item--h2">
+							<a href="#what-are-the-embedded-ai-hardware-options" class="toc-link">What Are the Embedded AI Hardware Options?</a>
+						</li>
+					
+						<li class="toc-item toc-item--h2">
+							<a href="#what-are-the-biggest-embedded-ai-challenges" class="toc-link">What Are the Biggest Embedded AI Challenges?</a>
+						</li>
+					
+						<li class="toc-item toc-item--h2">
+							<a href="#what-does-embedded-ai-engineering-look-like-in-2026" class="toc-link">What Does Embedded AI Engineering Look Like in 2026?</a>
+						</li>
+					
+						<li class="toc-item toc-item--h2">
+							<a href="#what-are-the-embedded-ai-trends-in-2026" class="toc-link">What Are the Embedded AI Trends in 2026?</a>
+						</li>
+					
+						<li class="toc-item toc-item--h2">
+							<a href="#how-can-gogloby-support-embedded-ai-in-software-products" class="toc-link">How Can GoGloby Support Embedded AI in Software Products?</a>
+						</li>
+					
+						<li class="toc-item toc-item--h2">
+							<a href="#conclusion" class="toc-link">Conclusion</a>
+						</li>
+					
+						<li class="toc-item toc-item--h2">
+							<a href="#want-clear-results-from-every-ai-feature-you-ship" class="toc-link">Want Clear Results From Every AI Feature You Ship?</a>
+						</li>
+					
+						<li class="toc-item toc-item--h2">
+							<a href="#faqs" class="toc-link">FAQs</a>
+						</li>
+					
+			</ul>
+
+		</div></aside>
+
+			
+			<article class="post-content post-content--contrast">
+
+				
+<p class="wp-block-paragraph">Embedded AI is AI integrated directly into a physical product or software application, so it becomes part of the device itself or the application’s workflow. The AI can run on the device itself or through cloud infrastructure, depending on the application’s requirements. Building AI into commercial software and devices is already common engineering practice. The<a href="https://news.avnet.com/press-releases/press-release-details/2026/Avnet-Insights-Survey-Engineers-Embracing-AI-and-Confronting-Its-Challenges-2026-3lDN2Bjubo/default.aspx"> Avnet Insights 2026 Engineering Survey</a> reports that 56% of engineers globally are shipping products with AI incorporated into the designed products and solutions. For these teams, the question is how to build embedded AI well.</p>
+
+
+
+<p class="wp-block-paragraph">For hardware, AI becomes part of the physical product, and one engineering decision is where the AI runs. Running AI on the device cuts delay and keeps working through outages, but every unit then needs updates for years. For software, the key decision is where AI fits into the user’s workflow. AI can work inside the task or send the user to a separate tool. Teams that add AI late can find these trade-offs harder to change.</p>
+
+
+
+<p class="wp-block-paragraph">This guide is for engineering leaders and product teams deciding where AI belongs in a product they already ship. It follows the decisions teams face, from what to build to how to keep it running. By the end, you&#8217;ll be able to judge which form of embedded AI fits the product and where it should run.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Key Takeaways:</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Embedded AI has two main forms:</strong> It can run on a physical device or work inside a software product, depending on where the AI becomes part of the task.</li>
+
+
+
+<li><strong>Edge and embedded AI describe different things:</strong> Embedded AI describes where AI fits into a product, while edge AI describes where processing happens.</li>
+
+
+
+<li><strong>Where AI runs changes the product:</strong> Local and cloud processing create different trade-offs for responsiveness, connectivity, data handling, and the user experience.</li>
+
+
+
+<li><strong>The product sets the engineering constraints:</strong> The task, operating conditions, and required performance shape the model and system design that follows.</li>
+
+
+
+<li><strong>Tools and hardware follow the deployment:</strong> The target device and software environment determine which models, runtimes, optimization tools, and processors are practical.</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="what-is-embedded-ai" toc-header="true"><strong>What Is Embedded AI?</strong></h2>
+
+
+
+<p class="wp-block-paragraph">Embedded AI is AI built into a physical device or software application as part of the device’s operation or the application’s workflow. Instead of sending the user to a separate AI tool, the product uses AI within the existing workflow and returns the result where the task happens. A thermostat that learns a building&#8217;s schedule is embedded AI. So is an ERP that flags a risky purchase order on the approval screen.</p>
+
+
+
+<p class="wp-block-paragraph">As AI moves into everyday work, more teams are building it directly into the workflows where users already operate. <a href="https://www.amd.com/content/dam/amd/en/documents/products/processors/business-systems/white-paper-idc-page.pdf](https://www.amd.com/content/dam/amd/en/documents/products/processors/business-systems/white-paper-idc-page.pdf">IDC&#8217;s 2026 research</a> found that 67% of respondents report expanding AI initiatives across departments, while 61% say they are embedding AI directly into workflows. The 61% figure shows that embedding AI into workflows is becoming part of how teams are putting AI into practice.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Hardware Embedded AI</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Hardware embedded AI makes AI part of the physical device. The model may run on the device itself when the product requires local processing. The compute ranges from a microcontroller with kilobytes of memory to an embedded GPU. A doorbell camera, for example, detects a person on its own chip.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Software Embedded AI</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Software embedded AI places AI output inside an application&#8217;s existing screens, data, and actions. For example, a CRM can draft a follow-up email from the deal record, and the rep can send it without leaving the page. A linked chatbot can&#8217;t see that record, apply the rep&#8217;s permissions, or write anything back. The model can sit in the cloud while the experience stays embedded.</p>
+
+
+
+<h2 class="wp-block-heading" id="how-does-embedded-ai-architecture-work" toc-header="true"><strong>How Does Embedded AI Architecture Work?</strong></h2>
+
+
+
+<p class="wp-block-paragraph">Embedded AI architecture starts with the data a product receives and follows that data through preprocessing, inference, a decision, and an action. The product prepares the input for the model, runs the model, and uses the result to determine what happens next. For example, a camera can process an image, identify a person, and trigger an alert. In software, an application can process customer data, generate a recommendation, and show it within the same workflow. Where each step runs affects response time, data movement, and system maintenance.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Input and Preprocessing</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Preprocessing puts raw input into the shape the ML model saw during training. For example, a vibration sensor can convert readings into a frequency spectrum, while a support tool can gather the ticket and three similar cases before calling the model. If this step produces poor input, the model can still return an answer, but the answer may be based on the wrong information.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Model Inference</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Inference is the step where the ML model returns a label, a score, or generated text. Local inference needs no network connection for the model call. Edge-server inference uses a nearby machine with more compute, while cloud inference moves the model call to a remote service. For example, a phone can detect its wake word locally and send the full request to the cloud.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Decision and Action</strong></h3>
+
+
+
+<p class="wp-block-paragraph">An AI model only produces a result. The application decides what that result means for the product and what happens next. For example, a security camera&#8217;s AI model can identify a person, but the application still needs rules for what to do with that result. It could save the clip, send an alert, or do nothing.</p>
+
+
+
+<p class="wp-block-paragraph">The application also determines when a person needs to approve the result. For example, an AI tool could flag a customer request as eligible for a refund, while the application sends larger refunds to an employee for approval.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Training and Updates</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Training happens off the device, on workstations or cloud GPUs, and new versions reach devices through over-the-air (OTA) updates. For example, a car maker can retrain a lane-detection model and ship the new version to the fleet this way. A more specialized approach is on-device learning, where a device adapts the model using data from its own use, such as a hearing aid adapting to its owner.</p>
+
+
+
+<h2 class="wp-block-heading" id="what-is-the-difference-between-embedded-ai-edge-ai-generative-ai-and-embedded-analytics" toc-header="true"><strong>What Is the Difference Between Embedded AI, Edge AI, Generative AI, and Embedded Analytics?</strong></h2>
+
+
+
+<p class="wp-block-paragraph">The difference is what each term describes. Embedded AI explains how AI fits into the product, edge AI describes where inference happens, generative AI describes what the model produces, and embedded analytics describes how insights appear in the application. These dimensions describe different parts of the same system, so one product can use several at once.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Edge AI</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Edge AI runs inference on the device or on a nearby gateway or server instead of sending data to a distant cloud. The choice depends on how much computing the model needs and where the data is collected.</p>
+
+
+
+<p class="wp-block-paragraph">A shared server keeps the model in one place, while on-device inference requires updates on every unit in the field. Edge AI therefore does not have to be part of a product. For example, a smart camera that detects people on its own chip uses both edge AI and embedded AI. A camera that sends footage to a server in the same building uses edge AI, even when the server is separate from the camera product.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Generative AI</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Generative AI describes models that create new content, such as text or code, rather than only returning a classification or score. Teams use it for tasks such as drafting, summarizing, or rewriting content that an employee would otherwise create.</p>
+
+
+
+<p class="wp-block-paragraph">The term says nothing about where the model runs. A generative AI feature can run on a device, in the cloud, or across both. For example, a product could handle short requests with a small local model and send more demanding requests to a larger cloud model.</p>
+
+
+
+<p class="wp-block-paragraph">For a closer look at how generative AI differs from applied AI and where the two overlap in production systems, check our guide on <a href="https://gogloby.com/insights/applied-ai-vs-generative-ai/">Applied AI vs. Generative AI: Differences, Use Cases, Impact</a>.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Embedded Analytics</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Embedded analytics places dashboards, metrics, and other data views inside the tools people already use, so users can work with data without switching applications. This approach is already widespread across enterprise software. According to <a href="https://assets.qlik.com/image/upload/v1740404106/qlik/docs/resource-library/analyst-reports/resource-ar-priorities-and-challenges-of-data-and-analytics-en_usjvze.pdf">IDC&#8217;s 2025 report</a>, 94% of organizations have embedded or are in the process of embedding analytics into enterprise applications for pervasive insights, better data utilization, and enhanced user experiences.</p>
+
+
+
+<p class="wp-block-paragraph">AI can take an embedded dashboard beyond showing numbers. For example, a system can answer questions in plain English, flag an unusual change, forecast the next period, or explain why a metric moved. Users can then investigate the result without building a separate report or waiting for an analyst.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Embedded AI vs. Related Technologies Table</strong></h3>
+
+
+
+<p class="wp-block-paragraph">The table below gives a quick way to compare how each term applies to an AI system. Use it to see the differences at a glance before deciding which term fits a specific use case.</p>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th><strong>Technology</strong></th><th><strong>What It Describes</strong></th><th><strong>Where It Runs</strong></th><th><strong>Main Purpose</strong></th><th><strong>Example</strong></th></tr></thead><tbody><tr><td><strong>Embedded AI</strong></td><td>AI integrated into a product or workflow</td><td>Device, edge server, or cloud</td><td>Integrate AI into the product or workflow</td><td>An ERP that flags a risky purchase order</td></tr><tr><td><strong>Edge AI</strong></td><td>Where inference runs</td><td>Device, gateway, or nearby server</td><td>Keep processing close to the data</td><td>A back-room server analyzing store cameras</td></tr><tr><td><strong>Generative AI</strong></td><td>What the ML model creates</td><td>Device, cloud, or both</td><td>Produce text, code, or images</td><td>A helpdesk that drafts ticket replies</td></tr><tr><td><strong>Embedded Analytics</strong></td><td>Reporting inside a host application</td><td>Vendor cloud, shown in the host app</td><td>Help users read their data in context</td><td>A dashboard that explains a revenue drop</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading" id="what-are-the-benefits-of-embedded-ai" toc-header="true"><strong>What Are the Benefits of Embedded AI?</strong></h2>
+
+
+
+<p class="wp-block-paragraph">The main benefit of embedded AI is that the AI result becomes part of the product&#8217;s existing task. Users can act on the result where they already work, without switching to a separate tool. When the AI also runs locally, the product can gain additional benefits such as lower latency, offline operation, privacy, and lower data transfer.</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Native experience:</strong> Embedded AI puts the result inside the workflow where the user already performs the task, so the user does not need to switch tools. For example, an accounts-payable clerk sees a duplicate-invoice warning on the invoice itself, with the matching invoice linked. The AI result becomes part of the existing review process instead of a separate step.</li>
+
+
+
+<li><strong>Lower latency (local inference):</strong> Local processing removes the network round trip between the product and a remote model, so the system can respond faster. An embedded AI feature can still call a cloud model and have network latency. For example, a driver-monitoring camera has to catch eye closure within a fraction of a second. A cloud call adds delay that depends on cell coverage. When response time is in the spec, the model may need to run on the device.</li>
+
+
+
+<li><strong>Offline operation (local inference):</strong> Local inference lets a product keep performing AI tasks when the network is unavailable. For example, a pump controller at a remote well detects cavitation in its vibration data and shuts the pump down with no signal at all. It still needs a periodic link for updates and logs, even a weekly one.</li>
+
+
+
+<li><strong>Privacy (local inference):</strong> Processing sensitive data locally can keep raw data on the device instead of sending it to a remote service. That limits how much video, audio, biometric, or industrial data leaves the product. For example, a device can process the data locally and send only the result, although the device itself still needs protection.</li>
+
+
+
+<li><strong>Lower data transfer (local inference):</strong> Local filtering or inference reduces how much raw data the product sends to the cloud, which reduces bandwidth, storage, and remote processing. Picture a camera streaming video all day, pushing gigabytes to the cloud. Detect locally, upload a 10-second clip only when someone appears, and the system sends far less data.</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="what-are-the-primary-embedded-ai-use-cases" toc-header="true"><strong>What Are the Primary Embedded AI Use Cases?</strong></h2>
+
+
+
+<p class="wp-block-paragraph">The primary embedded AI use cases are tasks where AI is integrated into a product or workflow and its output is used as part of the task. Vehicles, factories, wearables, and software products can all use embedded AI when the result needs to reach the user or system within the existing product experience.</p>
+
+
+
+<p class="wp-block-paragraph">Some use cases also need local inference because latency, connectivity, power, or privacy constraints affect where the model can run. A vehicle may need local processing for fast sensor responses, while a SaaS feature can keep the model in the cloud and still be fully embedded in the application&#8217;s workflow.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Automotive</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Automotive embedded AI becomes part of vehicle systems that use sensor data for functions such as driver assistance. Driver-assistance systems (ADAS), for example, read camera and radar data to detect pedestrians and trigger braking support. The compute must also survive heat and vibration for 10 years or more, while ISO 26262 safety requirements add controls around model changes.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Manufacturing</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Manufacturing uses embedded AI to detect problems while production is still running, so the system can act before a defect reaches the next stage. For example, a bottling-line camera inspects each cap, and the controller ejects bad bottles before packing. Predictive maintenance follows the same local loop, with a vibration model flagging a failing bearing before the line stops.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Healthcare and Wearables</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Healthcare and wearable devices use embedded AI when AI is integrated into the device’s sensing or monitoring function. For example, a smartwatch can run a heart-rhythm model on its optical sensor throughout the day. A sleep score is a wellness feature, while an ECG function that “can provide information for identifying cardiac arrhythmias” falls under the<a href="https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpcd/classification.cfm?id=QDA"> FDA&#8217;s 2026 Product Classification</a>, which lists electrocardiograph software for over-the-counter use as Device Class 2.&nbsp;</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Smart Devices and IoT</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Smart devices use embedded AI for narrow tasks where a small model can make a decision directly from local sensor data. For example, a glass-break sensor can distinguish a shattered window from a dropped plate with a TinyML model under 1 MB. Because the task is narrow, the sensor can run for years on one battery.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Software and SaaS</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Software products use embedded AI when the model needs application data and the result needs to affect an existing workflow. For example, a payments app can score each transaction for fraud before it clears, with the model running in the cloud. The feature still needs to read the right records, respect access rules, and fail cleanly when the model is slow.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Embedded Analytics</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Embedded analytics becomes an AI use case when the system uses data already inside the application to surface an insight as part of the user&#8217;s existing workflow. For example, a logistics platform can build a weekly summary for each manager and use AI to point out the carrier whose on-time rate fell most. The value comes from surfacing the insight inside the platform before the manager has to look for it. If two teams define &#8220;on time&#8221; differently, the system can produce a confident summary from inconsistent data, leading managers to make decisions based on a misleading comparison.</p>
+
+
+
+		<section class="section banner-cta gg-block gg-block__cta" is-solid="true">
+			<div class="container">
+				<div class="block-inner">
+
+					<div class="block-main">
+
+						
+												<h2 class="block-title" id="is-your-ai-feature-still-outside-the-product" toc-header="true">Is Your AI Feature Still Outside the Product?</h2>
+						
+						
+												<div class="block-description"><p>Get AI running inside your existing workflows and production systems, built to fit the code and data you have.</p>
+</div>
+						
+					</div>
+
+					
+						<div class="block-aside">
+							<div class="block-cta-group button-group">
+
+								<button class="button button--contact-form" type="button" aria-label="Talk to GoGloby" data-modal-open="modal-contact-form">Talk to GoGloby</button>
+
+							</div>
+						</div>
+
+					
+				</div>
+			</div>
+		</section>
+
+		
+
+
+<h2 class="wp-block-heading" id="how-do-you-implement-ai-in-embedded-systems" toc-header="true"><strong>How Do You Implement AI in Embedded Systems?</strong></h2>
+
+
+
+<p class="wp-block-paragraph">You implement AI in embedded systems by starting with the product requirement and building the AI system around what the product needs to do. Hardware comes later because the required output determines how much computing the system needs. The design also has to fit the conditions where the product will operate. The steps below follow that order, with each step producing something the next one needs.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Define the Task</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Start with the result the product needs from AI, and make it measurable. A system that needs to recognize a defect has a different task from one that predicts equipment failure or generates text. Define the expected accuracy and response time, along with the device limits that affect the design. This gives the model a clear target before development begins.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Prepare the Data</strong></h3>
+
+
+
+<p class="wp-block-paragraph">The model needs data that represents what the product will actually see in the field. Collect and label examples under the same conditions the device will encounter, including changes that could affect the input. For example, a defect model trained only on clean factory images can fail when dust or different lighting changes what the camera sees. Include unusual cases and noisy inputs to test the model under the conditions it needs to handle.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Train the Model</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Train the model on a workstation or cloud GPU, starting with a pretrained model when one fits the task. Transfer learning adapts that model to the product&#8217;s data instead of starting from scratch. For example, a produce-sorting system could fine-tune a pretrained image model on labeled images of the fruit it needs to classify.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Optimize the Model</strong></h3>
+
+
+
+<p class="wp-block-paragraph">The trained model may need to become smaller or faster before it can run on the device. Quantization reduces the precision used for model calculations, while pruning removes parts of the model that contribute little to the result. Distillation takes a different approach by training a smaller model to reproduce the behavior of a larger one. Each change affects the balance between model accuracy and device performance, so test the model again after optimization.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Choose the Hardware</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Choose hardware that gives the model enough computing capacity without exceeding the product&#8217;s operating limits. A small sensor may need a low-power microcontroller, while a device processing several camera feeds may need a GPU or NPU. The choice also depends on how much memory the model needs, how quickly it must respond, how much heat the device can handle, and how the hardware connects to the rest of the system. Unit cost matters more as production volume grows, so the right choice depends on the product rather than a single type of processor.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Deploy and Validate</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Move the optimized model onto the target hardware and test it as part of the actual product. For example, a Python notebook showing 97% accuracy does not prove that the embedded system will deliver the same result. The team needs to measure how the model behaves on the device, then check that accuracy has not changed during conversion or compilation. Test the complete system under real operating conditions, including temperature and power limits, before treating the model as production-ready.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Update and Monitor</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Give each model version a clear identifier and a tested way to roll back when a release causes problems. OTA updates let the team release a new model to a small group of devices before expanding the rollout. Field telemetry then shows whether the new version behaves as expected across the fleet. For example, a vision model can degrade as camera lenses collect dust or the operating environment changes. Monitoring that behavior gives the team a way to detect drift and decide when to investigate, retrain, or roll back the model.</p>
+
+
+
+<p class="wp-block-paragraph">For a broader framework for moving AI from a controlled test into production, see<a href="https://gogloby.com/insights/ai-pilot-program/"> AI Pilot Program: How to Plan, Run, and Scale It in 2026</a>.</p>
+
+
+
+<h2 class="wp-block-heading" id="what-are-the-best-embedded-ai-tools" toc-header="true"><strong>What Are the Best Embedded AI Tools?</strong></h2>
+
+
+
+<p class="wp-block-paragraph">The best embedded AI tool depends on the hardware, model, and development workflow the product needs. Some platforms cover the path from sensor data to a deployable library, while others focus on getting models to run efficiently on specific chips. Open-source runtimes provide execution without taking over the rest of the pipeline. Model-Based Design tools add simulation and code generation for systems where verification matters.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Evaluation Criteria</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Target hardware is the first filter because a tool that does not support the product&#8217;s chip is not a practical choice. From there, compare how the tool handles model formats and whether the operations used by the model survive conversion. Look at how much optimization it provides and how much control you have over the resulting model. Then check how the tool measures performance on the actual device and how models move into production. Finally, consider whether using the tool ties the deployment to one hardware vendor.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Best Embedded AI Tools</strong></h3>
+
+
+
+<p class="wp-block-paragraph">The table below gives a quick way to compare the main tools by where they fit in the embedded AI workflow. Use it to narrow the shortlist, then check the tool&#8217;s fit with the specific hardware and deployment requirements.</p>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th><strong>Tool</strong></th><th><strong>Best For</strong></th><th><strong>Target Hardware</strong></th><th><strong>Optimization</strong></th><th><strong>Validation / Profiling</strong></th><th><strong>Deployment</strong></th><th><strong>Main Limitation</strong></th></tr></thead><tbody><tr><td><strong>Edge Impulse</strong></td><td>Data-to-device workflow</td><td>MCUs to Linux processors</td><td>EON Tuner, auto-quantization</td><td>On-target estimates</td><td>C++ library</td><td>Less low-level control</td></tr><tr><td><strong>STM32Cube AI Studio</strong></td><td>STM32 products</td><td>STM32 MCUs</td><td>Quantization with real data</td><td>Board benchmarks</td><td>Optimized C code</td><td>ST silicon only</td></tr><tr><td><strong>NXP eIQ</strong></td><td>NXP products</td><td>i.MX RT, i.MX 8, i.MX 9</td><td>NPU compilation</td><td>eIQ Toolkit profiling</td><td>LiteRT, TFLM, Arm NN</td><td>Little value off NXP</td></tr><tr><td><strong>NVIDIA TAO</strong></td><td>Adapting vision models</td><td>Jetson, data center GPUs</td><td>Distillation, quantization</td><td>TensorRT tuning</td><td>TensorRT, DeepStream</td><td>No MCU path</td></tr><tr><td><strong>LiteRT / TFLM</strong></td><td>Open-source runtime</td><td>Phones, Linux boards, MCUs</td><td>Post-training quantization</td><td>Basic benchmarks</td><td>Linked library</td><td>Runtime only</td></tr><tr><td><strong>MATLAB and Simulink</strong></td><td>Safety-sensitive controls</td><td>CPUs, GPUs, FPGAs</td><td>Quantization add-ons</td><td>Processor-in-the-loop tests</td><td>C/C++, CUDA, HDL</td><td>Cost and learning curve</td></tr></tbody></table></figure>
+
+
+
+<h3 class="wp-block-heading"><strong>Edge Impulse</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Edge Impulse is a Qualcomm-owned platform that takes a project from sensor data to a deployable library in one environment. That makes it useful when the team wants one workflow for collecting data, training models, and preparing them for a device. For example, a vibration fault detector can move from raw sensor logs to firmware without switching between separate tools.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>STM32Cube AI Studio</strong></h3>
+
+
+
+<p class="wp-block-paragraph">STM32Cube AI Studio is STMicroelectronics&#8217; environment for bringing AI models to STM32 microcontrollers. It fits teams that already build around STM32 and need to see how a model behaves on the actual board before generating C code for the product.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>NXP eIQ</strong></h3>
+
+
+
+<p class="wp-block-paragraph">NXP eIQ provides the ML environment for NXP microcontrollers and application processors. The platform also connects models to NXP&#8217;s Neutron NPU when the selected hardware includes one, giving teams a path from model development to hardware acceleration.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>NVIDIA TAO</strong></h3>
+
+
+
+<p class="wp-block-paragraph">NVIDIA TAO focuses on adapting pretrained vision and vision-language models for NVIDIA hardware. TAO 7 supports fine-tuning foundation models and preparing them for Jetson deployment. For example, a retailer could adapt a shelf-monitoring model using labeled images from stores.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>LiteRT / TFLM</strong></h3>
+
+
+
+<p class="wp-block-paragraph">LiteRT is Google&#8217;s on-device runtime, formerly TensorFlow Lite. TFLM is the microcontroller version and runs without dynamic memory allocation. These tools execute trained models rather than providing the full development pipeline, so teams still need separate tools for data, training, and deployment management.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>MATLAB and Simulink</strong></h3>
+
+
+
+<p class="wp-block-paragraph">MATLAB and Simulink take a Model-Based Design approach, letting engineers test an AI model inside a simulation before generating production code. That workflow is useful when the AI system has to be evaluated as part of a larger machine and the development process requires traceable verification.</p>
+
+
+
+<h2 class="wp-block-heading" id="what-are-the-embedded-ai-hardware-options" toc-header="true"><strong>What Are the Embedded AI Hardware Options?</strong></h2>
+
+
+
+<p class="wp-block-paragraph">Embedded AI hardware options are the processor types that run inference on a device. Each type handles AI workloads differently, with trade-offs in performance, power, flexibility, and development effort. Many products combine several processors on one system-on-chip (SoC), while custom silicon provides a way to tailor hardware to a specific workload at high production volume.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Microcontrollers</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Microcontrollers (MCUs) run small models next to the sensor while using very little power. That makes them useful for tasks that need to stay on continuously, such as keyword spotting or sensor monitoring. With limited memory, the model has to fit within tight device constraints.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>CPUs</strong></h3>
+
+
+
+<p class="wp-block-paragraph">CPUs handle lighter inference while also running the device&#8217;s other software. Vector extensions such as Arm Neon speed up the mathematical operations used by many models. They work well when inference demand is limited, but continuous video processing can exceed what a CPU can handle efficiently.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>GPUs</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Embedded GPUs such as NVIDIA Jetson handle larger models and parallel workloads across multiple data streams. That makes them useful for applications such as computer vision and generative AI on devices. The trade-off is higher power use, which also creates more heat that the product has to manage.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>NPUs</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Neural processing units (NPUs) are designed to run neural network operations with less power than a general-purpose CPU. Their benefit depends on whether the model uses operations the NPU supports. When a layer is unsupported, the system can send that work back to the CPU and reduce the performance gain.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>FPGAs</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Field-programmable gate arrays (FPGAs) let engineers build a custom processing pipeline for a specific workload. That makes them useful when an application needs predictable timing, such as radar or medical imaging. The trade-off is more hardware design work and longer development cycles.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Embedded AI Hardware Comparison Table</strong></h3>
+
+
+
+<p class="wp-block-paragraph">The table summarizes the five hardware classes above. Use it to shortlist a class, then test real parts against the product&#8217;s requirements.</p>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th><strong>Hardware</strong></th><th><strong>Best For</strong></th><th><strong>Performance Profile</strong></th><th><strong>Power Use</strong></th><th><strong>Flexibility</strong></th><th><strong>Typical Applications</strong></th><th><strong>Main Trade-Off</strong></th></tr></thead><tbody><tr><td><strong>MCU</strong></td><td>Always-on sensor models</td><td>Low, deterministic</td><td>Milliwatts</td><td>Low</td><td>Keyword spotting, wearables</td><td>Memory caps model size</td></tr><tr><td><strong>CPU</strong></td><td>Light inference</td><td>Low to moderate</td><td>Moderate</td><td>High</td><td>Gateways, classifiers</td><td>Slow for video</td></tr><tr><td><strong>GPU</strong></td><td>Large vision and GenAI</td><td>High, parallel</td><td>High</td><td>High</td><td>Robots, video analytics</td><td>Power and heat</td></tr><tr><td><strong>NPU</strong></td><td>Efficient neural inference</td><td>High on supported operators</td><td>Low to moderate</td><td>Moderate</td><td>Smart cameras, car SoCs</td><td>Operator support</td></tr><tr><td><strong>FPGA</strong></td><td>Deterministic pipelines</td><td>High, fixed latency</td><td>Moderate</td><td>High after design work</td><td>Radar, medical imaging</td><td>Long development cycles</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading" id="what-are-the-biggest-embedded-ai-challenges" toc-header="true"><strong>What Are the Biggest Embedded AI Challenges?</strong></h2>
+
+
+
+<p class="wp-block-paragraph">The biggest embedded AI challenges come from fitting AI into a physical product and keeping the system reliable after deployment. Unlike cloud software, embedded systems operate within fixed device constraints and have to keep working in changing physical environments. That makes the engineering work extend beyond getting a model to run, because the product has to keep delivering the required result throughout its operating life.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Compute and Memory</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Embedded devices have limited memory and computing capacity, which restricts the size and complexity of the model they can run. Model weights take space in flash, while activations, the values produced during inference, use RAM. A model can fit in flash and still fail when the device does not have enough RAM for inference.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Power and Thermal Limits</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Running AI on an embedded device has to stay within the product&#8217;s power and thermal limits. Running inference more frequently increases energy use, while sustained processing can generate enough heat to reduce performance. A wearable, for example, can run inference less frequently to extend battery life.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Accuracy vs. Performance</strong></h3>
+
+
+
+<p class="wp-block-paragraph">A smaller or faster model can produce less accurate results, so teams have to balance model performance with the accuracy the task requires. A faster model is not useful if it misses results the product needs to detect. The acceptance threshold therefore needs to match the task before optimization begins.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Hardware Fragmentation</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Models do not run the same way across all hardware because vendors provide different SDKs, compilers, accelerators, and supported operations. A model optimized for one NPU can require changes when moved to another processor. Standard formats such as ONNX improve portability, but they do not remove hardware-specific work.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Security</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Local inference creates attack surfaces that do not exist in the same way when inference runs entirely in a remote service. An attacker with physical access could extract an unprotected model or secrets from a device, while insecure updates could allow unauthorized software or models to reach the fleet. Secure boot, signed updates, protected keys, and defenses against adversarial inputs therefore have to be part of the product design.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Lifecycle Management</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Keeping embedded AI reliable over time means supporting long hardware lifecycles, software updates, and different device versions in the field. Industrial products can stay deployed for 10 years or more, creating fleets with mixed hardware and model versions. Teams therefore need update mechanisms, telemetry, compatibility testing, and rollback procedures that continue working after launch.</p>
+
+
+
+<h2 class="wp-block-heading" id="what-does-embedded-ai-engineering-look-like-in-2026" toc-header="true"><strong>What Does Embedded AI Engineering Look Like in 2026?</strong></h2>
+
+
+
+<p class="wp-block-paragraph">In 2026, embedded AI engineering brings ML and product engineering together. The model has to work as part of a real product, not in isolation. That changes the engineering work around AI. Teams have to connect model development with the requirements of the product throughout development and deployment.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Core Skills</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Embedded AI engineers use C and C++ for firmware and Python for model development and training. Linux or an RTOS supports the software around the model, while interfaces such as I2C and SPI connect the processor to sensors and other hardware. In 2026, engineers also need to work with more capable AI workloads, including generative and multimodal models running on embedded hardware. That makes model optimization and hardware-specific inference more relevant to the deployment process.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Development Workflow</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Embedded AI development crosses several engineering roles, and decisions in one area affect the others. ML engineers work on the model, embedded developers integrate it into the runtime, and hardware teams build the system around it. As embedded platforms add dedicated AI acceleration, teams also need to decide how workloads should run across the CPU, GPU, and NPU and validate performance on the target hardware. A model that ships before the board team confirms the available memory can require weeks of rework.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>AI Impact on Embedded Engineering Roles</strong></h3>
+
+
+
+<p class="wp-block-paragraph">AI coding tools such as Claude Code, Cursor, and GitHub Copilot can draft driver code and unit tests. Generated code still needs review from an engineer who understands the system and the failure modes involved. At the same time, AI is becoming part of the embedded product itself, so engineers now have to validate model behavior alongside firmware and hardware behavior. That puts more emphasis on validation and review while the engineer remains responsible for the code that reaches the product.</p>
+
+
+
+<h2 class="wp-block-heading" id="what-are-the-embedded-ai-trends-in-2026" toc-header="true"><strong>What Are the Embedded AI Trends in 2026?</strong></h2>
+
+
+
+<p class="wp-block-paragraph">In 2026, embedded AI is moving toward more capable local processing and deeper integration into products. As hardware and models improve, teams have more options for deciding where AI runs and how closely it connects to the product. That gives engineering teams more control over latency, connectivity, and the user experience.</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Smaller models:</strong> Models are getting small enough to run on hardware that could not support them a few years ago. Small language models with 1 to 4 billion parameters now run on phones and edge computers, although that size still exceeds the limits of many microcontrollers.</li>
+
+
+
+<li><strong>AI accelerators:</strong> AI workloads need more specialized hardware as models run closer to the device. NPUs now appear in microcontrollers, car SoCs, and PCs, giving products dedicated hardware for neural network operations without relying only on the CPU.</li>
+
+
+
+<li><strong>On-device genAI:</strong> Generative AI no longer has to depend entirely on a network connection. For example, a field-service tablet can summarize a repair manual offline, while a product can send more demanding requests to the cloud. This creates a hybrid setup where local and cloud models handle different tasks.</li>
+
+
+
+<li><strong>AI-native software:</strong> Software products are being designed around AI as part of the workflow rather than adding AI as a separate feature. For example, a finance platform can reconcile transactions and explain each mismatch on the same screen. This changes how established products are designed and evaluated against software built around AI from the start.</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="how-can-gogloby-support-embedded-ai-in-software-products" toc-header="true"><strong>How Can GoGloby Support Embedded AI in Software Products?</strong></h2>
+
+
+
+<p class="wp-block-paragraph">GoGloby supports embedded AI in software by forward-deploying an AI Solutions Architect to build it into a client&#8217;s product. A model API alone isn&#8217;t enough, since the feature has to fit code and data built up over years. As an Applied AI Engineering partner, we work at the software level of the product. Our Architect works inside the client&#8217;s repos and reviews, with access the client grants and can revoke any day.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Architecture</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Architecture starts with deciding where AI belongs and what it&#8217;s allowed to do. The Architect maps the workflow, the data the feature reads, and the actions that need human sign-off. The model and provider are then picked to fit the task. In a lending platform, for example, AI drafts a credit memo that an underwriter approves before customers see it.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Integration</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Integration puts the feature inside the product&#8217;s existing screens and services. The Architect then tests it against real edge cases before release. A recommendation feature, for instance, reads the same order tables the product uses, so its suggestions match what customers see.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Measurement</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Each feature is measured against the product&#8217;s own baseline, on the outcome it should move, such as correction rate or support load. A support-summary feature earns its place when agents close tickets faster and edit fewer summaries.</p>
+
+
+
+<h2 class="wp-block-heading" id="conclusion" toc-header="true"><strong>Conclusion</strong></h2>
+
+
+
+<p class="wp-block-paragraph">Embedded AI works when AI is integrated into the physical device itself or into a software application’s workflow. The engineering approach depends on where that work happens and what the product needs to deliver.</p>
+
+
+
+<p class="wp-block-paragraph">For a physical device, the starting point is the operating environment and the limits the hardware has to meet. For software, the starting point is the workflow, the data available to the feature, and the action that follows the AI output. In both cases, start with one measurable outcome before choosing a model, runtime, tool, or processor.</p>
+
+
+
+<p class="wp-block-paragraph">For an existing product, pick one workflow where AI could change a real decision or remove a meaningful manual step. Define the expected result, test a baseline, and validate the feature in the environment where customers will use it.</p>
+
+
+
+		<section class="section banner-cta gg-block gg-block__cta" is-solid="true">
+			<div class="container">
+				<div class="block-inner">
+
+					<div class="block-main">
+
+						
+												<h2 class="block-title" id="want-clear-results-from-every-ai-feature-you-ship" toc-header="true">Want Clear Results From Every AI Feature You Ship?</h2>
+						
+						
+												<div class="block-description"><p>GoGloby builds AI features measured against your own baseline, so you see which ones move results.</p>
+</div>
+						
+					</div>
+
+					
+						<div class="block-aside">
+							<div class="block-cta-group button-group">
+
+								<button class="button button--contact-form" type="button" aria-label="Book a Call" data-modal-open="modal-contact-form">Book a Call</button>
+
+							</div>
+						</div>
+
+					
+				</div>
+			</div>
+		</section>
+
+		
+
+
+<h2 class="wp-block-heading" id="faqs" toc-header="true"><strong>FAQs</strong></h2>
+
+
+
+		<section class="section gg-block gg-block--contrast gg-block__accordion-1" is-solid="true">
+			<div class="container">
+				<div class="block-inner">
+
+					
+					<div class="block-main">
+						<div class="gg-accordion">
+
+							
+								<div class="gg-accordion__item">
+									<button class="gg-accordion__item-header" aria-label="Does embedded AI need the cloud?">
+										<div class="gg-accordion__item-title">Does embedded AI need the cloud?</div>
+										<svg class="gg-accordion__item-icon" width="13" height="13" viewBox="0 0 13 13" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M0 11.6256L1.21049 12.836L11.1175 2.92938V11.6256H12.8364V0H1.21082V1.71889H9.90692L0 11.6256Z"></path></svg>
+									</button>
+									<div class="gg-accordion__item-body">
+										<div class="gg-accordion__item-content"><p><span style="font-weight: 400;">No, embedded AI can run entirely without the cloud when the device has enough local computing capacity. Cloud services become useful when a product needs more compute, shared data, or capabilities that do not fit locally. Using the cloud does not stop an AI feature from being embedded in the product.</span></p>
+</div>
+									</div>
+								</div>
+
+								
+								<div class="gg-accordion__item">
+									<button class="gg-accordion__item-header" aria-label="What CPUs support embedded AI?">
+										<div class="gg-accordion__item-title">What CPUs support embedded AI?</div>
+										<svg class="gg-accordion__item-icon" width="13" height="13" viewBox="0 0 13 13" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M0 11.6256L1.21049 12.836L11.1175 2.92938V11.6256H12.8364V0H1.21082V1.71889H9.90692L0 11.6256Z"></path></svg>
+									</button>
+									<div class="gg-accordion__item-body">
+										<div class="gg-accordion__item-content"><p><span style="font-weight: 400;">Most modern CPUs can support embedded AI, but the workload determines which CPU class fits. Arm Cortex-M processors target low-power systems with tight memory limits, while Cortex-A and embedded x86 processors support more demanding workloads. The key distinction is the compute required by the model, not a specific CPU brand.</span></p>
+</div>
+									</div>
+								</div>
+
+								
+								<div class="gg-accordion__item">
+									<button class="gg-accordion__item-header" aria-label="What is an embedded AI accelerator?">
+										<div class="gg-accordion__item-title">What is an embedded AI accelerator?</div>
+										<svg class="gg-accordion__item-icon" width="13" height="13" viewBox="0 0 13 13" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M0 11.6256L1.21049 12.836L11.1175 2.92938V11.6256H12.8364V0H1.21082V1.71889H9.90692L0 11.6256Z"></path></svg>
+									</button>
+									<div class="gg-accordion__item-body">
+										<div class="gg-accordion__item-content"><p><span style="font-weight: 400;">An embedded AI accelerator is dedicated hardware designed to speed up neural network operations. It can appear as an NPU inside an SoC, an accelerator IP block, or a separate processor. The CPU still runs the surrounding software, while the accelerator handles supported model operations more efficiently.</span></p>
+</div>
+									</div>
+								</div>
+
+								
+								<div class="gg-accordion__item">
+									<button class="gg-accordion__item-header" aria-label="Can generative AI run on embedded devices?">
+										<div class="gg-accordion__item-title">Can generative AI run on embedded devices?</div>
+										<svg class="gg-accordion__item-icon" width="13" height="13" viewBox="0 0 13 13" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M0 11.6256L1.21049 12.836L11.1175 2.92938V11.6256H12.8364V0H1.21082V1.71889H9.90692L0 11.6256Z"></path></svg>
+									</button>
+									<div class="gg-accordion__item-body">
+										<div class="gg-accordion__item-content"><p><span style="font-weight: 400;">Yes, generative AI can run on embedded devices when the hardware provides enough memory and compute for the chosen model. Small quantized models are more practical on local hardware than large models. The usable model size depends on available memory, supported operations, response-time requirements, and power limits.</span></p>
+</div>
+									</div>
+								</div>
+
+								
+								<div class="gg-accordion__item">
+									<button class="gg-accordion__item-header" aria-label="Is embedded AI the same as TinyML?">
+										<div class="gg-accordion__item-title">Is embedded AI the same as TinyML?</div>
+										<svg class="gg-accordion__item-icon" width="13" height="13" viewBox="0 0 13 13" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M0 11.6256L1.21049 12.836L11.1175 2.92938V11.6256H12.8364V0H1.21082V1.71889H9.90692L0 11.6256Z"></path></svg>
+									</button>
+									<div class="gg-accordion__item-body">
+										<div class="gg-accordion__item-content"><p><span style="font-weight: 400;">No, TinyML refers specifically to machine learning running on resource-constrained microcontrollers. Embedded AI is broader and also includes systems built around CPUs, GPUs, and NPUs. TinyML is therefore one category within embedded AI, rather than a separate approach to integrating AI into products.</span></p>
+</div>
+									</div>
+								</div>
+
+								
+								<div class="gg-accordion__item">
+									<button class="gg-accordion__item-header" aria-label="How do you start an embedded AI project?">
+										<div class="gg-accordion__item-title">How do you start an embedded AI project?</div>
+										<svg class="gg-accordion__item-icon" width="13" height="13" viewBox="0 0 13 13" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M0 11.6256L1.21049 12.836L11.1175 2.92938V11.6256H12.8364V0H1.21082V1.71889H9.90692L0 11.6256Z"></path></svg>
+									</button>
+									<div class="gg-accordion__item-body">
+										<div class="gg-accordion__item-content"><p><span style="font-weight: 400;">Start an embedded AI project by assigning ownership for the model, device software, and post-launch updates. That ownership determines who validates model changes, manages releases, and responds when field behavior changes. Without clear ownership, a working prototype can become difficult to maintain once the product reaches customers.</span></p>
+</div>
+									</div>
+								</div>
+
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+				
+	<div class="post-author">
+
+				<div class="author-image">
+			<picture><source data-srcset="https://gogloby.com/wp-content/webp-express/webp-images/uploads/2024/02/1706550966241.jpeg.webp" type="image/webp"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20400%22%3E%3C%2Fsvg%3E" data-src="https://gogloby.com/wp-content/uploads/2024/02/1706550966241.jpeg" alt="Author avatar" class="webpexpress-processed lazy"></picture>
+		</div>
+		
+		<div class="author-content">
+			<div class="author-title"><span class="author-name">Sergey Matikaynen</span> / <span class="author-position">CTO</span></div>
+			<div class="author-subtitle">Article author</div>
+		</div>
+
+				<div class="author-description">
+
+						<div class="author-summary">Sergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.</div>
+			
+			<div class="author-links"><a href="https://gogloby.com/author/sergey/" aria-label="Author profile">View profile</a>
+
+			
+		</div>
+		
+	</div>
+
+
+			</article>
+		</div>
+	</div>
+</section>
+
+
+<section class="section news-slider latest-posts latest-posts-insights gg-block" is-solid="false">
+	<div class="container">
+		<div class="block-inner">
+			<div class="block-header" has-width="true" has-offset="true">
+				<div class="block-header__content">
+					<h2 class="h2 block-title">Latest posts</h2>
+				</div>
+				<div class="block-header__aside block-header__navigation swiper-navigation">
+					<button class="button slider-nav-button swiper-button-prev" aria-label="Previous">
+						<svg width="25" height="9" viewBox="0 0 25 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.707 4.5H0.707031M0.707031 4.5L4.70703 0.5M0.707031 4.5L4.70703 8.5" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+					</button>
+					<button class="button slider-nav-button swiper-button-next" aria-label="Next">
+						<svg width="25" height="9" viewBox="0 0 25 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 4.5L23.5 4.5M23.5 4.5L19.5 8.5M23.5 4.5L19.5 0.5" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+					</button>
+				</div>
+			</div>
+			<div class="block-main block-slider swiper" data-slides-per-view="3">
+				<div class="block-slider__wrapper swiper-wrapper">
+
+					<a href="https://gogloby.com/insights/ai-compliance-consulting/" class="block-slide swiper-slide">
+	<div class="slide-image"><picture><source data-srcset="https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/10/Gemini_Generated_Image_vth5k8vth5k8vth5-scaled.jpeg.webp 2560w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/10/Gemini_Generated_Image_vth5k8vth5k8vth5-300x167.jpeg.webp 300w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/10/Gemini_Generated_Image_vth5k8vth5k8vth5-1024x572.jpeg.webp 1024w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/10/Gemini_Generated_Image_vth5k8vth5k8vth5-768x429.jpeg.webp 768w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/10/Gemini_Generated_Image_vth5k8vth5k8vth5-1536x857.jpeg.webp 1536w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/10/Gemini_Generated_Image_vth5k8vth5k8vth5-2048x1143.jpeg.webp 2048w" data-sizes="(max-width: 2560px) 100vw, 2560px" type="image/webp"><img width="2560" height="1429" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%202560%201429%22%3E%3C%2Fsvg%3E" data-src="https://gogloby.com/wp-content/uploads/2026/10/Gemini_Generated_Image_vth5k8vth5k8vth5-scaled.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image webpexpress-processed lazy" alt="What Is AI Compliance Consulting: Process, Benefits & How to Implement It" decoding="async" fetchpriority="high" data-srcset="https://gogloby.com/wp-content/uploads/2026/10/Gemini_Generated_Image_vth5k8vth5k8vth5-scaled.jpeg 2560w, https://gogloby.com/wp-content/uploads/2026/10/Gemini_Generated_Image_vth5k8vth5k8vth5-300x167.jpeg 300w, https://gogloby.com/wp-content/uploads/2026/10/Gemini_Generated_Image_vth5k8vth5k8vth5-1024x572.jpeg 1024w, https://gogloby.com/wp-content/uploads/2026/10/Gemini_Generated_Image_vth5k8vth5k8vth5-768x429.jpeg 768w, https://gogloby.com/wp-content/uploads/2026/10/Gemini_Generated_Image_vth5k8vth5k8vth5-1536x857.jpeg 1536w, https://gogloby.com/wp-content/uploads/2026/10/Gemini_Generated_Image_vth5k8vth5k8vth5-2048x1143.jpeg 2048w" data-sizes="(max-width: 2560px) 100vw, 2560px"></picture></div>
+	<div class="slide-content">
+		<h3 class="h4 slide-title">What Is AI Compliance Consulting: Process, Benefits &amp; How to Implement It</h3>
+		<div class="slide-meta">October 2,2026</div>
+	</div>
+</a><a href="https://gogloby.com/insights/ai-implementation-cost/" class="block-slide swiper-slide">
+	<div class="slide-image"><picture><source data-srcset="https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/10/Integracion-de-datos-futurista.png.webp 1672w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/10/Integracion-de-datos-futurista-300x169.png.webp 300w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/10/Integracion-de-datos-futurista-1024x576.png.webp 1024w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/10/Integracion-de-datos-futurista-768x432.png.webp 768w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/10/Integracion-de-datos-futurista-1536x864.png.webp 1536w" data-sizes="(max-width: 1672px) 100vw, 1672px" type="image/webp"><img width="1672" height="941" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201672%20941%22%3E%3C%2Fsvg%3E" data-src="https://gogloby.com/wp-content/uploads/2026/10/Integracion-de-datos-futurista.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image webpexpress-processed lazy" alt="AI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI" decoding="async" data-srcset="https://gogloby.com/wp-content/uploads/2026/10/Integracion-de-datos-futurista.png 1672w, https://gogloby.com/wp-content/uploads/2026/10/Integracion-de-datos-futurista-300x169.png 300w, https://gogloby.com/wp-content/uploads/2026/10/Integracion-de-datos-futurista-1024x576.png 1024w, https://gogloby.com/wp-content/uploads/2026/10/Integracion-de-datos-futurista-768x432.png 768w, https://gogloby.com/wp-content/uploads/2026/10/Integracion-de-datos-futurista-1536x864.png 1536w" data-sizes="(max-width: 1672px) 100vw, 1672px"></picture></div>
+	<div class="slide-content">
+		<h3 class="h4 slide-title">AI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs &amp; ROI</h3>
+		<div class="slide-meta">October 2,2026</div>
+	</div>
+</a><a href="https://gogloby.com/insights/ai-governance-consulting-firms/" class="block-slide swiper-slide">
+	<div class="slide-image"><picture><source data-srcset="https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/09/ChatGPT-Image-24-sept-2026-14_14_41.png.webp 1672w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/09/ChatGPT-Image-24-sept-2026-14_14_41-300x169.png.webp 300w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/09/ChatGPT-Image-24-sept-2026-14_14_41-1024x576.png.webp 1024w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/09/ChatGPT-Image-24-sept-2026-14_14_41-768x432.png.webp 768w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/09/ChatGPT-Image-24-sept-2026-14_14_41-1536x864.png.webp 1536w" data-sizes="(max-width: 1672px) 100vw, 1672px" type="image/webp"><img width="1672" height="941" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201672%20941%22%3E%3C%2Fsvg%3E" data-src="https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-24-sept-2026-14_14_41.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image webpexpress-processed lazy" alt="10 AI Governance Consulting Firms to Evaluate in 2026" decoding="async" data-srcset="https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-24-sept-2026-14_14_41.png 1672w, https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-24-sept-2026-14_14_41-300x169.png 300w, https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-24-sept-2026-14_14_41-1024x576.png 1024w, https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-24-sept-2026-14_14_41-768x432.png 768w, https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-24-sept-2026-14_14_41-1536x864.png 1536w" data-sizes="(max-width: 1672px) 100vw, 1672px"></picture></div>
+	<div class="slide-content">
+		<h3 class="h4 slide-title">10 AI Governance Consulting Firms to Evaluate in 2026</h3>
+		<div class="slide-meta">September 24,2026</div>
+	</div>
+</a><a href="https://gogloby.com/insights/ai-consulting-vs-staff-augmentation/" class="block-slide swiper-slide">
+	<div class="slide-image"><picture><source data-srcset="https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/09/ChatGPT-Image-23-sept-2026-16_43_07.png.webp 1774w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/09/ChatGPT-Image-23-sept-2026-16_43_07-300x150.png.webp 300w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/09/ChatGPT-Image-23-sept-2026-16_43_07-1024x512.png.webp 1024w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/09/ChatGPT-Image-23-sept-2026-16_43_07-768x384.png.webp 768w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/09/ChatGPT-Image-23-sept-2026-16_43_07-1536x768.png.webp 1536w" data-sizes="(max-width: 1774px) 100vw, 1774px" type="image/webp"><img width="1774" height="887" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201774%20887%22%3E%3C%2Fsvg%3E" data-src="https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-23-sept-2026-16_43_07.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image webpexpress-processed lazy" alt="AI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose" decoding="async" data-srcset="https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-23-sept-2026-16_43_07.png 1774w, https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-23-sept-2026-16_43_07-300x150.png 300w, https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-23-sept-2026-16_43_07-1024x512.png 1024w, https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-23-sept-2026-16_43_07-768x384.png 768w, https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-23-sept-2026-16_43_07-1536x768.png 1536w" data-sizes="(max-width: 1774px) 100vw, 1774px"></picture></div>
+	<div class="slide-content">
+		<h3 class="h4 slide-title">AI Consulting vs. Staff Augmentation in 2026: Cost, Benefits &amp; Which to Choose</h3>
+		<div class="slide-meta">September 23,2026</div>
+	</div>
+</a><a href="https://gogloby.com/insights/ai-consulting-cost/" class="block-slide swiper-slide">
+	<div class="slide-image"><picture><source data-srcset="https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/09/AI-Consulting-Cost-Models.png.webp 1619w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/09/AI-Consulting-Cost-Models-300x180.png.webp 300w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/09/AI-Consulting-Cost-Models-1024x614.png.webp 1024w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/09/AI-Consulting-Cost-Models-768x461.png.webp 768w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/09/AI-Consulting-Cost-Models-1536x921.png.webp 1536w" data-sizes="(max-width: 1619px) 100vw, 1619px" type="image/webp"><img width="1619" height="971" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201619%20971%22%3E%3C%2Fsvg%3E" data-src="https://gogloby.com/wp-content/uploads/2026/09/AI-Consulting-Cost-Models.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image webpexpress-processed lazy" alt="How Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees" decoding="async" data-srcset="https://gogloby.com/wp-content/uploads/2026/09/AI-Consulting-Cost-Models.png 1619w, https://gogloby.com/wp-content/uploads/2026/09/AI-Consulting-Cost-Models-300x180.png 300w, https://gogloby.com/wp-content/uploads/2026/09/AI-Consulting-Cost-Models-1024x614.png 1024w, https://gogloby.com/wp-content/uploads/2026/09/AI-Consulting-Cost-Models-768x461.png 768w, https://gogloby.com/wp-content/uploads/2026/09/AI-Consulting-Cost-Models-1536x921.png 1536w" data-sizes="(max-width: 1619px) 100vw, 1619px"></picture></div>
+	<div class="slide-content">
+		<h3 class="h4 slide-title">How Much Does AI Consulting Cost in 2026? Rates, Pricing Models &amp; Fees</h3>
+		<div class="slide-meta">September 18,2026</div>
+	</div>
+</a><a href="https://gogloby.com/insights/ai-pilot-program/" class="block-slide swiper-slide">
+	<div class="slide-image"><picture><source data-srcset="https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/09/AI-Pilot-Program-Planning-and-Scale.png.webp 1619w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/09/AI-Pilot-Program-Planning-and-Scale-300x180.png.webp 300w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/09/AI-Pilot-Program-Planning-and-Scale-1024x615.png.webp 1024w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/09/AI-Pilot-Program-Planning-and-Scale-768x461.png.webp 768w, https://gogloby.com/wp-content/webp-express/webp-images/uploads/2026/09/AI-Pilot-Program-Planning-and-Scale-1536x922.png.webp 1536w" data-sizes="(max-width: 1619px) 100vw, 1619px" type="image/webp"><img width="1619" height="972" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201619%20972%22%3E%3C%2Fsvg%3E" data-src="https://gogloby.com/wp-content/uploads/2026/09/AI-Pilot-Program-Planning-and-Scale.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image webpexpress-processed lazy" alt="AI Pilot Program: How to Plan, Run, and Scale It in 2026" decoding="async" data-srcset="https://gogloby.com/wp-content/uploads/2026/09/AI-Pilot-Program-Planning-and-Scale.png 1619w, https://gogloby.com/wp-content/uploads/2026/09/AI-Pilot-Program-Planning-and-Scale-300x180.png 300w, https://gogloby.com/wp-content/uploads/2026/09/AI-Pilot-Program-Planning-and-Scale-1024x615.png 1024w, https://gogloby.com/wp-content/uploads/2026/09/AI-Pilot-Program-Planning-and-Scale-768x461.png 768w, https://gogloby.com/wp-content/uploads/2026/09/AI-Pilot-Program-Planning-and-Scale-1536x922.png 1536w" data-sizes="(max-width: 1619px) 100vw, 1619px"></picture></div>
+	<div class="slide-content">
+		<h3 class="h4 slide-title">AI Pilot Program: How to Plan, Run, and Scale It in 2026</h3>
+		<div class="slide-meta">September 18,2026</div>
+	</div>
+</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section banner-cta gg-block" is-solid="true">
+	<div class="container">
+		<div class="block-inner">
+
+			<div class="block-background">
+				<img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3C%2Fsvg%3E" data-src="https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/blocks/block-bg-1-01.png" class="bg-layer bg-layer-1 lazy" alt="Background">
+				<img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3C%2Fsvg%3E" data-src="https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/blocks/block-bg-4-01.png" class="bg-layer bg-layer-2 lazy" alt="Background">
+			</div>
+
+			<div class="block-main">
+
+				
+								<h2 class="block-title">AI Era Is Now!<br>Lead or Fall Behind?</h2>
+				
+				
+			</div>
+
+						<div class="block-aside">
+				<div class="block-cta-group button-group">
+
+					
+										<button class="button button--contact-form" type="button" aria-label="AI Transformation" data-modal-open="modal-contact-form">AI Transformation</button>
+					
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+
+	</main>
+
+	<footer class="site-footer lazy" style="" data-bg="https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/logos/globy-logo-outline-vertical-1-01.svg">
+		<img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3C%2Fsvg%3E" data-src="https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/logos/globy-logo-outline-1-01.svg" class="footer-background lazy" alt="Background logo">
+		<div class="container">
+			<div class="footer-inner">
+				<div class="footer-primary">
+					<nav class="footer-navigation">
+													<div class="column">
+								<div class="row"><div class="title">Services</div><div class="menu-footer-services-container"><ul id="menu-footer-services" class="menu"><li id="menu-item-7429" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7429"><a href="https://gogloby.com/services/applied-ai-engineering/">Applied AI Engineering</a></li>
+<li id="menu-item-7428" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7428"><a href="https://gogloby.com/services/ai-staff-augmentation/">AI Staff Augmentation</a></li>
+<li id="menu-item-7427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7427"><a href="https://gogloby.com/services/hire-ai-engineers/">Hire AI Engineers</a></li>
+<li id="menu-item-7648" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7648"><a href="https://gogloby.com/services/generative-ai-development/">Generative AI Development Services</a></li>
+</ul></div></div>							</div>
+																			<div class="column">
+								<div class="row"><div class="title">Company</div><div class="menu-footer-company-container"><ul id="menu-footer-company" class="menu"><li id="menu-item-7422" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7422"><a href="https://gogloby.com/about/">About us</a></li>
+<li id="menu-item-7420" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7420"><a href="https://gogloby.com/jobs/">Jobs</a></li>
+<li id="menu-item-7421" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7421"><a href="https://gogloby.com/contacts/">Contact</a></li>
+<li id="menu-item-8767" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-8767"><a rel="privacy-policy" href="https://gogloby.com/privacy-policy/">Privacy Policy and Candidate Privacy Notice</a></li>
+<li id="menu-item-8766" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8766"><a href="https://gogloby.com/terms-and-conditions/">Terms and Conditions</a></li>
+</ul></div></div>							</div>
+																			<div class="column">
+								<div class="row"><div class="title">Resources</div><div class="menu-footer-resources-container"><ul id="menu-footer-resources" class="menu"><li id="menu-item-7424" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-7424"><a href="https://gogloby.com/insights/">Insights</a></li>
+<li id="menu-item-7426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7426"><a href="/use-cases/">Use Cases</a></li>
+<li id="menu-item-7423" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7423"><a href="https://gogloby.com/podcast/">Podcast</a></li>
+<li id="menu-item-7705" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7705"><a href="https://gogloby.com/case-study/">Case Studies</a></li>
+</ul></div></div>							</div>
+																									<div class="column social-column">
+								<div class="row">
+									<div class="title">Connections</div>
+									<ul class="submenu social-menu">
+
+									
+										<li class="menu-item"><a href="https://www.crunchbase.com/organization/gogloby">Crunchbase</a></li>
+
+										
+										<li class="menu-item"><a href="https://www.linkedin.com/company/gogloby/">LinkedIn</a></li>
+
+										
+										<li class="menu-item"><a href="https://x.com/GoGloby">X</a></li>
+
+										
+										<li class="menu-item"><a href="https://www.g2.com/products/gogloby/reviews">G2</a></li>
+
+										
+										<li class="menu-item"><a href="https://clutch.co/profile/gogloby">Clutch</a></li>
+
+										
+										<li class="menu-item"><a href="https://www.trustpilot.com/review/gogloby.com">Trustpilot</a></li>
+
+										
+										<li class="menu-item"><a href="https://www.designrush.com/agency/profile/gogloby">DesignRush</a></li>
+
+										
+										<li class="menu-item"><a href="https://github.com/gogloby">GitHub</a></li>
+
+										
+										<li class="menu-item"><a href="https://www.facebook.com/gogloby">Facebook</a></li>
+
+										
+										<li class="menu-item"><a href="https://www.youtube.com/@DefaultGlobal">YouTube</a></li>
+
+										
+									</ul>
+								</div>
+							</div>
+											</nav>
+
+				</div>
+				<div class="footer-secondary">
+					<div class="copyright-container">
+
+						<div class="copyright-item">© Copyright 2026, GoGloby. All Rights Reserved.</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/gogloby-theme/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<div id="modal-contact-form" class="modal micromodal-slide modal-contact-form" aria-hidden="true">
+	<div class="modal-overlay" tabindex="-1" data-modal-close>
+		<div class="container">
+			<div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+
+				<main id="modal-1-content" class="modal-content">
+
+					
+<form id="modal-contact-form-content" class="form contact-form">
+	<div class="form-section form-fields">
+		<fieldset>
+			<div class="form-row">
+				<input type="text" name="name" class="form-input input-text" placeholder="Name" autocomplete="off">
+			</div>
+			<div class="form-row">
+				<input type="email" name="email" class="form-input input-email" placeholder="Email" autocomplete="off">
+			</div>
+			<div class="form-row">
+				<input type="text" name="message" class="form-input input-text" placeholder="Message" autocomplete="off">
+			</div>
+			<input type="hidden" id="hidden-id" name="hidden-class" value="hidden-value">
+			<input type="hidden" id="contact_form_nonce" name="contact_form_nonce" value="f834701a34" /><input type="hidden" name="_wp_http_referer" value="/insights/embedded-ai/" />		</fieldset>
+	</div>
+	<div class="form-section form-resonse">
+		<h3 class="form-response-title">Thank you! </h3>
+		<div class="form-response-description">Your message has been received. We will respond within one business day.</div>
+	</div>
+	<div class="form-section form-actions">
+
+				<div class="form-row">
+			<div class="form-consent"><p>I have read and accepted the <a href="/terms-and-conditions/">Terms &amp; Conditions</a> and <a href="/privacy-policy/">Privacy Policy</a></p>
+</div>
+		</div>
+		
+		<div class="form-row">
+			<div class="button-group">
+				<button type="submit" class="button button-submit form-submit" aria-label="Send" disabled>Send</button>
+			</div>
+		</div>
+	</div>
+</form>
+				</main>
+
+				<button class="modal-close" aria-label="Close" data-modal-close>
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+						<path d="M6 6L18 18M18 6L6 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</button>
+
+			</div>
+		</div>
+	</div>
+</div><div id="modal-job-form" class="modal micromodal-slide modal-job-form" aria-hidden="true">
+	<div class="modal-overlay" tabindex="-1" data-modal-close>
+		<div class="container">
+			<div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+
+				<main id="modal-1-content" class="modal-content">
+
+					
+<form id="modal-job-form-content" class="form contact-form" data-hs-do-not-collect="true" hs-do-not-collect="true">
+	<div class="form-section form-fields">
+		<fieldset>
+			<div class="form-row">
+				<input type="text" name="name" class="form-input input-text" placeholder="Name" autocomplete="off">
+			</div>
+			<div class="form-row">
+				<input type="email" name="email" class="form-input input-email" placeholder="Email" autocomplete="off">
+			</div>
+			<div class="form-row">
+				<input type="url" name="linkedin" class="form-input input-url" placeholder="LinkedIn profile" autocomplete="off">
+			</div>
+			<input type="hidden" id="hidden-id" name="hidden-class" value="hidden-value">
+			<input type="hidden" id="job_form_nonce" name="job_form_nonce" value="a8d11e75b7" /><input type="hidden" name="_wp_http_referer" value="/insights/embedded-ai/" />			<!-- <input type="hidden" name="amex" value="" id="amex"> -->
+		</fieldset>
+	</div>
+	<div class="form-section form-resonse">
+		<h3 class="form-response-title">Thank you! </h3>
+		<div class="form-response-description">Your message has been received. We will respond within one business day.</div>
+	</div>
+	<div class="form-section form-actions">
+
+				<div class="form-row">
+			<div class="form-consent"><p><em>GoGloby LLC</em> is the data controller. We collect and process the personal information provided above to assess your application for this specific role, based on pre-contractual steps/legitimate interest. If unsuccessful, we will delete your application data after 12 months.</p>
+<p>For a full list of data collected, retention periods, international transfers, and your rights (including California and EU rights), please read our full <a href="/privacy-policy/" target="_blank" rel="noopener">Applicant Privacy Policy</a>.</p>
+</div>
+		</div>
+		
+		<div class="form-row">
+			<div class="button-group">
+				<button type="submit" class="button button-submit form-submit" aria-label="Send" disabled>Send</button>
+			</div>
+		</div>
+	</div>
+</form>
+				</main>
+
+				<button class="modal-close" aria-label="Close" data-modal-close>
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+						<path d="M6 6L18 18M18 6L6 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</button>
+
+			</div>
+		</div>
+	</div>
+</div><script id="leadin-script-loader-js-js-extra">
+var leadin_wordpress = {"userRole":"visitor","pageType":"post","leadinPluginVersion":"11.3.75"};
+//# sourceURL=leadin-script-loader-js-js-extra
+</script>
+<script async defer id='hs-script-loader' src="https://js-eu1.hs-scripts.com/25396606.js?integration=WordPress&#038;ver=11.3.75"></script>
+<script id="jquery-core-js" src="https://gogloby.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script data-wp-strategy="defer" defer id="swiper-scripts-js" src="https://gogloby.com/wp-content/themes/gogloby-theme/assets/js/swiper/12.1.4/swiper-bundle.min.js"></script>
+<script data-wp-strategy="defer" defer id="micromodal-js" src="https://gogloby.com/wp-content/themes/gogloby-theme/assets/js/micromodal.min.js"></script>
+<script id="gogloby-scripts-js-extra">
+var gg_localize_data = {"url":"https://gogloby.com/wp-admin/admin-ajax.php","page_id":"9821"};
+//# sourceURL=gogloby-scripts-js-extra
+</script>
+
+<script id="googlesitekit-events-provider-content-events-js-before">
+window._googlesitekit = window._googlesitekit || {};
+window._googlesitekit.contentEvents = {"postID":9821,"isReadableSinglePost":true,"hasVimeoEmbed":false,"wordCount":5513,"estimatedReadTimeSeconds":1390,"isLastPageOfMultiPagePost":true,"readTimeThresholdPercent":85,"minimumReadTimeSeconds":5};
+//# sourceURL=googlesitekit-events-provider-content-events-js-before
+</script>
+<script id="googlesitekit-events-provider-content-events-js" src="https://gogloby.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-content-events-90bacb156ab34fa090db.js" defer></script>
+
+<script>function w3tc_ll_observe(ll){if(!ll||!ll.update)return;var t;new MutationObserver(function(){clearTimeout(t);t=setTimeout(function(){ll.update();},200);}).observe(document.documentElement,{childList:true,subtree:true});}window.addEventListener("LazyLoad::Initialized",function(e){setTimeout(function(){window.w3tc_lazyload=e.detail.instance;w3tc_ll_observe(window.w3tc_lazyload);},1);});window.w3tc_lazyload=1,window.lazyLoadOptions={elements_selector:".lazy",callback_loaded:function(t){var e;try{e=new CustomEvent("w3tc_lazyload_loaded",{detail:{e:t}})}catch(a){(e=document.createEvent("CustomEvent")).initCustomEvent("w3tc_lazyload_loaded",!1,!1,{e:t})}window.dispatchEvent(e)}}</script><script async src="https://gogloby.com/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js"></script><script src="https://gogloby.com/wp-content/cache/minify/2d926.default.include-footer.bb6b42.js" defer></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a552885a1961cd5a',t:'MTc5Mzc4MzkxOQ=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a552885a1961cd5a',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin
+
+Object Caching 0/300 objects using Redis
+Page Caching using Disk: Enhanced 
+Lazy Loading
+Minified using Disk
+
+Served from: gogloby.com @ 2026-11-03 23:47:04 by W3 Total Cache
+-->

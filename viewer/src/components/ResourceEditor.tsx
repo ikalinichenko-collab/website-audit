@@ -137,15 +137,72 @@ export function HistoryList({
   );
 }
 
-/** Plain text editor for a file, with upload, save and history. */
-export function TextEditor({ id, rows = 18, upload = false }: { id: string; rows?: number; upload?: boolean }) {
+/**
+ * The heading a rule points at, as a character range of the document. `ref` is the rule text, e.g.
+ * "Glossary §7" (the heading numbered 7) or "Fact Sheet: Featured clients and Key metrics" (the longest heading named in it).
+ */
+export function findSection(text: string, ref: string): { start: number; end: number } | null {
+  const heads: { title: string; start: number; end: number }[] = [];
+  let pos = 0;
+  for (const line of text.split("\n")) {
+    const m = line.match(/^#{1,4}\s+(.+?)\s*$/);
+    if (m) heads.push({ title: m[1]!, start: pos, end: pos + line.length });
+    pos += line.length + 1;
+  }
+  const num = ref.match(/§\s*(\d+)/);
+  if (num) return heads.find((h) => h.title.startsWith(`${num[1]}.`)) ?? null;
+  const r = ref.toLowerCase();
+  const plain = (t: string) => t.replace(/^\d+\.\s*/, "").trim().toLowerCase();
+  const hits = heads.filter((h) => plain(h.title).length > 3 && r.includes(plain(h.title)));
+  hits.sort((a, b) => plain(b.title).length - plain(a.title).length);
+  return hits[0] ?? null;
+}
+
+/** Vertical position of a character in a textarea, measured on a hidden copy with the same text metrics. */
+function offsetTopOf(ta: HTMLTextAreaElement, index: number): number {
+  const cs = getComputedStyle(ta);
+  const div = document.createElement("div");
+  for (const k of ["fontFamily", "fontSize", "lineHeight", "letterSpacing", "paddingTop", "paddingLeft", "paddingRight", "borderLeftWidth", "borderRightWidth", "boxSizing"] as const) {
+    div.style[k] = cs[k];
+  }
+  div.style.width = `${ta.clientWidth}px`;
+  div.style.whiteSpace = "pre-wrap";
+  div.style.overflowWrap = "break-word";
+  div.style.position = "absolute";
+  div.style.visibility = "hidden";
+  div.textContent = ta.value.slice(0, index);
+  const mark = document.createElement("span");
+  mark.textContent = "x";
+  div.appendChild(mark);
+  document.body.appendChild(div);
+  const top = mark.offsetTop;
+  document.body.removeChild(div);
+  return top;
+}
+
+/** Plain text editor for a file, with upload, save and history. `focus` is a rule: the editor opens at the section it names. */
+export function TextEditor({ id, rows = 18, upload = false, focus }: { id: string; rows?: number; upload?: boolean; focus?: string | null }) {
   const r = useResource(id);
   const file = useRef<HTMLInputElement>(null);
+  const area = useRef<HTMLTextAreaElement>(null);
+  const loaded = r.info?.id;
+
+  useEffect(() => {
+    const ta = area.current;
+    if (!focus || !ta) return;
+    const at = findSection(ta.value, focus);
+    if (!at) return;
+    ta.focus({ preventScroll: true });
+    ta.setSelectionRange(at.start, at.end);
+    ta.scrollTop = Math.max(0, offsetTopOf(ta, at.start) - 24);
+    ta.scrollIntoView({ block: "nearest" });
+  }, [loaded, focus]);
   if (!r.info) return r.msg ? <Notice kind="error">{r.msg.text}</Notice> : <p className="text-slate-500">Loading...</p>;
 
   return (
     <div className="space-y-2">
       <textarea
+        ref={area}
         className="w-full rounded border border-slate-300 bg-white p-2 font-mono text-xs leading-relaxed dark:border-slate-600 dark:bg-slate-900"
         rows={rows}
         value={r.text}

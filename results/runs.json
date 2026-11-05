@@ -1,0 +1,280 @@
+[
+  {
+    "id": "2026-11-05T09-32-31-676Z",
+    "started_at": "2026-11-05T09:32:31.676Z",
+    "ended_at": "2026-11-05T09:35:49.654Z",
+    "pages_checked": 6,
+    "cost_usd": 0.03337257,
+    "tokens": {
+      "input": 47956,
+      "cached_input": 115397,
+      "output": 54846
+    },
+    "model": "gpt-6-luna",
+    "layers": {
+      "compliance": true,
+      "geo": true,
+      "seo": true
+    },
+    "format": 2
+  },
+  {
+    "id": "2026-11-05T07-46-33-936Z",
+    "started_at": "2026-11-05T07:46:33.936Z",
+    "ended_at": "2026-11-05T07:49:25.078Z",
+    "pages_checked": 6,
+    "cost_usd": 0.23867855,
+    "tokens": {
+      "input": 57922,
+      "cached_input": 104631,
+      "output": 35105
+    },
+    "model": "gpt-6.1-terra",
+    "layers": {
+      "compliance": true,
+      "geo": true,
+      "seo": true
+    },
+    "format": 2
+  },
+  {
+    "id": "2026-11-04T18-15-53-173Z",
+    "started_at": "2026-11-04T18:15:53.173Z",
+    "ended_at": "2026-11-04T18:18:48.544Z",
+    "pages_checked": 6,
+    "cost_usd": 0.02861007,
+    "tokens": {
+      "input": 47856,
+      "cached_input": 114697,
+      "output": 45355
+    },
+    "model": "gpt-6-luna",
+    "layers": {
+      "compliance": true,
+      "geo": true,
+      "seo": true
+    },
+    "format": 2
+  },
+  {
+    "id": "2026-11-04T09-18-36-241Z",
+    "started_at": "2026-11-04T09:18:36.241Z",
+    "ended_at": "2026-11-04T09:20:38.635Z",
+    "pages_checked": 5,
+    "cost_usd": null,
+    "tokens": {
+      "input": 99710,
+      "cached_input": 95784,
+      "output": 36664
+    },
+    "format": 2
+  },
+  {
+    "id": "2026-11-03T13-49-37-095Z",
+    "started_at": "2026-11-03T13:49:37.095Z",
+    "ended_at": "2026-11-03T13:49:41.220Z",
+    "pages_checked": 1,
+    "cost_usd": null,
+    "tokens": {
+      "input": 0,
+      "cached_input": 0,
+      "output": 0
+    },
+    "format": 2
+  },
+  {
+    "id": "2026-11-03T12-58-10-186Z",
+    "started_at": "2026-11-03T12:58:10.186Z",
+    "ended_at": "2026-11-03T12:59:20.453Z",
+    "pages_checked": 1,
+    "cost_usd": null,
+    "tokens": {
+      "input": 17868,
+      "cached_input": 18913,
+      "output": 9408
+    },
+    "format": 2
+  },
+  {
+    "id": "2026-11-03T12-52-41-081Z",
+    "started_at": "2026-11-03T12:52:41.081Z",
+    "ended_at": "2026-11-03T12:54:02.001Z",
+    "pages_checked": 1,
+    "cost_usd": null,
+    "tokens": {
+      "input": 34360,
+      "cached_input": 0,
+      "output": 9544
+    },
+    "format": 2
+  },
+  {
+    "id": "2026-11-03T12-02-04-906Z",
+    "started_at": "2026-11-03T12:02:04.906Z",
+    "ended_at": "2026-11-03T12:02:59.169Z",
+    "pages_checked": 1,
+    "cost_usd": null,
+    "tokens": {
+      "input": 36251,
+      "cached_input": 0,
+      "output": 5381
+    },
+    "format": 2
+  },
+  {
+    "id": "2026-11-02T16-21-50-552Z",
+    "started_at": "2026-11-02T16:21:50.553Z",
+    "ended_at": "2026-11-02T16:24:37.708Z",
+    "pages_checked": 5,
+    "cost_usd": null,
+    "tokens": {
+      "input": 30,
+      "cached_input": 118547,
+      "output": 37306
+    },
+    "format": 2
+  },
+  {
+    "id": "2026-11-02T16-18-50-871Z",
+    "started_at": "2026-11-02T16:18:50.872Z",
+    "ended_at": "2026-11-02T16:21:35.781Z",
+    "pages_checked": 5,
+    "cost_usd": null,
+    "tokens": {
+      "input": 26162,
+      "cached_input": 92415,
+      "output": 39218
+    },
+    "format": 2
+  },
+  {
+    "id": "2026-11-02T16-12-07-902Z",
+    "started_at": "2026-11-02T16:12:07.903Z",
+    "ended_at": "2026-11-02T16:15:13.528Z",
+    "pages_checked": 5,
+    "cost_usd": null,
+    "tokens": {
+      "input": 30,
+      "cached_input": 117035,
+      "output": 30282
+    },
+    "format": 2
+  },
+  {
+    "id": "2026-11-02T16-08-20-034Z",
+    "started_at": "2026-11-02T16:08:20.035Z",
+    "ended_at": "2026-11-02T16:11:54.544Z",
+    "pages_checked": 5,
+    "cost_usd": null,
+    "tokens": {
+      "input": 18636,
+      "cached_input": 98429,
+      "output": 31973
+    },
+    "format": 2
+  },
+  {
+    "id": "2026-11-02T16-08-02-528Z",
+    "started_at": "2026-11-02T16:08:02.529Z",
+    "ended_at": "2026-11-02T16:08:07.424Z",
+    "pages_checked": 2,
+    "cost_usd": null,
+    "tokens": {
+      "input": 0,
+      "cached_input": 0,
+      "output": 0
+    },
+    "format": 2
+  },
+  {
+    "id": "2026-11-02T15-56-22-524Z",
+    "started_at": "2026-11-02T15:56:22.525Z",
+    "ended_at": "2026-11-02T15:58:22.449Z",
+    "pages_checked": 4,
+    "cost_usd": null,
+    "tokens": {
+      "input": 40648,
+      "cached_input": 47955,
+      "output": 17377
+    },
+    "format": 2
+  },
+  {
+    "id": "2026-11-02T15-42-08-516Z",
+    "started_at": "2026-11-02T15:42:08.516Z",
+    "ended_at": "2026-11-02T15:48:27.535Z",
+    "pages_checked": 20,
+    "cost_usd": null,
+    "tokens": {
+      "input": 543438,
+      "cached_input": 0,
+      "output": 125831
+    },
+    "format": 2
+  },
+  {
+    "id": "2026-11-02T15-34-22-443Z",
+    "started_at": "2026-11-02T15:34:22.443Z",
+    "ended_at": "2026-11-02T15:34:25.640Z",
+    "pages_checked": 1,
+    "cost_usd": null,
+    "tokens": {
+      "input": 0,
+      "cached_input": 0,
+      "output": 0
+    },
+    "format": 2
+  },
+  {
+    "id": "2026-11-02T15-27-36-902Z",
+    "started_at": "2026-11-02T15:27:36.902Z",
+    "ended_at": "2026-11-02T15:27:39.938Z",
+    "pages_checked": 1,
+    "cost_usd": null,
+    "tokens": {
+      "input": 0,
+      "cached_input": 0,
+      "output": 0
+    },
+    "format": 2
+  },
+  {
+    "id": "2026-11-02T15-19-30-448Z",
+    "started_at": "2026-11-02T15:19:30.449Z",
+    "ended_at": "2026-11-02T15:20:22.762Z",
+    "pages_checked": 1,
+    "cost_usd": null,
+    "tokens": {
+      "input": 19295,
+      "cached_input": 0,
+      "output": 4968
+    },
+    "format": 2
+  },
+  {
+    "id": "2026-11-02T15-19-23-393Z",
+    "started_at": "2026-11-02T15:19:23.394Z",
+    "ended_at": "2026-11-02T15:19:27.600Z",
+    "pages_checked": 2,
+    "cost_usd": null,
+    "tokens": {
+      "input": 0,
+      "cached_input": 0,
+      "output": 0
+    },
+    "format": 2
+  },
+  {
+    "id": "2026-11-02T15-12-19-180Z",
+    "started_at": "2026-11-02T15:12:19.181Z",
+    "ended_at": "2026-11-02T15:13:24.231Z",
+    "pages_checked": 3,
+    "cost_usd": null,
+    "tokens": {
+      "input": 6,
+      "cached_input": 20670,
+      "output": 5673
+    },
+    "format": 2
+  }
+]

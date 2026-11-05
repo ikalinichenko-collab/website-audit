@@ -1,0 +1,24 @@
+{
+  "run_id": "2026-11-05T07-46-33-936Z",
+  "started_at": "2026-11-05T07:46:33.936Z",
+  "ended_at": "2026-11-05T07:49:25.078Z",
+  "pages_checked": 6,
+  "pages_skipped": 0,
+  "llm_calls": 14,
+  "llm_errors": 0,
+  "tokens": {
+    "input": 57922,
+    "cached_input": 104631,
+    "output": 35105
+  },
+  "cost_usd": 0.23867855,
+  "model": "gpt-6.1-terra",
+  "layers": {
+    "compliance": true,
+    "geo": true,
+    "seo": true
+  },
+  "subsections": [
+    "Resources/Case studies"
+  ]
+}

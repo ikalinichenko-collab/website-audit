@@ -1,0 +1,1995 @@
+{
+  "schema_version": 2,
+  "url": "https://gogloby.com/insights/ai-compliance-consulting/",
+  "final_url": "https://gogloby.com/insights/ai-compliance-consulting/",
+  "status": 200,
+  "title": "What Is AI Compliance Consulting: Process, Benefits & How to Implement It | GoGloby",
+  "category": "Resources",
+  "subsection": "Insights",
+  "profile": "article",
+  "geo_type": "article",
+  "template": "article",
+  "checked_at": "2026-11-03T13:49:39.091Z",
+  "zones": [
+    {
+      "id": "title",
+      "label": "Title",
+      "kind": "title"
+    },
+    {
+      "id": "meta_description",
+      "label": "Meta description",
+      "kind": "meta_description"
+    },
+    {
+      "id": "og_title",
+      "label": "og:title",
+      "kind": "og_title"
+    },
+    {
+      "id": "og_description",
+      "label": "og:description",
+      "kind": "og_description"
+    },
+    {
+      "id": "json_ld",
+      "label": "Structured data (JSON-LD)",
+      "kind": "json_ld"
+    },
+    {
+      "id": "h1",
+      "label": "H1",
+      "kind": "h1"
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "kind": "date"
+    },
+    {
+      "id": "author",
+      "label": "Author",
+      "kind": "author"
+    },
+    {
+      "id": "toc",
+      "label": "Table of contents",
+      "kind": "toc"
+    },
+    {
+      "id": "article:intro",
+      "label": "Intro",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-is-ai-compliance-consulting",
+      "label": "What Is AI Compliance Consulting?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-is-the-difference-between-ai-compliance-gov",
+      "label": "What Is the Difference Between AI Compliance, Governance, Ethics, and…",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:how-does-ai-compliance-consulting-work",
+      "label": "How Does AI Compliance Consulting Work?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-are-the-ai-compliance-regulations-and-frame",
+      "label": "What Are the AI Compliance Regulations and Frameworks?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:how-does-eu-ai-act-compliance-consulting-work",
+      "label": "How Does EU AI Act Compliance Consulting Work?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-are-the-benefits-of-ai-compliance-consultin",
+      "label": "What Are the Benefits of AI Compliance Consulting?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:why-does-ai-compliance-differ-by-industry",
+      "label": "Why Does AI Compliance Differ by Industry?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:5-ai-compliance-consulting-firms-to-evaluate",
+      "label": "5 AI Compliance Consulting Firms to Evaluate",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-determines-ai-compliance-consulting-pricing",
+      "label": "What Determines AI Compliance Consulting Pricing?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:how-do-ai-compliance-platforms-work",
+      "label": "How Do AI Compliance Platforms Work?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-are-the-most-common-ai-compliance-implement",
+      "label": "What Are the Most Common AI Compliance Implementation Mistakes?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:conclusion",
+      "label": "Conclusion",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:faqs",
+      "label": "FAQs",
+      "kind": "article_section"
+    },
+    {
+      "id": "banner_cta",
+      "label": "Banner CTA",
+      "kind": "banner_cta"
+    },
+    {
+      "id": "modals",
+      "label": "Forms and modals",
+      "kind": "modals"
+    }
+  ],
+  "zone_warnings": [],
+  "shared_variants": [],
+  "compliance": {
+    "hash": "e0e35c1ffae600c60f359740b3f2bbd35b33ef39dc9abaac9515d9b7f6178f3c",
+    "cached": true,
+    "action": "needs_decision",
+    "model_action": "needs_decision",
+    "summary": "The article presents GoGloby as an Applied AI engineering and compliance implementation provider, including development and code-control services that are not in the approved service offering. Decide whether to remove GoGloby’s promotional material; any retained company claims also need factual correction.",
+    "llm_problems": [
+      {
+        "title": "Applied AI partner positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description",
+        "rule_verified": true,
+        "issue": "The page positions GoGloby as an Applied AI engineering partner and a broad talent-acquisition agency rather than using its approved staffing-and-recruiting description.",
+        "fix": "Replace GoGloby’s company descriptions and positioning with the approved description.",
+        "subject": "GoGloby positioning",
+        "page_value": "Applied AI Engineering partner",
+        "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 5,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.slogan",
+            "quote": "Applied AI Engineering Partner",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.description",
+            "quote": "US-based talent acquisition agency specializing in assisting tech companies",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "WebSite.description",
+            "quote": "GoGloby is an Applied AI Engineering partner turning engineering into AI-native production",
+            "verified": true
+          },
+          {
+            "zone_id": "article:5-ai-compliance-consulting-firms-to-evaluate",
+            "part": "paragraph 4",
+            "quote": "GoGloby is an Applied AI Engineering partner, founded in 2021",
+            "verified": true
+          },
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "engineering standard behind 4x Applied AI Engineering",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unapproved engineering services",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §7",
+        "rule_verified": true,
+        "issue": "The page promotes AI development, Applied AI Engineering, and compliance implementation services that are not among GoGloby’s approved recruiting and staffing services.",
+        "fix": "Remove GoGloby’s development and compliance implementation offers, or obtain a decision before retaining them.",
+        "subject": "GoGloby services",
+        "page_value": "Generative AI development and compliance implementation",
+        "source_value": "US Data & AI Engineers Recruiting; Nearshore Data & AI Engineers Staffing",
+        "count": 7,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "GoGloby turns engineering into AI-native production.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.name",
+            "quote": "Generative AI Development Services",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "GoGloby's Applied AI Software Engineers build copilots, AI agents, RAG applications",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": null,
+            "quote": "The Architect sets up the Agentic SDLC.",
+            "verified": false
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "Turn approved AI requirements into review gates and tests",
+            "verified": true
+          },
+          {
+            "zone_id": "article:5-ai-compliance-consulting-firms-to-evaluate",
+            "part": "table_cell 11",
+            "quote": "Architects build controls into your code",
+            "verified": true
+          },
+          {
+            "zone_id": "article:5-ai-compliance-consulting-firms-to-evaluate",
+            "part": "paragraph 4",
+            "quote": "It forward-deploys an AI Solutions Architect who works inside the company’s own codebase",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified talent superlative",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claim that GoGloby hires the world’s most thoroughly vetted talent is not established by the company sources.",
+        "fix": "Remove the unsupported superlative or verify it with the company before use.",
+        "subject": "GoGloby vetting",
+        "page_value": "world's most thoroughly vetted talent",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.description",
+            "quote": "hire the world's most thoroughly vetted talent within the US & EU time zones.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified service time zone",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The description says GoGloby’s talent is within US and EU time zones, while the sources specify Latin America working US hours for staffing and US roles for recruiting.",
+        "fix": "Replace the time-zone claim with the locations and working hours stated for the relevant service.",
+        "subject": "Service locations",
+        "page_value": "US & EU time zones",
+        "source_value": "Latin America, remote, US hours; US recruiting roles",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.description",
+            "quote": "within the US & EU time zones.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified Sergey experience",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The author bio says Sergey has 16+ years of experience; the Fact Sheet says he has spent 17 years building software systems, engineering organizations, and production platforms.",
+        "fix": "Use the Fact Sheet’s experience figure and description.",
+        "subject": "Sergey Matikaynen experience",
+        "page_value": "16+ years",
+        "source_value": "17 years",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 15",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified Sergey recognition",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page calls Sergey a LinkedIn Top Voice, a recognition not stated in the company sources.",
+        "fix": "Remove the recognition claim or verify it with the company.",
+        "subject": "Sergey Matikaynen recognition",
+        "page_value": "LinkedIn Top Voice",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 15",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified certification claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claim that Sergey’s vetting standard includes certified Agentic SDLC mastery is not in the company sources.",
+        "fix": "Remove the certification claim or verify it with the company.",
+        "subject": "Sergey Matikaynen certification",
+        "page_value": "certified Agentic SDLC mastery",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "including certified Agentic SDLC mastery.",
+            "verified": true
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 15",
+            "quote": "including certified Agentic SDLC mastery.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified Vitaly value claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The claim that Vitaly generated $60M+ in value is not stated in the company sources.",
+        "fix": "Remove the value claim or verify it with the company.",
+        "subject": "Vitaly Koval",
+        "page_value": "$60M+ in value",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "generating $60M+ in value.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified Vitaly experience",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page claims Vitaly has spent the past decade scaling teams across several countries, a claim not in the company sources.",
+        "fix": "Remove the experience and geographic claim or verify it with the company.",
+        "subject": "Vitaly Koval",
+        "page_value": "the past decade",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "For the past decade, has helped engineering leaders scale teams",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported professional insurance",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Legal and security",
+        "rule_verified": true,
+        "issue": "The page describes a $3M combined policy including professional liability; the Fact Sheet specifies $3M data and cyber-liability insurance.",
+        "fix": "Correct the insurance description to match the Fact Sheet.",
+        "subject": "GoGloby insurance",
+        "page_value": "$3M combined liability including professional",
+        "source_value": "$3M data and cyber liability",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "$3M combined liability (cyber, data and professional) from day one.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "$3M combined liability (cyber, data and professional) included.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsubstantiated zero exposure",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page promises zero IP exposure, which is not stated in the sources; the Fact Sheet says clients own IP and engineers work in the client’s environment.",
+        "fix": "Remove the absolute guarantee or replace it with the documented IP and security terms.",
+        "subject": "IP exposure",
+        "page_value": "Zero IP exposure",
+        "source_value": "Client owns all IP; engineers work in the client's environment",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Zero IP exposure.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified forward-deployment timeline",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The under-four-week delivery promise for a forward-deployed development service is not in the company sources.",
+        "fix": "Remove the timeline or verify it with the company before retaining the offer.",
+        "subject": "Development service timeline",
+        "page_value": "under 4 weeks",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Forward-deployed into your team in under 4 weeks.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Profiles delivered in 72 hours",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §7",
+        "rule_verified": true,
+        "issue": "The 72-hour profile-delivery promise is not in the sources; the Fact Sheet gives a two-to-three-week staffing start time.",
+        "fix": "Remove the 72-hour promise or verify it with the company.",
+        "subject": "Staffing profile timeline",
+        "page_value": "72 hours",
+        "source_value": "2–3 weeks to start",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Vetted profiles delivered in 72 hours.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "First feature delivery promise",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §7",
+        "rule_verified": true,
+        "issue": "The promise of a validated feature within three to five business days is not in the sources and describes a delivery outcome rather than the documented staffing service.",
+        "fix": "Remove the feature-delivery promise or verify it with the company before retaining the offer.",
+        "subject": "First feature timeline",
+        "page_value": "3 to 5 business days",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "First validated feature in 3 to 5 business days.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Incorrect staffing guarantee",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page calls the nearshore replacement guarantee telemetry-backed; the Fact Sheet specifies a performance-based replacement if results fall below baseline and cancellation within the first 120 days.",
+        "fix": "Replace the guarantee description with the documented nearshore guarantee.",
+        "subject": "Nearshore staffing guarantee",
+        "page_value": "120-day telemetry-backed replacement guarantee",
+        "source_value": "Performance-based replacement at no cost if results fall below baseline; cancel any time in the first 120 days",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "120-day telemetry-backed replacement guarantee.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified recruiting shortlist time",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The five-day shortlist promise is not in the sources; the documented recruiting timeline is four to six weeks to offer.",
+        "fix": "Remove the five-day promise or verify it with the company.",
+        "subject": "Recruiting shortlist timeline",
+        "page_value": "5 days",
+        "source_value": "4–6 weeks to offer",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Shortlist delivered in 5 days.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified hiring speed comparison",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The claim of hiring 50% faster than US job boards is not supported by the company sources.",
+        "fix": "Remove the comparative speed claim or verify it with the company.",
+        "subject": "Recruiting speed",
+        "page_value": "50 percent faster than US job boards",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "50 percent faster time-to-hire than US job boards.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified country network size",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claim that GoGloby’s talent network spans five or more US-time-zone countries is not in the company sources.",
+        "fix": "Remove the network-size claim or verify it with the company.",
+        "subject": "Talent network",
+        "page_value": "5 plus US-timezone countries",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Talent network spans 5 plus US-timezone countries.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Misstated assessment selectivity",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: How we vet; Key metrics",
+        "rule_verified": true,
+        "issue": "The page calls the engineers the “top 4 percent”; the source says approximately 4% of candidates pass the assessment, not that they are a top-percentile group.",
+        "fix": "Describe the assessment result using the Fact Sheet’s candidate-pass figure.",
+        "subject": "Assessment selectivity",
+        "page_value": "top 4 percent of Applied AI Software Engineers",
+        "source_value": "Approximately 4% of candidates pass",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Embed the top 4 percent of Applied AI Software Engineers",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "AI layer outside staffing",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §2",
+        "rule_verified": true,
+        "issue": "The page says the AI Development Intelligence Layer is included in compliance engagements, but the sources say it is bundled only with nearshore staffing and never sold separately or with recruiting.",
+        "fix": "Remove the layer from the compliance engagement description and limit its placement to the documented staffing service.",
+        "subject": "AI Development Intelligence Layer",
+        "page_value": "Engagements also include the AI Development Intelligence Layer",
+        "source_value": "Sold only bundled with nearshore staffing",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:5-ai-compliance-consulting-firms-to-evaluate",
+            "part": "paragraph 4",
+            "quote": "Engagements also include the AI Development Intelligence Layer",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified AI spend baseline",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The claim that GoGloby tracks delivery and AI spend against a client baseline is not stated in the sources.",
+        "fix": "Remove the baseline-tracking claim or verify it with the company.",
+        "subject": "AI spend tracking",
+        "page_value": "tracked against the client’s own baseline",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:5-ai-compliance-consulting-firms-to-evaluate",
+            "part": "paragraph 4",
+            "quote": "tracks delivery against the client’s own baseline.",
+            "verified": true
+          },
+          {
+            "zone_id": "article:5-ai-compliance-consulting-firms-to-evaluate",
+            "part": "table_cell 13",
+            "quote": "Delivery plus AI spend tracked against your own baseline",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified Talk CTA",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §2; Glossary §7",
+        "rule_verified": true,
+        "issue": "The banner CTA promotes the unapproved compliance-controls offer and does not use the documented service CTA wording.",
+        "fix": "Remove the offer CTA or replace it with the approved CTA for the relevant recruiting or staffing service.",
+        "subject": "Banner call to action",
+        "page_value": "Talk to GoGloby",
+        "source_value": "Get vetted profiles; Start a search",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 2",
+            "quote": "Talk to GoGloby",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      }
+    ],
+    "problems": [
+      {
+        "title": "Applied AI partner positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description",
+        "rule_verified": true,
+        "issue": "The page positions GoGloby as an Applied AI engineering partner and a broad talent-acquisition agency rather than using its approved staffing-and-recruiting description.",
+        "fix": "Replace GoGloby’s company descriptions and positioning with the approved description.",
+        "subject": "GoGloby positioning",
+        "page_value": "Applied AI Engineering partner",
+        "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 5,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.slogan",
+            "quote": "Applied AI Engineering Partner",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.description",
+            "quote": "US-based talent acquisition agency specializing in assisting tech companies",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "WebSite.description",
+            "quote": "GoGloby is an Applied AI Engineering partner turning engineering into AI-native production",
+            "verified": true
+          },
+          {
+            "zone_id": "article:5-ai-compliance-consulting-firms-to-evaluate",
+            "part": "paragraph 4",
+            "quote": "GoGloby is an Applied AI Engineering partner, founded in 2021",
+            "verified": true,
+            "fragment": "GoGloby is an Applied AI Engineering"
+          },
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "engineering standard behind 4x Applied AI Engineering",
+            "verified": true,
+            "fragment": "engineering standard behind 4x Applied AI"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unapproved engineering services",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §7",
+        "rule_verified": true,
+        "issue": "The page promotes AI development, Applied AI Engineering, and compliance implementation services that are not among GoGloby’s approved recruiting and staffing services.",
+        "fix": "Remove GoGloby’s development and compliance implementation offers, or obtain a decision before retaining them.",
+        "subject": "GoGloby services",
+        "page_value": "Generative AI development and compliance implementation",
+        "source_value": "US Data & AI Engineers Recruiting; Nearshore Data & AI Engineers Staffing",
+        "count": 7,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "GoGloby turns engineering into AI-native production.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.name",
+            "quote": "Generative AI Development Services",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "GoGloby's Applied AI Software Engineers build copilots, AI agents, RAG applications",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": null,
+            "quote": "The Architect sets up the Agentic SDLC.",
+            "verified": false
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "Turn approved AI requirements into review gates and tests",
+            "verified": true,
+            "fragment": "Turn approved AI requirements into review"
+          },
+          {
+            "zone_id": "article:5-ai-compliance-consulting-firms-to-evaluate",
+            "part": "table_cell 11",
+            "quote": "Architects build controls into your code",
+            "verified": true,
+            "fragment": "Architects build controls into your code"
+          },
+          {
+            "zone_id": "article:5-ai-compliance-consulting-firms-to-evaluate",
+            "part": "paragraph 4",
+            "quote": "It forward-deploys an AI Solutions Architect who works inside the company’s own codebase",
+            "verified": true,
+            "fragment": "It forward-deploys an AI Solutions Architect"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified talent superlative",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claim that GoGloby hires the world’s most thoroughly vetted talent is not established by the company sources.",
+        "fix": "Remove the unsupported superlative or verify it with the company before use.",
+        "subject": "GoGloby vetting",
+        "page_value": "world's most thoroughly vetted talent",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.description",
+            "quote": "hire the world's most thoroughly vetted talent within the US & EU time zones.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified service time zone",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The description says GoGloby’s talent is within US and EU time zones, while the sources specify Latin America working US hours for staffing and US roles for recruiting.",
+        "fix": "Replace the time-zone claim with the locations and working hours stated for the relevant service.",
+        "subject": "Service locations",
+        "page_value": "US & EU time zones",
+        "source_value": "Latin America, remote, US hours; US recruiting roles",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.description",
+            "quote": "within the US & EU time zones.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified Sergey experience",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The author bio says Sergey has 16+ years of experience; the Fact Sheet says he has spent 17 years building software systems, engineering organizations, and production platforms.",
+        "fix": "Use the Fact Sheet’s experience figure and description.",
+        "subject": "Sergey Matikaynen experience",
+        "page_value": "16+ years",
+        "source_value": "17 years",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "fragment": "He has spent 16+ years building"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 15",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "fragment": "He has spent 16+ years building"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified Sergey recognition",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page calls Sergey a LinkedIn Top Voice, a recognition not stated in the company sources.",
+        "fix": "Remove the recognition claim or verify it with the company.",
+        "subject": "Sergey Matikaynen recognition",
+        "page_value": "LinkedIn Top Voice",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "fragment": "He is a LinkedIn Top Voice"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 15",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "fragment": "He is a LinkedIn Top Voice"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified certification claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claim that Sergey’s vetting standard includes certified Agentic SDLC mastery is not in the company sources.",
+        "fix": "Remove the certification claim or verify it with the company.",
+        "subject": "Sergey Matikaynen certification",
+        "page_value": "certified Agentic SDLC mastery",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "including certified Agentic SDLC mastery.",
+            "verified": true,
+            "fragment": "including certified Agentic SDLC mastery."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 15",
+            "quote": "including certified Agentic SDLC mastery.",
+            "verified": true,
+            "fragment": "including certified Agentic SDLC mastery."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified Vitaly value claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The claim that Vitaly generated $60M+ in value is not stated in the company sources.",
+        "fix": "Remove the value claim or verify it with the company.",
+        "subject": "Vitaly Koval",
+        "page_value": "$60M+ in value",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "generating $60M+ in value.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified Vitaly experience",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page claims Vitaly has spent the past decade scaling teams across several countries, a claim not in the company sources.",
+        "fix": "Remove the experience and geographic claim or verify it with the company.",
+        "subject": "Vitaly Koval",
+        "page_value": "the past decade",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "For the past decade, has helped engineering leaders scale teams",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported professional insurance",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Legal and security",
+        "rule_verified": true,
+        "issue": "The page describes a $3M combined policy including professional liability; the Fact Sheet specifies $3M data and cyber-liability insurance.",
+        "fix": "Correct the insurance description to match the Fact Sheet.",
+        "subject": "GoGloby insurance",
+        "page_value": "$3M combined liability including professional",
+        "source_value": "$3M data and cyber liability",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "$3M combined liability (cyber, data and professional) from day one.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "$3M combined liability (cyber, data and professional) included.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsubstantiated zero exposure",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page promises zero IP exposure, which is not stated in the sources; the Fact Sheet says clients own IP and engineers work in the client’s environment.",
+        "fix": "Remove the absolute guarantee or replace it with the documented IP and security terms.",
+        "subject": "IP exposure",
+        "page_value": "Zero IP exposure",
+        "source_value": "Client owns all IP; engineers work in the client's environment",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Zero IP exposure.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified forward-deployment timeline",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The under-four-week delivery promise for a forward-deployed development service is not in the company sources.",
+        "fix": "Remove the timeline or verify it with the company before retaining the offer.",
+        "subject": "Development service timeline",
+        "page_value": "under 4 weeks",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Forward-deployed into your team in under 4 weeks.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Profiles delivered in 72 hours",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §7",
+        "rule_verified": true,
+        "issue": "The 72-hour profile-delivery promise is not in the sources; the Fact Sheet gives a two-to-three-week staffing start time.",
+        "fix": "Remove the 72-hour promise or verify it with the company.",
+        "subject": "Staffing profile timeline",
+        "page_value": "72 hours",
+        "source_value": "2–3 weeks to start",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Vetted profiles delivered in 72 hours.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "First feature delivery promise",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §7",
+        "rule_verified": true,
+        "issue": "The promise of a validated feature within three to five business days is not in the sources and describes a delivery outcome rather than the documented staffing service.",
+        "fix": "Remove the feature-delivery promise or verify it with the company before retaining the offer.",
+        "subject": "First feature timeline",
+        "page_value": "3 to 5 business days",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "First validated feature in 3 to 5 business days.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Incorrect staffing guarantee",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page calls the nearshore replacement guarantee telemetry-backed; the Fact Sheet specifies a performance-based replacement if results fall below baseline and cancellation within the first 120 days.",
+        "fix": "Replace the guarantee description with the documented nearshore guarantee.",
+        "subject": "Nearshore staffing guarantee",
+        "page_value": "120-day telemetry-backed replacement guarantee",
+        "source_value": "Performance-based replacement at no cost if results fall below baseline; cancel any time in the first 120 days",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "120-day telemetry-backed replacement guarantee.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified recruiting shortlist time",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The five-day shortlist promise is not in the sources; the documented recruiting timeline is four to six weeks to offer.",
+        "fix": "Remove the five-day promise or verify it with the company.",
+        "subject": "Recruiting shortlist timeline",
+        "page_value": "5 days",
+        "source_value": "4–6 weeks to offer",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Shortlist delivered in 5 days.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified hiring speed comparison",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The claim of hiring 50% faster than US job boards is not supported by the company sources.",
+        "fix": "Remove the comparative speed claim or verify it with the company.",
+        "subject": "Recruiting speed",
+        "page_value": "50 percent faster than US job boards",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "50 percent faster time-to-hire than US job boards.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified country network size",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claim that GoGloby’s talent network spans five or more US-time-zone countries is not in the company sources.",
+        "fix": "Remove the network-size claim or verify it with the company.",
+        "subject": "Talent network",
+        "page_value": "5 plus US-timezone countries",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Talent network spans 5 plus US-timezone countries.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Misstated assessment selectivity",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: How we vet; Key metrics",
+        "rule_verified": true,
+        "issue": "The page calls the engineers the “top 4 percent”; the source says approximately 4% of candidates pass the assessment, not that they are a top-percentile group.",
+        "fix": "Describe the assessment result using the Fact Sheet’s candidate-pass figure.",
+        "subject": "Assessment selectivity",
+        "page_value": "top 4 percent of Applied AI Software Engineers",
+        "source_value": "Approximately 4% of candidates pass",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Embed the top 4 percent of Applied AI Software Engineers",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "AI layer outside staffing",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §2",
+        "rule_verified": true,
+        "issue": "The page says the AI Development Intelligence Layer is included in compliance engagements, but the sources say it is bundled only with nearshore staffing and never sold separately or with recruiting.",
+        "fix": "Remove the layer from the compliance engagement description and limit its placement to the documented staffing service.",
+        "subject": "AI Development Intelligence Layer",
+        "page_value": "Engagements also include the AI Development Intelligence Layer",
+        "source_value": "Sold only bundled with nearshore staffing",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:5-ai-compliance-consulting-firms-to-evaluate",
+            "part": "paragraph 4",
+            "quote": "Engagements also include the AI Development Intelligence Layer",
+            "verified": true,
+            "fragment": "Engagements also include the AI Development"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified AI spend baseline",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The claim that GoGloby tracks delivery and AI spend against a client baseline is not stated in the sources.",
+        "fix": "Remove the baseline-tracking claim or verify it with the company.",
+        "subject": "AI spend tracking",
+        "page_value": "tracked against the client’s own baseline",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:5-ai-compliance-consulting-firms-to-evaluate",
+            "part": "paragraph 4",
+            "quote": "tracks delivery against the client’s own baseline.",
+            "verified": true,
+            "fragment": "tracks delivery against the client’s own"
+          },
+          {
+            "zone_id": "article:5-ai-compliance-consulting-firms-to-evaluate",
+            "part": "table_cell 13",
+            "quote": "Delivery plus AI spend tracked against your own baseline",
+            "verified": true,
+            "fragment": "Delivery plus AI spend tracked against"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified Talk CTA",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §2; Glossary §7",
+        "rule_verified": true,
+        "issue": "The banner CTA promotes the unapproved compliance-controls offer and does not use the documented service CTA wording.",
+        "fix": "Remove the offer CTA or replace it with the approved CTA for the relevant recruiting or staffing service.",
+        "subject": "Banner call to action",
+        "page_value": "Talk to GoGloby",
+        "source_value": "Get vetted profiles; Start a search",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 2",
+            "quote": "Talk to GoGloby",
+            "verified": true,
+            "fragment": "Talk to GoGloby"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Term not used: AI-native production",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"AI-native production\" is a term or name the company no longer uses.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "AI-native production",
+        "page_value": null,
+        "source_value": null,
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "AI-native production",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "WebSite.description",
+            "quote": "AI-native production",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      },
+      {
+        "title": "Term not used: Applied AI Engineering partner",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"Applied AI Engineering partner\" is no longer how GoGloby describes itself.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "Applied AI Engineering partner",
+        "page_value": null,
+        "source_value": null,
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.slogan",
+            "quote": "Applied AI Engineering Partner",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "WebSite.description",
+            "quote": "Applied AI Engineering partner",
+            "verified": true
+          },
+          {
+            "zone_id": "article:5-ai-compliance-consulting-firms-to-evaluate",
+            "part": "paragraph 4",
+            "quote": "Applied AI Engineering partner",
+            "verified": true,
+            "fragment": "GoGloby is an-,Applied AI Engineering,-partner, founded in"
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      },
+      {
+        "title": "Term not used: Secure Development Environment",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"Secure Development Environment\" is a term or name the company no longer uses.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "Secure Development Environment",
+        "page_value": null,
+        "source_value": null,
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "secure development environment",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      },
+      {
+        "title": "Term not used: 4x (product name)",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"4x (product name)\" is a term or name the company no longer uses.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "4x (product name)",
+        "page_value": null,
+        "source_value": null,
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "4x Applied",
+            "verified": true,
+            "fragment": "4x Applied"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 15",
+            "quote": "4x Applied",
+            "verified": true,
+            "fragment": "4x Applied"
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      }
+    ],
+    "usage": {
+      "input": 9627,
+      "cached_input": 10066,
+      "output": 7662
+    },
+    "error": null
+  },
+  "geo": {
+    "hash": "b892320eb0798b6e6a730720298e267ddbbadfb9bfe24fd38b1aeb2159abffe5",
+    "cached": true,
+    "code": [
+      {
+        "id": "trap_terms",
+        "status": "pass",
+        "value": "none in title, H1, meta, og",
+        "places": []
+      },
+      {
+        "id": "em_dash",
+        "status": "fail",
+        "value": "3 found",
+        "places": [
+          {
+            "zone_id": "json_ld",
+            "part": "field 10",
+            "value": "— | …a, Brazil, Mexico, and Europe — generating $60M+ in value. Bu…"
+          },
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "value": "— | …ss the US, Canada, and Europe — software architecture, agile …"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 15",
+            "value": "— | …ss the US, Canada, and Europe — software architecture, agile …"
+          }
+        ]
+      },
+      {
+        "id": "ampersand",
+        "status": "fail",
+        "value": "10 found",
+        "places": [
+          {
+            "zone_id": "title",
+            "value": "& | …Consulting: Process, Benefits & How to Implement It | GoGloby"
+          },
+          {
+            "zone_id": "og_title",
+            "value": "& | …Consulting: Process, Benefits & How to Implement It | GoGloby"
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "field 3",
+            "value": "& | …y vetted talent within the US & EU time zones."
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "field 7",
+            "value": "& | Co-founder & CTO of GoGloby. Leads the Age…"
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "field 22",
+            "value": "& | …Consulting: Process, Benefits &amp; How to Implement It"
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "field 23",
+            "value": "& | …Consulting: Process, Benefits &amp; How to Implement It"
+          },
+          {
+            "zone_id": "h1",
+            "value": "& | …Consulting: Process, Benefits & How to Implement It"
+          },
+          {
+            "zone_id": "article:5-ai-compliance-consulting-firms-to-evaluate",
+            "part": "paragraph 12",
+            "value": "& | …9 when Arthur Young and Ernst & Whinney merged. Headquartered…"
+          },
+          {
+            "zone_id": "modals",
+            "part": "paragraph 2",
+            "value": "& | …e read and accepted the Terms & Conditions and Privacy Policy"
+          },
+          {
+            "zone_id": "modals",
+            "part": "paragraph 5",
+            "value": "& | …e read and accepted the Terms & Conditions and Privacy Policy"
+          }
+        ]
+      },
+      {
+        "id": "uk_spelling",
+        "status": "pass",
+        "value": "none",
+        "places": []
+      }
+    ],
+    "llm": [
+      {
+        "id": "answer_first",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "AI compliance consulting helps companies turn the rules that apply to their AI systems into controls that teams can use and prove.",
+        "note": "The opening defines AI compliance consulting but does not answer the process, benefits, or implementation parts of the H1, so the first two sentences should cover those too.",
+        "evidence_verified": true,
+        "fragment": "How Does-,AI Compliance Consulting,-Work?"
+      },
+      {
+        "id": "recruiting_firm_early",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "This page is about AI compliance consulting, not recruiting.",
+        "evidence_verified": null
+      },
+      {
+        "id": "buyer_ready",
+        "answer": "no",
+        "value": "informational",
+        "zone_id": "page",
+        "evidence": "This guide is for CTOs and engineering leaders who work with legal and compliance teams on AI.",
+        "note": "The page is an informational guide about AI compliance rather than content for a company ready to hire Data and AI engineers.",
+        "evidence_verified": true,
+        "fragment": "This guide is for CTOs and"
+      },
+      {
+        "id": "target_keyword",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "No non-trap term from Glossary §6 best matches this AI compliance consulting article.",
+        "evidence_verified": null
+      },
+      {
+        "id": "uses_data",
+        "answer": "yes",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "IBM’s 2026 study found that 77% of organizations surveyed report that AI adoption is already outpacing current governance capabilities.",
+        "note": "The article gives a citable statistic with its source and date nearby.",
+        "evidence_verified": true,
+        "fragment": "IBM’s 2026 study"
+      },
+      {
+        "id": "proof_background",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:faqs",
+        "evidence": "He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe",
+        "note": "The author bio mentions software-team experience but does not use the founders’ Data Science and engineering-team background as proof.",
+        "evidence_verified": true,
+        "fragment": "He has spent 16+ years building"
+      },
+      {
+        "id": "sell_against_open_role",
+        "answer": "no",
+        "value": null,
+        "zone_id": "page",
+        "evidence": null,
+        "note": "The page does not compare hiring through GoGloby with the cost and wait of an open full-time US role.",
+        "evidence_verified": null
+      }
+    ],
+    "placement": null,
+    "usage": {
+      "input": 8241,
+      "cached_input": 8847,
+      "output": 1746
+    },
+    "error": null
+  },
+  "seo": {
+    "checks": [
+      {
+        "id": "http_status",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "200",
+        "severity": "high"
+      },
+      {
+        "id": "title_length",
+        "status": "fail",
+        "severity": "medium",
+        "zone_id": "title",
+        "value": "83 characters (max 60)"
+      },
+      {
+        "id": "meta_present",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "142 characters",
+        "severity": "high"
+      },
+      {
+        "id": "meta_length",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "142 characters (120-158)",
+        "severity": "low"
+      },
+      {
+        "id": "h1_count",
+        "status": "pass",
+        "zone_id": "h1",
+        "value": "1",
+        "severity": "high"
+      },
+      {
+        "id": "canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "https://gogloby.com/insights/ai-compliance-consulting/",
+        "severity": "high"
+      },
+      {
+        "id": "indexable",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "severity": "high"
+      },
+      {
+        "id": "schema_required",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "present",
+        "severity": "medium"
+      },
+      {
+        "id": "schema_recommended",
+        "status": "fail",
+        "zone_id": "json_ld",
+        "value": "missing: BreadcrumbList",
+        "severity": "medium"
+      },
+      {
+        "id": "author",
+        "status": "pass",
+        "zone_id": "author",
+        "value": "Sergey Matikaynen",
+        "severity": "medium"
+      },
+      {
+        "id": "dates",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "published: 2026-10-02T22:57:57+03:00; modified: 2026-10-02T23:05:01+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "date_mismatch",
+        "status": "pass",
+        "zone_id": "date",
+        "value": "visible \"Updated on October 2, 2026\" vs dateModified 2026-10-02T23:05:01+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "broken_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "4 checked",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "redirecting_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "none",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "link_to_services",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "no link to /services/*",
+        "severity": "medium"
+      },
+      {
+        "id": "alt_missing",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without alt",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_empty",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "5 with empty alt",
+        "places": [
+          {
+            "zone_id": "article:5-ai-compliance-consulting-firms-to-evaluate",
+            "part": "image 1",
+            "value": "Screenshot-2026-10-02-164935-1024x487.png"
+          },
+          {
+            "zone_id": "article:5-ai-compliance-consulting-firms-to-evaluate",
+            "part": "image 2",
+            "value": "Screenshot-2026-10-02-165151-1024x475.png"
+          },
+          {
+            "zone_id": "article:5-ai-compliance-consulting-firms-to-evaluate",
+            "part": "image 3",
+            "value": "Screenshot-2026-09-10-210745-1024x483.png"
+          },
+          {
+            "zone_id": "article:5-ai-compliance-consulting-firms-to-evaluate",
+            "part": "image 4",
+            "value": "Screenshot-2026-10-02-165536-1024x472.png"
+          },
+          {
+            "zone_id": "article:5-ai-compliance-consulting-firms-to-evaluate",
+            "part": "image 5",
+            "value": "Screenshot-2026-10-02-165648-1024x472.png"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "image_dimensions",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "2 without width/height",
+        "places": [
+          {
+            "zone_id": "author",
+            "part": "image 1",
+            "value": "1706550966241.jpeg"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "image 1",
+            "value": "1706550966241.jpeg"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "heading_order",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "og_present",
+        "status": "pass",
+        "zone_id": "og_title",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "og_url_canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "og:url https://gogloby.com/insights/ai-compliance-consulting/ vs canonical https://gogloby.com/insights/ai-compliance-consulting/",
+        "severity": "low"
+      },
+      {
+        "id": "twitter_card",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "summary_large_image",
+        "severity": "low"
+      },
+      {
+        "id": "html_lang",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "en-US",
+        "severity": "low"
+      },
+      {
+        "id": "viewport",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "jsonld_valid",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "4 block(s)",
+        "severity": "high"
+      },
+      {
+        "id": "article_fields",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "anchors_resolve",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "15 checked",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "faq_schema_matches_dom",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "accordion block: true, FAQPage schema: true",
+        "severity": "low"
+      }
+    ]
+  }
+}

@@ -214,6 +214,11 @@ export function validateResource(r: Resource, content: string): void {
         const t = data[k];
         if (!isObj(t) || typeof t.min !== "number" || typeof t.max !== "number" || t.min >= t.max || t.min < 0) fail(`${k}: min and max must be numbers, min below max`);
       }
+      if (data.title_h1 !== undefined) {
+        const t = data.title_h1;
+        if (!isObj(t) || typeof t.min_overlap !== "number" || t.min_overlap < 0 || t.min_overlap > 1) fail("title_h1.min_overlap must be a number from 0 to 1");
+        strArray(t.skip_profiles, "title_h1.skip_profiles");
+      }
       if (typeof data.service_path_prefix !== "string" || !data.service_path_prefix.startsWith("/")) fail("service_path_prefix must start with /");
       strArray(data.article_schema_fields, "article_schema_fields");
       strArray(data.skip_link_patterns, "skip_link_patterns");

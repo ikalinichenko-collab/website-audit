@@ -1,0 +1,2393 @@
+{
+ "template": "block",
+ "zones": [
+  {
+   "id": "title",
+   "kind": "title",
+   "label": "Title",
+   "scope": "page",
+   "skipped": false,
+   "text": "Hire AI Engineers Who Can Ship With Claude in Production | GoGloby",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Hire AI Engineers Who Can Ship With Claude in Production | GoGloby"
+    }
+   ]
+  },
+  {
+   "id": "meta_description",
+   "kind": "meta_description",
+   "label": "Meta description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Hire vetted Applied AI Engineers with a 4-stage assessment, a 3 to 5 day shortlist, production-ready Claude expertise, and a 120-day performance guarantee.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Hire vetted Applied AI Engineers with a 4-stage assessment, a 3 to 5 day shortlist, production-ready Claude expertise, and a 120-day performance guarantee."
+    }
+   ]
+  },
+  {
+   "id": "og_title",
+   "kind": "og_title",
+   "label": "og:title",
+   "scope": "page",
+   "skipped": false,
+   "text": "Hire AI Engineers Who Can Ship With Claude in Production | GoGloby",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Hire AI Engineers Who Can Ship With Claude in Production | GoGloby"
+    }
+   ]
+  },
+  {
+   "id": "og_description",
+   "kind": "og_description",
+   "label": "og:description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Hire vetted Applied AI Engineers with a 4-stage assessment, a 3 to 5 day shortlist, production-ready Claude expertise, and a 120-day performance guarantee.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Hire vetted Applied AI Engineers with a 4-stage assessment, a 3 to 5 day shortlist, production-ready Claude expertise, and a 120-day performance guarantee."
+    }
+   ]
+  },
+  {
+   "id": "json_ld",
+   "kind": "json_ld",
+   "label": "Structured data (JSON-LD)",
+   "scope": "page",
+   "skipped": false,
+   "text": "Hire Applied AI Engineers\nDirect hire recruitment for senior Applied AI Engineers brought directly into your headcount. Every candidate runs GoGloby's 4-stage vetting funnel (Specify, Navigate, Architect, Govern) with only 4 percent passing. Shortlist delivered in 5 days. 50 percent faster time-to-hire than US job boards. 120-day replacement guarantee. No fee until you hire. Talent network spans 5 plus US-timezone countries.\nWhat is Applied AI Engineering?\nApplied AI Engineering is the discipline of productionizing and operating AI inside real systems. An Applied AI Engineer practices it: a senior engineer who uses Claude Code, Cursor and agent frameworks to architect, build and ship software, measured against the team’s own baseline rather than against a generic comparison. They don't just use AI; they govern it. They write specifications before code, manage AI context deliberately, and take full ownership of every AI-assisted output. Applied AI Engineers sit at the intersection of deep software engineering and Agentic SDLC mastery\nHow is GoGloby's 4-Stage Applied AI Vetting Process different from a general vetting process?\nA general vetting process screens for years of experience, GitHub activity, and algorithm questions. GoGloby's 4-stage funnel tests what actually matters in production: Can they specify before they code? Can they navigate a real codebase with AI without losing control? Can they architect multi-agent systems under real constraints? Can they govern AI failures in front of stakeholders? Each stage eliminates 60–70% of remaining candidates. Only 4% pass. By the time a candidate reaches your shortlist, they've already proved they can do the job — not just interview for it.\nWhy Is It So Hard to hire an Applied AI Engineer?\nBecause the market is flooded with developers who can prompt an AI tool but can't architect, govern, or ship with it at production scale. Standard job boards and general tech recruiters have no framework to tell the difference. Most hiring managers spend months interviewing candidates who look right on paper and fail on real engineering tasks. The signal problem isn't supply — it's that the vetting infrastructure to identify genuine Applied AI mastery simply doesn't exist in most hiring processes.\nCan GoGloby Recruit a Full Applied AI Engineering Team?\nYes. GoGloby recruits individual Applied AI Engineers and complete engineering functions. Every candidate runs the same 4-stage assessment regardless of team size, so every name on your shortlist has cleared the same bar.\nWhat Happens If the Applied AI Engineer Leaves After the 120-day Window?\nThe 120-day replacement guarantee covers the highest-risk period of a new hire. After that window, GoGloby offers preferred re-engagement terms. If you need to backfill the role, you move to the front of the queue at a reduced fee.\nDoes GoGloby Recruit For Remote, Hybrid, or On-Site Applied AI Engineers?\nGoGloby recruits across all work models — remote, hybrid, and on-site. Our talent network spans 5+ US-timezone countries, so whether your team operates fully distributed or requires in-office presence, we source candidates who match both your technical bar and your working model. Every shortlist is filtered to your specific requirements before it reaches you.\nShould We Hire Directly or Forward-Deploy an Architect?\nDirect hire suits a permanent role you will manage and retain long term. The forward-deployed model puts Claude Certified Architects, AI Solutions Architects and Applied AI Engineers inside your team, and suits a mandate on a clock where you need features shipping at AI speed within weeks. GoGloby runs both. See our AI Staff Augmentation page.\nWhat does the Benchmark include?\nEvery engagement starts with the Benchmark: a fixed fee for one month, with the AI Intelligence Layer deployed inside your VPC and your baseline delivered at the end of it. The fee is credited in full toward your first month of delivery. If you stop there, you keep the baseline.",
+   "parts": [
+    {
+     "type": "field",
+     "text": "Hire Applied AI Engineers",
+     "area": "Service.name",
+     "index": 1
+    },
+    {
+     "type": "field",
+     "text": "Direct hire recruitment for senior Applied AI Engineers brought directly into your headcount. Every candidate runs GoGloby's 4-stage vetting funnel (Specify, Navigate, Architect, Govern) with only 4 percent passing. Shortlist delivered in 5 days. 50 percent faster time-to-hire than US job boards. 120-day replacement guarantee. No fee until you hire. Talent network spans 5 plus US-timezone countries.",
+     "area": "Service.description",
+     "index": 2
+    },
+    {
+     "type": "field",
+     "text": "What is Applied AI Engineering?",
+     "area": "Question.name",
+     "index": 3
+    },
+    {
+     "type": "field",
+     "text": "Applied AI Engineering is the discipline of productionizing and operating AI inside real systems. An Applied AI Engineer practices it: a senior engineer who uses Claude Code, Cursor and agent frameworks to architect, build and ship software, measured against the team’s own baseline rather than against a generic comparison. They don't just use AI; they govern it. They write specifications before code, manage AI context deliberately, and take full ownership of every AI-assisted output. Applied AI Engineers sit at the intersection of deep software engineering and Agentic SDLC mastery",
+     "area": "Answer.text",
+     "index": 4
+    },
+    {
+     "type": "field",
+     "text": "How is GoGloby's 4-Stage Applied AI Vetting Process different from a general vetting process?",
+     "area": "Question.name",
+     "index": 5
+    },
+    {
+     "type": "field",
+     "text": "A general vetting process screens for years of experience, GitHub activity, and algorithm questions. GoGloby's 4-stage funnel tests what actually matters in production: Can they specify before they code? Can they navigate a real codebase with AI without losing control? Can they architect multi-agent systems under real constraints? Can they govern AI failures in front of stakeholders? Each stage eliminates 60–70% of remaining candidates. Only 4% pass. By the time a candidate reaches your shortlist, they've already proved they can do the job — not just interview for it.",
+     "area": "Answer.text",
+     "index": 6
+    },
+    {
+     "type": "field",
+     "text": "Why Is It So Hard to hire an Applied AI Engineer?",
+     "area": "Question.name",
+     "index": 7
+    },
+    {
+     "type": "field",
+     "text": "Because the market is flooded with developers who can prompt an AI tool but can't architect, govern, or ship with it at production scale. Standard job boards and general tech recruiters have no framework to tell the difference. Most hiring managers spend months interviewing candidates who look right on paper and fail on real engineering tasks. The signal problem isn't supply — it's that the vetting infrastructure to identify genuine Applied AI mastery simply doesn't exist in most hiring processes.",
+     "area": "Answer.text",
+     "index": 8
+    },
+    {
+     "type": "field",
+     "text": "Can GoGloby Recruit a Full Applied AI Engineering Team?",
+     "area": "Question.name",
+     "index": 9
+    },
+    {
+     "type": "field",
+     "text": "Yes. GoGloby recruits individual Applied AI Engineers and complete engineering functions. Every candidate runs the same 4-stage assessment regardless of team size, so every name on your shortlist has cleared the same bar.",
+     "area": "Answer.text",
+     "index": 10
+    },
+    {
+     "type": "field",
+     "text": "What Happens If the Applied AI Engineer Leaves After the 120-day Window?",
+     "area": "Question.name",
+     "index": 11
+    },
+    {
+     "type": "field",
+     "text": "The 120-day replacement guarantee covers the highest-risk period of a new hire. After that window, GoGloby offers preferred re-engagement terms. If you need to backfill the role, you move to the front of the queue at a reduced fee.",
+     "area": "Answer.text",
+     "index": 12
+    },
+    {
+     "type": "field",
+     "text": "Does GoGloby Recruit For Remote, Hybrid, or On-Site Applied AI Engineers?",
+     "area": "Question.name",
+     "index": 13
+    },
+    {
+     "type": "field",
+     "text": "GoGloby recruits across all work models — remote, hybrid, and on-site. Our talent network spans 5+ US-timezone countries, so whether your team operates fully distributed or requires in-office presence, we source candidates who match both your technical bar and your working model. Every shortlist is filtered to your specific requirements before it reaches you.",
+     "area": "Answer.text",
+     "index": 14
+    },
+    {
+     "type": "field",
+     "text": "Should We Hire Directly or Forward-Deploy an Architect?",
+     "area": "Question.name",
+     "index": 15
+    },
+    {
+     "type": "field",
+     "text": "Direct hire suits a permanent role you will manage and retain long term. The forward-deployed model puts Claude Certified Architects, AI Solutions Architects and Applied AI Engineers inside your team, and suits a mandate on a clock where you need features shipping at AI speed within weeks. GoGloby runs both. See our AI Staff Augmentation page.",
+     "area": "Answer.text",
+     "index": 16
+    },
+    {
+     "type": "field",
+     "text": "What does the Benchmark include?",
+     "area": "Question.name",
+     "index": 17
+    },
+    {
+     "type": "field",
+     "text": "Every engagement starts with the Benchmark: a fixed fee for one month, with the AI Intelligence Layer deployed inside your VPC and your baseline delivered at the end of it. The fee is credited in full toward your first month of delivery. If you stop there, you keep the baseline.",
+     "area": "Answer.text",
+     "index": 18
+    }
+   ]
+  },
+  {
+   "id": "h1",
+   "kind": "h1",
+   "label": "H1",
+   "scope": "page",
+   "skipped": false,
+   "text": "Hire AI Engineers Who Can Ship With Claude in Production",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Hire AI Engineers Who Can Ship With Claude in Production"
+    }
+   ]
+  },
+  {
+   "id": "block:hero-services#1",
+   "kind": "block",
+   "label": "Hero services: Hire AI Engineers Who Can Ship With Claude in Production",
+   "scope": "page",
+   "skipped": false,
+   "text": "Background\nBackground\nBackground\nBackground\nDIRECT HIRE\nHire AI Engineers Who Can Ship With Claude in Production\nMost recruiters can’t separate a production-grade Applied AI Engineer from someone who prompts Claude Code and ships the first output. GoGloby runs a 4-stage technical assessment built for exactly that difference. Your shortlist of production-proven engineers lands in 3 to 5 business days.\nForward-Deploy a Team\nTATA\nDeel\nZillow\nEverCommerce\nGitLab\nPandora\nHasbro\nDisney\nTATA\nDeel\nZillow\nEverCommerce\nGitLab\nPandora\nHasbro\nDisney",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/blocks/block-bg-1-01.png",
+     "file": "block-bg-1-01.png",
+     "alt": "Background",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "Background",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/blocks/block-bg-2-01.png",
+     "file": "block-bg-2-01.png",
+     "alt": "Background",
+     "alt_state": "text",
+     "dims": false,
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "Background",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/blocks/block-bg-3-01.png",
+     "file": "block-bg-3-01.png",
+     "alt": "Background",
+     "alt_state": "text",
+     "dims": false,
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "Background",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/hero-services-3-01.png",
+     "file": "hero-services-3-01.png",
+     "alt": "Background",
+     "alt_state": "text",
+     "dims": true,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "DIRECT HIRE",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Hire AI Engineers Who Can Ship With Claude in Production",
+     "area": "block-main",
+     "level": 1,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Most recruiters can’t separate a production-grade Applied AI Engineer from someone who prompts Claude Code and ships the first output. GoGloby runs a 4-stage technical assessment built for exactly that difference. Your shortlist of production-proven engineers lands in 3 to 5 business days.",
+     "area": "block-main",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Forward-Deploy a Team",
+     "area": "block-main",
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "TATA",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-tata-1-grayscale.png",
+     "file": "logo-tata-1-grayscale.png",
+     "alt": "TATA",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "Deel",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-deel-1-grayscale.png",
+     "file": "logo-deel-1-grayscale.png",
+     "alt": "Deel",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 6
+    },
+    {
+     "type": "image",
+     "text": "Zillow",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-zillow-1-grayscale.png",
+     "file": "logo-zillow-1-grayscale.png",
+     "alt": "Zillow",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 7
+    },
+    {
+     "type": "image",
+     "text": "EverCommerce",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-evercommerce-1-grayscale.png",
+     "file": "logo-evercommerce-1-grayscale.png",
+     "alt": "EverCommerce",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 8
+    },
+    {
+     "type": "image",
+     "text": "GitLab",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-gitlab-1-grayscale.png",
+     "file": "logo-gitlab-1-grayscale.png",
+     "alt": "GitLab",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 9
+    },
+    {
+     "type": "image",
+     "text": "Pandora",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-pandora-1-grayscale.png",
+     "file": "logo-pandora-1-grayscale.png",
+     "alt": "Pandora",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 10
+    },
+    {
+     "type": "image",
+     "text": "Hasbro",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-hasbro-1-grayscale.png",
+     "file": "logo-hasbro-1-grayscale.png",
+     "alt": "Hasbro",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 11
+    },
+    {
+     "type": "image",
+     "text": "Disney",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-disney-1-grayscale.png",
+     "file": "logo-disney-1-grayscale.png",
+     "alt": "Disney",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 12
+    },
+    {
+     "type": "image",
+     "text": "TATA",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-tata-1-grayscale.png",
+     "file": "logo-tata-1-grayscale.png",
+     "alt": "TATA",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 13
+    },
+    {
+     "type": "image",
+     "text": "Deel",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-deel-1-grayscale.png",
+     "file": "logo-deel-1-grayscale.png",
+     "alt": "Deel",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 14
+    },
+    {
+     "type": "image",
+     "text": "Zillow",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-zillow-1-grayscale.png",
+     "file": "logo-zillow-1-grayscale.png",
+     "alt": "Zillow",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 15
+    },
+    {
+     "type": "image",
+     "text": "EverCommerce",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-evercommerce-1-grayscale.png",
+     "file": "logo-evercommerce-1-grayscale.png",
+     "alt": "EverCommerce",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 16
+    },
+    {
+     "type": "image",
+     "text": "GitLab",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-gitlab-1-grayscale.png",
+     "file": "logo-gitlab-1-grayscale.png",
+     "alt": "GitLab",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 17
+    },
+    {
+     "type": "image",
+     "text": "Pandora",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-pandora-1-grayscale.png",
+     "file": "logo-pandora-1-grayscale.png",
+     "alt": "Pandora",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 18
+    },
+    {
+     "type": "image",
+     "text": "Hasbro",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-hasbro-1-grayscale.png",
+     "file": "logo-hasbro-1-grayscale.png",
+     "alt": "Hasbro",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 19
+    },
+    {
+     "type": "image",
+     "text": "Disney",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-disney-1-grayscale.png",
+     "file": "logo-disney-1-grayscale.png",
+     "alt": "Disney",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 20
+    }
+   ]
+  },
+  {
+   "id": "block:company#1",
+   "kind": "block",
+   "label": "Company: Why Hiring Applied AI Engineers Is Broken",
+   "scope": "page",
+   "skipped": false,
+   "text": "Why Hiring Applied AI Engineers Is Broken\nFinding engineers who can architect, govern, and ship production AI takes months you do not have.\nPaper Tigers Pass Standard Screens\nCandidates look right on the resume and fail on real engineering tasks. Interview loops end in a maybe, and the search restarts from zero.\nRecruiters Have No Framework for This\nStandard recruiters screen for keywords and GitHub links. None of them can tell a production-grade Applied AI Engineer from a prompt-first hobbyist.\nThe Search Runs 6 Months\nSpecialized AI hiring through US job boards takes around 6 months. Every week spent sourcing is a week the roadmap slips.\nRates Break the Roadmap Budget\nUS rates for verified AI talent are hard to sustain across a 12-month roadmap. You either overpay or lose the candidate at the offer stage.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Why Hiring Applied AI Engineers Is Broken",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Finding engineers who can architect, govern, and ship production AI takes months you do not have.",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/company-icon-9-01.png",
+     "file": "company-icon-9-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Paper Tigers Pass Standard Screens",
+     "area": "block-main",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Candidates look right on the resume and fail on real engineering tasks. Interview loops end in a maybe, and the search restarts from zero.",
+     "area": "block-main",
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/company-icon-11-01.png",
+     "file": "company-icon-11-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-main",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Recruiters Have No Framework for This",
+     "area": "block-main",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Standard recruiters screen for keywords and GitHub links. None of them can tell a production-grade Applied AI Engineer from a prompt-first hobbyist.",
+     "area": "block-main",
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/company-icon-10-01.png",
+     "file": "company-icon-10-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-main",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "The Search Runs 6 Months",
+     "area": "block-main",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Specialized AI hiring through US job boards takes around 6 months. Every week spent sourcing is a week the roadmap slips.",
+     "area": "block-main",
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/company-icon-12-01.png",
+     "file": "company-icon-12-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-main",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Rates Break the Roadmap Budget",
+     "area": "block-main",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "US rates for verified AI talent are hard to sustain across a 12-month roadmap. You either overpay or lose the candidate at the offer stage.",
+     "area": "block-main",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "block:featured-facts#1",
+   "kind": "block",
+   "label": "Featured facts: Vetting Metrics You Can Verify",
+   "scope": "page",
+   "skipped": false,
+   "text": "Vetted for Production, Not Keywords\nVetting Metrics You Can Verify\nA 4-stage technical assessment no generalist recruiter runs, and a dedicated squad working only on your roles.\n4%\nVetting Pass Rate\nOnly 4% of GoGloby’s curated outbound pipeline clears the multi-layer technical assessment. For general applicants the rate is 0.04% at most.\n1 in 3\nPresented Candidates Hired And Retained\n1 in 3 candidates we present gets hired and stays, because the technical elimination happens before you see a name.\nUnder 4 Weeks\nForward-Deployed, Against 3 To 6 Months In-House\nA decade-built talent network across 5 or more US-timezone countries cuts the hiring cycle in half. Shortlist in 3 to 5 business days.\n100%\nDedicated Recruitment Squads\nEvery client gets a focused team of AI-specialized recruiters and engineering leaders working only on their roles.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "Vetted for Production, Not Keywords",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Vetting Metrics You Can Verify",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "A 4-stage technical assessment no generalist recruiter runs, and a dedicated squad working only on your roles.",
+     "area": "block-header",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "4%",
+     "area": "block-main",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Vetting Pass Rate",
+     "area": "block-main",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Only 4% of GoGloby’s curated outbound pipeline clears the multi-layer technical assessment. For general applicants the rate is 0.04% at most.",
+     "area": "block-main",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "1 in 3",
+     "area": "block-main",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Presented Candidates Hired And Retained",
+     "area": "block-main",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "1 in 3 candidates we present gets hired and stays, because the technical elimination happens before you see a name.",
+     "area": "block-main",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Under 4 Weeks",
+     "area": "block-main",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Forward-Deployed, Against 3 To 6 Months In-House",
+     "area": "block-main",
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "A decade-built talent network across 5 or more US-timezone countries cuts the hiring cycle in half. Shortlist in 3 to 5 business days.",
+     "area": "block-main",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "100%",
+     "area": "block-main",
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "Dedicated Recruitment Squads",
+     "area": "block-main",
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Every client gets a focused team of AI-specialized recruiters and engineering leaders working only on their roles.",
+     "area": "block-main",
+     "index": 14
+    }
+   ]
+  },
+  {
+   "id": "block:how-we-work#1",
+   "kind": "block",
+   "label": "How we work: The 4% Vetting Pass Rate",
+   "scope": "page",
+   "skipped": false,
+   "text": "Assessment Methodology\nThe 4% Vetting Pass Rate\nWe run a 4-stage technical assessment to validate real Agentic SDLC mastery. By the time you interview someone, the hard vetting is already done.\nCan They Specify?\nBefore writing a single line of code, candidates must produce a strict, machine-readable architectural spec. Most can’t. This stage alone eliminates ~70% of candidates.\nCan They Navigate?\nWe drop them into a 100K+ line codebase with Claude Code or Cursor and watch how they work. Context discipline and output validation separate real engineers from prompt jockeys.\nCan They Architect?\nCandidates design multi-agent systems, evaluate RAG trade-offs, and manage token economics under real constraints. No theory. Production-grade thinking only.\nCan They Govern?\nTheir agent hallucinates in production. Walk us through the first 60 minutes. Only engineers who can own outcomes — not just output — make it through.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "Assessment Methodology",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "The 4% Vetting Pass Rate",
+     "area": "block-main",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "We run a 4-stage technical assessment to validate real Agentic SDLC mastery. By the time you interview someone, the hard vetting is already done.",
+     "area": "block-main",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Can They Specify?",
+     "area": "block-table",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Before writing a single line of code, candidates must produce a strict, machine-readable architectural spec. Most can’t. This stage alone eliminates ~70% of candidates.",
+     "area": "block-table",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Can They Navigate?",
+     "area": "block-table",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "We drop them into a 100K+ line codebase with Claude Code or Cursor and watch how they work. Context discipline and output validation separate real engineers from prompt jockeys.",
+     "area": "block-table",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Can They Architect?",
+     "area": "block-table",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Candidates design multi-agent systems, evaluate RAG trade-offs, and manage token economics under real constraints. No theory. Production-grade thinking only.",
+     "area": "block-table",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Can They Govern?",
+     "area": "block-table",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Their agent hallucinates in production. Walk us through the first 60 minutes. Only engineers who can own outcomes — not just output — make it through.",
+     "area": "block-table",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "block:guarantees#1",
+   "kind": "block",
+   "label": "Guarantees: Verifiable Delivery Guarantees",
+   "scope": "page",
+   "skipped": false,
+   "text": "Verifiable Delivery Guarantees\n1\n120-Day Replacement\nIf your new Applied AI Engineer isn’t working out within 120 days, we run the full search and vetting process again at zero additional cost.\nN\nNo Fee Until You Hire\nYou pay nothing during sourcing, vetting, and shortlisting. GoGloby’s fee only triggers when you make the hire. No spend on candidates you never meet.\nR\nRisk-Aligned Payment\n50% when your new Applied AI Engineer starts. 50% after they pass probation. We only win when your hire succeeds.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Verifiable Delivery Guarantees",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "1",
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "120-Day Replacement",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "If your new Applied AI Engineer isn’t working out within 120 days, we run the full search and vetting process again at zero additional cost.",
+     "area": "slide 1",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "N",
+     "area": "slide 2",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "No Fee Until You Hire",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "You pay nothing during sourcing, vetting, and shortlisting. GoGloby’s fee only triggers when you make the hire. No spend on candidates you never meet.",
+     "area": "slide 2",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "R",
+     "area": "slide 3",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Risk-Aligned Payment",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "50% when your new Applied AI Engineer starts. 50% after they pass probation. We only win when your hire succeeds.",
+     "area": "slide 3",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "block:how-it-works#1",
+   "kind": "block",
+   "label": "How it works: Applied AI Engineering Hiring Process",
+   "scope": "page",
+   "skipped": false,
+   "text": "Applied AI Engineering Hiring Process\nFrom brief to hired — without a 6-month hiring cycle.\n1\nRequirements Deep Dive\nWe map your stack, team structure, technical environment, and engineering bar. The brief drives the search — precision here eliminates bad fits before sourcing begins.\n2\nTargeted Sourcing\nWe activate GoGloby’s network of Applied AI Engineers across 5+ US-timezone countries. No job board blasting. Targeted outreach to pre-qualified talent only.\n3\n4-Stage Vetting Funnel\nEvery candidate runs Specify → Navigate → Architect → Govern. Each stage eliminates 60–70% of remaining applicants. Only the top 4% make it through.\n4\nYou Interview. You Decide.\nYou meet only pre-vetted candidates. No wasted interview loops. No paper tigers. You make the final call.\n5\nOffer Support & Close\nWe provide current AI market compensation benchmarks so you go in with the right number — and close the offer instead of losing at the final step.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Applied AI Engineering Hiring Process",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "From brief to hired — without a 6-month hiring cycle.",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "1",
+     "area": "slide 1",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Requirements Deep Dive",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "We map your stack, team structure, technical environment, and engineering bar. The brief drives the search — precision here eliminates bad fits before sourcing begins.",
+     "area": "slide 1",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "2",
+     "area": "slide 2",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Targeted Sourcing",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "We activate GoGloby’s network of Applied AI Engineers across 5+ US-timezone countries. No job board blasting. Targeted outreach to pre-qualified talent only.",
+     "area": "slide 2",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "3",
+     "area": "slide 3",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "4-Stage Vetting Funnel",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Every candidate runs Specify → Navigate → Architect → Govern. Each stage eliminates 60–70% of remaining applicants. Only the top 4% make it through.",
+     "area": "slide 3",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "4",
+     "area": "slide 4",
+     "index": 8
+    },
+    {
+     "type": "heading",
+     "text": "You Interview. You Decide.",
+     "area": "slide 4",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "You meet only pre-vetted candidates. No wasted interview loops. No paper tigers. You make the final call.",
+     "area": "slide 4",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "5",
+     "area": "slide 5",
+     "index": 10
+    },
+    {
+     "type": "heading",
+     "text": "Offer Support & Close",
+     "area": "slide 5",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "We provide current AI market compensation benchmarks so you go in with the right number — and close the offer instead of losing at the final step.",
+     "area": "slide 5",
+     "index": 11
+    }
+   ]
+  },
+  {
+   "id": "block:leaders#1",
+   "kind": "block",
+   "label": "Leaders: Powering The Enterprise Leaders in Major Verticals",
+   "scope": "page",
+   "skipped": false,
+   "text": "Powering The Enterprise Leaders in Major Verticals\nH\nEntertainment\nHASBRO\nNYSE · $13.4B market cap · $4.7B revenue · 35+ countries · 20+ iconic brands\nThe company behind Monopoly, Nerf, Transformers, Magic: The Gathering, and Peppa Pig — dominating the $46B North American toy market. A GoGloby Applied AI Engineering client building their internal AI Studio.\nD\nHealthcare\nDR. CHRONO\n17M+ patients · $3B+ medical claims annually · Cloud EHR\nOne of the US’s most trusted EHR platforms — powering telehealth, clinical billing, and revenue cycle management for millions of patients. An active GoGloby Applied AI Engineering engagement.\nE\nPayments\nEVERCOMMERCE\nNasdaq-listed SaaS · $1.98B market cap · 700,000+ business clients\nThe SaaS powerhouse serving home services, health, and wellness businesses across North America — built through aggressive acquisition and unified under one platform. A long-term GoGloby Applied AI Engineering partner.\nK\nGaming\nKEYWORDS\n$2.8B EQT acquisition · $844M revenue · 13,000 employees · 26 countries\nThe world’s #1 video game services company — trusted by 24 of the top 25 game publishers globally. Working with GoGloby to build their AI engineering leadership.\nM\nMedia\nMikeWorldWide\nFortune 500 agency · $57M fee income · 230+ staff · US & UK · Amazon · NFL · Deloitte · WNBA\nOne of the most respected independent PR agencies in the US — a blue-chip roster spanning tech, sports, energy, and consumer. A GoGloby talent partner for 3+ years.\nT\nIT Services\nTATA\n$106B market cap · $30B revenue · 600,000+ employees · 55 countries\nOne of the world’s largest technology companies — serving 1/3 of the Fortune 500 with a declared goal to become the world’s largest AI-led tech services company. An active GoGloby Applied AI Engineering client.\nC\nAccounting\nCANOPY\nSeries F · $236.5M raised · #1 rated accounting SaaS\nThe AI-powered practice management platform dominating accounting firms across the US — covering CRM, billing, documents, and IRS transcripts in one system. A GoGloby Applied AI Engineering client.\nS\nInvestments\nSYDECAR\n$3B+ AUA · 107% YoY revenue growth\nThe private markets infrastructure platform automating SPV and fund formation for venture managers worldwide. A long-term GoGloby Applied AI Engineering partner.\nN\nOil & Gas\nNOVILAB\nSeries B · $46M raised · $50B+ capital allocation decisions · Shell · Devon Energy · Wood Mackenzie\nThe AI analytics platform powering capital decisions for the world’s largest energy companies. An active GoGloby Applied AI Engineering engagement.\nB\nHR\nBONUSLY\nSeries B · $32.4M raised · 3,400+ clients · DoorDash · Toast · MongoDB\nThe #1 rated employee recognition platform in the US — trusted by some of the fastest-growing companies in tech and hospitality. A GoGloby Applied AI Engineering client.\nE\nFintech\nEVERY\n$32M raised · $60M+ payroll processed · $0 in tax penalties · Fast Company Most Innovative 2025\nThe all-in-one banking, payroll, and bookkeeping platform built for founders. A long-term GoGloby Applied AI Engineering partner.\nA\nHealthTech\nALCHEMY\n$31M seed · 25M+ prescriptions · Magic Johnson investor\nFounded by the co-founder of Truepill — building in-house pharmacy infrastructure for HIV and safety-net clinics under the 340B drug pricing program. A GoGloby Applied AI Engineering client.\nD\nGaming\nDEVSISTERS\nPublic · $299M market cap · 200M+ users · $500M+ lifetime player spending · 243 countries\nThe US/South Korean studio behind Cookie Run — one of mobile gaming’s most globally distributed franchises with 150M+ downloads. A GoGloby Applied AI Engineering client.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Powering The Enterprise Leaders in Major Verticals",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "H",
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Entertainment",
+     "area": "slide 1",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "HASBRO",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "NYSE · $13.4B market cap · $4.7B revenue · 35+ countries · 20+ iconic brands",
+     "area": "slide 1",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "The company behind Monopoly, Nerf, Transformers, Magic: The Gathering, and Peppa Pig — dominating the $46B North American toy market. A GoGloby Applied AI Engineering client building their internal AI Studio.",
+     "area": "slide 1",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "D",
+     "area": "slide 2",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Healthcare",
+     "area": "slide 2",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "DR. CHRONO",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "17M+ patients · $3B+ medical claims annually · Cloud EHR",
+     "area": "slide 2",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "One of the US’s most trusted EHR platforms — powering telehealth, clinical billing, and revenue cycle management for millions of patients. An active GoGloby Applied AI Engineering engagement.",
+     "area": "slide 2",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "E",
+     "area": "slide 3",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Payments",
+     "area": "slide 3",
+     "index": 10
+    },
+    {
+     "type": "heading",
+     "text": "EVERCOMMERCE",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Nasdaq-listed SaaS · $1.98B market cap · 700,000+ business clients",
+     "area": "slide 3",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "The SaaS powerhouse serving home services, health, and wellness businesses across North America — built through aggressive acquisition and unified under one platform. A long-term GoGloby Applied AI Engineering partner.",
+     "area": "slide 3",
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "K",
+     "area": "slide 4",
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Gaming",
+     "area": "slide 4",
+     "index": 14
+    },
+    {
+     "type": "heading",
+     "text": "KEYWORDS",
+     "area": "slide 4",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "$2.8B EQT acquisition · $844M revenue · 13,000 employees · 26 countries",
+     "area": "slide 4",
+     "index": 15
+    },
+    {
+     "type": "paragraph",
+     "text": "The world’s #1 video game services company — trusted by 24 of the top 25 game publishers globally. Working with GoGloby to build their AI engineering leadership.",
+     "area": "slide 4",
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "M",
+     "area": "slide 5",
+     "index": 17
+    },
+    {
+     "type": "paragraph",
+     "text": "Media",
+     "area": "slide 5",
+     "index": 18
+    },
+    {
+     "type": "heading",
+     "text": "MikeWorldWide",
+     "area": "slide 5",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Fortune 500 agency · $57M fee income · 230+ staff · US & UK · Amazon · NFL · Deloitte · WNBA",
+     "area": "slide 5",
+     "index": 19
+    },
+    {
+     "type": "paragraph",
+     "text": "One of the most respected independent PR agencies in the US — a blue-chip roster spanning tech, sports, energy, and consumer. A GoGloby talent partner for 3+ years.",
+     "area": "slide 5",
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "T",
+     "area": "slide 6",
+     "index": 21
+    },
+    {
+     "type": "paragraph",
+     "text": "IT Services",
+     "area": "slide 6",
+     "index": 22
+    },
+    {
+     "type": "heading",
+     "text": "TATA",
+     "area": "slide 6",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "$106B market cap · $30B revenue · 600,000+ employees · 55 countries",
+     "area": "slide 6",
+     "index": 23
+    },
+    {
+     "type": "paragraph",
+     "text": "One of the world’s largest technology companies — serving 1/3 of the Fortune 500 with a declared goal to become the world’s largest AI-led tech services company. An active GoGloby Applied AI Engineering client.",
+     "area": "slide 6",
+     "index": 24
+    },
+    {
+     "type": "paragraph",
+     "text": "C",
+     "area": "slide 7",
+     "index": 25
+    },
+    {
+     "type": "paragraph",
+     "text": "Accounting",
+     "area": "slide 7",
+     "index": 26
+    },
+    {
+     "type": "heading",
+     "text": "CANOPY",
+     "area": "slide 7",
+     "level": 3,
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Series F · $236.5M raised · #1 rated accounting SaaS",
+     "area": "slide 7",
+     "index": 27
+    },
+    {
+     "type": "paragraph",
+     "text": "The AI-powered practice management platform dominating accounting firms across the US — covering CRM, billing, documents, and IRS transcripts in one system. A GoGloby Applied AI Engineering client.",
+     "area": "slide 7",
+     "index": 28
+    },
+    {
+     "type": "paragraph",
+     "text": "S",
+     "area": "slide 8",
+     "index": 29
+    },
+    {
+     "type": "paragraph",
+     "text": "Investments",
+     "area": "slide 8",
+     "index": 30
+    },
+    {
+     "type": "heading",
+     "text": "SYDECAR",
+     "area": "slide 8",
+     "level": 3,
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "$3B+ AUA · 107% YoY revenue growth",
+     "area": "slide 8",
+     "index": 31
+    },
+    {
+     "type": "paragraph",
+     "text": "The private markets infrastructure platform automating SPV and fund formation for venture managers worldwide. A long-term GoGloby Applied AI Engineering partner.",
+     "area": "slide 8",
+     "index": 32
+    },
+    {
+     "type": "paragraph",
+     "text": "N",
+     "area": "slide 9",
+     "index": 33
+    },
+    {
+     "type": "paragraph",
+     "text": "Oil & Gas",
+     "area": "slide 9",
+     "index": 34
+    },
+    {
+     "type": "heading",
+     "text": "NOVILAB",
+     "area": "slide 9",
+     "level": 3,
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "Series B · $46M raised · $50B+ capital allocation decisions · Shell · Devon Energy · Wood Mackenzie",
+     "area": "slide 9",
+     "index": 35
+    },
+    {
+     "type": "paragraph",
+     "text": "The AI analytics platform powering capital decisions for the world’s largest energy companies. An active GoGloby Applied AI Engineering engagement.",
+     "area": "slide 9",
+     "index": 36
+    },
+    {
+     "type": "paragraph",
+     "text": "B",
+     "area": "slide 10",
+     "index": 37
+    },
+    {
+     "type": "paragraph",
+     "text": "HR",
+     "area": "slide 10",
+     "index": 38
+    },
+    {
+     "type": "heading",
+     "text": "BONUSLY",
+     "area": "slide 10",
+     "level": 3,
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "Series B · $32.4M raised · 3,400+ clients · DoorDash · Toast · MongoDB",
+     "area": "slide 10",
+     "index": 39
+    },
+    {
+     "type": "paragraph",
+     "text": "The #1 rated employee recognition platform in the US — trusted by some of the fastest-growing companies in tech and hospitality. A GoGloby Applied AI Engineering client.",
+     "area": "slide 10",
+     "index": 40
+    },
+    {
+     "type": "paragraph",
+     "text": "E",
+     "area": "slide 11",
+     "index": 41
+    },
+    {
+     "type": "paragraph",
+     "text": "Fintech",
+     "area": "slide 11",
+     "index": 42
+    },
+    {
+     "type": "heading",
+     "text": "EVERY",
+     "area": "slide 11",
+     "level": 3,
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "$32M raised · $60M+ payroll processed · $0 in tax penalties · Fast Company Most Innovative 2025",
+     "area": "slide 11",
+     "index": 43
+    },
+    {
+     "type": "paragraph",
+     "text": "The all-in-one banking, payroll, and bookkeeping platform built for founders. A long-term GoGloby Applied AI Engineering partner.",
+     "area": "slide 11",
+     "index": 44
+    },
+    {
+     "type": "paragraph",
+     "text": "A",
+     "area": "slide 12",
+     "index": 45
+    },
+    {
+     "type": "paragraph",
+     "text": "HealthTech",
+     "area": "slide 12",
+     "index": 46
+    },
+    {
+     "type": "heading",
+     "text": "ALCHEMY",
+     "area": "slide 12",
+     "level": 3,
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "$31M seed · 25M+ prescriptions · Magic Johnson investor",
+     "area": "slide 12",
+     "index": 47
+    },
+    {
+     "type": "paragraph",
+     "text": "Founded by the co-founder of Truepill — building in-house pharmacy infrastructure for HIV and safety-net clinics under the 340B drug pricing program. A GoGloby Applied AI Engineering client.",
+     "area": "slide 12",
+     "index": 48
+    },
+    {
+     "type": "paragraph",
+     "text": "D",
+     "area": "slide 13",
+     "index": 49
+    },
+    {
+     "type": "paragraph",
+     "text": "Gaming",
+     "area": "slide 13",
+     "index": 50
+    },
+    {
+     "type": "heading",
+     "text": "DEVSISTERS",
+     "area": "slide 13",
+     "level": 3,
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Public · $299M market cap · 200M+ users · $500M+ lifetime player spending · 243 countries",
+     "area": "slide 13",
+     "index": 51
+    },
+    {
+     "type": "paragraph",
+     "text": "The US/South Korean studio behind Cookie Run — one of mobile gaming’s most globally distributed franchises with 150M+ downloads. A GoGloby Applied AI Engineering client.",
+     "area": "slide 13",
+     "index": 52
+    }
+   ]
+  },
+  {
+   "id": "block:contact#1",
+   "kind": "block",
+   "label": "Contact: Contact Us",
+   "scope": "page",
+   "skipped": false,
+   "text": "Contact Us\nSubmit your information to schedule a technical briefing. We will walk you through the Benchmark, what your features cost today, and how our engineers forward-deploy in under 4 weeks.\nTrusted by\nFeatured by\nAwarded by\nWe follow data & security practices:",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Contact Us",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Submit your information to schedule a technical briefing. We will walk you through the Benchmark, what your features cost today, and how our engineers forward-deploy in under 4 weeks.",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Trusted by",
+     "area": "block-aside",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-hasbro-1-grayscale.png",
+     "file": "logo-hasbro-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-hubspot-1-grayscale.png",
+     "file": "logo-hubspot-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-carta-1-grayscale.png",
+     "file": "logo-carta-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-oyster-1-grayscale.png",
+     "file": "logo-oyster-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-deel-1-grayscale.png",
+     "file": "logo-deel-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-evercommerce-1-grayscale.png",
+     "file": "logo-evercommerce-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Featured by",
+     "area": "block-aside",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-forbes-1-grayscale.png",
+     "file": "logo-forbes-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 7
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-crunchbase-1-grayscale.png",
+     "file": "logo-crunchbase-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 8
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-london-daily-1-grayscale.png",
+     "file": "logo-london-daily-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 9
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-nbc-1-grayscale.png",
+     "file": "logo-nbc-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 10
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-fox-news-1-grayscale.png",
+     "file": "logo-fox-news-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 11
+    },
+    {
+     "type": "heading",
+     "text": "Awarded by",
+     "area": "block-aside",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-clutch-1-grayscale.png",
+     "file": "logo-clutch-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 12
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-trustpilot-1-grayscale.png",
+     "file": "logo-trustpilot-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 13
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-linkedin-1-grayscale.png",
+     "file": "logo-linkedin-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 14
+    },
+    {
+     "type": "heading",
+     "text": "We follow data & security practices:",
+     "area": "block-aside",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-aicpa-soc2-type2-1-white-grayscale.png",
+     "file": "logo-aicpa-soc2-type2-1-white-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 15
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-ism-iso-27001-1-grayscale.png",
+     "file": "logo-ism-iso-27001-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 16
+    }
+   ]
+  },
+  {
+   "id": "block:accordion-1#1",
+   "kind": "block",
+   "label": "Accordion 1: FAQ",
+   "scope": "page",
+   "skipped": false,
+   "text": "FAQ\nWhat is Applied AI Engineering?\nApplied AI Engineering is the discipline of productionizing and operating AI inside real systems. An Applied AI Engineer practices it: a senior engineer who uses Claude Code, Cursor and agent frameworks to architect, build and ship software, measured against the team’s own baseline rather than against a generic comparison. They don’t just use AI; they govern it. They write specifications before code, manage AI context deliberately, and take full ownership of every AI-assisted output. Applied AI Engineers sit at the intersection of deep software engineering and Agentic SDLC mastery\nHow is GoGloby’s 4-Stage Applied AI Vetting Process different from a general vetting process?\nA general vetting process screens for years of experience, GitHub activity, and algorithm questions. GoGloby’s 4-stage funnel tests what actually matters in production: Can they specify before they code? Can they navigate a real codebase with AI without losing control? Can they architect multi-agent systems under real constraints? Can they govern AI failures in front of stakeholders? Each stage eliminates 60–70% of remaining candidates. Only 4% pass. By the time a candidate reaches your shortlist, they’ve already proved they can do the job — not just interview for it.\nWhy Is It So Hard to hire an Applied AI Engineer?\nBecause the market is flooded with developers who can prompt an AI tool but can’t architect, govern, or ship with it at production scale. Standard job boards and general tech recruiters have no framework to tell the difference. Most hiring managers spend months interviewing candidates who look right on paper and fail on real engineering tasks. The signal problem isn’t supply — it’s that the vetting infrastructure to identify genuine Applied AI mastery simply doesn’t exist in most hiring processes.\nCan GoGloby Recruit a Full Applied AI Engineering Team?\nYes. GoGloby recruits individual Applied AI Engineers and complete engineering functions. Every candidate runs the same 4-stage assessment regardless of team size, so every name on your shortlist has cleared the same bar.\nWhat Happens If the Applied AI Engineer Leaves After the 120-day Window?\nThe 120-day replacement guarantee covers the highest-risk period of a new hire. After that window, GoGloby offers preferred re-engagement terms. If you need to backfill the role, you move to the front of the queue at a reduced fee.\nDoes GoGloby Recruit For Remote, Hybrid, or On-Site Applied AI Engineers?\nGoGloby recruits across all work models — remote, hybrid, and on-site. Our talent network spans 5+ US-timezone countries, so whether your team operates fully distributed or requires in-office presence, we source candidates who match both your technical bar and your working model. Every shortlist is filtered to your specific requirements before it reaches you.\nShould We Hire Directly or Forward-Deploy an Architect?\nDirect hire suits a permanent role you will manage and retain long term. The forward-deployed model puts Claude Certified Architects, AI Solutions Architects and Applied AI Engineers inside your team, and suits a mandate on a clock where you need features shipping at AI speed within weeks. GoGloby runs both. See our AI Staff Augmentation page.\nWhat does the Benchmark include?\nEvery engagement starts with the Benchmark: a fixed fee for one month, with the AI Intelligence Layer deployed inside your VPC and your baseline delivered at the end of it. The fee is credited in full toward your first month of delivery. If you stop there, you keep the baseline.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "FAQ",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "What is Applied AI Engineering?",
+     "area": "item 1",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Applied AI Engineering is the discipline of productionizing and operating AI inside real systems. An Applied AI Engineer practices it: a senior engineer who uses Claude Code, Cursor and agent frameworks to architect, build and ship software, measured against the team’s own baseline rather than against a generic comparison. They don’t just use AI; they govern it. They write specifications before code, manage AI context deliberately, and take full ownership of every AI-assisted output. Applied AI Engineers sit at the intersection of deep software engineering and Agentic SDLC mastery",
+     "area": "item 1",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "How is GoGloby’s 4-Stage Applied AI Vetting Process different from a general vetting process?",
+     "area": "item 1",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "A general vetting process screens for years of experience, GitHub activity, and algorithm questions. GoGloby’s 4-stage funnel tests what actually matters in production: Can they specify before they code? Can they navigate a real codebase with AI without losing control? Can they architect multi-agent systems under real constraints? Can they govern AI failures in front of stakeholders? Each stage eliminates 60–70% of remaining candidates. Only 4% pass. By the time a candidate reaches your shortlist, they’ve already proved they can do the job — not just interview for it.",
+     "area": "item 1",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Why Is It So Hard to hire an Applied AI Engineer?",
+     "area": "item 1",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Because the market is flooded with developers who can prompt an AI tool but can’t architect, govern, or ship with it at production scale. Standard job boards and general tech recruiters have no framework to tell the difference. Most hiring managers spend months interviewing candidates who look right on paper and fail on real engineering tasks. The signal problem isn’t supply — it’s that the vetting infrastructure to identify genuine Applied AI mastery simply doesn’t exist in most hiring processes.",
+     "area": "item 1",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Can GoGloby Recruit a Full Applied AI Engineering Team?",
+     "area": "item 1",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Yes. GoGloby recruits individual Applied AI Engineers and complete engineering functions. Every candidate runs the same 4-stage assessment regardless of team size, so every name on your shortlist has cleared the same bar.",
+     "area": "item 1",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "What Happens If the Applied AI Engineer Leaves After the 120-day Window?",
+     "area": "item 1",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "The 120-day replacement guarantee covers the highest-risk period of a new hire. After that window, GoGloby offers preferred re-engagement terms. If you need to backfill the role, you move to the front of the queue at a reduced fee.",
+     "area": "item 1",
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "Does GoGloby Recruit For Remote, Hybrid, or On-Site Applied AI Engineers?",
+     "area": "item 1",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby recruits across all work models — remote, hybrid, and on-site. Our talent network spans 5+ US-timezone countries, so whether your team operates fully distributed or requires in-office presence, we source candidates who match both your technical bar and your working model. Every shortlist is filtered to your specific requirements before it reaches you.",
+     "area": "item 1",
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "Should We Hire Directly or Forward-Deploy an Architect?",
+     "area": "item 1",
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Direct hire suits a permanent role you will manage and retain long term. The forward-deployed model puts Claude Certified Architects, AI Solutions Architects and Applied AI Engineers inside your team, and suits a mandate on a clock where you need features shipping at AI speed within weeks. GoGloby runs both. See our AI Staff Augmentation page.",
+     "area": "item 1",
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "What does the Benchmark include?",
+     "area": "item 1",
+     "index": 15
+    },
+    {
+     "type": "paragraph",
+     "text": "Every engagement starts with the Benchmark: a fixed fee for one month, with the AI Intelligence Layer deployed inside your VPC and your baseline delivered at the end of it. The fee is credited in full toward your first month of delivery. If you stop there, you keep the baseline.",
+     "area": "item 1",
+     "index": 16
+    }
+   ]
+  },
+  {
+   "id": "modals",
+   "kind": "modals",
+   "label": "Forms and modals",
+   "scope": "shared",
+   "skipped": false,
+   "text": "Thank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend\nThank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend\nThank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 9
+    }
+   ]
+  },
+  {
+   "id": "site_header",
+   "kind": "site_header",
+   "label": "Site header",
+   "scope": "page",
+   "skipped": true,
+   "text": "Site logo\nSolutions\nAI Engineering Visibility\nForward Deployed Engineering\nServices\nAI Engineers Staff Augmentation\nHire AI Engineers\nAI Development Services\nGenerative AI Consulting Services\nAgentic AI Consulting Services\nAI Production Engineering\nGenerative AI Development Services\nAI Agent Development Services\nAI Custom Software Development Services\nRAG Application Development Services\nLLM Development Services\nApplication AI Modernization Services\nLegacy Application Modernization Services\nSoftware Maintenance Services\nCompany\nAbout us\nJobs\nResources\nInsights\nUse Cases\nPodcast\nContact\nTalk to Us",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Site logo",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/globy-logo-1-01.svg",
+     "file": "globy-logo-1-01.svg",
+     "alt": "Site logo",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Solutions",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineering Visibility",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/ai-engineering-visibility/",
+       "text": "AI Engineering Visibility"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Forward Deployed Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/forward-deployed-engineering/",
+       "text": "Forward Deployed Engineering"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineers Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Engineers Staff Augmentation"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "link",
+     "text": "AI Development Services",
+     "href": "https://gogloby.com/services/ai-development/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-development/",
+       "text": "AI Development Services"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-consulting/",
+       "text": "Generative AI Consulting Services"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Agentic AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/agentic-ai-consulting/",
+       "text": "Agentic AI Consulting Services"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "AI Production Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "AI Production Engineering"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "AI Agent Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-agent-development/",
+       "text": "AI Agent Development Services"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "AI Custom Software Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-custom-software-development/",
+       "text": "AI Custom Software Development Services"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "RAG Application Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/rag-application-development/",
+       "text": "RAG Application Development Services"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "LLM Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/llm-development/",
+       "text": "LLM Development Services"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "link",
+     "text": "Application AI Modernization Services",
+     "href": "https://gogloby.com/services/application-modernization/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/application-modernization/",
+       "text": "Application AI Modernization Services"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Legacy Application Modernization Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/legacy-application-modernization/",
+       "text": "Legacy Application Modernization Services"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "Software Maintenance Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/software-maintenance/",
+       "text": "Software Maintenance Services"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "Talk to Us",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "site_footer",
+   "kind": "site_footer",
+   "label": "Site footer",
+   "scope": "page",
+   "skipped": true,
+   "text": "Background logo\nServices\nApplied AI Engineering\nAI Staff Augmentation\nHire AI Engineers\nGenerative AI Development Services\nCompany\nAbout us\nJobs\nContact\nPrivacy Policy and Candidate Privacy Notice\nTerms and Conditions\nResources\nInsights\nUse Cases\nPodcast\nCase Studies\nConnections\nCrunchbase\nLinkedIn\nX\nG2\nClutch\nTrustpilot\nDesignRush\nGitHub\nFacebook\nYouTube\n© Copyright 2026, GoGloby. All Rights Reserved.",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background logo",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/logos/globy-logo-outline-1-01.svg",
+     "file": "globy-logo-outline-1-01.svg",
+     "alt": "Background logo",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Applied AI Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "Applied AI Engineering"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Staff Augmentation"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Privacy Policy and Candidate Privacy Notice",
+     "links": [
+      {
+       "href": "https://gogloby.com/privacy-policy/",
+       "text": "Privacy Policy and Candidate Privacy Notice"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Terms and Conditions",
+     "links": [
+      {
+       "href": "https://gogloby.com/terms-and-conditions/",
+       "text": "Terms and Conditions"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "Case Studies",
+     "links": [
+      {
+       "href": "https://gogloby.com/case-study/",
+       "text": "Case Studies"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Connections",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Crunchbase",
+     "links": [
+      {
+       "href": "https://www.crunchbase.com/organization/gogloby",
+       "text": "Crunchbase"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "LinkedIn",
+     "links": [
+      {
+       "href": "https://www.linkedin.com/company/gogloby/",
+       "text": "LinkedIn"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "X",
+     "links": [
+      {
+       "href": "https://x.com/GoGloby",
+       "text": "X"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "list_item",
+     "text": "G2",
+     "links": [
+      {
+       "href": "https://www.g2.com/products/gogloby/reviews",
+       "text": "G2"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Clutch",
+     "links": [
+      {
+       "href": "https://clutch.co/profile/gogloby",
+       "text": "Clutch"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Trustpilot",
+     "links": [
+      {
+       "href": "https://www.trustpilot.com/review/gogloby.com",
+       "text": "Trustpilot"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "DesignRush",
+     "links": [
+      {
+       "href": "https://www.designrush.com/agency/profile/gogloby",
+       "text": "DesignRush"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "list_item",
+     "text": "GitHub",
+     "links": [
+      {
+       "href": "https://github.com/gogloby",
+       "text": "GitHub"
+      }
+     ],
+     "index": 21
+    },
+    {
+     "type": "list_item",
+     "text": "Facebook",
+     "links": [
+      {
+       "href": "https://www.facebook.com/gogloby",
+       "text": "Facebook"
+      }
+     ],
+     "index": 22
+    },
+    {
+     "type": "list_item",
+     "text": "YouTube",
+     "links": [
+      {
+       "href": "https://www.youtube.com/@DefaultGlobal",
+       "text": "YouTube"
+      }
+     ],
+     "index": 23
+    },
+    {
+     "type": "paragraph",
+     "text": "© Copyright 2026, GoGloby. All Rights Reserved.",
+     "index": 5
+    }
+   ]
+  }
+ ],
+ "warnings": []
+}

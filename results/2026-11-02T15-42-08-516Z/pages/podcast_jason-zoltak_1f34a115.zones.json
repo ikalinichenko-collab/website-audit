@@ -1,0 +1,1142 @@
+{
+ "template": "article",
+ "zones": [
+  {
+   "id": "title",
+   "kind": "title",
+   "label": "Title",
+   "scope": "page",
+   "skipped": false,
+   "text": "The Power of Networks: Exploring tofu's Unique Recruitment Model | GoGloby",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "The Power of Networks: Exploring tofu's Unique Recruitment Model | GoGloby"
+    }
+   ]
+  },
+  {
+   "id": "meta_description",
+   "kind": "meta_description",
+   "label": "Meta description",
+   "scope": "page",
+   "skipped": false,
+   "text": "",
+   "parts": []
+  },
+  {
+   "id": "og_title",
+   "kind": "og_title",
+   "label": "og:title",
+   "scope": "page",
+   "skipped": false,
+   "text": "The Power of Networks: Exploring tofu's Unique Recruitment Model | GoGloby",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "The Power of Networks: Exploring tofu's Unique Recruitment Model | GoGloby"
+    }
+   ]
+  },
+  {
+   "id": "og_description",
+   "kind": "og_description",
+   "label": "og:description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Meet Jason Zoltak, Co-Founder & CEO at tofu: Jason Zoltak, Co-Founder & CEO of tofu, epitomizes the modern entrepreneur redefining global hiring and remote work. Hailing from Montreal and splitting his time between Toronto and Miami, Jason’s journey traversed investment banking, consulting, and a stint in startups. His entrepreneurial spark ignited during his last startup […]",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Meet Jason Zoltak, Co-Founder & CEO at tofu: Jason Zoltak, Co-Founder & CEO of tofu, epitomizes the modern entrepreneur redefining global hiring and remote work. Hailing from Montreal and splitting his time between Toronto and Miami, Jason’s journey traversed investment banking, consulting, and a stint in startups. His entrepreneurial spark ignited during his last startup […]"
+    }
+   ]
+  },
+  {
+   "id": "json_ld",
+   "kind": "json_ld",
+   "label": "Structured data (JSON-LD)",
+   "scope": "page",
+   "skipped": false,
+   "text": "The Power of Networks: Exploring tofu&#8217;s Unique Recruitment Model\nThe Power of Networks: Exploring tofu&#8217;s Unique Recruitment Model\nVit Koval\nGoGloby",
+   "parts": [
+    {
+     "type": "field",
+     "text": "The Power of Networks: Exploring tofu&#8217;s Unique Recruitment Model",
+     "area": "Article.name",
+     "index": 1
+    },
+    {
+     "type": "field",
+     "text": "The Power of Networks: Exploring tofu&#8217;s Unique Recruitment Model",
+     "area": "Article.headline",
+     "index": 2
+    },
+    {
+     "type": "field",
+     "text": "Vit Koval",
+     "area": "Person.name",
+     "index": 3
+    },
+    {
+     "type": "field",
+     "text": "GoGloby",
+     "area": "Organization.name",
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "h1",
+   "kind": "h1",
+   "label": "H1",
+   "scope": "page",
+   "skipped": false,
+   "text": "The Power of Networks: Exploring tofu’s Unique Recruitment Model",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "The Power of Networks: Exploring tofu’s Unique Recruitment Model"
+    }
+   ]
+  },
+  {
+   "id": "date",
+   "kind": "date",
+   "label": "Date",
+   "scope": "page",
+   "skipped": false,
+   "text": "September 27, 2024",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "September 27, 2024"
+    }
+   ]
+  },
+  {
+   "id": "article:meet-jason-zoltak-co-founder-ceo-at-tofu",
+   "kind": "article_section",
+   "label": "Meet Jason Zoltak, Co-Founder & CEO at tofu:",
+   "scope": "page",
+   "skipped": false,
+   "text": "Meet Jason Zoltak, Co-Founder & CEO at tofu:\nJason Zoltak, Co-Founder & CEO of tofu, epitomizes the modern entrepreneur redefining global hiring and remote work. Hailing from Montreal and splitting his time between Toronto and Miami, Jason’s journey traversed investment banking, consulting, and a stint in startups.\nHis entrepreneurial spark ignited during his last startup tenure, leading to the birth of tofu. Within a year, this vision evolved into a game-changing platform revolutionizing employment practices, emphasizing remote work, compliance, and navigating intricate employment laws.\nUnder Jason’s leadership, tofu stands as a beacon for tech leaders, reshaping the employment landscape with innovative solutions. With a mission to redefine the future of work, Jason Zoltak embodies the spirit of innovation driving the global workforce into a new era of connectivity and flexibility.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Meet Jason Zoltak, Co-Founder & CEO at tofu:",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Jason Zoltak, Co-Founder & CEO of tofu, epitomizes the modern entrepreneur redefining global hiring and remote work. Hailing from Montreal and splitting his time between Toronto and Miami, Jason’s journey traversed investment banking, consulting, and a stint in startups.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "His entrepreneurial spark ignited during his last startup tenure, leading to the birth of tofu. Within a year, this vision evolved into a game-changing platform revolutionizing employment practices, emphasizing remote work, compliance, and navigating intricate employment laws.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Under Jason’s leadership, tofu stands as a beacon for tech leaders, reshaping the employment landscape with innovative solutions. With a mission to redefine the future of work, Jason Zoltak embodies the spirit of innovation driving the global workforce into a new era of connectivity and flexibility.",
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "article:listen-up-jason-zoltak-co-founder-ceo-at-tofu-fu",
+   "kind": "article_section",
+   "label": "Listen Up: Jason Zoltak, Co-Founder & CEO at tofu — Full Podcast Epis…",
+   "scope": "page",
+   "skipped": false,
+   "text": "Listen Up: Jason Zoltak, Co-Founder & CEO at tofu — Full Podcast Episode on Spotify",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Listen Up: Jason Zoltak, Co-Founder & CEO at tofu — Full Podcast Episode on Spotify",
+     "level": 2,
+     "index": 1
+    }
+   ]
+  },
+  {
+   "id": "article:watch-now-vit-s-in-depth-talk-with-jason-zoltak",
+   "kind": "article_section",
+   "label": "Watch Now: Vit’s In-Depth Talk with Jason Zoltak",
+   "scope": "page",
+   "skipped": false,
+   "text": "Watch Now: Vit’s In-Depth Talk with Jason Zoltak",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Watch Now: Vit’s In-Depth Talk with Jason Zoltak",
+     "level": 2,
+     "index": 1
+    }
+   ]
+  },
+  {
+   "id": "article:quick-read-jason-zoltak-co-founder-ceo-at-tofu-i",
+   "kind": "article_section",
+   "label": "Quick Read: Jason Zoltak, Co-Founder & CEO at tofu, Interview Highlig…",
+   "scope": "page",
+   "skipped": false,
+   "text": "Quick Read: Jason Zoltak, Co-Founder & CEO at tofu, Interview Highlights\nIntroducing Jason Zoltak\nIn a recent episode of Default Global, I had an insightful conversation with Jason Zoltak, Co-Founder & CEO at tofu. Jason’s journey in entrepreneurship began in Toronto where he initially worked in investment banking and consulting before venturing into the startup world. His experience of the tedious and often one-sided job interview process led him to found tofu, a unique marketplace where top venture-backed companies recommend pre-vetted talent.\nThe Genesis of Tofu\nJason detailed the idea behind tofu, explaining that the traditional job interview process is a zero-sum game for everyone except the hiring company and the person who secures the job. He observed that highly qualified candidates often missed out on opportunities due to circumstances beyond their control such as hiring freezes or changes in management decisions. He saw a need to create a platform where these candidates could be recommended to other companies, thereby reducing hiring costs and improving the candidate experience.\nTofu’s Unique Selling Proposition\nJason mentioned that tofu has been live for about eight months, and within that short span, they’ve attracted over 115 venture-backed companies. To onboard their initial customers, they relied on a combination of networking and providing a compelling value proposition.\nAccording to Jason, “starting a company is a lot of hard work, right, but a lot of it is luck, too.”\nHe also highlighted the importance of building a community on top of the incentive structure, which has proven to be a key factor in tofu’s success.\nA Better Candidate Experience\nTofu aims to significantly improve the candidate experience. Candidates who don’t secure a job are invited into a network of top-tier, venture-backed companies, and tofu finds the best jobs for them almost instantly. Jason shared an example of a candidate who was scheduled for an interview within an hour of accepting an invitation, illustrating the platform’s efficiency and effectiveness.\nBusiness Model and Future Plans\nTofu operates on a success fee or subscription fee basis, depending on the hiring volume of the company. Moving forward, Jason revealed that he aims to have 500 companies on the platform by June 2024. He also mentioned that they’re working on several solutions to make the interview process more efficient and are actively seeking feedback from users to improve their offering. Despite the size of the team (just two people), tofu’s growth has been impressive, and they are planning to expand the team in the near future.\nKey Learnings and Trends in the Tech Hiring Landscape\nJason shared his observations on the current trends in the tech hiring landscape, noting a reduction in remote roles and a shift to hybrid models. He also mentioned a trend towards hiring for mid-level roles rather than senior positions. As for tofu, Jason stressed the importance of focusing on their unique offering and listening to customer feedback, rather than getting caught up in competition. He exuded confidence and excitement for the year ahead, signaling a promising future for tofu.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Quick Read: Jason Zoltak, Co-Founder & CEO at tofu, Interview Highlights",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Introducing Jason Zoltak",
+     "level": 4,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "In a recent episode of Default Global, I had an insightful conversation with Jason Zoltak, Co-Founder & CEO at tofu. Jason’s journey in entrepreneurship began in Toronto where he initially worked in investment banking and consulting before venturing into the startup world. His experience of the tedious and often one-sided job interview process led him to found tofu, a unique marketplace where top venture-backed companies recommend pre-vetted talent.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "The Genesis of Tofu",
+     "level": 4,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Jason detailed the idea behind tofu, explaining that the traditional job interview process is a zero-sum game for everyone except the hiring company and the person who secures the job. He observed that highly qualified candidates often missed out on opportunities due to circumstances beyond their control such as hiring freezes or changes in management decisions. He saw a need to create a platform where these candidates could be recommended to other companies, thereby reducing hiring costs and improving the candidate experience.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Tofu’s Unique Selling Proposition",
+     "level": 4,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Jason mentioned that tofu has been live for about eight months, and within that short span, they’ve attracted over 115 venture-backed companies. To onboard their initial customers, they relied on a combination of networking and providing a compelling value proposition.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "According to Jason, “starting a company is a lot of hard work, right, but a lot of it is luck, too.”",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "He also highlighted the importance of building a community on top of the incentive structure, which has proven to be a key factor in tofu’s success.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "A Better Candidate Experience",
+     "level": 4,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Tofu aims to significantly improve the candidate experience. Candidates who don’t secure a job are invited into a network of top-tier, venture-backed companies, and tofu finds the best jobs for them almost instantly. Jason shared an example of a candidate who was scheduled for an interview within an hour of accepting an invitation, illustrating the platform’s efficiency and effectiveness.",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Business Model and Future Plans",
+     "level": 4,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Tofu operates on a success fee or subscription fee basis, depending on the hiring volume of the company. Moving forward, Jason revealed that he aims to have 500 companies on the platform by June 2024. He also mentioned that they’re working on several solutions to make the interview process more efficient and are actively seeking feedback from users to improve their offering. Despite the size of the team (just two people), tofu’s growth has been impressive, and they are planning to expand the team in the near future.",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "Key Learnings and Trends in the Tech Hiring Landscape",
+     "level": 4,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Jason shared his observations on the current trends in the tech hiring landscape, noting a reduction in remote roles and a shift to hybrid models. He also mentioned a trend towards hiring for mid-level roles rather than senior positions. As for tofu, Jason stressed the importance of focusing on their unique offering and listening to customer feedback, rather than getting caught up in competition. He exuded confidence and excitement for the year ahead, signaling a promising future for tofu.",
+     "index": 8
+    }
+   ]
+  },
+  {
+   "id": "banner_cta",
+   "kind": "banner_cta",
+   "label": "Banner CTA",
+   "scope": "shared",
+   "skipped": false,
+   "text": "Background\nBackground\nAI Era Is Now! Lead or Fall Behind?\nAI Transformation",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/blocks/block-bg-1-01.png",
+     "file": "block-bg-1-01.png",
+     "alt": "Background",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "Background",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/blocks/block-bg-4-01.png",
+     "file": "block-bg-4-01.png",
+     "alt": "Background",
+     "alt_state": "text",
+     "dims": false,
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "AI Era Is Now! Lead or Fall Behind?",
+     "area": "block-main",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI Transformation",
+     "area": "block-aside",
+     "index": 1
+    }
+   ]
+  },
+  {
+   "id": "modals",
+   "kind": "modals",
+   "label": "Forms and modals",
+   "scope": "shared",
+   "skipped": false,
+   "text": "Thank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend\nThank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "site_header",
+   "kind": "site_header",
+   "label": "Site header",
+   "scope": "page",
+   "skipped": true,
+   "text": "Site logo\nSolutions\nAI Engineering Visibility\nForward Deployed Engineering\nServices\nAI Engineers Staff Augmentation\nHire AI Engineers\nAI Development Services\nGenerative AI Consulting Services\nAgentic AI Consulting Services\nAI Production Engineering\nGenerative AI Development Services\nAI Agent Development Services\nAI Custom Software Development Services\nRAG Application Development Services\nLLM Development Services\nApplication AI Modernization Services\nLegacy Application Modernization Services\nSoftware Maintenance Services\nCompany\nAbout us\nJobs\nResources\nInsights\nUse Cases\nPodcast\nContact\nTalk to Us",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Site logo",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/globy-logo-1-01.svg",
+     "file": "globy-logo-1-01.svg",
+     "alt": "Site logo",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Solutions",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineering Visibility",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/ai-engineering-visibility/",
+       "text": "AI Engineering Visibility"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Forward Deployed Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/forward-deployed-engineering/",
+       "text": "Forward Deployed Engineering"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineers Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Engineers Staff Augmentation"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "link",
+     "text": "AI Development Services",
+     "href": "https://gogloby.com/services/ai-development/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-development/",
+       "text": "AI Development Services"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-consulting/",
+       "text": "Generative AI Consulting Services"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Agentic AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/agentic-ai-consulting/",
+       "text": "Agentic AI Consulting Services"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "AI Production Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "AI Production Engineering"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "AI Agent Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-agent-development/",
+       "text": "AI Agent Development Services"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "AI Custom Software Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-custom-software-development/",
+       "text": "AI Custom Software Development Services"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "RAG Application Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/rag-application-development/",
+       "text": "RAG Application Development Services"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "LLM Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/llm-development/",
+       "text": "LLM Development Services"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "link",
+     "text": "Application AI Modernization Services",
+     "href": "https://gogloby.com/services/application-modernization/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/application-modernization/",
+       "text": "Application AI Modernization Services"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Legacy Application Modernization Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/legacy-application-modernization/",
+       "text": "Legacy Application Modernization Services"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "Software Maintenance Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/software-maintenance/",
+       "text": "Software Maintenance Services"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "Talk to Us",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "site_footer",
+   "kind": "site_footer",
+   "label": "Site footer",
+   "scope": "page",
+   "skipped": true,
+   "text": "Background logo\nServices\nApplied AI Engineering\nAI Staff Augmentation\nHire AI Engineers\nGenerative AI Development Services\nCompany\nAbout us\nJobs\nContact\nPrivacy Policy and Candidate Privacy Notice\nTerms and Conditions\nResources\nInsights\nUse Cases\nPodcast\nCase Studies\nConnections\nCrunchbase\nLinkedIn\nX\nG2\nClutch\nTrustpilot\nDesignRush\nGitHub\nFacebook\nYouTube\n© Copyright 2026, GoGloby. All Rights Reserved.",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background logo",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/logos/globy-logo-outline-1-01.svg",
+     "file": "globy-logo-outline-1-01.svg",
+     "alt": "Background logo",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Applied AI Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "Applied AI Engineering"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Staff Augmentation"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Privacy Policy and Candidate Privacy Notice",
+     "links": [
+      {
+       "href": "https://gogloby.com/privacy-policy/",
+       "text": "Privacy Policy and Candidate Privacy Notice"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Terms and Conditions",
+     "links": [
+      {
+       "href": "https://gogloby.com/terms-and-conditions/",
+       "text": "Terms and Conditions"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "Case Studies",
+     "links": [
+      {
+       "href": "https://gogloby.com/case-study/",
+       "text": "Case Studies"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Connections",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Crunchbase",
+     "links": [
+      {
+       "href": "https://www.crunchbase.com/organization/gogloby",
+       "text": "Crunchbase"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "LinkedIn",
+     "links": [
+      {
+       "href": "https://www.linkedin.com/company/gogloby/",
+       "text": "LinkedIn"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "X",
+     "links": [
+      {
+       "href": "https://x.com/GoGloby",
+       "text": "X"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "list_item",
+     "text": "G2",
+     "links": [
+      {
+       "href": "https://www.g2.com/products/gogloby/reviews",
+       "text": "G2"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Clutch",
+     "links": [
+      {
+       "href": "https://clutch.co/profile/gogloby",
+       "text": "Clutch"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Trustpilot",
+     "links": [
+      {
+       "href": "https://www.trustpilot.com/review/gogloby.com",
+       "text": "Trustpilot"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "DesignRush",
+     "links": [
+      {
+       "href": "https://www.designrush.com/agency/profile/gogloby",
+       "text": "DesignRush"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "list_item",
+     "text": "GitHub",
+     "links": [
+      {
+       "href": "https://github.com/gogloby",
+       "text": "GitHub"
+      }
+     ],
+     "index": 21
+    },
+    {
+     "type": "list_item",
+     "text": "Facebook",
+     "links": [
+      {
+       "href": "https://www.facebook.com/gogloby",
+       "text": "Facebook"
+      }
+     ],
+     "index": 22
+    },
+    {
+     "type": "list_item",
+     "text": "YouTube",
+     "links": [
+      {
+       "href": "https://www.youtube.com/@DefaultGlobal",
+       "text": "YouTube"
+      }
+     ],
+     "index": 23
+    },
+    {
+     "type": "paragraph",
+     "text": "© Copyright 2026, GoGloby. All Rights Reserved.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "related",
+   "kind": "related",
+   "label": "Related content",
+   "scope": "page",
+   "skipped": true,
+   "text": "Latest podcasts\nFrom $1Billion to $100 Billion: Secrets to Scaling Globally\nFrom $1Billion to $100 Billion: Secrets to Scaling Globally\nJanuary 23,2025\nHow He Raised $77M in a $60B Market\nHow He Raised $77M in a $60B Market\nJanuary 15,2025\nHow He Raised $1.1M and Disrupted Immigration Law with AI\nHow He Raised $1.1M and Disrupted Immigration Law with AI\nJanuary 10,2025\nFrom Red Hat to $10.8M in Funding\nFrom Red Hat to $10.8M in Funding\nDecember 19,2024\n149 Rejections, 1 Yes: The Truth About Fundraising\n149 Rejections, 1 Yes: The Truth About Fundraising\nDecember 12,2024\nScaling Startups Globally: Hard Truths from 30+ Companies\nScaling Startups Globally: Hard Truths from 30+ Companies\nDecember 10,2024",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Latest podcasts",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "From $1Billion to $100 Billion: Secrets to Scaling Globally",
+     "src": "https://gogloby.com/wp-content/uploads/2025/01/KlausWehage-Banner-for-Youtube.jpg",
+     "file": "KlausWehage-Banner-for-Youtube.jpg",
+     "alt": "From $1Billion to $100 Billion: Secrets to Scaling Globally",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "From $1Billion to $100 Billion: Secrets to Scaling Globally",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "January 23,2025",
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "How He Raised $77M in a $60B Market",
+     "src": "https://gogloby.com/wp-content/uploads/2025/01/AlexanderJekowsky-Banner-for-Youtube.jpg",
+     "file": "AlexanderJekowsky-Banner-for-Youtube.jpg",
+     "alt": "How He Raised $77M in a $60B Market",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 2",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "How He Raised $77M in a $60B Market",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "January 15,2025",
+     "area": "slide 2",
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "How He Raised $1.1M and Disrupted Immigration Law with AI",
+     "src": "https://gogloby.com/wp-content/uploads/2025/01/KhalilZlaoui-Banner-for-Youtube.jpg",
+     "file": "KhalilZlaoui-Banner-for-Youtube.jpg",
+     "alt": "How He Raised $1.1M and Disrupted Immigration Law with AI",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 3",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "How He Raised $1.1M and Disrupted Immigration Law with AI",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "January 10,2025",
+     "area": "slide 3",
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "From Red Hat to $10.8M in Funding",
+     "src": "https://gogloby.com/wp-content/uploads/2024/12/FredericBranczyk-Banner-for-Youtube.jpg",
+     "file": "FredericBranczyk-Banner-for-Youtube.jpg",
+     "alt": "From Red Hat to $10.8M in Funding",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 4",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "From Red Hat to $10.8M in Funding",
+     "area": "slide 4",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "December 19,2024",
+     "area": "slide 4",
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "149 Rejections, 1 Yes: The Truth About Fundraising",
+     "src": "https://gogloby.com/wp-content/uploads/2024/12/JohnCorrigan-Banner-for-Youtube.jpg",
+     "file": "JohnCorrigan-Banner-for-Youtube.jpg",
+     "alt": "149 Rejections, 1 Yes: The Truth About Fundraising",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 5",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "149 Rejections, 1 Yes: The Truth About Fundraising",
+     "area": "slide 5",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "December 12,2024",
+     "area": "slide 5",
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "Scaling Startups Globally: Hard Truths from 30+ Companies",
+     "src": "https://gogloby.com/wp-content/uploads/2024/12/VladimirBaranov-Banner-for-Youtube.jpg",
+     "file": "VladimirBaranov-Banner-for-Youtube.jpg",
+     "alt": "Scaling Startups Globally: Hard Truths from 30+ Companies",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 6",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Scaling Startups Globally: Hard Truths from 30+ Companies",
+     "area": "slide 6",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "December 10,2024",
+     "area": "slide 6",
+     "index": 6
+    }
+   ]
+  }
+ ],
+ "warnings": []
+}

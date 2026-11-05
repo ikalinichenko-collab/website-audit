@@ -1,0 +1,274 @@
+{
+  "schema_version": 2,
+  "pages": [
+    {
+      "slug": "home_ffe28d62",
+      "url": "https://gogloby.com/",
+      "title": "Applied AI Company for Established Software | GoGloby",
+      "group": "Company",
+      "subsection": "Home",
+      "profile": "home",
+      "template": "block",
+      "action": "rewrite",
+      "summary": "The homepage presents GoGloby as an Applied AI delivery and measurement company, rather than the approved staffing and recruiting agency. It also promotes an old product and unsupported service, security, performance, and client claims; those facts and figures need separate correction during the rewrite.",
+      "compliance": {
+        "high": 17,
+        "medium": 16,
+        "low": 4,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 8,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 2
+      },
+      "checked_at": "2026-11-02T16:10:49.653Z"
+    },
+    {
+      "slug": "about_812e7972",
+      "url": "https://gogloby.com/about/",
+      "title": "About GoGloby | Applied AI Engineering Partner",
+      "group": "Company",
+      "subsection": "About",
+      "profile": "company",
+      "template": "block",
+      "action": "rewrite",
+      "summary": "The page presents GoGloby as an Applied AI Engineering provider selling a product-and-engineering offer, rather than the approved staffing and recruiting agency. Reposition the page, and verify or remove the unsupported claims, timelines, security statements, contact details, and branch-office information.",
+      "compliance": {
+        "high": 11,
+        "medium": 5,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 2,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 3
+      },
+      "checked_at": "2026-11-02T16:09:45.615Z"
+    },
+    {
+      "slug": "contacts_6e9c1b44",
+      "url": "https://gogloby.com/contacts/",
+      "title": "Contact GoGloby: Expert Guidance on Global Scaling & AI Teams",
+      "group": "Company",
+      "subsection": "Contacts",
+      "profile": "company",
+      "template": "block",
+      "action": "fix",
+      "summary": "The page still presents GoGloby as an Applied AI engineering and global-expansion provider, and promotes a Benchmark and deployment timeline that do not match the documented services. It also lists regional offices and security certifications not supported by the company sources.",
+      "compliance": {
+        "high": 5,
+        "medium": 1,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 1,
+        "error": null
+      },
+      "seo": {
+        "high": 1,
+        "medium": 2,
+        "low": 2
+      },
+      "checked_at": "2026-11-02T16:09:23.906Z"
+    },
+    {
+      "slug": "privacy-policy_854c8db5",
+      "url": "https://gogloby.com/privacy-policy/",
+      "title": "Privacy Policy | Globy",
+      "group": "Company",
+      "subsection": "Privacy",
+      "profile": "legal",
+      "template": "legal",
+      "action": "fix",
+      "summary": "The page uses the former company name in its title and metadata and includes contact and operating-location details not supported by the company sources. It also describes consulting activity that is not among the documented services.",
+      "compliance": {
+        "high": 4,
+        "medium": 1,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 0,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 2
+      },
+      "checked_at": "2026-11-02T16:08:59.281Z"
+    },
+    {
+      "slug": "terms-and-conditions_ff6ab751",
+      "url": "https://gogloby.com/terms-and-conditions/",
+      "title": "Terms of Service | Globy",
+      "group": "Company",
+      "subsection": "Terms",
+      "profile": "legal",
+      "template": "legal",
+      "action": "fix",
+      "summary": "The page uses the former company name in its title and metadata and describes GoGloby as operating in software development rather than as a staffing and recruiting agency. Its contact email also differs from the Fact Sheet.",
+      "compliance": {
+        "high": 3,
+        "medium": 0,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 1,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 1
+      },
+      "checked_at": "2026-11-02T16:08:38.037Z"
+    }
+  ],
+  "totals": {
+    "pages": 5,
+    "compliance": {
+      "high": 40,
+      "medium": 23,
+      "low": 4
+    },
+    "geo": 12,
+    "seo": {
+      "high": 1,
+      "medium": 4,
+      "low": 10
+    },
+    "actions": {
+      "rewrite": 2,
+      "fix": 3
+    }
+  },
+  "by_group": {
+    "Company": {
+      "pages": 5,
+      "compliance": {
+        "high": 40,
+        "medium": 23,
+        "low": 4
+      },
+      "geo": 12,
+      "seo": {
+        "high": 1,
+        "medium": 4,
+        "low": 10
+      },
+      "actions": {
+        "rewrite": 2,
+        "fix": 3
+      }
+    }
+  },
+  "by_subsection": {
+    "Company/Home": {
+      "pages": 1,
+      "compliance": {
+        "high": 17,
+        "medium": 16,
+        "low": 4
+      },
+      "geo": 8,
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 2
+      },
+      "actions": {
+        "rewrite": 1
+      }
+    },
+    "Company/About": {
+      "pages": 1,
+      "compliance": {
+        "high": 11,
+        "medium": 5,
+        "low": 0
+      },
+      "geo": 2,
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 3
+      },
+      "actions": {
+        "rewrite": 1
+      }
+    },
+    "Company/Contacts": {
+      "pages": 1,
+      "compliance": {
+        "high": 5,
+        "medium": 1,
+        "low": 0
+      },
+      "geo": 1,
+      "seo": {
+        "high": 1,
+        "medium": 2,
+        "low": 2
+      },
+      "actions": {
+        "fix": 1
+      }
+    },
+    "Company/Privacy": {
+      "pages": 1,
+      "compliance": {
+        "high": 4,
+        "medium": 1,
+        "low": 0
+      },
+      "geo": 0,
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 2
+      },
+      "actions": {
+        "fix": 1
+      }
+    },
+    "Company/Terms": {
+      "pages": 1,
+      "compliance": {
+        "high": 3,
+        "medium": 0,
+        "low": 0
+      },
+      "geo": 1,
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 1
+      },
+      "actions": {
+        "fix": 1
+      }
+    }
+  },
+  "site": {
+    "compliance": {
+      "high": 7,
+      "medium": 6,
+      "low": 0
+    },
+    "seo": 1,
+    "geo": 0
+  }
+}

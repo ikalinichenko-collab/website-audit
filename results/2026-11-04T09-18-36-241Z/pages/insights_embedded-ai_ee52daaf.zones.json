@@ -1,0 +1,2997 @@
+{
+ "template": "article",
+ "zones": [
+  {
+   "id": "title",
+   "kind": "title",
+   "label": "Title",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Is Embedded AI? How It Works, Benefits, Use Cases & Tools | GoGloby",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "What Is Embedded AI? How It Works, Benefits, Use Cases & Tools | GoGloby"
+    }
+   ]
+  },
+  {
+   "id": "meta_description",
+   "kind": "meta_description",
+   "label": "Meta description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Learn what embedded AI is, how it works inside products, where it should run, and how to choose the right models and deployment approach.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Learn what embedded AI is, how it works inside products, where it should run, and how to choose the right models and deployment approach."
+    }
+   ]
+  },
+  {
+   "id": "og_title",
+   "kind": "og_title",
+   "label": "og:title",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Is Embedded AI? How It Works, Benefits, Use Cases & Tools | GoGloby",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "What Is Embedded AI? How It Works, Benefits, Use Cases & Tools | GoGloby"
+    }
+   ]
+  },
+  {
+   "id": "og_description",
+   "kind": "og_description",
+   "label": "og:description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Learn what embedded AI is, how it works inside products, where it should run, and how to choose the right models and deployment approach.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Learn what embedded AI is, how it works inside products, where it should run, and how to choose the right models and deployment approach."
+    }
+   ]
+  },
+  {
+   "id": "json_ld",
+   "kind": "json_ld",
+   "label": "Structured data (JSON-LD)",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Is Embedded AI? How It Works, Benefits, Use Cases &amp; Tools\nWhat Is Embedded AI? How It Works, Benefits, Use Cases &amp; Tools\nLearn what embedded AI is, how it works inside products, where it should run, and how to choose the\nSergey Matikaynen\nGoGloby\nDoes embedded AI need the cloud?\nNo, embedded AI can run entirely without the cloud when the device has enough local computing capacity. Cloud services become useful when a product needs more compute, shared data, or capabilities that do not fit locally. Using the cloud does not stop an AI feature from being embedded in the product.\nWhat CPUs support embedded AI?\nMost modern CPUs can support embedded AI, but the workload determines which CPU class fits. Arm Cortex-M processors target low-power systems with tight memory limits, while Cortex-A and embedded x86 processors support more demanding workloads. The key distinction is the compute required by the model, not a specific CPU brand.\nWhat is an embedded AI accelerator?\nAn embedded AI accelerator is dedicated hardware designed to speed up neural network operations. It can appear as an NPU inside an SoC, an accelerator IP block, or a separate processor. The CPU still runs the surrounding software, while the accelerator handles supported model operations more efficiently.\nCan generative AI run on embedded devices?\nYes, generative AI can run on embedded devices when the hardware provides enough memory and compute for the chosen model. Small quantized models are more practical on local hardware than large models. The usable model size depends on available memory, supported operations, response-time requirements, and power limits.\nIs embedded AI the same as TinyML?\nNo, TinyML refers specifically to machine learning running on resource-constrained microcontrollers. Embedded AI is broader and also includes systems built around CPUs, GPUs, and NPUs. TinyML is therefore one category within embedded AI, rather than a separate approach to integrating AI into products.\nHow do you start an embedded AI project?\nStart an embedded AI project by assigning ownership for the model, device software, and post-launch updates. That ownership determines who validates model changes, manages releases, and responds when field behavior changes. Without clear ownership, a working prototype can become difficult to maintain once the product reaches customers.",
+   "parts": [
+    {
+     "type": "field",
+     "text": "What Is Embedded AI? How It Works, Benefits, Use Cases &amp; Tools",
+     "area": "Article.name",
+     "index": 1
+    },
+    {
+     "type": "field",
+     "text": "What Is Embedded AI? How It Works, Benefits, Use Cases &amp; Tools",
+     "area": "Article.headline",
+     "index": 2
+    },
+    {
+     "type": "field",
+     "text": "Learn what embedded AI is, how it works inside products, where it should run, and how to choose the",
+     "area": "Article.description",
+     "index": 3
+    },
+    {
+     "type": "field",
+     "text": "Sergey Matikaynen",
+     "area": "Person.name",
+     "index": 4
+    },
+    {
+     "type": "field",
+     "text": "GoGloby",
+     "area": "Organization.name",
+     "index": 5
+    },
+    {
+     "type": "field",
+     "text": "Does embedded AI need the cloud?",
+     "area": "Question.name",
+     "index": 6
+    },
+    {
+     "type": "field",
+     "text": "No, embedded AI can run entirely without the cloud when the device has enough local computing capacity. Cloud services become useful when a product needs more compute, shared data, or capabilities that do not fit locally. Using the cloud does not stop an AI feature from being embedded in the product.",
+     "area": "Answer.text",
+     "index": 7
+    },
+    {
+     "type": "field",
+     "text": "What CPUs support embedded AI?",
+     "area": "Question.name",
+     "index": 8
+    },
+    {
+     "type": "field",
+     "text": "Most modern CPUs can support embedded AI, but the workload determines which CPU class fits. Arm Cortex-M processors target low-power systems with tight memory limits, while Cortex-A and embedded x86 processors support more demanding workloads. The key distinction is the compute required by the model, not a specific CPU brand.",
+     "area": "Answer.text",
+     "index": 9
+    },
+    {
+     "type": "field",
+     "text": "What is an embedded AI accelerator?",
+     "area": "Question.name",
+     "index": 10
+    },
+    {
+     "type": "field",
+     "text": "An embedded AI accelerator is dedicated hardware designed to speed up neural network operations. It can appear as an NPU inside an SoC, an accelerator IP block, or a separate processor. The CPU still runs the surrounding software, while the accelerator handles supported model operations more efficiently.",
+     "area": "Answer.text",
+     "index": 11
+    },
+    {
+     "type": "field",
+     "text": "Can generative AI run on embedded devices?",
+     "area": "Question.name",
+     "index": 12
+    },
+    {
+     "type": "field",
+     "text": "Yes, generative AI can run on embedded devices when the hardware provides enough memory and compute for the chosen model. Small quantized models are more practical on local hardware than large models. The usable model size depends on available memory, supported operations, response-time requirements, and power limits.",
+     "area": "Answer.text",
+     "index": 13
+    },
+    {
+     "type": "field",
+     "text": "Is embedded AI the same as TinyML?",
+     "area": "Question.name",
+     "index": 14
+    },
+    {
+     "type": "field",
+     "text": "No, TinyML refers specifically to machine learning running on resource-constrained microcontrollers. Embedded AI is broader and also includes systems built around CPUs, GPUs, and NPUs. TinyML is therefore one category within embedded AI, rather than a separate approach to integrating AI into products.",
+     "area": "Answer.text",
+     "index": 15
+    },
+    {
+     "type": "field",
+     "text": "How do you start an embedded AI project?",
+     "area": "Question.name",
+     "index": 16
+    },
+    {
+     "type": "field",
+     "text": "Start an embedded AI project by assigning ownership for the model, device software, and post-launch updates. That ownership determines who validates model changes, manages releases, and responds when field behavior changes. Without clear ownership, a working prototype can become difficult to maintain once the product reaches customers.",
+     "area": "Answer.text",
+     "index": 17
+    }
+   ]
+  },
+  {
+   "id": "h1",
+   "kind": "h1",
+   "label": "H1",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Is Embedded AI? How It Works, Benefits, Use Cases & Tools",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "What Is Embedded AI? How It Works, Benefits, Use Cases & Tools"
+    }
+   ]
+  },
+  {
+   "id": "date",
+   "kind": "date",
+   "label": "Date",
+   "scope": "page",
+   "skipped": false,
+   "text": "Updated on September 25, 2026",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Updated on September 25, 2026"
+    }
+   ]
+  },
+  {
+   "id": "author",
+   "kind": "author",
+   "label": "Author",
+   "scope": "page",
+   "skipped": false,
+   "text": "Author avatar\nSergey Matikaynen / CTO\nArticle author\nSergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.\nView profile",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Author avatar",
+     "src": "https://gogloby.com/wp-content/uploads/2024/02/1706550966241.jpeg",
+     "file": "1706550966241.jpeg",
+     "alt": "Author avatar",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen / CTO",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Article author",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "View profile",
+     "links": [
+      {
+       "href": "https://gogloby.com/author/sergey/",
+       "text": "View profile"
+      }
+     ],
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "toc",
+   "kind": "toc",
+   "label": "Table of contents",
+   "scope": "page",
+   "skipped": false,
+   "text": "Table of Contents\nWhat Is Embedded AI?\nHow Does Embedded AI Architecture Work?\nWhat Is the Difference Between Embedded AI, Edge AI, Generative AI, and Embedded Analytics?\nWhat Are the Benefits of Embedded AI?\nWhat Are the Primary Embedded AI Use Cases?\nIs Your AI Feature Still Outside the Product?\nHow Do You Implement AI in Embedded Systems?\nWhat Are the Best Embedded AI Tools?\nWhat Are the Embedded AI Hardware Options?\nWhat Are the Biggest Embedded AI Challenges?\nWhat Does Embedded AI Engineering Look Like in 2026?\nWhat Are the Embedded AI Trends in 2026?\nHow Can GoGloby Support Embedded AI in Software Products?\nConclusion\nWant Clear Results From Every AI Feature You Ship?\nFAQs",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Table of Contents",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "What Is Embedded AI?",
+     "links": [
+      {
+       "href": "#what-is-embedded-ai",
+       "text": "What Is Embedded AI?"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "How Does Embedded AI Architecture Work?",
+     "links": [
+      {
+       "href": "#how-does-embedded-ai-architecture-work",
+       "text": "How Does Embedded AI Architecture Work?"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "What Is the Difference Between Embedded AI, Edge AI, Generative AI, and Embedded Analytics?",
+     "links": [
+      {
+       "href": "#what-is-the-difference-between-embedded-ai-edge-ai-generative-ai-and-embedded-analytics",
+       "text": "What Is the Difference Between Embedded AI, Edge AI, Generative AI, and Embedded Analytics?"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "What Are the Benefits of Embedded AI?",
+     "links": [
+      {
+       "href": "#what-are-the-benefits-of-embedded-ai",
+       "text": "What Are the Benefits of Embedded AI?"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "What Are the Primary Embedded AI Use Cases?",
+     "links": [
+      {
+       "href": "#what-are-the-primary-embedded-ai-use-cases",
+       "text": "What Are the Primary Embedded AI Use Cases?"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Is Your AI Feature Still Outside the Product?",
+     "links": [
+      {
+       "href": "#is-your-ai-feature-still-outside-the-product",
+       "text": "Is Your AI Feature Still Outside the Product?"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "How Do You Implement AI in Embedded Systems?",
+     "links": [
+      {
+       "href": "#how-do-you-implement-ai-in-embedded-systems",
+       "text": "How Do You Implement AI in Embedded Systems?"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "What Are the Best Embedded AI Tools?",
+     "links": [
+      {
+       "href": "#what-are-the-best-embedded-ai-tools",
+       "text": "What Are the Best Embedded AI Tools?"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "What Are the Embedded AI Hardware Options?",
+     "links": [
+      {
+       "href": "#what-are-the-embedded-ai-hardware-options",
+       "text": "What Are the Embedded AI Hardware Options?"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "What Are the Biggest Embedded AI Challenges?",
+     "links": [
+      {
+       "href": "#what-are-the-biggest-embedded-ai-challenges",
+       "text": "What Are the Biggest Embedded AI Challenges?"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "What Does Embedded AI Engineering Look Like in 2026?",
+     "links": [
+      {
+       "href": "#what-does-embedded-ai-engineering-look-like-in-2026",
+       "text": "What Does Embedded AI Engineering Look Like in 2026?"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "What Are the Embedded AI Trends in 2026?",
+     "links": [
+      {
+       "href": "#what-are-the-embedded-ai-trends-in-2026",
+       "text": "What Are the Embedded AI Trends in 2026?"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "How Can GoGloby Support Embedded AI in Software Products?",
+     "links": [
+      {
+       "href": "#how-can-gogloby-support-embedded-ai-in-software-products",
+       "text": "How Can GoGloby Support Embedded AI in Software Products?"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "Conclusion",
+     "links": [
+      {
+       "href": "#conclusion",
+       "text": "Conclusion"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "Want Clear Results From Every AI Feature You Ship?",
+     "links": [
+      {
+       "href": "#want-clear-results-from-every-ai-feature-you-ship",
+       "text": "Want Clear Results From Every AI Feature You Ship?"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "FAQs",
+     "links": [
+      {
+       "href": "#faqs",
+       "text": "FAQs"
+      }
+     ],
+     "index": 16
+    }
+   ]
+  },
+  {
+   "id": "article:intro",
+   "kind": "article_section",
+   "label": "Intro",
+   "scope": "page",
+   "skipped": false,
+   "text": "Embedded AI is AI integrated directly into a physical product or software application, so it becomes part of the device itself or the application’s workflow. The AI can run on the device itself or through cloud infrastructure, depending on the application’s requirements. Building AI into commercial software and devices is already common engineering practice. The Avnet Insights 2026 Engineering Survey reports that 56% of engineers globally are shipping products with AI incorporated into the designed products and solutions. For these teams, the question is how to build embedded AI well.\nFor hardware, AI becomes part of the physical product, and one engineering decision is where the AI runs. Running AI on the device cuts delay and keeps working through outages, but every unit then needs updates for years. For software, the key decision is where AI fits into the user’s workflow. AI can work inside the task or send the user to a separate tool. Teams that add AI late can find these trade-offs harder to change.\nThis guide is for engineering leaders and product teams deciding where AI belongs in a product they already ship. It follows the decisions teams face, from what to build to how to keep it running. By the end, you’ll be able to judge which form of embedded AI fits the product and where it should run.\nKey Takeaways:\nEmbedded AI has two main forms: It can run on a physical device or work inside a software product, depending on where the AI becomes part of the task.\nEdge and embedded AI describe different things: Embedded AI describes where AI fits into a product, while edge AI describes where processing happens.\nWhere AI runs changes the product: Local and cloud processing create different trade-offs for responsiveness, connectivity, data handling, and the user experience.\nThe product sets the engineering constraints: The task, operating conditions, and required performance shape the model and system design that follows.\nTools and hardware follow the deployment: The target device and software environment determine which models, runtimes, optimization tools, and processors are practical.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "Embedded AI is AI integrated directly into a physical product or software application, so it becomes part of the device itself or the application’s workflow. The AI can run on the device itself or through cloud infrastructure, depending on the application’s requirements. Building AI into commercial software and devices is already common engineering practice. The Avnet Insights 2026 Engineering Survey reports that 56% of engineers globally are shipping products with AI incorporated into the designed products and solutions. For these teams, the question is how to build embedded AI well.",
+     "links": [
+      {
+       "href": "https://news.avnet.com/press-releases/press-release-details/2026/Avnet-Insights-Survey-Engineers-Embracing-AI-and-Confronting-Its-Challenges-2026-3lDN2Bjubo/default.aspx",
+       "text": "Avnet Insights 2026 Engineering Survey"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "For hardware, AI becomes part of the physical product, and one engineering decision is where the AI runs. Running AI on the device cuts delay and keeps working through outages, but every unit then needs updates for years. For software, the key decision is where AI fits into the user’s workflow. AI can work inside the task or send the user to a separate tool. Teams that add AI late can find these trade-offs harder to change.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "This guide is for engineering leaders and product teams deciding where AI belongs in a product they already ship. It follows the decisions teams face, from what to build to how to keep it running. By the end, you’ll be able to judge which form of embedded AI fits the product and where it should run.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Key Takeaways:",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Embedded AI has two main forms: It can run on a physical device or work inside a software product, depending on where the AI becomes part of the task.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Edge and embedded AI describe different things: Embedded AI describes where AI fits into a product, while edge AI describes where processing happens.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Where AI runs changes the product: Local and cloud processing create different trade-offs for responsiveness, connectivity, data handling, and the user experience.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "The product sets the engineering constraints: The task, operating conditions, and required performance shape the model and system design that follows.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Tools and hardware follow the deployment: The target device and software environment determine which models, runtimes, optimization tools, and processors are practical.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:what-is-embedded-ai",
+   "kind": "article_section",
+   "label": "What Is Embedded AI?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Is Embedded AI?\nEmbedded AI is AI built into a physical device or software application as part of the device’s operation or the application’s workflow. Instead of sending the user to a separate AI tool, the product uses AI within the existing workflow and returns the result where the task happens. A thermostat that learns a building’s schedule is embedded AI. So is an ERP that flags a risky purchase order on the approval screen.\nAs AI moves into everyday work, more teams are building it directly into the workflows where users already operate. IDC’s 2026 research found that 67% of respondents report expanding AI initiatives across departments, while 61% say they are embedding AI directly into workflows. The 61% figure shows that embedding AI into workflows is becoming part of how teams are putting AI into practice.\nHardware Embedded AI\nHardware embedded AI makes AI part of the physical device. The model may run on the device itself when the product requires local processing. The compute ranges from a microcontroller with kilobytes of memory to an embedded GPU. A doorbell camera, for example, detects a person on its own chip.\nSoftware Embedded AI\nSoftware embedded AI places AI output inside an application’s existing screens, data, and actions. For example, a CRM can draft a follow-up email from the deal record, and the rep can send it without leaving the page. A linked chatbot can’t see that record, apply the rep’s permissions, or write anything back. The model can sit in the cloud while the experience stays embedded.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Is Embedded AI?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Embedded AI is AI built into a physical device or software application as part of the device’s operation or the application’s workflow. Instead of sending the user to a separate AI tool, the product uses AI within the existing workflow and returns the result where the task happens. A thermostat that learns a building’s schedule is embedded AI. So is an ERP that flags a risky purchase order on the approval screen.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "As AI moves into everyday work, more teams are building it directly into the workflows where users already operate. IDC’s 2026 research found that 67% of respondents report expanding AI initiatives across departments, while 61% say they are embedding AI directly into workflows. The 61% figure shows that embedding AI into workflows is becoming part of how teams are putting AI into practice.",
+     "links": [
+      {
+       "href": "https://www.amd.com/content/dam/amd/en/documents/products/processors/business-systems/white-paper-idc-page.pdf](https://www.amd.com/content/dam/amd/en/documents/products/processors/business-systems/white-paper-idc-page.pdf",
+       "text": "IDC’s 2026 research"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Hardware Embedded AI",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Hardware embedded AI makes AI part of the physical device. The model may run on the device itself when the product requires local processing. The compute ranges from a microcontroller with kilobytes of memory to an embedded GPU. A doorbell camera, for example, detects a person on its own chip.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Software Embedded AI",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Software embedded AI places AI output inside an application’s existing screens, data, and actions. For example, a CRM can draft a follow-up email from the deal record, and the rep can send it without leaving the page. A linked chatbot can’t see that record, apply the rep’s permissions, or write anything back. The model can sit in the cloud while the experience stays embedded.",
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "article:how-does-embedded-ai-architecture-work",
+   "kind": "article_section",
+   "label": "How Does Embedded AI Architecture Work?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Does Embedded AI Architecture Work?\nEmbedded AI architecture starts with the data a product receives and follows that data through preprocessing, inference, a decision, and an action. The product prepares the input for the model, runs the model, and uses the result to determine what happens next. For example, a camera can process an image, identify a person, and trigger an alert. In software, an application can process customer data, generate a recommendation, and show it within the same workflow. Where each step runs affects response time, data movement, and system maintenance.\nInput and Preprocessing\nPreprocessing puts raw input into the shape the ML model saw during training. For example, a vibration sensor can convert readings into a frequency spectrum, while a support tool can gather the ticket and three similar cases before calling the model. If this step produces poor input, the model can still return an answer, but the answer may be based on the wrong information.\nModel Inference\nInference is the step where the ML model returns a label, a score, or generated text. Local inference needs no network connection for the model call. Edge-server inference uses a nearby machine with more compute, while cloud inference moves the model call to a remote service. For example, a phone can detect its wake word locally and send the full request to the cloud.\nDecision and Action\nAn AI model only produces a result. The application decides what that result means for the product and what happens next. For example, a security camera’s AI model can identify a person, but the application still needs rules for what to do with that result. It could save the clip, send an alert, or do nothing.\nThe application also determines when a person needs to approve the result. For example, an AI tool could flag a customer request as eligible for a refund, while the application sends larger refunds to an employee for approval.\nTraining and Updates\nTraining happens off the device, on workstations or cloud GPUs, and new versions reach devices through over-the-air (OTA) updates. For example, a car maker can retrain a lane-detection model and ship the new version to the fleet this way. A more specialized approach is on-device learning, where a device adapts the model using data from its own use, such as a hearing aid adapting to its owner.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Does Embedded AI Architecture Work?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Embedded AI architecture starts with the data a product receives and follows that data through preprocessing, inference, a decision, and an action. The product prepares the input for the model, runs the model, and uses the result to determine what happens next. For example, a camera can process an image, identify a person, and trigger an alert. In software, an application can process customer data, generate a recommendation, and show it within the same workflow. Where each step runs affects response time, data movement, and system maintenance.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Input and Preprocessing",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Preprocessing puts raw input into the shape the ML model saw during training. For example, a vibration sensor can convert readings into a frequency spectrum, while a support tool can gather the ticket and three similar cases before calling the model. If this step produces poor input, the model can still return an answer, but the answer may be based on the wrong information.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Model Inference",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Inference is the step where the ML model returns a label, a score, or generated text. Local inference needs no network connection for the model call. Edge-server inference uses a nearby machine with more compute, while cloud inference moves the model call to a remote service. For example, a phone can detect its wake word locally and send the full request to the cloud.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Decision and Action",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "An AI model only produces a result. The application decides what that result means for the product and what happens next. For example, a security camera’s AI model can identify a person, but the application still needs rules for what to do with that result. It could save the clip, send an alert, or do nothing.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "The application also determines when a person needs to approve the result. For example, an AI tool could flag a customer request as eligible for a refund, while the application sends larger refunds to an employee for approval.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Training and Updates",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Training happens off the device, on workstations or cloud GPUs, and new versions reach devices through over-the-air (OTA) updates. For example, a car maker can retrain a lane-detection model and ship the new version to the fleet this way. A more specialized approach is on-device learning, where a device adapts the model using data from its own use, such as a hearing aid adapting to its owner.",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "article:what-is-the-difference-between-embedded-ai-edge-",
+   "kind": "article_section",
+   "label": "What Is the Difference Between Embedded AI, Edge AI, Generative AI, a…",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Is the Difference Between Embedded AI, Edge AI, Generative AI, and Embedded Analytics?\nThe difference is what each term describes. Embedded AI explains how AI fits into the product, edge AI describes where inference happens, generative AI describes what the model produces, and embedded analytics describes how insights appear in the application. These dimensions describe different parts of the same system, so one product can use several at once.\nEdge AI\nEdge AI runs inference on the device or on a nearby gateway or server instead of sending data to a distant cloud. The choice depends on how much computing the model needs and where the data is collected.\nA shared server keeps the model in one place, while on-device inference requires updates on every unit in the field. Edge AI therefore does not have to be part of a product. For example, a smart camera that detects people on its own chip uses both edge AI and embedded AI. A camera that sends footage to a server in the same building uses edge AI, even when the server is separate from the camera product.\nGenerative AI\nGenerative AI describes models that create new content, such as text or code, rather than only returning a classification or score. Teams use it for tasks such as drafting, summarizing, or rewriting content that an employee would otherwise create.\nThe term says nothing about where the model runs. A generative AI feature can run on a device, in the cloud, or across both. For example, a product could handle short requests with a small local model and send more demanding requests to a larger cloud model.\nFor a closer look at how generative AI differs from applied AI and where the two overlap in production systems, check our guide on Applied AI vs. Generative AI: Differences, Use Cases, Impact .\nEmbedded Analytics\nEmbedded analytics places dashboards, metrics, and other data views inside the tools people already use, so users can work with data without switching applications. This approach is already widespread across enterprise software. According to IDC’s 2025 report , 94% of organizations have embedded or are in the process of embedding analytics into enterprise applications for pervasive insights, better data utilization, and enhanced user experiences.\nAI can take an embedded dashboard beyond showing numbers. For example, a system can answer questions in plain English, flag an unusual change, forecast the next period, or explain why a metric moved. Users can then investigate the result without building a separate report or waiting for an analyst.\nEmbedded AI vs. Related Technologies Table\nThe table below gives a quick way to compare how each term applies to an AI system. Use it to see the differences at a glance before deciding which term fits a specific use case.\nTechnology\nWhat It Describes\nWhere It Runs\nMain Purpose\nExample\nEmbedded AI\nAI integrated into a product or workflow\nDevice, edge server, or cloud\nIntegrate AI into the product or workflow\nAn ERP that flags a risky purchase order\nEdge AI\nWhere inference runs\nDevice, gateway, or nearby server\nKeep processing close to the data\nA back-room server analyzing store cameras\nGenerative AI\nWhat the ML model creates\nDevice, cloud, or both\nProduce text, code, or images\nA helpdesk that drafts ticket replies\nEmbedded Analytics\nReporting inside a host application\nVendor cloud, shown in the host app\nHelp users read their data in context\nA dashboard that explains a revenue drop",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Is the Difference Between Embedded AI, Edge AI, Generative AI, and Embedded Analytics?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The difference is what each term describes. Embedded AI explains how AI fits into the product, edge AI describes where inference happens, generative AI describes what the model produces, and embedded analytics describes how insights appear in the application. These dimensions describe different parts of the same system, so one product can use several at once.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Edge AI",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Edge AI runs inference on the device or on a nearby gateway or server instead of sending data to a distant cloud. The choice depends on how much computing the model needs and where the data is collected.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "A shared server keeps the model in one place, while on-device inference requires updates on every unit in the field. Edge AI therefore does not have to be part of a product. For example, a smart camera that detects people on its own chip uses both edge AI and embedded AI. A camera that sends footage to a server in the same building uses edge AI, even when the server is separate from the camera product.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Generative AI",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Generative AI describes models that create new content, such as text or code, rather than only returning a classification or score. Teams use it for tasks such as drafting, summarizing, or rewriting content that an employee would otherwise create.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "The term says nothing about where the model runs. A generative AI feature can run on a device, in the cloud, or across both. For example, a product could handle short requests with a small local model and send more demanding requests to a larger cloud model.",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "For a closer look at how generative AI differs from applied AI and where the two overlap in production systems, check our guide on Applied AI vs. Generative AI: Differences, Use Cases, Impact .",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/applied-ai-vs-generative-ai/",
+       "text": "Applied AI vs. Generative AI: Differences, Use Cases, Impact"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Embedded Analytics",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Embedded analytics places dashboards, metrics, and other data views inside the tools people already use, so users can work with data without switching applications. This approach is already widespread across enterprise software. According to IDC’s 2025 report , 94% of organizations have embedded or are in the process of embedding analytics into enterprise applications for pervasive insights, better data utilization, and enhanced user experiences.",
+     "links": [
+      {
+       "href": "https://assets.qlik.com/image/upload/v1740404106/qlik/docs/resource-library/analyst-reports/resource-ar-priorities-and-challenges-of-data-and-analytics-en_usjvze.pdf",
+       "text": "IDC’s 2025 report"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "AI can take an embedded dashboard beyond showing numbers. For example, a system can answer questions in plain English, flag an unusual change, forecast the next period, or explain why a metric moved. Users can then investigate the result without building a separate report or waiting for an analyst.",
+     "index": 8
+    },
+    {
+     "type": "heading",
+     "text": "Embedded AI vs. Related Technologies Table",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "The table below gives a quick way to compare how each term applies to an AI system. Use it to see the differences at a glance before deciding which term fits a specific use case.",
+     "index": 9
+    },
+    {
+     "type": "table_cell",
+     "text": "Technology",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "What It Describes",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "Where It Runs",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "Main Purpose",
+     "index": 4
+    },
+    {
+     "type": "table_cell",
+     "text": "Example",
+     "index": 5
+    },
+    {
+     "type": "table_cell",
+     "text": "Embedded AI",
+     "index": 6
+    },
+    {
+     "type": "table_cell",
+     "text": "AI integrated into a product or workflow",
+     "index": 7
+    },
+    {
+     "type": "table_cell",
+     "text": "Device, edge server, or cloud",
+     "index": 8
+    },
+    {
+     "type": "table_cell",
+     "text": "Integrate AI into the product or workflow",
+     "index": 9
+    },
+    {
+     "type": "table_cell",
+     "text": "An ERP that flags a risky purchase order",
+     "index": 10
+    },
+    {
+     "type": "table_cell",
+     "text": "Edge AI",
+     "index": 11
+    },
+    {
+     "type": "table_cell",
+     "text": "Where inference runs",
+     "index": 12
+    },
+    {
+     "type": "table_cell",
+     "text": "Device, gateway, or nearby server",
+     "index": 13
+    },
+    {
+     "type": "table_cell",
+     "text": "Keep processing close to the data",
+     "index": 14
+    },
+    {
+     "type": "table_cell",
+     "text": "A back-room server analyzing store cameras",
+     "index": 15
+    },
+    {
+     "type": "table_cell",
+     "text": "Generative AI",
+     "index": 16
+    },
+    {
+     "type": "table_cell",
+     "text": "What the ML model creates",
+     "index": 17
+    },
+    {
+     "type": "table_cell",
+     "text": "Device, cloud, or both",
+     "index": 18
+    },
+    {
+     "type": "table_cell",
+     "text": "Produce text, code, or images",
+     "index": 19
+    },
+    {
+     "type": "table_cell",
+     "text": "A helpdesk that drafts ticket replies",
+     "index": 20
+    },
+    {
+     "type": "table_cell",
+     "text": "Embedded Analytics",
+     "index": 21
+    },
+    {
+     "type": "table_cell",
+     "text": "Reporting inside a host application",
+     "index": 22
+    },
+    {
+     "type": "table_cell",
+     "text": "Vendor cloud, shown in the host app",
+     "index": 23
+    },
+    {
+     "type": "table_cell",
+     "text": "Help users read their data in context",
+     "index": 24
+    },
+    {
+     "type": "table_cell",
+     "text": "A dashboard that explains a revenue drop",
+     "index": 25
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-the-benefits-of-embedded-ai",
+   "kind": "article_section",
+   "label": "What Are the Benefits of Embedded AI?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are the Benefits of Embedded AI?\nThe main benefit of embedded AI is that the AI result becomes part of the product’s existing task. Users can act on the result where they already work, without switching to a separate tool. When the AI also runs locally, the product can gain additional benefits such as lower latency, offline operation, privacy, and lower data transfer.\nNative experience: Embedded AI puts the result inside the workflow where the user already performs the task, so the user does not need to switch tools. For example, an accounts-payable clerk sees a duplicate-invoice warning on the invoice itself, with the matching invoice linked. The AI result becomes part of the existing review process instead of a separate step.\nLower latency (local inference): Local processing removes the network round trip between the product and a remote model, so the system can respond faster. An embedded AI feature can still call a cloud model and have network latency. For example, a driver-monitoring camera has to catch eye closure within a fraction of a second. A cloud call adds delay that depends on cell coverage. When response time is in the spec, the model may need to run on the device.\nOffline operation (local inference): Local inference lets a product keep performing AI tasks when the network is unavailable. For example, a pump controller at a remote well detects cavitation in its vibration data and shuts the pump down with no signal at all. It still needs a periodic link for updates and logs, even a weekly one.\nPrivacy (local inference): Processing sensitive data locally can keep raw data on the device instead of sending it to a remote service. That limits how much video, audio, biometric, or industrial data leaves the product. For example, a device can process the data locally and send only the result, although the device itself still needs protection.\nLower data transfer (local inference): Local filtering or inference reduces how much raw data the product sends to the cloud, which reduces bandwidth, storage, and remote processing. Picture a camera streaming video all day, pushing gigabytes to the cloud. Detect locally, upload a 10-second clip only when someone appears, and the system sends far less data.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are the Benefits of Embedded AI?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The main benefit of embedded AI is that the AI result becomes part of the product’s existing task. Users can act on the result where they already work, without switching to a separate tool. When the AI also runs locally, the product can gain additional benefits such as lower latency, offline operation, privacy, and lower data transfer.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Native experience: Embedded AI puts the result inside the workflow where the user already performs the task, so the user does not need to switch tools. For example, an accounts-payable clerk sees a duplicate-invoice warning on the invoice itself, with the matching invoice linked. The AI result becomes part of the existing review process instead of a separate step.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Lower latency (local inference): Local processing removes the network round trip between the product and a remote model, so the system can respond faster. An embedded AI feature can still call a cloud model and have network latency. For example, a driver-monitoring camera has to catch eye closure within a fraction of a second. A cloud call adds delay that depends on cell coverage. When response time is in the spec, the model may need to run on the device.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Offline operation (local inference): Local inference lets a product keep performing AI tasks when the network is unavailable. For example, a pump controller at a remote well detects cavitation in its vibration data and shuts the pump down with no signal at all. It still needs a periodic link for updates and logs, even a weekly one.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Privacy (local inference): Processing sensitive data locally can keep raw data on the device instead of sending it to a remote service. That limits how much video, audio, biometric, or industrial data leaves the product. For example, a device can process the data locally and send only the result, although the device itself still needs protection.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Lower data transfer (local inference): Local filtering or inference reduces how much raw data the product sends to the cloud, which reduces bandwidth, storage, and remote processing. Picture a camera streaming video all day, pushing gigabytes to the cloud. Detect locally, upload a 10-second clip only when someone appears, and the system sends far less data.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-the-primary-embedded-ai-use-cases",
+   "kind": "article_section",
+   "label": "What Are the Primary Embedded AI Use Cases?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are the Primary Embedded AI Use Cases?\nThe primary embedded AI use cases are tasks where AI is integrated into a product or workflow and its output is used as part of the task. Vehicles, factories, wearables, and software products can all use embedded AI when the result needs to reach the user or system within the existing product experience.\nSome use cases also need local inference because latency, connectivity, power, or privacy constraints affect where the model can run. A vehicle may need local processing for fast sensor responses, while a SaaS feature can keep the model in the cloud and still be fully embedded in the application’s workflow.\nAutomotive\nAutomotive embedded AI becomes part of vehicle systems that use sensor data for functions such as driver assistance. Driver-assistance systems (ADAS), for example, read camera and radar data to detect pedestrians and trigger braking support. The compute must also survive heat and vibration for 10 years or more, while ISO 26262 safety requirements add controls around model changes.\nManufacturing\nManufacturing uses embedded AI to detect problems while production is still running, so the system can act before a defect reaches the next stage. For example, a bottling-line camera inspects each cap, and the controller ejects bad bottles before packing. Predictive maintenance follows the same local loop, with a vibration model flagging a failing bearing before the line stops.\nHealthcare and Wearables\nHealthcare and wearable devices use embedded AI when AI is integrated into the device’s sensing or monitoring function. For example, a smartwatch can run a heart-rhythm model on its optical sensor throughout the day. A sleep score is a wellness feature, while an ECG function that “can provide information for identifying cardiac arrhythmias” falls under the FDA’s 2026 Product Classification , which lists electrocardiograph software for over-the-counter use as Device Class 2.\nSmart Devices and IoT\nSmart devices use embedded AI for narrow tasks where a small model can make a decision directly from local sensor data. For example, a glass-break sensor can distinguish a shattered window from a dropped plate with a TinyML model under 1 MB. Because the task is narrow, the sensor can run for years on one battery.\nSoftware and SaaS\nSoftware products use embedded AI when the model needs application data and the result needs to affect an existing workflow. For example, a payments app can score each transaction for fraud before it clears, with the model running in the cloud. The feature still needs to read the right records, respect access rules, and fail cleanly when the model is slow.\nEmbedded Analytics\nEmbedded analytics becomes an AI use case when the system uses data already inside the application to surface an insight as part of the user’s existing workflow. For example, a logistics platform can build a weekly summary for each manager and use AI to point out the carrier whose on-time rate fell most. The value comes from surfacing the insight inside the platform before the manager has to look for it. If two teams define “on time” differently, the system can produce a confident summary from inconsistent data, leading managers to make decisions based on a misleading comparison.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are the Primary Embedded AI Use Cases?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The primary embedded AI use cases are tasks where AI is integrated into a product or workflow and its output is used as part of the task. Vehicles, factories, wearables, and software products can all use embedded AI when the result needs to reach the user or system within the existing product experience.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Some use cases also need local inference because latency, connectivity, power, or privacy constraints affect where the model can run. A vehicle may need local processing for fast sensor responses, while a SaaS feature can keep the model in the cloud and still be fully embedded in the application’s workflow.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Automotive",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Automotive embedded AI becomes part of vehicle systems that use sensor data for functions such as driver assistance. Driver-assistance systems (ADAS), for example, read camera and radar data to detect pedestrians and trigger braking support. The compute must also survive heat and vibration for 10 years or more, while ISO 26262 safety requirements add controls around model changes.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Manufacturing",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Manufacturing uses embedded AI to detect problems while production is still running, so the system can act before a defect reaches the next stage. For example, a bottling-line camera inspects each cap, and the controller ejects bad bottles before packing. Predictive maintenance follows the same local loop, with a vibration model flagging a failing bearing before the line stops.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Healthcare and Wearables",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Healthcare and wearable devices use embedded AI when AI is integrated into the device’s sensing or monitoring function. For example, a smartwatch can run a heart-rhythm model on its optical sensor throughout the day. A sleep score is a wellness feature, while an ECG function that “can provide information for identifying cardiac arrhythmias” falls under the FDA’s 2026 Product Classification , which lists electrocardiograph software for over-the-counter use as Device Class 2.",
+     "links": [
+      {
+       "href": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpcd/classification.cfm?id=QDA",
+       "text": "FDA’s 2026 Product Classification"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Smart Devices and IoT",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Smart devices use embedded AI for narrow tasks where a small model can make a decision directly from local sensor data. For example, a glass-break sensor can distinguish a shattered window from a dropped plate with a TinyML model under 1 MB. Because the task is narrow, the sensor can run for years on one battery.",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Software and SaaS",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Software products use embedded AI when the model needs application data and the result needs to affect an existing workflow. For example, a payments app can score each transaction for fraud before it clears, with the model running in the cloud. The feature still needs to read the right records, respect access rules, and fail cleanly when the model is slow.",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "Embedded Analytics",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Embedded analytics becomes an AI use case when the system uses data already inside the application to surface an insight as part of the user’s existing workflow. For example, a logistics platform can build a weekly summary for each manager and use AI to point out the carrier whose on-time rate fell most. The value comes from surfacing the insight inside the platform before the manager has to look for it. If two teams define “on time” differently, the system can produce a confident summary from inconsistent data, leading managers to make decisions based on a misleading comparison.",
+     "index": 8
+    }
+   ]
+  },
+  {
+   "id": "article:how-do-you-implement-ai-in-embedded-systems",
+   "kind": "article_section",
+   "label": "How Do You Implement AI in Embedded Systems?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Do You Implement AI in Embedded Systems?\nYou implement AI in embedded systems by starting with the product requirement and building the AI system around what the product needs to do. Hardware comes later because the required output determines how much computing the system needs. The design also has to fit the conditions where the product will operate. The steps below follow that order, with each step producing something the next one needs.\nDefine the Task\nStart with the result the product needs from AI, and make it measurable. A system that needs to recognize a defect has a different task from one that predicts equipment failure or generates text. Define the expected accuracy and response time, along with the device limits that affect the design. This gives the model a clear target before development begins.\nPrepare the Data\nThe model needs data that represents what the product will actually see in the field. Collect and label examples under the same conditions the device will encounter, including changes that could affect the input. For example, a defect model trained only on clean factory images can fail when dust or different lighting changes what the camera sees. Include unusual cases and noisy inputs to test the model under the conditions it needs to handle.\nTrain the Model\nTrain the model on a workstation or cloud GPU, starting with a pretrained model when one fits the task. Transfer learning adapts that model to the product’s data instead of starting from scratch. For example, a produce-sorting system could fine-tune a pretrained image model on labeled images of the fruit it needs to classify.\nOptimize the Model\nThe trained model may need to become smaller or faster before it can run on the device. Quantization reduces the precision used for model calculations, while pruning removes parts of the model that contribute little to the result. Distillation takes a different approach by training a smaller model to reproduce the behavior of a larger one. Each change affects the balance between model accuracy and device performance, so test the model again after optimization.\nChoose the Hardware\nChoose hardware that gives the model enough computing capacity without exceeding the product’s operating limits. A small sensor may need a low-power microcontroller, while a device processing several camera feeds may need a GPU or NPU. The choice also depends on how much memory the model needs, how quickly it must respond, how much heat the device can handle, and how the hardware connects to the rest of the system. Unit cost matters more as production volume grows, so the right choice depends on the product rather than a single type of processor.\nDeploy and Validate\nMove the optimized model onto the target hardware and test it as part of the actual product. For example, a Python notebook showing 97% accuracy does not prove that the embedded system will deliver the same result. The team needs to measure how the model behaves on the device, then check that accuracy has not changed during conversion or compilation. Test the complete system under real operating conditions, including temperature and power limits, before treating the model as production-ready.\nUpdate and Monitor\nGive each model version a clear identifier and a tested way to roll back when a release causes problems. OTA updates let the team release a new model to a small group of devices before expanding the rollout. Field telemetry then shows whether the new version behaves as expected across the fleet. For example, a vision model can degrade as camera lenses collect dust or the operating environment changes. Monitoring that behavior gives the team a way to detect drift and decide when to investigate, retrain, or roll back the model.\nFor a broader framework for moving AI from a controlled test into production, see AI Pilot Program: How to Plan, Run, and Scale It in 2026 .",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Do You Implement AI in Embedded Systems?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "You implement AI in embedded systems by starting with the product requirement and building the AI system around what the product needs to do. Hardware comes later because the required output determines how much computing the system needs. The design also has to fit the conditions where the product will operate. The steps below follow that order, with each step producing something the next one needs.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Define the Task",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Start with the result the product needs from AI, and make it measurable. A system that needs to recognize a defect has a different task from one that predicts equipment failure or generates text. Define the expected accuracy and response time, along with the device limits that affect the design. This gives the model a clear target before development begins.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Prepare the Data",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "The model needs data that represents what the product will actually see in the field. Collect and label examples under the same conditions the device will encounter, including changes that could affect the input. For example, a defect model trained only on clean factory images can fail when dust or different lighting changes what the camera sees. Include unusual cases and noisy inputs to test the model under the conditions it needs to handle.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Train the Model",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Train the model on a workstation or cloud GPU, starting with a pretrained model when one fits the task. Transfer learning adapts that model to the product’s data instead of starting from scratch. For example, a produce-sorting system could fine-tune a pretrained image model on labeled images of the fruit it needs to classify.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Optimize the Model",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "The trained model may need to become smaller or faster before it can run on the device. Quantization reduces the precision used for model calculations, while pruning removes parts of the model that contribute little to the result. Distillation takes a different approach by training a smaller model to reproduce the behavior of a larger one. Each change affects the balance between model accuracy and device performance, so test the model again after optimization.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Choose the Hardware",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Choose hardware that gives the model enough computing capacity without exceeding the product’s operating limits. A small sensor may need a low-power microcontroller, while a device processing several camera feeds may need a GPU or NPU. The choice also depends on how much memory the model needs, how quickly it must respond, how much heat the device can handle, and how the hardware connects to the rest of the system. Unit cost matters more as production volume grows, so the right choice depends on the product rather than a single type of processor.",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Deploy and Validate",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Move the optimized model onto the target hardware and test it as part of the actual product. For example, a Python notebook showing 97% accuracy does not prove that the embedded system will deliver the same result. The team needs to measure how the model behaves on the device, then check that accuracy has not changed during conversion or compilation. Test the complete system under real operating conditions, including temperature and power limits, before treating the model as production-ready.",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "Update and Monitor",
+     "level": 3,
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Give each model version a clear identifier and a tested way to roll back when a release causes problems. OTA updates let the team release a new model to a small group of devices before expanding the rollout. Field telemetry then shows whether the new version behaves as expected across the fleet. For example, a vision model can degrade as camera lenses collect dust or the operating environment changes. Monitoring that behavior gives the team a way to detect drift and decide when to investigate, retrain, or roll back the model.",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "For a broader framework for moving AI from a controlled test into production, see AI Pilot Program: How to Plan, Run, and Scale It in 2026 .",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/ai-pilot-program/",
+       "text": "AI Pilot Program: How to Plan, Run, and Scale It in 2026"
+      }
+     ],
+     "index": 9
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-the-best-embedded-ai-tools",
+   "kind": "article_section",
+   "label": "What Are the Best Embedded AI Tools?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are the Best Embedded AI Tools?\nThe best embedded AI tool depends on the hardware, model, and development workflow the product needs. Some platforms cover the path from sensor data to a deployable library, while others focus on getting models to run efficiently on specific chips. Open-source runtimes provide execution without taking over the rest of the pipeline. Model-Based Design tools add simulation and code generation for systems where verification matters.\nEvaluation Criteria\nTarget hardware is the first filter because a tool that does not support the product’s chip is not a practical choice. From there, compare how the tool handles model formats and whether the operations used by the model survive conversion. Look at how much optimization it provides and how much control you have over the resulting model. Then check how the tool measures performance on the actual device and how models move into production. Finally, consider whether using the tool ties the deployment to one hardware vendor.\nBest Embedded AI Tools\nThe table below gives a quick way to compare the main tools by where they fit in the embedded AI workflow. Use it to narrow the shortlist, then check the tool’s fit with the specific hardware and deployment requirements.\nTool\nBest For\nTarget Hardware\nOptimization\nValidation / Profiling\nDeployment\nMain Limitation\nEdge Impulse\nData-to-device workflow\nMCUs to Linux processors\nEON Tuner, auto-quantization\nOn-target estimates\nC++ library\nLess low-level control\nSTM32Cube AI Studio\nSTM32 products\nSTM32 MCUs\nQuantization with real data\nBoard benchmarks\nOptimized C code\nST silicon only\nNXP eIQ\nNXP products\ni.MX RT, i.MX 8, i.MX 9\nNPU compilation\neIQ Toolkit profiling\nLiteRT, TFLM, Arm NN\nLittle value off NXP\nNVIDIA TAO\nAdapting vision models\nJetson, data center GPUs\nDistillation, quantization\nTensorRT tuning\nTensorRT, DeepStream\nNo MCU path\nLiteRT / TFLM\nOpen-source runtime\nPhones, Linux boards, MCUs\nPost-training quantization\nBasic benchmarks\nLinked library\nRuntime only\nMATLAB and Simulink\nSafety-sensitive controls\nCPUs, GPUs, FPGAs\nQuantization add-ons\nProcessor-in-the-loop tests\nC/C++, CUDA, HDL\nCost and learning curve\nEdge Impulse\nEdge Impulse is a Qualcomm-owned platform that takes a project from sensor data to a deployable library in one environment. That makes it useful when the team wants one workflow for collecting data, training models, and preparing them for a device. For example, a vibration fault detector can move from raw sensor logs to firmware without switching between separate tools.\nSTM32Cube AI Studio\nSTM32Cube AI Studio is STMicroelectronics’ environment for bringing AI models to STM32 microcontrollers. It fits teams that already build around STM32 and need to see how a model behaves on the actual board before generating C code for the product.\nNXP eIQ\nNXP eIQ provides the ML environment for NXP microcontrollers and application processors. The platform also connects models to NXP’s Neutron NPU when the selected hardware includes one, giving teams a path from model development to hardware acceleration.\nNVIDIA TAO\nNVIDIA TAO focuses on adapting pretrained vision and vision-language models for NVIDIA hardware. TAO 7 supports fine-tuning foundation models and preparing them for Jetson deployment. For example, a retailer could adapt a shelf-monitoring model using labeled images from stores.\nLiteRT / TFLM\nLiteRT is Google’s on-device runtime, formerly TensorFlow Lite. TFLM is the microcontroller version and runs without dynamic memory allocation. These tools execute trained models rather than providing the full development pipeline, so teams still need separate tools for data, training, and deployment management.\nMATLAB and Simulink\nMATLAB and Simulink take a Model-Based Design approach, letting engineers test an AI model inside a simulation before generating production code. That workflow is useful when the AI system has to be evaluated as part of a larger machine and the development process requires traceable verification.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are the Best Embedded AI Tools?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The best embedded AI tool depends on the hardware, model, and development workflow the product needs. Some platforms cover the path from sensor data to a deployable library, while others focus on getting models to run efficiently on specific chips. Open-source runtimes provide execution without taking over the rest of the pipeline. Model-Based Design tools add simulation and code generation for systems where verification matters.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Evaluation Criteria",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Target hardware is the first filter because a tool that does not support the product’s chip is not a practical choice. From there, compare how the tool handles model formats and whether the operations used by the model survive conversion. Look at how much optimization it provides and how much control you have over the resulting model. Then check how the tool measures performance on the actual device and how models move into production. Finally, consider whether using the tool ties the deployment to one hardware vendor.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Best Embedded AI Tools",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "The table below gives a quick way to compare the main tools by where they fit in the embedded AI workflow. Use it to narrow the shortlist, then check the tool’s fit with the specific hardware and deployment requirements.",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "Tool",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Best For",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "Target Hardware",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "Optimization",
+     "index": 4
+    },
+    {
+     "type": "table_cell",
+     "text": "Validation / Profiling",
+     "index": 5
+    },
+    {
+     "type": "table_cell",
+     "text": "Deployment",
+     "index": 6
+    },
+    {
+     "type": "table_cell",
+     "text": "Main Limitation",
+     "index": 7
+    },
+    {
+     "type": "table_cell",
+     "text": "Edge Impulse",
+     "index": 8
+    },
+    {
+     "type": "table_cell",
+     "text": "Data-to-device workflow",
+     "index": 9
+    },
+    {
+     "type": "table_cell",
+     "text": "MCUs to Linux processors",
+     "index": 10
+    },
+    {
+     "type": "table_cell",
+     "text": "EON Tuner, auto-quantization",
+     "index": 11
+    },
+    {
+     "type": "table_cell",
+     "text": "On-target estimates",
+     "index": 12
+    },
+    {
+     "type": "table_cell",
+     "text": "C++ library",
+     "index": 13
+    },
+    {
+     "type": "table_cell",
+     "text": "Less low-level control",
+     "index": 14
+    },
+    {
+     "type": "table_cell",
+     "text": "STM32Cube AI Studio",
+     "index": 15
+    },
+    {
+     "type": "table_cell",
+     "text": "STM32 products",
+     "index": 16
+    },
+    {
+     "type": "table_cell",
+     "text": "STM32 MCUs",
+     "index": 17
+    },
+    {
+     "type": "table_cell",
+     "text": "Quantization with real data",
+     "index": 18
+    },
+    {
+     "type": "table_cell",
+     "text": "Board benchmarks",
+     "index": 19
+    },
+    {
+     "type": "table_cell",
+     "text": "Optimized C code",
+     "index": 20
+    },
+    {
+     "type": "table_cell",
+     "text": "ST silicon only",
+     "index": 21
+    },
+    {
+     "type": "table_cell",
+     "text": "NXP eIQ",
+     "index": 22
+    },
+    {
+     "type": "table_cell",
+     "text": "NXP products",
+     "index": 23
+    },
+    {
+     "type": "table_cell",
+     "text": "i.MX RT, i.MX 8, i.MX 9",
+     "index": 24
+    },
+    {
+     "type": "table_cell",
+     "text": "NPU compilation",
+     "index": 25
+    },
+    {
+     "type": "table_cell",
+     "text": "eIQ Toolkit profiling",
+     "index": 26
+    },
+    {
+     "type": "table_cell",
+     "text": "LiteRT, TFLM, Arm NN",
+     "index": 27
+    },
+    {
+     "type": "table_cell",
+     "text": "Little value off NXP",
+     "index": 28
+    },
+    {
+     "type": "table_cell",
+     "text": "NVIDIA TAO",
+     "index": 29
+    },
+    {
+     "type": "table_cell",
+     "text": "Adapting vision models",
+     "index": 30
+    },
+    {
+     "type": "table_cell",
+     "text": "Jetson, data center GPUs",
+     "index": 31
+    },
+    {
+     "type": "table_cell",
+     "text": "Distillation, quantization",
+     "index": 32
+    },
+    {
+     "type": "table_cell",
+     "text": "TensorRT tuning",
+     "index": 33
+    },
+    {
+     "type": "table_cell",
+     "text": "TensorRT, DeepStream",
+     "index": 34
+    },
+    {
+     "type": "table_cell",
+     "text": "No MCU path",
+     "index": 35
+    },
+    {
+     "type": "table_cell",
+     "text": "LiteRT / TFLM",
+     "index": 36
+    },
+    {
+     "type": "table_cell",
+     "text": "Open-source runtime",
+     "index": 37
+    },
+    {
+     "type": "table_cell",
+     "text": "Phones, Linux boards, MCUs",
+     "index": 38
+    },
+    {
+     "type": "table_cell",
+     "text": "Post-training quantization",
+     "index": 39
+    },
+    {
+     "type": "table_cell",
+     "text": "Basic benchmarks",
+     "index": 40
+    },
+    {
+     "type": "table_cell",
+     "text": "Linked library",
+     "index": 41
+    },
+    {
+     "type": "table_cell",
+     "text": "Runtime only",
+     "index": 42
+    },
+    {
+     "type": "table_cell",
+     "text": "MATLAB and Simulink",
+     "index": 43
+    },
+    {
+     "type": "table_cell",
+     "text": "Safety-sensitive controls",
+     "index": 44
+    },
+    {
+     "type": "table_cell",
+     "text": "CPUs, GPUs, FPGAs",
+     "index": 45
+    },
+    {
+     "type": "table_cell",
+     "text": "Quantization add-ons",
+     "index": 46
+    },
+    {
+     "type": "table_cell",
+     "text": "Processor-in-the-loop tests",
+     "index": 47
+    },
+    {
+     "type": "table_cell",
+     "text": "C/C++, CUDA, HDL",
+     "index": 48
+    },
+    {
+     "type": "table_cell",
+     "text": "Cost and learning curve",
+     "index": 49
+    },
+    {
+     "type": "heading",
+     "text": "Edge Impulse",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Edge Impulse is a Qualcomm-owned platform that takes a project from sensor data to a deployable library in one environment. That makes it useful when the team wants one workflow for collecting data, training models, and preparing them for a device. For example, a vibration fault detector can move from raw sensor logs to firmware without switching between separate tools.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "STM32Cube AI Studio",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "STM32Cube AI Studio is STMicroelectronics’ environment for bringing AI models to STM32 microcontrollers. It fits teams that already build around STM32 and need to see how a model behaves on the actual board before generating C code for the product.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "NXP eIQ",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "NXP eIQ provides the ML environment for NXP microcontrollers and application processors. The platform also connects models to NXP’s Neutron NPU when the selected hardware includes one, giving teams a path from model development to hardware acceleration.",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "NVIDIA TAO",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "NVIDIA TAO focuses on adapting pretrained vision and vision-language models for NVIDIA hardware. TAO 7 supports fine-tuning foundation models and preparing them for Jetson deployment. For example, a retailer could adapt a shelf-monitoring model using labeled images from stores.",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "LiteRT / TFLM",
+     "level": 3,
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "LiteRT is Google’s on-device runtime, formerly TensorFlow Lite. TFLM is the microcontroller version and runs without dynamic memory allocation. These tools execute trained models rather than providing the full development pipeline, so teams still need separate tools for data, training, and deployment management.",
+     "index": 8
+    },
+    {
+     "type": "heading",
+     "text": "MATLAB and Simulink",
+     "level": 3,
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "MATLAB and Simulink take a Model-Based Design approach, letting engineers test an AI model inside a simulation before generating production code. That workflow is useful when the AI system has to be evaluated as part of a larger machine and the development process requires traceable verification.",
+     "index": 9
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-the-embedded-ai-hardware-options",
+   "kind": "article_section",
+   "label": "What Are the Embedded AI Hardware Options?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are the Embedded AI Hardware Options?\nEmbedded AI hardware options are the processor types that run inference on a device. Each type handles AI workloads differently, with trade-offs in performance, power, flexibility, and development effort. Many products combine several processors on one system-on-chip (SoC), while custom silicon provides a way to tailor hardware to a specific workload at high production volume.\nMicrocontrollers\nMicrocontrollers (MCUs) run small models next to the sensor while using very little power. That makes them useful for tasks that need to stay on continuously, such as keyword spotting or sensor monitoring. With limited memory, the model has to fit within tight device constraints.\nCPUs\nCPUs handle lighter inference while also running the device’s other software. Vector extensions such as Arm Neon speed up the mathematical operations used by many models. They work well when inference demand is limited, but continuous video processing can exceed what a CPU can handle efficiently.\nGPUs\nEmbedded GPUs such as NVIDIA Jetson handle larger models and parallel workloads across multiple data streams. That makes them useful for applications such as computer vision and generative AI on devices. The trade-off is higher power use, which also creates more heat that the product has to manage.\nNPUs\nNeural processing units (NPUs) are designed to run neural network operations with less power than a general-purpose CPU. Their benefit depends on whether the model uses operations the NPU supports. When a layer is unsupported, the system can send that work back to the CPU and reduce the performance gain.\nFPGAs\nField-programmable gate arrays (FPGAs) let engineers build a custom processing pipeline for a specific workload. That makes them useful when an application needs predictable timing, such as radar or medical imaging. The trade-off is more hardware design work and longer development cycles.\nEmbedded AI Hardware Comparison Table\nThe table summarizes the five hardware classes above. Use it to shortlist a class, then test real parts against the product’s requirements.\nHardware\nBest For\nPerformance Profile\nPower Use\nFlexibility\nTypical Applications\nMain Trade-Off\nMCU\nAlways-on sensor models\nLow, deterministic\nMilliwatts\nLow\nKeyword spotting, wearables\nMemory caps model size\nCPU\nLight inference\nLow to moderate\nModerate\nHigh\nGateways, classifiers\nSlow for video\nGPU\nLarge vision and GenAI\nHigh, parallel\nHigh\nHigh\nRobots, video analytics\nPower and heat\nNPU\nEfficient neural inference\nHigh on supported operators\nLow to moderate\nModerate\nSmart cameras, car SoCs\nOperator support\nFPGA\nDeterministic pipelines\nHigh, fixed latency\nModerate\nHigh after design work\nRadar, medical imaging\nLong development cycles",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are the Embedded AI Hardware Options?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Embedded AI hardware options are the processor types that run inference on a device. Each type handles AI workloads differently, with trade-offs in performance, power, flexibility, and development effort. Many products combine several processors on one system-on-chip (SoC), while custom silicon provides a way to tailor hardware to a specific workload at high production volume.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Microcontrollers",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Microcontrollers (MCUs) run small models next to the sensor while using very little power. That makes them useful for tasks that need to stay on continuously, such as keyword spotting or sensor monitoring. With limited memory, the model has to fit within tight device constraints.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "CPUs",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "CPUs handle lighter inference while also running the device’s other software. Vector extensions such as Arm Neon speed up the mathematical operations used by many models. They work well when inference demand is limited, but continuous video processing can exceed what a CPU can handle efficiently.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "GPUs",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Embedded GPUs such as NVIDIA Jetson handle larger models and parallel workloads across multiple data streams. That makes them useful for applications such as computer vision and generative AI on devices. The trade-off is higher power use, which also creates more heat that the product has to manage.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "NPUs",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Neural processing units (NPUs) are designed to run neural network operations with less power than a general-purpose CPU. Their benefit depends on whether the model uses operations the NPU supports. When a layer is unsupported, the system can send that work back to the CPU and reduce the performance gain.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "FPGAs",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Field-programmable gate arrays (FPGAs) let engineers build a custom processing pipeline for a specific workload. That makes them useful when an application needs predictable timing, such as radar or medical imaging. The trade-off is more hardware design work and longer development cycles.",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Embedded AI Hardware Comparison Table",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "The table summarizes the five hardware classes above. Use it to shortlist a class, then test real parts against the product’s requirements.",
+     "index": 7
+    },
+    {
+     "type": "table_cell",
+     "text": "Hardware",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Best For",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "Performance Profile",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "Power Use",
+     "index": 4
+    },
+    {
+     "type": "table_cell",
+     "text": "Flexibility",
+     "index": 5
+    },
+    {
+     "type": "table_cell",
+     "text": "Typical Applications",
+     "index": 6
+    },
+    {
+     "type": "table_cell",
+     "text": "Main Trade-Off",
+     "index": 7
+    },
+    {
+     "type": "table_cell",
+     "text": "MCU",
+     "index": 8
+    },
+    {
+     "type": "table_cell",
+     "text": "Always-on sensor models",
+     "index": 9
+    },
+    {
+     "type": "table_cell",
+     "text": "Low, deterministic",
+     "index": 10
+    },
+    {
+     "type": "table_cell",
+     "text": "Milliwatts",
+     "index": 11
+    },
+    {
+     "type": "table_cell",
+     "text": "Low",
+     "index": 12
+    },
+    {
+     "type": "table_cell",
+     "text": "Keyword spotting, wearables",
+     "index": 13
+    },
+    {
+     "type": "table_cell",
+     "text": "Memory caps model size",
+     "index": 14
+    },
+    {
+     "type": "table_cell",
+     "text": "CPU",
+     "index": 15
+    },
+    {
+     "type": "table_cell",
+     "text": "Light inference",
+     "index": 16
+    },
+    {
+     "type": "table_cell",
+     "text": "Low to moderate",
+     "index": 17
+    },
+    {
+     "type": "table_cell",
+     "text": "Moderate",
+     "index": 18
+    },
+    {
+     "type": "table_cell",
+     "text": "High",
+     "index": 19
+    },
+    {
+     "type": "table_cell",
+     "text": "Gateways, classifiers",
+     "index": 20
+    },
+    {
+     "type": "table_cell",
+     "text": "Slow for video",
+     "index": 21
+    },
+    {
+     "type": "table_cell",
+     "text": "GPU",
+     "index": 22
+    },
+    {
+     "type": "table_cell",
+     "text": "Large vision and GenAI",
+     "index": 23
+    },
+    {
+     "type": "table_cell",
+     "text": "High, parallel",
+     "index": 24
+    },
+    {
+     "type": "table_cell",
+     "text": "High",
+     "index": 25
+    },
+    {
+     "type": "table_cell",
+     "text": "High",
+     "index": 26
+    },
+    {
+     "type": "table_cell",
+     "text": "Robots, video analytics",
+     "index": 27
+    },
+    {
+     "type": "table_cell",
+     "text": "Power and heat",
+     "index": 28
+    },
+    {
+     "type": "table_cell",
+     "text": "NPU",
+     "index": 29
+    },
+    {
+     "type": "table_cell",
+     "text": "Efficient neural inference",
+     "index": 30
+    },
+    {
+     "type": "table_cell",
+     "text": "High on supported operators",
+     "index": 31
+    },
+    {
+     "type": "table_cell",
+     "text": "Low to moderate",
+     "index": 32
+    },
+    {
+     "type": "table_cell",
+     "text": "Moderate",
+     "index": 33
+    },
+    {
+     "type": "table_cell",
+     "text": "Smart cameras, car SoCs",
+     "index": 34
+    },
+    {
+     "type": "table_cell",
+     "text": "Operator support",
+     "index": 35
+    },
+    {
+     "type": "table_cell",
+     "text": "FPGA",
+     "index": 36
+    },
+    {
+     "type": "table_cell",
+     "text": "Deterministic pipelines",
+     "index": 37
+    },
+    {
+     "type": "table_cell",
+     "text": "High, fixed latency",
+     "index": 38
+    },
+    {
+     "type": "table_cell",
+     "text": "Moderate",
+     "index": 39
+    },
+    {
+     "type": "table_cell",
+     "text": "High after design work",
+     "index": 40
+    },
+    {
+     "type": "table_cell",
+     "text": "Radar, medical imaging",
+     "index": 41
+    },
+    {
+     "type": "table_cell",
+     "text": "Long development cycles",
+     "index": 42
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-the-biggest-embedded-ai-challenges",
+   "kind": "article_section",
+   "label": "What Are the Biggest Embedded AI Challenges?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are the Biggest Embedded AI Challenges?\nThe biggest embedded AI challenges come from fitting AI into a physical product and keeping the system reliable after deployment. Unlike cloud software, embedded systems operate within fixed device constraints and have to keep working in changing physical environments. That makes the engineering work extend beyond getting a model to run, because the product has to keep delivering the required result throughout its operating life.\nCompute and Memory\nEmbedded devices have limited memory and computing capacity, which restricts the size and complexity of the model they can run. Model weights take space in flash, while activations, the values produced during inference, use RAM. A model can fit in flash and still fail when the device does not have enough RAM for inference.\nPower and Thermal Limits\nRunning AI on an embedded device has to stay within the product’s power and thermal limits. Running inference more frequently increases energy use, while sustained processing can generate enough heat to reduce performance. A wearable, for example, can run inference less frequently to extend battery life.\nAccuracy vs. Performance\nA smaller or faster model can produce less accurate results, so teams have to balance model performance with the accuracy the task requires. A faster model is not useful if it misses results the product needs to detect. The acceptance threshold therefore needs to match the task before optimization begins.\nHardware Fragmentation\nModels do not run the same way across all hardware because vendors provide different SDKs, compilers, accelerators, and supported operations. A model optimized for one NPU can require changes when moved to another processor. Standard formats such as ONNX improve portability, but they do not remove hardware-specific work.\nSecurity\nLocal inference creates attack surfaces that do not exist in the same way when inference runs entirely in a remote service. An attacker with physical access could extract an unprotected model or secrets from a device, while insecure updates could allow unauthorized software or models to reach the fleet. Secure boot, signed updates, protected keys, and defenses against adversarial inputs therefore have to be part of the product design.\nLifecycle Management\nKeeping embedded AI reliable over time means supporting long hardware lifecycles, software updates, and different device versions in the field. Industrial products can stay deployed for 10 years or more, creating fleets with mixed hardware and model versions. Teams therefore need update mechanisms, telemetry, compatibility testing, and rollback procedures that continue working after launch.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are the Biggest Embedded AI Challenges?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The biggest embedded AI challenges come from fitting AI into a physical product and keeping the system reliable after deployment. Unlike cloud software, embedded systems operate within fixed device constraints and have to keep working in changing physical environments. That makes the engineering work extend beyond getting a model to run, because the product has to keep delivering the required result throughout its operating life.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Compute and Memory",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Embedded devices have limited memory and computing capacity, which restricts the size and complexity of the model they can run. Model weights take space in flash, while activations, the values produced during inference, use RAM. A model can fit in flash and still fail when the device does not have enough RAM for inference.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Power and Thermal Limits",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Running AI on an embedded device has to stay within the product’s power and thermal limits. Running inference more frequently increases energy use, while sustained processing can generate enough heat to reduce performance. A wearable, for example, can run inference less frequently to extend battery life.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Accuracy vs. Performance",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "A smaller or faster model can produce less accurate results, so teams have to balance model performance with the accuracy the task requires. A faster model is not useful if it misses results the product needs to detect. The acceptance threshold therefore needs to match the task before optimization begins.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Hardware Fragmentation",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Models do not run the same way across all hardware because vendors provide different SDKs, compilers, accelerators, and supported operations. A model optimized for one NPU can require changes when moved to another processor. Standard formats such as ONNX improve portability, but they do not remove hardware-specific work.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Security",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Local inference creates attack surfaces that do not exist in the same way when inference runs entirely in a remote service. An attacker with physical access could extract an unprotected model or secrets from a device, while insecure updates could allow unauthorized software or models to reach the fleet. Secure boot, signed updates, protected keys, and defenses against adversarial inputs therefore have to be part of the product design.",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Lifecycle Management",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Keeping embedded AI reliable over time means supporting long hardware lifecycles, software updates, and different device versions in the field. Industrial products can stay deployed for 10 years or more, creating fleets with mixed hardware and model versions. Teams therefore need update mechanisms, telemetry, compatibility testing, and rollback procedures that continue working after launch.",
+     "index": 7
+    }
+   ]
+  },
+  {
+   "id": "article:what-does-embedded-ai-engineering-look-like-in-2",
+   "kind": "article_section",
+   "label": "What Does Embedded AI Engineering Look Like in 2026?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Does Embedded AI Engineering Look Like in 2026?\nIn 2026, embedded AI engineering brings ML and product engineering together. The model has to work as part of a real product, not in isolation. That changes the engineering work around AI. Teams have to connect model development with the requirements of the product throughout development and deployment.\nCore Skills\nEmbedded AI engineers use C and C++ for firmware and Python for model development and training. Linux or an RTOS supports the software around the model, while interfaces such as I2C and SPI connect the processor to sensors and other hardware. In 2026, engineers also need to work with more capable AI workloads, including generative and multimodal models running on embedded hardware. That makes model optimization and hardware-specific inference more relevant to the deployment process.\nDevelopment Workflow\nEmbedded AI development crosses several engineering roles, and decisions in one area affect the others. ML engineers work on the model, embedded developers integrate it into the runtime, and hardware teams build the system around it. As embedded platforms add dedicated AI acceleration, teams also need to decide how workloads should run across the CPU, GPU, and NPU and validate performance on the target hardware. A model that ships before the board team confirms the available memory can require weeks of rework.\nAI Impact on Embedded Engineering Roles\nAI coding tools such as Claude Code, Cursor, and GitHub Copilot can draft driver code and unit tests. Generated code still needs review from an engineer who understands the system and the failure modes involved. At the same time, AI is becoming part of the embedded product itself, so engineers now have to validate model behavior alongside firmware and hardware behavior. That puts more emphasis on validation and review while the engineer remains responsible for the code that reaches the product.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Does Embedded AI Engineering Look Like in 2026?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "In 2026, embedded AI engineering brings ML and product engineering together. The model has to work as part of a real product, not in isolation. That changes the engineering work around AI. Teams have to connect model development with the requirements of the product throughout development and deployment.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Core Skills",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Embedded AI engineers use C and C++ for firmware and Python for model development and training. Linux or an RTOS supports the software around the model, while interfaces such as I2C and SPI connect the processor to sensors and other hardware. In 2026, engineers also need to work with more capable AI workloads, including generative and multimodal models running on embedded hardware. That makes model optimization and hardware-specific inference more relevant to the deployment process.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Development Workflow",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Embedded AI development crosses several engineering roles, and decisions in one area affect the others. ML engineers work on the model, embedded developers integrate it into the runtime, and hardware teams build the system around it. As embedded platforms add dedicated AI acceleration, teams also need to decide how workloads should run across the CPU, GPU, and NPU and validate performance on the target hardware. A model that ships before the board team confirms the available memory can require weeks of rework.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "AI Impact on Embedded Engineering Roles",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "AI coding tools such as Claude Code, Cursor, and GitHub Copilot can draft driver code and unit tests. Generated code still needs review from an engineer who understands the system and the failure modes involved. At the same time, AI is becoming part of the embedded product itself, so engineers now have to validate model behavior alongside firmware and hardware behavior. That puts more emphasis on validation and review while the engineer remains responsible for the code that reaches the product.",
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-the-embedded-ai-trends-in-2026",
+   "kind": "article_section",
+   "label": "What Are the Embedded AI Trends in 2026?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are the Embedded AI Trends in 2026?\nIn 2026, embedded AI is moving toward more capable local processing and deeper integration into products. As hardware and models improve, teams have more options for deciding where AI runs and how closely it connects to the product. That gives engineering teams more control over latency, connectivity, and the user experience.\nSmaller models: Models are getting small enough to run on hardware that could not support them a few years ago. Small language models with 1 to 4 billion parameters now run on phones and edge computers, although that size still exceeds the limits of many microcontrollers.\nAI accelerators: AI workloads need more specialized hardware as models run closer to the device. NPUs now appear in microcontrollers, car SoCs, and PCs, giving products dedicated hardware for neural network operations without relying only on the CPU.\nOn-device genAI: Generative AI no longer has to depend entirely on a network connection. For example, a field-service tablet can summarize a repair manual offline, while a product can send more demanding requests to the cloud. This creates a hybrid setup where local and cloud models handle different tasks.\nAI-native software: Software products are being designed around AI as part of the workflow rather than adding AI as a separate feature. For example, a finance platform can reconcile transactions and explain each mismatch on the same screen. This changes how established products are designed and evaluated against software built around AI from the start.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are the Embedded AI Trends in 2026?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "In 2026, embedded AI is moving toward more capable local processing and deeper integration into products. As hardware and models improve, teams have more options for deciding where AI runs and how closely it connects to the product. That gives engineering teams more control over latency, connectivity, and the user experience.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Smaller models: Models are getting small enough to run on hardware that could not support them a few years ago. Small language models with 1 to 4 billion parameters now run on phones and edge computers, although that size still exceeds the limits of many microcontrollers.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI accelerators: AI workloads need more specialized hardware as models run closer to the device. NPUs now appear in microcontrollers, car SoCs, and PCs, giving products dedicated hardware for neural network operations without relying only on the CPU.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "On-device genAI: Generative AI no longer has to depend entirely on a network connection. For example, a field-service tablet can summarize a repair manual offline, while a product can send more demanding requests to the cloud. This creates a hybrid setup where local and cloud models handle different tasks.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "AI-native software: Software products are being designed around AI as part of the workflow rather than adding AI as a separate feature. For example, a finance platform can reconcile transactions and explain each mismatch on the same screen. This changes how established products are designed and evaluated against software built around AI from the start.",
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "article:how-can-gogloby-support-embedded-ai-in-software-",
+   "kind": "article_section",
+   "label": "How Can GoGloby Support Embedded AI in Software Products?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Can GoGloby Support Embedded AI in Software Products?\nGoGloby supports embedded AI in software by forward-deploying an AI Solutions Architect to build it into a client’s product. A model API alone isn’t enough, since the feature has to fit code and data built up over years. As an Applied AI Engineering partner, we work at the software level of the product. Our Architect works inside the client’s repos and reviews, with access the client grants and can revoke any day.\nArchitecture\nArchitecture starts with deciding where AI belongs and what it’s allowed to do. The Architect maps the workflow, the data the feature reads, and the actions that need human sign-off. The model and provider are then picked to fit the task. In a lending platform, for example, AI drafts a credit memo that an underwriter approves before customers see it.\nIntegration\nIntegration puts the feature inside the product’s existing screens and services. The Architect then tests it against real edge cases before release. A recommendation feature, for instance, reads the same order tables the product uses, so its suggestions match what customers see.\nMeasurement\nEach feature is measured against the product’s own baseline, on the outcome it should move, such as correction rate or support load. A support-summary feature earns its place when agents close tickets faster and edit fewer summaries.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Can GoGloby Support Embedded AI in Software Products?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby supports embedded AI in software by forward-deploying an AI Solutions Architect to build it into a client’s product. A model API alone isn’t enough, since the feature has to fit code and data built up over years. As an Applied AI Engineering partner, we work at the software level of the product. Our Architect works inside the client’s repos and reviews, with access the client grants and can revoke any day.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Architecture",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Architecture starts with deciding where AI belongs and what it’s allowed to do. The Architect maps the workflow, the data the feature reads, and the actions that need human sign-off. The model and provider are then picked to fit the task. In a lending platform, for example, AI drafts a credit memo that an underwriter approves before customers see it.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Integration",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Integration puts the feature inside the product’s existing screens and services. The Architect then tests it against real edge cases before release. A recommendation feature, for instance, reads the same order tables the product uses, so its suggestions match what customers see.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Measurement",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Each feature is measured against the product’s own baseline, on the outcome it should move, such as correction rate or support load. A support-summary feature earns its place when agents close tickets faster and edit fewer summaries.",
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "article:conclusion",
+   "kind": "article_section",
+   "label": "Conclusion",
+   "scope": "page",
+   "skipped": false,
+   "text": "Conclusion\nEmbedded AI works when AI is integrated into the physical device itself or into a software application’s workflow. The engineering approach depends on where that work happens and what the product needs to deliver.\nFor a physical device, the starting point is the operating environment and the limits the hardware has to meet. For software, the starting point is the workflow, the data available to the feature, and the action that follows the AI output. In both cases, start with one measurable outcome before choosing a model, runtime, tool, or processor.\nFor an existing product, pick one workflow where AI could change a real decision or remove a meaningful manual step. Define the expected result, test a baseline, and validate the feature in the environment where customers will use it.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Conclusion",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Embedded AI works when AI is integrated into the physical device itself or into a software application’s workflow. The engineering approach depends on where that work happens and what the product needs to deliver.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "For a physical device, the starting point is the operating environment and the limits the hardware has to meet. For software, the starting point is the workflow, the data available to the feature, and the action that follows the AI output. In both cases, start with one measurable outcome before choosing a model, runtime, tool, or processor.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "For an existing product, pick one workflow where AI could change a real decision or remove a meaningful manual step. Define the expected result, test a baseline, and validate the feature in the environment where customers will use it.",
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "article:faqs",
+   "kind": "article_section",
+   "label": "FAQs",
+   "scope": "page",
+   "skipped": false,
+   "text": "FAQs\nDoes embedded AI need the cloud?\nNo, embedded AI can run entirely without the cloud when the device has enough local computing capacity. Cloud services become useful when a product needs more compute, shared data, or capabilities that do not fit locally. Using the cloud does not stop an AI feature from being embedded in the product.\nWhat CPUs support embedded AI?\nMost modern CPUs can support embedded AI, but the workload determines which CPU class fits. Arm Cortex-M processors target low-power systems with tight memory limits, while Cortex-A and embedded x86 processors support more demanding workloads. The key distinction is the compute required by the model, not a specific CPU brand.\nWhat is an embedded AI accelerator?\nAn embedded AI accelerator is dedicated hardware designed to speed up neural network operations. It can appear as an NPU inside an SoC, an accelerator IP block, or a separate processor. The CPU still runs the surrounding software, while the accelerator handles supported model operations more efficiently.\nCan generative AI run on embedded devices?\nYes, generative AI can run on embedded devices when the hardware provides enough memory and compute for the chosen model. Small quantized models are more practical on local hardware than large models. The usable model size depends on available memory, supported operations, response-time requirements, and power limits.\nIs embedded AI the same as TinyML?\nNo, TinyML refers specifically to machine learning running on resource-constrained microcontrollers. Embedded AI is broader and also includes systems built around CPUs, GPUs, and NPUs. TinyML is therefore one category within embedded AI, rather than a separate approach to integrating AI into products.\nHow do you start an embedded AI project?\nStart an embedded AI project by assigning ownership for the model, device software, and post-launch updates. That ownership determines who validates model changes, manages releases, and responds when field behavior changes. Without clear ownership, a working prototype can become difficult to maintain once the product reaches customers.\nAuthor avatar\nSergey Matikaynen / CTO\nArticle author\nSergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.\nView profile",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "FAQs",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Does embedded AI need the cloud?",
+     "area": "item 1",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "No, embedded AI can run entirely without the cloud when the device has enough local computing capacity. Cloud services become useful when a product needs more compute, shared data, or capabilities that do not fit locally. Using the cloud does not stop an AI feature from being embedded in the product.",
+     "area": "item 1",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "What CPUs support embedded AI?",
+     "area": "item 1",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Most modern CPUs can support embedded AI, but the workload determines which CPU class fits. Arm Cortex-M processors target low-power systems with tight memory limits, while Cortex-A and embedded x86 processors support more demanding workloads. The key distinction is the compute required by the model, not a specific CPU brand.",
+     "area": "item 1",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "What is an embedded AI accelerator?",
+     "area": "item 1",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "An embedded AI accelerator is dedicated hardware designed to speed up neural network operations. It can appear as an NPU inside an SoC, an accelerator IP block, or a separate processor. The CPU still runs the surrounding software, while the accelerator handles supported model operations more efficiently.",
+     "area": "item 1",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Can generative AI run on embedded devices?",
+     "area": "item 1",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Yes, generative AI can run on embedded devices when the hardware provides enough memory and compute for the chosen model. Small quantized models are more practical on local hardware than large models. The usable model size depends on available memory, supported operations, response-time requirements, and power limits.",
+     "area": "item 1",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Is embedded AI the same as TinyML?",
+     "area": "item 1",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "No, TinyML refers specifically to machine learning running on resource-constrained microcontrollers. Embedded AI is broader and also includes systems built around CPUs, GPUs, and NPUs. TinyML is therefore one category within embedded AI, rather than a separate approach to integrating AI into products.",
+     "area": "item 1",
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "How do you start an embedded AI project?",
+     "area": "item 1",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "Start an embedded AI project by assigning ownership for the model, device software, and post-launch updates. That ownership determines who validates model changes, manages releases, and responds when field behavior changes. Without clear ownership, a working prototype can become difficult to maintain once the product reaches customers.",
+     "area": "item 1",
+     "index": 12
+    },
+    {
+     "type": "image",
+     "text": "Author avatar",
+     "src": "https://gogloby.com/wp-content/uploads/2024/02/1706550966241.jpeg",
+     "file": "1706550966241.jpeg",
+     "alt": "Author avatar",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen / CTO",
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Article author",
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.",
+     "index": 15
+    },
+    {
+     "type": "paragraph",
+     "text": "View profile",
+     "links": [
+      {
+       "href": "https://gogloby.com/author/sergey/",
+       "text": "View profile"
+      }
+     ],
+     "index": 16
+    }
+   ]
+  },
+  {
+   "id": "banner_cta",
+   "kind": "banner_cta",
+   "label": "Banner CTA",
+   "scope": "page",
+   "skipped": false,
+   "text": "Is Your AI Feature Still Outside the Product?\nGet AI running inside your existing workflows and production systems, built to fit the code and data you have.\nTalk to GoGloby",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Is Your AI Feature Still Outside the Product?",
+     "area": "block-main",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Get AI running inside your existing workflows and production systems, built to fit the code and data you have.",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Talk to GoGloby",
+     "area": "block-aside",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "modals",
+   "kind": "modals",
+   "label": "Forms and modals",
+   "scope": "shared",
+   "skipped": false,
+   "text": "Thank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend\nThank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "site_header",
+   "kind": "site_header",
+   "label": "Site header",
+   "scope": "page",
+   "skipped": true,
+   "text": "Site logo\nSolutions\nAI Engineering Visibility\nForward Deployed Engineering\nServices\nAI Engineers Staff Augmentation\nHire AI Engineers\nAI Development Services\nGenerative AI Consulting Services\nAgentic AI Consulting Services\nAI Production Engineering\nGenerative AI Development Services\nAI Agent Development Services\nAI Custom Software Development Services\nRAG Application Development Services\nLLM Development Services\nApplication AI Modernization Services\nLegacy Application Modernization Services\nSoftware Maintenance Services\nCompany\nAbout us\nJobs\nResources\nInsights\nUse Cases\nPodcast\nContact\nTalk to Us",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Site logo",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/globy-logo-1-01.svg",
+     "file": "globy-logo-1-01.svg",
+     "alt": "Site logo",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Solutions",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineering Visibility",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/ai-engineering-visibility/",
+       "text": "AI Engineering Visibility"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Forward Deployed Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/forward-deployed-engineering/",
+       "text": "Forward Deployed Engineering"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineers Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Engineers Staff Augmentation"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "link",
+     "text": "AI Development Services",
+     "href": "https://gogloby.com/services/ai-development/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-development/",
+       "text": "AI Development Services"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-consulting/",
+       "text": "Generative AI Consulting Services"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Agentic AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/agentic-ai-consulting/",
+       "text": "Agentic AI Consulting Services"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "AI Production Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "AI Production Engineering"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "AI Agent Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-agent-development/",
+       "text": "AI Agent Development Services"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "AI Custom Software Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-custom-software-development/",
+       "text": "AI Custom Software Development Services"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "RAG Application Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/rag-application-development/",
+       "text": "RAG Application Development Services"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "LLM Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/llm-development/",
+       "text": "LLM Development Services"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "link",
+     "text": "Application AI Modernization Services",
+     "href": "https://gogloby.com/services/application-modernization/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/application-modernization/",
+       "text": "Application AI Modernization Services"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Legacy Application Modernization Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/legacy-application-modernization/",
+       "text": "Legacy Application Modernization Services"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "Software Maintenance Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/software-maintenance/",
+       "text": "Software Maintenance Services"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "Talk to Us",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "site_footer",
+   "kind": "site_footer",
+   "label": "Site footer",
+   "scope": "page",
+   "skipped": true,
+   "text": "Background logo\nServices\nApplied AI Engineering\nAI Staff Augmentation\nHire AI Engineers\nGenerative AI Development Services\nCompany\nAbout us\nJobs\nContact\nPrivacy Policy and Candidate Privacy Notice\nTerms and Conditions\nResources\nInsights\nUse Cases\nPodcast\nCase Studies\nConnections\nCrunchbase\nLinkedIn\nX\nG2\nClutch\nTrustpilot\nDesignRush\nGitHub\nFacebook\nYouTube\n© Copyright 2026, GoGloby. All Rights Reserved.",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background logo",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/logos/globy-logo-outline-1-01.svg",
+     "file": "globy-logo-outline-1-01.svg",
+     "alt": "Background logo",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Applied AI Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "Applied AI Engineering"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Staff Augmentation"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Privacy Policy and Candidate Privacy Notice",
+     "links": [
+      {
+       "href": "https://gogloby.com/privacy-policy/",
+       "text": "Privacy Policy and Candidate Privacy Notice"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Terms and Conditions",
+     "links": [
+      {
+       "href": "https://gogloby.com/terms-and-conditions/",
+       "text": "Terms and Conditions"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "Case Studies",
+     "links": [
+      {
+       "href": "https://gogloby.com/case-study/",
+       "text": "Case Studies"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Connections",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Crunchbase",
+     "links": [
+      {
+       "href": "https://www.crunchbase.com/organization/gogloby",
+       "text": "Crunchbase"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "LinkedIn",
+     "links": [
+      {
+       "href": "https://www.linkedin.com/company/gogloby/",
+       "text": "LinkedIn"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "X",
+     "links": [
+      {
+       "href": "https://x.com/GoGloby",
+       "text": "X"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "list_item",
+     "text": "G2",
+     "links": [
+      {
+       "href": "https://www.g2.com/products/gogloby/reviews",
+       "text": "G2"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Clutch",
+     "links": [
+      {
+       "href": "https://clutch.co/profile/gogloby",
+       "text": "Clutch"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Trustpilot",
+     "links": [
+      {
+       "href": "https://www.trustpilot.com/review/gogloby.com",
+       "text": "Trustpilot"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "DesignRush",
+     "links": [
+      {
+       "href": "https://www.designrush.com/agency/profile/gogloby",
+       "text": "DesignRush"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "list_item",
+     "text": "GitHub",
+     "links": [
+      {
+       "href": "https://github.com/gogloby",
+       "text": "GitHub"
+      }
+     ],
+     "index": 21
+    },
+    {
+     "type": "list_item",
+     "text": "Facebook",
+     "links": [
+      {
+       "href": "https://www.facebook.com/gogloby",
+       "text": "Facebook"
+      }
+     ],
+     "index": 22
+    },
+    {
+     "type": "list_item",
+     "text": "YouTube",
+     "links": [
+      {
+       "href": "https://www.youtube.com/@DefaultGlobal",
+       "text": "YouTube"
+      }
+     ],
+     "index": 23
+    },
+    {
+     "type": "paragraph",
+     "text": "© Copyright 2026, GoGloby. All Rights Reserved.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "related",
+   "kind": "related",
+   "label": "Related content",
+   "scope": "page",
+   "skipped": true,
+   "text": "Latest posts\nWhat Is AI Compliance Consulting: Process, Benefits & How to Implement It\nWhat Is AI Compliance Consulting: Process, Benefits & How to Implement It\nOctober 2,2026\nAI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI\nAI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI\nOctober 2,2026\n10 AI Governance Consulting Firms to Evaluate in 2026\n10 AI Governance Consulting Firms to Evaluate in 2026\nSeptember 24,2026\nAI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose\nAI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose\nSeptember 23,2026\nHow Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees\nHow Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees\nSeptember 18,2026\nAI Pilot Program: How to Plan, Run, and Scale It in 2026\nAI Pilot Program: How to Plan, Run, and Scale It in 2026\nSeptember 18,2026",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Latest posts",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "What Is AI Compliance Consulting: Process, Benefits & How to Implement It",
+     "src": "https://gogloby.com/wp-content/uploads/2026/10/Gemini_Generated_Image_vth5k8vth5k8vth5-scaled.jpeg",
+     "file": "Gemini_Generated_Image_vth5k8vth5k8vth5-scaled.jpeg",
+     "alt": "What Is AI Compliance Consulting: Process, Benefits & How to Implement It",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "What Is AI Compliance Consulting: Process, Benefits & How to Implement It",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "October 2,2026",
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "AI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI",
+     "src": "https://gogloby.com/wp-content/uploads/2026/10/Integracion-de-datos-futurista.png",
+     "file": "Integracion-de-datos-futurista.png",
+     "alt": "AI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 2",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "AI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "October 2,2026",
+     "area": "slide 2",
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "10 AI Governance Consulting Firms to Evaluate in 2026",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-24-sept-2026-14_14_41.png",
+     "file": "ChatGPT-Image-24-sept-2026-14_14_41.png",
+     "alt": "10 AI Governance Consulting Firms to Evaluate in 2026",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 3",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "10 AI Governance Consulting Firms to Evaluate in 2026",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "September 24,2026",
+     "area": "slide 3",
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "AI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-23-sept-2026-16_43_07.png",
+     "file": "ChatGPT-Image-23-sept-2026-16_43_07.png",
+     "alt": "AI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 4",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "AI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose",
+     "area": "slide 4",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "September 23,2026",
+     "area": "slide 4",
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "How Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/AI-Consulting-Cost-Models.png",
+     "file": "AI-Consulting-Cost-Models.png",
+     "alt": "How Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 5",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "How Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees",
+     "area": "slide 5",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "September 18,2026",
+     "area": "slide 5",
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "AI Pilot Program: How to Plan, Run, and Scale It in 2026",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/AI-Pilot-Program-Planning-and-Scale.png",
+     "file": "AI-Pilot-Program-Planning-and-Scale.png",
+     "alt": "AI Pilot Program: How to Plan, Run, and Scale It in 2026",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 6",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "AI Pilot Program: How to Plan, Run, and Scale It in 2026",
+     "area": "slide 6",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "September 18,2026",
+     "area": "slide 6",
+     "index": 6
+    }
+   ]
+  }
+ ],
+ "warnings": []
+}

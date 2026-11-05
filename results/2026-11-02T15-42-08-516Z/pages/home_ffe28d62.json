@@ -1,0 +1,1346 @@
+{
+  "schema_version": 2,
+  "url": "https://gogloby.com/",
+  "final_url": "https://gogloby.com/",
+  "status": 200,
+  "title": "Applied AI Company for Established Software | GoGloby",
+  "category": "Company",
+  "subsection": "Home",
+  "profile": "home",
+  "geo_type": "home",
+  "template": "block",
+  "checked_at": "2026-11-02T15:43:45.492Z",
+  "zones": [
+    {
+      "id": "title",
+      "label": "Title",
+      "kind": "title"
+    },
+    {
+      "id": "meta_description",
+      "label": "Meta description",
+      "kind": "meta_description"
+    },
+    {
+      "id": "og_title",
+      "label": "og:title",
+      "kind": "og_title"
+    },
+    {
+      "id": "og_description",
+      "label": "og:description",
+      "kind": "og_description"
+    },
+    {
+      "id": "json_ld",
+      "label": "Structured data (JSON-LD)",
+      "kind": "json_ld"
+    },
+    {
+      "id": "h1",
+      "label": "H1",
+      "kind": "h1"
+    },
+    {
+      "id": "block:hero-services#1",
+      "label": "Hero services: Uncover & Fix What’s Holding Your AI Engineering Back",
+      "kind": "block"
+    },
+    {
+      "id": "block:how-we-work#1",
+      "label": "How we work: What Is an Applied AI Company?",
+      "kind": "block"
+    },
+    {
+      "id": "block:company#1",
+      "label": "Company: The Applied AI Engineering Gaps We Solve",
+      "kind": "block"
+    },
+    {
+      "id": "block:engineers#1",
+      "label": "Engineers: Applied AI Services GoGloby Delivers",
+      "kind": "block"
+    },
+    {
+      "id": "block:how-it-works#1",
+      "label": "How it works: How Our Applied AI Engineering Model Works",
+      "kind": "block"
+    },
+    {
+      "id": "block:guarantees#1",
+      "label": "Guarantees: Security and Control for Applied AI Production",
+      "kind": "block"
+    },
+    {
+      "id": "block:leaders#1",
+      "label": "Leaders: Applied AI Company Trusted by 100+ Clients Across 10+ Indus…",
+      "kind": "block"
+    },
+    {
+      "id": "block:security#1",
+      "label": "Security: Why GoGloby Is Different From Other Applied AI Companies",
+      "kind": "block"
+    },
+    {
+      "id": "block:scope#1",
+      "label": "Scope: What GoGloby Delivers and Who It’s Best For",
+      "kind": "block"
+    },
+    {
+      "id": "block:map-interactive#1",
+      "label": "Map interactive: US-Aligned Applied AI Engineering Hubs",
+      "kind": "block"
+    },
+    {
+      "id": "block:contact#1",
+      "label": "Contact: Contact Us",
+      "kind": "block"
+    },
+    {
+      "id": "block:accordion-1#1",
+      "label": "Accordion 1: FAQs",
+      "kind": "block"
+    }
+  ],
+  "zone_warnings": [],
+  "shared_variants": [
+    "banner_cta@4",
+    "modals@2"
+  ],
+  "compliance": {
+    "hash": "edf7ecda3a4f888c0a055147f758d3166585fd96aa539848d9c6ea280b4194c7",
+    "cached": false,
+    "action": "rewrite",
+    "summary": "The homepage presents GoGloby as an Applied AI company that sells AI measurement and delivery services, rather than the approved staffing and recruiting agency. Rebuild the main message around the two approved services, and verify or remove the unsupported company claims, client figures and contact details listed below.",
+    "problems": [
+      {
+        "title": "Applied AI company positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Glossary §§1, 7",
+        "rule_verified": true,
+        "issue": "The page repeatedly describes GoGloby as an Applied AI company or engineering partner that installs AI workflows and proves AI ROI, rather than using the approved staffing and recruiting description.",
+        "fix": "Replace the Applied AI company and delivery positioning throughout with the approved company description and the two current staffing and recruiting services.",
+        "subject": "GoGloby positioning",
+        "page_value": "Applied AI company and delivery partner",
+        "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 15,
+        "locations": [
+          {
+            "zone_id": "title",
+            "part": "field 1",
+            "quote": "Applied AI Company for Established Software | GoGloby",
+            "verified": true
+          },
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "GoGloby is an Applied AI Engineering partner turning engineering into AI-native production",
+            "verified": true
+          },
+          {
+            "zone_id": "og_title",
+            "part": "field 1",
+            "quote": "Applied AI Company for Established Software | GoGloby",
+            "verified": true
+          },
+          {
+            "zone_id": "og_description",
+            "part": "field 1",
+            "quote": "GoGloby is an Applied AI Engineering partner turning engineering into AI-native production",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Answer.text",
+            "quote": "GoGloby combines the AI Intelligence Layer, Forward-Deployed Engineers who install the Agentic SDLC",
+            "verified": true
+          },
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "paragraph 2",
+            "quote": "GoGloby is an Applied AI Engineering partner.",
+            "verified": true,
+            "fragment": "GoGloby is an Applied AI Engineering,-partner. We turn"
+          },
+          {
+            "zone_id": "block:how-we-work#1",
+            "part": "paragraph 3",
+            "quote": "GoGloby does this three ways: we recruit the AI leaders who own it",
+            "verified": true,
+            "fragment": "team comes with-,the AI,-Intelligence Layer: every"
+          },
+          {
+            "zone_id": "block:company#1",
+            "part": "heading 1",
+            "quote": "The Applied AI Engineering Gaps We Solve",
+            "verified": true,
+            "fragment": "The Applied AI Engineering Gaps We"
+          },
+          {
+            "zone_id": "block:engineers#1",
+            "part": "heading 1",
+            "quote": "Applied AI Services GoGloby Delivers",
+            "verified": true,
+            "fragment": "Applied AI Services GoGloby Delivers"
+          },
+          {
+            "zone_id": "block:how-it-works#1",
+            "part": "heading 1",
+            "quote": "How Our Applied AI Engineering Model Works",
+            "verified": true,
+            "fragment": "How Our Applied AI Engineering Model"
+          },
+          {
+            "zone_id": "block:guarantees#1",
+            "part": "heading 1",
+            "quote": "Security and Control for Applied AI Production",
+            "verified": true,
+            "fragment": "Security and Control for Applied AI"
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "heading 1",
+            "quote": "Applied AI Company Trusted by 100+ Clients Across 10+ Industries",
+            "verified": true,
+            "fragment": "An-,applied AI company,-helps teams use"
+          },
+          {
+            "zone_id": "block:security#1",
+            "part": "heading 1",
+            "quote": "Why GoGloby Is Different From Other Applied AI Companies",
+            "verified": true,
+            "fragment": "Why GoGloby Is Different From Other"
+          },
+          {
+            "zone_id": "block:scope#1",
+            "part": "paragraph 2",
+            "quote": "GoGloby delivers outcomes, not hours.",
+            "verified": true,
+            "fragment": "GoGloby delivers outcomes, not hours."
+          },
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "heading 1",
+            "quote": "US-Aligned Applied AI Engineering Hubs",
+            "verified": true,
+            "fragment": "US-Aligned Applied AI Engineering Hubs"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Unverified client count claim",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity; Glossary §10",
+        "rule_verified": true,
+        "issue": "The page claims GoGloby has 100+ clients and serves 10+ industries, figures not provided in the Fact Sheet.",
+        "fix": "Remove these figures or verify them with the company before using them.",
+        "subject": "GoGloby client and industry counts",
+        "page_value": "100+ clients; 10+ industries",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "heading 1",
+            "quote": "Applied AI Company Trusted by 100+ Clients Across 10+ Industries",
+            "verified": true,
+            "fragment": "An-,applied AI company,-helps teams use"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Unsupported AI ROI capabilities",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Legal and security",
+        "rule_verified": true,
+        "issue": "The page promises AI ROI measurement, per-feature cost and return, and AI spend optimization, which are not stated capabilities in the Fact Sheet.",
+        "fix": "Remove or verify these capability and outcome claims, and describe only documented service features.",
+        "subject": "AI measurement and ROI claims",
+        "page_value": "ROI and cost per shipped feature",
+        "source_value": "AI Development Intelligence Layer reports velocity, code quality and AI token cost sprint by sprint",
+        "count": 9,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Answer.text",
+            "quote": "We benchmark your AI spend, forward-deploy engineers into your pipeline",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Question.name",
+            "quote": "How does the AI Intelligence Layer measure AI ROI?",
+            "verified": true
+          },
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "list_item 2",
+            "quote": "We prove AI ROI.",
+            "verified": true,
+            "fragment": "We prove AI ROI."
+          },
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "list_item 2",
+            "quote": "cost and return per shipped feature, month over month.",
+            "verified": true,
+            "fragment": "AI dollar visible,-,cost and return per shipped feature,,-month over month."
+          },
+          {
+            "zone_id": "block:company#1",
+            "part": "paragraph 5",
+            "quote": "GoGloby connects AI ROI to shipped work",
+            "verified": true,
+            "fragment": "GoGloby connects AI ROI to shipped"
+          },
+          {
+            "zone_id": "block:engineers#1",
+            "part": "list_item 1",
+            "quote": "Cost and return per shipped feature, in dollars.",
+            "verified": true,
+            "fragment": "AI dollar visible,-,cost and return per shipped feature,,-month over month."
+          },
+          {
+            "zone_id": "block:engineers#1",
+            "part": "list_item 5",
+            "quote": "Waste flagged before it becomes additional spend.",
+            "verified": true,
+            "fragment": "Waste flagged before it becomes additional"
+          },
+          {
+            "zone_id": "block:how-it-works#1",
+            "part": "paragraph 7",
+            "quote": "more work shipped per dollar, faster delivery per task",
+            "verified": true,
+            "fragment": "more work shipped per dollar, faster"
+          },
+          {
+            "zone_id": "block:accordion-1#1",
+            "part": "paragraph 4",
+            "quote": "AI spend optimization so teams can improve delivery and measure the result.",
+            "verified": true,
+            "fragment": "AI spend optimization so teams can"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Staffing start time differs",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; decisions.md: Service pages",
+        "rule_verified": true,
+        "issue": "The page promises engineers in under four weeks, while the Fact Sheet gives a two-to-three-week start time for nearshore staffing.",
+        "fix": "Use the documented two-to-three-week staffing start time or remove the timing claim where it describes a different offer.",
+        "subject": "Nearshore staffing start time",
+        "page_value": "Under 4 weeks",
+        "source_value": "2–3 weeks to start",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "list_item 1",
+            "quote": "Senior AI engineers inside your team in under 4 weeks",
+            "verified": true,
+            "fragment": "Senior AI engineers inside your team"
+          },
+          {
+            "zone_id": "block:company#1",
+            "part": "paragraph 7",
+            "quote": "GoGloby embeds them nearshore, forward-deployed in under 4 weeks.",
+            "verified": true,
+            "fragment": "GoGloby embeds them nearshore, forward-deployed in"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "paragraph 1",
+            "quote": "how our engineers forward-deploy in under 4 weeks.",
+            "verified": true,
+            "fragment": "how our engineers forward-deploy in under"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Insurance policy scope differs",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Legal and security",
+        "rule_verified": true,
+        "issue": "The page describes a $3M combined policy including professional liability, while the Fact Sheet specifies $3M data and cyber-liability insurance.",
+        "fix": "Correct the policy description to match the documented data and cyber-liability coverage or verify the broader policy with the company.",
+        "subject": "Insurance coverage",
+        "page_value": "$3M combined liability including professional",
+        "source_value": "$3M data and cyber-liability insurance",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "block:guarantees#1",
+            "part": "heading 2",
+            "quote": "$3M Combined Liability (Cyber, Data and Professional)",
+            "verified": true,
+            "fragment": "$3M Combined Liability (Cyber, Data and"
+          },
+          {
+            "zone_id": "block:guarantees#1",
+            "part": "paragraph 3",
+            "quote": "GoGloby carries an active $3M combined liability policy (cyber, data and professional)",
+            "verified": true,
+            "fragment": "GoGloby carries an active $3M combined"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Staffing guarantee differs",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page makes replacement conditional on underperformance for two consecutive sprints, while the Fact Sheet specifies performance-based replacement below baseline and cancellation any time in the first 120 days.",
+        "fix": "Align the staffing guarantee with the documented performance-based replacement and cancellation terms.",
+        "subject": "Nearshore staffing guarantee",
+        "page_value": "Replacement after two consecutive underperforming sprints",
+        "source_value": "No-cost replacement if results fall below baseline; cancel any time in first 120 days",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:guarantees#1",
+            "part": "paragraph 5",
+            "quote": "If a forward-deployed Architect or engineer underperforms against the agreed baseline for two consecutive sprints during the first 120 days",
+            "verified": true,
+            "fragment": "If a forward-deployed Architect or engineer"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Disney is not a listed client",
+        "category": "unknown_client",
+        "severity": "high",
+        "rule": "Fact Sheet: Featured clients; decisions.md: Clients",
+        "rule_verified": true,
+        "issue": "The hero logo row presents Disney as a GoGloby client, but Disney is not listed in the Fact Sheet.",
+        "fix": "Remove the Disney logo from the client row unless the company confirms the client relationship.",
+        "subject": "Disney",
+        "page_value": "Client logo",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "image 18",
+            "quote": "logo-disney-1-grayscale.png",
+            "verified": true,
+            "fragment": null
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Novilab is not a listed client",
+        "category": "unknown_client",
+        "severity": "high",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The page describes Novilab as an active GoGloby engagement, but Novilab is not listed in the Fact Sheet.",
+        "fix": "Remove the client claim unless the company confirms the relationship and adds it to the source of truth.",
+        "subject": "Novilab",
+        "page_value": "Active client engagement",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 8",
+            "quote": "An active GoGloby Applied AI Engineering engagement.",
+            "verified": true,
+            "fragment": "millions of patients.-,An active GoGloby Applied AI Engineering,-engagement."
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Hasbro figures differ",
+        "category": "client_figures",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The page gives Hasbro revenue as $4.7B, while the Fact Sheet gives approximately $5B; its market-cap figure is not in the Fact Sheet.",
+        "fix": "Replace the revenue figure with the Fact Sheet value and remove or verify the market-cap figure.",
+        "subject": "Hasbro",
+        "page_value": "$4.7B revenue; $13.4B market cap",
+        "source_value": "~$5B revenue; market cap not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 3",
+            "quote": "NYSE · $13.4B market cap · $4.7B revenue",
+            "verified": true,
+            "fragment": "NYSE · $13.4B market cap ·"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "DrChrono claims figure differs",
+        "category": "client_figures",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The page says DrChrono processes $3B+ in medical claims annually, while the Fact Sheet says $3B in claims processed; the annual qualifier and plus sign differ.",
+        "fix": "Use the Fact Sheet wording and figure, or verify the annual claim with the company.",
+        "subject": "DrChrono",
+        "page_value": "$3B+ medical claims annually",
+        "source_value": "$3B in medical claims processed",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 7",
+            "quote": "17M+ patients · $3B+ medical claims annually",
+            "verified": true,
+            "fragment": "17M+ patients · $3B+ medical claims"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Keywords figures differ",
+        "category": "client_figures",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The page gives Keywords Studios revenue as $844M and 13,000 employees, while the Fact Sheet gives approximately $879M and 12,000+ employees; the acquisition figure is not in the Fact Sheet.",
+        "fix": "Use the Fact Sheet figures and remove or verify the acquisition figure.",
+        "subject": "Keywords Studios",
+        "page_value": "$844M revenue; 13,000 employees; $2.8B acquisition",
+        "source_value": "~$879M revenue; 12,000+ employees; acquisition value not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 15",
+            "quote": "$2.8B EQT acquisition · $844M revenue · 13,000 employees",
+            "verified": true,
+            "fragment": "$2.8B EQT acquisition · $844M revenue"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "MikeWorldWide figures unverified",
+        "category": "client_figures",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The page gives MikeWorldWide fee income and staff figures that are not provided in the Fact Sheet.",
+        "fix": "Remove these figures or verify them with the company before publication.",
+        "subject": "MikeWorldWide",
+        "page_value": "$57M fee income; 230+ staff",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 19",
+            "quote": "$57M fee income · 230+ staff",
+            "verified": true,
+            "fragment": "$57M fee income · 230+ staff"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "TATA market cap unverified",
+        "category": "client_figures",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients; decisions.md: Clients",
+        "rule_verified": true,
+        "issue": "The page gives TATA a $106B market-cap figure that is not provided in the Fact Sheet.",
+        "fix": "Remove or verify the market-cap figure; the TATA client listing itself is approved.",
+        "subject": "TATA",
+        "page_value": "$106B market cap",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 23",
+            "quote": "$106B market cap · $30B revenue",
+            "verified": true,
+            "fragment": "$106B market cap · $30B revenue"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Sydecar assets figure differs",
+        "category": "client_figures",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The page gives Sydecar $3B+ AUA, while the Fact Sheet gives $1B+ assets under administration; the growth figure is also not in the Fact Sheet.",
+        "fix": "Use the Fact Sheet assets figure and remove or verify the growth claim.",
+        "subject": "Sydecar",
+        "page_value": "$3B+ AUA; 107% YoY revenue growth",
+        "source_value": "$1B+ assets under administration; growth figure not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 31",
+            "quote": "$3B+ AUA · 107% YoY revenue growth",
+            "verified": true,
+            "fragment": "$3B+ AUA · 107% YoY revenue"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Novilab figures unverified",
+        "category": "client_figures",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The page gives Novilab funding and capital-allocation figures that are not provided in the Fact Sheet.",
+        "fix": "Remove or verify the figures and client relationship before publication.",
+        "subject": "Novilab",
+        "page_value": "$46M raised; $50B+ capital allocation decisions",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 35",
+            "quote": "Series B · $46M raised · $50B+ capital allocation decisions",
+            "verified": true,
+            "fragment": "Series B · $46M raised ·"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Bonusly funding figure differs",
+        "category": "client_figures",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The page says Bonusly raised $32.4M, while the Fact Sheet gives $20M; its client count is not in the Fact Sheet.",
+        "fix": "Use the Fact Sheet funding figure and remove or verify the client-count figure.",
+        "subject": "Bonusly",
+        "page_value": "$32.4M raised; 3,400+ clients",
+        "source_value": "$20M raised; client count not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 39",
+            "quote": "Series B · $32.4M raised · 3,400+ clients",
+            "verified": true,
+            "fragment": "Series B ·,-$46M raised ·"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Every figures unverified",
+        "category": "client_figures",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The page gives Every payroll and tax-penalty figures that are not provided in the Fact Sheet.",
+        "fix": "Remove or verify these figures; do not treat them as sourced client facts.",
+        "subject": "Every.io",
+        "page_value": "$60M+ payroll processed; $0 in tax penalties",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 43",
+            "quote": "$32M raised · $60M+ payroll processed · $0 in tax penalties",
+            "verified": true,
+            "fragment": "$32M raised · $60M+ payroll processed"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Alchemy funding figure differs",
+        "category": "client_figures",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The page says Alchemy Health raised $31M, while the Fact Sheet gives $32M raised.",
+        "fix": "Replace the funding figure with the Fact Sheet value or verify the discrepancy with the company.",
+        "subject": "Alchemy Health",
+        "page_value": "$31M seed",
+        "source_value": "$32M raised",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 47",
+            "quote": "$31M seed · 25M+ prescriptions",
+            "verified": true,
+            "fragment": "$31M seed · 25M+ prescriptions"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Devsisters figures unverified",
+        "category": "client_figures",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The page gives Devsisters market-cap, user, spending and country figures that are not provided in the Fact Sheet; the Fact Sheet instead reports 200M+ players.",
+        "fix": "Use the Fact Sheet player figure and remove or verify the other figures.",
+        "subject": "Devsisters",
+        "page_value": "$299M market cap; 200M+ users; $500M+ spending; 243 countries",
+        "source_value": "200M+ players; other figures not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 51",
+            "quote": "Public · $299M market cap · 200M+ users · $500M+ lifetime player spending · 243 countries",
+            "verified": true,
+            "fragment": "Public · $299M market cap ·"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Regional contact details unverified",
+        "category": "contacts",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The page lists regional offices and contact emails that are not provided in the Fact Sheet.",
+        "fix": "Remove these details or verify each office and email with the company before publication.",
+        "subject": "Regional offices and contacts",
+        "page_value": "Argentina, Brazil, Mexico and EU offices; additional emails",
+        "source_value": "not in Fact Sheet",
+        "count": 5,
+        "locations": [
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": null,
+            "quote": "Office in Argentina: Av. Hipólito Yrigoyen 146, 15th Floor, Córdoba Business Tower, Córdoba, Argentina",
+            "verified": true,
+            "fragment": "Office in Argentina:"
+          },
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": null,
+            "quote": "Office in Brazil: Av. Alm. Barroso, 81, Centro, Rio de Janeiro, Brazil",
+            "verified": true,
+            "fragment": "Office in Brazil:"
+          },
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": null,
+            "quote": "Office in Mexico: Blvd. Miguel de Cervantes Saavedra 169, Granada, Miguel Hidalgo Mexico City, Mexico",
+            "verified": true,
+            "fragment": "Office in Mexico:"
+          },
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": null,
+            "quote": "Office in EU: Račianska 1575/78, 831 02 Bratislava, Slovakia",
+            "verified": true,
+            "fragment": "Office in EU:"
+          },
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "paragraph 5",
+            "quote": "sales@gogloby.com hr@gogloby.com",
+            "verified": true,
+            "fragment": "sales@gogloby.com hr@gogloby.com"
+          }
+        ],
+        "location_unverified": false
+      }
+    ],
+    "usage": {
+      "input": 15190,
+      "cached_input": 0,
+      "output": 7083
+    },
+    "error": null
+  },
+  "geo": {
+    "hash": "9448c870ab98f98c9b21f2e48fb9575f2ef071a0591c513a5c855b3a8efa7c15",
+    "cached": false,
+    "code": [
+      {
+        "id": "home_title_exact",
+        "status": "fail",
+        "value": "\"Applied AI Company for Established Software\" (expected \"Data and AI Engineer Staffing and Recruiting Agency\")",
+        "places": [
+          {
+            "zone_id": "title",
+            "value": "Applied AI Company for Established Software"
+          }
+        ]
+      },
+      {
+        "id": "trap_terms",
+        "status": "pass",
+        "value": "none in title, H1, meta, og",
+        "places": []
+      },
+      {
+        "id": "nearshore_not_first",
+        "status": "pass",
+        "value": "not in block:hero-services#1",
+        "places": []
+      },
+      {
+        "id": "faq_present",
+        "status": "pass",
+        "value": "block:accordion-1#1, FAQPage schema"
+      },
+      {
+        "id": "em_dash",
+        "status": "fail",
+        "value": "10 found",
+        "places": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 4",
+            "value": "— | … The Gathering, and Peppa Pig — dominating the $46B North Ame…"
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 8",
+            "value": "— | …’s most trusted EHR platforms — powering telehealth, clinical…"
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 12",
+            "value": "— | …sinesses across North America — built through aggressive acqu…"
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 16",
+            "value": "— | …1 video game services company — trusted by 24 of the top 25 g…"
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 20",
+            "value": "— | …pendent PR agencies in the US — a blue-chip roster spanning t…"
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 24",
+            "value": "— | … largest technology companies — serving 1/3 of the Fortune 50…"
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 28",
+            "value": "— | …ccounting firms across the US — covering CRM, billing, docume…"
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 40",
+            "value": "— | …ecognition platform in the US — trusted by some of the fastes…"
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 48",
+            "value": "— | …by the co-founder of Truepill — building in-house pharmacy in…"
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 52",
+            "value": "— | …rean studio behind Cookie Run — one of mobile gaming’s most g…"
+          }
+        ]
+      },
+      {
+        "id": "ampersand",
+        "status": "fail",
+        "value": "5 found",
+        "places": [
+          {
+            "zone_id": "h1",
+            "value": "& | Uncover & Fix What’s Holding Your AI En…"
+          },
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "heading 1",
+            "value": "& | Uncover & Fix What’s Holding Your AI En…"
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 19",
+            "value": "& | … fee income · 230+ staff · US & UK · Amazon · NFL · Deloitte …"
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 34",
+            "value": "& | Oil & Gas"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "heading 5",
+            "value": "& | We follow data & security practices:"
+          }
+        ]
+      },
+      {
+        "id": "uk_spelling",
+        "status": "pass",
+        "value": "none",
+        "places": []
+      }
+    ],
+    "llm": [
+      {
+        "id": "answer_first",
+        "answer": "no",
+        "value": null,
+        "zone_id": "block:hero-services#1",
+        "evidence": "TURN ENGINEERING INTO AI-NATIVE PRODUCTION GoGloby is an Applied AI Engineering partner.",
+        "note": "The first two sentences do not answer what is holding the reader’s AI engineering back; answer the H1 directly.",
+        "evidence_verified": true,
+        "fragment": "TURN ENGINEERING INTO AI-NATIVE PRODUCTION"
+      },
+      {
+        "id": "buyer_problem",
+        "answer": "no",
+        "value": null,
+        "zone_id": "block:hero-services#1",
+        "evidence": "TURN ENGINEERING INTO AI-NATIVE PRODUCTION",
+        "note": "The page opens with a general engineering-delivery claim, not one of the three specified buyer problems; open with a stated buyer problem.",
+        "evidence_verified": true,
+        "fragment": "TURN ENGINEERING INTO AI-NATIVE PRODUCTION"
+      },
+      {
+        "id": "lead_with_hire",
+        "answer": "no",
+        "value": null,
+        "zone_id": "block:hero-services#1",
+        "evidence": "We prove AI ROI. Every embedded team comes with the AI Intelligence Layer: every AI dollar visible, cost and return per shipped feature, month over month.",
+        "note": "The page leads with positioning and AI ROI rather than the hire, and introduces the Intelligence Layer before the assessment and guarantees; reorder the page as specified.",
+        "evidence_verified": true,
+        "fragment": "We prove AI ROI."
+      },
+      {
+        "id": "recruiting_firm_early",
+        "answer": "no",
+        "value": null,
+        "zone_id": "block:hero-services#1",
+        "evidence": "We recruit US AI leaders.",
+        "note": "The page offers recruiting but does not identify GoGloby as a recruiting firm in its first lines; state that identity early.",
+        "evidence_verified": true,
+        "fragment": "We recruit US AI leaders."
+      },
+      {
+        "id": "faq_quality",
+        "answer": "yes",
+        "value": null,
+        "zone_id": "block:accordion-1#1",
+        "evidence": "The AI Intelligence Layer connects AI spending with engineering work. It shows what work costs, where AI is being used, and how those numbers change against the team’s baseline.",
+        "note": "The FAQ answers are direct and can be understood when quoted individually.",
+        "evidence_verified": true,
+        "fragment": "team comes with-,the AI Intelligence,-Layer: every AI"
+      },
+      {
+        "id": "buyer_ready",
+        "answer": "yes",
+        "value": "buyer_ready",
+        "zone_id": "page",
+        "evidence": "GoGloby is for established B2B software companies, usually a CTO or VP of Engineering with a 20+ engineering org and an AI budget already spent.",
+        "note": "The page addresses software-company engineering decision-makers and presents engineering hiring and staffing services.",
+        "evidence_verified": true,
+        "fragment": "GoGloby is for established B2B software"
+      },
+      {
+        "id": "target_keyword",
+        "answer": "yes",
+        "value": "AI engineer staffing",
+        "zone_id": "page",
+        "evidence": null,
+        "note": "“AI engineer staffing” is the Glossary’s primary homepage and staffing positioning term.",
+        "evidence_verified": null
+      }
+    ],
+    "placement": {
+      "id": "target_keyword_placement",
+      "status": "fail",
+      "value": "AI engineer staffing",
+      "missing": [
+        "title",
+        "h1",
+        "first_paragraph",
+        "meta_description",
+        "h2"
+      ]
+    },
+    "usage": {
+      "input": 13158,
+      "cached_input": 0,
+      "output": 1540
+    },
+    "error": null
+  },
+  "seo": {
+    "checks": [
+      {
+        "id": "http_status",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "200",
+        "severity": "high"
+      },
+      {
+        "id": "title_length",
+        "status": "pass",
+        "zone_id": "title",
+        "value": "53 characters",
+        "severity": "medium"
+      },
+      {
+        "id": "meta_present",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "146 characters",
+        "severity": "high"
+      },
+      {
+        "id": "meta_length",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "146 characters (120-158)",
+        "severity": "low"
+      },
+      {
+        "id": "h1_count",
+        "status": "pass",
+        "zone_id": "h1",
+        "value": "1",
+        "severity": "high"
+      },
+      {
+        "id": "canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "https://gogloby.com/",
+        "severity": "high"
+      },
+      {
+        "id": "indexable",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "severity": "high"
+      },
+      {
+        "id": "schema_required",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "present",
+        "severity": "medium"
+      },
+      {
+        "id": "broken_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "2 checked",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "redirecting_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "none",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "link_to_services",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "no link to /services/*",
+        "severity": "medium"
+      },
+      {
+        "id": "alt_missing",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without alt",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_empty",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "27 with empty alt",
+        "places": [
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "image 17",
+            "value": "logo-deel-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "image 18",
+            "value": "logo-disney-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:company#1",
+            "part": "image 1",
+            "value": "company-icon-18-01.png"
+          },
+          {
+            "zone_id": "block:company#1",
+            "part": "image 2",
+            "value": "company-icon-19-01.png"
+          },
+          {
+            "zone_id": "block:company#1",
+            "part": "image 3",
+            "value": "company-icon-20-01.png"
+          },
+          {
+            "zone_id": "block:company#1",
+            "part": "image 4",
+            "value": "company-icon-21-01.png"
+          },
+          {
+            "zone_id": "block:company#1",
+            "part": "image 5",
+            "value": "company-icon-24-01.png"
+          },
+          {
+            "zone_id": "block:company#1",
+            "part": "image 6",
+            "value": "company-icon-11-01.png"
+          },
+          {
+            "zone_id": "block:security#1",
+            "part": "image 1",
+            "value": "our-difference-icon-1-01.png"
+          },
+          {
+            "zone_id": "block:security#1",
+            "part": "image 2",
+            "value": "our-difference-icon-2-01.png"
+          },
+          {
+            "zone_id": "block:security#1",
+            "part": "image 3",
+            "value": "our-difference-icon-3-01.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 1",
+            "value": "logo-hasbro-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 2",
+            "value": "logo-hubspot-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 3",
+            "value": "logo-carta-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 4",
+            "value": "logo-oyster-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 5",
+            "value": "logo-deel-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 6",
+            "value": "logo-evercommerce-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 7",
+            "value": "logo-forbes-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 8",
+            "value": "logo-crunchbase-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 9",
+            "value": "logo-london-daily-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 10",
+            "value": "logo-nbc-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 11",
+            "value": "logo-fox-news-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 12",
+            "value": "logo-clutch-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 13",
+            "value": "logo-trustpilot-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 14",
+            "value": "logo-linkedin-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 15",
+            "value": "logo-aicpa-soc2-type2-1-white-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 16",
+            "value": "logo-ism-iso-27001-1-grayscale.png"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "image_dimensions",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "8 without width/height",
+        "places": [
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "image 1",
+            "value": "block-bg-1-01.png"
+          },
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "image 2",
+            "value": "block-bg-2-01.png"
+          },
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "image 3",
+            "value": "block-bg-3-01.png"
+          },
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "image 1",
+            "value": "map-1-layer-usa-01.png"
+          },
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "image 2",
+            "value": "map-1-layer-argentina-01.png"
+          },
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "image 3",
+            "value": "map-1-layer-brazil-01.png"
+          },
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "image 4",
+            "value": "map-1-layer-mexico-01.png"
+          },
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "image 5",
+            "value": "map-1-layer-eu-01.png"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "heading_order",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "og_present",
+        "status": "pass",
+        "zone_id": "og_title",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "og_url_canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "og:url https://gogloby.com/ vs canonical https://gogloby.com/",
+        "severity": "low"
+      },
+      {
+        "id": "twitter_card",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "summary_large_image",
+        "severity": "low"
+      },
+      {
+        "id": "html_lang",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "en-US",
+        "severity": "low"
+      },
+      {
+        "id": "viewport",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "jsonld_valid",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "3 block(s)",
+        "severity": "high"
+      },
+      {
+        "id": "anchors_resolve",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 checked",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "faq_schema_matches_dom",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "accordion block: true, FAQPage schema: true",
+        "severity": "low"
+      }
+    ]
+  }
+}

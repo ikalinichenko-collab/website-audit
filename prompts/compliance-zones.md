@@ -115,7 +115,13 @@ page says about GoGloby.
   page) and quote: exact text copied from that zone, up to 15 words, no "..."
   inside. A quote must contain the problem it illustrates (a quote about a
   client names the client). Never use a quote that is correct as an example of
-  a problem, and never combine text from two zones.
+  a problem, and never combine text from two zones. List a place only if the
+  quote shows the problem by itself; do not list text that is merely nearby or
+  related.
+- reason (inside each location): one sentence for that place alone. Say what
+  this text states or promises and why that is the problem. Be specific to the
+  quote: a meta description and a paragraph are different reasons, even when
+  the issue is the same. Do not repeat the issue sentence.
 - subject: the company, person or thing the problem is about (e.g. "Hasbro",
   "Staffing start time"), or null.
 - page_value: the value on the page, short (e.g. "$4.7B revenue"), or null.

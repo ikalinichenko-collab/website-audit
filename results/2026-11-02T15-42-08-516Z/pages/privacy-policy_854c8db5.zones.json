@@ -1,0 +1,1812 @@
+{
+ "template": "legal",
+ "zones": [
+  {
+   "id": "title",
+   "kind": "title",
+   "label": "Title",
+   "scope": "page",
+   "skipped": false,
+   "text": "Privacy Policy | Globy",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Privacy Policy | Globy"
+    }
+   ]
+  },
+  {
+   "id": "meta_description",
+   "kind": "meta_description",
+   "label": "Meta description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Read Globy's privacy policy to learn how we handle and protect your personal information while you use our services.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Read Globy's privacy policy to learn how we handle and protect your personal information while you use our services."
+    }
+   ]
+  },
+  {
+   "id": "og_title",
+   "kind": "og_title",
+   "label": "og:title",
+   "scope": "page",
+   "skipped": false,
+   "text": "Privacy Policy | Globy",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Privacy Policy | Globy"
+    }
+   ]
+  },
+  {
+   "id": "og_description",
+   "kind": "og_description",
+   "label": "og:description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Read Globy's privacy policy to learn how we handle and protect your personal information while you use our services.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Read Globy's privacy policy to learn how we handle and protect your personal information while you use our services."
+    }
+   ]
+  },
+  {
+   "id": "h1",
+   "kind": "h1",
+   "label": "H1",
+   "scope": "page",
+   "skipped": false,
+   "text": "Privacy Policy and Candidate Privacy Notice",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Privacy Policy and Candidate Privacy Notice"
+    }
+   ]
+  },
+  {
+   "id": "article:intro",
+   "kind": "article_section",
+   "label": "Intro",
+   "scope": "page",
+   "skipped": false,
+   "text": "GoGloby LLC\nEffective Date: September 16, 2026 Last Updated: September 16, 2026\nGoGloby LLC (“GoGloby,” “we,” “us,” or “our”) respects your privacy and is committed to handling personal information responsibly, transparently, and in accordance with applicable privacy and data protection laws.\nThis Privacy Policy and Candidate Privacy Notice explains how we collect, use, disclose, store, and protect personal information when you:\nvisit or interact with gogloby.com and related GoGloby websites;\nsubmit a contact, inquiry, or application form;\napply for a job, contractor position, project, placement, or other professional opportunity through GoGloby;\ncommunicate with our recruiting or business teams by email, telephone, WhatsApp, LinkedIn, video call, or similar channels; or\notherwise participate in a recruiting or selection process operated by GoGloby.\nThis Notice is intended to apply to individuals in the United States, the European Economic Area (“EEA”), and Latin America, subject to the specific rights and requirements of applicable local law.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "GoGloby LLC",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Effective Date: September 16, 2026 Last Updated: September 16, 2026",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby LLC (“GoGloby,” “we,” “us,” or “our”) respects your privacy and is committed to handling personal information responsibly, transparently, and in accordance with applicable privacy and data protection laws.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "This Privacy Policy and Candidate Privacy Notice explains how we collect, use, disclose, store, and protect personal information when you:",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "visit or interact with gogloby.com and related GoGloby websites;",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "submit a contact, inquiry, or application form;",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "apply for a job, contractor position, project, placement, or other professional opportunity through GoGloby;",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "communicate with our recruiting or business teams by email, telephone, WhatsApp, LinkedIn, video call, or similar channels; or",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "otherwise participate in a recruiting or selection process operated by GoGloby.",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "This Notice is intended to apply to individuals in the United States, the European Economic Area (“EEA”), and Latin America, subject to the specific rights and requirements of applicable local law.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:1-who-is-responsible-for-your-personal-informati",
+   "kind": "article_section",
+   "label": "1. Who Is Responsible for Your Personal Information",
+   "scope": "page",
+   "skipped": false,
+   "text": "1. Who Is Responsible for Your Personal Information\nGoGloby LLC is generally the controller or business responsible for determining how and why personal information covered by this Notice is processed.\nOur headquarters are:\nGoGloby LLC 8 The Green, Ste. R Dover, Delaware 19901 United States\nGoGloby also operates through teams and business locations in Latin America and Europe. Depending on the particular opportunity and the entity involved in the recruiting process, a GoGloby affiliate or another entity identified to you may also act as a controller of your personal information.\nFor privacy questions or requests, contact:\nEmail: hr@gogloby.com\nFor EEA-related inquiries, you may also contact us through our European business location: Račianska 1575/78 831 02 Bratislava Slovakia",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "1. Who Is Responsible for Your Personal Information",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby LLC is generally the controller or business responsible for determining how and why personal information covered by this Notice is processed.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Our headquarters are:",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby LLC 8 The Green, Ste. R Dover, Delaware 19901 United States",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby also operates through teams and business locations in Latin America and Europe. Depending on the particular opportunity and the entity involved in the recruiting process, a GoGloby affiliate or another entity identified to you may also act as a controller of your personal information.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "For privacy questions or requests, contact:",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Email: hr@gogloby.com",
+     "links": [
+      {
+       "href": "/cdn-cgi/l/email-protection#0e667c4e69616962616c77206d6163",
+       "text": "hr@gogloby.com"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "For EEA-related inquiries, you may also contact us through our European business location: Račianska 1575/78 831 02 Bratislava Slovakia",
+     "index": 7
+    }
+   ]
+  },
+  {
+   "id": "article:2-personal-information-we-collect",
+   "kind": "article_section",
+   "label": "2. Personal Information We Collect",
+   "scope": "page",
+   "skipped": false,
+   "text": "2. Personal Information We Collect\nCandidate and Applicant Information\nWhen you submit an application to GoGloby, we may collect information including: Identity and contact information , such as your full name, email address, telephone or WhatsApp number, country or general location, and LinkedIn profile URL.\nProfessional and career information , such as your résumé or CV, employment history, job titles, education, certifications, professional qualifications, technical skills, portfolio information, and information available through professional profiles you provide to us.\nApplication preferences , such as the role or type of opportunity for which you would like to be considered. Language information, such as your stated English proficiency level where language proficiency is relevant to an opportunity.\nLanguage information , such as your stated English proficiency level where language proficiency is relevant to an opportunity.\nCompensation information , such as your expected monthly salary or compensation expectations.\nRecruitment and assessment information , such as interview notes, recruiter evaluations, technical assessment results, scheduling information, communications with our recruiting team, and other information generated during a selection process.\nInformation contained in your résumé or other documents. A résumé may contain additional information that you voluntarily provide. We ask that you avoid including information that is not relevant to your application.\nSensitive Personal Information\nGoGloby’s standard application form does not ask candidates to provide sensitive information such as medical information, genetic or biometric data, religious or philosophical beliefs, political opinions, trade-union membership, sexual orientation, government identification numbers, financial account details, or similar sensitive information.\nPlease do not include sensitive personal information in your résumé or application unless GoGloby specifically requests it for a lawful purpose.\nIf sensitive information is processed because it is required by law or necessary for a legitimate recruiting or employment-related purpose, we will process it only where permitted by applicable law and with appropriate safeguards.\nWebsite and Technical Information\nWhen you use our website or online forms, we or our service providers may automatically process technical information such as IP address, browser and device information, operating system, referring pages, timestamps, pages viewed, and interactions with our website.\nWe may also use cookies and similar technologies as described in Section 10.\nInformation From Other Sources\nIn some circumstances, we may receive candidate information from recruiters, employee referrals, professional networking platforms, recruiting partners, prospective clients, or publicly available professional sources.\nWhere required by applicable law, we will provide appropriate information about our processing when we first contact you or within the period required by law.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "2. Personal Information We Collect",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Candidate and Applicant Information",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "When you submit an application to GoGloby, we may collect information including: Identity and contact information , such as your full name, email address, telephone or WhatsApp number, country or general location, and LinkedIn profile URL.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Professional and career information , such as your résumé or CV, employment history, job titles, education, certifications, professional qualifications, technical skills, portfolio information, and information available through professional profiles you provide to us.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Application preferences , such as the role or type of opportunity for which you would like to be considered. Language information, such as your stated English proficiency level where language proficiency is relevant to an opportunity.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Language information , such as your stated English proficiency level where language proficiency is relevant to an opportunity.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Compensation information , such as your expected monthly salary or compensation expectations.",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Recruitment and assessment information , such as interview notes, recruiter evaluations, technical assessment results, scheduling information, communications with our recruiting team, and other information generated during a selection process.",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Information contained in your résumé or other documents. A résumé may contain additional information that you voluntarily provide. We ask that you avoid including information that is not relevant to your application.",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "Sensitive Personal Information",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby’s standard application form does not ask candidates to provide sensitive information such as medical information, genetic or biometric data, religious or philosophical beliefs, political opinions, trade-union membership, sexual orientation, government identification numbers, financial account details, or similar sensitive information.",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Please do not include sensitive personal information in your résumé or application unless GoGloby specifically requests it for a lawful purpose.",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "If sensitive information is processed because it is required by law or necessary for a legitimate recruiting or employment-related purpose, we will process it only where permitted by applicable law and with appropriate safeguards.",
+     "index": 10
+    },
+    {
+     "type": "heading",
+     "text": "Website and Technical Information",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "When you use our website or online forms, we or our service providers may automatically process technical information such as IP address, browser and device information, operating system, referring pages, timestamps, pages viewed, and interactions with our website.",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "We may also use cookies and similar technologies as described in Section 10.",
+     "index": 12
+    },
+    {
+     "type": "heading",
+     "text": "Information From Other Sources",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "In some circumstances, we may receive candidate information from recruiters, employee referrals, professional networking platforms, recruiting partners, prospective clients, or publicly available professional sources.",
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Where required by applicable law, we will provide appropriate information about our processing when we first contact you or within the period required by law.",
+     "index": 14
+    }
+   ]
+  },
+  {
+   "id": "article:3-how-we-use-candidate-information",
+   "kind": "article_section",
+   "label": "3. How We Use Candidate Information",
+   "scope": "page",
+   "skipped": false,
+   "text": "3. How We Use Candidate Information\nWe may process candidate personal information to receive and manage applications; communicate with candidates; determine whether a candidate’s experience, skills, language abilities, compensation expectations, availability, and other qualifications match an opportunity; conduct interviews and assessments; schedule recruiting activities; maintain records of the recruiting process; verify information where appropriate; protect GoGloby’s systems and recruiting processes against fraud, misuse, or security incidents; comply with legal and regulatory requirements; establish, exercise, or defend legal claims; and improve our recruiting operations.\nWhere relevant to GoGloby’s staffing, consulting, or talent-placement activities, we may also evaluate whether your professional profile is suitable for an opportunity with a GoGloby client.\nIf we would like to retain your information for opportunities that arise after your current application has concluded, we will do so as described under “Future Opportunities and Talent Pool” below.\nWe will not use candidate personal information for unrelated advertising purposes.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "3. How We Use Candidate Information",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "We may process candidate personal information to receive and manage applications; communicate with candidates; determine whether a candidate’s experience, skills, language abilities, compensation expectations, availability, and other qualifications match an opportunity; conduct interviews and assessments; schedule recruiting activities; maintain records of the recruiting process; verify information where appropriate; protect GoGloby’s systems and recruiting processes against fraud, misuse, or security incidents; comply with legal and regulatory requirements; establish, exercise, or defend legal claims; and improve our recruiting operations.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Where relevant to GoGloby’s staffing, consulting, or talent-placement activities, we may also evaluate whether your professional profile is suitable for an opportunity with a GoGloby client.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "If we would like to retain your information for opportunities that arise after your current application has concluded, we will do so as described under “Future Opportunities and Talent Pool” below.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "We will not use candidate personal information for unrelated advertising purposes.",
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "article:4-future-opportunities-and-talent-pool",
+   "kind": "article_section",
+   "label": "4. Future Opportunities and Talent Pool",
+   "scope": "page",
+   "skipped": false,
+   "text": "4. Future Opportunities and Talent Pool\nIf you choose to participate in our talent pool, GoGloby may retain your candidate profile and contact you about future roles or professional opportunities that may reasonably match your background.\nFor candidates in jurisdictions where consent is required, participation in the talent pool is voluntary and based on your consent.\nDeclining to join the talent pool will not negatively affect consideration of your current application.\nYou may withdraw your consent or ask us to remove you from the talent pool at any time by contacting us at the privacy email listed above.\nUnless a different period is disclosed to you, talent-pool information will be retained for up to 24 months after your consent or your last meaningful interaction with GoGloby , after which we will delete the information, anonymize it, or ask you whether you wish to remain in the talent pool.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "4. Future Opportunities and Talent Pool",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "If you choose to participate in our talent pool, GoGloby may retain your candidate profile and contact you about future roles or professional opportunities that may reasonably match your background.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "For candidates in jurisdictions where consent is required, participation in the talent pool is voluntary and based on your consent.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Declining to join the talent pool will not negatively affect consideration of your current application.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "You may withdraw your consent or ask us to remove you from the talent pool at any time by contacting us at the privacy email listed above.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Unless a different period is disclosed to you, talent-pool information will be retained for up to 24 months after your consent or your last meaningful interaction with GoGloby , after which we will delete the information, anonymize it, or ask you whether you wish to remain in the talent pool.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:5-legal-bases-for-processing",
+   "kind": "article_section",
+   "label": "5. Legal Bases for Processing",
+   "scope": "page",
+   "skipped": false,
+   "text": "5. Legal Bases for Processing\nThe legal basis on which GoGloby processes your personal information depends on your location and the particular processing activity.\nFor candidates in the EEA, processing may be necessary to take steps at your request before entering into an employment, contractor, or other professional relationship; necessary for GoGloby’s legitimate interests in operating an appropriate and effective recruiting process, matching candidates to roles, maintaining recruiting records, protecting our systems, and establishing or defending legal claims; necessary to comply with legal obligations; or based on your consent where consent is the appropriate basis, including certain future-opportunity activities.\nWhere we rely on legitimate interests, we consider whether our interests are proportionate and whether your rights and interests require additional safeguards.\nWhere processing is based on consent, you may withdraw consent at any time. Withdrawal does not affect processing that occurred lawfully before withdrawal.\nFor candidates in Brazil, Mexico, Argentina, Colombia, Peru, Chile, and other Latin American jurisdictions, we process personal information under the legal grounds permitted by applicable local law, which may include consent or authorization, steps related to a potential contractual relationship, legitimate interests where recognized, compliance with legal obligations, or the establishment and defense of legal rights.\nFor U.S. candidates, we process applicant information for recruiting, employment, contractor-placement, security, legal-compliance, and related business purposes as permitted by applicable federal and state law.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "5. Legal Bases for Processing",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The legal basis on which GoGloby processes your personal information depends on your location and the particular processing activity.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "For candidates in the EEA, processing may be necessary to take steps at your request before entering into an employment, contractor, or other professional relationship; necessary for GoGloby’s legitimate interests in operating an appropriate and effective recruiting process, matching candidates to roles, maintaining recruiting records, protecting our systems, and establishing or defending legal claims; necessary to comply with legal obligations; or based on your consent where consent is the appropriate basis, including certain future-opportunity activities.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Where we rely on legitimate interests, we consider whether our interests are proportionate and whether your rights and interests require additional safeguards.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Where processing is based on consent, you may withdraw consent at any time. Withdrawal does not affect processing that occurred lawfully before withdrawal.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "For candidates in Brazil, Mexico, Argentina, Colombia, Peru, Chile, and other Latin American jurisdictions, we process personal information under the legal grounds permitted by applicable local law, which may include consent or authorization, steps related to a potential contractual relationship, legitimate interests where recognized, compliance with legal obligations, or the establishment and defense of legal rights.",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "For U.S. candidates, we process applicant information for recruiting, employment, contractor-placement, security, legal-compliance, and related business purposes as permitted by applicable federal and state law.",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "article:6-how-we-share-candidate-information",
+   "kind": "article_section",
+   "label": "6. How We Share Candidate Information",
+   "scope": "page",
+   "skipped": false,
+   "text": "6. How We Share Candidate Information\nAccess to candidate information is limited to persons and organizations that reasonably need the information for the purposes described in this Notice.\nThese may include GoGloby recruiters, hiring managers, interviewers, administrators, and authorized personnel; GoGloby affiliates and related entities involved in recruiting; technology providers that support application forms, cloud hosting, recruiting systems, email, communications, scheduling, video conferencing, assessments, analytics, security, or document storage; legal, accounting, compliance, insurance, and other professional advisers; and governmental, regulatory, judicial, or law-enforcement authorities when disclosure is required or permitted by law.\nGoGloby currently uses Tally to collect candidate applications submitted through certain online application forms.\nWhere we are recruiting or evaluating candidates for an opportunity involving a GoGloby client, we may disclose relevant professional information to that client for evaluation. We will limit such disclosures to information reasonably necessary for the opportunity and will obtain additional authorization where required by applicable law.\nA client that receives candidate information for its own recruitment or engagement decisions may become an independent controller of that information and may provide its own privacy notice.\nWe may also disclose information in connection with a merger, acquisition, investment, financing, restructuring, sale of assets, or similar corporate transaction, subject to appropriate confidentiality and legal protections.\nWe do not sell candidate application information for monetary consideration.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "6. How We Share Candidate Information",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Access to candidate information is limited to persons and organizations that reasonably need the information for the purposes described in this Notice.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "These may include GoGloby recruiters, hiring managers, interviewers, administrators, and authorized personnel; GoGloby affiliates and related entities involved in recruiting; technology providers that support application forms, cloud hosting, recruiting systems, email, communications, scheduling, video conferencing, assessments, analytics, security, or document storage; legal, accounting, compliance, insurance, and other professional advisers; and governmental, regulatory, judicial, or law-enforcement authorities when disclosure is required or permitted by law.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby currently uses Tally to collect candidate applications submitted through certain online application forms.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Where we are recruiting or evaluating candidates for an opportunity involving a GoGloby client, we may disclose relevant professional information to that client for evaluation. We will limit such disclosures to information reasonably necessary for the opportunity and will obtain additional authorization where required by applicable law.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "A client that receives candidate information for its own recruitment or engagement decisions may become an independent controller of that information and may provide its own privacy notice.",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "We may also disclose information in connection with a merger, acquisition, investment, financing, restructuring, sale of assets, or similar corporate transaction, subject to appropriate confidentiality and legal protections.",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "We do not sell candidate application information for monetary consideration.",
+     "index": 7
+    }
+   ]
+  },
+  {
+   "id": "article:7-international-transfers",
+   "kind": "article_section",
+   "label": "7. International Transfers",
+   "scope": "page",
+   "skipped": false,
+   "text": "7. International Transfers\nGoGloby operates internationally. As a result, candidate information may be accessed, processed, or transferred between the United States, Latin America, Europe, and other locations where GoGloby, its clients, or service providers operate.\nWhen applicable data protection law requires safeguards for an international transfer, GoGloby will use an appropriate legal mechanism.\nFor EEA personal data, such mechanisms may include an adequacy decision, approved Standard Contractual Clauses, or another mechanism permitted under applicable European data protection law.\nFor personal data subject to Brazil’s Lei Geral de Proteção de Dados Pessoais (“LGPD”), GoGloby will use mechanisms permitted by the LGPD and applicable rules of Brazil’s Autoridade Nacional de Proteção de Dados (“ANPD”), as appropriate.\nFor other jurisdictions, we will use contractual, consent-based, adequacy, or other transfer mechanisms required by applicable local law.\nYou may contact us for additional information concerning safeguards applicable to transfers of your personal information.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "7. International Transfers",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby operates internationally. As a result, candidate information may be accessed, processed, or transferred between the United States, Latin America, Europe, and other locations where GoGloby, its clients, or service providers operate.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "When applicable data protection law requires safeguards for an international transfer, GoGloby will use an appropriate legal mechanism.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "For EEA personal data, such mechanisms may include an adequacy decision, approved Standard Contractual Clauses, or another mechanism permitted under applicable European data protection law.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "For personal data subject to Brazil’s Lei Geral de Proteção de Dados Pessoais (“LGPD”), GoGloby will use mechanisms permitted by the LGPD and applicable rules of Brazil’s Autoridade Nacional de Proteção de Dados (“ANPD”), as appropriate.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "For other jurisdictions, we will use contractual, consent-based, adequacy, or other transfer mechanisms required by applicable local law.",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "You may contact us for additional information concerning safeguards applicable to transfers of your personal information.",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "article:8-data-retention",
+   "kind": "article_section",
+   "label": "8. Data Retention",
+   "scope": "page",
+   "skipped": false,
+   "text": "8. Data Retention\nGoGloby retains personal information only for as long as reasonably necessary for the purpose for which it was collected and as required or permitted by applicable law.\nFor an active application, we retain information while the recruiting or selection process remains open.\nIf you are not selected, we generally retain ordinary recruitment records for up to 12 months following the conclusion of the application process , unless applicable law requires or justifies a different period, including for the establishment, exercise, or defense of legal claims.\nIf you voluntarily participate in our future-opportunities talent pool, we may retain your candidate information for up to 24 months from your consent or last meaningful interaction with us .\nIf you become an employee or contractor, relevant information may become part of your personnel or contractor record and will be handled under the applicable workforce privacy and retention rules.\nInformation that must be retained to comply with law, respond to a dispute, investigate misconduct, protect legal rights, or satisfy recordkeeping requirements may be retained for the applicable limitation or statutory period.\nInformation held in service-provider backup, recovery, or deletion systems may remain for a limited additional period before permanent deletion.\nWhen retention is no longer justified, we will delete, securely dispose of, or anonymize the information.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "8. Data Retention",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby retains personal information only for as long as reasonably necessary for the purpose for which it was collected and as required or permitted by applicable law.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "For an active application, we retain information while the recruiting or selection process remains open.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "If you are not selected, we generally retain ordinary recruitment records for up to 12 months following the conclusion of the application process , unless applicable law requires or justifies a different period, including for the establishment, exercise, or defense of legal claims.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "If you voluntarily participate in our future-opportunities talent pool, we may retain your candidate information for up to 24 months from your consent or last meaningful interaction with us .",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "If you become an employee or contractor, relevant information may become part of your personnel or contractor record and will be handled under the applicable workforce privacy and retention rules.",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Information that must be retained to comply with law, respond to a dispute, investigate misconduct, protect legal rights, or satisfy recordkeeping requirements may be retained for the applicable limitation or statutory period.",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Information held in service-provider backup, recovery, or deletion systems may remain for a limited additional period before permanent deletion.",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "When retention is no longer justified, we will delete, securely dispose of, or anonymize the information.",
+     "index": 8
+    }
+   ]
+  },
+  {
+   "id": "article:9-security",
+   "kind": "article_section",
+   "label": "9. Security",
+   "scope": "page",
+   "skipped": false,
+   "text": "9. Security\nGoGloby uses administrative, technical, and organizational safeguards designed to protect personal information against unauthorized access, disclosure, alteration, loss, destruction, or misuse.\nAccess to candidate information is intended to be limited according to business need and appropriate access controls.\nOur service providers are expected to provide appropriate security and confidentiality protections for personal information processed on our behalf.\nNo electronic transmission or storage method can be guaranteed to be completely secure. We therefore cannot guarantee absolute security, but we maintain safeguards appropriate to the nature of the information and relevant risks.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "9. Security",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby uses administrative, technical, and organizational safeguards designed to protect personal information against unauthorized access, disclosure, alteration, loss, destruction, or misuse.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Access to candidate information is intended to be limited according to business need and appropriate access controls.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Our service providers are expected to provide appropriate security and confidentiality protections for personal information processed on our behalf.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "No electronic transmission or storage method can be guaranteed to be completely secure. We therefore cannot guarantee absolute security, but we maintain safeguards appropriate to the nature of the information and relevant risks.",
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "article:10-cookies-analytics-and-website-information",
+   "kind": "article_section",
+   "label": "10. Cookies, Analytics, and Website Information",
+   "scope": "page",
+   "skipped": false,
+   "text": "10. Cookies, Analytics, and Website Information\nGoGloby may use cookies, analytics technologies, and similar tools to operate and understand the use of its websites.\nThese technologies may process information including IP address, browser and device information, referring pages, viewed pages, timestamps, and website interactions.\nWe may use analytics providers such as Google Analytics.\nWhere applicable law requires consent before non-essential analytics or similar technologies are used, we will request that consent through an appropriate consent mechanism.\nYou may also be able to control cookies through your browser or available cookie-preference tools.\nCandidate application information contained in a résumé or application form is not used by GoGloby for behavioral advertising.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "10. Cookies, Analytics, and Website Information",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby may use cookies, analytics technologies, and similar tools to operate and understand the use of its websites.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "These technologies may process information including IP address, browser and device information, referring pages, viewed pages, timestamps, and website interactions.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "We may use analytics providers such as Google Analytics.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Where applicable law requires consent before non-essential analytics or similar technologies are used, we will request that consent through an appropriate consent mechanism.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "You may also be able to control cookies through your browser or available cookie-preference tools.",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Candidate application information contained in a résumé or application form is not used by GoGloby for behavioral advertising.",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "article:11-automated-decision-making-and-artificial-inte",
+   "kind": "article_section",
+   "label": "11. Automated Decision-Making and Artificial Intelligence",
+   "scope": "page",
+   "skipped": false,
+   "text": "11. Automated Decision-Making and Artificial Intelligence\nGoGloby may use technology to assist with administrative recruiting tasks, candidate organization, matching, scheduling, or assessment.\nGoGloby does not make final hiring, engagement, or placement decisions based solely on automated processing that produces legal or similarly significant effects on a candidate unless such processing is permitted by applicable law and appropriate notice and safeguards are provided.\nWhere applicable law gives you rights concerning automated decision-making, you may request additional information or human review by contacting us.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "11. Automated Decision-Making and Artificial Intelligence",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby may use technology to assist with administrative recruiting tasks, candidate organization, matching, scheduling, or assessment.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby does not make final hiring, engagement, or placement decisions based solely on automated processing that produces legal or similarly significant effects on a candidate unless such processing is permitted by applicable law and appropriate notice and safeguards are provided.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Where applicable law gives you rights concerning automated decision-making, you may request additional information or human review by contacting us.",
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "article:12-your-privacy-rights",
+   "kind": "article_section",
+   "label": "12. Your Privacy Rights",
+   "scope": "page",
+   "skipped": false,
+   "text": "12. Your Privacy Rights\nDepending on where you live, applicable law may give you the right to request information about the personal information we process about you; obtain access to or a copy of your information; correct inaccurate or incomplete information; request deletion or cancellation; object to or restrict certain processing; withdraw consent; request portability where applicable; obtain information about recipients or transfers; request review of certain automated decisions; or submit a complaint to an applicable privacy or data protection authority.\nThese rights are not absolute and may be subject to legal exceptions. For example, we may retain information when required by law or where reasonably necessary to establish, exercise, or defend legal claims.\nTo exercise a privacy right, contact hr@gogloby.com and identify the right you wish to exercise.\nWe may need to verify your identity before completing a request. We will use information provided for verification only for that purpose and related legal compliance.\nWe will not discriminate or retaliate against you for exercising a privacy right.\nEEA Candidates\nIf the GDPR applies to our processing of your information, you may have rights of access, rectification, erasure, restriction, portability, objection, withdrawal of consent, and rights relating to certain automated decisions.\nYou also have the right to lodge a complaint with the data protection authority responsible for your country or place of residence, work, or alleged infringement.\nBrazil\nWhere the LGPD applies, you may exercise applicable rights provided to data subjects under Brazilian law, including confirmation of processing, access, correction, anonymization, blocking or deletion in applicable circumstances, information concerning sharing, withdrawal of consent, and other rights available under the LGPD.\nYou may also have the right to submit a petition to the ANPD in accordance with applicable procedures.\nMexico\nWhere Mexican data protection law applies, you may exercise applicable rights of access, rectification, cancellation, and opposition (“ARCO”), as well as applicable rights to revoke consent or limit the use or disclosure of personal data.\nArgentina\nWhere Argentine data protection law applies, you may exercise applicable rights concerning information, access, rectification, updating, and deletion or suppression of personal information and may have the right to submit a complaint to the Agencia de Acceso a la Información Pública (“AAIP”).\nColombia\nWhere Colombian data protection law applies, you may exercise applicable rights to know, access, update, rectify, or request deletion of personal information, revoke authorization where legally available, and submit complaints concerning data protection to the Superintendencia de Industria y Comercio (“SIC”).\nPeru\nWhere Peruvian data protection law applies, you may exercise applicable rights of information, access, rectification, cancellation, and opposition, together with other rights available under Peruvian data protection law.\nChile\nWhere Chilean data protection law applies, you may exercise the rights available under the applicable Chilean privacy and personal-data regime, including rights concerning access, rectification, deletion, opposition, and other rights introduced by applicable legislation.\nOther Latin American Countries\nCandidates located in other Latin American jurisdictions may exercise any additional rights granted by applicable national privacy or data protection law. Nothing in this Notice is intended to limit rights that cannot lawfully be waived.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "12. Your Privacy Rights",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Depending on where you live, applicable law may give you the right to request information about the personal information we process about you; obtain access to or a copy of your information; correct inaccurate or incomplete information; request deletion or cancellation; object to or restrict certain processing; withdraw consent; request portability where applicable; obtain information about recipients or transfers; request review of certain automated decisions; or submit a complaint to an applicable privacy or data protection authority.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "These rights are not absolute and may be subject to legal exceptions. For example, we may retain information when required by law or where reasonably necessary to establish, exercise, or defend legal claims.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "To exercise a privacy right, contact hr@gogloby.com and identify the right you wish to exercise.",
+     "links": [
+      {
+       "href": "/cdn-cgi/l/email-protection#bcd4cefcdbd3dbd0d3dec592dfd3d1",
+       "text": "hr@gogloby.com"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "We may need to verify your identity before completing a request. We will use information provided for verification only for that purpose and related legal compliance.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "We will not discriminate or retaliate against you for exercising a privacy right.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "EEA Candidates",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "If the GDPR applies to our processing of your information, you may have rights of access, rectification, erasure, restriction, portability, objection, withdrawal of consent, and rights relating to certain automated decisions.",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "You also have the right to lodge a complaint with the data protection authority responsible for your country or place of residence, work, or alleged infringement.",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "Brazil",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Where the LGPD applies, you may exercise applicable rights provided to data subjects under Brazilian law, including confirmation of processing, access, correction, anonymization, blocking or deletion in applicable circumstances, information concerning sharing, withdrawal of consent, and other rights available under the LGPD.",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "You may also have the right to submit a petition to the ANPD in accordance with applicable procedures.",
+     "index": 9
+    },
+    {
+     "type": "heading",
+     "text": "Mexico",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Where Mexican data protection law applies, you may exercise applicable rights of access, rectification, cancellation, and opposition (“ARCO”), as well as applicable rights to revoke consent or limit the use or disclosure of personal data.",
+     "index": 10
+    },
+    {
+     "type": "heading",
+     "text": "Argentina",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Where Argentine data protection law applies, you may exercise applicable rights concerning information, access, rectification, updating, and deletion or suppression of personal information and may have the right to submit a complaint to the Agencia de Acceso a la Información Pública (“AAIP”).",
+     "index": 11
+    },
+    {
+     "type": "heading",
+     "text": "Colombia",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Where Colombian data protection law applies, you may exercise applicable rights to know, access, update, rectify, or request deletion of personal information, revoke authorization where legally available, and submit complaints concerning data protection to the Superintendencia de Industria y Comercio (“SIC”).",
+     "index": 12
+    },
+    {
+     "type": "heading",
+     "text": "Peru",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Where Peruvian data protection law applies, you may exercise applicable rights of information, access, rectification, cancellation, and opposition, together with other rights available under Peruvian data protection law.",
+     "index": 13
+    },
+    {
+     "type": "heading",
+     "text": "Chile",
+     "level": 3,
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Where Chilean data protection law applies, you may exercise the rights available under the applicable Chilean privacy and personal-data regime, including rights concerning access, rectification, deletion, opposition, and other rights introduced by applicable legislation.",
+     "index": 14
+    },
+    {
+     "type": "heading",
+     "text": "Other Latin American Countries",
+     "level": 3,
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Candidates located in other Latin American jurisdictions may exercise any additional rights granted by applicable national privacy or data protection law. Nothing in this Notice is intended to limit rights that cannot lawfully be waived.",
+     "index": 15
+    }
+   ]
+  },
+  {
+   "id": "article:13-additional-notice-for-california-applicants",
+   "kind": "article_section",
+   "label": "13. Additional Notice for California Applicants",
+   "scope": "page",
+   "skipped": false,
+   "text": "13. Additional Notice for California Applicants\nThis section applies to California residents to the extent GoGloby is subject to the California Consumer Privacy Act, as amended (“CCPA”), with respect to the relevant processing.\nDuring the preceding 12 months, GoGloby may collect the following categories of personal information from applicants:\nCategory\nExamples\nMain Purpose\nTypical Retention\nIdentifiers and contact information\nName, email, phone/WhatsApp number, LinkedIn URL\nRecruiting and communications\nActive process plus up to 12 months; up to 24 months if retained for future opportunities\nProfessional and employment-related information\nRésumé, employment history, education, skills, qualifications\nCandidate assessment and role matching\nActive process plus up to 12 months; up to 24 months if retained for future opportunities\nApplication information\nDesired role, English proficiency, compensation expectations, location\nAssessment and matching\nActive process plus up to 12 months; up to 24 months if retained for future opportunities\nInternet or electronic activity\nIP address, device/browser information, form or website interactions\nSecurity, operation, analytics\nAccording to applicable operational and analytics retention periods\nRecruiting assessments and inferences\nInterview notes, assessment results, recruiter evaluations\nCandidate evaluation and matching\nGenerally up to 12 months after the process; longer where legally justified\nPotential sensitive personal information\nInformation voluntarily contained in application materials or collected where legally necessary\nOnly for authorized recruiting, accommodation, or legal purposes\nOnly for as long as legally necessary or justified\nGoGloby does not use candidate sensitive personal information to infer characteristics for unrelated purposes.\nWhere the CCPA applies, California residents may have rights to know or access personal information, request deletion, request correction, opt out of qualifying sales or sharing, limit certain uses of sensitive personal information, and be free from discrimination for exercising CCPA rights.\nGoGloby does not sell candidate application information.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "13. Additional Notice for California Applicants",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "This section applies to California residents to the extent GoGloby is subject to the California Consumer Privacy Act, as amended (“CCPA”), with respect to the relevant processing.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "During the preceding 12 months, GoGloby may collect the following categories of personal information from applicants:",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "Category",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Examples",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "Main Purpose",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "Typical Retention",
+     "index": 4
+    },
+    {
+     "type": "table_cell",
+     "text": "Identifiers and contact information",
+     "index": 5
+    },
+    {
+     "type": "table_cell",
+     "text": "Name, email, phone/WhatsApp number, LinkedIn URL",
+     "index": 6
+    },
+    {
+     "type": "table_cell",
+     "text": "Recruiting and communications",
+     "index": 7
+    },
+    {
+     "type": "table_cell",
+     "text": "Active process plus up to 12 months; up to 24 months if retained for future opportunities",
+     "index": 8
+    },
+    {
+     "type": "table_cell",
+     "text": "Professional and employment-related information",
+     "index": 9
+    },
+    {
+     "type": "table_cell",
+     "text": "Résumé, employment history, education, skills, qualifications",
+     "index": 10
+    },
+    {
+     "type": "table_cell",
+     "text": "Candidate assessment and role matching",
+     "index": 11
+    },
+    {
+     "type": "table_cell",
+     "text": "Active process plus up to 12 months; up to 24 months if retained for future opportunities",
+     "index": 12
+    },
+    {
+     "type": "table_cell",
+     "text": "Application information",
+     "index": 13
+    },
+    {
+     "type": "table_cell",
+     "text": "Desired role, English proficiency, compensation expectations, location",
+     "index": 14
+    },
+    {
+     "type": "table_cell",
+     "text": "Assessment and matching",
+     "index": 15
+    },
+    {
+     "type": "table_cell",
+     "text": "Active process plus up to 12 months; up to 24 months if retained for future opportunities",
+     "index": 16
+    },
+    {
+     "type": "table_cell",
+     "text": "Internet or electronic activity",
+     "index": 17
+    },
+    {
+     "type": "table_cell",
+     "text": "IP address, device/browser information, form or website interactions",
+     "index": 18
+    },
+    {
+     "type": "table_cell",
+     "text": "Security, operation, analytics",
+     "index": 19
+    },
+    {
+     "type": "table_cell",
+     "text": "According to applicable operational and analytics retention periods",
+     "index": 20
+    },
+    {
+     "type": "table_cell",
+     "text": "Recruiting assessments and inferences",
+     "index": 21
+    },
+    {
+     "type": "table_cell",
+     "text": "Interview notes, assessment results, recruiter evaluations",
+     "index": 22
+    },
+    {
+     "type": "table_cell",
+     "text": "Candidate evaluation and matching",
+     "index": 23
+    },
+    {
+     "type": "table_cell",
+     "text": "Generally up to 12 months after the process; longer where legally justified",
+     "index": 24
+    },
+    {
+     "type": "table_cell",
+     "text": "Potential sensitive personal information",
+     "index": 25
+    },
+    {
+     "type": "table_cell",
+     "text": "Information voluntarily contained in application materials or collected where legally necessary",
+     "index": 26
+    },
+    {
+     "type": "table_cell",
+     "text": "Only for authorized recruiting, accommodation, or legal purposes",
+     "index": 27
+    },
+    {
+     "type": "table_cell",
+     "text": "Only for as long as legally necessary or justified",
+     "index": 28
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby does not use candidate sensitive personal information to infer characteristics for unrelated purposes.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Where the CCPA applies, California residents may have rights to know or access personal information, request deletion, request correction, opt out of qualifying sales or sharing, limit certain uses of sensitive personal information, and be free from discrimination for exercising CCPA rights.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby does not sell candidate application information.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:14-children-and-minors",
+   "kind": "article_section",
+   "label": "14. Children and Minors",
+   "scope": "page",
+   "skipped": false,
+   "text": "14. Children and Minors\nGoGloby’s ordinary recruiting processes are intended for adults who are legally eligible to apply for the applicable professional opportunity.\nWe do not knowingly solicit applications from children in circumstances where doing so would be prohibited by law.\nIf an opportunity is lawfully available to a minor, any additional privacy, notice, authorization, or parental-consent requirements required by applicable law will be addressed separately.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "14. Children and Minors",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby’s ordinary recruiting processes are intended for adults who are legally eligible to apply for the applicable professional opportunity.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "We do not knowingly solicit applications from children in circumstances where doing so would be prohibited by law.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "If an opportunity is lawfully available to a minor, any additional privacy, notice, authorization, or parental-consent requirements required by applicable law will be addressed separately.",
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "article:15-third-party-services-and-links",
+   "kind": "article_section",
+   "label": "15. Third-Party Services and Links",
+   "scope": "page",
+   "skipped": false,
+   "text": "15. Third-Party Services and Links\nOur websites, application processes, and communications may use or link to third-party services, including Tally, LinkedIn, WhatsApp, video-conferencing platforms, assessment providers, or other recruiting technologies.\nWhere those organizations process information independently for their own purposes, their own privacy notices and terms may apply.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "15. Third-Party Services and Links",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Our websites, application processes, and communications may use or link to third-party services, including Tally, LinkedIn, WhatsApp, video-conferencing platforms, assessment providers, or other recruiting technologies.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Where those organizations process information independently for their own purposes, their own privacy notices and terms may apply.",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "article:16-changes-to-this-notice",
+   "kind": "article_section",
+   "label": "16. Changes to This Notice",
+   "scope": "page",
+   "skipped": false,
+   "text": "16. Changes to This Notice\nWe may update this Notice to reflect changes in our recruiting practices, technology, service providers, legal obligations, or privacy requirements.\nWhen we make changes, we will update the “Last Updated” date.\nWhere required by law, we will provide additional notice or obtain consent before materially changing the way existing personal information is processed.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "16. Changes to This Notice",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "We may update this Notice to reflect changes in our recruiting practices, technology, service providers, legal obligations, or privacy requirements.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "When we make changes, we will update the “Last Updated” date.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Where required by law, we will provide additional notice or obtain consent before materially changing the way existing personal information is processed.",
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "article:17-contact-and-privacy-requests",
+   "kind": "article_section",
+   "label": "17. Contact and Privacy Requests",
+   "scope": "page",
+   "skipped": false,
+   "text": "17. Contact and Privacy Requests\nQuestions, concerns, and requests relating to personal information may be submitted to:\nGoGloby LLC 8 The Green, Ste. R Dover, Delaware 19901 United States\nPrivacy email: hr@gogloby.com\nPlease include enough information for us to understand your request and identify the relevant application or interaction. Do not send copies of government identification documents unless we specifically request them as necessary to verify a privacy request.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "17. Contact and Privacy Requests",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Questions, concerns, and requests relating to personal information may be submitted to:",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby LLC 8 The Green, Ste. R Dover, Delaware 19901 United States",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Privacy email: hr@gogloby.com",
+     "links": [
+      {
+       "href": "/cdn-cgi/l/email-protection#21495361464e464d4e43580f424e4c",
+       "text": "hr@gogloby.com"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Please include enough information for us to understand your request and identify the relevant application or interaction. Do not send copies of government identification documents unless we specifically request them as necessary to verify a privacy request.",
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "modals",
+   "kind": "modals",
+   "label": "Forms and modals",
+   "scope": "shared",
+   "skipped": false,
+   "text": "Thank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend\nThank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "site_header",
+   "kind": "site_header",
+   "label": "Site header",
+   "scope": "page",
+   "skipped": true,
+   "text": "Site logo\nSolutions\nAI Engineering Visibility\nForward Deployed Engineering\nServices\nAI Engineers Staff Augmentation\nHire AI Engineers\nAI Development Services\nGenerative AI Consulting Services\nAgentic AI Consulting Services\nAI Production Engineering\nGenerative AI Development Services\nAI Agent Development Services\nAI Custom Software Development Services\nRAG Application Development Services\nLLM Development Services\nApplication AI Modernization Services\nLegacy Application Modernization Services\nSoftware Maintenance Services\nCompany\nAbout us\nJobs\nResources\nInsights\nUse Cases\nPodcast\nContact\nTalk to Us",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Site logo",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/globy-logo-1-01.svg",
+     "file": "globy-logo-1-01.svg",
+     "alt": "Site logo",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Solutions",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineering Visibility",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/ai-engineering-visibility/",
+       "text": "AI Engineering Visibility"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Forward Deployed Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/forward-deployed-engineering/",
+       "text": "Forward Deployed Engineering"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineers Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Engineers Staff Augmentation"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "link",
+     "text": "AI Development Services",
+     "href": "https://gogloby.com/services/ai-development/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-development/",
+       "text": "AI Development Services"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-consulting/",
+       "text": "Generative AI Consulting Services"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Agentic AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/agentic-ai-consulting/",
+       "text": "Agentic AI Consulting Services"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "AI Production Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "AI Production Engineering"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "AI Agent Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-agent-development/",
+       "text": "AI Agent Development Services"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "AI Custom Software Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-custom-software-development/",
+       "text": "AI Custom Software Development Services"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "RAG Application Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/rag-application-development/",
+       "text": "RAG Application Development Services"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "LLM Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/llm-development/",
+       "text": "LLM Development Services"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "link",
+     "text": "Application AI Modernization Services",
+     "href": "https://gogloby.com/services/application-modernization/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/application-modernization/",
+       "text": "Application AI Modernization Services"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Legacy Application Modernization Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/legacy-application-modernization/",
+       "text": "Legacy Application Modernization Services"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "Software Maintenance Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/software-maintenance/",
+       "text": "Software Maintenance Services"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "Talk to Us",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "site_footer",
+   "kind": "site_footer",
+   "label": "Site footer",
+   "scope": "page",
+   "skipped": true,
+   "text": "Background logo\nServices\nApplied AI Engineering\nAI Staff Augmentation\nHire AI Engineers\nGenerative AI Development Services\nCompany\nAbout us\nJobs\nContact\nPrivacy Policy and Candidate Privacy Notice\nTerms and Conditions\nResources\nInsights\nUse Cases\nPodcast\nCase Studies\nConnections\nCrunchbase\nLinkedIn\nX\nG2\nClutch\nTrustpilot\nDesignRush\nGitHub\nFacebook\nYouTube\n© Copyright 2026, GoGloby. All Rights Reserved.",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background logo",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/logos/globy-logo-outline-1-01.svg",
+     "file": "globy-logo-outline-1-01.svg",
+     "alt": "Background logo",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Applied AI Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "Applied AI Engineering"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Staff Augmentation"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Privacy Policy and Candidate Privacy Notice",
+     "links": [
+      {
+       "href": "https://gogloby.com/privacy-policy/",
+       "text": "Privacy Policy and Candidate Privacy Notice"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Terms and Conditions",
+     "links": [
+      {
+       "href": "https://gogloby.com/terms-and-conditions/",
+       "text": "Terms and Conditions"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "Case Studies",
+     "links": [
+      {
+       "href": "https://gogloby.com/case-study/",
+       "text": "Case Studies"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Connections",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Crunchbase",
+     "links": [
+      {
+       "href": "https://www.crunchbase.com/organization/gogloby",
+       "text": "Crunchbase"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "LinkedIn",
+     "links": [
+      {
+       "href": "https://www.linkedin.com/company/gogloby/",
+       "text": "LinkedIn"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "X",
+     "links": [
+      {
+       "href": "https://x.com/GoGloby",
+       "text": "X"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "list_item",
+     "text": "G2",
+     "links": [
+      {
+       "href": "https://www.g2.com/products/gogloby/reviews",
+       "text": "G2"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Clutch",
+     "links": [
+      {
+       "href": "https://clutch.co/profile/gogloby",
+       "text": "Clutch"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Trustpilot",
+     "links": [
+      {
+       "href": "https://www.trustpilot.com/review/gogloby.com",
+       "text": "Trustpilot"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "DesignRush",
+     "links": [
+      {
+       "href": "https://www.designrush.com/agency/profile/gogloby",
+       "text": "DesignRush"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "list_item",
+     "text": "GitHub",
+     "links": [
+      {
+       "href": "https://github.com/gogloby",
+       "text": "GitHub"
+      }
+     ],
+     "index": 21
+    },
+    {
+     "type": "list_item",
+     "text": "Facebook",
+     "links": [
+      {
+       "href": "https://www.facebook.com/gogloby",
+       "text": "Facebook"
+      }
+     ],
+     "index": 22
+    },
+    {
+     "type": "list_item",
+     "text": "YouTube",
+     "links": [
+      {
+       "href": "https://www.youtube.com/@DefaultGlobal",
+       "text": "YouTube"
+      }
+     ],
+     "index": 23
+    },
+    {
+     "type": "paragraph",
+     "text": "© Copyright 2026, GoGloby. All Rights Reserved.",
+     "index": 5
+    }
+   ]
+  }
+ ],
+ "warnings": []
+}

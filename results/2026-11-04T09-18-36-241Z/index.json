@@ -1,0 +1,210 @@
+{
+  "schema_version": 2,
+  "pages": [
+    {
+      "slug": "insights_ai-compliance-consulting_e9e1c20a",
+      "url": "https://gogloby.com/insights/ai-compliance-consulting/",
+      "title": "What Is AI Compliance Consulting: Process, Benefits & How to Implement It | GoGloby",
+      "group": "Resources",
+      "subsection": "Insights",
+      "profile": "article",
+      "template": "article",
+      "action": "needs_decision",
+      "summary": "The article presents GoGloby as an AI compliance implementation and consulting provider, including a dedicated CTA, although the company sources describe staffing and recruiting services. Decide whether to remove that offer or revise the page around a current service; do not carry forward the unsupported author and service claims.",
+      "compliance": {
+        "high": 2,
+        "medium": 7,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 6,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 1
+      },
+      "checked_at": "2026-11-04T09:19:30.472Z"
+    },
+    {
+      "slug": "insights_ai-consulting-vs-staff-augmentation_21b433b3",
+      "url": "https://gogloby.com/insights/ai-consulting-vs-staff-augmentation/",
+      "title": "AI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose | GoGloby",
+      "group": "Resources",
+      "subsection": "Insights",
+      "profile": "article",
+      "template": "article",
+      "action": "fix",
+      "summary": "The article is largely a general comparison, but its GoGloby section and banner present an obsolete consulting, diagnosis, and AI tooling offer rather than GoGloby’s recruiting and staffing services. The author bio also contains unsupported or conflicting claims that need correction.",
+      "compliance": {
+        "high": 4,
+        "medium": 7,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 7,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 1
+      },
+      "checked_at": "2026-11-04T09:20:10.892Z"
+    },
+    {
+      "slug": "insights_ai-governance-consulting-firms_a591c0e0",
+      "url": "https://gogloby.com/insights/ai-governance-consulting-firms/",
+      "title": "10 AI Governance Consulting Firms to Evaluate in 2026 | GoGloby",
+      "group": "Resources",
+      "subsection": "Insights",
+      "profile": "article",
+      "template": "article",
+      "action": "rewrite",
+      "summary": "The article presents GoGloby as an AI governance consultancy and engineering implementation provider, rather than a staffing and recruiting agency. Correct GoGloby-specific positioning, unsupported claims, and the call to action; the rest of the comparison article need not be rewritten.",
+      "compliance": {
+        "high": 4,
+        "medium": 7,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 5,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 1
+      },
+      "checked_at": "2026-11-04T09:19:26.410Z"
+    },
+    {
+      "slug": "insights_ai-implementation-cost_e37e124e",
+      "url": "https://gogloby.com/insights/ai-implementation-cost/",
+      "title": "AI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI | GoGloby",
+      "group": "Resources",
+      "subsection": "Insights",
+      "profile": "article",
+      "template": "article",
+      "action": "fix",
+      "summary": "The article includes a section and CTA pitching an AI implementation and engineering-optimization offer that GoGloby does not list among its services. That section also makes unsupported claims about a standalone tracking product, its capabilities, and deployment timelines.",
+      "compliance": {
+        "high": 5,
+        "medium": 8,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 6,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 0
+      },
+      "checked_at": "2026-11-04T09:19:26.740Z"
+    },
+    {
+      "slug": "insights_embedded-ai_ee52daaf",
+      "url": "https://gogloby.com/insights/embedded-ai/",
+      "title": "What Is Embedded AI? How It Works, Benefits, Use Cases & Tools | GoGloby",
+      "group": "Resources",
+      "subsection": "Insights",
+      "profile": "article",
+      "template": "article",
+      "action": "fix",
+      "summary": "The GoGloby section and banner sell embedded-AI implementation, an offer outside GoGloby’s staffing and recruiting services. The author bio also uses outdated positioning and includes unsupported or conflicting claims.",
+      "compliance": {
+        "high": 3,
+        "medium": 6,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 6,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 0
+      },
+      "checked_at": "2026-11-04T09:19:21.483Z"
+    }
+  ],
+  "totals": {
+    "pages": 5,
+    "compliance": {
+      "high": 18,
+      "medium": 35,
+      "low": 0
+    },
+    "geo": 30,
+    "seo": {
+      "high": 0,
+      "medium": 5,
+      "low": 3
+    },
+    "actions": {
+      "needs_decision": 1,
+      "fix": 3,
+      "rewrite": 1
+    }
+  },
+  "by_group": {
+    "Resources": {
+      "pages": 5,
+      "compliance": {
+        "high": 18,
+        "medium": 35,
+        "low": 0
+      },
+      "geo": 30,
+      "seo": {
+        "high": 0,
+        "medium": 5,
+        "low": 3
+      },
+      "actions": {
+        "needs_decision": 1,
+        "fix": 3,
+        "rewrite": 1
+      }
+    }
+  },
+  "by_subsection": {
+    "Resources/Insights": {
+      "pages": 5,
+      "compliance": {
+        "high": 18,
+        "medium": 35,
+        "low": 0
+      },
+      "geo": 30,
+      "seo": {
+        "high": 0,
+        "medium": 5,
+        "low": 3
+      },
+      "actions": {
+        "needs_decision": 1,
+        "fix": 3,
+        "rewrite": 1
+      }
+    }
+  },
+  "site": {
+    "compliance": {
+      "high": 7,
+      "medium": 13,
+      "low": 0
+    },
+    "seo": 3,
+    "geo": 0
+  }
+}

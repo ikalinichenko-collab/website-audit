@@ -1,0 +1,1933 @@
+{
+  "schema_version": 2,
+  "url": "https://gogloby.com/insights/ai-implementation-cost/",
+  "final_url": "https://gogloby.com/insights/ai-implementation-cost/",
+  "status": 200,
+  "title": "AI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI | GoGloby",
+  "category": "Resources",
+  "subsection": "Insights",
+  "profile": "article",
+  "geo_type": "article",
+  "template": "article",
+  "checked_at": "2026-11-03T12:53:57.107Z",
+  "zones": [
+    {
+      "id": "title",
+      "label": "Title",
+      "kind": "title"
+    },
+    {
+      "id": "meta_description",
+      "label": "Meta description",
+      "kind": "meta_description"
+    },
+    {
+      "id": "og_title",
+      "label": "og:title",
+      "kind": "og_title"
+    },
+    {
+      "id": "og_description",
+      "label": "og:description",
+      "kind": "og_description"
+    },
+    {
+      "id": "json_ld",
+      "label": "Structured data (JSON-LD)",
+      "kind": "json_ld"
+    },
+    {
+      "id": "h1",
+      "label": "H1",
+      "kind": "h1"
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "kind": "date"
+    },
+    {
+      "id": "author",
+      "label": "Author",
+      "kind": "author"
+    },
+    {
+      "id": "toc",
+      "label": "Table of contents",
+      "kind": "toc"
+    },
+    {
+      "id": "article:intro",
+      "label": "Intro",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:how-much-does-ai-implementation-cost-in-2026",
+      "label": "How Much Does AI Implementation Cost in 2026?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-is-included-in-ai-implementation-cost",
+      "label": "What Is Included in AI Implementation Cost?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-drives-ai-implementation-cost",
+      "label": "What Drives AI Implementation Cost?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-are-ai-implementation-costs-by-use-case",
+      "label": "What Are AI Implementation Costs by Use Case?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:are-there-hidden-ai-implementation-costs",
+      "label": "Are There Hidden AI Implementation Costs?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:how-much-does-enterprise-ai-implementation-cost",
+      "label": "How Much Does Enterprise AI Implementation Cost?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-is-the-cost-of-small-business-ai-implementa",
+      "label": "What Is the Cost of Small Business AI Implementation?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:how-do-ai-implementation-costs-change-by-industr",
+      "label": "How Do AI Implementation Costs Change by Industry?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:how-do-you-calculate-ai-implementation-roi",
+      "label": "How Do You Calculate AI Implementation ROI?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:how-can-you-reduce-ai-implementation-cost",
+      "label": "How Can You Reduce AI Implementation Cost?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-are-the-most-common-ai-implementation-budge",
+      "label": "What Are the Most Common AI Implementation Budgeting Mistakes?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:how-does-gogloby-approach-ai-implementation-cost",
+      "label": "How Does GoGloby Approach AI Implementation Cost?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:conclusion",
+      "label": "Conclusion",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:faqs",
+      "label": "FAQs",
+      "kind": "article_section"
+    },
+    {
+      "id": "banner_cta",
+      "label": "Banner CTA",
+      "kind": "banner_cta"
+    },
+    {
+      "id": "modals",
+      "label": "Forms and modals",
+      "kind": "modals"
+    }
+  ],
+  "zone_warnings": [],
+  "shared_variants": [],
+  "compliance": {
+    "hash": "3f64eb0ef7d1ecdac802048fde7472775a45a75161e6e6a7745c1f85b29b4b93",
+    "cached": false,
+    "action": "fix",
+    "model_action": "fix",
+    "summary": "The article is primarily an informational cost guide, but its structured data, GoGloby approach section, and banner promote an outdated AI implementation and measurement offer. Update those sections and remove unsupported service claims and company facts.",
+    "llm_problems": [
+      {
+        "title": "Applied AI partner positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Glossary §7",
+        "rule_verified": true,
+        "issue": "The page presents GoGloby as an Applied AI Engineering partner and talent acquisition agency instead of using its approved staffing and recruiting description.",
+        "fix": "Replace the outdated descriptions with the approved company description and describe only the documented staffing and recruiting services.",
+        "subject": "GoGloby positioning",
+        "page_value": "Applied AI Engineering partner",
+        "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.slogan",
+            "quote": "Applied AI Engineering Partner",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "WebSite.description",
+            "quote": "GoGloby is an Applied AI Engineering partner turning engineering into AI-native production",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.description",
+            "quote": "US-based talent acquisition agency specializing in assisting tech companies",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Generative AI development service",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity; Glossary §1, §7",
+        "rule_verified": true,
+        "issue": "The structured data sells generative AI development and software-building services, while GoGloby recruits and staffs engineers rather than building systems for clients.",
+        "fix": "Remove the development-service offer and describe only the documented recruiting and staffing services.",
+        "subject": "Generative AI Development Services",
+        "page_value": "Generative AI delivery and software development",
+        "source_value": "GoGloby recruits and staffs engineers; clients run the work",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.name",
+            "quote": "Generative AI Development Services",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "GoGloby's Applied AI Software Engineers build copilots, AI agents, RAG applications",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Standalone AI implementation offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §2",
+        "rule_verified": true,
+        "issue": "The approach section and banner sell implementation and performance-measurement work as a standalone offer, but the AI Development Intelligence Layer is sold only bundled with nearshore staffing.",
+        "fix": "Remove the standalone implementation and measurement offer, or limit any description of the Intelligence Layer to its documented use with nearshore staffing.",
+        "subject": "AI Development Intelligence Layer",
+        "page_value": "Standalone implementation-cost and performance tracking",
+        "source_value": "Bundled only with Nearshore Data & AI Engineers Staffing",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:how-does-gogloby-approach-ai-implementation-cost",
+            "part": "paragraph 2",
+            "quote": "The AI Intelligence Layer runs inside your VPC",
+            "verified": true
+          },
+          {
+            "zone_id": "article:how-does-gogloby-approach-ai-implementation-cost",
+            "part": "paragraph 3",
+            "quote": "AI Solutions Architects work inside your repos and review flow",
+            "verified": true
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "GoGloby tracks what your AI implementation returns against what it costs, month by month.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Outdated applied engineering system",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The page describes GoGloby as turning engineering into AI-native production through an Applied AI Engineering system, a positioning the glossary says not to use.",
+        "fix": "Remove this positioning and describe GoGloby using its approved company description.",
+        "subject": "Applied AI Engineering system",
+        "page_value": "Turns engineering into AI-native production",
+        "source_value": null,
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "GoGloby turns engineering into AI-native production.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "Built the Applied AI Engineering system",
+            "verified": true
+          },
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "the engineering standard behind 4x Applied AI Engineering",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified global talent claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Identity; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claim that GoGloby hires the world's most thoroughly vetted talent within US and EU time zones is not supported by the company sources.",
+        "fix": "Remove the unverified superlative and time-zone coverage claim.",
+        "subject": "GoGloby candidate network",
+        "page_value": "World's most thoroughly vetted talent within US & EU time zones",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.description",
+            "quote": "hire the world's most thoroughly vetted talent within the US & EU time zones.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Sergey experience differs",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The author bio says Sergey has 16+ years of experience, while the Fact Sheet says he has spent 17 years building software systems and engineering organizations.",
+        "fix": "Correct the experience figure to match the Fact Sheet.",
+        "subject": "Sergey Matikaynen experience",
+        "page_value": "16+ years",
+        "source_value": "17 years",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 17",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified Sergey credentials",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders; Glossary §10",
+        "rule_verified": true,
+        "issue": "The page claims Sergey has certified Agentic SDLC mastery and is a LinkedIn Top Voice, neither of which appears in the company sources.",
+        "fix": "Remove these credentials unless GoGloby verifies them.",
+        "subject": "Sergey Matikaynen credentials",
+        "page_value": "Certified Agentic SDLC mastery; LinkedIn Top Voice",
+        "source_value": "not in Fact Sheet",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "including certified Agentic SDLC mastery.",
+            "verified": true
+          },
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 17",
+            "quote": "including certified Agentic SDLC mastery.",
+            "verified": true
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 17",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified Vit achievements",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claims about Vit's decade of scaling teams across named countries and generating $60M+ in value are not in the company sources.",
+        "fix": "Remove these claims unless GoGloby verifies them.",
+        "subject": "Vitaly Koval achievements",
+        "page_value": "$60M+ in value; past decade across six countries",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "For the past decade, has helped engineering leaders scale teams",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "generating $60M+ in value.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified 72-hour profiles",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The claimed 72-hour delivery of vetted profiles is not in the company sources.",
+        "fix": "Remove the 72-hour claim unless GoGloby verifies it.",
+        "subject": "Staffing profile timeline",
+        "page_value": "Vetted profiles delivered in 72 hours",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Vetted profiles delivered in 72 hours.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified feature delivery timeline",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The claimed first validated feature within 3 to 5 business days is not in the company sources.",
+        "fix": "Remove the feature-delivery promise unless GoGloby verifies it.",
+        "subject": "First validated feature timeline",
+        "page_value": "3 to 5 business days",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "First validated feature in 3 to 5 business days.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Staffing guarantee differs",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page describes the staffing replacement guarantee as telemetry-backed, whereas the documented guarantee is performance-based replacement if results fall below baseline, with cancellation available in the first 120 days.",
+        "fix": "Replace this guarantee description with the documented staffing terms.",
+        "subject": "Nearshore staffing guarantee",
+        "page_value": "120-day telemetry-backed replacement guarantee",
+        "source_value": "Performance-based replacement below baseline; cancel any time in first 120 days",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "120-day telemetry-backed replacement guarantee.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Insurance coverage differs",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Legal and security",
+        "rule_verified": true,
+        "issue": "The page claims $3M combined cyber, data, and professional liability, while the Fact Sheet specifies $3M data and cyber-liability insurance.",
+        "fix": "Correct the coverage description to match the Fact Sheet.",
+        "subject": "Insurance coverage",
+        "page_value": "$3M combined liability (cyber, data and professional)",
+        "source_value": "$3M data and cyber liability",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "$3M combined liability (cyber, data and professional) from day one.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "$3M combined liability (cyber, data and professional) included.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified recruiting shortlist time",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "A five-day recruiting shortlist promise is not in the company sources; the documented recruiting timeline is 4–6 weeks to offer.",
+        "fix": "Remove the five-day promise unless GoGloby verifies it, and use the documented timeline where relevant.",
+        "subject": "Recruiting shortlist timeline",
+        "page_value": "Shortlist delivered in 5 days",
+        "source_value": "4–6 weeks to offer",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Shortlist delivered in 5 days.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified faster hiring claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claim that GoGloby hires 50 percent faster than US job boards is not in the company sources.",
+        "fix": "Remove the comparative hiring-speed claim unless GoGloby verifies it.",
+        "subject": "Recruiting speed",
+        "page_value": "50 percent faster time-to-hire than US job boards",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "50 percent faster time-to-hire than US job boards.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified country count",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The claimed network spanning more than five US-time-zone countries is not in the company sources.",
+        "fix": "Remove the country-count claim unless GoGloby verifies it.",
+        "subject": "Recruiting network geography",
+        "page_value": "5 plus US-timezone countries",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Talent network spans 5 plus US-timezone countries.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified under-four-week offer",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The structured data promises generative AI delivery in under four weeks, a timeline not supported by the company sources.",
+        "fix": "Remove the timeline claim along with the discontinued development-service offer.",
+        "subject": "Generative AI delivery timeline",
+        "page_value": "Under 4 weeks",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Forward-deployed into your team in under 4 weeks.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified zero IP exposure",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page promises zero IP exposure, which the company sources do not claim.",
+        "fix": "Remove the zero-exposure claim and use only the documented IP and security statements if needed.",
+        "subject": "IP exposure",
+        "page_value": "Zero IP exposure",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Zero IP exposure.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified AI ROI measurement",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Legal and security",
+        "rule_verified": true,
+        "issue": "The page claims GoGloby measures engineering spend and returns per shipped feature monthly, while the documented layer reports engineer velocity, code quality, and AI token cost sprint by sprint.",
+        "fix": "Remove the unsupported ROI-tracking claims or limit the description to the documented Intelligence Layer metrics and reporting cadence.",
+        "subject": "AI Development Intelligence Layer metrics",
+        "page_value": "Cost per shipped feature and monthly return measurement",
+        "source_value": "Velocity, code quality, and AI token cost, reported sprint by sprint",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:how-does-gogloby-approach-ai-implementation-cost",
+            "part": "paragraph 2",
+            "quote": "After a one-month Benchmark, you see cost per shipped feature",
+            "verified": true
+          },
+          {
+            "zone_id": "article:how-does-gogloby-approach-ai-implementation-cost",
+            "part": "paragraph 4",
+            "quote": "The AI Intelligence Layer compares output, engineering cost, and AI spend",
+            "verified": true
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "GoGloby tracks what your AI implementation returns against what it costs, month by month.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified AI systems consulting",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §1, §2",
+        "rule_verified": true,
+        "issue": "The page offers AI Solutions Architects to work in client repositories, clear delivery bottlenecks, and install an Agentic SDLC, which is not a documented GoGloby service.",
+        "fix": "Remove this consulting and implementation offer; describe only the documented recruiting and staffing services.",
+        "subject": "AI Solutions Architects implementation offer",
+        "page_value": "Architects clear bottlenecks and install the Agentic SDLC",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:how-does-gogloby-approach-ai-implementation-cost",
+            "part": "paragraph 3",
+            "quote": "AI Solutions Architects work inside your repos and review flow to clear those stalls.",
+            "verified": true
+          },
+          {
+            "zone_id": "article:how-does-gogloby-approach-ai-implementation-cost",
+            "part": "paragraph 3",
+            "quote": "They install the Agentic SDLC",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Book a call for old offer",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §2, §7",
+        "rule_verified": true,
+        "issue": "The banner's call to action promotes the unsupported AI implementation measurement offer rather than a documented recruiting or staffing service.",
+        "fix": "Remove this call to action or change it to one that leads to a documented GoGloby service.",
+        "subject": "Banner call to action",
+        "page_value": "Book A Call",
+        "source_value": "Start a search; Get vetted profiles",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 2",
+            "quote": "Book A Call",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      }
+    ],
+    "problems": [
+      {
+        "title": "Applied AI partner positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Glossary §7",
+        "rule_verified": true,
+        "issue": "The page presents GoGloby as an Applied AI Engineering partner and talent acquisition agency instead of using its approved staffing and recruiting description.",
+        "fix": "Replace the outdated descriptions with the approved company description and describe only the documented staffing and recruiting services.",
+        "subject": "GoGloby positioning",
+        "page_value": "Applied AI Engineering partner",
+        "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.slogan",
+            "quote": "Applied AI Engineering Partner",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "WebSite.description",
+            "quote": "GoGloby is an Applied AI Engineering partner turning engineering into AI-native production",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.description",
+            "quote": "US-based talent acquisition agency specializing in assisting tech companies",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Generative AI development service",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity; Glossary §1, §7",
+        "rule_verified": true,
+        "issue": "The structured data sells generative AI development and software-building services, while GoGloby recruits and staffs engineers rather than building systems for clients.",
+        "fix": "Remove the development-service offer and describe only the documented recruiting and staffing services.",
+        "subject": "Generative AI Development Services",
+        "page_value": "Generative AI delivery and software development",
+        "source_value": "GoGloby recruits and staffs engineers; clients run the work",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.name",
+            "quote": "Generative AI Development Services",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "GoGloby's Applied AI Software Engineers build copilots, AI agents, RAG applications",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Standalone AI implementation offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §2",
+        "rule_verified": true,
+        "issue": "The approach section and banner sell implementation and performance-measurement work as a standalone offer, but the AI Development Intelligence Layer is sold only bundled with nearshore staffing.",
+        "fix": "Remove the standalone implementation and measurement offer, or limit any description of the Intelligence Layer to its documented use with nearshore staffing.",
+        "subject": "AI Development Intelligence Layer",
+        "page_value": "Standalone implementation-cost and performance tracking",
+        "source_value": "Bundled only with Nearshore Data & AI Engineers Staffing",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:how-does-gogloby-approach-ai-implementation-cost",
+            "part": "paragraph 2",
+            "quote": "The AI Intelligence Layer runs inside your VPC",
+            "verified": true,
+            "fragment": "baseline every month.-,The AI Intelligence Layer,-compares output, engineering"
+          },
+          {
+            "zone_id": "article:how-does-gogloby-approach-ai-implementation-cost",
+            "part": "paragraph 3",
+            "quote": "AI Solutions Architects work inside your repos and review flow",
+            "verified": true,
+            "fragment": "AI Solutions Architects work inside your"
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "GoGloby tracks what your AI implementation returns against what it costs, month by month.",
+            "verified": true,
+            "fragment": "GoGloby tracks what your AI implementation"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Outdated applied engineering system",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The page describes GoGloby as turning engineering into AI-native production through an Applied AI Engineering system, a positioning the glossary says not to use.",
+        "fix": "Remove this positioning and describe GoGloby using its approved company description.",
+        "subject": "Applied AI Engineering system",
+        "page_value": "Turns engineering into AI-native production",
+        "source_value": null,
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "GoGloby turns engineering into AI-native production.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "Built the Applied AI Engineering system",
+            "verified": true
+          },
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "the engineering standard behind 4x Applied AI Engineering",
+            "verified": true,
+            "fragment": "the engineering standard behind 4x Applied"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified global talent claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Identity; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claim that GoGloby hires the world's most thoroughly vetted talent within US and EU time zones is not supported by the company sources.",
+        "fix": "Remove the unverified superlative and time-zone coverage claim.",
+        "subject": "GoGloby candidate network",
+        "page_value": "World's most thoroughly vetted talent within US & EU time zones",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.description",
+            "quote": "hire the world's most thoroughly vetted talent within the US & EU time zones.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Sergey experience differs",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The author bio says Sergey has 16+ years of experience, while the Fact Sheet says he has spent 17 years building software systems and engineering organizations.",
+        "fix": "Correct the experience figure to match the Fact Sheet.",
+        "subject": "Sergey Matikaynen experience",
+        "page_value": "16+ years",
+        "source_value": "17 years",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "fragment": "He has spent 16+ years building"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 17",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "fragment": "He has spent 16+ years building"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified Sergey credentials",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders; Glossary §10",
+        "rule_verified": true,
+        "issue": "The page claims Sergey has certified Agentic SDLC mastery and is a LinkedIn Top Voice, neither of which appears in the company sources.",
+        "fix": "Remove these credentials unless GoGloby verifies them.",
+        "subject": "Sergey Matikaynen credentials",
+        "page_value": "Certified Agentic SDLC mastery; LinkedIn Top Voice",
+        "source_value": "not in Fact Sheet",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "including certified Agentic SDLC mastery.",
+            "verified": true,
+            "fragment": "including certified Agentic SDLC mastery."
+          },
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "fragment": "He is a LinkedIn Top Voice"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 17",
+            "quote": "including certified Agentic SDLC mastery.",
+            "verified": true,
+            "fragment": "including certified Agentic SDLC mastery."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 17",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "fragment": "He is a LinkedIn Top Voice"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified Vit achievements",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claims about Vit's decade of scaling teams across named countries and generating $60M+ in value are not in the company sources.",
+        "fix": "Remove these claims unless GoGloby verifies them.",
+        "subject": "Vitaly Koval achievements",
+        "page_value": "$60M+ in value; past decade across six countries",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "For the past decade, has helped engineering leaders scale teams",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "generating $60M+ in value.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified 72-hour profiles",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The claimed 72-hour delivery of vetted profiles is not in the company sources.",
+        "fix": "Remove the 72-hour claim unless GoGloby verifies it.",
+        "subject": "Staffing profile timeline",
+        "page_value": "Vetted profiles delivered in 72 hours",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Vetted profiles delivered in 72 hours.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified feature delivery timeline",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The claimed first validated feature within 3 to 5 business days is not in the company sources.",
+        "fix": "Remove the feature-delivery promise unless GoGloby verifies it.",
+        "subject": "First validated feature timeline",
+        "page_value": "3 to 5 business days",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "First validated feature in 3 to 5 business days.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Staffing guarantee differs",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page describes the staffing replacement guarantee as telemetry-backed, whereas the documented guarantee is performance-based replacement if results fall below baseline, with cancellation available in the first 120 days.",
+        "fix": "Replace this guarantee description with the documented staffing terms.",
+        "subject": "Nearshore staffing guarantee",
+        "page_value": "120-day telemetry-backed replacement guarantee",
+        "source_value": "Performance-based replacement below baseline; cancel any time in first 120 days",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "120-day telemetry-backed replacement guarantee.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Insurance coverage differs",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Legal and security",
+        "rule_verified": true,
+        "issue": "The page claims $3M combined cyber, data, and professional liability, while the Fact Sheet specifies $3M data and cyber-liability insurance.",
+        "fix": "Correct the coverage description to match the Fact Sheet.",
+        "subject": "Insurance coverage",
+        "page_value": "$3M combined liability (cyber, data and professional)",
+        "source_value": "$3M data and cyber liability",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "$3M combined liability (cyber, data and professional) from day one.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "$3M combined liability (cyber, data and professional) included.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified recruiting shortlist time",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "A five-day recruiting shortlist promise is not in the company sources; the documented recruiting timeline is 4–6 weeks to offer.",
+        "fix": "Remove the five-day promise unless GoGloby verifies it, and use the documented timeline where relevant.",
+        "subject": "Recruiting shortlist timeline",
+        "page_value": "Shortlist delivered in 5 days",
+        "source_value": "4–6 weeks to offer",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Shortlist delivered in 5 days.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified faster hiring claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claim that GoGloby hires 50 percent faster than US job boards is not in the company sources.",
+        "fix": "Remove the comparative hiring-speed claim unless GoGloby verifies it.",
+        "subject": "Recruiting speed",
+        "page_value": "50 percent faster time-to-hire than US job boards",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "50 percent faster time-to-hire than US job boards.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified country count",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The claimed network spanning more than five US-time-zone countries is not in the company sources.",
+        "fix": "Remove the country-count claim unless GoGloby verifies it.",
+        "subject": "Recruiting network geography",
+        "page_value": "5 plus US-timezone countries",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Talent network spans 5 plus US-timezone countries.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified under-four-week offer",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The structured data promises generative AI delivery in under four weeks, a timeline not supported by the company sources.",
+        "fix": "Remove the timeline claim along with the discontinued development-service offer.",
+        "subject": "Generative AI delivery timeline",
+        "page_value": "Under 4 weeks",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Forward-deployed into your team in under 4 weeks.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified zero IP exposure",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page promises zero IP exposure, which the company sources do not claim.",
+        "fix": "Remove the zero-exposure claim and use only the documented IP and security statements if needed.",
+        "subject": "IP exposure",
+        "page_value": "Zero IP exposure",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Zero IP exposure.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified AI ROI measurement",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Legal and security",
+        "rule_verified": true,
+        "issue": "The page claims GoGloby measures engineering spend and returns per shipped feature monthly, while the documented layer reports engineer velocity, code quality, and AI token cost sprint by sprint.",
+        "fix": "Remove the unsupported ROI-tracking claims or limit the description to the documented Intelligence Layer metrics and reporting cadence.",
+        "subject": "AI Development Intelligence Layer metrics",
+        "page_value": "Cost per shipped feature and monthly return measurement",
+        "source_value": "Velocity, code quality, and AI token cost, reported sprint by sprint",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:how-does-gogloby-approach-ai-implementation-cost",
+            "part": "paragraph 2",
+            "quote": "After a one-month Benchmark, you see cost per shipped feature",
+            "verified": true,
+            "fragment": "After a one-month Benchmark, you see"
+          },
+          {
+            "zone_id": "article:how-does-gogloby-approach-ai-implementation-cost",
+            "part": "paragraph 4",
+            "quote": "The AI Intelligence Layer compares output, engineering cost, and AI spend",
+            "verified": true,
+            "fragment": "The AI Intelligence Layer compares output,"
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "GoGloby tracks what your AI implementation returns against what it costs, month by month.",
+            "verified": true,
+            "fragment": "GoGloby tracks what your AI implementation"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified AI systems consulting",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §1, §2",
+        "rule_verified": true,
+        "issue": "The page offers AI Solutions Architects to work in client repositories, clear delivery bottlenecks, and install an Agentic SDLC, which is not a documented GoGloby service.",
+        "fix": "Remove this consulting and implementation offer; describe only the documented recruiting and staffing services.",
+        "subject": "AI Solutions Architects implementation offer",
+        "page_value": "Architects clear bottlenecks and install the Agentic SDLC",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:how-does-gogloby-approach-ai-implementation-cost",
+            "part": "paragraph 3",
+            "quote": "AI Solutions Architects work inside your repos and review flow to clear those stalls.",
+            "verified": true,
+            "fragment": "AI Solutions Architects work inside your"
+          },
+          {
+            "zone_id": "article:how-does-gogloby-approach-ai-implementation-cost",
+            "part": "paragraph 3",
+            "quote": "They install the Agentic SDLC",
+            "verified": true,
+            "fragment": "They install the Agentic"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Book a call for old offer",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §2, §7",
+        "rule_verified": true,
+        "issue": "The banner's call to action promotes the unsupported AI implementation measurement offer rather than a documented recruiting or staffing service.",
+        "fix": "Remove this call to action or change it to one that leads to a documented GoGloby service.",
+        "subject": "Banner call to action",
+        "page_value": "Book A Call",
+        "source_value": "Start a search; Get vetted profiles",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 2",
+            "quote": "Book A Call",
+            "verified": true,
+            "fragment": "Book A Call"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Term not used: AI-native production",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"AI-native production\" is a term or name the company no longer uses.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "AI-native production",
+        "page_value": null,
+        "source_value": null,
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "AI-native production",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "WebSite.description",
+            "quote": "AI-native production",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      },
+      {
+        "title": "Term not used: Applied AI Engineering partner",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"Applied AI Engineering partner\" is no longer how GoGloby describes itself.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "Applied AI Engineering partner",
+        "page_value": null,
+        "source_value": null,
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.slogan",
+            "quote": "Applied AI Engineering Partner",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "WebSite.description",
+            "quote": "Applied AI Engineering partner",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      },
+      {
+        "title": "Term not used: AI Intelligence Layer",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The product is now called the AI Development Intelligence Layer.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "AI Intelligence Layer",
+        "page_value": null,
+        "source_value": null,
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:how-does-gogloby-approach-ai-implementation-cost",
+            "part": "paragraph 2",
+            "quote": "AI Intelligence Layer",
+            "verified": true,
+            "fragment": "AI Intelligence Layer"
+          },
+          {
+            "zone_id": "article:how-does-gogloby-approach-ai-implementation-cost",
+            "part": "paragraph 4",
+            "quote": "AI Intelligence Layer",
+            "verified": true,
+            "fragment": "AI Intelligence Layer"
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      },
+      {
+        "title": "Term not used: Secure Development Environment",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"Secure Development Environment\" is a term or name the company no longer uses.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "Secure Development Environment",
+        "page_value": null,
+        "source_value": null,
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "secure development environment",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      },
+      {
+        "title": "Term not used: 4x (product name)",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"4x (product name)\" is a term or name the company no longer uses.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "4x (product name)",
+        "page_value": null,
+        "source_value": null,
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "4x Applied",
+            "verified": true,
+            "fragment": "4x Applied"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 17",
+            "quote": "4x Applied",
+            "verified": true,
+            "fragment": "4x Applied"
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      }
+    ],
+    "usage": {
+      "input": 18454,
+      "cached_input": 0,
+      "output": 7808
+    },
+    "error": null
+  },
+  "geo": {
+    "hash": "9a14f81ba7055f2bd909bd48c494b31370a19beb7095eae6ce9362c804acf08c",
+    "cached": false,
+    "code": [
+      {
+        "id": "trap_terms",
+        "status": "pass",
+        "value": "none in title, H1, meta, og",
+        "places": []
+      },
+      {
+        "id": "em_dash",
+        "status": "fail",
+        "value": "3 found",
+        "places": [
+          {
+            "zone_id": "json_ld",
+            "part": "field 10",
+            "value": "— | …a, Brazil, Mexico, and Europe — generating $60M+ in value. Bu…"
+          },
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "value": "— | …ss the US, Canada, and Europe — software architecture, agile …"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 17",
+            "value": "— | …ss the US, Canada, and Europe — software architecture, agile …"
+          }
+        ]
+      },
+      {
+        "id": "ampersand",
+        "status": "fail",
+        "value": "14 found",
+        "places": [
+          {
+            "zone_id": "title",
+            "value": "& | …cing, Estimates, Hidden Costs & ROI | GoGloby"
+          },
+          {
+            "zone_id": "og_title",
+            "value": "& | …cing, Estimates, Hidden Costs & ROI | GoGloby"
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "field 3",
+            "value": "& | …y vetted talent within the US & EU time zones."
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "field 7",
+            "value": "& | Co-founder & CTO of GoGloby. Leads the Age…"
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "field 22",
+            "value": "& | …cing, Estimates, Hidden Costs &amp; ROI"
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "field 23",
+            "value": "& | …cing, Estimates, Hidden Costs &amp; ROI"
+          },
+          {
+            "zone_id": "h1",
+            "value": "& | …cing, Estimates, Hidden Costs & ROI"
+          },
+          {
+            "zone_id": "article:what-is-included-in-ai-implementation-cost",
+            "part": "table_cell 21",
+            "value": "& | Evaluation & Testing"
+          },
+          {
+            "zone_id": "article:what-is-included-in-ai-implementation-cost",
+            "part": "table_cell 25",
+            "value": "& | Security & Governance"
+          },
+          {
+            "zone_id": "article:what-is-included-in-ai-implementation-cost",
+            "part": "table_cell 33",
+            "value": "& | Training & Adoption"
+          },
+          {
+            "zone_id": "article:what-is-included-in-ai-implementation-cost",
+            "part": "table_cell 37",
+            "value": "& | Infrastructure & Model Usage"
+          },
+          {
+            "zone_id": "article:what-is-included-in-ai-implementation-cost",
+            "part": "table_cell 41",
+            "value": "& | Monitoring & Maintenance"
+          },
+          {
+            "zone_id": "modals",
+            "part": "paragraph 2",
+            "value": "& | …e read and accepted the Terms & Conditions and Privacy Policy"
+          },
+          {
+            "zone_id": "modals",
+            "part": "paragraph 5",
+            "value": "& | …e read and accepted the Terms & Conditions and Privacy Policy"
+          }
+        ]
+      },
+      {
+        "id": "uk_spelling",
+        "status": "pass",
+        "value": "none",
+        "places": []
+      }
+    ],
+    "llm": [
+      {
+        "id": "answer_first",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "AI implementation cost is the total price of putting an AI system into production and keeping it running.",
+        "note": "The first two sentences define the costs to consider but do not answer the H1’s request for 2026 pricing estimates.",
+        "evidence_verified": true,
+        "fragment": "AI Implementation Cost,-in 2026: Pricing,"
+      },
+      {
+        "id": "recruiting_firm_early",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "This is an AI implementation cost article, not a recruiting page.",
+        "evidence_verified": null
+      },
+      {
+        "id": "buyer_ready",
+        "answer": "no",
+        "value": "informational",
+        "zone_id": "page",
+        "evidence": "This guide is for engineering and finance leaders who have to put a real number on an AI project.",
+        "note": "The page is an informational budgeting guide rather than content for companies ready to hire Data and AI engineers.",
+        "evidence_verified": true,
+        "fragment": "This guide is for engineering and"
+      },
+      {
+        "id": "target_keyword",
+        "answer": "na",
+        "value": null,
+        "zone_id": "page",
+        "evidence": null,
+        "note": "No term in Glossary §6 specifically matches this AI implementation cost guide.",
+        "evidence_verified": null
+      },
+      {
+        "id": "uses_data",
+        "answer": "yes",
+        "value": null,
+        "zone_id": "article:what-drives-ai-implementation-cost",
+        "evidence": "Anthropic’s 2026 report found that 46% of organizations cite integration with existing systems as a primary obstacle",
+        "note": "The article gives numerical findings with a source and date nearby, as well as cost estimates.",
+        "evidence_verified": true,
+        "fragment": "Anthropic’s 2026 report"
+      },
+      {
+        "id": "proof_background",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:faqs",
+        "evidence": "He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe",
+        "note": "The author bio mentions software-team experience but does not use the founders’ Data Science and engineering-team background as proof.",
+        "evidence_verified": true,
+        "fragment": "He has spent 16+ years building"
+      },
+      {
+        "id": "sell_against_open_role",
+        "answer": "no",
+        "value": null,
+        "zone_id": "page",
+        "evidence": null,
+        "note": "The article discusses AI implementation budgets but does not compare GoGloby with the cost and wait of an open full-time US role.",
+        "evidence_verified": null
+      }
+    ],
+    "placement": null,
+    "usage": {
+      "input": 15906,
+      "cached_input": 0,
+      "output": 1736
+    },
+    "error": null
+  },
+  "seo": {
+    "checks": [
+      {
+        "id": "http_status",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "200",
+        "severity": "high"
+      },
+      {
+        "id": "title_length",
+        "status": "fail",
+        "severity": "medium",
+        "zone_id": "title",
+        "value": "80 characters (max 60)"
+      },
+      {
+        "id": "meta_present",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "138 characters",
+        "severity": "high"
+      },
+      {
+        "id": "meta_length",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "138 characters (120-158)",
+        "severity": "low"
+      },
+      {
+        "id": "h1_count",
+        "status": "pass",
+        "zone_id": "h1",
+        "value": "1",
+        "severity": "high"
+      },
+      {
+        "id": "canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "https://gogloby.com/insights/ai-implementation-cost/",
+        "severity": "high"
+      },
+      {
+        "id": "indexable",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "severity": "high"
+      },
+      {
+        "id": "schema_required",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "present",
+        "severity": "medium"
+      },
+      {
+        "id": "schema_recommended",
+        "status": "fail",
+        "zone_id": "json_ld",
+        "value": "missing: BreadcrumbList",
+        "severity": "medium"
+      },
+      {
+        "id": "author",
+        "status": "pass",
+        "zone_id": "author",
+        "value": "Sergey Matikaynen",
+        "severity": "medium"
+      },
+      {
+        "id": "dates",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "published: 2026-10-02T21:52:32+03:00; modified: 2026-10-02T21:52:36+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "date_mismatch",
+        "status": "pass",
+        "zone_id": "date",
+        "value": "visible \"Updated on October 2, 2026\" vs dateModified 2026-10-02T21:52:36+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "broken_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "6 checked",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "redirecting_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "none",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "link_to_services",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "no link to /services/*",
+        "severity": "medium"
+      },
+      {
+        "id": "alt_missing",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without alt",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_empty",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 with empty alt",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "image_dimensions",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "2 without width/height",
+        "places": [
+          {
+            "zone_id": "author",
+            "part": "image 1",
+            "value": "1706550966241.jpeg"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "image 1",
+            "value": "1706550966241.jpeg"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "heading_order",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "og_present",
+        "status": "pass",
+        "zone_id": "og_title",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "og_url_canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "og:url https://gogloby.com/insights/ai-implementation-cost/ vs canonical https://gogloby.com/insights/ai-implementation-cost/",
+        "severity": "low"
+      },
+      {
+        "id": "twitter_card",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "summary_large_image",
+        "severity": "low"
+      },
+      {
+        "id": "html_lang",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "en-US",
+        "severity": "low"
+      },
+      {
+        "id": "viewport",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "jsonld_valid",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "4 block(s)",
+        "severity": "high"
+      },
+      {
+        "id": "article_fields",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "anchors_resolve",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "16 checked",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "faq_schema_matches_dom",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "accordion block: true, FAQPage schema: true",
+        "severity": "low"
+      }
+    ]
+  }
+}

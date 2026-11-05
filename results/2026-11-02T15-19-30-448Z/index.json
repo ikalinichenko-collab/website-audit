@@ -1,0 +1,96 @@
+{
+  "schema_version": 2,
+  "pages": [
+    {
+      "slug": "home_2c4de38d",
+      "url": "draft://example-draft.md",
+      "title": "Hire Nearshore AI Engineers in 48 Hours",
+      "group": "Drafts",
+      "subsection": "Drafts",
+      "profile": "post",
+      "template": "draft",
+      "action": "rewrite",
+      "summary": "The intro presents GoGloby as an “Applied AI Engineering partner” and uses disallowed “AI-native production” positioning. The page also relies on unsupported hiring-speed and offer claims, and contains client, company-fact, and CTA issues that should not carry into a rewrite.",
+      "compliance": {
+        "high": 7,
+        "medium": 3,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 5,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      },
+      "checked_at": "2026-11-02T15:20:22.761Z"
+    }
+  ],
+  "totals": {
+    "pages": 1,
+    "compliance": {
+      "high": 7,
+      "medium": 3,
+      "low": 0
+    },
+    "geo": 5,
+    "seo": {
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "actions": {
+      "rewrite": 1
+    }
+  },
+  "by_group": {
+    "Drafts": {
+      "pages": 1,
+      "compliance": {
+        "high": 7,
+        "medium": 3,
+        "low": 0
+      },
+      "geo": 5,
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      },
+      "actions": {
+        "rewrite": 1
+      }
+    }
+  },
+  "by_subsection": {
+    "Drafts/Drafts": {
+      "pages": 1,
+      "compliance": {
+        "high": 7,
+        "medium": 3,
+        "low": 0
+      },
+      "geo": 5,
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      },
+      "actions": {
+        "rewrite": 1
+      }
+    }
+  },
+  "site": {
+    "compliance": {
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "seo": 0,
+    "geo": 0
+  }
+}

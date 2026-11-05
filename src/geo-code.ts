@@ -25,6 +25,8 @@ export function geoTypeOf(profile: string): GeoType {
 export interface GeoPlace {
   zone_id: string;
   part?: string;
+  /** readable place for a table cell, set when reports are built */
+  place?: string;
   value: string;
 }
 

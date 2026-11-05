@@ -1,0 +1,3439 @@
+{
+ "template": "block",
+ "zones": [
+  {
+   "id": "title",
+   "kind": "title",
+   "label": "Title",
+   "scope": "page",
+   "skipped": false,
+   "text": "Generative AI Development Services | GoGloby",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Generative AI Development Services | GoGloby"
+    }
+   ]
+  },
+  {
+   "id": "meta_description",
+   "kind": "meta_description",
+   "label": "Meta description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Discover generative AI development services for building secure agents, RAG systems, AI workflows, and production-ready enterprise solutions.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Discover generative AI development services for building secure agents, RAG systems, AI workflows, and production-ready enterprise solutions."
+    }
+   ]
+  },
+  {
+   "id": "og_title",
+   "kind": "og_title",
+   "label": "og:title",
+   "scope": "page",
+   "skipped": false,
+   "text": "Generative AI Development Services | GoGloby",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Generative AI Development Services | GoGloby"
+    }
+   ]
+  },
+  {
+   "id": "og_description",
+   "kind": "og_description",
+   "label": "og:description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Discover generative AI development services for building secure agents, RAG systems, AI workflows, and production-ready enterprise solutions.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Discover generative AI development services for building secure agents, RAG systems, AI workflows, and production-ready enterprise solutions."
+    }
+   ]
+  },
+  {
+   "id": "json_ld",
+   "kind": "json_ld",
+   "label": "Structured data (JSON-LD)",
+   "scope": "page",
+   "skipped": false,
+   "text": "Generative AI Development Services\nProduction-ready generative AI delivery covering GenAI integration, multi-agent orchestration, optimization and evaluation, and ongoing support and governance. GoGloby's Applied AI Software Engineers build copilots, AI agents, RAG applications, and agentic workflows using LangChain, LangGraph, CrewAI, and AutoGen. Forward-deployed into your team in under 4 weeks. Zero IP exposure. $3M combined liability (cyber, data and professional) from day one.\nWhat Types of Generative AI Solutions Can GoGloby Build for Enterprise Teams?\nGoGloby builds copilots, RAG applications, AI agents, agentic workflows, document intelligence systems, and customer-facing AI products. Every build runs on Agentic SDLC mastery inside your own perimeter — production-ready, governed, and integrated into your existing stack.\nHow Long Does It Take to Launch a Production-Ready Generative AI Project?\nFirst Applied AI Software Engineer is embedded in under 4 weeks. Measurable velocity improvement — 35–45% agentic commit rate — is typically reached by month 2. Full benchmark of 60–70% agentic commit rate is reached by month 6.\nHow Does GoGloby Handle Security, Compliance, and IP Protection?\nYour environment, your code, your data. Engineers operate inside your own perimeter under zero-trust access controls, audit logging, and model routing policy. Zero IP exposure to GoGloby systems. $3M combined liability (cyber, data and professional), included from day one.\nWhat Makes GoGloby Different From a Generic AI Vendor or Staffing Agency?\nGoGloby delivers all four layers as one integrated Applied AI Engineering Pod — vetted talent, Agentic Workflow, the Layer telemetry, and work that stays inside your own perimeter. Generic vendors give you one piece. GoGloby delivers the complete operating model with measurable velocity benchmarks, not just engineers.\nCan GoGloby Work With Our Existing Models, Data Stack, and Engineering Team?\nYes. GoGloby's Applied AI Software Engineers embed directly into your existing team, integrate with your current data stack, and work with your chosen models. No rip-and-replace. Agentic Workflow is deployed on top of your existing CI/CD pipeline.\nHow Do You Measure Whether Generative AI Delivery Is Actually Improving Performance?\nThe Layer tracks AI Contribution Ratio, agentic commit rate, PR turnaround, build stability, and bug density directly from CI/CD metadata — sprint by sprint. Every sprint produces a board-ready report. No black box, no end-of-project summaries.",
+   "parts": [
+    {
+     "type": "field",
+     "text": "Generative AI Development Services",
+     "area": "Service.name",
+     "index": 1
+    },
+    {
+     "type": "field",
+     "text": "Production-ready generative AI delivery covering GenAI integration, multi-agent orchestration, optimization and evaluation, and ongoing support and governance. GoGloby's Applied AI Software Engineers build copilots, AI agents, RAG applications, and agentic workflows using LangChain, LangGraph, CrewAI, and AutoGen. Forward-deployed into your team in under 4 weeks. Zero IP exposure. $3M combined liability (cyber, data and professional) from day one.",
+     "area": "Service.description",
+     "index": 2
+    },
+    {
+     "type": "field",
+     "text": "What Types of Generative AI Solutions Can GoGloby Build for Enterprise Teams?",
+     "area": "Question.name",
+     "index": 3
+    },
+    {
+     "type": "field",
+     "text": "GoGloby builds copilots, RAG applications, AI agents, agentic workflows, document intelligence systems, and customer-facing AI products. Every build runs on Agentic SDLC mastery inside your own perimeter — production-ready, governed, and integrated into your existing stack.",
+     "area": "Answer.text",
+     "index": 4
+    },
+    {
+     "type": "field",
+     "text": "How Long Does It Take to Launch a Production-Ready Generative AI Project?",
+     "area": "Question.name",
+     "index": 5
+    },
+    {
+     "type": "field",
+     "text": "First Applied AI Software Engineer is embedded in under 4 weeks. Measurable velocity improvement — 35–45% agentic commit rate — is typically reached by month 2. Full benchmark of 60–70% agentic commit rate is reached by month 6.",
+     "area": "Answer.text",
+     "index": 6
+    },
+    {
+     "type": "field",
+     "text": "How Does GoGloby Handle Security, Compliance, and IP Protection?",
+     "area": "Question.name",
+     "index": 7
+    },
+    {
+     "type": "field",
+     "text": "Your environment, your code, your data. Engineers operate inside your own perimeter under zero-trust access controls, audit logging, and model routing policy. Zero IP exposure to GoGloby systems. $3M combined liability (cyber, data and professional), included from day one.",
+     "area": "Answer.text",
+     "index": 8
+    },
+    {
+     "type": "field",
+     "text": "What Makes GoGloby Different From a Generic AI Vendor or Staffing Agency?",
+     "area": "Question.name",
+     "index": 9
+    },
+    {
+     "type": "field",
+     "text": "GoGloby delivers all four layers as one integrated Applied AI Engineering Pod — vetted talent, Agentic Workflow, the Layer telemetry, and work that stays inside your own perimeter. Generic vendors give you one piece. GoGloby delivers the complete operating model with measurable velocity benchmarks, not just engineers.",
+     "area": "Answer.text",
+     "index": 10
+    },
+    {
+     "type": "field",
+     "text": "Can GoGloby Work With Our Existing Models, Data Stack, and Engineering Team?",
+     "area": "Question.name",
+     "index": 11
+    },
+    {
+     "type": "field",
+     "text": "Yes. GoGloby's Applied AI Software Engineers embed directly into your existing team, integrate with your current data stack, and work with your chosen models. No rip-and-replace. Agentic Workflow is deployed on top of your existing CI/CD pipeline.",
+     "area": "Answer.text",
+     "index": 12
+    },
+    {
+     "type": "field",
+     "text": "How Do You Measure Whether Generative AI Delivery Is Actually Improving Performance?",
+     "area": "Question.name",
+     "index": 13
+    },
+    {
+     "type": "field",
+     "text": "The Layer tracks AI Contribution Ratio, agentic commit rate, PR turnaround, build stability, and bug density directly from CI/CD metadata — sprint by sprint. Every sprint produces a board-ready report. No black box, no end-of-project summaries.",
+     "area": "Answer.text",
+     "index": 14
+    }
+   ]
+  },
+  {
+   "id": "h1",
+   "kind": "h1",
+   "label": "H1",
+   "scope": "page",
+   "skipped": false,
+   "text": "Generative AI Development Services",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Generative AI Development Services"
+    }
+   ]
+  },
+  {
+   "id": "block:hero-services#1",
+   "kind": "block",
+   "label": "Hero services: Generative AI Development Services",
+   "scope": "page",
+   "skipped": false,
+   "text": "Background\nBackground\nBackground\nBackground\nEnterprise Generative AI Development Services\nGenerative AI Development Services\nGoGloby’s generative AI development services deliver production-ready AI products, including copilots, agents, RAG applications, and agentic workflows, built by an AI Solutions Architect embedded directly inside your engineering team, with enterprise governance and board-ready proof from sprint one. Every engagement starts with an Architect who deploys and runs the Layer and sets up the Agentic SDLC; Applied AI Engineers scale the team from there.\nA senior AI Solutions Architect embedded in under 4 weeks\nFaster delivery, tracked sprint by sprint against your baseline\nYour code stays in your own cloud: your environment, your code, your data\n$3M combined liability (cyber, data and professional), included from day one\nBook a GenAI Delivery Consultation\n4.9/5 Clutch | 4.7/5 Avg. across platforms | 100+ B2B teams embedded\nNvidia\nAugment Code\nSnowflake\nCursor\nGemini\nNvidia\nAugment Code\nSnowflake\nCursor\nGemini",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/blocks/block-bg-1-01.png",
+     "file": "block-bg-1-01.png",
+     "alt": "Background",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "Background",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/blocks/block-bg-2-01.png",
+     "file": "block-bg-2-01.png",
+     "alt": "Background",
+     "alt_state": "text",
+     "dims": false,
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "Background",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/blocks/block-bg-3-01.png",
+     "file": "block-bg-3-01.png",
+     "alt": "Background",
+     "alt_state": "text",
+     "dims": false,
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "Background",
+     "src": "https://gogloby.com/wp-content/uploads/2026/05/hero-services-5-01.png",
+     "file": "hero-services-5-01.png",
+     "alt": "Background",
+     "alt_state": "text",
+     "dims": true,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Enterprise Generative AI Development Services",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Generative AI Development Services",
+     "area": "block-main",
+     "level": 1,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby’s generative AI development services deliver production-ready AI products, including copilots, agents, RAG applications, and agentic workflows, built by an AI Solutions Architect embedded directly inside your engineering team, with enterprise governance and board-ready proof from sprint one. Every engagement starts with an Architect who deploys and runs the Layer and sets up the Agentic SDLC; Applied AI Engineers scale the team from there.",
+     "area": "block-main",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "A senior AI Solutions Architect embedded in under 4 weeks",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Faster delivery, tracked sprint by sprint against your baseline",
+     "area": "block-main",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Your code stays in your own cloud: your environment, your code, your data",
+     "area": "block-main",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "$3M combined liability (cyber, data and professional), included from day one",
+     "area": "block-main",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Book a GenAI Delivery Consultation",
+     "area": "block-main",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "4.9/5 Clutch | 4.7/5 Avg. across platforms | 100+ B2B teams embedded",
+     "area": "block-main",
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "Nvidia",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-nvidia-1-grayscale.png",
+     "file": "logo-nvidia-1-grayscale.png",
+     "alt": "Nvidia",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "Augment Code",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-augment-code-1-grayscale.png",
+     "file": "logo-augment-code-1-grayscale.png",
+     "alt": "Augment Code",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 6
+    },
+    {
+     "type": "image",
+     "text": "Snowflake",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-snowflake-1-grayscale.png",
+     "file": "logo-snowflake-1-grayscale.png",
+     "alt": "Snowflake",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 7
+    },
+    {
+     "type": "image",
+     "text": "Cursor",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-cursor-1-grayscale.png",
+     "file": "logo-cursor-1-grayscale.png",
+     "alt": "Cursor",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 8
+    },
+    {
+     "type": "image",
+     "text": "Gemini",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-gemini-1-grayscale.png",
+     "file": "logo-gemini-1-grayscale.png",
+     "alt": "Gemini",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 9
+    },
+    {
+     "type": "image",
+     "text": "Nvidia",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-nvidia-1-grayscale.png",
+     "file": "logo-nvidia-1-grayscale.png",
+     "alt": "Nvidia",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 10
+    },
+    {
+     "type": "image",
+     "text": "Augment Code",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-augment-code-1-grayscale.png",
+     "file": "logo-augment-code-1-grayscale.png",
+     "alt": "Augment Code",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 11
+    },
+    {
+     "type": "image",
+     "text": "Snowflake",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-snowflake-1-grayscale.png",
+     "file": "logo-snowflake-1-grayscale.png",
+     "alt": "Snowflake",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 12
+    },
+    {
+     "type": "image",
+     "text": "Cursor",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-cursor-1-grayscale.png",
+     "file": "logo-cursor-1-grayscale.png",
+     "alt": "Cursor",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 13
+    },
+    {
+     "type": "image",
+     "text": "Gemini",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-gemini-1-grayscale.png",
+     "file": "logo-gemini-1-grayscale.png",
+     "alt": "Gemini",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 14
+    }
+   ]
+  },
+  {
+   "id": "block:companies#1",
+   "kind": "block",
+   "label": "Companies: Trusted by Industry Leaders",
+   "scope": "page",
+   "skipped": false,
+   "text": "Trusted by Industry Leaders\nZillow\nHasbro\nEverCommerce\nTATA\nGitab\nZillow\nHasbro\nEverCommerce\nTATA\nGitab\nClients report over $1M in average annual engineering cost savings (36 B2B SaaS engagements, 2024–2026)",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Trusted by Industry Leaders",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "Zillow",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-zillow-1-black.png",
+     "file": "logo-zillow-1-black.png",
+     "alt": "Zillow",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "Hasbro",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-hasbro-1-black.png",
+     "file": "logo-hasbro-1-black.png",
+     "alt": "Hasbro",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-main",
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "EverCommerce",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-evercommerce-1-black.png",
+     "file": "logo-evercommerce-1-black.png",
+     "alt": "EverCommerce",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-main",
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "TATA",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-tata-1-black.png",
+     "file": "logo-tata-1-black.png",
+     "alt": "TATA",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-main",
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "Gitab",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-gitlab-1-black.png",
+     "file": "logo-gitlab-1-black.png",
+     "alt": "Gitab",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-main",
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "Zillow",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-zillow-1-black.png",
+     "file": "logo-zillow-1-black.png",
+     "alt": "Zillow",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-main",
+     "index": 6
+    },
+    {
+     "type": "image",
+     "text": "Hasbro",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-hasbro-1-black.png",
+     "file": "logo-hasbro-1-black.png",
+     "alt": "Hasbro",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-main",
+     "index": 7
+    },
+    {
+     "type": "image",
+     "text": "EverCommerce",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-evercommerce-1-black.png",
+     "file": "logo-evercommerce-1-black.png",
+     "alt": "EverCommerce",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-main",
+     "index": 8
+    },
+    {
+     "type": "image",
+     "text": "TATA",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-tata-1-black.png",
+     "file": "logo-tata-1-black.png",
+     "alt": "TATA",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-main",
+     "index": 9
+    },
+    {
+     "type": "image",
+     "text": "Gitab",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-gitlab-1-black.png",
+     "file": "logo-gitlab-1-black.png",
+     "alt": "Gitab",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-main",
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "Clients report over $1M in average annual engineering cost savings (36 B2B SaaS engagements, 2024–2026)",
+     "area": "block-footer",
+     "index": 1
+    }
+   ]
+  },
+  {
+   "id": "block:scope#1",
+   "kind": "block",
+   "label": "Scope: Generative AI Development Services: Full Delivery Scope",
+   "scope": "page",
+   "skipped": false,
+   "text": "What GoGloby delivers\nGenerative AI Development Services: Full Delivery Scope\nGoGloby’s AI Solutions Architects deliver end-to-end generative AI development services, from strategy and model selection through integration, orchestration, deployment, and continuous optimization, all inside a governed, secure delivery framework your board can stand behind. Enterprise generative AI means more than writing prompts.\nG\nGenAI Integration\nOutcome:\nGenerative AI capabilities embedded into your existing product, data stack, and engineering workflow.\nBest for:\nTeams adding AI to live systems without disrupting current architecture or pipelines.\nDeliverables:\nAPI integration, data connectors, prompt layer design, end-to-end testing, rollout plan.\nGenAI Integration\nAPI Design\nSystem Connectors\nPrompt Engineering\nA\nAI Orchestration\nOutcome:\nMulti-agent systems and LLM pipelines that run reliably at production scale.\nBest for:\nTeams moving beyond single-model demos into coordinated agentic workflows.\nDeliverables:\nOrchestration architecture, agent coordination layer, token management, failover design.\nAI Orchestration\nMulti-Agent Systems\nLLM Pipelines\nAgentic Workflows\nO\nOptimization and Evaluation\nOutcome:\nMeasurable improvement in model performance, cost efficiency, and output quality post-launch.\nBest for:\nTeams with live AI in production hitting quality, cost, or latency ceilings.\nDeliverables:\nEvaluation harness, benchmark report, prompt refinement, cost guardrails, optimization roadmap.\nAI Evaluation\nPerformance Optimization\nCost Guardrails\nBenchmark Reporting\nO\nOngoing Support and Governance\nOutcome:\nContinuous AI delivery with zero drift, active telemetry, and a team that owns the outcome.\nBest for:\nTeams that need a long-term Applied AI Engineering partner beyond the initial build.\nDeliverables:\nSprint-by-sprint AI Intelligence Layer reporting, incident response, governance audits, ACR tracking.\nAI Governance\nThe Layer\nACR Tracking\nOngoing Support",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "What GoGloby delivers",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Generative AI Development Services: Full Delivery Scope",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby’s AI Solutions Architects deliver end-to-end generative AI development services, from strategy and model selection through integration, orchestration, deployment, and continuous optimization, all inside a governed, secure delivery framework your board can stand behind. Enterprise generative AI means more than writing prompts.",
+     "area": "block-header",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "G",
+     "area": "slide 1",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "GenAI Integration",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Outcome:",
+     "area": "slide 1",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Generative AI capabilities embedded into your existing product, data stack, and engineering workflow.",
+     "area": "slide 1",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Best for:",
+     "area": "slide 1",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Teams adding AI to live systems without disrupting current architecture or pipelines.",
+     "area": "slide 1",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Deliverables:",
+     "area": "slide 1",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "API integration, data connectors, prompt layer design, end-to-end testing, rollout plan.",
+     "area": "slide 1",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "GenAI Integration",
+     "area": "slide 1",
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "API Design",
+     "area": "slide 1",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "System Connectors",
+     "area": "slide 1",
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "Prompt Engineering",
+     "area": "slide 1",
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "A",
+     "area": "slide 2",
+     "index": 14
+    },
+    {
+     "type": "heading",
+     "text": "AI Orchestration",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Outcome:",
+     "area": "slide 2",
+     "index": 15
+    },
+    {
+     "type": "paragraph",
+     "text": "Multi-agent systems and LLM pipelines that run reliably at production scale.",
+     "area": "slide 2",
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "Best for:",
+     "area": "slide 2",
+     "index": 17
+    },
+    {
+     "type": "paragraph",
+     "text": "Teams moving beyond single-model demos into coordinated agentic workflows.",
+     "area": "slide 2",
+     "index": 18
+    },
+    {
+     "type": "paragraph",
+     "text": "Deliverables:",
+     "area": "slide 2",
+     "index": 19
+    },
+    {
+     "type": "paragraph",
+     "text": "Orchestration architecture, agent coordination layer, token management, failover design.",
+     "area": "slide 2",
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "AI Orchestration",
+     "area": "slide 2",
+     "index": 21
+    },
+    {
+     "type": "paragraph",
+     "text": "Multi-Agent Systems",
+     "area": "slide 2",
+     "index": 22
+    },
+    {
+     "type": "paragraph",
+     "text": "LLM Pipelines",
+     "area": "slide 2",
+     "index": 23
+    },
+    {
+     "type": "paragraph",
+     "text": "Agentic Workflows",
+     "area": "slide 2",
+     "index": 24
+    },
+    {
+     "type": "paragraph",
+     "text": "O",
+     "area": "slide 3",
+     "index": 25
+    },
+    {
+     "type": "heading",
+     "text": "Optimization and Evaluation",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Outcome:",
+     "area": "slide 3",
+     "index": 26
+    },
+    {
+     "type": "paragraph",
+     "text": "Measurable improvement in model performance, cost efficiency, and output quality post-launch.",
+     "area": "slide 3",
+     "index": 27
+    },
+    {
+     "type": "paragraph",
+     "text": "Best for:",
+     "area": "slide 3",
+     "index": 28
+    },
+    {
+     "type": "paragraph",
+     "text": "Teams with live AI in production hitting quality, cost, or latency ceilings.",
+     "area": "slide 3",
+     "index": 29
+    },
+    {
+     "type": "paragraph",
+     "text": "Deliverables:",
+     "area": "slide 3",
+     "index": 30
+    },
+    {
+     "type": "paragraph",
+     "text": "Evaluation harness, benchmark report, prompt refinement, cost guardrails, optimization roadmap.",
+     "area": "slide 3",
+     "index": 31
+    },
+    {
+     "type": "paragraph",
+     "text": "AI Evaluation",
+     "area": "slide 3",
+     "index": 32
+    },
+    {
+     "type": "paragraph",
+     "text": "Performance Optimization",
+     "area": "slide 3",
+     "index": 33
+    },
+    {
+     "type": "paragraph",
+     "text": "Cost Guardrails",
+     "area": "slide 3",
+     "index": 34
+    },
+    {
+     "type": "paragraph",
+     "text": "Benchmark Reporting",
+     "area": "slide 3",
+     "index": 35
+    },
+    {
+     "type": "paragraph",
+     "text": "O",
+     "area": "slide 4",
+     "index": 36
+    },
+    {
+     "type": "heading",
+     "text": "Ongoing Support and Governance",
+     "area": "slide 4",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Outcome:",
+     "area": "slide 4",
+     "index": 37
+    },
+    {
+     "type": "paragraph",
+     "text": "Continuous AI delivery with zero drift, active telemetry, and a team that owns the outcome.",
+     "area": "slide 4",
+     "index": 38
+    },
+    {
+     "type": "paragraph",
+     "text": "Best for:",
+     "area": "slide 4",
+     "index": 39
+    },
+    {
+     "type": "paragraph",
+     "text": "Teams that need a long-term Applied AI Engineering partner beyond the initial build.",
+     "area": "slide 4",
+     "index": 40
+    },
+    {
+     "type": "paragraph",
+     "text": "Deliverables:",
+     "area": "slide 4",
+     "index": 41
+    },
+    {
+     "type": "paragraph",
+     "text": "Sprint-by-sprint AI Intelligence Layer reporting, incident response, governance audits, ACR tracking.",
+     "area": "slide 4",
+     "index": 42
+    },
+    {
+     "type": "paragraph",
+     "text": "AI Governance",
+     "area": "slide 4",
+     "index": 43
+    },
+    {
+     "type": "paragraph",
+     "text": "The Layer",
+     "area": "slide 4",
+     "index": 44
+    },
+    {
+     "type": "paragraph",
+     "text": "ACR Tracking",
+     "area": "slide 4",
+     "index": 45
+    },
+    {
+     "type": "paragraph",
+     "text": "Ongoing Support",
+     "area": "slide 4",
+     "index": 46
+    }
+   ]
+  },
+  {
+   "id": "block:layers#1",
+   "kind": "block",
+   "label": "Layers: Applied AI Engineering: One System, Not Four Vendors",
+   "scope": "page",
+   "skipped": false,
+   "text": "Why GoGloby is Different\nApplied AI Engineering: One System, Not Four Vendors\nGoGloby’s Applied AI Engineering solves all 4 problems every tech leader faces in the agentic AI era, talent, workflow, performance, and security, delivered as one integrated Applied AI Engineering Pod. Generic vendors give you one piece: a developer, a tool, or a consultant.\n1. TALENT\nAI Solutions Architect\nThe AI Solutions Architect is the vetted talent layer inside GoGloby’s generative AI development services: a senior engineer who has passed a 4-stage technical evaluation covering spec execution, context engineering, system architecture, and AI governance. Only the top 4% of our curated pipeline qualify.\nOutcomes\nArrives with proven Agentic SDLC mastery, ready to ship production-grade generative AI from sprint one, not after months of onboarding.\nPrevents\nChatGPT hobbyists and vibe coders never reach your team. Each candidate is eliminated through 4 progressive stages before you see a single profile.\nGuarantees\nShortlist delivered in 5 days. First architect embedded in under 4 weeks. 120-day performance replacement included.\n2. PERFORMANCE\nThe Layer\nThe Layer is the telemetry layer that makes generative AI development services measurable, tracking AI Contribution Ratio, agentic commit rate, and velocity acceleration from CI/CD metadata, sprint by sprint.\nOutcomes\nTeams reach 35 to 45% agentic commit rate by month 2 and 60 to 70% by month 6, tracked automatically, not estimated.\nPrevents\nSilent drift, invisible plateaus, and vanity metrics. Every sprint produces a board-ready performance report with hard data.\nGuarantees\nDelivery velocity tracked against your own baseline from day one. Not a benchmark, your number.\n3. SECURITY\nEverything Runs Inside Your Perimeter\nThe AI Intelligence Layer deploys in your VPC, so your code, your data and your metrics stay in your environment. Our engineers work through your pipeline with the access you grant, logged like any employee and revocable any day. Your access rules, not ours.\nOutcomes\nZero IP exposure from day one. Your environment, your code, your data. Your embedded architect operates inside it, never around it.\nPrevents\nPublic AI tool usage, prompt leakage, and compliance violations. Every action runs under access controls, audit logging, and model routing policy.\nGuarantees\n$3M combined liability (cyber, data and professional) included. Governance gates active from sprint one. Compliant with your data residency requirements.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "Why GoGloby is Different",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Applied AI Engineering: One System, Not Four Vendors",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby’s Applied AI Engineering solves all 4 problems every tech leader faces in the agentic AI era, talent, workflow, performance, and security, delivered as one integrated Applied AI Engineering Pod. Generic vendors give you one piece: a developer, a tool, or a consultant.",
+     "area": "block-header",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "1. TALENT",
+     "area": "slide 1",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "AI Solutions Architect",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "The AI Solutions Architect is the vetted talent layer inside GoGloby’s generative AI development services: a senior engineer who has passed a 4-stage technical evaluation covering spec execution, context engineering, system architecture, and AI governance. Only the top 4% of our curated pipeline qualify.",
+     "area": "slide 1",
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/05/layers-icon-13-01.png",
+     "file": "layers-icon-13-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Outcomes",
+     "area": "slide 1",
+     "level": 4,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Arrives with proven Agentic SDLC mastery, ready to ship production-grade generative AI from sprint one, not after months of onboarding.",
+     "area": "slide 1",
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/05/layers-icon-14-01.png",
+     "file": "layers-icon-14-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 1",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Prevents",
+     "area": "slide 1",
+     "level": 4,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "ChatGPT hobbyists and vibe coders never reach your team. Each candidate is eliminated through 4 progressive stages before you see a single profile.",
+     "area": "slide 1",
+     "index": 6
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/05/layers-icon-15-01.png",
+     "file": "layers-icon-15-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 1",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Guarantees",
+     "area": "slide 1",
+     "level": 4,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Shortlist delivered in 5 days. First architect embedded in under 4 weeks. 120-day performance replacement included.",
+     "area": "slide 1",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "2. PERFORMANCE",
+     "area": "slide 2",
+     "index": 8
+    },
+    {
+     "type": "heading",
+     "text": "The Layer",
+     "area": "slide 2",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "The Layer is the telemetry layer that makes generative AI development services measurable, tracking AI Contribution Ratio, agentic commit rate, and velocity acceleration from CI/CD metadata, sprint by sprint.",
+     "area": "slide 2",
+     "index": 9
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/05/layers-icon-13-01.png",
+     "file": "layers-icon-13-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 2",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Outcomes",
+     "area": "slide 2",
+     "level": 4,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Teams reach 35 to 45% agentic commit rate by month 2 and 60 to 70% by month 6, tracked automatically, not estimated.",
+     "area": "slide 2",
+     "index": 10
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/05/layers-icon-14-01.png",
+     "file": "layers-icon-14-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 2",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Prevents",
+     "area": "slide 2",
+     "level": 4,
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Silent drift, invisible plateaus, and vanity metrics. Every sprint produces a board-ready performance report with hard data.",
+     "area": "slide 2",
+     "index": 11
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/05/layers-icon-15-01.png",
+     "file": "layers-icon-15-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 2",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Guarantees",
+     "area": "slide 2",
+     "level": 4,
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Delivery velocity tracked against your own baseline from day one. Not a benchmark, your number.",
+     "area": "slide 2",
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "3. SECURITY",
+     "area": "slide 3",
+     "index": 13
+    },
+    {
+     "type": "heading",
+     "text": "Everything Runs Inside Your Perimeter",
+     "area": "slide 3",
+     "level": 3,
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "The AI Intelligence Layer deploys in your VPC, so your code, your data and your metrics stay in your environment. Our engineers work through your pipeline with the access you grant, logged like any employee and revocable any day. Your access rules, not ours.",
+     "area": "slide 3",
+     "index": 14
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/05/layers-icon-13-01.png",
+     "file": "layers-icon-13-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 3",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "Outcomes",
+     "area": "slide 3",
+     "level": 4,
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "Zero IP exposure from day one. Your environment, your code, your data. Your embedded architect operates inside it, never around it.",
+     "area": "slide 3",
+     "index": 15
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/05/layers-icon-14-01.png",
+     "file": "layers-icon-14-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 3",
+     "index": 8
+    },
+    {
+     "type": "heading",
+     "text": "Prevents",
+     "area": "slide 3",
+     "level": 4,
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "Public AI tool usage, prompt leakage, and compliance violations. Every action runs under access controls, audit logging, and model routing policy.",
+     "area": "slide 3",
+     "index": 16
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/05/layers-icon-15-01.png",
+     "file": "layers-icon-15-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 3",
+     "index": 9
+    },
+    {
+     "type": "heading",
+     "text": "Guarantees",
+     "area": "slide 3",
+     "level": 4,
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "$3M combined liability (cyber, data and professional) included. Governance gates active from sprint one. Compliant with your data residency requirements.",
+     "area": "slide 3",
+     "index": 17
+    }
+   ]
+  },
+  {
+   "id": "block:how-we-work#1",
+   "kind": "block",
+   "label": "How we work: The Applied AI Engineering Pod: Embedded, Not Outsourced",
+   "scope": "page",
+   "skipped": false,
+   "text": "Engagement Model\nThe Applied AI Engineering Pod: Embedded, Not Outsourced\nGoGloby engages through a fixed-retainer Applied AI Engineering Pod, a fully embedded team delivering all four layers as one system. No fragmented vendors. No ramp-up delay. One partner from discovery to board-ready proof.\nForward-Deployed in Under 4 Weeks\nFrom signed contract to first architect live in your team, not 3 to 6 months of recruiting lag.\nFlat Monthly Fee Per Engineer\nA flat monthly fee per engineer, with engineers added or removed monthly. No hourly billing, no minimum term. Every engagement starts with an Architect who deploys and runs the Layer, sets up the Agentic SDLC, and ships features hands-on.\nAll 4 Layers as One System\nTalent, Agentic SDLC, the Layer, and work that stays inside your own perimeter, delivered together.\n120-Day Performance Guarantee\nIf an engineer underperforms, we replace them. Contractual, not marketing.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "Engagement Model",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "The Applied AI Engineering Pod: Embedded, Not Outsourced",
+     "area": "block-main",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby engages through a fixed-retainer Applied AI Engineering Pod, a fully embedded team delivering all four layers as one system. No fragmented vendors. No ramp-up delay. One partner from discovery to board-ready proof.",
+     "area": "block-main",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Forward-Deployed in Under 4 Weeks",
+     "area": "block-table",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "From signed contract to first architect live in your team, not 3 to 6 months of recruiting lag.",
+     "area": "block-table",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Flat Monthly Fee Per Engineer",
+     "area": "block-table",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "A flat monthly fee per engineer, with engineers added or removed monthly. No hourly billing, no minimum term. Every engagement starts with an Architect who deploys and runs the Layer, sets up the Agentic SDLC, and ships features hands-on.",
+     "area": "block-table",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "All 4 Layers as One System",
+     "area": "block-table",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Talent, Agentic SDLC, the Layer, and work that stays inside your own perimeter, delivered together.",
+     "area": "block-table",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "120-Day Performance Guarantee",
+     "area": "block-table",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "If an engineer underperforms, we replace them. Contractual, not marketing.",
+     "area": "block-table",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "block:leaders#1",
+   "kind": "block",
+   "label": "Leaders: High-Impact Generative AI Case Studies for Enterprises",
+   "scope": "page",
+   "skipped": false,
+   "text": "WHAT WE BUILT\nHigh-Impact Generative AI Case Studies for Enterprises\nGoGloby’s AI Solutions Architects deliver production-ready generative AI solutions across internal operations and customer-facing products, every build running on the Agentic SDLC inside your own perimeter.\nH\nEntertainment\nHASBRO\nNYSE · $13.4B market cap · $4.7B revenue · 35+ countries · 20+ iconic brands\nThe company behind Monopoly, Nerf, Transformers, Magic: The Gathering, and Peppa Pig — dominating the $46B North American toy market. A GoGloby Applied AI Engineering client building their internal AI Studio.\nD\nHealthcare\nDR. CHRONO\n17M+ patients · $3B+ medical claims annually · Cloud EHR\nOne of the US’s most trusted EHR platforms — powering telehealth, clinical billing, and revenue cycle management for millions of patients. An active GoGloby Applied AI Engineering engagement.\nE\nPayments\nEVERCOMMERCE\nNasdaq-listed SaaS · $1.98B market cap · 700,000+ business clients\nThe SaaS powerhouse serving home services, health, and wellness businesses across North America — built through aggressive acquisition and unified under one platform. A long-term GoGloby Applied AI Engineering partner.\nK\nGaming\nKEYWORDS\n$2.8B EQT acquisition · $844M revenue · 13,000 employees · 26 countries\nThe world’s #1 video game services company — trusted by 24 of the top 25 game publishers globally. Working with GoGloby to build their AI engineering leadership.\nM\nMedia\nMikeWorldWide\nFortune 500 agency · $57M fee income · 230+ staff · US & UK · Amazon · NFL · Deloitte · WNBA\nOne of the most respected independent PR agencies in the US — a blue-chip roster spanning tech, sports, energy, and consumer. A GoGloby talent partner for 3+ years.\nT\nIT Services\nTATA\n$106B market cap · $30B revenue · 600,000+ employees · 55 countries\nOne of the world’s largest technology companies — serving 1/3 of the Fortune 500 with a declared goal to become the world’s largest AI-led tech services company. An active GoGloby Applied AI Engineering client.\nC\nAccounting\nCANOPY\nSeries F · $236.5M raised · #1 rated accounting SaaS\nThe AI-powered practice management platform dominating accounting firms across the US — covering CRM, billing, documents, and IRS transcripts in one system. A GoGloby Applied AI Engineering client.\nS\nInvestments\nSYDECAR\n$3B+ AUA · 107% YoY revenue growth\nThe private markets infrastructure platform automating SPV and fund formation for venture managers worldwide. A long-term GoGloby Applied AI Engineering partner.\nN\nOil & Gas\nNOVILAB\nSeries B · $46M raised · $50B+ capital allocation decisions · Shell · Devon Energy · Wood Mackenzie\nThe AI analytics platform powering capital decisions for the world’s largest energy companies. An active GoGloby Applied AI Engineering engagement.\nB\nHR\nBONUSLY\nSeries B · $32.4M raised · 3,400+ clients · DoorDash · Toast · MongoDB\nThe #1 rated employee recognition platform in the US — trusted by some of the fastest-growing companies in tech and hospitality. A GoGloby Applied AI Engineering client.\nE\nFintech\nEVERY\n$32M raised · $60M+ payroll processed · $0 in tax penalties · Fast Company Most Innovative 2025\nThe all-in-one banking, payroll, and bookkeeping platform built for founders. A long-term GoGloby Applied AI Engineering partner.\nA\nHealthTech\nALCHEMY\n$31M seed · 25M+ prescriptions · Magic Johnson investor\nFounded by the co-founder of Truepill — building in-house pharmacy infrastructure for HIV and safety-net clinics under the 340B drug pricing program. A GoGloby Applied AI Engineering client.\nD\nGaming\nDEVSISTERS\nPublic · $299M market cap · 200M+ users · $500M+ lifetime player spending · 243 countries\nThe US/South Korean studio behind Cookie Run — one of mobile gaming’s most globally distributed franchises with 150M+ downloads. A GoGloby Applied AI Engineering client.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "WHAT WE BUILT",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "High-Impact Generative AI Case Studies for Enterprises",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby’s AI Solutions Architects deliver production-ready generative AI solutions across internal operations and customer-facing products, every build running on the Agentic SDLC inside your own perimeter.",
+     "area": "block-header",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "H",
+     "area": "slide 1",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Entertainment",
+     "area": "slide 1",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "HASBRO",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "NYSE · $13.4B market cap · $4.7B revenue · 35+ countries · 20+ iconic brands",
+     "area": "slide 1",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "The company behind Monopoly, Nerf, Transformers, Magic: The Gathering, and Peppa Pig — dominating the $46B North American toy market. A GoGloby Applied AI Engineering client building their internal AI Studio.",
+     "area": "slide 1",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "D",
+     "area": "slide 2",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Healthcare",
+     "area": "slide 2",
+     "index": 8
+    },
+    {
+     "type": "heading",
+     "text": "DR. CHRONO",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "17M+ patients · $3B+ medical claims annually · Cloud EHR",
+     "area": "slide 2",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "One of the US’s most trusted EHR platforms — powering telehealth, clinical billing, and revenue cycle management for millions of patients. An active GoGloby Applied AI Engineering engagement.",
+     "area": "slide 2",
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "E",
+     "area": "slide 3",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "Payments",
+     "area": "slide 3",
+     "index": 12
+    },
+    {
+     "type": "heading",
+     "text": "EVERCOMMERCE",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Nasdaq-listed SaaS · $1.98B market cap · 700,000+ business clients",
+     "area": "slide 3",
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "The SaaS powerhouse serving home services, health, and wellness businesses across North America — built through aggressive acquisition and unified under one platform. A long-term GoGloby Applied AI Engineering partner.",
+     "area": "slide 3",
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "K",
+     "area": "slide 4",
+     "index": 15
+    },
+    {
+     "type": "paragraph",
+     "text": "Gaming",
+     "area": "slide 4",
+     "index": 16
+    },
+    {
+     "type": "heading",
+     "text": "KEYWORDS",
+     "area": "slide 4",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "$2.8B EQT acquisition · $844M revenue · 13,000 employees · 26 countries",
+     "area": "slide 4",
+     "index": 17
+    },
+    {
+     "type": "paragraph",
+     "text": "The world’s #1 video game services company — trusted by 24 of the top 25 game publishers globally. Working with GoGloby to build their AI engineering leadership.",
+     "area": "slide 4",
+     "index": 18
+    },
+    {
+     "type": "paragraph",
+     "text": "M",
+     "area": "slide 5",
+     "index": 19
+    },
+    {
+     "type": "paragraph",
+     "text": "Media",
+     "area": "slide 5",
+     "index": 20
+    },
+    {
+     "type": "heading",
+     "text": "MikeWorldWide",
+     "area": "slide 5",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Fortune 500 agency · $57M fee income · 230+ staff · US & UK · Amazon · NFL · Deloitte · WNBA",
+     "area": "slide 5",
+     "index": 21
+    },
+    {
+     "type": "paragraph",
+     "text": "One of the most respected independent PR agencies in the US — a blue-chip roster spanning tech, sports, energy, and consumer. A GoGloby talent partner for 3+ years.",
+     "area": "slide 5",
+     "index": 22
+    },
+    {
+     "type": "paragraph",
+     "text": "T",
+     "area": "slide 6",
+     "index": 23
+    },
+    {
+     "type": "paragraph",
+     "text": "IT Services",
+     "area": "slide 6",
+     "index": 24
+    },
+    {
+     "type": "heading",
+     "text": "TATA",
+     "area": "slide 6",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "$106B market cap · $30B revenue · 600,000+ employees · 55 countries",
+     "area": "slide 6",
+     "index": 25
+    },
+    {
+     "type": "paragraph",
+     "text": "One of the world’s largest technology companies — serving 1/3 of the Fortune 500 with a declared goal to become the world’s largest AI-led tech services company. An active GoGloby Applied AI Engineering client.",
+     "area": "slide 6",
+     "index": 26
+    },
+    {
+     "type": "paragraph",
+     "text": "C",
+     "area": "slide 7",
+     "index": 27
+    },
+    {
+     "type": "paragraph",
+     "text": "Accounting",
+     "area": "slide 7",
+     "index": 28
+    },
+    {
+     "type": "heading",
+     "text": "CANOPY",
+     "area": "slide 7",
+     "level": 3,
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Series F · $236.5M raised · #1 rated accounting SaaS",
+     "area": "slide 7",
+     "index": 29
+    },
+    {
+     "type": "paragraph",
+     "text": "The AI-powered practice management platform dominating accounting firms across the US — covering CRM, billing, documents, and IRS transcripts in one system. A GoGloby Applied AI Engineering client.",
+     "area": "slide 7",
+     "index": 30
+    },
+    {
+     "type": "paragraph",
+     "text": "S",
+     "area": "slide 8",
+     "index": 31
+    },
+    {
+     "type": "paragraph",
+     "text": "Investments",
+     "area": "slide 8",
+     "index": 32
+    },
+    {
+     "type": "heading",
+     "text": "SYDECAR",
+     "area": "slide 8",
+     "level": 3,
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "$3B+ AUA · 107% YoY revenue growth",
+     "area": "slide 8",
+     "index": 33
+    },
+    {
+     "type": "paragraph",
+     "text": "The private markets infrastructure platform automating SPV and fund formation for venture managers worldwide. A long-term GoGloby Applied AI Engineering partner.",
+     "area": "slide 8",
+     "index": 34
+    },
+    {
+     "type": "paragraph",
+     "text": "N",
+     "area": "slide 9",
+     "index": 35
+    },
+    {
+     "type": "paragraph",
+     "text": "Oil & Gas",
+     "area": "slide 9",
+     "index": 36
+    },
+    {
+     "type": "heading",
+     "text": "NOVILAB",
+     "area": "slide 9",
+     "level": 3,
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "Series B · $46M raised · $50B+ capital allocation decisions · Shell · Devon Energy · Wood Mackenzie",
+     "area": "slide 9",
+     "index": 37
+    },
+    {
+     "type": "paragraph",
+     "text": "The AI analytics platform powering capital decisions for the world’s largest energy companies. An active GoGloby Applied AI Engineering engagement.",
+     "area": "slide 9",
+     "index": 38
+    },
+    {
+     "type": "paragraph",
+     "text": "B",
+     "area": "slide 10",
+     "index": 39
+    },
+    {
+     "type": "paragraph",
+     "text": "HR",
+     "area": "slide 10",
+     "index": 40
+    },
+    {
+     "type": "heading",
+     "text": "BONUSLY",
+     "area": "slide 10",
+     "level": 3,
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "Series B · $32.4M raised · 3,400+ clients · DoorDash · Toast · MongoDB",
+     "area": "slide 10",
+     "index": 41
+    },
+    {
+     "type": "paragraph",
+     "text": "The #1 rated employee recognition platform in the US — trusted by some of the fastest-growing companies in tech and hospitality. A GoGloby Applied AI Engineering client.",
+     "area": "slide 10",
+     "index": 42
+    },
+    {
+     "type": "paragraph",
+     "text": "E",
+     "area": "slide 11",
+     "index": 43
+    },
+    {
+     "type": "paragraph",
+     "text": "Fintech",
+     "area": "slide 11",
+     "index": 44
+    },
+    {
+     "type": "heading",
+     "text": "EVERY",
+     "area": "slide 11",
+     "level": 3,
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "$32M raised · $60M+ payroll processed · $0 in tax penalties · Fast Company Most Innovative 2025",
+     "area": "slide 11",
+     "index": 45
+    },
+    {
+     "type": "paragraph",
+     "text": "The all-in-one banking, payroll, and bookkeeping platform built for founders. A long-term GoGloby Applied AI Engineering partner.",
+     "area": "slide 11",
+     "index": 46
+    },
+    {
+     "type": "paragraph",
+     "text": "A",
+     "area": "slide 12",
+     "index": 47
+    },
+    {
+     "type": "paragraph",
+     "text": "HealthTech",
+     "area": "slide 12",
+     "index": 48
+    },
+    {
+     "type": "heading",
+     "text": "ALCHEMY",
+     "area": "slide 12",
+     "level": 3,
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "$31M seed · 25M+ prescriptions · Magic Johnson investor",
+     "area": "slide 12",
+     "index": 49
+    },
+    {
+     "type": "paragraph",
+     "text": "Founded by the co-founder of Truepill — building in-house pharmacy infrastructure for HIV and safety-net clinics under the 340B drug pricing program. A GoGloby Applied AI Engineering client.",
+     "area": "slide 12",
+     "index": 50
+    },
+    {
+     "type": "paragraph",
+     "text": "D",
+     "area": "slide 13",
+     "index": 51
+    },
+    {
+     "type": "paragraph",
+     "text": "Gaming",
+     "area": "slide 13",
+     "index": 52
+    },
+    {
+     "type": "heading",
+     "text": "DEVSISTERS",
+     "area": "slide 13",
+     "level": 3,
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Public · $299M market cap · 200M+ users · $500M+ lifetime player spending · 243 countries",
+     "area": "slide 13",
+     "index": 53
+    },
+    {
+     "type": "paragraph",
+     "text": "The US/South Korean studio behind Cookie Run — one of mobile gaming’s most globally distributed franchises with 150M+ downloads. A GoGloby Applied AI Engineering client.",
+     "area": "slide 13",
+     "index": 54
+    }
+   ]
+  },
+  {
+   "id": "block:how-it-works#1",
+   "kind": "block",
+   "label": "How it works: How We Deliver Generative AI Development Services",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Delivery Works\nHow We Deliver Generative AI Development Services\nGoGloby’s generative AI development services follow a structured, enterprise-safe delivery path. The Agentic SDLC is active from sprint one and deployed on day one. Every output is tracked through the Layer.\n1\nEmbed Your AI Solutions Architect\nA top-4% Claude Certified Architect with proven Agentic SDLC mastery, embedded into your team and delivering their first output in under 4 weeks, not months.\n2\nConfigure The Secure Environment\nWe set up Claude Enterprise and Claude on AWS, Bedrock, or Vertex so your team works inside a private, zero-trust setup and your code never leaves your cloud.\n3\nDeploy The Agentic SDLC\nOne governed process across your entire team from day one: spec first, code second, human review before every merge. No chaotic AI usage, no ungoverned output.\n4\nActivate The Layer\nWe turn on metadata-only telemetry. You receive board-ready, sprint-by-sprint proof of your velocity gains against your baseline, without us ever accessing your source code.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "How Delivery Works",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "How We Deliver Generative AI Development Services",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby’s generative AI development services follow a structured, enterprise-safe delivery path. The Agentic SDLC is active from sprint one and deployed on day one. Every output is tracked through the Layer.",
+     "area": "block-header",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "1",
+     "area": "slide 1",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Embed Your AI Solutions Architect",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "A top-4% Claude Certified Architect with proven Agentic SDLC mastery, embedded into your team and delivering their first output in under 4 weeks, not months.",
+     "area": "slide 1",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "2",
+     "area": "slide 2",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Configure The Secure Environment",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "We set up Claude Enterprise and Claude on AWS, Bedrock, or Vertex so your team works inside a private, zero-trust setup and your code never leaves your cloud.",
+     "area": "slide 2",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "3",
+     "area": "slide 3",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "Deploy The Agentic SDLC",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "One governed process across your entire team from day one: spec first, code second, human review before every merge. No chaotic AI usage, no ungoverned output.",
+     "area": "slide 3",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "4",
+     "area": "slide 4",
+     "index": 9
+    },
+    {
+     "type": "heading",
+     "text": "Activate The Layer",
+     "area": "slide 4",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "We turn on metadata-only telemetry. You receive board-ready, sprint-by-sprint proof of your velocity gains against your baseline, without us ever accessing your source code.",
+     "area": "slide 4",
+     "index": 10
+    }
+   ]
+  },
+  {
+   "id": "block:security#1",
+   "kind": "block",
+   "label": "Security: Security, Compliance, and Governance for Generative AI",
+   "scope": "page",
+   "skipped": false,
+   "text": "Security and Governance\nSecurity, Compliance, and Governance for Generative AI\nWorking inside your own perimeter eliminates the core security risk in enterprise generative AI development: engineers using public AI tools without governance. We run Claude Enterprise and Claude on AWS, Bedrock, or Vertex so a zero-trust governance layer is built into every engagement from day one, with $3M combined liability (cyber, data and professional) included.\nSecure Data Flow\nSecure Environment\nDelivery\nSecurity Summary\nZero trust environment and access rules\nVector database choice and retrieval design\nMasking or tokenization where needed\nAudit logging and security control matrix\n$3M combined liability (cyber, data and professional), included from day one\nReview Secure Deployment Options",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "Security and Governance",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Security, Compliance, and Governance for Generative AI",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Working inside your own perimeter eliminates the core security risk in enterprise generative AI development: engineers using public AI tools without governance. We run Claude Enterprise and Claude on AWS, Bedrock, or Vertex so a zero-trust governance layer is built into every engagement from day one, with $3M combined liability (cyber, data and professional) included.",
+     "area": "block-header",
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/05/security-icon-2-03.png",
+     "file": "security-icon-2-03.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Secure Data Flow",
+     "area": "block-main",
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/05/security-icon-2-01.png",
+     "file": "security-icon-2-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-main",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Secure Environment",
+     "area": "block-main",
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/05/security-icon-3-01.png",
+     "file": "security-icon-3-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-main",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Delivery",
+     "area": "block-main",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Security Summary",
+     "area": "block-main",
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Zero trust environment and access rules",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Vector database choice and retrieval design",
+     "area": "block-main",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Masking or tokenization where needed",
+     "area": "block-main",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Audit logging and security control matrix",
+     "area": "block-main",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "$3M combined liability (cyber, data and professional), included from day one",
+     "area": "block-main",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Review Secure Deployment Options",
+     "area": "block-main",
+     "index": 7
+    }
+   ]
+  },
+  {
+   "id": "block:accordion-2#1",
+   "kind": "block",
+   "label": "Accordion 2: AI Governance Framework",
+   "scope": "page",
+   "skipped": false,
+   "text": "AI Governance Framework\nEvery engagement ships with defined delegation boundaries, prompt conventions, and review criteria before a single line of code is written. Governance is not a retrospective audit. It is the operating layer your team runs on from day one.\nAccess Control Matrix\nEvery engineer operates under role-based access controls tied to your environment. No engineer accesses data, models, or pipelines outside their defined scope. Full audit trail maintained from day one.\nVirtual Environments\nEach engagement runs inside an isolated virtual environment. Your codebase, data, and models never share infrastructure with other clients or public AI tools.\nZero-Trust Network\nNo implicit trust at any layer. Every request is authenticated, every connection is encrypted, every action is logged. Engineers operate inside the perimeter, never around it.\nCompliance and Attestations\nWorking inside your own perimeter supports your compliance requirements, including data residency, access governance, and audit readiness. Documentation available on request.\nPrivacy and PII Handling\nPII is masked or tokenized before it reaches any model layer. Vector database design and retrieval pipelines are scoped to prevent exposure at the architecture level, not patched after deployment.\nModel and Prompt Safety\nModel routing policy and cost guardrails are active from sprint one. Prompt injection mitigations and circuit breakers are implemented and tested before any model goes to production.\nObservability and Audit\nEvery AI action is logged: commits, prompt calls, model outputs, and access events. Sprint-by-sprint audit trail delivered through the Layer.\nLegal and IP Protection\nYour environment, your code, your data. GoGloby engineers operate inside your infrastructure. Zero IP exposure to GoGloby systems. $3M combined liability (cyber, data and professional), included from day one.\nIncident Response and Resilience\nDefined escalation paths, incident playbooks, and rollback procedures are established before go-live. No reactive firefighting. Every engagement ships with a documented response plan.\nWhat does the Benchmark include?\nEvery engagement starts with the Benchmark: a fixed fee for one month, with the AI Intelligence Layer deployed inside your VPC and your baseline delivered at the end of it. The fee is credited in full toward your first month of delivery. If you stop there, you keep the baseline.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "AI Governance Framework",
+     "area": "item 1",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Every engagement ships with defined delegation boundaries, prompt conventions, and review criteria before a single line of code is written. Governance is not a retrospective audit. It is the operating layer your team runs on from day one.",
+     "area": "item 1",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Access Control Matrix",
+     "area": "item 2",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Every engineer operates under role-based access controls tied to your environment. No engineer accesses data, models, or pipelines outside their defined scope. Full audit trail maintained from day one.",
+     "area": "item 2",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Virtual Environments",
+     "area": "item 3",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Each engagement runs inside an isolated virtual environment. Your codebase, data, and models never share infrastructure with other clients or public AI tools.",
+     "area": "item 3",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Zero-Trust Network",
+     "area": "item 4",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "No implicit trust at any layer. Every request is authenticated, every connection is encrypted, every action is logged. Engineers operate inside the perimeter, never around it.",
+     "area": "item 4",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Compliance and Attestations",
+     "area": "item 5",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Working inside your own perimeter supports your compliance requirements, including data residency, access governance, and audit readiness. Documentation available on request.",
+     "area": "item 5",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Privacy and PII Handling",
+     "area": "item 6",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "PII is masked or tokenized before it reaches any model layer. Vector database design and retrieval pipelines are scoped to prevent exposure at the architecture level, not patched after deployment.",
+     "area": "item 6",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Model and Prompt Safety",
+     "area": "item 7",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Model routing policy and cost guardrails are active from sprint one. Prompt injection mitigations and circuit breakers are implemented and tested before any model goes to production.",
+     "area": "item 7",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "Observability and Audit",
+     "area": "item 8",
+     "level": 3,
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Every AI action is logged: commits, prompt calls, model outputs, and access events. Sprint-by-sprint audit trail delivered through the Layer.",
+     "area": "item 8",
+     "index": 8
+    },
+    {
+     "type": "heading",
+     "text": "Legal and IP Protection",
+     "area": "item 9",
+     "level": 3,
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Your environment, your code, your data. GoGloby engineers operate inside your infrastructure. Zero IP exposure to GoGloby systems. $3M combined liability (cyber, data and professional), included from day one.",
+     "area": "item 9",
+     "index": 9
+    },
+    {
+     "type": "heading",
+     "text": "Incident Response and Resilience",
+     "area": "item 10",
+     "level": 3,
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "Defined escalation paths, incident playbooks, and rollback procedures are established before go-live. No reactive firefighting. Every engagement ships with a documented response plan.",
+     "area": "item 10",
+     "index": 10
+    },
+    {
+     "type": "heading",
+     "text": "What does the Benchmark include?",
+     "area": "item 11",
+     "level": 3,
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "Every engagement starts with the Benchmark: a fixed fee for one month, with the AI Intelligence Layer deployed inside your VPC and your baseline delivered at the end of it. The fee is credited in full toward your first month of delivery. If you stop there, you keep the baseline.",
+     "area": "item 11",
+     "index": 11
+    }
+   ]
+  },
+  {
+   "id": "block:featured-facts#1",
+   "kind": "block",
+   "label": "Featured facts: What engineering leaders can measure — sprint by sprint",
+   "scope": "page",
+   "skipped": false,
+   "text": "Proof of performance\nWhat engineering leaders can measure — sprint by sprint\nthe Layer makes generative AI delivery measurable from sprint one. These are not estimates or benchmarks from external studies — they are client-reported outcomes tracked through CI/CD metadata by the Layer telemetry layer.\n$ per feature\nCost and return per shipped feature, measured against your own baseline sprint by sprint in the Layer\nWe track delivery velocity sprint by sprint against your own starting point. The gain you see is your real number, not a marketing multiplier.\n90% at month 6\nAI-Assisted Commit Rate (benchmark 35–45% at month 2)\nAt maturity, up to 90% of commits are AI-assisted in CI logs, the core velocity signal tracked by the Layer.\n30%\nFaster PR Turnaround\nAbout 30% faster average PR turnaround against your baseline, measured sprint by sprint.\n30 to 40%\nLower Engineering Costs\nClient-reported outcomes across B2B SaaS engagements, not modeled projections.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "Proof of performance",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "What engineering leaders can measure — sprint by sprint",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "the Layer makes generative AI delivery measurable from sprint one. These are not estimates or benchmarks from external studies — they are client-reported outcomes tracked through CI/CD metadata by the Layer telemetry layer.",
+     "area": "block-header",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "$ per feature",
+     "area": "block-main",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Cost and return per shipped feature, measured against your own baseline sprint by sprint in the Layer",
+     "area": "block-main",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "We track delivery velocity sprint by sprint against your own starting point. The gain you see is your real number, not a marketing multiplier.",
+     "area": "block-main",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "90% at month 6",
+     "area": "block-main",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "AI-Assisted Commit Rate (benchmark 35–45% at month 2)",
+     "area": "block-main",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "At maturity, up to 90% of commits are AI-assisted in CI logs, the core velocity signal tracked by the Layer.",
+     "area": "block-main",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "30%",
+     "area": "block-main",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Faster PR Turnaround",
+     "area": "block-main",
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "About 30% faster average PR turnaround against your baseline, measured sprint by sprint.",
+     "area": "block-main",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "30 to 40%",
+     "area": "block-main",
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "Lower Engineering Costs",
+     "area": "block-main",
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Client-reported outcomes across B2B SaaS engagements, not modeled projections.",
+     "area": "block-main",
+     "index": 14
+    }
+   ]
+  },
+  {
+   "id": "block:featured-tiles#1",
+   "kind": "block",
+   "label": "Featured tiles: Why Engineering Leaders Choose GoGloby Over Generic GenAI V…",
+   "scope": "page",
+   "skipped": false,
+   "text": "WHY COMPANIES CHOOSE GOGLOBY\nWhy Engineering Leaders Choose GoGloby Over Generic GenAI Vendors\nGoGloby is the only generative AI development partner that delivers talent, workflow, security, and performance telemetry as one integrated system — with contractual guarantees from day one.\nShip AI features in under 4 weeks — not after 6 months of recruiting\nCertified Agentic SDLC mastery — real enterprise production experience\nThe Layer — ACR and commit rate tracked sprint by sprint\nAgentic Workflow Inside Your Own Perimeter, Built In From Day One\n120-day replacement guarantee and $3M combined liability (cyber, data and professional) — contractual\nOne partner, one system, one invoice — not four fragmented vendors",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "WHY COMPANIES CHOOSE GOGLOBY",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Why Engineering Leaders Choose GoGloby Over Generic GenAI Vendors",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby is the only generative AI development partner that delivers talent, workflow, security, and performance telemetry as one integrated system — with contractual guarantees from day one.",
+     "area": "block-header",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Ship AI features in under 4 weeks — not after 6 months of recruiting",
+     "area": "block-main",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Certified Agentic SDLC mastery — real enterprise production experience",
+     "area": "block-main",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "The Layer — ACR and commit rate tracked sprint by sprint",
+     "area": "block-main",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Agentic Workflow Inside Your Own Perimeter, Built In From Day One",
+     "area": "block-main",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "120-day replacement guarantee and $3M combined liability (cyber, data and professional) — contractual",
+     "area": "block-main",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "One partner, one system, one invoice — not four fragmented vendors",
+     "area": "block-main",
+     "level": 3,
+     "index": 7
+    }
+   ]
+  },
+  {
+   "id": "block:contact#1",
+   "kind": "block",
+   "label": "Contact: Contact Us",
+   "scope": "page",
+   "skipped": false,
+   "text": "Contact Us\nSubmit your information to schedule a technical briefing. We will walk you through the Benchmark, what your features cost today, and how our engineers forward-deploy in under 4 weeks.\nTrusted by\nFeatured by\nAwarded by\nWe follow data & security practices:",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Contact Us",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Submit your information to schedule a technical briefing. We will walk you through the Benchmark, what your features cost today, and how our engineers forward-deploy in under 4 weeks.",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Trusted by",
+     "area": "block-aside",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-hasbro-1-grayscale.png",
+     "file": "logo-hasbro-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-hubspot-1-grayscale.png",
+     "file": "logo-hubspot-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-carta-1-grayscale.png",
+     "file": "logo-carta-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-oyster-1-grayscale.png",
+     "file": "logo-oyster-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-deel-1-grayscale.png",
+     "file": "logo-deel-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-evercommerce-1-grayscale.png",
+     "file": "logo-evercommerce-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Featured by",
+     "area": "block-aside",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-forbes-1-grayscale.png",
+     "file": "logo-forbes-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 7
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-crunchbase-1-grayscale.png",
+     "file": "logo-crunchbase-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 8
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-london-daily-1-grayscale.png",
+     "file": "logo-london-daily-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 9
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-nbc-1-grayscale.png",
+     "file": "logo-nbc-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 10
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-fox-news-1-grayscale.png",
+     "file": "logo-fox-news-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 11
+    },
+    {
+     "type": "heading",
+     "text": "Awarded by",
+     "area": "block-aside",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-clutch-1-grayscale.png",
+     "file": "logo-clutch-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 12
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-trustpilot-1-grayscale.png",
+     "file": "logo-trustpilot-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 13
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-linkedin-1-grayscale.png",
+     "file": "logo-linkedin-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 14
+    },
+    {
+     "type": "heading",
+     "text": "We follow data & security practices:",
+     "area": "block-aside",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-aicpa-soc2-type2-1-white-grayscale.png",
+     "file": "logo-aicpa-soc2-type2-1-white-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 15
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-ism-iso-27001-1-grayscale.png",
+     "file": "logo-ism-iso-27001-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 16
+    }
+   ]
+  },
+  {
+   "id": "block:accordion-1#1",
+   "kind": "block",
+   "label": "Accordion 1: FAQ",
+   "scope": "page",
+   "skipped": false,
+   "text": "FAQ\nWhat Types of Generative AI Solutions Can GoGloby Build for Enterprise Teams?\nGoGloby builds copilots, RAG applications, AI agents, agentic workflows, document intelligence systems, and customer-facing AI products. Every build runs on Agentic SDLC mastery inside your own perimeter — production-ready, governed, and integrated into your existing stack.\nHow Long Does It Take to Launch a Production-Ready Generative AI Project?\nFirst Applied AI Software Engineer is embedded in under 4 weeks. Measurable velocity improvement — 35–45% agentic commit rate — is typically reached by month 2. Full benchmark of 60–70% agentic commit rate is reached by month 6.\nHow Does GoGloby Handle Security, Compliance, and IP Protection?\nYour environment, your code, your data. Engineers operate inside your own perimeter under zero-trust access controls, audit logging, and model routing policy. Zero IP exposure to GoGloby systems. $3M combined liability (cyber, data and professional), included from day one.\nWhat Makes GoGloby Different From a Generic AI Vendor or Staffing Agency?\nGoGloby delivers all four layers as one integrated Applied AI Engineering Pod — vetted talent, Agentic Workflow, the Layer telemetry, and work that stays inside your own perimeter. Generic vendors give you one piece. GoGloby delivers the complete operating model with measurable velocity benchmarks, not just engineers.\nCan GoGloby Work With Our Existing Models, Data Stack, and Engineering Team?\nYes. GoGloby’s Applied AI Software Engineers embed directly into your existing team, integrate with your current data stack, and work with your chosen models. No rip-and-replace. Agentic Workflow is deployed on top of your existing CI/CD pipeline.\nHow Do You Measure Whether Generative AI Delivery Is Actually Improving Performance?\nThe Layer tracks AI Contribution Ratio, agentic commit rate, PR turnaround, build stability, and bug density directly from CI/CD metadata — sprint by sprint. Every sprint produces a board-ready report. No black box, no end-of-project summaries.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "FAQ",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "What Types of Generative AI Solutions Can GoGloby Build for Enterprise Teams?",
+     "area": "item 1",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby builds copilots, RAG applications, AI agents, agentic workflows, document intelligence systems, and customer-facing AI products. Every build runs on Agentic SDLC mastery inside your own perimeter — production-ready, governed, and integrated into your existing stack.",
+     "area": "item 1",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "How Long Does It Take to Launch a Production-Ready Generative AI Project?",
+     "area": "item 1",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "First Applied AI Software Engineer is embedded in under 4 weeks. Measurable velocity improvement — 35–45% agentic commit rate — is typically reached by month 2. Full benchmark of 60–70% agentic commit rate is reached by month 6.",
+     "area": "item 1",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "How Does GoGloby Handle Security, Compliance, and IP Protection?",
+     "area": "item 1",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Your environment, your code, your data. Engineers operate inside your own perimeter under zero-trust access controls, audit logging, and model routing policy. Zero IP exposure to GoGloby systems. $3M combined liability (cyber, data and professional), included from day one.",
+     "area": "item 1",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "What Makes GoGloby Different From a Generic AI Vendor or Staffing Agency?",
+     "area": "item 1",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby delivers all four layers as one integrated Applied AI Engineering Pod — vetted talent, Agentic Workflow, the Layer telemetry, and work that stays inside your own perimeter. Generic vendors give you one piece. GoGloby delivers the complete operating model with measurable velocity benchmarks, not just engineers.",
+     "area": "item 1",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Can GoGloby Work With Our Existing Models, Data Stack, and Engineering Team?",
+     "area": "item 1",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Yes. GoGloby’s Applied AI Software Engineers embed directly into your existing team, integrate with your current data stack, and work with your chosen models. No rip-and-replace. Agentic Workflow is deployed on top of your existing CI/CD pipeline.",
+     "area": "item 1",
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "How Do You Measure Whether Generative AI Delivery Is Actually Improving Performance?",
+     "area": "item 1",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "The Layer tracks AI Contribution Ratio, agentic commit rate, PR turnaround, build stability, and bug density directly from CI/CD metadata — sprint by sprint. Every sprint produces a board-ready report. No black box, no end-of-project summaries.",
+     "area": "item 1",
+     "index": 12
+    }
+   ]
+  },
+  {
+   "id": "banner_cta",
+   "kind": "banner_cta",
+   "label": "Banner CTA",
+   "scope": "shared",
+   "skipped": false,
+   "text": "Background\nBackground\nBuild Secure Generative AI Faster\nShip Production-Ready Generative AI in Under 4 Weeks\nGoGloby forward-deploys an AI Solutions Architect, the Agentic SDLC, and work that stays inside your own perimeter directly into your team. Your code stays in your own cloud, with board-ready proof from sprint one, all delivered as one system.\nBook a Consultation",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/blocks/block-bg-1-01.png",
+     "file": "block-bg-1-01.png",
+     "alt": "Background",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "Background",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/blocks/block-bg-4-01.png",
+     "file": "block-bg-4-01.png",
+     "alt": "Background",
+     "alt_state": "text",
+     "dims": false,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Build Secure Generative AI Faster",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Ship Production-Ready Generative AI in Under 4 Weeks",
+     "area": "block-main",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby forward-deploys an AI Solutions Architect, the Agentic SDLC, and work that stays inside your own perimeter directly into your team. Your code stays in your own cloud, with board-ready proof from sprint one, all delivered as one system.",
+     "area": "block-main",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Book a Consultation",
+     "area": "block-aside",
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "modals",
+   "kind": "modals",
+   "label": "Forms and modals",
+   "scope": "shared",
+   "skipped": false,
+   "text": "Thank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend\nThank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend\nThank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 9
+    }
+   ]
+  },
+  {
+   "id": "site_header",
+   "kind": "site_header",
+   "label": "Site header",
+   "scope": "page",
+   "skipped": true,
+   "text": "Site logo\nSolutions\nAI Engineering Visibility\nForward Deployed Engineering\nServices\nAI Engineers Staff Augmentation\nHire AI Engineers\nAI Development Services\nGenerative AI Consulting Services\nAgentic AI Consulting Services\nAI Production Engineering\nGenerative AI Development Services\nAI Agent Development Services\nAI Custom Software Development Services\nRAG Application Development Services\nLLM Development Services\nApplication AI Modernization Services\nLegacy Application Modernization Services\nSoftware Maintenance Services\nCompany\nAbout us\nJobs\nResources\nInsights\nUse Cases\nPodcast\nContact\nTalk to Us",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Site logo",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/globy-logo-1-01.svg",
+     "file": "globy-logo-1-01.svg",
+     "alt": "Site logo",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Solutions",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineering Visibility",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/ai-engineering-visibility/",
+       "text": "AI Engineering Visibility"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Forward Deployed Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/forward-deployed-engineering/",
+       "text": "Forward Deployed Engineering"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineers Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Engineers Staff Augmentation"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "link",
+     "text": "AI Development Services",
+     "href": "https://gogloby.com/services/ai-development/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-development/",
+       "text": "AI Development Services"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-consulting/",
+       "text": "Generative AI Consulting Services"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Agentic AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/agentic-ai-consulting/",
+       "text": "Agentic AI Consulting Services"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "AI Production Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "AI Production Engineering"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "AI Agent Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-agent-development/",
+       "text": "AI Agent Development Services"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "AI Custom Software Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-custom-software-development/",
+       "text": "AI Custom Software Development Services"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "RAG Application Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/rag-application-development/",
+       "text": "RAG Application Development Services"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "LLM Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/llm-development/",
+       "text": "LLM Development Services"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "link",
+     "text": "Application AI Modernization Services",
+     "href": "https://gogloby.com/services/application-modernization/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/application-modernization/",
+       "text": "Application AI Modernization Services"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Legacy Application Modernization Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/legacy-application-modernization/",
+       "text": "Legacy Application Modernization Services"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "Software Maintenance Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/software-maintenance/",
+       "text": "Software Maintenance Services"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "Talk to Us",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "site_footer",
+   "kind": "site_footer",
+   "label": "Site footer",
+   "scope": "page",
+   "skipped": true,
+   "text": "Background logo\nServices\nApplied AI Engineering\nAI Staff Augmentation\nHire AI Engineers\nGenerative AI Development Services\nCompany\nAbout us\nJobs\nContact\nPrivacy Policy and Candidate Privacy Notice\nTerms and Conditions\nResources\nInsights\nUse Cases\nPodcast\nCase Studies\nConnections\nCrunchbase\nLinkedIn\nX\nG2\nClutch\nTrustpilot\nDesignRush\nGitHub\nFacebook\nYouTube\n© Copyright 2026, GoGloby. All Rights Reserved.",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background logo",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/logos/globy-logo-outline-1-01.svg",
+     "file": "globy-logo-outline-1-01.svg",
+     "alt": "Background logo",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Applied AI Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "Applied AI Engineering"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Staff Augmentation"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Privacy Policy and Candidate Privacy Notice",
+     "links": [
+      {
+       "href": "https://gogloby.com/privacy-policy/",
+       "text": "Privacy Policy and Candidate Privacy Notice"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Terms and Conditions",
+     "links": [
+      {
+       "href": "https://gogloby.com/terms-and-conditions/",
+       "text": "Terms and Conditions"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "Case Studies",
+     "links": [
+      {
+       "href": "https://gogloby.com/case-study/",
+       "text": "Case Studies"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Connections",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Crunchbase",
+     "links": [
+      {
+       "href": "https://www.crunchbase.com/organization/gogloby",
+       "text": "Crunchbase"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "LinkedIn",
+     "links": [
+      {
+       "href": "https://www.linkedin.com/company/gogloby/",
+       "text": "LinkedIn"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "X",
+     "links": [
+      {
+       "href": "https://x.com/GoGloby",
+       "text": "X"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "list_item",
+     "text": "G2",
+     "links": [
+      {
+       "href": "https://www.g2.com/products/gogloby/reviews",
+       "text": "G2"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Clutch",
+     "links": [
+      {
+       "href": "https://clutch.co/profile/gogloby",
+       "text": "Clutch"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Trustpilot",
+     "links": [
+      {
+       "href": "https://www.trustpilot.com/review/gogloby.com",
+       "text": "Trustpilot"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "DesignRush",
+     "links": [
+      {
+       "href": "https://www.designrush.com/agency/profile/gogloby",
+       "text": "DesignRush"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "list_item",
+     "text": "GitHub",
+     "links": [
+      {
+       "href": "https://github.com/gogloby",
+       "text": "GitHub"
+      }
+     ],
+     "index": 21
+    },
+    {
+     "type": "list_item",
+     "text": "Facebook",
+     "links": [
+      {
+       "href": "https://www.facebook.com/gogloby",
+       "text": "Facebook"
+      }
+     ],
+     "index": 22
+    },
+    {
+     "type": "list_item",
+     "text": "YouTube",
+     "links": [
+      {
+       "href": "https://www.youtube.com/@DefaultGlobal",
+       "text": "YouTube"
+      }
+     ],
+     "index": 23
+    },
+    {
+     "type": "paragraph",
+     "text": "© Copyright 2026, GoGloby. All Rights Reserved.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "related",
+   "kind": "related",
+   "label": "Related content",
+   "scope": "page",
+   "skipped": true,
+   "text": "Generative AI in Production at Leading Companies\nENABLE\n$156M raised · 1,000+ customers · Manufacturers · Distributors · Retailers\nThe leading B2B rebate management platform — turning complex trading agreements into a strategic growth driver across the supply chain. Launched AI-powered reporting and analytics that deliver in minutes what previously took days, allowing finance and procurement teams to query data in plain business language.\nZILLOW\nNASDAQ · $10.7B market cap · $2.58B revenue · 227M monthly users\nAmerica’s real estate super app — capturing 50%+ of all US real estate portal traffic across 10 property platforms. Launched Zillow Pro AI suite, debuted the only real estate app inside ChatGPT, and is deploying AI-powered virtual staging and immersive aerial views across millions of listings.\nGITLAB\n$8B+ market cap · 30M+ registered users · 2,000+ employees\nThe world’s most comprehensive AI-powered DevSecOps platform — covering every phase of the software lifecycle from planning to deployment in a single application. Launched GitLab Duo Agent Platform with agentic AI across coding, security, and CI/CD — integrated with Amazon Q Developer and Google Cloud Vertex AI.\nSMARTLING\n$262M total raised · $39.7M revenue · 500+ enterprise clients · 392 employees\nThe enterprise AI translation platform helping global brands triple output at 60% lower cost and 6× faster — ranked #8 in Fast Company’s Most Innovative Companies in Business Services 2025. Launched AI Hub with RAG-powered translation and an AI Post-Editing Agent that automates quality assurance at scale.\nOYSTER\n$1.2B valuation · $291M raised · 180+ countries · B Corp-certified · ServiceNow, Salesforce Ventures, LinkedIn investors\nThe only B Corp-certified Employer of Record — enabling compliant global hiring across 180+ countries for remote-first companies. Actively embedding AI into global employment compliance, real-time payroll alerts, and workforce management — selected as a Trusted Content Partner for Josh Bersin’s HR AI assistant, Galileo™.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Generative AI in Production at Leading Companies",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/news-enable-1-01.jpg",
+     "file": "news-enable-1-01.jpg",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "ENABLE",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "$156M raised · 1,000+ customers · Manufacturers · Distributors · Retailers",
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The leading B2B rebate management platform — turning complex trading agreements into a strategic growth driver across the supply chain. Launched AI-powered reporting and analytics that deliver in minutes what previously took days, allowing finance and procurement teams to query data in plain business language.",
+     "area": "slide 1",
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/news-zillow-1-01-1024x683.jpg",
+     "file": "news-zillow-1-01-1024x683.jpg",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 2",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "ZILLOW",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "NASDAQ · $10.7B market cap · $2.58B revenue · 227M monthly users",
+     "area": "slide 2",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "America’s real estate super app — capturing 50%+ of all US real estate portal traffic across 10 property platforms. Launched Zillow Pro AI suite, debuted the only real estate app inside ChatGPT, and is deploying AI-powered virtual staging and immersive aerial views across millions of listings.",
+     "area": "slide 2",
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/news-gitlab-1-01-1024x797.jpg",
+     "file": "news-gitlab-1-01-1024x797.jpg",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 3",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "GITLAB",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "$8B+ market cap · 30M+ registered users · 2,000+ employees",
+     "area": "slide 3",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "The world’s most comprehensive AI-powered DevSecOps platform — covering every phase of the software lifecycle from planning to deployment in a single application. Launched GitLab Duo Agent Platform with agentic AI across coding, security, and CI/CD — integrated with Amazon Q Developer and Google Cloud Vertex AI.",
+     "area": "slide 3",
+     "index": 6
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/news-smartling-1-01-1024x1024.jpg",
+     "file": "news-smartling-1-01-1024x1024.jpg",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 4",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "SMARTLING",
+     "area": "slide 4",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "$262M total raised · $39.7M revenue · 500+ enterprise clients · 392 employees",
+     "area": "slide 4",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "The enterprise AI translation platform helping global brands triple output at 60% lower cost and 6× faster — ranked #8 in Fast Company’s Most Innovative Companies in Business Services 2025. Launched AI Hub with RAG-powered translation and an AI Post-Editing Agent that automates quality assurance at scale.",
+     "area": "slide 4",
+     "index": 8
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/news-oyser-1-01-1024x645.jpg",
+     "file": "news-oyser-1-01-1024x645.jpg",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 5",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "OYSTER",
+     "area": "slide 5",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "$1.2B valuation · $291M raised · 180+ countries · B Corp-certified · ServiceNow, Salesforce Ventures, LinkedIn investors",
+     "area": "slide 5",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "The only B Corp-certified Employer of Record — enabling compliant global hiring across 180+ countries for remote-first companies. Actively embedding AI into global employment compliance, real-time payroll alerts, and workforce management — selected as a Trusted Content Partner for Josh Bersin’s HR AI assistant, Galileo™.",
+     "area": "slide 5",
+     "index": 10
+    }
+   ]
+  }
+ ],
+ "warnings": []
+}

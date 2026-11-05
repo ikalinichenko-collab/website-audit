@@ -1,0 +1,867 @@
+{
+  "schema_version": 2,
+  "run_id": "2026-11-02T15-42-08-516Z",
+  "basics": {
+    "robots": {
+      "value": "all allowed",
+      "ok": true
+    },
+    "llms_txt": {
+      "value": "present",
+      "ok": true
+    },
+    "sitemaps": {
+      "https://gogloby.com/post-sitemap.xml": 269,
+      "https://gogloby.com/page-sitemap.xml": 29,
+      "https://gogloby.com/country-guides-sitemap.xml": 43,
+      "https://gogloby.com/guides-sitemap.xml": 10,
+      "https://gogloby.com/use-cases-sitemap.xml": 15,
+      "https://gogloby.com/jobs-sitemap.xml": 4,
+      "https://gogloby.com/hire-sitemap.xml": 191,
+      "https://gogloby.com/glossary-ai-sitemap.xml": 40,
+      "https://gogloby.com/glossary-term-sitemap.xml": 83,
+      "https://gogloby.com/category-sitemap.xml": 3,
+      "https://gogloby.com/author-sitemap.xml": 2
+    }
+  },
+  "scope_counts": {
+    "Resources/Podcast": 3,
+    "Company/Contacts": 1,
+    "Company/Home": 1,
+    "Resources/Insights": 3,
+    "Company/Terms": 1,
+    "Resources/Case studies": 3,
+    "Company/Privacy": 1,
+    "Solutions/Solutions": 2,
+    "Company/About": 1,
+    "Resources/Use cases": 2,
+    "Services/Services": 2
+  },
+  "shared": {
+    "variants": [
+      {
+        "id": "banner_cta@1",
+        "zone": "banner_cta",
+        "text_hash": "e6b2a4bc74d893a33d71948cd1b68586d911318c251b4ede75fb524dae5afa69",
+        "pages": [
+          "https://gogloby.com/podcast/tara-vasdani/",
+          "https://gogloby.com/podcast/philippe-noel/",
+          "https://gogloby.com/podcast/jason-zoltak/"
+        ]
+      },
+      {
+        "id": "banner_cta@2",
+        "zone": "banner_cta",
+        "text_hash": "d91a443fc756f322c4819c904b1ced2c6879df29b7439d5be97ba742cd583227",
+        "pages": [
+          "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/"
+        ]
+      },
+      {
+        "id": "banner_cta@3",
+        "zone": "banner_cta",
+        "text_hash": "648bd0afdc83b749aad9e192421743540cfe06472cd717f31ab4ee4c377f56a2",
+        "pages": [
+          "https://gogloby.com/insights/talent-acquisition-companies/"
+        ]
+      },
+      {
+        "id": "banner_cta@4",
+        "zone": "banner_cta",
+        "text_hash": "d630d29977cb4d25a2c784360b9fb927538371d5e691649ba19878b0e8befef2",
+        "pages": [
+          "https://gogloby.com/"
+        ]
+      },
+      {
+        "id": "banner_cta@5",
+        "zone": "banner_cta",
+        "text_hash": "d30c2bccb9d74f6a1a0864611e5853d0ca9c346852213bfd6b5c51d499deb078",
+        "pages": [
+          "https://gogloby.com/solutions/ai-engineering-visibility/"
+        ]
+      },
+      {
+        "id": "banner_cta@6",
+        "zone": "banner_cta",
+        "text_hash": "b7f4169285a0f097fe5bafc7e1bc9f24aeb324f51e2bc1bae665bb43eb32d43b",
+        "pages": [
+          "https://gogloby.com/use-cases/ai-in-it/"
+        ]
+      },
+      {
+        "id": "banner_cta@7",
+        "zone": "banner_cta",
+        "text_hash": "c204c5e170ad7481006919067d3325b30131207e124ec6e1dfae490f73e65576",
+        "pages": [
+          "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/"
+        ]
+      },
+      {
+        "id": "banner_cta@8",
+        "zone": "banner_cta",
+        "text_hash": "3842f526e2290b47af37d96627e8c5833423a1a7a5007794b5f1880552186488",
+        "pages": [
+          "https://gogloby.com/insights/best-tech-recruiting-firms/"
+        ]
+      },
+      {
+        "id": "banner_cta@9",
+        "zone": "banner_cta",
+        "text_hash": "aba1d5ea0a9f21c0cb705d1310a06df9ec027d20e7bf1bad869cee1d703a51a9",
+        "pages": [
+          "https://gogloby.com/solutions/forward-deployed-engineering/"
+        ]
+      },
+      {
+        "id": "banner_cta@10",
+        "zone": "banner_cta",
+        "text_hash": "9d82de0c20ee705cd814737d7b37305b389608fb7905248c422bb640c1a13d68",
+        "pages": [
+          "https://gogloby.com/services/generative-ai-development/"
+        ]
+      },
+      {
+        "id": "banner_cta@11",
+        "zone": "banner_cta",
+        "text_hash": "f23c4919b4884a73983b92949d104ffd2b3f47764aed643b011bd49fb4f370ed",
+        "pages": [
+          "https://gogloby.com/use-cases/ai-in-customer-experience/"
+        ]
+      },
+      {
+        "id": "banner_cta@12",
+        "zone": "banner_cta",
+        "text_hash": "d1219939bd402bc29cfa14dbe0dd08f6ca4157a15d1e78d4c4d7821e8f2d4c27",
+        "pages": [
+          "https://gogloby.com/case-study/building-semantic-ml-pipeline-recruitment-automation/"
+        ]
+      },
+      {
+        "id": "banner_cta@13",
+        "zone": "banner_cta",
+        "text_hash": "6ca439c23698e958633ffbe885af3672d546b1cd361fed25b37583e1c757da3a",
+        "pages": [
+          "https://gogloby.com/insights/marketing-recruitment-and-staffing-agencies/"
+        ]
+      },
+      {
+        "id": "modals@1",
+        "zone": "modals",
+        "text_hash": "dbfdcca487cce210d6725bc00c2c046080b38f6c9594227629f6eeeebd1cab40",
+        "pages": [
+          "https://gogloby.com/podcast/tara-vasdani/",
+          "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+          "https://gogloby.com/insights/talent-acquisition-companies/",
+          "https://gogloby.com/terms-and-conditions/",
+          "https://gogloby.com/privacy-policy/",
+          "https://gogloby.com/use-cases/ai-in-it/",
+          "https://gogloby.com/podcast/philippe-noel/",
+          "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+          "https://gogloby.com/insights/best-tech-recruiting-firms/",
+          "https://gogloby.com/solutions/forward-deployed-engineering/",
+          "https://gogloby.com/use-cases/ai-in-customer-experience/",
+          "https://gogloby.com/podcast/jason-zoltak/",
+          "https://gogloby.com/case-study/building-semantic-ml-pipeline-recruitment-automation/",
+          "https://gogloby.com/insights/marketing-recruitment-and-staffing-agencies/"
+        ]
+      },
+      {
+        "id": "modals@2",
+        "zone": "modals",
+        "text_hash": "51b1c75972bb74eb2ab21f13efd0ae1ebf30e5c0435e5c8bc744aa0f8ef49e56",
+        "pages": [
+          "https://gogloby.com/",
+          "https://gogloby.com/contacts/",
+          "https://gogloby.com/about/",
+          "https://gogloby.com/services/hire-ai-engineers/",
+          "https://gogloby.com/services/generative-ai-development/"
+        ]
+      },
+      {
+        "id": "modals@3",
+        "zone": "modals",
+        "text_hash": "81164455585e0c8dfefacd04ae15353f579d6629d2c97169df4eebbe99782688",
+        "pages": [
+          "https://gogloby.com/solutions/ai-engineering-visibility/"
+        ]
+      }
+    ],
+    "compliance": {
+      "hash": "",
+      "cached": false,
+      "action": "fix",
+      "summary": "The shared banners mix GoGloby’s recruiting and staffing services with obsolete benchmark offers, AI development messaging, and non-engineering team offers. Update the affected blocks to reflect the approved Data & AI Engineers services and their appropriate calls to action.",
+      "problems": [
+        {
+          "title": "AI development and consulting positioning",
+          "category": "positioning",
+          "severity": "high",
+          "rule": "decisions.md: Company description; Fact Sheet: Services; Glossary §§1–2",
+          "rule_verified": true,
+          "issue": "Several banners present GoGloby as an AI implementation or engineering-practice provider rather than a staffing and recruiting agency specializing in hiring Data & AI Engineers.",
+          "fix": "Replace the AI implementation and practice-building claims with messaging about the approved recruiting and staffing services.",
+          "subject": "GoGloby positioning",
+          "page_value": "AI development and engineering-practice offers",
+          "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+          "count": 4,
+          "locations": [
+            {
+              "zone_id": "banner_cta@6",
+              "part": "paragraph 1",
+              "quote": "We embed FAANG-level AI engineers who build production-grade assistants and automations",
+              "verified": true
+            },
+            {
+              "zone_id": "banner_cta@7",
+              "part": "paragraph 1",
+              "quote": "GoGloby embeds Applied AI Engineering practice directly into your engineering organization",
+              "verified": true
+            },
+            {
+              "zone_id": "banner_cta@10",
+              "part": "paragraph 2",
+              "quote": "GoGloby forward-deploys an AI Solutions Architect, the Agentic SDLC, and work",
+              "verified": true
+            },
+            {
+              "zone_id": "banner_cta@12",
+              "part": "paragraph 1",
+              "quote": "GoGloby embeds senior Applied AI Engineers into your team",
+              "verified": true
+            }
+          ],
+          "location_unverified": false
+        },
+        {
+          "title": "Benchmark offers are obsolete",
+          "category": "discontinued_offer",
+          "severity": "high",
+          "rule": "Glossary §§2, 7",
+          "rule_verified": true,
+          "issue": "These banners sell engineering, AI-cost, and FDE benchmarks, including a free benchmark, which are not approved GoGloby offers.",
+          "fix": "Remove the benchmark offers and their associated promises from these banners.",
+          "subject": "Benchmark offers",
+          "page_value": "Applied AI, AI cost, and FDE benchmarks",
+          "source_value": "No benchmark offer; use service-specific calls to action",
+          "count": 3,
+          "locations": [
+            {
+              "zone_id": "banner_cta@4",
+              "part": "heading 1",
+              "quote": "Get Your Applied AI Engineering Benchmark",
+              "verified": true
+            },
+            {
+              "zone_id": "banner_cta@5",
+              "part": "paragraph 1",
+              "quote": "START WITH A FREE BENCHMARK",
+              "verified": true
+            },
+            {
+              "zone_id": "banner_cta@9",
+              "part": "heading 1",
+              "quote": "Get Your Forward Deployed Engineering Benchmark",
+              "verified": true
+            }
+          ],
+          "location_unverified": false
+        },
+        {
+          "title": "Disallowed product and system names",
+          "category": "old_terms",
+          "severity": "medium",
+          "rule": "Glossary §7",
+          "rule_verified": true,
+          "issue": "The banners use retired product names and a disallowed 4x system name.",
+          "fix": "Remove these retired names and the 4x system reference.",
+          "subject": "Product and system names",
+          "page_value": "AI Intelligence Layer; AI Cost Management; 4x Applied AI Engineering",
+          "source_value": "AI Development Intelligence Layer; no 4x system",
+          "count": 3,
+          "locations": [
+            {
+              "zone_id": "banner_cta@5",
+              "part": "paragraph 3",
+              "quote": "deployed in your environment through the AI Intelligence Layer.",
+              "verified": true
+            },
+            {
+              "zone_id": "banner_cta@5",
+              "part": "heading 1",
+              "quote": "Get Your AI Cost Management Benchmark",
+              "verified": true
+            },
+            {
+              "zone_id": "banner_cta@12",
+              "part": "paragraph 1",
+              "quote": "follow the 4x Applied AI Engineering™ system from day one.",
+              "verified": true
+            }
+          ],
+          "location_unverified": false
+        },
+        {
+          "title": "Calls to action are not approved",
+          "category": "cta",
+          "severity": "medium",
+          "rule": "Glossary §§2, 7",
+          "rule_verified": true,
+          "issue": "These calls to action do not use the approved service-specific wording, “Get vetted profiles” for staffing or “Start a search” for recruiting.",
+          "fix": "Use the approved staffing or recruiting call to action for each relevant banner.",
+          "subject": "Calls to action",
+          "page_value": "Generic calls to action and technical briefings",
+          "source_value": "Get vetted profiles; Start a search",
+          "count": 11,
+          "locations": [
+            {
+              "zone_id": "banner_cta@2",
+              "part": "paragraph 2",
+              "quote": "Book A Call",
+              "verified": true
+            },
+            {
+              "zone_id": "banner_cta@3",
+              "part": "paragraph 2",
+              "quote": "Discover Talent",
+              "verified": true
+            },
+            {
+              "zone_id": "banner_cta@4",
+              "part": "paragraph 3",
+              "quote": "Schedule a Technical Briefing",
+              "verified": true
+            },
+            {
+              "zone_id": "banner_cta@6",
+              "part": "paragraph 2",
+              "quote": "Build your AI team with GoGloby",
+              "verified": true
+            },
+            {
+              "zone_id": "banner_cta@7",
+              "part": "paragraph 2",
+              "quote": "Book A Call",
+              "verified": true
+            },
+            {
+              "zone_id": "banner_cta@8",
+              "part": "paragraph 2",
+              "quote": "Get Started Now",
+              "verified": true
+            },
+            {
+              "zone_id": "banner_cta@9",
+              "part": "paragraph 2",
+              "quote": "Schedule a Technical Briefing",
+              "verified": true
+            },
+            {
+              "zone_id": "banner_cta@10",
+              "part": "paragraph 3",
+              "quote": "Book a Consultation",
+              "verified": true
+            },
+            {
+              "zone_id": "banner_cta@11",
+              "part": "paragraph 2",
+              "quote": "Book a consultation now",
+              "verified": true
+            },
+            {
+              "zone_id": "banner_cta@12",
+              "part": "paragraph 2",
+              "quote": "Talk To GoGloby",
+              "verified": true
+            },
+            {
+              "zone_id": "banner_cta@13",
+              "part": "paragraph 2",
+              "quote": "Get Started Today",
+              "verified": true
+            }
+          ],
+          "location_unverified": false
+        },
+        {
+          "title": "Non-engineering teams are out of scope",
+          "category": "wrong_audience",
+          "severity": "medium",
+          "rule": "Glossary §5",
+          "rule_verified": true,
+          "issue": "These banners court customer-experience and marketing team buyers, rather than the engineering hiring audiences GoGloby targets.",
+          "fix": "Remove the CX and marketing team offers from the shared banners.",
+          "subject": "Non-engineering team buyers",
+          "page_value": "AI CX and marketing teams",
+          "source_value": "Engineering hiring buyers",
+          "count": 2,
+          "locations": [
+            {
+              "zone_id": "banner_cta@11",
+              "part": "paragraph 1",
+              "quote": "We embed a nearshore AI CX team",
+              "verified": true
+            },
+            {
+              "zone_id": "banner_cta@13",
+              "part": "paragraph 1",
+              "quote": "GoGloby helps you build marketing teams across borders",
+              "verified": true
+            }
+          ],
+          "location_unverified": false
+        },
+        {
+          "title": "Unverified delivery and quality claims",
+          "category": "company_facts",
+          "severity": "high",
+          "rule": "Fact Sheet: Identity and Services",
+          "rule_verified": true,
+          "issue": "The sources do not substantiate the claims of FAANG-level engineers, fully compliant teams, or delivering forward deployment and production-ready generative AI in under four weeks.",
+          "fix": "Remove these claims or verify them with the company before retaining them.",
+          "subject": "Delivery and quality claims",
+          "page_value": "FAANG-level; fully compliant; under 4 weeks",
+          "source_value": "not in Fact Sheet",
+          "count": 4,
+          "locations": [
+            {
+              "zone_id": "banner_cta@2",
+              "part": "paragraph 1",
+              "quote": "GoGloby builds fully compliant, AI-capable engineering teams in parallel.",
+              "verified": true
+            },
+            {
+              "zone_id": "banner_cta@6",
+              "part": "paragraph 1",
+              "quote": "FAANG-level AI engineers",
+              "verified": true
+            },
+            {
+              "zone_id": "banner_cta@9",
+              "part": "paragraph 2",
+              "quote": "walk you through forward-deployment in under 4 weeks.",
+              "verified": true
+            },
+            {
+              "zone_id": "banner_cta@10",
+              "part": "heading 1",
+              "quote": "Ship Production-Ready Generative AI in Under 4 Weeks",
+              "verified": true
+            }
+          ],
+          "location_unverified": false
+        }
+      ],
+      "usage": {
+        "input": 11346,
+        "cached_input": 0,
+        "output": 6526
+      },
+      "error": null
+    }
+  },
+  "site_schema": {
+    "hash": "",
+    "cached": false,
+    "action": "rewrite",
+    "summary": "The structured data presents GoGloby as an Applied AI Engineering partner and promotes development services that are not part of the approved offer. It also contains unsupported or inaccurate service claims, founder details, timelines, and guarantees that need correction.",
+    "problems": [
+      {
+        "title": "Applied AI Engineering positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Glossary §7",
+        "rule_verified": true,
+        "issue": "The schema describes GoGloby as an Applied AI Engineering partner rather than using the approved company description.",
+        "fix": "Replace the positioning and description with the approved company description and remove the prohibited Applied AI Engineering framing.",
+        "subject": "GoGloby positioning",
+        "page_value": "Applied AI Engineering partner",
+        "source_value": "GoGloby is a staffing and recruiting agency specializing in hiring Data & AI Engineers.",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.slogan",
+            "quote": "Applied AI Engineering Partner",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "WebSite.description",
+            "quote": "GoGloby is an Applied AI Engineering partner turning engineering into AI-native production",
+            "verified": true
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "AI-native production terminology",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The schema uses the prohibited phrase “turn engineering into AI-native production” and leads with AI spend and speed claims.",
+        "fix": "Remove the prohibited terminology and AI-spend-led claim.",
+        "subject": "GoGloby positioning",
+        "page_value": "turning engineering into AI-native production",
+        "source_value": null,
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "GoGloby turns engineering into AI-native production.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "WebSite.description",
+            "quote": "every AI dollar visible, every feature shipped faster.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Generative AI development offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §7",
+        "rule_verified": true,
+        "issue": "The catalog promotes generative AI development and delivery services, which are not among GoGloby’s approved services.",
+        "fix": "Remove the development-services offer and its delivery claims from the catalog.",
+        "subject": "Generative AI Development Services",
+        "page_value": "Production-ready generative AI delivery",
+        "source_value": "US Data & AI Engineers Recruiting; Nearshore Data & AI Engineers Staffing",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.name",
+            "quote": "Generative AI Development Services",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Production-ready generative AI delivery covering GenAI integration, multi-agent orchestration",
+            "verified": true
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "AI Solutions Architect offer",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "“AI Solutions Architect” is presented as an offer rather than only as a role GoGloby recruits or staffs.",
+        "fix": "Remove the phrase as an offered service or positioning.",
+        "subject": "AI Solutions Architect",
+        "page_value": "Forward-deployed AI Solutions Architects",
+        "source_value": null,
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Forward-deployed AI Solutions Architects, safe by design.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Staffing delivery promises",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §2",
+        "rule_verified": true,
+        "issue": "The staffing schema promises profiles in 72 hours and a validated feature in 3 to 5 business days, neither of which is supported by the sources.",
+        "fix": "Remove these unverified delivery promises and use only confirmed staffing timelines.",
+        "subject": "Staffing delivery timeline",
+        "page_value": "72 hours; 3 to 5 business days",
+        "source_value": "2–3 weeks to start",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Vetted profiles delivered in 72 hours. First validated feature in 3 to 5 business days.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Recruiting speed claims",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §2",
+        "rule_verified": true,
+        "issue": "The schema claims a five-day shortlist and 50 percent faster hiring than US job boards, which are not supported by the sources.",
+        "fix": "Remove the unverified shortlist and comparative hiring-speed claims.",
+        "subject": "Recruiting timeline",
+        "page_value": "5 days; 50 percent faster",
+        "source_value": "4–6 weeks to offer",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Shortlist delivered in 5 days. 50 percent faster time-to-hire than US job boards.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Replacement guarantee terms",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The “120-day telemetry-backed” staffing guarantee does not match the stated performance-based replacement terms, while recruiting has a 120-day free replacement guarantee.",
+        "fix": "State the confirmed guarantee separately and accurately for each service, removing the unsupported telemetry-backed guarantee.",
+        "subject": "Replacement guarantees",
+        "page_value": "120-day telemetry-backed replacement guarantee",
+        "source_value": "Recruiting: 120-day free replacement; staffing: performance-based replacement at no cost if results fall below baseline",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "120-day telemetry-backed replacement guarantee.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Liability coverage description",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Legal and security",
+        "rule_verified": true,
+        "issue": "The schema describes the $3M policy as covering professional liability, while the sources specify data and cyber-liability insurance.",
+        "fix": "Correct the policy description to match the confirmed coverage.",
+        "subject": "Insurance coverage",
+        "page_value": "$3M combined liability (cyber, data and professional)",
+        "source_value": "$3M data and cyber liability",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "$3M combined liability (cyber, data and professional) from day one.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "$3M combined liability (cyber, data and professional) included.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Unsupported founder claims",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "decisions.md: Founders; Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The founder biographies include unsupported claims about Sergey’s methodology and system work and Vit’s decade of work, geographic scope, $60M+ in value, and system creation.",
+        "fix": "Remove or verify the unsupported biography claims and retain only source-backed founder information and titles.",
+        "subject": "Sergey Matikaynen and Vitaly Koval",
+        "page_value": "$60M+ in value",
+        "source_value": "Not stated in the sources",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "Leads the Agentic SDLC methodology, secure development environment design",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "For the past decade, has helped engineering leaders scale teams",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "generating $60M+ in value.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "Built the Applied AI Engineering system",
+            "verified": true
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Old secure environment name",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The founder description uses “secure development environment,” an old product name listed as prohibited.",
+        "fix": "Remove the old product name.",
+        "subject": "Secure Development Environment",
+        "page_value": "secure development environment design",
+        "source_value": null,
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "secure development environment design",
+            "verified": true
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Unverified talent geography",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §2",
+        "rule_verified": true,
+        "issue": "The schema claims a talent network spanning five or more US-timezone countries and talent across US and EU time zones, which is not supported by the sources and does not match the stated service locations.",
+        "fix": "Remove the unverified geography claims and describe only the confirmed service locations.",
+        "subject": "Talent network geography",
+        "page_value": "5 plus US-timezone countries",
+        "source_value": "Recruiting: United States; staffing: Latin America, remote, US hours",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.description",
+            "quote": "within the US & EU time zones.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Talent network spans 5 plus US-timezone countries.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Unverified IP exposure claim",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "“Zero IP exposure” is not the documented security position; the Fact Sheet states that clients own IP and engineers work in the client’s environment.",
+        "fix": "Remove the absolute claim and use only the documented IP and security terms.",
+        "subject": "IP and security claim",
+        "page_value": "Zero IP exposure",
+        "source_value": "Client owns all IP; engineers work inside the client's secure development environment",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Zero IP exposure.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false
+      }
+    ],
+    "usage": {
+      "input": 10428,
+      "cached_input": 0,
+      "output": 3963
+    },
+    "error": null
+  },
+  "seo": {
+    "duplicates": [
+      {
+        "id": "duplicate_meta",
+        "value": "GoGloby is an Applied AI Engineering partner turning engineering into AI-native production: every AI dollar visible, every feature shipped faster.",
+        "urls": [
+          "https://gogloby.com/",
+          "https://gogloby.com/about/"
+        ]
+      }
+    ],
+    "collapsed": [
+      {
+        "id": "schema_recommended",
+        "profile": "podcast",
+        "pages_failing": 3,
+        "pages_total": 3,
+        "value": "missing: PodcastEpisode, BreadcrumbList"
+      },
+      {
+        "id": "heading_order",
+        "profile": "podcast",
+        "pages_failing": 3,
+        "pages_total": 3,
+        "value": "1 skipped levels"
+      },
+      {
+        "id": "schema_recommended",
+        "profile": "article",
+        "pages_failing": 5,
+        "pages_total": 5,
+        "value": "missing: BreadcrumbList"
+      },
+      {
+        "id": "image_dimensions",
+        "profile": "article",
+        "pages_failing": 5,
+        "pages_total": 5,
+        "value": "2 without width/height"
+      },
+      {
+        "id": "link_to_services",
+        "profile": "article",
+        "pages_failing": 5,
+        "pages_total": 5,
+        "value": "no link to /services/*"
+      },
+      {
+        "id": "schema_recommended",
+        "profile": "case_study",
+        "pages_failing": 3,
+        "pages_total": 3,
+        "value": "missing: BreadcrumbList"
+      },
+      {
+        "id": "link_to_services",
+        "profile": "case_study",
+        "pages_failing": 3,
+        "pages_total": 3,
+        "value": "no link to /services/*"
+      },
+      {
+        "id": "schema_recommended",
+        "profile": "service",
+        "pages_failing": 4,
+        "pages_total": 4,
+        "value": "missing: BreadcrumbList"
+      },
+      {
+        "id": "image_dimensions",
+        "profile": "service",
+        "pages_failing": 4,
+        "pages_total": 4,
+        "value": "3 without width/height"
+      }
+    ],
+    "sitemap_hygiene": []
+  }
+}

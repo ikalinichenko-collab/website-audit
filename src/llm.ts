@@ -65,8 +65,8 @@ export const complianceZoneSchema = {
             type: "array",
             items: {
               type: "object",
-              properties: { zone_id: { type: "string" }, quote: { type: "string" } },
-              required: ["zone_id", "quote"],
+              properties: { zone_id: { type: "string" }, quote: { type: "string" }, reason: { type: "string" } },
+              required: ["zone_id", "quote", "reason"],
               additionalProperties: false,
             },
           },
@@ -104,7 +104,7 @@ export interface ComplianceZoneRaw {
     subject: string | null;
     page_value: string | null;
     source_value: string | null;
-    locations: { zone_id: string; quote: string }[];
+    locations: { zone_id: string; quote: string; reason: string }[];
   }[];
 }
 

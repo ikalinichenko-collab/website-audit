@@ -1,0 +1,20 @@
+[
+ {
+  "url": "site",
+  "group": "Site",
+  "subsection": "",
+  "layer": "seo",
+  "severity": "medium",
+  "kind": "duplicate_meta",
+  "title": "duplicate meta",
+  "zone_id": "",
+  "zone_label": "",
+  "part": "",
+  "quote": "GoGloby is an Applied AI Engineering partner turning engineering into AI-native production: every AI dollar visible, every feature shipped faster.",
+  "issue": "Same value on 2 pages: https://gogloby.com/about/, https://gogloby.com/",
+  "fix": "",
+  "rule": "",
+  "verified": true,
+  "fragment": null
+ }
+]

@@ -56,7 +56,7 @@ function longestRunInElement(quoteWords: string[], elementText: string): string 
             break;
           }
         }
-        if (ok) return rawWords.slice(i, i + len).join(" ");
+        if (ok) return rawWords.slice(i, i + len).join(" ").replace(/(?:\s+[^\p{L}\p{N}]+)+$/u, "");
       }
     }
   }
@@ -142,14 +142,38 @@ function disambiguateFragment(
   return run;
 }
 
-function findFragmentForQuote(html: string, settings: Settings, quoteText: string): string | null {
+/** Where a quote sits on the live page: text-fragment value plus a readable place for table cells. */
+export interface QuotePlace {
+  fragment: string | null;
+  /** e.g. `table, row "PR cycle time", column "After"`; null when the quote is not in a table cell */
+  place: string | null;
+}
+
+function tablePlace($: cheerio.CheerioAPI, el: unknown): string | null {
+  const $el = $(el as Parameters<typeof $>[0]);
+  const tag = (($el.get(0) as { tagName?: string } | undefined)?.tagName ?? "").toLowerCase();
+  if (tag !== "td" && tag !== "th") return null;
+  const row = $el.closest("tr");
+  const cells = row.children("td,th");
+  const col = cells.index($el);
+  const rowName = collapseWhitespace(cells.first().text());
+  const head = $el.closest("table").find("thead th, thead td").eq(col);
+  const colName = head.length ? collapseWhitespace(head.text()) : "";
+  const parts = ["table"];
+  if (rowName && col > 0) parts.push(`row "${rowName}"`);
+  if (colName) parts.push(`column "${colName}"`);
+  return parts.join(", ");
+}
+
+function findFragmentForQuote(html: string, settings: Settings, quoteText: string, partText?: string): QuotePlace {
+  const none: QuotePlace = { fragment: null, place: null };
   const quoteWords = wordList(quoteText);
-  if (quoteWords.length < 2) return null;
+  if (quoteWords.length < 2) return none;
   const startWords = quoteWords.slice(0, Math.min(3, quoteWords.length));
 
   const $ = loadVisibleMainCheerio(html, settings);
   const root = $("#main");
-  if (!root.length) return null;
+  if (!root.length) return none;
   const fullMainText = root.text();
 
   type CheerioNode = Parameters<ReturnType<typeof cheerio.load>>[0];
@@ -167,7 +191,11 @@ function findFragmentForQuote(html: string, settings: Settings, quoteText: strin
     if (!hasStart && !elementHasQuoteWords(ew, quoteWords)) continue;
     matches.push(el);
   }
-  const minimal = matches.filter((el) => {
+  // the zone part the quote was found in is known: use its own element, not the first one with the same words
+  // (the same words also sit in the table of contents and headings)
+  const normPart = partText ? normalizeText(partText) : "";
+  const own = normPart ? matches.filter((el) => normalizeText(node(el).text()) === normPart) : [];
+  const minimal = (own.length ? own : matches).filter((el) => {
     for (const other of matches) {
       if (other === el) continue;
       if (node(el).find(other as never).length > 0) return false;
@@ -185,14 +213,14 @@ function findFragmentForQuote(html: string, settings: Settings, quoteText: strin
   for (const el of ordered) {
     const elText = node(el).text();
     const run = longestRunInElement(quoteWords, elText);
-    if (run) return disambiguateFragment(elText, run, fullMainText, quoteText);
+    if (run) return { fragment: disambiguateFragment(elText, run, fullMainText, quoteText), place: own.length ? tablePlace($, el) : null };
   }
-  return null;
+  return none;
 }
 
 /** Text-fragment value for a quote found in the visible page text, or null. */
-export function fragmentForQuote(html: string, settings: Settings, quote: string): string | null {
-  return findFragmentForQuote(html, settings, quote);
+export function fragmentForQuote(html: string, settings: Settings, quote: string, partText?: string): QuotePlace {
+  return findFragmentForQuote(html, settings, quote, partText);
 }
 
 export function encodeTextFragment(text: string): string {
@@ -204,4 +232,15 @@ export function encodeTextFragment(text: string): string {
 
 export function textFragmentUrl(pageUrl: string, fragmentText: string): string {
   return `${pageUrl}#:~:text=${encodeTextFragment(fragmentText)}`;
+}
+
+/** Readable place of the table cell whose text is `partText`, or null when it is not a table cell. */
+export function tablePlaceOfPart(html: string, settings: Settings, partText: string): string | null {
+  const $ = loadVisibleMainCheerio(html, settings);
+  const want = normalizeText(partText);
+  if (!want) return null;
+  const cell = $("#main td, #main th")
+    .toArray()
+    .find((el) => normalizeText($(el).text()) === want);
+  return cell ? tablePlace($, cell) : null;
 }

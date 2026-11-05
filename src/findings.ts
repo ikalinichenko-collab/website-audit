@@ -28,6 +28,13 @@ export interface Finding {
   fragment: string | null;
   /** Compliance only: why it is a finding */
   basis?: "contradicts sources" | "not in sources" | "term list";
+  /** Compliance only: what the page says and what the documents say about the same subject (from the model; none for term-list findings) */
+  page_value?: string;
+  source_value?: string;
+  /** Compliance only: why this place is a problem (from the model); absent in older reports and for term-list hits */
+  reason?: string;
+  /** readable place for a table cell ("table, row ..., column ...") instead of "table_cell 18" */
+  place?: string;
   /** who edits it: site template and settings, this page's own content, or the author profile */
   fix_where: FixWhere;
 }
@@ -48,6 +55,7 @@ export const SEO_LABELS: Record<string, string> = {
   meta_present: "Meta description missing",
   meta_length: "Meta description length",
   h1_count: "H1 count is not one",
+  title_h1_match: "Title and H1 say different things",
   canonical: "Canonical",
   indexable: "Page is noindex",
   schema_required: "Required structured data missing",
@@ -112,6 +120,14 @@ function zoneLabel(r: PageReport, zoneId: string): string {
   return variantLabel(zoneId) ?? zoneId;
 }
 
+/** The model fills `source_value` with "not in Fact Sheet" when the documents are silent: that is the basis, not a value. */
+function compared(p: { page_value: string | null; source_value: string | null; unverified: boolean }): Pick<Finding, "page_value" | "source_value"> {
+  return {
+    ...(p.page_value ? { page_value: p.page_value } : {}),
+    ...(p.source_value && !p.unverified ? { source_value: p.source_value } : {}),
+  };
+}
+
 function basisOf(p: { source: string; unverified: boolean; basis: string | null }): Finding["basis"] {
   return p.source === "code" ? "term list" : p.unverified ? "not in sources" : "contradicts sources";
 }
@@ -147,6 +163,8 @@ function pageFindingDrafts(r: PageReport, site: SiteReport | null): FindingDraft
         zone_id: l.zone_id,
         zone_label: zoneLabel(r, l.zone_id),
         part: cleanPart(l.part),
+        ...(l.place ? { place: l.place } : {}),
+        ...(l.reason ? { reason: l.reason } : {}),
         quote: l.quote,
         issue: p.issue,
         fix: p.fix,
@@ -154,6 +172,7 @@ function pageFindingDrafts(r: PageReport, site: SiteReport | null): FindingDraft
         verified: l.verified && p.rule_verified,
         fragment: l.fragment ?? null,
         basis: basisOf(p),
+        ...compared(p),
       });
     }
   }
@@ -212,6 +231,7 @@ function pageFindingDrafts(r: PageReport, site: SiteReport | null): FindingDraft
         zone_id: pl.zone_id,
         zone_label: zoneLabel(r, pl.zone_id),
         part: pl.part ?? "",
+        ...(pl.place ? { place: pl.place } : {}),
         quote: pl.value,
         issue: c.places?.length ? "" : c.value,
         fix: "",
@@ -277,6 +297,7 @@ function siteFindingDrafts(site: SiteReport): FindingDraft[] {
           verified: l.verified && p.rule_verified,
           fragment: null,
           basis: basisOf(p),
+          ...compared(p),
         });
       }
     }

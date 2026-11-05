@@ -1,0 +1,242 @@
+{
+  "schema_version": 2,
+  "pages": [
+    {
+      "slug": "case-study_afb4d29b",
+      "url": "https://gogloby.com/case-study/",
+      "title": "Case Studies Archives | GoGloby",
+      "group": "Resources",
+      "subsection": "Case studies",
+      "profile": "case_study",
+      "template": "legal",
+      "action": "rewrite",
+      "summary": "The archive presents GoGloby as an AI engineering and deployment provider, rather than the staffing and recruiting agency described in the company sources. It also makes several unsupported claims about projects and results, including a case study for an unnamed Nasdaq HealthTech company.",
+      "compliance": {
+        "high": 2,
+        "medium": 5,
+        "low": 1,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 2,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 2,
+        "low": 2
+      },
+      "checked_at": "2026-11-05T09:34:49.053Z"
+    },
+    {
+      "slug": "case-study_ai-recruiting-agent-slack-case-study-1_711bd612",
+      "url": "https://gogloby.com/case-study/ai-recruiting-agent-slack-case-study-1/",
+      "title": "AI Recruiting Agent in Slack: GoGloby Reduced Scheduling by 75%",
+      "group": "Resources",
+      "subsection": "Case studies",
+      "profile": "case_study",
+      "template": "article",
+      "action": "needs_decision",
+      "summary": "The page sells GoGloby as a builder and provider of a standalone recruiting-agent SaaS product, which is outside the company’s approved staffing and recruiting services. Its performance, adoption, cost, and testimonial claims are also not established in the company sources.",
+      "compliance": {
+        "high": 2,
+        "medium": 14,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 5,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 0
+      },
+      "checked_at": "2026-11-05T09:33:49.516Z"
+    },
+    {
+      "slug": "case-study_applied-ai-engineering-roi-case-study_f62ad50f",
+      "url": "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+      "title": "How GoGloby’s Applied AI Engineering Delivered Measurable ROI",
+      "group": "Resources",
+      "subsection": "Case studies",
+      "profile": "case_study",
+      "template": "article",
+      "action": "needs_decision",
+      "summary": "The page sells an Applied AI Engineering implementation and measurement offer, rather than GoGloby’s staffing and recruiting services. Its client profile, performance results, and operational claims are not supported by the company sources and should not be carried into any replacement page without verification.",
+      "compliance": {
+        "high": 2,
+        "medium": 12,
+        "low": 1,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 4,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 2
+      },
+      "checked_at": "2026-11-05T09:33:54.526Z"
+    },
+    {
+      "slug": "case-study_building-semantic-ml-pipeline-recruitment-automation_89be991d",
+      "url": "https://gogloby.com/case-study/building-semantic-ml-pipeline-recruitment-automation/",
+      "title": "A Semantic ML Pipeline: How GoGloby Cut Screening Time by 85%",
+      "group": "Resources",
+      "subsection": "Case studies",
+      "profile": "case_study",
+      "template": "article",
+      "action": "fix",
+      "summary": "The page presents GoGloby as an AI engineering and product-development operation, centered on building an ML pipeline, rather than the approved staffing and recruiting agency. Its performance results, system details, and product claims are also not in the company sources.",
+      "compliance": {
+        "high": 3,
+        "medium": 14,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 6,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 1
+      },
+      "checked_at": "2026-11-05T09:33:48.345Z"
+    },
+    {
+      "slug": "case-study_healthtech-company-applied-ai-engineers_be1851cb",
+      "url": "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+      "title": "A Nasdaq HealthTech Company Integrated a $3B Platform",
+      "group": "Resources",
+      "subsection": "Case studies",
+      "profile": "case_study",
+      "template": "article",
+      "action": "rewrite",
+      "summary": "The case study positions GoGloby as a provider of broad engineering delivery and platform integration, rather than a staffing and recruiting agency specializing in Data & AI Engineers. It also makes numerous unsupported case-specific claims about placements, compliance, performance, savings, and client metrics.",
+      "compliance": {
+        "high": 3,
+        "medium": 9,
+        "low": 5,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 5,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 1
+      },
+      "checked_at": "2026-11-05T09:34:23.361Z"
+    },
+    {
+      "slug": "case-study_how-gogloby-engineered-a-production-voice-ai-system-that-screens-candidates-85-faster-at-96-lower-cost_546a57da",
+      "url": "https://gogloby.com/case-study/how-gogloby-engineered-a-production-voice-ai-system-that-screens-candidates-85-faster-at-96-lower-cost/",
+      "title": "A Real-Time Voice AI System: How GoGloby Cut Screening Costs",
+      "group": "Resources",
+      "subsection": "Case studies",
+      "profile": "case_study",
+      "template": "article",
+      "action": "needs_decision",
+      "summary": "The page presents GoGloby as a company that builds and maintains custom production AI systems, an offer that conflicts with GoGloby’s staffing and recruiting positioning. Its case-study results and client testimonials also make claims that are not supported by the company documents.",
+      "compliance": {
+        "high": 1,
+        "medium": 13,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 6,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      },
+      "checked_at": "2026-11-05T09:34:50.759Z"
+    }
+  ],
+  "totals": {
+    "pages": 6,
+    "compliance": {
+      "high": 13,
+      "medium": 67,
+      "low": 7
+    },
+    "geo": 28,
+    "seo": {
+      "high": 0,
+      "medium": 5,
+      "low": 6
+    },
+    "actions": {
+      "rewrite": 2,
+      "needs_decision": 3,
+      "fix": 1
+    }
+  },
+  "by_group": {
+    "Resources": {
+      "pages": 6,
+      "compliance": {
+        "high": 13,
+        "medium": 67,
+        "low": 7
+      },
+      "geo": 28,
+      "seo": {
+        "high": 0,
+        "medium": 5,
+        "low": 6
+      },
+      "actions": {
+        "rewrite": 2,
+        "needs_decision": 3,
+        "fix": 1
+      }
+    }
+  },
+  "by_subsection": {
+    "Resources/Case studies": {
+      "pages": 6,
+      "compliance": {
+        "high": 13,
+        "medium": 67,
+        "low": 7
+      },
+      "geo": 28,
+      "seo": {
+        "high": 0,
+        "medium": 5,
+        "low": 6
+      },
+      "actions": {
+        "rewrite": 2,
+        "needs_decision": 3,
+        "fix": 1
+      }
+    }
+  },
+  "site": {
+    "compliance": {
+      "high": 4,
+      "medium": 18,
+      "low": 0
+    },
+    "seo": 2,
+    "geo": 0
+  },
+  "layers": {
+    "compliance": true,
+    "geo": true,
+    "seo": true
+  }
+}

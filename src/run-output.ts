@@ -4,7 +4,7 @@ import type { Layers, RunMeta, Settings } from "./types.js";
 import type { PageReport, SiteReport } from "./report-types.js";
 import { countBy, fragmentAllowed, pageFindings, siteFindings, type Finding } from "./findings.js";
 import { buildFindingsCsv, buildSummaryCsv, renderPageReport, renderSiteReport } from "./render.js";
-import { fragmentForQuote } from "./quote-fragments.js";
+import { fragmentForQuote, tablePlaceOfPart } from "./quote-fragments.js";
 import { projectRoot } from "./utils.js";
 import { readJson } from "./paths.js";
 import { buildSiteSources } from "./site-sources.js";
@@ -92,22 +92,43 @@ function loadReports(runPath: string): { slug: string; report: PageReport }[] {
   return out;
 }
 
+/** Bump when `fragmentForQuote` changes: stored fragments are recomputed on the next report build. */
+const LOCATOR_VERSION = 3;
+
 /** Attach text-fragment values for quotes found in the visible page text, then save the page JSON. */
 function attachFragments(runPath: string, slug: string, r: PageReport, settings: Settings): boolean {
   const htmlPath = path.join(runPath, "pages", `${slug}.html`);
   if (!fs.existsSync(htmlPath)) return false;
   const html = fs.readFileSync(htmlPath, "utf8");
+  const zones = readJson<{ zones: { id: string; parts?: { type: string; index: number; text: string }[] }[] }>(
+    path.join(runPath, "pages", `${slug}.zones.json`),
+  )?.zones;
   let changed = false;
   for (const p of r.compliance.problems) {
     for (const l of p.locations) {
-      if (l.fragment !== undefined || !l.verified || !fragmentAllowed(l.zone_id)) continue;
-      l.fragment = fragmentForQuote(html, settings, l.quote);
+      if (l.locator === LOCATOR_VERSION || !l.verified || !fragmentAllowed(l.zone_id)) continue;
+      // the text of the part the location names, so the link goes to that element and not to the first one with the same words
+      const partText = l.part
+        ? zones?.find((z) => z.id === l.zone_id)?.parts?.find((x) => `${x.type} ${x.index}` === l.part)?.text
+        : undefined;
+      const found = fragmentForQuote(html, settings, l.quote, partText);
+      l.fragment = found.fragment;
+      l.place = found.place;
+      l.locator = LOCATOR_VERSION;
+      changed = true;
+    }
+  }
+  for (const c of r.geo.code) {
+    for (const pl of c.places ?? []) {
+      if (pl.place !== undefined || !pl.part?.startsWith("table_cell")) continue;
+      const text = zones?.find((z) => z.id === pl.zone_id)?.parts?.find((x) => `${x.type} ${x.index}` === pl.part)?.text;
+      pl.place = (text && tablePlaceOfPart(html, settings, text)) || "";
       changed = true;
     }
   }
   for (const a of r.geo.llm) {
     if (a.fragment !== undefined || !a.evidence || !a.evidence_verified || !fragmentAllowed(a.zone_id ?? "page")) continue;
-    a.fragment = fragmentForQuote(html, settings, a.evidence);
+    a.fragment = fragmentForQuote(html, settings, a.evidence).fragment;
     changed = true;
   }
   return changed;

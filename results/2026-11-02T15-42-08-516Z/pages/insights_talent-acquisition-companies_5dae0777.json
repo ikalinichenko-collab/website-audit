@@ -1,0 +1,886 @@
+{
+  "schema_version": 2,
+  "url": "https://gogloby.com/insights/talent-acquisition-companies/",
+  "final_url": "https://gogloby.com/insights/talent-acquisition-companies/",
+  "status": 200,
+  "title": "Top Talent Acquisition Companies for U.S. Businesses",
+  "category": "Resources",
+  "subsection": "Insights",
+  "profile": "article",
+  "geo_type": "article",
+  "template": "article",
+  "checked_at": "2026-11-02T15:43:46.101Z",
+  "zones": [
+    {
+      "id": "title",
+      "label": "Title",
+      "kind": "title"
+    },
+    {
+      "id": "meta_description",
+      "label": "Meta description",
+      "kind": "meta_description"
+    },
+    {
+      "id": "og_title",
+      "label": "og:title",
+      "kind": "og_title"
+    },
+    {
+      "id": "og_description",
+      "label": "og:description",
+      "kind": "og_description"
+    },
+    {
+      "id": "json_ld",
+      "label": "Structured data (JSON-LD)",
+      "kind": "json_ld"
+    },
+    {
+      "id": "h1",
+      "label": "H1",
+      "kind": "h1"
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "kind": "date"
+    },
+    {
+      "id": "author",
+      "label": "Author",
+      "kind": "author"
+    },
+    {
+      "id": "toc",
+      "label": "Table of contents",
+      "kind": "toc"
+    },
+    {
+      "id": "article:intro",
+      "label": "Intro",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-is-talent-acquisition",
+      "label": "What is Talent Acquisition?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-is-the-difference-between-talent-acquisitio",
+      "label": "What is the difference between talent acquisition and recruitment?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-are-the-benefits-of-partnering-with-talent-",
+      "label": "What Are the Benefits of Partnering with Talent Acquisition Companies?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:top-12-talent-acquisition-companies",
+      "label": "Top 12 Talent Acquisition Companies",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:best-international-talent-acquisition-companies",
+      "label": "Best International Talent Acquisition Companies",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:best-talent-acquisition-companies-in-the-usa",
+      "label": "Best Talent Acquisition Companies in the USA",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:best-talent-acquisition-companies-for-startups",
+      "label": "Best Talent Acquisition Companies for Startups",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:how-to-choose-the-right-talent-acquisition-partn",
+      "label": "How to Choose the Right Talent Acquisition Partner",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:4-future-trends-in-talent-acquisition",
+      "label": "4 Future Trends in Talent Acquisition",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:conclusion",
+      "label": "Conclusion",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:faqs",
+      "label": "FAQs",
+      "kind": "article_section"
+    }
+  ],
+  "zone_warnings": [],
+  "shared_variants": [
+    "banner_cta@3",
+    "modals@1"
+  ],
+  "compliance": {
+    "hash": "d90260a702b9393564241686c0871630b39b43c6b7fbe87855121e117531cfca",
+    "cached": false,
+    "action": "fix",
+    "summary": "The GoGloby entries describe a broader global staffing and operations offer, use outdated positioning, and make unsupported performance and client-outcome claims. Correct the GoGloby-specific text and verify or remove its unsupported facts; the article itself does not need a full rewrite.",
+    "problems": [
+      {
+        "title": "Broader global service positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "These descriptions present GoGloby as a provider of global talent pipelines, operations talent, and talent acquisition beyond its documented recruiting and nearshore Data & AI Engineers staffing services.",
+        "fix": "Revise the GoGloby-specific descriptions so they reflect the approved company description and documented services.",
+        "subject": "GoGloby positioning",
+        "page_value": "Global talent pipelines, operations talent, and global talent acquisition",
+        "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "article:top-12-talent-acquisition-companies",
+            "part": "table_cell 9",
+            "quote": "Nearshore squads and global talent pipelines",
+            "verified": true,
+            "fragment": "Nearshore squads and global talent pipelines"
+          },
+          {
+            "zone_id": "article:top-12-talent-acquisition-companies",
+            "part": "paragraph 3",
+            "quote": "nearshore engineering and operations teams across Latin America.",
+            "verified": true,
+            "fragment": "nearshore engineering and operations teams across"
+          },
+          {
+            "zone_id": "article:best-international-talent-acquisition-companies",
+            "part": "list_item 1",
+            "quote": "pre-vetted engineers and operations talent across Latin America and Europe.",
+            "verified": true,
+            "fragment": "pre-vetted engineers and operations talent across"
+          },
+          {
+            "zone_id": "article:best-international-talent-acquisition-companies",
+            "part": "paragraph 7",
+            "quote": "leading partner for FAANG-level Latin American talent acquisition",
+            "verified": true,
+            "fragment": "leading partner for FAANG-level Latin American"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Outdated Applied AI positioning",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The author bio uses the prohibited “4x” and Applied AI Engineering positioning to describe GoGloby.",
+        "fix": "Remove the outdated “4x” and Applied AI Engineering positioning from the GoGloby author description.",
+        "subject": "GoGloby positioning",
+        "page_value": "4x Applied AI Engineering",
+        "source_value": null,
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "the engineering standard behind 4x Applied AI Engineering.",
+            "verified": true,
+            "fragment": "the engineering standard behind 4x Applied"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 13",
+            "quote": "the engineering standard behind 4x Applied AI Engineering.",
+            "verified": true,
+            "fragment": "the engineering standard behind 4x Applied"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "GoGloby name uses former spelling",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "decisions.md: Spelling",
+        "rule_verified": true,
+        "issue": "The GoGloby entry uses “Globy” as its current name instead of the approved name, GoGloby.",
+        "fix": "Change the current-name references to GoGloby, retaining Globy only when clearly identified as the former name.",
+        "subject": "GoGloby",
+        "page_value": "Globy",
+        "source_value": "GoGloby (formerly Globy)",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:top-12-talent-acquisition-companies",
+            "part": "table_cell 8",
+            "quote": "Globy",
+            "verified": true,
+            "fragment": null
+          },
+          {
+            "zone_id": "article:top-12-talent-acquisition-companies",
+            "part": "image 1",
+            "quote": "Globy-1536x742.png-1024x495.webp",
+            "verified": true,
+            "fragment": null
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Unsupported placement-rate claims",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Key metrics",
+        "rule_verified": true,
+        "issue": "The page claims 95% placement or role-fill performance within four weeks, a rate not supported by the Fact Sheet; the stated four-week timing also does not match the documented service timelines.",
+        "fix": "Remove or verify the 95% claims and use only documented service timelines.",
+        "subject": "GoGloby placement rate",
+        "page_value": "95% placement in 4 weeks",
+        "source_value": "No placement-rate figure in Fact Sheet; recruiting: 4–6 weeks to offer; nearshore staffing: 2–3 weeks to start",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:top-12-talent-acquisition-companies",
+            "part": "table_cell 13",
+            "quote": "95% placement in 4 weeks",
+            "verified": true,
+            "fragment": "95% placement in 4 weeks"
+          },
+          {
+            "zone_id": "article:top-12-talent-acquisition-companies",
+            "part": "paragraph 3",
+            "quote": "95% of roles are filled within 4 weeks",
+            "verified": true,
+            "fragment": "95% of roles are filled within"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Unverified hiring timelines",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The GoGloby table and profile give generic time-to-hire and shortlist timelines that are not documented and do not match the service-specific timelines in the Fact Sheet.",
+        "fix": "Remove or verify these timeline claims and distinguish the documented recruiting and staffing timelines.",
+        "subject": "GoGloby hiring timelines",
+        "page_value": "3–6 weeks; shortlist within 3–5 days; hires go live in 4–6 weeks",
+        "source_value": "Recruiting: 4–6 weeks to offer; nearshore staffing: 2–3 weeks to start",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:top-12-talent-acquisition-companies",
+            "part": "table_cell 11",
+            "quote": "3–6 weeks",
+            "verified": true,
+            "fragment": "3–6 weeks"
+          },
+          {
+            "zone_id": "article:top-12-talent-acquisition-companies",
+            "part": "list_item 2",
+            "quote": "Shortlist within 3–5 days",
+            "verified": true,
+            "fragment": "Shortlist within 3–5"
+          },
+          {
+            "zone_id": "article:top-12-talent-acquisition-companies",
+            "part": "list_item 2",
+            "quote": "hires typically go live in 4–6 weeks.",
+            "verified": true,
+            "fragment": "hires typically go live in 4–6"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Unverified client savings figures",
+        "category": "client_figures",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Featured clients",
+        "rule_verified": true,
+        "issue": "The page attributes annual savings of $1.5 million and up to $10 million to GoGloby clients, but neither figure is in the Fact Sheet.",
+        "fix": "Remove the client savings figures or verify them against an approved source.",
+        "subject": "GoGloby clients",
+        "page_value": "$1.5 million per year; up to $10 million annually",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:top-12-talent-acquisition-companies",
+            "part": "paragraph 3",
+            "quote": "Clients typically save around $1.5 million per year in hiring and operational costs",
+            "verified": true,
+            "fragment": "typically save around $1.5 million per"
+          },
+          {
+            "zone_id": "article:top-12-talent-acquisition-companies",
+            "part": "paragraph 3",
+            "quote": "enterprise programs reporting savings of up to $10 million annually.",
+            "verified": true,
+            "fragment": "enterprise programs reporting savings of up"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Unverified fintech client result",
+        "category": "client_figures",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients; Key metrics",
+        "rule_verified": true,
+        "issue": "The page presents an unnamed fintech client’s six-person squad and 94% 90-day retention as a GoGloby result, but those client details and figures are not in the Fact Sheet.",
+        "fix": "Remove or verify the client result and its figures against an approved source.",
+        "subject": "Unnamed fintech client",
+        "page_value": "6-person squad; 94% 90-day retention",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-12-talent-acquisition-companies",
+            "part": "list_item 3",
+            "quote": "1 fintech client built a 6-person senior squad with 94% 90-day retention.",
+            "verified": true,
+            "fragment": "1 fintech client built a 6-person"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Unsupported global operations claims",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Legal and security",
+        "rule_verified": true,
+        "issue": "The page claims GoGloby offers localized payroll in more than 20 countries and automated compliance across every country of operation, details not established by the Fact Sheet.",
+        "fix": "Remove or verify the country coverage and operational claims against an approved source.",
+        "subject": "GoGloby operating coverage",
+        "page_value": "More than 20 countries; compliance in every country",
+        "source_value": "Nearshore engineers from Latin America; payroll and compliance handling are documented, but this country coverage is not",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:top-12-talent-acquisition-companies",
+            "part": "paragraph 3",
+            "quote": "automated compliance, and localized payroll in more than 20 countries.",
+            "verified": true,
+            "fragment": "automated compliance, and localized payroll in"
+          },
+          {
+            "zone_id": "article:top-12-talent-acquisition-companies",
+            "part": "paragraph 3",
+            "quote": "fully compliant in every country where they operate.",
+            "verified": true,
+            "fragment": "fully compliant in every country where"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Author experience differs",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The author bio says Sergey has 16+ years of experience, while the Fact Sheet says he has spent 17 years building software systems, engineering organizations, and production platforms.",
+        "fix": "Correct or remove the author’s experience claim so it matches the Fact Sheet.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "16+ years",
+        "source_value": "17 years",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "fragment": "He has spent 16+ years building"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 13",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "fragment": "He has spent 16+ years building"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Unsupported author credentials",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The bio attributes LinkedIn Top Voice recognition and certified Agentic SDLC mastery to Sergey, but these credentials are not in the Fact Sheet, which identifies Vit Koval as a LinkedIn Top Voice.",
+        "fix": "Remove or verify these author credentials against an approved source.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "LinkedIn Top Voice; certified Agentic SDLC mastery",
+        "source_value": "Fact Sheet identifies Vit Koval as a LinkedIn Top Voice; no such Sergey credentials are listed",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "including certified Agentic SDLC mastery.",
+            "verified": true,
+            "fragment": "including certified Agentic SDLC mastery."
+          },
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "fragment": "He is a LinkedIn Top Voice"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 13",
+            "quote": "including certified Agentic SDLC mastery.",
+            "verified": true,
+            "fragment": "including certified Agentic SDLC mastery."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 13",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "fragment": "He is a LinkedIn Top Voice"
+          }
+        ],
+        "location_unverified": false
+      }
+    ],
+    "usage": {
+      "input": 18434,
+      "cached_input": 0,
+      "output": 6287
+    },
+    "error": null
+  },
+  "geo": {
+    "hash": "41d0909dd360e37a113a92592e0ef36275385a27ad51b86f8023eae51ed74b12",
+    "cached": false,
+    "code": [
+      {
+        "id": "trap_terms",
+        "status": "pass",
+        "value": "none in title, H1, meta, og",
+        "places": []
+      },
+      {
+        "id": "em_dash",
+        "status": "fail",
+        "value": "10 found",
+        "places": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "value": "— | …ss the US, Canada, and Europe — software architecture, agile …"
+          },
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 3",
+            "value": "— | …l that aligns with your goals — and avoid wasting cycles on m…"
+          },
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 4",
+            "value": "— | …s to hire for permanent roles — a delay that compounds when m…"
+          },
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 5",
+            "value": "— | …hat matches your hiring goals — whether you need speed, scale…"
+          },
+          {
+            "zone_id": "article:what-are-the-benefits-of-partnering-with-talent-",
+            "part": "paragraph 4",
+            "value": "— | … percentage of hires by source—referrals, LinkedIn, internal …"
+          },
+          {
+            "zone_id": "article:what-are-the-benefits-of-partnering-with-talent-",
+            "part": "paragraph 4",
+            "value": "— | …ernal databases, or job boards—to see where their best candid…"
+          },
+          {
+            "zone_id": "article:best-talent-acquisition-companies-in-the-usa",
+            "part": "paragraph 2",
+            "value": "— | …ss the West, Central, and East—each recognized for consistent…"
+          },
+          {
+            "zone_id": "article:how-to-choose-the-right-talent-acquisition-partn",
+            "part": "table_cell 32",
+            "value": "— | —"
+          },
+          {
+            "zone_id": "article:how-to-choose-the-right-talent-acquisition-partn",
+            "part": "table_cell 34",
+            "value": "— | —"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 13",
+            "value": "— | …ss the US, Canada, and Europe — software architecture, agile …"
+          }
+        ]
+      },
+      {
+        "id": "ampersand",
+        "status": "fail",
+        "value": "6 found",
+        "places": [
+          {
+            "zone_id": "article:top-12-talent-acquisition-companies",
+            "part": "table_cell 64",
+            "value": "& | 9. Heidrick & Struggles"
+          },
+          {
+            "zone_id": "article:top-12-talent-acquisition-companies",
+            "part": "paragraph 10",
+            "value": "& | …oking to hire Board Directors & Chairs, Chief Executive Offic…"
+          },
+          {
+            "zone_id": "article:top-12-talent-acquisition-companies",
+            "part": "heading 10",
+            "value": "& | 9. Heidrick & Struggles"
+          },
+          {
+            "zone_id": "article:top-12-talent-acquisition-companies",
+            "part": "image 9",
+            "value": "& | Heidrick & Struggles"
+          },
+          {
+            "zone_id": "article:best-international-talent-acquisition-companies",
+            "part": "heading 3",
+            "value": "& | Europe, Middle East & Africa (EMEA)"
+          },
+          {
+            "zone_id": "article:how-to-choose-the-right-talent-acquisition-partn",
+            "part": "table_cell 16",
+            "value": "& | Security & compliance"
+          }
+        ]
+      },
+      {
+        "id": "uk_spelling",
+        "status": "pass",
+        "value": "none",
+        "places": []
+      }
+    ],
+    "llm": [
+      {
+        "id": "answer_first",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "Filling key roles fast has become one of the biggest growth challenges for scaling companies. Even well-funded teams are losing momentum as senior positions stay open for weeks.",
+        "note": "The opening describes a hiring challenge but does not answer which companies are featured; make the first two sentences directly answer the H1.",
+        "evidence_verified": true,
+        "fragment": "Filling key roles fast has become"
+      },
+      {
+        "id": "recruiting_firm_early",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "Filling key roles fast has become one of the biggest growth challenges for scaling companies.",
+        "note": "The first lines do not identify GoGloby as a recruiting firm; state that clearly near the beginning.",
+        "evidence_verified": true,
+        "fragment": "Filling key roles fast has become"
+      },
+      {
+        "id": "buyer_ready",
+        "answer": "yes",
+        "value": "buyer_ready",
+        "zone_id": "page",
+        "evidence": "Below, you’ll find a curated list of the top 12 talent acquisition companies in 2026, grouped by focus and reach.",
+        "note": "The article is aimed at businesses comparing hiring partners and selecting one for their hiring needs.",
+        "evidence_verified": true,
+        "fragment": "Below, you’ll find a curated list"
+      },
+      {
+        "id": "target_keyword",
+        "answer": "yes",
+        "value": "AI talent acquisition companies",
+        "zone_id": "title",
+        "evidence": "Top Talent Acquisition Companies for U.S. Businesses",
+        "note": "This listicle best matches the Glossary term for the AI talent acquisition companies listicle.",
+        "evidence_verified": true
+      },
+      {
+        "id": "uses_data",
+        "answer": "yes",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "According to Robert Half, tech teams in the U.S. take an average of 5 weeks to hire for permanent roles",
+        "note": "The article gives a quotable hiring-time figure with its source named nearby.",
+        "evidence_verified": true,
+        "fragment": "Talent Acquisition Companies-,in the,-USA"
+      },
+      {
+        "id": "proof_background",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:faqs",
+        "evidence": "He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe",
+        "note": "The author bio mentions software-team experience but does not use the founders’ Data Science and engineering-team background as proof.",
+        "evidence_verified": true,
+        "fragment": "He has spent 16+ years building"
+      },
+      {
+        "id": "sell_against_open_role",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:top-12-talent-acquisition-companies",
+        "evidence": "Speed: Shortlist within 3–5 days; hires typically go live in 4–6 weeks.",
+        "note": "The page gives a GoGloby hiring timeline but does not compare GoGloby with the cost and wait of an open full-time U.S. role.",
+        "evidence_verified": true,
+        "fragment": "Speed: Shortlist within 3–5 days; hires"
+      }
+    ],
+    "placement": {
+      "id": "target_keyword_placement",
+      "status": "fail",
+      "value": "AI talent acquisition companies",
+      "missing": [
+        "title",
+        "h1",
+        "first_paragraph",
+        "meta_description",
+        "h2"
+      ]
+    },
+    "usage": {
+      "input": 16691,
+      "cached_input": 0,
+      "output": 1883
+    },
+    "error": null
+  },
+  "seo": {
+    "checks": [
+      {
+        "id": "http_status",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "200",
+        "severity": "high"
+      },
+      {
+        "id": "title_length",
+        "status": "pass",
+        "zone_id": "title",
+        "value": "52 characters",
+        "severity": "medium"
+      },
+      {
+        "id": "meta_present",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "125 characters",
+        "severity": "high"
+      },
+      {
+        "id": "meta_length",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "125 characters (120-158)",
+        "severity": "low"
+      },
+      {
+        "id": "h1_count",
+        "status": "pass",
+        "zone_id": "h1",
+        "value": "1",
+        "severity": "high"
+      },
+      {
+        "id": "canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "https://gogloby.com/insights/talent-acquisition-companies/",
+        "severity": "high"
+      },
+      {
+        "id": "indexable",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "severity": "high"
+      },
+      {
+        "id": "schema_required",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "present",
+        "severity": "medium"
+      },
+      {
+        "id": "schema_recommended",
+        "status": "fail",
+        "zone_id": "json_ld",
+        "value": "missing: BreadcrumbList",
+        "severity": "medium"
+      },
+      {
+        "id": "author",
+        "status": "pass",
+        "zone_id": "author",
+        "value": "Sergey Matikaynen",
+        "severity": "medium"
+      },
+      {
+        "id": "dates",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "published: 2026-03-17T19:23:54+03:00; modified: 2026-06-15T17:23:29+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "date_mismatch",
+        "status": "pass",
+        "zone_id": "date",
+        "value": "visible \"Updated on June 15, 2026\" vs dateModified 2026-06-15T17:23:29+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "broken_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "5 checked",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "redirecting_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "none",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "link_to_services",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "no link to /services/*",
+        "severity": "medium"
+      },
+      {
+        "id": "alt_missing",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without alt",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_empty",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 with empty alt",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "image_dimensions",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "2 without width/height",
+        "places": [
+          {
+            "zone_id": "author",
+            "part": "image 1",
+            "value": "1706550966241.jpeg"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "image 1",
+            "value": "1706550966241.jpeg"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "heading_order",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "og_present",
+        "status": "pass",
+        "zone_id": "og_title",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "og_url_canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "og:url https://gogloby.com/insights/talent-acquisition-companies/ vs canonical https://gogloby.com/insights/talent-acquisition-companies/",
+        "severity": "low"
+      },
+      {
+        "id": "twitter_card",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "summary_large_image",
+        "severity": "low"
+      },
+      {
+        "id": "html_lang",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "en-US",
+        "severity": "low"
+      },
+      {
+        "id": "viewport",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "jsonld_valid",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "4 block(s)",
+        "severity": "high"
+      },
+      {
+        "id": "article_fields",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "anchors_resolve",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "13 checked",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "faq_schema_matches_dom",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "accordion block: true, FAQPage schema: true",
+        "severity": "low"
+      }
+    ]
+  }
+}

@@ -1,0 +1,888 @@
+{
+  "schema_version": 2,
+  "url": "https://gogloby.com/insights/best-tech-recruiting-firms/",
+  "final_url": "https://gogloby.com/insights/best-tech-recruiting-firms/",
+  "status": 200,
+  "title": "17 Best Tech Recruiting Companies to Hire Top Talent in 2026",
+  "category": "Resources",
+  "subsection": "Insights",
+  "profile": "article",
+  "geo_type": "article",
+  "template": "article",
+  "checked_at": "2026-11-02T15:45:41.771Z",
+  "zones": [
+    {
+      "id": "title",
+      "label": "Title",
+      "kind": "title"
+    },
+    {
+      "id": "meta_description",
+      "label": "Meta description",
+      "kind": "meta_description"
+    },
+    {
+      "id": "og_title",
+      "label": "og:title",
+      "kind": "og_title"
+    },
+    {
+      "id": "og_description",
+      "label": "og:description",
+      "kind": "og_description"
+    },
+    {
+      "id": "json_ld",
+      "label": "Structured data (JSON-LD)",
+      "kind": "json_ld"
+    },
+    {
+      "id": "h1",
+      "label": "H1",
+      "kind": "h1"
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "kind": "date"
+    },
+    {
+      "id": "author",
+      "label": "Author",
+      "kind": "author"
+    },
+    {
+      "id": "toc",
+      "label": "Table of contents",
+      "kind": "toc"
+    },
+    {
+      "id": "article:intro",
+      "label": "Intro",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:why-opt-for-specialized-tech-recruiters",
+      "label": "Why Opt for Specialized Tech Recruiters?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:top-tech-staffing-agencies-for-tech-companies",
+      "label": "Top Tech Staffing Agencies for Tech Companies",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:grouping-agencies-by-expertise-in-tech-niches",
+      "label": "Grouping Agencies by Expertise in Tech Niches",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:best-tech-recruiting-firms-for-startups",
+      "label": "Best Tech Recruiting Firms for Startups",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:top-tech-staffing-agencies-in-the-usa",
+      "label": "Top Tech Staffing Agencies in the USA",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:top-international-tech-recruiting-agencies",
+      "label": "Top International Tech Recruiting Agencies",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:top-international-tech-recruiter-companies",
+      "label": "Top International Tech Recruiter Companies",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-industries-benefit-most-from-specialized-te",
+      "label": "What industries benefit most from specialized tech recruiters?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-is-the-role-of-tech-in-tech-recruiting",
+      "label": "What is The Role of Tech in Tech Recruiting?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:how-to-evaluate-tech-recruiter-companies",
+      "label": "How to Evaluate Tech Recruiter Companies",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:conclusion",
+      "label": "Conclusion",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:faqs",
+      "label": "FAQs",
+      "kind": "article_section"
+    }
+  ],
+  "zone_warnings": [],
+  "shared_variants": [
+    "banner_cta@8",
+    "modals@1"
+  ],
+  "compliance": {
+    "hash": "9c0f2d08223f2b0b0f7eec13803d9b9ba08cb23b0a7e029d6f3c24c7814a6878",
+    "cached": false,
+    "action": "fix",
+    "summary": "The article’s GoGloby entry presents the company as a general tech/software recruiter and nearshore squad provider, rather than a staffing and recruiting agency specializing in Data & AI Engineers. It also includes unsupported performance claims and outdated positioning that should be corrected in the GoGloby-specific sections.",
+    "problems": [
+      {
+        "title": "Outdated GoGloby positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Fact Sheet: Identity and Services",
+        "rule_verified": true,
+        "issue": "The article describes GoGloby as a general tech recruiter for software developers and squads, not as a staffing and recruiting agency specializing in hiring Data & AI Engineers.",
+        "fix": "Update the GoGloby-specific descriptions and categories to reflect the approved company description and its two Data & AI services.",
+        "subject": "GoGloby positioning",
+        "page_value": "Nearshore tech recruitment agency; IT Generalists, Software Developers",
+        "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 6,
+        "locations": [
+          {
+            "zone_id": "article:top-tech-staffing-agencies-for-tech-companies",
+            "part": "table_cell 9",
+            "quote": "IT Generalists, Software Developers",
+            "verified": true,
+            "fragment": "IT Generalists, Software Developers"
+          },
+          {
+            "zone_id": "article:top-tech-staffing-agencies-for-tech-companies",
+            "part": "paragraph 3",
+            "quote": "GoGloby is a nearshore tech recruitment agency",
+            "verified": true,
+            "fragment": "GoGloby is a nearshore tech recruitment"
+          },
+          {
+            "zone_id": "article:top-tech-staffing-agencies-for-tech-companies",
+            "part": "paragraph 3",
+            "quote": "add senior engineering capacity to American businesses from Latin America fast",
+            "verified": true,
+            "fragment": "add senior engineering capacity to American"
+          },
+          {
+            "zone_id": "article:grouping-agencies-by-expertise-in-tech-niches",
+            "part": "list_item 1",
+            "quote": "GoGloby: nearshore LATAM senior engineers with U.S. time-zone overlap and fast ramp.",
+            "verified": true,
+            "fragment": "GoGloby: nearshore LATAM senior engineers with"
+          },
+          {
+            "zone_id": "article:best-tech-recruiting-firms-for-startups",
+            "part": "list_item 7",
+            "quote": "Known for nearshore squads in LATAM",
+            "verified": true,
+            "fragment": "Known for nearshore squads in"
+          },
+          {
+            "zone_id": "article:top-international-tech-recruiter-companies",
+            "part": "list_item 1",
+            "quote": "Best for senior software squads in Argentina, Brazil, and Mexico.",
+            "verified": true,
+            "fragment": "for organizations competing-,for senior,-tech talent."
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Old Applied AI positioning",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The author bio uses the discontinued “4x Applied AI Engineering” positioning.",
+        "fix": "Remove the old positioning from both author-bio instances.",
+        "subject": "GoGloby positioning",
+        "page_value": "4x Applied AI Engineering",
+        "source_value": null,
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "the engineering standard behind 4x Applied AI Engineering.",
+            "verified": true,
+            "fragment": "the engineering standard behind 4x Applied"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 17",
+            "quote": "the engineering standard behind 4x Applied AI Engineering.",
+            "verified": true,
+            "fragment": "the engineering standard behind 4x Applied"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Sergey’s experience differs",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The bio says Sergey has 16+ years of experience, while the Fact Sheet says he has spent 17 years building software systems and engineering organizations.",
+        "fix": "Correct the experience figure in both author-bio instances to match the Fact Sheet.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "16+ years",
+        "source_value": "17 years",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "fragment": "He has spent 16+ years building"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 17",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "fragment": "He has spent 16+ years building"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Unverified Sergey recognition",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page calls Sergey a LinkedIn Top Voice, but the Fact Sheet does not provide that recognition for him.",
+        "fix": "Remove the claim or verify it with the company before using it.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "LinkedIn Top Voice in software development",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "fragment": "He is a LinkedIn Top Voice"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 17",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "fragment": "He is a LinkedIn Top Voice"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Unverified assessment certification",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: How we vet; Glossary §4",
+        "rule_verified": true,
+        "issue": "The bio claims GoGloby engineers have certified Agentic SDLC mastery, but the sources describe an assessment and do not state that GoGloby certifies this mastery.",
+        "fix": "Remove the certification claim unless the company verifies it.",
+        "subject": "GoGloby assessment",
+        "page_value": "certified Agentic SDLC mastery",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "including certified Agentic SDLC mastery.",
+            "verified": true,
+            "fragment": "including certified Agentic SDLC mastery."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 17",
+            "quote": "including certified Agentic SDLC mastery.",
+            "verified": true,
+            "fragment": "including certified Agentic SDLC mastery."
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Unverified placement rate",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Key metrics and Services",
+        "rule_verified": true,
+        "issue": "The table claims a 95% placement rate, which is not a GoGloby metric in the Fact Sheet.",
+        "fix": "Remove the placement-rate claim or verify it with the company before publishing.",
+        "subject": "GoGloby placement rate",
+        "page_value": "95% placement within 4 weeks",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-tech-staffing-agencies-for-tech-companies",
+            "part": "table_cell 10",
+            "quote": "95% placement within 4 weeks",
+            "verified": true,
+            "fragment": "95% placement within 4 weeks"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "GoGloby timing claims conflict",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The table gives a four-week typical time to hire and the profile says a team embeds in approximately four weeks, while the Fact Sheet specifies 4–6 weeks to offer for recruiting and 2–3 weeks to start for nearshore staffing.",
+        "fix": "Replace the generalized four-week claims with the applicable service timelines from the Fact Sheet.",
+        "subject": "GoGloby service timelines",
+        "page_value": "4 weeks",
+        "source_value": "4–6 weeks to offer; 2–3 weeks to start",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:top-tech-staffing-agencies-for-tech-companies",
+            "part": "table_cell 10",
+            "quote": "4 weeks",
+            "verified": true,
+            "fragment": "95% placement within-,4 weeks"
+          },
+          {
+            "zone_id": "article:top-tech-staffing-agencies-for-tech-companies",
+            "part": "list_item 2",
+            "quote": "full team embedded in approximately 4 weeks.",
+            "verified": true,
+            "fragment": "full team embedded in approximately 4"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Unverified recent project results",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services and Key metrics",
+        "rule_verified": true,
+        "issue": "The profile claims a recent project scaling 11 engineers and gives shortlist and delivery timings that are not supported by the Fact Sheet.",
+        "fix": "Remove these project and performance claims or verify them with the company before publishing.",
+        "subject": "GoGloby project results",
+        "page_value": "11 senior engineers; roughly eight weeks; 3–5 days",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:top-tech-staffing-agencies-for-tech-companies",
+            "part": "paragraph 4",
+            "quote": "Recent work includes scaling 11 senior engineers for a U.S. SaaS company in roughly eight weeks",
+            "verified": true,
+            "fragment": "Recent work includes scaling 11 senior"
+          },
+          {
+            "zone_id": "article:top-tech-staffing-agencies-for-tech-companies",
+            "part": "paragraph 4",
+            "quote": "time to shortlist in 3–5 days",
+            "verified": true,
+            "fragment": "time to shortlist in 3–5 days"
+          },
+          {
+            "zone_id": "article:top-tech-staffing-agencies-for-tech-companies",
+            "part": "paragraph 4",
+            "quote": "Shortlist in 3–5 days",
+            "verified": true,
+            "fragment": "with time to-,shortlist in 3–5 days,-and hires completed"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Unverified GoGloby locations",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The article names specific Latin American countries and a two-to-three-hour overlap claim that are not stated in the Fact Sheet.",
+        "fix": "Remove the country and overlap claims or verify them with the company before publishing.",
+        "subject": "GoGloby locations and time zones",
+        "page_value": "Argentina, Brazil, and Mexico; 2–3 hour overlap",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:top-international-tech-recruiter-companies",
+            "part": "list_item 1",
+            "quote": "Best for senior software squads in Argentina, Brazil, and Mexico.",
+            "verified": true,
+            "fragment": "for organizations competing-,for senior,-tech talent."
+          },
+          {
+            "zone_id": "article:top-international-tech-recruiter-companies",
+            "part": "list_item 2",
+            "quote": "Time zone: 2–3 hour overlap with most U.S. cities.",
+            "verified": true,
+            "fragment": "Time zone:"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Pricing model is incomplete",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The table gives a percentage-of-salary pricing model for GoGloby without distinguishing recruiting from nearshore staffing, which uses a flat monthly fee.",
+        "fix": "Identify the service associated with the percentage fee and reflect the separate flat-monthly-fee model for nearshore staffing.",
+        "subject": "GoGloby pricing",
+        "page_value": "% of annual salary",
+        "source_value": "Recruiting: percentage of first-year base salary; staffing: flat monthly fee",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-tech-staffing-agencies-for-tech-companies",
+            "part": "table_cell 13",
+            "quote": "% of annual salary",
+            "verified": true,
+            "fragment": "% of annual salary"
+          }
+        ],
+        "location_unverified": false
+      }
+    ],
+    "usage": {
+      "input": 20339,
+      "cached_input": 0,
+      "output": 5563
+    },
+    "error": null
+  },
+  "geo": {
+    "hash": "1ed159549d4ecadb9bfa42b0c502e4655ca760363c2df63743495bf24394e9d9",
+    "cached": false,
+    "code": [
+      {
+        "id": "trap_terms",
+        "status": "pass",
+        "value": "none in title, H1, meta, og",
+        "places": []
+      },
+      {
+        "id": "em_dash",
+        "status": "fail",
+        "value": "3 found",
+        "places": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "value": "— | …ss the US, Canada, and Europe — software architecture, agile …"
+          },
+          {
+            "zone_id": "article:how-to-evaluate-tech-recruiter-companies",
+            "part": "paragraph 11",
+            "value": "— | …rs don’t just know the market — they continuously evaluate ca…"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 17",
+            "value": "— | …ss the US, Canada, and Europe — software architecture, agile …"
+          }
+        ]
+      },
+      {
+        "id": "ampersand",
+        "status": "fail",
+        "value": "3 found",
+        "places": [
+          {
+            "zone_id": "article:top-tech-staffing-agencies-in-the-usa",
+            "part": "heading 3",
+            "value": "& | Central & South"
+          },
+          {
+            "zone_id": "article:what-industries-benefit-most-from-specialized-te",
+            "part": "heading 2",
+            "value": "& | AI & Machine Learning"
+          },
+          {
+            "zone_id": "article:how-to-evaluate-tech-recruiter-companies",
+            "part": "list_item 3",
+            "value": "& | Security & compliance : Do they cover de…"
+          }
+        ]
+      },
+      {
+        "id": "uk_spelling",
+        "status": "pass",
+        "value": "none",
+        "places": []
+      }
+    ],
+    "llm": [
+      {
+        "id": "answer_first",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "Filling senior tech roles fast has become a real growth constraint. Even well-funded startups are losing weeks in sourcing and interviews while delivery schedules slip.",
+        "note": "The first two sentences describe a hiring problem but do not answer which recruiting companies are best; name the firms or directly introduce the list.",
+        "evidence_verified": true,
+        "fragment": "Filling senior tech roles fast has"
+      },
+      {
+        "id": "recruiting_firm_early",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "That’s why more founders and talent leaders are partnering with tech recruiting companies.",
+        "note": "The opening discusses recruiting companies but does not identify GoGloby as a recruiting firm; state that in the first lines.",
+        "evidence_verified": false
+      },
+      {
+        "id": "buyer_ready",
+        "answer": "yes",
+        "value": "buyer_ready",
+        "zone_id": "page",
+        "evidence": "That’s why more founders and talent leaders are partnering with tech recruiting companies.",
+        "note": "The article addresses founders and talent leaders choosing recruiting partners for company hiring.",
+        "evidence_verified": false
+      },
+      {
+        "id": "target_keyword",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "No Glossary §6 term is a close match for this broad tech-recruiting comparison.",
+        "evidence_verified": null
+      },
+      {
+        "id": "uses_data",
+        "answer": "yes",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "According to Robert Half , tech teams take on average 5 weeks to hire for permanent roles.",
+        "note": "The article gives a quotable time-to-hire figure and identifies Robert Half as its source nearby.",
+        "evidence_verified": true,
+        "fragment": "Robert Half"
+      },
+      {
+        "id": "proof_background",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:faqs",
+        "evidence": "He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe",
+        "note": "The author bio mentions software-team experience but not the company’s Data Science background or founders’ engineering and ML teams; include that background as proof.",
+        "evidence_verified": true,
+        "fragment": "He has spent 16+ years building"
+      },
+      {
+        "id": "sell_against_open_role",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:top-tech-staffing-agencies-for-tech-companies",
+        "evidence": "Recent work includes scaling 11 senior engineers for a U.S. SaaS company in roughly eight weeks",
+        "note": "The GoGloby section gives a delivery example but does not compare GoGloby with the cost and wait of an open full-time U.S. role.",
+        "evidence_verified": true,
+        "fragment": "Recent work includes scaling 11 senior"
+      }
+    ],
+    "placement": null,
+    "usage": {
+      "input": 18341,
+      "cached_input": 0,
+      "output": 1467
+    },
+    "error": null
+  },
+  "seo": {
+    "checks": [
+      {
+        "id": "http_status",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "200",
+        "severity": "high"
+      },
+      {
+        "id": "title_length",
+        "status": "pass",
+        "zone_id": "title",
+        "value": "60 characters",
+        "severity": "medium"
+      },
+      {
+        "id": "meta_present",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "136 characters",
+        "severity": "high"
+      },
+      {
+        "id": "meta_length",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "136 characters (120-158)",
+        "severity": "low"
+      },
+      {
+        "id": "h1_count",
+        "status": "pass",
+        "zone_id": "h1",
+        "value": "1",
+        "severity": "high"
+      },
+      {
+        "id": "canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "https://gogloby.com/insights/best-tech-recruiting-firms/",
+        "severity": "high"
+      },
+      {
+        "id": "indexable",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "severity": "high"
+      },
+      {
+        "id": "schema_required",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "present",
+        "severity": "medium"
+      },
+      {
+        "id": "schema_recommended",
+        "status": "fail",
+        "zone_id": "json_ld",
+        "value": "missing: BreadcrumbList",
+        "severity": "medium"
+      },
+      {
+        "id": "author",
+        "status": "pass",
+        "zone_id": "author",
+        "value": "Sergey Matikaynen",
+        "severity": "medium"
+      },
+      {
+        "id": "dates",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "published: 2026-03-17T19:06:09+03:00; modified: 2026-06-15T17:48:48+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "date_mismatch",
+        "status": "pass",
+        "zone_id": "date",
+        "value": "visible \"Updated on June 15, 2026\" vs dateModified 2026-06-15T17:48:48+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "broken_internal_links",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "1 broken",
+        "places": [
+          {
+            "zone_id": "article:top-tech-staffing-agencies-for-tech-companies",
+            "part": "paragraph 4",
+            "value": "https://gogloby.com/case-study/saved-on-expansion/ (404)"
+          }
+        ],
+        "severity": "high"
+      },
+      {
+        "id": "redirecting_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "none",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "link_to_services",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "no link to /services/*",
+        "severity": "medium"
+      },
+      {
+        "id": "alt_missing",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without alt",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_empty",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "11 with empty alt",
+        "places": [
+          {
+            "zone_id": "article:top-tech-staffing-agencies-for-tech-companies",
+            "part": "image 1",
+            "value": "Globy-1-1024x494.png"
+          },
+          {
+            "zone_id": "article:top-tech-staffing-agencies-for-tech-companies",
+            "part": "image 4",
+            "value": "Insight-Global--1024x563.png"
+          },
+          {
+            "zone_id": "article:top-tech-staffing-agencies-for-tech-companies",
+            "part": "image 6",
+            "value": "Randstad-1-edited.png"
+          },
+          {
+            "zone_id": "article:top-tech-staffing-agencies-for-tech-companies",
+            "part": "image 7",
+            "value": "Kforce-1024x555.png"
+          },
+          {
+            "zone_id": "article:top-tech-staffing-agencies-for-tech-companies",
+            "part": "image 8",
+            "value": "Lucas-Group-1024x563.png"
+          },
+          {
+            "zone_id": "article:top-tech-staffing-agencies-for-tech-companies",
+            "part": "image 9",
+            "value": "Adecco-Group-1-1024x569.png"
+          },
+          {
+            "zone_id": "article:top-tech-staffing-agencies-for-tech-companies",
+            "part": "image 10",
+            "value": "Epitec-1024x561.png"
+          },
+          {
+            "zone_id": "article:top-tech-staffing-agencies-for-tech-companies",
+            "part": "image 11",
+            "value": "image-18-1024x431.png"
+          },
+          {
+            "zone_id": "article:top-tech-staffing-agencies-for-tech-companies",
+            "part": "image 12",
+            "value": "Rightstone-1024x561.png"
+          },
+          {
+            "zone_id": "article:top-tech-staffing-agencies-for-tech-companies",
+            "part": "image 13",
+            "value": "image-19-1024x506.png"
+          },
+          {
+            "zone_id": "article:top-tech-staffing-agencies-for-tech-companies",
+            "part": "image 15",
+            "value": "image-20-1024x427.png"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "image_dimensions",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "3 without width/height",
+        "places": [
+          {
+            "zone_id": "author",
+            "part": "image 1",
+            "value": "1706550966241.jpeg"
+          },
+          {
+            "zone_id": "article:top-tech-staffing-agencies-for-tech-companies",
+            "part": "image 6",
+            "value": "Randstad-1-edited.png"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "image 1",
+            "value": "1706550966241.jpeg"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "heading_order",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "og_present",
+        "status": "pass",
+        "zone_id": "og_title",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "og_url_canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "og:url https://gogloby.com/insights/best-tech-recruiting-firms/ vs canonical https://gogloby.com/insights/best-tech-recruiting-firms/",
+        "severity": "low"
+      },
+      {
+        "id": "twitter_card",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "summary_large_image",
+        "severity": "low"
+      },
+      {
+        "id": "html_lang",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "en-US",
+        "severity": "low"
+      },
+      {
+        "id": "viewport",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "jsonld_valid",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "4 block(s)",
+        "severity": "high"
+      },
+      {
+        "id": "article_fields",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "anchors_resolve",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "14 checked",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "faq_schema_matches_dom",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "accordion block: true, FAQPage schema: true",
+        "severity": "low"
+      }
+    ]
+  }
+}

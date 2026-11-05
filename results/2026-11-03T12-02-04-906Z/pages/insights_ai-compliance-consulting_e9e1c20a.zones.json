@@ -1,0 +1,3265 @@
+{
+ "template": "article",
+ "zones": [
+  {
+   "id": "title",
+   "kind": "title",
+   "label": "Title",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Is AI Compliance Consulting: Process, Benefits & How to Implement It | GoGloby",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "What Is AI Compliance Consulting: Process, Benefits & How to Implement It | GoGloby"
+    }
+   ]
+  },
+  {
+   "id": "meta_description",
+   "kind": "meta_description",
+   "label": "Meta description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Understand how AI compliance consulting helps companies turn AI regulations into practical controls and maintain compliance as systems change.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Understand how AI compliance consulting helps companies turn AI regulations into practical controls and maintain compliance as systems change."
+    }
+   ]
+  },
+  {
+   "id": "og_title",
+   "kind": "og_title",
+   "label": "og:title",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Is AI Compliance Consulting: Process, Benefits & How to Implement It | GoGloby",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "What Is AI Compliance Consulting: Process, Benefits & How to Implement It | GoGloby"
+    }
+   ]
+  },
+  {
+   "id": "og_description",
+   "kind": "og_description",
+   "label": "og:description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Understand how AI compliance consulting helps companies turn AI regulations into practical controls and maintain compliance as systems change.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Understand how AI compliance consulting helps companies turn AI regulations into practical controls and maintain compliance as systems change."
+    }
+   ]
+  },
+  {
+   "id": "json_ld",
+   "kind": "json_ld",
+   "label": "Structured data (JSON-LD)",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Is AI Compliance Consulting: Process, Benefits &amp; How to Implement It\nWhat Is AI Compliance Consulting: Process, Benefits &amp; How to Implement It\nUnderstand how AI compliance consulting helps companies turn AI regulations into practical controls\nSergey Matikaynen\nGoGloby\nDo small businesses need AI compliance consulting?\nSmall businesses need AI compliance consulting when their AI makes decisions about people or handles sensitive data. Compliance needs depend on the systems and uses involved, so a smaller company with higher-risk AI can face more complex requirements than a larger company with limited AI use.\nIs AI compliance consulting legal advice?\nSome AI compliance consulting engagements include legal advice from qualified counsel. GRC consultancies translate requirements into governance systems, while engineering firms implement approved requirements in technical systems. The provider's scope determines whether legal advice is part of the engagement.\nIs ISO 42001 required?\nISO/IEC 42001 is voluntary, though customers can require it by contract. Certification shows an independent certification body checked your AI management system, and legal compliance still has to be shown law by law.\nDoes NIST AI RMF make you compliant?\nNIST AI RMF is a voluntary U.S. risk-management framework, so it does not create legal compliance on its own. Teams still use it to structure risk and compliance work, even when no law or contract points to it. It shapes how a company manages AI risk, while each law sets what compliance actually requires.\nCan AI automate compliance?\nAI can take over the prep work behind compliance. It collects evidence, scans rule updates, drafts assessments, and flags gaps. Legal judgment and accountability stay with people, who decide what a rule means and sign the attestation.\nWhat evidence is needed for AI compliance?\nAI compliance needs evidence that each control exists and operates as intended. The core set is the inventory, risk assessments, test results, approvals, and system logs. Technical documentation, training records, vendor reviews, and incident records complete it.",
+   "parts": [
+    {
+     "type": "field",
+     "text": "What Is AI Compliance Consulting: Process, Benefits &amp; How to Implement It",
+     "area": "Article.name",
+     "index": 1
+    },
+    {
+     "type": "field",
+     "text": "What Is AI Compliance Consulting: Process, Benefits &amp; How to Implement It",
+     "area": "Article.headline",
+     "index": 2
+    },
+    {
+     "type": "field",
+     "text": "Understand how AI compliance consulting helps companies turn AI regulations into practical controls",
+     "area": "Article.description",
+     "index": 3
+    },
+    {
+     "type": "field",
+     "text": "Sergey Matikaynen",
+     "area": "Person.name",
+     "index": 4
+    },
+    {
+     "type": "field",
+     "text": "GoGloby",
+     "area": "Organization.name",
+     "index": 5
+    },
+    {
+     "type": "field",
+     "text": "Do small businesses need AI compliance consulting?",
+     "area": "Question.name",
+     "index": 6
+    },
+    {
+     "type": "field",
+     "text": "Small businesses need AI compliance consulting when their AI makes decisions about people or handles sensitive data. Compliance needs depend on the systems and uses involved, so a smaller company with higher-risk AI can face more complex requirements than a larger company with limited AI use.",
+     "area": "Answer.text",
+     "index": 7
+    },
+    {
+     "type": "field",
+     "text": "Is AI compliance consulting legal advice?",
+     "area": "Question.name",
+     "index": 8
+    },
+    {
+     "type": "field",
+     "text": "Some AI compliance consulting engagements include legal advice from qualified counsel. GRC consultancies translate requirements into governance systems, while engineering firms implement approved requirements in technical systems. The provider's scope determines whether legal advice is part of the engagement.",
+     "area": "Answer.text",
+     "index": 9
+    },
+    {
+     "type": "field",
+     "text": "Is ISO 42001 required?",
+     "area": "Question.name",
+     "index": 10
+    },
+    {
+     "type": "field",
+     "text": "ISO/IEC 42001 is voluntary, though customers can require it by contract. Certification shows an independent certification body checked your AI management system, and legal compliance still has to be shown law by law.",
+     "area": "Answer.text",
+     "index": 11
+    },
+    {
+     "type": "field",
+     "text": "Does NIST AI RMF make you compliant?",
+     "area": "Question.name",
+     "index": 12
+    },
+    {
+     "type": "field",
+     "text": "NIST AI RMF is a voluntary U.S. risk-management framework, so it does not create legal compliance on its own. Teams still use it to structure risk and compliance work, even when no law or contract points to it. It shapes how a company manages AI risk, while each law sets what compliance actually requires.",
+     "area": "Answer.text",
+     "index": 13
+    },
+    {
+     "type": "field",
+     "text": "Can AI automate compliance?",
+     "area": "Question.name",
+     "index": 14
+    },
+    {
+     "type": "field",
+     "text": "AI can take over the prep work behind compliance. It collects evidence, scans rule updates, drafts assessments, and flags gaps. Legal judgment and accountability stay with people, who decide what a rule means and sign the attestation.",
+     "area": "Answer.text",
+     "index": 15
+    },
+    {
+     "type": "field",
+     "text": "What evidence is needed for AI compliance?",
+     "area": "Question.name",
+     "index": 16
+    },
+    {
+     "type": "field",
+     "text": "AI compliance needs evidence that each control exists and operates as intended. The core set is the inventory, risk assessments, test results, approvals, and system logs. Technical documentation, training records, vendor reviews, and incident records complete it.",
+     "area": "Answer.text",
+     "index": 17
+    }
+   ]
+  },
+  {
+   "id": "h1",
+   "kind": "h1",
+   "label": "H1",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Is AI Compliance Consulting: Process, Benefits & How to Implement It",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "What Is AI Compliance Consulting: Process, Benefits & How to Implement It"
+    }
+   ]
+  },
+  {
+   "id": "date",
+   "kind": "date",
+   "label": "Date",
+   "scope": "page",
+   "skipped": false,
+   "text": "Updated on October 2, 2026",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Updated on October 2, 2026"
+    }
+   ]
+  },
+  {
+   "id": "author",
+   "kind": "author",
+   "label": "Author",
+   "scope": "page",
+   "skipped": false,
+   "text": "Author avatar\nSergey Matikaynen / CTO\nArticle author\nSergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.\nView profile",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Author avatar",
+     "src": "https://gogloby.com/wp-content/uploads/2024/02/1706550966241.jpeg",
+     "file": "1706550966241.jpeg",
+     "alt": "Author avatar",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen / CTO",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Article author",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "View profile",
+     "links": [
+      {
+       "href": "https://gogloby.com/author/sergey/",
+       "text": "View profile"
+      }
+     ],
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "toc",
+   "kind": "toc",
+   "label": "Table of contents",
+   "scope": "page",
+   "skipped": false,
+   "text": "Table of Contents\nWhat Is AI Compliance Consulting?\nWhat Is the Difference Between AI Compliance, Governance, Ethics, and Risk?\nHow Does AI Compliance Consulting Work?\nWhat Are the AI Compliance Regulations and Frameworks?\nHow Does EU AI Act Compliance Consulting Work?\nWhat Are the Benefits of AI Compliance Consulting?\nWhy Does AI Compliance Differ by Industry?\n5 AI Compliance Consulting Firms to Evaluate\nDo You Have Compliance Rules but No Controls in the Code?\nWhat Determines AI Compliance Consulting Pricing?\nHow Do AI Compliance Platforms Work?\nWhat Are the Most Common AI Compliance Implementation Mistakes?\nConclusion\nDo You Need AI Compliance Inside Your Engineering Workflow?\nFAQs",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Table of Contents",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "What Is AI Compliance Consulting?",
+     "links": [
+      {
+       "href": "#what-is-ai-compliance-consulting",
+       "text": "What Is AI Compliance Consulting?"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "What Is the Difference Between AI Compliance, Governance, Ethics, and Risk?",
+     "links": [
+      {
+       "href": "#what-is-the-difference-between-ai-compliance-governance-ethics-and-risk",
+       "text": "What Is the Difference Between AI Compliance, Governance, Ethics, and Risk?"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "How Does AI Compliance Consulting Work?",
+     "links": [
+      {
+       "href": "#how-does-ai-compliance-consulting-work",
+       "text": "How Does AI Compliance Consulting Work?"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "What Are the AI Compliance Regulations and Frameworks?",
+     "links": [
+      {
+       "href": "#what-are-the-ai-compliance-regulations-and-frameworks",
+       "text": "What Are the AI Compliance Regulations and Frameworks?"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "How Does EU AI Act Compliance Consulting Work?",
+     "links": [
+      {
+       "href": "#how-does-eu-ai-act-compliance-consulting-work",
+       "text": "How Does EU AI Act Compliance Consulting Work?"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "What Are the Benefits of AI Compliance Consulting?",
+     "links": [
+      {
+       "href": "#what-are-the-benefits-of-ai-compliance-consulting",
+       "text": "What Are the Benefits of AI Compliance Consulting?"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Why Does AI Compliance Differ by Industry?",
+     "links": [
+      {
+       "href": "#why-does-ai-compliance-differ-by-industry",
+       "text": "Why Does AI Compliance Differ by Industry?"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "5 AI Compliance Consulting Firms to Evaluate",
+     "links": [
+      {
+       "href": "#5-ai-compliance-consulting-firms-to-evaluate",
+       "text": "5 AI Compliance Consulting Firms to Evaluate"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Do You Have Compliance Rules but No Controls in the Code?",
+     "links": [
+      {
+       "href": "#do-you-have-compliance-rules-but-no-controls-in-the-code",
+       "text": "Do You Have Compliance Rules but No Controls in the Code?"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "What Determines AI Compliance Consulting Pricing?",
+     "links": [
+      {
+       "href": "#what-determines-ai-compliance-consulting-pricing",
+       "text": "What Determines AI Compliance Consulting Pricing?"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "How Do AI Compliance Platforms Work?",
+     "links": [
+      {
+       "href": "#how-do-ai-compliance-platforms-work",
+       "text": "How Do AI Compliance Platforms Work?"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "What Are the Most Common AI Compliance Implementation Mistakes?",
+     "links": [
+      {
+       "href": "#what-are-the-most-common-ai-compliance-implementation-mistakes",
+       "text": "What Are the Most Common AI Compliance Implementation Mistakes?"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "Conclusion",
+     "links": [
+      {
+       "href": "#conclusion",
+       "text": "Conclusion"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "Do You Need AI Compliance Inside Your Engineering Workflow?",
+     "links": [
+      {
+       "href": "#do-you-need-ai-compliance-inside-your-engineering-workflow",
+       "text": "Do You Need AI Compliance Inside Your Engineering Workflow?"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "FAQs",
+     "links": [
+      {
+       "href": "#faqs",
+       "text": "FAQs"
+      }
+     ],
+     "index": 15
+    }
+   ]
+  },
+  {
+   "id": "article:intro",
+   "kind": "article_section",
+   "label": "Intro",
+   "scope": "page",
+   "skipped": false,
+   "text": "AI compliance consulting helps companies turn the rules that apply to their AI systems into controls that teams can use and prove. Those rules can come from laws, contracts, and industry regulators. IBM’s 2026 study found that 77% of organizations surveyed report that AI adoption is already outpacing current governance capabilities. The challenge is making sure those requirements are reflected in how AI systems are built and used.\nThat becomes harder as AI spreads across teams, products, and jurisdictions. One product might use models from different providers and give an agent permission to take actions on its own. If the same system is then used in different markets or in a regulated process, the requirements can change. A policy document alone cannot keep track of all those differences.\nThis guide is for CTOs and engineering leaders who work with legal and compliance teams on AI. It walks through a nine-step consulting process, the rules behind it, and the EU AI Act. It also covers the buying decision, from firms and pricing to the mistakes that stall programs.\nKey Takeaways:\nVisibility comes first: A reliable compliance program starts with a complete picture of the AI systems in use, including vendor tools and systems outside formal engineering ownership.\nThe system and the role set the work: Compliance obligations follow the system’s use, risk, data, jurisdiction, and organizational role. Company size alone does not establish the scope.\nRequirements have to reach the workflow: Written policies become useful controls when engineering and business processes enforce the required reviews, approvals, restrictions, and oversight.\nProof is part of compliance: A requirement needs evidence showing how it was applied and how the related control operated. That record supports management reviews, audits, regulators, and customer requests.\nDeployment starts an ongoing cycle: Models, data, vendors, uses, and regulations change over time, so the compliance baseline needs periodic review after an AI system goes live.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "AI compliance consulting helps companies turn the rules that apply to their AI systems into controls that teams can use and prove. Those rules can come from laws, contracts, and industry regulators. IBM’s 2026 study found that 77% of organizations surveyed report that AI adoption is already outpacing current governance capabilities. The challenge is making sure those requirements are reflected in how AI systems are built and used.",
+     "links": [
+      {
+       "href": "https://newsroom.ibm.com/2026-06-08-new-ibm-study-finds-cios-and-ctos-face-growing-ai-control-gap-as-enterprise-deployment-scales",
+       "text": "IBM’s 2026 study"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "That becomes harder as AI spreads across teams, products, and jurisdictions. One product might use models from different providers and give an agent permission to take actions on its own. If the same system is then used in different markets or in a regulated process, the requirements can change. A policy document alone cannot keep track of all those differences.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "This guide is for CTOs and engineering leaders who work with legal and compliance teams on AI. It walks through a nine-step consulting process, the rules behind it, and the EU AI Act. It also covers the buying decision, from firms and pricing to the mistakes that stall programs.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Key Takeaways:",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Visibility comes first: A reliable compliance program starts with a complete picture of the AI systems in use, including vendor tools and systems outside formal engineering ownership.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "The system and the role set the work: Compliance obligations follow the system’s use, risk, data, jurisdiction, and organizational role. Company size alone does not establish the scope.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Requirements have to reach the workflow: Written policies become useful controls when engineering and business processes enforce the required reviews, approvals, restrictions, and oversight.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Proof is part of compliance: A requirement needs evidence showing how it was applied and how the related control operated. That record supports management reviews, audits, regulators, and customer requests.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Deployment starts an ongoing cycle: Models, data, vendors, uses, and regulations change over time, so the compliance baseline needs periodic review after an AI system goes live.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:what-is-ai-compliance-consulting",
+   "kind": "article_section",
+   "label": "What Is AI Compliance Consulting?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Is AI Compliance Consulting?\nAI compliance consulting helps a company determine which requirements apply to its AI systems and put them into practice. The work connects those requirements with how the company develops, deploys, and uses AI. It goes beyond a legal memo because compliance decisions need to reflect how AI actually works within the business.\nProviders approach this work from a legal, GRC, or engineering starting point, although their capabilities can overlap. Legal-led firms tend to emphasize interpreting the law, while risk and GRC consultancies focus on compliance frameworks. Engineering firms focus on implementing compliance within technical systems, and some providers combine two or more of these capabilities.\nLegal Compliance\nLegal compliance covers binding duties from laws, contracts, and sector rules. Which ones apply depends on where you sell, what the AI decides, whose data it uses, and your role.\nGovernance\nGovernance gives compliance a structure the company can repeat. It names who proposes an AI use case, who reviews it, and who can say no. With it, an internal summarizer follows a short path and a customer-facing agent goes to a full board.\nTechnical Controls\nTechnical controls are the means by which a requirement becomes system behavior. Take a rule that people affected by an automated decision can request human review. Engineering flags every AI decision, routes appeals to a named reviewer, and logs the outcome.\nEvidence\nEvidence shows how a company applied its compliance requirements to an AI system. For example, a risk assessment records why a use case was approved, while test results and monitoring records show how it was checked over time. This provides a basis for demonstrating compliance when a customer, regulator, or internal team asks for proof.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Is AI Compliance Consulting?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI compliance consulting helps a company determine which requirements apply to its AI systems and put them into practice. The work connects those requirements with how the company develops, deploys, and uses AI. It goes beyond a legal memo because compliance decisions need to reflect how AI actually works within the business.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Providers approach this work from a legal, GRC, or engineering starting point, although their capabilities can overlap. Legal-led firms tend to emphasize interpreting the law, while risk and GRC consultancies focus on compliance frameworks. Engineering firms focus on implementing compliance within technical systems, and some providers combine two or more of these capabilities.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Legal Compliance",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Legal compliance covers binding duties from laws, contracts, and sector rules. Which ones apply depends on where you sell, what the AI decides, whose data it uses, and your role.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Governance",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Governance gives compliance a structure the company can repeat. It names who proposes an AI use case, who reviews it, and who can say no. With it, an internal summarizer follows a short path and a customer-facing agent goes to a full board.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Technical Controls",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Technical controls are the means by which a requirement becomes system behavior. Take a rule that people affected by an automated decision can request human review. Engineering flags every AI decision, routes appeals to a named reviewer, and logs the outcome.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Evidence",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Evidence shows how a company applied its compliance requirements to an AI system. For example, a risk assessment records why a use case was approved, while test results and monitoring records show how it was checked over time. This provides a basis for demonstrating compliance when a customer, regulator, or internal team asks for proof.",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "article:what-is-the-difference-between-ai-compliance-gov",
+   "kind": "article_section",
+   "label": "What Is the Difference Between AI Compliance, Governance, Ethics, and…",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Is the Difference Between AI Compliance, Governance, Ethics, and Risk?\nAI compliance, governance, ethics, and risk management are four related disciplines that address different questions about the same AI system. Compliance asks whether the system meets outside rules, while governance asks who decides and how. Ethics asks whether the system aligns with principles for responsible use, including questions that the law does not address. Risk management asks what could go wrong and how much harm it could cause.\nThe four work together. Ethics and risk shape the rules a company sets for itself. Governance assigns the people who apply them, while compliance shows whether the system meets outside requirements.\nCompliance\nCompliance means meeting a specific outside requirement and proving it. It works in clear terms, such as a disclosure the law requires users to see. Evidence shows how the company met the requirement and supports compliance reviews when they are required.\nGovernance\nAI governance controls AI across its whole life, from proposal to retirement. It sets decision rights, owners, and approval steps. Its reach is wider than compliance. A board can block a legal use case that exceeds the company’s risk appetite.\nTo see how those decisions play out inside engineering teams, read our guide to AI governance in software development\nEthics\nAI ethics sets principles such as fairness, transparency, and avoiding harm. A hiring tool can meet the company’s compliance requirements while still failing to meet its broader ethical standards, such as giving applicants fair consideration when they have career gaps. When those principles become internal policies or contractual requirements, compliance teams can help translate them into requirements and evidence.\nRisk Management\nAI risk management finds, rates, reduces, and monitors the ways an AI system can fail. Teams score each risk by likelihood and impact, then decide whether the remaining risk is acceptable.\nImpact covers everything a failure touches, from customer data to revenue. EY’s 2026 survey found that 36% of senior executives have experienced an AI incident or failure that caused a materially negative impact to their organization, including data loss, financial damage, brand damage, and operational disruptions. A risk assessment estimates those losses before launch. Risk tolerance then sets control depth, so an AI that moves money gets more controls than one that drafts emails.\nAI Compliance vs Related Disciplines\nThe table compares each discipline’s goal, what it controls, its deliverables, and how success is shown.\nDiscipline\nPrimary Goal\nWhat It Controls\nTypical Deliverables\nHow It Is Demonstrated\nExample\nAI Compliance\nMeet outside rules\nRequired behaviors\nRequirement map, evidence file\nAudits\nA chatbot shows an EU AI Act disclosure\nAI Governance\nDecide who approves AI\nDecision rights\nPolicy, approval workflow\nApproval records\nA board signs off on customer-facing agents\nAI Ethics\nKeep AI fair past the law\nUse limits\nFairness criteria\nFairness test results\nA hiring model is tested by age group\nAI Risk Management\nCut harm to an accepted level\nFailure impact\nRisk register\nResidual risk sign-off\nA refund agent gets a $500 cap",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Is the Difference Between AI Compliance, Governance, Ethics, and Risk?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI compliance, governance, ethics, and risk management are four related disciplines that address different questions about the same AI system. Compliance asks whether the system meets outside rules, while governance asks who decides and how. Ethics asks whether the system aligns with principles for responsible use, including questions that the law does not address. Risk management asks what could go wrong and how much harm it could cause.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The four work together. Ethics and risk shape the rules a company sets for itself. Governance assigns the people who apply them, while compliance shows whether the system meets outside requirements.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Compliance",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Compliance means meeting a specific outside requirement and proving it. It works in clear terms, such as a disclosure the law requires users to see. Evidence shows how the company met the requirement and supports compliance reviews when they are required.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Governance",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "AI governance controls AI across its whole life, from proposal to retirement. It sets decision rights, owners, and approval steps. Its reach is wider than compliance. A board can block a legal use case that exceeds the company’s risk appetite.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "To see how those decisions play out inside engineering teams, read our guide to AI governance in software development",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/ai-governance/",
+       "text": "AI governance in software development"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Ethics",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "AI ethics sets principles such as fairness, transparency, and avoiding harm. A hiring tool can meet the company’s compliance requirements while still failing to meet its broader ethical standards, such as giving applicants fair consideration when they have career gaps. When those principles become internal policies or contractual requirements, compliance teams can help translate them into requirements and evidence.",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Risk Management",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "AI risk management finds, rates, reduces, and monitors the ways an AI system can fail. Teams score each risk by likelihood and impact, then decide whether the remaining risk is acceptable.",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Impact covers everything a failure touches, from customer data to revenue. EY’s 2026 survey found that 36% of senior executives have experienced an AI incident or failure that caused a materially negative impact to their organization, including data loss, financial damage, brand damage, and operational disruptions. A risk assessment estimates those losses before launch. Risk tolerance then sets control depth, so an AI that moves money gets more controls than one that drafts emails.",
+     "links": [
+      {
+       "href": "https://www.ey.com/en_us/newsroom/2026/09/ey-survey-finds-that-autonomous-ai-implementation-outpaces-oversight-yielding-an-ai-governance-gap",
+       "text": "EY’s 2026 survey"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "heading",
+     "text": "AI Compliance vs Related Disciplines",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "The table compares each discipline’s goal, what it controls, its deliverables, and how success is shown.",
+     "index": 9
+    },
+    {
+     "type": "table_cell",
+     "text": "Discipline",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Primary Goal",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "What It Controls",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "Typical Deliverables",
+     "index": 4
+    },
+    {
+     "type": "table_cell",
+     "text": "How It Is Demonstrated",
+     "index": 5
+    },
+    {
+     "type": "table_cell",
+     "text": "Example",
+     "index": 6
+    },
+    {
+     "type": "table_cell",
+     "text": "AI Compliance",
+     "index": 7
+    },
+    {
+     "type": "table_cell",
+     "text": "Meet outside rules",
+     "index": 8
+    },
+    {
+     "type": "table_cell",
+     "text": "Required behaviors",
+     "index": 9
+    },
+    {
+     "type": "table_cell",
+     "text": "Requirement map, evidence file",
+     "index": 10
+    },
+    {
+     "type": "table_cell",
+     "text": "Audits",
+     "index": 11
+    },
+    {
+     "type": "table_cell",
+     "text": "A chatbot shows an EU AI Act disclosure",
+     "index": 12
+    },
+    {
+     "type": "table_cell",
+     "text": "AI Governance",
+     "index": 13
+    },
+    {
+     "type": "table_cell",
+     "text": "Decide who approves AI",
+     "index": 14
+    },
+    {
+     "type": "table_cell",
+     "text": "Decision rights",
+     "index": 15
+    },
+    {
+     "type": "table_cell",
+     "text": "Policy, approval workflow",
+     "index": 16
+    },
+    {
+     "type": "table_cell",
+     "text": "Approval records",
+     "index": 17
+    },
+    {
+     "type": "table_cell",
+     "text": "A board signs off on customer-facing agents",
+     "index": 18
+    },
+    {
+     "type": "table_cell",
+     "text": "AI Ethics",
+     "index": 19
+    },
+    {
+     "type": "table_cell",
+     "text": "Keep AI fair past the law",
+     "index": 20
+    },
+    {
+     "type": "table_cell",
+     "text": "Use limits",
+     "index": 21
+    },
+    {
+     "type": "table_cell",
+     "text": "Fairness criteria",
+     "index": 22
+    },
+    {
+     "type": "table_cell",
+     "text": "Fairness test results",
+     "index": 23
+    },
+    {
+     "type": "table_cell",
+     "text": "A hiring model is tested by age group",
+     "index": 24
+    },
+    {
+     "type": "table_cell",
+     "text": "AI Risk Management",
+     "index": 25
+    },
+    {
+     "type": "table_cell",
+     "text": "Cut harm to an accepted level",
+     "index": 26
+    },
+    {
+     "type": "table_cell",
+     "text": "Failure impact",
+     "index": 27
+    },
+    {
+     "type": "table_cell",
+     "text": "Risk register",
+     "index": 28
+    },
+    {
+     "type": "table_cell",
+     "text": "Residual risk sign-off",
+     "index": 29
+    },
+    {
+     "type": "table_cell",
+     "text": "A refund agent gets a $500 cap",
+     "index": 30
+    }
+   ]
+  },
+  {
+   "id": "article:how-does-ai-compliance-consulting-work",
+   "kind": "article_section",
+   "label": "How Does AI Compliance Consulting Work?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Does AI Compliance Consulting Work?\nAI compliance consulting works as a repeatable cycle that takes a company from finding its AI to proving its controls keep working. Consultants begin by mapping the AI a company uses against the rules it faces. The middle of the cycle turns those rules into working controls, while the final stage tests them and keeps them current as the business changes.\n1. Define Scope\nDefine which jurisdictions, business units, products, and processes the engagement covers. That sets the AI systems, vendors, and users in play. Start with the AI that carries real exposure, such as systems that decide on customers or handle sensitive data. Scope also covers shadow AI and any third-party AI that touches company data.\n2. Build the Inventory\nList every AI system in scope by what it’s used for, since the use sets the risk. The list includes agents, API calls, AI-enabled SaaS, and AI built into vendor products. Each entry records the business purpose, the data, where the system runs, and who it affects.\n3. Map Requirements\nCheck each system against AI-specific laws, privacy rules, industry regulations, security requirements, customer contracts, and voluntary standards. A law relevant to the company applies to a system only when the system’s use, role, or data type triggers its duties. Each requirement goes on the list only after it’s confirmed against what the system actually does.\n4. Classify Risk\nAssign each system a risk tier based on factors relevant to its use and potential impact. Common factors include the system’s impact, autonomy, data sensitivity, and reach, such as how many customers or employees its decisions affect. Regulatory category, security exposure, and human oversight can also affect the rating. The tier sets how deep the review goes and how many controls the system needs.\n5. Assess Gaps\nThis step compares what each requirement needs with what the company already has. Some gaps are missing pieces, like a policy, a technical control, evidence, or a named owner. Others are controls that exist but don’t work. For each gap, record what is missing or what is failing. Then note what needs to be added or fixed before moving to control design.\n6. Design Controls\nEvery requirement with a gap turns into a control design. Each design names an owner, a trigger, a procedure, and the evidence the control produces. It also sets how exceptions get handled and where they escalate. Every control traces back to its requirement and forward to its evidence, so an auditor can follow the chain.\n7. Implement Controls\nImplementation builds each control into the workflows where the work already happens. For example, a control might require an approval before an AI system is deployed, a check before data is used, or a review before a vendor is approved. Strong consulting stands out at this step because it puts controls into the code and approval flows the company runs every day.\n8. Validate\nControls can be tested in different ways depending on the requirement and the engagement. A design review can confirm that a control meets the requirement on paper, while an operating-effectiveness test can confirm that it ran as intended over a set period. The results become the evidence for management, regulators, customers, internal audit, and certification bodies.\n9. Monitor\nCompliance is continuous. Review the system whenever something changes that could affect its compliance, such as a new model, data source, incident, or regulation. Track control failures and open exceptions until they close, and reassess every system periodically even when nothing has changed.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Does AI Compliance Consulting Work?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI compliance consulting works as a repeatable cycle that takes a company from finding its AI to proving its controls keep working. Consultants begin by mapping the AI a company uses against the rules it faces. The middle of the cycle turns those rules into working controls, while the final stage tests them and keeps them current as the business changes.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "1. Define Scope",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Define which jurisdictions, business units, products, and processes the engagement covers. That sets the AI systems, vendors, and users in play. Start with the AI that carries real exposure, such as systems that decide on customers or handle sensitive data. Scope also covers shadow AI and any third-party AI that touches company data.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "2. Build the Inventory",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "List every AI system in scope by what it’s used for, since the use sets the risk. The list includes agents, API calls, AI-enabled SaaS, and AI built into vendor products. Each entry records the business purpose, the data, where the system runs, and who it affects.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "3. Map Requirements",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Check each system against AI-specific laws, privacy rules, industry regulations, security requirements, customer contracts, and voluntary standards. A law relevant to the company applies to a system only when the system’s use, role, or data type triggers its duties. Each requirement goes on the list only after it’s confirmed against what the system actually does.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "4. Classify Risk",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Assign each system a risk tier based on factors relevant to its use and potential impact. Common factors include the system’s impact, autonomy, data sensitivity, and reach, such as how many customers or employees its decisions affect. Regulatory category, security exposure, and human oversight can also affect the rating. The tier sets how deep the review goes and how many controls the system needs.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "5. Assess Gaps",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "This step compares what each requirement needs with what the company already has. Some gaps are missing pieces, like a policy, a technical control, evidence, or a named owner. Others are controls that exist but don’t work. For each gap, record what is missing or what is failing. Then note what needs to be added or fixed before moving to control design.",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "6. Design Controls",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Every requirement with a gap turns into a control design. Each design names an owner, a trigger, a procedure, and the evidence the control produces. It also sets how exceptions get handled and where they escalate. Every control traces back to its requirement and forward to its evidence, so an auditor can follow the chain.",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "7. Implement Controls",
+     "level": 3,
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Implementation builds each control into the workflows where the work already happens. For example, a control might require an approval before an AI system is deployed, a check before data is used, or a review before a vendor is approved. Strong consulting stands out at this step because it puts controls into the code and approval flows the company runs every day.",
+     "index": 8
+    },
+    {
+     "type": "heading",
+     "text": "8. Validate",
+     "level": 3,
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Controls can be tested in different ways depending on the requirement and the engagement. A design review can confirm that a control meets the requirement on paper, while an operating-effectiveness test can confirm that it ran as intended over a set period. The results become the evidence for management, regulators, customers, internal audit, and certification bodies.",
+     "index": 9
+    },
+    {
+     "type": "heading",
+     "text": "9. Monitor",
+     "level": 3,
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "Compliance is continuous. Review the system whenever something changes that could affect its compliance, such as a new model, data source, incident, or regulation. Track control failures and open exceptions until they close, and reassess every system periodically even when nothing has changed.",
+     "index": 10
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-the-ai-compliance-regulations-and-frame",
+   "kind": "article_section",
+   "label": "What Are the AI Compliance Regulations and Frameworks?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are the AI Compliance Regulations and Frameworks?\nAI compliance regulations and frameworks are the binding laws and voluntary standards that set what an AI system must do. One system can fall under AI rules, privacy law, sector rules, and customer contracts at once. Binding law creates legal obligations, while voluntary frameworks can become business requirements when a company adopts them through its policies or contracts.\nEU AI Act\nThe EU AI Act regulates AI by risk level and company role. It bans practices like social scoring and requires transparency when people interact with certain AI systems. High-risk systems, including some AI used in hiring, face stricter requirements. Providers of general-purpose AI (GPAI) models have separate obligations. The EU AI Act applies its transparency rules from August 2, 2026. Under the AI Omnibus , high-risk rules apply from December 2, 2027, and from August 2, 2028, for AI built into physical products.\nPrivacy\nPrivacy law governs personal data in AI systems, whether or not an AI law applies. The General Data Protection Regulation (GDPR) requires a lawful basis for processing, limits how personal data is used, and provides stronger protections for sensitive data. It also restricts certain decisions based solely on automated processing and sets rules for vendors and international data transfers.\nFor example, California adds separate privacy requirements. Its automated decisionmaking rules give consumers specific rights from January 1, 2027. They apply only when a business uses automated decision-making technology (ADMT) to decide on a consumer’s lending, housing, education, employment, or healthcare.\nU.S. Requirements\nThe U.S. does not have one general AI law that applies to every company. Federal agencies enforce existing laws that can apply to AI, while states and local governments add their own requirements. Privacy, employment, consumer protection, anti-discrimination, and contract rules can also apply to specific AI uses.\nFor example, Colorado’s SB 26-189 gives people rights around covered automated decision-making used in consequential decisions, with requirements beginning January 1, 2027.\nIndustry Rules\nAI systems can also have to follow rules specific to the industry where they are used. For example, in healthcare, the Health Insurance Portability and Accountability Act (HIPAA) governs covered uses of protected health information, while the U.S. Food and Drug Administration (FDA) regulates AI-enabled products that meet the definition of a medical device. Employment is another example. New York City’s Local Law 144 requires covered employers and employment agencies using certain automated employment decision tools to complete a bias audit and provide required notices.\nFinancial services also has model risk requirements. For example, the Federal Reserve’s 2026 revised guidance sets model risk expectations for certain large banking organizations. It covers quantitative models based on statistical or financial theory, and leaves generative AI and agentic AI out of scope.\nStandards\nStandards give companies a structured way to manage AI without creating legal duties themselves. The NIST AI Risk Management Framework (AI RMF) is voluntary and organizes AI risk management into four functions: govern, map, measure, and manage.\nThe ISO/IEC 42001 standard sets requirements for an AI management system and can be used as the basis for certification. Neither is law, but companies can adopt these standards through internal policies or customer contracts.\nAI Compliance Requirements\nThe table sorts each requirement by scope, reach, consulting work, and legal or assurance status. That last column shows whether a requirement is binding law, a certifiable standard, or a voluntary framework. Voluntary frameworks can still matter when customers or contracts ask for them.\nRequirement / Framework\nWhat It Covers\nWho It Applies To\nTypical Consulting Work\nLegal/Assurance Status\nEU AI Act\nBans, transparency, high-risk duties\nAI providers and deployers in the EU\nRole and risk classification\nBinding, phased through 2028\nGDPR\nPersonal data in prompts and outputs\nOrganizations in the EU, or serving or monitoring people in the EU\nLawful basis review, DPIAs for high-risk processing\nBinding\nCalifornia ADMT rules\nAutomated significant decisions\nCCPA-covered businesses\nNotices, opt-outs\nBinding from 2027\nColorado SB 26-189\nConsequential decisions\nDevelopers and deployers\nAdverse-decision explanations\nBinding from 2027\nHIPAA\nProtected health information (PHI)\nCovered entities and their business associates\nBAAs, PHI safeguards\nBinding\nNYC Local Law 144\nAutomated employment decision tools (AEDTs)\nEmployers and employment agencies using AEDTs in NYC\nAnnual bias audits, candidate notices\nBinding\nISO/IEC 42001\nAI management system\nOrganizations seeking certification\nAudit readiness\nVoluntary, certifiable\nNIST AI RMF\nAI risk practices\nAny organization\nControl mapping\nVoluntary",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are the AI Compliance Regulations and Frameworks?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI compliance regulations and frameworks are the binding laws and voluntary standards that set what an AI system must do. One system can fall under AI rules, privacy law, sector rules, and customer contracts at once. Binding law creates legal obligations, while voluntary frameworks can become business requirements when a company adopts them through its policies or contracts.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "EU AI Act",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "The EU AI Act regulates AI by risk level and company role. It bans practices like social scoring and requires transparency when people interact with certain AI systems. High-risk systems, including some AI used in hiring, face stricter requirements. Providers of general-purpose AI (GPAI) models have separate obligations. The EU AI Act applies its transparency rules from August 2, 2026. Under the AI Omnibus , high-risk rules apply from December 2, 2027, and from August 2, 2028, for AI built into physical products.",
+     "links": [
+      {
+       "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1689-20260727",
+       "text": "EU AI Act"
+      },
+      {
+       "href": "https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force",
+       "text": "AI Omnibus"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Privacy",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Privacy law governs personal data in AI systems, whether or not an AI law applies. The General Data Protection Regulation (GDPR) requires a lawful basis for processing, limits how personal data is used, and provides stronger protections for sensitive data. It also restricts certain decisions based solely on automated processing and sets rules for vendors and international data transfers.",
+     "links": [
+      {
+       "href": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+       "text": "General Data Protection Regulation (GDPR)"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "For example, California adds separate privacy requirements. Its automated decisionmaking rules give consumers specific rights from January 1, 2027. They apply only when a business uses automated decision-making technology (ADMT) to decide on a consumer’s lending, housing, education, employment, or healthcare.",
+     "links": [
+      {
+       "href": "https://cppa.ca.gov/announcements/2025/20250923.html",
+       "text": "automated decisionmaking rules"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "U.S. Requirements",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "The U.S. does not have one general AI law that applies to every company. Federal agencies enforce existing laws that can apply to AI, while states and local governments add their own requirements. Privacy, employment, consumer protection, anti-discrimination, and contract rules can also apply to specific AI uses.",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "For example, Colorado’s SB 26-189 gives people rights around covered automated decision-making used in consequential decisions, with requirements beginning January 1, 2027.",
+     "links": [
+      {
+       "href": "https://leg.colorado.gov/bills/sb26-189",
+       "text": "Colorado’s SB 26-189"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Industry Rules",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "AI systems can also have to follow rules specific to the industry where they are used. For example, in healthcare, the Health Insurance Portability and Accountability Act (HIPAA) governs covered uses of protected health information, while the U.S. Food and Drug Administration (FDA) regulates AI-enabled products that meet the definition of a medical device. Employment is another example. New York City’s Local Law 144 requires covered employers and employment agencies using certain automated employment decision tools to complete a bias audit and provide required notices.",
+     "links": [
+      {
+       "href": "https://www.hhs.gov/hipaa/index.html",
+       "text": "Health Insurance Portability and Accountability Act (HIPAA)"
+      },
+      {
+       "href": "https://www.fda.gov/medical-devices/digital-health-center-excellence/artificial-intelligence-enabled-medical-devices",
+       "text": "U.S. Food and Drug Administration (FDA)"
+      },
+      {
+       "href": "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page",
+       "text": "Local Law 144"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Financial services also has model risk requirements. For example, the Federal Reserve’s 2026 revised guidance sets model risk expectations for certain large banking organizations. It covers quantitative models based on statistical or financial theory, and leaves generative AI and agentic AI out of scope.",
+     "links": [
+      {
+       "href": "https://www.federalreserve.gov/supervisionreg/srletters/SR2602.htm",
+       "text": "2026 revised guidance"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "heading",
+     "text": "Standards",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Standards give companies a structured way to manage AI without creating legal duties themselves. The NIST AI Risk Management Framework (AI RMF) is voluntary and organizes AI risk management into four functions: govern, map, measure, and manage.",
+     "links": [
+      {
+       "href": "https://www.nist.gov/itl/ai-risk-management-framework",
+       "text": "NIST AI Risk Management Framework (AI RMF)"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "The ISO/IEC 42001 standard sets requirements for an AI management system and can be used as the basis for certification. Neither is law, but companies can adopt these standards through internal policies or customer contracts.",
+     "links": [
+      {
+       "href": "https://www.iso.org/standard/42001",
+       "text": "ISO/IEC 42001"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "heading",
+     "text": "AI Compliance Requirements",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "The table sorts each requirement by scope, reach, consulting work, and legal or assurance status. That last column shows whether a requirement is binding law, a certifiable standard, or a voluntary framework. Voluntary frameworks can still matter when customers or contracts ask for them.",
+     "index": 11
+    },
+    {
+     "type": "table_cell",
+     "text": "Requirement / Framework",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "What It Covers",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "Who It Applies To",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "Typical Consulting Work",
+     "index": 4
+    },
+    {
+     "type": "table_cell",
+     "text": "Legal/Assurance Status",
+     "index": 5
+    },
+    {
+     "type": "table_cell",
+     "text": "EU AI Act",
+     "index": 6
+    },
+    {
+     "type": "table_cell",
+     "text": "Bans, transparency, high-risk duties",
+     "index": 7
+    },
+    {
+     "type": "table_cell",
+     "text": "AI providers and deployers in the EU",
+     "index": 8
+    },
+    {
+     "type": "table_cell",
+     "text": "Role and risk classification",
+     "index": 9
+    },
+    {
+     "type": "table_cell",
+     "text": "Binding, phased through 2028",
+     "index": 10
+    },
+    {
+     "type": "table_cell",
+     "text": "GDPR",
+     "index": 11
+    },
+    {
+     "type": "table_cell",
+     "text": "Personal data in prompts and outputs",
+     "index": 12
+    },
+    {
+     "type": "table_cell",
+     "text": "Organizations in the EU, or serving or monitoring people in the EU",
+     "index": 13
+    },
+    {
+     "type": "table_cell",
+     "text": "Lawful basis review, DPIAs for high-risk processing",
+     "index": 14
+    },
+    {
+     "type": "table_cell",
+     "text": "Binding",
+     "index": 15
+    },
+    {
+     "type": "table_cell",
+     "text": "California ADMT rules",
+     "index": 16
+    },
+    {
+     "type": "table_cell",
+     "text": "Automated significant decisions",
+     "index": 17
+    },
+    {
+     "type": "table_cell",
+     "text": "CCPA-covered businesses",
+     "index": 18
+    },
+    {
+     "type": "table_cell",
+     "text": "Notices, opt-outs",
+     "index": 19
+    },
+    {
+     "type": "table_cell",
+     "text": "Binding from 2027",
+     "index": 20
+    },
+    {
+     "type": "table_cell",
+     "text": "Colorado SB 26-189",
+     "index": 21
+    },
+    {
+     "type": "table_cell",
+     "text": "Consequential decisions",
+     "index": 22
+    },
+    {
+     "type": "table_cell",
+     "text": "Developers and deployers",
+     "index": 23
+    },
+    {
+     "type": "table_cell",
+     "text": "Adverse-decision explanations",
+     "index": 24
+    },
+    {
+     "type": "table_cell",
+     "text": "Binding from 2027",
+     "index": 25
+    },
+    {
+     "type": "table_cell",
+     "text": "HIPAA",
+     "index": 26
+    },
+    {
+     "type": "table_cell",
+     "text": "Protected health information (PHI)",
+     "index": 27
+    },
+    {
+     "type": "table_cell",
+     "text": "Covered entities and their business associates",
+     "index": 28
+    },
+    {
+     "type": "table_cell",
+     "text": "BAAs, PHI safeguards",
+     "index": 29
+    },
+    {
+     "type": "table_cell",
+     "text": "Binding",
+     "index": 30
+    },
+    {
+     "type": "table_cell",
+     "text": "NYC Local Law 144",
+     "index": 31
+    },
+    {
+     "type": "table_cell",
+     "text": "Automated employment decision tools (AEDTs)",
+     "index": 32
+    },
+    {
+     "type": "table_cell",
+     "text": "Employers and employment agencies using AEDTs in NYC",
+     "index": 33
+    },
+    {
+     "type": "table_cell",
+     "text": "Annual bias audits, candidate notices",
+     "index": 34
+    },
+    {
+     "type": "table_cell",
+     "text": "Binding",
+     "index": 35
+    },
+    {
+     "type": "table_cell",
+     "text": "ISO/IEC 42001",
+     "index": 36
+    },
+    {
+     "type": "table_cell",
+     "text": "AI management system",
+     "index": 37
+    },
+    {
+     "type": "table_cell",
+     "text": "Organizations seeking certification",
+     "index": 38
+    },
+    {
+     "type": "table_cell",
+     "text": "Audit readiness",
+     "index": 39
+    },
+    {
+     "type": "table_cell",
+     "text": "Voluntary, certifiable",
+     "index": 40
+    },
+    {
+     "type": "table_cell",
+     "text": "NIST AI RMF",
+     "index": 41
+    },
+    {
+     "type": "table_cell",
+     "text": "AI risk practices",
+     "index": 42
+    },
+    {
+     "type": "table_cell",
+     "text": "Any organization",
+     "index": 43
+    },
+    {
+     "type": "table_cell",
+     "text": "Control mapping",
+     "index": 44
+    },
+    {
+     "type": "table_cell",
+     "text": "Voluntary",
+     "index": 45
+    }
+   ]
+  },
+  {
+   "id": "article:how-does-eu-ai-act-compliance-consulting-work",
+   "kind": "article_section",
+   "label": "How Does EU AI Act Compliance Consulting Work?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Does EU AI Act Compliance Consulting Work?\nEU AI Act compliance consulting determines a company’s role and each AI system’s risk class under the Act, then maps the resulting duties to the controls needed to meet them. A generic checklist fails because those duties change based on the company’s role and the system’s category. For example, a provider of a high-risk hiring tool has more obligations than a company using a support chatbot.\nDetermine the Role\nYour role sets your duties, and one company can have more than one. The provider builds the system or sells it under its name, while the deployer uses it. For example, a SaaS company can provide the AI feature it sells and deploy the HR tool it buys.\nClassify the System\nClassification depends on the system’s intended purpose and actual use. High-risk covers listed uses such as hiring and credit, plus AI inside regulated products. For example, an AI system designed to write sales emails would be assessed differently if the company deploys it for recruitment, because its intended purpose and use have changed.\nMap the Obligations\nHigh-risk providers need automatic logs, systems designed to support effective human oversight, and documentation a regulator can review. Human overseers must be able to understand the system, interpret its output, and intervene when needed. Risk management and post-market monitoring support those requirements. Deployers have a different set of obligations, while minimal-risk systems carry fewer requirements.\nBuild the Evidence\nHigh-risk providers must hold technical documentation, a quality management system, logs, and an EU declaration of conformity. Red-team results are outside the legal list, but they can still provide useful evidence during customer audits.\nTrack the Timeline\nProhibited practices applied from February 2, 2025, and GPAI duties from August 2, 2025. Most transparency duties started August 2, 2026. The Council of the EU set December 2, 2026, for marking AI content. Stand-alone high-risk rules start December 2, 2027, and product-embedded ones August 2, 2028.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Does EU AI Act Compliance Consulting Work?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "EU AI Act compliance consulting determines a company’s role and each AI system’s risk class under the Act, then maps the resulting duties to the controls needed to meet them. A generic checklist fails because those duties change based on the company’s role and the system’s category. For example, a provider of a high-risk hiring tool has more obligations than a company using a support chatbot.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Determine the Role",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Your role sets your duties, and one company can have more than one. The provider builds the system or sells it under its name, while the deployer uses it. For example, a SaaS company can provide the AI feature it sells and deploy the HR tool it buys.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Classify the System",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Classification depends on the system’s intended purpose and actual use. High-risk covers listed uses such as hiring and credit, plus AI inside regulated products. For example, an AI system designed to write sales emails would be assessed differently if the company deploys it for recruitment, because its intended purpose and use have changed.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Map the Obligations",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "High-risk providers need automatic logs, systems designed to support effective human oversight, and documentation a regulator can review. Human overseers must be able to understand the system, interpret its output, and intervene when needed. Risk management and post-market monitoring support those requirements. Deployers have a different set of obligations, while minimal-risk systems carry fewer requirements.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Build the Evidence",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "High-risk providers must hold technical documentation, a quality management system, logs, and an EU declaration of conformity. Red-team results are outside the legal list, but they can still provide useful evidence during customer audits.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Track the Timeline",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Prohibited practices applied from February 2, 2025, and GPAI duties from August 2, 2025. Most transparency duties started August 2, 2026. The Council of the EU set December 2, 2026, for marking AI content. Stand-alone high-risk rules start December 2, 2027, and product-embedded ones August 2, 2028.",
+     "links": [
+      {
+       "href": "https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/",
+       "text": "Council of the EU"
+      }
+     ],
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-the-benefits-of-ai-compliance-consultin",
+   "kind": "article_section",
+   "label": "What Are the Benefits of AI Compliance Consulting?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are the Benefits of AI Compliance Consulting?\nAI compliance consulting reduces late redesigns and approval delays by identifying requirements early and assigning them to the controls and owners responsible for meeting them. Teams know what each AI system needs before requirements surface late in delivery, so compliance work becomes part of the build rather than a late correction. The same process also creates a repeatable basis for handling requirements across projects, with clearer evidence and accountability.\nLower Compliance Risk\nEarly mapping catches duties while they are still easier to address. A vendor that learns about data minimization during design can build redaction into the system. One that learns it from a customer questionnaire may need to revise the data flow with the deal on hold.\nFaster AI Rollout\nRisk tiers let low-risk AI follow a lighter review path. An internal summarizer with a standard control set can ship on schedule. A logging module built once can then be reused across projects.\nBetter Evidence\nOrganized evidence makes compliance reviews faster. Teams can find and reuse records instead of rebuilding the case for each request. A customer asks how you test for bias, and you send the last three test runs with sign-offs. The same file can support a board update.\nClear Accountability\nAccountability needs named owners for each AI system. IBM’s 2026 study found two-thirds of surveyed CIOs and CTOs report being held accountable for AI systems they do not fully control. Clear roles put each responsibility with the person who can act on it.\nThe system owner answers for behavior, and a compliance owner tracks duties. Legal confirms which rules apply, while risk sets acceptable exposure. An approver signs releases, and engineering owns the controls. For example, take an AI feature that drafts price quotes for customers. The product lead owns how it behaves, and the CTO signs off on each release. That gives the CTO control over the system they answer for.\nSafer Scaling\nAs a company adds AI systems, the same compliance process can be applied to new models, agents, vendors, and use cases without starting from zero. This makes each addition easier to review while keeping the same requirements and controls in place.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are the Benefits of AI Compliance Consulting?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI compliance consulting reduces late redesigns and approval delays by identifying requirements early and assigning them to the controls and owners responsible for meeting them. Teams know what each AI system needs before requirements surface late in delivery, so compliance work becomes part of the build rather than a late correction. The same process also creates a repeatable basis for handling requirements across projects, with clearer evidence and accountability.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Lower Compliance Risk",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Early mapping catches duties while they are still easier to address. A vendor that learns about data minimization during design can build redaction into the system. One that learns it from a customer questionnaire may need to revise the data flow with the deal on hold.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Faster AI Rollout",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Risk tiers let low-risk AI follow a lighter review path. An internal summarizer with a standard control set can ship on schedule. A logging module built once can then be reused across projects.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Better Evidence",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Organized evidence makes compliance reviews faster. Teams can find and reuse records instead of rebuilding the case for each request. A customer asks how you test for bias, and you send the last three test runs with sign-offs. The same file can support a board update.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Clear Accountability",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Accountability needs named owners for each AI system. IBM’s 2026 study found two-thirds of surveyed CIOs and CTOs report being held accountable for AI systems they do not fully control. Clear roles put each responsibility with the person who can act on it.",
+     "links": [
+      {
+       "href": "https://newsroom.ibm.com/2026-06-08-new-ibm-study-finds-cios-and-ctos-face-growing-ai-control-gap-as-enterprise-deployment-scales",
+       "text": "IBM’s 2026 study"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "The system owner answers for behavior, and a compliance owner tracks duties. Legal confirms which rules apply, while risk sets acceptable exposure. An approver signs releases, and engineering owns the controls. For example, take an AI feature that drafts price quotes for customers. The product lead owns how it behaves, and the CTO signs off on each release. That gives the CTO control over the system they answer for.",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Safer Scaling",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "As a company adds AI systems, the same compliance process can be applied to new models, agents, vendors, and use cases without starting from zero. This makes each addition easier to review while keeping the same requirements and controls in place.",
+     "index": 7
+    }
+   ]
+  },
+  {
+   "id": "article:why-does-ai-compliance-differ-by-industry",
+   "kind": "article_section",
+   "label": "Why Does AI Compliance Differ by Industry?",
+   "scope": "page",
+   "skipped": false,
+   "text": "Why Does AI Compliance Differ by Industry?\nAI compliance differs by industry because the cost of failure, the rules, and the data change by sector. Those differences determine which AI uses need closer review and which controls engineering needs to support. The same AI capability can create very different compliance work depending on where and how a company uses it.\nFinancial Services\nAI in banking and payments can affect credit decisions, fraud checks, and anti-money-laundering and customer identity checks. That makes the reason behind an automated credit decision part of the compliance work, not just the model’s output. AI consulting firms for financial services compliance also need payment security expertise when AI touches payment data or systems.\nHealthcare\nHealthcare AI has to account for sensitive health data and, in clinical settings, the effect of its output on patient care. Administrative AI falls under HIPAA when it handles protected health information (PHI). A business associate agreement (BAA) comes in when an outside vendor handles that PHI for a healthcare provider or health plan. Clinical AI adds validation and clinician oversight, while medical device rules apply to some clinical software.\nEmployment\nEmployment AI can affect hiring decisions, so compliance focuses on how the system is used and whether applicants receive required protections. For example, New York City requires bias audits for automated employment decision tools (AEDTs). The rule covers tools that score or rank candidates and substantially shape a hiring or promotion decision. Illinois has required notices since January 1, 2026. The EU AI Act treats hiring AI as high-risk, and rules change by city and state, so consultants need current local research.\nEnterprise Software\nEnterprise software vendors face compliance requirements from both their own product and the customers who use it. On the customer side, contracts and security reviews spell those requirements out. A contract that bars mixing customers’ data becomes tenant isolation and permission checks in the AI feature. A customer’s demand for sign-off on irreversible changes becomes an approval gate before an agent acts.\nSMEs\nSmall companies need a compliance program sized to the systems and risks they actually have. Starting with the two or three systems that make decisions about people or touch sensitive data keeps the work focused. For many small companies, a fixed-scope assessment is the first step. The price is set up front, and the risk-ranked roadmap it delivers shows what to fix first.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Why Does AI Compliance Differ by Industry?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI compliance differs by industry because the cost of failure, the rules, and the data change by sector. Those differences determine which AI uses need closer review and which controls engineering needs to support. The same AI capability can create very different compliance work depending on where and how a company uses it.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Financial Services",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "AI in banking and payments can affect credit decisions, fraud checks, and anti-money-laundering and customer identity checks. That makes the reason behind an automated credit decision part of the compliance work, not just the model’s output. AI consulting firms for financial services compliance also need payment security expertise when AI touches payment data or systems.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Healthcare",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Healthcare AI has to account for sensitive health data and, in clinical settings, the effect of its output on patient care. Administrative AI falls under HIPAA when it handles protected health information (PHI). A business associate agreement (BAA) comes in when an outside vendor handles that PHI for a healthcare provider or health plan. Clinical AI adds validation and clinician oversight, while medical device rules apply to some clinical software.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Employment",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Employment AI can affect hiring decisions, so compliance focuses on how the system is used and whether applicants receive required protections. For example, New York City requires bias audits for automated employment decision tools (AEDTs). The rule covers tools that score or rank candidates and substantially shape a hiring or promotion decision. Illinois has required notices since January 1, 2026. The EU AI Act treats hiring AI as high-risk, and rules change by city and state, so consultants need current local research.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Enterprise Software",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Enterprise software vendors face compliance requirements from both their own product and the customers who use it. On the customer side, contracts and security reviews spell those requirements out. A contract that bars mixing customers’ data becomes tenant isolation and permission checks in the AI feature. A customer’s demand for sign-off on irreversible changes becomes an approval gate before an agent acts.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "SMEs",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Small companies need a compliance program sized to the systems and risks they actually have. Starting with the two or three systems that make decisions about people or touch sensitive data keeps the work focused. For many small companies, a fixed-scope assessment is the first step. The price is set up front, and the risk-ranked roadmap it delivers shows what to fix first.",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "article:5-ai-compliance-consulting-firms-to-evaluate",
+   "kind": "article_section",
+   "label": "5 AI Compliance Consulting Firms to Evaluate",
+   "scope": "page",
+   "skipped": false,
+   "text": "5 AI Compliance Consulting Firms to Evaluate\nThe AI compliance consulting firms below are the ones that can take an organization from knowing its AI obligations to running controls that meet them. That step is where a legal requirement has to become a change in software or in a business process. Each firm on this list covers that step from a different starting point. A buyer gets the most from a firm whose starting point matches where its own program is stuck.\nEvaluation Criteria\nEvery firm was compared across the same factors, so the profiles that follow line up side by side.\nRegulatory / policy depth: How well the firm reads AI laws and turns them into duties a company can act on.\nGovernance and GRC: Its ability to set up the structure that keeps a compliance program running, from roles to approval steps.\nTechnical implementation: Whether the firm builds the controls or hands over a design. When a regulation calls for technical or operational controls, this decides who builds them.\nIndustry experience: Its depth in sectors that add their own AI rules, such as banking or healthcare.\nAI engineering integration: How well its controls fit the way the client’s engineers already build and ship software.\nOngoing support: Whether it stays to handle new use cases and rule changes after the first rollout.\nBest fit: The type of company and situation where the firm adds the most value.\nAI Compliance Consulting Firms Table\nThe table below compares the five firms on the same factors, so you can build a first shortlist quickly. Start with Best For and Scope Consideration to rule firms in or out, then read the profiles below for the detail behind each row.\nFirm\nBest For\nRegulatory / GRC Depth\nTechnical Implementation\nIndustry Strength\nMain Differentiator\nScope Consideration\nGoGloby\nSoftware companies with approved requirements\nRelies on your legal and GRC team\nArchitects build controls into your code\nVertical B2B software\nDelivery plus AI spend tracked against your own baseline\nNot a law firm or auditor\nIBM Consulting\nEnterprises with many AI systems\nAI risk frameworks for new regulations\nConfigures guardrails on IBM’s platform\nBanking, government\nIts own governance software\nSized for enterprise programs\nEY\nRegulated enterprises\nMaps regulations to each AI system\nRuns controls as ServiceNow workflows\nFinancial services\nReady-made AI control and policy library\nLimits for audit clients\nNeuroSYS + Brækhus\nProduct teams\nGDPR and EU AI Act assessments\nReviews models and can build the product\nEuropean product firms\nEngineers and lawyers on one team\nNorway and EU focus\nLumaris Consulting\nAI management systems\nNIST AI RMF and AI risk assessments\nDesigns controls, your team builds them\nCross-industry\nDedicated ISO/IEC 42001 focus\nNo controls in code\nGoGloby\nGoGloby is an Applied AI Engineering partner, founded in 2021 and based in Dover, Delaware. The firm works with established software companies that already have compliance guidance and need it built into their AI systems. It forward-deploys an AI Solutions Architect who works inside the company’s own codebase and release process. The Architect sets up the Agentic SDLC. That’s one shared, governed way for the whole team to build and review code with AI. Engagements also include the AI Development Intelligence Layer, which ties AI spend to shipped work and tracks delivery against the client’s own baseline.\nBest For: Established software companies with approved compliance requirements that need them running inside production AI systems.\nImplementation Approach: Architects turn approved requirements into review gates and human oversight steps inside the existing release process. Each control ships through the same CI/CD pipeline as the rest of the code.\nScope Consideration: GoGloby isn’t a law firm or an auditor, and it doesn’t issue certifications or conformity assessments.\nIBM Consulting\nIBM Consulting is the services arm of IBM, the technology company founded in 1911 and headquartered in Armonk, New York. Its AI governance practice helps large enterprises turn their AI policies into rules their systems can follow. It also sets up risk frameworks for new regulations. Teams create AI ethics boards and internal expert groups that keep governance consistent across business units. On the technical side, IBM Consulting sets up guardrails across enterprise platforms and AI models, including those of partners like AWS and Microsoft. Its own governance software, watsonx.governance, is sold separately and can support that work. The work starts from the data governance the client already has, so new controls build on what’s in place.\nBest For: Large enterprises running many AI systems that want governance tied into their enterprise platforms.\nImplementation Approach: Consultants set up guardrails and monitoring in watsonx.governance across hybrid cloud environments. The setup sits on top of the data controls the client already runs.\nScope Consideration: The model is built for enterprise-wide programs, and its technical tooling centers on IBM’s own platform.\nEY\nEY was formed in 1989 when Arthur Young and Ernst & Whinney merged. Headquartered in London, it has nearly 400,000 people in 150 countries. Its AI governance and compliance services run on ServiceNow, a workflow platform. It tracks each AI system from the first request through deployment and later changes. The work covers risk frameworks and maps regulations to each system. It also builds a company-wide list of AI systems and a library of ready-made controls and policies. EY’s advisory and implementation teams deliver this work. Its assurance practice offers AI attestation, such as SOC reports on AI controls, as a separate service.\nBest For: Complex regulated enterprises that need governance and risk workflows running across many business units.\nImplementation Approach: EY sets up ServiceNow workflows that take in each new AI use case and rate its risk. Compliance then runs as a tracked process that shows how each AI system changes over time.\nScope Consideration: Independence rules limit the advisory and implementation work EY can do for companies it also audits.\nNeuroSYS + Brækhus\nNeuroSYS, a software house founded in Wrocław, Poland in 2010, partners with Oslo law firm Brækhus on AI compliance. The partnership gives a company technical and legal AI review in one engagement. Reviews can happen at any point, from an early product idea to a product already in use. Engineers check the data and AI models for bias and reliability. Lawyers check the product against GDPR and the EU AI Act. They also draft the contracts an AI product needs, such as data licensing and AI SaaS agreements.\nBest For: Product companies that want legal and technical AI review handled together at each stage of development.\nImplementation Approach: Findings from both reviews go straight into product development. NeuroSYS can also help build and maintain the product, and it offers AI training and technical due diligence.\nScope Consideration: Legal coverage comes from a Norwegian law firm, so US-specific obligations call for separate U.S. counsel.\nLumaris Consulting\nLumaris Consulting is a UK-based AI governance, risk, and compliance specialist founded by consultant Dilip Chauhan. It helps companies build a formal AI management program around ISO/IEC 42001 and the NIST AI RMF. Work starts with a list of every AI use case, showing where AI is used and who owns it. Each use case then gets a risk level, so the amount of governance matches its impact. The firm also advises on cybersecurity governance and ISO 27001.\nBest For: Organizations preparing for ISO/IEC 42001 certification or building a formal AI governance program for the first time.\nImplementation Approach: Lumaris designs controls for each use case based on its risk level. It also sets up the records that prove those controls work, plus the monitoring that keeps them current.\nScope Consideration: Its focus is governance and management systems, so building controls into AI products needs an engineering team.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "5 AI Compliance Consulting Firms to Evaluate",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The AI compliance consulting firms below are the ones that can take an organization from knowing its AI obligations to running controls that meet them. That step is where a legal requirement has to become a change in software or in a business process. Each firm on this list covers that step from a different starting point. A buyer gets the most from a firm whose starting point matches where its own program is stuck.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Evaluation Criteria",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Every firm was compared across the same factors, so the profiles that follow line up side by side.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Regulatory / policy depth: How well the firm reads AI laws and turns them into duties a company can act on.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Governance and GRC: Its ability to set up the structure that keeps a compliance program running, from roles to approval steps.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Technical implementation: Whether the firm builds the controls or hands over a design. When a regulation calls for technical or operational controls, this decides who builds them.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Industry experience: Its depth in sectors that add their own AI rules, such as banking or healthcare.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "AI engineering integration: How well its controls fit the way the client’s engineers already build and ship software.",
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Ongoing support: Whether it stays to handle new use cases and rule changes after the first rollout.",
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Best fit: The type of company and situation where the firm adds the most value.",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "AI Compliance Consulting Firms Table",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "The table below compares the five firms on the same factors, so you can build a first shortlist quickly. Start with Best For and Scope Consideration to rule firms in or out, then read the profiles below for the detail behind each row.",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "Firm",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Best For",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "Regulatory / GRC Depth",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "Technical Implementation",
+     "index": 4
+    },
+    {
+     "type": "table_cell",
+     "text": "Industry Strength",
+     "index": 5
+    },
+    {
+     "type": "table_cell",
+     "text": "Main Differentiator",
+     "index": 6
+    },
+    {
+     "type": "table_cell",
+     "text": "Scope Consideration",
+     "index": 7
+    },
+    {
+     "type": "table_cell",
+     "text": "GoGloby",
+     "index": 8
+    },
+    {
+     "type": "table_cell",
+     "text": "Software companies with approved requirements",
+     "index": 9
+    },
+    {
+     "type": "table_cell",
+     "text": "Relies on your legal and GRC team",
+     "index": 10
+    },
+    {
+     "type": "table_cell",
+     "text": "Architects build controls into your code",
+     "index": 11
+    },
+    {
+     "type": "table_cell",
+     "text": "Vertical B2B software",
+     "index": 12
+    },
+    {
+     "type": "table_cell",
+     "text": "Delivery plus AI spend tracked against your own baseline",
+     "index": 13
+    },
+    {
+     "type": "table_cell",
+     "text": "Not a law firm or auditor",
+     "index": 14
+    },
+    {
+     "type": "table_cell",
+     "text": "IBM Consulting",
+     "index": 15
+    },
+    {
+     "type": "table_cell",
+     "text": "Enterprises with many AI systems",
+     "index": 16
+    },
+    {
+     "type": "table_cell",
+     "text": "AI risk frameworks for new regulations",
+     "index": 17
+    },
+    {
+     "type": "table_cell",
+     "text": "Configures guardrails on IBM’s platform",
+     "index": 18
+    },
+    {
+     "type": "table_cell",
+     "text": "Banking, government",
+     "index": 19
+    },
+    {
+     "type": "table_cell",
+     "text": "Its own governance software",
+     "index": 20
+    },
+    {
+     "type": "table_cell",
+     "text": "Sized for enterprise programs",
+     "index": 21
+    },
+    {
+     "type": "table_cell",
+     "text": "EY",
+     "index": 22
+    },
+    {
+     "type": "table_cell",
+     "text": "Regulated enterprises",
+     "index": 23
+    },
+    {
+     "type": "table_cell",
+     "text": "Maps regulations to each AI system",
+     "index": 24
+    },
+    {
+     "type": "table_cell",
+     "text": "Runs controls as ServiceNow workflows",
+     "index": 25
+    },
+    {
+     "type": "table_cell",
+     "text": "Financial services",
+     "index": 26
+    },
+    {
+     "type": "table_cell",
+     "text": "Ready-made AI control and policy library",
+     "index": 27
+    },
+    {
+     "type": "table_cell",
+     "text": "Limits for audit clients",
+     "index": 28
+    },
+    {
+     "type": "table_cell",
+     "text": "NeuroSYS + Brækhus",
+     "index": 29
+    },
+    {
+     "type": "table_cell",
+     "text": "Product teams",
+     "index": 30
+    },
+    {
+     "type": "table_cell",
+     "text": "GDPR and EU AI Act assessments",
+     "index": 31
+    },
+    {
+     "type": "table_cell",
+     "text": "Reviews models and can build the product",
+     "index": 32
+    },
+    {
+     "type": "table_cell",
+     "text": "European product firms",
+     "index": 33
+    },
+    {
+     "type": "table_cell",
+     "text": "Engineers and lawyers on one team",
+     "index": 34
+    },
+    {
+     "type": "table_cell",
+     "text": "Norway and EU focus",
+     "index": 35
+    },
+    {
+     "type": "table_cell",
+     "text": "Lumaris Consulting",
+     "index": 36
+    },
+    {
+     "type": "table_cell",
+     "text": "AI management systems",
+     "index": 37
+    },
+    {
+     "type": "table_cell",
+     "text": "NIST AI RMF and AI risk assessments",
+     "index": 38
+    },
+    {
+     "type": "table_cell",
+     "text": "Designs controls, your team builds them",
+     "index": 39
+    },
+    {
+     "type": "table_cell",
+     "text": "Cross-industry",
+     "index": 40
+    },
+    {
+     "type": "table_cell",
+     "text": "Dedicated ISO/IEC 42001 focus",
+     "index": 41
+    },
+    {
+     "type": "table_cell",
+     "text": "No controls in code",
+     "index": 42
+    },
+    {
+     "type": "heading",
+     "text": "GoGloby",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/10/Screenshot-2026-10-02-164935-1024x487.png",
+     "file": "Screenshot-2026-10-02-164935-1024x487.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby is an Applied AI Engineering partner, founded in 2021 and based in Dover, Delaware. The firm works with established software companies that already have compliance guidance and need it built into their AI systems. It forward-deploys an AI Solutions Architect who works inside the company’s own codebase and release process. The Architect sets up the Agentic SDLC. That’s one shared, governed way for the whole team to build and review code with AI. Engagements also include the AI Development Intelligence Layer, which ties AI spend to shipped work and tracks delivery against the client’s own baseline.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Best For: Established software companies with approved compliance requirements that need them running inside production AI systems.",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Implementation Approach: Architects turn approved requirements into review gates and human oversight steps inside the existing release process. Each control ships through the same CI/CD pipeline as the rest of the code.",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Scope Consideration: GoGloby isn’t a law firm or an auditor, and it doesn’t issue certifications or conformity assessments.",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "IBM Consulting",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/10/Screenshot-2026-10-02-165151-1024x475.png",
+     "file": "Screenshot-2026-10-02-165151-1024x475.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "IBM Consulting is the services arm of IBM, the technology company founded in 1911 and headquartered in Armonk, New York. Its AI governance practice helps large enterprises turn their AI policies into rules their systems can follow. It also sets up risk frameworks for new regulations. Teams create AI ethics boards and internal expert groups that keep governance consistent across business units. On the technical side, IBM Consulting sets up guardrails across enterprise platforms and AI models, including those of partners like AWS and Microsoft. Its own governance software, watsonx.governance, is sold separately and can support that work. The work starts from the data governance the client already has, so new controls build on what’s in place.",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Best For: Large enterprises running many AI systems that want governance tied into their enterprise platforms.",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Implementation Approach: Consultants set up guardrails and monitoring in watsonx.governance across hybrid cloud environments. The setup sits on top of the data controls the client already runs.",
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "Scope Consideration: The model is built for enterprise-wide programs, and its technical tooling centers on IBM’s own platform.",
+     "index": 11
+    },
+    {
+     "type": "heading",
+     "text": "EY",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/10/Screenshot-2026-09-10-210745-1024x483.png",
+     "file": "Screenshot-2026-09-10-210745-1024x483.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "EY was formed in 1989 when Arthur Young and Ernst & Whinney merged. Headquartered in London, it has nearly 400,000 people in 150 countries. Its AI governance and compliance services run on ServiceNow, a workflow platform. It tracks each AI system from the first request through deployment and later changes. The work covers risk frameworks and maps regulations to each system. It also builds a company-wide list of AI systems and a library of ready-made controls and policies. EY’s advisory and implementation teams deliver this work. Its assurance practice offers AI attestation, such as SOC reports on AI controls, as a separate service.",
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "Best For: Complex regulated enterprises that need governance and risk workflows running across many business units.",
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Implementation Approach: EY sets up ServiceNow workflows that take in each new AI use case and rate its risk. Compliance then runs as a tracked process that shows how each AI system changes over time.",
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Scope Consideration: Independence rules limit the advisory and implementation work EY can do for companies it also audits.",
+     "index": 15
+    },
+    {
+     "type": "heading",
+     "text": "NeuroSYS + Brækhus",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/10/Screenshot-2026-10-02-165536-1024x472.png",
+     "file": "Screenshot-2026-10-02-165536-1024x472.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "NeuroSYS, a software house founded in Wrocław, Poland in 2010, partners with Oslo law firm Brækhus on AI compliance. The partnership gives a company technical and legal AI review in one engagement. Reviews can happen at any point, from an early product idea to a product already in use. Engineers check the data and AI models for bias and reliability. Lawyers check the product against GDPR and the EU AI Act. They also draft the contracts an AI product needs, such as data licensing and AI SaaS agreements.",
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "Best For: Product companies that want legal and technical AI review handled together at each stage of development.",
+     "index": 17
+    },
+    {
+     "type": "paragraph",
+     "text": "Implementation Approach: Findings from both reviews go straight into product development. NeuroSYS can also help build and maintain the product, and it offers AI training and technical due diligence.",
+     "index": 18
+    },
+    {
+     "type": "paragraph",
+     "text": "Scope Consideration: Legal coverage comes from a Norwegian law firm, so US-specific obligations call for separate U.S. counsel.",
+     "index": 19
+    },
+    {
+     "type": "heading",
+     "text": "Lumaris Consulting",
+     "level": 3,
+     "index": 8
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/10/Screenshot-2026-10-02-165648-1024x472.png",
+     "file": "Screenshot-2026-10-02-165648-1024x472.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Lumaris Consulting is a UK-based AI governance, risk, and compliance specialist founded by consultant Dilip Chauhan. It helps companies build a formal AI management program around ISO/IEC 42001 and the NIST AI RMF. Work starts with a list of every AI use case, showing where AI is used and who owns it. Each use case then gets a risk level, so the amount of governance matches its impact. The firm also advises on cybersecurity governance and ISO 27001.",
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "Best For: Organizations preparing for ISO/IEC 42001 certification or building a formal AI governance program for the first time.",
+     "index": 21
+    },
+    {
+     "type": "paragraph",
+     "text": "Implementation Approach: Lumaris designs controls for each use case based on its risk level. It also sets up the records that prove those controls work, plus the monitoring that keeps them current.",
+     "index": 22
+    },
+    {
+     "type": "paragraph",
+     "text": "Scope Consideration: Its focus is governance and management systems, so building controls into AI products needs an engineering team.",
+     "index": 23
+    }
+   ]
+  },
+  {
+   "id": "article:what-determines-ai-compliance-consulting-pricing",
+   "kind": "article_section",
+   "label": "What Determines AI Compliance Consulting Pricing?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Determines AI Compliance Consulting Pricing?\nAI compliance consulting pricing is determined by the scope of work, the systems involved, and the complexity of the compliance problem. A readiness assessment or EU AI Act classification has a defined endpoint, while work that changes systems or continues after launch requires more ongoing effort. Compare quotes only when they cover the same work across the same systems.\nAssessment\nAn assessment covers inventory, interviews, requirement mapping, classification, and gap analysis. Its defined scope makes the work easier to price as a fixed engagement. It delivers a requirement map and a roadmap ranked by risk.\nImplementation\nImplementation costs more when compliance requires changes to systems and workflows in production. The more systems, integrations, and teams those changes affect, the more work is required. Adding logging to one modern service requires fewer changes than retrofitting a 20-year-old monolith with no tests, where engineers first need to understand the existing code and create a safe path for the new controls.\nOngoing Support\nOngoing support creates recurring costs after implementation. When regulations change, or a new AI use case or vendor is introduced, the affected controls and evidence need to be reviewed and updated. Those reviews recur as the compliance program changes, so providers price ongoing support as a retainer.\nCost Drivers\nComplexity drives price more than headcount. System count, markets, vendors, risk tiers, and code remediation determine how much work the engagement requires. A large company with three low-risk tools can cost less than a small lender with one credit model.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Determines AI Compliance Consulting Pricing?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI compliance consulting pricing is determined by the scope of work, the systems involved, and the complexity of the compliance problem. A readiness assessment or EU AI Act classification has a defined endpoint, while work that changes systems or continues after launch requires more ongoing effort. Compare quotes only when they cover the same work across the same systems.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Assessment",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "An assessment covers inventory, interviews, requirement mapping, classification, and gap analysis. Its defined scope makes the work easier to price as a fixed engagement. It delivers a requirement map and a roadmap ranked by risk.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Implementation",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Implementation costs more when compliance requires changes to systems and workflows in production. The more systems, integrations, and teams those changes affect, the more work is required. Adding logging to one modern service requires fewer changes than retrofitting a 20-year-old monolith with no tests, where engineers first need to understand the existing code and create a safe path for the new controls.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Ongoing Support",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Ongoing support creates recurring costs after implementation. When regulations change, or a new AI use case or vendor is introduced, the affected controls and evidence need to be reviewed and updated. Those reviews recur as the compliance program changes, so providers price ongoing support as a retainer.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Cost Drivers",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Complexity drives price more than headcount. System count, markets, vendors, risk tiers, and code remediation determine how much work the engagement requires. A large company with three low-risk tools can cost less than a small lender with one credit model.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:how-do-ai-compliance-platforms-work",
+   "kind": "article_section",
+   "label": "How Do AI Compliance Platforms Work?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Do AI Compliance Platforms Work?\nAI compliance platforms work by keeping AI systems, requirements, controls, and compliance decisions connected in one place. Each AI system has a record that shows who owns it, what it does, which requirements apply, and how those requirements are addressed. The platform keeps that information organized after the initial engagement and can help compliance teams draft assessments for review. Qualified professionals decide which laws apply and who is accountable, while the platform records those decisions.\nAI Inventory\nThe platform creates one record for each AI system and connects it to the people and data involved. This gives the team a complete view of what AI systems exist, who owns them, and what needs to be reviewed. For example, discovery can pull SaaS tools from SSO logs, but each record still needs a human owner.\nControl Workflows\nWorkflows move an AI use case from review to approval and remediation. For example, when a product manager submits an AI feature, the platform routes it to the right reviewers and opens fix tickets when controls are missing.\nRegulatory Mapping\nAI compliance platforms with regulatory mapping capabilities connect legal requirements to the controls that address them and flag changes that could affect those controls. Qualified legal judgment is still needed to determine what a regulatory change means for the company.\nMonitoring\nCompliance monitoring tracks whether required controls remain in place and records incidents. Model monitoring tracks accuracy and drift, which becomes a compliance issue when the model falls below a contractual accuracy requirement.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Do AI Compliance Platforms Work?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI compliance platforms work by keeping AI systems, requirements, controls, and compliance decisions connected in one place. Each AI system has a record that shows who owns it, what it does, which requirements apply, and how those requirements are addressed. The platform keeps that information organized after the initial engagement and can help compliance teams draft assessments for review. Qualified professionals decide which laws apply and who is accountable, while the platform records those decisions.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "AI Inventory",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "The platform creates one record for each AI system and connects it to the people and data involved. This gives the team a complete view of what AI systems exist, who owns them, and what needs to be reviewed. For example, discovery can pull SaaS tools from SSO logs, but each record still needs a human owner.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Control Workflows",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Workflows move an AI use case from review to approval and remediation. For example, when a product manager submits an AI feature, the platform routes it to the right reviewers and opens fix tickets when controls are missing.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Regulatory Mapping",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "AI compliance platforms with regulatory mapping capabilities connect legal requirements to the controls that address them and flag changes that could affect those controls. Qualified legal judgment is still needed to determine what a regulatory change means for the company.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Monitoring",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Compliance monitoring tracks whether required controls remain in place and records incidents. Model monitoring tracks accuracy and drift, which becomes a compliance issue when the model falls below a contractual accuracy requirement.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-the-most-common-ai-compliance-implement",
+   "kind": "article_section",
+   "label": "What Are the Most Common AI Compliance Implementation Mistakes?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are the Most Common AI Compliance Implementation Mistakes?\nThe most common AI compliance implementation mistakes are failures to turn approved requirements into controls that work in practice. They come from how a company plans and runs its compliance program, rather than from the AI risks the program manages. The cost shows up in audits and customer reviews, when the company has to prove its controls actually work.\nStarting With Policies\nWriting a policy feels like progress, but it does not make the required controls work. Written before the inventory, it can describe systems nobody checked, leaving engineers without a clear requirement to implement. Map systems and requirements first, then write policy that names them.\nOne Risk Level\nOne review for every system creates unnecessary friction for low-risk AI and insufficient focus on high-risk systems. A meeting summarizer does not need the same review as a credit model. Match the review and controls to each system’s risk level.\nBuying the Tool First\nA platform is easy to approve, but buying it before defining ownership, risk levels, and controls leaves the tool with nothing to manage. Define the operating model first, then configure the platform around it.\nSeparating Legal and Engineering\nLegal can identify a requirement while engineering still does not know what to build. Keeping the teams separate leaves that requirement without a clear path to implementation. Translate each duty into an engineering requirement with an acceptance test both sides approve.\nMissing Third-Party AI\nTeams can exclude third-party AI from the inventory when they track only systems built in-house. A SaaS AI assistant, an embedded AI feature, or a browser extension can enter the workflow without being added to the inventory. The team then has no way to apply the required review and controls to that AI. Include third-party AI in the inventory and check procurement records for tools purchased outside the standard process.\nOne-Time Compliance\nTreating compliance as done at launch leaves the controls behind as the system changes. An AI system keeps changing after launch, and so do the rules that apply to it. Any of those changes can break a control that worked at launch. Run compliance as part of each system’s regular operations, next to monitoring and incident response.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are the Most Common AI Compliance Implementation Mistakes?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The most common AI compliance implementation mistakes are failures to turn approved requirements into controls that work in practice. They come from how a company plans and runs its compliance program, rather than from the AI risks the program manages. The cost shows up in audits and customer reviews, when the company has to prove its controls actually work.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Starting With Policies",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Writing a policy feels like progress, but it does not make the required controls work. Written before the inventory, it can describe systems nobody checked, leaving engineers without a clear requirement to implement. Map systems and requirements first, then write policy that names them.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "One Risk Level",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "One review for every system creates unnecessary friction for low-risk AI and insufficient focus on high-risk systems. A meeting summarizer does not need the same review as a credit model. Match the review and controls to each system’s risk level.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Buying the Tool First",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "A platform is easy to approve, but buying it before defining ownership, risk levels, and controls leaves the tool with nothing to manage. Define the operating model first, then configure the platform around it.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Separating Legal and Engineering",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Legal can identify a requirement while engineering still does not know what to build. Keeping the teams separate leaves that requirement without a clear path to implementation. Translate each duty into an engineering requirement with an acceptance test both sides approve.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Missing Third-Party AI",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Teams can exclude third-party AI from the inventory when they track only systems built in-house. A SaaS AI assistant, an embedded AI feature, or a browser extension can enter the workflow without being added to the inventory. The team then has no way to apply the required review and controls to that AI. Include third-party AI in the inventory and check procurement records for tools purchased outside the standard process.",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "One-Time Compliance",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Treating compliance as done at launch leaves the controls behind as the system changes. An AI system keeps changing after launch, and so do the rules that apply to it. Any of those changes can break a control that worked at launch. Run compliance as part of each system’s regular operations, next to monitoring and incident response.",
+     "index": 7
+    }
+   ]
+  },
+  {
+   "id": "article:conclusion",
+   "kind": "article_section",
+   "label": "Conclusion",
+   "scope": "page",
+   "skipped": false,
+   "text": "Conclusion\nAI compliance consulting brings together the work needed to understand how AI is used, determine which requirements apply, implement the required controls, and demonstrate that those controls continue to work. The process connects legal requirements with governance, technical implementation, and ongoing monitoring.\nThe right provider depends on what the engagement needs to cover. Law firms focus on legal interpretation, GRC consultancies build governance and compliance programs, and engineering partners implement controls within technical systems. Industry experience also matters when sector-specific rules shape the work.\nBefore selecting a provider, define who will be responsible for turning approved requirements into working controls. Make that responsibility explicit in the scope, along with what the engagement will deliver and where the provider’s work ends.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Conclusion",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI compliance consulting brings together the work needed to understand how AI is used, determine which requirements apply, implement the required controls, and demonstrate that those controls continue to work. The process connects legal requirements with governance, technical implementation, and ongoing monitoring.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The right provider depends on what the engagement needs to cover. Law firms focus on legal interpretation, GRC consultancies build governance and compliance programs, and engineering partners implement controls within technical systems. Industry experience also matters when sector-specific rules shape the work.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Before selecting a provider, define who will be responsible for turning approved requirements into working controls. Make that responsibility explicit in the scope, along with what the engagement will deliver and where the provider’s work ends.",
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "article:faqs",
+   "kind": "article_section",
+   "label": "FAQs",
+   "scope": "page",
+   "skipped": false,
+   "text": "FAQs\nDo small businesses need AI compliance consulting?\nSmall businesses need AI compliance consulting when their AI makes decisions about people or handles sensitive data. Compliance needs depend on the systems and uses involved, so a smaller company with higher-risk AI can face more complex requirements than a larger company with limited AI use.\nIs AI compliance consulting legal advice?\nSome AI compliance consulting engagements include legal advice from qualified counsel. GRC consultancies translate requirements into governance systems, while engineering firms implement approved requirements in technical systems. The provider’s scope determines whether legal advice is part of the engagement.\nIs ISO 42001 required?\nISO/IEC 42001 is voluntary, though customers can require it by contract. Certification shows an independent certification body checked your AI management system, and legal compliance still has to be shown law by law.\nDoes NIST AI RMF make you compliant?\nNIST AI RMF is a voluntary U.S. risk-management framework, so it does not create legal compliance on its own. Teams still use it to structure risk and compliance work, even when no law or contract points to it. It shapes how a company manages AI risk, while each law sets what compliance actually requires.\nCan AI automate compliance?\nAI can take over the prep work behind compliance. It collects evidence, scans rule updates, drafts assessments, and flags gaps. Legal judgment and accountability stay with people, who decide what a rule means and sign the attestation.\nWhat evidence is needed for AI compliance?\nAI compliance needs evidence that each control exists and operates as intended. The core set is the inventory, risk assessments, test results, approvals, and system logs. Technical documentation, training records, vendor reviews, and incident records complete it.\nAuthor avatar\nSergey Matikaynen / CTO\nArticle author\nSergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.\nView profile",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "FAQs",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Do small businesses need AI compliance consulting?",
+     "area": "item 1",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Small businesses need AI compliance consulting when their AI makes decisions about people or handles sensitive data. Compliance needs depend on the systems and uses involved, so a smaller company with higher-risk AI can face more complex requirements than a larger company with limited AI use.",
+     "area": "item 1",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Is AI compliance consulting legal advice?",
+     "area": "item 1",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Some AI compliance consulting engagements include legal advice from qualified counsel. GRC consultancies translate requirements into governance systems, while engineering firms implement approved requirements in technical systems. The provider’s scope determines whether legal advice is part of the engagement.",
+     "area": "item 1",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Is ISO 42001 required?",
+     "area": "item 1",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "ISO/IEC 42001 is voluntary, though customers can require it by contract. Certification shows an independent certification body checked your AI management system, and legal compliance still has to be shown law by law.",
+     "area": "item 1",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Does NIST AI RMF make you compliant?",
+     "area": "item 1",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "NIST AI RMF is a voluntary U.S. risk-management framework, so it does not create legal compliance on its own. Teams still use it to structure risk and compliance work, even when no law or contract points to it. It shapes how a company manages AI risk, while each law sets what compliance actually requires.",
+     "area": "item 1",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Can AI automate compliance?",
+     "area": "item 1",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "AI can take over the prep work behind compliance. It collects evidence, scans rule updates, drafts assessments, and flags gaps. Legal judgment and accountability stay with people, who decide what a rule means and sign the attestation.",
+     "area": "item 1",
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "What evidence is needed for AI compliance?",
+     "area": "item 1",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "AI compliance needs evidence that each control exists and operates as intended. The core set is the inventory, risk assessments, test results, approvals, and system logs. Technical documentation, training records, vendor reviews, and incident records complete it.",
+     "area": "item 1",
+     "index": 12
+    },
+    {
+     "type": "image",
+     "text": "Author avatar",
+     "src": "https://gogloby.com/wp-content/uploads/2024/02/1706550966241.jpeg",
+     "file": "1706550966241.jpeg",
+     "alt": "Author avatar",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen / CTO",
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Article author",
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.",
+     "index": 15
+    },
+    {
+     "type": "paragraph",
+     "text": "View profile",
+     "links": [
+      {
+       "href": "https://gogloby.com/author/sergey/",
+       "text": "View profile"
+      }
+     ],
+     "index": 16
+    }
+   ]
+  },
+  {
+   "id": "banner_cta",
+   "kind": "banner_cta",
+   "label": "Banner CTA",
+   "scope": "page",
+   "skipped": false,
+   "text": "Do You Have Compliance Rules but No Controls in the Code?\nTurn approved AI requirements into review gates and tests inside your own repos and pipelines.\nTalk to GoGloby",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Do You Have Compliance Rules but No Controls in the Code?",
+     "area": "block-main",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Turn approved AI requirements into review gates and tests inside your own repos and pipelines.",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Talk to GoGloby",
+     "area": "block-aside",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "modals",
+   "kind": "modals",
+   "label": "Forms and modals",
+   "scope": "page",
+   "skipped": false,
+   "text": "Thank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend\nThank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "site_header",
+   "kind": "site_header",
+   "label": "Site header",
+   "scope": "page",
+   "skipped": true,
+   "text": "Site logo\nSolutions\nAI Engineering Visibility\nForward Deployed Engineering\nServices\nAI Engineers Staff Augmentation\nHire AI Engineers\nAI Development Services\nGenerative AI Consulting Services\nAgentic AI Consulting Services\nAI Production Engineering\nGenerative AI Development Services\nAI Agent Development Services\nAI Custom Software Development Services\nRAG Application Development Services\nLLM Development Services\nApplication AI Modernization Services\nLegacy Application Modernization Services\nSoftware Maintenance Services\nCompany\nAbout us\nJobs\nResources\nInsights\nUse Cases\nPodcast\nContact\nTalk to Us",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Site logo",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/globy-logo-1-01.svg",
+     "file": "globy-logo-1-01.svg",
+     "alt": "Site logo",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Solutions",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineering Visibility",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/ai-engineering-visibility/",
+       "text": "AI Engineering Visibility"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Forward Deployed Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/forward-deployed-engineering/",
+       "text": "Forward Deployed Engineering"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineers Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Engineers Staff Augmentation"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "link",
+     "text": "AI Development Services",
+     "href": "https://gogloby.com/services/ai-development/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-development/",
+       "text": "AI Development Services"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-consulting/",
+       "text": "Generative AI Consulting Services"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Agentic AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/agentic-ai-consulting/",
+       "text": "Agentic AI Consulting Services"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "AI Production Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "AI Production Engineering"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "AI Agent Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-agent-development/",
+       "text": "AI Agent Development Services"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "AI Custom Software Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-custom-software-development/",
+       "text": "AI Custom Software Development Services"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "RAG Application Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/rag-application-development/",
+       "text": "RAG Application Development Services"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "LLM Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/llm-development/",
+       "text": "LLM Development Services"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "link",
+     "text": "Application AI Modernization Services",
+     "href": "https://gogloby.com/services/application-modernization/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/application-modernization/",
+       "text": "Application AI Modernization Services"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Legacy Application Modernization Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/legacy-application-modernization/",
+       "text": "Legacy Application Modernization Services"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "Software Maintenance Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/software-maintenance/",
+       "text": "Software Maintenance Services"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "Talk to Us",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "site_footer",
+   "kind": "site_footer",
+   "label": "Site footer",
+   "scope": "page",
+   "skipped": true,
+   "text": "Background logo\nServices\nApplied AI Engineering\nAI Staff Augmentation\nHire AI Engineers\nGenerative AI Development Services\nCompany\nAbout us\nJobs\nContact\nPrivacy Policy and Candidate Privacy Notice\nTerms and Conditions\nResources\nInsights\nUse Cases\nPodcast\nCase Studies\nConnections\nCrunchbase\nLinkedIn\nX\nG2\nClutch\nTrustpilot\nDesignRush\nGitHub\nFacebook\nYouTube\n© Copyright 2026, GoGloby. All Rights Reserved.",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background logo",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/logos/globy-logo-outline-1-01.svg",
+     "file": "globy-logo-outline-1-01.svg",
+     "alt": "Background logo",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Applied AI Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "Applied AI Engineering"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Staff Augmentation"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Privacy Policy and Candidate Privacy Notice",
+     "links": [
+      {
+       "href": "https://gogloby.com/privacy-policy/",
+       "text": "Privacy Policy and Candidate Privacy Notice"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Terms and Conditions",
+     "links": [
+      {
+       "href": "https://gogloby.com/terms-and-conditions/",
+       "text": "Terms and Conditions"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "Case Studies",
+     "links": [
+      {
+       "href": "https://gogloby.com/case-study/",
+       "text": "Case Studies"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Connections",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Crunchbase",
+     "links": [
+      {
+       "href": "https://www.crunchbase.com/organization/gogloby",
+       "text": "Crunchbase"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "LinkedIn",
+     "links": [
+      {
+       "href": "https://www.linkedin.com/company/gogloby/",
+       "text": "LinkedIn"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "X",
+     "links": [
+      {
+       "href": "https://x.com/GoGloby",
+       "text": "X"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "list_item",
+     "text": "G2",
+     "links": [
+      {
+       "href": "https://www.g2.com/products/gogloby/reviews",
+       "text": "G2"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Clutch",
+     "links": [
+      {
+       "href": "https://clutch.co/profile/gogloby",
+       "text": "Clutch"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Trustpilot",
+     "links": [
+      {
+       "href": "https://www.trustpilot.com/review/gogloby.com",
+       "text": "Trustpilot"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "DesignRush",
+     "links": [
+      {
+       "href": "https://www.designrush.com/agency/profile/gogloby",
+       "text": "DesignRush"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "list_item",
+     "text": "GitHub",
+     "links": [
+      {
+       "href": "https://github.com/gogloby",
+       "text": "GitHub"
+      }
+     ],
+     "index": 21
+    },
+    {
+     "type": "list_item",
+     "text": "Facebook",
+     "links": [
+      {
+       "href": "https://www.facebook.com/gogloby",
+       "text": "Facebook"
+      }
+     ],
+     "index": 22
+    },
+    {
+     "type": "list_item",
+     "text": "YouTube",
+     "links": [
+      {
+       "href": "https://www.youtube.com/@DefaultGlobal",
+       "text": "YouTube"
+      }
+     ],
+     "index": 23
+    },
+    {
+     "type": "paragraph",
+     "text": "© Copyright 2026, GoGloby. All Rights Reserved.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "related",
+   "kind": "related",
+   "label": "Related content",
+   "scope": "page",
+   "skipped": true,
+   "text": "Latest posts\nAI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI\nAI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI\nOctober 2,2026\nWhat Is Embedded AI? How It Works, Benefits, Use Cases & Tools\nWhat Is Embedded AI? How It Works, Benefits, Use Cases & Tools\nSeptember 25,2026\n10 AI Governance Consulting Firms to Evaluate in 2026\n10 AI Governance Consulting Firms to Evaluate in 2026\nSeptember 24,2026\nAI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose\nAI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose\nSeptember 23,2026\nHow Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees\nHow Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees\nSeptember 18,2026\nAI Pilot Program: How to Plan, Run, and Scale It in 2026\nAI Pilot Program: How to Plan, Run, and Scale It in 2026\nSeptember 18,2026",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Latest posts",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "AI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI",
+     "src": "https://gogloby.com/wp-content/uploads/2026/10/Integracion-de-datos-futurista.png",
+     "file": "Integracion-de-datos-futurista.png",
+     "alt": "AI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "AI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "October 2,2026",
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "What Is Embedded AI? How It Works, Benefits, Use Cases & Tools",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-25-2026-01_26_43-PM.png",
+     "file": "ChatGPT-Image-Sep-25-2026-01_26_43-PM.png",
+     "alt": "What Is Embedded AI? How It Works, Benefits, Use Cases & Tools",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 2",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "What Is Embedded AI? How It Works, Benefits, Use Cases & Tools",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "September 25,2026",
+     "area": "slide 2",
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "10 AI Governance Consulting Firms to Evaluate in 2026",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-24-sept-2026-14_14_41.png",
+     "file": "ChatGPT-Image-24-sept-2026-14_14_41.png",
+     "alt": "10 AI Governance Consulting Firms to Evaluate in 2026",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 3",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "10 AI Governance Consulting Firms to Evaluate in 2026",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "September 24,2026",
+     "area": "slide 3",
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "AI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-23-sept-2026-16_43_07.png",
+     "file": "ChatGPT-Image-23-sept-2026-16_43_07.png",
+     "alt": "AI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 4",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "AI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose",
+     "area": "slide 4",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "September 23,2026",
+     "area": "slide 4",
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "How Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/AI-Consulting-Cost-Models.png",
+     "file": "AI-Consulting-Cost-Models.png",
+     "alt": "How Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 5",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "How Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees",
+     "area": "slide 5",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "September 18,2026",
+     "area": "slide 5",
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "AI Pilot Program: How to Plan, Run, and Scale It in 2026",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/AI-Pilot-Program-Planning-and-Scale.png",
+     "file": "AI-Pilot-Program-Planning-and-Scale.png",
+     "alt": "AI Pilot Program: How to Plan, Run, and Scale It in 2026",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 6",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "AI Pilot Program: How to Plan, Run, and Scale It in 2026",
+     "area": "slide 6",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "September 18,2026",
+     "area": "slide 6",
+     "index": 6
+    }
+   ]
+  }
+ ],
+ "warnings": []
+}

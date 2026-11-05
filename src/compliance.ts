@@ -13,6 +13,12 @@ export interface ComplianceLocation {
   verified: boolean;
   /** text-fragment value for a link to the live page, set when reports are built */
   fragment?: string | null;
+  /** why this place is a problem, in the model's words; absent in reports made before it existed and for term-list hits */
+  reason?: string;
+  /** readable place for a table cell, set with the fragment */
+  place?: string | null;
+  /** version of the fragment code that set `fragment`; older ones are recomputed */
+  locator?: number;
 }
 
 export interface ComplianceFinding {
@@ -174,7 +180,7 @@ export async function runComplianceLayer(
     const locations: ComplianceLocation[] = p.locations.slice(0, cfg.max_locations).map((l) => {
       const zone = zones.zones.find((z) => z.id === l.zone_id);
       const { verified, part } = locate(zone, l.quote);
-      return { zone_id: l.zone_id, part, quote: l.quote, verified };
+      return { zone_id: l.zone_id, part, quote: l.quote, verified, ...(l.reason?.trim() ? { reason: l.reason.trim() } : {}) };
     });
     return {
       title: p.title,

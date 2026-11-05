@@ -1,0 +1,2469 @@
+{
+ "template": "block",
+ "zones": [
+  {
+   "id": "title",
+   "kind": "title",
+   "label": "Title",
+   "scope": "page",
+   "skipped": false,
+   "text": "Forward Deployed Engineering Solution | GoGloby",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Forward Deployed Engineering Solution | GoGloby"
+    }
+   ]
+  },
+  {
+   "id": "meta_description",
+   "kind": "meta_description",
+   "label": "Meta description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Forward-deployed engineering for AI-native software teams. Embed AI Solutions Architects, set up Agentic SDLC, ship features, and measure ROI against your baseline.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Forward-deployed engineering for AI-native software teams. Embed AI Solutions Architects, set up Agentic SDLC, ship features, and measure ROI against your baseline."
+    }
+   ]
+  },
+  {
+   "id": "og_title",
+   "kind": "og_title",
+   "label": "og:title",
+   "scope": "page",
+   "skipped": false,
+   "text": "Forward Deployed Engineering Solution | GoGloby",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Forward Deployed Engineering Solution | GoGloby"
+    }
+   ]
+  },
+  {
+   "id": "og_description",
+   "kind": "og_description",
+   "label": "og:description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Forward-deployed engineering for AI-native software teams. Embed AI Solutions Architects, set up Agentic SDLC, ship features, and measure ROI against your baseline.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Forward-deployed engineering for AI-native software teams. Embed AI Solutions Architects, set up Agentic SDLC, ship features, and measure ROI against your baseline."
+    }
+   ]
+  },
+  {
+   "id": "json_ld",
+   "kind": "json_ld",
+   "label": "Structured data (JSON-LD)",
+   "scope": "page",
+   "skipped": false,
+   "text": "What is forward-deployed engineering?\nForward-deployed engineering is an embedded model where senior engineers work inside your environment to build, deploy, and improve production systems. At GoGloby, forward-deployed engineers work through your pipeline, repos, backlog, and review process, and prove every result against your own baseline.\nWhat does FDE mean?\nFDE means Forward Deployed Engineer. On this page it is more than a job title. It is the operating model that turns AI tools into AI-native production, run by an engineer who owns the outcome inside your team.\nHow is a forward-deployed engineer different from a consultant?\nA consultant recommends and leaves. A forward-deployed engineer works inside your environment and owns delivery until the system works in production, measured on your own numbers rather than a slide deck.\nHow is forward-deployed engineering different from staff augmentation?\nStaff augmentation gives you capacity and nothing else. GoGloby's model brings Architect-led setup, the AI Intelligence Layer, the Agentic SDLC, hands-on delivery, and measurement against your baseline, together in one contract.\nWhy does AI need forward-deployed engineering?\nAI tools do not improve delivery by themselves. Forward-deployed engineers connect the tools to your real codebase, workflow, review process, and production constraints, so faster writing turns into faster shipping.\nWhat does a GoGloby forward-deployed engineer do day-to-day?\nThey work in your sprints, decompose tasks, use Claude and other AI tools inside the Agentic SDLC, build features, improve tests, fix blockers the AI Intelligence Layer surfaces, and report progress against your baseline.\nWho manages GoGloby's forward-deployed engineers?\nYou do. Your team sets priorities and owns the roadmap. GoGloby handles vetting, replacement, Agentic SDLC setup, performance visibility, and delivery support, so you get senior output without the hiring risk.\nHow does GoGloby measure forward-deployed engineering results?\nThrough the AI Intelligence Layer: cost per feature, AI adoption, spend by team, developer, and model, delivery blockers, review signals, and improvement against your own baseline. Every number is anchored to where you started.\nIs forward-deployed engineering only for AI companies?\nNo. It is most useful for established software companies trying to turn AI tools they already bought into production delivery, measurable ROI, and AI-native engineering operations.\nIs forward-deployed engineering the same as Palantir's model?\nPalantir helped popularize the term. GoGloby applies the model to AI-native software development for established software companies, working inside your pipeline and proving results against your baseline.\nWhat does the Benchmark include?\nEvery engagement starts with the Benchmark: a fixed fee for one month, with the AI Intelligence Layer deployed inside your VPC and your baseline delivered at the end of it. The fee is credited in full toward your first month of delivery. If you stop there, you keep the baseline.",
+   "parts": [
+    {
+     "type": "field",
+     "text": "What is forward-deployed engineering?",
+     "area": "Question.name",
+     "index": 1
+    },
+    {
+     "type": "field",
+     "text": "Forward-deployed engineering is an embedded model where senior engineers work inside your environment to build, deploy, and improve production systems. At GoGloby, forward-deployed engineers work through your pipeline, repos, backlog, and review process, and prove every result against your own baseline.",
+     "area": "Answer.text",
+     "index": 2
+    },
+    {
+     "type": "field",
+     "text": "What does FDE mean?",
+     "area": "Question.name",
+     "index": 3
+    },
+    {
+     "type": "field",
+     "text": "FDE means Forward Deployed Engineer. On this page it is more than a job title. It is the operating model that turns AI tools into AI-native production, run by an engineer who owns the outcome inside your team.",
+     "area": "Answer.text",
+     "index": 4
+    },
+    {
+     "type": "field",
+     "text": "How is a forward-deployed engineer different from a consultant?",
+     "area": "Question.name",
+     "index": 5
+    },
+    {
+     "type": "field",
+     "text": "A consultant recommends and leaves. A forward-deployed engineer works inside your environment and owns delivery until the system works in production, measured on your own numbers rather than a slide deck.",
+     "area": "Answer.text",
+     "index": 6
+    },
+    {
+     "type": "field",
+     "text": "How is forward-deployed engineering different from staff augmentation?",
+     "area": "Question.name",
+     "index": 7
+    },
+    {
+     "type": "field",
+     "text": "Staff augmentation gives you capacity and nothing else. GoGloby's model brings Architect-led setup, the AI Intelligence Layer, the Agentic SDLC, hands-on delivery, and measurement against your baseline, together in one contract.",
+     "area": "Answer.text",
+     "index": 8
+    },
+    {
+     "type": "field",
+     "text": "Why does AI need forward-deployed engineering?",
+     "area": "Question.name",
+     "index": 9
+    },
+    {
+     "type": "field",
+     "text": "AI tools do not improve delivery by themselves. Forward-deployed engineers connect the tools to your real codebase, workflow, review process, and production constraints, so faster writing turns into faster shipping.",
+     "area": "Answer.text",
+     "index": 10
+    },
+    {
+     "type": "field",
+     "text": "What does a GoGloby forward-deployed engineer do day-to-day?",
+     "area": "Question.name",
+     "index": 11
+    },
+    {
+     "type": "field",
+     "text": "They work in your sprints, decompose tasks, use Claude and other AI tools inside the Agentic SDLC, build features, improve tests, fix blockers the AI Intelligence Layer surfaces, and report progress against your baseline.",
+     "area": "Answer.text",
+     "index": 12
+    },
+    {
+     "type": "field",
+     "text": "Who manages GoGloby's forward-deployed engineers?",
+     "area": "Question.name",
+     "index": 13
+    },
+    {
+     "type": "field",
+     "text": "You do. Your team sets priorities and owns the roadmap. GoGloby handles vetting, replacement, Agentic SDLC setup, performance visibility, and delivery support, so you get senior output without the hiring risk.",
+     "area": "Answer.text",
+     "index": 14
+    },
+    {
+     "type": "field",
+     "text": "How does GoGloby measure forward-deployed engineering results?",
+     "area": "Question.name",
+     "index": 15
+    },
+    {
+     "type": "field",
+     "text": "Through the AI Intelligence Layer: cost per feature, AI adoption, spend by team, developer, and model, delivery blockers, review signals, and improvement against your own baseline. Every number is anchored to where you started.",
+     "area": "Answer.text",
+     "index": 16
+    },
+    {
+     "type": "field",
+     "text": "Is forward-deployed engineering only for AI companies?",
+     "area": "Question.name",
+     "index": 17
+    },
+    {
+     "type": "field",
+     "text": "No. It is most useful for established software companies trying to turn AI tools they already bought into production delivery, measurable ROI, and AI-native engineering operations.",
+     "area": "Answer.text",
+     "index": 18
+    },
+    {
+     "type": "field",
+     "text": "Is forward-deployed engineering the same as Palantir's model?",
+     "area": "Question.name",
+     "index": 19
+    },
+    {
+     "type": "field",
+     "text": "Palantir helped popularize the term. GoGloby applies the model to AI-native software development for established software companies, working inside your pipeline and proving results against your baseline.",
+     "area": "Answer.text",
+     "index": 20
+    },
+    {
+     "type": "field",
+     "text": "What does the Benchmark include?",
+     "area": "Question.name",
+     "index": 21
+    },
+    {
+     "type": "field",
+     "text": "Every engagement starts with the Benchmark: a fixed fee for one month, with the AI Intelligence Layer deployed inside your VPC and your baseline delivered at the end of it. The fee is credited in full toward your first month of delivery. If you stop there, you keep the baseline.",
+     "area": "Answer.text",
+     "index": 22
+    }
+   ]
+  },
+  {
+   "id": "h1",
+   "kind": "h1",
+   "label": "H1",
+   "scope": "page",
+   "skipped": false,
+   "text": "Forward-Deployed Engineering Solution",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Forward-Deployed Engineering Solution"
+    }
+   ]
+  },
+  {
+   "id": "block:hero-services#1",
+   "kind": "block",
+   "label": "Hero services: Forward-Deployed Engineering Solution",
+   "scope": "page",
+   "skipped": false,
+   "text": "Background\nBackground\nBackground\nBackground\nFORWARD-DEPLOYED ENGINEERING\nForward-Deployed Engineering Solution\nBuild the system, ship at AI speed. GoGloby’s forward-deployed AI engineering model embeds AI Solutions Architects and Applied AI Engineers into your team to set up the Agentic SDLC, connect the AI Intelligence Layer, and improve delivery against your own baseline.\nForward-deployed in under 4 weeks.\nAgentic SDLC setup and the AI Intelligence Layer benchmark.\nMeasured against your own baseline.\n120-day performance guarantee.\nGet Your Free Benchmark\nAnthropic\nNvidia\nAugment Code\nSnowflake\nCursor\nGemini",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/blocks/block-bg-1-01.png",
+     "file": "block-bg-1-01.png",
+     "alt": "Background",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "Background",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/blocks/block-bg-2-01.png",
+     "file": "block-bg-2-01.png",
+     "alt": "Background",
+     "alt_state": "text",
+     "dims": false,
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "Background",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/blocks/block-bg-3-01.png",
+     "file": "block-bg-3-01.png",
+     "alt": "Background",
+     "alt_state": "text",
+     "dims": false,
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "Background",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/hero-services-3-01.png",
+     "file": "hero-services-3-01.png",
+     "alt": "Background",
+     "alt_state": "text",
+     "dims": true,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "FORWARD-DEPLOYED ENGINEERING",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Forward-Deployed Engineering Solution",
+     "area": "block-main",
+     "level": 1,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Build the system, ship at AI speed. GoGloby’s forward-deployed AI engineering model embeds AI Solutions Architects and Applied AI Engineers into your team to set up the Agentic SDLC, connect the AI Intelligence Layer, and improve delivery against your own baseline.",
+     "area": "block-main",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Forward-deployed in under 4 weeks.",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Agentic SDLC setup and the AI Intelligence Layer benchmark.",
+     "area": "block-main",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Measured against your own baseline.",
+     "area": "block-main",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "120-day performance guarantee.",
+     "area": "block-main",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Get Your Free Benchmark",
+     "area": "block-main",
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "Anthropic",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-anthropic-1-grayscale.png",
+     "file": "logo-anthropic-1-grayscale.png",
+     "alt": "Anthropic",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "Nvidia",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-nvidia-1-grayscale.png",
+     "file": "logo-nvidia-1-grayscale.png",
+     "alt": "Nvidia",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 6
+    },
+    {
+     "type": "image",
+     "text": "Augment Code",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-augment-code-1-grayscale.png",
+     "file": "logo-augment-code-1-grayscale.png",
+     "alt": "Augment Code",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 7
+    },
+    {
+     "type": "image",
+     "text": "Snowflake",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-snowflake-1-grayscale.png",
+     "file": "logo-snowflake-1-grayscale.png",
+     "alt": "Snowflake",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 8
+    },
+    {
+     "type": "image",
+     "text": "Cursor",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-cursor-1-grayscale.png",
+     "file": "logo-cursor-1-grayscale.png",
+     "alt": "Cursor",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 9
+    },
+    {
+     "type": "image",
+     "text": "Gemini",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-gemini-1-grayscale.png",
+     "file": "logo-gemini-1-grayscale.png",
+     "alt": "Gemini",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 10
+    }
+   ]
+  },
+  {
+   "id": "block:how-we-work#1",
+   "kind": "block",
+   "label": "How we work: What Is Forward-Deployed Engineering?",
+   "scope": "page",
+   "skipped": false,
+   "text": "THE ENGAGEMENT MODEL\nWhat Is Forward-Deployed Engineering?\nForward-deployed engineering, often shortened to FDE, is an embedded engineering model where senior engineers work inside your company, not from the outside. Unlike a consultant who recommends and leaves, or a staffing vendor who sends capacity for your backlog, an FDE owns the outcome: the system, the delivery, and the result.\nInside your team\nThey work through your pipeline, repos, and review process, on your real backlog. Not from a conference room.\nSystem first\nThey set up your Agentic SDLC and the AI Intelligence Layer before shipping: one way of working, full visibility.\nDelivery at AI speed\nThey ship production features from your backlog, with speed and quality measured together.\nProven, not promised\nEvery feature is priced in dollars and compared against your own baseline. You see the progress in your own numbers.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "THE ENGAGEMENT MODEL",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "What Is Forward-Deployed Engineering?",
+     "area": "block-main",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Forward-deployed engineering, often shortened to FDE, is an embedded engineering model where senior engineers work inside your company, not from the outside. Unlike a consultant who recommends and leaves, or a staffing vendor who sends capacity for your backlog, an FDE owns the outcome: the system, the delivery, and the result.",
+     "area": "block-main",
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/how-we-work-1-01.png",
+     "file": "how-we-work-1-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Inside your team",
+     "area": "block-table",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "They work through your pipeline, repos, and review process, on your real backlog. Not from a conference room.",
+     "area": "block-table",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "System first",
+     "area": "block-table",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "They set up your Agentic SDLC and the AI Intelligence Layer before shipping: one way of working, full visibility.",
+     "area": "block-table",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Delivery at AI speed",
+     "area": "block-table",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "They ship production features from your backlog, with speed and quality measured together.",
+     "area": "block-table",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Proven, not promised",
+     "area": "block-table",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Every feature is priced in dollars and compared against your own baseline. You see the progress in your own numbers.",
+     "area": "block-table",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "block:company#1",
+   "kind": "block",
+   "label": "Company: Why AI Teams Need Forward Deployed Engineering",
+   "scope": "page",
+   "skipped": false,
+   "text": "Why AI Teams Need Forward Deployed Engineering\nYou bought the tools. The team has the licenses. Delivery looks the same. Here’s what’s actually in the way.\nUneven AI Adoption\nA few engineers ship at AI speed, the rest work like it’s 2022, so the tools are paid for but delivery never speeds up. Forward-deployed engineers install one way of working with AI instead of ten private workflows.\nAI Fails on Established Codebases\nAI shines on greenfield demos but stalls on established codebases: aging code, hidden business logic, weak tests, unclear ownership, long review paths, and outdated docs. The platform you actually run is where the tools help least.\nNo Proof of Real AI Adoption\nAI changed what the old metrics can prove. Story points and velocity alone cannot show who ships with AI versus who just holds a license, what a feature costs, or whether AI is improving delivery.\nThe FDE Talent Gap\nThe missing skill goes beyond headcount: system design, Agentic SDLC, codebase work, delivery ownership, telemetry, and outcome accountability. That profile takes 6 months to hire and rarely sticks.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Why AI Teams Need Forward Deployed Engineering",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "You bought the tools. The team has the licenses. Delivery looks the same. Here’s what’s actually in the way.",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Uneven AI Adoption",
+     "area": "block-main",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "A few engineers ship at AI speed, the rest work like it’s 2022, so the tools are paid for but delivery never speeds up. Forward-deployed engineers install one way of working with AI instead of ten private workflows.",
+     "area": "block-main",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "AI Fails on Established Codebases",
+     "area": "block-main",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "AI shines on greenfield demos but stalls on established codebases: aging code, hidden business logic, weak tests, unclear ownership, long review paths, and outdated docs. The platform you actually run is where the tools help least.",
+     "area": "block-main",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "No Proof of Real AI Adoption",
+     "area": "block-main",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "AI changed what the old metrics can prove. Story points and velocity alone cannot show who ships with AI versus who just holds a license, what a feature costs, or whether AI is improving delivery.",
+     "area": "block-main",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "The FDE Talent Gap",
+     "area": "block-main",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "The missing skill goes beyond headcount: system design, Agentic SDLC, codebase work, delivery ownership, telemetry, and outcome accountability. That profile takes 6 months to hire and rarely sticks.",
+     "area": "block-main",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "block:how-we-work#2",
+   "kind": "block",
+   "label": "How we work: Forward Deployed Engineering vs Other Models",
+   "scope": "page",
+   "skipped": false,
+   "text": "Forward Deployed Engineering vs Other Models\nFour models address different parts of the same problem. GoGloby combines delivery and measurement in one contract.\nConsulting Recommends\nConsulting typically focuses on strategy and roadmaps. GoGloby continues through implementation, works inside your production environment, and measures the result.\nStaffing Adds Capacity\nStaffing adds engineering capacity for your backlog. GoGloby also installs a shared AI delivery system and measures the result against your baseline.\nDashboards Measure\nEngineering dashboards show activity and surface problems. GoGloby also embeds the people needed to address those problems inside your workflow.\nGoGloby Delivers and Measures\nGoGloby forward-deploys AI Solutions Architects and Applied AI Engineers, connects the AI Intelligence Layer, sets up the Agentic SDLC, ships through your pipeline, and proves every improvement against your own baseline. We embed people to fix it, then measure the progress.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Forward Deployed Engineering vs Other Models",
+     "area": "block-main",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Four models address different parts of the same problem. GoGloby combines delivery and measurement in one contract.",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Consulting Recommends",
+     "area": "block-table",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Consulting typically focuses on strategy and roadmaps. GoGloby continues through implementation, works inside your production environment, and measures the result.",
+     "area": "block-table",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Staffing Adds Capacity",
+     "area": "block-table",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Staffing adds engineering capacity for your backlog. GoGloby also installs a shared AI delivery system and measures the result against your baseline.",
+     "area": "block-table",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Dashboards Measure",
+     "area": "block-table",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Engineering dashboards show activity and surface problems. GoGloby also embeds the people needed to address those problems inside your workflow.",
+     "area": "block-table",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "GoGloby Delivers and Measures",
+     "area": "block-table",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby forward-deploys AI Solutions Architects and Applied AI Engineers, connects the AI Intelligence Layer, sets up the Agentic SDLC, ships through your pipeline, and proves every improvement against your own baseline. We embed people to fix it, then measure the progress.",
+     "area": "block-table",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "block:layers#1",
+   "kind": "block",
+   "label": "Layers: The Forward-Deployed Engineering Team You Couldn’t Hire",
+   "scope": "page",
+   "skipped": false,
+   "text": "The Forward-Deployed Engineering Team You Couldn’t Hire\nGoGloby’s forward deployed engineering services combine senior Architects and AI engineers who have already made this transition. They embed into your team and build the system before delivery begins.\nSETS UP VISIBILITY AND PROCESS\nAI Solutions Architects\nThe first person in. They deploy the AI Intelligence Layer, capture your baseline, map the blockers, set up the Agentic SDLC, define model and cost architecture, and adapt the process to how your team already works.\nAI Intelligence Layer Deployment\nConnected to your Jira, GitHub, and AI tools in the first week. AI adoption, spend, and cost per feature visible from day one, then the Layer keeps reporting as delivery moves.\nAgentic SDLC Setup\nTask decomposition rules, model selection per task type, quality gates for AI-generated code, PR rules, and testing, built into your existing pipeline and review process.\nModel and Cost Architecture\nThey watch what the Layer surfaces and fix the causes: wrong models on wrong tasks, expensive agent loops, AI spend leaks, and review bottlenecks.\nSHIPS AT AI SPEED\nApplied AI Engineers\nSenior engineers who deliver your backlog through your pipeline, working at AI speed on an established codebase, not a greenfield demo.\nFeature Delivery From the First Delivery Sprint\nReal features from your backlog, through your review and release process, at a pace your team can see.\nEstablished-Codebase Expertise\nContext engineering, careful decomposition, and AI workflows that hold up on code with 15 years of history.\nQuality Held to Your Bar\nEvery feature passes the same gates as your team’s code. Speed and quality reported together, never one without the other.\nCLAUDE-SPECIFIC DEPTH\nClaude Certified Architects\nFor teams standardizing on Claude and Claude Code, Claude Certified Architects provide specialized expertise for taking Claude into production. Claude Certified Architect is a GoGloby credential held by an individual engineer and does not imply Anthropic endorsement.\nClaude Code in Production\nYour team’s setup, agent workflows, and context tuned for real delivery on your codebase.\nModel Mix and Cost Control\nThe right Claude model per task, spend optimized against what each task actually needs.\nProduction Patterns\nProven approaches for agentic development at scale: guardrails, evaluation, and reliability.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "The Forward-Deployed Engineering Team You Couldn’t Hire",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby’s forward deployed engineering services combine senior Architects and AI engineers who have already made this transition. They embed into your team and build the system before delivery begins.",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "SETS UP VISIBILITY AND PROCESS",
+     "area": "slide 1",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "AI Solutions Architects",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "The first person in. They deploy the AI Intelligence Layer, capture your baseline, map the blockers, set up the Agentic SDLC, define model and cost architecture, and adapt the process to how your team already works.",
+     "area": "slide 1",
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/layers-icon-1-01.png",
+     "file": "layers-icon-1-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "AI Intelligence Layer Deployment",
+     "area": "slide 1",
+     "level": 4,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Connected to your Jira, GitHub, and AI tools in the first week. AI adoption, spend, and cost per feature visible from day one, then the Layer keeps reporting as delivery moves.",
+     "area": "slide 1",
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/layers-icon-2-01.png",
+     "file": "layers-icon-2-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 1",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Agentic SDLC Setup",
+     "area": "slide 1",
+     "level": 4,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Task decomposition rules, model selection per task type, quality gates for AI-generated code, PR rules, and testing, built into your existing pipeline and review process.",
+     "area": "slide 1",
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/layers-icon-3-01.png",
+     "file": "layers-icon-3-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 1",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Model and Cost Architecture",
+     "area": "slide 1",
+     "level": 4,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "They watch what the Layer surfaces and fix the causes: wrong models on wrong tasks, expensive agent loops, AI spend leaks, and review bottlenecks.",
+     "area": "slide 1",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "SHIPS AT AI SPEED",
+     "area": "slide 2",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "Applied AI Engineers",
+     "area": "slide 2",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Senior engineers who deliver your backlog through your pipeline, working at AI speed on an established codebase, not a greenfield demo.",
+     "area": "slide 2",
+     "index": 8
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/layers-icon-4-04.png",
+     "file": "layers-icon-4-04.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 2",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Feature Delivery From the First Delivery Sprint",
+     "area": "slide 2",
+     "level": 4,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Real features from your backlog, through your review and release process, at a pace your team can see.",
+     "area": "slide 2",
+     "index": 9
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/layers-icon-5-01.png",
+     "file": "layers-icon-5-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 2",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Established-Codebase Expertise",
+     "area": "slide 2",
+     "level": 4,
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Context engineering, careful decomposition, and AI workflows that hold up on code with 15 years of history.",
+     "area": "slide 2",
+     "index": 10
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/layers-icon-6-01.png",
+     "file": "layers-icon-6-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 2",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Quality Held to Your Bar",
+     "area": "slide 2",
+     "level": 4,
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Every feature passes the same gates as your team’s code. Speed and quality reported together, never one without the other.",
+     "area": "slide 2",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "CLAUDE-SPECIFIC DEPTH",
+     "area": "slide 3",
+     "index": 12
+    },
+    {
+     "type": "heading",
+     "text": "Claude Certified Architects",
+     "area": "slide 3",
+     "level": 3,
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "For teams standardizing on Claude and Claude Code, Claude Certified Architects provide specialized expertise for taking Claude into production. Claude Certified Architect is a GoGloby credential held by an individual engineer and does not imply Anthropic endorsement.",
+     "area": "slide 3",
+     "index": 13
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/layers-icon-7-01.png",
+     "file": "layers-icon-7-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 3",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "Claude Code in Production",
+     "area": "slide 3",
+     "level": 4,
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "Your team’s setup, agent workflows, and context tuned for real delivery on your codebase.",
+     "area": "slide 3",
+     "index": 14
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/layers-icon-8-01.png",
+     "file": "layers-icon-8-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 3",
+     "index": 8
+    },
+    {
+     "type": "heading",
+     "text": "Model Mix and Cost Control",
+     "area": "slide 3",
+     "level": 4,
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "The right Claude model per task, spend optimized against what each task actually needs.",
+     "area": "slide 3",
+     "index": 15
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/layers-icon-9-03.png",
+     "file": "layers-icon-9-03.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 3",
+     "index": 9
+    },
+    {
+     "type": "heading",
+     "text": "Production Patterns",
+     "area": "slide 3",
+     "level": 4,
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Proven approaches for agentic development at scale: guardrails, evaluation, and reliability.",
+     "area": "slide 3",
+     "index": 16
+    }
+   ]
+  },
+  {
+   "id": "block:how-it-works#1",
+   "kind": "block",
+   "label": "How it works: How the Forward Deployed Engineering Model Works",
+   "scope": "page",
+   "skipped": false,
+   "text": "How the Forward Deployed Engineering Model Works\nOur people work inside your team from week one: Architects build the system, engineers ship through it, and everything they do is measured.\n1\nWeek 1: Connect and See\nThe Architect deploys the AI Intelligence Layer in your environment: Jira, GitHub, your AI tools. No interviews, no code leaving your perimeter. You get cost per feature, real adoption, and bottlenecks.\n2\nWeeks 2-4: Build the System\nThe Architect sets up or adapts your Agentic SDLC: decomposition, model selection, and quality gates, built into your existing pipeline. You get one way of working with AI, without breaking what works.\n3\nMonth 1+: Deploy and Deliver\nApplied AI Engineers join in under 4 weeks and ship features from your real backlog through your review and release process. You get delivery moving, visibly, on your own numbers.\n4\nEvery Month After: ROI Improves\nThe AI Intelligence Layer finds the leaks, the engineers fix them, and every fix becomes the new baseline. You get cost per feature falling and output rising, month over month.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How the Forward Deployed Engineering Model Works",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Our people work inside your team from week one: Architects build the system, engineers ship through it, and everything they do is measured.",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "1",
+     "area": "slide 1",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Week 1: Connect and See",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "The Architect deploys the AI Intelligence Layer in your environment: Jira, GitHub, your AI tools. No interviews, no code leaving your perimeter. You get cost per feature, real adoption, and bottlenecks.",
+     "area": "slide 1",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "2",
+     "area": "slide 2",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Weeks 2-4: Build the System",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "The Architect sets up or adapts your Agentic SDLC: decomposition, model selection, and quality gates, built into your existing pipeline. You get one way of working with AI, without breaking what works.",
+     "area": "slide 2",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "3",
+     "area": "slide 3",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Month 1+: Deploy and Deliver",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Applied AI Engineers join in under 4 weeks and ship features from your real backlog through your review and release process. You get delivery moving, visibly, on your own numbers.",
+     "area": "slide 3",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "4",
+     "area": "slide 4",
+     "index": 8
+    },
+    {
+     "type": "heading",
+     "text": "Every Month After: ROI Improves",
+     "area": "slide 4",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "The AI Intelligence Layer finds the leaks, the engineers fix them, and every fix becomes the new baseline. You get cost per feature falling and output rising, month over month.",
+     "area": "slide 4",
+     "index": 9
+    }
+   ]
+  },
+  {
+   "id": "block:guarantees#1",
+   "kind": "block",
+   "label": "Guarantees: Security and Boundaries for Forward Deployed Engineering",
+   "scope": "page",
+   "skipped": false,
+   "text": "Security and Boundaries for Forward Deployed Engineering\nEverything runs inside your perimeter: code, data, telemetry, metrics, and the baseline stay in your environment, under your access rules and revocable any day.\n$\n$3M Combined Liability (Cyber, Data and Professional)\nYour codebase and proprietary data are covered by $3M in combined liability (cyber, data, and professional), written into every contract and active from day one.\n1\n120-Day Performance Guarantee\nIf a forward-deployed engineer’s results drop below the agreed baseline for two consecutive sprints, we replace them at no cost. Replacement decisions are based on delivery data from the AI Intelligence Layer, not a subjective review.\nE\nEverything Runs Inside Your Perimeter\nThe AI Intelligence Layer deploys in your VPC, so your code, your data and your metrics stay in your environment. Our engineers work through your pipeline with the access you grant, logged like any employee and revocable any day. Your access rules, not ours.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Security and Boundaries for Forward Deployed Engineering",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Everything runs inside your perimeter: code, data, telemetry, metrics, and the baseline stay in your environment, under your access rules and revocable any day.",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "$",
+     "area": "slide 1",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "$3M Combined Liability (Cyber, Data and Professional)",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Your codebase and proprietary data are covered by $3M in combined liability (cyber, data, and professional), written into every contract and active from day one.",
+     "area": "slide 1",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "1",
+     "area": "slide 2",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "120-Day Performance Guarantee",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "If a forward-deployed engineer’s results drop below the agreed baseline for two consecutive sprints, we replace them at no cost. Replacement decisions are based on delivery data from the AI Intelligence Layer, not a subjective review.",
+     "area": "slide 2",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "E",
+     "area": "slide 3",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Everything Runs Inside Your Perimeter",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "The AI Intelligence Layer deploys in your VPC, so your code, your data and your metrics stay in your environment. Our engineers work through your pipeline with the access you grant, logged like any employee and revocable any day. Your access rules, not ours.",
+     "area": "slide 3",
+     "index": 7
+    }
+   ]
+  },
+  {
+   "id": "block:how-we-work#3",
+   "kind": "block",
+   "label": "How we work: What You Get From Forward Deployed Engineering",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Gets Built\nWhat You Get From Forward Deployed Engineering\nEverything our team builds runs inside your environment and improves while it runs: the AI Intelligence Layer keeps finding leaks, the engineers keep closing them, and every fix raises your baseline. When we leave, the whole system stays with you.\nOne Agentic SDLC\nA single way of working with AI for the team: decomposition rules, model selection, and quality gates, built into your pipeline.\nFeature-Level Visibility\nEvery feature priced in dollars through the AI Intelligence Layer, with adoption and spend visible per developer, team, and model.\nAI-Speed Delivery Through Your Review Process\nYour real backlog moves through your own review and release process, with delivery speed and quality measured against your baseline.\nAI ROI That Grows Monthly\nThe AI Intelligence Layer finds where money and time leak, the engineers fix it, and every fix becomes next month’s baseline.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "What Gets Built",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "What You Get From Forward Deployed Engineering",
+     "area": "block-main",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Everything our team builds runs inside your environment and improves while it runs: the AI Intelligence Layer keeps finding leaks, the engineers keep closing them, and every fix raises your baseline. When we leave, the whole system stays with you.",
+     "area": "block-main",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "One Agentic SDLC",
+     "area": "block-table",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "A single way of working with AI for the team: decomposition rules, model selection, and quality gates, built into your pipeline.",
+     "area": "block-table",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Feature-Level Visibility",
+     "area": "block-table",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Every feature priced in dollars through the AI Intelligence Layer, with adoption and spend visible per developer, team, and model.",
+     "area": "block-table",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "AI-Speed Delivery Through Your Review Process",
+     "area": "block-table",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Your real backlog moves through your own review and release process, with delivery speed and quality measured against your baseline.",
+     "area": "block-table",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "AI ROI That Grows Monthly",
+     "area": "block-table",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "The AI Intelligence Layer finds where money and time leak, the engineers fix it, and every fix becomes next month’s baseline.",
+     "area": "block-table",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "block:leaders#1",
+   "kind": "block",
+   "label": "Leaders: Forward Deployed Engineering for Enterprise Software Teams",
+   "scope": "page",
+   "skipped": false,
+   "text": "Forward Deployed Engineering for Enterprise Software Teams\nH\nEntertainment\nHASBRO\nNYSE · $13.4B market cap · $4.7B revenue · 35+ countries · 20+ iconic brands\nThe company behind Monopoly, Nerf, Transformers, Magic: The Gathering, and Peppa Pig — dominating the $46B North American toy market. A GoGloby Applied AI Engineering client building their internal AI Studio.\nD\nHealthcare\nDR. CHRONO\n17M+ patients · $3B+ medical claims annually · Cloud EHR\nOne of the US’s most trusted EHR platforms — powering telehealth, clinical billing, and revenue cycle management for millions of patients. An active GoGloby Applied AI Engineering engagement.\nE\nPayments\nEVERCOMMERCE\nNasdaq-listed SaaS · $1.98B market cap · 700,000+ business clients\nThe SaaS powerhouse serving home services, health, and wellness businesses across North America — built through aggressive acquisition and unified under one platform. A long-term GoGloby Applied AI Engineering partner.\nK\nGaming\nKEYWORDS\n$2.8B EQT acquisition · $844M revenue · 13,000 employees · 26 countries\nThe world’s #1 video game services company — trusted by 24 of the top 25 game publishers globally. Working with GoGloby to build their AI engineering leadership.\nM\nMedia\nMikeWorldWide\nFortune 500 agency · $57M fee income · 230+ staff · US & UK · Amazon · NFL · Deloitte · WNBA\nOne of the most respected independent PR agencies in the US — a blue-chip roster spanning tech, sports, energy, and consumer. A GoGloby talent partner for 3+ years.\nT\nIT Services\nTATA\n$106B market cap · $30B revenue · 600,000+ employees · 55 countries\nOne of the world’s largest technology companies — serving 1/3 of the Fortune 500 with a declared goal to become the world’s largest AI-led tech services company. An active GoGloby Applied AI Engineering client.\nC\nAccounting\nCANOPY\nSeries F · $236.5M raised · #1 rated accounting SaaS\nThe AI-powered practice management platform dominating accounting firms across the US — covering CRM, billing, documents, and IRS transcripts in one system. A GoGloby Applied AI Engineering client.\nS\nInvestments\nSYDECAR\n$3B+ AUA · 107% YoY revenue growth\nThe private markets infrastructure platform automating SPV and fund formation for venture managers worldwide. A long-term GoGloby Applied AI Engineering partner.\nN\nOil & Gas\nNOVILAB\nSeries B · $46M raised · $50B+ capital allocation decisions · Shell · Devon Energy · Wood Mackenzie\nThe AI analytics platform powering capital decisions for the world’s largest energy companies. An active GoGloby Applied AI Engineering engagement.\nB\nHR\nBONUSLY\nSeries B · $32.4M raised · 3,400+ clients · DoorDash · Toast · MongoDB\nThe #1 rated employee recognition platform in the US — trusted by some of the fastest-growing companies in tech and hospitality. A GoGloby Applied AI Engineering client.\nE\nFintech\nEVERY\n$32M raised · $60M+ payroll processed · $0 in tax penalties · Fast Company Most Innovative 2025\nThe all-in-one banking, payroll, and bookkeeping platform built for founders. A long-term GoGloby Applied AI Engineering partner.\nA\nHealthTech\nALCHEMY\n$31M seed · 25M+ prescriptions · Magic Johnson investor\nFounded by the co-founder of Truepill — building in-house pharmacy infrastructure for HIV and safety-net clinics under the 340B drug pricing program. A GoGloby Applied AI Engineering client.\nD\nGaming\nDEVSISTERS\nPublic · $299M market cap · 200M+ users · $500M+ lifetime player spending · 243 countries\nThe US/South Korean studio behind Cookie Run — one of mobile gaming’s most globally distributed franchises with 150M+ downloads. A GoGloby Applied AI Engineering client.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Forward Deployed Engineering for Enterprise Software Teams",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "H",
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Entertainment",
+     "area": "slide 1",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "HASBRO",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "NYSE · $13.4B market cap · $4.7B revenue · 35+ countries · 20+ iconic brands",
+     "area": "slide 1",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "The company behind Monopoly, Nerf, Transformers, Magic: The Gathering, and Peppa Pig — dominating the $46B North American toy market. A GoGloby Applied AI Engineering client building their internal AI Studio.",
+     "area": "slide 1",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "D",
+     "area": "slide 2",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Healthcare",
+     "area": "slide 2",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "DR. CHRONO",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "17M+ patients · $3B+ medical claims annually · Cloud EHR",
+     "area": "slide 2",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "One of the US’s most trusted EHR platforms — powering telehealth, clinical billing, and revenue cycle management for millions of patients. An active GoGloby Applied AI Engineering engagement.",
+     "area": "slide 2",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "E",
+     "area": "slide 3",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Payments",
+     "area": "slide 3",
+     "index": 10
+    },
+    {
+     "type": "heading",
+     "text": "EVERCOMMERCE",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Nasdaq-listed SaaS · $1.98B market cap · 700,000+ business clients",
+     "area": "slide 3",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "The SaaS powerhouse serving home services, health, and wellness businesses across North America — built through aggressive acquisition and unified under one platform. A long-term GoGloby Applied AI Engineering partner.",
+     "area": "slide 3",
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "K",
+     "area": "slide 4",
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Gaming",
+     "area": "slide 4",
+     "index": 14
+    },
+    {
+     "type": "heading",
+     "text": "KEYWORDS",
+     "area": "slide 4",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "$2.8B EQT acquisition · $844M revenue · 13,000 employees · 26 countries",
+     "area": "slide 4",
+     "index": 15
+    },
+    {
+     "type": "paragraph",
+     "text": "The world’s #1 video game services company — trusted by 24 of the top 25 game publishers globally. Working with GoGloby to build their AI engineering leadership.",
+     "area": "slide 4",
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "M",
+     "area": "slide 5",
+     "index": 17
+    },
+    {
+     "type": "paragraph",
+     "text": "Media",
+     "area": "slide 5",
+     "index": 18
+    },
+    {
+     "type": "heading",
+     "text": "MikeWorldWide",
+     "area": "slide 5",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Fortune 500 agency · $57M fee income · 230+ staff · US & UK · Amazon · NFL · Deloitte · WNBA",
+     "area": "slide 5",
+     "index": 19
+    },
+    {
+     "type": "paragraph",
+     "text": "One of the most respected independent PR agencies in the US — a blue-chip roster spanning tech, sports, energy, and consumer. A GoGloby talent partner for 3+ years.",
+     "area": "slide 5",
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "T",
+     "area": "slide 6",
+     "index": 21
+    },
+    {
+     "type": "paragraph",
+     "text": "IT Services",
+     "area": "slide 6",
+     "index": 22
+    },
+    {
+     "type": "heading",
+     "text": "TATA",
+     "area": "slide 6",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "$106B market cap · $30B revenue · 600,000+ employees · 55 countries",
+     "area": "slide 6",
+     "index": 23
+    },
+    {
+     "type": "paragraph",
+     "text": "One of the world’s largest technology companies — serving 1/3 of the Fortune 500 with a declared goal to become the world’s largest AI-led tech services company. An active GoGloby Applied AI Engineering client.",
+     "area": "slide 6",
+     "index": 24
+    },
+    {
+     "type": "paragraph",
+     "text": "C",
+     "area": "slide 7",
+     "index": 25
+    },
+    {
+     "type": "paragraph",
+     "text": "Accounting",
+     "area": "slide 7",
+     "index": 26
+    },
+    {
+     "type": "heading",
+     "text": "CANOPY",
+     "area": "slide 7",
+     "level": 3,
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Series F · $236.5M raised · #1 rated accounting SaaS",
+     "area": "slide 7",
+     "index": 27
+    },
+    {
+     "type": "paragraph",
+     "text": "The AI-powered practice management platform dominating accounting firms across the US — covering CRM, billing, documents, and IRS transcripts in one system. A GoGloby Applied AI Engineering client.",
+     "area": "slide 7",
+     "index": 28
+    },
+    {
+     "type": "paragraph",
+     "text": "S",
+     "area": "slide 8",
+     "index": 29
+    },
+    {
+     "type": "paragraph",
+     "text": "Investments",
+     "area": "slide 8",
+     "index": 30
+    },
+    {
+     "type": "heading",
+     "text": "SYDECAR",
+     "area": "slide 8",
+     "level": 3,
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "$3B+ AUA · 107% YoY revenue growth",
+     "area": "slide 8",
+     "index": 31
+    },
+    {
+     "type": "paragraph",
+     "text": "The private markets infrastructure platform automating SPV and fund formation for venture managers worldwide. A long-term GoGloby Applied AI Engineering partner.",
+     "area": "slide 8",
+     "index": 32
+    },
+    {
+     "type": "paragraph",
+     "text": "N",
+     "area": "slide 9",
+     "index": 33
+    },
+    {
+     "type": "paragraph",
+     "text": "Oil & Gas",
+     "area": "slide 9",
+     "index": 34
+    },
+    {
+     "type": "heading",
+     "text": "NOVILAB",
+     "area": "slide 9",
+     "level": 3,
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "Series B · $46M raised · $50B+ capital allocation decisions · Shell · Devon Energy · Wood Mackenzie",
+     "area": "slide 9",
+     "index": 35
+    },
+    {
+     "type": "paragraph",
+     "text": "The AI analytics platform powering capital decisions for the world’s largest energy companies. An active GoGloby Applied AI Engineering engagement.",
+     "area": "slide 9",
+     "index": 36
+    },
+    {
+     "type": "paragraph",
+     "text": "B",
+     "area": "slide 10",
+     "index": 37
+    },
+    {
+     "type": "paragraph",
+     "text": "HR",
+     "area": "slide 10",
+     "index": 38
+    },
+    {
+     "type": "heading",
+     "text": "BONUSLY",
+     "area": "slide 10",
+     "level": 3,
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "Series B · $32.4M raised · 3,400+ clients · DoorDash · Toast · MongoDB",
+     "area": "slide 10",
+     "index": 39
+    },
+    {
+     "type": "paragraph",
+     "text": "The #1 rated employee recognition platform in the US — trusted by some of the fastest-growing companies in tech and hospitality. A GoGloby Applied AI Engineering client.",
+     "area": "slide 10",
+     "index": 40
+    },
+    {
+     "type": "paragraph",
+     "text": "E",
+     "area": "slide 11",
+     "index": 41
+    },
+    {
+     "type": "paragraph",
+     "text": "Fintech",
+     "area": "slide 11",
+     "index": 42
+    },
+    {
+     "type": "heading",
+     "text": "EVERY",
+     "area": "slide 11",
+     "level": 3,
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "$32M raised · $60M+ payroll processed · $0 in tax penalties · Fast Company Most Innovative 2025",
+     "area": "slide 11",
+     "index": 43
+    },
+    {
+     "type": "paragraph",
+     "text": "The all-in-one banking, payroll, and bookkeeping platform built for founders. A long-term GoGloby Applied AI Engineering partner.",
+     "area": "slide 11",
+     "index": 44
+    },
+    {
+     "type": "paragraph",
+     "text": "A",
+     "area": "slide 12",
+     "index": 45
+    },
+    {
+     "type": "paragraph",
+     "text": "HealthTech",
+     "area": "slide 12",
+     "index": 46
+    },
+    {
+     "type": "heading",
+     "text": "ALCHEMY",
+     "area": "slide 12",
+     "level": 3,
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "$31M seed · 25M+ prescriptions · Magic Johnson investor",
+     "area": "slide 12",
+     "index": 47
+    },
+    {
+     "type": "paragraph",
+     "text": "Founded by the co-founder of Truepill — building in-house pharmacy infrastructure for HIV and safety-net clinics under the 340B drug pricing program. A GoGloby Applied AI Engineering client.",
+     "area": "slide 12",
+     "index": 48
+    },
+    {
+     "type": "paragraph",
+     "text": "D",
+     "area": "slide 13",
+     "index": 49
+    },
+    {
+     "type": "paragraph",
+     "text": "Gaming",
+     "area": "slide 13",
+     "index": 50
+    },
+    {
+     "type": "heading",
+     "text": "DEVSISTERS",
+     "area": "slide 13",
+     "level": 3,
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Public · $299M market cap · 200M+ users · $500M+ lifetime player spending · 243 countries",
+     "area": "slide 13",
+     "index": 51
+    },
+    {
+     "type": "paragraph",
+     "text": "The US/South Korean studio behind Cookie Run — one of mobile gaming’s most globally distributed franchises with 150M+ downloads. A GoGloby Applied AI Engineering client.",
+     "area": "slide 13",
+     "index": 52
+    }
+   ]
+  },
+  {
+   "id": "block:accordion-1#1",
+   "kind": "block",
+   "label": "Accordion 1: FAQ",
+   "scope": "page",
+   "skipped": false,
+   "text": "FAQ\nWhat is forward-deployed engineering?\nForward-deployed engineering is an embedded model where senior engineers work inside your environment to build, deploy, and improve production systems. At GoGloby, forward-deployed engineers work through your pipeline, repos, backlog, and review process, and prove every result against your own baseline.\nWhat does FDE mean?\nFDE means Forward Deployed Engineer. On this page it is more than a job title. It is the operating model that turns AI tools into AI-native production, run by an engineer who owns the outcome inside your team.\nHow is a forward-deployed engineer different from a consultant?\nA consultant recommends and leaves. A forward-deployed engineer works inside your environment and owns delivery until the system works in production, measured on your own numbers rather than a slide deck.\nHow is forward-deployed engineering different from staff augmentation?\nStaff augmentation gives you capacity and nothing else. GoGloby’s model brings Architect-led setup, the AI Intelligence Layer, the Agentic SDLC, hands-on delivery, and measurement against your baseline, together in one contract.\nWhy does AI need forward-deployed engineering?\nAI tools do not improve delivery by themselves. Forward-deployed engineers connect the tools to your real codebase, workflow, review process, and production constraints, so faster writing turns into faster shipping.\nWhat does a GoGloby forward-deployed engineer do day-to-day?\nThey work in your sprints, decompose tasks, use Claude and other AI tools inside the Agentic SDLC, build features, improve tests, fix blockers the AI Intelligence Layer surfaces, and report progress against your baseline.\nWho manages GoGloby’s forward-deployed engineers?\nYou do. Your team sets priorities and owns the roadmap. GoGloby handles vetting, replacement, Agentic SDLC setup, performance visibility, and delivery support, so you get senior output without the hiring risk.\nHow does GoGloby measure forward-deployed engineering results?\nThrough the AI Intelligence Layer: cost per feature, AI adoption, spend by team, developer, and model, delivery blockers, review signals, and improvement against your own baseline. Every number is anchored to where you started.\nIs forward-deployed engineering only for AI companies?\nNo. It is most useful for established software companies trying to turn AI tools they already bought into production delivery, measurable ROI, and AI-native engineering operations.\nIs forward-deployed engineering the same as Palantir’s model?\nPalantir helped popularize the term. GoGloby applies the model to AI-native software development for established software companies, working inside your pipeline and proving results against your baseline.\nWhat does the Benchmark include?\nEvery engagement starts with the Benchmark: a fixed fee for one month, with the AI Intelligence Layer deployed inside your VPC and your baseline delivered at the end of it. The fee is credited in full toward your first month of delivery. If you stop there, you keep the baseline.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "FAQ",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "What is forward-deployed engineering?",
+     "area": "item 1",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Forward-deployed engineering is an embedded model where senior engineers work inside your environment to build, deploy, and improve production systems. At GoGloby, forward-deployed engineers work through your pipeline, repos, backlog, and review process, and prove every result against your own baseline.",
+     "area": "item 1",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "What does FDE mean?",
+     "area": "item 1",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "FDE means Forward Deployed Engineer. On this page it is more than a job title. It is the operating model that turns AI tools into AI-native production, run by an engineer who owns the outcome inside your team.",
+     "area": "item 1",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "How is a forward-deployed engineer different from a consultant?",
+     "area": "item 1",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "A consultant recommends and leaves. A forward-deployed engineer works inside your environment and owns delivery until the system works in production, measured on your own numbers rather than a slide deck.",
+     "area": "item 1",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "How is forward-deployed engineering different from staff augmentation?",
+     "area": "item 1",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Staff augmentation gives you capacity and nothing else. GoGloby’s model brings Architect-led setup, the AI Intelligence Layer, the Agentic SDLC, hands-on delivery, and measurement against your baseline, together in one contract.",
+     "area": "item 1",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Why does AI need forward-deployed engineering?",
+     "area": "item 1",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "AI tools do not improve delivery by themselves. Forward-deployed engineers connect the tools to your real codebase, workflow, review process, and production constraints, so faster writing turns into faster shipping.",
+     "area": "item 1",
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "What does a GoGloby forward-deployed engineer do day-to-day?",
+     "area": "item 1",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "They work in your sprints, decompose tasks, use Claude and other AI tools inside the Agentic SDLC, build features, improve tests, fix blockers the AI Intelligence Layer surfaces, and report progress against your baseline.",
+     "area": "item 1",
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "Who manages GoGloby’s forward-deployed engineers?",
+     "area": "item 1",
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "You do. Your team sets priorities and owns the roadmap. GoGloby handles vetting, replacement, Agentic SDLC setup, performance visibility, and delivery support, so you get senior output without the hiring risk.",
+     "area": "item 1",
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "How does GoGloby measure forward-deployed engineering results?",
+     "area": "item 1",
+     "index": 15
+    },
+    {
+     "type": "paragraph",
+     "text": "Through the AI Intelligence Layer: cost per feature, AI adoption, spend by team, developer, and model, delivery blockers, review signals, and improvement against your own baseline. Every number is anchored to where you started.",
+     "area": "item 1",
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "Is forward-deployed engineering only for AI companies?",
+     "area": "item 1",
+     "index": 17
+    },
+    {
+     "type": "paragraph",
+     "text": "No. It is most useful for established software companies trying to turn AI tools they already bought into production delivery, measurable ROI, and AI-native engineering operations.",
+     "area": "item 1",
+     "index": 18
+    },
+    {
+     "type": "paragraph",
+     "text": "Is forward-deployed engineering the same as Palantir’s model?",
+     "area": "item 1",
+     "index": 19
+    },
+    {
+     "type": "paragraph",
+     "text": "Palantir helped popularize the term. GoGloby applies the model to AI-native software development for established software companies, working inside your pipeline and proving results against your baseline.",
+     "area": "item 1",
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "What does the Benchmark include?",
+     "area": "item 1",
+     "index": 21
+    },
+    {
+     "type": "paragraph",
+     "text": "Every engagement starts with the Benchmark: a fixed fee for one month, with the AI Intelligence Layer deployed inside your VPC and your baseline delivered at the end of it. The fee is credited in full toward your first month of delivery. If you stop there, you keep the baseline.",
+     "area": "item 1",
+     "index": 22
+    }
+   ]
+  },
+  {
+   "id": "banner_cta",
+   "kind": "banner_cta",
+   "label": "Banner CTA",
+   "scope": "shared",
+   "skipped": false,
+   "text": "Background\nBackground\nSTART WITH A BENCHMARK\nGet Your Forward Deployed Engineering Benchmark\nSubmit your information to schedule a technical briefing. We will show you what your features cost, who really uses AI, and where delivery gets stuck, then walk you through forward-deployment in under 4 weeks.\nSchedule a Technical Briefing",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/blocks/block-bg-1-01.png",
+     "file": "block-bg-1-01.png",
+     "alt": "Background",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "Background",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/blocks/block-bg-4-01.png",
+     "file": "block-bg-4-01.png",
+     "alt": "Background",
+     "alt_state": "text",
+     "dims": false,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "START WITH A BENCHMARK",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Get Your Forward Deployed Engineering Benchmark",
+     "area": "block-main",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Submit your information to schedule a technical briefing. We will show you what your features cost, who really uses AI, and where delivery gets stuck, then walk you through forward-deployment in under 4 weeks.",
+     "area": "block-main",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Schedule a Technical Briefing",
+     "area": "block-aside",
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "modals",
+   "kind": "modals",
+   "label": "Forms and modals",
+   "scope": "shared",
+   "skipped": false,
+   "text": "Thank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend\nThank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "site_header",
+   "kind": "site_header",
+   "label": "Site header",
+   "scope": "page",
+   "skipped": true,
+   "text": "Site logo\nSolutions\nAI Engineering Visibility\nForward Deployed Engineering\nServices\nAI Engineers Staff Augmentation\nHire AI Engineers\nAI Development Services\nGenerative AI Consulting Services\nAgentic AI Consulting Services\nAI Production Engineering\nGenerative AI Development Services\nAI Agent Development Services\nAI Custom Software Development Services\nRAG Application Development Services\nLLM Development Services\nApplication AI Modernization Services\nLegacy Application Modernization Services\nSoftware Maintenance Services\nCompany\nAbout us\nJobs\nResources\nInsights\nUse Cases\nPodcast\nContact\nTalk to Us",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Site logo",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/globy-logo-1-01.svg",
+     "file": "globy-logo-1-01.svg",
+     "alt": "Site logo",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Solutions",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineering Visibility",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/ai-engineering-visibility/",
+       "text": "AI Engineering Visibility"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Forward Deployed Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/forward-deployed-engineering/",
+       "text": "Forward Deployed Engineering"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineers Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Engineers Staff Augmentation"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "link",
+     "text": "AI Development Services",
+     "href": "https://gogloby.com/services/ai-development/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-development/",
+       "text": "AI Development Services"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-consulting/",
+       "text": "Generative AI Consulting Services"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Agentic AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/agentic-ai-consulting/",
+       "text": "Agentic AI Consulting Services"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "AI Production Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "AI Production Engineering"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "AI Agent Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-agent-development/",
+       "text": "AI Agent Development Services"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "AI Custom Software Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-custom-software-development/",
+       "text": "AI Custom Software Development Services"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "RAG Application Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/rag-application-development/",
+       "text": "RAG Application Development Services"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "LLM Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/llm-development/",
+       "text": "LLM Development Services"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "link",
+     "text": "Application AI Modernization Services",
+     "href": "https://gogloby.com/services/application-modernization/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/application-modernization/",
+       "text": "Application AI Modernization Services"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Legacy Application Modernization Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/legacy-application-modernization/",
+       "text": "Legacy Application Modernization Services"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "Software Maintenance Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/software-maintenance/",
+       "text": "Software Maintenance Services"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "Talk to Us",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "site_footer",
+   "kind": "site_footer",
+   "label": "Site footer",
+   "scope": "page",
+   "skipped": true,
+   "text": "Background logo\nServices\nApplied AI Engineering\nAI Staff Augmentation\nHire AI Engineers\nGenerative AI Development Services\nCompany\nAbout us\nJobs\nContact\nPrivacy Policy and Candidate Privacy Notice\nTerms and Conditions\nResources\nInsights\nUse Cases\nPodcast\nCase Studies\nConnections\nCrunchbase\nLinkedIn\nX\nG2\nClutch\nTrustpilot\nDesignRush\nGitHub\nFacebook\nYouTube\n© Copyright 2026, GoGloby. All Rights Reserved.",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background logo",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/logos/globy-logo-outline-1-01.svg",
+     "file": "globy-logo-outline-1-01.svg",
+     "alt": "Background logo",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Applied AI Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "Applied AI Engineering"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Staff Augmentation"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Privacy Policy and Candidate Privacy Notice",
+     "links": [
+      {
+       "href": "https://gogloby.com/privacy-policy/",
+       "text": "Privacy Policy and Candidate Privacy Notice"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Terms and Conditions",
+     "links": [
+      {
+       "href": "https://gogloby.com/terms-and-conditions/",
+       "text": "Terms and Conditions"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "Case Studies",
+     "links": [
+      {
+       "href": "https://gogloby.com/case-study/",
+       "text": "Case Studies"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Connections",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Crunchbase",
+     "links": [
+      {
+       "href": "https://www.crunchbase.com/organization/gogloby",
+       "text": "Crunchbase"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "LinkedIn",
+     "links": [
+      {
+       "href": "https://www.linkedin.com/company/gogloby/",
+       "text": "LinkedIn"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "X",
+     "links": [
+      {
+       "href": "https://x.com/GoGloby",
+       "text": "X"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "list_item",
+     "text": "G2",
+     "links": [
+      {
+       "href": "https://www.g2.com/products/gogloby/reviews",
+       "text": "G2"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Clutch",
+     "links": [
+      {
+       "href": "https://clutch.co/profile/gogloby",
+       "text": "Clutch"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Trustpilot",
+     "links": [
+      {
+       "href": "https://www.trustpilot.com/review/gogloby.com",
+       "text": "Trustpilot"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "DesignRush",
+     "links": [
+      {
+       "href": "https://www.designrush.com/agency/profile/gogloby",
+       "text": "DesignRush"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "list_item",
+     "text": "GitHub",
+     "links": [
+      {
+       "href": "https://github.com/gogloby",
+       "text": "GitHub"
+      }
+     ],
+     "index": 21
+    },
+    {
+     "type": "list_item",
+     "text": "Facebook",
+     "links": [
+      {
+       "href": "https://www.facebook.com/gogloby",
+       "text": "Facebook"
+      }
+     ],
+     "index": 22
+    },
+    {
+     "type": "list_item",
+     "text": "YouTube",
+     "links": [
+      {
+       "href": "https://www.youtube.com/@DefaultGlobal",
+       "text": "YouTube"
+      }
+     ],
+     "index": 23
+    },
+    {
+     "type": "paragraph",
+     "text": "© Copyright 2026, GoGloby. All Rights Reserved.",
+     "index": 5
+    }
+   ]
+  }
+ ],
+ "warnings": []
+}

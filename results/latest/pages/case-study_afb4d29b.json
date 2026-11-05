@@ -1,0 +1,873 @@
+{
+  "schema_version": 2,
+  "url": "https://gogloby.com/case-study/",
+  "final_url": "https://gogloby.com/case-study/",
+  "status": 200,
+  "title": "Case Studies Archives | GoGloby",
+  "category": "Resources",
+  "subsection": "Case studies",
+  "profile": "case_study",
+  "geo_type": "article",
+  "template": "legal",
+  "checked_at": "2026-11-05T09:34:49.053Z",
+  "zones": [
+    {
+      "id": "title",
+      "label": "Title",
+      "kind": "title"
+    },
+    {
+      "id": "meta_description",
+      "label": "Meta description",
+      "kind": "meta_description"
+    },
+    {
+      "id": "og_title",
+      "label": "og:title",
+      "kind": "og_title"
+    },
+    {
+      "id": "og_description",
+      "label": "og:description",
+      "kind": "og_description"
+    },
+    {
+      "id": "json_ld",
+      "label": "Structured data (JSON-LD)",
+      "kind": "json_ld"
+    },
+    {
+      "id": "h1",
+      "label": "H1",
+      "kind": "h1"
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "kind": "date"
+    },
+    {
+      "id": "article:intro",
+      "label": "Intro",
+      "kind": "article_section"
+    },
+    {
+      "id": "banner_cta",
+      "label": "Banner CTA",
+      "kind": "banner_cta"
+    }
+  ],
+  "zone_warnings": [],
+  "shared_variants": [
+    "modals@1"
+  ],
+  "compliance": {
+    "hash": "51a6c86e45a0edb1b8044a7045bddade2f4d25193720210a66f3c3a834584a1f",
+    "cached": false,
+    "action": "rewrite",
+    "model_action": "rewrite",
+    "summary": "The archive presents GoGloby as an AI engineering and deployment provider, rather than the staffing and recruiting agency described in the company sources. It also makes several unsupported claims about projects and results, including a case study for an unnamed Nasdaq HealthTech company.",
+    "llm_problems": [
+      {
+        "title": "AI engineering provider positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The archive describes GoGloby through AI engineering and deployment projects, conflicting with its approved description as a staffing and recruiting agency.",
+        "fix": "Rework the page positioning so it reflects the approved staffing and recruiting description and services.",
+        "subject": "GoGloby positioning",
+        "page_value": "AI engineering and deployments",
+        "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "GoGloby AI case studies covering agentic workflows, applied AI engineering, semantic ML pipelines, and scalable enterprise AI deployments.",
+            "verified": true,
+            "reason": "The description presents GoGloby's case studies as AI engineering and deployment work, not staffing and recruiting."
+          },
+          {
+            "zone_id": "article:intro",
+            "part": "image 2",
+            "quote": "How GoGloby Engineered a Production Voice AI System",
+            "verified": true,
+            "reason": "This headline portrays GoGloby as the engineer of a production AI system."
+          },
+          {
+            "zone_id": "article:intro",
+            "part": "image 3",
+            "quote": "How GoGloby Replaced Manual Candidate Review With a Semantic ML Pipeline",
+            "verified": true,
+            "reason": "This headline presents GoGloby as building an ML pipeline rather than recruiting or staffing engineers."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Slack agent project unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Identity; Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The sources do not state that GoGloby replaced its recruiting workflows with a Slack-native AI agent.",
+        "fix": "Verify this project claim before retaining it, or remove it.",
+        "subject": "Slack-native AI agent",
+        "page_value": "Replaced fragmented recruiting workflows",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "image 1",
+            "quote": "How GoGloby Replaced Fragmented Recruiting Workflows With a Slack-Native AI Agent",
+            "verified": true,
+            "reason": "The headline claims GoGloby replaced recruiting workflows with an AI agent, a project not described in the sources."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Voice AI project unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Identity; Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The sources do not state that GoGloby engineered a production voice AI system for screening candidates.",
+        "fix": "Verify this project claim before retaining it, or remove it.",
+        "subject": "Production voice AI system",
+        "page_value": "Candidate-screening voice AI system",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "image 2",
+            "quote": "How GoGloby Engineered a Production Voice AI System",
+            "verified": true,
+            "reason": "The headline claims GoGloby engineered a production voice AI system, which is not documented in the sources."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Screening results unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics",
+        "rule_verified": true,
+        "issue": "The claimed 85% faster screening and 96% lower cost results are not in the Fact Sheet.",
+        "fix": "Verify these results before retaining them, or remove the figures.",
+        "subject": "Voice AI screening results",
+        "page_value": "85% faster; 96% lower cost",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "image 2",
+            "quote": "Screens Candidates 85% Faster at 96% Lower Cost",
+            "verified": true,
+            "reason": "The headline claims specific speed and cost improvements that the sources do not substantiate."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Semantic ML pipeline unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Identity; Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The sources do not state that GoGloby replaced manual candidate review with a semantic ML pipeline.",
+        "fix": "Verify this project claim before retaining it, or remove it.",
+        "subject": "Semantic ML pipeline",
+        "page_value": "Replaced manual candidate review",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "image 3",
+            "quote": "How GoGloby Replaced Manual Candidate Review With a Semantic ML Pipeline",
+            "verified": true,
+            "reason": "The headline claims GoGloby replaced candidate review with an ML pipeline, a project not documented in the sources."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Board-visible performance unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: AI Development Intelligence Layer",
+        "rule_verified": true,
+        "issue": "The sources do not state that GoGloby turned idle AI tools into board-visible engineering performance.",
+        "fix": "Verify this project claim before retaining it, or remove it.",
+        "subject": "Board-visible engineering performance",
+        "page_value": "Turned idle AI tools into board-visible engineering performance",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "image 4",
+            "quote": "How GoGloby Turned Idle AI Tools Into Board-Visible Engineering Performance",
+            "verified": true,
+            "reason": "The headline claims a specific transformation and board-facing result not stated in the sources."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unnamed HealthTech client",
+        "category": "unknown_client",
+        "severity": "high",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The case-study headline presents an unnamed Nasdaq HealthTech company as a client, but the sources do not identify that company.",
+        "fix": "Verify the client identity against the Fact Sheet or remove the client case study.",
+        "subject": "Unnamed Nasdaq HealthTech company",
+        "page_value": "Nasdaq HealthTech Company",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "image 5",
+            "quote": "How a Nasdaq HealthTech Company Met a Board Deadline",
+            "verified": true,
+            "reason": "The headline presents an unidentified Nasdaq HealthTech company as a GoGloby case-study client."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Platform value unverified",
+        "category": "client_figures",
+        "severity": "low",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The stated $3B platform figure for the case-study client is not in the sources.",
+        "fix": "Verify the figure against the identified client and the Fact Sheet, or remove it.",
+        "subject": "Nasdaq HealthTech case-study client",
+        "page_value": "$3B platform",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "image 5",
+            "quote": "Integrated a $3B Platform",
+            "verified": true,
+            "reason": "The headline attributes a $3B platform to the case-study client, but the sources do not substantiate this figure."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      }
+    ],
+    "problems": [
+      {
+        "title": "AI engineering provider positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The archive describes GoGloby through AI engineering and deployment projects, conflicting with its approved description as a staffing and recruiting agency.",
+        "fix": "Rework the page positioning so it reflects the approved staffing and recruiting description and services.",
+        "subject": "GoGloby positioning",
+        "page_value": "AI engineering and deployments",
+        "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "GoGloby AI case studies covering agentic workflows, applied AI engineering, semantic ML pipelines, and scalable enterprise AI deployments.",
+            "verified": true,
+            "reason": "The description presents GoGloby's case studies as AI engineering and deployment work, not staffing and recruiting."
+          },
+          {
+            "zone_id": "article:intro",
+            "part": "image 2",
+            "quote": "How GoGloby Engineered a Production Voice AI System",
+            "verified": true,
+            "reason": "This headline portrays GoGloby as the engineer of a production AI system.",
+            "fragment": "How GoGloby Engineered a Production Voice",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:intro",
+            "part": "image 3",
+            "quote": "How GoGloby Replaced Manual Candidate Review With a Semantic ML Pipeline",
+            "verified": true,
+            "reason": "This headline presents GoGloby as building an ML pipeline rather than recruiting or staffing engineers.",
+            "fragment": "How GoGloby Replaced Manual Candidate Review",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Slack agent project unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Identity; Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The sources do not state that GoGloby replaced its recruiting workflows with a Slack-native AI agent.",
+        "fix": "Verify this project claim before retaining it, or remove it.",
+        "subject": "Slack-native AI agent",
+        "page_value": "Replaced fragmented recruiting workflows",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "image 1",
+            "quote": "How GoGloby Replaced Fragmented Recruiting Workflows With a Slack-Native AI Agent",
+            "verified": true,
+            "reason": "The headline claims GoGloby replaced recruiting workflows with an AI agent, a project not described in the sources.",
+            "fragment": "How GoGloby Replaced Fragmented Recruiting Workflows",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Voice AI project unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Identity; Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The sources do not state that GoGloby engineered a production voice AI system for screening candidates.",
+        "fix": "Verify this project claim before retaining it, or remove it.",
+        "subject": "Production voice AI system",
+        "page_value": "Candidate-screening voice AI system",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "image 2",
+            "quote": "How GoGloby Engineered a Production Voice AI System",
+            "verified": true,
+            "reason": "The headline claims GoGloby engineered a production voice AI system, which is not documented in the sources.",
+            "fragment": "How GoGloby Engineered a Production Voice",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Screening results unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics",
+        "rule_verified": true,
+        "issue": "The claimed 85% faster screening and 96% lower cost results are not in the Fact Sheet.",
+        "fix": "Verify these results before retaining them, or remove the figures.",
+        "subject": "Voice AI screening results",
+        "page_value": "85% faster; 96% lower cost",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "image 2",
+            "quote": "Screens Candidates 85% Faster at 96% Lower Cost",
+            "verified": true,
+            "reason": "The headline claims specific speed and cost improvements that the sources do not substantiate.",
+            "fragment": "Screens Candidates 85% Faster at 96%",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Semantic ML pipeline unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Identity; Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The sources do not state that GoGloby replaced manual candidate review with a semantic ML pipeline.",
+        "fix": "Verify this project claim before retaining it, or remove it.",
+        "subject": "Semantic ML pipeline",
+        "page_value": "Replaced manual candidate review",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "image 3",
+            "quote": "How GoGloby Replaced Manual Candidate Review With a Semantic ML Pipeline",
+            "verified": true,
+            "reason": "The headline claims GoGloby replaced candidate review with an ML pipeline, a project not documented in the sources.",
+            "fragment": "How GoGloby Replaced Manual Candidate Review",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Board-visible performance unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: AI Development Intelligence Layer",
+        "rule_verified": true,
+        "issue": "The sources do not state that GoGloby turned idle AI tools into board-visible engineering performance.",
+        "fix": "Verify this project claim before retaining it, or remove it.",
+        "subject": "Board-visible engineering performance",
+        "page_value": "Turned idle AI tools into board-visible engineering performance",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "image 4",
+            "quote": "How GoGloby Turned Idle AI Tools Into Board-Visible Engineering Performance",
+            "verified": true,
+            "reason": "The headline claims a specific transformation and board-facing result not stated in the sources.",
+            "fragment": "How GoGloby Turned Idle AI Tools",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unnamed HealthTech client",
+        "category": "unknown_client",
+        "severity": "high",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The case-study headline presents an unnamed Nasdaq HealthTech company as a client, but the sources do not identify that company.",
+        "fix": "Verify the client identity against the Fact Sheet or remove the client case study.",
+        "subject": "Unnamed Nasdaq HealthTech company",
+        "page_value": "Nasdaq HealthTech Company",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "image 5",
+            "quote": "How a Nasdaq HealthTech Company Met a Board Deadline",
+            "verified": true,
+            "reason": "The headline presents an unidentified Nasdaq HealthTech company as a GoGloby case-study client.",
+            "fragment": "How a Nasdaq HealthTech Company Met",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Platform value unverified",
+        "category": "client_figures",
+        "severity": "low",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The stated $3B platform figure for the case-study client is not in the sources.",
+        "fix": "Verify the figure against the identified client and the Fact Sheet, or remove it.",
+        "subject": "Nasdaq HealthTech case-study client",
+        "page_value": "$3B platform",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "image 5",
+            "quote": "Integrated a $3B Platform",
+            "verified": true,
+            "reason": "The headline attributes a $3B platform to the case-study client, but the sources do not substantiate this figure.",
+            "fragment": "Integrated a $3B Platform",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      }
+    ],
+    "usage": {
+      "input": 727,
+      "cached_input": 10166,
+      "output": 4760
+    },
+    "error": null
+  },
+  "geo": {
+    "hash": "6cca6f18624df46eeffc78c6bda6a116a1f9558fe62bdf747c09c93159179ffa",
+    "cached": false,
+    "code": [
+      {
+        "id": "trap_terms",
+        "status": "pass",
+        "value": "none in title, H1, meta, og",
+        "places": []
+      },
+      {
+        "id": "em_dash",
+        "status": "pass",
+        "value": "none",
+        "places": []
+      },
+      {
+        "id": "ampersand",
+        "status": "pass",
+        "value": "none",
+        "places": []
+      },
+      {
+        "id": "uk_spelling",
+        "status": "pass",
+        "value": "none",
+        "places": []
+      }
+    ],
+    "llm": [
+      {
+        "id": "answer_first",
+        "answer": "no",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "The provided answer_first.text is null, so there are no opening sentences that answer the H1.",
+        "evidence_verified": null
+      },
+      {
+        "id": "recruiting_firm_early",
+        "answer": "na",
+        "value": null,
+        "zone_id": "page",
+        "evidence": null,
+        "note": "This is a case studies archive, so the recruiting-firm opening check does not apply.",
+        "evidence_verified": null
+      },
+      {
+        "id": "buyer_ready",
+        "answer": "no",
+        "value": "informational",
+        "zone_id": "page",
+        "evidence": "How a Nasdaq HealthTech Company Met a Board Deadline and Integrated a $3B Platform",
+        "note": "The archive presents case-study headlines rather than addressing companies ready to hire Data and AI engineers; make the hiring audience clear.",
+        "evidence_verified": true,
+        "fragment": "How a Nasdaq HealthTech Company Met"
+      },
+      {
+        "id": "target_keyword",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "No term from Glossary §6 specifically matches this case studies archive.",
+        "evidence_verified": null
+      },
+      {
+        "id": "uses_data",
+        "answer": "yes",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "How GoGloby Engineered a Production Voice AI System That Screens Candidates 85% Faster at 96% Lower Cost\nHow GoGloby Engineered a Production Voice AI System That Screens Candidates 85% Faster at 96% Lower Cost\nMay 6,2026",
+        "note": "The archive includes numerical claims with a nearby date that an assistant can quote.",
+        "evidence_verified": true,
+        "fragment": "How GoGloby Engineered a Production Voice"
+      },
+      {
+        "id": "proof_background",
+        "answer": "na",
+        "value": null,
+        "zone_id": "page",
+        "evidence": null,
+        "note": "This is a case studies archive, so the founder-background proof check does not apply.",
+        "evidence_verified": null
+      },
+      {
+        "id": "sell_against_open_role",
+        "answer": "na",
+        "value": null,
+        "zone_id": "page",
+        "evidence": null,
+        "note": "This is a case studies archive, so the open-role cost-and-wait comparison check does not apply.",
+        "evidence_verified": null
+      }
+    ],
+    "placement": null,
+    "usage": {
+      "input": 340,
+      "cached_input": 8847,
+      "output": 1390
+    },
+    "error": null
+  },
+  "seo": {
+    "checks": [
+      {
+        "id": "http_status",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "200",
+        "severity": "high"
+      },
+      {
+        "id": "title_length",
+        "status": "pass",
+        "zone_id": "title",
+        "value": "31 characters",
+        "severity": "medium"
+      },
+      {
+        "id": "meta_present",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "146 characters",
+        "severity": "high"
+      },
+      {
+        "id": "meta_length",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "146 characters (120-158)",
+        "severity": "low"
+      },
+      {
+        "id": "h1_count",
+        "status": "pass",
+        "zone_id": "h1",
+        "value": "1",
+        "severity": "high"
+      },
+      {
+        "id": "title_h1_match",
+        "status": "pass",
+        "zone_id": "title",
+        "value": "Title and H1 agree",
+        "severity": "low"
+      },
+      {
+        "id": "canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "https://gogloby.com/case-study/",
+        "severity": "high"
+      },
+      {
+        "id": "indexable",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "severity": "high"
+      },
+      {
+        "id": "schema_required",
+        "status": "fail",
+        "zone_id": "json_ld",
+        "value": "missing: Article",
+        "severity": "medium"
+      },
+      {
+        "id": "schema_recommended",
+        "status": "fail",
+        "zone_id": "json_ld",
+        "value": "missing: BreadcrumbList",
+        "severity": "medium"
+      },
+      {
+        "id": "dates",
+        "status": "fail",
+        "zone_id": "json_ld",
+        "value": "published: missing; modified: missing",
+        "severity": "medium"
+      },
+      {
+        "id": "broken_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 checked",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "redirecting_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "none",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "link_to_services",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "no link to /services/*",
+        "severity": "medium"
+      },
+      {
+        "id": "alt_missing",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without alt",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_empty",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 with empty alt",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "image_dimensions",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "2 without width/height",
+        "places": [
+          {
+            "zone_id": "banner_cta",
+            "part": "image 1",
+            "value": "block-bg-1-01.png"
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "image 2",
+            "value": "block-bg-4-01.png"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "heading_order",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "1 skipped levels",
+        "places": [
+          {
+            "zone_id": "article:intro",
+            "part": "heading 1",
+            "value": "h1 -> h3: How GoGloby Replaced Fragmented Recruiting Workflo"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "og_present",
+        "status": "pass",
+        "zone_id": "og_title",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "og_url_canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "og:url https://gogloby.com/case-study/ vs canonical https://gogloby.com/case-study/",
+        "severity": "low"
+      },
+      {
+        "id": "twitter_card",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "summary_large_image",
+        "severity": "low"
+      },
+      {
+        "id": "html_lang",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "en-US",
+        "severity": "low"
+      },
+      {
+        "id": "viewport",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "jsonld_valid",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "3 block(s)",
+        "severity": "high"
+      },
+      {
+        "id": "article_fields",
+        "status": "na",
+        "zone_id": "json_ld",
+        "value": "no Article node",
+        "severity": "medium"
+      },
+      {
+        "id": "anchors_resolve",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 checked",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "faq_schema_matches_dom",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "accordion block: false, FAQPage schema: false",
+        "severity": "low"
+      }
+    ]
+  }
+}

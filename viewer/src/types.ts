@@ -99,6 +99,10 @@ export interface Finding {
   verified: boolean;
   fragment: string | null;
   basis?: "contradicts sources" | "not in sources" | "term list";
+  place?: string;
+  reason?: string;
+  page_value?: string;
+  source_value?: string;
   fix_where: FixWhere;
 }
 
@@ -122,8 +126,15 @@ export interface PageReport {
   zones: { id: string; label: string; kind: string }[];
   zone_warnings: string[];
   shared_variants: string[];
-  compliance: { action: string | null; summary: string | null; error: string | null; cached: boolean };
-  geo: { llm: GeoAnswerView[]; error: string | null; cached: boolean };
+  compliance: { action: string | null; summary: string | null; error: string | null; cached: boolean; skipped?: boolean };
+  geo: {
+    llm: GeoAnswerView[];
+    code?: { id: string; status: "pass" | "fail" | "na"; value: string }[];
+    error: string | null;
+    cached: boolean;
+    skipped?: boolean;
+  };
+  seo: { skipped?: boolean };
 }
 
 export interface SiteReport {

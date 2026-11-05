@@ -1,0 +1,2644 @@
+{
+  "schema_version": 2,
+  "url": "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+  "final_url": "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+  "status": 200,
+  "title": "A Nasdaq HealthTech Company Integrated a $3B Platform",
+  "category": "Resources",
+  "subsection": "Case studies",
+  "profile": "case_study",
+  "geo_type": "article",
+  "template": "article",
+  "checked_at": "2026-11-05T07:48:13.655Z",
+  "zones": [
+    {
+      "id": "title",
+      "label": "Title",
+      "kind": "title"
+    },
+    {
+      "id": "meta_description",
+      "label": "Meta description",
+      "kind": "meta_description"
+    },
+    {
+      "id": "og_title",
+      "label": "og:title",
+      "kind": "og_title"
+    },
+    {
+      "id": "og_description",
+      "label": "og:description",
+      "kind": "og_description"
+    },
+    {
+      "id": "json_ld",
+      "label": "Structured data (JSON-LD)",
+      "kind": "json_ld"
+    },
+    {
+      "id": "h1",
+      "label": "H1",
+      "kind": "h1"
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "kind": "date"
+    },
+    {
+      "id": "toc",
+      "label": "Table of contents",
+      "kind": "toc"
+    },
+    {
+      "id": "article:intro",
+      "label": "Intro",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:achievements-after-partnering-with-gogloby",
+      "label": "Achievements After Partnering With GoGloby",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:company-profile",
+      "label": "Company Profile",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:the-challenge",
+      "label": "The Challenge",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:the-gogloby-model",
+      "label": "The GoGloby Model",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:the-testimonial",
+      "label": "The Testimonial",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:the-numbers",
+      "label": "The Numbers",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:the-compliance-infrastructure",
+      "label": "The Compliance Infrastructure",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:the-team-the-client-now-has",
+      "label": "The Team the Client Now Has",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:engagement-metrics",
+      "label": "Engagement Metrics",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:why-this-case-study-matters",
+      "label": "Why This Case Study Matters",
+      "kind": "article_section"
+    },
+    {
+      "id": "banner_cta",
+      "label": "Banner CTA",
+      "kind": "banner_cta"
+    }
+  ],
+  "zone_warnings": [],
+  "shared_variants": [
+    "modals@1"
+  ],
+  "compliance": {
+    "hash": "01e2607019c4e2716bff91135730fb6555e51d9e2a119df316ce288a9addba77",
+    "cached": false,
+    "action": "fix",
+    "model_action": "fix",
+    "summary": "The case study contains numerous engagement-specific claims that are not supported by the company documents, including placement results, compliance arrangements and a testimonial. It also lists conflicting insurance coverage and public pricing, and its CTA does not use the approved staffing wording.",
+    "llm_problems": [
+      {
+        "title": "Placement count and timeline unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The sources do not document this engagement's placement of 25 engineers in 58 days.",
+        "fix": "Verify the case-specific placement count and timeline or remove them.",
+        "subject": "Case study placements",
+        "page_value": "25 engineers in 58 days",
+        "source_value": "not in Fact Sheet",
+        "count": 7,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "GoGloby placed 25 Senior Applied AI Engineers in 58 days.",
+            "verified": true
+          },
+          {
+            "zone_id": "og_description",
+            "part": "field 1",
+            "quote": "GoGloby placed 25 Senior Applied AI Engineers in 58 days.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Article.description",
+            "quote": "GoGloby placed 25 Senior Applied AI Engineers in 58 days.",
+            "verified": true
+          },
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 3",
+            "quote": "GoGloby placed 25 senior engineers across DevOps, Python/Data, Fullstack, and iOS in 58 days.",
+            "verified": true
+          },
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "Engineers Placed\n25 in 58 days",
+            "verified": true
+          },
+          {
+            "zone_id": "article:the-numbers",
+            "part": null,
+            "quote": "Total elapsed time\n58 days",
+            "verified": true
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": "table_cell 23",
+            "quote": "25 engineers across 4 disciplines, 4 hiring managers, hard board deadline — placed on time.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Case retention claim is inconsistent",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics",
+        "rule_verified": true,
+        "issue": "The sources do not establish 96% retention for this engagement, and the page's 23 of 25 figure equals 92%, not 96%.",
+        "fix": "Verify the case-specific retention figures and correct the arithmetic throughout.",
+        "subject": "Case study retention",
+        "page_value": "96%; 23 of 25",
+        "source_value": "not in Fact Sheet",
+        "count": 7,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "12 months later, 96% of the team was still in place.",
+            "verified": true
+          },
+          {
+            "zone_id": "og_description",
+            "part": "field 1",
+            "quote": "12 months later, 96% of the team was still in place.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Article.description",
+            "quote": "12 months later, 96% of the team was still",
+            "verified": true
+          },
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 3",
+            "quote": "12 months later, 96% of the team was still in place",
+            "verified": true
+          },
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "12-Month Retention\n~96%",
+            "verified": true
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": "table_cell 7",
+            "quote": "23 of 25 placed engineers active at 12 months",
+            "verified": true
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": "table_cell 8",
+            "quote": "Post-acquisition contractor retention: 60–70% in Year 1. GoGloby: ~96%.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Client interview conversion unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics",
+        "rule_verified": true,
+        "issue": "The sources do not document a 55.6% client interview-to-hire conversion rate for this engagement.",
+        "fix": "Verify the case-specific conversion rate or remove it.",
+        "subject": "Client interview conversion",
+        "page_value": "55.6%",
+        "source_value": "not in Fact Sheet",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "Client Interview Conversion\n55.6%",
+            "verified": true
+          },
+          {
+            "zone_id": "article:the-numbers",
+            "part": "table_cell 8",
+            "quote": "25 — Represents a 55.6% conversion rate.",
+            "verified": true
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": null,
+            "quote": "Client interview conversion\n55.6% (25 of 45)",
+            "verified": true
+          },
+          {
+            "zone_id": "article:why-this-case-study-matters",
+            "part": "heading 4",
+            "quote": "55.6% Client Interview Conversion Means the Hiring Manager’s Time Is Spent Deciding",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Interview conversion interpretation is wrong",
+        "category": "other",
+        "severity": "low",
+        "rule": "Fact Sheet: Key metrics",
+        "rule_verified": true,
+        "issue": "A 55.6% interview-to-hire conversion rate does not mean that each interview produced more than one hire.",
+        "fix": "Correct the interpretation of the conversion rate.",
+        "subject": "Interview conversion interpretation",
+        "page_value": "more than one hire per interview",
+        "source_value": null,
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:why-this-case-study-matters",
+            "part": "paragraph 4",
+            "quote": "At 55.6% conversion, every interview the client conducted produced more than one hire on average",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Case vetting rate unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: How we vet",
+        "rule_verified": true,
+        "issue": "The sources state that approximately 4% pass the assessment but do not document this engagement's separate 3.2% funnel rate.",
+        "fix": "Verify the case-specific rate and distinguish it from the overall assessment pass rate, or remove it.",
+        "subject": "Case study vetting rate",
+        "page_value": "3.2%",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "Internal Vetting Rate\n3.2% pass rate",
+            "verified": true
+          },
+          {
+            "zone_id": "article:the-gogloby-model",
+            "part": "paragraph 1",
+            "quote": "These sessions are what compressed GoGloby’s internal pass rate to 3.2%",
+            "verified": true
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": null,
+            "quote": "Internal vetting conversion\n3.2% (25 of 773)",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Case savings claim unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics",
+        "rule_verified": true,
+        "issue": "The sources do not document approximately $2 million in annual savings for this engagement.",
+        "fix": "Verify the engagement-specific savings and calculation or remove the claim.",
+        "subject": "Case study annual savings",
+        "page_value": "~$2M annually",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "Annual Savings\n~$2M vs. US hiring",
+            "verified": true
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": null,
+            "quote": "Cost vs. US equivalent\n~$2M saved annually",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Public engineer pricing disclosed",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The page publishes GoGloby engineer rates, which the Glossary prohibits in public content.",
+        "fix": "Remove GoGloby's rates from the case study.",
+        "subject": "GoGloby engineer rates",
+        "page_value": "$75K–$85K per year",
+        "source_value": null,
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": "table_cell 27",
+            "quote": "GoGloby avg $75K–85K/yr vs US market $160K–200K",
+            "verified": true
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": "table_cell 28",
+            "quote": "GoGloby LatAm/EU: $75K–$85K.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "European staffing location conflicts",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page presents European engineers as part of GoGloby's staffing offer, while the Fact Sheet specifies Latin America.",
+        "fix": "Remove or correct the European staffing location in line with the current service.",
+        "subject": "Staffing engineer location",
+        "page_value": "LatAm/EU",
+        "source_value": "Latin America",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": "table_cell 28",
+            "quote": "GoGloby LatAm/EU: $75K–$85K.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Scrum Master placement unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The sources do not document a Scrum Master placement or list Scrum Master among the roles GoGloby currently recruits or staffs.",
+        "fix": "Verify the historical placement and ensure the case study does not present it as a current service role.",
+        "subject": "Scrum Master placement",
+        "page_value": "Scrum Master",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:company-profile",
+            "part": "table_cell 12",
+            "quote": "Senior Data Engineers · Scrum Master",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Engagement dates are unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The sources do not document that this partnership began in March 2025 or remains active.",
+        "fix": "Verify the engagement dates and current status or remove them.",
+        "subject": "Case study engagement dates",
+        "page_value": "March 2025; ongoing",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:company-profile",
+            "part": "table_cell 10",
+            "quote": "Partnership started March 2025, ongoing.",
+            "verified": true
+          },
+          {
+            "zone_id": "article:the-challenge",
+            "part": "paragraph 4",
+            "quote": "The partnership began in March 2025 and remains active today.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Parallel sourcing model unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The sources do not document four dedicated parallel sourcing squads for this engagement or as a GoGloby model.",
+        "fix": "Verify the squad model and its applicability or remove the claim.",
+        "subject": "Parallel sourcing squads",
+        "page_value": "four parallel sourcing squads",
+        "source_value": "not in Fact Sheet",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "article:the-challenge",
+            "part": "paragraph 4",
+            "quote": "four parallel sourcing squads, one per discipline",
+            "verified": true
+          },
+          {
+            "zone_id": "article:the-numbers",
+            "part": "table_cell 4",
+            "quote": "773 — Processed internally across 4 parallel tracks.",
+            "verified": true
+          },
+          {
+            "zone_id": "article:why-this-case-study-matters",
+            "part": "paragraph 2",
+            "quote": "GoGloby’s parallel squad model exists specifically for situations where sequential hiring is not an option.",
+            "verified": true
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "GoGloby builds fully compliant, AI-capable engineering teams in parallel.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Calibration sessions are unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The sources do not document six calibration sessions with this client's four hiring managers.",
+        "fix": "Verify the engagement-specific calibration details or remove them.",
+        "subject": "Case study calibration sessions",
+        "page_value": "six sessions; four hiring managers",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:the-gogloby-model",
+            "part": "paragraph 1",
+            "quote": "GoGloby conducted 6 deep-dive calibration sessions across the client’s four hiring managers.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Candidate pipeline volumes unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: How we vet",
+        "rule_verified": true,
+        "issue": "The sources do not document that GoGloby sourced 773 candidates and presented 45 for this engagement.",
+        "fix": "Verify the case-specific pipeline volumes or remove them.",
+        "subject": "Case study candidate pipeline",
+        "page_value": "773 sourced; 45 presented",
+        "source_value": "not in Fact Sheet",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "article:the-numbers",
+            "part": null,
+            "quote": "Total candidates sourced\n773",
+            "verified": true
+          },
+          {
+            "zone_id": "article:the-numbers",
+            "part": null,
+            "quote": "Presented to client\n45",
+            "verified": true
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": "table_cell 14",
+            "quote": "3.2% (25 of 773)",
+            "verified": true
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": "table_cell 18",
+            "quote": "55.6% (25 of 45)",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Client testimonial is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: What clients say",
+        "rule_verified": true,
+        "issue": "The Fact Sheet says client quotes are not available and does not contain this testimonial.",
+        "fix": "Verify and obtain approval for the testimonial or remove it.",
+        "subject": "Client testimonial",
+        "page_value": "Engineering Manager testimonial",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:the-testimonial",
+            "part": "paragraph 1",
+            "quote": "The quality of the 25 engineers delivered on time speaks for itself.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "HIPAA certification claim unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The sources do not document HIPAA certification or clearance for the 25 engineers.",
+        "fix": "Verify the certification and clearance claims or remove them.",
+        "subject": "Engineer HIPAA certification",
+        "page_value": "25 of 25 certified or cleared",
+        "source_value": "not in Fact Sheet",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "HIPAA Compliance\n25 of 25 cleared",
+            "verified": true
+          },
+          {
+            "zone_id": "article:the-numbers",
+            "part": "table_cell 10",
+            "quote": "Every engineer completed HIPAA certification, background checks, and PHI handling training",
+            "verified": true
+          },
+          {
+            "zone_id": "article:the-compliance-infrastructure",
+            "part": "list_item 2",
+            "quote": "All 25 engineers completed HIPAA Security Rule training and received certification before first system access.",
+            "verified": true
+          },
+          {
+            "zone_id": "article:why-this-case-study-matters",
+            "part": "paragraph 3",
+            "quote": "BAA, background checks, HIPAA certification, VPN/2FA/island.io, $5M cyber liability coverage",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Business associate agreement unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The sources do not document a business associate agreement, HIPAA business associate status or the stated breach-reporting and audit obligations.",
+        "fix": "Verify the agreement and its obligations or remove the claim.",
+        "subject": "HIPAA business associate agreement",
+        "page_value": "BAA with 24-hour breach reporting and HHS audit rights",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:the-compliance-infrastructure",
+            "part": "list_item 1",
+            "quote": "Every GoGloby-placed engineer covered under a signed BAA",
+            "verified": true
+          },
+          {
+            "zone_id": "article:why-this-case-study-matters",
+            "part": "paragraph 3",
+            "quote": "BAA, background checks, HIPAA certification, VPN/2FA/island.io, $5M cyber liability coverage",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Background screening details unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: How we vet",
+        "rule_verified": true,
+        "issue": "The sources require a full background check but do not specify the six countries or the listed screening components.",
+        "fix": "Verify the case-specific screening details or remove them.",
+        "subject": "Case study background screening",
+        "page_value": "six countries; seven-year criminal and OFAC screening",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:the-compliance-infrastructure",
+            "part": "list_item 3",
+            "quote": "Background checks in 6 countries",
+            "verified": true
+          },
+          {
+            "zone_id": "article:the-compliance-infrastructure",
+            "part": "list_item 3",
+            "quote": "Education, employment, address, 7-year criminal history, and OFAC screening",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Case access controls unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The sources do not document this engagement's island.io access, company-issued-hardware-only requirement or automatic workstation patching.",
+        "fix": "Verify the engagement-specific access controls or remove them.",
+        "subject": "Case study secure access",
+        "page_value": "island.io; company-issued hardware only; automatic patching",
+        "source_value": "not in Fact Sheet",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "article:the-numbers",
+            "part": "table_cell 10",
+            "quote": "including setup for VPN, 2FA, and island.io before gaining system access.",
+            "verified": true
+          },
+          {
+            "zone_id": "article:the-compliance-infrastructure",
+            "part": "list_item 4",
+            "quote": "island.io secure browser for Virtual Environment, company-issued hardware only",
+            "verified": true
+          },
+          {
+            "zone_id": "article:the-compliance-infrastructure",
+            "part": "list_item 4",
+            "quote": "firewall-enabled workstations with automatic patch updates.",
+            "verified": true
+          },
+          {
+            "zone_id": "article:why-this-case-study-matters",
+            "part": "paragraph 3",
+            "quote": "BAA, background checks, HIPAA certification, VPN/2FA/island.io, $5M cyber liability coverage",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "PHI restrictions are unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The sources do not establish the engagement's stated PHI jurisdiction and minimum-necessary access restrictions.",
+        "fix": "Verify the PHI-specific restrictions or remove them.",
+        "subject": "Case study PHI restrictions",
+        "page_value": "PHI not stored or transmitted outside US jurisdictions",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:the-compliance-infrastructure",
+            "part": "list_item 5",
+            "quote": "No PHI stored or transmitted outside US jurisdictions. Minimum-necessary access enforced.",
+            "verified": true
+          },
+          {
+            "zone_id": "article:the-gogloby-model",
+            "part": "table_cell 6",
+            "quote": "AI/ML solution development managed under HIPAA minimum-necessary data access protocols.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Cyber insurance amount conflicts",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page claims $5 million in cyber liability coverage, while the Fact Sheet specifies $3 million in data and cyber-liability insurance.",
+        "fix": "Correct the cyber liability coverage amount.",
+        "subject": "Cyber liability insurance",
+        "page_value": "$5M",
+        "source_value": "$3M",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:the-compliance-infrastructure",
+            "part": "list_item 6",
+            "quote": "$5M cyber liability insurance (first and third party)",
+            "verified": true
+          },
+          {
+            "zone_id": "article:why-this-case-study-matters",
+            "part": "paragraph 3",
+            "quote": "BAA, background checks, HIPAA certification, VPN/2FA/island.io, $5M cyber liability coverage",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Professional liability coverage unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The sources do not document $3 million in professional liability coverage.",
+        "fix": "Verify the professional liability policy and amount or remove the claim.",
+        "subject": "Professional liability insurance",
+        "page_value": "$3M",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:the-compliance-infrastructure",
+            "part": "list_item 6",
+            "quote": "$3M professional liability",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "General liability coverage unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The sources do not document $5 million in general liability coverage.",
+        "fix": "Verify the general liability policy and amount or remove the claim.",
+        "subject": "General liability insurance",
+        "page_value": "$5M",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:the-compliance-infrastructure",
+            "part": "list_item 6",
+            "quote": "$5M general liability",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Onboarding time claim unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics",
+        "rule_verified": true,
+        "issue": "The sources do not document a 25–30-hour onboarding burden for this engagement.",
+        "fix": "Verify the onboarding measurement or remove the claim.",
+        "subject": "Case study onboarding time",
+        "page_value": "~25–30 hours",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": null,
+            "quote": "Onboarding burden\n~25–30 hrs vs 60–120 avg",
+            "verified": true
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": "table_cell 12",
+            "quote": "GoGloby: 25–30 hrs.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Team AI workflow unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The sources do not establish that the entire placed team transitioned to applied AI engineering and uses the named tools as its default workflow.",
+        "fix": "Verify the team-wide workflow claims or remove them.",
+        "subject": "Case study team AI workflow",
+        "page_value": "entire team uses Cursor and GitHub Copilot",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:the-team-the-client-now-has",
+            "part": "paragraph 1",
+            "quote": "the entire GoGloby-placed team transitioned to applied AI engineering as standard operating practice.",
+            "verified": true
+          },
+          {
+            "zone_id": "article:the-team-the-client-now-has",
+            "part": "paragraph 1",
+            "quote": "Every engineer now uses Cursor and GitHub Copilot as primary development tools",
+            "verified": true
+          },
+          {
+            "zone_id": "article:why-this-case-study-matters",
+            "part": "paragraph 5",
+            "quote": "The team GoGloby built is already operating with Cursor and GitHub Copilot as standard tooling",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Project contributions are unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The sources do not document the placed engineers' contributions to the client's EHR infrastructure, ML pipeline or billing platform.",
+        "fix": "Verify the specific project contributions or remove them.",
+        "subject": "Case study engineer contributions",
+        "page_value": "EHR infrastructure, ML pipeline and billing work",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:the-team-the-client-now-has",
+            "part": "table_cell 4",
+            "quote": "GoGloby’s Python, Fullstack, and Data engineers support the underlying EHR data infrastructure.",
+            "verified": true
+          },
+          {
+            "zone_id": "article:the-team-the-client-now-has",
+            "part": "table_cell 6",
+            "quote": "GoGloby’s data engineers contribute to the ML pipeline.",
+            "verified": true
+          },
+          {
+            "zone_id": "article:the-team-the-client-now-has",
+            "part": "table_cell 8",
+            "quote": "GoGloby’s Fullstack and Python engineers work across the $3B billing platform.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Staffing CTA wording differs",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The staffing CTA does not use the approved wording for staffing.",
+        "fix": "Change the CTA to the approved staffing CTA.",
+        "subject": "Staffing CTA",
+        "page_value": "Book A Call",
+        "source_value": "Get vetted profiles",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 2",
+            "quote": "Book A Call",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      }
+    ],
+    "problems": [
+      {
+        "title": "Placement count and timeline unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The sources do not document this engagement's placement of 25 engineers in 58 days.",
+        "fix": "Verify the case-specific placement count and timeline or remove them.",
+        "subject": "Case study placements",
+        "page_value": "25 engineers in 58 days",
+        "source_value": "not in Fact Sheet",
+        "count": 7,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "GoGloby placed 25 Senior Applied AI Engineers in 58 days.",
+            "verified": true
+          },
+          {
+            "zone_id": "og_description",
+            "part": "field 1",
+            "quote": "GoGloby placed 25 Senior Applied AI Engineers in 58 days.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Article.description",
+            "quote": "GoGloby placed 25 Senior Applied AI Engineers in 58 days.",
+            "verified": true
+          },
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 3",
+            "quote": "GoGloby placed 25 senior engineers across DevOps, Python/Data, Fullstack, and iOS in 58 days.",
+            "verified": true,
+            "fragment": "GoGloby placed 25 senior engineers across",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "Engineers Placed\n25 in 58 days",
+            "verified": true,
+            "fragment": "placed 25",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:the-numbers",
+            "part": null,
+            "quote": "Total elapsed time\n58 days",
+            "verified": true,
+            "fragment": "Total elapsed time",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": "table_cell 23",
+            "quote": "25 engineers across 4 disciplines, 4 hiring managers, hard board deadline — placed on time.",
+            "verified": true,
+            "fragment": "25 engineers across 4 disciplines, 4",
+            "place": "table, row \"Time to hire\", column \"What This Means\"",
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Case retention claim is inconsistent",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics",
+        "rule_verified": true,
+        "issue": "The sources do not establish 96% retention for this engagement, and the page's 23 of 25 figure equals 92%, not 96%.",
+        "fix": "Verify the case-specific retention figures and correct the arithmetic throughout.",
+        "subject": "Case study retention",
+        "page_value": "96%; 23 of 25",
+        "source_value": "not in Fact Sheet",
+        "count": 7,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "12 months later, 96% of the team was still in place.",
+            "verified": true
+          },
+          {
+            "zone_id": "og_description",
+            "part": "field 1",
+            "quote": "12 months later, 96% of the team was still in place.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Article.description",
+            "quote": "12 months later, 96% of the team was still",
+            "verified": true
+          },
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 3",
+            "quote": "12 months later, 96% of the team was still in place",
+            "verified": true,
+            "fragment": "12 months later, 96% of the",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "12-Month Retention\n~96%",
+            "verified": true,
+            "fragment": "12-Month Retention",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": "table_cell 7",
+            "quote": "23 of 25 placed engineers active at 12 months",
+            "verified": true,
+            "fragment": "23 of 25 placed engineers active",
+            "place": "table, row \"Team retention\", column \"What This Means\"",
+            "locator": 3
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": "table_cell 8",
+            "quote": "Post-acquisition contractor retention: 60–70% in Year 1. GoGloby: ~96%.",
+            "verified": true,
+            "fragment": "Post-acquisition contractor retention: 60–70% in Year",
+            "place": "table, row \"Team retention\", column \"Industry Benchmark\"",
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Client interview conversion unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics",
+        "rule_verified": true,
+        "issue": "The sources do not document a 55.6% client interview-to-hire conversion rate for this engagement.",
+        "fix": "Verify the case-specific conversion rate or remove it.",
+        "subject": "Client interview conversion",
+        "page_value": "55.6%",
+        "source_value": "not in Fact Sheet",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "Client Interview Conversion\n55.6%",
+            "verified": true,
+            "fragment": "Client Interview Conversion",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:the-numbers",
+            "part": "table_cell 8",
+            "quote": "25 — Represents a 55.6% conversion rate.",
+            "verified": true,
+            "fragment": "25 — Represents a 55.6% conversion",
+            "place": "table, row \"Hired\", column \"Volume and What Happened\"",
+            "locator": 3
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": null,
+            "quote": "Client interview conversion\n55.6% (25 of 45)",
+            "verified": true,
+            "fragment": "Client Interview Conversion",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:why-this-case-study-matters",
+            "part": "heading 4",
+            "quote": "55.6% Client Interview Conversion Means the Hiring Manager’s Time Is Spent Deciding",
+            "verified": true,
+            "fragment": "55.6% Client Interview Conversion Means the",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Interview conversion interpretation is wrong",
+        "category": "other",
+        "severity": "low",
+        "rule": "Fact Sheet: Key metrics",
+        "rule_verified": true,
+        "issue": "A 55.6% interview-to-hire conversion rate does not mean that each interview produced more than one hire.",
+        "fix": "Correct the interpretation of the conversion rate.",
+        "subject": "Interview conversion interpretation",
+        "page_value": "more than one hire per interview",
+        "source_value": null,
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:why-this-case-study-matters",
+            "part": "paragraph 4",
+            "quote": "At 55.6% conversion, every interview the client conducted produced more than one hire on average",
+            "verified": true,
+            "fragment": "At 55.6% conversion, every interview the",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Case vetting rate unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: How we vet",
+        "rule_verified": true,
+        "issue": "The sources state that approximately 4% pass the assessment but do not document this engagement's separate 3.2% funnel rate.",
+        "fix": "Verify the case-specific rate and distinguish it from the overall assessment pass rate, or remove it.",
+        "subject": "Case study vetting rate",
+        "page_value": "3.2%",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "Internal Vetting Rate\n3.2% pass rate",
+            "verified": true,
+            "fragment": "Internal Vetting Rate",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:the-gogloby-model",
+            "part": "paragraph 1",
+            "quote": "These sessions are what compressed GoGloby’s internal pass rate to 3.2%",
+            "verified": true,
+            "fragment": "These sessions are what compressed GoGloby’s",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": null,
+            "quote": "Internal vetting conversion\n3.2% (25 of 773)",
+            "verified": true,
+            "fragment": "Internal vetting conversion",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Case savings claim unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics",
+        "rule_verified": true,
+        "issue": "The sources do not document approximately $2 million in annual savings for this engagement.",
+        "fix": "Verify the engagement-specific savings and calculation or remove the claim.",
+        "subject": "Case study annual savings",
+        "page_value": "~$2M annually",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "Annual Savings\n~$2M vs. US hiring",
+            "verified": true,
+            "fragment": "Standard-,US hiring,-timelines would have",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": null,
+            "quote": "Cost vs. US equivalent\n~$2M saved annually",
+            "verified": true,
+            "fragment": "Cost vs. US equivalent",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Public engineer pricing disclosed",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The page publishes GoGloby engineer rates, which the Glossary prohibits in public content.",
+        "fix": "Remove GoGloby's rates from the case study.",
+        "subject": "GoGloby engineer rates",
+        "page_value": "$75K–$85K per year",
+        "source_value": null,
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": "table_cell 27",
+            "quote": "GoGloby avg $75K–85K/yr vs US market $160K–200K",
+            "verified": true,
+            "fragment": "GoGloby avg $75K–85K/yr vs US market",
+            "place": "table, row \"Cost vs. US equivalent\", column \"What This Means\"",
+            "locator": 3
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": "table_cell 28",
+            "quote": "GoGloby LatAm/EU: $75K–$85K.",
+            "verified": true,
+            "fragment": "GoGloby LatAm/EU: $75K–$85K.",
+            "place": "table, row \"Cost vs. US equivalent\", column \"Industry Benchmark\"",
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "European staffing location conflicts",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page presents European engineers as part of GoGloby's staffing offer, while the Fact Sheet specifies Latin America.",
+        "fix": "Remove or correct the European staffing location in line with the current service.",
+        "subject": "Staffing engineer location",
+        "page_value": "LatAm/EU",
+        "source_value": "Latin America",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": "table_cell 28",
+            "quote": "GoGloby LatAm/EU: $75K–$85K.",
+            "verified": true,
+            "fragment": "GoGloby LatAm/EU: $75K–$85K.",
+            "place": "table, row \"Cost vs. US equivalent\", column \"Industry Benchmark\"",
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Scrum Master placement unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The sources do not document a Scrum Master placement or list Scrum Master among the roles GoGloby currently recruits or staffs.",
+        "fix": "Verify the historical placement and ensure the case study does not present it as a current service role.",
+        "subject": "Scrum Master placement",
+        "page_value": "Scrum Master",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:company-profile",
+            "part": "table_cell 12",
+            "quote": "Senior Data Engineers · Scrum Master",
+            "verified": true,
+            "fragment": "Senior Data Engineers · Scrum Master",
+            "place": "table, row \"Roles Placed\"",
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Engagement dates are unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The sources do not document that this partnership began in March 2025 or remains active.",
+        "fix": "Verify the engagement dates and current status or remove them.",
+        "subject": "Case study engagement dates",
+        "page_value": "March 2025; ongoing",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:company-profile",
+            "part": "table_cell 10",
+            "quote": "Partnership started March 2025, ongoing.",
+            "verified": true,
+            "fragment": "Partnership started March 2025, ongoing.",
+            "place": "table, row \"Trigger\"",
+            "locator": 3
+          },
+          {
+            "zone_id": "article:the-challenge",
+            "part": "paragraph 4",
+            "quote": "The partnership began in March 2025 and remains active today.",
+            "verified": true,
+            "fragment": "The partnership began in March 2025",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Parallel sourcing model unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The sources do not document four dedicated parallel sourcing squads for this engagement or as a GoGloby model.",
+        "fix": "Verify the squad model and its applicability or remove the claim.",
+        "subject": "Parallel sourcing squads",
+        "page_value": "four parallel sourcing squads",
+        "source_value": "not in Fact Sheet",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "article:the-challenge",
+            "part": "paragraph 4",
+            "quote": "four parallel sourcing squads, one per discipline",
+            "verified": true,
+            "fragment": "four parallel sourcing squads, one per",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:the-numbers",
+            "part": "table_cell 4",
+            "quote": "773 — Processed internally across 4 parallel tracks.",
+            "verified": true,
+            "fragment": "773 — Processed internally across 4",
+            "place": "table, row \"Total candidates sourced\", column \"Volume and What Happened\"",
+            "locator": 3
+          },
+          {
+            "zone_id": "article:why-this-case-study-matters",
+            "part": "paragraph 2",
+            "quote": "GoGloby’s parallel squad model exists specifically for situations where sequential hiring is not an option.",
+            "verified": true,
+            "fragment": "GoGloby’s parallel squad model exists specifically",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "GoGloby builds fully compliant, AI-capable engineering teams in parallel.",
+            "verified": true,
+            "fragment": "GoGloby builds fully compliant, AI-capable engineering",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Calibration sessions are unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The sources do not document six calibration sessions with this client's four hiring managers.",
+        "fix": "Verify the engagement-specific calibration details or remove them.",
+        "subject": "Case study calibration sessions",
+        "page_value": "six sessions; four hiring managers",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:the-gogloby-model",
+            "part": "paragraph 1",
+            "quote": "GoGloby conducted 6 deep-dive calibration sessions across the client’s four hiring managers.",
+            "verified": true,
+            "fragment": "GoGloby conducted 6 deep-dive calibration sessions",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Candidate pipeline volumes unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: How we vet",
+        "rule_verified": true,
+        "issue": "The sources do not document that GoGloby sourced 773 candidates and presented 45 for this engagement.",
+        "fix": "Verify the case-specific pipeline volumes or remove them.",
+        "subject": "Case study candidate pipeline",
+        "page_value": "773 sourced; 45 presented",
+        "source_value": "not in Fact Sheet",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "article:the-numbers",
+            "part": null,
+            "quote": "Total candidates sourced\n773",
+            "verified": true,
+            "fragment": "Total candidates sourced",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:the-numbers",
+            "part": null,
+            "quote": "Presented to client\n45",
+            "verified": true,
+            "fragment": "Presented to client",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": "table_cell 14",
+            "quote": "3.2% (25 of 773)",
+            "verified": true,
+            "fragment": "3.2% (25 of 773)",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": "table_cell 18",
+            "quote": "55.6% (25 of 45)",
+            "verified": true,
+            "fragment": "55.6% (25 of 45)",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Client testimonial is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: What clients say",
+        "rule_verified": true,
+        "issue": "The Fact Sheet says client quotes are not available and does not contain this testimonial.",
+        "fix": "Verify and obtain approval for the testimonial or remove it.",
+        "subject": "Client testimonial",
+        "page_value": "Engineering Manager testimonial",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:the-testimonial",
+            "part": "paragraph 1",
+            "quote": "The quality of the 25 engineers delivered on time speaks for itself.",
+            "verified": true,
+            "fragment": "months later, 96%-,of the,-team was still",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "HIPAA certification claim unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The sources do not document HIPAA certification or clearance for the 25 engineers.",
+        "fix": "Verify the certification and clearance claims or remove them.",
+        "subject": "Engineer HIPAA certification",
+        "page_value": "25 of 25 certified or cleared",
+        "source_value": "not in Fact Sheet",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "HIPAA Compliance\n25 of 25 cleared",
+            "verified": true,
+            "fragment": "HIPAA Compliance",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:the-numbers",
+            "part": "table_cell 10",
+            "quote": "Every engineer completed HIPAA certification, background checks, and PHI handling training",
+            "verified": true,
+            "fragment": "Every engineer completed HIPAA certification, background",
+            "place": "table, row \"Compliance-cleared\", column \"Volume and What Happened\"",
+            "locator": 3
+          },
+          {
+            "zone_id": "article:the-compliance-infrastructure",
+            "part": "list_item 2",
+            "quote": "All 25 engineers completed HIPAA Security Rule training and received certification before first system access.",
+            "verified": true,
+            "fragment": "All 25 engineers completed HIPAA Security",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:why-this-case-study-matters",
+            "part": "paragraph 3",
+            "quote": "BAA, background checks, HIPAA certification, VPN/2FA/island.io, $5M cyber liability coverage",
+            "verified": true,
+            "fragment": "background checks, HIPAA certification, VPN/2FA/island.io, $5M",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Business associate agreement unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The sources do not document a business associate agreement, HIPAA business associate status or the stated breach-reporting and audit obligations.",
+        "fix": "Verify the agreement and its obligations or remove the claim.",
+        "subject": "HIPAA business associate agreement",
+        "page_value": "BAA with 24-hour breach reporting and HHS audit rights",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:the-compliance-infrastructure",
+            "part": "list_item 1",
+            "quote": "Every GoGloby-placed engineer covered under a signed BAA",
+            "verified": true,
+            "fragment": "Every GoGloby-placed engineer covered under a",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:why-this-case-study-matters",
+            "part": "paragraph 3",
+            "quote": "BAA, background checks, HIPAA certification, VPN/2FA/island.io, $5M cyber liability coverage",
+            "verified": true,
+            "fragment": "background checks, HIPAA certification, VPN/2FA/island.io, $5M",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Background screening details unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: How we vet",
+        "rule_verified": true,
+        "issue": "The sources require a full background check but do not specify the six countries or the listed screening components.",
+        "fix": "Verify the case-specific screening details or remove them.",
+        "subject": "Case study background screening",
+        "page_value": "six countries; seven-year criminal and OFAC screening",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:the-compliance-infrastructure",
+            "part": "list_item 3",
+            "quote": "Background checks in 6 countries",
+            "verified": true,
+            "fragment": "Background checks in 6 countries",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:the-compliance-infrastructure",
+            "part": "list_item 3",
+            "quote": "Education, employment, address, 7-year criminal history, and OFAC screening",
+            "verified": true,
+            "fragment": "Education, employment, address, 7-year criminal history,",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Case access controls unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The sources do not document this engagement's island.io access, company-issued-hardware-only requirement or automatic workstation patching.",
+        "fix": "Verify the engagement-specific access controls or remove them.",
+        "subject": "Case study secure access",
+        "page_value": "island.io; company-issued hardware only; automatic patching",
+        "source_value": "not in Fact Sheet",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "article:the-numbers",
+            "part": "table_cell 10",
+            "quote": "including setup for VPN, 2FA, and island.io before gaining system access.",
+            "verified": true,
+            "fragment": "including setup for VPN, 2FA, and",
+            "place": "table, row \"Compliance-cleared\", column \"Volume and What Happened\"",
+            "locator": 3
+          },
+          {
+            "zone_id": "article:the-compliance-infrastructure",
+            "part": "list_item 4",
+            "quote": "island.io secure browser for Virtual Environment, company-issued hardware only",
+            "verified": true,
+            "fragment": "island.io secure browser for Virtual Environment,",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:the-compliance-infrastructure",
+            "part": "list_item 4",
+            "quote": "firewall-enabled workstations with automatic patch updates.",
+            "verified": true,
+            "fragment": "firewall-enabled workstations with automatic patch updates.",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:why-this-case-study-matters",
+            "part": "paragraph 3",
+            "quote": "BAA, background checks, HIPAA certification, VPN/2FA/island.io, $5M cyber liability coverage",
+            "verified": true,
+            "fragment": "background checks, HIPAA certification, VPN/2FA/island.io, $5M",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "PHI restrictions are unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The sources do not establish the engagement's stated PHI jurisdiction and minimum-necessary access restrictions.",
+        "fix": "Verify the PHI-specific restrictions or remove them.",
+        "subject": "Case study PHI restrictions",
+        "page_value": "PHI not stored or transmitted outside US jurisdictions",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:the-compliance-infrastructure",
+            "part": "list_item 5",
+            "quote": "No PHI stored or transmitted outside US jurisdictions. Minimum-necessary access enforced.",
+            "verified": true,
+            "fragment": "No PHI stored or transmitted outside",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:the-gogloby-model",
+            "part": "table_cell 6",
+            "quote": "AI/ML solution development managed under HIPAA minimum-necessary data access protocols.",
+            "verified": true,
+            "fragment": "AI/ML solution development managed under HIPAA",
+            "place": "table, row \"Python / Data Engineering\", column \"Technical Scope & Compliance Requirements\"",
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Cyber insurance amount conflicts",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page claims $5 million in cyber liability coverage, while the Fact Sheet specifies $3 million in data and cyber-liability insurance.",
+        "fix": "Correct the cyber liability coverage amount.",
+        "subject": "Cyber liability insurance",
+        "page_value": "$5M",
+        "source_value": "$3M",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:the-compliance-infrastructure",
+            "part": "list_item 6",
+            "quote": "$5M cyber liability insurance (first and third party)",
+            "verified": true,
+            "fragment": "HIPAA certification, VPN/2FA/island.io,-,$5M cyber liability,-coverage) is built",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:why-this-case-study-matters",
+            "part": "paragraph 3",
+            "quote": "BAA, background checks, HIPAA certification, VPN/2FA/island.io, $5M cyber liability coverage",
+            "verified": true,
+            "fragment": "background checks, HIPAA certification, VPN/2FA/island.io, $5M",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Professional liability coverage unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The sources do not document $3 million in professional liability coverage.",
+        "fix": "Verify the professional liability policy and amount or remove the claim.",
+        "subject": "Professional liability insurance",
+        "page_value": "$3M",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:the-compliance-infrastructure",
+            "part": "list_item 6",
+            "quote": "$3M professional liability",
+            "verified": true,
+            "fragment": "$3M professional",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "General liability coverage unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The sources do not document $5 million in general liability coverage.",
+        "fix": "Verify the general liability policy and amount or remove the claim.",
+        "subject": "General liability insurance",
+        "page_value": "$5M",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:the-compliance-infrastructure",
+            "part": "list_item 6",
+            "quote": "$5M general liability",
+            "verified": true,
+            "fragment": "$5M general liability",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Onboarding time claim unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics",
+        "rule_verified": true,
+        "issue": "The sources do not document a 25–30-hour onboarding burden for this engagement.",
+        "fix": "Verify the onboarding measurement or remove the claim.",
+        "subject": "Case study onboarding time",
+        "page_value": "~25–30 hours",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": null,
+            "quote": "Onboarding burden\n~25–30 hrs vs 60–120 avg",
+            "verified": true,
+            "fragment": "Onboarding burden",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": "table_cell 12",
+            "quote": "GoGloby: 25–30 hrs.",
+            "verified": true,
+            "fragment": "GoGloby: 25–30 hrs.",
+            "place": "table, row \"Onboarding burden\", column \"Industry Benchmark\"",
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Team AI workflow unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The sources do not establish that the entire placed team transitioned to applied AI engineering and uses the named tools as its default workflow.",
+        "fix": "Verify the team-wide workflow claims or remove them.",
+        "subject": "Case study team AI workflow",
+        "page_value": "entire team uses Cursor and GitHub Copilot",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:the-team-the-client-now-has",
+            "part": "paragraph 1",
+            "quote": "the entire GoGloby-placed team transitioned to applied AI engineering as standard operating practice.",
+            "verified": true,
+            "fragment": "the entire GoGloby-placed team transitioned to",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:the-team-the-client-now-has",
+            "part": "paragraph 1",
+            "quote": "Every engineer now uses Cursor and GitHub Copilot as primary development tools",
+            "verified": true,
+            "fragment": "Every engineer now uses Cursor and",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:why-this-case-study-matters",
+            "part": "paragraph 5",
+            "quote": "The team GoGloby built is already operating with Cursor and GitHub Copilot as standard tooling",
+            "verified": true,
+            "fragment": "The team GoGloby built is already",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Project contributions are unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The sources do not document the placed engineers' contributions to the client's EHR infrastructure, ML pipeline or billing platform.",
+        "fix": "Verify the specific project contributions or remove them.",
+        "subject": "Case study engineer contributions",
+        "page_value": "EHR infrastructure, ML pipeline and billing work",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:the-team-the-client-now-has",
+            "part": "table_cell 4",
+            "quote": "GoGloby’s Python, Fullstack, and Data engineers support the underlying EHR data infrastructure.",
+            "verified": true,
+            "fragment": "GoGloby’s Python, Fullstack, and Data engineers",
+            "place": "table, row \"AI ambient documentation (launched March 2026)\"",
+            "locator": 3
+          },
+          {
+            "zone_id": "article:the-team-the-client-now-has",
+            "part": "table_cell 6",
+            "quote": "GoGloby’s data engineers contribute to the ML pipeline.",
+            "verified": true,
+            "fragment": "GoGloby’s data engineers contribute to the",
+            "place": "table, row \"No show predictor\"",
+            "locator": 3
+          },
+          {
+            "zone_id": "article:the-team-the-client-now-has",
+            "part": "table_cell 8",
+            "quote": "GoGloby’s Fullstack and Python engineers work across the $3B billing platform.",
+            "verified": true,
+            "fragment": "GoGloby’s Fullstack and Python engineers work",
+            "place": "table, row \"Revenue cycle and billing AI\"",
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Staffing CTA wording differs",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The staffing CTA does not use the approved wording for staffing.",
+        "fix": "Change the CTA to the approved staffing CTA.",
+        "subject": "Staffing CTA",
+        "page_value": "Book A Call",
+        "source_value": "Get vetted profiles",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 2",
+            "quote": "Book A Call",
+            "verified": true,
+            "fragment": "Book A Call",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      }
+    ],
+    "usage": {
+      "input": 13498,
+      "cached_input": 0,
+      "output": 6820
+    },
+    "error": null
+  },
+  "geo": {
+    "hash": "98a12d3b509a013386090aeec49dd8e37fd1179d3cd090d0bffad6e98264867b",
+    "cached": false,
+    "code": [
+      {
+        "id": "trap_terms",
+        "status": "pass",
+        "value": "none in title, H1, meta, og",
+        "places": []
+      },
+      {
+        "id": "em_dash",
+        "status": "fail",
+        "value": "38 found",
+        "places": [
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 1",
+            "value": "— | …on in medical claims annually — the integration clock started…"
+          },
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 3",
+            "value": "— | …f the team was still in place — now building the AI-powered f…"
+          },
+          {
+            "zone_id": "article:company-profile",
+            "part": "table_cell 2",
+            "value": "— | …isted HealthTech SaaS company — US-based, 2,300+ employees, 4…",
+            "place": "table, row \"Client\""
+          },
+          {
+            "zone_id": "article:company-profile",
+            "part": "table_cell 6",
+            "value": "— | Acquired cloud EHR platform — EHR, practice management, med…",
+            "place": "table, row \"Platform\""
+          },
+          {
+            "zone_id": "article:company-profile",
+            "part": "table_cell 10",
+            "value": "— | …t-acquisition EHR integration — board-mandated 58-day deliver…",
+            "place": "table, row \"Trigger\""
+          },
+          {
+            "zone_id": "article:the-challenge",
+            "part": "paragraph 2",
+            "value": "— | …had to ship. Existing systems — serving 17 million patients a…"
+          },
+          {
+            "zone_id": "article:the-challenge",
+            "part": "paragraph 2",
+            "value": "— | …lion in annual medical claims — could not degrade during the …"
+          },
+          {
+            "zone_id": "article:the-challenge",
+            "part": "paragraph 3",
+            "value": "— | … senior engineers at US rates — $160K to $200K per role acros…"
+          },
+          {
+            "zone_id": "article:the-challenge",
+            "part": "paragraph 3",
+            "value": "— | …thon/Data, Fullstack, and iOS — would have cost the company o…"
+          },
+          {
+            "zone_id": "article:the-challenge",
+            "part": "paragraph 4",
+            "value": "— | …ter, and senior domain expert — running simultaneously from d…"
+          },
+          {
+            "zone_id": "article:the-gogloby-model",
+            "part": "paragraph 1",
+            "value": "— | …’s internal pass rate to 3.2% — the filter was precise before…"
+          },
+          {
+            "zone_id": "article:the-gogloby-model",
+            "part": "table_cell 4",
+            "value": "— | …dation across the EHR platform—migrating fragmented third-par…",
+            "place": "table, row \"DevOps / Infrastructure\", column \"Technical Scope & Compliance Requirements\""
+          },
+          {
+            "zone_id": "article:the-testimonial",
+            "part": "paragraph 1",
+            "value": "— | …ication from the GoGloby team — they consistently flagged iss…"
+          },
+          {
+            "zone_id": "article:the-testimonial",
+            "part": "paragraph 1",
+            "value": "— | …ical to keeping us on track.” — Engineering Manager, Nasdaq-l…"
+          },
+          {
+            "zone_id": "article:the-numbers",
+            "part": "table_cell 4",
+            "value": "— | 773 — Processed internally across 4…",
+            "place": "table, row \"Total candidates sourced\", column \"Volume and What Happened\""
+          },
+          {
+            "zone_id": "article:the-numbers",
+            "part": "table_cell 4",
+            "value": "— | …ess, and communication reviews—all before the client’s involv…",
+            "place": "table, row \"Total candidates sourced\", column \"Volume and What Happened\""
+          },
+          {
+            "zone_id": "article:the-numbers",
+            "part": "table_cell 6",
+            "value": "— | 45 — Across 8 roles and 4 hiring m…",
+            "place": "table, row \"Presented to client\", column \"Volume and What Happened\""
+          },
+          {
+            "zone_id": "article:the-numbers",
+            "part": "table_cell 8",
+            "value": "— | 25 — Represents a 55.6% conversion…",
+            "place": "table, row \"Hired\", column \"Volume and What Happened\""
+          },
+          {
+            "zone_id": "article:the-numbers",
+            "part": "table_cell 10",
+            "value": "— | 25 of 25 — Every engineer completed HIPA…",
+            "place": "table, row \"Compliance-cleared\", column \"Volume and What Happened\""
+          },
+          {
+            "zone_id": "article:the-numbers",
+            "part": "table_cell 12",
+            "value": "— | 58 days — Successfully met the board-ma…",
+            "place": "table, row \"Total elapsed time\", column \"Volume and What Happened\""
+          },
+          {
+            "zone_id": "article:the-compliance-infrastructure",
+            "part": "paragraph 1",
+            "value": "— | …staffing partners cannot meet — and that GoGloby built its en…"
+          },
+          {
+            "zone_id": "article:the-compliance-infrastructure",
+            "part": "list_item 6",
+            "value": "— | …bility, $5M general liability — contractual financial protect…"
+          },
+          {
+            "zone_id": "article:the-team-the-client-now-has",
+            "part": "paragraph 1",
+            "value": "— | … as primary development tools — not as experiments, but as th…"
+          },
+          {
+            "zone_id": "article:the-team-the-client-now-has",
+            "part": "table_cell 2",
+            "value": "— | What the Client Is Shipping — GoGloby Engineer Contribution",
+            "place": "table, row \"Product Area\""
+          },
+          {
+            "zone_id": "article:the-team-the-client-now-has",
+            "part": "table_cell 6",
+            "value": "— | …ered appointment risk scoring — assigns no-show probability t…",
+            "place": "table, row \"No show predictor\""
+          },
+          {
+            "zone_id": "article:the-team-the-client-now-has",
+            "part": "table_cell 10",
+            "value": "— | …ird-party tools to native AWS — self-service patterns for dev…",
+            "place": "table, row \"AWS infrastructure\""
+          },
+          {
+            "zone_id": "article:the-team-the-client-now-has",
+            "part": "table_cell 12",
+            "value": "— | … specialties, and urgent care — clinical form management, adv…",
+            "place": "table, row \"iOS EHR Mobile Platform\""
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": "table_cell 7",
+            "value": "— | …engineers active at 12 months — no mass attrition under post-…",
+            "place": "table, row \"Team retention\", column \"What This Means\""
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": "table_cell 11",
+            "value": "— | …t, cleared, and context-aware — not working through orientati…",
+            "place": "table, row \"Onboarding burden\", column \"What This Means\""
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": "table_cell 15",
+            "value": "— | … 4 disciplines simultaneously — the client only saw pre-valid…",
+            "place": "table, row \"Internal vetting conversion\", column \"What This Means\""
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": "table_cell 23",
+            "value": "— | …managers, hard board deadline — placed on time.",
+            "place": "table, row \"Time to hire\", column \"What This Means\""
+          },
+          {
+            "zone_id": "article:engagement-metrics",
+            "part": "table_cell 27",
+            "value": "— | …00K across the discipline mix — no reduction in seniority or …",
+            "place": "table, row \"Cost vs. US equivalent\", column \"What This Means\""
+          },
+          {
+            "zone_id": "article:why-this-case-study-matters",
+            "part": "paragraph 2",
+            "value": "— | …egotiable. Standard US hiring — 60 to 90 days per senior role…"
+          },
+          {
+            "zone_id": "article:why-this-case-study-matters",
+            "part": "paragraph 2",
+            "value": "— | …t $160K to $200K per engineer — would have cost the integrati…"
+          },
+          {
+            "zone_id": "article:why-this-case-study-matters",
+            "part": "paragraph 3",
+            "value": "— | …re company’s MSA. GoGloby can — because the compliance infras…"
+          },
+          {
+            "zone_id": "article:why-this-case-study-matters",
+            "part": "paragraph 4",
+            "value": "— | …more than one hire on average — protecting the bandwidth of a…"
+          },
+          {
+            "zone_id": "article:why-this-case-study-matters",
+            "part": "paragraph 5",
+            "value": "— | …b Copilot as standard tooling — building the features (AI amb…"
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "value": "— | …der board pressure to deliver — the constraint is execution. …"
+          }
+        ]
+      },
+      {
+        "id": "ampersand",
+        "status": "fail",
+        "value": "1 found",
+        "places": [
+          {
+            "zone_id": "article:the-gogloby-model",
+            "part": "table_cell 2",
+            "value": "& | Technical Scope & Compliance Requirements",
+            "place": "table, row \"Squad / Track\", column \"Technical Scope & Compliance Requirements\""
+          }
+        ]
+      },
+      {
+        "id": "uk_spelling",
+        "status": "pass",
+        "value": "none",
+        "places": []
+      }
+    ],
+    "llm": [
+      {
+        "id": "answer_first",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "The engineering challenge was real: multiple teams, multiple technical disciplines, a hard board deadline, and a platform where every bug has real consequences for real patients.",
+        "note": "The first two sentences describe the challenge but do not explain how the company met the deadline; put the answer in those sentences.",
+        "evidence_verified": true,
+        "fragment": "The engineering challenge was real:"
+      },
+      {
+        "id": "recruiting_firm_early",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "This is a case study, so the recruiting-firm check does not apply.",
+        "evidence_verified": null
+      },
+      {
+        "id": "buyer_ready",
+        "answer": "yes",
+        "value": "buyer_ready",
+        "zone_id": "page",
+        "evidence": "The engineering team needed to grow by 25 people",
+        "note": "The case study addresses an engineering buyer facing a hiring and delivery deadline.",
+        "evidence_verified": true,
+        "fragment": "the engineering team needed to grow"
+      },
+      {
+        "id": "target_keyword",
+        "answer": "yes",
+        "value": "AI engineer staffing",
+        "zone_id": "meta_description",
+        "evidence": "GoGloby placed 25 Senior Applied AI Engineers in 58 days.",
+        "note": "AI engineer staffing best matches the case study’s engineering placement focus.",
+        "evidence_verified": true
+      },
+      {
+        "id": "uses_data",
+        "answer": "yes",
+        "value": null,
+        "zone_id": "article:company-profile",
+        "evidence": "Post-acquisition EHR integration — board-mandated 58-day delivery window. Partnership started March 2025, ongoing.",
+        "note": "The article provides a numerical delivery window alongside the partnership’s start date.",
+        "evidence_verified": true,
+        "fragment": "Post-acquisition EHR integration — board-mandated 58-day"
+      },
+      {
+        "id": "proof_background",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "The background-proof check does not apply to case studies.",
+        "evidence_verified": null
+      },
+      {
+        "id": "sell_against_open_role",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "The open-role comparison check does not apply to case studies.",
+        "evidence_verified": null
+      }
+    ],
+    "placement": {
+      "id": "target_keyword_placement",
+      "status": "fail",
+      "value": "AI engineer staffing",
+      "missing": [
+        "title",
+        "h1",
+        "first_paragraph",
+        "meta_description",
+        "h2"
+      ]
+    },
+    "usage": {
+      "input": 3284,
+      "cached_input": 8847,
+      "output": 763
+    },
+    "error": null
+  },
+  "seo": {
+    "checks": [
+      {
+        "id": "http_status",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "200",
+        "severity": "high"
+      },
+      {
+        "id": "title_length",
+        "status": "pass",
+        "zone_id": "title",
+        "value": "53 characters",
+        "severity": "medium"
+      },
+      {
+        "id": "meta_present",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "110 characters",
+        "severity": "high"
+      },
+      {
+        "id": "meta_length",
+        "status": "fail",
+        "zone_id": "meta_description",
+        "value": "110 characters (120-158)",
+        "severity": "low"
+      },
+      {
+        "id": "h1_count",
+        "status": "pass",
+        "zone_id": "h1",
+        "value": "1",
+        "severity": "high"
+      },
+      {
+        "id": "canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+        "severity": "high"
+      },
+      {
+        "id": "indexable",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "severity": "high"
+      },
+      {
+        "id": "schema_required",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "present",
+        "severity": "medium"
+      },
+      {
+        "id": "schema_recommended",
+        "status": "fail",
+        "zone_id": "json_ld",
+        "value": "missing: BreadcrumbList",
+        "severity": "medium"
+      },
+      {
+        "id": "dates",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "published: 2026-05-01T02:06:54+03:00; modified: 2026-05-12T16:32:07+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "date_mismatch",
+        "status": "pass",
+        "zone_id": "date",
+        "value": "visible \"Updated on May 12, 2026\" vs dateModified 2026-05-12T16:32:07+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "broken_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 checked",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "redirecting_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "none",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "link_to_services",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "no link to /services/*",
+        "severity": "medium"
+      },
+      {
+        "id": "alt_missing",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without alt",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_empty",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 with empty alt",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "image_dimensions",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without width/height",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "heading_order",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "og_present",
+        "status": "pass",
+        "zone_id": "og_title",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "og_url_canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "og:url https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/ vs canonical https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+        "severity": "low"
+      },
+      {
+        "id": "twitter_card",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "summary_large_image",
+        "severity": "low"
+      },
+      {
+        "id": "html_lang",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "en-US",
+        "severity": "low"
+      },
+      {
+        "id": "viewport",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "jsonld_valid",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "3 block(s)",
+        "severity": "high"
+      },
+      {
+        "id": "article_fields",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "anchors_resolve",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "11 checked",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "faq_schema_matches_dom",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "accordion block: false, FAQPage schema: false",
+        "severity": "low"
+      }
+    ]
+  }
+}

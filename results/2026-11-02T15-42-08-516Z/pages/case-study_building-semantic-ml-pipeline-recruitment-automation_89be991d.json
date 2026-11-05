@@ -1,0 +1,697 @@
+{
+  "schema_version": 2,
+  "url": "https://gogloby.com/case-study/building-semantic-ml-pipeline-recruitment-automation/",
+  "final_url": "https://gogloby.com/case-study/building-semantic-ml-pipeline-recruitment-automation/",
+  "status": 200,
+  "title": "A Semantic ML Pipeline: How GoGloby Cut Screening Time by 85%",
+  "category": "Resources",
+  "subsection": "Case studies",
+  "profile": "case_study",
+  "geo_type": "article",
+  "template": "article",
+  "checked_at": "2026-11-02T15:46:17.359Z",
+  "zones": [
+    {
+      "id": "title",
+      "label": "Title",
+      "kind": "title"
+    },
+    {
+      "id": "meta_description",
+      "label": "Meta description",
+      "kind": "meta_description"
+    },
+    {
+      "id": "og_title",
+      "label": "og:title",
+      "kind": "og_title"
+    },
+    {
+      "id": "og_description",
+      "label": "og:description",
+      "kind": "og_description"
+    },
+    {
+      "id": "json_ld",
+      "label": "Structured data (JSON-LD)",
+      "kind": "json_ld"
+    },
+    {
+      "id": "h1",
+      "label": "H1",
+      "kind": "h1"
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "kind": "date"
+    },
+    {
+      "id": "toc",
+      "label": "Table of contents",
+      "kind": "toc"
+    },
+    {
+      "id": "article:intro",
+      "label": "Intro",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:achievements-after-partnering-with-gogloby",
+      "label": "Achievements After Partnering With GoGloby",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:the-situation-at-a-glance",
+      "label": "The Situation at a Glance",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:the-problem",
+      "label": "The Problem",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:engineering-the-solution",
+      "label": "Engineering the Solution",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:key-engineering-decisions",
+      "label": "Key Engineering Decisions",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:results",
+      "label": "Results",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-we-d-tell-engineers-starting-this",
+      "label": "What We’d Tell Engineers Starting This",
+      "kind": "article_section"
+    }
+  ],
+  "zone_warnings": [],
+  "shared_variants": [
+    "banner_cta@12",
+    "modals@1"
+  ],
+  "compliance": {
+    "hash": "1525dbc717998a6b435edbed7b583281b5fa050c7472348c7e7d07a71cd51453",
+    "cached": false,
+    "action": "rewrite",
+    "summary": "The case study presents GoGloby as an Applied AI engineering and product-building company, rather than the approved staffing and recruiting agency. Its performance figures and pipeline claims are not substantiated by the Fact Sheet, and a section addresses engineers rather than hiring buyers.",
+    "problems": [
+      {
+        "title": "Applied AI product-company positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Glossary §§1, 7",
+        "rule_verified": true,
+        "issue": "The page’s central story describes GoGloby building an ML pipeline and developing a client-facing product line, which conflicts with its approved positioning as a staffing and recruiting agency.",
+        "fix": "Rework the page’s main message to align with GoGloby’s approved positioning, and do not carry forward the unsupported engineering-team or product-line framing.",
+        "subject": "GoGloby positioning",
+        "page_value": "ML pipeline and client-facing market-reports product line",
+        "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "title",
+            "part": "field 1",
+            "quote": "A Semantic ML Pipeline: How GoGloby Cut Screening Time by 85%",
+            "verified": true
+          },
+          {
+            "zone_id": "article:engineering-the-solution",
+            "part": "paragraph 2",
+            "quote": "The GoGloby Applied AI Engineering team built an end-to-end ML pipeline",
+            "verified": true,
+            "fragment": "The GoGloby Applied AI Engineering team"
+          },
+          {
+            "zone_id": "article:results",
+            "part": "paragraph 1",
+            "quote": "the clustering layer produced talent market reports as a new product line.",
+            "verified": true,
+            "fragment": "the clustering layer produced talent market"
+          },
+          {
+            "zone_id": "article:what-we-d-tell-engineers-starting-this",
+            "part": "list_item 5",
+            "quote": "the team productized it as client-facing market reports.",
+            "verified": true,
+            "fragment": "the team productized it as client-facing"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Unverified pipeline results and claims",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The Fact Sheet does not substantiate the page’s screening, cost, ROI, infrastructure, or pipeline performance claims, including the headline results.",
+        "fix": "Verify these claims with the company before retaining them, and remove any that cannot be substantiated.",
+        "subject": "GoGloby case-study results",
+        "page_value": "85% screening-time reduction, $0.02 per profile, 340% ROI",
+        "source_value": "not in Fact Sheet",
+        "count": 15,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "slash candidate screening time by 85% and reduce costs to $0.02 per profile.",
+            "verified": true
+          },
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "ROI\n340% within 6 months",
+            "verified": true,
+            "fragment": "340% within 6 months"
+          },
+          {
+            "zone_id": "article:the-situation-at-a-glance",
+            "part": null,
+            "quote": "Infrastructure cost\n$400/month",
+            "verified": true,
+            "fragment": "Infrastructure cost"
+          },
+          {
+            "zone_id": "article:the-problem",
+            "part": "paragraph 3",
+            "quote": "Screening consumed 40% of total recruiter time.",
+            "verified": true,
+            "fragment": "Screening consumed 40% of total recruiter"
+          },
+          {
+            "zone_id": "article:the-problem",
+            "part": "paragraph 4",
+            "quote": "2 recruiters evaluating the same candidate would agree only 60% of the time.",
+            "verified": true,
+            "fragment": "2 recruiters evaluating the same candidate"
+          },
+          {
+            "zone_id": "article:engineering-the-solution",
+            "part": "paragraph 3",
+            "quote": "The scoring engine processes hundreds of candidates per role in seconds",
+            "verified": true,
+            "fragment": "The scoring engine processes hundreds of"
+          },
+          {
+            "zone_id": "article:engineering-the-solution",
+            "part": "paragraph 7",
+            "quote": "Mistral-7B normalizes and cleans unstructured text at 1,000 documents per hour with 94% extraction accuracy.",
+            "verified": true,
+            "fragment": "Mistral-7B normalizes and cleans unstructured text"
+          },
+          {
+            "zone_id": "article:engineering-the-solution",
+            "part": "paragraph 10",
+            "quote": "PostgreSQL with pgvector and IVFFlat indexing enables sub-linear nearest-neighbor search across 1M+ candidate profiles.",
+            "verified": true,
+            "fragment": "pipeline runs on-,PostgreSQL with pgvector,-— no exotic"
+          },
+          {
+            "zone_id": "article:key-engineering-decisions",
+            "part": null,
+            "quote": "Mistral-7B\n7B\n$873/mo\n94%",
+            "verified": true,
+            "fragment": null
+          },
+          {
+            "zone_id": "article:key-engineering-decisions",
+            "part": null,
+            "quote": "OpenAI text-embedding-3-large\n3,072\n$0.13",
+            "verified": true,
+            "fragment": "OpenAI text-embedding-3-large,-produces 3,072-dimensional vectors"
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "Candidate evaluation consistency\n60% agreement\n91% agreement",
+            "verified": true,
+            "fragment": "Candidate Evaluation Consistency"
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "Cost per candidate scored\n~$3.20 (manual)\n$0.02",
+            "verified": true,
+            "fragment": "Cost Per Candidate Scored"
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "Monthly infrastructure spend\n—\n$400",
+            "verified": true,
+            "fragment": "Monthly infrastructure spend"
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "Job postings handled simultaneously\nBaseline\n3× baseline",
+            "verified": true,
+            "fragment": "Job Postings Handled Simultaneously"
+          },
+          {
+            "zone_id": "article:what-we-d-tell-engineers-starting-this",
+            "part": "list_item 2",
+            "quote": "A 13-point accuracy drop on a $195/month saving creates far more expensive downstream problems",
+            "verified": true,
+            "fragment": "over Llama-3B delivered-,a 13-point accuracy,-improvement that paid"
+          }
+        ],
+        "location_unverified": false
+      },
+      {
+        "title": "Advice aimed at engineers",
+        "category": "wrong_audience",
+        "severity": "medium",
+        "rule": "Glossary §9",
+        "rule_verified": true,
+        "issue": "This section addresses engineers seeking technical advice instead of companies ready to hire staffing or recruiting services.",
+        "fix": "Remove or refocus the section so it speaks to hiring buyers rather than engineers starting a technical project.",
+        "subject": "Audience",
+        "page_value": "Advice for engineers starting a project",
+        "source_value": null,
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:what-we-d-tell-engineers-starting-this",
+            "part": "heading 1",
+            "quote": "What We’d Tell Engineers Starting This",
+            "verified": true,
+            "fragment": "What We’d Tell Engineers Starting This"
+          }
+        ],
+        "location_unverified": false
+      }
+    ],
+    "usage": {
+      "input": 12286,
+      "cached_input": 0,
+      "output": 2623
+    },
+    "error": null
+  },
+  "geo": {
+    "hash": "002516681a040f4569cc40a2eed8487c38a6ec2ca2793cb255444ad438220b12",
+    "cached": false,
+    "code": [
+      {
+        "id": "trap_terms",
+        "status": "pass",
+        "value": "none in title, H1, meta, og",
+        "places": []
+      },
+      {
+        "id": "em_dash",
+        "status": "fail",
+        "value": "17 found",
+        "places": [
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 2",
+            "value": "— | …uilding a semantic ML pipeline—and the reality of what it too…"
+          },
+          {
+            "zone_id": "article:the-problem",
+            "part": "paragraph 3",
+            "value": "— | … became a constant bottleneck — the majority of productive ho…"
+          },
+          {
+            "zone_id": "article:the-problem",
+            "part": "paragraph 5",
+            "value": "— | … headcount. Growth was linear — and so was cost. Process auto…"
+          },
+          {
+            "zone_id": "article:the-problem",
+            "part": "paragraph 6",
+            "value": "— | …ability backend architecture” — despite being exactly the rig…"
+          },
+          {
+            "zone_id": "article:engineering-the-solution",
+            "part": "paragraph 3",
+            "value": "— | …s on PostgreSQL with pgvector — no exotic infrastructure, no …"
+          },
+          {
+            "zone_id": "article:engineering-the-solution",
+            "part": "paragraph 4",
+            "value": "— | …p building and client context — the work that actually requir…"
+          },
+          {
+            "zone_id": "article:engineering-the-solution",
+            "part": "paragraph 6",
+            "value": "— | …, Word docs, plain text, HTML — multiple formats unified into…"
+          },
+          {
+            "zone_id": "article:key-engineering-decisions",
+            "part": "paragraph 3",
+            "value": "— | …s on domain-specific language — technical job titles, framewo…"
+          },
+          {
+            "zone_id": "article:key-engineering-decisions",
+            "part": "paragraph 4",
+            "value": "— | …sional terminology benchmarks — the nuance between “Staff Eng…"
+          },
+          {
+            "zone_id": "article:key-engineering-decisions",
+            "part": "paragraph 5",
+            "value": "— | …tional data and vector search — with IVFFlat indexing deliver…"
+          },
+          {
+            "zone_id": "article:results",
+            "part": "table_cell 26",
+            "value": "— | —"
+          },
+          {
+            "zone_id": "article:results",
+            "part": "paragraph 1",
+            "value": "— | …Non-obvious candidate matches — invisible to keyword search —…"
+          },
+          {
+            "zone_id": "article:results",
+            "part": "paragraph 1",
+            "value": "— | …— invisible to keyword search — surfaced consistently. And th…"
+          },
+          {
+            "zone_id": "article:what-we-d-tell-engineers-starting-this",
+            "part": "list_item 1",
+            "value": "— | …rofiles with IVFFlat indexing — and keeps your stack simple a…"
+          },
+          {
+            "zone_id": "article:what-we-d-tell-engineers-starting-this",
+            "part": "list_item 2",
+            "value": "— | …expensive downstream problems — bad shortlists, recruiter rew…"
+          },
+          {
+            "zone_id": "article:what-we-d-tell-engineers-starting-this",
+            "part": "list_item 3",
+            "value": "— | …he pipeline before embeddings — not after. Sensitive data nev…"
+          },
+          {
+            "zone_id": "article:what-we-d-tell-engineers-starting-this",
+            "part": "list_item 5",
+            "value": "— | …rastructure was already there — the team productized it as cl…"
+          }
+        ]
+      },
+      {
+        "id": "ampersand",
+        "status": "fail",
+        "value": "1 found",
+        "places": [
+          {
+            "zone_id": "article:engineering-the-solution",
+            "part": "heading 4",
+            "value": "& | 2. Text Extraction & Cleaning"
+          }
+        ]
+      },
+      {
+        "id": "uk_spelling",
+        "status": "pass",
+        "value": "none",
+        "places": []
+      }
+    ],
+    "llm": [
+      {
+        "id": "answer_first",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "Recruiters were losing 4 to 6 hours per role just screening.",
+        "note": "The opening describes the screening problem but does not answer how GoGloby replaced manual review with a semantic ML pipeline; revise the first two sentences to answer the H1.",
+        "evidence_verified": true,
+        "fragment": "Recruiters were losing 4 to 6"
+      },
+      {
+        "id": "recruiting_firm_early",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "This is a case study, so this check does not apply.",
+        "evidence_verified": null
+      },
+      {
+        "id": "buyer_ready",
+        "answer": "no",
+        "value": "informational",
+        "zone_id": "page",
+        "evidence": "The core insight was that candidate-job matching is fundamentally a semantic similarity problem.",
+        "note": "The page focuses on explaining a technical pipeline rather than addressing companies ready to hire Data and AI engineers.",
+        "evidence_verified": true,
+        "fragment": "The core insight was that candidate-job"
+      },
+      {
+        "id": "target_keyword",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "No term from Glossary §6 best matches this case study.",
+        "evidence_verified": null
+      },
+      {
+        "id": "uses_data",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:results",
+        "evidence": "Screening time per role\n4–6 hours\n45–60 minutes\n↓ 85%",
+        "note": "The article includes quotable metrics, but does not provide a nearby source or date for them.",
+        "evidence_verified": true,
+        "fragment": "Screening Time Per Role"
+      },
+      {
+        "id": "proof_background",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "This is a case study, so this check does not apply.",
+        "evidence_verified": null
+      },
+      {
+        "id": "sell_against_open_role",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "This is a case study, so this check does not apply.",
+        "evidence_verified": null
+      }
+    ],
+    "placement": null,
+    "usage": {
+      "input": 11174,
+      "cached_input": 0,
+      "output": 897
+    },
+    "error": null
+  },
+  "seo": {
+    "checks": [
+      {
+        "id": "http_status",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "200",
+        "severity": "high"
+      },
+      {
+        "id": "title_length",
+        "status": "fail",
+        "severity": "medium",
+        "zone_id": "title",
+        "value": "61 characters (max 60)"
+      },
+      {
+        "id": "meta_present",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "126 characters",
+        "severity": "high"
+      },
+      {
+        "id": "meta_length",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "126 characters (120-158)",
+        "severity": "low"
+      },
+      {
+        "id": "h1_count",
+        "status": "pass",
+        "zone_id": "h1",
+        "value": "1",
+        "severity": "high"
+      },
+      {
+        "id": "canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "https://gogloby.com/case-study/building-semantic-ml-pipeline-recruitment-automation/",
+        "severity": "high"
+      },
+      {
+        "id": "indexable",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "severity": "high"
+      },
+      {
+        "id": "schema_required",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "present",
+        "severity": "medium"
+      },
+      {
+        "id": "schema_recommended",
+        "status": "fail",
+        "zone_id": "json_ld",
+        "value": "missing: BreadcrumbList",
+        "severity": "medium"
+      },
+      {
+        "id": "dates",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "published: 2026-05-06T21:05:06+03:00; modified: 2026-05-12T16:41:29+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "date_mismatch",
+        "status": "pass",
+        "zone_id": "date",
+        "value": "visible \"Updated on May 12, 2026\" vs dateModified 2026-05-12T16:41:29+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "broken_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 checked",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "redirecting_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "none",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "link_to_services",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "no link to /services/*",
+        "severity": "medium"
+      },
+      {
+        "id": "alt_missing",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without alt",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_empty",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 with empty alt",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "image_dimensions",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without width/height",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "heading_order",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "og_present",
+        "status": "pass",
+        "zone_id": "og_title",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "og_url_canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "og:url https://gogloby.com/case-study/building-semantic-ml-pipeline-recruitment-automation/ vs canonical https://gogloby.com/case-study/building-semantic-ml-pipeline-recruitment-automation/",
+        "severity": "low"
+      },
+      {
+        "id": "twitter_card",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "summary_large_image",
+        "severity": "low"
+      },
+      {
+        "id": "html_lang",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "en-US",
+        "severity": "low"
+      },
+      {
+        "id": "viewport",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "jsonld_valid",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "3 block(s)",
+        "severity": "high"
+      },
+      {
+        "id": "article_fields",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "anchors_resolve",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "8 checked",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "faq_schema_matches_dom",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "accordion block: false, FAQPage schema: false",
+        "severity": "low"
+      }
+    ]
+  }
+}

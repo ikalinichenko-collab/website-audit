@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "run_id": "2026-11-02T15-34-22-443Z",
+  "basics": {
+    "robots": {
+      "value": "all allowed",
+      "ok": true
+    },
+    "llms_txt": {
+      "value": "present",
+      "ok": true
+    },
+    "sitemaps": {
+      "https://gogloby.com/post-sitemap.xml": 269,
+      "https://gogloby.com/page-sitemap.xml": 29,
+      "https://gogloby.com/country-guides-sitemap.xml": 43,
+      "https://gogloby.com/guides-sitemap.xml": 10,
+      "https://gogloby.com/use-cases-sitemap.xml": 15,
+      "https://gogloby.com/jobs-sitemap.xml": 4,
+      "https://gogloby.com/hire-sitemap.xml": 191,
+      "https://gogloby.com/glossary-ai-sitemap.xml": 40,
+      "https://gogloby.com/glossary-term-sitemap.xml": 83,
+      "https://gogloby.com/category-sitemap.xml": 3,
+      "https://gogloby.com/author-sitemap.xml": 2
+    }
+  },
+  "scope_counts": {
+    "Services/Services": 1
+  },
+  "shared": {
+    "variants": [
+      {
+        "id": "modals@1",
+        "zone": "modals",
+        "text_hash": "51b1c75972bb74eb2ab21f13efd0ae1ebf30e5c0435e5c8bc744aa0f8ef49e56",
+        "pages": [
+          "https://gogloby.com/services/hire-ai-engineers/"
+        ]
+      }
+    ],
+    "compliance": null
+  },
+  "site_schema": null,
+  "seo": {
+    "duplicates": [],
+    "collapsed": [],
+    "sitemap_hygiene": []
+  }
+}

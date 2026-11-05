@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import { api, type ResourceInfo } from "../api.js";
 import { TextEditor } from "../components/ResourceEditor.js";
 
@@ -6,6 +7,7 @@ export function Sources() {
   const [items, setItems] = useState<ResourceInfo[]>([]);
   const [open, setOpen] = useState<string>("");
   const [error, setError] = useState<string | null>(null);
+  const [params] = useSearchParams();
 
   useEffect(() => {
     api
@@ -13,7 +15,8 @@ export function Sources() {
       .then((r) => {
         const s = r.filter((x) => x.group === "sources");
         setItems(s);
-        if (s[0]) setOpen(s[0].id);
+        const wanted = params.get("doc");
+        setOpen(s.find((x) => x.id === wanted)?.id ?? s[0]?.id ?? "");
       })
       .catch((e) => setError(String(e instanceof Error ? e.message : e)));
   }, []);
@@ -50,7 +53,7 @@ export function Sources() {
           <p className="text-sm text-slate-600 dark:text-slate-400">
             {current.description} <span className="text-xs text-slate-500">({current.file})</span>
           </p>
-          <TextEditor key={current.id} id={current.id} rows={26} upload />
+          <TextEditor key={current.id} id={current.id} rows={26} upload focus={params.get("at")} />
         </div>
       )}
     </div>

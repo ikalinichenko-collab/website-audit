@@ -1,0 +1,1143 @@
+{
+  "schema_version": 2,
+  "run_id": "2026-11-04T18-15-53-173Z",
+  "basics": {
+    "robots": {
+      "value": "all allowed",
+      "ok": true
+    },
+    "llms_txt": {
+      "value": "present",
+      "ok": true
+    },
+    "sitemaps": {
+      "https://gogloby.com/post-sitemap.xml": 269,
+      "https://gogloby.com/page-sitemap.xml": 29,
+      "https://gogloby.com/country-guides-sitemap.xml": 43,
+      "https://gogloby.com/guides-sitemap.xml": 10,
+      "https://gogloby.com/use-cases-sitemap.xml": 15,
+      "https://gogloby.com/jobs-sitemap.xml": 6,
+      "https://gogloby.com/hire-sitemap.xml": 191,
+      "https://gogloby.com/glossary-ai-sitemap.xml": 40,
+      "https://gogloby.com/glossary-term-sitemap.xml": 83,
+      "https://gogloby.com/category-sitemap.xml": 3,
+      "https://gogloby.com/author-sitemap.xml": 2
+    }
+  },
+  "scope_counts": {
+    "Resources/Case studies": 6
+  },
+  "shared": {
+    "variants": [
+      {
+        "id": "modals@1",
+        "zone": "modals",
+        "text_hash": "dbfdcca487cce210d6725bc00c2c046080b38f6c9594227629f6eeeebd1cab40",
+        "pages": [
+          "https://gogloby.com/case-study/healthtech-company-applied-ai-engineers/",
+          "https://gogloby.com/case-study/applied-ai-engineering-roi-case-study/",
+          "https://gogloby.com/case-study/building-semantic-ml-pipeline-recruitment-automation/",
+          "https://gogloby.com/case-study/ai-recruiting-agent-slack-case-study-1/",
+          "https://gogloby.com/case-study/how-gogloby-engineered-a-production-voice-ai-system-that-screens-candidates-85-faster-at-96-lower-cost/",
+          "https://gogloby.com/case-study/"
+        ]
+      }
+    ],
+    "compliance": {
+      "hash": "",
+      "cached": false,
+      "action": "fix",
+      "summary": "The form modal promises a response time that is not stated in the company sources. Verify or remove that commitment.",
+      "llm_problems": [
+        {
+          "title": "Unverified response-time promise",
+          "category": "company_facts",
+          "severity": "medium",
+          "rule": "Fact Sheet: Identity",
+          "rule_verified": true,
+          "issue": "The modal promises a response within one business day, but the sources do not state a response-time commitment.",
+          "fix": "Verify this commitment with the company or remove it from the modal.",
+          "subject": "Response time",
+          "page_value": "Within one business day",
+          "source_value": "not in Fact Sheet",
+          "count": 1,
+          "locations": [
+            {
+              "zone_id": "modals@1",
+              "part": "paragraph 1",
+              "quote": "We will respond within one business day.",
+              "verified": true
+            }
+          ],
+          "location_unverified": false,
+          "source": "llm",
+          "unverified": true,
+          "basis": "not_in_sources"
+        }
+      ],
+      "problems": [
+        {
+          "title": "Unverified response-time promise",
+          "category": "company_facts",
+          "severity": "medium",
+          "rule": "Fact Sheet: Identity",
+          "rule_verified": true,
+          "issue": "The modal promises a response within one business day, but the sources do not state a response-time commitment.",
+          "fix": "Verify this commitment with the company or remove it from the modal.",
+          "subject": "Response time",
+          "page_value": "Within one business day",
+          "source_value": "not in Fact Sheet",
+          "count": 1,
+          "locations": [
+            {
+              "zone_id": "modals@1",
+              "part": "paragraph 1",
+              "quote": "We will respond within one business day.",
+              "verified": true
+            }
+          ],
+          "location_unverified": false,
+          "source": "llm",
+          "unverified": true,
+          "basis": "not_in_sources"
+        }
+      ],
+      "usage": {
+        "input": 106,
+        "cached_input": 10066,
+        "output": 350
+      },
+      "error": null
+    }
+  },
+  "site_schema": {
+    "hash": "",
+    "cached": false,
+    "action": "rewrite",
+    "summary": "The schema presents GoGloby as an Applied AI Engineering and software-development provider rather than the approved staffing and recruiting agency. It also describes obsolete development offers and includes multiple unsupported service claims, timelines, guarantees, and founder claims.",
+    "llm_problems": [
+      {
+        "title": "Applied AI engineering positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Glossary §7",
+        "rule_verified": true,
+        "issue": "The schema positions GoGloby as an Applied AI Engineering partner that turns engineering into AI-native production, contrary to the approved staffing and recruiting description.",
+        "fix": "Replace the Applied AI Engineering positioning with the approved company description and describe only GoGloby's staffing and recruiting services.",
+        "subject": "GoGloby positioning",
+        "page_value": "Applied AI Engineering partner",
+        "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.slogan",
+            "quote": "Applied AI Engineering Partner",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "GoGloby turns engineering into AI-native production.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "WebSite.description",
+            "quote": "GoGloby is an Applied AI Engineering partner",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Discontinued AI development services",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §2 and §7",
+        "rule_verified": true,
+        "issue": "The schema sells Applied AI Engineering and generative AI delivery, including building copilots, agents, and RAG applications, which are development services rather than GoGloby's recruiting and staffing offers.",
+        "fix": "Remove the development-service offers and retain only the two approved recruiting and staffing services.",
+        "subject": "AI development services",
+        "page_value": "Generative AI Development Services",
+        "source_value": "US Data & AI Engineers Recruiting; Nearshore Data & AI Engineers Staffing",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.slogan",
+            "quote": "Applied AI Engineering",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.name",
+            "quote": "Generative AI Development Services",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "build copilots, AI agents, RAG applications, and agentic workflows",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Incorrect service names and scope",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "decisions.md: Service pages and official spelling; Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The catalog uses labels other than the approved service names and describes the recruiting service as hiring Applied AI Engineers rather than the specified Data & AI engineering roles.",
+        "fix": "Use the approved service names and align each service description with its documented roles and engagement model.",
+        "subject": "GoGloby services",
+        "page_value": "AI Staff Augmentation; Hire Applied AI Engineers",
+        "source_value": "Nearshore Data & AI Engineers Staffing; US Data & AI Engineers Recruiting",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.name",
+            "quote": "AI Staff Augmentation",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.name",
+            "quote": "Hire Applied AI Engineers",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsupported US and EU scope",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The schema says the agency sources talent within US and EU time zones, while the documented recruiting service is for US companies and the staffing engineers are from Latin America working US hours.",
+        "fix": "Replace the US-and-EU scope with the documented locations and service markets.",
+        "subject": "Service locations",
+        "page_value": "US & EU time zones",
+        "source_value": "US recruiting; Latin America staffing, remote on US hours",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.description",
+            "quote": "within the US & EU time zones",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified vetting superlative",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: How we vet",
+        "rule_verified": true,
+        "issue": "The claim that GoGloby finds the world's most thoroughly vetted talent is not established by the sources.",
+        "fix": "Remove the unverified superlative or replace it with a documented assessment fact.",
+        "subject": "Candidate vetting",
+        "page_value": "world's most thoroughly vetted talent",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.description",
+            "quote": "the world's most thoroughly vetted talent",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported CTO responsibilities",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The described Agentic SDLC methodology and technical architecture responsibilities are not stated in the founder facts.",
+        "fix": "Remove or verify these responsibilities before retaining them in structured data.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "Leads the Agentic SDLC methodology",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "Leads the Agentic SDLC methodology",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "the technical architecture behind the Applied AI Engineering system",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Old development environment term",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The founder description uses the discontinued product term “Secure Development Environment.”",
+        "fix": "Remove the obsolete product terminology from the founder description.",
+        "subject": "Secure Development Environment",
+        "page_value": "secure development environment design",
+        "source_value": null,
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "secure development environment design",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified founder track record",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The decade of scaling teams across named countries and the $60M+ value claim are not in the founder facts.",
+        "fix": "Remove or verify the unsupported founder track-record claims before retaining them.",
+        "subject": "Vitaly Koval",
+        "page_value": "$60M+ in value",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "For the past decade, has helped engineering leaders scale teams",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "generating $60M+ in value",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified founder system claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The claim that Vitaly built an Applied AI Engineering system for board-ready proof of velocity is not in the founder facts.",
+        "fix": "Remove or verify the unsupported founder claim before retaining it.",
+        "subject": "Vitaly Koval",
+        "page_value": "Built the Applied AI Engineering system",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "Built the Applied AI Engineering system",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "board-ready proof of AI-driven engineering velocity",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified delivery timelines",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The 72-hour profile delivery, 3-to-5-business-day feature, under-four-week deployment, and five-day shortlist timelines are not in the sources.",
+        "fix": "Remove or verify these timelines and use only documented service timelines.",
+        "subject": "Service timelines",
+        "page_value": "72 hours; 3 to 5 business days; under 4 weeks; 5 days",
+        "source_value": "2–3 weeks to start for staffing; 4–6 weeks to offer for recruiting",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Forward-deployed into your team in under 4 weeks.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Vetted profiles delivered in 72 hours.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "First validated feature in 3 to 5 business days.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Shortlist delivered in 5 days.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported replacement guarantee",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The staffing guarantee is described as telemetry-backed, but the documented staffing replacement applies if results fall below baseline and can be cancelled within the first 120 days.",
+        "fix": "Align the staffing guarantee with the documented performance-based replacement and cancellation terms.",
+        "subject": "Staffing guarantee",
+        "page_value": "120-day telemetry-backed replacement guarantee",
+        "source_value": "Performance-based replacement at no cost if results fall below baseline; cancel any time in first 120 days",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "120-day telemetry-backed replacement guarantee",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Liability coverage overclaim",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Legal and security",
+        "rule_verified": true,
+        "issue": "The schema describes the $3M policy as covering professional liability as well as cyber and data liability, while the sources specify data and cyber liability.",
+        "fix": "Describe only the documented $3M data and cyber-liability coverage.",
+        "subject": "Insurance",
+        "page_value": "$3M combined liability (cyber, data and professional)",
+        "source_value": "$3M data and cyber liability",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "$3M combined liability (cyber, data and professional)",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsupported zero IP exposure",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The claim of zero IP exposure is not in the sources; the documented positions are that clients own the IP and engineers work in the client's environment.",
+        "fix": "Remove the zero-exposure claim and use only the documented IP and security positions.",
+        "subject": "IP and security",
+        "page_value": "Zero IP exposure",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Zero IP exposure.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified hiring speed claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The claim of 50 percent faster time-to-hire than US job boards is not supported by the sources.",
+        "fix": "Remove or verify the comparative hiring-speed claim.",
+        "subject": "Recruiting speed",
+        "page_value": "50 percent faster time-to-hire than US job boards",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "50 percent faster time-to-hire than US job boards.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified network reach",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The claim that the talent network spans five or more US-time-zone countries is not in the sources.",
+        "fix": "Remove or verify the network-reach claim.",
+        "subject": "Talent network",
+        "page_value": "5 plus US-timezone countries",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Talent network spans 5 plus US-timezone countries.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified performance promises",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Legal and security",
+        "rule_verified": true,
+        "issue": "The claims that every AI dollar is visible and every feature ships faster are not established by the sources.",
+        "fix": "Remove or verify these performance promises before retaining them.",
+        "subject": "Performance outcomes",
+        "page_value": "every feature shipped faster",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "WebSite.description",
+            "quote": "every AI dollar visible, every feature shipped faster.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      }
+    ],
+    "problems": [
+      {
+        "title": "Applied AI engineering positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Glossary §7",
+        "rule_verified": true,
+        "issue": "The schema positions GoGloby as an Applied AI Engineering partner that turns engineering into AI-native production, contrary to the approved staffing and recruiting description.",
+        "fix": "Replace the Applied AI Engineering positioning with the approved company description and describe only GoGloby's staffing and recruiting services.",
+        "subject": "GoGloby positioning",
+        "page_value": "Applied AI Engineering partner",
+        "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.slogan",
+            "quote": "Applied AI Engineering Partner",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "GoGloby turns engineering into AI-native production.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "WebSite.description",
+            "quote": "GoGloby is an Applied AI Engineering partner",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Discontinued AI development services",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §2 and §7",
+        "rule_verified": true,
+        "issue": "The schema sells Applied AI Engineering and generative AI delivery, including building copilots, agents, and RAG applications, which are development services rather than GoGloby's recruiting and staffing offers.",
+        "fix": "Remove the development-service offers and retain only the two approved recruiting and staffing services.",
+        "subject": "AI development services",
+        "page_value": "Generative AI Development Services",
+        "source_value": "US Data & AI Engineers Recruiting; Nearshore Data & AI Engineers Staffing",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.slogan",
+            "quote": "Applied AI Engineering",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.name",
+            "quote": "Generative AI Development Services",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "build copilots, AI agents, RAG applications, and agentic workflows",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Incorrect service names and scope",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "decisions.md: Service pages and official spelling; Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The catalog uses labels other than the approved service names and describes the recruiting service as hiring Applied AI Engineers rather than the specified Data & AI engineering roles.",
+        "fix": "Use the approved service names and align each service description with its documented roles and engagement model.",
+        "subject": "GoGloby services",
+        "page_value": "AI Staff Augmentation; Hire Applied AI Engineers",
+        "source_value": "Nearshore Data & AI Engineers Staffing; US Data & AI Engineers Recruiting",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.name",
+            "quote": "AI Staff Augmentation",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.name",
+            "quote": "Hire Applied AI Engineers",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsupported US and EU scope",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The schema says the agency sources talent within US and EU time zones, while the documented recruiting service is for US companies and the staffing engineers are from Latin America working US hours.",
+        "fix": "Replace the US-and-EU scope with the documented locations and service markets.",
+        "subject": "Service locations",
+        "page_value": "US & EU time zones",
+        "source_value": "US recruiting; Latin America staffing, remote on US hours",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.description",
+            "quote": "within the US & EU time zones",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified vetting superlative",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: How we vet",
+        "rule_verified": true,
+        "issue": "The claim that GoGloby finds the world's most thoroughly vetted talent is not established by the sources.",
+        "fix": "Remove the unverified superlative or replace it with a documented assessment fact.",
+        "subject": "Candidate vetting",
+        "page_value": "world's most thoroughly vetted talent",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.description",
+            "quote": "the world's most thoroughly vetted talent",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported CTO responsibilities",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The described Agentic SDLC methodology and technical architecture responsibilities are not stated in the founder facts.",
+        "fix": "Remove or verify these responsibilities before retaining them in structured data.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "Leads the Agentic SDLC methodology",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "Leads the Agentic SDLC methodology",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "the technical architecture behind the Applied AI Engineering system",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified founder track record",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The decade of scaling teams across named countries and the $60M+ value claim are not in the founder facts.",
+        "fix": "Remove or verify the unsupported founder track-record claims before retaining them.",
+        "subject": "Vitaly Koval",
+        "page_value": "$60M+ in value",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "For the past decade, has helped engineering leaders scale teams",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "generating $60M+ in value",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified founder system claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The claim that Vitaly built an Applied AI Engineering system for board-ready proof of velocity is not in the founder facts.",
+        "fix": "Remove or verify the unsupported founder claim before retaining it.",
+        "subject": "Vitaly Koval",
+        "page_value": "Built the Applied AI Engineering system",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "Built the Applied AI Engineering system",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "board-ready proof of AI-driven engineering velocity",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified delivery timelines",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The 72-hour profile delivery, 3-to-5-business-day feature, under-four-week deployment, and five-day shortlist timelines are not in the sources.",
+        "fix": "Remove or verify these timelines and use only documented service timelines.",
+        "subject": "Service timelines",
+        "page_value": "72 hours; 3 to 5 business days; under 4 weeks; 5 days",
+        "source_value": "2–3 weeks to start for staffing; 4–6 weeks to offer for recruiting",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Forward-deployed into your team in under 4 weeks.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Vetted profiles delivered in 72 hours.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "First validated feature in 3 to 5 business days.",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Shortlist delivered in 5 days.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported replacement guarantee",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The staffing guarantee is described as telemetry-backed, but the documented staffing replacement applies if results fall below baseline and can be cancelled within the first 120 days.",
+        "fix": "Align the staffing guarantee with the documented performance-based replacement and cancellation terms.",
+        "subject": "Staffing guarantee",
+        "page_value": "120-day telemetry-backed replacement guarantee",
+        "source_value": "Performance-based replacement at no cost if results fall below baseline; cancel any time in first 120 days",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "120-day telemetry-backed replacement guarantee",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Liability coverage overclaim",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Legal and security",
+        "rule_verified": true,
+        "issue": "The schema describes the $3M policy as covering professional liability as well as cyber and data liability, while the sources specify data and cyber liability.",
+        "fix": "Describe only the documented $3M data and cyber-liability coverage.",
+        "subject": "Insurance",
+        "page_value": "$3M combined liability (cyber, data and professional)",
+        "source_value": "$3M data and cyber liability",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "$3M combined liability (cyber, data and professional)",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsupported zero IP exposure",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The claim of zero IP exposure is not in the sources; the documented positions are that clients own the IP and engineers work in the client's environment.",
+        "fix": "Remove the zero-exposure claim and use only the documented IP and security positions.",
+        "subject": "IP and security",
+        "page_value": "Zero IP exposure",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Zero IP exposure.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified hiring speed claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The claim of 50 percent faster time-to-hire than US job boards is not supported by the sources.",
+        "fix": "Remove or verify the comparative hiring-speed claim.",
+        "subject": "Recruiting speed",
+        "page_value": "50 percent faster time-to-hire than US job boards",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "50 percent faster time-to-hire than US job boards.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified network reach",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The claim that the talent network spans five or more US-time-zone countries is not in the sources.",
+        "fix": "Remove or verify the network-reach claim.",
+        "subject": "Talent network",
+        "page_value": "5 plus US-timezone countries",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Talent network spans 5 plus US-timezone countries.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified performance promises",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Legal and security",
+        "rule_verified": true,
+        "issue": "The claims that every AI dollar is visible and every feature ships faster are not established by the sources.",
+        "fix": "Remove or verify these performance promises before retaining them.",
+        "subject": "Performance outcomes",
+        "page_value": "every feature shipped faster",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "WebSite.description",
+            "quote": "every AI dollar visible, every feature shipped faster.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Term not used: AI-native production",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"AI-native production\" is a term or name the company no longer uses.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "AI-native production",
+        "page_value": null,
+        "source_value": null,
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "AI-native production",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "WebSite.description",
+            "quote": "AI-native production",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      },
+      {
+        "title": "Term not used: Applied AI Engineering partner",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"Applied AI Engineering partner\" is no longer how GoGloby describes itself.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "Applied AI Engineering partner",
+        "page_value": null,
+        "source_value": null,
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Organization.slogan",
+            "quote": "Applied AI Engineering Partner",
+            "verified": true
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "WebSite.description",
+            "quote": "Applied AI Engineering partner",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      },
+      {
+        "title": "Term not used: Secure Development Environment",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"Secure Development Environment\" is a term or name the company no longer uses.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "Secure Development Environment",
+        "page_value": null,
+        "source_value": null,
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Person.description",
+            "quote": "secure development environment",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      }
+    ],
+    "usage": {
+      "input": 581,
+      "cached_input": 10066,
+      "output": 5160
+    },
+    "error": null
+  },
+  "seo": {
+    "duplicates": [],
+    "collapsed": [
+      {
+        "id": "schema_recommended",
+        "profile": "case_study",
+        "pages_failing": 6,
+        "pages_total": 6,
+        "value": "missing: BreadcrumbList"
+      },
+      {
+        "id": "link_to_services",
+        "profile": "case_study",
+        "pages_failing": 6,
+        "pages_total": 6,
+        "value": "no link to /services/*"
+      }
+    ],
+    "sitemap_hygiene": []
+  }
+}

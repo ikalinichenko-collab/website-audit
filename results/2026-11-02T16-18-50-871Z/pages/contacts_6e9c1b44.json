@@ -1,0 +1,1295 @@
+{
+  "schema_version": 2,
+  "url": "https://gogloby.com/contacts/",
+  "final_url": "https://gogloby.com/contacts/",
+  "status": 200,
+  "title": "Contact GoGloby: Expert Guidance on Global Scaling & AI Teams",
+  "category": "Company",
+  "subsection": "Contacts",
+  "profile": "company",
+  "geo_type": "company",
+  "template": "block",
+  "checked_at": "2026-11-02T16:19:52.780Z",
+  "zones": [
+    {
+      "id": "title",
+      "label": "Title",
+      "kind": "title"
+    },
+    {
+      "id": "meta_description",
+      "label": "Meta description",
+      "kind": "meta_description"
+    },
+    {
+      "id": "og_title",
+      "label": "og:title",
+      "kind": "og_title"
+    },
+    {
+      "id": "og_description",
+      "label": "og:description",
+      "kind": "og_description"
+    },
+    {
+      "id": "h1",
+      "label": "H1",
+      "kind": "h1"
+    },
+    {
+      "id": "block:contact#1",
+      "label": "Contact: Contact Us",
+      "kind": "block"
+    },
+    {
+      "id": "block:map-interactive#1",
+      "label": "Map interactive: US-Aligned Applied AI Engineering Hubs",
+      "kind": "block"
+    }
+  ],
+  "zone_warnings": [],
+  "shared_variants": [
+    "modals@1"
+  ],
+  "compliance": {
+    "hash": "8736fdcc0e4bc16455217b870a8d0bb50179c94963f4bfe3f9d9b763fe311717",
+    "cached": false,
+    "action": "rewrite",
+    "summary": "The page presents GoGloby as an advisor and Applied AI engineering provider, and offers a feature-cost Benchmark rather than clearly directing buyers to its recruiting and staffing services. It also makes unsupported claims about a four-week deployment timeline, overseas offices and contacts, and security certifications.",
+    "llm_problems": [
+      {
+        "title": "Applied AI engineering positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Glossary §7",
+        "rule_verified": true,
+        "issue": "The page positions GoGloby around global expansion advice and Applied AI engineering, rather than its approved staffing and recruiting description.",
+        "fix": "Replace the advice and engineering-provider framing with positioning consistent with the approved company description and services.",
+        "subject": "GoGloby positioning",
+        "page_value": "Global expansion advice and Applied AI engineering",
+        "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 6,
+        "locations": [
+          {
+            "zone_id": "title",
+            "part": "field 1",
+            "quote": "Expert Guidance on Global Scaling & AI Teams",
+            "verified": true
+          },
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "personalized advice on global expansion and Applied AI engineering",
+            "verified": true
+          },
+          {
+            "zone_id": "og_title",
+            "part": "field 1",
+            "quote": "Expert Guidance on Global Scaling & AI Teams",
+            "verified": true
+          },
+          {
+            "zone_id": "og_description",
+            "part": "field 1",
+            "quote": "personalized advice on global expansion and Applied AI engineering",
+            "verified": true
+          },
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "heading 1",
+            "quote": "US-Aligned Applied AI Engineering Hubs",
+            "verified": true
+          },
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "paragraph 1",
+            "quote": "We operate across key engineering hubs in North America, Latin America, and Europe",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Technical briefing call to action",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §2; Glossary §7",
+        "rule_verified": true,
+        "issue": "The page directs visitors to schedule a technical briefing and discuss a Benchmark, rather than using the specified service calls to action.",
+        "fix": "Replace this call to action with wording appropriate to the recruiting or staffing service being promoted.",
+        "subject": "Contact-page call to action",
+        "page_value": "Schedule a technical briefing and walk through the Benchmark",
+        "source_value": "Get vetted profiles (staffing); Start a search (recruiting)",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "block:contact#1",
+            "part": "paragraph 1",
+            "quote": "Submit your information to schedule a technical briefing.",
+            "verified": true
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "paragraph 1",
+            "quote": "We will walk you through the Benchmark",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Standalone feature-cost Benchmark",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §2; Glossary §7",
+        "rule_verified": true,
+        "issue": "The page offers a feature-cost review as a standalone briefing, while the AI Development Intelligence Layer is bundled only with nearshore staffing and is not sold separately.",
+        "fix": "Remove the standalone feature-cost offer or make clear that tracking is included only with Nearshore Data & AI Engineers Staffing.",
+        "subject": "AI Development Intelligence Layer",
+        "page_value": "What your features cost today",
+        "source_value": "Bundled only with nearshore staffing; never sold separately",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:contact#1",
+            "part": "paragraph 1",
+            "quote": "what your features cost today",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Four-week deployment promise",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page promises engineers will forward-deploy in under four weeks, a timeline and offer not stated in the sources.",
+        "fix": "Remove the unsupported promise or replace it with the applicable service timeline from the Fact Sheet.",
+        "subject": "Engineer deployment timeline",
+        "page_value": "under 4 weeks",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:contact#1",
+            "part": "paragraph 1",
+            "quote": "how our engineers forward-deploy in under 4 weeks.",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified overseas hub footprint",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Identity; Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page claims GoGloby operates engineering hubs across North America, Latin America, and Europe, but that operating footprint is not established in the sources.",
+        "fix": "Remove the unverified operating-footprint claim or verify it against an approved company source.",
+        "subject": "GoGloby operating footprint",
+        "page_value": "North America, Latin America, and Europe",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "paragraph 1",
+            "quote": "We operate across key engineering hubs in North America, Latin America, and Europe",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unlisted Argentina office",
+        "category": "contacts",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The Argentina office and street address are not listed in the approved company facts.",
+        "fix": "Remove the office listing or verify the office and address with an approved company source.",
+        "subject": "Argentina office",
+        "page_value": "Av. Hipólito Yrigoyen 146, 15th Floor, Córdoba Business Tower, Córdoba, Argentina",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": null,
+            "quote": "Office in Argentina: Av. Hipólito Yrigoyen 146, 15th Floor",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unlisted Brazil office",
+        "category": "contacts",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The Brazil office and street address are not listed in the approved company facts.",
+        "fix": "Remove the office listing or verify the office and address with an approved company source.",
+        "subject": "Brazil office",
+        "page_value": "Av. Alm. Barroso, 81, Centro, Rio de Janeiro, Brazil",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": null,
+            "quote": "Office in Brazil: Av. Alm. Barroso, 81, Centro, Rio de Janeiro, Brazil",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unlisted Mexico office",
+        "category": "contacts",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The Mexico office and street address are not listed in the approved company facts.",
+        "fix": "Remove the office listing or verify the office and address with an approved company source.",
+        "subject": "Mexico office",
+        "page_value": "Blvd. Miguel de Cervantes Saavedra 169, Granada, Miguel Hidalgo Mexico City, Mexico",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": null,
+            "quote": "Office in Mexico: Blvd. Miguel de Cervantes Saavedra 169, Granada",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unlisted EU office",
+        "category": "contacts",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The EU office in Bratislava and its street address are not listed in the approved company facts.",
+        "fix": "Remove the office listing or verify the office and address with an approved company source.",
+        "subject": "EU office",
+        "page_value": "Račianska 1575/78, 831 02 Bratislava, Slovakia",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": null,
+            "quote": "Office in EU: Račianska 1575/78, 831 02 Bratislava, Slovakia",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unlisted HR email",
+        "category": "contacts",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The HR email address is not listed in the approved company facts.",
+        "fix": "Remove the address or verify it with an approved company source.",
+        "subject": "HR email",
+        "page_value": "hr@gogloby.com",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "paragraph 5",
+            "quote": "sales@gogloby.com hr@gogloby.com",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unlisted Argentina email",
+        "category": "contacts",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The Argentina contact email is not listed in the approved company facts.",
+        "fix": "Remove the address or verify it with an approved company source.",
+        "subject": "Argentina contact email",
+        "page_value": "mvidela@gogloby.com",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "paragraph 9",
+            "quote": "mvidela@gogloby.com",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unlisted Brazil email",
+        "category": "contacts",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The Brazil contact email is not listed in the approved company facts.",
+        "fix": "Remove the address or verify it with an approved company source.",
+        "subject": "Brazil contact email",
+        "page_value": "bgasparino@gogloby.com",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "paragraph 12",
+            "quote": "bgasparino@gogloby.com",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unlisted Mexico email",
+        "category": "contacts",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The Mexico contact email is not listed in the approved company facts.",
+        "fix": "Remove the address or verify it with an approved company source.",
+        "subject": "Mexico contact email",
+        "page_value": "dduarte@gogloby.com",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "paragraph 15",
+            "quote": "dduarte@gogloby.com",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unlisted Slovakia email",
+        "category": "contacts",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The Slovakia contact email is not listed in the approved company facts.",
+        "fix": "Remove the address or verify it with an approved company source.",
+        "subject": "Slovakia contact email",
+        "page_value": "sergey@gogloby.com",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "paragraph 18",
+            "quote": "sergey@gogloby.com",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported SOC 2 certification",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The logo claims SOC 2 Type 2, while the Fact Sheet describes SOC 2-aligned controls and does not claim this certification.",
+        "fix": "Remove the certification logo or substantiate the certification before displaying it.",
+        "subject": "SOC 2 Type 2 certification",
+        "page_value": "AICPA SOC2 type2",
+        "source_value": "SOC 2-aligned controls",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 15",
+            "quote": "logo-aicpa-soc2-type2-1-white-grayscale.png",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsupported ISO certification",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page displays an ISO 27001 certification logo, but the sources do not state that GoGloby holds this certification.",
+        "fix": "Remove the certification logo or substantiate the certification before displaying it.",
+        "subject": "ISO 27001 certification",
+        "page_value": "ISO 27001",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 16",
+            "quote": "logo-ism-iso-27001-1-grayscale.png",
+            "verified": true
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      }
+    ],
+    "problems": [
+      {
+        "title": "Applied AI engineering positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Glossary §7",
+        "rule_verified": true,
+        "issue": "The page positions GoGloby around global expansion advice and Applied AI engineering, rather than its approved staffing and recruiting description.",
+        "fix": "Replace the advice and engineering-provider framing with positioning consistent with the approved company description and services.",
+        "subject": "GoGloby positioning",
+        "page_value": "Global expansion advice and Applied AI engineering",
+        "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 6,
+        "locations": [
+          {
+            "zone_id": "title",
+            "part": "field 1",
+            "quote": "Expert Guidance on Global Scaling & AI Teams",
+            "verified": true
+          },
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "personalized advice on global expansion and Applied AI engineering",
+            "verified": true
+          },
+          {
+            "zone_id": "og_title",
+            "part": "field 1",
+            "quote": "Expert Guidance on Global Scaling & AI Teams",
+            "verified": true
+          },
+          {
+            "zone_id": "og_description",
+            "part": "field 1",
+            "quote": "personalized advice on global expansion and Applied AI engineering",
+            "verified": true
+          },
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "heading 1",
+            "quote": "US-Aligned Applied AI Engineering Hubs",
+            "verified": true,
+            "fragment": "US-Aligned Applied AI Engineering Hubs"
+          },
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "paragraph 1",
+            "quote": "We operate across key engineering hubs in North America, Latin America, and Europe",
+            "verified": true,
+            "fragment": "We operate across key engineering hubs"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Technical briefing call to action",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §2; Glossary §7",
+        "rule_verified": true,
+        "issue": "The page directs visitors to schedule a technical briefing and discuss a Benchmark, rather than using the specified service calls to action.",
+        "fix": "Replace this call to action with wording appropriate to the recruiting or staffing service being promoted.",
+        "subject": "Contact-page call to action",
+        "page_value": "Schedule a technical briefing and walk through the Benchmark",
+        "source_value": "Get vetted profiles (staffing); Start a search (recruiting)",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "block:contact#1",
+            "part": "paragraph 1",
+            "quote": "Submit your information to schedule a technical briefing.",
+            "verified": true,
+            "fragment": "Submit your information to schedule a"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "paragraph 1",
+            "quote": "We will walk you through the Benchmark",
+            "verified": true,
+            "fragment": "We will walk you through the"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Standalone feature-cost Benchmark",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §2; Glossary §7",
+        "rule_verified": true,
+        "issue": "The page offers a feature-cost review as a standalone briefing, while the AI Development Intelligence Layer is bundled only with nearshore staffing and is not sold separately.",
+        "fix": "Remove the standalone feature-cost offer or make clear that tracking is included only with Nearshore Data & AI Engineers Staffing.",
+        "subject": "AI Development Intelligence Layer",
+        "page_value": "What your features cost today",
+        "source_value": "Bundled only with nearshore staffing; never sold separately",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:contact#1",
+            "part": "paragraph 1",
+            "quote": "what your features cost today",
+            "verified": true,
+            "fragment": "what your features cost"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Four-week deployment promise",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page promises engineers will forward-deploy in under four weeks, a timeline and offer not stated in the sources.",
+        "fix": "Remove the unsupported promise or replace it with the applicable service timeline from the Fact Sheet.",
+        "subject": "Engineer deployment timeline",
+        "page_value": "under 4 weeks",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:contact#1",
+            "part": "paragraph 1",
+            "quote": "how our engineers forward-deploy in under 4 weeks.",
+            "verified": true,
+            "fragment": "how our engineers forward-deploy in under"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified overseas hub footprint",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Identity; Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page claims GoGloby operates engineering hubs across North America, Latin America, and Europe, but that operating footprint is not established in the sources.",
+        "fix": "Remove the unverified operating-footprint claim or verify it against an approved company source.",
+        "subject": "GoGloby operating footprint",
+        "page_value": "North America, Latin America, and Europe",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "paragraph 1",
+            "quote": "We operate across key engineering hubs in North America, Latin America, and Europe",
+            "verified": true,
+            "fragment": "We operate across key engineering hubs"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unlisted Argentina office",
+        "category": "contacts",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The Argentina office and street address are not listed in the approved company facts.",
+        "fix": "Remove the office listing or verify the office and address with an approved company source.",
+        "subject": "Argentina office",
+        "page_value": "Av. Hipólito Yrigoyen 146, 15th Floor, Córdoba Business Tower, Córdoba, Argentina",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": null,
+            "quote": "Office in Argentina: Av. Hipólito Yrigoyen 146, 15th Floor",
+            "verified": true,
+            "fragment": "Office in Argentina:"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unlisted Brazil office",
+        "category": "contacts",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The Brazil office and street address are not listed in the approved company facts.",
+        "fix": "Remove the office listing or verify the office and address with an approved company source.",
+        "subject": "Brazil office",
+        "page_value": "Av. Alm. Barroso, 81, Centro, Rio de Janeiro, Brazil",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": null,
+            "quote": "Office in Brazil: Av. Alm. Barroso, 81, Centro, Rio de Janeiro, Brazil",
+            "verified": true,
+            "fragment": "Office in Brazil:"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unlisted Mexico office",
+        "category": "contacts",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The Mexico office and street address are not listed in the approved company facts.",
+        "fix": "Remove the office listing or verify the office and address with an approved company source.",
+        "subject": "Mexico office",
+        "page_value": "Blvd. Miguel de Cervantes Saavedra 169, Granada, Miguel Hidalgo Mexico City, Mexico",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": null,
+            "quote": "Office in Mexico: Blvd. Miguel de Cervantes Saavedra 169, Granada",
+            "verified": true,
+            "fragment": "Office in Mexico:"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unlisted EU office",
+        "category": "contacts",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The EU office in Bratislava and its street address are not listed in the approved company facts.",
+        "fix": "Remove the office listing or verify the office and address with an approved company source.",
+        "subject": "EU office",
+        "page_value": "Račianska 1575/78, 831 02 Bratislava, Slovakia",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": null,
+            "quote": "Office in EU: Račianska 1575/78, 831 02 Bratislava, Slovakia",
+            "verified": true,
+            "fragment": "Office in EU:"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unlisted HR email",
+        "category": "contacts",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The HR email address is not listed in the approved company facts.",
+        "fix": "Remove the address or verify it with an approved company source.",
+        "subject": "HR email",
+        "page_value": "hr@gogloby.com",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "paragraph 5",
+            "quote": "sales@gogloby.com hr@gogloby.com",
+            "verified": true,
+            "fragment": "sales@gogloby.com hr@gogloby.com"
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unlisted Argentina email",
+        "category": "contacts",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The Argentina contact email is not listed in the approved company facts.",
+        "fix": "Remove the address or verify it with an approved company source.",
+        "subject": "Argentina contact email",
+        "page_value": "mvidela@gogloby.com",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "paragraph 9",
+            "quote": "mvidela@gogloby.com",
+            "verified": true,
+            "fragment": null
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unlisted Brazil email",
+        "category": "contacts",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The Brazil contact email is not listed in the approved company facts.",
+        "fix": "Remove the address or verify it with an approved company source.",
+        "subject": "Brazil contact email",
+        "page_value": "bgasparino@gogloby.com",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "paragraph 12",
+            "quote": "bgasparino@gogloby.com",
+            "verified": true,
+            "fragment": null
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unlisted Mexico email",
+        "category": "contacts",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The Mexico contact email is not listed in the approved company facts.",
+        "fix": "Remove the address or verify it with an approved company source.",
+        "subject": "Mexico contact email",
+        "page_value": "dduarte@gogloby.com",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "paragraph 15",
+            "quote": "dduarte@gogloby.com",
+            "verified": true,
+            "fragment": null
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unlisted Slovakia email",
+        "category": "contacts",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The Slovakia contact email is not listed in the approved company facts.",
+        "fix": "Remove the address or verify it with an approved company source.",
+        "subject": "Slovakia contact email",
+        "page_value": "sergey@gogloby.com",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "paragraph 18",
+            "quote": "sergey@gogloby.com",
+            "verified": true,
+            "fragment": null
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported SOC 2 certification",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The logo claims SOC 2 Type 2, while the Fact Sheet describes SOC 2-aligned controls and does not claim this certification.",
+        "fix": "Remove the certification logo or substantiate the certification before displaying it.",
+        "subject": "SOC 2 Type 2 certification",
+        "page_value": "AICPA SOC2 type2",
+        "source_value": "SOC 2-aligned controls",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 15",
+            "quote": "logo-aicpa-soc2-type2-1-white-grayscale.png",
+            "verified": true,
+            "fragment": null
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsupported ISO certification",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page displays an ISO 27001 certification logo, but the sources do not state that GoGloby holds this certification.",
+        "fix": "Remove the certification logo or substantiate the certification before displaying it.",
+        "subject": "ISO 27001 certification",
+        "page_value": "ISO 27001",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 16",
+            "quote": "logo-ism-iso-27001-1-grayscale.png",
+            "verified": true,
+            "fragment": null
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      }
+    ],
+    "usage": {
+      "input": 10915,
+      "cached_input": 0,
+      "output": 6018
+    },
+    "error": null
+  },
+  "geo": {
+    "hash": "78cedac859f9de2386b4fdc79dd7522379f775adb2cb37e569d4873b5aec14e9",
+    "cached": false,
+    "code": [
+      {
+        "id": "trap_terms",
+        "status": "pass",
+        "value": "none in title, H1, meta, og",
+        "places": []
+      },
+      {
+        "id": "em_dash",
+        "status": "pass",
+        "value": "none",
+        "places": []
+      },
+      {
+        "id": "ampersand",
+        "status": "fail",
+        "value": "3 found",
+        "places": [
+          {
+            "zone_id": "title",
+            "value": "& | …rt Guidance on Global Scaling & AI Teams"
+          },
+          {
+            "zone_id": "og_title",
+            "value": "& | …rt Guidance on Global Scaling & AI Teams"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "heading 5",
+            "value": "& | We follow data & security practices:"
+          }
+        ]
+      },
+      {
+        "id": "uk_spelling",
+        "status": "pass",
+        "value": "none",
+        "places": []
+      }
+    ],
+    "llm": [
+      {
+        "id": "buyer_ready",
+        "answer": "yes",
+        "value": "buyer_ready",
+        "zone_id": "page",
+        "evidence": "Submit your information to schedule a technical briefing.",
+        "note": "The page invites companies seeking engineering support to contact GoGloby, so it addresses prospective buyers rather than job seekers or learners.",
+        "evidence_verified": true,
+        "fragment": "Submit your information to schedule a"
+      }
+    ],
+    "placement": null,
+    "usage": {
+      "input": 3,
+      "cached_input": 9055,
+      "output": 168
+    },
+    "error": null
+  },
+  "seo": {
+    "checks": [
+      {
+        "id": "http_status",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "200",
+        "severity": "high"
+      },
+      {
+        "id": "title_length",
+        "status": "fail",
+        "severity": "medium",
+        "zone_id": "title",
+        "value": "61 characters (max 60)"
+      },
+      {
+        "id": "meta_present",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "124 characters",
+        "severity": "high"
+      },
+      {
+        "id": "meta_length",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "124 characters (120-158)",
+        "severity": "low"
+      },
+      {
+        "id": "h1_count",
+        "status": "fail",
+        "zone_id": "h1",
+        "value": "0",
+        "severity": "high"
+      },
+      {
+        "id": "canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "https://gogloby.com/contacts/",
+        "severity": "high"
+      },
+      {
+        "id": "indexable",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "severity": "high"
+      },
+      {
+        "id": "schema_recommended",
+        "status": "fail",
+        "zone_id": "json_ld",
+        "value": "missing: BreadcrumbList",
+        "severity": "medium"
+      },
+      {
+        "id": "broken_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 checked",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "redirecting_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "none",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_missing",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without alt",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_empty",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "16 with empty alt",
+        "places": [
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 1",
+            "value": "logo-hasbro-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 2",
+            "value": "logo-hubspot-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 3",
+            "value": "logo-carta-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 4",
+            "value": "logo-oyster-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 5",
+            "value": "logo-deel-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 6",
+            "value": "logo-evercommerce-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 7",
+            "value": "logo-forbes-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 8",
+            "value": "logo-crunchbase-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 9",
+            "value": "logo-london-daily-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 10",
+            "value": "logo-nbc-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 11",
+            "value": "logo-fox-news-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 12",
+            "value": "logo-clutch-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 13",
+            "value": "logo-trustpilot-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 14",
+            "value": "logo-linkedin-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 15",
+            "value": "logo-aicpa-soc2-type2-1-white-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 16",
+            "value": "logo-ism-iso-27001-1-grayscale.png"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "image_dimensions",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "5 without width/height",
+        "places": [
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "image 1",
+            "value": "map-1-layer-usa-01.png"
+          },
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "image 2",
+            "value": "map-1-layer-argentina-01.png"
+          },
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "image 3",
+            "value": "map-1-layer-brazil-01.png"
+          },
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "image 4",
+            "value": "map-1-layer-mexico-01.png"
+          },
+          {
+            "zone_id": "block:map-interactive#1",
+            "part": "image 5",
+            "value": "map-1-layer-eu-01.png"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "heading_order",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "og_present",
+        "status": "pass",
+        "zone_id": "og_title",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "og_url_canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "og:url https://gogloby.com/contacts/ vs canonical https://gogloby.com/contacts/",
+        "severity": "low"
+      },
+      {
+        "id": "twitter_card",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "summary_large_image",
+        "severity": "low"
+      },
+      {
+        "id": "html_lang",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "en-US",
+        "severity": "low"
+      },
+      {
+        "id": "viewport",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "jsonld_valid",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "2 block(s)",
+        "severity": "high"
+      },
+      {
+        "id": "anchors_resolve",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 checked",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "faq_schema_matches_dom",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "accordion block: false, FAQPage schema: false",
+        "severity": "low"
+      }
+    ]
+  }
+}

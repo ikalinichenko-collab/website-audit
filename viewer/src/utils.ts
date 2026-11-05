@@ -37,3 +37,8 @@ export function encodeTextFragment(text: string): string {
 export function showOnPageUrl(pageUrl: string, fragment: string | null): string | null {
   return fragment ? `${pageUrl}#:~:text=${encodeTextFragment(fragment)}` : null;
 }
+
+/** Same rule as `fragmentAllowed` in src/findings.ts: these zones are not visible text, so a text fragment cannot find them. */
+export function fragmentAllowed(zoneId: string): boolean {
+  return !/^(title|meta_description|og_title|og_description|json_ld|banner_cta@|modals@)/.test(zoneId);
+}

@@ -1,0 +1,1676 @@
+{
+  "schema_version": 2,
+  "url": "https://gogloby.com/case-study/how-gogloby-engineered-a-production-voice-ai-system-that-screens-candidates-85-faster-at-96-lower-cost/",
+  "final_url": "https://gogloby.com/case-study/how-gogloby-engineered-a-production-voice-ai-system-that-screens-candidates-85-faster-at-96-lower-cost/",
+  "status": 200,
+  "title": "A Real-Time Voice AI System: How GoGloby Cut Screening Costs",
+  "category": "Resources",
+  "subsection": "Case studies",
+  "profile": "case_study",
+  "geo_type": "article",
+  "template": "article",
+  "checked_at": "2026-11-05T09:34:50.759Z",
+  "zones": [
+    {
+      "id": "title",
+      "label": "Title",
+      "kind": "title"
+    },
+    {
+      "id": "meta_description",
+      "label": "Meta description",
+      "kind": "meta_description"
+    },
+    {
+      "id": "og_title",
+      "label": "og:title",
+      "kind": "og_title"
+    },
+    {
+      "id": "og_description",
+      "label": "og:description",
+      "kind": "og_description"
+    },
+    {
+      "id": "json_ld",
+      "label": "Structured data (JSON-LD)",
+      "kind": "json_ld"
+    },
+    {
+      "id": "h1",
+      "label": "H1",
+      "kind": "h1"
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "kind": "date"
+    },
+    {
+      "id": "toc",
+      "label": "Table of contents",
+      "kind": "toc"
+    },
+    {
+      "id": "article:intro",
+      "label": "Intro",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:achievements-after-partnering-with-gogloby",
+      "label": "Achievements After Partnering With GoGloby",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:the-situation-at-a-glance",
+      "label": "The Situation at a Glance",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:the-problem",
+      "label": "The Problem",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:the-engineering-challenge",
+      "label": "The Engineering Challenge",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:technology-stack-decisions",
+      "label": "Technology Stack Decisions",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:the-critical-optimisation-routing-llm-to-nlp",
+      "label": "The Critical Optimisation: Routing LLM to NLP",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:system-architecture",
+      "label": "System Architecture",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:results",
+      "label": "Results",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-clients-say",
+      "label": "What Clients Say",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-we-d-tell-engineers-starting-this",
+      "label": "What We’d Tell Engineers Starting This",
+      "kind": "article_section"
+    },
+    {
+      "id": "banner_cta",
+      "label": "Banner CTA",
+      "kind": "banner_cta"
+    }
+  ],
+  "zone_warnings": [],
+  "shared_variants": [
+    "modals@1"
+  ],
+  "compliance": {
+    "hash": "6f999e723763a984fb011b5837b1d5c846ea8e02191ba01f44325eba22e7efe5",
+    "cached": false,
+    "action": "needs_decision",
+    "model_action": "needs_decision",
+    "summary": "The page presents GoGloby as a company that builds and maintains custom production AI systems, an offer that conflicts with GoGloby’s staffing and recruiting positioning. Its case-study results and client testimonials also make claims that are not supported by the company documents.",
+    "llm_problems": [
+      {
+        "title": "Custom AI development offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity; Glossary §1",
+        "rule_verified": true,
+        "issue": "The page presents GoGloby as building and maintaining production AI software, while the sources say GoGloby recruits and staffs engineers and is not a software development shop.",
+        "fix": "Remove this offer or obtain a company decision confirming that GoGloby sells custom AI system development.",
+        "subject": "GoGloby’s custom AI development offer",
+        "page_value": "Builds and maintains production AI systems",
+        "source_value": "GoGloby recruits and staffs engineers; clients run the work",
+        "count": 5,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "GoGloby built a production real-time voice AI system",
+            "verified": true,
+            "reason": "The meta description says GoGloby built a production system, presenting software development as its work."
+          },
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 2",
+            "quote": "GoGloby replaced that bottleneck with a production real-time voice AI system",
+            "verified": true,
+            "reason": "The introduction describes GoGloby replacing a recruiting workflow with a system it built."
+          },
+          {
+            "zone_id": "article:the-situation-at-a-glance",
+            "part": "table_cell 12",
+            "quote": "End-to-end real-time voice AI pipeline with hybrid LLM + NLP architecture",
+            "verified": true,
+            "reason": "The solution summary presents an engineered AI pipeline as the service delivered."
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "GoGloby builds it.",
+            "verified": true,
+            "reason": "The banner explicitly offers to build production AI systems for prospective clients."
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "Every system in this case study was built and is maintained",
+            "verified": true,
+            "reason": "The banner claims GoGloby builds and maintains systems, rather than recruiting or staffing engineers."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Screening cost reduction unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed reduction in screening cost is not stated in the Fact Sheet.",
+        "fix": "Remove or verify the screening-cost figures before retaining them.",
+        "subject": "Voice AI screening cost",
+        "page_value": "$35 to $1.38 per screening",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "reducing screening costs from $35 to $1.38",
+            "verified": true,
+            "reason": "The meta description reports a screening-cost reduction that the Fact Sheet does not document."
+          },
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": "table_cell 6",
+            "quote": "$35.00 → $1.38 (↓ 96%)",
+            "verified": true,
+            "reason": "The achievements table claims a per-screening cost result absent from the Fact Sheet."
+          },
+          {
+            "zone_id": "article:system-architecture",
+            "part": null,
+            "quote": "TOTAL\n$550\n$1.38",
+            "verified": true,
+            "reason": "The cost breakdown gives monthly and per-screening totals that the Fact Sheet does not verify."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Screening speed claims unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed screening-time improvements are not stated in the Fact Sheet.",
+        "fix": "Remove or verify the screening-time results before retaining them.",
+        "subject": "Voice AI screening time",
+        "page_value": "85% faster; 45 minutes to 12 minutes",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "h1",
+            "part": "field 1",
+            "quote": "Screens Candidates 85% Faster",
+            "verified": true,
+            "reason": "The H1 claims a screening-speed improvement that is not supported by the Fact Sheet."
+          },
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "Screening Time Per Candidate\n↓ 85%",
+            "verified": true,
+            "reason": "The achievements table reports an unverified screening-time reduction."
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "45 minutes\n12 minutes\n↓ 73%",
+            "verified": true,
+            "reason": "The results table reports screening times and a reduction that the Fact Sheet does not document."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Recruiter screening baseline unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed share of recruiter time spent screening and the per-candidate time are not stated in the Fact Sheet.",
+        "fix": "Remove or verify these operational baseline figures before retaining them.",
+        "subject": "GoGloby recruiter screening baseline",
+        "page_value": "40% of recruiter time; 45 minutes per candidate",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 1",
+            "quote": "consuming 40% of recruiter time — 45 minutes per candidate",
+            "verified": true,
+            "reason": "The introduction gives unverified figures about GoGloby recruiters’ screening workload."
+          },
+          {
+            "zone_id": "article:the-problem",
+            "part": "paragraph 1",
+            "quote": "Every candidate required 45 minutes of direct recruiter time",
+            "verified": true,
+            "reason": "The problem section presents a per-candidate staffing-process baseline not found in the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Availability result unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed 24/7 screening availability is not stated in the Fact Sheet.",
+        "fix": "Remove or verify the screening-availability claim before retaining it.",
+        "subject": "Voice AI screening availability",
+        "page_value": "24/7 across all time zones",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": "table_cell 8",
+            "quote": "8 hrs/day → 24/7 across all time zones",
+            "verified": true,
+            "reason": "The achievements table claims round-the-clock screening availability without Fact Sheet support."
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "8 hrs/day\n24 hrs/day\n↑ 300%",
+            "verified": true,
+            "reason": "The results table reports an unverified increase in screening availability."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Evaluation scores unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The before-and-after evaluation consistency scores are not stated in the Fact Sheet.",
+        "fix": "Remove or verify the evaluation consistency figures before retaining them.",
+        "subject": "Evaluation consistency score",
+        "page_value": "65% to 94%",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "Evaluation Consistency Score\n65% → 94%",
+            "verified": true,
+            "reason": "The achievements table gives evaluation scores that the Fact Sheet does not verify."
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "65%\n94%\n↑ 45%",
+            "verified": true,
+            "reason": "The results table repeats the unsupported evaluation consistency result."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "False-positive results unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed reduction in false positives on shortlists is not stated in the Fact Sheet.",
+        "fix": "Remove or verify the false-positive figures before retaining them.",
+        "subject": "False-positive rate on shortlists",
+        "page_value": "35% to 2.1%",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "False Positive Rate on Shortlists\n35% → 2.1%",
+            "verified": true,
+            "reason": "The achievements table claims a false-positive reduction absent from the Fact Sheet."
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "35%\n2.1%\n↓ 94%",
+            "verified": true,
+            "reason": "The results table repeats the unsupported false-positive result."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Extraction accuracy unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed information extraction accuracy is not stated in the Fact Sheet.",
+        "fix": "Remove or verify the information extraction accuracy claim before retaining it.",
+        "subject": "Information extraction accuracy",
+        "page_value": "94%",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "Information Extraction Accuracy\n94%",
+            "verified": true,
+            "reason": "The achievements table reports an accuracy figure that the Fact Sheet does not document."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Candidate satisfaction unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; What clients say",
+        "rule_verified": true,
+        "issue": "The candidate satisfaction score is not stated in the Fact Sheet.",
+        "fix": "Remove or verify the candidate satisfaction score before retaining it.",
+        "subject": "Candidate satisfaction score",
+        "page_value": "8.9 / 10",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "Candidate Satisfaction Score\n8.9 / 10",
+            "verified": true,
+            "reason": "The achievements table gives an unsupported candidate satisfaction score."
+          },
+          {
+            "zone_id": "article:results",
+            "part": "table_cell 31",
+            "quote": "8.9 / 10",
+            "verified": true,
+            "reason": "The results table repeats the candidate satisfaction score not found in the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "System uptime unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed system uptime is not stated in the Fact Sheet.",
+        "fix": "Remove or verify the system uptime claim before retaining it.",
+        "subject": "Voice AI system uptime",
+        "page_value": "99.6%",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "System Uptime\n99.6%",
+            "verified": true,
+            "reason": "The achievements table claims a system uptime figure that the Fact Sheet does not document."
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "99.6%\nvs. 99% target",
+            "verified": true,
+            "reason": "The results table reports uptime and a target absent from the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Development payback unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claim that the system paid for its development cost within 90 days is not stated in the Fact Sheet.",
+        "fix": "Remove or verify the development payback claim before retaining it.",
+        "subject": "Voice AI system development payback",
+        "page_value": "Paid back within 90 days",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:system-architecture",
+            "part": "paragraph 2",
+            "quote": "paid for its entire development cost within the first 90 days of operation",
+            "verified": true,
+            "reason": "The architecture section makes an unverified claim about the system’s financial payback."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Client testimonial claims unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: What clients say",
+        "rule_verified": true,
+        "issue": "The Fact Sheet says client quotes are not available, but the page presents two client testimonials and their reported results.",
+        "fix": "Remove the testimonials or verify them and update the source of truth.",
+        "subject": "Voice AI screening client testimonials",
+        "page_value": "Two attributed client testimonials",
+        "source_value": "Client quotes: not available yet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:what-clients-say",
+            "part": "paragraph 1",
+            "quote": "GoGloby built a voice AI screening system for us",
+            "verified": true,
+            "reason": "The first testimonial attributes a system build and its client outcomes to GoGloby, while the Fact Sheet has no client quotes."
+          },
+          {
+            "zone_id": "article:what-clients-say",
+            "part": "paragraph 3",
+            "quote": "GoGloby integrated their voice AI system into our workflow",
+            "verified": true,
+            "reason": "The second testimonial claims a client integration and results not present in the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Advice targets engineers",
+        "category": "wrong_audience",
+        "severity": "medium",
+        "rule": "Glossary §9",
+        "rule_verified": true,
+        "issue": "This section addresses engineers with general implementation advice instead of writing for companies ready to hire.",
+        "fix": "Remove the engineer-directed instructional section or refocus it for hiring buyers.",
+        "subject": "Page audience",
+        "page_value": "Advice for engineers",
+        "source_value": "Content targets buyers ready to hire",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:what-we-d-tell-engineers-starting-this",
+            "part": "heading 1",
+            "quote": "What We’d Tell Engineers Starting This",
+            "verified": true,
+            "reason": "The section title directly addresses engineers as learners rather than hiring buyers."
+          },
+          {
+            "zone_id": "article:what-we-d-tell-engineers-starting-this",
+            "part": "paragraph 1",
+            "quote": "Decompose your AI pipeline into components",
+            "verified": true,
+            "reason": "The section gives implementation advice to engineers rather than helping a company choose a recruiting or staffing service."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Call booking CTA wording",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §2; Glossary §7",
+        "rule_verified": true,
+        "issue": "The call-to-action promotes custom AI system building and does not use the approved recruiting or staffing CTA wording.",
+        "fix": "Replace the CTA with the approved wording for a recruiting or staffing service, or remove it if the development offer is discontinued.",
+        "subject": "Banner call to action",
+        "page_value": "Book A Call",
+        "source_value": "Get vetted profiles; Start a search",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 2",
+            "quote": "Book A Call",
+            "verified": true,
+            "reason": "The CTA books a call for a page selling custom system development rather than directing buyers to an approved service."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      }
+    ],
+    "problems": [
+      {
+        "title": "Custom AI development offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity; Glossary §1",
+        "rule_verified": true,
+        "issue": "The page presents GoGloby as building and maintaining production AI software, while the sources say GoGloby recruits and staffs engineers and is not a software development shop.",
+        "fix": "Remove this offer or obtain a company decision confirming that GoGloby sells custom AI system development.",
+        "subject": "GoGloby’s custom AI development offer",
+        "page_value": "Builds and maintains production AI systems",
+        "source_value": "GoGloby recruits and staffs engineers; clients run the work",
+        "count": 5,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "GoGloby built a production real-time voice AI system",
+            "verified": true,
+            "reason": "The meta description says GoGloby built a production system, presenting software development as its work."
+          },
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 2",
+            "quote": "GoGloby replaced that bottleneck with a production real-time voice AI system",
+            "verified": true,
+            "reason": "The introduction describes GoGloby replacing a recruiting workflow with a system it built.",
+            "fragment": "GoGloby replaced that bottleneck with a",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:the-situation-at-a-glance",
+            "part": "table_cell 12",
+            "quote": "End-to-end real-time voice AI pipeline with hybrid LLM + NLP architecture",
+            "verified": true,
+            "reason": "The solution summary presents an engineered AI pipeline as the service delivered.",
+            "fragment": "End-to-end real-time voice AI pipeline with",
+            "place": "table, row \"Solution\"",
+            "locator": 3
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "GoGloby builds it.",
+            "verified": true,
+            "reason": "The banner explicitly offers to build production AI systems for prospective clients.",
+            "fragment": "GoGloby builds it.",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "Every system in this case study was built and is maintained",
+            "verified": true,
+            "reason": "The banner claims GoGloby builds and maintains systems, rather than recruiting or staffing engineers.",
+            "fragment": "Every system in this case study",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Screening cost reduction unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed reduction in screening cost is not stated in the Fact Sheet.",
+        "fix": "Remove or verify the screening-cost figures before retaining them.",
+        "subject": "Voice AI screening cost",
+        "page_value": "$35 to $1.38 per screening",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "reducing screening costs from $35 to $1.38",
+            "verified": true,
+            "reason": "The meta description reports a screening-cost reduction that the Fact Sheet does not document."
+          },
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": "table_cell 6",
+            "quote": "$35.00 → $1.38 (↓ 96%)",
+            "verified": true,
+            "reason": "The achievements table claims a per-screening cost result absent from the Fact Sheet.",
+            "fragment": "$35.00 → $1.38 (↓ 96%)",
+            "place": "table, row \"Cost Per Screening\", column \"Result\"",
+            "locator": 3
+          },
+          {
+            "zone_id": "article:system-architecture",
+            "part": null,
+            "quote": "TOTAL\n$550\n$1.38",
+            "verified": true,
+            "reason": "The cost breakdown gives monthly and per-screening totals that the Fact Sheet does not verify.",
+            "fragment": null,
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Screening speed claims unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed screening-time improvements are not stated in the Fact Sheet.",
+        "fix": "Remove or verify the screening-time results before retaining them.",
+        "subject": "Voice AI screening time",
+        "page_value": "85% faster; 45 minutes to 12 minutes",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "h1",
+            "part": "field 1",
+            "quote": "Screens Candidates 85% Faster",
+            "verified": true,
+            "reason": "The H1 claims a screening-speed improvement that is not supported by the Fact Sheet.",
+            "fragment": "Screens Candidates 85% Faster",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "Screening Time Per Candidate\n↓ 85%",
+            "verified": true,
+            "reason": "The achievements table reports an unverified screening-time reduction.",
+            "fragment": "Screening Time Per Candidate",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "45 minutes\n12 minutes\n↓ 73%",
+            "verified": true,
+            "reason": "The results table reports screening times and a reduction that the Fact Sheet does not document.",
+            "fragment": "recruiter time —-,45 minutes,-per candidate, 6",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Recruiter screening baseline unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed share of recruiter time spent screening and the per-candidate time are not stated in the Fact Sheet.",
+        "fix": "Remove or verify these operational baseline figures before retaining them.",
+        "subject": "GoGloby recruiter screening baseline",
+        "page_value": "40% of recruiter time; 45 minutes per candidate",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 1",
+            "quote": "consuming 40% of recruiter time — 45 minutes per candidate",
+            "verified": true,
+            "reason": "The introduction gives unverified figures about GoGloby recruiters’ screening workload.",
+            "fragment": "screening calls were-,consuming 40% of recruiter time,-— 45 minutes",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:the-problem",
+            "part": "paragraph 1",
+            "quote": "Every candidate required 45 minutes of direct recruiter time",
+            "verified": true,
+            "reason": "The problem section presents a per-candidate staffing-process baseline not found in the Fact Sheet.",
+            "fragment": "Every candidate required 45 minutes of",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Availability result unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed 24/7 screening availability is not stated in the Fact Sheet.",
+        "fix": "Remove or verify the screening-availability claim before retaining it.",
+        "subject": "Voice AI screening availability",
+        "page_value": "24/7 across all time zones",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": "table_cell 8",
+            "quote": "8 hrs/day → 24/7 across all time zones",
+            "verified": true,
+            "reason": "The achievements table claims round-the-clock screening availability without Fact Sheet support.",
+            "fragment": "8 hrs/day → 24/7 across all",
+            "place": "table, row \"Screening Availability\", column \"Result\"",
+            "locator": 3
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "8 hrs/day\n24 hrs/day\n↑ 300%",
+            "verified": true,
+            "reason": "The results table reports an unverified increase in screening availability.",
+            "fragment": "8 hrs/day,-→ 24/7 across",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Evaluation scores unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The before-and-after evaluation consistency scores are not stated in the Fact Sheet.",
+        "fix": "Remove or verify the evaluation consistency figures before retaining them.",
+        "subject": "Evaluation consistency score",
+        "page_value": "65% to 94%",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "Evaluation Consistency Score\n65% → 94%",
+            "verified": true,
+            "reason": "The achievements table gives evaluation scores that the Fact Sheet does not verify.",
+            "fragment": "Evaluation Consistency Score",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "65%\n94%\n↑ 45%",
+            "verified": true,
+            "reason": "The results table repeats the unsupported evaluation consistency result.",
+            "fragment": "↑ 45%",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "False-positive results unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed reduction in false positives on shortlists is not stated in the Fact Sheet.",
+        "fix": "Remove or verify the false-positive figures before retaining them.",
+        "subject": "False-positive rate on shortlists",
+        "page_value": "35% to 2.1%",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "False Positive Rate on Shortlists\n35% → 2.1%",
+            "verified": true,
+            "reason": "The achievements table claims a false-positive reduction absent from the Fact Sheet.",
+            "fragment": "False Positive Rate on Shortlists",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "35%\n2.1%\n↓ 94%",
+            "verified": true,
+            "reason": "The results table repeats the unsupported false-positive result.",
+            "fragment": "↓ 94%",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Extraction accuracy unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed information extraction accuracy is not stated in the Fact Sheet.",
+        "fix": "Remove or verify the information extraction accuracy claim before retaining it.",
+        "subject": "Information extraction accuracy",
+        "page_value": "94%",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "Information Extraction Accuracy\n94%",
+            "verified": true,
+            "reason": "The achievements table reports an accuracy figure that the Fact Sheet does not document.",
+            "fragment": "Information Extraction Accuracy",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Candidate satisfaction unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; What clients say",
+        "rule_verified": true,
+        "issue": "The candidate satisfaction score is not stated in the Fact Sheet.",
+        "fix": "Remove or verify the candidate satisfaction score before retaining it.",
+        "subject": "Candidate satisfaction score",
+        "page_value": "8.9 / 10",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "Candidate Satisfaction Score\n8.9 / 10",
+            "verified": true,
+            "reason": "The achievements table gives an unsupported candidate satisfaction score.",
+            "fragment": "Candidate Satisfaction Score",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:results",
+            "part": "table_cell 31",
+            "quote": "8.9 / 10",
+            "verified": true,
+            "reason": "The results table repeats the candidate satisfaction score not found in the Fact Sheet.",
+            "fragment": "8.9 / 10",
+            "place": "table, row \"Candidate Satisfaction Score\", column \"Result\"",
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "System uptime unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claimed system uptime is not stated in the Fact Sheet.",
+        "fix": "Remove or verify the system uptime claim before retaining it.",
+        "subject": "Voice AI system uptime",
+        "page_value": "99.6%",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:achievements-after-partnering-with-gogloby",
+            "part": null,
+            "quote": "System Uptime\n99.6%",
+            "verified": true,
+            "reason": "The achievements table claims a system uptime figure that the Fact Sheet does not document.",
+            "fragment": "System Uptime",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:results",
+            "part": null,
+            "quote": "99.6%\nvs. 99% target",
+            "verified": true,
+            "reason": "The results table reports uptime and a target absent from the Fact Sheet.",
+            "fragment": "vs. 99% target",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Development payback unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Glossary §10",
+        "rule_verified": true,
+        "issue": "The claim that the system paid for its development cost within 90 days is not stated in the Fact Sheet.",
+        "fix": "Remove or verify the development payback claim before retaining it.",
+        "subject": "Voice AI system development payback",
+        "page_value": "Paid back within 90 days",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:system-architecture",
+            "part": "paragraph 2",
+            "quote": "paid for its entire development cost within the first 90 days of operation",
+            "verified": true,
+            "reason": "The architecture section makes an unverified claim about the system’s financial payback.",
+            "fragment": "paid for its entire development cost",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Client testimonial claims unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: What clients say",
+        "rule_verified": true,
+        "issue": "The Fact Sheet says client quotes are not available, but the page presents two client testimonials and their reported results.",
+        "fix": "Remove the testimonials or verify them and update the source of truth.",
+        "subject": "Voice AI screening client testimonials",
+        "page_value": "Two attributed client testimonials",
+        "source_value": "Client quotes: not available yet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:what-clients-say",
+            "part": "paragraph 1",
+            "quote": "GoGloby built a voice AI screening system for us",
+            "verified": true,
+            "reason": "The first testimonial attributes a system build and its client outcomes to GoGloby, while the Fact Sheet has no client quotes.",
+            "fragment": "built a voice AI screening system",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:what-clients-say",
+            "part": "paragraph 3",
+            "quote": "GoGloby integrated their voice AI system into our workflow",
+            "verified": true,
+            "reason": "The second testimonial claims a client integration and results not present in the Fact Sheet.",
+            "fragment": "GoGloby integrated their voice AI system",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Advice targets engineers",
+        "category": "wrong_audience",
+        "severity": "medium",
+        "rule": "Glossary §9",
+        "rule_verified": true,
+        "issue": "This section addresses engineers with general implementation advice instead of writing for companies ready to hire.",
+        "fix": "Remove the engineer-directed instructional section or refocus it for hiring buyers.",
+        "subject": "Page audience",
+        "page_value": "Advice for engineers",
+        "source_value": "Content targets buyers ready to hire",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:what-we-d-tell-engineers-starting-this",
+            "part": "heading 1",
+            "quote": "What We’d Tell Engineers Starting This",
+            "verified": true,
+            "reason": "The section title directly addresses engineers as learners rather than hiring buyers.",
+            "fragment": "What We’d Tell Engineers Starting This",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:what-we-d-tell-engineers-starting-this",
+            "part": "paragraph 1",
+            "quote": "Decompose your AI pipeline into components",
+            "verified": true,
+            "reason": "The section gives implementation advice to engineers rather than helping a company choose a recruiting or staffing service.",
+            "fragment": "Decompose your AI pipeline into components",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Call booking CTA wording",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §2; Glossary §7",
+        "rule_verified": true,
+        "issue": "The call-to-action promotes custom AI system building and does not use the approved recruiting or staffing CTA wording.",
+        "fix": "Replace the CTA with the approved wording for a recruiting or staffing service, or remove it if the development offer is discontinued.",
+        "subject": "Banner call to action",
+        "page_value": "Book A Call",
+        "source_value": "Get vetted profiles; Start a search",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 2",
+            "quote": "Book A Call",
+            "verified": true,
+            "reason": "The CTA books a call for a page selling custom system development rather than directing buyers to an approved service.",
+            "fragment": "Book A Call",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      }
+    ],
+    "usage": {
+      "input": 3649,
+      "cached_input": 10166,
+      "output": 6100
+    },
+    "error": null
+  },
+  "geo": {
+    "hash": "eae2e57cb8fbf44fc7ceaafe2bd56fd75945e71d128ffbcc220873e27b08e3e6",
+    "cached": false,
+    "code": [
+      {
+        "id": "trap_terms",
+        "status": "pass",
+        "value": "none in title, H1, meta, og",
+        "places": []
+      },
+      {
+        "id": "em_dash",
+        "status": "fail",
+        "value": "34 found",
+        "places": [
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 1",
+            "value": "— | …nsuming 40% of recruiter time — 45 minutes per candidate, 6 t…"
+          },
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 2",
+            "value": "— | …ion real-time voice AI system — and what it took to build it …"
+          },
+          {
+            "zone_id": "article:the-problem",
+            "part": "paragraph 3",
+            "value": "— | …, the bottleneck became acute — the team couldn’t screen fast…"
+          },
+          {
+            "zone_id": "article:the-problem",
+            "part": "paragraph 5",
+            "value": "— | At $35 per screening — recruiter time fully loaded —…"
+          },
+          {
+            "zone_id": "article:the-problem",
+            "part": "paragraph 5",
+            "value": "— | …— recruiter time fully loaded — and with hundreds of candidat…"
+          },
+          {
+            "zone_id": "article:the-engineering-challenge",
+            "part": "list_item 1",
+            "value": "— | …Candidates notice immediately — the experience degrades from …"
+          },
+          {
+            "zone_id": "article:the-engineering-challenge",
+            "part": "list_item 3",
+            "value": "— | …, and when they’re deflecting — and respond accordingly."
+          },
+          {
+            "zone_id": "article:the-engineering-challenge",
+            "part": "list_item 6",
+            "value": "— | …below the $35 manual baseline — at any hour, any volume."
+          },
+          {
+            "zone_id": "article:technology-stack-decisions",
+            "part": "paragraph 5",
+            "value": "— | …tency was the decisive factor — 100ms faster than the nearest…"
+          },
+          {
+            "zone_id": "article:technology-stack-decisions",
+            "part": "paragraph 7",
+            "value": "— | …ighest across all test panels — candidates in blind tests cou…"
+          },
+          {
+            "zone_id": "article:the-critical-optimisation-routing-llm-to-nlp",
+            "part": "paragraph 1",
+            "value": "— | …ecision in the entire project — and the one that made the eco…"
+          },
+          {
+            "zone_id": "article:the-critical-optimisation-routing-llm-to-nlp",
+            "part": "paragraph 2",
+            "value": "— | …nversations felt slightly off — too much silence between turn…"
+          },
+          {
+            "zone_id": "article:the-critical-optimisation-routing-llm-to-nlp",
+            "part": "paragraph 3",
+            "value": "— | …ed that intent classification — deciding whether a candidate …"
+          },
+          {
+            "zone_id": "article:the-critical-optimisation-routing-llm-to-nlp",
+            "part": "paragraph 3",
+            "value": "— | …s giving an incomplete answer — didn’t require the full reaso…"
+          },
+          {
+            "zone_id": "article:the-critical-optimisation-routing-llm-to-nlp",
+            "part": "paragraph 4",
+            "value": "— | …ndles what requires reasoning — generating responses, asking …"
+          },
+          {
+            "zone_id": "article:the-critical-optimisation-routing-llm-to-nlp",
+            "part": "paragraph 4",
+            "value": "— | … what requires classification — detecting intent, managing tu…"
+          },
+          {
+            "zone_id": "article:system-architecture",
+            "part": "paragraph 1",
+            "value": "— | …nses, and manages turn-taking — all within the latency budget…"
+          },
+          {
+            "zone_id": "article:system-architecture",
+            "part": "table_cell 12",
+            "value": "— | …ranscription at 150ms latency — streaming, no wait for uttera…",
+            "place": "table, row \"2. Transcription\", column \"Responsibility\""
+          },
+          {
+            "zone_id": "article:system-architecture",
+            "part": "paragraph 2",
+            "value": "— | …uation criteria on every call — and paid for its entire devel…"
+          },
+          {
+            "zone_id": "article:results",
+            "part": "table_cell 30",
+            "value": "— | —",
+            "place": "table, row \"Candidate satisfaction score\", column \"Before\""
+          },
+          {
+            "zone_id": "article:results",
+            "part": "table_cell 32",
+            "value": "— | —",
+            "place": "table, row \"Candidate satisfaction score\", column \"Before\""
+          },
+          {
+            "zone_id": "article:results",
+            "part": "table_cell 34",
+            "value": "— | —",
+            "place": "table, row \"Candidate satisfaction score\", column \"Before\""
+          },
+          {
+            "zone_id": "article:what-clients-say",
+            "part": "paragraph 1",
+            "value": "— | … appreciated the availability — they could screen at 9pm afte…"
+          },
+          {
+            "zone_id": "article:what-clients-say",
+            "part": "paragraph 2",
+            "value": "— | — Founder & CEO, Professional S…"
+          },
+          {
+            "zone_id": "article:what-clients-say",
+            "part": "paragraph 3",
+            "value": "— | …th we had cut that to 8 calls — only the ones that actually n…"
+          },
+          {
+            "zone_id": "article:what-clients-say",
+            "part": "paragraph 4",
+            "value": "— | — Co-Founder, Growth-Stage SaaS…"
+          },
+          {
+            "zone_id": "article:what-we-d-tell-engineers-starting-this",
+            "part": "paragraph 1",
+            "value": "— | …ation is engineering overkill — like using an excavator to pl…"
+          },
+          {
+            "zone_id": "article:what-we-d-tell-engineers-starting-this",
+            "part": "paragraph 2",
+            "value": "— | …imise each layer individually — shaving 100ms from STT is wor…"
+          },
+          {
+            "zone_id": "article:what-we-d-tell-engineers-starting-this",
+            "part": "paragraph 3",
+            "value": "— | …atives is negligible per call — but the impact on candidate e…"
+          },
+          {
+            "zone_id": "article:what-we-d-tell-engineers-starting-this",
+            "part": "paragraph 4",
+            "value": "— | …recovery logic from the start — not as a patch — was the diff…"
+          },
+          {
+            "zone_id": "article:what-we-d-tell-engineers-starting-this",
+            "part": "paragraph 4",
+            "value": "— | …om the start — not as a patch — was the difference between a …"
+          },
+          {
+            "zone_id": "article:what-we-d-tell-engineers-starting-this",
+            "part": "paragraph 5",
+            "value": "— | …the same evaluation framework — regardless of time zone, day …"
+          },
+          {
+            "zone_id": "article:what-we-d-tell-engineers-starting-this",
+            "part": "paragraph 6",
+            "value": "— | …re candidates more thoroughly — which improves hire quality a…"
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "value": "— | …hip and perform in production — GoGloby builds it. Every syst…"
+          }
+        ]
+      },
+      {
+        "id": "ampersand",
+        "status": "fail",
+        "value": "1 found",
+        "places": [
+          {
+            "zone_id": "article:what-clients-say",
+            "part": "paragraph 2",
+            "value": "& | — Founder & CEO, Professional Services Fi…"
+          }
+        ]
+      },
+      {
+        "id": "uk_spelling",
+        "status": "fail",
+        "value": "2 found",
+        "places": [
+          {
+            "zone_id": "article:the-critical-optimisation-routing-llm-to-nlp",
+            "part": "heading 1",
+            "value": "Optimisation | The Critical Optimisation: Routing LLM to NLP"
+          },
+          {
+            "zone_id": "article:what-we-d-tell-engineers-starting-this",
+            "part": "paragraph 2",
+            "value": "Optimise | …ic conversational experience. Optimise each layer individually — sha…"
+          }
+        ]
+      }
+    ],
+    "llm": [
+      {
+        "id": "answer_first",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "Initial screening calls were consuming 40% of recruiter time — 45 minutes per candidate, 6 to 8 calls per day, available only during business hours, in one time zone.",
+        "note": "The opening describes the screening bottleneck but does not answer how the system achieved the H1’s speed and cost results; add those results and a brief explanation up front.",
+        "evidence_verified": true,
+        "fragment": "Initial screening calls were consuming 40%"
+      },
+      {
+        "id": "recruiting_firm_early",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "This is a case study, so this check does not apply.",
+        "evidence_verified": null
+      },
+      {
+        "id": "buyer_ready",
+        "answer": "no",
+        "value": "informational",
+        "zone_id": "page",
+        "evidence": "Decompose your AI pipeline into components and evaluate the right model class for each one independently.",
+        "note": "The article gives engineering advice rather than addressing companies ready to hire Data and AI engineers; focus the page on the hiring buyer.",
+        "evidence_verified": true,
+        "fragment": "Decompose your AI pipeline into components"
+      },
+      {
+        "id": "target_keyword",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "No Glossary §6 term is a suitable target for this case study.",
+        "evidence_verified": null
+      },
+      {
+        "id": "uses_data",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:results",
+        "evidence": "Screening cost per candidate\n$35.00\n$1.38\n↓ 96%",
+        "note": "The article provides quotable metrics but does not give a nearby source or date for them; add attribution or a date.",
+        "evidence_verified": true,
+        "fragment": "Screening cost per candidate"
+      },
+      {
+        "id": "proof_background",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "This is a case study, so this check does not apply.",
+        "evidence_verified": null
+      },
+      {
+        "id": "sell_against_open_role",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "This is a case study, so this check does not apply.",
+        "evidence_verified": null
+      }
+    ],
+    "placement": null,
+    "usage": {
+      "input": 3454,
+      "cached_input": 8847,
+      "output": 897
+    },
+    "error": null
+  },
+  "seo": {
+    "checks": [
+      {
+        "id": "http_status",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "200",
+        "severity": "high"
+      },
+      {
+        "id": "title_length",
+        "status": "pass",
+        "zone_id": "title",
+        "value": "60 characters",
+        "severity": "medium"
+      },
+      {
+        "id": "meta_present",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "121 characters",
+        "severity": "high"
+      },
+      {
+        "id": "meta_length",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "121 characters (120-158)",
+        "severity": "low"
+      },
+      {
+        "id": "h1_count",
+        "status": "pass",
+        "zone_id": "h1",
+        "value": "1",
+        "severity": "high"
+      },
+      {
+        "id": "title_h1_match",
+        "status": "pass",
+        "zone_id": "title",
+        "value": "Title and H1 agree",
+        "severity": "low"
+      },
+      {
+        "id": "canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "https://gogloby.com/case-study/how-gogloby-engineered-a-production-voice-ai-system-that-screens-candidates-85-faster-at-96-lower-cost/",
+        "severity": "high"
+      },
+      {
+        "id": "indexable",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "severity": "high"
+      },
+      {
+        "id": "schema_required",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "present",
+        "severity": "medium"
+      },
+      {
+        "id": "schema_recommended",
+        "status": "fail",
+        "zone_id": "json_ld",
+        "value": "missing: BreadcrumbList",
+        "severity": "medium"
+      },
+      {
+        "id": "dates",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "published: 2026-05-06T21:09:20+03:00; modified: 2026-06-08T19:39:19+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "date_mismatch",
+        "status": "pass",
+        "zone_id": "date",
+        "value": "visible \"Updated on June 8, 2026\" vs dateModified 2026-06-08T19:39:19+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "broken_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 checked",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "redirecting_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "none",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "link_to_services",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "no link to /services/*",
+        "severity": "medium"
+      },
+      {
+        "id": "alt_missing",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without alt",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_empty",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 with empty alt",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "image_dimensions",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without width/height",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "heading_order",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "og_present",
+        "status": "pass",
+        "zone_id": "og_title",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "og_url_canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "og:url https://gogloby.com/case-study/how-gogloby-engineered-a-production-voice-ai-system-that-screens-candidates-85-faster-at-96-lower-cost/ vs canonical https://gogloby.com/case-study/how-gogloby-engineered-a-production-voice-ai-system-that-screens-candidates-85-faster-at-96-lower-cost/",
+        "severity": "low"
+      },
+      {
+        "id": "twitter_card",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "summary_large_image",
+        "severity": "low"
+      },
+      {
+        "id": "html_lang",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "en-US",
+        "severity": "low"
+      },
+      {
+        "id": "viewport",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "jsonld_valid",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "3 block(s)",
+        "severity": "high"
+      },
+      {
+        "id": "article_fields",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "anchors_resolve",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "11 checked",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "faq_schema_matches_dom",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "accordion block: false, FAQPage schema: false",
+        "severity": "low"
+      }
+    ]
+  }
+}
