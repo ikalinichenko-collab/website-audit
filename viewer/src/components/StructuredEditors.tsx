@@ -38,6 +38,8 @@ interface GeoQuestion {
   severity?: "high" | "medium" | "low";
   needs?: string[];
   confirm?: boolean;
+  /** built in: the server refuses any change to it */
+  locked?: boolean;
 }
 
 const GEO_TYPES = [
@@ -64,6 +66,7 @@ const GEO_HELP: Record<string, string> = {
 
 /** Drops empty and default fields, so the file stays short and "unsaved changes" compares like with like. */
 function cleanQuestion(q: GeoQuestion): GeoQuestion {
+  if (q.locked) return q;
   return {
     id: q.id,
     ...(q.title?.trim() ? { title: q.title.trim() } : {}),
@@ -85,7 +88,33 @@ function newQuestionId(existing: GeoQuestion[]): string {
   return id;
 }
 
-type Tried ={ state: "loading" } | { state: "error"; text: string } | { state: "done"; result: GeoTryResult };
+/** A question the code depends on: shown so the author knows it is asked, but nothing can be changed (the server refuses too). */
+function LockedQuestion({ q, tried, onTry }: { q: GeoQuestion; tried?: Tried; onTry: () => void }) {
+  const types = GEO_TYPES.filter(([k]) => q.applies_to.includes(k)).map(([, label]) => label);
+  return (
+    <div className="space-y-2 rounded-lg border border-slate-200 bg-slate-50 p-3 dark:border-slate-700 dark:bg-slate-800/40">
+      <div className="flex flex-wrap items-center gap-2">
+        <span className="rounded bg-slate-200 px-1.5 py-0.5 text-xs font-medium text-slate-700 dark:bg-slate-700 dark:text-slate-200" title="The code depends on this question, so it cannot be changed here.">
+          Built in
+        </span>
+        <span className="font-semibold">{q.title ?? q.id}</span>
+        <span className="text-xs text-slate-500">{(q.severity ?? "medium")} severity</span>
+        <button type="button" className={`${buttonClass} ml-auto`} disabled={tried?.state === "loading"} onClick={onTry}>
+          Try on the page
+        </button>
+      </div>
+      <p className="whitespace-pre-wrap text-sm text-slate-700 dark:text-slate-300">{q.question}</p>
+      <p className="text-xs text-slate-500">
+        Applies to: {types.join(", ")}
+        {q.needs?.length ? `. Also shown to the model: ${q.needs.join(", ")}` : ""}
+        {GEO_HELP[q.id] ? `. ${GEO_HELP[q.id]}` : ""}
+      </p>
+      {tried && <TryResult t={tried} />}
+    </div>
+  );
+}
+
+type Tried = { state: "loading" } | { state: "error"; text: string } | { state: "done"; result: GeoTryResult };
 
 function TryResult({ t }: { t: Tried }) {
   if (t.state === "loading") return <p className="text-sm text-slate-500">Asking the model on the live page...</p>;
@@ -168,7 +197,7 @@ export function GeoQuestionsEditor() {
         Questions the LLM answers about each page (GEO layer). Each question applies to the page types you tick. A question with
         a condition is asked only when that code check passed (for example the FAQ question only when the page has an FAQ). Write
         every question so that <b>yes means the page is fine</b>: a &ldquo;no&rdquo; becomes a finding with the title and severity
-        you set. Editing one question asks only that question again on the next run.
+        you set. Editing one question asks only that question again on the next run. Questions marked Built in (the opening, the search term, the buyer) are used by code and cannot be changed here.
       </p>
       <label className="flex items-center gap-2 text-sm">
         <input type="checkbox" checked={raw} onChange={(e) => setRaw(e.target.checked)} /> Edit as JSON
@@ -191,7 +220,10 @@ export function GeoQuestionsEditor() {
             <span className="text-xs text-slate-500">One model call with the default model, about a cent. Nothing is saved.</span>
           </div>
           <div className="space-y-3">
-            {qs.map((q, i) => (
+            {qs.map((q, i) =>
+              q.locked ? (
+                <LockedQuestion key={i} q={q} tried={tried[i]} onTry={() => tryQuestion(i)} />
+              ) : (
               <div key={i} className="space-y-2 rounded-lg border border-slate-200 bg-white p-3 dark:border-slate-700 dark:bg-slate-900">
                 <div className="flex flex-wrap items-center gap-2">
                   <input
@@ -273,7 +305,8 @@ export function GeoQuestionsEditor() {
                 {GEO_HELP[q.id] && <p className="text-xs text-slate-500">{GEO_HELP[q.id]}</p>}
                 {tried[i] && <TryResult t={tried[i]!} />}
               </div>
-            ))}
+              ),
+            )}
           </div>
           <div className="flex gap-2">
             <button

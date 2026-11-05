@@ -209,6 +209,7 @@ export function validateResource(r: Resource, content: string): void {
         if (q.needs !== undefined) for (const n of strArray(q.needs, `Question "${id}": needs`)) if (!GEO_NEEDS.includes(n as never)) fail(`Question "${id}": unknown data "${n}"`);
         if (q.confirm !== undefined && typeof q.confirm !== "boolean") fail(`Question "${id}": confirm must be true or false`);
       }
+      checkLockedQuestions(r, data as Record<string, unknown>[]);
       return;
     }
     case "seo": {
@@ -327,6 +328,30 @@ export function readHistory(r: Resource, ts: string): string | null {
 }
 
 /** Validates, keeps the previous version in .history and replaces the file. */
+/** Key order does not matter when comparing a locked question with the saved one. */
+function stable(v: unknown): string {
+  if (Array.isArray(v)) return `[${v.map(stable).join(",")}]`;
+  if (isObj(v)) return `{${Object.keys(v).sort().map((k) => `${JSON.stringify(k)}:${stable(v[k])}`).join(",")}}`;
+  return JSON.stringify(v);
+}
+
+/**
+ * Questions marked `locked` in the file (the ones code depends on) cannot be changed, removed or added through the app:
+ * the saved file is the definition. Editing the file by hand is the way to change them.
+ */
+function checkLockedQuestions(r: Resource, questions: Record<string, unknown>[]): void {
+  const file = abs(r);
+  const saved: Record<string, unknown>[] = fs.existsSync(file) ? (JSON.parse(fs.readFileSync(file, "utf8")) as Record<string, unknown>[]) : [];
+  const lockedOld = new Map(saved.filter((q) => q.locked === true).map((q) => [String(q.id), q]));
+  const lockedNew = new Map(questions.filter((q) => q.locked === true).map((q) => [String(q.id), q]));
+  for (const [id, old] of lockedOld) {
+    const now = lockedNew.get(id);
+    if (!now) fail(`Question "${id}" is built in and cannot be removed or unlocked`);
+    if (stable(now) !== stable(old)) fail(`Question "${id}" is built in and cannot be changed`);
+  }
+  for (const id of lockedNew.keys()) if (!lockedOld.has(id)) fail(`Question "${id}" cannot be marked built in from the app`);
+}
+
 export function writeResource(r: Resource, content: string): { changed: boolean } {
   validateResource(r, content);
   const normalized = content.replace(/\r\n/g, "\n");

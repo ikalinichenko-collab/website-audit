@@ -4,10 +4,9 @@
     "title": "Opening does not answer the H1",
     "question": "The page gives you answer_first.text: the first two sentences of the first content zone. Do they answer the question asked by the H1, so an AI assistant could quote them alone? Evidence comes from that text.",
     "applies_to": [
-      "home",
-      "service",
       "article"
-    ]
+    ],
+    "locked": true
   },
   {
     "id": "buyer_problem",
@@ -56,9 +55,9 @@
     "applies_to": [
       "home",
       "service",
-      "article",
       "company"
-    ]
+    ],
+    "locked": true
   },
   {
     "id": "target_keyword",
@@ -68,7 +67,8 @@
       "home",
       "service",
       "article"
-    ]
+    ],
+    "locked": true
   },
   {
     "id": "uses_data",

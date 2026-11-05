@@ -118,6 +118,8 @@ export interface GeoLlmQuestion {
   needs?: GeoNeed[];
   /** Ask a second time when the answer is no; the finding stands only if the second answer is no too. */
   confirm?: boolean;
+  /** built in: code depends on it, the app does not let anyone change it */
+  locked?: boolean;
 }
 
 export function loadGeoQuestions(): GeoLlmQuestion[] {
