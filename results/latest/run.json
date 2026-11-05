@@ -1,17 +1,17 @@
 {
-  "run_id": "2026-11-05T13-18-29-815Z",
-  "started_at": "2026-11-05T13:18:29.816Z",
-  "ended_at": "2026-11-05T13:24:34.888Z",
-  "pages_checked": 13,
-  "pages_skipped": 0,
-  "llm_calls": 28,
+  "run_id": "2026-11-05T15-08-21-388Z",
+  "started_at": "2026-11-05T15:08:21.388Z",
+  "ended_at": "2026-11-05T15:11:37.018Z",
+  "pages_checked": 7,
+  "pages_skipped": 8,
+  "llm_calls": 8,
   "llm_errors": 0,
   "tokens": {
-    "input": 202968,
-    "cached_input": 249724,
-    "output": 113799
+    "input": 33723,
+    "cached_input": 78575,
+    "output": 44900
   },
-  "cost_usd": 0.07969354000000001,
+  "cost_usd": 0.026608049999999998,
   "model": "gpt-6-luna",
   "layers": {
     "compliance": true,
@@ -19,6 +19,7 @@
     "seo": true
   },
   "subsections": [
-    "Resources/Use cases"
+    "Resources/Insights",
+    "Services/Services"
   ]
 }

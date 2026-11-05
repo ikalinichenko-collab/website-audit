@@ -1,0 +1,2648 @@
+{
+ "template": "article",
+ "zones": [
+  {
+   "id": "title",
+   "kind": "title",
+   "label": "Title",
+   "scope": "page",
+   "skipped": false,
+   "text": "10 Top Project Management Recruitment Agencies",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "10 Top Project Management Recruitment Agencies"
+    }
+   ]
+  },
+  {
+   "id": "meta_description",
+   "kind": "meta_description",
+   "label": "Meta description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Discover the 10 top project management recruitment agencies in 2026 to hire certified project managers, PMOs, and program leaders faster.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Discover the 10 top project management recruitment agencies in 2026 to hire certified project managers, PMOs, and program leaders faster."
+    }
+   ]
+  },
+  {
+   "id": "og_title",
+   "kind": "og_title",
+   "label": "og:title",
+   "scope": "page",
+   "skipped": false,
+   "text": "10 Top Project Management Recruitment Agencies",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "10 Top Project Management Recruitment Agencies"
+    }
+   ]
+  },
+  {
+   "id": "og_description",
+   "kind": "og_description",
+   "label": "og:description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Discover the 10 top project management recruitment agencies in 2026 to hire certified project managers, PMOs, and program leaders faster.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Discover the 10 top project management recruitment agencies in 2026 to hire certified project managers, PMOs, and program leaders faster."
+    }
+   ]
+  },
+  {
+   "id": "json_ld",
+   "kind": "json_ld",
+   "label": "Structured data (JSON-LD)",
+   "scope": "page",
+   "skipped": false,
+   "text": "10 Top Project Management Recruitment Agencies\n10 Top Project Management Recruitment Agencies\nDiscover the 10 top project management recruitment agencies in 2026 to hire certified project manage\nSergey Matikaynen\nGoGloby\nCan these firms help with remote project manager roles?\nYes, firms like GoGloby specialize in placing remote project managers across tech, creative, and international markets.\nDo recruiters offer contract/freelance PMs?\nYes, some PM recruiters, in the likes of SI System, help businesses find project managers who are open to work on a contract or freelance basis.\nWhat industries do PM recruiters specialize in?\nMany PM recruiters have their specialty across a wide range of industries. For example, GoGloby services firms in tech and finance, while 180 Engineering focuses on engineering and manufacturing brands.\nHow fast is the typical hiring timeline?\nMost agencies fill mid-level project management roles within 2–4 weeks. Senior or executive PM hires can take 6–8 weeks, especially for highly specialized or strategic positions.\nWhat certifications do PM recruiters prioritize?\nPM recruiters are on the lookout for candidates with certifications like PMP, PRINCE2, Certified ScrumMaster (CSM), and PMI-ACP.",
+   "parts": [
+    {
+     "type": "field",
+     "text": "10 Top Project Management Recruitment Agencies",
+     "area": "Article.name",
+     "index": 1
+    },
+    {
+     "type": "field",
+     "text": "10 Top Project Management Recruitment Agencies",
+     "area": "Article.headline",
+     "index": 2
+    },
+    {
+     "type": "field",
+     "text": "Discover the 10 top project management recruitment agencies in 2026 to hire certified project manage",
+     "area": "Article.description",
+     "index": 3
+    },
+    {
+     "type": "field",
+     "text": "Sergey Matikaynen",
+     "area": "Person.name",
+     "index": 4
+    },
+    {
+     "type": "field",
+     "text": "GoGloby",
+     "area": "Organization.name",
+     "index": 5
+    },
+    {
+     "type": "field",
+     "text": "Can these firms help with remote project manager roles?",
+     "area": "Question.name",
+     "index": 6
+    },
+    {
+     "type": "field",
+     "text": "Yes, firms like GoGloby specialize in placing remote project managers across tech, creative, and international markets.",
+     "area": "Answer.text",
+     "index": 7
+    },
+    {
+     "type": "field",
+     "text": "Do recruiters offer contract/freelance PMs?",
+     "area": "Question.name",
+     "index": 8
+    },
+    {
+     "type": "field",
+     "text": "Yes, some PM recruiters, in the likes of SI System, help businesses find project managers who are open to work on a contract or freelance basis.",
+     "area": "Answer.text",
+     "index": 9
+    },
+    {
+     "type": "field",
+     "text": "What industries do PM recruiters specialize in?",
+     "area": "Question.name",
+     "index": 10
+    },
+    {
+     "type": "field",
+     "text": "Many PM recruiters have their specialty across a wide range of industries. For example, GoGloby services firms in tech and finance, while 180 Engineering focuses on engineering and manufacturing brands.",
+     "area": "Answer.text",
+     "index": 11
+    },
+    {
+     "type": "field",
+     "text": "How fast is the typical hiring timeline?",
+     "area": "Question.name",
+     "index": 12
+    },
+    {
+     "type": "field",
+     "text": "Most agencies fill mid-level project management roles within 2–4 weeks. Senior or executive PM hires can take 6–8 weeks, especially for highly specialized or strategic positions.",
+     "area": "Answer.text",
+     "index": 13
+    },
+    {
+     "type": "field",
+     "text": "What certifications do PM recruiters prioritize?",
+     "area": "Question.name",
+     "index": 14
+    },
+    {
+     "type": "field",
+     "text": "PM recruiters are on the lookout for candidates with certifications like PMP, PRINCE2, Certified ScrumMaster (CSM), and PMI-ACP.",
+     "area": "Answer.text",
+     "index": 15
+    }
+   ]
+  },
+  {
+   "id": "h1",
+   "kind": "h1",
+   "label": "H1",
+   "scope": "page",
+   "skipped": false,
+   "text": "10 Top Project Management Recruitment Agencies",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "10 Top Project Management Recruitment Agencies"
+    }
+   ]
+  },
+  {
+   "id": "date",
+   "kind": "date",
+   "label": "Date",
+   "scope": "page",
+   "skipped": false,
+   "text": "Updated on June 17, 2026",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Updated on June 17, 2026"
+    }
+   ]
+  },
+  {
+   "id": "author",
+   "kind": "author",
+   "label": "Author",
+   "scope": "page",
+   "skipped": false,
+   "text": "Author avatar\nSergey Matikaynen / CTO\nArticle author\nSergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.\nView profile",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Author avatar",
+     "src": "https://gogloby.com/wp-content/uploads/2024/02/1706550966241.jpeg",
+     "file": "1706550966241.jpeg",
+     "alt": "Author avatar",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen / CTO",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Article author",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "View profile",
+     "links": [
+      {
+       "href": "https://gogloby.com/author/sergey/",
+       "text": "View profile"
+      }
+     ],
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "toc",
+   "kind": "toc",
+   "label": "Table of contents",
+   "scope": "page",
+   "skipped": false,
+   "text": "Table of Contents\nWhat Is a Project Management Recruitment Agency?\nWhy Work with a Project Management Recruiting Firm?\nTop 10 Project Management Recruitment Agencies in 2026\nNeed To Scale Your Project Management Team Fast?\nWhat sets these Agencies Apart?\nWhat Skills Do Project Management Recruiters Look For?\nWhat Do PM Staffing Agencies Charge?\nTop Industries that Rely on Project Management Recruitment Agencies\nHow Do Project Management Recruiters Work?\nHow to Choose the Right PM Recruitment Agency\nPros and Cons of Using a PM Recruiting Firm\nFinal Take: Which PM Recruiter is Right for You?\nLooking For Project Managers Who Deliver From Day One?\nFAQs",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Table of Contents",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "What Is a Project Management Recruitment Agency?",
+     "links": [
+      {
+       "href": "#what-is-a-project-management-recruitment-agency",
+       "text": "What Is a Project Management Recruitment Agency?"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Why Work with a Project Management Recruiting Firm?",
+     "links": [
+      {
+       "href": "#why-work-with-a-project-management-recruiting-firm",
+       "text": "Why Work with a Project Management Recruiting Firm?"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Top 10 Project Management Recruitment Agencies in 2026",
+     "links": [
+      {
+       "href": "#top-10-project-management-recruitment-agencies-in-2026",
+       "text": "Top 10 Project Management Recruitment Agencies in 2026"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Need To Scale Your Project Management Team Fast?",
+     "links": [
+      {
+       "href": "#need-to-scale-your-project-management-team-fast",
+       "text": "Need To Scale Your Project Management Team Fast?"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "What sets these Agencies Apart?",
+     "links": [
+      {
+       "href": "#what-sets-these-agencies-apart",
+       "text": "What sets these Agencies Apart?"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "What Skills Do Project Management Recruiters Look For?",
+     "links": [
+      {
+       "href": "#what-skills-do-project-management-recruiters-look-for",
+       "text": "What Skills Do Project Management Recruiters Look For?"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "What Do PM Staffing Agencies Charge?",
+     "links": [
+      {
+       "href": "#what-do-pm-staffing-agencies-charge",
+       "text": "What Do PM Staffing Agencies Charge?"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Top Industries that Rely on Project Management Recruitment Agencies",
+     "links": [
+      {
+       "href": "#top-industries-that-rely-on-project-management-recruitment-agencies",
+       "text": "Top Industries that Rely on Project Management Recruitment Agencies"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "How Do Project Management Recruiters Work?",
+     "links": [
+      {
+       "href": "#how-do-project-management-recruiters-work",
+       "text": "How Do Project Management Recruiters Work?"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "How to Choose the Right PM Recruitment Agency",
+     "links": [
+      {
+       "href": "#how-to-choose-the-right-pm-recruitment-agency",
+       "text": "How to Choose the Right PM Recruitment Agency"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "Pros and Cons of Using a PM Recruiting Firm",
+     "links": [
+      {
+       "href": "#pros-and-cons-of-using-a-pm-recruiting-firm",
+       "text": "Pros and Cons of Using a PM Recruiting Firm"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Final Take: Which PM Recruiter is Right for You?",
+     "links": [
+      {
+       "href": "#final-take-which-pm-recruiter-is-right-for-you",
+       "text": "Final Take: Which PM Recruiter is Right for You?"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "Looking For Project Managers Who Deliver From Day One?",
+     "links": [
+      {
+       "href": "#looking-for-project-managers-who-deliver-from-day-one",
+       "text": "Looking For Project Managers Who Deliver From Day One?"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "FAQs",
+     "links": [
+      {
+       "href": "#faqs",
+       "text": "FAQs"
+      }
+     ],
+     "index": 14
+    }
+   ]
+  },
+  {
+   "id": "article:intro",
+   "kind": "article_section",
+   "label": "Intro",
+   "scope": "page",
+   "skipped": false,
+   "text": "As businesses scale and teams spread across time zones, the demand for skilled project leaders has never been higher. According to the Project Management Institute, global project management roles are set to grow by 33% by 2027—adding nearly 22 million new jobs. With so many positions opening, competition for experienced talent will be intense, and the cost of hiring delays can be steep.\nThat’s where project management recruitment agencies come in. These specialized firms connect organizations with proven project managers who can lead initiatives from day one—whether that’s agile delivery in tech, complex stakeholder management in construction, or compliance-driven projects in healthcare and finance.\nIn this guide, we’ll highlight the 10 top project management recruitment agencies in 2026, compare their strengths, and help you choose the right partner to secure the talent you need—fast, effectively, and with less hiring risk.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "As businesses scale and teams spread across time zones, the demand for skilled project leaders has never been higher. According to the Project Management Institute, global project management roles are set to grow by 33% by 2027—adding nearly 22 million new jobs. With so many positions opening, competition for experienced talent will be intense, and the cost of hiring delays can be steep.",
+     "links": [
+      {
+       "href": "https://www.pmi.org/learning/careers/job-growth",
+       "text": "33%"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "That’s where project management recruitment agencies come in. These specialized firms connect organizations with proven project managers who can lead initiatives from day one—whether that’s agile delivery in tech, complex stakeholder management in construction, or compliance-driven projects in healthcare and finance.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "In this guide, we’ll highlight the 10 top project management recruitment agencies in 2026, compare their strengths, and help you choose the right partner to secure the talent you need—fast, effectively, and with less hiring risk.",
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "article:what-is-a-project-management-recruitment-agency",
+   "kind": "article_section",
+   "label": "What Is a Project Management Recruitment Agency?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Is a Project Management Recruitment Agency?\nA project management recruitment agency is a specialized staffing partner that connects organizations with qualified professionals for project-based leadership roles, such as project managers, program managers, and PMO directors. These agencies focus on sourcing, screening, and placing talent with the skills and experience needed to manage complex projects across industries like tech, healthcare, construction, and finance. They typically operate under three models:\nRetained Recruiters: These work exclusively on high-level or sensitive roles.\nContingent Recruiters: They only get their pay if they successfully fill the role.\nFreelance/contract Recruiters: They focus on sourcing short-term or interim PM talent for specific projects.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Is a Project Management Recruitment Agency?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "A project management recruitment agency is a specialized staffing partner that connects organizations with qualified professionals for project-based leadership roles, such as project managers, program managers, and PMO directors. These agencies focus on sourcing, screening, and placing talent with the skills and experience needed to manage complex projects across industries like tech, healthcare, construction, and finance. They typically operate under three models:",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Retained Recruiters: These work exclusively on high-level or sensitive roles.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Contingent Recruiters: They only get their pay if they successfully fill the role.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Freelance/contract Recruiters: They focus on sourcing short-term or interim PM talent for specific projects.",
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "article:why-work-with-a-project-management-recruiting-fi",
+   "kind": "article_section",
+   "label": "Why Work with a Project Management Recruiting Firm?",
+   "scope": "page",
+   "skipped": false,
+   "text": "Why Work with a Project Management Recruiting Firm?\nWorking with a project management recruitment agency gives you faster access to high-performing PMs, tailored to your industry and project demands. The best agencies know where to find certified, often hard-to-reach talent, cut hiring timelines from months to weeks, and keep sensitive searches confidential.\nLet’s break down the main reasons companies partner with these agencies—covering industry-specific sourcing, access to passive talent, faster hiring, and strategic confidentiality.\nIndustry-Specific Project Manager Sourcing\nTop project management recruitment agencies come up with their search strategies based on the industry. For example, when an IT firm engages their services, the recruiters will prioritize candidates who are fluent in agile, scrum, and software lifecycle management.\nIn construction, it’s all about site coordination, safety compliance, and vendor management. At the same time, marketing needs creative leaders who balance timelines with campaign metrics. When recruiters speak the language of the industry, they zero in on candidates who not only meet technical requirements but also thrive in the environment.\nPassive and Certified Talent Access\nThe best recruitment agencies for project management aren’t always browsing job boards but are usually busy leading complex initiatives. That’s where top recruitment agencies shine. They maintain deep, long-term networks of certified professionals like PMPs, Scrum Masters, and Agile-certified leaders, many of whom aren’t actively job hunting. These agencies specialize in tapping into pools of professionals who are open to the right opportunity but not publicly looking.\nFaster, More Accurate Hiring\nWhen project timelines are tight, waiting months to fill a key leadership role isn’t an option. The best recruiters for project management jobs cut that timeline dramatically, and many are able to deliver qualified candidates in 2 to 4 weeks. They tap into pre-vetted candidate pipelines, powered by advanced ATS platforms, AI screening tools, and even psychometric assessments to match both skills and personality fit.\nStrategic & Confidential Hiring Support\nWhen you partner with a project management staffing agency, you can rest assured that your hiring is handled behind the scenes. Their discretion is invaluable, especially for highly sensitive positions. These agencies use non-disclosure agreements, targeted outreach, and keep all communications secure just to protect both the client and candidate throughout the process.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Why Work with a Project Management Recruiting Firm?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Working with a project management recruitment agency gives you faster access to high-performing PMs, tailored to your industry and project demands. The best agencies know where to find certified, often hard-to-reach talent, cut hiring timelines from months to weeks, and keep sensitive searches confidential.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Let’s break down the main reasons companies partner with these agencies—covering industry-specific sourcing, access to passive talent, faster hiring, and strategic confidentiality.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Industry-Specific Project Manager Sourcing",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Top project management recruitment agencies come up with their search strategies based on the industry. For example, when an IT firm engages their services, the recruiters will prioritize candidates who are fluent in agile, scrum, and software lifecycle management.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "In construction, it’s all about site coordination, safety compliance, and vendor management. At the same time, marketing needs creative leaders who balance timelines with campaign metrics. When recruiters speak the language of the industry, they zero in on candidates who not only meet technical requirements but also thrive in the environment.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Passive and Certified Talent Access",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "The best recruitment agencies for project management aren’t always browsing job boards but are usually busy leading complex initiatives. That’s where top recruitment agencies shine. They maintain deep, long-term networks of certified professionals like PMPs, Scrum Masters, and Agile-certified leaders, many of whom aren’t actively job hunting. These agencies specialize in tapping into pools of professionals who are open to the right opportunity but not publicly looking.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Faster, More Accurate Hiring",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "When project timelines are tight, waiting months to fill a key leadership role isn’t an option. The best recruiters for project management jobs cut that timeline dramatically, and many are able to deliver qualified candidates in 2 to 4 weeks. They tap into pre-vetted candidate pipelines, powered by advanced ATS platforms, AI screening tools, and even psychometric assessments to match both skills and personality fit.",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Strategic & Confidential Hiring Support",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "When you partner with a project management staffing agency, you can rest assured that your hiring is handled behind the scenes. Their discretion is invaluable, especially for highly sensitive positions. These agencies use non-disclosure agreements, targeted outreach, and keep all communications secure just to protect both the client and candidate throughout the process.",
+     "index": 7
+    }
+   ]
+  },
+  {
+   "id": "article:top-10-project-management-recruitment-agencies-i",
+   "kind": "article_section",
+   "label": "Top 10 Project Management Recruitment Agencies in 2026",
+   "scope": "page",
+   "skipped": false,
+   "text": "Top 10 Project Management Recruitment Agencies in 2026\nHere are the top 10 project management recruitment agencies for 2026. This list was curated after considering industry expertise, reviews, and unique services offered.\nGoGloby\nNear\nKorn Ferry\nSI Systems\n180 Engineering\nProgressive Recruitment\nDNA Recruit\nArtisan Talent\nEPM Scientific\nMichael Page\nHere is a comparison table for the agencies on the list\nAgency\nIndustry Specialization\nGeographic Focus\nKey Features\nFounded In\nRatings\n1. GoGloby\nTech, Finance, Healthcare\nLatin America, Europe\nCross-Border Hiring, Compliance and Payroll Support, AI-Driven Recruitment, DEI-Focused, Candidate Vetting, Cultural Fit Assessment, Personalized Executive Placement\n2022\n4.9/5 on Clutch\n2. Near\nIT, Engineering, Sales & Marketing, Finance\nLATAM\nHigh-Level Executive Placement, Salary Guide, Employer of Record Services, Remote Replacement\n2005\n3.4/5 on Glassdoor\n3. Korn Ferry\nTechnology, Finance, Healthcare, Consumer Goods, Government, Education & Non-Profit\nGlobal\nExpertise in Executive Placement, End-to-End Talent Solution, Data-Driven Insight\n1969\n3.5/5 on Glassdoor\n4. SI Systems\nIT, Finance, Healthcare, Retail, Education, Public Sector\nU.S., Canada\nUtilizes Match Guide Software for Candidate Matching, Flexible Hiring Solutions\n1994\n3.7/5 on Glassdoor\n5. 180 Engineering\nEngineering, Tech, Pharmaceutical\nU.S.\nSpecialized Screening Services, High-Touch, Responsive, and Culturally Attuned Recruitment\n2008\n4.4/5 on Glassdoor\n6. Progressive Recruitment\nEngineering, Construction, Oil & Gas, Energy, Manufacturing, IT\nGlobal\nDeep Local Market Knowledge, Tailored Approach with Specialist Consulting\n1990\n3.5/5 on Glassdoor\n7. DNA Recruit\nTech, Healthcare, Project Management, Marketing, Data Analytics\nGlobal\nVideo Interview Screening, Talent Audit, Employer Branding, D&I Support\n2008\n4.1/5 on Glassdoor\n8. Artisan Talent\nDigital Marketing, Design, Advertising, Web Development\nU.S.\nPersonalized Talent Matching, Proprietary Vetting Process, Portfolio Review, Dedicated Account Managers\n1988\n4.6/5 on Glassdoor\n9. EPM Scientific\nLife Sciences, Biotech, Medical Communication, Clinical Research, Pharmaceuticals\nUSA, Europe, APAC\nProvides Industry Insights, Comprehensive Training and Support, Commission-Driven Roles, Emphasis on Team Culture and Development\n2012\n2.9/5 on Glassdoor\n10. Michael Page\nAccounting & Finance, Engineering & Manufacturing, IT, Legal, Healthcare & Life Sciences, Construction\nGlobal\nLocal Market Insight and Global Reach, Structured Recruitment Boot Camp, Clear Performance-Driven Culture\n1976\n3.7/5 on Glassdoor\nRead more: 15 Best Recruitment Process Outsourcing (RPO) Companies in 2026, 10 Best Recruiting & Staffing Agencies in Boston in 2026.\n1. GoGloby\ntop project management recruitment agencies\nGoGloby is a recruitment agency with expertise in sourcing remote project management talent for U.S. companies across tech, SaaS, and creative industries. Known for filling roles with certified, pre-vetted candidates in as little as 21 days, they also offer a 120-day replacement guarantee for added assurance. Beyond recruitment, they handle payroll, compliance, and cross-border hiring logistics, making it easier for companies to scale globally without the legal or operational headaches of international hiring.\n2. Near\ntop project management recruitment agencies\nNear is a recruitment agency that connects U.S. companies with top-tier remote project managers across Latin America. Near is especially well-suited for startups and mid-sized teams because of its quick turnaround and cost-effective solution. Their deep regional expertise ensures access to skilled, bilingual PMs who align with U.S. time zones and business culture.\n3. Korn Ferry\ntop project management recruitment agencies\nKnown for its expertise in executive project management hires, Korn Ferry provides a suite of strategic tools like leadership diagnostics and psychometric assessments. This helps to ensure candidates not only meet technical requirements but also align with company culture and long-term vision.\n4. SI Systems\ntop project management recruitment agencies\nSI Systems ranks among the largest tech recruitment firms in North America. The firm has a strong focus on contract and consulting project management placements. They’re especially active in the public sector and financial services, where regulatory complexity and legacy systems demand experienced, agile PMs.\n5. 180 Engineering\ntop project management recruitment agencies\nTrusted by firms operating in high-compliance environments, 180 Engineering is known for its rigorous vetting process. This ensures that candidates meet both technical and regulatory demands. The firm specializes in project management hires for engineering, manufacturing, and R&D initiatives.\n6. Progressive Recruitment\ntop project management recruitment agencies\nProgressive Recruitment is an international staffing agency with a strong foothold in energy, infrastructure, and heavy industry sectors. They specialize in supplying both permanent and contract project managers who can navigate the complexities of large-scale, technical environments.\n7. DNA Recruit\ntop project management recruitment agencies\nDNA Recruit is a UK-based agency specializing in creative and marketing project management talent. This agency is ideal for in-house brand teams and digital agencies. DNA excels at placing PMs who understand the fast-paced, deadline-driven nature of creative workflows.\n8. Artisan Talent\ntop project management recruitment agencies\nArtisan Talent connects businesses with freelance and full-time creative project managers. The firm is well-suited for roles in media, design, and marketing operations. Artisan excels at finding PMs who balance creative collaboration with operational discipline.\n9. EPM Scientific\ntop project management recruitment agencies\nEPM Scientific specializes in recruiting project managers for the life sciences, pharmaceutical, and clinical trial sectors. They are known for their deep understanding of regulatory frameworks and complex industry requirements.\n10. Michael Page\ntop project management recruitment agencies\nMichael Page is a global recruitment powerhouse with a dedicated project management division, offering broad industry and regional coverage. Whether it’s tech, construction, finance, or healthcare, this recruiter delivers PM talent fast, thanks to deep talent pools and efficient hiring workflows.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Top 10 Project Management Recruitment Agencies in 2026",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Here are the top 10 project management recruitment agencies for 2026. This list was curated after considering industry expertise, reviews, and unique services offered.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "GoGloby",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Near",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Korn Ferry",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "SI Systems",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "180 Engineering",
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Progressive Recruitment",
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "DNA Recruit",
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Artisan Talent",
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "EPM Scientific",
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "Michael Page",
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "Here is a comparison table for the agencies on the list",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "Agency",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Industry Specialization",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "Geographic Focus",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "Key Features",
+     "index": 4
+    },
+    {
+     "type": "table_cell",
+     "text": "Founded In",
+     "index": 5
+    },
+    {
+     "type": "table_cell",
+     "text": "Ratings",
+     "index": 6
+    },
+    {
+     "type": "table_cell",
+     "text": "1. GoGloby",
+     "index": 7
+    },
+    {
+     "type": "table_cell",
+     "text": "Tech, Finance, Healthcare",
+     "index": 8
+    },
+    {
+     "type": "table_cell",
+     "text": "Latin America, Europe",
+     "index": 9
+    },
+    {
+     "type": "table_cell",
+     "text": "Cross-Border Hiring, Compliance and Payroll Support, AI-Driven Recruitment, DEI-Focused, Candidate Vetting, Cultural Fit Assessment, Personalized Executive Placement",
+     "index": 10
+    },
+    {
+     "type": "table_cell",
+     "text": "2022",
+     "index": 11
+    },
+    {
+     "type": "table_cell",
+     "text": "4.9/5 on Clutch",
+     "index": 12
+    },
+    {
+     "type": "table_cell",
+     "text": "2. Near",
+     "index": 13
+    },
+    {
+     "type": "table_cell",
+     "text": "IT, Engineering, Sales & Marketing, Finance",
+     "index": 14
+    },
+    {
+     "type": "table_cell",
+     "text": "LATAM",
+     "index": 15
+    },
+    {
+     "type": "table_cell",
+     "text": "High-Level Executive Placement, Salary Guide, Employer of Record Services, Remote Replacement",
+     "index": 16
+    },
+    {
+     "type": "table_cell",
+     "text": "2005",
+     "index": 17
+    },
+    {
+     "type": "table_cell",
+     "text": "3.4/5 on Glassdoor",
+     "index": 18
+    },
+    {
+     "type": "table_cell",
+     "text": "3. Korn Ferry",
+     "index": 19
+    },
+    {
+     "type": "table_cell",
+     "text": "Technology, Finance, Healthcare, Consumer Goods, Government, Education & Non-Profit",
+     "index": 20
+    },
+    {
+     "type": "table_cell",
+     "text": "Global",
+     "index": 21
+    },
+    {
+     "type": "table_cell",
+     "text": "Expertise in Executive Placement, End-to-End Talent Solution, Data-Driven Insight",
+     "index": 22
+    },
+    {
+     "type": "table_cell",
+     "text": "1969",
+     "index": 23
+    },
+    {
+     "type": "table_cell",
+     "text": "3.5/5 on Glassdoor",
+     "index": 24
+    },
+    {
+     "type": "table_cell",
+     "text": "4. SI Systems",
+     "index": 25
+    },
+    {
+     "type": "table_cell",
+     "text": "IT, Finance, Healthcare, Retail, Education, Public Sector",
+     "index": 26
+    },
+    {
+     "type": "table_cell",
+     "text": "U.S., Canada",
+     "index": 27
+    },
+    {
+     "type": "table_cell",
+     "text": "Utilizes Match Guide Software for Candidate Matching, Flexible Hiring Solutions",
+     "index": 28
+    },
+    {
+     "type": "table_cell",
+     "text": "1994",
+     "index": 29
+    },
+    {
+     "type": "table_cell",
+     "text": "3.7/5 on Glassdoor",
+     "index": 30
+    },
+    {
+     "type": "table_cell",
+     "text": "5. 180 Engineering",
+     "index": 31
+    },
+    {
+     "type": "table_cell",
+     "text": "Engineering, Tech, Pharmaceutical",
+     "index": 32
+    },
+    {
+     "type": "table_cell",
+     "text": "U.S.",
+     "index": 33
+    },
+    {
+     "type": "table_cell",
+     "text": "Specialized Screening Services, High-Touch, Responsive, and Culturally Attuned Recruitment",
+     "index": 34
+    },
+    {
+     "type": "table_cell",
+     "text": "2008",
+     "index": 35
+    },
+    {
+     "type": "table_cell",
+     "text": "4.4/5 on Glassdoor",
+     "index": 36
+    },
+    {
+     "type": "table_cell",
+     "text": "6. Progressive Recruitment",
+     "index": 37
+    },
+    {
+     "type": "table_cell",
+     "text": "Engineering, Construction, Oil & Gas, Energy, Manufacturing, IT",
+     "index": 38
+    },
+    {
+     "type": "table_cell",
+     "text": "Global",
+     "index": 39
+    },
+    {
+     "type": "table_cell",
+     "text": "Deep Local Market Knowledge, Tailored Approach with Specialist Consulting",
+     "index": 40
+    },
+    {
+     "type": "table_cell",
+     "text": "1990",
+     "index": 41
+    },
+    {
+     "type": "table_cell",
+     "text": "3.5/5 on Glassdoor",
+     "index": 42
+    },
+    {
+     "type": "table_cell",
+     "text": "7. DNA Recruit",
+     "index": 43
+    },
+    {
+     "type": "table_cell",
+     "text": "Tech, Healthcare, Project Management, Marketing, Data Analytics",
+     "index": 44
+    },
+    {
+     "type": "table_cell",
+     "text": "Global",
+     "index": 45
+    },
+    {
+     "type": "table_cell",
+     "text": "Video Interview Screening, Talent Audit, Employer Branding, D&I Support",
+     "index": 46
+    },
+    {
+     "type": "table_cell",
+     "text": "2008",
+     "index": 47
+    },
+    {
+     "type": "table_cell",
+     "text": "4.1/5 on Glassdoor",
+     "index": 48
+    },
+    {
+     "type": "table_cell",
+     "text": "8. Artisan Talent",
+     "index": 49
+    },
+    {
+     "type": "table_cell",
+     "text": "Digital Marketing, Design, Advertising, Web Development",
+     "index": 50
+    },
+    {
+     "type": "table_cell",
+     "text": "U.S.",
+     "index": 51
+    },
+    {
+     "type": "table_cell",
+     "text": "Personalized Talent Matching, Proprietary Vetting Process, Portfolio Review, Dedicated Account Managers",
+     "index": 52
+    },
+    {
+     "type": "table_cell",
+     "text": "1988",
+     "index": 53
+    },
+    {
+     "type": "table_cell",
+     "text": "4.6/5 on Glassdoor",
+     "index": 54
+    },
+    {
+     "type": "table_cell",
+     "text": "9. EPM Scientific",
+     "index": 55
+    },
+    {
+     "type": "table_cell",
+     "text": "Life Sciences, Biotech, Medical Communication, Clinical Research, Pharmaceuticals",
+     "index": 56
+    },
+    {
+     "type": "table_cell",
+     "text": "USA, Europe, APAC",
+     "index": 57
+    },
+    {
+     "type": "table_cell",
+     "text": "Provides Industry Insights, Comprehensive Training and Support, Commission-Driven Roles, Emphasis on Team Culture and Development",
+     "index": 58
+    },
+    {
+     "type": "table_cell",
+     "text": "2012",
+     "index": 59
+    },
+    {
+     "type": "table_cell",
+     "text": "2.9/5 on Glassdoor",
+     "index": 60
+    },
+    {
+     "type": "table_cell",
+     "text": "10. Michael Page",
+     "index": 61
+    },
+    {
+     "type": "table_cell",
+     "text": "Accounting & Finance, Engineering & Manufacturing, IT, Legal, Healthcare & Life Sciences, Construction",
+     "index": 62
+    },
+    {
+     "type": "table_cell",
+     "text": "Global",
+     "index": 63
+    },
+    {
+     "type": "table_cell",
+     "text": "Local Market Insight and Global Reach, Structured Recruitment Boot Camp, Clear Performance-Driven Culture",
+     "index": 64
+    },
+    {
+     "type": "table_cell",
+     "text": "1976",
+     "index": 65
+    },
+    {
+     "type": "table_cell",
+     "text": "3.7/5 on Glassdoor",
+     "index": 66
+    },
+    {
+     "type": "paragraph",
+     "text": "Read more: 15 Best Recruitment Process Outsourcing (RPO) Companies in 2026, 10 Best Recruiting & Staffing Agencies in Boston in 2026.",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/top-recruitment-process-outsourcing-companies/",
+       "text": "15 Best Recruitment Process Outsourcing (RPO) Companies in 2026"
+      },
+      {
+       "href": "https://gogloby.com/insights/best-recruiting-agencies-in-boston/",
+       "text": "10 Best Recruiting & Staffing Agencies in Boston in 2026"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "1. GoGloby",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "top project management recruitment agencies",
+     "src": "https://gogloby.com/wp-content/uploads/2025/08/GoGloby-2-1024x495.png",
+     "file": "GoGloby-2-1024x495.png",
+     "alt": "top project management recruitment agencies",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby is a recruitment agency with expertise in sourcing remote project management talent for U.S. companies across tech, SaaS, and creative industries. Known for filling roles with certified, pre-vetted candidates in as little as 21 days, they also offer a 120-day replacement guarantee for added assurance. Beyond recruitment, they handle payroll, compliance, and cross-border hiring logistics, making it easier for companies to scale globally without the legal or operational headaches of international hiring.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "2. Near",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "top project management recruitment agencies",
+     "src": "https://gogloby.com/wp-content/uploads/2025/08/Near-1-1024x494.webp",
+     "file": "Near-1-1024x494.webp",
+     "alt": "top project management recruitment agencies",
+     "alt_state": "text",
+     "dims": true,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Near is a recruitment agency that connects U.S. companies with top-tier remote project managers across Latin America. Near is especially well-suited for startups and mid-sized teams because of its quick turnaround and cost-effective solution. Their deep regional expertise ensures access to skilled, bilingual PMs who align with U.S. time zones and business culture.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "3. Korn Ferry",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "top project management recruitment agencies",
+     "src": "https://gogloby.com/wp-content/uploads/2025/08/Korn-Ferry-2-1024x500.webp",
+     "file": "Korn-Ferry-2-1024x500.webp",
+     "alt": "top project management recruitment agencies",
+     "alt_state": "text",
+     "dims": true,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Known for its expertise in executive project management hires, Korn Ferry provides a suite of strategic tools like leadership diagnostics and psychometric assessments. This helps to ensure candidates not only meet technical requirements but also align with company culture and long-term vision.",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "4. SI Systems",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "top project management recruitment agencies",
+     "src": "https://gogloby.com/wp-content/uploads/2025/08/SI-Systems-1024x458.png",
+     "file": "SI-Systems-1024x458.png",
+     "alt": "top project management recruitment agencies",
+     "alt_state": "text",
+     "dims": true,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "SI Systems ranks among the largest tech recruitment firms in North America. The firm has a strong focus on contract and consulting project management placements. They’re especially active in the public sector and financial services, where regulatory complexity and legacy systems demand experienced, agile PMs.",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "5. 180 Engineering",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "image",
+     "text": "top project management recruitment agencies",
+     "src": "https://gogloby.com/wp-content/uploads/2025/08/180-Engineering--1024x564.png",
+     "file": "180-Engineering--1024x564.png",
+     "alt": "top project management recruitment agencies",
+     "alt_state": "text",
+     "dims": true,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Trusted by firms operating in high-compliance environments, 180 Engineering is known for its rigorous vetting process. This ensures that candidates meet both technical and regulatory demands. The firm specializes in project management hires for engineering, manufacturing, and R&D initiatives.",
+     "index": 8
+    },
+    {
+     "type": "heading",
+     "text": "6. Progressive Recruitment",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "image",
+     "text": "top project management recruitment agencies",
+     "src": "https://gogloby.com/wp-content/uploads/2025/08/Progressive-Recruitment--1024x518.png",
+     "file": "Progressive-Recruitment--1024x518.png",
+     "alt": "top project management recruitment agencies",
+     "alt_state": "text",
+     "dims": true,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Progressive Recruitment is an international staffing agency with a strong foothold in energy, infrastructure, and heavy industry sectors. They specialize in supplying both permanent and contract project managers who can navigate the complexities of large-scale, technical environments.",
+     "index": 9
+    },
+    {
+     "type": "heading",
+     "text": "7. DNA Recruit",
+     "level": 3,
+     "index": 8
+    },
+    {
+     "type": "image",
+     "text": "top project management recruitment agencies",
+     "src": "https://gogloby.com/wp-content/uploads/2025/08/DNA-Recruit-1024x479.png",
+     "file": "DNA-Recruit-1024x479.png",
+     "alt": "top project management recruitment agencies",
+     "alt_state": "text",
+     "dims": true,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "DNA Recruit is a UK-based agency specializing in creative and marketing project management talent. This agency is ideal for in-house brand teams and digital agencies. DNA excels at placing PMs who understand the fast-paced, deadline-driven nature of creative workflows.",
+     "index": 10
+    },
+    {
+     "type": "heading",
+     "text": "8. Artisan Talent",
+     "level": 3,
+     "index": 9
+    },
+    {
+     "type": "image",
+     "text": "top project management recruitment agencies",
+     "src": "https://gogloby.com/wp-content/uploads/2025/08/Artisan-Talent-1-1024x503.png",
+     "file": "Artisan-Talent-1-1024x503.png",
+     "alt": "top project management recruitment agencies",
+     "alt_state": "text",
+     "dims": true,
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Artisan Talent connects businesses with freelance and full-time creative project managers. The firm is well-suited for roles in media, design, and marketing operations. Artisan excels at finding PMs who balance creative collaboration with operational discipline.",
+     "index": 11
+    },
+    {
+     "type": "heading",
+     "text": "9. EPM Scientific",
+     "level": 3,
+     "index": 10
+    },
+    {
+     "type": "image",
+     "text": "top project management recruitment agencies",
+     "src": "https://gogloby.com/wp-content/uploads/2025/08/EPM-Scientific-1024x468.png",
+     "file": "EPM-Scientific-1024x468.png",
+     "alt": "top project management recruitment agencies",
+     "alt_state": "text",
+     "dims": true,
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "EPM Scientific specializes in recruiting project managers for the life sciences, pharmaceutical, and clinical trial sectors. They are known for their deep understanding of regulatory frameworks and complex industry requirements.",
+     "index": 12
+    },
+    {
+     "type": "heading",
+     "text": "10. Michael Page",
+     "level": 3,
+     "index": 11
+    },
+    {
+     "type": "image",
+     "text": "top project management recruitment agencies",
+     "src": "https://gogloby.com/wp-content/uploads/2025/08/Michael-Page-1-1024x442.webp",
+     "file": "Michael-Page-1-1024x442.webp",
+     "alt": "top project management recruitment agencies",
+     "alt_state": "text",
+     "dims": true,
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "Michael Page is a global recruitment powerhouse with a dedicated project management division, offering broad industry and regional coverage. Whether it’s tech, construction, finance, or healthcare, this recruiter delivers PM talent fast, thanks to deep talent pools and efficient hiring workflows.",
+     "index": 13
+    }
+   ]
+  },
+  {
+   "id": "article:what-sets-these-agencies-apart",
+   "kind": "article_section",
+   "label": "What sets these Agencies Apart?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What sets these Agencies Apart?\nTop project management recruitment agencies redefine hiring standards. Here’s what makes them stand out:\nIndustry-Specific Expertise: They understand the peculiar nature of each sector, which ensures better-fit candidates.\nTech-Enabled Vetting: These firms make use of AI screening, ATS systems, and psychometric tools to effectively evaluate candidates.\nDiversity-Driven Hiring: These agencies strongly support building and nurturing inclusive teams.\nHigh Placement Success Rates: There are proven track records of their success in helping organizations find the right PM talent.\nRecognition & Trust: Many have received industry certifications, awards, and enthusiastic client testimonials.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What sets these Agencies Apart?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Top project management recruitment agencies redefine hiring standards. Here’s what makes them stand out:",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Industry-Specific Expertise: They understand the peculiar nature of each sector, which ensures better-fit candidates.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Tech-Enabled Vetting: These firms make use of AI screening, ATS systems, and psychometric tools to effectively evaluate candidates.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Diversity-Driven Hiring: These agencies strongly support building and nurturing inclusive teams.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "High Placement Success Rates: There are proven track records of their success in helping organizations find the right PM talent.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Recognition & Trust: Many have received industry certifications, awards, and enthusiastic client testimonials.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:what-skills-do-project-management-recruiters-loo",
+   "kind": "article_section",
+   "label": "What Skills Do Project Management Recruiters Look For?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Skills Do Project Management Recruiters Look For?\nThe best project management recruiters look beyond timelines and budgets—they search for leaders who can drive change, keep teams aligned, and deliver results under pressure. Below are the core skills they prioritize when evaluating candidates:\nStakeholder Communication & Alignment\nThe ability to keep clients, executives, and cross-functional teams on the same page is non-negotiable. Great PMs turn complex requirements into clear action plans and maintain alignment from kickoff to delivery.\nLeadership & Accountability\nTop recruiters seek candidates who own project outcomes, make decisive calls under pressure, and inspire teams to stay focused—even in high-stakes situations.\nAgile & Change Management Expertise\nHands-on experience with Agile, Scrum, and hybrid methodologies is highly valued, as is the ability to guide teams through organizational or strategic transitions.\nTechnical & Tool Proficiency\nFluency in platforms like Jira, Asana, Trello, Smartsheet, and Microsoft Project enables PMs to manage workflows efficiently and keep deliverables on track.\nRisk Management\nStrong PMs can anticipate challenges early and implement solutions that protect timelines, budgets, and quality standards.\nCertifications & Methodologies\nCredentials such as PMP, PRINCE2, Certified ScrumMaster (CSM), and SAFe show formal training and mastery of recognized industry frameworks.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Skills Do Project Management Recruiters Look For?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The best project management recruiters look beyond timelines and budgets—they search for leaders who can drive change, keep teams aligned, and deliver results under pressure. Below are the core skills they prioritize when evaluating candidates:",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Stakeholder Communication & Alignment",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "The ability to keep clients, executives, and cross-functional teams on the same page is non-negotiable. Great PMs turn complex requirements into clear action plans and maintain alignment from kickoff to delivery.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Leadership & Accountability",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Top recruiters seek candidates who own project outcomes, make decisive calls under pressure, and inspire teams to stay focused—even in high-stakes situations.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Agile & Change Management Expertise",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Hands-on experience with Agile, Scrum, and hybrid methodologies is highly valued, as is the ability to guide teams through organizational or strategic transitions.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Technical & Tool Proficiency",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Fluency in platforms like Jira, Asana, Trello, Smartsheet, and Microsoft Project enables PMs to manage workflows efficiently and keep deliverables on track.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Risk Management",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Strong PMs can anticipate challenges early and implement solutions that protect timelines, budgets, and quality standards.",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Certifications & Methodologies",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Credentials such as PMP, PRINCE2, Certified ScrumMaster (CSM), and SAFe show formal training and mastery of recognized industry frameworks.",
+     "index": 7
+    }
+   ]
+  },
+  {
+   "id": "article:what-do-pm-staffing-agencies-charge",
+   "kind": "article_section",
+   "label": "What Do PM Staffing Agencies Charge?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Do PM Staffing Agencies Charge?\nHere’s the general breakdown of what PM job agencies charge:\nContingency Search: The firm charges 15–25% of the hire’s first-year salary, but only if they are able to successfully place a candidate. Ideal for mid-level roles or rapid scaling.\nRetained Search: Here, the employer pays a monthly fee, paid upfront for dedicated search and advisory support.\nContract/Interim Placements: Hourly rates typically range from $80 to $150/hour, depending on the PM’s experience and the industry.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Do PM Staffing Agencies Charge?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Here’s the general breakdown of what PM job agencies charge:",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Contingency Search: The firm charges 15–25% of the hire’s first-year salary, but only if they are able to successfully place a candidate. Ideal for mid-level roles or rapid scaling.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Retained Search: Here, the employer pays a monthly fee, paid upfront for dedicated search and advisory support.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Contract/Interim Placements: Hourly rates typically range from $80 to $150/hour, depending on the PM’s experience and the industry.",
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "article:top-industries-that-rely-on-project-management-r",
+   "kind": "article_section",
+   "label": "Top Industries that Rely on Project Management Recruitment Agencies",
+   "scope": "page",
+   "skipped": false,
+   "text": "Top Industries that Rely on Project Management Recruitment Agencies\nMultiple industries rely on project management recruitment agencies to fill their project management positions, including:\nHealthcare\nHospitals and health networks rely on RPO (recruitment process outsourcing) partners to fill their PM roles. Firms that specialize in healthcare RPO offer healthcare brands scalable support and industry-specific expertise. This helps ensure that only the right candidates are onboarded.\nTechnology and Startups\nSpeed is important when scaling teams, especially for startups and tech brands. That’s why many businesses in this niche partner with agencies like GoGloby to help them quickly find skilled project managers who can work remotely, and keep growth on track without slowing innovation.\nFinancial Services\nBanks, insurers, and fintech firms operate in a very regulated environment. Moreover, the ability to deliver complex initiatives on time can be the difference between success and failure. Therefore, these brands depend on agencies to help source PMs that have skills in risk management, regulatory compliance, and core system migrations.\nManufacturing and Engineering\nIn manufacturing and engineering, project managers play an important role in plant expansions, automation upgrades, and large-scale industrial rollouts. These complex, capital-intensive initiatives demand PMs with technical fluency and on-the-ground leadership.\nRetail and Consumer Brands\nRetailers operate in fast, high-volume environments, making project managers essential for eCommerce launches and POS system upgrades. To stay competitive, many turn to RPO solutions for agile hiring that scales with demand.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Top Industries that Rely on Project Management Recruitment Agencies",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Multiple industries rely on project management recruitment agencies to fill their project management positions, including:",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Healthcare",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Hospitals and health networks rely on RPO (recruitment process outsourcing) partners to fill their PM roles. Firms that specialize in healthcare RPO offer healthcare brands scalable support and industry-specific expertise. This helps ensure that only the right candidates are onboarded.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Technology and Startups",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Speed is important when scaling teams, especially for startups and tech brands. That’s why many businesses in this niche partner with agencies like GoGloby to help them quickly find skilled project managers who can work remotely, and keep growth on track without slowing innovation.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Financial Services",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Banks, insurers, and fintech firms operate in a very regulated environment. Moreover, the ability to deliver complex initiatives on time can be the difference between success and failure. Therefore, these brands depend on agencies to help source PMs that have skills in risk management, regulatory compliance, and core system migrations.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Manufacturing and Engineering",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "In manufacturing and engineering, project managers play an important role in plant expansions, automation upgrades, and large-scale industrial rollouts. These complex, capital-intensive initiatives demand PMs with technical fluency and on-the-ground leadership.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Retail and Consumer Brands",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Retailers operate in fast, high-volume environments, making project managers essential for eCommerce launches and POS system upgrades. To stay competitive, many turn to RPO solutions for agile hiring that scales with demand.",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "article:how-do-project-management-recruiters-work",
+   "kind": "article_section",
+   "label": "How Do Project Management Recruiters Work?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Do Project Management Recruiters Work?\nProject manager recruiters go through the following process to place the right candidate:\nJob Intake: They first hold a briefing with the employer to better understand the role, team dynamics, and desired skills.\nCandidate Sourcing: Next, they go through existing databases, networks, and outreach to find qualified talent.\nScreening: Once they are able to narrow the initial candidates, screening and assessments are carried out to determine the most qualified.\nShortlisting: Only the top matches based on skills, certifications, and cultural fit are presented to the client.\nInterviewing: Recruiters coordinate interviews and guide both sides.\nOffer Management: They help structure offers, manage negotiations, and secure candidate acceptance.\nOnboarding: Finally, many agencies assist with paperwork, compliance, and onboarding logistics.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Do Project Management Recruiters Work?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Project manager recruiters go through the following process to place the right candidate:",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Job Intake: They first hold a briefing with the employer to better understand the role, team dynamics, and desired skills.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Candidate Sourcing: Next, they go through existing databases, networks, and outreach to find qualified talent.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Screening: Once they are able to narrow the initial candidates, screening and assessments are carried out to determine the most qualified.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Shortlisting: Only the top matches based on skills, certifications, and cultural fit are presented to the client.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Interviewing: Recruiters coordinate interviews and guide both sides.",
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Offer Management: They help structure offers, manage negotiations, and secure candidate acceptance.",
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Onboarding: Finally, many agencies assist with paperwork, compliance, and onboarding logistics.",
+     "index": 7
+    }
+   ]
+  },
+  {
+   "id": "article:how-to-choose-the-right-pm-recruitment-agency",
+   "kind": "article_section",
+   "label": "How to Choose the Right PM Recruitment Agency",
+   "scope": "page",
+   "skipped": false,
+   "text": "How to Choose the Right PM Recruitment Agency\nhow to choose the right pm recruitment agency\nHere are the things that would help you choose the right project manager recruiters to work with:\nAsk for Case Studies and Metrics\nThe best firms are always willing to share their success stories of how they’ve placed PMs in roles similar to yours. And while you are at it, also ask about metrics like average time-to-fill, retention rate, and how they handle niche or urgent searches.\nMatch Industry + Role Expertise\nA project manager in fintech may not have the same competencies as one in healthcare, and an experienced recruiter knows the difference. Each industry has its own peculiarities, tools, timelines, compliance demands, and team dynamics. Before you choose a PM recruiter, ensure they have direct experience in your sector.\nClarify Guarantees and Replacement Policies\nBefore signing with a project management staffing agency, get crystal clear on their guarantee terms. Most reputable firms offer a 30–90 day replacement window, meaning if a hire doesn’t work out, they’ll find a replacement at no extra cost.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How to Choose the Right PM Recruitment Agency",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "how to choose the right pm recruitment agency",
+     "src": "https://gogloby.com/wp-content/uploads/2025/08/management-recruiting-firm-1024x636.png",
+     "file": "management-recruiting-firm-1024x636.png",
+     "alt": "how to choose the right pm recruitment agency",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Here are the things that would help you choose the right project manager recruiters to work with:",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Ask for Case Studies and Metrics",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "The best firms are always willing to share their success stories of how they’ve placed PMs in roles similar to yours. And while you are at it, also ask about metrics like average time-to-fill, retention rate, and how they handle niche or urgent searches.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Match Industry + Role Expertise",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "A project manager in fintech may not have the same competencies as one in healthcare, and an experienced recruiter knows the difference. Each industry has its own peculiarities, tools, timelines, compliance demands, and team dynamics. Before you choose a PM recruiter, ensure they have direct experience in your sector.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Clarify Guarantees and Replacement Policies",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Before signing with a project management staffing agency, get crystal clear on their guarantee terms. Most reputable firms offer a 30–90 day replacement window, meaning if a hire doesn’t work out, they’ll find a replacement at no extra cost.",
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "article:pros-and-cons-of-using-a-pm-recruiting-firm",
+   "kind": "article_section",
+   "label": "Pros and Cons of Using a PM Recruiting Firm",
+   "scope": "page",
+   "skipped": false,
+   "text": "Pros and Cons of Using a PM Recruiting Firm\nHiring through a project management recruitment firm has its benefits and drawbacks.\nPros:\nSpeed: Because of their talent, ready-made pipelines, and roles are filled faster.\nStronger Fit: Recruiters carry out deep vetting of candidates, which ensures each hire aligns with both role and culture.\nAccess to Passive Talent: Reach high-performing PMs not actively job hunting.\nLess Internal Strain: Frees up your internal HR or ops team to focus elsewhere.\nCons:\nHigher Cost: Fees can be significant, especially for executive or retained searches.\nReduced Control: Less hands-on involvement in sourcing and early screening stages.\nProcess Variability: Quality and communication can differ across firms.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Pros and Cons of Using a PM Recruiting Firm",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Hiring through a project management recruitment firm has its benefits and drawbacks.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Pros:",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Speed: Because of their talent, ready-made pipelines, and roles are filled faster.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Stronger Fit: Recruiters carry out deep vetting of candidates, which ensures each hire aligns with both role and culture.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Access to Passive Talent: Reach high-performing PMs not actively job hunting.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Less Internal Strain: Frees up your internal HR or ops team to focus elsewhere.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Cons:",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Higher Cost: Fees can be significant, especially for executive or retained searches.",
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Reduced Control: Less hands-on involvement in sourcing and early screening stages.",
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Process Variability: Quality and communication can differ across firms.",
+     "index": 7
+    }
+   ]
+  },
+  {
+   "id": "article:final-take-which-pm-recruiter-is-right-for-you",
+   "kind": "article_section",
+   "label": "Final Take: Which PM Recruiter is Right for You?",
+   "scope": "page",
+   "skipped": false,
+   "text": "Final Take: Which PM Recruiter is Right for You?\nThe choice of the right project management recruiter depends on multiple factors, including your industry, hiring needs, and how fast you need to scale. But here are things to keep in mind when:\nBest for remote teams: GoGloby is ideal for U.S. companies looking to hire PMs globally.\nBest for IT and enterprise tech: Korn Ferry excels in executive hires for complex digital transformation.\nBest for engineering and manufacturing: 180 Engineering is trusted for high-compliance, technical environments.\nBest for creative and marketing teams: DNA Recruit is an expert in placing PMs for brand and agency work.\nBest for pharma, life sciences, and clinical trials: EPM Scientific excels in placing PMs who specialize in regulated, high-stakes projects.\nIn the end, the recruiter you choose should be more than a hiring vendor — they should be a strategic partner who understands your business, your pace, and your priorities. Making the right choice now means fewer mis-hires, stronger teams, and projects that hit their targets without losing momentum.\nIf building a high-performing project management team is on your roadmap, explore how GoGloby’s global talent network and 120-day guarantee can help you hire with confidence.\nRead more: 15 CRM Manager Executive Search Firms, 12 Best Technology Search Firms for Executive Positions.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Final Take: Which PM Recruiter is Right for You?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The choice of the right project management recruiter depends on multiple factors, including your industry, hiring needs, and how fast you need to scale. But here are things to keep in mind when:",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Best for remote teams: GoGloby is ideal for U.S. companies looking to hire PMs globally.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Best for IT and enterprise tech: Korn Ferry excels in executive hires for complex digital transformation.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Best for engineering and manufacturing: 180 Engineering is trusted for high-compliance, technical environments.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Best for creative and marketing teams: DNA Recruit is an expert in placing PMs for brand and agency work.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Best for pharma, life sciences, and clinical trials: EPM Scientific excels in placing PMs who specialize in regulated, high-stakes projects.",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "In the end, the recruiter you choose should be more than a hiring vendor — they should be a strategic partner who understands your business, your pace, and your priorities. Making the right choice now means fewer mis-hires, stronger teams, and projects that hit their targets without losing momentum.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "If building a high-performing project management team is on your roadmap, explore how GoGloby’s global talent network and 120-day guarantee can help you hire with confidence.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Read more: 15 CRM Manager Executive Search Firms, 12 Best Technology Search Firms for Executive Positions.",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/crm-manager-executive-search-firms/",
+       "text": "15 CRM Manager Executive Search Firms"
+      },
+      {
+       "href": "https://gogloby.com/insights/technology-executive-search-firms/",
+       "text": "12 Best Technology Search Firms for Executive Positions"
+      }
+     ],
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "article:faqs",
+   "kind": "article_section",
+   "label": "FAQs",
+   "scope": "page",
+   "skipped": false,
+   "text": "FAQs\nCan these firms help with remote project manager roles?\nYes, firms like GoGloby specialize in placing remote project managers across tech, creative, and international markets.\nDo recruiters offer contract/freelance PMs?\nYes, some PM recruiters, in the likes of SI System, help businesses find project managers who are open to work on a contract or freelance basis.\nWhat industries do PM recruiters specialize in?\nMany PM recruiters have their specialty across a wide range of industries. For example, GoGloby services firms in tech and finance, while 180 Engineering focuses on engineering and manufacturing brands.\nHow fast is the typical hiring timeline?\nMost agencies fill mid-level project management roles within 2–4 weeks. Senior or executive PM hires can take 6–8 weeks, especially for highly specialized or strategic positions.\nWhat certifications do PM recruiters prioritize?\nPM recruiters are on the lookout for candidates with certifications like PMP, PRINCE2, Certified ScrumMaster (CSM), and PMI-ACP.\nAuthor avatar\nSergey Matikaynen / CTO\nArticle author\nSergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.\nView profile",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "FAQs",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Can these firms help with remote project manager roles?",
+     "area": "item 1",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Yes, firms like GoGloby specialize in placing remote project managers across tech, creative, and international markets.",
+     "area": "item 1",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Do recruiters offer contract/freelance PMs?",
+     "area": "item 1",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Yes, some PM recruiters, in the likes of SI System, help businesses find project managers who are open to work on a contract or freelance basis.",
+     "area": "item 1",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "What industries do PM recruiters specialize in?",
+     "area": "item 1",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Many PM recruiters have their specialty across a wide range of industries. For example, GoGloby services firms in tech and finance, while 180 Engineering focuses on engineering and manufacturing brands.",
+     "area": "item 1",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "How fast is the typical hiring timeline?",
+     "area": "item 1",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Most agencies fill mid-level project management roles within 2–4 weeks. Senior or executive PM hires can take 6–8 weeks, especially for highly specialized or strategic positions.",
+     "area": "item 1",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "What certifications do PM recruiters prioritize?",
+     "area": "item 1",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "PM recruiters are on the lookout for candidates with certifications like PMP, PRINCE2, Certified ScrumMaster (CSM), and PMI-ACP.",
+     "area": "item 1",
+     "index": 10
+    },
+    {
+     "type": "image",
+     "text": "Author avatar",
+     "src": "https://gogloby.com/wp-content/uploads/2024/02/1706550966241.jpeg",
+     "file": "1706550966241.jpeg",
+     "alt": "Author avatar",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen / CTO",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "Article author",
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.",
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "View profile",
+     "links": [
+      {
+       "href": "https://gogloby.com/author/sergey/",
+       "text": "View profile"
+      }
+     ],
+     "index": 14
+    }
+   ]
+  },
+  {
+   "id": "banner_cta",
+   "kind": "banner_cta",
+   "label": "Banner CTA",
+   "scope": "page",
+   "skipped": false,
+   "text": "Need To Scale Your Project Management Team Fast?\nHire certified, pre-vetted project managers worldwide with full compliance support and a replacement guarantee through GoGloby.\nGet Started Now",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Need To Scale Your Project Management Team Fast?",
+     "area": "block-main",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Hire certified, pre-vetted project managers worldwide with full compliance support and a replacement guarantee through GoGloby.",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Get Started Now",
+     "area": "block-aside",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "modals",
+   "kind": "modals",
+   "label": "Forms and modals",
+   "scope": "shared",
+   "skipped": false,
+   "text": "Thank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend\nThank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "site_header",
+   "kind": "site_header",
+   "label": "Site header",
+   "scope": "page",
+   "skipped": true,
+   "text": "Site logo\nSolutions\nAI Engineering Visibility\nForward Deployed Engineering\nServices\nAI Engineers Staff Augmentation\nHire AI Engineers\nAI Development Services\nGenerative AI Consulting Services\nAgentic AI Consulting Services\nAI Production Engineering\nGenerative AI Development Services\nAI Agent Development Services\nAI Custom Software Development Services\nRAG Application Development Services\nLLM Development Services\nApplication AI Modernization Services\nLegacy Application Modernization Services\nSoftware Maintenance Services\nCompany\nAbout us\nJobs\nResources\nInsights\nUse Cases\nPodcast\nContact\nTalk to Us",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Site logo",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/globy-logo-1-01.svg",
+     "file": "globy-logo-1-01.svg",
+     "alt": "Site logo",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Solutions",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineering Visibility",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/ai-engineering-visibility/",
+       "text": "AI Engineering Visibility"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Forward Deployed Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/forward-deployed-engineering/",
+       "text": "Forward Deployed Engineering"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineers Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Engineers Staff Augmentation"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "link",
+     "text": "AI Development Services",
+     "href": "https://gogloby.com/services/ai-development/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-development/",
+       "text": "AI Development Services"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-consulting/",
+       "text": "Generative AI Consulting Services"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Agentic AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/agentic-ai-consulting/",
+       "text": "Agentic AI Consulting Services"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "AI Production Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "AI Production Engineering"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "AI Agent Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-agent-development/",
+       "text": "AI Agent Development Services"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "AI Custom Software Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-custom-software-development/",
+       "text": "AI Custom Software Development Services"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "RAG Application Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/rag-application-development/",
+       "text": "RAG Application Development Services"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "LLM Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/llm-development/",
+       "text": "LLM Development Services"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "link",
+     "text": "Application AI Modernization Services",
+     "href": "https://gogloby.com/services/application-modernization/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/application-modernization/",
+       "text": "Application AI Modernization Services"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Legacy Application Modernization Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/legacy-application-modernization/",
+       "text": "Legacy Application Modernization Services"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "Software Maintenance Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/software-maintenance/",
+       "text": "Software Maintenance Services"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "Talk to Us",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "site_footer",
+   "kind": "site_footer",
+   "label": "Site footer",
+   "scope": "page",
+   "skipped": true,
+   "text": "Background logo\nServices\nApplied AI Engineering\nAI Staff Augmentation\nHire AI Engineers\nGenerative AI Development Services\nCompany\nAbout us\nJobs\nContact\nPrivacy Policy and Candidate Privacy Notice\nTerms and Conditions\nResources\nInsights\nUse Cases\nPodcast\nCase Studies\nConnections\nCrunchbase\nLinkedIn\nX\nG2\nClutch\nTrustpilot\nDesignRush\nGitHub\nFacebook\nYouTube\n© Copyright 2026, GoGloby. All Rights Reserved.",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background logo",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/logos/globy-logo-outline-1-01.svg",
+     "file": "globy-logo-outline-1-01.svg",
+     "alt": "Background logo",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Applied AI Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "Applied AI Engineering"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Staff Augmentation"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Privacy Policy and Candidate Privacy Notice",
+     "links": [
+      {
+       "href": "https://gogloby.com/privacy-policy/",
+       "text": "Privacy Policy and Candidate Privacy Notice"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Terms and Conditions",
+     "links": [
+      {
+       "href": "https://gogloby.com/terms-and-conditions/",
+       "text": "Terms and Conditions"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "Case Studies",
+     "links": [
+      {
+       "href": "https://gogloby.com/case-study/",
+       "text": "Case Studies"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Connections",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Crunchbase",
+     "links": [
+      {
+       "href": "https://www.crunchbase.com/organization/gogloby",
+       "text": "Crunchbase"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "LinkedIn",
+     "links": [
+      {
+       "href": "https://www.linkedin.com/company/gogloby/",
+       "text": "LinkedIn"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "X",
+     "links": [
+      {
+       "href": "https://x.com/GoGloby",
+       "text": "X"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "list_item",
+     "text": "G2",
+     "links": [
+      {
+       "href": "https://www.g2.com/products/gogloby/reviews",
+       "text": "G2"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Clutch",
+     "links": [
+      {
+       "href": "https://clutch.co/profile/gogloby",
+       "text": "Clutch"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Trustpilot",
+     "links": [
+      {
+       "href": "https://www.trustpilot.com/review/gogloby.com",
+       "text": "Trustpilot"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "DesignRush",
+     "links": [
+      {
+       "href": "https://www.designrush.com/agency/profile/gogloby",
+       "text": "DesignRush"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "list_item",
+     "text": "GitHub",
+     "links": [
+      {
+       "href": "https://github.com/gogloby",
+       "text": "GitHub"
+      }
+     ],
+     "index": 21
+    },
+    {
+     "type": "list_item",
+     "text": "Facebook",
+     "links": [
+      {
+       "href": "https://www.facebook.com/gogloby",
+       "text": "Facebook"
+      }
+     ],
+     "index": 22
+    },
+    {
+     "type": "list_item",
+     "text": "YouTube",
+     "links": [
+      {
+       "href": "https://www.youtube.com/@DefaultGlobal",
+       "text": "YouTube"
+      }
+     ],
+     "index": 23
+    },
+    {
+     "type": "paragraph",
+     "text": "© Copyright 2026, GoGloby. All Rights Reserved.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "related",
+   "kind": "related",
+   "label": "Related content",
+   "scope": "page",
+   "skipped": true,
+   "text": "Latest posts\nWhat Is AI Compliance Consulting: Process, Benefits & How to Implement It\nWhat Is AI Compliance Consulting: Process, Benefits & How to Implement It\nOctober 2,2026\nAI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI\nAI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI\nOctober 2,2026\nWhat Is Embedded AI? How It Works, Benefits, Use Cases & Tools\nWhat Is Embedded AI? How It Works, Benefits, Use Cases & Tools\nSeptember 25,2026\n10 AI Governance Consulting Firms to Evaluate in 2026\n10 AI Governance Consulting Firms to Evaluate in 2026\nSeptember 24,2026\nAI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose\nAI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose\nSeptember 23,2026\nHow Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees\nHow Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees\nSeptember 18,2026",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Latest posts",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "What Is AI Compliance Consulting: Process, Benefits & How to Implement It",
+     "src": "https://gogloby.com/wp-content/uploads/2026/10/Gemini_Generated_Image_vth5k8vth5k8vth5-scaled.jpeg",
+     "file": "Gemini_Generated_Image_vth5k8vth5k8vth5-scaled.jpeg",
+     "alt": "What Is AI Compliance Consulting: Process, Benefits & How to Implement It",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "What Is AI Compliance Consulting: Process, Benefits & How to Implement It",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "October 2,2026",
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "AI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI",
+     "src": "https://gogloby.com/wp-content/uploads/2026/10/Integracion-de-datos-futurista.png",
+     "file": "Integracion-de-datos-futurista.png",
+     "alt": "AI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 2",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "AI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "October 2,2026",
+     "area": "slide 2",
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "What Is Embedded AI? How It Works, Benefits, Use Cases & Tools",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-25-2026-01_26_43-PM.png",
+     "file": "ChatGPT-Image-Sep-25-2026-01_26_43-PM.png",
+     "alt": "What Is Embedded AI? How It Works, Benefits, Use Cases & Tools",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 3",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "What Is Embedded AI? How It Works, Benefits, Use Cases & Tools",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "September 25,2026",
+     "area": "slide 3",
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "10 AI Governance Consulting Firms to Evaluate in 2026",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-24-sept-2026-14_14_41.png",
+     "file": "ChatGPT-Image-24-sept-2026-14_14_41.png",
+     "alt": "10 AI Governance Consulting Firms to Evaluate in 2026",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 4",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "10 AI Governance Consulting Firms to Evaluate in 2026",
+     "area": "slide 4",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "September 24,2026",
+     "area": "slide 4",
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "AI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-23-sept-2026-16_43_07.png",
+     "file": "ChatGPT-Image-23-sept-2026-16_43_07.png",
+     "alt": "AI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 5",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "AI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose",
+     "area": "slide 5",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "September 23,2026",
+     "area": "slide 5",
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "How Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/AI-Consulting-Cost-Models.png",
+     "file": "AI-Consulting-Cost-Models.png",
+     "alt": "How Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 6",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "How Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees",
+     "area": "slide 6",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "September 18,2026",
+     "area": "slide 6",
+     "index": 6
+    }
+   ]
+  }
+ ],
+ "warnings": []
+}

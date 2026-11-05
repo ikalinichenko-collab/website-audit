@@ -1,0 +1,347 @@
+{
+  "schema_version": 2,
+  "pages": [
+    {
+      "slug": "insights_best-tech-recruiting-firms_5fd71129",
+      "url": "https://gogloby.com/insights/best-tech-recruiting-firms/",
+      "title": "17 Best Tech Recruiting Companies to Hire Top Talent in 2026",
+      "group": "Resources",
+      "subsection": "Insights",
+      "profile": "article",
+      "template": "article",
+      "action": "fix",
+      "summary": "The article presents GoGloby as a general IT and software recruiting firm rather than a staffing and recruiting agency specializing in Data & AI Engineers. Its GoGloby entry also makes unsupported claims about performance, security, pricing, locations, and client work.",
+      "compliance": {
+        "high": 4,
+        "medium": 12,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 6,
+        "high": 0,
+        "medium": 3,
+        "low": 3,
+        "error": null
+      },
+      "seo": {
+        "high": 1,
+        "medium": 0,
+        "low": 1
+      },
+      "checked_at": "2026-11-05T15:08:33.053Z"
+    },
+    {
+      "slug": "insights_marketing-recruitment-and-staffing-agencies_a470b468",
+      "url": "https://gogloby.com/insights/marketing-recruitment-and-staffing-agencies/",
+      "title": "15 Marketing Recruitment and Staffing Agencies in 2026",
+      "group": "Resources",
+      "subsection": "Insights",
+      "profile": "article",
+      "template": "article",
+      "action": "fix",
+      "summary": "The GoGloby listing and banner present the company as a marketing recruitment and staffing provider, not a Data & AI Engineers staffing and recruiting agency. Edit the GoGloby-specific claims, and correct or remove the unsupported facts and offers; the rest of the agency comparison is not being audited here.",
+      "compliance": {
+        "high": 7,
+        "medium": 8,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 6,
+        "high": 0,
+        "medium": 3,
+        "low": 3,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      },
+      "checked_at": "2026-11-05T15:08:32.991Z"
+    },
+    {
+      "slug": "insights_talent-acquisition-companies_5dae0777",
+      "url": "https://gogloby.com/insights/talent-acquisition-companies/",
+      "title": "Top Talent Acquisition Companies for U.S. Businesses",
+      "group": "Resources",
+      "subsection": "Insights",
+      "profile": "article",
+      "template": "article",
+      "action": "fix",
+      "summary": "The GoGloby entry contains unsupported performance, savings, coverage, and client-outcome claims, and describes services beyond the approved engineering staffing and recruiting offer. Update the GoGloby-specific copy and branding; the other companies in this comparison are outside this audit.",
+      "compliance": {
+        "high": 7,
+        "medium": 11,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 7,
+        "high": 0,
+        "medium": 4,
+        "low": 3,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      },
+      "checked_at": "2026-11-05T15:08:32.495Z"
+    },
+    {
+      "slug": "insights_top-executive-search-firms_c276aedd",
+      "url": "https://gogloby.com/insights/top-executive-search-firms/",
+      "title": "Top 18 Executive Search Firms: USA Rankings, Fees & Picks",
+      "group": "Resources",
+      "subsection": "Insights",
+      "profile": "article",
+      "template": "article",
+      "action": "fix",
+      "summary": "The article presents GoGloby as a broad executive search firm for general C-suite and VP roles, rather than a staffing and recruiting agency focused on Data & AI Engineers. Its GoGloby entry also includes unsupported claims about location, search outcomes, client endorsements, guarantees, and the author.",
+      "compliance": {
+        "high": 6,
+        "medium": 12,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 7,
+        "high": 1,
+        "medium": 3,
+        "low": 3,
+        "error": null
+      },
+      "seo": {
+        "high": 1,
+        "medium": 0,
+        "low": 2
+      },
+      "checked_at": "2026-11-05T15:08:33.683Z"
+    },
+    {
+      "slug": "services_ai-development_f9c08277",
+      "url": "https://gogloby.com/services/ai-development/",
+      "title": "AI Development Services | GoGloby",
+      "group": "Services",
+      "subsection": "Services",
+      "profile": "service",
+      "template": "block",
+      "action": "needs_decision",
+      "summary": "The page is built to sell AI development and forward-deployed architect services, not GoGloby’s approved recruiting and staffing services. It also makes unsupported claims about guarantees, security, performance metrics, pricing, and credentials; decide whether to remove the page before carrying any of those claims into other content.",
+      "compliance": {
+        "high": 6,
+        "medium": 12,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 3,
+        "high": 0,
+        "medium": 2,
+        "low": 1,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 1
+      },
+      "checked_at": "2026-11-05T15:10:08.262Z"
+    },
+    {
+      "slug": "services_generative-ai-development_6416f06b",
+      "url": "https://gogloby.com/services/generative-ai-development/",
+      "title": "Generative AI Development Services | GoGloby",
+      "group": "Services",
+      "subsection": "Services",
+      "profile": "service",
+      "template": "block",
+      "action": "needs_decision",
+      "summary": "The page sells generative AI development and an embedded engineering pod, offers that are not among GoGloby’s approved recruiting and staffing services. It also makes numerous unsupported claims about delivery timelines, guarantees, performance, security, client results, and client figures.",
+      "compliance": {
+        "high": 6,
+        "medium": 20,
+        "low": 5,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 4,
+        "high": 0,
+        "medium": 2,
+        "low": 2,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 0,
+        "low": 1
+      },
+      "checked_at": "2026-11-05T15:10:20.915Z"
+    },
+    {
+      "slug": "services_hire-ai-engineers_23353448",
+      "url": "https://gogloby.com/services/hire-ai-engineers/",
+      "title": "Hire AI Engineers Who Can Ship With Claude in Production | GoGloby",
+      "group": "Services",
+      "subsection": "Services",
+      "profile": "service",
+      "template": "block",
+      "action": "rewrite",
+      "summary": "The page recasts the recruiting service as an Applied AI Engineering offer and also sells a paid Benchmark and forward-deployed delivery. It contains unsupported or conflicting timelines, guarantees, assessment details, client claims, client figures, and security credentials that must not carry into the replacement.",
+      "compliance": {
+        "high": 12,
+        "medium": 22,
+        "low": 8,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 6,
+        "high": 0,
+        "medium": 4,
+        "low": 2,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 1
+      },
+      "checked_at": "2026-11-05T15:10:44.342Z"
+    }
+  ],
+  "totals": {
+    "pages": 7,
+    "compliance": {
+      "high": 48,
+      "medium": 97,
+      "low": 13
+    },
+    "geo": 39,
+    "geo_sev": {
+      "high": 1,
+      "medium": 21,
+      "low": 17
+    },
+    "seo": {
+      "high": 2,
+      "medium": 1,
+      "low": 6
+    },
+    "actions": {
+      "fix": 4,
+      "needs_decision": 2,
+      "rewrite": 1
+    }
+  },
+  "by_group": {
+    "Resources": {
+      "pages": 4,
+      "compliance": {
+        "high": 24,
+        "medium": 43,
+        "low": 0
+      },
+      "geo": 26,
+      "geo_sev": {
+        "high": 1,
+        "medium": 13,
+        "low": 12
+      },
+      "seo": {
+        "high": 2,
+        "medium": 0,
+        "low": 3
+      },
+      "actions": {
+        "fix": 4
+      }
+    },
+    "Services": {
+      "pages": 3,
+      "compliance": {
+        "high": 24,
+        "medium": 54,
+        "low": 13
+      },
+      "geo": 13,
+      "geo_sev": {
+        "high": 0,
+        "medium": 8,
+        "low": 5
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 3
+      },
+      "actions": {
+        "needs_decision": 2,
+        "rewrite": 1
+      }
+    }
+  },
+  "by_subsection": {
+    "Resources/Insights": {
+      "pages": 4,
+      "compliance": {
+        "high": 24,
+        "medium": 43,
+        "low": 0
+      },
+      "geo": 26,
+      "geo_sev": {
+        "high": 1,
+        "medium": 13,
+        "low": 12
+      },
+      "seo": {
+        "high": 2,
+        "medium": 0,
+        "low": 3
+      },
+      "actions": {
+        "fix": 4
+      }
+    },
+    "Services/Services": {
+      "pages": 3,
+      "compliance": {
+        "high": 24,
+        "medium": 54,
+        "low": 13
+      },
+      "geo": 13,
+      "geo_sev": {
+        "high": 0,
+        "medium": 8,
+        "low": 5
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 3
+      },
+      "actions": {
+        "needs_decision": 2,
+        "rewrite": 1
+      }
+    }
+  },
+  "site": {
+    "compliance": {
+      "high": 4,
+      "medium": 12,
+      "low": 0
+    },
+    "seo": 3,
+    "geo": 0
+  },
+  "layers": {
+    "compliance": true,
+    "geo": true,
+    "seo": true
+  }
+}

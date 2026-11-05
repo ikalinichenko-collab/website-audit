@@ -12,8 +12,9 @@ export interface GeoLlmResult extends Omit<GeoLlmAnswer, "answer"> {
   evidence_verified: boolean | null;
   /** text-fragment value for a link to the live page, set when reports are built */
   fragment?: string | null;
-  /** finding title and severity, taken from the question settings on every run */
+  /** finding title, severity and question text, taken from the question settings on every run */
   title: string;
+  question: string;
   severity: "high" | "medium" | "low";
   /** the question asks for a second answer when the first is no */
   needs_confirm: boolean;
@@ -135,6 +136,7 @@ function stamp(a: GeoLlmAnswer | GeoLlmResult, q: GeoLlmQuestion, zones: PageZon
     evidence_verified: prior.evidence_verified !== undefined ? prior.evidence_verified : verifyEvidence(a as GeoLlmAnswer, zones, firstText),
     ...(prior.fragment !== undefined ? { fragment: prior.fragment } : {}),
     title: q.title?.trim() || q.id,
+    question: q.question,
     severity: q.severity ?? "medium",
     needs_confirm: Boolean(q.confirm),
     ...(prior.confirmed !== undefined ? { confirmed: prior.confirmed } : {}),
@@ -153,6 +155,7 @@ function noAnswer(q: GeoLlmQuestion): GeoLlmResult {
     fix: null,
     evidence_verified: null,
     title: q.title?.trim() || q.id,
+    question: q.question,
     severity: q.severity ?? "medium",
     needs_confirm: Boolean(q.confirm),
   };

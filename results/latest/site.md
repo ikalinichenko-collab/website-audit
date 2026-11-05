@@ -1,10 +1,11 @@
 # Site report
 
-Run 2026-11-05T13-18-29-815Z
+Run 2026-11-05T15-08-21-388Z
 
 ## Scope
 
-- Resources/Use cases: 13 pages
+- Resources/Insights: 4 pages
+- Services/Services: 3 pages
 
 ## Site checks
 
@@ -25,134 +26,105 @@ Run 2026-11-05T13-18-29-815Z
 
 ## Shared zones
 
-- modals@1: 13 pages
+- modals@1: 4 pages
+- modals@2: 2 pages
 
-The form promises a response within one business day, a service commitment not stated in the company sources. Confirm the commitment or remove it.
+The modals promise a response within one business day, a service commitment not stated in the company sources. Confirm the commitment or remove it from both modal zones.
 
-### [medium] Unverified response-time promise (Company facts, not in sources), 2 places
-The form promises a response within one business day, but the sources do not specify a response-time commitment.
-Fix: Replace the promise with a confirmed response-time commitment or remove it.
+### [medium] One-business-day response promise (Company facts, not in sources), 2 places
+The page promises a response within one business day, but the sources do not establish that response time.
+Fix: Verify this response-time commitment with the company or remove the promise.
 Rule: Fact Sheet: Identity
-- Forms (variant 1) on 13 pages, paragraph 1: "We will respond within one business day."
-- Forms (variant 1) on 13 pages, paragraph 1: "We will respond within one business day."
+- Forms (variant 1) on 4 pages, paragraph 1: "We will respond within one business day."
+- Forms (variant 2) on 2 pages, paragraph 1: "We will respond within one business day."
 
-Pages with modals@1: /use-cases/ai-in-it/, /use-cases/ai-in-customer-experience/, /use-cases/ai-use-cases-in-cybersecurity/, /use-cases/agentic-ai-use-cases-in-cybersecurity/, /use-cases/generative-ai-use-cases-in-cybersecurity/, /use-cases/generative-ai-use-cases-in-finance/, /use-cases/agentic-ai-use-cases-in-finance/, /use-cases/ai-in-healthcare-best-ai-use-cases-benefits-examples/, /use-cases/agentic-ai-use-cases-in-healthcare/, /use-cases/generative-ai-in-healthcare-best-ai-use-cases-benefits-examples/, /use-cases/ai-in-marketing/, /use-cases/ai-use-cases-in-finance/, /use-cases/ai-in-ecommerce/
+Pages with modals@1: /insights/talent-acquisition-companies/, /insights/best-tech-recruiting-firms/, /insights/marketing-recruitment-and-staffing-agencies/, /insights/top-executive-search-firms/
+
+Pages with modals@2: /services/hire-ai-engineers/, /services/generative-ai-development/
 
 ## Site-wide structured data
 
-The schema presents GoGloby as an Applied AI Engineering and generative AI development provider, including offers the company does not sell. It also contains unsupported or conflicting service promises, timelines, founder claims, and insurance details that need correction before this schema is used.
+The structured data presents GoGloby as an Applied AI Engineering provider and advertises generative AI development services, rather than describing its approved staffing and recruiting services. It also contains unsupported delivery promises, company claims, and insurance wording that need correction or removal.
 
 ### [high] Applied AI Engineering positioning (Positioning), 3 places
-The schema positions GoGloby as an Applied AI Engineering partner and says it turns engineering into AI-native production, rather than using the approved company description.
-Fix: Replace the Applied AI Engineering positioning with the approved company description and remove the claims about turning engineering into AI-native production.
+The schema positions GoGloby as an Applied AI Engineering partner and provider, contrary to its approved description as a staffing and recruiting agency specializing in hiring Data & AI Engineers.
+Fix: Replace the Applied AI Engineering positioning with the approved company description and descriptions of the current services.
 Rule: decisions.md: Company description; Glossary §7
 - Site-wide structured data, Organization.slogan: "Applied AI Engineering Partner"
 - Site-wide structured data, Service.description: "GoGloby turns engineering into AI-native production."
 - Site-wide structured data, WebSite.description: "GoGloby is an Applied AI Engineering partner turning engineering into AI-native production"
 
-### [high] US and EU talent coverage (Company facts)
-The schema says GoGloby hires talent within US and EU time zones, while the documented services cover US recruiting and nearshore staffing from Latin America.
-Fix: Replace the US-and-EU coverage claim with service locations supported by the company documents.
-Rule: Fact Sheet: Services
-- Site-wide structured data, Organization.description: "within the US & EU time zones."
-
-### [high] Vit system-building claim (Positioning)
-The schema says Vit built an Applied AI Engineering system, a claim absent from the sources and tied to the disallowed positioning.
-Fix: Remove the system-building claim and avoid presenting GoGloby as an Applied AI Engineering provider.
-Rule: Fact Sheet: Founders; Glossary §7
-- Site-wide structured data, Person.description: "Built the Applied AI Engineering system"
-
-### [high] Generative AI development offer (Discontinued offer), 2 places
-The schema sells generative AI delivery and software-building services, while GoGloby is not a software development shop and sells recruiting and staffing.
-Fix: Remove the generative AI development service and its software-delivery offer from the schema.
-Rule: Fact Sheet: What GoGloby is not; Glossary §1 and §7
+### [high] Generative AI development offer (Discontinued offer), 3 places
+The schema advertises generative AI development and delivery services, while GoGloby's listed services are recruiting and staffing engineers.
+Fix: Remove the development-services offer and describe only the current recruiting and staffing services.
+Rule: Fact Sheet: Services; Glossary §1 and §7
 - Site-wide structured data, Service.name: "Generative AI Development Services"
-- Site-wide structured data, Service.description: "build copilots, AI agents, RAG applications, and agentic workflows"
+- Site-wide structured data, Service.description: "GoGloby's Applied AI Software Engineers build copilots, AI agents, RAG applications"
+- Site-wide structured data, Service.description: "GoGloby's Applied AI Software Engineers build copilots, AI agents, RAG applications, and agentic workflows"
 
-### [high] AI Solutions Architect offer (Discontinued offer)
-The schema presents Forward-deployed AI Solutions Architects as an offer, whereas AI Solutions Architect is not an approved offer and the documented services are recruiting and staffing.
-Fix: Remove the AI Solutions Architect offer framing and describe only documented recruiting or staffing services.
-Rule: Glossary §2 and §7
-- Site-wide structured data, Service.description: "Forward-deployed AI Solutions Architects, safe by design."
-
-### [high] First feature delivery promise (Discontinued offer)
-The schema promises delivery of a validated feature within days, which presents GoGloby as doing client development work.
-Fix: Remove the feature-delivery promise from the staffing description.
-Rule: Fact Sheet: What GoGloby is not; Glossary §2
-- Site-wide structured data, Service.description: "First validated feature in 3 to 5 business days."
-
-### [high] Staffing replacement guarantee (Company facts)
-The schema describes a 120-day telemetry-backed staffing replacement guarantee, while the documented staffing terms specify performance-based no-cost replacement if results fall below baseline and cancellation any time in the first 120 days.
-Fix: Replace the guarantee wording with the documented staffing replacement and cancellation terms.
-Rule: Fact Sheet: Services
-- Site-wide structured data, Service.description: "120-day telemetry-backed replacement guarantee."
-
-### [high] Professional liability coverage (Company facts), 2 places
-The schema includes professional liability in the $3M policy, while the Fact Sheet specifies $3M data and cyber-liability insurance.
-Fix: Correct the policy description to match the documented data and cyber-liability coverage.
+### [high] Insurance coverage differs (Company facts), 2 places
+The schema describes $3M combined liability including professional liability, while the Fact Sheet specifies $3M data and cyber-liability insurance.
+Fix: Change the insurance claim to match the Fact Sheet's coverage description.
 Rule: Fact Sheet: Services; Legal and security
 - Site-wide structured data, Service.description: "$3M combined liability (cyber, data and professional)"
 - Site-wide structured data, Service.description: "$3M combined liability (cyber, data and professional) included."
 
-### [medium] Sergey responsibilities claim (Company facts, not in sources)
-The specific claim that Sergey leads Agentic SDLC methodology and secure development environment design is not in the Fact Sheet.
-Fix: Remove or verify the specific responsibilities against an approved source before retaining them.
-Rule: Fact Sheet: Founders
-- Site-wide structured data, Person.description: "Leads the Agentic SDLC methodology, secure development environment design"
-
-### [medium] Vit experience and geography (Company facts, not in sources)
-The claim that Vit spent the past decade scaling teams across the listed countries is not in the Fact Sheet.
-Fix: Remove or verify the experience and geographic-scope claim before retaining it.
-Rule: Fact Sheet: Founders
-- Site-wide structured data, Person.description: "For the past decade, has helped engineering leaders scale teams across the US, Canada, Argentina, Brazil, Mexico, and Europe"
-
-### [medium] Vit value generation claim (Company facts, not in sources)
-The $60M+ value-generation claim is not in the Fact Sheet.
-Fix: Remove or verify the value claim before retaining it.
-Rule: Fact Sheet: Founders
-- Site-wide structured data, Person.description: "generating $60M+ in value."
-
-### [medium] 72-hour profile promise (Company facts, not in sources)
-The 72-hour profile-delivery timeline is not in the company documents.
-Fix: Remove or verify the 72-hour timeline before using it.
+### [high] Staffing guarantee differs (Company facts)
+The schema promises a 120-day telemetry-backed replacement guarantee, while the Fact Sheet specifies a no-cost replacement if performance falls below baseline and cancellation any time in the first 120 days.
+Fix: Replace this guarantee with the staffing guarantee stated in the Fact Sheet.
 Rule: Fact Sheet: Services
-- Site-wide structured data, Service.description: "Vetted profiles delivered in 72 hours."
+- Site-wide structured data, Service.description: "120-day telemetry-backed replacement guarantee."
 
-### [medium] Zero IP exposure claim (Company facts, not in sources)
-The absolute claim of zero IP exposure is not stated in the sources.
-Fix: Remove or verify the zero-exposure claim and use only documented IP and security terms.
+### [medium] Unverified service delivery timeline (Company facts, not in sources)
+The promised delivery of generative AI development services in under four weeks is not supported by the sources.
+Fix: Remove this timeline or verify it before making the claim.
+Rule: Fact Sheet: Services; Glossary §2
+- Site-wide structured data, Service.description: "Forward-deployed into your team in under 4 weeks."
+
+### [medium] Unverified IP exposure claim (Company facts, not in sources)
+The claim of zero IP exposure is not stated in the sources; they specify client IP ownership and that engineers work in the client's environment.
+Fix: Remove the zero-exposure claim or replace it with a verified statement consistent with the security facts.
 Rule: Fact Sheet: Legal and security
 - Site-wide structured data, Service.description: "Zero IP exposure."
 
-### [medium] Five-day shortlist promise (Company facts, not in sources)
-The five-day shortlist timeline is not in the company documents.
-Fix: Remove or verify the five-day shortlist promise before using it.
+### [medium] Unsupported staffing turnaround claims (Company facts, not in sources), 2 places
+The 72-hour profile delivery and three-to-five-business-day feature claims are not supported; the Fact Sheet states a two-to-three-week start for nearshore staffing.
+Fix: Remove or verify these turnaround promises and align the staffing timeline with the Fact Sheet.
+Rule: Fact Sheet: Services; Glossary §2
+- Site-wide structured data, Service.description: "Vetted profiles delivered in 72 hours."
+- Site-wide structured data, Service.description: "First validated feature in 3 to 5 business days."
+
+### [medium] Unverified recruiting turnaround (Company facts, not in sources)
+The five-day shortlist promise is not supported; the Fact Sheet gives a four-to-six-week time to offer for recruiting.
+Fix: Remove or verify the shortlist promise and use the sourced recruiting timeline where applicable.
 Rule: Fact Sheet: Services
 - Site-wide structured data, Service.description: "Shortlist delivered in 5 days."
 
-### [medium] Faster hiring comparison (Company facts, not in sources)
-The claim of being 50 percent faster than US job boards is not supported by the company documents.
-Fix: Remove or substantiate the speed comparison before using it.
-Rule: Fact Sheet: Services
+### [medium] Unverified hiring speed claim (Company facts, not in sources)
+The claim that GoGloby is 50% faster than US job boards is not supported by the sources.
+Fix: Remove the comparison or verify it before making the claim.
+Rule: Fact Sheet: Services; Key metrics
 - Site-wide structured data, Service.description: "50 percent faster time-to-hire than US job boards."
 
-### [medium] Unverified country count (Company facts, not in sources)
-The claim that the talent network spans five or more US-time-zone countries is not in the company documents.
-Fix: Remove or verify the country-count claim before using it.
-Rule: Fact Sheet: Services
+### [medium] Unverified founder responsibilities (Company facts, not in sources)
+The listed Sergey Matikaynen responsibilities for an Agentic SDLC methodology and Applied AI Engineering system are not in the sources.
+Fix: Remove or verify these responsibilities and describe his role using the sourced founder information.
+Rule: Fact Sheet: Founders
+- Site-wide structured data, Person.description: "Leads the Agentic SDLC methodology, secure development environment design"
+
+### [medium] Unverified founder track record (Company facts, not in sources), 2 places
+The claim that Vit Koval spent a decade scaling teams across named countries and generated $60M+ in value is not in the sources.
+Fix: Remove or verify the career and value-generation claims before including them.
+Rule: Fact Sheet: Founders
+- Site-wide structured data, Person.description: "generating $60M+ in value."
+- Site-wide structured data, Person.description: "For the past decade, has helped engineering leaders scale teams across the US, Canada, Argentina, Brazil, Mexico, and Europe"
+
+### [medium] Unverified talent network footprint (Company facts, not in sources), 2 places
+The claimed network coverage across five-plus US-time-zone countries and the US-and-EU talent scope are not stated in the sources.
+Fix: Remove or verify these geographic network claims and describe the sourced service locations.
+Rule: Fact Sheet: Services; Glossary §2
+- Site-wide structured data, Organization.description: "within the US & EU time zones."
 - Site-wide structured data, Service.description: "Talent network spans 5 plus US-timezone countries."
-
-### [medium] Unverified hiring superlative (Company facts, not in sources)
-The claim that GoGloby offers the world's most thoroughly vetted talent is not supported by the sources.
-Fix: Remove or substantiate the superlative before using it.
-Rule: Fact Sheet: Identity
-- Site-wide structured data, Organization.description: "the world's most thoroughly vetted talent"
-
-### [medium] AI visibility and speed claims (Company facts, not in sources)
-The claims that every AI dollar is visible and every feature ships faster are not established by the documented tracking system.
-Fix: Remove or substantiate the universal visibility and faster-shipping claims.
-Rule: Fact Sheet: AI Development Intelligence Layer
-- Site-wide structured data, WebSite.description: "every AI dollar visible, every feature shipped faster."
 
 ### [medium] Term not used: AI-native production (Old terms, term list), 2 places
 "AI-native production" is a term or name the company no longer uses.
@@ -178,8 +150,11 @@ Rule: Glossary §7
 
 Failures on nearly every page of a type (listed once instead of per page):
 
-- schema_recommended on 13 of 13 article pages: missing: BreadcrumbList
-- image_dimensions on 13 of 13 article pages: 2 without width/height
+- schema_recommended on 4 of 4 article pages: missing: BreadcrumbList
+- image_dimensions on 4 of 4 article pages: 2 without width/height
+- link_to_services on 4 of 4 article pages: no link to /services/*
+- schema_recommended on 3 of 3 service pages: missing: BreadcrumbList
+- image_dimensions on 3 of 3 service pages: 5 without width/height
 
 Duplicates:
 
@@ -187,25 +162,16 @@ Duplicates:
 
 Sitemap hygiene:
 
-- https://gogloby.com/use-cases/ai-use-cases-in-healthcare/: redirects to https://gogloby.com/use-cases/ai-in-healthcare-best-ai-use-cases-benefits-examples/
+- none
 
 ## Repeated wording
 
-- "He is a LinkedIn Top Voice in software development." (Company facts): 13 pages
-- "4x Applied" (Old terms): 13 pages
-- "He has spent 16+ years building and leading software teams" (Company facts): 10 pages
-- "for companies across the US, Canada, and Europe" (Company facts): 9 pages
-- "Performance Center" (Old terms): 9 pages
-- "including certified Agentic SDLC mastery" (Company facts): 8 pages
-- "Secure Development Environment" (Old terms): 6 pages
-- "including certified Agentic SDLC mastery." (Company facts): 5 pages
-- "with zero IP exposure" (Company facts): 4 pages
-- "$3M Cyber-Liability Guarantee" (Company facts): 4 pages
-- "Contact GoGloby Today" (CTA): 3 pages
-- "the engineering standard behind 4x Applied AI Engineering" (Positioning): 3 pages
-- "Contact GoGloby Now" (CTA): 3 pages
-- "Applied AI Engineering Partner" (Old terms): 3 pages
-- "engineering standard behind 4x Applied AI Engineering" (Positioning): 3 pages
-- "Applied AI Software Engineers are vetted against" (Positioning): 3 pages
-- "120-Day Free-Replacement Guarantee" (Company facts): 3 pages
-- "Contact GoGloby" (CTA): 3 pages
+- "including certified Agentic SDLC mastery" (Company facts): 4 pages
+- "He is a LinkedIn Top Voice in software development." (Company facts): 4 pages
+- "4x Applied" (Old terms): 4 pages
+- "He has spent 16+ years building and leading software teams" (Company facts): 3 pages
+- "Every engagement starts with the Benchmark: a fixed fee for one month" (Discontinued offer): 3 pages
+- "logo-aicpa-soc2-type2-1-white-grayscale.png" (Company facts): 3 pages
+- "logo-ism-iso-27001-1-grayscale.png" (Company facts): 3 pages
+- "Applied AI Engineering partner" (Old terms): 3 pages
+- "AI Intelligence Layer" (Old terms): 3 pages

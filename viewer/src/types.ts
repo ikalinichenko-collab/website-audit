@@ -119,6 +119,8 @@ export interface GeoAnswerView {
   fix?: string | null;
   /** absent in runs made before the questions had titles */
   title?: string;
+  /** the question as asked in this run; absent in older runs */
+  question?: string;
   severity?: "high" | "medium" | "low";
   needs_confirm?: boolean;
   confirmed?: boolean;

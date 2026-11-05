@@ -1,0 +1,2085 @@
+{
+  "schema_version": 2,
+  "url": "https://gogloby.com/services/ai-development/",
+  "final_url": "https://gogloby.com/services/ai-development/",
+  "status": 200,
+  "title": "AI Development Services | GoGloby",
+  "category": "Services",
+  "subsection": "Services",
+  "profile": "service",
+  "geo_type": "service",
+  "template": "block",
+  "checked_at": "2026-11-05T15:10:08.262Z",
+  "zones": [
+    {
+      "id": "title",
+      "label": "Title",
+      "kind": "title"
+    },
+    {
+      "id": "meta_description",
+      "label": "Meta description",
+      "kind": "meta_description"
+    },
+    {
+      "id": "og_title",
+      "label": "og:title",
+      "kind": "og_title"
+    },
+    {
+      "id": "og_description",
+      "label": "og:description",
+      "kind": "og_description"
+    },
+    {
+      "id": "json_ld",
+      "label": "Structured data (JSON-LD)",
+      "kind": "json_ld"
+    },
+    {
+      "id": "h1",
+      "label": "H1",
+      "kind": "h1"
+    },
+    {
+      "id": "block:hero-services#1",
+      "label": "Hero services: AI Development Services",
+      "kind": "block"
+    },
+    {
+      "id": "block:company#1",
+      "label": "Company: What Are AI Development Services?",
+      "kind": "block"
+    },
+    {
+      "id": "block:scope#1",
+      "label": "Scope: The AI Development Services GoGloby Delivers",
+      "kind": "block"
+    },
+    {
+      "id": "block:layers#1",
+      "label": "Layers: Why GoGloby Is Different",
+      "kind": "block"
+    },
+    {
+      "id": "block:how-we-work#1",
+      "label": "How we work: The Architect, Forward-Deployed Into Your Team",
+      "kind": "block"
+    },
+    {
+      "id": "block:cards-slider#1",
+      "label": "Cards slider: What AI Solutions Can We Build?",
+      "kind": "block"
+    },
+    {
+      "id": "block:how-it-works#1",
+      "label": "How it works: How Do AI Development Services Work?",
+      "kind": "block"
+    },
+    {
+      "id": "block:cards-slider#2",
+      "label": "Cards slider: Which Industries Use AI Development Services?",
+      "kind": "block"
+    },
+    {
+      "id": "block:security#1",
+      "label": "Security: Security, Compliance, and Governance for AI Development",
+      "kind": "block"
+    },
+    {
+      "id": "block:accordion-2#1",
+      "label": "Accordion 2: Secure Data Flow",
+      "kind": "block"
+    },
+    {
+      "id": "block:featured-facts#1",
+      "label": "Featured facts: What Engineering Leaders Can Measure Sprint by Sprint",
+      "kind": "block"
+    },
+    {
+      "id": "block:featured-tiles#1",
+      "label": "Featured tiles: Why Engineering Leaders Choose GoGloby Over Generic AI Deve…",
+      "kind": "block"
+    },
+    {
+      "id": "block:accordion-1#1",
+      "label": "Accordion 1: FAQ",
+      "kind": "block"
+    },
+    {
+      "id": "block:contact#1",
+      "label": "Contact: Build AI Software That Ships Safely",
+      "kind": "block"
+    },
+    {
+      "id": "banner_cta",
+      "label": "Banner CTA",
+      "kind": "banner_cta"
+    },
+    {
+      "id": "modals",
+      "label": "Forms and modals",
+      "kind": "modals"
+    }
+  ],
+  "zone_warnings": [],
+  "shared_variants": [],
+  "compliance": {
+    "hash": "ffe2e1b7f19fc2e592eef44c0aa7a0d7fbaccdd8da3955ffc3f23b49ea48a9e8",
+    "cached": false,
+    "action": "needs_decision",
+    "model_action": "needs_decision",
+    "summary": "The page is built to sell AI development and forward-deployed architect services, not GoGloby’s approved recruiting and staffing services. It also makes unsupported claims about guarantees, security, performance metrics, pricing, and credentials; decide whether to remove the page before carrying any of those claims into other content.",
+    "llm_problems": [
+      {
+        "title": "AI development delivery offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Fact Sheet: Services; Glossary §7",
+        "rule_verified": true,
+        "issue": "The page sells AI software development and architect-led delivery, but GoGloby’s approved services are recruiting and staffing engineers.",
+        "fix": "Decide whether to remove this offer and page; do not carry its AI development, software-building, or architect-delivery positioning into replacement content.",
+        "subject": "AI development services",
+        "page_value": "AI development and architect-led delivery",
+        "source_value": "Recruiting and staffing Data & AI Engineers",
+        "count": 10,
+        "locations": [
+          {
+            "zone_id": "title",
+            "part": "field 1",
+            "quote": "AI Development Services | GoGloby",
+            "verified": true,
+            "reason": "The title presents GoGloby as an AI development services provider."
+          },
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "Get AI development services with a Claude Certified Architect",
+            "verified": true,
+            "reason": "The meta description promotes development delivery through an architect rather than recruiting or staffing."
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Answer.text",
+            "quote": "GoGloby is built for that: an embedded Claude Certified Architect",
+            "verified": true,
+            "reason": "The structured data describes GoGloby as providing an embedded architect and governed delivery."
+          },
+          {
+            "zone_id": "h1",
+            "part": "field 1",
+            "quote": "AI Development Services",
+            "verified": true,
+            "reason": "The H1 identifies the page as selling AI development services."
+          },
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "paragraph 2",
+            "quote": "We place a Claude Certified Architect inside your team.",
+            "verified": true,
+            "reason": "The hero offers an architect placement as the way GoGloby delivers the work."
+          },
+          {
+            "zone_id": "block:company#1",
+            "part": "paragraph 2",
+            "quote": "GoGloby treats AI development as production engineering",
+            "verified": true,
+            "reason": "This paragraph positions GoGloby as a provider of AI development work."
+          },
+          {
+            "zone_id": "block:scope#1",
+            "part": "paragraph 2",
+            "quote": "GoGloby covers the full AI development lifecycle.",
+            "verified": true,
+            "reason": "The scope section claims GoGloby delivers an end-to-end development service."
+          },
+          {
+            "zone_id": "block:layers#1",
+            "part": "paragraph 1",
+            "quote": "We are an Applied AI Engineering partner.",
+            "verified": true,
+            "reason": "This explicitly gives GoGloby a positioning that the glossary says not to use."
+          },
+          {
+            "zone_id": "block:how-we-work#1",
+            "part": "paragraph 2",
+            "quote": "We forward-deploy an Architect into your team on a flat monthly fee per engineer",
+            "verified": true,
+            "reason": "This describes architect deployment as a GoGloby service and its engagement model."
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "paragraph 2",
+            "quote": "GoGloby forward-deploys a Claude Certified Architect into your team.",
+            "verified": true,
+            "reason": "The contact section again promotes architect-led delivery as GoGloby’s offer."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Intelligence Layer standalone offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §2 and §7",
+        "rule_verified": true,
+        "issue": "The page sells a Layer as part of architect-led development, while the AI Development Intelligence Layer is bundled only with nearshore staffing and is never sold separately.",
+        "fix": "Remove the Layer as a standalone or development-service component; only describe it in the approved nearshore staffing context.",
+        "subject": "AI Development Intelligence Layer",
+        "page_value": "Layer included with AI development delivery",
+        "source_value": "Bundled only with nearshore staffing; never sold separately",
+        "count": 6,
+        "locations": [
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "paragraph 2",
+            "quote": "leadership sees the impact through the AI Intelligence Layer",
+            "verified": true,
+            "reason": "The hero presents the Layer as a component of the AI development offer."
+          },
+          {
+            "zone_id": "block:company#1",
+            "part": "paragraph 7",
+            "quote": "and the Layer.",
+            "verified": true,
+            "reason": "The paragraph lists the Layer as part of what GoGloby provides for development delivery."
+          },
+          {
+            "zone_id": "block:layers#1",
+            "part": "paragraph 18",
+            "quote": "The Layer measures Claude-driven impact from real signals.",
+            "verified": true,
+            "reason": "The section presents a Layer product for measuring development impact."
+          },
+          {
+            "zone_id": "block:how-we-work#1",
+            "part": "paragraph 3",
+            "quote": "At the core is the Architect. 3 things ride along: the Agentic SDLC, code that never leaves your environment, and the Layer.",
+            "verified": true,
+            "reason": "The paragraph bundles the Layer with the architect-led delivery offer."
+          },
+          {
+            "zone_id": "block:accordion-2#1",
+            "part": "paragraph 14",
+            "quote": "with the AI Intelligence Layer deployed inside your VPC",
+            "verified": true,
+            "reason": "The Benchmark description sells deployment of a Layer as part of a separate paid engagement."
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "paragraph 2",
+            "quote": "Leadership gets the Layer to prove ROI sprint by sprint.",
+            "verified": true,
+            "reason": "The contact section promotes the Layer as a benefit of the development service."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Benchmark paid engagement",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The page describes a fixed-fee, one-month Benchmark engagement, which is not an offer in the company documents.",
+        "fix": "Remove the Benchmark engagement and its fee, credit, and baseline promises.",
+        "subject": "Benchmark engagement",
+        "page_value": "Fixed fee for one month",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:accordion-2#1",
+            "part": "paragraph 14",
+            "quote": "Every engagement starts with the Benchmark: a fixed fee for one month",
+            "verified": true,
+            "reason": "The paragraph offers a paid one-month Benchmark as the required start to an engagement."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Calls to action for old offer",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §2 and §7",
+        "rule_verified": true,
+        "issue": "The calls to action book development briefings or calls rather than using the approved staffing or recruiting CTAs.",
+        "fix": "Remove calls to action for the development offer; use the approved service-specific CTA only if the page is repurposed for an approved service.",
+        "subject": "Page calls to action",
+        "page_value": "Technical briefings and calls",
+        "source_value": "Get vetted profiles; Start a search",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "paragraph 5",
+            "quote": "Schedule a Technical Briefing",
+            "verified": true,
+            "reason": "This CTA invites visitors to begin a technical briefing for the development offer."
+          },
+          {
+            "zone_id": "block:security#1",
+            "part": "paragraph 7",
+            "quote": "Review Secure Deployment Options",
+            "verified": true,
+            "reason": "This CTA offers a review of deployment options not listed as a GoGloby service."
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 3",
+            "quote": "Book a Call",
+            "verified": true,
+            "reason": "This CTA books a call for the page’s development service."
+          },
+          {
+            "zone_id": "modals",
+            "part": "paragraph 3",
+            "quote": "Book a Technical Call",
+            "verified": true,
+            "reason": "This form CTA books a technical call rather than directing buyers to an approved service CTA."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Architect credential claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services and Founders; Glossary §7",
+        "rule_verified": true,
+        "issue": "The page claims GoGloby provides a Claude Certified Architect, but the sources do not document this credential or role as an offer.",
+        "fix": "Remove the credential claim and do not present this role as a GoGloby offer.",
+        "subject": "Claude Certified Architect",
+        "page_value": "Claude Certified Architect",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "with a Claude Certified Architect",
+            "verified": true,
+            "reason": "The meta description claims a specific certification for the architect offered."
+          },
+          {
+            "zone_id": "block:layers#1",
+            "part": "paragraph 1",
+            "quote": "Claude Certified Architect",
+            "verified": true,
+            "reason": "The section presents this credential as the engineer GoGloby supplies."
+          },
+          {
+            "zone_id": "block:how-it-works#1",
+            "part": "heading 3",
+            "quote": "Forward-Deploy a Claude Certified Architect",
+            "verified": true,
+            "reason": "The workflow step promises that GoGloby will provide this credentialed role."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Architect monthly pricing",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §2",
+        "rule_verified": true,
+        "issue": "The page states a flat monthly fee per architect, but the documented flat monthly fee applies to nearshore staffing engineers, not architect-led development.",
+        "fix": "Remove this pricing model from the architect offer and use only the pricing model for an approved service.",
+        "subject": "Architect pricing",
+        "page_value": "Flat monthly fee per engineer",
+        "source_value": "Flat Monthly Fee for nearshore staffing engineers",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:how-we-work#1",
+            "part": "paragraph 5",
+            "quote": "A flat monthly fee per engineer, with engineers added or removed monthly.",
+            "verified": true,
+            "reason": "This assigns the nearshore staffing pricing structure to the page’s architect-led service."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "No-minimum-term claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §2",
+        "rule_verified": true,
+        "issue": "The page promises no minimum term for the architect engagement, a contract term not stated in the sources.",
+        "fix": "Remove the no-minimum-term promise unless it is verified for an approved service.",
+        "subject": "Engagement term",
+        "page_value": "No minimum term",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:how-we-work#1",
+            "part": "paragraph 5",
+            "quote": "No hourly billing, no minimum term.",
+            "verified": true,
+            "reason": "This promises a contract term that is not documented for GoGloby’s services."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Performance guarantee terms",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page promises replacement after two below-baseline sprints, but the documented nearshore guarantee is replacement if results fall below baseline and cancellation any time in the first 120 days.",
+        "fix": "Remove this architect-specific guarantee or replace it only with the documented guarantee for the relevant approved service.",
+        "subject": "Performance guarantee",
+        "page_value": "Replacement after 2 consecutive below-baseline sprints",
+        "source_value": "Performance-based replacement below baseline; cancel any time in first 120 days",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "block:how-we-work#1",
+            "part": "paragraph 7",
+            "quote": "If a forward-deployed Architect drops below the agreed baseline for 2 sprints in a row, GoGloby replaces them at no cost.",
+            "verified": true,
+            "reason": "This defines a specific architect replacement trigger and guarantee not stated in the Fact Sheet."
+          },
+          {
+            "zone_id": "block:featured-tiles#1",
+            "part": "paragraph 7",
+            "quote": "If an Architect falls below baseline for 2 sprints in a row, we replace them at no cost.",
+            "verified": true,
+            "reason": "This repeats the unsupported two-sprint trigger as a contract-backed replacement guarantee."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified start and delivery timelines",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §2",
+        "rule_verified": true,
+        "issue": "The page promises contribution in the first sprint and a result within one or two quarters, neither of which is a documented delivery timeline.",
+        "fix": "Remove these delivery-time promises unless verified for an approved service.",
+        "subject": "Delivery timeline",
+        "page_value": "First sprint; 1 or 2 quarters",
+        "source_value": "4–6 weeks to offer; 2–3 weeks to start",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "block:layers#1",
+            "part": "paragraph 6",
+            "quote": "contributing in the first sprint rather than the first quarter.",
+            "verified": true,
+            "reason": "The section promises an architect’s contribution by the first sprint."
+          },
+          {
+            "zone_id": "block:how-it-works#1",
+            "part": "paragraph 2",
+            "quote": "a result inside 1 or 2 quarters",
+            "verified": true,
+            "reason": "The section promises a delivery result within a stated number of quarters."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Assessment pipeline denominator",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: How we vet; Key metrics",
+        "rule_verified": true,
+        "issue": "The page says about 4% of a curated outbound pipeline passes a multi-layer assessment, while the Fact Sheet says approximately 4% of candidates pass the four-stage assessment.",
+        "fix": "Use the documented candidate population and four-stage assessment description, or remove the claim.",
+        "subject": "Assessment pass rate",
+        "page_value": "4% of curated outbound pipeline",
+        "source_value": "4% of candidates",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:layers#1",
+            "part": "paragraph 3",
+            "quote": "Only about 4% of our curated outbound pipeline clears the multi-layer assessment.",
+            "verified": true,
+            "reason": "This changes the stated 4% pass-rate denominator and describes a different assessment."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified performance metrics",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Legal and security",
+        "rule_verified": true,
+        "issue": "The page presents AI-assisted commit-rate and PR-turnaround figures that are not in the company sources.",
+        "fix": "Remove these metrics unless they are verified and approved for publication.",
+        "subject": "Engineering performance metrics",
+        "page_value": "90% commit rate; 35–45% benchmark; 30% faster PR turnaround",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "block:featured-facts#1",
+            "part": "paragraph 6",
+            "quote": "90% at month 6",
+            "verified": true,
+            "reason": "This presents a six-month AI-assisted commit-rate figure not stated in the sources."
+          },
+          {
+            "zone_id": "block:featured-facts#1",
+            "part": "paragraph 7",
+            "quote": "benchmark 35–45% at month 2",
+            "verified": true,
+            "reason": "This supplies a comparison benchmark for commit rate that is not documented."
+          },
+          {
+            "zone_id": "block:featured-facts#1",
+            "part": null,
+            "quote": "30% Faster PR Turnaround",
+            "verified": true,
+            "reason": "This claims a PR turnaround improvement percentage not stated in the sources."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified Claude deployment claims",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page makes specific promises about Claude Enterprise, Claude deployment in cloud platforms, and training-data use that the sources do not document.",
+        "fix": "Remove these vendor-specific configuration and data-use promises unless verified and approved.",
+        "subject": "Claude security configuration",
+        "page_value": "Claude Enterprise; Claude on AWS, Bedrock, or Vertex AI; never used for training",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "block:layers#1",
+            "part": "paragraph 8",
+            "quote": "It is governed and never used for training.",
+            "verified": true,
+            "reason": "This makes a specific Claude data-use promise not stated in the company sources."
+          },
+          {
+            "zone_id": "block:layers#1",
+            "part": "paragraph 9",
+            "quote": "Claude on AWS, Amazon Bedrock, or Google Cloud Vertex AI",
+            "verified": true,
+            "reason": "This promises specific Claude deployment options not documented for GoGloby."
+          },
+          {
+            "zone_id": "block:security#1",
+            "part": "paragraph 2",
+            "quote": "The model is 2 real products. Claude Enterprise for the team.",
+            "verified": true,
+            "reason": "This describes a specific Claude Enterprise configuration as part of GoGloby’s delivery."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "HIPAA and BAA promise",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page promises HIPAA readiness and a signed BAA, which are not stated in the sources.",
+        "fix": "Remove the HIPAA and BAA claims unless verified and approved.",
+        "subject": "HIPAA readiness",
+        "page_value": "HIPAA-ready with a signed BAA",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "block:cards-slider#2",
+            "part": "paragraph 10",
+            "quote": "HIPAA-ready with a signed BAA.",
+            "verified": true,
+            "reason": "This promises HIPAA readiness and a signed agreement not documented in the sources."
+          },
+          {
+            "zone_id": "block:security#1",
+            "part": "list_item 7",
+            "quote": "HIPAA-ready with a signed BAA for regulated verticals",
+            "verified": true,
+            "reason": "The security summary repeats the unsupported HIPAA and BAA promise."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Liability coverage scope",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Legal and security",
+        "rule_verified": true,
+        "issue": "The page includes professional liability in the $3M coverage, while the Fact Sheet specifies $3M data and cyber-liability insurance.",
+        "fix": "Correct the coverage description to match the documented policy or remove it.",
+        "subject": "Insurance coverage",
+        "page_value": "$3M combined cyber, data and professional liability",
+        "source_value": "$3M data and cyber liability",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "block:security#1",
+            "part": "list_item 8",
+            "quote": "$3M combined liability (cyber, data and professional) coverage from day one",
+            "verified": true,
+            "reason": "This adds professional liability to the documented $3M data and cyber-liability policy."
+          },
+          {
+            "zone_id": "block:featured-tiles#1",
+            "part": "heading 6",
+            "quote": "$3M Combined Liability (Cyber, Data and Professional)",
+            "verified": true,
+            "reason": "This repeats professional liability as part of the $3M coverage."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified security certifications",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page’s security logos imply SOC 2 Type 2 and ISO 27001 credentials, while the sources state SOC 2-aligned controls and do not list either certification.",
+        "fix": "Remove the certification logos or verify the certifications before presenting them.",
+        "subject": "Security certifications",
+        "page_value": "SOC 2 Type 2; ISO 27001",
+        "source_value": "SOC 2-aligned controls; ISO 27001 not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 15",
+            "quote": "logo-aicpa-soc2-type2-1-white-grayscale.png",
+            "verified": true,
+            "reason": "The image filename identifies a SOC 2 Type 2 logo, which implies a certification not listed in the sources."
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 16",
+            "quote": "logo-ism-iso-27001-1-grayscale.png",
+            "verified": true,
+            "reason": "The image filename identifies an ISO 27001 logo, a certification not listed in the sources."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      }
+    ],
+    "problems": [
+      {
+        "title": "AI development delivery offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Fact Sheet: Services; Glossary §7",
+        "rule_verified": true,
+        "issue": "The page sells AI software development and architect-led delivery, but GoGloby’s approved services are recruiting and staffing engineers.",
+        "fix": "Decide whether to remove this offer and page; do not carry its AI development, software-building, or architect-delivery positioning into replacement content.",
+        "subject": "AI development services",
+        "page_value": "AI development and architect-led delivery",
+        "source_value": "Recruiting and staffing Data & AI Engineers",
+        "count": 10,
+        "locations": [
+          {
+            "zone_id": "title",
+            "part": "field 1",
+            "quote": "AI Development Services | GoGloby",
+            "verified": true,
+            "reason": "The title presents GoGloby as an AI development services provider."
+          },
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "Get AI development services with a Claude Certified Architect",
+            "verified": true,
+            "reason": "The meta description promotes development delivery through an architect rather than recruiting or staffing."
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Answer.text",
+            "quote": "GoGloby is built for that: an embedded Claude Certified Architect",
+            "verified": true,
+            "reason": "The structured data describes GoGloby as providing an embedded architect and governed delivery."
+          },
+          {
+            "zone_id": "h1",
+            "part": "field 1",
+            "quote": "AI Development Services",
+            "verified": true,
+            "reason": "The H1 identifies the page as selling AI development services.",
+            "fragment": "AI Development Services",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "paragraph 2",
+            "quote": "We place a Claude Certified Architect inside your team.",
+            "verified": true,
+            "reason": "The hero offers an architect placement as the way GoGloby delivers the work.",
+            "fragment": "We place a Claude Certified Architect",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:company#1",
+            "part": "paragraph 2",
+            "quote": "GoGloby treats AI development as production engineering",
+            "verified": true,
+            "reason": "This paragraph positions GoGloby as a provider of AI development work.",
+            "fragment": "GoGloby treats AI development as production",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:scope#1",
+            "part": "paragraph 2",
+            "quote": "GoGloby covers the full AI development lifecycle.",
+            "verified": true,
+            "reason": "The scope section claims GoGloby delivers an end-to-end development service.",
+            "fragment": "GoGloby covers the full AI development",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:layers#1",
+            "part": "paragraph 1",
+            "quote": "We are an Applied AI Engineering partner.",
+            "verified": true,
+            "reason": "This explicitly gives GoGloby a positioning that the glossary says not to use.",
+            "fragment": "We are an Applied AI Engineering",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:how-we-work#1",
+            "part": "paragraph 2",
+            "quote": "We forward-deploy an Architect into your team on a flat monthly fee per engineer",
+            "verified": true,
+            "reason": "This describes architect deployment as a GoGloby service and its engagement model.",
+            "fragment": "We forward-deploy an Architect into your",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "paragraph 2",
+            "quote": "GoGloby forward-deploys a Claude Certified Architect into your team.",
+            "verified": true,
+            "reason": "The contact section again promotes architect-led delivery as GoGloby’s offer.",
+            "fragment": "GoGloby forward-deploys a Claude Certified Architect,-into your team.",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Intelligence Layer standalone offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §2 and §7",
+        "rule_verified": true,
+        "issue": "The page sells a Layer as part of architect-led development, while the AI Development Intelligence Layer is bundled only with nearshore staffing and is never sold separately.",
+        "fix": "Remove the Layer as a standalone or development-service component; only describe it in the approved nearshore staffing context.",
+        "subject": "AI Development Intelligence Layer",
+        "page_value": "Layer included with AI development delivery",
+        "source_value": "Bundled only with nearshore staffing; never sold separately",
+        "count": 6,
+        "locations": [
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "paragraph 2",
+            "quote": "leadership sees the impact through the AI Intelligence Layer",
+            "verified": true,
+            "reason": "The hero presents the Layer as a component of the AI development offer.",
+            "fragment": "leadership sees the impact through the",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:company#1",
+            "part": "paragraph 7",
+            "quote": "and the Layer.",
+            "verified": true,
+            "reason": "The paragraph lists the Layer as part of what GoGloby provides for development delivery.",
+            "fragment": "integrations, deployment, monitoring,-,and the Layer.,-The point is",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:layers#1",
+            "part": "paragraph 18",
+            "quote": "The Layer measures Claude-driven impact from real signals.",
+            "verified": true,
+            "reason": "The section presents a Layer product for measuring development impact.",
+            "fragment": "The Layer measures Claude-driven impact from",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:how-we-work#1",
+            "part": "paragraph 3",
+            "quote": "At the core is the Architect. 3 things ride along: the Agentic SDLC, code that never leaves your environment, and the Layer.",
+            "verified": true,
+            "reason": "The paragraph bundles the Layer with the architect-led delivery offer.",
+            "fragment": "At the core is the Architect.",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:accordion-2#1",
+            "part": "paragraph 14",
+            "quote": "with the AI Intelligence Layer deployed inside your VPC",
+            "verified": true,
+            "reason": "The Benchmark description sells deployment of a Layer as part of a separate paid engagement.",
+            "fragment": "with the AI Intelligence Layer deployed",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "paragraph 2",
+            "quote": "Leadership gets the Layer to prove ROI sprint by sprint.",
+            "verified": true,
+            "reason": "The contact section promotes the Layer as a benefit of the development service.",
+            "fragment": "Leadership gets the Layer to prove",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Benchmark paid engagement",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The page describes a fixed-fee, one-month Benchmark engagement, which is not an offer in the company documents.",
+        "fix": "Remove the Benchmark engagement and its fee, credit, and baseline promises.",
+        "subject": "Benchmark engagement",
+        "page_value": "Fixed fee for one month",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:accordion-2#1",
+            "part": "paragraph 14",
+            "quote": "Every engagement starts with the Benchmark: a fixed fee for one month",
+            "verified": true,
+            "reason": "The paragraph offers a paid one-month Benchmark as the required start to an engagement.",
+            "fragment": "Every engagement starts with the Benchmark:",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Calls to action for old offer",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §2 and §7",
+        "rule_verified": true,
+        "issue": "The calls to action book development briefings or calls rather than using the approved staffing or recruiting CTAs.",
+        "fix": "Remove calls to action for the development offer; use the approved service-specific CTA only if the page is repurposed for an approved service.",
+        "subject": "Page calls to action",
+        "page_value": "Technical briefings and calls",
+        "source_value": "Get vetted profiles; Start a search",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "paragraph 5",
+            "quote": "Schedule a Technical Briefing",
+            "verified": true,
+            "reason": "This CTA invites visitors to begin a technical briefing for the development offer.",
+            "fragment": "Schedule a Technical Briefing",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:security#1",
+            "part": "paragraph 7",
+            "quote": "Review Secure Deployment Options",
+            "verified": true,
+            "reason": "This CTA offers a review of deployment options not listed as a GoGloby service.",
+            "fragment": "Review Secure Deployment Options",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 3",
+            "quote": "Book a Call",
+            "verified": true,
+            "reason": "This CTA books a call for the page’s development service.",
+            "fragment": "Book a Call",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "modals",
+            "part": "paragraph 3",
+            "quote": "Book a Technical Call",
+            "verified": true,
+            "reason": "This form CTA books a technical call rather than directing buyers to an approved service CTA.",
+            "fragment": "Book a Technical Call",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Architect credential claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services and Founders; Glossary §7",
+        "rule_verified": true,
+        "issue": "The page claims GoGloby provides a Claude Certified Architect, but the sources do not document this credential or role as an offer.",
+        "fix": "Remove the credential claim and do not present this role as a GoGloby offer.",
+        "subject": "Claude Certified Architect",
+        "page_value": "Claude Certified Architect",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "with a Claude Certified Architect",
+            "verified": true,
+            "reason": "The meta description claims a specific certification for the architect offered."
+          },
+          {
+            "zone_id": "block:layers#1",
+            "part": "paragraph 1",
+            "quote": "Claude Certified Architect",
+            "verified": true,
+            "reason": "The section presents this credential as the engineer GoGloby supplies.",
+            "fragment": "We forward-deploy a-,Claude Certified Architect,-who turns your",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:how-it-works#1",
+            "part": "heading 3",
+            "quote": "Forward-Deploy a Claude Certified Architect",
+            "verified": true,
+            "reason": "The workflow step promises that GoGloby will provide this credentialed role.",
+            "fragment": "Forward-Deploy a Claude Certified Architect",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Architect monthly pricing",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §2",
+        "rule_verified": true,
+        "issue": "The page states a flat monthly fee per architect, but the documented flat monthly fee applies to nearshore staffing engineers, not architect-led development.",
+        "fix": "Remove this pricing model from the architect offer and use only the pricing model for an approved service.",
+        "subject": "Architect pricing",
+        "page_value": "Flat monthly fee per engineer",
+        "source_value": "Flat Monthly Fee for nearshore staffing engineers",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:how-we-work#1",
+            "part": "paragraph 5",
+            "quote": "A flat monthly fee per engineer, with engineers added or removed monthly.",
+            "verified": true,
+            "reason": "This assigns the nearshore staffing pricing structure to the page’s architect-led service.",
+            "fragment": "A flat monthly fee per engineer,",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "No-minimum-term claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §2",
+        "rule_verified": true,
+        "issue": "The page promises no minimum term for the architect engagement, a contract term not stated in the sources.",
+        "fix": "Remove the no-minimum-term promise unless it is verified for an approved service.",
+        "subject": "Engagement term",
+        "page_value": "No minimum term",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:how-we-work#1",
+            "part": "paragraph 5",
+            "quote": "No hourly billing, no minimum term.",
+            "verified": true,
+            "reason": "This promises a contract term that is not documented for GoGloby’s services.",
+            "fragment": "No hourly billing, no minimum term.",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Performance guarantee terms",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page promises replacement after two below-baseline sprints, but the documented nearshore guarantee is replacement if results fall below baseline and cancellation any time in the first 120 days.",
+        "fix": "Remove this architect-specific guarantee or replace it only with the documented guarantee for the relevant approved service.",
+        "subject": "Performance guarantee",
+        "page_value": "Replacement after 2 consecutive below-baseline sprints",
+        "source_value": "Performance-based replacement below baseline; cancel any time in first 120 days",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "block:how-we-work#1",
+            "part": "paragraph 7",
+            "quote": "If a forward-deployed Architect drops below the agreed baseline for 2 sprints in a row, GoGloby replaces them at no cost.",
+            "verified": true,
+            "reason": "This defines a specific architect replacement trigger and guarantee not stated in the Fact Sheet.",
+            "fragment": "If a forward-deployed Architect drops below",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:featured-tiles#1",
+            "part": "paragraph 7",
+            "quote": "If an Architect falls below baseline for 2 sprints in a row, we replace them at no cost.",
+            "verified": true,
+            "reason": "This repeats the unsupported two-sprint trigger as a contract-backed replacement guarantee.",
+            "fragment": "If an Architect falls below baseline",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified start and delivery timelines",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §2",
+        "rule_verified": true,
+        "issue": "The page promises contribution in the first sprint and a result within one or two quarters, neither of which is a documented delivery timeline.",
+        "fix": "Remove these delivery-time promises unless verified for an approved service.",
+        "subject": "Delivery timeline",
+        "page_value": "First sprint; 1 or 2 quarters",
+        "source_value": "4–6 weeks to offer; 2–3 weeks to start",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "block:layers#1",
+            "part": "paragraph 6",
+            "quote": "contributing in the first sprint rather than the first quarter.",
+            "verified": true,
+            "reason": "The section promises an architect’s contribution by the first sprint.",
+            "fragment": "contributing in the first sprint rather",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:how-it-works#1",
+            "part": "paragraph 2",
+            "quote": "a result inside 1 or 2 quarters",
+            "verified": true,
+            "reason": "The section promises a delivery result within a stated number of quarters.",
+            "fragment": "a result inside 1 or 2",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Assessment pipeline denominator",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: How we vet; Key metrics",
+        "rule_verified": true,
+        "issue": "The page says about 4% of a curated outbound pipeline passes a multi-layer assessment, while the Fact Sheet says approximately 4% of candidates pass the four-stage assessment.",
+        "fix": "Use the documented candidate population and four-stage assessment description, or remove the claim.",
+        "subject": "Assessment pass rate",
+        "page_value": "4% of curated outbound pipeline",
+        "source_value": "4% of candidates",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:layers#1",
+            "part": "paragraph 3",
+            "quote": "Only about 4% of our curated outbound pipeline clears the multi-layer assessment.",
+            "verified": true,
+            "reason": "This changes the stated 4% pass-rate denominator and describes a different assessment.",
+            "fragment": "Only about 4% of our curated",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified performance metrics",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics; Legal and security",
+        "rule_verified": true,
+        "issue": "The page presents AI-assisted commit-rate and PR-turnaround figures that are not in the company sources.",
+        "fix": "Remove these metrics unless they are verified and approved for publication.",
+        "subject": "Engineering performance metrics",
+        "page_value": "90% commit rate; 35–45% benchmark; 30% faster PR turnaround",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "block:featured-facts#1",
+            "part": "paragraph 6",
+            "quote": "90% at month 6",
+            "verified": true,
+            "reason": "This presents a six-month AI-assisted commit-rate figure not stated in the sources.",
+            "fragment": "90% at month 6",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:featured-facts#1",
+            "part": "paragraph 7",
+            "quote": "benchmark 35–45% at month 2",
+            "verified": true,
+            "reason": "This supplies a comparison benchmark for commit rate that is not documented.",
+            "fragment": "35–45% at month",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:featured-facts#1",
+            "part": null,
+            "quote": "30% Faster PR Turnaround",
+            "verified": true,
+            "reason": "This claims a PR turnaround improvement percentage not stated in the sources.",
+            "fragment": "Faster PR Turnaround",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified Claude deployment claims",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page makes specific promises about Claude Enterprise, Claude deployment in cloud platforms, and training-data use that the sources do not document.",
+        "fix": "Remove these vendor-specific configuration and data-use promises unless verified and approved.",
+        "subject": "Claude security configuration",
+        "page_value": "Claude Enterprise; Claude on AWS, Bedrock, or Vertex AI; never used for training",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "block:layers#1",
+            "part": "paragraph 8",
+            "quote": "It is governed and never used for training.",
+            "verified": true,
+            "reason": "This makes a specific Claude data-use promise not stated in the company sources.",
+            "fragment": "It is governed and never used",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:layers#1",
+            "part": "paragraph 9",
+            "quote": "Claude on AWS, Amazon Bedrock, or Google Cloud Vertex AI",
+            "verified": true,
+            "reason": "This promises specific Claude deployment options not documented for GoGloby.",
+            "fragment": "the team plus-,Claude on AWS, Amazon Bedrock, or,-Google Cloud Vertex",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:security#1",
+            "part": "paragraph 2",
+            "quote": "The model is 2 real products. Claude Enterprise for the team.",
+            "verified": true,
+            "reason": "This describes a specific Claude Enterprise configuration as part of GoGloby’s delivery.",
+            "fragment": "The model is 2 real products.",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "HIPAA and BAA promise",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page promises HIPAA readiness and a signed BAA, which are not stated in the sources.",
+        "fix": "Remove the HIPAA and BAA claims unless verified and approved.",
+        "subject": "HIPAA readiness",
+        "page_value": "HIPAA-ready with a signed BAA",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "block:cards-slider#2",
+            "part": "paragraph 10",
+            "quote": "HIPAA-ready with a signed BAA.",
+            "verified": true,
+            "reason": "This promises HIPAA readiness and a signed agreement not documented in the sources.",
+            "fragment": "HIPAA-ready with a signed BAA.",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:security#1",
+            "part": "list_item 7",
+            "quote": "HIPAA-ready with a signed BAA for regulated verticals",
+            "verified": true,
+            "reason": "The security summary repeats the unsupported HIPAA and BAA promise.",
+            "fragment": "HIPAA-ready with a signed BAA for",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Liability coverage scope",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Legal and security",
+        "rule_verified": true,
+        "issue": "The page includes professional liability in the $3M coverage, while the Fact Sheet specifies $3M data and cyber-liability insurance.",
+        "fix": "Correct the coverage description to match the documented policy or remove it.",
+        "subject": "Insurance coverage",
+        "page_value": "$3M combined cyber, data and professional liability",
+        "source_value": "$3M data and cyber liability",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "block:security#1",
+            "part": "list_item 8",
+            "quote": "$3M combined liability (cyber, data and professional) coverage from day one",
+            "verified": true,
+            "reason": "This adds professional liability to the documented $3M data and cyber-liability policy.",
+            "fragment": "$3M combined liability (cyber, data and,-professional) coverage from",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:featured-tiles#1",
+            "part": "heading 6",
+            "quote": "$3M Combined Liability (Cyber, Data and Professional)",
+            "verified": true,
+            "reason": "This repeats professional liability as part of the $3M coverage.",
+            "fragment": "Replacement Guarantee and-,$3M Combined Liability (Cyber, Data and,-Professional)",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified security certifications",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page’s security logos imply SOC 2 Type 2 and ISO 27001 credentials, while the sources state SOC 2-aligned controls and do not list either certification.",
+        "fix": "Remove the certification logos or verify the certifications before presenting them.",
+        "subject": "Security certifications",
+        "page_value": "SOC 2 Type 2; ISO 27001",
+        "source_value": "SOC 2-aligned controls; ISO 27001 not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 15",
+            "quote": "logo-aicpa-soc2-type2-1-white-grayscale.png",
+            "verified": true,
+            "reason": "The image filename identifies a SOC 2 Type 2 logo, which implies a certification not listed in the sources.",
+            "fragment": null,
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 16",
+            "quote": "logo-ism-iso-27001-1-grayscale.png",
+            "verified": true,
+            "reason": "The image filename identifies an ISO 27001 logo, a certification not listed in the sources.",
+            "fragment": null,
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Term not used: AI-native production",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"AI-native production\" is a term or name the company no longer uses.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "AI-native production",
+        "page_value": null,
+        "source_value": null,
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:layers#1",
+            "part": "paragraph 1",
+            "quote": "AI-native production",
+            "verified": true,
+            "fragment": "AI-native production",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      },
+      {
+        "title": "Term not used: Applied AI Engineering partner",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"Applied AI Engineering partner\" is no longer how GoGloby describes itself.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "Applied AI Engineering partner",
+        "page_value": null,
+        "source_value": null,
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:layers#1",
+            "part": "paragraph 1",
+            "quote": "Applied AI Engineering partner",
+            "verified": true,
+            "fragment": "Applied AI Engineering",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      },
+      {
+        "title": "Term not used: AI Intelligence Layer",
+        "category": "old_terms",
+        "severity": "high",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The product is now called the AI Development Intelligence Layer.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "AI Intelligence Layer",
+        "page_value": null,
+        "source_value": null,
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "paragraph 2",
+            "quote": "AI Intelligence Layer",
+            "verified": true,
+            "fragment": "impact through the-,AI Intelligence,-Layer, sprint by",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:accordion-2#1",
+            "part": "paragraph 14",
+            "quote": "AI Intelligence Layer",
+            "verified": true,
+            "fragment": "month, with the-,AI Intelligence Layer,-deployed inside your",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      }
+    ],
+    "usage": {
+      "input": 7567,
+      "cached_input": 10166,
+      "output": 8770
+    },
+    "error": null
+  },
+  "geo": {
+    "hash": "86965fa04cb7926c09d0575b1b8c98710fcd525bf8c93f0d09fd7b0f2107f9b8",
+    "cached": false,
+    "code": [
+      {
+        "id": "trap_terms",
+        "status": "pass",
+        "value": "none in title, H1, meta, og",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "nearshore_not_first",
+        "status": "pass",
+        "value": "not in block:hero-services#1",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "faq_present",
+        "status": "pass",
+        "value": "block:accordion-2#1, FAQPage schema, 5 question headings",
+        "severity": "medium"
+      },
+      {
+        "id": "em_dash",
+        "status": "pass",
+        "value": "none",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "ampersand",
+        "status": "fail",
+        "value": "4 found",
+        "places": [
+          {
+            "zone_id": "block:contact#1",
+            "part": "heading 5",
+            "value": "& | We follow data & security practices:"
+          },
+          {
+            "zone_id": "modals",
+            "part": "paragraph 2",
+            "value": "& | …e read and accepted the Terms & Conditions and Privacy Policy"
+          },
+          {
+            "zone_id": "modals",
+            "part": "paragraph 5",
+            "value": "& | …e read and accepted the Terms & Conditions and Privacy Policy"
+          },
+          {
+            "zone_id": "modals",
+            "part": "paragraph 8",
+            "value": "& | …e read and accepted the Terms & Conditions and Privacy Policy"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "uk_spelling",
+        "status": "pass",
+        "value": "none",
+        "places": [],
+        "severity": "low"
+      }
+    ],
+    "llm": [
+      {
+        "id": "buyer_problem",
+        "answer": "no",
+        "value": null,
+        "zone_id": "block:hero-services#1",
+        "evidence": "Benchmark First, Then Forward-Deployed Delivery GoGloby helps established software companies build it safely. We place a Claude Certified Architect inside your team.",
+        "note": "The page opens with a benchmark and forward-deployed delivery rather than one of the three specified buyer problems.",
+        "fix": "Change the opening to lead with one of the three buyer problems from the glossary.",
+        "evidence_verified": false,
+        "title": "Page does not open with a buyer problem",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "f2551a11daeaa13780d3454289a390211f6e0c41d5b5360327a84e63c58206dd"
+      },
+      {
+        "id": "lead_with_hire",
+        "answer": "no",
+        "value": null,
+        "zone_id": "block:hero-services#1",
+        "evidence": "We place a Claude Certified Architect inside your team. We run delivery on the Agentic SDLC. The work stays inside Claude Enterprise and your own cloud.",
+        "note": "The opening gives no hiring location or start time, and introduces delivery details before the proof, assessment, guarantees, and Intelligence Layer sequence.",
+        "fix": "Reorder the page to lead with who is placed, where they come from, and how fast they start, followed by proof, assessment, guarantees, and the Intelligence Layer.",
+        "evidence_verified": true,
+        "title": "Page does not lead with the hire",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "2f0d7566bbc06626083db94d2077540fc46a45e9990304100ea9834bab6821e0",
+        "fragment": "We place a Claude Certified Architect"
+      },
+      {
+        "id": "recruiting_firm_early",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "This is an AI development services page, not a recruiting page.",
+        "fix": null,
+        "evidence_verified": null,
+        "title": "Does not say early that GoGloby is a recruiting firm",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "c7ff4d361034bf0dd3402e7991755f64ba69b270e0e9153c0bd1e9c9fec57511"
+      },
+      {
+        "id": "faq_quality",
+        "answer": "yes",
+        "value": null,
+        "zone_id": "block:accordion-1#1",
+        "evidence": "Good starting points include internal knowledge assistants, engineering assistants, support automation, document intelligence, RAG systems, AI product features, and agentic workflows for repetitive tasks.",
+        "note": "The FAQ answers its questions directly with standalone explanations, recommendations, or lists.",
+        "fix": null,
+        "evidence_verified": true,
+        "title": "FAQ answers are not direct",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "adb9ef0056ede874a9349be424ffceb687bc7fd6a9ff213765f0c7a784ceaf56",
+        "fragment": "Good starting points include internal knowledge"
+      },
+      {
+        "id": "buyer_ready",
+        "answer": "yes",
+        "value": "buyer_ready",
+        "zone_id": "page",
+        "evidence": "Built for established software companies in industrial and operational software, FinTech and payments, and vertical B2B SaaS.",
+        "note": "The page addresses established software companies and engineering buyers seeking AI implementation services, not job seekers or learners.",
+        "fix": null,
+        "evidence_verified": true,
+        "title": "Not written for buyers ready to hire",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "299ed7dbb2d653822eb198fbb234af5a2d471ddab3c136444ac7123f9c366466",
+        "fragment": "Built for established software companies in"
+      },
+      {
+        "id": "target_keyword",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "No term in Glossary §6 specifically matches this AI development services page.",
+        "fix": null,
+        "evidence_verified": null,
+        "title": "No matching search term",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "e5c513a33aa04349366346004501d4fe9278f03561a9b4794ed21129f2ca55cc"
+      },
+      {
+        "id": "uses_data",
+        "answer": "yes",
+        "value": null,
+        "zone_id": "json_ld",
+        "evidence": "Who offers AI development services for established tech companies?",
+        "note": "The structured data contains the same five questions shown in the page FAQ.",
+        "fix": null,
+        "evidence_verified": true,
+        "title": "FAQ markup does not match the visible FAQ",
+        "severity": "high",
+        "needs_confirm": true,
+        "qhash": "e0e5c0878515d8e04856465fcc2cea473377f4c19b5c828ea2f6fec70293f66c"
+      }
+    ],
+    "placement": null,
+    "usage": {
+      "input": 6570,
+      "cached_input": 8982,
+      "output": 1894
+    },
+    "error": null
+  },
+  "seo": {
+    "checks": [
+      {
+        "id": "http_status",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "200",
+        "severity": "high"
+      },
+      {
+        "id": "title_length",
+        "status": "pass",
+        "zone_id": "title",
+        "value": "33 characters",
+        "severity": "medium"
+      },
+      {
+        "id": "meta_present",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "144 characters",
+        "severity": "high"
+      },
+      {
+        "id": "meta_length",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "144 characters (120-158)",
+        "severity": "low"
+      },
+      {
+        "id": "h1_count",
+        "status": "pass",
+        "zone_id": "h1",
+        "value": "1",
+        "severity": "high"
+      },
+      {
+        "id": "title_h1_match",
+        "status": "pass",
+        "zone_id": "title",
+        "value": "Title and H1 agree",
+        "severity": "low"
+      },
+      {
+        "id": "canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "https://gogloby.com/services/ai-development/",
+        "severity": "high"
+      },
+      {
+        "id": "indexable",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "severity": "high"
+      },
+      {
+        "id": "schema_required",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "present",
+        "severity": "medium"
+      },
+      {
+        "id": "schema_recommended",
+        "status": "fail",
+        "zone_id": "json_ld",
+        "value": "missing: BreadcrumbList",
+        "severity": "medium"
+      },
+      {
+        "id": "broken_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "2 checked",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "redirecting_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "none",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_missing",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without alt",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_empty",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "35 with empty alt",
+        "places": [
+          {
+            "zone_id": "block:company#1",
+            "part": "image 1",
+            "value": "company-icon-13-01.png"
+          },
+          {
+            "zone_id": "block:company#1",
+            "part": "image 2",
+            "value": "company-icon-14-03.png"
+          },
+          {
+            "zone_id": "block:company#1",
+            "part": "image 3",
+            "value": "company-icon-15-01.png"
+          },
+          {
+            "zone_id": "block:company#1",
+            "part": "image 4",
+            "value": "company-icon-16-01.png"
+          },
+          {
+            "zone_id": "block:layers#1",
+            "part": "image 1",
+            "value": "layers-icon-1-01.png"
+          },
+          {
+            "zone_id": "block:layers#1",
+            "part": "image 2",
+            "value": "layers-icon-2-01.png"
+          },
+          {
+            "zone_id": "block:layers#1",
+            "part": "image 3",
+            "value": "layers-icon-18-01.png"
+          },
+          {
+            "zone_id": "block:layers#1",
+            "part": "image 4",
+            "value": "layers-icon-4-04.png"
+          },
+          {
+            "zone_id": "block:layers#1",
+            "part": "image 5",
+            "value": "layers-icon-20-01.png"
+          },
+          {
+            "zone_id": "block:layers#1",
+            "part": "image 6",
+            "value": "layers-icon-6-01.png"
+          },
+          {
+            "zone_id": "block:layers#1",
+            "part": "image 7",
+            "value": "layers-icon-7-01.png"
+          },
+          {
+            "zone_id": "block:layers#1",
+            "part": "image 8",
+            "value": "layers-icon-19-01.png"
+          },
+          {
+            "zone_id": "block:layers#1",
+            "part": "image 9",
+            "value": "layers-icon-9-03.png"
+          },
+          {
+            "zone_id": "block:layers#1",
+            "part": "image 10",
+            "value": "layers-icon-10-01.png"
+          },
+          {
+            "zone_id": "block:layers#1",
+            "part": "image 11",
+            "value": "layers-icon-11-01.png"
+          },
+          {
+            "zone_id": "block:layers#1",
+            "part": "image 12",
+            "value": "layers-icon-12-01.png"
+          },
+          {
+            "zone_id": "block:security#1",
+            "part": "image 1",
+            "value": "security-icon-2-03.png"
+          },
+          {
+            "zone_id": "block:security#1",
+            "part": "image 2",
+            "value": "security-icon-2-01.png"
+          },
+          {
+            "zone_id": "block:security#1",
+            "part": "image 3",
+            "value": "security-icon-3-01.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 1",
+            "value": "logo-hasbro-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 2",
+            "value": "logo-hubspot-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 3",
+            "value": "logo-carta-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 4",
+            "value": "logo-oyster-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 5",
+            "value": "logo-deel-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 6",
+            "value": "logo-evercommerce-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 7",
+            "value": "logo-forbes-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 8",
+            "value": "logo-crunchbase-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 9",
+            "value": "logo-london-daily-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 10",
+            "value": "logo-nbc-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 11",
+            "value": "logo-fox-news-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 12",
+            "value": "logo-clutch-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 13",
+            "value": "logo-trustpilot-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 14",
+            "value": "logo-linkedin-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 15",
+            "value": "logo-aicpa-soc2-type2-1-white-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 16",
+            "value": "logo-ism-iso-27001-1-grayscale.png"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "image_dimensions",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "5 without width/height",
+        "places": [
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "image 1",
+            "value": "block-bg-1-01.png"
+          },
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "image 2",
+            "value": "block-bg-2-01.png"
+          },
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "image 3",
+            "value": "block-bg-3-01.png"
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "image 1",
+            "value": "block-bg-1-01.png"
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "image 2",
+            "value": "block-bg-4-01.png"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "heading_order",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "og_present",
+        "status": "pass",
+        "zone_id": "og_title",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "og_url_canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "og:url https://gogloby.com/services/ai-development/ vs canonical https://gogloby.com/services/ai-development/",
+        "severity": "low"
+      },
+      {
+        "id": "twitter_card",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "summary_large_image",
+        "severity": "low"
+      },
+      {
+        "id": "html_lang",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "en-US",
+        "severity": "low"
+      },
+      {
+        "id": "viewport",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "jsonld_valid",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "3 block(s)",
+        "severity": "high"
+      },
+      {
+        "id": "anchors_resolve",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 checked",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "faq_schema_matches_dom",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "accordion block: true, FAQPage schema: true",
+        "severity": "low"
+      }
+    ]
+  }
+}

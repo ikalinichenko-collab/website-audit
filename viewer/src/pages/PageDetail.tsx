@@ -132,7 +132,8 @@ export function PageDetail() {
   // every question with its answer, the "no" ones too: the same text as the finding, in one table
   const geoQa = geoAnswers.map((a) => ({
     id: a.id,
-    title: a.title ?? GEO_LABELS[a.id] ?? a.id,
+    // the title is worded as the problem, so it belongs to a no; the other answers show the question itself
+    title: a.answer === "no" || !a.question ? (a.title ?? GEO_LABELS[a.id] ?? a.id) : a.question,
     state: geoUnconfirmed(a) ? ("unconfirmed" as const) : a.answer,
     note: [a.value && a.value !== a.id ? `(${a.value})` : "", a.note].filter(Boolean).join(" "),
     fix: a.answer === "no" ? (a.fix ?? "") : "",

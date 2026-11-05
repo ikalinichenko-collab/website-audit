@@ -1,5 +1,43 @@
 [
   {
+    "id": "2026-11-05T15-08-21-388Z",
+    "started_at": "2026-11-05T15:08:21.388Z",
+    "ended_at": "2026-11-05T15:11:37.018Z",
+    "pages_checked": 7,
+    "cost_usd": 0.026608049999999998,
+    "tokens": {
+      "input": 33723,
+      "cached_input": 78575,
+      "output": 44900
+    },
+    "model": "gpt-6-luna",
+    "layers": {
+      "compliance": true,
+      "geo": true,
+      "seo": true
+    },
+    "format": 2
+  },
+  {
+    "id": "2026-11-05T14-59-08-713Z",
+    "started_at": "2026-11-05T14:59:08.713Z",
+    "ended_at": "2026-11-05T15:03:47.323Z",
+    "pages_checked": 8,
+    "cost_usd": 0.06515442,
+    "tokens": {
+      "input": 187502,
+      "cached_input": 187772,
+      "output": 89053
+    },
+    "model": "gpt-6-luna",
+    "layers": {
+      "compliance": true,
+      "geo": true,
+      "seo": true
+    },
+    "format": 2
+  },
+  {
     "id": "2026-11-05T13-18-29-815Z",
     "started_at": "2026-11-05T13:18:29.816Z",
     "ended_at": "2026-11-05T13:24:34.888Z",

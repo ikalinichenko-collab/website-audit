@@ -1,0 +1,3355 @@
+{
+  "schema_version": 2,
+  "url": "https://gogloby.com/services/hire-ai-engineers/",
+  "final_url": "https://gogloby.com/services/hire-ai-engineers/",
+  "status": 200,
+  "title": "Hire AI Engineers Who Can Ship With Claude in Production | GoGloby",
+  "category": "Services",
+  "subsection": "Services",
+  "profile": "service",
+  "geo_type": "service",
+  "template": "block",
+  "checked_at": "2026-11-05T15:10:44.342Z",
+  "zones": [
+    {
+      "id": "title",
+      "label": "Title",
+      "kind": "title"
+    },
+    {
+      "id": "meta_description",
+      "label": "Meta description",
+      "kind": "meta_description"
+    },
+    {
+      "id": "og_title",
+      "label": "og:title",
+      "kind": "og_title"
+    },
+    {
+      "id": "og_description",
+      "label": "og:description",
+      "kind": "og_description"
+    },
+    {
+      "id": "json_ld",
+      "label": "Structured data (JSON-LD)",
+      "kind": "json_ld"
+    },
+    {
+      "id": "h1",
+      "label": "H1",
+      "kind": "h1"
+    },
+    {
+      "id": "block:hero-services#1",
+      "label": "Hero services: Hire AI Engineers Who Can Ship With Claude in Production",
+      "kind": "block"
+    },
+    {
+      "id": "block:company#1",
+      "label": "Company: Why Hiring Applied AI Engineers Is Broken",
+      "kind": "block"
+    },
+    {
+      "id": "block:featured-facts#1",
+      "label": "Featured facts: Vetting Metrics You Can Verify",
+      "kind": "block"
+    },
+    {
+      "id": "block:how-we-work#1",
+      "label": "How we work: The 4% Vetting Pass Rate",
+      "kind": "block"
+    },
+    {
+      "id": "block:guarantees#1",
+      "label": "Guarantees: Verifiable Delivery Guarantees",
+      "kind": "block"
+    },
+    {
+      "id": "block:how-it-works#1",
+      "label": "How it works: Applied AI Engineering Hiring Process",
+      "kind": "block"
+    },
+    {
+      "id": "block:leaders#1",
+      "label": "Leaders: Powering The Enterprise Leaders in Major Verticals",
+      "kind": "block"
+    },
+    {
+      "id": "block:contact#1",
+      "label": "Contact: Contact Us",
+      "kind": "block"
+    },
+    {
+      "id": "block:accordion-1#1",
+      "label": "Accordion 1: FAQ",
+      "kind": "block"
+    }
+  ],
+  "zone_warnings": [],
+  "shared_variants": [
+    "modals@2"
+  ],
+  "compliance": {
+    "hash": "5ad6fd3ae41e1cb18b3d0c70d70d2712fb632fc4b88dce99d8c755f19649fc09",
+    "cached": false,
+    "action": "rewrite",
+    "model_action": "rewrite",
+    "summary": "The page recasts the recruiting service as an Applied AI Engineering offer and also sells a paid Benchmark and forward-deployed delivery. It contains unsupported or conflicting timelines, guarantees, assessment details, client claims, client figures, and security credentials that must not carry into the replacement.",
+    "llm_problems": [
+      {
+        "title": "Applied AI Engineering positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Glossary §7",
+        "rule_verified": true,
+        "issue": "The page presents GoGloby's service as Applied AI Engineering rather than the approved Data & AI Engineers recruiting service.",
+        "fix": "Reposition the page around US Data & AI Engineers Recruiting and remove the Applied AI Engineering offer framing.",
+        "subject": "Service positioning",
+        "page_value": "Applied AI Engineers / Applied AI Engineering",
+        "source_value": "US Data & AI Engineers Recruiting",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "Hire vetted Applied AI Engineers with a 4-stage assessment",
+            "verified": true,
+            "reason": "The meta description names Applied AI Engineers as the service instead of the approved recruiting service."
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.name",
+            "quote": "Hire Applied AI Engineers",
+            "verified": true,
+            "reason": "The structured data labels the page's offer as hiring Applied AI Engineers."
+          },
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "paragraph 2",
+            "quote": "production-grade Applied AI Engineer",
+            "verified": true,
+            "reason": "The hero frames the recruiting offer around the Applied AI Engineer label."
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 4",
+            "quote": "A GoGloby Applied AI Engineering client building their internal AI Studio.",
+            "verified": true,
+            "reason": "The Hasbro card describes the client engagement as Applied AI Engineering."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified shortlist timing",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page promises a 3-to-5-day shortlist, but the Fact Sheet gives a 4-to-6-week time to offer and does not state a shortlist timeline.",
+        "fix": "Remove the unsupported shortlist promise or verify it before making the claim.",
+        "subject": "Recruiting shortlist timing",
+        "page_value": "3 to 5 business days",
+        "source_value": "not in Fact Sheet",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "a 3 to 5 day shortlist",
+            "verified": true,
+            "reason": "The meta description promises a shortlist timeline absent from the source documents."
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Shortlist delivered in 5 days.",
+            "verified": true,
+            "reason": "The structured data promises delivery in five days, which is not a sourced recruiting timeline."
+          },
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "paragraph 2",
+            "quote": "Your shortlist of production-proven engineers lands in 3 to 5 business days.",
+            "verified": true,
+            "reason": "The hero promises a 3-to-5-business-day shortlist not stated in the Fact Sheet."
+          },
+          {
+            "zone_id": "block:featured-facts#1",
+            "part": "paragraph 11",
+            "quote": "Shortlist in 3 to 5 business days.",
+            "verified": true,
+            "reason": "The metrics block repeats the unsupported shortlist timing."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified hiring speed claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The claim that GoGloby is 50 percent faster than US job boards is not in the Fact Sheet.",
+        "fix": "Remove the comparative speed claim or substantiate it before publication.",
+        "subject": "Time-to-hire comparison",
+        "page_value": "50 percent faster",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "50 percent faster time-to-hire than US job boards.",
+            "verified": true,
+            "reason": "The structured data makes an unsourced comparison with US job boards."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Performance guarantee claim",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page calls the recruiting guarantee a performance guarantee, while the source specifies a 120-day free replacement.",
+        "fix": "Describe the guarantee using the sourced replacement terms rather than a performance guarantee.",
+        "subject": "Recruiting guarantee",
+        "page_value": "120-day performance guarantee",
+        "source_value": "120-day free replacement",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "a 120-day performance guarantee.",
+            "verified": true,
+            "reason": "The meta description promises a performance guarantee instead of the documented free replacement."
+          },
+          {
+            "zone_id": "og_description",
+            "part": "field 1",
+            "quote": "a 120-day performance guarantee.",
+            "verified": true,
+            "reason": "The Open Graph description also characterizes the guarantee as performance-based."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified Claude expertise",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §4",
+        "rule_verified": true,
+        "issue": "The page promises production-ready Claude expertise, but the sources do not establish Claude-specific expertise as a recruiting qualification or guarantee.",
+        "fix": "Remove the Claude-specific expertise promise or verify it before using it as a claim about candidates.",
+        "subject": "Candidate expertise",
+        "page_value": "production-ready Claude expertise",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "production-ready Claude expertise",
+            "verified": true,
+            "reason": "The meta description makes a Claude-specific candidate expertise claim not stated in the sources."
+          },
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "heading 1",
+            "quote": "Hire AI Engineers Who Can Ship With Claude in Production",
+            "verified": true,
+            "reason": "The hero promises that candidates can ship with Claude in production."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified time-to-hire baseline",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page says specialized AI hiring through US job boards takes six months, a market comparison not contained in the sources.",
+        "fix": "Remove the six-month comparison or substantiate it before publication.",
+        "subject": "US job-board hiring time",
+        "page_value": "around 6 months",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "block:company#1",
+            "part": "paragraph 4",
+            "quote": "Specialized AI hiring through US job boards takes around 6 months.",
+            "verified": true,
+            "reason": "The page states an unsourced six-month hiring timeline for US job boards."
+          },
+          {
+            "zone_id": "block:how-it-works#1",
+            "part": "paragraph 1",
+            "quote": "without a 6-month hiring cycle.",
+            "verified": true,
+            "reason": "The heading repeats the unsourced six-month comparison."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified candidate pass comparison",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: How we vet",
+        "rule_verified": true,
+        "issue": "The claim that general applicants pass at 0.04 percent or less is not in the sources.",
+        "fix": "Remove the general-applicant comparison or verify it before publication.",
+        "subject": "General applicant pass rate",
+        "page_value": "0.04% at most",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:featured-facts#1",
+            "part": "paragraph 5",
+            "quote": "For general applicants the rate is 0.04% at most.",
+            "verified": true,
+            "reason": "The block gives an unsourced pass rate for applicants outside GoGloby's pipeline."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified hire retention metric",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics",
+        "rule_verified": true,
+        "issue": "The 1-in-3 presented-candidates-hired-and-retained metric is not stated in the Fact Sheet.",
+        "fix": "Remove the metric or verify its definition and data before publication.",
+        "subject": "Presented candidates hired and retained",
+        "page_value": "1 in 3",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:featured-facts#1",
+            "part": "paragraph 8",
+            "quote": "1 in 3 candidates we present gets hired and stays",
+            "verified": true,
+            "reason": "The block reports a hiring-and-retention rate that is absent from the source metrics."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Incorrect network history",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity; Glossary §1",
+        "rule_verified": true,
+        "issue": "The page says the talent network was built over a decade, while GoGloby was founded in 2021 and has five years in business.",
+        "fix": "Replace the decade claim with a sourced company-history statement.",
+        "subject": "Talent network history",
+        "page_value": "A decade-built talent network",
+        "source_value": "Founded 2021; 5 years in business",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:featured-facts#1",
+            "part": "paragraph 11",
+            "quote": "A decade-built talent network across 5 or more US-timezone countries",
+            "verified": true,
+            "reason": "The page claims a decade of network-building despite the sourced five-year company history."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified country coverage",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The sources do not say GoGloby's recruiting network spans five or more US-timezone countries.",
+        "fix": "Remove the country-coverage claim or verify it before publication.",
+        "subject": "Recruiting network geography",
+        "page_value": "5+ US-timezone countries",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Talent network spans 5 plus US-timezone countries.",
+            "verified": true,
+            "reason": "The structured data claims a specific network footprint not provided in the sources."
+          },
+          {
+            "zone_id": "block:accordion-1#1",
+            "part": "paragraph 12",
+            "quote": "Our talent network spans 5+ US-timezone countries",
+            "verified": true,
+            "reason": "The FAQ repeats the unsupported country-coverage claim."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified dedicated squads",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The sources do not promise every client a dedicated recruitment squad working only on its roles.",
+        "fix": "Remove the dedicated-squad promise or verify it before publication.",
+        "subject": "Recruitment staffing model",
+        "page_value": "100% Dedicated Recruitment Squads",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:featured-facts#1",
+            "part": "paragraph 14",
+            "quote": "Every client gets a focused team of AI-specialized recruiters and engineering leaders working only on their roles.",
+            "verified": true,
+            "reason": "The block promises a dedicated team for every client, a staffing model absent from the sources."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Assessment task differs",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: How we vet",
+        "rule_verified": true,
+        "issue": "The page describes a strict machine-readable architectural specification, whereas the sourced task is a structured specification from a loose business requirement, with no code.",
+        "fix": "Align the assessment description with the sourced specification task.",
+        "subject": "Assessment stage one",
+        "page_value": "strict, machine-readable architectural spec",
+        "source_value": "structured specification from a loose business requirement; no code",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:how-we-work#1",
+            "part": "paragraph 3",
+            "quote": "candidates must produce a strict, machine-readable architectural spec.",
+            "verified": true,
+            "reason": "The description changes the documented stage-one task into a machine-readable architectural specification."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Incorrect codebase size",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: How we vet",
+        "rule_verified": true,
+        "issue": "The page says the assessment uses a 100K-plus-line codebase; the Fact Sheet specifies a real 50,000-line codebase.",
+        "fix": "Correct the codebase size to match the Fact Sheet.",
+        "subject": "Assessment codebase size",
+        "page_value": "100K+ line codebase",
+        "source_value": "50,000-line codebase",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:how-we-work#1",
+            "part": "paragraph 4",
+            "quote": "We drop them into a 100K+ line codebase",
+            "verified": true,
+            "reason": "The assessment description gives twice the sourced codebase size."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified complete-team recruiting",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page says GoGloby recruits complete engineering functions, which is not a recruiting service described in the sources.",
+        "fix": "Limit this claim to sourced recruiting roles and service terms, or verify the team-recruiting offer.",
+        "subject": "Recruiting complete engineering teams",
+        "page_value": "complete engineering functions",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Answer.text",
+            "quote": "GoGloby recruits individual Applied AI Engineers and complete engineering functions.",
+            "verified": true,
+            "reason": "The structured data offers complete engineering functions beyond the recruiting roles described in the sources."
+          },
+          {
+            "zone_id": "block:accordion-1#1",
+            "part": "paragraph 8",
+            "quote": "GoGloby recruits individual Applied AI Engineers and complete engineering functions.",
+            "verified": true,
+            "reason": "The FAQ repeats the unsupported complete-engineering-function offer."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Remote recruiting claim",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §2",
+        "rule_verified": true,
+        "issue": "The page offers recruiting across remote, hybrid, and onsite models, but the Fact Sheet specifies full-time onsite US recruiting roles.",
+        "fix": "Remove remote recruiting from this page and describe only the sourced work models.",
+        "subject": "Recruiting work models",
+        "page_value": "remote, hybrid, and on-site",
+        "source_value": "full-time onsite US roles",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Answer.text",
+            "quote": "GoGloby recruits across all work models — remote, hybrid, and on-site.",
+            "verified": true,
+            "reason": "The structured data includes remote recruiting, which conflicts with the Fact Sheet's onsite recruiting definition."
+          },
+          {
+            "zone_id": "block:accordion-1#1",
+            "part": "paragraph 12",
+            "quote": "GoGloby recruits across all work models — remote, hybrid, and on-site.",
+            "verified": true,
+            "reason": "The FAQ repeats the unsupported remote recruiting model."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified post-window terms",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "Preferred re-engagement terms, queue priority, and a reduced backfill fee after the 120-day window are not in the sources.",
+        "fix": "Remove these post-window terms or verify them before publication.",
+        "subject": "Post-guarantee recruiting terms",
+        "page_value": "preferred re-engagement terms and a reduced fee",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Answer.text",
+            "quote": "you move to the front of the queue at a reduced fee.",
+            "verified": true,
+            "reason": "The FAQ answer offers a reduced-fee priority backfill not documented in the sources."
+          },
+          {
+            "zone_id": "block:accordion-1#1",
+            "part": "paragraph 10",
+            "quote": "you move to the front of the queue at a reduced fee.",
+            "verified": true,
+            "reason": "The FAQ repeats an unsourced priority and reduced-fee promise."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported payment schedule",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The sources say the recruiting fee is paid only on hire but do not specify a 50/50 start-and-probation payment schedule.",
+        "fix": "Remove the payment schedule or verify it against approved contract terms.",
+        "subject": "Recruiting fee payment schedule",
+        "page_value": "50% at start and 50% after probation",
+        "source_value": "Fee paid only on hire; split not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:guarantees#1",
+            "part": "paragraph 6",
+            "quote": "50% when your new Applied AI Engineer starts. 50% after they pass probation.",
+            "verified": true,
+            "reason": "The block specifies a fee split and probation payment condition absent from the documented pricing model."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Forward-deployed delivery offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §2 and §7",
+        "rule_verified": true,
+        "issue": "The page sells forward-deployed delivery of architects and engineers to ship features, rather than the documented recruiting service where the client runs the work.",
+        "fix": "Remove the forward-deployed delivery offer from this recruiting page and retain only sourced service descriptions.",
+        "subject": "Forward-deployed delivery",
+        "page_value": "Forward-deploy an architect and ship features",
+        "source_value": "GoGloby recruits and staffs engineers; clients run the work",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Answer.text",
+            "quote": "The forward-deployed model puts Claude Certified Architects, AI Solutions Architects and Applied AI Engineers inside your team",
+            "verified": true,
+            "reason": "The structured data sells a forward-deployed delivery model and architect offer not documented for recruiting."
+          },
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "paragraph 3",
+            "quote": "Forward-Deploy a Team",
+            "verified": true,
+            "reason": "The hero offers forward-deployed team delivery instead of the named recruiting service."
+          },
+          {
+            "zone_id": "block:accordion-1#1",
+            "part": "paragraph 14",
+            "quote": "The forward-deployed model puts Claude Certified Architects, AI Solutions Architects and Applied AI Engineers inside your team",
+            "verified": true,
+            "reason": "The FAQ repeats the forward-deployed architect and engineer offer."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Paid Benchmark offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Glossary §2, §7 and §9",
+        "rule_verified": true,
+        "issue": "The page sells a paid Benchmark with a one-month fee, a deployed AI Intelligence Layer, and a credited fee, although the layer is bundled only with nearshore staffing and is never sold separately.",
+        "fix": "Remove the paid Benchmark offer and its standalone deployment and pricing terms.",
+        "subject": "Benchmark",
+        "page_value": "Fixed one-month fee and AI Intelligence Layer deployment",
+        "source_value": "AI Development Intelligence Layer is bundled with nearshore staffing, never sold separately",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Answer.text",
+            "quote": "Every engagement starts with the Benchmark: a fixed fee for one month",
+            "verified": true,
+            "reason": "The structured data sells a paid standalone Benchmark as the start of every engagement."
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "paragraph 1",
+            "quote": "We will walk you through the Benchmark",
+            "verified": true,
+            "reason": "The contact block promotes the discontinued Benchmark offer."
+          },
+          {
+            "zone_id": "block:accordion-1#1",
+            "part": "paragraph 16",
+            "quote": "Every engagement starts with the Benchmark: a fixed fee for one month",
+            "verified": true,
+            "reason": "The FAQ repeats the paid Benchmark and presents it as universal."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Incorrect Intelligence Layer name",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §7",
+        "rule_verified": true,
+        "issue": "The page uses the discontinued AI Intelligence Layer name instead of AI Development Intelligence Layer.",
+        "fix": "Remove the obsolete product name and use the current name only where the bundled staffing service is relevant.",
+        "subject": "AI Development Intelligence Layer",
+        "page_value": "AI Intelligence Layer",
+        "source_value": "AI Development Intelligence Layer",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Answer.text",
+            "quote": "with the AI Intelligence Layer deployed inside your VPC",
+            "verified": true,
+            "reason": "The structured data uses the discontinued product name and presents it as a Benchmark component."
+          },
+          {
+            "zone_id": "block:accordion-1#1",
+            "part": "paragraph 16",
+            "quote": "with the AI Intelligence Layer deployed inside your VPC",
+            "verified": true,
+            "reason": "The FAQ repeats the discontinued product name."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Benchmark call to action",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §7 and §9",
+        "rule_verified": true,
+        "issue": "The contact prompt directs prospects to a Benchmark instead of the approved recruiting call to action.",
+        "fix": "Replace the Benchmark prompt with the approved recruiting call to action.",
+        "subject": "Recruiting call to action",
+        "page_value": "walk you through the Benchmark",
+        "source_value": "Start a search",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:contact#1",
+            "part": "paragraph 1",
+            "quote": "Submit your information to schedule a technical briefing.",
+            "verified": true,
+            "reason": "The contact prompt asks prospects to schedule a briefing about the old Benchmark offer rather than start a recruiting search."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Forward-deploy call to action",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §9",
+        "rule_verified": true,
+        "issue": "The hero CTA promotes forward-deployed team delivery instead of the approved recruiting CTA.",
+        "fix": "Replace the forward-deployment CTA with the approved recruiting call to action.",
+        "subject": "Recruiting call to action",
+        "page_value": "Forward-Deploy a Team",
+        "source_value": "Start a search",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "paragraph 3",
+            "quote": "Forward-Deploy a Team",
+            "verified": true,
+            "reason": "The hero CTA sells team deployment rather than inviting buyers to start a recruiting search."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "GitLab is not a listed client",
+        "category": "unknown_client",
+        "severity": "high",
+        "rule": "Fact Sheet: Selected clients and Featured clients",
+        "rule_verified": true,
+        "issue": "GitLab is presented as a GoGloby client in the hero logo row but is not in the Fact Sheet.",
+        "fix": "Remove the GitLab logo unless its client relationship is verified and approved.",
+        "subject": "GitLab",
+        "page_value": "Client logo",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "image 9",
+            "quote": "GitLab",
+            "verified": true,
+            "reason": "The hero logo row presents GitLab as a GoGloby client, but the company is not listed in the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Pandora is not a listed client",
+        "category": "unknown_client",
+        "severity": "high",
+        "rule": "Fact Sheet: Selected clients and Featured clients",
+        "rule_verified": true,
+        "issue": "Pandora is presented as a GoGloby client in the hero logo row but is not in the Fact Sheet.",
+        "fix": "Remove the Pandora logo unless its client relationship is verified and approved.",
+        "subject": "Pandora",
+        "page_value": "Client logo",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "image 10",
+            "quote": "Pandora",
+            "verified": true,
+            "reason": "The hero logo row presents Pandora as a GoGloby client, but the company is not listed in the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Disney is not a listed client",
+        "category": "unknown_client",
+        "severity": "high",
+        "rule": "Fact Sheet: Selected clients and Featured clients",
+        "rule_verified": true,
+        "issue": "Disney is presented as a GoGloby client in the hero logo row but is not in the Fact Sheet.",
+        "fix": "Remove the Disney logo unless its client relationship is verified and approved.",
+        "subject": "Disney",
+        "page_value": "Client logo",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "image 12",
+            "quote": "Disney",
+            "verified": true,
+            "reason": "The hero logo row presents Disney as a GoGloby client, but the company is not listed in the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Novilab is not a listed client",
+        "category": "unknown_client",
+        "severity": "high",
+        "rule": "Fact Sheet: Selected clients and Featured clients",
+        "rule_verified": true,
+        "issue": "Novilab is presented as an active GoGloby engagement but is not in the Fact Sheet.",
+        "fix": "Remove the Novilab client card unless the client relationship is verified and approved.",
+        "subject": "Novilab",
+        "page_value": "Active engagement",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 8",
+            "quote": "An active GoGloby Applied AI Engineering engagement.",
+            "verified": true,
+            "reason": "The Oil & Gas card identifies Novilab as an active GoGloby client, but Novilab is absent from the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Hasbro figures differ",
+        "category": "client_figures",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "Hasbro's page figures include $4.7B revenue rather than the Fact Sheet's ~$5B, plus other client figures not in the Fact Sheet.",
+        "fix": "Correct the revenue figure and remove or verify the other unsupported Hasbro figures.",
+        "subject": "Hasbro",
+        "page_value": "$4.7B revenue; $13.4B market cap; 35+ countries; 20+ brands",
+        "source_value": "~$5B revenue; other figures not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 3",
+            "quote": "NYSE · $13.4B market cap · $4.7B revenue · 35+ countries · 20+ iconic brands",
+            "verified": true,
+            "reason": "The card gives $4.7B revenue instead of the sourced ~$5B and adds unsourced market-cap, country, and brand counts."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "DrChrono claims figures annually",
+        "category": "client_figures",
+        "severity": "low",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The page adds an annual timeframe to DrChrono's $3B medical-claims figure, while the Fact Sheet says $3B in claims processed without stating it is annual.",
+        "fix": "Remove the annual qualifier unless that timeframe is verified.",
+        "subject": "DrChrono",
+        "page_value": "$3B+ medical claims annually",
+        "source_value": "$3B in medical claims processed",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 7",
+            "quote": "17M+ patients · $3B+ medical claims annually · Cloud EHR",
+            "verified": true,
+            "reason": "The card adds an annual period to the sourced medical-claims figure."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "EverCommerce market cap unsourced",
+        "category": "client_figures",
+        "severity": "low",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The $1.98B EverCommerce market-cap figure is not in the Fact Sheet.",
+        "fix": "Remove or verify the market-cap figure.",
+        "subject": "EverCommerce",
+        "page_value": "$1.98B market cap",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 11",
+            "quote": "Nasdaq-listed SaaS · $1.98B market cap · 700,000+ business clients",
+            "verified": true,
+            "reason": "The card includes a market-cap figure absent from the Fact Sheet; the client count is sourced."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Keywords Studios figures differ",
+        "category": "client_figures",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The card's $844M revenue and 13,000 employees differ from the Fact Sheet's ~$879M revenue and 12,000+ employees; its acquisition figure is also unsourced.",
+        "fix": "Correct the sourced revenue and employee figures and remove or verify the acquisition amount.",
+        "subject": "Keywords Studios",
+        "page_value": "$844M revenue; 13,000 employees; $2.8B acquisition",
+        "source_value": "~$879M revenue; 12,000+ employees; acquisition figure not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 15",
+            "quote": "$2.8B EQT acquisition · $844M revenue · 13,000 employees · 26 countries",
+            "verified": true,
+            "reason": "The card conflicts with the sourced revenue and employee counts and adds unsourced acquisition and country figures."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "MikeWorldWide figures unsourced",
+        "category": "client_figures",
+        "severity": "low",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The $57M fee income and 230-plus staff figures are not in the Fact Sheet.",
+        "fix": "Remove or verify the fee-income and staff figures.",
+        "subject": "MikeWorldWide",
+        "page_value": "$57M fee income; 230+ staff",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 19",
+            "quote": "$57M fee income · 230+ staff · US & UK",
+            "verified": true,
+            "reason": "The card reports fee income and staff figures absent from the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "TATA market cap unsourced",
+        "category": "client_figures",
+        "severity": "low",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "TATA's $106B market-cap figure is not in the Fact Sheet; the listed revenue and employee figures match.",
+        "fix": "Remove or verify the market-cap figure.",
+        "subject": "TATA",
+        "page_value": "$106B market cap",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 23",
+            "quote": "$106B market cap · $30B revenue · 600,000+ employees",
+            "verified": true,
+            "reason": "The card includes a market-cap figure absent from the Fact Sheet; its revenue and employee figures are sourced."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Canopy ranking unsourced",
+        "category": "client_figures",
+        "severity": "low",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The claim that Canopy is the number-one-rated accounting SaaS is not in the Fact Sheet.",
+        "fix": "Remove or verify the ranking claim.",
+        "subject": "Canopy",
+        "page_value": "#1 rated accounting SaaS",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 27",
+            "quote": "Series F · $236.5M raised · #1 rated accounting SaaS",
+            "verified": true,
+            "reason": "The card adds an unsourced number-one ranking; the funding figure is sourced."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Sydecar assets figure differs",
+        "category": "client_figures",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The page says Sydecar has $3B+ AUA, while the Fact Sheet says $1B+ assets under administration; the revenue-growth figure is also unsourced.",
+        "fix": "Correct the assets figure and remove or verify the growth claim.",
+        "subject": "Sydecar",
+        "page_value": "$3B+ AUA; 107% YoY revenue growth",
+        "source_value": "$1B+ assets under administration; revenue growth not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 31",
+            "quote": "$3B+ AUA · 107% YoY revenue growth",
+            "verified": true,
+            "reason": "The card gives a higher assets figure than the Fact Sheet and adds an unsourced growth rate."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Bonusly funding differs",
+        "category": "client_figures",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "Bonusly's page says $32.4M raised, while the Fact Sheet says $20M Series B; its client count and ranking are also unsourced.",
+        "fix": "Correct the funding figure and remove or verify the client count and ranking.",
+        "subject": "Bonusly",
+        "page_value": "$32.4M raised; 3,400+ clients; #1 rated",
+        "source_value": "$20M Series B; other figures not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 39",
+            "quote": "Series B · $32.4M raised · 3,400+ clients",
+            "verified": true,
+            "reason": "The card's funding figure conflicts with the Fact Sheet and the client count is unsourced."
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 40",
+            "quote": "The #1 rated employee recognition platform in the US",
+            "verified": true,
+            "reason": "The card gives Bonusly an unsourced number-one ranking."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Every payroll figures unsourced",
+        "category": "client_figures",
+        "severity": "low",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "Every's payroll processed and tax-penalty figures are not in the Fact Sheet.",
+        "fix": "Remove or verify the payroll and tax-penalty figures.",
+        "subject": "Every.io",
+        "page_value": "$60M+ payroll processed; $0 in tax penalties",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 43",
+            "quote": "$32M raised · $60M+ payroll processed · $0 in tax penalties",
+            "verified": true,
+            "reason": "The card adds payroll and tax-penalty figures absent from the Fact Sheet; the $32M funding figure is sourced."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Alchemy Health funding differs",
+        "category": "client_figures",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The page says Alchemy Health raised $31M, while the Fact Sheet says $32M; the Magic Johnson investor claim is also unsourced.",
+        "fix": "Correct the funding figure and remove or verify the investor claim.",
+        "subject": "Alchemy Health",
+        "page_value": "$31M seed; Magic Johnson investor",
+        "source_value": "$32M raised; investor not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 47",
+            "quote": "$31M seed · 25M+ prescriptions · Magic Johnson investor",
+            "verified": true,
+            "reason": "The card conflicts with the sourced funding amount and adds an unsourced investor claim; prescriptions match."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Devsisters figures unsourced",
+        "category": "client_figures",
+        "severity": "low",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The page adds market-cap, user, lifetime-spending, country, and download figures not in the Fact Sheet, which lists 200M+ players.",
+        "fix": "Remove or verify the unsourced figures and use the sourced player metric.",
+        "subject": "Devsisters",
+        "page_value": "$299M market cap; 200M+ users; $500M+ spending; 243 countries; 150M+ downloads",
+        "source_value": "200M+ players; other figures not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 51",
+            "quote": "Public · $299M market cap · 200M+ users · $500M+ lifetime player spending · 243 countries",
+            "verified": true,
+            "reason": "The card gives unsourced figures and changes the sourced 200M+ players metric to users."
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 52",
+            "quote": "with 150M+ downloads.",
+            "verified": true,
+            "reason": "The card adds a download count absent from the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Novilab figures unsourced",
+        "category": "client_figures",
+        "severity": "low",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "Novilab's funding and capital-allocation figures are not in the Fact Sheet.",
+        "fix": "Remove or verify the Novilab figures along with the unsupported client listing.",
+        "subject": "Novilab",
+        "page_value": "$46M raised; $50B+ capital allocation decisions",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 35",
+            "quote": "Series B · $46M raised · $50B+ capital allocation decisions",
+            "verified": true,
+            "reason": "The card reports Novilab figures absent from the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified client project claims",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The Fact Sheet lists client relationships and services but does not support the specific projects, active engagements, or client-tenure claims made here.",
+        "fix": "Remove or verify the specific project and engagement descriptions before retaining them.",
+        "subject": "Client project descriptions",
+        "page_value": "Specific AI Studio, leadership, and active engagement claims",
+        "source_value": "Client names and service categories only",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 4",
+            "quote": "building their internal AI Studio.",
+            "verified": true,
+            "reason": "The Hasbro card claims a specific internal AI Studio project not described in the Fact Sheet."
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 16",
+            "quote": "Working with GoGloby to build their AI engineering leadership.",
+            "verified": true,
+            "reason": "The Keywords Studios card states a specific leadership engagement not supported by the Fact Sheet."
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 24",
+            "quote": "An active GoGloby Applied AI Engineering client.",
+            "verified": true,
+            "reason": "The TATA card asserts an active engagement and a specific service positioning not stated in the Fact Sheet."
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 20",
+            "quote": "A GoGloby talent partner for 3+ years.",
+            "verified": true,
+            "reason": "The MikeWorldWide card claims more than three years of engagement, a duration absent from the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified security certifications",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page displays SOC 2 Type II and ISO 27001 certification logos, while the Fact Sheet states SOC 2-aligned controls and does not claim either certification.",
+        "fix": "Remove the certification logos unless the certifications are verified and approved for public claims.",
+        "subject": "Security certifications",
+        "page_value": "SOC 2 Type II and ISO 27001 logos",
+        "source_value": "SOC 2-aligned controls; ISO 27001 certification not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 15",
+            "quote": "logo-aicpa-soc2-type2-1-white-grayscale.png",
+            "verified": true,
+            "reason": "The image filename identifies a SOC 2 Type II certification logo not supported by the Fact Sheet."
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 16",
+            "quote": "logo-ism-iso-27001-1-grayscale.png",
+            "verified": true,
+            "reason": "The image filename identifies an ISO 27001 certification logo absent from the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      }
+    ],
+    "problems": [
+      {
+        "title": "Applied AI Engineering positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Glossary §7",
+        "rule_verified": true,
+        "issue": "The page presents GoGloby's service as Applied AI Engineering rather than the approved Data & AI Engineers recruiting service.",
+        "fix": "Reposition the page around US Data & AI Engineers Recruiting and remove the Applied AI Engineering offer framing.",
+        "subject": "Service positioning",
+        "page_value": "Applied AI Engineers / Applied AI Engineering",
+        "source_value": "US Data & AI Engineers Recruiting",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "Hire vetted Applied AI Engineers with a 4-stage assessment",
+            "verified": true,
+            "reason": "The meta description names Applied AI Engineers as the service instead of the approved recruiting service."
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.name",
+            "quote": "Hire Applied AI Engineers",
+            "verified": true,
+            "reason": "The structured data labels the page's offer as hiring Applied AI Engineers."
+          },
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "paragraph 2",
+            "quote": "production-grade Applied AI Engineer",
+            "verified": true,
+            "reason": "The hero frames the recruiting offer around the Applied AI Engineer label.",
+            "fragment": "can’t separate a-,production-grade Applied AI Engineer,-from someone who",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 4",
+            "quote": "A GoGloby Applied AI Engineering client building their internal AI Studio.",
+            "verified": true,
+            "reason": "The Hasbro card describes the client engagement as Applied AI Engineering.",
+            "fragment": "American toy market.-,A GoGloby Applied AI Engineering client,-building their internal",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified shortlist timing",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page promises a 3-to-5-day shortlist, but the Fact Sheet gives a 4-to-6-week time to offer and does not state a shortlist timeline.",
+        "fix": "Remove the unsupported shortlist promise or verify it before making the claim.",
+        "subject": "Recruiting shortlist timing",
+        "page_value": "3 to 5 business days",
+        "source_value": "not in Fact Sheet",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "a 3 to 5 day shortlist",
+            "verified": true,
+            "reason": "The meta description promises a shortlist timeline absent from the source documents."
+          },
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Shortlist delivered in 5 days.",
+            "verified": true,
+            "reason": "The structured data promises delivery in five days, which is not a sourced recruiting timeline."
+          },
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "paragraph 2",
+            "quote": "Your shortlist of production-proven engineers lands in 3 to 5 business days.",
+            "verified": true,
+            "reason": "The hero promises a 3-to-5-business-day shortlist not stated in the Fact Sheet.",
+            "fragment": "Your shortlist of production-proven engineers lands",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:featured-facts#1",
+            "part": "paragraph 11",
+            "quote": "Shortlist in 3 to 5 business days.",
+            "verified": true,
+            "reason": "The metrics block repeats the unsupported shortlist timing.",
+            "fragment": "Shortlist in 3 to 5 business",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified hiring speed claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The claim that GoGloby is 50 percent faster than US job boards is not in the Fact Sheet.",
+        "fix": "Remove the comparative speed claim or substantiate it before publication.",
+        "subject": "Time-to-hire comparison",
+        "page_value": "50 percent faster",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "50 percent faster time-to-hire than US job boards.",
+            "verified": true,
+            "reason": "The structured data makes an unsourced comparison with US job boards."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Performance guarantee claim",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page calls the recruiting guarantee a performance guarantee, while the source specifies a 120-day free replacement.",
+        "fix": "Describe the guarantee using the sourced replacement terms rather than a performance guarantee.",
+        "subject": "Recruiting guarantee",
+        "page_value": "120-day performance guarantee",
+        "source_value": "120-day free replacement",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "a 120-day performance guarantee.",
+            "verified": true,
+            "reason": "The meta description promises a performance guarantee instead of the documented free replacement."
+          },
+          {
+            "zone_id": "og_description",
+            "part": "field 1",
+            "quote": "a 120-day performance guarantee.",
+            "verified": true,
+            "reason": "The Open Graph description also characterizes the guarantee as performance-based."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified Claude expertise",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §4",
+        "rule_verified": true,
+        "issue": "The page promises production-ready Claude expertise, but the sources do not establish Claude-specific expertise as a recruiting qualification or guarantee.",
+        "fix": "Remove the Claude-specific expertise promise or verify it before using it as a claim about candidates.",
+        "subject": "Candidate expertise",
+        "page_value": "production-ready Claude expertise",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "meta_description",
+            "part": "field 1",
+            "quote": "production-ready Claude expertise",
+            "verified": true,
+            "reason": "The meta description makes a Claude-specific candidate expertise claim not stated in the sources."
+          },
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "heading 1",
+            "quote": "Hire AI Engineers Who Can Ship With Claude in Production",
+            "verified": true,
+            "reason": "The hero promises that candidates can ship with Claude in production.",
+            "fragment": "Hire AI Engineers Who Can Ship",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified time-to-hire baseline",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page says specialized AI hiring through US job boards takes six months, a market comparison not contained in the sources.",
+        "fix": "Remove the six-month comparison or substantiate it before publication.",
+        "subject": "US job-board hiring time",
+        "page_value": "around 6 months",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "block:company#1",
+            "part": "paragraph 4",
+            "quote": "Specialized AI hiring through US job boards takes around 6 months.",
+            "verified": true,
+            "reason": "The page states an unsourced six-month hiring timeline for US job boards.",
+            "fragment": "Specialized AI hiring through US job",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:how-it-works#1",
+            "part": "paragraph 1",
+            "quote": "without a 6-month hiring cycle.",
+            "verified": true,
+            "reason": "The heading repeats the unsourced six-month comparison.",
+            "fragment": "without a 6-month hiring cycle.",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified candidate pass comparison",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: How we vet",
+        "rule_verified": true,
+        "issue": "The claim that general applicants pass at 0.04 percent or less is not in the sources.",
+        "fix": "Remove the general-applicant comparison or verify it before publication.",
+        "subject": "General applicant pass rate",
+        "page_value": "0.04% at most",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:featured-facts#1",
+            "part": "paragraph 5",
+            "quote": "For general applicants the rate is 0.04% at most.",
+            "verified": true,
+            "reason": "The block gives an unsourced pass rate for applicants outside GoGloby's pipeline.",
+            "fragment": "For general applicants the rate is",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified hire retention metric",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Key metrics",
+        "rule_verified": true,
+        "issue": "The 1-in-3 presented-candidates-hired-and-retained metric is not stated in the Fact Sheet.",
+        "fix": "Remove the metric or verify its definition and data before publication.",
+        "subject": "Presented candidates hired and retained",
+        "page_value": "1 in 3",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:featured-facts#1",
+            "part": "paragraph 8",
+            "quote": "1 in 3 candidates we present gets hired and stays",
+            "verified": true,
+            "reason": "The block reports a hiring-and-retention rate that is absent from the source metrics.",
+            "fragment": "1 in 3 candidates we present",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Incorrect network history",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity; Glossary §1",
+        "rule_verified": true,
+        "issue": "The page says the talent network was built over a decade, while GoGloby was founded in 2021 and has five years in business.",
+        "fix": "Replace the decade claim with a sourced company-history statement.",
+        "subject": "Talent network history",
+        "page_value": "A decade-built talent network",
+        "source_value": "Founded 2021; 5 years in business",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:featured-facts#1",
+            "part": "paragraph 11",
+            "quote": "A decade-built talent network across 5 or more US-timezone countries",
+            "verified": true,
+            "reason": "The page claims a decade of network-building despite the sourced five-year company history.",
+            "fragment": "A decade-built talent network across 5",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified country coverage",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The sources do not say GoGloby's recruiting network spans five or more US-timezone countries.",
+        "fix": "Remove the country-coverage claim or verify it before publication.",
+        "subject": "Recruiting network geography",
+        "page_value": "5+ US-timezone countries",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Service.description",
+            "quote": "Talent network spans 5 plus US-timezone countries.",
+            "verified": true,
+            "reason": "The structured data claims a specific network footprint not provided in the sources."
+          },
+          {
+            "zone_id": "block:accordion-1#1",
+            "part": "paragraph 12",
+            "quote": "Our talent network spans 5+ US-timezone countries",
+            "verified": true,
+            "reason": "The FAQ repeats the unsupported country-coverage claim.",
+            "fragment": "Our talent network spans 5+ US-timezone",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified dedicated squads",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The sources do not promise every client a dedicated recruitment squad working only on its roles.",
+        "fix": "Remove the dedicated-squad promise or verify it before publication.",
+        "subject": "Recruitment staffing model",
+        "page_value": "100% Dedicated Recruitment Squads",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:featured-facts#1",
+            "part": "paragraph 14",
+            "quote": "Every client gets a focused team of AI-specialized recruiters and engineering leaders working only on their roles.",
+            "verified": true,
+            "reason": "The block promises a dedicated team for every client, a staffing model absent from the sources.",
+            "fragment": "Every client gets a focused team",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Assessment task differs",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: How we vet",
+        "rule_verified": true,
+        "issue": "The page describes a strict machine-readable architectural specification, whereas the sourced task is a structured specification from a loose business requirement, with no code.",
+        "fix": "Align the assessment description with the sourced specification task.",
+        "subject": "Assessment stage one",
+        "page_value": "strict, machine-readable architectural spec",
+        "source_value": "structured specification from a loose business requirement; no code",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:how-we-work#1",
+            "part": "paragraph 3",
+            "quote": "candidates must produce a strict, machine-readable architectural spec.",
+            "verified": true,
+            "reason": "The description changes the documented stage-one task into a machine-readable architectural specification.",
+            "fragment": "candidates must produce a strict, machine-readable",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Incorrect codebase size",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: How we vet",
+        "rule_verified": true,
+        "issue": "The page says the assessment uses a 100K-plus-line codebase; the Fact Sheet specifies a real 50,000-line codebase.",
+        "fix": "Correct the codebase size to match the Fact Sheet.",
+        "subject": "Assessment codebase size",
+        "page_value": "100K+ line codebase",
+        "source_value": "50,000-line codebase",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:how-we-work#1",
+            "part": "paragraph 4",
+            "quote": "We drop them into a 100K+ line codebase",
+            "verified": true,
+            "reason": "The assessment description gives twice the sourced codebase size.",
+            "fragment": "We drop them into a 100K+",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified complete-team recruiting",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page says GoGloby recruits complete engineering functions, which is not a recruiting service described in the sources.",
+        "fix": "Limit this claim to sourced recruiting roles and service terms, or verify the team-recruiting offer.",
+        "subject": "Recruiting complete engineering teams",
+        "page_value": "complete engineering functions",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Answer.text",
+            "quote": "GoGloby recruits individual Applied AI Engineers and complete engineering functions.",
+            "verified": true,
+            "reason": "The structured data offers complete engineering functions beyond the recruiting roles described in the sources."
+          },
+          {
+            "zone_id": "block:accordion-1#1",
+            "part": "paragraph 8",
+            "quote": "GoGloby recruits individual Applied AI Engineers and complete engineering functions.",
+            "verified": true,
+            "reason": "The FAQ repeats the unsupported complete-engineering-function offer.",
+            "fragment": "GoGloby recruits individual Applied AI Engineers",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Remote recruiting claim",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §2",
+        "rule_verified": true,
+        "issue": "The page offers recruiting across remote, hybrid, and onsite models, but the Fact Sheet specifies full-time onsite US recruiting roles.",
+        "fix": "Remove remote recruiting from this page and describe only the sourced work models.",
+        "subject": "Recruiting work models",
+        "page_value": "remote, hybrid, and on-site",
+        "source_value": "full-time onsite US roles",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Answer.text",
+            "quote": "GoGloby recruits across all work models — remote, hybrid, and on-site.",
+            "verified": true,
+            "reason": "The structured data includes remote recruiting, which conflicts with the Fact Sheet's onsite recruiting definition."
+          },
+          {
+            "zone_id": "block:accordion-1#1",
+            "part": "paragraph 12",
+            "quote": "GoGloby recruits across all work models — remote, hybrid, and on-site.",
+            "verified": true,
+            "reason": "The FAQ repeats the unsupported remote recruiting model.",
+            "fragment": "GoGloby recruits across all work models",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified post-window terms",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "Preferred re-engagement terms, queue priority, and a reduced backfill fee after the 120-day window are not in the sources.",
+        "fix": "Remove these post-window terms or verify them before publication.",
+        "subject": "Post-guarantee recruiting terms",
+        "page_value": "preferred re-engagement terms and a reduced fee",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Answer.text",
+            "quote": "you move to the front of the queue at a reduced fee.",
+            "verified": true,
+            "reason": "The FAQ answer offers a reduced-fee priority backfill not documented in the sources."
+          },
+          {
+            "zone_id": "block:accordion-1#1",
+            "part": "paragraph 10",
+            "quote": "you move to the front of the queue at a reduced fee.",
+            "verified": true,
+            "reason": "The FAQ repeats an unsourced priority and reduced-fee promise.",
+            "fragment": "you move to the front of",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported payment schedule",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The sources say the recruiting fee is paid only on hire but do not specify a 50/50 start-and-probation payment schedule.",
+        "fix": "Remove the payment schedule or verify it against approved contract terms.",
+        "subject": "Recruiting fee payment schedule",
+        "page_value": "50% at start and 50% after probation",
+        "source_value": "Fee paid only on hire; split not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:guarantees#1",
+            "part": "paragraph 6",
+            "quote": "50% when your new Applied AI Engineer starts. 50% after they pass probation.",
+            "verified": true,
+            "reason": "The block specifies a fee split and probation payment condition absent from the documented pricing model.",
+            "fragment": "50% when your new Applied AI",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Forward-deployed delivery offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §2 and §7",
+        "rule_verified": true,
+        "issue": "The page sells forward-deployed delivery of architects and engineers to ship features, rather than the documented recruiting service where the client runs the work.",
+        "fix": "Remove the forward-deployed delivery offer from this recruiting page and retain only sourced service descriptions.",
+        "subject": "Forward-deployed delivery",
+        "page_value": "Forward-deploy an architect and ship features",
+        "source_value": "GoGloby recruits and staffs engineers; clients run the work",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Answer.text",
+            "quote": "The forward-deployed model puts Claude Certified Architects, AI Solutions Architects and Applied AI Engineers inside your team",
+            "verified": true,
+            "reason": "The structured data sells a forward-deployed delivery model and architect offer not documented for recruiting."
+          },
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "paragraph 3",
+            "quote": "Forward-Deploy a Team",
+            "verified": true,
+            "reason": "The hero offers forward-deployed team delivery instead of the named recruiting service.",
+            "fragment": "Forward-Deploy a Team",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:accordion-1#1",
+            "part": "paragraph 14",
+            "quote": "The forward-deployed model puts Claude Certified Architects, AI Solutions Architects and Applied AI Engineers inside your team",
+            "verified": true,
+            "reason": "The FAQ repeats the forward-deployed architect and engineer offer.",
+            "fragment": "The forward-deployed model puts Claude Certified",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Paid Benchmark offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Glossary §2, §7 and §9",
+        "rule_verified": true,
+        "issue": "The page sells a paid Benchmark with a one-month fee, a deployed AI Intelligence Layer, and a credited fee, although the layer is bundled only with nearshore staffing and is never sold separately.",
+        "fix": "Remove the paid Benchmark offer and its standalone deployment and pricing terms.",
+        "subject": "Benchmark",
+        "page_value": "Fixed one-month fee and AI Intelligence Layer deployment",
+        "source_value": "AI Development Intelligence Layer is bundled with nearshore staffing, never sold separately",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Answer.text",
+            "quote": "Every engagement starts with the Benchmark: a fixed fee for one month",
+            "verified": true,
+            "reason": "The structured data sells a paid standalone Benchmark as the start of every engagement."
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "paragraph 1",
+            "quote": "We will walk you through the Benchmark",
+            "verified": true,
+            "reason": "The contact block promotes the discontinued Benchmark offer.",
+            "fragment": "We will walk you through the",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:accordion-1#1",
+            "part": "paragraph 16",
+            "quote": "Every engagement starts with the Benchmark: a fixed fee for one month",
+            "verified": true,
+            "reason": "The FAQ repeats the paid Benchmark and presents it as universal.",
+            "fragment": "Every engagement starts with the Benchmark:",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Benchmark call to action",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §7 and §9",
+        "rule_verified": true,
+        "issue": "The contact prompt directs prospects to a Benchmark instead of the approved recruiting call to action.",
+        "fix": "Replace the Benchmark prompt with the approved recruiting call to action.",
+        "subject": "Recruiting call to action",
+        "page_value": "walk you through the Benchmark",
+        "source_value": "Start a search",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:contact#1",
+            "part": "paragraph 1",
+            "quote": "Submit your information to schedule a technical briefing.",
+            "verified": true,
+            "reason": "The contact prompt asks prospects to schedule a briefing about the old Benchmark offer rather than start a recruiting search.",
+            "fragment": "Submit your information to schedule a",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Forward-deploy call to action",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §9",
+        "rule_verified": true,
+        "issue": "The hero CTA promotes forward-deployed team delivery instead of the approved recruiting CTA.",
+        "fix": "Replace the forward-deployment CTA with the approved recruiting call to action.",
+        "subject": "Recruiting call to action",
+        "page_value": "Forward-Deploy a Team",
+        "source_value": "Start a search",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "paragraph 3",
+            "quote": "Forward-Deploy a Team",
+            "verified": true,
+            "reason": "The hero CTA sells team deployment rather than inviting buyers to start a recruiting search.",
+            "fragment": "Forward-Deploy a Team",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "GitLab is not a listed client",
+        "category": "unknown_client",
+        "severity": "high",
+        "rule": "Fact Sheet: Selected clients and Featured clients",
+        "rule_verified": true,
+        "issue": "GitLab is presented as a GoGloby client in the hero logo row but is not in the Fact Sheet.",
+        "fix": "Remove the GitLab logo unless its client relationship is verified and approved.",
+        "subject": "GitLab",
+        "page_value": "Client logo",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "image 9",
+            "quote": "GitLab",
+            "verified": true,
+            "reason": "The hero logo row presents GitLab as a GoGloby client, but the company is not listed in the Fact Sheet.",
+            "fragment": null,
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Pandora is not a listed client",
+        "category": "unknown_client",
+        "severity": "high",
+        "rule": "Fact Sheet: Selected clients and Featured clients",
+        "rule_verified": true,
+        "issue": "Pandora is presented as a GoGloby client in the hero logo row but is not in the Fact Sheet.",
+        "fix": "Remove the Pandora logo unless its client relationship is verified and approved.",
+        "subject": "Pandora",
+        "page_value": "Client logo",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "image 10",
+            "quote": "Pandora",
+            "verified": true,
+            "reason": "The hero logo row presents Pandora as a GoGloby client, but the company is not listed in the Fact Sheet.",
+            "fragment": null,
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Disney is not a listed client",
+        "category": "unknown_client",
+        "severity": "high",
+        "rule": "Fact Sheet: Selected clients and Featured clients",
+        "rule_verified": true,
+        "issue": "Disney is presented as a GoGloby client in the hero logo row but is not in the Fact Sheet.",
+        "fix": "Remove the Disney logo unless its client relationship is verified and approved.",
+        "subject": "Disney",
+        "page_value": "Client logo",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "image 12",
+            "quote": "Disney",
+            "verified": true,
+            "reason": "The hero logo row presents Disney as a GoGloby client, but the company is not listed in the Fact Sheet.",
+            "fragment": null,
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Novilab is not a listed client",
+        "category": "unknown_client",
+        "severity": "high",
+        "rule": "Fact Sheet: Selected clients and Featured clients",
+        "rule_verified": true,
+        "issue": "Novilab is presented as an active GoGloby engagement but is not in the Fact Sheet.",
+        "fix": "Remove the Novilab client card unless the client relationship is verified and approved.",
+        "subject": "Novilab",
+        "page_value": "Active engagement",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 8",
+            "quote": "An active GoGloby Applied AI Engineering engagement.",
+            "verified": true,
+            "reason": "The Oil & Gas card identifies Novilab as an active GoGloby client, but Novilab is absent from the Fact Sheet.",
+            "fragment": "millions of patients.-,An active GoGloby Applied AI Engineering,-engagement.",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Hasbro figures differ",
+        "category": "client_figures",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "Hasbro's page figures include $4.7B revenue rather than the Fact Sheet's ~$5B, plus other client figures not in the Fact Sheet.",
+        "fix": "Correct the revenue figure and remove or verify the other unsupported Hasbro figures.",
+        "subject": "Hasbro",
+        "page_value": "$4.7B revenue; $13.4B market cap; 35+ countries; 20+ brands",
+        "source_value": "~$5B revenue; other figures not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 3",
+            "quote": "NYSE · $13.4B market cap · $4.7B revenue · 35+ countries · 20+ iconic brands",
+            "verified": true,
+            "reason": "The card gives $4.7B revenue instead of the sourced ~$5B and adds unsourced market-cap, country, and brand counts.",
+            "fragment": "NYSE · $13.4B market cap",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "DrChrono claims figures annually",
+        "category": "client_figures",
+        "severity": "low",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The page adds an annual timeframe to DrChrono's $3B medical-claims figure, while the Fact Sheet says $3B in claims processed without stating it is annual.",
+        "fix": "Remove the annual qualifier unless that timeframe is verified.",
+        "subject": "DrChrono",
+        "page_value": "$3B+ medical claims annually",
+        "source_value": "$3B in medical claims processed",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 7",
+            "quote": "17M+ patients · $3B+ medical claims annually · Cloud EHR",
+            "verified": true,
+            "reason": "The card adds an annual period to the sourced medical-claims figure.",
+            "fragment": "17M+ patients · $3B+ medical claims",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "EverCommerce market cap unsourced",
+        "category": "client_figures",
+        "severity": "low",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The $1.98B EverCommerce market-cap figure is not in the Fact Sheet.",
+        "fix": "Remove or verify the market-cap figure.",
+        "subject": "EverCommerce",
+        "page_value": "$1.98B market cap",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 11",
+            "quote": "Nasdaq-listed SaaS · $1.98B market cap · 700,000+ business clients",
+            "verified": true,
+            "reason": "The card includes a market-cap figure absent from the Fact Sheet; the client count is sourced.",
+            "fragment": "Nasdaq-listed SaaS · $1.98B market cap",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Keywords Studios figures differ",
+        "category": "client_figures",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The card's $844M revenue and 13,000 employees differ from the Fact Sheet's ~$879M revenue and 12,000+ employees; its acquisition figure is also unsourced.",
+        "fix": "Correct the sourced revenue and employee figures and remove or verify the acquisition amount.",
+        "subject": "Keywords Studios",
+        "page_value": "$844M revenue; 13,000 employees; $2.8B acquisition",
+        "source_value": "~$879M revenue; 12,000+ employees; acquisition figure not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 15",
+            "quote": "$2.8B EQT acquisition · $844M revenue · 13,000 employees · 26 countries",
+            "verified": true,
+            "reason": "The card conflicts with the sourced revenue and employee counts and adds unsourced acquisition and country figures.",
+            "fragment": "$2.8B EQT acquisition · $844M revenue",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "MikeWorldWide figures unsourced",
+        "category": "client_figures",
+        "severity": "low",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The $57M fee income and 230-plus staff figures are not in the Fact Sheet.",
+        "fix": "Remove or verify the fee-income and staff figures.",
+        "subject": "MikeWorldWide",
+        "page_value": "$57M fee income; 230+ staff",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 19",
+            "quote": "$57M fee income · 230+ staff · US & UK",
+            "verified": true,
+            "reason": "The card reports fee income and staff figures absent from the Fact Sheet.",
+            "fragment": "$57M fee income · 230+ staff",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "TATA market cap unsourced",
+        "category": "client_figures",
+        "severity": "low",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "TATA's $106B market-cap figure is not in the Fact Sheet; the listed revenue and employee figures match.",
+        "fix": "Remove or verify the market-cap figure.",
+        "subject": "TATA",
+        "page_value": "$106B market cap",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 23",
+            "quote": "$106B market cap · $30B revenue · 600,000+ employees",
+            "verified": true,
+            "reason": "The card includes a market-cap figure absent from the Fact Sheet; its revenue and employee figures are sourced.",
+            "fragment": "$106B market cap · $30B revenue",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Canopy ranking unsourced",
+        "category": "client_figures",
+        "severity": "low",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The claim that Canopy is the number-one-rated accounting SaaS is not in the Fact Sheet.",
+        "fix": "Remove or verify the ranking claim.",
+        "subject": "Canopy",
+        "page_value": "#1 rated accounting SaaS",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 27",
+            "quote": "Series F · $236.5M raised · #1 rated accounting SaaS",
+            "verified": true,
+            "reason": "The card adds an unsourced number-one ranking; the funding figure is sourced.",
+            "fragment": "Series F · $236.5M raised",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Sydecar assets figure differs",
+        "category": "client_figures",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The page says Sydecar has $3B+ AUA, while the Fact Sheet says $1B+ assets under administration; the revenue-growth figure is also unsourced.",
+        "fix": "Correct the assets figure and remove or verify the growth claim.",
+        "subject": "Sydecar",
+        "page_value": "$3B+ AUA; 107% YoY revenue growth",
+        "source_value": "$1B+ assets under administration; revenue growth not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 31",
+            "quote": "$3B+ AUA · 107% YoY revenue growth",
+            "verified": true,
+            "reason": "The card gives a higher assets figure than the Fact Sheet and adds an unsourced growth rate.",
+            "fragment": "$3B+ AUA · 107% YoY revenue",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Bonusly funding differs",
+        "category": "client_figures",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "Bonusly's page says $32.4M raised, while the Fact Sheet says $20M Series B; its client count and ranking are also unsourced.",
+        "fix": "Correct the funding figure and remove or verify the client count and ranking.",
+        "subject": "Bonusly",
+        "page_value": "$32.4M raised; 3,400+ clients; #1 rated",
+        "source_value": "$20M Series B; other figures not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 39",
+            "quote": "Series B · $32.4M raised · 3,400+ clients",
+            "verified": true,
+            "reason": "The card's funding figure conflicts with the Fact Sheet and the client count is unsourced.",
+            "fragment": "Series B · $32.4M raised",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 40",
+            "quote": "The #1 rated employee recognition platform in the US",
+            "verified": true,
+            "reason": "The card gives Bonusly an unsourced number-one ranking.",
+            "fragment": "The #1 rated employee recognition platform",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Every payroll figures unsourced",
+        "category": "client_figures",
+        "severity": "low",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "Every's payroll processed and tax-penalty figures are not in the Fact Sheet.",
+        "fix": "Remove or verify the payroll and tax-penalty figures.",
+        "subject": "Every.io",
+        "page_value": "$60M+ payroll processed; $0 in tax penalties",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 43",
+            "quote": "$32M raised · $60M+ payroll processed · $0 in tax penalties",
+            "verified": true,
+            "reason": "The card adds payroll and tax-penalty figures absent from the Fact Sheet; the $32M funding figure is sourced.",
+            "fragment": "$32M raised · $60M+ payroll processed",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Alchemy Health funding differs",
+        "category": "client_figures",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The page says Alchemy Health raised $31M, while the Fact Sheet says $32M; the Magic Johnson investor claim is also unsourced.",
+        "fix": "Correct the funding figure and remove or verify the investor claim.",
+        "subject": "Alchemy Health",
+        "page_value": "$31M seed; Magic Johnson investor",
+        "source_value": "$32M raised; investor not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 47",
+            "quote": "$31M seed · 25M+ prescriptions · Magic Johnson investor",
+            "verified": true,
+            "reason": "The card conflicts with the sourced funding amount and adds an unsourced investor claim; prescriptions match.",
+            "fragment": "$31M seed · 25M+ prescriptions",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Devsisters figures unsourced",
+        "category": "client_figures",
+        "severity": "low",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The page adds market-cap, user, lifetime-spending, country, and download figures not in the Fact Sheet, which lists 200M+ players.",
+        "fix": "Remove or verify the unsourced figures and use the sourced player metric.",
+        "subject": "Devsisters",
+        "page_value": "$299M market cap; 200M+ users; $500M+ spending; 243 countries; 150M+ downloads",
+        "source_value": "200M+ players; other figures not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 51",
+            "quote": "Public · $299M market cap · 200M+ users · $500M+ lifetime player spending · 243 countries",
+            "verified": true,
+            "reason": "The card gives unsourced figures and changes the sourced 200M+ players metric to users.",
+            "fragment": "Public · $299M market cap",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 52",
+            "quote": "with 150M+ downloads.",
+            "verified": true,
+            "reason": "The card adds a download count absent from the Fact Sheet.",
+            "fragment": "with 150M+ downloads.",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Novilab figures unsourced",
+        "category": "client_figures",
+        "severity": "low",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "Novilab's funding and capital-allocation figures are not in the Fact Sheet.",
+        "fix": "Remove or verify the Novilab figures along with the unsupported client listing.",
+        "subject": "Novilab",
+        "page_value": "$46M raised; $50B+ capital allocation decisions",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 35",
+            "quote": "Series B · $46M raised · $50B+ capital allocation decisions",
+            "verified": true,
+            "reason": "The card reports Novilab figures absent from the Fact Sheet.",
+            "fragment": "Series B · $46M raised",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified client project claims",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The Fact Sheet lists client relationships and services but does not support the specific projects, active engagements, or client-tenure claims made here.",
+        "fix": "Remove or verify the specific project and engagement descriptions before retaining them.",
+        "subject": "Client project descriptions",
+        "page_value": "Specific AI Studio, leadership, and active engagement claims",
+        "source_value": "Client names and service categories only",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 4",
+            "quote": "building their internal AI Studio.",
+            "verified": true,
+            "reason": "The Hasbro card claims a specific internal AI Studio project not described in the Fact Sheet.",
+            "fragment": "building their internal AI Studio.",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 16",
+            "quote": "Working with GoGloby to build their AI engineering leadership.",
+            "verified": true,
+            "reason": "The Keywords Studios card states a specific leadership engagement not supported by the Fact Sheet.",
+            "fragment": "Working with GoGloby to build their",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 24",
+            "quote": "An active GoGloby Applied AI Engineering client.",
+            "verified": true,
+            "reason": "The TATA card asserts an active engagement and a specific service positioning not stated in the Fact Sheet.",
+            "fragment": "tech services company.-,An active GoGloby Applied AI Engineering,-client.",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 20",
+            "quote": "A GoGloby talent partner for 3+ years.",
+            "verified": true,
+            "reason": "The MikeWorldWide card claims more than three years of engagement, a duration absent from the Fact Sheet.",
+            "fragment": "A GoGloby talent partner for 3+",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified security certifications",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page displays SOC 2 Type II and ISO 27001 certification logos, while the Fact Sheet states SOC 2-aligned controls and does not claim either certification.",
+        "fix": "Remove the certification logos unless the certifications are verified and approved for public claims.",
+        "subject": "Security certifications",
+        "page_value": "SOC 2 Type II and ISO 27001 logos",
+        "source_value": "SOC 2-aligned controls; ISO 27001 certification not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 15",
+            "quote": "logo-aicpa-soc2-type2-1-white-grayscale.png",
+            "verified": true,
+            "reason": "The image filename identifies a SOC 2 Type II certification logo not supported by the Fact Sheet.",
+            "fragment": null,
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 16",
+            "quote": "logo-ism-iso-27001-1-grayscale.png",
+            "verified": true,
+            "reason": "The image filename identifies an ISO 27001 certification logo absent from the Fact Sheet.",
+            "fragment": null,
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Term not used: Applied AI Engineering partner",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"Applied AI Engineering partner\" is no longer how GoGloby describes itself.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "Applied AI Engineering partner",
+        "page_value": null,
+        "source_value": null,
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 12",
+            "quote": "Applied AI Engineering partner",
+            "verified": true,
+            "fragment": "A long-term GoGloby-,Applied AI Engineering,-partner.",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 32",
+            "quote": "Applied AI Engineering partner",
+            "verified": true,
+            "fragment": "A long-term GoGloby-,Applied AI Engineering,-partner.",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 44",
+            "quote": "Applied AI Engineering partner",
+            "verified": true,
+            "fragment": "A long-term GoGloby-,Applied AI Engineering,-partner.",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      },
+      {
+        "title": "Term not used: AI Intelligence Layer",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The product is now called the AI Development Intelligence Layer.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "AI Intelligence Layer",
+        "page_value": null,
+        "source_value": null,
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "json_ld",
+            "part": "Answer.text",
+            "quote": "AI Intelligence Layer",
+            "verified": true
+          },
+          {
+            "zone_id": "block:accordion-1#1",
+            "part": "paragraph 16",
+            "quote": "AI Intelligence Layer",
+            "verified": true,
+            "fragment": "AI Intelligence Layer",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      }
+    ],
+    "usage": {
+      "input": 4536,
+      "cached_input": 10166,
+      "output": 13991
+    },
+    "error": null
+  },
+  "geo": {
+    "hash": "86965fa04cb7926c09d0575b1b8c98710fcd525bf8c93f0d09fd7b0f2107f9b8",
+    "cached": false,
+    "code": [
+      {
+        "id": "trap_terms",
+        "status": "pass",
+        "value": "none in title, H1, meta, og",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "nearshore_not_first",
+        "status": "pass",
+        "value": "not in block:hero-services#1",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "faq_present",
+        "status": "pass",
+        "value": "block:accordion-1#1, FAQPage schema, 4 question headings",
+        "severity": "medium"
+      },
+      {
+        "id": "em_dash",
+        "status": "fail",
+        "value": "19 found",
+        "places": [
+          {
+            "zone_id": "json_ld",
+            "part": "field 8",
+            "value": "— | …e signal problem isn't supply — it's that the vetting infrast…"
+          },
+          {
+            "zone_id": "block:how-we-work#1",
+            "part": "paragraph 6",
+            "value": "— | …ngineers who can own outcomes — not just output — make it thr…"
+          },
+          {
+            "zone_id": "block:how-we-work#1",
+            "part": "paragraph 6",
+            "value": "— | …wn outcomes — not just output — make it through."
+          },
+          {
+            "zone_id": "block:how-it-works#1",
+            "part": "paragraph 1",
+            "value": "— | From brief to hired — without a 6-month hiring cycl…"
+          },
+          {
+            "zone_id": "block:how-it-works#1",
+            "part": "paragraph 3",
+            "value": "— | …. The brief drives the search — precision here eliminates bad…"
+          },
+          {
+            "zone_id": "block:how-it-works#1",
+            "part": "paragraph 11",
+            "value": "— | …u go in with the right number — and close the offer instead o…"
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 4",
+            "value": "— | … The Gathering, and Peppa Pig — dominating the $46B North Ame…"
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 8",
+            "value": "— | …’s most trusted EHR platforms — powering telehealth, clinical…"
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 12",
+            "value": "— | …sinesses across North America — built through aggressive acqu…"
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 16",
+            "value": "— | …1 video game services company — trusted by 24 of the top 25 g…"
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 20",
+            "value": "— | …pendent PR agencies in the US — a blue-chip roster spanning t…"
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 24",
+            "value": "— | … largest technology companies — serving 1/3 of the Fortune 50…"
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 28",
+            "value": "— | …ccounting firms across the US — covering CRM, billing, docume…"
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 40",
+            "value": "— | …ecognition platform in the US — trusted by some of the fastes…"
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 48",
+            "value": "— | …by the co-founder of Truepill — building in-house pharmacy in…"
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 52",
+            "value": "— | …rean studio behind Cookie Run — one of mobile gaming’s most g…"
+          },
+          {
+            "zone_id": "block:accordion-1#1",
+            "part": "paragraph 4",
+            "value": "— | …dy proved they can do the job — not just interview for it."
+          },
+          {
+            "zone_id": "block:accordion-1#1",
+            "part": "paragraph 6",
+            "value": "— | …e signal problem isn’t supply — it’s that the vetting infrast…"
+          },
+          {
+            "zone_id": "block:accordion-1#1",
+            "part": "paragraph 12",
+            "value": "— | …cruits across all work models — remote, hybrid, and on-site. …"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "ampersand",
+        "status": "fail",
+        "value": "4 found",
+        "places": [
+          {
+            "zone_id": "block:how-it-works#1",
+            "part": "heading 6",
+            "value": "& | Offer Support & Close"
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 19",
+            "value": "& | … fee income · 230+ staff · US & UK · Amazon · NFL · Deloitte …"
+          },
+          {
+            "zone_id": "block:leaders#1",
+            "part": "paragraph 34",
+            "value": "& | Oil & Gas"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "heading 5",
+            "value": "& | We follow data & security practices:"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "uk_spelling",
+        "status": "pass",
+        "value": "none",
+        "places": [],
+        "severity": "low"
+      }
+    ],
+    "llm": [
+      {
+        "id": "buyer_problem",
+        "answer": "yes",
+        "value": null,
+        "zone_id": "block:hero-services#1",
+        "evidence": "Most recruiters can’t separate a production-grade Applied AI Engineer from someone who prompts Claude Code and ships the first output.",
+        "note": "The page opens with the difficulty of identifying engineers with real production AI skills.",
+        "fix": null,
+        "evidence_verified": true,
+        "title": "Page does not open with a buyer problem",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "c43fc1e2cdb4a9b8078080e91763f637229cb004bf35edf5cc31fbc6031f7fb7",
+        "fragment": "Most recruiters can’t separate a production-grade"
+      },
+      {
+        "id": "lead_with_hire",
+        "answer": "no",
+        "value": null,
+        "zone_id": "block:hero-services#1",
+        "evidence": "Most recruiters can’t separate a production-grade Applied AI Engineer from someone who prompts Claude Code and ships the first output. GoGloby runs a 4-stage technical assessment built for exactly that difference.",
+        "note": "The page opens with the assessment problem and process rather than leading with who GoGloby places, from where, and how fast.",
+        "fix": "Reorder the page to lead with the hire, then present proof, assessment, guarantees, and the Intelligence Layer in that order.",
+        "evidence_verified": true,
+        "title": "Page does not lead with the hire",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "06dd3c32ae00d47a73e194e57be90f65f2050af357472aa06fea96b041a77c49",
+        "fragment": "Most recruiters can’t separate a production-grade"
+      },
+      {
+        "id": "recruiting_firm_early",
+        "answer": "no",
+        "value": null,
+        "zone_id": "block:hero-services#1",
+        "evidence": "DIRECT HIRE",
+        "note": "The opening labels the service as direct hire but does not say that GoGloby is a recruiting firm in the first lines.",
+        "fix": "Identify GoGloby as a recruiting firm in the opening lines.",
+        "evidence_verified": true,
+        "title": "Does not say early that GoGloby is a recruiting firm",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "c418246c45859311b0e6122416a679f5b3b17854768120c4ce2f0909b51bd129",
+        "fragment": "DIRECT HIRE"
+      },
+      {
+        "id": "faq_quality",
+        "answer": "no",
+        "value": null,
+        "zone_id": "block:accordion-1#1",
+        "evidence": "Because the market is flooded with developers who can prompt an AI tool but can’t architect, govern, or ship with it at production scale.",
+        "note": "At least one answer begins with a context-dependent explanation and cannot be quoted fully on its own.",
+        "fix": "Revise each FAQ answer so it states its subject and responds directly without relying on the question for context.",
+        "evidence_verified": true,
+        "title": "FAQ answers are not direct",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "df653e22e8f68c2bff7844637a771669a6a74b830f079c1612fbedf9d1951ddf",
+        "fragment": "Because the market is flooded with"
+      },
+      {
+        "id": "buyer_ready",
+        "answer": "yes",
+        "value": "buyer_ready",
+        "zone_id": "page",
+        "evidence": "Your shortlist of production-proven engineers lands in 3 to 5 business days.",
+        "note": "The page addresses companies seeking to hire engineers by describing a shortlist and direct-hire service.",
+        "fix": null,
+        "evidence_verified": true,
+        "title": "Not written for buyers ready to hire",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "ef0901d3652f4c7319db6eb84dfdf03b918864517b577f68b752435b5bd9bf27",
+        "fragment": "Your shortlist of production-proven engineers lands"
+      },
+      {
+        "id": "target_keyword",
+        "answer": "yes",
+        "value": "hire AI engineers",
+        "zone_id": "title",
+        "evidence": "Hire AI Engineers Who Can Ship With Claude in Production | GoGloby",
+        "note": "“Hire AI engineers” is the closest matching term for this direct-hire page.",
+        "fix": null,
+        "evidence_verified": true,
+        "title": "No matching search term",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "dda477e44b8e25c3cd9e12a84bef25b01480174bb661e16dd2da81a502cade92"
+      },
+      {
+        "id": "uses_data",
+        "answer": "yes",
+        "value": null,
+        "zone_id": "json_ld",
+        "evidence": "What is Applied AI Engineering?\nApplied AI Engineering is the discipline of productionizing",
+        "note": "The FAQPage structured data includes the same FAQ questions shown on the page.",
+        "fix": null,
+        "evidence_verified": true,
+        "title": "FAQ markup does not match the visible FAQ",
+        "severity": "high",
+        "needs_confirm": true,
+        "qhash": "acd8f03949b2d97575496ec6777181d950e2dabfbb154c1deeacc37c71ab0fef"
+      }
+    ],
+    "placement": {
+      "id": "target_keyword_placement",
+      "status": "fail",
+      "value": "hire AI engineers",
+      "missing": [
+        "first_paragraph",
+        "meta_description",
+        "h2"
+      ],
+      "severity": "medium"
+    },
+    "usage": {
+      "input": 3918,
+      "cached_input": 8982,
+      "output": 1634
+    },
+    "error": null
+  },
+  "seo": {
+    "checks": [
+      {
+        "id": "http_status",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "200",
+        "severity": "high"
+      },
+      {
+        "id": "title_length",
+        "status": "fail",
+        "severity": "medium",
+        "zone_id": "title",
+        "value": "66 characters (max 60)"
+      },
+      {
+        "id": "meta_present",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "155 characters",
+        "severity": "high"
+      },
+      {
+        "id": "meta_length",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "155 characters (120-158)",
+        "severity": "low"
+      },
+      {
+        "id": "h1_count",
+        "status": "pass",
+        "zone_id": "h1",
+        "value": "1",
+        "severity": "high"
+      },
+      {
+        "id": "title_h1_match",
+        "status": "pass",
+        "zone_id": "title",
+        "value": "Title and H1 agree",
+        "severity": "low"
+      },
+      {
+        "id": "canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "https://gogloby.com/services/hire-ai-engineers/",
+        "severity": "high"
+      },
+      {
+        "id": "indexable",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "severity": "high"
+      },
+      {
+        "id": "schema_required",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "present",
+        "severity": "medium"
+      },
+      {
+        "id": "schema_recommended",
+        "status": "fail",
+        "zone_id": "json_ld",
+        "value": "missing: BreadcrumbList",
+        "severity": "medium"
+      },
+      {
+        "id": "broken_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 checked",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "redirecting_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "none",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_missing",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without alt",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_empty",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "20 with empty alt",
+        "places": [
+          {
+            "zone_id": "block:company#1",
+            "part": "image 1",
+            "value": "company-icon-9-01.png"
+          },
+          {
+            "zone_id": "block:company#1",
+            "part": "image 2",
+            "value": "company-icon-11-01.png"
+          },
+          {
+            "zone_id": "block:company#1",
+            "part": "image 3",
+            "value": "company-icon-10-01.png"
+          },
+          {
+            "zone_id": "block:company#1",
+            "part": "image 4",
+            "value": "company-icon-12-01.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 1",
+            "value": "logo-hasbro-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 2",
+            "value": "logo-hubspot-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 3",
+            "value": "logo-carta-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 4",
+            "value": "logo-oyster-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 5",
+            "value": "logo-deel-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 6",
+            "value": "logo-evercommerce-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 7",
+            "value": "logo-forbes-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 8",
+            "value": "logo-crunchbase-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 9",
+            "value": "logo-london-daily-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 10",
+            "value": "logo-nbc-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 11",
+            "value": "logo-fox-news-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 12",
+            "value": "logo-clutch-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 13",
+            "value": "logo-trustpilot-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 14",
+            "value": "logo-linkedin-1-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 15",
+            "value": "logo-aicpa-soc2-type2-1-white-grayscale.png"
+          },
+          {
+            "zone_id": "block:contact#1",
+            "part": "image 16",
+            "value": "logo-ism-iso-27001-1-grayscale.png"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "image_dimensions",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "3 without width/height",
+        "places": [
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "image 1",
+            "value": "block-bg-1-01.png"
+          },
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "image 2",
+            "value": "block-bg-2-01.png"
+          },
+          {
+            "zone_id": "block:hero-services#1",
+            "part": "image 3",
+            "value": "block-bg-3-01.png"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "heading_order",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "og_present",
+        "status": "pass",
+        "zone_id": "og_title",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "og_url_canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "og:url https://gogloby.com/services/hire-ai-engineers/ vs canonical https://gogloby.com/services/hire-ai-engineers/",
+        "severity": "low"
+      },
+      {
+        "id": "twitter_card",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "summary_large_image",
+        "severity": "low"
+      },
+      {
+        "id": "html_lang",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "en-US",
+        "severity": "low"
+      },
+      {
+        "id": "viewport",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "jsonld_valid",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "4 block(s)",
+        "severity": "high"
+      },
+      {
+        "id": "anchors_resolve",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 checked",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "faq_schema_matches_dom",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "accordion block: true, FAQPage schema: true",
+        "severity": "low"
+      }
+    ]
+  }
+}

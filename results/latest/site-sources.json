@@ -3,9 +3,9 @@
   {
    "type": "Organization",
    "name": "GoGloby",
-   "pages": 13,
-   "pages_total": 13,
-   "sample_url": "https://gogloby.com/use-cases/agentic-ai-use-cases-in-cybersecurity/",
+   "pages": 7,
+   "pages_total": 7,
+   "sample_url": "https://gogloby.com/insights/best-tech-recruiting-firms/",
    "json": {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -272,9 +272,9 @@
   {
    "type": "WebSite",
    "name": "GoGloby",
-   "pages": 13,
-   "pages_total": 13,
-   "sample_url": "https://gogloby.com/use-cases/agentic-ai-use-cases-in-cybersecurity/",
+   "pages": 7,
+   "pages_total": 7,
+   "sample_url": "https://gogloby.com/insights/best-tech-recruiting-firms/",
    "json": {
     "@context": "https://schema.org/",
     "@type": "WebSite",
@@ -290,36 +290,6 @@
      "@id": "https://gogloby.com#organization"
     }
    }
-  },
-  {
-   "type": "Person",
-   "name": "Sergey Matikaynen",
-   "pages": 13,
-   "pages_total": 13,
-   "sample_url": "https://gogloby.com/use-cases/agentic-ai-use-cases-in-cybersecurity/",
-   "json": {
-    "@type": "Person",
-    "@id": "https://gogloby.com",
-    "url": "https://gogloby.com",
-    "name": "Sergey Matikaynen"
-   }
-  },
-  {
-   "type": "Organization",
-   "name": "GoGloby",
-   "pages": 13,
-   "pages_total": 13,
-   "sample_url": "https://gogloby.com/use-cases/agentic-ai-use-cases-in-cybersecurity/",
-   "json": {
-    "@type": "Organization",
-    "@id": "https://gogloby.com/#organization",
-    "name": "GoGloby",
-    "logo": {
-     "@type": "ImageObject",
-     "@id": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/logos/globy-logo-square-1-01.png",
-     "url": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/logos/globy-logo-square-1-01.png"
-    }
-   }
   }
  ],
  "variants": [
@@ -329,19 +299,20 @@
    "label": "Forms and modals",
    "text": "Thank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend\nThank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend",
    "pages": [
-    "https://gogloby.com/use-cases/ai-in-it/",
-    "https://gogloby.com/use-cases/ai-in-customer-experience/",
-    "https://gogloby.com/use-cases/ai-use-cases-in-cybersecurity/",
-    "https://gogloby.com/use-cases/agentic-ai-use-cases-in-cybersecurity/",
-    "https://gogloby.com/use-cases/generative-ai-use-cases-in-cybersecurity/",
-    "https://gogloby.com/use-cases/generative-ai-use-cases-in-finance/",
-    "https://gogloby.com/use-cases/agentic-ai-use-cases-in-finance/",
-    "https://gogloby.com/use-cases/ai-in-healthcare-best-ai-use-cases-benefits-examples/",
-    "https://gogloby.com/use-cases/agentic-ai-use-cases-in-healthcare/",
-    "https://gogloby.com/use-cases/generative-ai-in-healthcare-best-ai-use-cases-benefits-examples/",
-    "https://gogloby.com/use-cases/ai-in-marketing/",
-    "https://gogloby.com/use-cases/ai-use-cases-in-finance/",
-    "https://gogloby.com/use-cases/ai-in-ecommerce/"
+    "https://gogloby.com/insights/talent-acquisition-companies/",
+    "https://gogloby.com/insights/best-tech-recruiting-firms/",
+    "https://gogloby.com/insights/marketing-recruitment-and-staffing-agencies/",
+    "https://gogloby.com/insights/top-executive-search-firms/"
+   ]
+  },
+  {
+   "id": "modals@2",
+   "zone": "modals",
+   "label": "Forms and modals",
+   "text": "Thank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend\nThank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend\nThank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend",
+   "pages": [
+    "https://gogloby.com/services/hire-ai-engineers/",
+    "https://gogloby.com/services/generative-ai-development/"
    ]
   }
  ]

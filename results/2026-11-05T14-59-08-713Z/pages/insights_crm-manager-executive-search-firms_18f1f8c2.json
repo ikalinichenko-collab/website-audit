@@ -1,0 +1,2140 @@
+{
+  "schema_version": 2,
+  "url": "https://gogloby.com/insights/crm-manager-executive-search-firms/",
+  "final_url": "https://gogloby.com/insights/crm-manager-executive-search-firms/",
+  "status": 200,
+  "title": "Top 15 CRM Executive Search Firms in 2026",
+  "category": "Resources",
+  "subsection": "Insights",
+  "profile": "article",
+  "geo_type": "article",
+  "template": "article",
+  "checked_at": "2026-11-05T15:02:45.069Z",
+  "zones": [
+    {
+      "id": "title",
+      "label": "Title",
+      "kind": "title"
+    },
+    {
+      "id": "meta_description",
+      "label": "Meta description",
+      "kind": "meta_description"
+    },
+    {
+      "id": "og_title",
+      "label": "og:title",
+      "kind": "og_title"
+    },
+    {
+      "id": "og_description",
+      "label": "og:description",
+      "kind": "og_description"
+    },
+    {
+      "id": "json_ld",
+      "label": "Structured data (JSON-LD)",
+      "kind": "json_ld"
+    },
+    {
+      "id": "h1",
+      "label": "H1",
+      "kind": "h1"
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "kind": "date"
+    },
+    {
+      "id": "author",
+      "label": "Author",
+      "kind": "author"
+    },
+    {
+      "id": "toc",
+      "label": "Table of contents",
+      "kind": "toc"
+    },
+    {
+      "id": "article:intro",
+      "label": "Intro",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-is-a-crm-executive-search-firm",
+      "label": "What Is a CRM Executive Search Firm?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:why-partner-with-a-crm-executive-recruiter",
+      "label": "Why Partner with a CRM Executive Recruiter?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:top-15-crm-manager-executive-search-firms",
+      "label": "Top 15 CRM Manager Executive Search Firms",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:how-the-best-crm-executive-search-firms-stand-ou",
+      "label": "How the Best CRM Executive Search Firms Stand Out",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-skills-are-most-in-demand-for-crm-headhunti",
+      "label": "What Skills Are Most In-Demand for CRM Headhunting Firms?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:how-to-choose-the-right-crm-executive-headhuntin",
+      "label": "How to Choose the Right CRM Executive Headhunting Firm?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:conclusion",
+      "label": "Conclusion",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:faqs",
+      "label": "FAQs",
+      "kind": "article_section"
+    },
+    {
+      "id": "banner_cta",
+      "label": "Banner CTA",
+      "kind": "banner_cta"
+    }
+  ],
+  "zone_warnings": [],
+  "shared_variants": [
+    "modals@1"
+  ],
+  "compliance": {
+    "hash": "6c85b81af1a3d7278472d128c79a093084b0f61c5cc275556f28c72c8b3c4bfa",
+    "cached": false,
+    "action": "fix",
+    "model_action": "fix",
+    "summary": "The article presents GoGloby as a CRM executive search firm and attributes CRM leadership placements and unsupported capabilities to the company. Correct GoGloby’s entry, author claims, client references, and calls to action; the article’s other firms are not audited.",
+    "llm_problems": [
+      {
+        "title": "CRM executive recruiting offer",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; decisions.md: Company description",
+        "rule_verified": true,
+        "issue": "The page presents GoGloby as recruiting CRM managers and executives, while its recruiting service is for Data & AI Engineers and AI leaders.",
+        "fix": "Correct GoGloby’s description and remove claims that it recruits CRM leaders.",
+        "subject": "GoGloby",
+        "page_value": "CRM leadership recruitment",
+        "source_value": "Data & AI Engineers recruiting",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 3",
+            "quote": "supports the recruitment of CRM managers, directors, and executives",
+            "verified": true,
+            "reason": "This describes CRM leadership recruitment as a GoGloby service, which is not among the company’s services."
+          },
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": null,
+            "quote": "connect them with CRM leaders",
+            "verified": false,
+            "reason": "The conclusion offers to connect readers with CRM leaders, a recruiting service not listed for GoGloby."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Customer-facing teams positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity and Services",
+        "rule_verified": true,
+        "issue": "The page presents GoGloby as scaling customer-facing teams, rather than as a staffing and recruiting agency specializing in hiring Data & AI Engineers.",
+        "fix": "Replace the broad team-scaling positioning with a description consistent with GoGloby’s approved company description and services.",
+        "subject": "GoGloby",
+        "page_value": "customer-facing teams",
+        "source_value": "staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 3",
+            "quote": "scale AI, technology, and customer-facing teams",
+            "verified": true,
+            "reason": "This describes GoGloby as scaling customer-facing teams, which is outside the documented service positioning."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "CRM hiring audience",
+        "category": "wrong_audience",
+        "severity": "medium",
+        "rule": "Glossary §5 and §9",
+        "rule_verified": true,
+        "issue": "The text addresses companies seeking CRM leadership recruiters, an audience for roles outside GoGloby’s stated hiring focus.",
+        "fix": "Direct the page’s GoGloby-related messaging to companies hiring Data & AI Engineers or AI leaders.",
+        "subject": "CRM leadership hiring companies",
+        "page_value": "CRM manager executive search",
+        "source_value": "Data & AI Engineers and AI leadership hiring",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 1",
+            "quote": "You need a CRM manager executive search firm",
+            "verified": true,
+            "reason": "This addresses companies seeking CRM manager recruiters, not buyers for GoGloby’s documented services."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Former company name",
+        "category": "other",
+        "severity": "low",
+        "rule": "decisions.md: Spelling",
+        "rule_verified": true,
+        "issue": "The company is labeled “Globy” even though its current name is GoGloby.",
+        "fix": "Replace the former name with GoGloby.",
+        "subject": "GoGloby",
+        "page_value": "Globy",
+        "source_value": "GoGloby",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "table_cell 7",
+            "quote": "Globy",
+            "verified": true,
+            "reason": "This label uses the former company name in GoGloby’s entry."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Founding year differs",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The table gives GoGloby’s founding year as 2022, while the Fact Sheet says 2021.",
+        "fix": "Change the founding year to the Fact Sheet value.",
+        "subject": "GoGloby founding year",
+        "page_value": "2022",
+        "source_value": "2021",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "table_cell 11",
+            "quote": "2022",
+            "verified": true,
+            "reason": "The GoGloby table row lists a founding year that conflicts with the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsupported search capabilities",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page claims GoGloby uses AI-driven search, but the sources do not describe that capability.",
+        "fix": "Remove or verify the AI-driven search claim before retaining it.",
+        "subject": "GoGloby search capabilities",
+        "page_value": "AI-driven search",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "table_cell 10",
+            "quote": "AI-driven search",
+            "verified": true,
+            "reason": "This lists AI-driven search as a GoGloby strength, which is not stated in the sources."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported DEI-first claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The sources do not state that GoGloby’s search is DEI-first.",
+        "fix": "Remove or verify the DEI-first claim.",
+        "subject": "GoGloby search practices",
+        "page_value": "DEI-first",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "table_cell 10",
+            "quote": "DEI-first",
+            "verified": true,
+            "reason": "The table attributes a DEI-first approach to GoGloby without support in the sources."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported industry focus",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Ideal Customer Profile",
+        "rule_verified": true,
+        "issue": "The exact industry focus listed for GoGloby is not stated in the sources.",
+        "fix": "Remove or verify this industry-focus claim.",
+        "subject": "GoGloby industry focus",
+        "page_value": "Tech, Finance, Healthcare, Marketing",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "table_cell 8",
+            "quote": "Tech, Finance, Healthcare, Marketing",
+            "verified": true,
+            "reason": "This table cell assigns GoGloby an industry focus not given in the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported certification claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page claims SOC 2 Type II compliance, while the Fact Sheet only describes SOC 2-aligned controls.",
+        "fix": "Remove or verify the Type II compliance claim and use only the documented security position.",
+        "subject": "GoGloby security certification",
+        "page_value": "SOC 2 Type II compliance",
+        "source_value": "SOC 2-aligned controls",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 4",
+            "quote": "SOC 2 Type II compliance",
+            "verified": true,
+            "reason": "This asserts a specific compliance status not stated in the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Insurance described as guarantee",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page describes the $3M data and cyber-liability insurance as a guarantee, but the Fact Sheet identifies it as an insurance policy.",
+        "fix": "Describe the coverage as insurance, not as a guarantee.",
+        "subject": "GoGloby insurance",
+        "page_value": "$3M cybersecurity and liability guarantee",
+        "source_value": "$3M data and cyber-liability insurance policy",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 4",
+            "quote": "a $3M cybersecurity and liability guarantee",
+            "verified": true,
+            "reason": "This calls the coverage a guarantee rather than the documented insurance policy."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Replacement policy applied to CRM roles",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page applies the 120-day replacement policy to CRM executive recruitment, although the documented recruiting service is for Data & AI roles.",
+        "fix": "Remove the policy from the CRM-recruitment claims or limit it to the service and roles documented in the sources.",
+        "subject": "120-day replacement policy",
+        "page_value": "120-day free replacement policy for CRM recruiting",
+        "source_value": "120-day free replacement for US Data & AI Engineers Recruiting",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 4",
+            "quote": "a 120-day free replacement policy",
+            "verified": true,
+            "reason": "This presents the replacement policy as protection for the CRM executive searches described in the entry."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsupported consolidated services",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The claim that GoGloby consolidates payroll, HR, IT, and compliance into one contract is not in the sources.",
+        "fix": "Remove or verify the consolidated-services claim.",
+        "subject": "GoGloby contract services",
+        "page_value": "payroll, HR, IT, and compliance into a single contract",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 4",
+            "quote": "consolidates payroll, HR, IT, and compliance into a single contract",
+            "verified": true,
+            "reason": "This promises a bundle of services not described in the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported client value figure",
+        "category": "client_figures",
+        "severity": "low",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The page says GoGloby delivered over $30M in client value, a figure not provided in the sources.",
+        "fix": "Remove the figure or verify it with the company before publication.",
+        "subject": "GoGloby client value",
+        "page_value": "over $30M in client value",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 5",
+            "quote": "delivered over $30M in client value",
+            "verified": true,
+            "reason": "This states a GoGloby client-value total that is absent from the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Carta is not a listed client",
+        "category": "unknown_client",
+        "severity": "high",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "Carta is presented as a GoGloby client, but it is not listed as one in the Fact Sheet.",
+        "fix": "Remove Carta as a client or verify the client relationship.",
+        "subject": "Carta",
+        "page_value": "GoGloby client",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 5",
+            "quote": "Deel, Carta, and Oyster",
+            "verified": true,
+            "reason": "This names Carta among the companies GoGloby is trusted by."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Oyster is not a listed client",
+        "category": "unknown_client",
+        "severity": "high",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "Oyster is presented as a GoGloby client, but it is not listed as one in the Fact Sheet.",
+        "fix": "Remove Oyster as a client or verify the client relationship.",
+        "subject": "Oyster",
+        "page_value": "GoGloby client",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 5",
+            "quote": "Deel, Carta, and Oyster",
+            "verified": true,
+            "reason": "This names Oyster among the companies GoGloby is trusted by."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "GitLab is not a listed client",
+        "category": "unknown_client",
+        "severity": "high",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "GitLab is presented as a GoGloby client, but it is not listed as one in the Fact Sheet.",
+        "fix": "Remove GitLab as a client or verify the client relationship.",
+        "subject": "GitLab",
+        "page_value": "GoGloby client",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 5",
+            "quote": "enterprises like GitLab and Zillow",
+            "verified": true,
+            "reason": "This names GitLab among the enterprises GoGloby is trusted by."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported recognition claims",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: External recognition",
+        "rule_verified": true,
+        "issue": "The sources do not state that GoGloby is recognized for speed, rigor, and security in delivering technical and CRM leadership talent.",
+        "fix": "Remove or verify this recognition claim, including the CRM leadership claim.",
+        "subject": "GoGloby recognition",
+        "page_value": "recognized for speed, rigor, and security",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 5",
+            "quote": "recognized for speed, rigor, and security in delivering both technical and CRM leadership talent",
+            "verified": true,
+            "reason": "This asserts recognition and CRM leadership delivery not documented in the sources."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported cross-border compliance",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The banner promises full cross-border compliance, which is not stated in the sources.",
+        "fix": "Remove or verify the full cross-border compliance claim.",
+        "subject": "GoGloby compliance",
+        "page_value": "full cross-border compliance",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "full cross-border compliance",
+            "verified": true,
+            "reason": "This promises comprehensive cross-border compliance not described in the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Founder experience differs",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The author bio says Sergey has 16+ years of experience, while the Fact Sheet says 17 years.",
+        "fix": "Correct the experience figure to the Fact Sheet value.",
+        "subject": "Sergey Matikaynen experience",
+        "page_value": "16+ years",
+        "source_value": "17 years",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "reason": "The bio gives Sergey an experience figure that differs from the Fact Sheet."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 16",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "reason": "The repeated bio gives Sergey an experience figure that differs from the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsupported founder geography",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The sources do not state that Sergey built and led software teams for companies across the US, Canada, and Europe.",
+        "fix": "Remove or verify the geographic experience claim.",
+        "subject": "Sergey Matikaynen experience",
+        "page_value": "companies across the US, Canada, and Europe",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "for companies across the US, Canada, and Europe",
+            "verified": true,
+            "reason": "This adds a geographic detail to Sergey’s work history that is not in the Fact Sheet."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 16",
+            "quote": "for companies across the US, Canada, and Europe",
+            "verified": true,
+            "reason": "The repeated bio adds a geographic detail to Sergey’s work history that is not in the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported founder recognition",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The sources do not identify Sergey as a LinkedIn Top Voice in software development.",
+        "fix": "Remove or verify this recognition claim.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "LinkedIn Top Voice in software development",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "reason": "This attributes a LinkedIn recognition to Sergey that is not stated in the Fact Sheet."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 16",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "reason": "The repeated bio attributes a LinkedIn recognition to Sergey that is not stated in the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Old Applied AI positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The author bio uses the prohibited “4x Applied AI Engineering” positioning instead of GoGloby’s approved company description.",
+        "fix": "Remove the old positioning and align the author bio with the approved description.",
+        "subject": "GoGloby positioning",
+        "page_value": "4x Applied AI Engineering",
+        "source_value": "staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "the engineering standard behind 4x Applied AI Engineering",
+            "verified": true,
+            "reason": "This describes GoGloby through prohibited Applied AI Engineering positioning."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 16",
+            "quote": "the engineering standard behind 4x Applied AI Engineering",
+            "verified": true,
+            "reason": "The repeated bio describes GoGloby through prohibited Applied AI Engineering positioning."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsupported certification claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders and Services",
+        "rule_verified": true,
+        "issue": "The sources do not state that Sergey or GoGloby has certified Agentic SDLC mastery.",
+        "fix": "Remove or verify the certification and mastery claim.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "certified Agentic SDLC mastery",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "including certified Agentic SDLC mastery",
+            "verified": true,
+            "reason": "This claims a certification and mastery standard not described in the sources."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 16",
+            "quote": "including certified Agentic SDLC mastery",
+            "verified": true,
+            "reason": "The repeated bio claims a certification and mastery standard not described in the sources."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "CTA does not match service wording",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The calls to action use generic wording rather than the documented recruiting or staffing CTA wording.",
+        "fix": "Use the CTA wording specified for the relevant GoGloby service.",
+        "subject": "GoGloby calls to action",
+        "page_value": "Get Started with GoGloby and let’s talk",
+        "source_value": "Start a search or Get vetted profiles",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 2",
+            "quote": "Get Started with GoGloby",
+            "verified": true,
+            "reason": "This generic CTA does not use the documented CTA wording for recruiting or staffing."
+          },
+          {
+            "zone_id": "article:conclusion",
+            "part": "paragraph 2",
+            "quote": "let’s talk",
+            "verified": true,
+            "reason": "This generic CTA does not use the documented CTA wording for recruiting or staffing."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      }
+    ],
+    "problems": [
+      {
+        "title": "CRM executive recruiting offer",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; decisions.md: Company description",
+        "rule_verified": true,
+        "issue": "The page presents GoGloby as recruiting CRM managers and executives, while its recruiting service is for Data & AI Engineers and AI leaders.",
+        "fix": "Correct GoGloby’s description and remove claims that it recruits CRM leaders.",
+        "subject": "GoGloby",
+        "page_value": "CRM leadership recruitment",
+        "source_value": "Data & AI Engineers recruiting",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 3",
+            "quote": "supports the recruitment of CRM managers, directors, and executives",
+            "verified": true,
+            "reason": "This describes CRM leadership recruitment as a GoGloby service, which is not among the company’s services.",
+            "fragment": "supports the recruitment of CRM managers,",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": null,
+            "quote": "connect them with CRM leaders",
+            "verified": false,
+            "reason": "The conclusion offers to connect readers with CRM leaders, a recruiting service not listed for GoGloby."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Customer-facing teams positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity and Services",
+        "rule_verified": true,
+        "issue": "The page presents GoGloby as scaling customer-facing teams, rather than as a staffing and recruiting agency specializing in hiring Data & AI Engineers.",
+        "fix": "Replace the broad team-scaling positioning with a description consistent with GoGloby’s approved company description and services.",
+        "subject": "GoGloby",
+        "page_value": "customer-facing teams",
+        "source_value": "staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 3",
+            "quote": "scale AI, technology, and customer-facing teams",
+            "verified": true,
+            "reason": "This describes GoGloby as scaling customer-facing teams, which is outside the documented service positioning.",
+            "fragment": "scale AI, technology, and customer-facing",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "CRM hiring audience",
+        "category": "wrong_audience",
+        "severity": "medium",
+        "rule": "Glossary §5 and §9",
+        "rule_verified": true,
+        "issue": "The text addresses companies seeking CRM leadership recruiters, an audience for roles outside GoGloby’s stated hiring focus.",
+        "fix": "Direct the page’s GoGloby-related messaging to companies hiring Data & AI Engineers or AI leaders.",
+        "subject": "CRM leadership hiring companies",
+        "page_value": "CRM manager executive search",
+        "source_value": "Data & AI Engineers and AI leadership hiring",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 1",
+            "quote": "You need a CRM manager executive search firm",
+            "verified": true,
+            "reason": "This addresses companies seeking CRM manager recruiters, not buyers for GoGloby’s documented services.",
+            "fragment": null,
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Former company name",
+        "category": "other",
+        "severity": "low",
+        "rule": "decisions.md: Spelling",
+        "rule_verified": true,
+        "issue": "The company is labeled “Globy” even though its current name is GoGloby.",
+        "fix": "Replace the former name with GoGloby.",
+        "subject": "GoGloby",
+        "page_value": "Globy",
+        "source_value": "GoGloby",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "table_cell 7",
+            "quote": "Globy",
+            "verified": true,
+            "reason": "This label uses the former company name in GoGloby’s entry.",
+            "fragment": null,
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Founding year differs",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The table gives GoGloby’s founding year as 2022, while the Fact Sheet says 2021.",
+        "fix": "Change the founding year to the Fact Sheet value.",
+        "subject": "GoGloby founding year",
+        "page_value": "2022",
+        "source_value": "2021",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "table_cell 11",
+            "quote": "2022",
+            "verified": true,
+            "reason": "The GoGloby table row lists a founding year that conflicts with the Fact Sheet.",
+            "fragment": null,
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsupported search capabilities",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page claims GoGloby uses AI-driven search, but the sources do not describe that capability.",
+        "fix": "Remove or verify the AI-driven search claim before retaining it.",
+        "subject": "GoGloby search capabilities",
+        "page_value": "AI-driven search",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "table_cell 10",
+            "quote": "AI-driven search",
+            "verified": true,
+            "reason": "This lists AI-driven search as a GoGloby strength, which is not stated in the sources.",
+            "fragment": null,
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported DEI-first claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The sources do not state that GoGloby’s search is DEI-first.",
+        "fix": "Remove or verify the DEI-first claim.",
+        "subject": "GoGloby search practices",
+        "page_value": "DEI-first",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "table_cell 10",
+            "quote": "DEI-first",
+            "verified": true,
+            "reason": "The table attributes a DEI-first approach to GoGloby without support in the sources.",
+            "fragment": null,
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported industry focus",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Ideal Customer Profile",
+        "rule_verified": true,
+        "issue": "The exact industry focus listed for GoGloby is not stated in the sources.",
+        "fix": "Remove or verify this industry-focus claim.",
+        "subject": "GoGloby industry focus",
+        "page_value": "Tech, Finance, Healthcare, Marketing",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "table_cell 8",
+            "quote": "Tech, Finance, Healthcare, Marketing",
+            "verified": true,
+            "reason": "This table cell assigns GoGloby an industry focus not given in the Fact Sheet.",
+            "fragment": "Tech, Finance, Healthcare, Marketing",
+            "place": "table, row \"1. GoGloby\"",
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported certification claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page claims SOC 2 Type II compliance, while the Fact Sheet only describes SOC 2-aligned controls.",
+        "fix": "Remove or verify the Type II compliance claim and use only the documented security position.",
+        "subject": "GoGloby security certification",
+        "page_value": "SOC 2 Type II compliance",
+        "source_value": "SOC 2-aligned controls",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 4",
+            "quote": "SOC 2 Type II compliance",
+            "verified": true,
+            "reason": "This asserts a specific compliance status not stated in the Fact Sheet.",
+            "fragment": "SOC 2 Type II",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Insurance described as guarantee",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page describes the $3M data and cyber-liability insurance as a guarantee, but the Fact Sheet identifies it as an insurance policy.",
+        "fix": "Describe the coverage as insurance, not as a guarantee.",
+        "subject": "GoGloby insurance",
+        "page_value": "$3M cybersecurity and liability guarantee",
+        "source_value": "$3M data and cyber-liability insurance policy",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 4",
+            "quote": "a $3M cybersecurity and liability guarantee",
+            "verified": true,
+            "reason": "This calls the coverage a guarantee rather than the documented insurance policy.",
+            "fragment": "a $3M cybersecurity and liability",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Replacement policy applied to CRM roles",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page applies the 120-day replacement policy to CRM executive recruitment, although the documented recruiting service is for Data & AI roles.",
+        "fix": "Remove the policy from the CRM-recruitment claims or limit it to the service and roles documented in the sources.",
+        "subject": "120-day replacement policy",
+        "page_value": "120-day free replacement policy for CRM recruiting",
+        "source_value": "120-day free replacement for US Data & AI Engineers Recruiting",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 4",
+            "quote": "a 120-day free replacement policy",
+            "verified": true,
+            "reason": "This presents the replacement policy as protection for the CRM executive searches described in the entry.",
+            "fragment": "a 120-day free replacement",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsupported consolidated services",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The claim that GoGloby consolidates payroll, HR, IT, and compliance into one contract is not in the sources.",
+        "fix": "Remove or verify the consolidated-services claim.",
+        "subject": "GoGloby contract services",
+        "page_value": "payroll, HR, IT, and compliance into a single contract",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 4",
+            "quote": "consolidates payroll, HR, IT, and compliance into a single contract",
+            "verified": true,
+            "reason": "This promises a bundle of services not described in the Fact Sheet.",
+            "fragment": "consolidates payroll, HR, IT, and compliance",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported client value figure",
+        "category": "client_figures",
+        "severity": "low",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "The page says GoGloby delivered over $30M in client value, a figure not provided in the sources.",
+        "fix": "Remove the figure or verify it with the company before publication.",
+        "subject": "GoGloby client value",
+        "page_value": "over $30M in client value",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 5",
+            "quote": "delivered over $30M in client value",
+            "verified": true,
+            "reason": "This states a GoGloby client-value total that is absent from the Fact Sheet.",
+            "fragment": "delivered over $30M in client",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Carta is not a listed client",
+        "category": "unknown_client",
+        "severity": "high",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "Carta is presented as a GoGloby client, but it is not listed as one in the Fact Sheet.",
+        "fix": "Remove Carta as a client or verify the client relationship.",
+        "subject": "Carta",
+        "page_value": "GoGloby client",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 5",
+            "quote": "Deel, Carta, and Oyster",
+            "verified": true,
+            "reason": "This names Carta among the companies GoGloby is trusted by.",
+            "fragment": "Deel, Carta, and",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Oyster is not a listed client",
+        "category": "unknown_client",
+        "severity": "high",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "Oyster is presented as a GoGloby client, but it is not listed as one in the Fact Sheet.",
+        "fix": "Remove Oyster as a client or verify the client relationship.",
+        "subject": "Oyster",
+        "page_value": "GoGloby client",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 5",
+            "quote": "Deel, Carta, and Oyster",
+            "verified": true,
+            "reason": "This names Oyster among the companies GoGloby is trusted by.",
+            "fragment": "Deel, Carta, and",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "GitLab is not a listed client",
+        "category": "unknown_client",
+        "severity": "high",
+        "rule": "Fact Sheet: Featured clients",
+        "rule_verified": true,
+        "issue": "GitLab is presented as a GoGloby client, but it is not listed as one in the Fact Sheet.",
+        "fix": "Remove GitLab as a client or verify the client relationship.",
+        "subject": "GitLab",
+        "page_value": "GoGloby client",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 5",
+            "quote": "enterprises like GitLab and Zillow",
+            "verified": true,
+            "reason": "This names GitLab among the enterprises GoGloby is trusted by.",
+            "fragment": "enterprises like GitLab and",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported recognition claims",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: External recognition",
+        "rule_verified": true,
+        "issue": "The sources do not state that GoGloby is recognized for speed, rigor, and security in delivering technical and CRM leadership talent.",
+        "fix": "Remove or verify this recognition claim, including the CRM leadership claim.",
+        "subject": "GoGloby recognition",
+        "page_value": "recognized for speed, rigor, and security",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 5",
+            "quote": "recognized for speed, rigor, and security in delivering both technical and CRM leadership talent",
+            "verified": true,
+            "reason": "This asserts recognition and CRM leadership delivery not documented in the sources.",
+            "fragment": "recognized for speed, rigor, and security",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported cross-border compliance",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The banner promises full cross-border compliance, which is not stated in the sources.",
+        "fix": "Remove or verify the full cross-border compliance claim.",
+        "subject": "GoGloby compliance",
+        "page_value": "full cross-border compliance",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "full cross-border compliance",
+            "verified": true,
+            "reason": "This promises comprehensive cross-border compliance not described in the Fact Sheet.",
+            "fragment": "full cross-border",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Founder experience differs",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The author bio says Sergey has 16+ years of experience, while the Fact Sheet says 17 years.",
+        "fix": "Correct the experience figure to the Fact Sheet value.",
+        "subject": "Sergey Matikaynen experience",
+        "page_value": "16+ years",
+        "source_value": "17 years",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "reason": "The bio gives Sergey an experience figure that differs from the Fact Sheet.",
+            "fragment": "He has spent 16+ years building",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 16",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "reason": "The repeated bio gives Sergey an experience figure that differs from the Fact Sheet.",
+            "fragment": "He has spent 16+ years building",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsupported founder geography",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The sources do not state that Sergey built and led software teams for companies across the US, Canada, and Europe.",
+        "fix": "Remove or verify the geographic experience claim.",
+        "subject": "Sergey Matikaynen experience",
+        "page_value": "companies across the US, Canada, and Europe",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "for companies across the US, Canada, and Europe",
+            "verified": true,
+            "reason": "This adds a geographic detail to Sergey’s work history that is not in the Fact Sheet.",
+            "fragment": "for companies across the US, Canada,",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 16",
+            "quote": "for companies across the US, Canada, and Europe",
+            "verified": true,
+            "reason": "The repeated bio adds a geographic detail to Sergey’s work history that is not in the Fact Sheet.",
+            "fragment": "for companies across the US, Canada,",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported founder recognition",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The sources do not identify Sergey as a LinkedIn Top Voice in software development.",
+        "fix": "Remove or verify this recognition claim.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "LinkedIn Top Voice in software development",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "reason": "This attributes a LinkedIn recognition to Sergey that is not stated in the Fact Sheet.",
+            "fragment": "He is a LinkedIn Top Voice",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 16",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "reason": "The repeated bio attributes a LinkedIn recognition to Sergey that is not stated in the Fact Sheet.",
+            "fragment": "He is a LinkedIn Top Voice",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Old Applied AI positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The author bio uses the prohibited “4x Applied AI Engineering” positioning instead of GoGloby’s approved company description.",
+        "fix": "Remove the old positioning and align the author bio with the approved description.",
+        "subject": "GoGloby positioning",
+        "page_value": "4x Applied AI Engineering",
+        "source_value": "staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "the engineering standard behind 4x Applied AI Engineering",
+            "verified": true,
+            "reason": "This describes GoGloby through prohibited Applied AI Engineering positioning.",
+            "fragment": "the engineering standard behind 4x Applied",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 16",
+            "quote": "the engineering standard behind 4x Applied AI Engineering",
+            "verified": true,
+            "reason": "The repeated bio describes GoGloby through prohibited Applied AI Engineering positioning.",
+            "fragment": "the engineering standard behind 4x Applied",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsupported certification claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders and Services",
+        "rule_verified": true,
+        "issue": "The sources do not state that Sergey or GoGloby has certified Agentic SDLC mastery.",
+        "fix": "Remove or verify the certification and mastery claim.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "certified Agentic SDLC mastery",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "including certified Agentic SDLC mastery",
+            "verified": true,
+            "reason": "This claims a certification and mastery standard not described in the sources.",
+            "fragment": "including certified Agentic SDLC",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 16",
+            "quote": "including certified Agentic SDLC mastery",
+            "verified": true,
+            "reason": "The repeated bio claims a certification and mastery standard not described in the sources.",
+            "fragment": "including certified Agentic SDLC",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "CTA does not match service wording",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The calls to action use generic wording rather than the documented recruiting or staffing CTA wording.",
+        "fix": "Use the CTA wording specified for the relevant GoGloby service.",
+        "subject": "GoGloby calls to action",
+        "page_value": "Get Started with GoGloby and let’s talk",
+        "source_value": "Start a search or Get vetted profiles",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 2",
+            "quote": "Get Started with GoGloby",
+            "verified": true,
+            "reason": "This generic CTA does not use the documented CTA wording for recruiting or staffing.",
+            "fragment": "Get Started with GoGloby",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:conclusion",
+            "part": "paragraph 2",
+            "quote": "let’s talk",
+            "verified": true,
+            "reason": "This generic CTA does not use the documented CTA wording for recruiting or staffing.",
+            "fragment": null,
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Term not used: 4x (product name)",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"4x (product name)\" is a term or name the company no longer uses.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "4x (product name)",
+        "page_value": null,
+        "source_value": null,
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "4x Applied",
+            "verified": true,
+            "fragment": "4x Applied",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 16",
+            "quote": "4x Applied",
+            "verified": true,
+            "fragment": "4x Applied",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      }
+    ],
+    "usage": {
+      "input": 7724,
+      "cached_input": 10166,
+      "output": 8802
+    },
+    "error": null
+  },
+  "geo": {
+    "hash": "86965fa04cb7926c09d0575b1b8c98710fcd525bf8c93f0d09fd7b0f2107f9b8",
+    "cached": false,
+    "code": [
+      {
+        "id": "trap_terms",
+        "status": "fail",
+        "value": "5 found",
+        "places": [
+          {
+            "zone_id": "title",
+            "value": "[executive search] Executive Search | Top 15 CRM Executive Search Firms in 2026"
+          },
+          {
+            "zone_id": "meta_description",
+            "value": "[executive search] executive search | Explore the top CRM executive search firms in 2026. Learn how recr…"
+          },
+          {
+            "zone_id": "og_title",
+            "value": "[executive search] Executive Search | Top 15 CRM Executive Search Firms in 2026"
+          },
+          {
+            "zone_id": "og_description",
+            "value": "[executive search] executive search | Explore the top CRM executive search firms in 2026. Learn how recr…"
+          },
+          {
+            "zone_id": "h1",
+            "value": "[executive search] Executive Search | 15 CRM Manager Executive Search Firms"
+          }
+        ],
+        "severity": "high"
+      },
+      {
+        "id": "em_dash",
+        "status": "fail",
+        "value": "11 found",
+        "places": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "value": "— | …ss the US, Canada, and Europe — software architecture, agile …"
+          },
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 13",
+            "value": "— | …ltants emphasize long-term fit—aligning leadership hires not …"
+          },
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 19",
+            "value": "— | …placements in 14 weeks or less—well below the industry averag…"
+          },
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 27",
+            "value": "— | …affiliates in multiple sectors—including technology, healthca…"
+          },
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 27",
+            "value": "— | …ogy, healthcare, and nonprofit—DSG has become a trusted partn…"
+          },
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 34",
+            "value": "— | …wn for its agile service model—large enough to offer global r…"
+          },
+          {
+            "zone_id": "article:how-the-best-crm-executive-search-firms-stand-ou",
+            "part": "list_item 1",
+            "value": "— | …s in weeks rather than months — a crucial advantage for compa…"
+          },
+          {
+            "zone_id": "article:how-to-choose-the-right-crm-executive-headhuntin",
+            "part": "paragraph 5",
+            "value": "— | …roof, and process transparency—reducing time-to-hire while en…"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 2",
+            "value": "— | …s in recruiting senior leaders—such as CRM Managers, Director…"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 2",
+            "value": "— | …M Managers, Directors, and VPs—who oversee customer relations…"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 16",
+            "value": "— | …ss the US, Canada, and Europe — software architecture, agile …"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "ampersand",
+        "status": "fail",
+        "value": "18 found",
+        "places": [
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "table_cell 14",
+            "value": "& | Software & SaaS (CRM/CXM)",
+            "place": "table, row \"2. Bespoke Partners\""
+          },
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "table_cell 26",
+            "value": "& | Tech, Media & Telecom, CX, Consumer",
+            "place": "table, row \"4. Spencer Stuart\""
+          },
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "table_cell 31",
+            "value": "& | 5. Heidrick & Struggles",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "table_cell 58",
+            "value": "& | DEI-led searches, board & advisory integration",
+            "place": "table, row \"9. Diversified Search Group\""
+          },
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "table_cell 62",
+            "value": "& | Leadership & CX",
+            "place": "table, row \"10. N2Growth\""
+          },
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "table_cell 74",
+            "value": "& | High-growth SaaS & Tech",
+            "place": "table, row \"12. True Search\""
+          },
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "table_cell 80",
+            "value": "& | CRM, Digital, Marketing & Ops",
+            "place": "table, row \"13. Robert Half Executive Search\""
+          },
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "table_cell 86",
+            "value": "& | Startup & VC-backed Tech",
+            "place": "table, row \"14. Daversa Partners\""
+          },
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "table_cell 87",
+            "value": "& | U.S. & global tech hubs",
+            "place": "table, row \"14. Daversa Partners\""
+          },
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "table_cell 92",
+            "value": "& | Customer Experience & CRM",
+            "place": "table, row \"15. Blue Rock Search\""
+          },
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 2",
+            "value": "& | Read more: 10 Best Recruiting & Staffing Agencies in Boston i…"
+          },
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "heading 6",
+            "value": "& | 5. Heidrick & Struggles"
+          },
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "image 5",
+            "value": "& | Heidrick & Struggles"
+          },
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 15",
+            "value": "& | Heidrick & Struggles (H&S) is one of the…"
+          },
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 15",
+            "value": "& | Heidrick & Struggles (H&S) is one of the oldest and mo…"
+          },
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 17",
+            "value": "& | …ompanies as clients, Heidrick & Struggles has a long-standing…"
+          },
+          {
+            "zone_id": "article:top-15-crm-manager-executive-search-firms",
+            "part": "paragraph 33",
+            "value": "& | … a dedicated Marketing, Sales & Strategy practice, which freq…"
+          },
+          {
+            "zone_id": "article:how-to-choose-the-right-crm-executive-headhuntin",
+            "part": "heading 3",
+            "value": "& | 2. Review Testimonials & Case Studies"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "uk_spelling",
+        "status": "pass",
+        "value": "none",
+        "places": [],
+        "severity": "low"
+      }
+    ],
+    "llm": [
+      {
+        "id": "answer_first",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "If you’re scaling fast, you already know the pressure. You need a CRM manager executive search firm that can deliver leaders who won’t just “manage a system” but actually move the revenue needle.",
+        "note": "The opening describes the hiring pressure but does not answer the H1 by identifying the firms on the list.",
+        "fix": "Revise the first two sentences to directly introduce the CRM manager executive search firms listed in the article.",
+        "evidence_verified": true,
+        "title": "Opening does not answer the H1",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "f9e933c529ee5c5cab4491edced1809e7105f507b591889240cabf07f410cf52",
+        "fragment": "15-,CRM Manager Executive Search,-Firms"
+      },
+      {
+        "id": "recruiting_firm_early",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "You need a CRM manager executive search firm that can deliver leaders who won’t just “manage a system” but actually move the revenue needle.",
+        "note": "The first lines describe a type of firm but do not identify GoGloby as a recruiting firm.",
+        "fix": "State in the first lines that GoGloby is a recruiting firm.",
+        "evidence_verified": true,
+        "title": "Does not say early that GoGloby is a recruiting firm",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "8435d6ec12f740613f217198f42837cc904952d1947227e4b6b25d71381e5bb3",
+        "fragment": "15-,CRM Manager Executive Search,-Firms"
+      },
+      {
+        "id": "target_keyword",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "The Glossary §6 terms do not include a matching keyword for CRM executive search firms.",
+        "fix": null,
+        "evidence_verified": null,
+        "title": "No matching search term",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "f22813b139ecf2081fcfffe6418e0114e1ef3ead950cbfa57d3868d55f043cc6"
+      },
+      {
+        "id": "uses_data",
+        "answer": "yes",
+        "value": null,
+        "zone_id": "json_ld",
+        "evidence": "What does a CRM executive search firm do?",
+        "note": "The FAQPage structured data includes the same questions shown in the page FAQ.",
+        "fix": null,
+        "evidence_verified": true,
+        "title": "FAQ markup does not match the visible FAQ",
+        "severity": "high",
+        "needs_confirm": true,
+        "qhash": "a37b64caad3e53e62a9f984afd11a49b9cfed5f8c967788a973e62d794478444"
+      },
+      {
+        "id": "proof_background",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:faqs",
+        "evidence": "Sergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering.",
+        "note": "The article does not use the founders’ Data Science and engineering team-building background as proof.",
+        "fix": "Add the founders’ Data Science and engineering team-building background as proof in the article.",
+        "evidence_verified": true,
+        "title": "Link to the hire service has a vague text",
+        "severity": "low",
+        "needs_confirm": true,
+        "qhash": "4f0084b87c57d9519db9d6c535d4c9a15a4bb047a99a46343e3b6133efbae066",
+        "confirmed": true,
+        "fragment": "Sergey Matikaynen is Co-Founder and CTO"
+      },
+      {
+        "id": "sell_against_open_role",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "U.S. talent is scarce and expensive, contractors are risky, and internal teams are already maxed out.",
+        "note": "The article mentions scarce and expensive U.S. talent but does not compare GoGloby with the cost and wait of an open full-time U.S. role.",
+        "fix": "Add a comparison with the cost and hiring wait for an open full-time U.S. role.",
+        "evidence_verified": true,
+        "title": "No named author or date",
+        "severity": "medium",
+        "needs_confirm": true,
+        "qhash": "f104919d8460e2caf4649f1f0993a99293b7c5249fabfd4558be5b40b4683882",
+        "confirmed": true,
+        "fragment": "U.S. talent is scarce and expensive,"
+      }
+    ],
+    "placement": null,
+    "usage": {
+      "input": 14123,
+      "cached_input": 17524,
+      "output": 1793
+    },
+    "error": null
+  },
+  "seo": {
+    "checks": [
+      {
+        "id": "http_status",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "200",
+        "severity": "high"
+      },
+      {
+        "id": "title_length",
+        "status": "pass",
+        "zone_id": "title",
+        "value": "41 characters",
+        "severity": "medium"
+      },
+      {
+        "id": "meta_present",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "137 characters",
+        "severity": "high"
+      },
+      {
+        "id": "meta_length",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "137 characters (120-158)",
+        "severity": "low"
+      },
+      {
+        "id": "h1_count",
+        "status": "pass",
+        "zone_id": "h1",
+        "value": "1",
+        "severity": "high"
+      },
+      {
+        "id": "title_h1_match",
+        "status": "pass",
+        "zone_id": "title",
+        "value": "Title and H1 agree",
+        "severity": "low"
+      },
+      {
+        "id": "canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "https://gogloby.com/insights/crm-manager-executive-search-firms/",
+        "severity": "high"
+      },
+      {
+        "id": "indexable",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "severity": "high"
+      },
+      {
+        "id": "schema_required",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "present",
+        "severity": "medium"
+      },
+      {
+        "id": "schema_recommended",
+        "status": "fail",
+        "zone_id": "json_ld",
+        "value": "missing: BreadcrumbList",
+        "severity": "medium"
+      },
+      {
+        "id": "author",
+        "status": "pass",
+        "zone_id": "author",
+        "value": "Sergey Matikaynen",
+        "severity": "medium"
+      },
+      {
+        "id": "dates",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "published: 2026-03-05T16:35:50+03:00; modified: 2026-06-17T16:11:42+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "date_mismatch",
+        "status": "pass",
+        "zone_id": "date",
+        "value": "visible \"Updated on June 17, 2026\" vs dateModified 2026-06-17T16:11:42+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "broken_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "5 checked",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "redirecting_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "none",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "link_to_services",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "no link to /services/*",
+        "severity": "medium"
+      },
+      {
+        "id": "alt_missing",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without alt",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_empty",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 with empty alt",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "image_dimensions",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "2 without width/height",
+        "places": [
+          {
+            "zone_id": "author",
+            "part": "image 1",
+            "value": "1706550966241.jpeg"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "image 1",
+            "value": "1706550966241.jpeg"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "heading_order",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "og_present",
+        "status": "pass",
+        "zone_id": "og_title",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "og_url_canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "og:url https://gogloby.com/insights/crm-manager-executive-search-firms/ vs canonical https://gogloby.com/insights/crm-manager-executive-search-firms/",
+        "severity": "low"
+      },
+      {
+        "id": "twitter_card",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "summary_large_image",
+        "severity": "low"
+      },
+      {
+        "id": "html_lang",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "en-US",
+        "severity": "low"
+      },
+      {
+        "id": "viewport",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "jsonld_valid",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "4 block(s)",
+        "severity": "high"
+      },
+      {
+        "id": "article_fields",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "anchors_resolve",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "10 checked",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "faq_schema_matches_dom",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "accordion block: true, FAQPage schema: true",
+        "severity": "low"
+      }
+    ]
+  }
+}

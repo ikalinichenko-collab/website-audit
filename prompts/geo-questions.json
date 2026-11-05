@@ -9,6 +9,28 @@
     "locked": true
   },
   {
+    "id": "target_keyword",
+    "title": "No matching search term",
+    "question": "Which term from Glossary §6 best matches this page? Put it in value and answer yes, or answer na with value null if none fits. Trap terms from Glossary §8 are never the answer. Placement of the term is checked in code, not by you.",
+    "applies_to": [
+      "home",
+      "service",
+      "article"
+    ],
+    "locked": true
+  },
+  {
+    "id": "buyer_ready",
+    "title": "Not written for buyers ready to hire",
+    "question": "Is the page written for a company ready to hire Data and AI engineers (Glossary §9), not for job seekers, learners or audiences GoGloby does not target (Glossary §5)? Judge the audience only, not the positioning: a page aimed at engineering buyers with outdated positioning is still buyer_ready. In value write buyer_ready, informational or not_targeted. Use zone_id page.",
+    "applies_to": [
+      "home",
+      "service",
+      "company"
+    ],
+    "locked": true
+  },
+  {
     "id": "buyer_problem",
     "title": "Page does not open with a buyer problem",
     "question": "Does the page open with one of the three buyer problems from Glossary §1: finding an AI engineer with production experience takes too long; standard interviews cannot test real AI skills; after the hire there is no way to see an engineer's velocity, output quality or AI token efficiency? Slow engineering delivery or AI ROI in general is not one of them. Judge only what the page opens with, never facts.",
@@ -49,49 +71,43 @@
     "requires": "faq_present"
   },
   {
-    "id": "buyer_ready",
-    "title": "Not written for buyers ready to hire",
-    "question": "Is the page written for a company ready to hire Data and AI engineers (Glossary §9), not for job seekers, learners or audiences GoGloby does not target (Glossary §5)? Judge the audience only, not the positioning: a page aimed at engineering buyers with outdated positioning is still buyer_ready. In value write buyer_ready, informational or not_targeted. Use zone_id page.",
-    "applies_to": [
-      "home",
-      "service",
-      "company"
-    ],
-    "locked": true
-  },
-  {
-    "id": "target_keyword",
-    "title": "No matching search term",
-    "question": "Which term from Glossary §6 best matches this page? Put it in value and answer yes, or answer na with value null if none fits. Trap terms from Glossary §8 are never the answer. Placement of the term is checked in code, not by you.",
-    "applies_to": [
-      "home",
-      "service",
-      "article"
-    ],
-    "locked": true
-  },
-  {
     "id": "uses_data",
-    "title": "No quotable data",
-    "question": "Does the article give numbers an assistant can quote (salary ranges, counts, time-to-hire, shares) with the source or date near them (Glossary §9, Use data)?",
+    "title": "FAQ markup does not match the visible FAQ",
+    "question": "Does the FAQPage structured data (json_ld) contain the same questions as the FAQ shown on the page? Use the json_ld data you are given.",
     "applies_to": [
-      "article"
-    ]
+      "article",
+      "home",
+      "service"
+    ],
+    "severity": "high",
+    "needs": [
+      "json_ld"
+    ],
+    "confirm": true
   },
   {
     "id": "proof_background",
-    "title": "Does not use founders' background as proof",
+    "title": "Link to the hire service has a vague text",
     "question": "Does the article use GoGloby's background as proof: Data Science and engineering teams that the founders built and led (Glossary §9, Use our background as proof)? Answer na for case studies.",
     "applies_to": [
       "article"
-    ]
+    ],
+    "severity": "low",
+    "needs": [
+      "links"
+    ],
+    "confirm": true
   },
   {
     "id": "sell_against_open_role",
-    "title": "Does not compare with an open full-time role",
+    "title": "No named author or date",
     "question": "Does the article compare hiring through GoGloby with the cost and wait of an open full-time US role (Glossary §9, Sell against the open role)? Answer na for case studies.",
     "applies_to": [
       "article"
-    ]
+    ],
+    "needs": [
+      "author"
+    ],
+    "confirm": true
   }
 ]

@@ -1,0 +1,3244 @@
+{
+ "template": "block",
+ "zones": [
+  {
+   "id": "title",
+   "kind": "title",
+   "label": "Title",
+   "scope": "page",
+   "skipped": false,
+   "text": "AI Development Services | GoGloby",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "AI Development Services | GoGloby"
+    }
+   ]
+  },
+  {
+   "id": "meta_description",
+   "kind": "meta_description",
+   "label": "Meta description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Get AI development services with a Claude Certified Architect, secure Claude workflows, and sprint-level ROI proof to ship production AI safely.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Get AI development services with a Claude Certified Architect, secure Claude workflows, and sprint-level ROI proof to ship production AI safely."
+    }
+   ]
+  },
+  {
+   "id": "og_title",
+   "kind": "og_title",
+   "label": "og:title",
+   "scope": "page",
+   "skipped": false,
+   "text": "AI Development Services | GoGloby",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "AI Development Services | GoGloby"
+    }
+   ]
+  },
+  {
+   "id": "og_description",
+   "kind": "og_description",
+   "label": "og:description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Get AI development services with a Claude Certified Architect, secure Claude workflows, and sprint-level ROI proof to ship production AI safely.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Get AI development services with a Claude Certified Architect, secure Claude workflows, and sprint-level ROI proof to ship production AI safely."
+    }
+   ]
+  },
+  {
+   "id": "json_ld",
+   "kind": "json_ld",
+   "label": "Structured data (JSON-LD)",
+   "scope": "page",
+   "skipped": false,
+   "text": "Who offers AI development services for established tech companies?\nAI development services come from AI engineering firms, software companies, consultants, and talent partners. Quality varies a lot. Established teams need production engineering, secure Claude workflows, and measurable delivery, not slideware. GoGloby is built for that: an embedded Claude Certified Architect, governed delivery, and ROI you can show the board.\nWhere can I find AI development services for secure enterprise projects?\nLook for production engineering experience, governed Claude workflows, strong cloud integration, real governance, and measurable delivery. GoGloby is built for teams with source code, IP, PHI, or other sensitive data on the line. The team runs on Claude Enterprise. The codebase stays in your own cloud.\nHow do I hire AI application development services?\nStart by defining the use case, target users, data sources, existing systems, security limits, and the outcome you expect. Then ask each provider about architecture, engagement model, AI governance, telemetry, and deployment. The answers separate a real engineering partner from a vendor just selling hours.\nWhat are some good AI development services to start with?\nGood starting points include internal knowledge assistants, engineering assistants, support automation, document intelligence, RAG systems, AI product features, and agentic workflows for repetitive tasks. The best first pick has clear business value, data that is ready, and risk you can contain. Not the flashiest idea in the room.\nWhat is the difference between AI development and generative AI development?\nAI development is the broader term. It can include ML, prediction, automation, NLP, computer vision, AI applications, and agentic workflows. Generative AI development is the subset focused on systems that create, summarize, retrieve, converse, or assist using LLMs and related models. Most real production systems combine both rather than choosing one.",
+   "parts": [
+    {
+     "type": "field",
+     "text": "Who offers AI development services for established tech companies?",
+     "area": "Question.name",
+     "index": 1
+    },
+    {
+     "type": "field",
+     "text": "AI development services come from AI engineering firms, software companies, consultants, and talent partners. Quality varies a lot. Established teams need production engineering, secure Claude workflows, and measurable delivery, not slideware. GoGloby is built for that: an embedded Claude Certified Architect, governed delivery, and ROI you can show the board.",
+     "area": "Answer.text",
+     "index": 2
+    },
+    {
+     "type": "field",
+     "text": "Where can I find AI development services for secure enterprise projects?",
+     "area": "Question.name",
+     "index": 3
+    },
+    {
+     "type": "field",
+     "text": "Look for production engineering experience, governed Claude workflows, strong cloud integration, real governance, and measurable delivery. GoGloby is built for teams with source code, IP, PHI, or other sensitive data on the line. The team runs on Claude Enterprise. The codebase stays in your own cloud.",
+     "area": "Answer.text",
+     "index": 4
+    },
+    {
+     "type": "field",
+     "text": "How do I hire AI application development services?",
+     "area": "Question.name",
+     "index": 5
+    },
+    {
+     "type": "field",
+     "text": "Start by defining the use case, target users, data sources, existing systems, security limits, and the outcome you expect. Then ask each provider about architecture, engagement model, AI governance, telemetry, and deployment. The answers separate a real engineering partner from a vendor just selling hours.",
+     "area": "Answer.text",
+     "index": 6
+    },
+    {
+     "type": "field",
+     "text": "What are some good AI development services to start with?",
+     "area": "Question.name",
+     "index": 7
+    },
+    {
+     "type": "field",
+     "text": "Good starting points include internal knowledge assistants, engineering assistants, support automation, document intelligence, RAG systems, AI product features, and agentic workflows for repetitive tasks. The best first pick has clear business value, data that is ready, and risk you can contain. Not the flashiest idea in the room.",
+     "area": "Answer.text",
+     "index": 8
+    },
+    {
+     "type": "field",
+     "text": "What is the difference between AI development and generative AI development?",
+     "area": "Question.name",
+     "index": 9
+    },
+    {
+     "type": "field",
+     "text": "AI development is the broader term. It can include ML, prediction, automation, NLP, computer vision, AI applications, and agentic workflows. Generative AI development is the subset focused on systems that create, summarize, retrieve, converse, or assist using LLMs and related models. Most real production systems combine both rather than choosing one.",
+     "area": "Answer.text",
+     "index": 10
+    }
+   ]
+  },
+  {
+   "id": "h1",
+   "kind": "h1",
+   "label": "H1",
+   "scope": "page",
+   "skipped": false,
+   "text": "AI Development Services",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "AI Development Services"
+    }
+   ]
+  },
+  {
+   "id": "block:hero-services#1",
+   "kind": "block",
+   "label": "Hero services: AI Development Services",
+   "scope": "page",
+   "skipped": false,
+   "text": "Background\nBackground\nBackground\nBackground\nBenchmark First, Then Forward-Deployed Delivery\nAI Development Services\nGoGloby helps established software companies build it safely. We place a Claude Certified Architect inside your team. We run delivery on the Agentic SDLC. The work stays inside Claude Enterprise and your own cloud. And leadership sees the impact through the AI Intelligence Layer, sprint by sprint.\nWe build:\nAI products and features\nAutonomous agents\nInternal assistants and chatbots\nRAG systems\nMachine learning models\nEverything is designed to run inside your existing stack, cloud environment, and security requirements.\nSchedule a Technical Briefing\nBuilt for established software companies in industrial and operational software, FinTech and payments, and vertical B2B SaaS.\nAnthropic\nNvidia\nAugment Code\nSnowflake\nCursor\nGemini\nAnthropic\nNvidia\nAugment Code\nSnowflake\nCursor\nGemini",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/blocks/block-bg-1-01.png",
+     "file": "block-bg-1-01.png",
+     "alt": "Background",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "Background",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/blocks/block-bg-2-01.png",
+     "file": "block-bg-2-01.png",
+     "alt": "Background",
+     "alt_state": "text",
+     "dims": false,
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "Background",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/blocks/block-bg-3-01.png",
+     "file": "block-bg-3-01.png",
+     "alt": "Background",
+     "alt_state": "text",
+     "dims": false,
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "Background",
+     "src": "https://gogloby.com/wp-content/uploads/2026/07/33-1.png",
+     "file": "33-1.png",
+     "alt": "Background",
+     "alt_state": "text",
+     "dims": true,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Benchmark First, Then Forward-Deployed Delivery",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "AI Development Services",
+     "area": "block-main",
+     "level": 1,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby helps established software companies build it safely. We place a Claude Certified Architect inside your team. We run delivery on the Agentic SDLC. The work stays inside Claude Enterprise and your own cloud. And leadership sees the impact through the AI Intelligence Layer, sprint by sprint.",
+     "area": "block-main",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "We build:",
+     "area": "block-main",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "AI products and features",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Autonomous agents",
+     "area": "block-main",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Internal assistants and chatbots",
+     "area": "block-main",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "RAG systems",
+     "area": "block-main",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Machine learning models",
+     "area": "block-main",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Everything is designed to run inside your existing stack, cloud environment, and security requirements.",
+     "area": "block-main",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Schedule a Technical Briefing",
+     "area": "block-main",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Built for established software companies in industrial and operational software, FinTech and payments, and vertical B2B SaaS.",
+     "area": "block-main",
+     "index": 6
+    },
+    {
+     "type": "image",
+     "text": "Anthropic",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-anthropic-1-grayscale.png",
+     "file": "logo-anthropic-1-grayscale.png",
+     "alt": "Anthropic",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "Nvidia",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-nvidia-1-grayscale.png",
+     "file": "logo-nvidia-1-grayscale.png",
+     "alt": "Nvidia",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 6
+    },
+    {
+     "type": "image",
+     "text": "Augment Code",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-augment-code-1-grayscale.png",
+     "file": "logo-augment-code-1-grayscale.png",
+     "alt": "Augment Code",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 7
+    },
+    {
+     "type": "image",
+     "text": "Snowflake",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-snowflake-1-grayscale.png",
+     "file": "logo-snowflake-1-grayscale.png",
+     "alt": "Snowflake",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 8
+    },
+    {
+     "type": "image",
+     "text": "Cursor",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-cursor-1-grayscale.png",
+     "file": "logo-cursor-1-grayscale.png",
+     "alt": "Cursor",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 9
+    },
+    {
+     "type": "image",
+     "text": "Gemini",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-gemini-1-grayscale.png",
+     "file": "logo-gemini-1-grayscale.png",
+     "alt": "Gemini",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 10
+    },
+    {
+     "type": "image",
+     "text": "Anthropic",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-anthropic-1-grayscale.png",
+     "file": "logo-anthropic-1-grayscale.png",
+     "alt": "Anthropic",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 11
+    },
+    {
+     "type": "image",
+     "text": "Nvidia",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-nvidia-1-grayscale.png",
+     "file": "logo-nvidia-1-grayscale.png",
+     "alt": "Nvidia",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 12
+    },
+    {
+     "type": "image",
+     "text": "Augment Code",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-augment-code-1-grayscale.png",
+     "file": "logo-augment-code-1-grayscale.png",
+     "alt": "Augment Code",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 13
+    },
+    {
+     "type": "image",
+     "text": "Snowflake",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-snowflake-1-grayscale.png",
+     "file": "logo-snowflake-1-grayscale.png",
+     "alt": "Snowflake",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 14
+    },
+    {
+     "type": "image",
+     "text": "Cursor",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-cursor-1-grayscale.png",
+     "file": "logo-cursor-1-grayscale.png",
+     "alt": "Cursor",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 15
+    },
+    {
+     "type": "image",
+     "text": "Gemini",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-gemini-1-grayscale.png",
+     "file": "logo-gemini-1-grayscale.png",
+     "alt": "Gemini",
+     "alt_state": "text",
+     "dims": true,
+     "area": "block-footer",
+     "index": 16
+    }
+   ]
+  },
+  {
+   "id": "block:company#1",
+   "kind": "block",
+   "label": "Company: What Are AI Development Services?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are AI Development Services?\nAI development services build AI-powered software for real business use. The work covers design, integration, deployment, and governance. It includes generative AI apps, AI agents, custom chatbots, and RAG systems. It also includes ML models, internal assistants, workflow automation, and AI features inside the products you already run.\nThe model is the easy part. The real value is everything around it: architecture, data access, permissions, and evaluation. Beyond that, successful AI delivery requires security, testing, monitoring, and proof that the work moved a business metric. GoGloby treats AI development as production engineering, held to your standards. We work in order: safe to change first, then fast.\nNot Just Model Building\nPicking a model or calling an API is the easy part. A production system requires far more than a model, combining architecture, data access, permissions, evaluation, and UX with cloud deployment, monitoring, human review, and release management to operate reliably at scale.\nMost AI demos look great until they meet real users, sensitive data, or an old codebase. That moment is what GoGloby builds for.\nBuilt for Real Engineering Teams\nGoGloby builds AI that fits your stack, sprint process, cloud, security rules, and delivery rhythm. It is not a separate tool off to one side. The payoff is one your team feels and your telemetry can show. That means more work shipped safely, less rework, and stronger test coverage. You read the AI ROI in real engineering signals.\nWhen You Need AI Development Services\nYou need AI development services in a few cases. Generic tools cannot match your data, workflows, or compliance rules. Or internal pilots keep stalling before production as the same set of challenges begins to compound: leadership pushes for AI adoption, security or legal teams block public tools, shadow AI spreads across the organization, and the backlog continues to grow. And senior AI hiring runs 3 to 6 months.\nWhat GoGloby Adds\nGoGloby turns AI development from model-building into a full delivery system. You get a Claude Certified Architect, secure Claude workflows, and the Agentic SDLC along with a governed setup in your own cloud, integrations, deployment, monitoring, and the Layer. The point is software that ships inside real products your teams and customers use. Not another round of trials and prototypes that die in a sandbox.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are AI Development Services?",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI development services build AI-powered software for real business use. The work covers design, integration, deployment, and governance. It includes generative AI apps, AI agents, custom chatbots, and RAG systems. It also includes ML models, internal assistants, workflow automation, and AI features inside the products you already run.",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The model is the easy part. The real value is everything around it: architecture, data access, permissions, and evaluation. Beyond that, successful AI delivery requires security, testing, monitoring, and proof that the work moved a business metric. GoGloby treats AI development as production engineering, held to your standards. We work in order: safe to change first, then fast.",
+     "area": "block-header",
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/07/company-icon-13-01.png",
+     "file": "company-icon-13-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Not Just Model Building",
+     "area": "block-main",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Picking a model or calling an API is the easy part. A production system requires far more than a model, combining architecture, data access, permissions, evaluation, and UX with cloud deployment, monitoring, human review, and release management to operate reliably at scale.",
+     "area": "block-main",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Most AI demos look great until they meet real users, sensitive data, or an old codebase. That moment is what GoGloby builds for.",
+     "area": "block-main",
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/07/company-icon-14-03.png",
+     "file": "company-icon-14-03.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-main",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Built for Real Engineering Teams",
+     "area": "block-main",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby builds AI that fits your stack, sprint process, cloud, security rules, and delivery rhythm. It is not a separate tool off to one side. The payoff is one your team feels and your telemetry can show. That means more work shipped safely, less rework, and stronger test coverage. You read the AI ROI in real engineering signals.",
+     "area": "block-main",
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/07/company-icon-15-01.png",
+     "file": "company-icon-15-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-main",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "When You Need AI Development Services",
+     "area": "block-main",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "You need AI development services in a few cases. Generic tools cannot match your data, workflows, or compliance rules. Or internal pilots keep stalling before production as the same set of challenges begins to compound: leadership pushes for AI adoption, security or legal teams block public tools, shadow AI spreads across the organization, and the backlog continues to grow. And senior AI hiring runs 3 to 6 months.",
+     "area": "block-main",
+     "index": 6
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/07/company-icon-16-01.png",
+     "file": "company-icon-16-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-main",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "What GoGloby Adds",
+     "area": "block-main",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby turns AI development from model-building into a full delivery system. You get a Claude Certified Architect, secure Claude workflows, and the Agentic SDLC along with a governed setup in your own cloud, integrations, deployment, monitoring, and the Layer. The point is software that ships inside real products your teams and customers use. Not another round of trials and prototypes that die in a sandbox.",
+     "area": "block-main",
+     "index": 7
+    }
+   ]
+  },
+  {
+   "id": "block:scope#1",
+   "kind": "block",
+   "label": "Scope: The AI Development Services GoGloby Delivers",
+   "scope": "page",
+   "skipped": false,
+   "text": "What GoGloby Delivers\nThe AI Development Services GoGloby Delivers\nGoGloby covers the full AI development lifecycle. It is wrapped in secure engineering delivery. Each service below ties AI to your product, codebase, data, workflows, and rules from the first sprint. The team works in Claude Enterprise, while the codebase stays in your own cloud.\nA\nAI Software Development Services\nOutcome:\nAI-enabled features, internal tools, automation layers, and workflow systems built into your product.\nBest for:\nTeams that want AI dashboards, developer knowledge tools, document intelligence, internal assistants, decision-support systems, or AI-assisted product workflows.\nDeliverables:\nA build that fits your cloud, CI/CD, data access, user permissions, and production load. It ships through your normal pipeline and stays maintainable, not a bolt-on nobody owns.\nG\nGenerative AI Development Services\nOutcome:\nGenerative AI that summarizes, classifies, generates, retrieves, and assists across business workflows.\nBest for:\nTeams that need RAG assistants, private Claude workflows, knowledge retrieval, support assistants, content operations, or developer tooling.\nDeliverables:\nSecure data access, retrieval quality, prompt governance, evaluation, and monitoring. Without those layers you get confident answers that are quietly wrong, which on regulated data is worse than no answer.\nA\nAI Agent Development Services\nOutcome:\nAI agents that complete multi-step work under clear rules. An agent can read context, call tools, check a system, draft output, update a record, and pause for human approval before anything irreversible.\nBest for:\nWorkflows across engineering, operations, and support that need action without free run of your stack.\nDeliverables:\nPermissions, audit logs, fallback paths, review gates, and bounded actions, designed in from the start. So the agent is useful and cannot wander into systems it was never meant to touch.\nA\nAI Chatbot Development Services\nOutcome:\nCustom AI chatbots for customer support, employee support, sales enablement, internal knowledge, and regulated workflows.\nBest for:\nTeams wiring chat into CRM, EHR, helpdesk, ticketing, and internal admin tools.\nDeliverables:\nA chatbot that retrieves approved context, checks identity, escalates hard cases, tracks answer quality, and logs what it did. That is the line between a real assistant and a liability pointed at your customers.\nA\nAI Application Development Services\nOutcome:\nProduction-grade AI applications for web, mobile, and internal product workflows.\nBest for:\nTeams that need UX, backend, APIs, model routing, authentication, permission layers, cloud deployment, monitoring, and cost control.\nDeliverables:\nAn app your users can rely on every day, built to handle real load beyond the clean demo dataset, with release management and cost discipline that keep it stable as traffic grows.\nA\nAI and ML Development Services\nOutcome:\nPredictive and ML systems for forecasting, classification, anomaly detection, recommendations, NLP, and computer vision, sized to the problem in front of you.\nBest for:\nTeams with a clear, measurable prediction or classification problem, not a roadmap that may never arrive.\nDeliverables:\nClean data, measurable outcomes, feedback loops, and post-launch monitoring. An ML model nobody watches drifts and quietly makes worse calls every week.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "What GoGloby Delivers",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "The AI Development Services GoGloby Delivers",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby covers the full AI development lifecycle. It is wrapped in secure engineering delivery. Each service below ties AI to your product, codebase, data, workflows, and rules from the first sprint. The team works in Claude Enterprise, while the codebase stays in your own cloud.",
+     "area": "block-header",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "A",
+     "area": "slide 1",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "AI Software Development Services",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Outcome:",
+     "area": "slide 1",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "AI-enabled features, internal tools, automation layers, and workflow systems built into your product.",
+     "area": "slide 1",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Best for:",
+     "area": "slide 1",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Teams that want AI dashboards, developer knowledge tools, document intelligence, internal assistants, decision-support systems, or AI-assisted product workflows.",
+     "area": "slide 1",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Deliverables:",
+     "area": "slide 1",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "A build that fits your cloud, CI/CD, data access, user permissions, and production load. It ships through your normal pipeline and stays maintainable, not a bolt-on nobody owns.",
+     "area": "slide 1",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "G",
+     "area": "slide 2",
+     "index": 10
+    },
+    {
+     "type": "heading",
+     "text": "Generative AI Development Services",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Outcome:",
+     "area": "slide 2",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "Generative AI that summarizes, classifies, generates, retrieves, and assists across business workflows.",
+     "area": "slide 2",
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "Best for:",
+     "area": "slide 2",
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Teams that need RAG assistants, private Claude workflows, knowledge retrieval, support assistants, content operations, or developer tooling.",
+     "area": "slide 2",
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Deliverables:",
+     "area": "slide 2",
+     "index": 15
+    },
+    {
+     "type": "paragraph",
+     "text": "Secure data access, retrieval quality, prompt governance, evaluation, and monitoring. Without those layers you get confident answers that are quietly wrong, which on regulated data is worse than no answer.",
+     "area": "slide 2",
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "A",
+     "area": "slide 3",
+     "index": 17
+    },
+    {
+     "type": "heading",
+     "text": "AI Agent Development Services",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Outcome:",
+     "area": "slide 3",
+     "index": 18
+    },
+    {
+     "type": "paragraph",
+     "text": "AI agents that complete multi-step work under clear rules. An agent can read context, call tools, check a system, draft output, update a record, and pause for human approval before anything irreversible.",
+     "area": "slide 3",
+     "index": 19
+    },
+    {
+     "type": "paragraph",
+     "text": "Best for:",
+     "area": "slide 3",
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "Workflows across engineering, operations, and support that need action without free run of your stack.",
+     "area": "slide 3",
+     "index": 21
+    },
+    {
+     "type": "paragraph",
+     "text": "Deliverables:",
+     "area": "slide 3",
+     "index": 22
+    },
+    {
+     "type": "paragraph",
+     "text": "Permissions, audit logs, fallback paths, review gates, and bounded actions, designed in from the start. So the agent is useful and cannot wander into systems it was never meant to touch.",
+     "area": "slide 3",
+     "index": 23
+    },
+    {
+     "type": "paragraph",
+     "text": "A",
+     "area": "slide 4",
+     "index": 24
+    },
+    {
+     "type": "heading",
+     "text": "AI Chatbot Development Services",
+     "area": "slide 4",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Outcome:",
+     "area": "slide 4",
+     "index": 25
+    },
+    {
+     "type": "paragraph",
+     "text": "Custom AI chatbots for customer support, employee support, sales enablement, internal knowledge, and regulated workflows.",
+     "area": "slide 4",
+     "index": 26
+    },
+    {
+     "type": "paragraph",
+     "text": "Best for:",
+     "area": "slide 4",
+     "index": 27
+    },
+    {
+     "type": "paragraph",
+     "text": "Teams wiring chat into CRM, EHR, helpdesk, ticketing, and internal admin tools.",
+     "area": "slide 4",
+     "index": 28
+    },
+    {
+     "type": "paragraph",
+     "text": "Deliverables:",
+     "area": "slide 4",
+     "index": 29
+    },
+    {
+     "type": "paragraph",
+     "text": "A chatbot that retrieves approved context, checks identity, escalates hard cases, tracks answer quality, and logs what it did. That is the line between a real assistant and a liability pointed at your customers.",
+     "area": "slide 4",
+     "index": 30
+    },
+    {
+     "type": "paragraph",
+     "text": "A",
+     "area": "slide 5",
+     "index": 31
+    },
+    {
+     "type": "heading",
+     "text": "AI Application Development Services",
+     "area": "slide 5",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Outcome:",
+     "area": "slide 5",
+     "index": 32
+    },
+    {
+     "type": "paragraph",
+     "text": "Production-grade AI applications for web, mobile, and internal product workflows.",
+     "area": "slide 5",
+     "index": 33
+    },
+    {
+     "type": "paragraph",
+     "text": "Best for:",
+     "area": "slide 5",
+     "index": 34
+    },
+    {
+     "type": "paragraph",
+     "text": "Teams that need UX, backend, APIs, model routing, authentication, permission layers, cloud deployment, monitoring, and cost control.",
+     "area": "slide 5",
+     "index": 35
+    },
+    {
+     "type": "paragraph",
+     "text": "Deliverables:",
+     "area": "slide 5",
+     "index": 36
+    },
+    {
+     "type": "paragraph",
+     "text": "An app your users can rely on every day, built to handle real load beyond the clean demo dataset, with release management and cost discipline that keep it stable as traffic grows.",
+     "area": "slide 5",
+     "index": 37
+    },
+    {
+     "type": "paragraph",
+     "text": "A",
+     "area": "slide 6",
+     "index": 38
+    },
+    {
+     "type": "heading",
+     "text": "AI and ML Development Services",
+     "area": "slide 6",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Outcome:",
+     "area": "slide 6",
+     "index": 39
+    },
+    {
+     "type": "paragraph",
+     "text": "Predictive and ML systems for forecasting, classification, anomaly detection, recommendations, NLP, and computer vision, sized to the problem in front of you.",
+     "area": "slide 6",
+     "index": 40
+    },
+    {
+     "type": "paragraph",
+     "text": "Best for:",
+     "area": "slide 6",
+     "index": 41
+    },
+    {
+     "type": "paragraph",
+     "text": "Teams with a clear, measurable prediction or classification problem, not a roadmap that may never arrive.",
+     "area": "slide 6",
+     "index": 42
+    },
+    {
+     "type": "paragraph",
+     "text": "Deliverables:",
+     "area": "slide 6",
+     "index": 43
+    },
+    {
+     "type": "paragraph",
+     "text": "Clean data, measurable outcomes, feedback loops, and post-launch monitoring. An ML model nobody watches drifts and quietly makes worse calls every week.",
+     "area": "slide 6",
+     "index": 44
+    }
+   ]
+  },
+  {
+   "id": "block:layers#1",
+   "kind": "block",
+   "label": "Layers: Why GoGloby Is Different",
+   "scope": "page",
+   "skipped": false,
+   "text": "Why GoGloby Is Different\nPlenty of AI development companies sell a strategy deck or a block of hours. GoGloby is different. We are an Applied AI Engineering partner. We forward-deploy a Claude Certified Architect who turns your engineering into AI-native production with proven ROI. They arrive with the Agentic SDLC, code that never leaves your environment, and the Layer, set up from day one.\n1. Talent\nClaude Certified Architect\nGoGloby forward-deploys a senior Claude Certified Architect who already runs Claude in production. Only about 4% of our curated outbound pipeline clears the multi-layer assessment. The Architect writes the spec first. They review AI output with a senior eye. They read large codebases, raise test quality, and prove the credential on your own codebase.\nDelivers\nAn Architect who writes the spec first, validates every AI suggestion, and brings senior judgment to each line of AI output.\nPrevents\nA 3-to-6-month search for senior AI talent. And standards slipping the moment speed is the only goal.\nGives you\nProduction AI capability inside your team, contributing in the first sprint rather than the first quarter.\n2. Security\nCode Never Leaves Your Environment\nPublic AI tools are risky. Source code, prompts, internal docs, PHI, PII, and customer data sit one careless paste from exposure. GoGloby runs the team on Claude Enterprise. It is governed and never used for training. Anything touching the codebase runs on Claude in your own cloud. Prompts, code, datasets, embeddings, and logs stay governed.\nDelivers\nA governed setup: Claude Enterprise for the team plus Claude on AWS, Amazon Bedrock, or Google Cloud Vertex AI for the codebase.\nPrevents\nSource code, PHI, customer data, and IP leaking out through public tools nobody is tracking.\nGives you\nAI speed inside boundaries you define, with shadow AI pulled back under control.\n3. Workflow\nAgentic SDLC\nThe Agentic SDLC turns freeform AI use into a governed process. Specs come first. AI output gets reviewed. Agents run inside set workflows. Pull requests, tests, architecture decisions, and releases stay under engineering control, not in private experiments.\nDelivers\nClaude applied across the lifecycle: coding, test generation, documentation, review support, debugging, and backlog acceleration.\nPrevents\nUngoverned AI use where pull requests, tests, and releases slip past review and straight into main.\nGives you\nFaster delivery with the review discipline, visibility, and audit trail still fully intact.\n4. Proof\nThe Layer\nLeadership needs proof, not a feeling. The Layer measures Claude-driven impact from real signals. It reads metadata only. It never reaches into your code or repositories.\nDelivers\nConcrete signals: PR cycle time, sprint velocity, test coverage, bug density, AI-assisted output, rework rate, and team adoption.\nPrevents\nProductivity claims with nothing behind them, and an AI story that falls apart in the boardroom.\nGives you\nImpact in numbers your CTO, CFO, and board can act on.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Why GoGloby Is Different",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Plenty of AI development companies sell a strategy deck or a block of hours. GoGloby is different. We are an Applied AI Engineering partner. We forward-deploy a Claude Certified Architect who turns your engineering into AI-native production with proven ROI. They arrive with the Agentic SDLC, code that never leaves your environment, and the Layer, set up from day one.",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "1. Talent",
+     "area": "slide 1",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Claude Certified Architect",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby forward-deploys a senior Claude Certified Architect who already runs Claude in production. Only about 4% of our curated outbound pipeline clears the multi-layer assessment. The Architect writes the spec first. They review AI output with a senior eye. They read large codebases, raise test quality, and prove the credential on your own codebase.",
+     "area": "slide 1",
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/layers-icon-1-01.png",
+     "file": "layers-icon-1-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Delivers",
+     "area": "slide 1",
+     "level": 4,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "An Architect who writes the spec first, validates every AI suggestion, and brings senior judgment to each line of AI output.",
+     "area": "slide 1",
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/layers-icon-2-01.png",
+     "file": "layers-icon-2-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 1",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Prevents",
+     "area": "slide 1",
+     "level": 4,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "A 3-to-6-month search for senior AI talent. And standards slipping the moment speed is the only goal.",
+     "area": "slide 1",
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/07/layers-icon-18-01.png",
+     "file": "layers-icon-18-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 1",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Gives you",
+     "area": "slide 1",
+     "level": 4,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Production AI capability inside your team, contributing in the first sprint rather than the first quarter.",
+     "area": "slide 1",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "2. Security",
+     "area": "slide 2",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "Code Never Leaves Your Environment",
+     "area": "slide 2",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Public AI tools are risky. Source code, prompts, internal docs, PHI, PII, and customer data sit one careless paste from exposure. GoGloby runs the team on Claude Enterprise. It is governed and never used for training. Anything touching the codebase runs on Claude in your own cloud. Prompts, code, datasets, embeddings, and logs stay governed.",
+     "area": "slide 2",
+     "index": 8
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/layers-icon-4-04.png",
+     "file": "layers-icon-4-04.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 2",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Delivers",
+     "area": "slide 2",
+     "level": 4,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "A governed setup: Claude Enterprise for the team plus Claude on AWS, Amazon Bedrock, or Google Cloud Vertex AI for the codebase.",
+     "area": "slide 2",
+     "index": 9
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/07/layers-icon-20-01.png",
+     "file": "layers-icon-20-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 2",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Prevents",
+     "area": "slide 2",
+     "level": 4,
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Source code, PHI, customer data, and IP leaking out through public tools nobody is tracking.",
+     "area": "slide 2",
+     "index": 10
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/layers-icon-6-01.png",
+     "file": "layers-icon-6-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 2",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Gives you",
+     "area": "slide 2",
+     "level": 4,
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "AI speed inside boundaries you define, with shadow AI pulled back under control.",
+     "area": "slide 2",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "3. Workflow",
+     "area": "slide 3",
+     "index": 12
+    },
+    {
+     "type": "heading",
+     "text": "Agentic SDLC",
+     "area": "slide 3",
+     "level": 3,
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "The Agentic SDLC turns freeform AI use into a governed process. Specs come first. AI output gets reviewed. Agents run inside set workflows. Pull requests, tests, architecture decisions, and releases stay under engineering control, not in private experiments.",
+     "area": "slide 3",
+     "index": 13
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/layers-icon-7-01.png",
+     "file": "layers-icon-7-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 3",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "Delivers",
+     "area": "slide 3",
+     "level": 4,
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "Claude applied across the lifecycle: coding, test generation, documentation, review support, debugging, and backlog acceleration.",
+     "area": "slide 3",
+     "index": 14
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/07/layers-icon-19-01.png",
+     "file": "layers-icon-19-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 3",
+     "index": 8
+    },
+    {
+     "type": "heading",
+     "text": "Prevents",
+     "area": "slide 3",
+     "level": 4,
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "Ungoverned AI use where pull requests, tests, and releases slip past review and straight into main.",
+     "area": "slide 3",
+     "index": 15
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/layers-icon-9-03.png",
+     "file": "layers-icon-9-03.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 3",
+     "index": 9
+    },
+    {
+     "type": "heading",
+     "text": "Gives you",
+     "area": "slide 3",
+     "level": 4,
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Faster delivery with the review discipline, visibility, and audit trail still fully intact.",
+     "area": "slide 3",
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "4. Proof",
+     "area": "slide 4",
+     "index": 17
+    },
+    {
+     "type": "heading",
+     "text": "The Layer",
+     "area": "slide 4",
+     "level": 3,
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Leadership needs proof, not a feeling. The Layer measures Claude-driven impact from real signals. It reads metadata only. It never reaches into your code or repositories.",
+     "area": "slide 4",
+     "index": 18
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/layers-icon-10-01.png",
+     "file": "layers-icon-10-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 4",
+     "index": 10
+    },
+    {
+     "type": "heading",
+     "text": "Delivers",
+     "area": "slide 4",
+     "level": 4,
+     "index": 15
+    },
+    {
+     "type": "paragraph",
+     "text": "Concrete signals: PR cycle time, sprint velocity, test coverage, bug density, AI-assisted output, rework rate, and team adoption.",
+     "area": "slide 4",
+     "index": 19
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/layers-icon-11-01.png",
+     "file": "layers-icon-11-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 4",
+     "index": 11
+    },
+    {
+     "type": "heading",
+     "text": "Prevents",
+     "area": "slide 4",
+     "level": 4,
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "Productivity claims with nothing behind them, and an AI story that falls apart in the boardroom.",
+     "area": "slide 4",
+     "index": 20
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/layers-icon-12-01.png",
+     "file": "layers-icon-12-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "slide 4",
+     "index": 12
+    },
+    {
+     "type": "heading",
+     "text": "Gives you",
+     "area": "slide 4",
+     "level": 4,
+     "index": 17
+    },
+    {
+     "type": "paragraph",
+     "text": "Impact in numbers your CTO, CFO, and board can act on.",
+     "area": "slide 4",
+     "index": 21
+    }
+   ]
+  },
+  {
+   "id": "block:how-we-work#1",
+   "kind": "block",
+   "label": "How we work: The Architect, Forward-Deployed Into Your Team",
+   "scope": "page",
+   "skipped": false,
+   "text": "THE ARCHITECT, FORWARD-DEPLOYED\nThe Architect, Forward-Deployed Into Your Team\nGoGloby does not run AI development as a project held at arm’s length. We forward-deploy an Architect into your team on a flat monthly fee per engineer: a Claude Certified Architect where your team has standardized on Claude, an AI Solutions Architect where your stack spans models. They work as part of your org, not a vendor across a ticket queue.\nAt the core is the Architect. 3 things ride along: the Agentic SDLC, code that never leaves your environment, and the Layer. You get capacity, execution, security, and proof in one engagement. You scale up or down as it grows.\nEmbedded Inside Your Engineering Workflow\nFrom the first technical briefing, the Architect joins your sprint rituals, Slack, Jira, GitHub, and code review. Discovery, matching, onboarding, and access setup run in parallel, not in a long queue. That means a far faster start than a 3-to-6-month senior AI hire.\nFlat Monthly Fee Per Engineer\nA flat monthly fee per engineer, with engineers added or removed monthly. No hourly billing, no minimum term. Every engagement starts with an Architect who deploys and runs the Layer, sets up the Agentic SDLC, and ships features hands-on.\nOne System Built to Deliver Claude in Production\nThe Architect, the Agentic SDLC, code that never leaves your environment, and the Layer arrive together. Bought piecemeal, those pieces rarely connect. Delivered as one system, they cut risk and show value early.\n120-Day Performance Guarantee\nIf a forward-deployed Architect drops below the agreed baseline for 2 sprints in a row, GoGloby replaces them at no cost. The guarantee is in the contract. That keeps the hiring risk off your side.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "THE ARCHITECT, FORWARD-DEPLOYED",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "The Architect, Forward-Deployed Into Your Team",
+     "area": "block-main",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby does not run AI development as a project held at arm’s length. We forward-deploy an Architect into your team on a flat monthly fee per engineer: a Claude Certified Architect where your team has standardized on Claude, an AI Solutions Architect where your stack spans models. They work as part of your org, not a vendor across a ticket queue.",
+     "area": "block-main",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "At the core is the Architect. 3 things ride along: the Agentic SDLC, code that never leaves your environment, and the Layer. You get capacity, execution, security, and proof in one engagement. You scale up or down as it grows.",
+     "area": "block-main",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Embedded Inside Your Engineering Workflow",
+     "area": "block-table",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "From the first technical briefing, the Architect joins your sprint rituals, Slack, Jira, GitHub, and code review. Discovery, matching, onboarding, and access setup run in parallel, not in a long queue. That means a far faster start than a 3-to-6-month senior AI hire.",
+     "area": "block-table",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Flat Monthly Fee Per Engineer",
+     "area": "block-table",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "A flat monthly fee per engineer, with engineers added or removed monthly. No hourly billing, no minimum term. Every engagement starts with an Architect who deploys and runs the Layer, sets up the Agentic SDLC, and ships features hands-on.",
+     "area": "block-table",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "One System Built to Deliver Claude in Production",
+     "area": "block-table",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "The Architect, the Agentic SDLC, code that never leaves your environment, and the Layer arrive together. Bought piecemeal, those pieces rarely connect. Delivered as one system, they cut risk and show value early.",
+     "area": "block-table",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "120-Day Performance Guarantee",
+     "area": "block-table",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "If a forward-deployed Architect drops below the agreed baseline for 2 sprints in a row, GoGloby replaces them at no cost. The guarantee is in the contract. That keeps the hiring risk off your side.",
+     "area": "block-table",
+     "index": 7
+    }
+   ]
+  },
+  {
+   "id": "block:cards-slider#1",
+   "kind": "block",
+   "label": "Cards slider: What AI Solutions Can We Build?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What We Build\nWhat AI Solutions Can We Build?\nGoGloby builds AI around concrete workflows rather than abstract ideas. These are the solution types established product and engineering teams ask for most often.\nE\nEngineering Productivity Systems\nBuild internal AI tools that speed up engineering. Examples: codebase Q&A, spec and test generation, PR review help, bug triage, incident summaries, release notes, and a knowledge assistant for your stack. The payoff shows up where leadership already looks. Shorter PR cycles, faster onboarding, fewer repeat questions, and better test coverage. Your telemetry confirms it sprint over sprint.\nC\nCustomer and Employee Support Automation\nBuild support chatbots, IT helpdesk assistants, knowledge base bots, ticket routing, and call or ticket summaries. They connect to CRM, helpdesk, EHR, internal tools, and admin platforms. A good system answers from approved context and respects permissions. It routes the tricky cases to a human. Support speeds up without losing the plot.\nD\nDocument and Knowledge Intelligence\nBuild AI that searches, summarizes, compares, and extracts from business documents. Think contract review, policy Q&A, compliance summaries, claims processing, clinical records, and internal knowledge search. Sensitive content needs permission-aware retrieval, source citations, and audit trails. High-risk output gets human review. GoGloby wires that in from the first sprint, not later.\nA\nAI Product Features\nBuild AI into your SaaS product and customer-facing platforms. That means natural language search, insights, recommendations, personalization, AI reports, and forecasting. The feature has to fit your UX, speed budget, billing, security rules, and roadmap. Then it scales with real users and changing data instead of stalling as a side experiment.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "What We Build",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "What AI Solutions Can We Build?",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby builds AI around concrete workflows rather than abstract ideas. These are the solution types established product and engineering teams ask for most often.",
+     "area": "block-header",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "E",
+     "area": "slide 1",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Engineering Productivity Systems",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Build internal AI tools that speed up engineering. Examples: codebase Q&A, spec and test generation, PR review help, bug triage, incident summaries, release notes, and a knowledge assistant for your stack. The payoff shows up where leadership already looks. Shorter PR cycles, faster onboarding, fewer repeat questions, and better test coverage. Your telemetry confirms it sprint over sprint.",
+     "area": "slide 1",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "C",
+     "area": "slide 2",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Customer and Employee Support Automation",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Build support chatbots, IT helpdesk assistants, knowledge base bots, ticket routing, and call or ticket summaries. They connect to CRM, helpdesk, EHR, internal tools, and admin platforms. A good system answers from approved context and respects permissions. It routes the tricky cases to a human. Support speeds up without losing the plot.",
+     "area": "slide 2",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "D",
+     "area": "slide 3",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "Document and Knowledge Intelligence",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Build AI that searches, summarizes, compares, and extracts from business documents. Think contract review, policy Q&A, compliance summaries, claims processing, clinical records, and internal knowledge search. Sensitive content needs permission-aware retrieval, source citations, and audit trails. High-risk output gets human review. GoGloby wires that in from the first sprint, not later.",
+     "area": "slide 3",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "A",
+     "area": "slide 4",
+     "index": 9
+    },
+    {
+     "type": "heading",
+     "text": "AI Product Features",
+     "area": "slide 4",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Build AI into your SaaS product and customer-facing platforms. That means natural language search, insights, recommendations, personalization, AI reports, and forecasting. The feature has to fit your UX, speed budget, billing, security rules, and roadmap. Then it scales with real users and changing data instead of stalling as a side experiment.",
+     "area": "slide 4",
+     "index": 10
+    }
+   ]
+  },
+  {
+   "id": "block:how-it-works#1",
+   "kind": "block",
+   "label": "How it works: How Do AI Development Services Work?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How It Works\nHow Do AI Development Services Work?\nGoGloby runs a clear delivery model. It moves from a chosen use case to a shipped system. The order matters: safe to change first, then speed up. It is built for teams that need a result inside 1 or 2 quarters, not a multi-year research program.\n1\nIdentify the Highest-Value AI Use Case\nWe read your backlog, bottlenecks, internal workflows, and product openings. We also check compliance limits and the data you can actually reach. The aim is one use case that ships fast and proves value. The best first projects have clear users, reachable data, a measurable outcome, and risk you can contain.\n2\nForward-Deploy a Claude Certified Architect\nGoGloby matches a senior Architect to your stack, cloud, and goals. Then they join your sprint rituals, Slack, Jira, GitHub, and standards. They work like part of the internal team, not an outside crew that throws code over a wall and checks out until the next status call.\n3\nConfigure Secure AI Workflows\nWe set up controlled Claude workflows around your code, data, and rules. The team works in Claude Enterprise. The codebase stays in your own cloud. This covers access limits, prompt and data policy, review gates, model rules, and telemetry. We design security before anything ships.\n4\nShip, Measure, and Improve\nThe Architect ships features, tracks the delivery signals, reads the telemetry, and tunes the workflow each sprint. Leadership can see what changed, where bottlenecks still sit, and how AI is helping. The Layer ties the numbers to the work. So progress is visible each sprint, not a surprise at quarter close.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "How It Works",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "How Do AI Development Services Work?",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby runs a clear delivery model. It moves from a chosen use case to a shipped system. The order matters: safe to change first, then speed up. It is built for teams that need a result inside 1 or 2 quarters, not a multi-year research program.",
+     "area": "block-header",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "1",
+     "area": "slide 1",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Identify the Highest-Value AI Use Case",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "We read your backlog, bottlenecks, internal workflows, and product openings. We also check compliance limits and the data you can actually reach. The aim is one use case that ships fast and proves value. The best first projects have clear users, reachable data, a measurable outcome, and risk you can contain.",
+     "area": "slide 1",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "2",
+     "area": "slide 2",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Forward-Deploy a Claude Certified Architect",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby matches a senior Architect to your stack, cloud, and goals. Then they join your sprint rituals, Slack, Jira, GitHub, and standards. They work like part of the internal team, not an outside crew that throws code over a wall and checks out until the next status call.",
+     "area": "slide 2",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "3",
+     "area": "slide 3",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "Configure Secure AI Workflows",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "We set up controlled Claude workflows around your code, data, and rules. The team works in Claude Enterprise. The codebase stays in your own cloud. This covers access limits, prompt and data policy, review gates, model rules, and telemetry. We design security before anything ships.",
+     "area": "slide 3",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "4",
+     "area": "slide 4",
+     "index": 9
+    },
+    {
+     "type": "heading",
+     "text": "Ship, Measure, and Improve",
+     "area": "slide 4",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "The Architect ships features, tracks the delivery signals, reads the telemetry, and tunes the workflow each sprint. Leadership can see what changed, where bottlenecks still sit, and how AI is helping. The Layer ties the numbers to the work. So progress is visible each sprint, not a surprise at quarter close.",
+     "area": "slide 4",
+     "index": 10
+    }
+   ]
+  },
+  {
+   "id": "block:cards-slider#2",
+   "kind": "block",
+   "label": "Cards slider: Which Industries Use AI Development Services?",
+   "scope": "page",
+   "skipped": false,
+   "text": "Industries\nWhich Industries Use AI Development Services?\nGoGloby is built for established software companies. They have serious engineering teams, sensitive data, and pressure to adopt AI without new risk. Each industry below has its own mix of data risk, workflow complexity, and pressure to move.\nI\nIndustrial and Operational Software\nEstablished ERP, logistics, manufacturing, supply chain, and field service systems use AI development for workflow automation, document search, reporting, support, and faster engineering. Safe change is the hard part. These platforms run businesses every day. So AI work moves through governed workflows that respect what is already in production.\nF\nFinTech and Payments\nFinTech teams use AI development for compliance review, transaction support, KYC, fraud triage, customer operations, and internal knowledge search. Auditability comes first. The system has to speed up analysis while keeping financial data fenced in. Data limits and audit trails are built into delivery, not promised later.\nV\nVertical B2B SaaS\nVertical B2B SaaS companies use AI development for product features, support automation, onboarding assistants, and admin workflows. It also speeds up their own engineering. Roadmap speed under board pressure is the win. AI delivers most when it lives inside the platform and the engineering process. That also eases the load on a stretched internal team.\nH\nHealthcare and Regulated Records Software\nHealthcare and regulated records teams use AI development for records workflows, clinical documentation, claims, revenue cycle, support routing, and knowledge search. PHI sets the rules. These systems run with strict access controls, audit trails, and human review on anything clinical-facing. The team works in Claude Enterprise, HIPAA-ready with a signed BAA. The codebase stays in your own cloud.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "Industries",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Which Industries Use AI Development Services?",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby is built for established software companies. They have serious engineering teams, sensitive data, and pressure to adopt AI without new risk. Each industry below has its own mix of data risk, workflow complexity, and pressure to move.",
+     "area": "block-header",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "I",
+     "area": "slide 1",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Industrial and Operational Software",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Established ERP, logistics, manufacturing, supply chain, and field service systems use AI development for workflow automation, document search, reporting, support, and faster engineering. Safe change is the hard part. These platforms run businesses every day. So AI work moves through governed workflows that respect what is already in production.",
+     "area": "slide 1",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "F",
+     "area": "slide 2",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "FinTech and Payments",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "FinTech teams use AI development for compliance review, transaction support, KYC, fraud triage, customer operations, and internal knowledge search. Auditability comes first. The system has to speed up analysis while keeping financial data fenced in. Data limits and audit trails are built into delivery, not promised later.",
+     "area": "slide 2",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "V",
+     "area": "slide 3",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "Vertical B2B SaaS",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Vertical B2B SaaS companies use AI development for product features, support automation, onboarding assistants, and admin workflows. It also speeds up their own engineering. Roadmap speed under board pressure is the win. AI delivers most when it lives inside the platform and the engineering process. That also eases the load on a stretched internal team.",
+     "area": "slide 3",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "H",
+     "area": "slide 4",
+     "index": 9
+    },
+    {
+     "type": "heading",
+     "text": "Healthcare and Regulated Records Software",
+     "area": "slide 4",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Healthcare and regulated records teams use AI development for records workflows, clinical documentation, claims, revenue cycle, support routing, and knowledge search. PHI sets the rules. These systems run with strict access controls, audit trails, and human review on anything clinical-facing. The team works in Claude Enterprise, HIPAA-ready with a signed BAA. The codebase stays in your own cloud.",
+     "area": "slide 4",
+     "index": 10
+    }
+   ]
+  },
+  {
+   "id": "block:security#1",
+   "kind": "block",
+   "label": "Security: Security, Compliance, and Governance for AI Development",
+   "scope": "page",
+   "skipped": false,
+   "text": "Security and Governance\nSecurity, Compliance, and Governance for AI Development\nSecurity is where many of these deals are won or lost. GoGloby builds AI development inside a secure layer, not around loose public tools. Engineers move faster while sensitive data stays governed. That covers source code, PHI, PII, IP, prompts, internal documents, and customer data. The model is 2 real products. Claude Enterprise for the team. Claude on your own cloud for the codebase.\nSecure Data Flow\nControlled AI Environment\nGoverned Delivery\nSecurity summary\nZero-trust environment and access rules\nClaude Enterprise for the team: SSO and SCIM, audit logs, configurable retention, never used to train models\nCodebase via Claude on AWS, Amazon Bedrock, or Google Cloud Vertex AI, so code stays in your cloud\nModel and prompt safety controls, including prompt injection defense\nAudit logging and a role-based access control matrix\nHuman review for high-risk AI output\nHIPAA-ready with a signed BAA for regulated verticals\n$3M combined liability (cyber, data and professional) coverage from day one\nReview Secure Deployment Options",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "Security and Governance",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Security, Compliance, and Governance for AI Development",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Security is where many of these deals are won or lost. GoGloby builds AI development inside a secure layer, not around loose public tools. Engineers move faster while sensitive data stays governed. That covers source code, PHI, PII, IP, prompts, internal documents, and customer data. The model is 2 real products. Claude Enterprise for the team. Claude on your own cloud for the codebase.",
+     "area": "block-header",
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/05/security-icon-2-03.png",
+     "file": "security-icon-2-03.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Secure Data Flow",
+     "area": "block-main",
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/05/security-icon-2-01.png",
+     "file": "security-icon-2-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-main",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Controlled AI Environment",
+     "area": "block-main",
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/05/security-icon-3-01.png",
+     "file": "security-icon-3-01.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-main",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Governed Delivery",
+     "area": "block-main",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Security summary",
+     "area": "block-main",
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Zero-trust environment and access rules",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Claude Enterprise for the team: SSO and SCIM, audit logs, configurable retention, never used to train models",
+     "area": "block-main",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Codebase via Claude on AWS, Amazon Bedrock, or Google Cloud Vertex AI, so code stays in your cloud",
+     "area": "block-main",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Model and prompt safety controls, including prompt injection defense",
+     "area": "block-main",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Audit logging and a role-based access control matrix",
+     "area": "block-main",
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Human review for high-risk AI output",
+     "area": "block-main",
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "HIPAA-ready with a signed BAA for regulated verticals",
+     "area": "block-main",
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "$3M combined liability (cyber, data and professional) coverage from day one",
+     "area": "block-main",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Review Secure Deployment Options",
+     "area": "block-main",
+     "index": 7
+    }
+   ]
+  },
+  {
+   "id": "block:accordion-2#1",
+   "kind": "block",
+   "label": "Accordion 2: Secure Data Flow",
+   "scope": "page",
+   "skipped": false,
+   "text": "Secure Data Flow\nSets the path data takes through the system. It defines approved sources, how retrieval is scoped, and where sensitive fields are masked. It also sets encryption, storage limits, and who can reach what. Exposure is limited by design, not left to good intentions.\nControlled AI Environment\nWork happens inside Claude Enterprise. You get model rules, prompt policy, access limits, and audit logs. The codebase runs on Claude in your own cloud. That control turns scattered shadow AI into something you can see and manage.\nGoverned Delivery\nAI output passes through engineering controls. That means specs, tests, pull requests, reviews, release rules, and human approval where it counts. Nothing reaches production on a prompt alone, the same as any other code.\nAI Governance Framework\nSets the rules for approved tools, data access, model use, human review, and escalation inside your process. AI policy becomes one shared standard, not each engineer’s personal preference applied at random.\nAccess Control Matrix\nDefines who can reach code, data, prompts, agents, and production systems. It maps to least-privilege standards, with clear roles for engineering, support, operations, compliance, and admin. Access is granted by role and reviewed, not handed out broadly by default.\nVirtual Environments\nKeeps staging, production, and sandbox testing apart. It handles secrets and controls access to infrastructure. Isolated setups cut the risk of data leaking from local environments and unmanaged AI tools.\nZero-Trust Network\nIdentity, device, access, and permission are checked at every step. It uses MFA, least privilege, network segmentation, hardened endpoints, and monitored sessions. No user, tool, or system is trusted just for being inside the network.\nCompliance and Attestations\nSecurity documentation, vendor review, and internal approval come before AI tools touch sensitive workflows. It supports SOC 2, HIPAA, and GDPR review where they apply, without overpromising compliance.\nPrivacy and PII Handling\nPersonal data is accessed, processed, masked, stored, and reviewed under clear rules. The tightest handling goes to healthcare, FinTech, and regulated SaaS, where exposure is highest.\nModel and Prompt Safety\nCuts down unsafe prompts, weak retrieval, hallucinated answers, and uncontrolled model behavior. It uses prompt review, output review, and retrieval review as a normal part of delivery.\nObservability and Audit\nGives engineering and security real visibility into AI usage, system behavior, agent actions, logs, and delivery signals. Problems surface early, not after a customer finds them first.\nLegal and IP Protection\nProtects proprietary code, product logic, internal documents, and customer workflows from unmanaged AI tools. Your Claude Enterprise data is never used to train models. Your codebase stays in your own cloud.\nIncident Response and Resilience\nLays out what happens when an AI workflow fails, returns a weak answer, or trips a security concern. You get fallback paths, human review, rollback plans, access revocation, a clear escalation route, and post-incident notes.\nWhat does the Benchmark include?\nEvery engagement starts with the Benchmark: a fixed fee for one month, with the AI Intelligence Layer deployed inside your VPC and your baseline delivered at the end of it. The fee is credited in full toward your first month of delivery. If you stop there, you keep the baseline.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Secure Data Flow",
+     "area": "item 1",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Sets the path data takes through the system. It defines approved sources, how retrieval is scoped, and where sensitive fields are masked. It also sets encryption, storage limits, and who can reach what. Exposure is limited by design, not left to good intentions.",
+     "area": "item 1",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Controlled AI Environment",
+     "area": "item 2",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Work happens inside Claude Enterprise. You get model rules, prompt policy, access limits, and audit logs. The codebase runs on Claude in your own cloud. That control turns scattered shadow AI into something you can see and manage.",
+     "area": "item 2",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Governed Delivery",
+     "area": "item 3",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "AI output passes through engineering controls. That means specs, tests, pull requests, reviews, release rules, and human approval where it counts. Nothing reaches production on a prompt alone, the same as any other code.",
+     "area": "item 3",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "AI Governance Framework",
+     "area": "item 4",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Sets the rules for approved tools, data access, model use, human review, and escalation inside your process. AI policy becomes one shared standard, not each engineer’s personal preference applied at random.",
+     "area": "item 4",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Access Control Matrix",
+     "area": "item 5",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Defines who can reach code, data, prompts, agents, and production systems. It maps to least-privilege standards, with clear roles for engineering, support, operations, compliance, and admin. Access is granted by role and reviewed, not handed out broadly by default.",
+     "area": "item 5",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Virtual Environments",
+     "area": "item 6",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Keeps staging, production, and sandbox testing apart. It handles secrets and controls access to infrastructure. Isolated setups cut the risk of data leaking from local environments and unmanaged AI tools.",
+     "area": "item 6",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Zero-Trust Network",
+     "area": "item 7",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Identity, device, access, and permission are checked at every step. It uses MFA, least privilege, network segmentation, hardened endpoints, and monitored sessions. No user, tool, or system is trusted just for being inside the network.",
+     "area": "item 7",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "Compliance and Attestations",
+     "area": "item 8",
+     "level": 3,
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Security documentation, vendor review, and internal approval come before AI tools touch sensitive workflows. It supports SOC 2, HIPAA, and GDPR review where they apply, without overpromising compliance.",
+     "area": "item 8",
+     "index": 8
+    },
+    {
+     "type": "heading",
+     "text": "Privacy and PII Handling",
+     "area": "item 9",
+     "level": 3,
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Personal data is accessed, processed, masked, stored, and reviewed under clear rules. The tightest handling goes to healthcare, FinTech, and regulated SaaS, where exposure is highest.",
+     "area": "item 9",
+     "index": 9
+    },
+    {
+     "type": "heading",
+     "text": "Model and Prompt Safety",
+     "area": "item 10",
+     "level": 3,
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "Cuts down unsafe prompts, weak retrieval, hallucinated answers, and uncontrolled model behavior. It uses prompt review, output review, and retrieval review as a normal part of delivery.",
+     "area": "item 10",
+     "index": 10
+    },
+    {
+     "type": "heading",
+     "text": "Observability and Audit",
+     "area": "item 11",
+     "level": 3,
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "Gives engineering and security real visibility into AI usage, system behavior, agent actions, logs, and delivery signals. Problems surface early, not after a customer finds them first.",
+     "area": "item 11",
+     "index": 11
+    },
+    {
+     "type": "heading",
+     "text": "Legal and IP Protection",
+     "area": "item 12",
+     "level": 3,
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "Protects proprietary code, product logic, internal documents, and customer workflows from unmanaged AI tools. Your Claude Enterprise data is never used to train models. Your codebase stays in your own cloud.",
+     "area": "item 12",
+     "index": 12
+    },
+    {
+     "type": "heading",
+     "text": "Incident Response and Resilience",
+     "area": "item 13",
+     "level": 3,
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Lays out what happens when an AI workflow fails, returns a weak answer, or trips a security concern. You get fallback paths, human review, rollback plans, access revocation, a clear escalation route, and post-incident notes.",
+     "area": "item 13",
+     "index": 13
+    },
+    {
+     "type": "heading",
+     "text": "What does the Benchmark include?",
+     "area": "item 14",
+     "level": 3,
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Every engagement starts with the Benchmark: a fixed fee for one month, with the AI Intelligence Layer deployed inside your VPC and your baseline delivered at the end of it. The fee is credited in full toward your first month of delivery. If you stop there, you keep the baseline.",
+     "area": "item 14",
+     "index": 14
+    }
+   ]
+  },
+  {
+   "id": "block:featured-facts#1",
+   "kind": "block",
+   "label": "Featured facts: What Engineering Leaders Can Measure Sprint by Sprint",
+   "scope": "page",
+   "skipped": false,
+   "text": "Proof of Performance\nWhat Engineering Leaders Can Measure Sprint by Sprint\nGoGloby makes AI development measurable from the first sprint. The Layer reads delivery from sprint activity, CI/CD metadata, pull requests, test coverage, and AI-assisted output. You do not wait until the end to guess whether AI helped. Every signal is measured against your own baseline.\n$ per feature\nCost and return per shipped feature, measured against your own baseline sprint by sprint in the Layer\nTrack sprint throughput against your own starting point. The Architect runs Claude across coding, testing, documentation, review, and debugging. The actual figure depends on scope, team setup, and workflow maturity. The Layer tracks it every sprint.\n90% at month 6\nAI-Assisted Commit Rate (benchmark 35–45% at month 2)\nRead straight from CI logs, this shows where Claude is really in the delivery path. AI is in the path, but engineers still own it. They review, test, and approve before anything merges.\n30%\nFaster PR Turnaround\nPull request cycle time can drop through clearer tickets, stronger tests, better docs, and smaller diffs. It is measured against your own baseline, not a number off a brochure.\nROI\nMeasurable ROI From Engineering Investment\nROI shows up as velocity per dollar, not cheap labor. A Claude Certified Architect who multiplies output with Claude gets more done than a normal hire at the same cost. The same budget ships more. Fewer hiring delays, less rework, and a flat monthly fee per engineer replace adding headcount at linear cost.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "Proof of Performance",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "What Engineering Leaders Can Measure Sprint by Sprint",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby makes AI development measurable from the first sprint. The Layer reads delivery from sprint activity, CI/CD metadata, pull requests, test coverage, and AI-assisted output. You do not wait until the end to guess whether AI helped. Every signal is measured against your own baseline.",
+     "area": "block-header",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "$ per feature",
+     "area": "block-main",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Cost and return per shipped feature, measured against your own baseline sprint by sprint in the Layer",
+     "area": "block-main",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Track sprint throughput against your own starting point. The Architect runs Claude across coding, testing, documentation, review, and debugging. The actual figure depends on scope, team setup, and workflow maturity. The Layer tracks it every sprint.",
+     "area": "block-main",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "90% at month 6",
+     "area": "block-main",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "AI-Assisted Commit Rate (benchmark 35–45% at month 2)",
+     "area": "block-main",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Read straight from CI logs, this shows where Claude is really in the delivery path. AI is in the path, but engineers still own it. They review, test, and approve before anything merges.",
+     "area": "block-main",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "30%",
+     "area": "block-main",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Faster PR Turnaround",
+     "area": "block-main",
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "Pull request cycle time can drop through clearer tickets, stronger tests, better docs, and smaller diffs. It is measured against your own baseline, not a number off a brochure.",
+     "area": "block-main",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "ROI",
+     "area": "block-main",
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "Measurable ROI From Engineering Investment",
+     "area": "block-main",
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "ROI shows up as velocity per dollar, not cheap labor. A Claude Certified Architect who multiplies output with Claude gets more done than a normal hire at the same cost. The same budget ships more. Fewer hiring delays, less rework, and a flat monthly fee per engineer replace adding headcount at linear cost.",
+     "area": "block-main",
+     "index": 14
+    }
+   ]
+  },
+  {
+   "id": "block:featured-tiles#1",
+   "kind": "block",
+   "label": "Featured tiles: Why Engineering Leaders Choose GoGloby Over Generic AI Deve…",
+   "scope": "page",
+   "skipped": false,
+   "text": "Why Companies Choose GoGloby\nWhy Engineering Leaders Choose GoGloby Over Generic AI Development Companies\nGeneric AI development companies sell hours, workshops, or one-off prototypes. GoGloby delivers one system: the Claude Certified Architect, the Agentic SDLC, code-safe Claude usage, and the Layer. Engineering leaders ship AI faster while keeping control of code, data, and compliance.\nMove From AI Plans to Governed Delivery\nTalent, workflow, and environment arrive together. So teams move from stalled plans and stray prototypes to governed delivery. The Architect, the Agentic SDLC, the secure Claude workflow, and the Layer come as one. No slow chain of recruiting and vendor handoffs.\nCertified Agentic SDLC Mastery\nThe Claude Certified Architect works inside a governed delivery process built for real production. Specs, prompts, tool calls, tests, reviews, approvals, and release rules stay under engineering control.\nThe Layer Telemetry\nLeaders track commit activity, Claude-driven velocity, AI contribution, PR cycle time, and delivery signals by sprint. It is board-ready proof, not an adoption pitch, with no code access needed.\nAgentic SDLC and a Governed Claude Setup\nGoverned Claude execution and secure workflows arrive together. You get access rules, review gates, and controlled model use from day one. Claude Enterprise covers the team. Claude on your own cloud covers the codebase.\n120-Day Replacement Guarantee and $3M Combined Liability (Cyber, Data and Professional)\nContract-backed cover for delivery continuity, Architect performance, and cyber risk. It includes $3M combined liability (cyber, data and professional) coverage from day one. If an Architect falls below baseline for 2 sprints in a row, we replace them at no cost.\nOne Partner, One System, One Invoice\nThe Claude Certified Architect, the Agentic SDLC, the code-safe environment, delivery governance, and the Layer sit under one roof. No splitting across recruiters, consultants, tool vendors, and dev shops.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "Why Companies Choose GoGloby",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Why Engineering Leaders Choose GoGloby Over Generic AI Development Companies",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Generic AI development companies sell hours, workshops, or one-off prototypes. GoGloby delivers one system: the Claude Certified Architect, the Agentic SDLC, code-safe Claude usage, and the Layer. Engineering leaders ship AI faster while keeping control of code, data, and compliance.",
+     "area": "block-header",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Move From AI Plans to Governed Delivery",
+     "area": "block-main",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Talent, workflow, and environment arrive together. So teams move from stalled plans and stray prototypes to governed delivery. The Architect, the Agentic SDLC, the secure Claude workflow, and the Layer come as one. No slow chain of recruiting and vendor handoffs.",
+     "area": "block-main",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Certified Agentic SDLC Mastery",
+     "area": "block-main",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "The Claude Certified Architect works inside a governed delivery process built for real production. Specs, prompts, tool calls, tests, reviews, approvals, and release rules stay under engineering control.",
+     "area": "block-main",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "The Layer Telemetry",
+     "area": "block-main",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Leaders track commit activity, Claude-driven velocity, AI contribution, PR cycle time, and delivery signals by sprint. It is board-ready proof, not an adoption pitch, with no code access needed.",
+     "area": "block-main",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Agentic SDLC and a Governed Claude Setup",
+     "area": "block-main",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Governed Claude execution and secure workflows arrive together. You get access rules, review gates, and controlled model use from day one. Claude Enterprise covers the team. Claude on your own cloud covers the codebase.",
+     "area": "block-main",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "120-Day Replacement Guarantee and $3M Combined Liability (Cyber, Data and Professional)",
+     "area": "block-main",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Contract-backed cover for delivery continuity, Architect performance, and cyber risk. It includes $3M combined liability (cyber, data and professional) coverage from day one. If an Architect falls below baseline for 2 sprints in a row, we replace them at no cost.",
+     "area": "block-main",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "One Partner, One System, One Invoice",
+     "area": "block-main",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "The Claude Certified Architect, the Agentic SDLC, the code-safe environment, delivery governance, and the Layer sit under one roof. No splitting across recruiters, consultants, tool vendors, and dev shops.",
+     "area": "block-main",
+     "index": 8
+    }
+   ]
+  },
+  {
+   "id": "block:accordion-1#1",
+   "kind": "block",
+   "label": "Accordion 1: FAQ",
+   "scope": "page",
+   "skipped": false,
+   "text": "FAQ\nWho offers AI development services for established tech companies?\nAI development services come from AI engineering firms, software companies, consultants, and talent partners. Quality varies a lot. Established teams need production engineering, secure Claude workflows, and measurable delivery, not slideware. GoGloby is built for that: an embedded Claude Certified Architect, governed delivery, and ROI you can show the board.\nWhere can I find AI development services for secure enterprise projects?\nLook for production engineering experience, governed Claude workflows, strong cloud integration, real governance, and measurable delivery. GoGloby is built for teams with source code, IP, PHI, or other sensitive data on the line. The team runs on Claude Enterprise. The codebase stays in your own cloud.\nHow do I hire AI application development services?\nStart by defining the use case, target users, data sources, existing systems, security limits, and the outcome you expect. Then ask each provider about architecture, engagement model, AI governance, telemetry, and deployment. The answers separate a real engineering partner from a vendor just selling hours.\nWhat are some good AI development services to start with?\nGood starting points include internal knowledge assistants, engineering assistants, support automation, document intelligence, RAG systems, AI product features, and agentic workflows for repetitive tasks. The best first pick has clear business value, data that is ready, and risk you can contain. Not the flashiest idea in the room.\nWhat is the difference between AI development and generative AI development?\nAI development is the broader term. It can include ML, prediction, automation, NLP, computer vision, AI applications, and agentic workflows. Generative AI development is the subset focused on systems that create, summarize, retrieve, converse, or assist using LLMs and related models. Most real production systems combine both rather than choosing one.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "FAQ",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Who offers AI development services for established tech companies?",
+     "area": "item 1",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI development services come from AI engineering firms, software companies, consultants, and talent partners. Quality varies a lot. Established teams need production engineering, secure Claude workflows, and measurable delivery, not slideware. GoGloby is built for that: an embedded Claude Certified Architect, governed delivery, and ROI you can show the board.",
+     "area": "item 1",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Where can I find AI development services for secure enterprise projects?",
+     "area": "item 1",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Look for production engineering experience, governed Claude workflows, strong cloud integration, real governance, and measurable delivery. GoGloby is built for teams with source code, IP, PHI, or other sensitive data on the line. The team runs on Claude Enterprise. The codebase stays in your own cloud.",
+     "area": "item 1",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "How do I hire AI application development services?",
+     "area": "item 1",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Start by defining the use case, target users, data sources, existing systems, security limits, and the outcome you expect. Then ask each provider about architecture, engagement model, AI governance, telemetry, and deployment. The answers separate a real engineering partner from a vendor just selling hours.",
+     "area": "item 1",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "What are some good AI development services to start with?",
+     "area": "item 1",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Good starting points include internal knowledge assistants, engineering assistants, support automation, document intelligence, RAG systems, AI product features, and agentic workflows for repetitive tasks. The best first pick has clear business value, data that is ready, and risk you can contain. Not the flashiest idea in the room.",
+     "area": "item 1",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "What is the difference between AI development and generative AI development?",
+     "area": "item 1",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "AI development is the broader term. It can include ML, prediction, automation, NLP, computer vision, AI applications, and agentic workflows. Generative AI development is the subset focused on systems that create, summarize, retrieve, converse, or assist using LLMs and related models. Most real production systems combine both rather than choosing one.",
+     "area": "item 1",
+     "index": 10
+    }
+   ]
+  },
+  {
+   "id": "block:contact#1",
+   "kind": "block",
+   "label": "Contact: Build AI Software That Ships Safely",
+   "scope": "page",
+   "skipped": false,
+   "text": "Build AI Software That Ships Safely\nAI adoption should lift engineering velocity. It should turn the board’s AI mandate into shipped output. And it should never put your source code, IP, PHI, PII, prompts, internal docs, or customer data in front of public tools.\nGoGloby forward-deploys a Claude Certified Architect into your team. We set up secure Claude workflows, run delivery on the Agentic SDLC, and keep code in your environment. Leadership gets the Layer to prove ROI sprint by sprint. The next step is a short technical chat about your top use case.\nTrusted by\nFeatured by\nAwarded by\nWe follow data & security practices:",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Build AI Software That Ships Safely",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI adoption should lift engineering velocity. It should turn the board’s AI mandate into shipped output. And it should never put your source code, IP, PHI, PII, prompts, internal docs, or customer data in front of public tools.",
+     "area": "block-header",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby forward-deploys a Claude Certified Architect into your team. We set up secure Claude workflows, run delivery on the Agentic SDLC, and keep code in your environment. Leadership gets the Layer to prove ROI sprint by sprint. The next step is a short technical chat about your top use case.",
+     "area": "block-header",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Trusted by",
+     "area": "block-aside",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-hasbro-1-grayscale.png",
+     "file": "logo-hasbro-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-hubspot-1-grayscale.png",
+     "file": "logo-hubspot-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-carta-1-grayscale.png",
+     "file": "logo-carta-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-oyster-1-grayscale.png",
+     "file": "logo-oyster-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-deel-1-grayscale.png",
+     "file": "logo-deel-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-evercommerce-1-grayscale.png",
+     "file": "logo-evercommerce-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Featured by",
+     "area": "block-aside",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-forbes-1-grayscale.png",
+     "file": "logo-forbes-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 7
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-crunchbase-1-grayscale.png",
+     "file": "logo-crunchbase-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 8
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-london-daily-1-grayscale.png",
+     "file": "logo-london-daily-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 9
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-nbc-1-grayscale.png",
+     "file": "logo-nbc-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 10
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-fox-news-1-grayscale.png",
+     "file": "logo-fox-news-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 11
+    },
+    {
+     "type": "heading",
+     "text": "Awarded by",
+     "area": "block-aside",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-clutch-1-grayscale.png",
+     "file": "logo-clutch-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 12
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-trustpilot-1-grayscale.png",
+     "file": "logo-trustpilot-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 13
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-linkedin-1-grayscale.png",
+     "file": "logo-linkedin-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 14
+    },
+    {
+     "type": "heading",
+     "text": "We follow data & security practices:",
+     "area": "block-aside",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-aicpa-soc2-type2-1-white-grayscale.png",
+     "file": "logo-aicpa-soc2-type2-1-white-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 15
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/logo-ism-iso-27001-1-grayscale.png",
+     "file": "logo-ism-iso-27001-1-grayscale.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "area": "block-aside",
+     "index": 16
+    }
+   ]
+  },
+  {
+   "id": "banner_cta",
+   "kind": "banner_cta",
+   "label": "Banner CTA",
+   "scope": "page",
+   "skipped": false,
+   "text": "Background\nBackground\nBuild Faster\nProduction-Ready Claude Adoption Starts Here\nGoGloby forward-deploys a Claude Certified Architect, the Agentic SDLC, a governed Claude setup, and the Layer straight into your team. The result is production-ready Claude adoption, real software in real products. It never exposes your source code, IP, PHI, PII, prompts, internal docs, or customer data to public tools.\nBook a Call",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/blocks/block-bg-1-01.png",
+     "file": "block-bg-1-01.png",
+     "alt": "Background",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "Background",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/blocks/block-bg-4-01.png",
+     "file": "block-bg-4-01.png",
+     "alt": "Background",
+     "alt_state": "text",
+     "dims": false,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Build Faster",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Production-Ready Claude Adoption Starts Here",
+     "area": "block-main",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby forward-deploys a Claude Certified Architect, the Agentic SDLC, a governed Claude setup, and the Layer straight into your team. The result is production-ready Claude adoption, real software in real products. It never exposes your source code, IP, PHI, PII, prompts, internal docs, or customer data to public tools.",
+     "area": "block-main",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Book a Call",
+     "area": "block-aside",
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "modals",
+   "kind": "modals",
+   "label": "Forms and modals",
+   "scope": "page",
+   "skipped": false,
+   "text": "Thank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nBook a Technical Call\nThank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend\nThank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Book a Technical Call",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 9
+    }
+   ]
+  },
+  {
+   "id": "site_header",
+   "kind": "site_header",
+   "label": "Site header",
+   "scope": "page",
+   "skipped": true,
+   "text": "Site logo\nSolutions\nAI Engineering Visibility\nForward Deployed Engineering\nServices\nAI Engineers Staff Augmentation\nHire AI Engineers\nAI Development Services\nGenerative AI Consulting Services\nAgentic AI Consulting Services\nAI Production Engineering\nGenerative AI Development Services\nAI Agent Development Services\nAI Custom Software Development Services\nRAG Application Development Services\nLLM Development Services\nApplication AI Modernization Services\nLegacy Application Modernization Services\nSoftware Maintenance Services\nCompany\nAbout us\nJobs\nResources\nInsights\nUse Cases\nPodcast\nContact\nTalk to Us",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Site logo",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/globy-logo-1-01.svg",
+     "file": "globy-logo-1-01.svg",
+     "alt": "Site logo",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Solutions",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineering Visibility",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/ai-engineering-visibility/",
+       "text": "AI Engineering Visibility"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Forward Deployed Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/forward-deployed-engineering/",
+       "text": "Forward Deployed Engineering"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineers Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Engineers Staff Augmentation"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "link",
+     "text": "AI Development Services",
+     "href": "https://gogloby.com/services/ai-development/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-development/",
+       "text": "AI Development Services"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-consulting/",
+       "text": "Generative AI Consulting Services"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Agentic AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/agentic-ai-consulting/",
+       "text": "Agentic AI Consulting Services"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "AI Production Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "AI Production Engineering"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "AI Agent Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-agent-development/",
+       "text": "AI Agent Development Services"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "AI Custom Software Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-custom-software-development/",
+       "text": "AI Custom Software Development Services"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "RAG Application Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/rag-application-development/",
+       "text": "RAG Application Development Services"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "LLM Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/llm-development/",
+       "text": "LLM Development Services"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "link",
+     "text": "Application AI Modernization Services",
+     "href": "https://gogloby.com/services/application-modernization/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/application-modernization/",
+       "text": "Application AI Modernization Services"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Legacy Application Modernization Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/legacy-application-modernization/",
+       "text": "Legacy Application Modernization Services"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "Software Maintenance Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/software-maintenance/",
+       "text": "Software Maintenance Services"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "Talk to Us",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "site_footer",
+   "kind": "site_footer",
+   "label": "Site footer",
+   "scope": "page",
+   "skipped": true,
+   "text": "Background logo\nServices\nApplied AI Engineering\nAI Staff Augmentation\nHire AI Engineers\nGenerative AI Development Services\nCompany\nAbout us\nJobs\nContact\nPrivacy Policy and Candidate Privacy Notice\nTerms and Conditions\nResources\nInsights\nUse Cases\nPodcast\nCase Studies\nConnections\nCrunchbase\nLinkedIn\nX\nG2\nClutch\nTrustpilot\nDesignRush\nGitHub\nFacebook\nYouTube\n© Copyright 2026, GoGloby. All Rights Reserved.",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background logo",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/logos/globy-logo-outline-1-01.svg",
+     "file": "globy-logo-outline-1-01.svg",
+     "alt": "Background logo",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Applied AI Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "Applied AI Engineering"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Staff Augmentation"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Privacy Policy and Candidate Privacy Notice",
+     "links": [
+      {
+       "href": "https://gogloby.com/privacy-policy/",
+       "text": "Privacy Policy and Candidate Privacy Notice"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Terms and Conditions",
+     "links": [
+      {
+       "href": "https://gogloby.com/terms-and-conditions/",
+       "text": "Terms and Conditions"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "Case Studies",
+     "links": [
+      {
+       "href": "https://gogloby.com/case-study/",
+       "text": "Case Studies"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Connections",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Crunchbase",
+     "links": [
+      {
+       "href": "https://www.crunchbase.com/organization/gogloby",
+       "text": "Crunchbase"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "LinkedIn",
+     "links": [
+      {
+       "href": "https://www.linkedin.com/company/gogloby/",
+       "text": "LinkedIn"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "X",
+     "links": [
+      {
+       "href": "https://x.com/GoGloby",
+       "text": "X"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "list_item",
+     "text": "G2",
+     "links": [
+      {
+       "href": "https://www.g2.com/products/gogloby/reviews",
+       "text": "G2"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Clutch",
+     "links": [
+      {
+       "href": "https://clutch.co/profile/gogloby",
+       "text": "Clutch"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Trustpilot",
+     "links": [
+      {
+       "href": "https://www.trustpilot.com/review/gogloby.com",
+       "text": "Trustpilot"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "DesignRush",
+     "links": [
+      {
+       "href": "https://www.designrush.com/agency/profile/gogloby",
+       "text": "DesignRush"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "list_item",
+     "text": "GitHub",
+     "links": [
+      {
+       "href": "https://github.com/gogloby",
+       "text": "GitHub"
+      }
+     ],
+     "index": 21
+    },
+    {
+     "type": "list_item",
+     "text": "Facebook",
+     "links": [
+      {
+       "href": "https://www.facebook.com/gogloby",
+       "text": "Facebook"
+      }
+     ],
+     "index": 22
+    },
+    {
+     "type": "list_item",
+     "text": "YouTube",
+     "links": [
+      {
+       "href": "https://www.youtube.com/@DefaultGlobal",
+       "text": "YouTube"
+      }
+     ],
+     "index": 23
+    },
+    {
+     "type": "paragraph",
+     "text": "© Copyright 2026, GoGloby. All Rights Reserved.",
+     "index": 5
+    }
+   ]
+  }
+ ],
+ "warnings": []
+}
