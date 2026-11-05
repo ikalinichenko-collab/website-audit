@@ -37,7 +37,10 @@ function isEl(n: DomNode): boolean {
 
 function textOf(n: DomNode): string {
   if (n.type === "text") return n.data ?? "";
-  return (n.children ?? []).map(textOf).join(" ");
+  // inline tags (strong, em, a, span) do not break a word: "202</strong>6" is "2026"
+  return (n.children ?? [])
+    .map((c) => (isEl(c) && (STRUCTURAL.has(c.name ?? "") || c.name === "br") ? ` ${textOf(c)} ` : textOf(c)))
+    .join("");
 }
 
 function norm(s: string): string {

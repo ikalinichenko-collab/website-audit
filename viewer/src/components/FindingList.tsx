@@ -31,7 +31,13 @@ function mergePlaces(group: Finding[]): Place[] {
   for (const f of group) {
     const label = f.zone_label || f.zone_id;
     // a part ("paragraph 3") pins the place; without one, the same text in title, meta and og is one edit
-    const key = f.part ? `${f.zone_id}|${f.part}|${f.quote}` : `|${f.quote}|${f.quote ? "" : f.zone_id}`;
+    // a trap term is one edit in title, meta, og and H1 even though the surrounding text differs per zone
+    const trap = f.kind === "trap_terms" ? f.quote.match(/^\[[^\]]*\]/)?.[0] : undefined;
+    const key = trap
+      ? `trap|${trap}`
+      : f.part
+        ? `${f.zone_id}|${f.part}|${f.quote}`
+        : `|${f.quote}|${f.quote ? "" : f.zone_id}`;
     const have = out.get(key);
     if (!have) out.set(key, { labels: [label], part: f.part, place: f.place ?? "", f });
     else if (!have.labels.includes(label)) have.labels.push(label);
@@ -50,6 +56,8 @@ function displayQuote(f: Finding): string {
     const i = f.quote.indexOf(" | ");
     return i >= 0 ? f.quote.slice(i + 3) : f.quote;
   }
+  // trap terms are stored as "[term] match | surrounding text": show the surrounding text
+  if (f.kind === "trap_terms") return f.quote.replace(/^\[[^\]]*\]\s[^|]*\|\s/, "");
   return f.quote;
 }
 

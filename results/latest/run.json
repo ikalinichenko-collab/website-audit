@@ -1,24 +1,21 @@
 {
-  "run_id": "2026-11-05T09-32-31-676Z",
-  "started_at": "2026-11-05T09:32:31.676Z",
-  "ended_at": "2026-11-05T09:35:49.654Z",
-  "pages_checked": 6,
+  "run_id": "2026-11-05T12-02-21-857Z",
+  "started_at": "2026-11-05T12:02:21.858Z",
+  "ended_at": "2026-11-05T12:02:25.070Z",
+  "pages_checked": 1,
   "pages_skipped": 0,
-  "llm_calls": 14,
+  "llm_calls": 0,
   "llm_errors": 0,
   "tokens": {
-    "input": 47956,
-    "cached_input": 115397,
-    "output": 54846
+    "input": 0,
+    "cached_input": 0,
+    "output": 0
   },
-  "cost_usd": 0.03337257,
+  "cost_usd": 0,
   "model": "gpt-6-luna",
   "layers": {
-    "compliance": true,
+    "compliance": false,
     "geo": true,
-    "seo": true
-  },
-  "subsections": [
-    "Resources/Case studies"
-  ]
+    "seo": false
+  }
 }

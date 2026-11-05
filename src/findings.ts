@@ -102,6 +102,16 @@ export const GEO_LABELS: Record<string, string> = {
   uk_spelling: "UK spelling",
 };
 
+/** Glossary section behind each GEO code check; a check with no entry names no rule. */
+const GEO_CODE_RULES: Record<string, string> = {
+  home_title_exact: "Glossary §6",
+  trap_terms: "Glossary §8",
+  nearshore_not_first: "Glossary §9",
+  em_dash: "Glossary §9",
+  ampersand: "Glossary §9",
+  uk_spelling: "Glossary §9",
+};
+
 const NO_FRAGMENT_ZONES = /^(title|meta_description|og_title|og_description|json_ld|banner_cta@|modals@)/;
 
 export function fragmentAllowed(zoneId: string): boolean {
@@ -235,7 +245,7 @@ function pageFindingDrafts(r: PageReport, site: SiteReport | null): FindingDraft
         quote: pl.value,
         issue: c.places?.length ? "" : c.value,
         fix: "",
-        rule: "Glossary §9",
+        rule: GEO_CODE_RULES[c.id] ?? "",
         verified: true,
         fragment: null,
       });

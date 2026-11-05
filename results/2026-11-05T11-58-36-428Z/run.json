@@ -1,0 +1,21 @@
+{
+  "run_id": "2026-11-05T11-58-36-428Z",
+  "started_at": "2026-11-05T11:58:36.429Z",
+  "ended_at": "2026-11-05T11:58:41.593Z",
+  "pages_checked": 1,
+  "pages_skipped": 0,
+  "llm_calls": 0,
+  "llm_errors": 0,
+  "tokens": {
+    "input": 0,
+    "cached_input": 0,
+    "output": 0
+  },
+  "cost_usd": 0,
+  "model": "gpt-6-luna",
+  "layers": {
+    "compliance": false,
+    "geo": true,
+    "seo": false
+  }
+}

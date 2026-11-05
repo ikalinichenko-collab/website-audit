@@ -1,0 +1,3253 @@
+{
+ "template": "article",
+ "zones": [
+  {
+   "id": "title",
+   "kind": "title",
+   "label": "Title",
+   "scope": "page",
+   "skipped": false,
+   "text": "Top 18 Executive Search Firms: USA Rankings, Fees & Picks",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Top 18 Executive Search Firms: USA Rankings, Fees & Picks"
+    }
+   ]
+  },
+  {
+   "id": "meta_description",
+   "kind": "meta_description",
+   "label": "Meta description",
+   "scope": "page",
+   "skipped": false,
+   "text": "See which executive search firms lead in 2026: USA rankings, fee ranges, engagement models, and best picks by industry.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "See which executive search firms lead in 2026: USA rankings, fee ranges, engagement models, and best picks by industry."
+    }
+   ]
+  },
+  {
+   "id": "og_title",
+   "kind": "og_title",
+   "label": "og:title",
+   "scope": "page",
+   "skipped": false,
+   "text": "Top 18 Executive Search Firms: USA Rankings, Fees & Picks",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Top 18 Executive Search Firms: USA Rankings, Fees & Picks"
+    }
+   ]
+  },
+  {
+   "id": "og_description",
+   "kind": "og_description",
+   "label": "og:description",
+   "scope": "page",
+   "skipped": false,
+   "text": "See which executive search firms lead in 2026: USA rankings, fee ranges, engagement models, and best picks by industry.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "See which executive search firms lead in 2026: USA rankings, fee ranges, engagement models, and best picks by industry."
+    }
+   ]
+  },
+  {
+   "id": "json_ld",
+   "kind": "json_ld",
+   "label": "Structured data (JSON-LD)",
+   "scope": "page",
+   "skipped": false,
+   "text": "Top 18 Executive Search Firms in the USA | 2026 Rankings, Fees &amp; Picks\nTop 18 Executive Search Firms in the USA | 2026 Rankings, Fees &amp; Picks\nSee which executive search firms lead in 2026: USA rankings, fee ranges, engagement models, and best\nSergey Matikaynen\nGoGloby\nIs there more demand for executives right now?\nYes. The U.S. projects around 343,800 openings for top executives annually (2023–2033), with 6% job growth — faster than average. At the same time, the executive search services market is forecast to grow at ~10% CAGR (2024–2029), meaning competition for senior leaders is only intensifying.\nWhat is an executive search firm (a.k.a. executive recruitment agency / executive search company / executive placement firm)?\nAn executive search firm specializes in C-suite and senior leadership hiring. Unlike traditional agencies, they discreetly map markets, engage passive talent, run structured assessments, and manage references. They’re built for high-stakes, confidential roles where time-to-impact and cultural fit matter.\nWhy should you work with an executive search firm?\nDepth, speed, and discretion. Executive search partners bring mapped markets, off-market access, and scorecard-driven assessment that reduce mis-hire risk. They save leadership teams time, keep searches confidential, and deliver stronger finalist slates — especially when the mandate is cross-border, board-visible, or time-critical.\nWhat skills are most in demand at the executive level?\nTop demand areas include:GTM leadership (CRO/CMO) with product-led growth expertise. Finance leaders with capital allocation and FP&amp;A fluency. Product/technology executives skilled in data/AI and platform strategy. Operations leaders who scale. People leaders driving DEI and culture.\nHow much do executive search firms charge?\nMost retained searches cost 20–30% of first-year compensation, with some reaching 30–35% depending on role and scope. Contingency models are pay-on-placement, usually 20–33%. Costs rise with seniority, scarcity, confidentiality, or multi-market scope. Best practice: tie payments to milestones (kickoff, shortlist, offer).\nHow long does an executive search take?\nPlan for 8–16 weeks end-to-end. External benchmarks peg executive-level fills at ~120 days on average, but disciplined retained models compress timelines by combining mapped markets, passive-talent outreach, structured scorecard assessments, and weekly governance checkpoints.\nExecutive search vs recruitment agencies — what’s the difference?\nExecutive search (retained/contained) is consultative, discreet, and built for C-suite hiring: market mapping, passive outreach, structured assessment. Recruitment agencies focus on speed and active candidates, filling non-executive roles. Use search for board-visible or confidential mandates; use agencies for volume or senior-but-not-C-suite needs.\nHow to choose the right executive search firm?\nMatch your mandate to the right category: board/CEO succession, PE/VC scale-ups, regulated or mission-driven sectors, or nearshore expansion. Then apply a pass/fail test: outcomes &amp; ownership, plan &amp; proof, access &amp; assessment, confidentiality &amp; conflicts, money &amp; outcomes. Firms unable to show this clarity? Pass.\nCan executive search firms handle confidential CEO/C-suite searches?\nYes. Best-practice searches use codename projects, redacted early materials, one secure workspace, and a single point of contact. Your role: short weekly check-ins and clear go/no-go calls. Done right, the process is nearly invisible until you decide to make it visible.\nWho are the best headhunters for CEOs and CFOs?\nFor CEO/CFO work, prioritize firms with board-level delivery and succession expertise. Commonly shortlisted: Korn Ferry, Spencer Stuart, Russell Reynolds, Heidrick &amp; Struggles, and a category fit like GoGloby for nearshore C-suite hires into U.S. organizations.\nHow are executive search firm rankings decided?\nRankings typically weigh C-suite depth, industry specialization, global reach, assessment rigor, engagement model, and proven outcomes (e.g., time-to-slate, offer-to-close rate, 12–24-month stick rate). Use rankings as a shortlist starter, then request each finalist’s 5-page proof pack before signing.",
+   "parts": [
+    {
+     "type": "field",
+     "text": "Top 18 Executive Search Firms in the USA | 2026 Rankings, Fees &amp; Picks",
+     "area": "Article.name",
+     "index": 1
+    },
+    {
+     "type": "field",
+     "text": "Top 18 Executive Search Firms in the USA | 2026 Rankings, Fees &amp; Picks",
+     "area": "Article.headline",
+     "index": 2
+    },
+    {
+     "type": "field",
+     "text": "See which executive search firms lead in 2026: USA rankings, fee ranges, engagement models, and best",
+     "area": "Article.description",
+     "index": 3
+    },
+    {
+     "type": "field",
+     "text": "Sergey Matikaynen",
+     "area": "Person.name",
+     "index": 4
+    },
+    {
+     "type": "field",
+     "text": "GoGloby",
+     "area": "Organization.name",
+     "index": 5
+    },
+    {
+     "type": "field",
+     "text": "Is there more demand for executives right now?",
+     "area": "Question.name",
+     "index": 6
+    },
+    {
+     "type": "field",
+     "text": "Yes. The U.S. projects around 343,800 openings for top executives annually (2023–2033), with 6% job growth — faster than average. At the same time, the executive search services market is forecast to grow at ~10% CAGR (2024–2029), meaning competition for senior leaders is only intensifying.",
+     "area": "Answer.text",
+     "index": 7
+    },
+    {
+     "type": "field",
+     "text": "What is an executive search firm (a.k.a. executive recruitment agency / executive search company / executive placement firm)?",
+     "area": "Question.name",
+     "index": 8
+    },
+    {
+     "type": "field",
+     "text": "An executive search firm specializes in C-suite and senior leadership hiring. Unlike traditional agencies, they discreetly map markets, engage passive talent, run structured assessments, and manage references. They’re built for high-stakes, confidential roles where time-to-impact and cultural fit matter.",
+     "area": "Answer.text",
+     "index": 9
+    },
+    {
+     "type": "field",
+     "text": "Why should you work with an executive search firm?",
+     "area": "Question.name",
+     "index": 10
+    },
+    {
+     "type": "field",
+     "text": "Depth, speed, and discretion. Executive search partners bring mapped markets, off-market access, and scorecard-driven assessment that reduce mis-hire risk. They save leadership teams time, keep searches confidential, and deliver stronger finalist slates — especially when the mandate is cross-border, board-visible, or time-critical.",
+     "area": "Answer.text",
+     "index": 11
+    },
+    {
+     "type": "field",
+     "text": "What skills are most in demand at the executive level?",
+     "area": "Question.name",
+     "index": 12
+    },
+    {
+     "type": "field",
+     "text": "Top demand areas include:GTM leadership (CRO/CMO) with product-led growth expertise. Finance leaders with capital allocation and FP&amp;A fluency. Product/technology executives skilled in data/AI and platform strategy. Operations leaders who scale. People leaders driving DEI and culture.",
+     "area": "Answer.text",
+     "index": 13
+    },
+    {
+     "type": "field",
+     "text": "How much do executive search firms charge?",
+     "area": "Question.name",
+     "index": 14
+    },
+    {
+     "type": "field",
+     "text": "Most retained searches cost 20–30% of first-year compensation, with some reaching 30–35% depending on role and scope. Contingency models are pay-on-placement, usually 20–33%. Costs rise with seniority, scarcity, confidentiality, or multi-market scope. Best practice: tie payments to milestones (kickoff, shortlist, offer).",
+     "area": "Answer.text",
+     "index": 15
+    },
+    {
+     "type": "field",
+     "text": "How long does an executive search take?",
+     "area": "Question.name",
+     "index": 16
+    },
+    {
+     "type": "field",
+     "text": "Plan for 8–16 weeks end-to-end. External benchmarks peg executive-level fills at ~120 days on average, but disciplined retained models compress timelines by combining mapped markets, passive-talent outreach, structured scorecard assessments, and weekly governance checkpoints.",
+     "area": "Answer.text",
+     "index": 17
+    },
+    {
+     "type": "field",
+     "text": "Executive search vs recruitment agencies — what’s the difference?",
+     "area": "Question.name",
+     "index": 18
+    },
+    {
+     "type": "field",
+     "text": "Executive search (retained/contained) is consultative, discreet, and built for C-suite hiring: market mapping, passive outreach, structured assessment. Recruitment agencies focus on speed and active candidates, filling non-executive roles. Use search for board-visible or confidential mandates; use agencies for volume or senior-but-not-C-suite needs.",
+     "area": "Answer.text",
+     "index": 19
+    },
+    {
+     "type": "field",
+     "text": "How to choose the right executive search firm?",
+     "area": "Question.name",
+     "index": 20
+    },
+    {
+     "type": "field",
+     "text": "Match your mandate to the right category: board/CEO succession, PE/VC scale-ups, regulated or mission-driven sectors, or nearshore expansion. Then apply a pass/fail test: outcomes &amp; ownership, plan &amp; proof, access &amp; assessment, confidentiality &amp; conflicts, money &amp; outcomes. Firms unable to show this clarity? Pass.",
+     "area": "Answer.text",
+     "index": 21
+    },
+    {
+     "type": "field",
+     "text": "Can executive search firms handle confidential CEO/C-suite searches?",
+     "area": "Question.name",
+     "index": 22
+    },
+    {
+     "type": "field",
+     "text": "Yes. Best-practice searches use codename projects, redacted early materials, one secure workspace, and a single point of contact. Your role: short weekly check-ins and clear go/no-go calls. Done right, the process is nearly invisible until you decide to make it visible.",
+     "area": "Answer.text",
+     "index": 23
+    },
+    {
+     "type": "field",
+     "text": "Who are the best headhunters for CEOs and CFOs?",
+     "area": "Question.name",
+     "index": 24
+    },
+    {
+     "type": "field",
+     "text": "For CEO/CFO work, prioritize firms with board-level delivery and succession expertise. Commonly shortlisted: Korn Ferry, Spencer Stuart, Russell Reynolds, Heidrick &amp; Struggles, and a category fit like GoGloby for nearshore C-suite hires into U.S. organizations.",
+     "area": "Answer.text",
+     "index": 25
+    },
+    {
+     "type": "field",
+     "text": "How are executive search firm rankings decided?",
+     "area": "Question.name",
+     "index": 26
+    },
+    {
+     "type": "field",
+     "text": "Rankings typically weigh C-suite depth, industry specialization, global reach, assessment rigor, engagement model, and proven outcomes (e.g., time-to-slate, offer-to-close rate, 12–24-month stick rate). Use rankings as a shortlist starter, then request each finalist’s 5-page proof pack before signing.",
+     "area": "Answer.text",
+     "index": 27
+    }
+   ]
+  },
+  {
+   "id": "h1",
+   "kind": "h1",
+   "label": "H1",
+   "scope": "page",
+   "skipped": false,
+   "text": "Top 18 Executive Search Firms in the USA | 2026 Rankings, Fees & Picks",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Top 18 Executive Search Firms in the USA | 2026 Rankings, Fees & Picks"
+    }
+   ]
+  },
+  {
+   "id": "date",
+   "kind": "date",
+   "label": "Date",
+   "scope": "page",
+   "skipped": false,
+   "text": "Updated on June 17, 2026",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Updated on June 17, 2026"
+    }
+   ]
+  },
+  {
+   "id": "author",
+   "kind": "author",
+   "label": "Author",
+   "scope": "page",
+   "skipped": false,
+   "text": "Author avatar\nSergey Matikaynen / CTO\nArticle author\nSergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.\nView profile",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Author avatar",
+     "src": "https://gogloby.com/wp-content/uploads/2024/02/1706550966241.jpeg",
+     "file": "1706550966241.jpeg",
+     "alt": "Author avatar",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen / CTO",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Article author",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "View profile",
+     "links": [
+      {
+       "href": "https://gogloby.com/author/sergey/",
+       "text": "View profile"
+      }
+     ],
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "toc",
+   "kind": "toc",
+   "label": "Table of contents",
+   "scope": "page",
+   "skipped": false,
+   "text": "Table of Contents\nWhere do top executive recruiters add real value vs in-house?\nTop 18 Executive Search Firms in 2026\nHow to Evaluate an Executive Search Partner (C-suite edition)\nWhat does a good confidential search look like?\nWhy Choose Retained Search vs Doing It In-House (Time and Risk)\nFees & Terms\nConclusion\nStruggling to Secure Top Executive Talent?\nFAQs",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Table of Contents",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Where do top executive recruiters add real value vs in-house?",
+     "links": [
+      {
+       "href": "#where-do-top-executive-recruiters-add-real-value-vs-in-house",
+       "text": "Where do top executive recruiters add real value vs in-house?"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Top 18 Executive Search Firms in 2026",
+     "links": [
+      {
+       "href": "#top-18-executive-search-firms-in-2026",
+       "text": "Top 18 Executive Search Firms in 2026"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "How to Evaluate an Executive Search Partner (C-suite edition)",
+     "links": [
+      {
+       "href": "#How-to-Evaluate-an-Executive-Search-Partner",
+       "text": "How to Evaluate an Executive Search Partner (C-suite edition)"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "What does a good confidential search look like?",
+     "links": [
+      {
+       "href": "#Confidential-Search-Protocol",
+       "text": "What does a good confidential search look like?"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Why Choose Retained Search vs Doing It In-House (Time and Risk)",
+     "links": [
+      {
+       "href": "#retained-search-vs-in-house",
+       "text": "Why Choose Retained Search vs Doing It In-House (Time and Risk)"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Fees & Terms",
+     "links": [
+      {
+       "href": "#Fees-&-Terms",
+       "text": "Fees & Terms"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Conclusion",
+     "links": [
+      {
+       "href": "#Conclusion",
+       "text": "Conclusion"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Struggling to Secure Top Executive Talent?",
+     "links": [
+      {
+       "href": "#struggling-to-secure-top-executive-talent",
+       "text": "Struggling to Secure Top Executive Talent?"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "FAQs",
+     "links": [
+      {
+       "href": "#FAQs",
+       "text": "FAQs"
+      }
+     ],
+     "index": 9
+    }
+   ]
+  },
+  {
+   "id": "article:intro",
+   "kind": "article_section",
+   "label": "Intro",
+   "scope": "page",
+   "skipped": false,
+   "text": "Choosing an executive search partner should not feel like guesswork, especially when the stakes keep getting higher. The U.S. expects more than 331,000 executive openings every year from 2024 to 2034. Companies are feeling the pressure to reset leadership, too. 89% say their senior team needs to change, and 19% believe a complete overhaul is necessary.\nIn a market this tight, the real advantage is not the biggest brand name. It is choosing the firm that fits your mandate. Some teams are built for CEO and board succession. Others excel at landing GTM operators for SaaS, solving hard technical leadership roles, or navigating regulated environments like healthcare. Pick the wrong type, and you lose months. Pick the right one, and you accelerate time to impact.\nTo help you make that decision, we created this guide. Instead of a flat list, you’ll find clear categories that anchor on your need first and point to the firms that reliably deliver in that context. The goal is straightforward: help you move from broad research to a confident, defensible shortlist faster.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "Choosing an executive search partner should not feel like guesswork, especially when the stakes keep getting higher. The U.S. expects more than 331,000 executive openings every year from 2024 to 2034. Companies are feeling the pressure to reset leadership, too. 89% say their senior team needs to change, and 19% believe a complete overhaul is necessary.",
+     "links": [
+      {
+       "href": "https://www.bls.gov/ooh/management/top-executives.htm",
+       "text": "331,000"
+      },
+      {
+       "href": "https://www.russellreynolds.com/en/insights/articles/how-trailblazing-leaders-are-transforming-their-workforce",
+       "text": "89%"
+      },
+      {
+       "href": "https://www.russellreynolds.com/en/insights/articles/how-trailblazing-leaders-are-transforming-their-workforce",
+       "text": "19%"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "In a market this tight, the real advantage is not the biggest brand name. It is choosing the firm that fits your mandate. Some teams are built for CEO and board succession. Others excel at landing GTM operators for SaaS, solving hard technical leadership roles, or navigating regulated environments like healthcare. Pick the wrong type, and you lose months. Pick the right one, and you accelerate time to impact.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "To help you make that decision, we created this guide. Instead of a flat list, you’ll find clear categories that anchor on your need first and point to the firms that reliably deliver in that context. The goal is straightforward: help you move from broad research to a confident, defensible shortlist faster.",
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "article:where-do-top-executive-recruiters-add-real-value",
+   "kind": "article_section",
+   "label": "Where do top executive recruiters add real value vs in-house?",
+   "scope": "page",
+   "skipped": false,
+   "text": "Where do top executive recruiters add real value vs in-house?\nExecutive recruiters add value where internal TA can’t deliver board-level discretion, off-market access, or structured evaluation for C-suite roles.\nIn a CEO succession search, for example, a firm can quietly map the market, engage seated leaders under a codename, align directors around a shared definition of “what great looks like,” and run finalist work sessions with the rigor a board expects.\nThe difference shows up in three areas: deeper research and outreach, access to passive executives that TA can’t reach, and governance built for directors. In-house works when the role is senior but not C-suite, and the team has real capacity to run a visible, structured process.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Where do top executive recruiters add real value vs in-house?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Executive recruiters add value where internal TA can’t deliver board-level discretion, off-market access, or structured evaluation for C-suite roles.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "In a CEO succession search, for example, a firm can quietly map the market, engage seated leaders under a codename, align directors around a shared definition of “what great looks like,” and run finalist work sessions with the rigor a board expects.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "The difference shows up in three areas: deeper research and outreach, access to passive executives that TA can’t reach, and governance built for directors. In-house works when the role is senior but not C-suite, and the team has real capacity to run a visible, structured process.",
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "article:top-18-executive-search-firms-in-2026",
+   "kind": "article_section",
+   "label": "Top 18 Executive Search Firms in 2026",
+   "scope": "page",
+   "skipped": false,
+   "text": "Top 18 Executive Search Firms in 2026\nThis section gives you a fast snapshot of the top executive search firms in 2026 and a breakdown by category so you can shortlist with precision. The table summarizes each firm’s specialization and ideal use case. Start with the table, then use the lists below to match your mandate, from confidential CEO searches to GTM hires and cross-border roles.\nFirm\nBest for\nIndustries\nWhy choose them\nRating\n1. GoGloby\nFast C-suite/VP hiring with U.S.-aligned executives and secure delivery\nTech, Financial, Healthcare, Operatios\nStructured 90-day outcomes, mapped markets, SOC2 workflow, consistent time-to-slate\n4.9/5 (Clutch)\n2. Korn Ferry\nGlobal board/C-suite and multi-market mandates\nAll major sectors\nLeadership assessment depth + worldwide practitioner bench\n4.8/5 (Clutch)\n3. Spencer Stuart\nCEO/board succession requiring alignment\nConsumer, Tech, Financial, Healthcare\nSuccession calibration + multi-stakeholder alignment\n4.8/5 (Clutch)\n4. Russell Reynolds (RRA)\nCulture-critical CEO/CxO hires and succession\nGlobal, cross-industry\nLeadership science + culture diagnostics\n4.7/5 (Clutch)\n5. Heidrick & Struggles\nTransformation and modern C-suite buildouts\nTech, Industrial, Consumer, Financial, Healthcare\nStrong cadence + integration support\n4.7/5 (Clutch)\n6. Egon Zehnder\nDiscreet global CEO/board searches\nGlobal portfolio\nOne-firm model with consistent global execution\n4.8/5 (Clutch)\n7. True Search\nHigh-growth PE/VC-backed scale-ups\nSaaS, Fintech, Healthtech\nOperator-minded, investor-aligned scorecards\n4.7/5 (Clutch)\n8. ZRG Partners\nData-driven searches under timeline pressure\nPrivate Equity, Life Science, Financial, Industrial, Tech\nAnalytics platform for pipeline and scorecard visibility\n4.6/5 (Clutch)\n9. DHR Global\nMultinational + mid-market C-suite\nConsumer, Industrial, Tech, Healthcare\nPartner-led execution across regions\n4.5/5 (Clutch)\n10. DSG (Diversified Search Group)\nMission-aligned and DEI-driven leadership\nCorporate, Nonprofit, Higher Ed\nInclusion methodology with consistent slate diversity\n4.7/5 (Clutch)\n11. WittKieffer\nHealthcare, academic, and nonprofit execs\nHealthcare, Higher Ed, Nonprofit\nClinical/academic evaluation depth\n4.7/5 (Clutch)\n12. Boyden\nCross-border C-suite with partner-led attention\nConsumer, Industrial, Finance, Tech, Health\nHigh-touch senior partner delivery\n4.6/5 (Clutch)\n13. Caldwell\nFinance & tech leadership with crisp processes\nTech, Finance, Industrial\nDecisive, partner-driven execution\n4.5/5 (Clutch)\n14. Odgers Berndtson\nPublic sector, universities, and complex orgs\nPublic, Private, Government\nInterim + retained integration for smooth transitions\n4.6/5 (Clutch)\n15. JM Search\nPE portfolio leaders driving value creation\nIndustrial, Tech, Consumer\nOperator-centric, value-creation scorecards\n4.7/5 (Clutch)\nMajor Lindsey & Africa (MLA)\nSenior in-house legal and compliance\nFinance, Healthcare, Tech\nDeep AMLaw + in-house networks\n4.7/5 (Clutch)\nOptions Group\nFront-office financial leaders\nInvestment Banking, Hedge Funds, Private Equity, Wealth\nReal-time comp intelligence\n4.6/5 (Clutch)\nON Partners\nGrowth-stage C-suite buildouts\nTech, Healthcare, Industrial\nSpeed and operator-credible process\n4.6/5 (Clutch)\nCategory #1 – Flexible & Cross-Border Executive Search\nLooking to add proven executive leadership fast—without the rigidity of traditional headhunters? This category features firms that combine enterprise-grade executive search with flexible hiring models, giving U.S. companies access to FAANG-level talent and senior leaders who can integrate seamlessly into hybrid or distributed organizations.\nWhether scaling for growth or filling a strategic leadership gap, these partners emphasize speed, compliance, and reliability—helping you hire C-suite and VP executives who are fully aligned with U.S. business standards and ready to deliver impact from day one.\n1) GoGloby\nGoGloby top executive search firm in the US\nGoGloby is an executive search firm that helps U.S. organizations hire American FAANG-level talent and senior leaders across operations, marketing, finance, and technology. Headquartered in Boston, the firm specializes in executive and VP-level placements for companies that need proven U.S.-based leadership to scale effectively. Its search process blends targeted sourcing, rigorous evaluation, and onboarding support to ensure every placement strengthens business performance and culture fit.\nEach engagement operates under a single contract covering recruiting, payroll, and compliance, so teams can onboard executives efficiently and confidently. GoGloby’s delivery framework includes SOC 2-aligned security controls, a 120-day free replacement guarantee, and $3 million in liability coverage, giving organizations the assurance needed for high-stakes leadership hires.\nRecent partnerships include MikeWorldWide (MWW), a New York–based PR and communications agency serving Fortune 500 brands such as Amazon, Nikon, and Deloitte. MWW’s Vice President of Talent Acquisition praised GoGloby’s responsiveness and precision in sourcing American executive leaders for the U.S. market, calling it “a true partner that delivers results fast.”\nBest for: C-suite/VP hires\nTypical roles: CEO, CFO, CRO, CMO, CTO, VP (GTM, Finance, Ops, Product/Tech)\nIndustries: Technology, Financial Services, Healthcare, Operations\nGoGloby stands out when you need a fast, structured process with clear outcomes, tight governance, and U.S.-standard compliance. The firm anchors each search in defined 90-day objectives, mapped markets, and secure execution under a SOC 2–aligned workflow, supported by consistent time-to-slate and time-to-offer performance across the last year.\nCategory #2 – Global Multi-Industry Leaders (Board & C-Suite Depth)\nIf the mandate is board/CEO succession, multi-market transformation, or enterprise complexity, start here. These are global executive search companies with deep leadership advisory, broad sector coverage, and the partner caliber to operate with governance visibility.\nFit rule: pick this category when you need governance maturity, multi-stakeholder alignment, and credible board-level calibration. These firms excel when the outcome affects enterprise value, investor alignment, or long-term succession.\n2) Korn Ferry\ntop executive search firms - Korn Ferry\nKorn Ferry is a global leadership advisory firm that blends retained executive search with leadership assessment and organization design. When the mandate is more than backfilling a seat, you’re rethinking how the company operates, end-to-end capability matters. The firm mobilizes industry practitioners across geographies for board/CEO, CHRO, and full C-suite mandates, maintaining rigor and momentum on multi-market searches.\nBest for: Enterprise transformations; global board/C-suite mandates\nTypical roles: Board, CEO, CFO, CHRO, CRO, CMO, CTO\nIndustries: All major sectors (global coverage)\nThe firm’s leadership-assessment depth and global bench become especially valuable when a mandate requires clarity across markets and stakeholders. Their work typically includes structured evaluation outputs, coordinated multi-region teams, and search plans that maintain momentum across geographies, all of which make Korn Ferry a strong match for complex, strategy-aligned C-suite and board work.\n3) Spencer Stuart\ntop executive search firms \n Spencer Stuart\nSpencer Stuart is a go-to executive search firm for board and CEO succession, with a disciplined, stakeholder-heavy process that aligns directors, investors, and operators. For PE-backed or public companies, the firm’s ability to define “what great looks like,” evaluate leadership against strategy, and build consensus is a real edge. It fits when governance maturity and credible reach into next-gen C-suite talent both matter.\nBest for: Board/CEO work; high-stakes C-suite changes\nTypical roles: Board, CEO, CFO, CMO, CHRO\nIndustries: Consumer, Technology, Financial Services, Healthcare (broad)\nSpencer Stuart’s edge shows up in how they calibrate succession decisions and align directors early. Their process often brings forward structured succession frameworks and stakeholder-alignment models that create clarity around what the future leader must deliver.\n4) Russell Reynolds Associates\ntop executive search firms Russell Reynolds\nRRA combines leadership science with culture diagnostics to reduce hiring risk at the top. If the mandate is growth, turnaround, or digital reinvention, the firm clarifies competencies, calibrates culture, and manages stakeholders tightly from intake to close. It’s a strong choice when you need a slate that fits both strategy and how work really gets done.\nBest for: CEO/CxO + culture alignment; succession planning\nTypical roles: CEO, CFO, COO, CRO/CMO, CHRO\nIndustries: Cross-industry (global)\nRRA’s value is clearest when the mandate hinges on cultural alignment and competency clarity. Their diagnostic approach and role-specific capability frameworks bring discipline to high-stakes decisions, especially in growth, turnaround, or reinvention contexts.\n5) Heidrick & Struggles\ntop executive search firms Heidrick & Struggles\nA pioneer in senior executive search, Heidrick brings global reach plus leadership development and culture-shaping services, useful when you’re executing a transformation and want post-placement support for the team you just hired. The firm spans tech, industrial, consumer, financial services, and healthcare, and is adept at building modern C-suites around product, data, and customer outcomes.\nBest for: Transformation leadership at scale; digital and innovation\nTypical roles: CEO, CTO/CPO, CFO, CRO, CHRO\nIndustries: Technology, Industrial, Consumer, Financial, Healthcare\nHeidrick is particularly effective in environments transforming. Their cadence, reporting model, and integration-oriented materials help leadership teams maintain speed and visibility throughout the search.\n6) Egon Zehnder\ntop executive search firms \n Egon Zehnder\nPrivately held and partner-led, Egon Zehnder is trusted for CEO and board searches requiring discretion and global continuity. The “one-firm” operating model means cross-border mandates move fast with a single standard of quality. If you’re balancing succession, strategy reset, and stakeholder optics, this executive search company is built for it.\nBest for: CEO/board with global discretion and continuity\nTypical roles: Board, CEO, CFO, CHRO, CxO\nIndustries: Broad global portfolio\nEgon Zehnder’s one-firm operating model gives cross-border searches consistency and continuity. Their partner collaboration structure and unified workflow make them well-suited for CEO and board mandates that require global discretion and coordinated execution.\nCategory #3 – Data-Driven & High-Growth Specialists\nPE/VC-backed and scaling? This set focuses on firms that pair analytics-driven search with operator-minded delivery across GTM (CRO/CMO), product/engineering, and operations—ideal when you need speed, off-market access, and crisp scorecards.\n7) True Search\nTrue Search Executive Search Firm\nTrue is engineered for high-growth tech and healthcare, where speed and bar-raising can’t be a trade-off. Known for sharp market mapping and operator-minded scale-up hiring, the firm covers GTM (CRO/CMO), product/engineering, and operations. It partners closely with operating teams and investors on role definition, scorecards, and references for growth-stage mandates.\nBest for: PE/VC scale-ups; GTM and product/tech leadership\nTypical roles: CRO, CMO, CPO/CTO, COO, CFO\nIndustries: SaaS, Healthtech, Fintech, Life Sciences\nTrue fits best in scale-up environments where investor alignment, operator-focused scorecards, and tight execution drive outcomes. Their work is shaped by clear success criteria and interview workflows that reflect how high-growth companies actually operate.\n8) ZRG Partners\nZRG Partners Executive Search Firm\nZRG is a data-forward executive recruitment firm that uses analytics to support pipeline visibility and stakeholder alignment, useful when timelines are tight and specifications are exacting. Coverage spans private equity, life sciences, and financial services, with consultants leveraging talent insights to inform search strategy and decision-making.\nBest for: Data-informed searches with timeline pressure\nTypical roles: CEO, CFO, COO, CRO/CMO, functional VPs\nIndustries: Private Equity, Life Sciences, Financial Services, Industrial, Technology\nZRG differentiates itself through the way data guides the search. Their analytics platform provides visibility into pipeline health and scorecard patterns, helping decision-makers understand both the slate and the path to close.\n9) DHR Global\nDHR Global Executive Search Firm\nDHR combines partner-led delivery with cross-border reach, practical for multinationals and mid-market companies needing bespoke outreach for niche profiles. The firm handles specialized mandates while keeping candidate experience high and processes structured across regions.\nBest for: Multinational & mid-market C-suite/senior leadership\nTypical roles: CEO, CFO, COO, CHRO, CRO/CMO\nIndustries: Consumer, Industrial, Healthcare, Technology, Private Equity\nDHR works well for mandates requiring partner-led execution across regions. Their coordinated cross-border workflows keep outreach and evaluation consistent, especially for mid-market and multinational companies balancing multiple hiring geographies.\n10) Diversified Search Group (DSG)\nDiversified Search Group Executive search firm\nDSG is a diversity-led executive search company operating across corporate, nonprofit, and higher education. If your board wants inclusive slates and leadership that moves the culture forward, DSG’s network and process discipline delivers. It’s a strong pick when ESG, community impact, or mission alignment is material to the business case.\nBest for: Diversity-led C-suite/VP searches\nTypical roles: CEO/President, CFO, CHRO, Deans/Academic leaders\nIndustries: Corporate, Nonprofit, Higher Education, Healthcare\nDSG’s strength lies in its disciplined inclusion methodology and consistent slate composition across sectors. Their process ensures mission alignment and cultural impact remain central throughout executive evaluation.\nCategory #4 – Healthcare, Education & Mission-Driven\nClinical credibility and campus or nonprofit nuance matter here. These executive search firms specialize in health systems, life sciences, higher ed, and mission-driven organizations, balancing stakeholder alignment with sector-specific requirements.\n11) WittKieffer\nWittKieffer Executive Search Firm\nWittKieffer is a sector specialist for healthcare, life sciences, higher education, and nonprofits, environments where stakeholder alignment and mission fluency are non-negotiable. For boards and CEOs who need leaders with clinical credibility or academic gravitas, this executive placement firm understands the terrain and the politics and delivers vetted slates.\nBest for: Mission-driven leadership; clinical/academic executives\nTypical roles: CEO/President, Health System C-suite, Deans/Provosts\nIndustries: Healthcare, Life Sciences, Higher Education, Nonprofit\nWittKieffer excels in environments where clinical, academic, and nonprofit dynamics shape the search. Their sector-informed evaluation models and stakeholder-mapping practices help navigate complex governance structures with precision.\nCategory #5 – Global & North-American Partner-Led Firms\nPrefer partner-delivered work with international reach? This group blends bespoke outreach and cross-border execution, useful for mid-market multinationals and North-American expansions that need balanced rigor and pace.\n12) Boyden\nBoyden executive search firm\nBoyden is a global, partner-led executive search firm, a good fit when senior attention, international reach, and bespoke outreach for niche leadership profiles are critical. Mid-market and multinational clients use Boyden for cross-border C-suite work that needs balanced rigor and pace.\nBest for: International expansion; mid-market to enterprise\nTypical roles: CEO, CFO, COO, Regional GMs, Function Heads\nIndustries: Consumer, Industrial, Financial Services, Technology, Healthcare\nBoyden stands out when senior partner involvement and cross-border reach are both priorities. Their delivery model maintains rigor across regions while keeping engagement closely held by senior operators.\n13) Caldwell\nCaldwell Partners Executive search firm\nCaldwell brings North-American strength to C-suite search with direct partner access and tight candidate care. Often tapped for finance and technology leadership, the firm’s process is clean and decisive, fit for boards and operators who value decisive processes.\nBest for: Finance & technology leadership; board seats\nTypical roles: CFO, CAO/Controller, CIO/CTO, Board directors\nIndustries: Technology, Financial Services, Industrial, Consumer\nCaldwell fits companies that value decisive, partner-driven processes. Their approach brings clarity to timelines and keeps decision-making tightly aligned with board and operator expectations.\n14) Odgers Berndtson\nOdgers covers public, private, and nonprofit sectors, adding assessment and interim options that help de-risk leadership transitions. If a backfill requires an interim while a retained search runs or you want extra evaluation rigor, this executive recruitment agency is built for complexity.\nBest for: Public sector, universities, global corporates\nTypical roles: CEO/President, Deans, Directors, C-suite\nIndustries: Public, Private, Nonprofit; Healthcare, Education, Government\nOdgers is well-suited for searches that require both stability and continuity, especially when interim leadership and retained search need to work together seamlessly during transitions.\nCategory #6 – PE, Finance & Legal Specialists\nFor portfolio company C-suites, front-office financial leadership, and in-house legal (GC/CLO, partners, compliance), these specialists bring relevant networks, discreet access to seated talent, and deal-aware calibration.\n15) JM Search\nJM Search Executive Search Firm\nJM Search is operator-centric C-suite search for PE/VC portfolios, tight scorecards, hard references, and empathy for deal timelines. If the brief is a CEO, CFO, or CRO who can drive value creation post-hire, this is a credible partner with repeat wins across industrial, consumer, tech, and healthcare platforms.\nBest for: Portfolio company C-suite/operators\nTypical roles: CEO, CFO, COO, CRO/CMO, Chairs\nIndustries: Industrial, Consumer, Technology, Healthcare, Services\nJM Search is designed for PE and VC environments where value creation, operator credibility, and post-close leadership impact matter most. Their work typically centers around clear operational scorecards and performance expectations.\n16) Major, Lindsey & Africa (MLA)\nMajor, Lindsey & Africa Executive Search Firm\nMLA is a leading legal executive search firm, GC/CLO, partners, and senior compliance leadership, with relationships across AMLaw firms and corporate legal departments. In regulated sectors, MLA’s understanding of risk, governance, and the modern in-house model accelerates the path to the right shortlist.\nBest for: Legal leadership at scale\nTypical roles: GC/CLO, Deputy GC, Head of Compliance, Partners\nIndustries: Cross-industry; regulated sectors (financial, healthcare, tech)\nMLA’s network and evaluation depth across AMLaw firms and corporate legal teams make them a top choice for senior in-house legal roles in regulated sectors. Their insights into legal career paths and governance models help shape well-calibrated shortlists.\n17) Options Group\nOption Group Executive Search Firm\nOptions Group is a financial-services executive headhunter with real-time market intelligence across capital markets, alternatives, private banking, and wealth. When compensation dynamics and counteroffers are the main risks to close, OG’s data and network help manage them proactively.\nBest for: Front-office & senior FS roles\nTypical roles: MD/Head of Desk, PM, Risk, CFO/COO (funds)\nIndustries: Investment Banking, Hedge Funds, Private Equity, Wealth\nOptions Group brings real-time market intelligence to front-office and financial leadership searches. Their compensation visibility and market-movement insights help reduce close risk in competitive environments.\n18) ON Partners\nON Partners Executive Search Firm\nON Partners builds growth-stage C-suites across tech, healthcare, and industrial, agile delivery with credible reach into operator talent. If you’re scaling from product-market fit to platform, this executive search firm prioritizes speed, fit, and board-grade communication.\nBest for: Growth-stage C-suite buildouts\nTypical roles: CEO, COO, CFO, CRO, CTO/CPO, Board\nIndustries: Technology, Healthcare, Industrial\nON Partners performs well for growth-stage companies building modern C-suites. Their work emphasizes speed, operator credibility, and strong board communication, which are key needs in rapidly scaling organizations.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Top 18 Executive Search Firms in 2026",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "This section gives you a fast snapshot of the top executive search firms in 2026 and a breakdown by category so you can shortlist with precision. The table summarizes each firm’s specialization and ideal use case. Start with the table, then use the lists below to match your mandate, from confidential CEO searches to GTM hires and cross-border roles.",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Firm",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Best for",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "Industries",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "Why choose them",
+     "index": 4
+    },
+    {
+     "type": "table_cell",
+     "text": "Rating",
+     "index": 5
+    },
+    {
+     "type": "table_cell",
+     "text": "1. GoGloby",
+     "index": 6
+    },
+    {
+     "type": "table_cell",
+     "text": "Fast C-suite/VP hiring with U.S.-aligned executives and secure delivery",
+     "index": 7
+    },
+    {
+     "type": "table_cell",
+     "text": "Tech, Financial, Healthcare, Operatios",
+     "index": 8
+    },
+    {
+     "type": "table_cell",
+     "text": "Structured 90-day outcomes, mapped markets, SOC2 workflow, consistent time-to-slate",
+     "index": 9
+    },
+    {
+     "type": "table_cell",
+     "text": "4.9/5 (Clutch)",
+     "index": 10
+    },
+    {
+     "type": "table_cell",
+     "text": "2. Korn Ferry",
+     "index": 11
+    },
+    {
+     "type": "table_cell",
+     "text": "Global board/C-suite and multi-market mandates",
+     "index": 12
+    },
+    {
+     "type": "table_cell",
+     "text": "All major sectors",
+     "index": 13
+    },
+    {
+     "type": "table_cell",
+     "text": "Leadership assessment depth + worldwide practitioner bench",
+     "index": 14
+    },
+    {
+     "type": "table_cell",
+     "text": "4.8/5 (Clutch)",
+     "index": 15
+    },
+    {
+     "type": "table_cell",
+     "text": "3. Spencer Stuart",
+     "index": 16
+    },
+    {
+     "type": "table_cell",
+     "text": "CEO/board succession requiring alignment",
+     "index": 17
+    },
+    {
+     "type": "table_cell",
+     "text": "Consumer, Tech, Financial, Healthcare",
+     "index": 18
+    },
+    {
+     "type": "table_cell",
+     "text": "Succession calibration + multi-stakeholder alignment",
+     "index": 19
+    },
+    {
+     "type": "table_cell",
+     "text": "4.8/5 (Clutch)",
+     "index": 20
+    },
+    {
+     "type": "table_cell",
+     "text": "4. Russell Reynolds (RRA)",
+     "index": 21
+    },
+    {
+     "type": "table_cell",
+     "text": "Culture-critical CEO/CxO hires and succession",
+     "index": 22
+    },
+    {
+     "type": "table_cell",
+     "text": "Global, cross-industry",
+     "index": 23
+    },
+    {
+     "type": "table_cell",
+     "text": "Leadership science + culture diagnostics",
+     "index": 24
+    },
+    {
+     "type": "table_cell",
+     "text": "4.7/5 (Clutch)",
+     "index": 25
+    },
+    {
+     "type": "table_cell",
+     "text": "5. Heidrick & Struggles",
+     "index": 26
+    },
+    {
+     "type": "table_cell",
+     "text": "Transformation and modern C-suite buildouts",
+     "index": 27
+    },
+    {
+     "type": "table_cell",
+     "text": "Tech, Industrial, Consumer, Financial, Healthcare",
+     "index": 28
+    },
+    {
+     "type": "table_cell",
+     "text": "Strong cadence + integration support",
+     "index": 29
+    },
+    {
+     "type": "table_cell",
+     "text": "4.7/5 (Clutch)",
+     "index": 30
+    },
+    {
+     "type": "table_cell",
+     "text": "6. Egon Zehnder",
+     "index": 31
+    },
+    {
+     "type": "table_cell",
+     "text": "Discreet global CEO/board searches",
+     "index": 32
+    },
+    {
+     "type": "table_cell",
+     "text": "Global portfolio",
+     "index": 33
+    },
+    {
+     "type": "table_cell",
+     "text": "One-firm model with consistent global execution",
+     "index": 34
+    },
+    {
+     "type": "table_cell",
+     "text": "4.8/5 (Clutch)",
+     "index": 35
+    },
+    {
+     "type": "table_cell",
+     "text": "7. True Search",
+     "index": 36
+    },
+    {
+     "type": "table_cell",
+     "text": "High-growth PE/VC-backed scale-ups",
+     "index": 37
+    },
+    {
+     "type": "table_cell",
+     "text": "SaaS, Fintech, Healthtech",
+     "index": 38
+    },
+    {
+     "type": "table_cell",
+     "text": "Operator-minded, investor-aligned scorecards",
+     "index": 39
+    },
+    {
+     "type": "table_cell",
+     "text": "4.7/5 (Clutch)",
+     "index": 40
+    },
+    {
+     "type": "table_cell",
+     "text": "8. ZRG Partners",
+     "index": 41
+    },
+    {
+     "type": "table_cell",
+     "text": "Data-driven searches under timeline pressure",
+     "index": 42
+    },
+    {
+     "type": "table_cell",
+     "text": "Private Equity, Life Science, Financial, Industrial, Tech",
+     "index": 43
+    },
+    {
+     "type": "table_cell",
+     "text": "Analytics platform for pipeline and scorecard visibility",
+     "index": 44
+    },
+    {
+     "type": "table_cell",
+     "text": "4.6/5 (Clutch)",
+     "index": 45
+    },
+    {
+     "type": "table_cell",
+     "text": "9. DHR Global",
+     "index": 46
+    },
+    {
+     "type": "table_cell",
+     "text": "Multinational + mid-market C-suite",
+     "index": 47
+    },
+    {
+     "type": "table_cell",
+     "text": "Consumer, Industrial, Tech, Healthcare",
+     "index": 48
+    },
+    {
+     "type": "table_cell",
+     "text": "Partner-led execution across regions",
+     "index": 49
+    },
+    {
+     "type": "table_cell",
+     "text": "4.5/5 (Clutch)",
+     "index": 50
+    },
+    {
+     "type": "table_cell",
+     "text": "10. DSG (Diversified Search Group)",
+     "index": 51
+    },
+    {
+     "type": "table_cell",
+     "text": "Mission-aligned and DEI-driven leadership",
+     "index": 52
+    },
+    {
+     "type": "table_cell",
+     "text": "Corporate, Nonprofit, Higher Ed",
+     "index": 53
+    },
+    {
+     "type": "table_cell",
+     "text": "Inclusion methodology with consistent slate diversity",
+     "index": 54
+    },
+    {
+     "type": "table_cell",
+     "text": "4.7/5 (Clutch)",
+     "index": 55
+    },
+    {
+     "type": "table_cell",
+     "text": "11. WittKieffer",
+     "index": 56
+    },
+    {
+     "type": "table_cell",
+     "text": "Healthcare, academic, and nonprofit execs",
+     "index": 57
+    },
+    {
+     "type": "table_cell",
+     "text": "Healthcare, Higher Ed, Nonprofit",
+     "index": 58
+    },
+    {
+     "type": "table_cell",
+     "text": "Clinical/academic evaluation depth",
+     "index": 59
+    },
+    {
+     "type": "table_cell",
+     "text": "4.7/5 (Clutch)",
+     "index": 60
+    },
+    {
+     "type": "table_cell",
+     "text": "12. Boyden",
+     "index": 61
+    },
+    {
+     "type": "table_cell",
+     "text": "Cross-border C-suite with partner-led attention",
+     "index": 62
+    },
+    {
+     "type": "table_cell",
+     "text": "Consumer, Industrial, Finance, Tech, Health",
+     "index": 63
+    },
+    {
+     "type": "table_cell",
+     "text": "High-touch senior partner delivery",
+     "index": 64
+    },
+    {
+     "type": "table_cell",
+     "text": "4.6/5 (Clutch)",
+     "index": 65
+    },
+    {
+     "type": "table_cell",
+     "text": "13. Caldwell",
+     "index": 66
+    },
+    {
+     "type": "table_cell",
+     "text": "Finance & tech leadership with crisp processes",
+     "index": 67
+    },
+    {
+     "type": "table_cell",
+     "text": "Tech, Finance, Industrial",
+     "index": 68
+    },
+    {
+     "type": "table_cell",
+     "text": "Decisive, partner-driven execution",
+     "index": 69
+    },
+    {
+     "type": "table_cell",
+     "text": "4.5/5 (Clutch)",
+     "index": 70
+    },
+    {
+     "type": "table_cell",
+     "text": "14. Odgers Berndtson",
+     "index": 71
+    },
+    {
+     "type": "table_cell",
+     "text": "Public sector, universities, and complex orgs",
+     "index": 72
+    },
+    {
+     "type": "table_cell",
+     "text": "Public, Private, Government",
+     "index": 73
+    },
+    {
+     "type": "table_cell",
+     "text": "Interim + retained integration for smooth transitions",
+     "index": 74
+    },
+    {
+     "type": "table_cell",
+     "text": "4.6/5 (Clutch)",
+     "index": 75
+    },
+    {
+     "type": "table_cell",
+     "text": "15. JM Search",
+     "index": 76
+    },
+    {
+     "type": "table_cell",
+     "text": "PE portfolio leaders driving value creation",
+     "index": 77
+    },
+    {
+     "type": "table_cell",
+     "text": "Industrial, Tech, Consumer",
+     "index": 78
+    },
+    {
+     "type": "table_cell",
+     "text": "Operator-centric, value-creation scorecards",
+     "index": 79
+    },
+    {
+     "type": "table_cell",
+     "text": "4.7/5 (Clutch)",
+     "index": 80
+    },
+    {
+     "type": "table_cell",
+     "text": "Major Lindsey & Africa (MLA)",
+     "index": 81
+    },
+    {
+     "type": "table_cell",
+     "text": "Senior in-house legal and compliance",
+     "index": 82
+    },
+    {
+     "type": "table_cell",
+     "text": "Finance, Healthcare, Tech",
+     "index": 83
+    },
+    {
+     "type": "table_cell",
+     "text": "Deep AMLaw + in-house networks",
+     "index": 84
+    },
+    {
+     "type": "table_cell",
+     "text": "4.7/5 (Clutch)",
+     "index": 85
+    },
+    {
+     "type": "table_cell",
+     "text": "Options Group",
+     "index": 86
+    },
+    {
+     "type": "table_cell",
+     "text": "Front-office financial leaders",
+     "index": 87
+    },
+    {
+     "type": "table_cell",
+     "text": "Investment Banking, Hedge Funds, Private Equity, Wealth",
+     "index": 88
+    },
+    {
+     "type": "table_cell",
+     "text": "Real-time comp intelligence",
+     "index": 89
+    },
+    {
+     "type": "table_cell",
+     "text": "4.6/5 (Clutch)",
+     "index": 90
+    },
+    {
+     "type": "table_cell",
+     "text": "ON Partners",
+     "index": 91
+    },
+    {
+     "type": "table_cell",
+     "text": "Growth-stage C-suite buildouts",
+     "index": 92
+    },
+    {
+     "type": "table_cell",
+     "text": "Tech, Healthcare, Industrial",
+     "index": 93
+    },
+    {
+     "type": "table_cell",
+     "text": "Speed and operator-credible process",
+     "index": 94
+    },
+    {
+     "type": "table_cell",
+     "text": "4.6/5 (Clutch)",
+     "index": 95
+    },
+    {
+     "type": "heading",
+     "text": "Category #1 – Flexible & Cross-Border Executive Search",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Looking to add proven executive leadership fast—without the rigidity of traditional headhunters? This category features firms that combine enterprise-grade executive search with flexible hiring models, giving U.S. companies access to FAANG-level talent and senior leaders who can integrate seamlessly into hybrid or distributed organizations.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Whether scaling for growth or filling a strategic leadership gap, these partners emphasize speed, compliance, and reliability—helping you hire C-suite and VP executives who are fully aligned with U.S. business standards and ready to deliver impact from day one.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "1) GoGloby",
+     "level": 4,
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "GoGloby top executive search firm in the US",
+     "src": "https://gogloby.com/wp-content/uploads/2025/09/GoGloby-Top-Executive-Search-Firm-1024x576.png",
+     "file": "GoGloby-Top-Executive-Search-Firm-1024x576.png",
+     "alt": "GoGloby top executive search firm in the US",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby is an executive search firm that helps U.S. organizations hire American FAANG-level talent and senior leaders across operations, marketing, finance, and technology. Headquartered in Boston, the firm specializes in executive and VP-level placements for companies that need proven U.S.-based leadership to scale effectively. Its search process blends targeted sourcing, rigorous evaluation, and onboarding support to ensure every placement strengthens business performance and culture fit.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Each engagement operates under a single contract covering recruiting, payroll, and compliance, so teams can onboard executives efficiently and confidently. GoGloby’s delivery framework includes SOC 2-aligned security controls, a 120-day free replacement guarantee, and $3 million in liability coverage, giving organizations the assurance needed for high-stakes leadership hires.",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Recent partnerships include MikeWorldWide (MWW), a New York–based PR and communications agency serving Fortune 500 brands such as Amazon, Nikon, and Deloitte. MWW’s Vice President of Talent Acquisition praised GoGloby’s responsiveness and precision in sourcing American executive leaders for the U.S. market, calling it “a true partner that delivers results fast.”",
+     "links": [
+      {
+       "href": "https://gogloby.com/case-study/mww/",
+       "text": "MikeWorldWide (MWW)"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Best for: C-suite/VP hires",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Typical roles: CEO, CFO, CRO, CMO, CTO, VP (GTM, Finance, Ops, Product/Tech)",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Industries: Technology, Financial Services, Healthcare, Operations",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby stands out when you need a fast, structured process with clear outcomes, tight governance, and U.S.-standard compliance. The firm anchors each search in defined 90-day objectives, mapped markets, and secure execution under a SOC 2–aligned workflow, supported by consistent time-to-slate and time-to-offer performance across the last year.",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "Category #2 – Global Multi-Industry Leaders (Board & C-Suite Depth)",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "If the mandate is board/CEO succession, multi-market transformation, or enterprise complexity, start here. These are global executive search companies with deep leadership advisory, broad sector coverage, and the partner caliber to operate with governance visibility.",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Fit rule: pick this category when you need governance maturity, multi-stakeholder alignment, and credible board-level calibration. These firms excel when the outcome affects enterprise value, investor alignment, or long-term succession.",
+     "index": 9
+    },
+    {
+     "type": "heading",
+     "text": "2) Korn Ferry",
+     "level": 4,
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "top executive search firms - Korn Ferry",
+     "src": "https://gogloby.com/wp-content/uploads/2025/08/Korn-Ferry-2-1024x500.webp",
+     "file": "Korn-Ferry-2-1024x500.webp",
+     "alt": "top executive search firms - Korn Ferry",
+     "alt_state": "text",
+     "dims": true,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Korn Ferry is a global leadership advisory firm that blends retained executive search with leadership assessment and organization design. When the mandate is more than backfilling a seat, you’re rethinking how the company operates, end-to-end capability matters. The firm mobilizes industry practitioners across geographies for board/CEO, CHRO, and full C-suite mandates, maintaining rigor and momentum on multi-market searches.",
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "Best for: Enterprise transformations; global board/C-suite mandates",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Typical roles: Board, CEO, CFO, CHRO, CRO, CMO, CTO",
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Industries: All major sectors (global coverage)",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "The firm’s leadership-assessment depth and global bench become especially valuable when a mandate requires clarity across markets and stakeholders. Their work typically includes structured evaluation outputs, coordinated multi-region teams, and search plans that maintain momentum across geographies, all of which make Korn Ferry a strong match for complex, strategy-aligned C-suite and board work.",
+     "index": 11
+    },
+    {
+     "type": "heading",
+     "text": "3) Spencer Stuart",
+     "level": 4,
+     "index": 6
+    },
+    {
+     "type": "image",
+     "text": "top executive search firms \n Spencer Stuart",
+     "src": "https://gogloby.com/wp-content/uploads/2025/05/CRM-manager-executive-search-firms-1024x529.webp",
+     "file": "CRM-manager-executive-search-firms-1024x529.webp",
+     "alt": "top executive search firms \n Spencer Stuart",
+     "alt_state": "text",
+     "dims": true,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Spencer Stuart is a go-to executive search firm for board and CEO succession, with a disciplined, stakeholder-heavy process that aligns directors, investors, and operators. For PE-backed or public companies, the firm’s ability to define “what great looks like,” evaluate leadership against strategy, and build consensus is a real edge. It fits when governance maturity and credible reach into next-gen C-suite talent both matter.",
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "Best for: Board/CEO work; high-stakes C-suite changes",
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Typical roles: Board, CEO, CFO, CMO, CHRO",
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Industries: Consumer, Technology, Financial Services, Healthcare (broad)",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Spencer Stuart’s edge shows up in how they calibrate succession decisions and align directors early. Their process often brings forward structured succession frameworks and stakeholder-alignment models that create clarity around what the future leader must deliver.",
+     "index": 13
+    },
+    {
+     "type": "heading",
+     "text": "4) Russell Reynolds Associates",
+     "level": 4,
+     "index": 7
+    },
+    {
+     "type": "image",
+     "text": "top executive search firms Russell Reynolds",
+     "src": "https://gogloby.com/wp-content/uploads/2025/05/Russell-Reynolds-1024x526.webp",
+     "file": "Russell-Reynolds-1024x526.webp",
+     "alt": "top executive search firms Russell Reynolds",
+     "alt_state": "text",
+     "dims": true,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "RRA combines leadership science with culture diagnostics to reduce hiring risk at the top. If the mandate is growth, turnaround, or digital reinvention, the firm clarifies competencies, calibrates culture, and manages stakeholders tightly from intake to close. It’s a strong choice when you need a slate that fits both strategy and how work really gets done.",
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "Best for: CEO/CxO + culture alignment; succession planning",
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "Typical roles: CEO, CFO, COO, CRO/CMO, CHRO",
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Industries: Cross-industry (global)",
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "RRA’s value is clearest when the mandate hinges on cultural alignment and competency clarity. Their diagnostic approach and role-specific capability frameworks bring discipline to high-stakes decisions, especially in growth, turnaround, or reinvention contexts.",
+     "index": 15
+    },
+    {
+     "type": "heading",
+     "text": "5) Heidrick & Struggles",
+     "level": 4,
+     "index": 8
+    },
+    {
+     "type": "image",
+     "text": "top executive search firms Heidrick & Struggles",
+     "src": "https://gogloby.com/wp-content/uploads/2025/05/Heidrick-Struggles-1024x467.webp",
+     "file": "Heidrick-Struggles-1024x467.webp",
+     "alt": "top executive search firms Heidrick & Struggles",
+     "alt_state": "text",
+     "dims": true,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "A pioneer in senior executive search, Heidrick brings global reach plus leadership development and culture-shaping services, useful when you’re executing a transformation and want post-placement support for the team you just hired. The firm spans tech, industrial, consumer, financial services, and healthcare, and is adept at building modern C-suites around product, data, and customer outcomes.",
+     "index": 16
+    },
+    {
+     "type": "list_item",
+     "text": "Best for: Transformation leadership at scale; digital and innovation",
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "Typical roles: CEO, CTO/CPO, CFO, CRO, CHRO",
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "Industries: Technology, Industrial, Consumer, Financial, Healthcare",
+     "index": 15
+    },
+    {
+     "type": "paragraph",
+     "text": "Heidrick is particularly effective in environments transforming. Their cadence, reporting model, and integration-oriented materials help leadership teams maintain speed and visibility throughout the search.",
+     "index": 17
+    },
+    {
+     "type": "heading",
+     "text": "6) Egon Zehnder",
+     "level": 4,
+     "index": 9
+    },
+    {
+     "type": "image",
+     "text": "top executive search firms \n Egon Zehnder",
+     "src": "https://gogloby.com/wp-content/uploads/2025/05/Egon-Zehnder-1024x481.webp",
+     "file": "Egon-Zehnder-1024x481.webp",
+     "alt": "top executive search firms \n Egon Zehnder",
+     "alt_state": "text",
+     "dims": true,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Privately held and partner-led, Egon Zehnder is trusted for CEO and board searches requiring discretion and global continuity. The “one-firm” operating model means cross-border mandates move fast with a single standard of quality. If you’re balancing succession, strategy reset, and stakeholder optics, this executive search company is built for it.",
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Best for: CEO/board with global discretion and continuity",
+     "index": 16
+    },
+    {
+     "type": "list_item",
+     "text": "Typical roles: Board, CEO, CFO, CHRO, CxO",
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Industries: Broad global portfolio",
+     "index": 18
+    },
+    {
+     "type": "paragraph",
+     "text": "Egon Zehnder’s one-firm operating model gives cross-border searches consistency and continuity. Their partner collaboration structure and unified workflow make them well-suited for CEO and board mandates that require global discretion and coordinated execution.",
+     "index": 19
+    },
+    {
+     "type": "heading",
+     "text": "Category #3 – Data-Driven & High-Growth Specialists",
+     "level": 3,
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "PE/VC-backed and scaling? This set focuses on firms that pair analytics-driven search with operator-minded delivery across GTM (CRO/CMO), product/engineering, and operations—ideal when you need speed, off-market access, and crisp scorecards.",
+     "index": 20
+    },
+    {
+     "type": "heading",
+     "text": "7) True Search",
+     "level": 4,
+     "index": 11
+    },
+    {
+     "type": "image",
+     "text": "True Search Executive Search Firm",
+     "src": "https://gogloby.com/wp-content/uploads/2025/02/True-Search-Executive-Search-Firm-1024x576.png",
+     "file": "True-Search-Executive-Search-Firm-1024x576.png",
+     "alt": "True Search Executive Search Firm",
+     "alt_state": "text",
+     "dims": true,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "True is engineered for high-growth tech and healthcare, where speed and bar-raising can’t be a trade-off. Known for sharp market mapping and operator-minded scale-up hiring, the firm covers GTM (CRO/CMO), product/engineering, and operations. It partners closely with operating teams and investors on role definition, scorecards, and references for growth-stage mandates.",
+     "index": 21
+    },
+    {
+     "type": "list_item",
+     "text": "Best for: PE/VC scale-ups; GTM and product/tech leadership",
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "Typical roles: CRO, CMO, CPO/CTO, COO, CFO",
+     "index": 20
+    },
+    {
+     "type": "list_item",
+     "text": "Industries: SaaS, Healthtech, Fintech, Life Sciences",
+     "index": 21
+    },
+    {
+     "type": "paragraph",
+     "text": "True fits best in scale-up environments where investor alignment, operator-focused scorecards, and tight execution drive outcomes. Their work is shaped by clear success criteria and interview workflows that reflect how high-growth companies actually operate.",
+     "index": 22
+    },
+    {
+     "type": "heading",
+     "text": "8) ZRG Partners",
+     "level": 4,
+     "index": 12
+    },
+    {
+     "type": "image",
+     "text": "ZRG Partners Executive Search Firm",
+     "src": "https://gogloby.com/wp-content/uploads/2025/02/ZRG-Partners-Executive-Search-Firm-1024x576.png",
+     "file": "ZRG-Partners-Executive-Search-Firm-1024x576.png",
+     "alt": "ZRG Partners Executive Search Firm",
+     "alt_state": "text",
+     "dims": true,
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "ZRG is a data-forward executive recruitment firm that uses analytics to support pipeline visibility and stakeholder alignment, useful when timelines are tight and specifications are exacting. Coverage spans private equity, life sciences, and financial services, with consultants leveraging talent insights to inform search strategy and decision-making.",
+     "index": 23
+    },
+    {
+     "type": "list_item",
+     "text": "Best for: Data-informed searches with timeline pressure",
+     "index": 22
+    },
+    {
+     "type": "list_item",
+     "text": "Typical roles: CEO, CFO, COO, CRO/CMO, functional VPs",
+     "index": 23
+    },
+    {
+     "type": "list_item",
+     "text": "Industries: Private Equity, Life Sciences, Financial Services, Industrial, Technology",
+     "index": 24
+    },
+    {
+     "type": "paragraph",
+     "text": "ZRG differentiates itself through the way data guides the search. Their analytics platform provides visibility into pipeline health and scorecard patterns, helping decision-makers understand both the slate and the path to close.",
+     "index": 24
+    },
+    {
+     "type": "heading",
+     "text": "9) DHR Global",
+     "level": 4,
+     "index": 13
+    },
+    {
+     "type": "image",
+     "text": "DHR Global Executive Search Firm",
+     "src": "https://gogloby.com/wp-content/uploads/2025/05/DHR-Global-CRM-Manager-Executive-Search-Firm-1024x504.png",
+     "file": "DHR-Global-CRM-Manager-Executive-Search-Firm-1024x504.png",
+     "alt": "DHR Global Executive Search Firm",
+     "alt_state": "text",
+     "dims": true,
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "DHR combines partner-led delivery with cross-border reach, practical for multinationals and mid-market companies needing bespoke outreach for niche profiles. The firm handles specialized mandates while keeping candidate experience high and processes structured across regions.",
+     "index": 25
+    },
+    {
+     "type": "list_item",
+     "text": "Best for: Multinational & mid-market C-suite/senior leadership",
+     "index": 25
+    },
+    {
+     "type": "list_item",
+     "text": "Typical roles: CEO, CFO, COO, CHRO, CRO/CMO",
+     "index": 26
+    },
+    {
+     "type": "list_item",
+     "text": "Industries: Consumer, Industrial, Healthcare, Technology, Private Equity",
+     "index": 27
+    },
+    {
+     "type": "paragraph",
+     "text": "DHR works well for mandates requiring partner-led execution across regions. Their coordinated cross-border workflows keep outreach and evaluation consistent, especially for mid-market and multinational companies balancing multiple hiring geographies.",
+     "index": 26
+    },
+    {
+     "type": "heading",
+     "text": "10) Diversified Search Group (DSG)",
+     "level": 4,
+     "index": 14
+    },
+    {
+     "type": "image",
+     "text": "Diversified Search Group Executive search firm",
+     "src": "https://gogloby.com/wp-content/uploads/2025/05/IMl-1024x489.webp",
+     "file": "IMl-1024x489.webp",
+     "alt": "Diversified Search Group Executive search firm",
+     "alt_state": "text",
+     "dims": true,
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "DSG is a diversity-led executive search company operating across corporate, nonprofit, and higher education. If your board wants inclusive slates and leadership that moves the culture forward, DSG’s network and process discipline delivers. It’s a strong pick when ESG, community impact, or mission alignment is material to the business case.",
+     "index": 27
+    },
+    {
+     "type": "list_item",
+     "text": "Best for: Diversity-led C-suite/VP searches",
+     "index": 28
+    },
+    {
+     "type": "list_item",
+     "text": "Typical roles: CEO/President, CFO, CHRO, Deans/Academic leaders",
+     "index": 29
+    },
+    {
+     "type": "list_item",
+     "text": "Industries: Corporate, Nonprofit, Higher Education, Healthcare",
+     "index": 30
+    },
+    {
+     "type": "paragraph",
+     "text": "DSG’s strength lies in its disciplined inclusion methodology and consistent slate composition across sectors. Their process ensures mission alignment and cultural impact remain central throughout executive evaluation.",
+     "index": 28
+    },
+    {
+     "type": "heading",
+     "text": "Category #4 – Healthcare, Education & Mission-Driven",
+     "level": 3,
+     "index": 15
+    },
+    {
+     "type": "paragraph",
+     "text": "Clinical credibility and campus or nonprofit nuance matter here. These executive search firms specialize in health systems, life sciences, higher ed, and mission-driven organizations, balancing stakeholder alignment with sector-specific requirements.",
+     "index": 29
+    },
+    {
+     "type": "heading",
+     "text": "11) WittKieffer",
+     "level": 4,
+     "index": 16
+    },
+    {
+     "type": "image",
+     "text": "WittKieffer Executive Search Firm",
+     "src": "https://gogloby.com/wp-content/uploads/2025/02/WittKieffer-Executive-Search-Firm-1024x576.png",
+     "file": "WittKieffer-Executive-Search-Firm-1024x576.png",
+     "alt": "WittKieffer Executive Search Firm",
+     "alt_state": "text",
+     "dims": true,
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "WittKieffer is a sector specialist for healthcare, life sciences, higher education, and nonprofits, environments where stakeholder alignment and mission fluency are non-negotiable. For boards and CEOs who need leaders with clinical credibility or academic gravitas, this executive placement firm understands the terrain and the politics and delivers vetted slates.",
+     "index": 30
+    },
+    {
+     "type": "list_item",
+     "text": "Best for: Mission-driven leadership; clinical/academic executives",
+     "index": 31
+    },
+    {
+     "type": "list_item",
+     "text": "Typical roles: CEO/President, Health System C-suite, Deans/Provosts",
+     "index": 32
+    },
+    {
+     "type": "list_item",
+     "text": "Industries: Healthcare, Life Sciences, Higher Education, Nonprofit",
+     "index": 33
+    },
+    {
+     "type": "paragraph",
+     "text": "WittKieffer excels in environments where clinical, academic, and nonprofit dynamics shape the search. Their sector-informed evaluation models and stakeholder-mapping practices help navigate complex governance structures with precision.",
+     "index": 31
+    },
+    {
+     "type": "heading",
+     "text": "Category #5 – Global & North-American Partner-Led Firms",
+     "level": 3,
+     "index": 17
+    },
+    {
+     "type": "paragraph",
+     "text": "Prefer partner-delivered work with international reach? This group blends bespoke outreach and cross-border execution, useful for mid-market multinationals and North-American expansions that need balanced rigor and pace.",
+     "index": 32
+    },
+    {
+     "type": "heading",
+     "text": "12) Boyden",
+     "level": 4,
+     "index": 18
+    },
+    {
+     "type": "image",
+     "text": "Boyden executive search firm",
+     "src": "https://gogloby.com/wp-content/uploads/2025/02/Screenshot_116-1024x435.webp",
+     "file": "Screenshot_116-1024x435.webp",
+     "alt": "Boyden executive search firm",
+     "alt_state": "text",
+     "dims": true,
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "Boyden is a global, partner-led executive search firm, a good fit when senior attention, international reach, and bespoke outreach for niche leadership profiles are critical. Mid-market and multinational clients use Boyden for cross-border C-suite work that needs balanced rigor and pace.",
+     "index": 33
+    },
+    {
+     "type": "list_item",
+     "text": "Best for: International expansion; mid-market to enterprise",
+     "index": 34
+    },
+    {
+     "type": "list_item",
+     "text": "Typical roles: CEO, CFO, COO, Regional GMs, Function Heads",
+     "index": 35
+    },
+    {
+     "type": "list_item",
+     "text": "Industries: Consumer, Industrial, Financial Services, Technology, Healthcare",
+     "index": 36
+    },
+    {
+     "type": "paragraph",
+     "text": "Boyden stands out when senior partner involvement and cross-border reach are both priorities. Their delivery model maintains rigor across regions while keeping engagement closely held by senior operators.",
+     "index": 34
+    },
+    {
+     "type": "heading",
+     "text": "13) Caldwell",
+     "level": 4,
+     "index": 19
+    },
+    {
+     "type": "image",
+     "text": "Caldwell Partners Executive search firm",
+     "src": "https://gogloby.com/wp-content/uploads/2025/02/Screenshot_117-1024x493.webp",
+     "file": "Screenshot_117-1024x493.webp",
+     "alt": "Caldwell Partners Executive search firm",
+     "alt_state": "text",
+     "dims": true,
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Caldwell brings North-American strength to C-suite search with direct partner access and tight candidate care. Often tapped for finance and technology leadership, the firm’s process is clean and decisive, fit for boards and operators who value decisive processes.",
+     "index": 35
+    },
+    {
+     "type": "list_item",
+     "text": "Best for: Finance & technology leadership; board seats",
+     "index": 37
+    },
+    {
+     "type": "list_item",
+     "text": "Typical roles: CFO, CAO/Controller, CIO/CTO, Board directors",
+     "index": 38
+    },
+    {
+     "type": "list_item",
+     "text": "Industries: Technology, Financial Services, Industrial, Consumer",
+     "index": 39
+    },
+    {
+     "type": "paragraph",
+     "text": "Caldwell fits companies that value decisive, partner-driven processes. Their approach brings clarity to timelines and keeps decision-making tightly aligned with board and operator expectations.",
+     "index": 36
+    },
+    {
+     "type": "heading",
+     "text": "14) Odgers Berndtson",
+     "level": 4,
+     "index": 20
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2025/02/Odgers-Berndtson-Executive-Search-Firm-1024x576.png",
+     "file": "Odgers-Berndtson-Executive-Search-Firm-1024x576.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Odgers covers public, private, and nonprofit sectors, adding assessment and interim options that help de-risk leadership transitions. If a backfill requires an interim while a retained search runs or you want extra evaluation rigor, this executive recruitment agency is built for complexity.",
+     "index": 37
+    },
+    {
+     "type": "list_item",
+     "text": "Best for: Public sector, universities, global corporates",
+     "index": 40
+    },
+    {
+     "type": "list_item",
+     "text": "Typical roles: CEO/President, Deans, Directors, C-suite",
+     "index": 41
+    },
+    {
+     "type": "list_item",
+     "text": "Industries: Public, Private, Nonprofit; Healthcare, Education, Government",
+     "index": 42
+    },
+    {
+     "type": "paragraph",
+     "text": "Odgers is well-suited for searches that require both stability and continuity, especially when interim leadership and retained search need to work together seamlessly during transitions.",
+     "index": 38
+    },
+    {
+     "type": "heading",
+     "text": "Category #6 – PE, Finance & Legal Specialists",
+     "level": 3,
+     "index": 21
+    },
+    {
+     "type": "paragraph",
+     "text": "For portfolio company C-suites, front-office financial leadership, and in-house legal (GC/CLO, partners, compliance), these specialists bring relevant networks, discreet access to seated talent, and deal-aware calibration.",
+     "index": 39
+    },
+    {
+     "type": "heading",
+     "text": "15) JM Search",
+     "level": 4,
+     "index": 22
+    },
+    {
+     "type": "image",
+     "text": "JM Search Executive Search Firm",
+     "src": "https://gogloby.com/wp-content/uploads/2025/02/JM-Search-Executive-Search-Firm-1024x576.png",
+     "file": "JM-Search-Executive-Search-Firm-1024x576.png",
+     "alt": "JM Search Executive Search Firm",
+     "alt_state": "text",
+     "dims": true,
+     "index": 15
+    },
+    {
+     "type": "paragraph",
+     "text": "JM Search is operator-centric C-suite search for PE/VC portfolios, tight scorecards, hard references, and empathy for deal timelines. If the brief is a CEO, CFO, or CRO who can drive value creation post-hire, this is a credible partner with repeat wins across industrial, consumer, tech, and healthcare platforms.",
+     "index": 40
+    },
+    {
+     "type": "list_item",
+     "text": "Best for: Portfolio company C-suite/operators",
+     "index": 43
+    },
+    {
+     "type": "list_item",
+     "text": "Typical roles: CEO, CFO, COO, CRO/CMO, Chairs",
+     "index": 44
+    },
+    {
+     "type": "list_item",
+     "text": "Industries: Industrial, Consumer, Technology, Healthcare, Services",
+     "index": 45
+    },
+    {
+     "type": "paragraph",
+     "text": "JM Search is designed for PE and VC environments where value creation, operator credibility, and post-close leadership impact matter most. Their work typically centers around clear operational scorecards and performance expectations.",
+     "index": 41
+    },
+    {
+     "type": "heading",
+     "text": "16) Major, Lindsey & Africa (MLA)",
+     "level": 4,
+     "index": 23
+    },
+    {
+     "type": "image",
+     "text": "Major, Lindsey & Africa Executive Search Firm",
+     "src": "https://gogloby.com/wp-content/uploads/2025/02/Major-Lindsey-Africa-Executive-Search-Firm-1024x576.png",
+     "file": "Major-Lindsey-Africa-Executive-Search-Firm-1024x576.png",
+     "alt": "Major, Lindsey & Africa Executive Search Firm",
+     "alt_state": "text",
+     "dims": true,
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "MLA is a leading legal executive search firm, GC/CLO, partners, and senior compliance leadership, with relationships across AMLaw firms and corporate legal departments. In regulated sectors, MLA’s understanding of risk, governance, and the modern in-house model accelerates the path to the right shortlist.",
+     "index": 42
+    },
+    {
+     "type": "list_item",
+     "text": "Best for: Legal leadership at scale",
+     "index": 46
+    },
+    {
+     "type": "list_item",
+     "text": "Typical roles: GC/CLO, Deputy GC, Head of Compliance, Partners",
+     "index": 47
+    },
+    {
+     "type": "list_item",
+     "text": "Industries: Cross-industry; regulated sectors (financial, healthcare, tech)",
+     "index": 48
+    },
+    {
+     "type": "paragraph",
+     "text": "MLA’s network and evaluation depth across AMLaw firms and corporate legal teams make them a top choice for senior in-house legal roles in regulated sectors. Their insights into legal career paths and governance models help shape well-calibrated shortlists.",
+     "index": 43
+    },
+    {
+     "type": "heading",
+     "text": "17) Options Group",
+     "level": 4,
+     "index": 24
+    },
+    {
+     "type": "image",
+     "text": "Option Group Executive Search Firm",
+     "src": "https://gogloby.com/wp-content/uploads/2025/02/Option-Group-Executive-Search-Firm-1024x576.png",
+     "file": "Option-Group-Executive-Search-Firm-1024x576.png",
+     "alt": "Option Group Executive Search Firm",
+     "alt_state": "text",
+     "dims": true,
+     "index": 17
+    },
+    {
+     "type": "paragraph",
+     "text": "Options Group is a financial-services executive headhunter with real-time market intelligence across capital markets, alternatives, private banking, and wealth. When compensation dynamics and counteroffers are the main risks to close, OG’s data and network help manage them proactively.",
+     "index": 44
+    },
+    {
+     "type": "list_item",
+     "text": "Best for: Front-office & senior FS roles",
+     "index": 49
+    },
+    {
+     "type": "list_item",
+     "text": "Typical roles: MD/Head of Desk, PM, Risk, CFO/COO (funds)",
+     "index": 50
+    },
+    {
+     "type": "list_item",
+     "text": "Industries: Investment Banking, Hedge Funds, Private Equity, Wealth",
+     "index": 51
+    },
+    {
+     "type": "paragraph",
+     "text": "Options Group brings real-time market intelligence to front-office and financial leadership searches. Their compensation visibility and market-movement insights help reduce close risk in competitive environments.",
+     "index": 45
+    },
+    {
+     "type": "heading",
+     "text": "18) ON Partners",
+     "level": 4,
+     "index": 25
+    },
+    {
+     "type": "image",
+     "text": "ON Partners Executive Search Firm",
+     "src": "https://gogloby.com/wp-content/uploads/2025/02/ON-Partners-Executive-Search-Firm-1024x576.png",
+     "file": "ON-Partners-Executive-Search-Firm-1024x576.png",
+     "alt": "ON Partners Executive Search Firm",
+     "alt_state": "text",
+     "dims": true,
+     "index": 18
+    },
+    {
+     "type": "paragraph",
+     "text": "ON Partners builds growth-stage C-suites across tech, healthcare, and industrial, agile delivery with credible reach into operator talent. If you’re scaling from product-market fit to platform, this executive search firm prioritizes speed, fit, and board-grade communication.",
+     "index": 46
+    },
+    {
+     "type": "list_item",
+     "text": "Best for: Growth-stage C-suite buildouts",
+     "index": 52
+    },
+    {
+     "type": "list_item",
+     "text": "Typical roles: CEO, COO, CFO, CRO, CTO/CPO, Board",
+     "index": 53
+    },
+    {
+     "type": "list_item",
+     "text": "Industries: Technology, Healthcare, Industrial",
+     "index": 54
+    },
+    {
+     "type": "paragraph",
+     "text": "ON Partners performs well for growth-stage companies building modern C-suites. Their work emphasizes speed, operator credibility, and strong board communication, which are key needs in rapidly scaling organizations.",
+     "index": 47
+    }
+   ]
+  },
+  {
+   "id": "article:how-to-evaluate-an-executive-search-partner-c-su",
+   "kind": "article_section",
+   "label": "How to Evaluate an Executive Search Partner (C-suite edition)",
+   "scope": "page",
+   "skipped": false,
+   "text": "How to Evaluate an Executive Search Partner (C-suite edition)\nYou don’t need a 20-point RFP. You need a partner who can deliver at board level with low lift from you. Use this fast, pass/fail test to pick the right executive search partner in minutes—not weeks.\nConfirm the outcomes they commit to: Look for clear 90-day and 12-month outcomes tied to the role. A strong partner should define success before the search begins.\nIdentify who owns the search: You should have a senior lead fully accountable for the engagement and responsible for research, outreach, calibration, and reporting.\nReview the search plan and artifacts: Ask to see the plan, the market map, the target-company list, and examples of weekly updates. These materials should be easy to preview.\nValidate access to off-market talent: Check how they reach passive executives and source beyond visible channels. You want evidence of real off-market access.\nInspect the evaluation process: The partner should use a structured flow that ties every interview, work session, and reference back to the scorecard.\nAssess confidentiality controls: Confirm the model, including codename usage, secure workspace, and off-limits rules. C-suite searches require disciplined governance.\nExamine the commercial terms: You should understand the fee model, billing gates, replacement window, expenses, and the metrics that show past delivery. If any part is unclear, that is a signal.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How to Evaluate an Executive Search Partner (C-suite edition)",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "You don’t need a 20-point RFP. You need a partner who can deliver at board level with low lift from you. Use this fast, pass/fail test to pick the right executive search partner in minutes—not weeks.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Confirm the outcomes they commit to: Look for clear 90-day and 12-month outcomes tied to the role. A strong partner should define success before the search begins.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Identify who owns the search: You should have a senior lead fully accountable for the engagement and responsible for research, outreach, calibration, and reporting.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Review the search plan and artifacts: Ask to see the plan, the market map, the target-company list, and examples of weekly updates. These materials should be easy to preview.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Validate access to off-market talent: Check how they reach passive executives and source beyond visible channels. You want evidence of real off-market access.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Inspect the evaluation process: The partner should use a structured flow that ties every interview, work session, and reference back to the scorecard.",
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Assess confidentiality controls: Confirm the model, including codename usage, secure workspace, and off-limits rules. C-suite searches require disciplined governance.",
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Examine the commercial terms: You should understand the fee model, billing gates, replacement window, expenses, and the metrics that show past delivery. If any part is unclear, that is a signal.",
+     "index": 7
+    }
+   ]
+  },
+  {
+   "id": "article:what-does-a-good-confidential-search-look-like",
+   "kind": "article_section",
+   "label": "What does a good confidential search look like?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What does a good confidential search look like?\nA good confidential search is calm, contained, and low-lift because the partner takes on the operational risk while you stay in control of timing and narrative. A proper CEO/CFO-level confidential search runs under one codename, one secure channel, and one point of contact. Early materials stay redacted, outreach is discreet, and identities are shared only once interest is mutual.\nYou stay minimally involved: a weekly thirty-minute steering call and a short, redacted board note you can forward. Strong partners handle everything else with tight guardrails, including NDAs, role-based access, purge windows for PII, off-limits protection, and pre-aligned rules for backchannel references.\nIf something slips, there is a clear incident plan for notification, outreach pause, and narrative reset. Done well, the mechanics stay invisible until the day you choose to make the process visible.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What does a good confidential search look like?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "A good confidential search is calm, contained, and low-lift because the partner takes on the operational risk while you stay in control of timing and narrative. A proper CEO/CFO-level confidential search runs under one codename, one secure channel, and one point of contact. Early materials stay redacted, outreach is discreet, and identities are shared only once interest is mutual.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "You stay minimally involved: a weekly thirty-minute steering call and a short, redacted board note you can forward. Strong partners handle everything else with tight guardrails, including NDAs, role-based access, purge windows for PII, off-limits protection, and pre-aligned rules for backchannel references.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "If something slips, there is a clear incident plan for notification, outreach pause, and narrative reset. Done well, the mechanics stay invisible until the day you choose to make the process visible.",
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "article:why-choose-retained-search-vs-doing-it-in-house-",
+   "kind": "article_section",
+   "label": "Why Choose Retained Search vs Doing It In-House (Time and Risk)",
+   "scope": "page",
+   "skipped": false,
+   "text": "Why Choose Retained Search vs Doing It In-House (Time and Risk)\nRetained search delivers speed, depth, and lower miss risk when the role is board-visible, time-sensitive, or confidential. In-house can work when the mandate is senior-but-not-C-suite and internal bandwidth exists. The real trade-offs show up in operational load, confidentiality, governance cadence, access to off-market talent, and the total cost of delay. The sections that follow unpack these trade-offs so you can see, role by role, where each model delivers and where it breaks.\nWhen retained search wins: Compresses the cycle for board-visible, confidential, or time-critical roles by bringing mapped markets, warm networks, and a tested playbook that reduces miss risk and lifts slate quality.\nWhen in-house can make sense: Works for senior-but-not-C-suite roles when the market is talent-rich and internal bandwidth is available, though timelines run longer and access to passive leaders is thinner.\nOperational load (who actually does the work): Retained partners handle sourcing, outreach, interviews, scorecards, references, and weekly steering; in-house shifts mapping, scheduling, calibration, and reporting to leaders and TA.\nConfidentiality & access (the two biggest failure points): Retained models reach seated executives discreetly through codename workflows; in-house outreach is more visible and prone to leaks that unsettle candidates and teams.\nGovernance & accountability: Retained search provides one accountable owner, an 8-week plan, and clear metrics; in-house leaves the burden of PM, enforcement, and board storytelling on internal leaders.\nTotal cost of delay: Vacancy costs compound quickly, missing a CFO/CTO for a quarter often outweighs the fee through slowed decisions, delayed shipping, and churn.\nQuick decision frame: Retained is the right call when timing, visibility, or discretion matter; in-house works when the role is important but not C-suite, and internal teams truly have the capacity.\nIn the end, it’s less about the model and more about the mandate. Choose the path that protects time-to-impact, reduces miss risk, and keeps your leadership team focused on the work only they can do.\nRead more: 12 Best HR Executive Search Firms in 2026 and 10 Best Recruiting Companies for the AI Industry in 2026.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Why Choose Retained Search vs Doing It In-House (Time and Risk)",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Retained search delivers speed, depth, and lower miss risk when the role is board-visible, time-sensitive, or confidential. In-house can work when the mandate is senior-but-not-C-suite and internal bandwidth exists. The real trade-offs show up in operational load, confidentiality, governance cadence, access to off-market talent, and the total cost of delay. The sections that follow unpack these trade-offs so you can see, role by role, where each model delivers and where it breaks.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "When retained search wins: Compresses the cycle for board-visible, confidential, or time-critical roles by bringing mapped markets, warm networks, and a tested playbook that reduces miss risk and lifts slate quality.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "When in-house can make sense: Works for senior-but-not-C-suite roles when the market is talent-rich and internal bandwidth is available, though timelines run longer and access to passive leaders is thinner.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Operational load (who actually does the work): Retained partners handle sourcing, outreach, interviews, scorecards, references, and weekly steering; in-house shifts mapping, scheduling, calibration, and reporting to leaders and TA.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Confidentiality & access (the two biggest failure points): Retained models reach seated executives discreetly through codename workflows; in-house outreach is more visible and prone to leaks that unsettle candidates and teams.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Governance & accountability: Retained search provides one accountable owner, an 8-week plan, and clear metrics; in-house leaves the burden of PM, enforcement, and board storytelling on internal leaders.",
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Total cost of delay: Vacancy costs compound quickly, missing a CFO/CTO for a quarter often outweighs the fee through slowed decisions, delayed shipping, and churn.",
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Quick decision frame: Retained is the right call when timing, visibility, or discretion matter; in-house works when the role is important but not C-suite, and internal teams truly have the capacity.",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "In the end, it’s less about the model and more about the mandate. Choose the path that protects time-to-impact, reduces miss risk, and keeps your leadership team focused on the work only they can do.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Read more: 12 Best HR Executive Search Firms in 2026 and 10 Best Recruiting Companies for the AI Industry in 2026.",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/hr-executive-search-firms/",
+       "text": "12 Best HR Executive Search Firms in 2026"
+      },
+      {
+       "href": "https://gogloby.com/insights/best-ai-recruiting-companies/",
+       "text": "10 Best Recruiting Companies for the AI Industry in 2026"
+      }
+     ],
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "article:fees-terms",
+   "kind": "article_section",
+   "label": "Fees & Terms",
+   "scope": "page",
+   "skipped": false,
+   "text": "Fees & Terms\nMost retained executive search fees land around 20–30% of first-year compensation (some quote 30–35%). Contingency is pay-on-placement, typically between 20–33%. Price flexes with seniority, scarcity, confidentiality, scope, and assessment depth. Use milestones (kickoff/shortlist / offer) for billing gates.\nCheck the timetable below we’ve prepared for you:\nTopic\nWhat it means\nWhy it matters\nFee models\nRetained fits board/C-suite/confidential roles with a structured, milestone-based process; contained prioritizes senior roles without full scope; contingency works below C-suite with pay-on-hire.\nClarity on “best for” avoids picking a model that pushes speed/volume when you need depth/discretion.\nBilling gates\nMost retained structures break into kickoff, shortlist approval, and offer/acceptance.\nFees tied to milestones (not dates) keep the search accountable and aligned.\nWhat’s included\nMapping, discreet outreach, structured interviews, references, offer support, and weekly updates.\nDefines the core value delivered and prevents light-scope engagements from looking equal to full-scope searches.\nWhat’s extra\nTravel, psychometrics, expanded assessments, and specialized tooling.\nWhere scope creep usually lives; clarity upfront prevents budget surprises.\nPrice levers\nSeniority, scarcity, confidentiality level, multi-market scope, timeline compression, and assessment depth.\nShows where cost increases are justified and where they can be negotiated.\nKey terms\nReplacement window, off-limits/conflict rules, expense policy, data security (workspace, purge dates), reporting cadence.\nThese are the terms that impact risk, speed, and your internal bandwidth more than the percentage itself.\nTiny calculator\nOn a $400k comp target: 30% ≈ $120k; 25% ≈ $100k.\nA quarter without a CFO/CTO usually costs more than the fee. Time-to-impact is the real metric.\nChoosing the right model comes down to clarity on the mandate. Once you know the role’s visibility, risk, and timing, the rest becomes simple: pick the structure that protects time-to-impact and gives you the depth and accountability the hire deserves",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Fees & Terms",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Most retained executive search fees land around 20–30% of first-year compensation (some quote 30–35%). Contingency is pay-on-placement, typically between 20–33%. Price flexes with seniority, scarcity, confidentiality, scope, and assessment depth. Use milestones (kickoff/shortlist / offer) for billing gates.",
+     "links": [
+      {
+       "href": "https://huntscanlon.com/a-look-at-executive-search-in-2025/",
+       "text": "20–30%"
+      },
+      {
+       "href": "https://cowenpartners.com/the-two-types-of-executive-search-firms-fees/",
+       "text": "30"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Check the timetable below we’ve prepared for you:",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "Topic",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "What it means",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "Why it matters",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "Fee models",
+     "index": 4
+    },
+    {
+     "type": "table_cell",
+     "text": "Retained fits board/C-suite/confidential roles with a structured, milestone-based process; contained prioritizes senior roles without full scope; contingency works below C-suite with pay-on-hire.",
+     "index": 5
+    },
+    {
+     "type": "table_cell",
+     "text": "Clarity on “best for” avoids picking a model that pushes speed/volume when you need depth/discretion.",
+     "index": 6
+    },
+    {
+     "type": "table_cell",
+     "text": "Billing gates",
+     "index": 7
+    },
+    {
+     "type": "table_cell",
+     "text": "Most retained structures break into kickoff, shortlist approval, and offer/acceptance.",
+     "index": 8
+    },
+    {
+     "type": "table_cell",
+     "text": "Fees tied to milestones (not dates) keep the search accountable and aligned.",
+     "index": 9
+    },
+    {
+     "type": "table_cell",
+     "text": "What’s included",
+     "index": 10
+    },
+    {
+     "type": "table_cell",
+     "text": "Mapping, discreet outreach, structured interviews, references, offer support, and weekly updates.",
+     "index": 11
+    },
+    {
+     "type": "table_cell",
+     "text": "Defines the core value delivered and prevents light-scope engagements from looking equal to full-scope searches.",
+     "index": 12
+    },
+    {
+     "type": "table_cell",
+     "text": "What’s extra",
+     "index": 13
+    },
+    {
+     "type": "table_cell",
+     "text": "Travel, psychometrics, expanded assessments, and specialized tooling.",
+     "index": 14
+    },
+    {
+     "type": "table_cell",
+     "text": "Where scope creep usually lives; clarity upfront prevents budget surprises.",
+     "index": 15
+    },
+    {
+     "type": "table_cell",
+     "text": "Price levers",
+     "index": 16
+    },
+    {
+     "type": "table_cell",
+     "text": "Seniority, scarcity, confidentiality level, multi-market scope, timeline compression, and assessment depth.",
+     "index": 17
+    },
+    {
+     "type": "table_cell",
+     "text": "Shows where cost increases are justified and where they can be negotiated.",
+     "index": 18
+    },
+    {
+     "type": "table_cell",
+     "text": "Key terms",
+     "index": 19
+    },
+    {
+     "type": "table_cell",
+     "text": "Replacement window, off-limits/conflict rules, expense policy, data security (workspace, purge dates), reporting cadence.",
+     "index": 20
+    },
+    {
+     "type": "table_cell",
+     "text": "These are the terms that impact risk, speed, and your internal bandwidth more than the percentage itself.",
+     "index": 21
+    },
+    {
+     "type": "table_cell",
+     "text": "Tiny calculator",
+     "index": 22
+    },
+    {
+     "type": "table_cell",
+     "text": "On a $400k comp target: 30% ≈ $120k; 25% ≈ $100k.",
+     "index": 23
+    },
+    {
+     "type": "table_cell",
+     "text": "A quarter without a CFO/CTO usually costs more than the fee. Time-to-impact is the real metric.",
+     "index": 24
+    },
+    {
+     "type": "paragraph",
+     "text": "Choosing the right model comes down to clarity on the mandate. Once you know the role’s visibility, risk, and timing, the rest becomes simple: pick the structure that protects time-to-impact and gives you the depth and accountability the hire deserves",
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "article:conclusion",
+   "kind": "article_section",
+   "label": "Conclusion",
+   "scope": "page",
+   "skipped": false,
+   "text": "Conclusion\nYou now have a clear view of the top executive search firms in the US, how they differ, and where each one delivers real value. The fastest way to move from research to a hiring decision is simple: scan the summary table, pick your category, score your finalists with the evaluation matrix, and request the five-page proof pack so you can see how each partner operates.\nIf you need proven US executive leaders who accelerate growth and strengthen strategy, GoGloby is built for that mandate. The team runs focused and confidential searches with transparent reporting and an outcomes-first process so every hire moves the business forward.\nRead further: 12 Best Technology Search Firms for Executive Positions and 15 CRM Manager Executive Search Firms.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Conclusion",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "You now have a clear view of the top executive search firms in the US, how they differ, and where each one delivers real value. The fastest way to move from research to a hiring decision is simple: scan the summary table, pick your category, score your finalists with the evaluation matrix, and request the five-page proof pack so you can see how each partner operates.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "If you need proven US executive leaders who accelerate growth and strengthen strategy, GoGloby is built for that mandate. The team runs focused and confidential searches with transparent reporting and an outcomes-first process so every hire moves the business forward.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Read further: 12 Best Technology Search Firms for Executive Positions and 15 CRM Manager Executive Search Firms.",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/technology-executive-search-firms/",
+       "text": "12 Best Technology Search Firms for Executive Positions"
+      },
+      {
+       "href": "https://gogloby.com/insights/crm-manager-executive-search-firms/",
+       "text": "15 CRM Manager Executive Search Firms"
+      }
+     ],
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "article:faqs",
+   "kind": "article_section",
+   "label": "FAQs",
+   "scope": "page",
+   "skipped": false,
+   "text": "FAQs\nIs there more demand for executives right now?\nYes. The U.S. projects around 343,800 openings for top executives annually (2023–2033), with 6% job growth — faster than average. At the same time, the executive search services market is forecast to grow at ~10% CAGR (2024–2029), meaning competition for senior leaders is only intensifying.\nWhat is an executive search firm (a.k.a. executive recruitment agency / executive search company / executive placement firm)?\nAn executive search firm specializes in C-suite and senior leadership hiring. Unlike traditional agencies, they discreetly map markets, engage passive talent, run structured assessments, and manage references. They’re built for high-stakes, confidential roles where time-to-impact and cultural fit matter.\nWhy should you work with an executive search firm?\nDepth, speed, and discretion. Executive search partners bring mapped markets, off-market access, and scorecard-driven assessment that reduce mis-hire risk. They save leadership teams time, keep searches confidential, and deliver stronger finalist slates — especially when the mandate is cross-border, board-visible, or time-critical.\nWhat skills are most in demand at the executive level?\nTop demand areas include:\nGTM leadership (CRO/CMO) with product-led growth expertise.\nFinance leaders with capital allocation and FP&A fluency.\nProduct/technology executives skilled in data/AI and platform strategy.\nOperations leaders who scale.\nPeople leaders driving DEI and culture.\nHow much do executive search firms charge?\nMost retained searches cost 20–30% of first-year compensation, with some reaching 30–35% depending on role and scope. Contingency models are pay-on-placement, usually 20–33%. Costs rise with seniority, scarcity, confidentiality, or multi-market scope. Best practice: tie payments to milestones (kickoff, shortlist, offer).\nHow long does an executive search take?\nPlan for 8–16 weeks end-to-end. External benchmarks peg executive-level fills at ~120 days on average, but disciplined retained models compress timelines by combining mapped markets, passive-talent outreach, structured scorecard assessments, and weekly governance checkpoints.\nExecutive search vs recruitment agencies — what’s the difference?\nExecutive search (retained/contained) is consultative, discreet, and built for C-suite hiring: market mapping, passive outreach, structured assessment. Recruitment agencies focus on speed and active candidates, filling non-executive roles. Use search for board-visible or confidential mandates; use agencies for volume or senior-but-not-C-suite needs.\nHow to choose the right executive search firm?\nMatch your mandate to the right category: board/CEO succession, PE/VC scale-ups, regulated or mission-driven sectors, or nearshore expansion. Then apply a pass/fail test: outcomes & ownership, plan & proof, access & assessment, confidentiality & conflicts, money & outcomes. Firms unable to show this clarity? Pass.\nCan executive search firms handle confidential CEO/C-suite searches?\nYes. Best-practice searches use codename projects, redacted early materials, one secure workspace, and a single point of contact. Your role: short weekly check-ins and clear go/no-go calls. Done right, the process is nearly invisible until you decide to make it visible.\nWho are the best headhunters for CEOs and CFOs?\nFor CEO/CFO work, prioritize firms with board-level delivery and succession expertise. Commonly shortlisted: Korn Ferry, Spencer Stuart, Russell Reynolds, Heidrick & Struggles, and a category fit like GoGloby for nearshore C-suite hires into U.S. organizations.\nHow are executive search firm rankings decided?\nRankings typically weigh C-suite depth, industry specialization, global reach, assessment rigor, engagement model, and proven outcomes (e.g., time-to-slate, offer-to-close rate, 12–24-month stick rate). Use rankings as a shortlist starter, then request each finalist’s 5-page proof pack before signing.\nAuthor avatar\nSergey Matikaynen / CTO\nArticle author\nSergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.\nView profile",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "FAQs",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Is there more demand for executives right now?",
+     "area": "item 1",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Yes. The U.S. projects around 343,800 openings for top executives annually (2023–2033), with 6% job growth — faster than average. At the same time, the executive search services market is forecast to grow at ~10% CAGR (2024–2029), meaning competition for senior leaders is only intensifying.",
+     "area": "item 1",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "What is an executive search firm (a.k.a. executive recruitment agency / executive search company / executive placement firm)?",
+     "area": "item 1",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "An executive search firm specializes in C-suite and senior leadership hiring. Unlike traditional agencies, they discreetly map markets, engage passive talent, run structured assessments, and manage references. They’re built for high-stakes, confidential roles where time-to-impact and cultural fit matter.",
+     "area": "item 1",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Why should you work with an executive search firm?",
+     "area": "item 1",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Depth, speed, and discretion. Executive search partners bring mapped markets, off-market access, and scorecard-driven assessment that reduce mis-hire risk. They save leadership teams time, keep searches confidential, and deliver stronger finalist slates — especially when the mandate is cross-border, board-visible, or time-critical.",
+     "area": "item 1",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "What skills are most in demand at the executive level?",
+     "area": "item 1",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Top demand areas include:",
+     "area": "item 1",
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "GTM leadership (CRO/CMO) with product-led growth expertise.",
+     "area": "item 1",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Finance leaders with capital allocation and FP&A fluency.",
+     "area": "item 1",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Product/technology executives skilled in data/AI and platform strategy.",
+     "area": "item 1",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Operations leaders who scale.",
+     "area": "item 1",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "People leaders driving DEI and culture.",
+     "area": "item 1",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "How much do executive search firms charge?",
+     "area": "item 1",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Most retained searches cost 20–30% of first-year compensation, with some reaching 30–35% depending on role and scope. Contingency models are pay-on-placement, usually 20–33%. Costs rise with seniority, scarcity, confidentiality, or multi-market scope. Best practice: tie payments to milestones (kickoff, shortlist, offer).",
+     "area": "item 1",
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "How long does an executive search take?",
+     "area": "item 1",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "Plan for 8–16 weeks end-to-end. External benchmarks peg executive-level fills at ~120 days on average, but disciplined retained models compress timelines by combining mapped markets, passive-talent outreach, structured scorecard assessments, and weekly governance checkpoints.",
+     "area": "item 1",
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "Executive search vs recruitment agencies — what’s the difference?",
+     "area": "item 1",
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Executive search (retained/contained) is consultative, discreet, and built for C-suite hiring: market mapping, passive outreach, structured assessment. Recruitment agencies focus on speed and active candidates, filling non-executive roles. Use search for board-visible or confidential mandates; use agencies for volume or senior-but-not-C-suite needs.",
+     "area": "item 1",
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "How to choose the right executive search firm?",
+     "area": "item 1",
+     "index": 15
+    },
+    {
+     "type": "paragraph",
+     "text": "Match your mandate to the right category: board/CEO succession, PE/VC scale-ups, regulated or mission-driven sectors, or nearshore expansion. Then apply a pass/fail test: outcomes & ownership, plan & proof, access & assessment, confidentiality & conflicts, money & outcomes. Firms unable to show this clarity? Pass.",
+     "area": "item 1",
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "Can executive search firms handle confidential CEO/C-suite searches?",
+     "area": "item 1",
+     "index": 17
+    },
+    {
+     "type": "paragraph",
+     "text": "Yes. Best-practice searches use codename projects, redacted early materials, one secure workspace, and a single point of contact. Your role: short weekly check-ins and clear go/no-go calls. Done right, the process is nearly invisible until you decide to make it visible.",
+     "area": "item 1",
+     "index": 18
+    },
+    {
+     "type": "paragraph",
+     "text": "Who are the best headhunters for CEOs and CFOs?",
+     "area": "item 1",
+     "index": 19
+    },
+    {
+     "type": "paragraph",
+     "text": "For CEO/CFO work, prioritize firms with board-level delivery and succession expertise. Commonly shortlisted: Korn Ferry, Spencer Stuart, Russell Reynolds, Heidrick & Struggles, and a category fit like GoGloby for nearshore C-suite hires into U.S. organizations.",
+     "area": "item 1",
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "How are executive search firm rankings decided?",
+     "area": "item 1",
+     "index": 21
+    },
+    {
+     "type": "paragraph",
+     "text": "Rankings typically weigh C-suite depth, industry specialization, global reach, assessment rigor, engagement model, and proven outcomes (e.g., time-to-slate, offer-to-close rate, 12–24-month stick rate). Use rankings as a shortlist starter, then request each finalist’s 5-page proof pack before signing.",
+     "area": "item 1",
+     "index": 22
+    },
+    {
+     "type": "image",
+     "text": "Author avatar",
+     "src": "https://gogloby.com/wp-content/uploads/2024/02/1706550966241.jpeg",
+     "file": "1706550966241.jpeg",
+     "alt": "Author avatar",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen / CTO",
+     "index": 23
+    },
+    {
+     "type": "paragraph",
+     "text": "Article author",
+     "index": 24
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.",
+     "index": 25
+    },
+    {
+     "type": "paragraph",
+     "text": "View profile",
+     "links": [
+      {
+       "href": "https://gogloby.com/author/sergey/",
+       "text": "View profile"
+      }
+     ],
+     "index": 26
+    }
+   ]
+  },
+  {
+   "id": "banner_cta",
+   "kind": "banner_cta",
+   "label": "Banner CTA",
+   "scope": "page",
+   "skipped": false,
+   "text": "Struggling to Secure Top Executive Talent?\nWith industry expertise and deep talent networks, GoGloby helps you find C-suite leaders who align with your strategic vision.\nStart Your Executive Search",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Struggling to Secure Top Executive Talent?",
+     "area": "block-main",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "With industry expertise and deep talent networks, GoGloby helps you find C-suite leaders who align with your strategic vision.",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Start Your Executive Search",
+     "area": "block-aside",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "modals",
+   "kind": "modals",
+   "label": "Forms and modals",
+   "scope": "page",
+   "skipped": false,
+   "text": "Thank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend\nThank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "site_header",
+   "kind": "site_header",
+   "label": "Site header",
+   "scope": "page",
+   "skipped": true,
+   "text": "Site logo\nSolutions\nAI Engineering Visibility\nForward Deployed Engineering\nServices\nAI Engineers Staff Augmentation\nHire AI Engineers\nAI Development Services\nGenerative AI Consulting Services\nAgentic AI Consulting Services\nAI Production Engineering\nGenerative AI Development Services\nAI Agent Development Services\nAI Custom Software Development Services\nRAG Application Development Services\nLLM Development Services\nApplication AI Modernization Services\nLegacy Application Modernization Services\nSoftware Maintenance Services\nCompany\nAbout us\nJobs\nResources\nInsights\nUse Cases\nPodcast\nContact\nTalk to Us",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Site logo",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/globy-logo-1-01.svg",
+     "file": "globy-logo-1-01.svg",
+     "alt": "Site logo",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Solutions",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineering Visibility",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/ai-engineering-visibility/",
+       "text": "AI Engineering Visibility"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Forward Deployed Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/forward-deployed-engineering/",
+       "text": "Forward Deployed Engineering"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineers Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Engineers Staff Augmentation"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "link",
+     "text": "AI Development Services",
+     "href": "https://gogloby.com/services/ai-development/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-development/",
+       "text": "AI Development Services"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-consulting/",
+       "text": "Generative AI Consulting Services"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Agentic AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/agentic-ai-consulting/",
+       "text": "Agentic AI Consulting Services"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "AI Production Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "AI Production Engineering"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "AI Agent Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-agent-development/",
+       "text": "AI Agent Development Services"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "AI Custom Software Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-custom-software-development/",
+       "text": "AI Custom Software Development Services"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "RAG Application Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/rag-application-development/",
+       "text": "RAG Application Development Services"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "LLM Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/llm-development/",
+       "text": "LLM Development Services"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "link",
+     "text": "Application AI Modernization Services",
+     "href": "https://gogloby.com/services/application-modernization/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/application-modernization/",
+       "text": "Application AI Modernization Services"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Legacy Application Modernization Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/legacy-application-modernization/",
+       "text": "Legacy Application Modernization Services"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "Software Maintenance Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/software-maintenance/",
+       "text": "Software Maintenance Services"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "Talk to Us",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "site_footer",
+   "kind": "site_footer",
+   "label": "Site footer",
+   "scope": "page",
+   "skipped": true,
+   "text": "Background logo\nServices\nApplied AI Engineering\nAI Staff Augmentation\nHire AI Engineers\nGenerative AI Development Services\nCompany\nAbout us\nJobs\nContact\nPrivacy Policy and Candidate Privacy Notice\nTerms and Conditions\nResources\nInsights\nUse Cases\nPodcast\nCase Studies\nConnections\nCrunchbase\nLinkedIn\nX\nG2\nClutch\nTrustpilot\nDesignRush\nGitHub\nFacebook\nYouTube\n© Copyright 2026, GoGloby. All Rights Reserved.",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background logo",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/logos/globy-logo-outline-1-01.svg",
+     "file": "globy-logo-outline-1-01.svg",
+     "alt": "Background logo",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Applied AI Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "Applied AI Engineering"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Staff Augmentation"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Privacy Policy and Candidate Privacy Notice",
+     "links": [
+      {
+       "href": "https://gogloby.com/privacy-policy/",
+       "text": "Privacy Policy and Candidate Privacy Notice"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Terms and Conditions",
+     "links": [
+      {
+       "href": "https://gogloby.com/terms-and-conditions/",
+       "text": "Terms and Conditions"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "Case Studies",
+     "links": [
+      {
+       "href": "https://gogloby.com/case-study/",
+       "text": "Case Studies"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Connections",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Crunchbase",
+     "links": [
+      {
+       "href": "https://www.crunchbase.com/organization/gogloby",
+       "text": "Crunchbase"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "LinkedIn",
+     "links": [
+      {
+       "href": "https://www.linkedin.com/company/gogloby/",
+       "text": "LinkedIn"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "X",
+     "links": [
+      {
+       "href": "https://x.com/GoGloby",
+       "text": "X"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "list_item",
+     "text": "G2",
+     "links": [
+      {
+       "href": "https://www.g2.com/products/gogloby/reviews",
+       "text": "G2"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Clutch",
+     "links": [
+      {
+       "href": "https://clutch.co/profile/gogloby",
+       "text": "Clutch"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Trustpilot",
+     "links": [
+      {
+       "href": "https://www.trustpilot.com/review/gogloby.com",
+       "text": "Trustpilot"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "DesignRush",
+     "links": [
+      {
+       "href": "https://www.designrush.com/agency/profile/gogloby",
+       "text": "DesignRush"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "list_item",
+     "text": "GitHub",
+     "links": [
+      {
+       "href": "https://github.com/gogloby",
+       "text": "GitHub"
+      }
+     ],
+     "index": 21
+    },
+    {
+     "type": "list_item",
+     "text": "Facebook",
+     "links": [
+      {
+       "href": "https://www.facebook.com/gogloby",
+       "text": "Facebook"
+      }
+     ],
+     "index": 22
+    },
+    {
+     "type": "list_item",
+     "text": "YouTube",
+     "links": [
+      {
+       "href": "https://www.youtube.com/@DefaultGlobal",
+       "text": "YouTube"
+      }
+     ],
+     "index": 23
+    },
+    {
+     "type": "paragraph",
+     "text": "© Copyright 2026, GoGloby. All Rights Reserved.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "related",
+   "kind": "related",
+   "label": "Related content",
+   "scope": "page",
+   "skipped": true,
+   "text": "Latest posts\nWhat Is AI Compliance Consulting: Process, Benefits & How to Implement It\nWhat Is AI Compliance Consulting: Process, Benefits & How to Implement It\nOctober 2,2026\nAI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI\nAI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI\nOctober 2,2026\nWhat Is Embedded AI? How It Works, Benefits, Use Cases & Tools\nWhat Is Embedded AI? How It Works, Benefits, Use Cases & Tools\nSeptember 25,2026\n10 AI Governance Consulting Firms to Evaluate in 2026\n10 AI Governance Consulting Firms to Evaluate in 2026\nSeptember 24,2026\nAI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose\nAI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose\nSeptember 23,2026\nHow Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees\nHow Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees\nSeptember 18,2026",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Latest posts",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "What Is AI Compliance Consulting: Process, Benefits & How to Implement It",
+     "src": "https://gogloby.com/wp-content/uploads/2026/10/Gemini_Generated_Image_vth5k8vth5k8vth5-scaled.jpeg",
+     "file": "Gemini_Generated_Image_vth5k8vth5k8vth5-scaled.jpeg",
+     "alt": "What Is AI Compliance Consulting: Process, Benefits & How to Implement It",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "What Is AI Compliance Consulting: Process, Benefits & How to Implement It",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "October 2,2026",
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "AI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI",
+     "src": "https://gogloby.com/wp-content/uploads/2026/10/Integracion-de-datos-futurista.png",
+     "file": "Integracion-de-datos-futurista.png",
+     "alt": "AI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 2",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "AI Implementation Cost in 2026: Pricing, Estimates, Hidden Costs & ROI",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "October 2,2026",
+     "area": "slide 2",
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "What Is Embedded AI? How It Works, Benefits, Use Cases & Tools",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-25-2026-01_26_43-PM.png",
+     "file": "ChatGPT-Image-Sep-25-2026-01_26_43-PM.png",
+     "alt": "What Is Embedded AI? How It Works, Benefits, Use Cases & Tools",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 3",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "What Is Embedded AI? How It Works, Benefits, Use Cases & Tools",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "September 25,2026",
+     "area": "slide 3",
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "10 AI Governance Consulting Firms to Evaluate in 2026",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-24-sept-2026-14_14_41.png",
+     "file": "ChatGPT-Image-24-sept-2026-14_14_41.png",
+     "alt": "10 AI Governance Consulting Firms to Evaluate in 2026",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 4",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "10 AI Governance Consulting Firms to Evaluate in 2026",
+     "area": "slide 4",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "September 24,2026",
+     "area": "slide 4",
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "AI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/ChatGPT-Image-23-sept-2026-16_43_07.png",
+     "file": "ChatGPT-Image-23-sept-2026-16_43_07.png",
+     "alt": "AI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 5",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "AI Consulting vs. Staff Augmentation in 2026: Cost, Benefits & Which to Choose",
+     "area": "slide 5",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "September 23,2026",
+     "area": "slide 5",
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "How Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees",
+     "src": "https://gogloby.com/wp-content/uploads/2026/09/AI-Consulting-Cost-Models.png",
+     "file": "AI-Consulting-Cost-Models.png",
+     "alt": "How Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 6",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "How Much Does AI Consulting Cost in 2026? Rates, Pricing Models & Fees",
+     "area": "slide 6",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "September 18,2026",
+     "area": "slide 6",
+     "index": 6
+    }
+   ]
+  }
+ ],
+ "warnings": []
+}
