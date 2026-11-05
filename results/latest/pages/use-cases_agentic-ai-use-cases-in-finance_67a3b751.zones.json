@@ -1,0 +1,1905 @@
+{
+ "template": "article",
+ "zones": [
+  {
+   "id": "title",
+   "kind": "title",
+   "label": "Title",
+   "scope": "page",
+   "skipped": false,
+   "text": "Agentic AI in Finance: Best AI Use Cases, Benefits",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Agentic AI in Finance: Best AI Use Cases, Benefits"
+    }
+   ]
+  },
+  {
+   "id": "meta_description",
+   "kind": "meta_description",
+   "label": "Meta description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Learn how agentic AI in finance supports analysis, operations, accounting, and service with real use cases, examples, risks, and benefits.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Learn how agentic AI in finance supports analysis, operations, accounting, and service with real use cases, examples, risks, and benefits."
+    }
+   ]
+  },
+  {
+   "id": "og_title",
+   "kind": "og_title",
+   "label": "og:title",
+   "scope": "page",
+   "skipped": false,
+   "text": "Agentic AI in Finance: Best AI Use Cases, Benefits",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Agentic AI in Finance: Best AI Use Cases, Benefits"
+    }
+   ]
+  },
+  {
+   "id": "og_description",
+   "kind": "og_description",
+   "label": "og:description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Learn how agentic AI in finance supports analysis, operations, accounting, and service with real use cases, examples, risks, and benefits.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Learn how agentic AI in finance supports analysis, operations, accounting, and service with real use cases, examples, risks, and benefits."
+    }
+   ]
+  },
+  {
+   "id": "json_ld",
+   "kind": "json_ld",
+   "label": "Structured data (JSON-LD)",
+   "scope": "page",
+   "skipped": false,
+   "text": "Agentic AI in Finance: Best AI Use Cases, Benefits, Examples\nAgentic AI in Finance: Best AI Use Cases, Benefits, Examples\nLearn how agentic AI in finance supports analysis, operations, accounting, and service with real use\nSergey Matikaynen\nGoGloby\nWhat is agentic AI in finance?\nIt is AI that can plan steps, retrieve context, use approved tools, and complete limited parts of a finance workflow. It goes beyond simple prompting or summarizing by helping move work from one stage to the next.\nHow does agentic AI work in finance?\nIt usually follows a loop of retrieval, reasoning, action, and review. The system works inside clear limits and stops at approval points when risk is higher, which helps keep execution controlled.\nWhat are the top agentic AI use cases in finance?\nThe clearest ones are credit appraisal, financial research, finance operations, accounting support, and customer or investor service. These workflows have repeated steps and measurable outcomes, which makes them easier to structure and review.\nWhat are some examples of agentic AI in finance?\nStrong examples include Model ML for workflow automation, Rogo for investment research, B3 for investor guidance, and Agricover for faster credit access. These cases show how agentic systems can support different finance functions with clear operational value.\nWhat is the main risk of agentic AI in finance?\nThe main risk is letting a system move too far without enough evidence, control, or review. In finance, grounding, permissions, and approval gates still matter because small errors can affect real decisions and live workflows.",
+   "parts": [
+    {
+     "type": "field",
+     "text": "Agentic AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "area": "Article.name",
+     "index": 1
+    },
+    {
+     "type": "field",
+     "text": "Agentic AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "area": "Article.headline",
+     "index": 2
+    },
+    {
+     "type": "field",
+     "text": "Learn how agentic AI in finance supports analysis, operations, accounting, and service with real use",
+     "area": "Article.description",
+     "index": 3
+    },
+    {
+     "type": "field",
+     "text": "Sergey Matikaynen",
+     "area": "Person.name",
+     "index": 4
+    },
+    {
+     "type": "field",
+     "text": "GoGloby",
+     "area": "Organization.name",
+     "index": 5
+    },
+    {
+     "type": "field",
+     "text": "What is agentic AI in finance?",
+     "area": "Question.name",
+     "index": 6
+    },
+    {
+     "type": "field",
+     "text": "It is AI that can plan steps, retrieve context, use approved tools, and complete limited parts of a finance workflow. It goes beyond simple prompting or summarizing by helping move work from one stage to the next.",
+     "area": "Answer.text",
+     "index": 7
+    },
+    {
+     "type": "field",
+     "text": "How does agentic AI work in finance?",
+     "area": "Question.name",
+     "index": 8
+    },
+    {
+     "type": "field",
+     "text": "It usually follows a loop of retrieval, reasoning, action, and review. The system works inside clear limits and stops at approval points when risk is higher, which helps keep execution controlled.",
+     "area": "Answer.text",
+     "index": 9
+    },
+    {
+     "type": "field",
+     "text": "What are the top agentic AI use cases in finance?",
+     "area": "Question.name",
+     "index": 10
+    },
+    {
+     "type": "field",
+     "text": "The clearest ones are credit appraisal, financial research, finance operations, accounting support, and customer or investor service. These workflows have repeated steps and measurable outcomes, which makes them easier to structure and review.",
+     "area": "Answer.text",
+     "index": 11
+    },
+    {
+     "type": "field",
+     "text": "What are some examples of agentic AI in finance?",
+     "area": "Question.name",
+     "index": 12
+    },
+    {
+     "type": "field",
+     "text": "Strong examples include Model ML for workflow automation, Rogo for investment research, B3 for investor guidance, and Agricover for faster credit access. These cases show how agentic systems can support different finance functions with clear operational value.",
+     "area": "Answer.text",
+     "index": 13
+    },
+    {
+     "type": "field",
+     "text": "What is the main risk of agentic AI in finance?",
+     "area": "Question.name",
+     "index": 14
+    },
+    {
+     "type": "field",
+     "text": "The main risk is letting a system move too far without enough evidence, control, or review. In finance, grounding, permissions, and approval gates still matter because small errors can affect real decisions and live workflows.",
+     "area": "Answer.text",
+     "index": 15
+    }
+   ]
+  },
+  {
+   "id": "h1",
+   "kind": "h1",
+   "label": "H1",
+   "scope": "page",
+   "skipped": false,
+   "text": "Agentic AI in Finance: Best AI Use Cases, Benefits, Examples",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Agentic AI in Finance: Best AI Use Cases, Benefits, Examples"
+    }
+   ]
+  },
+  {
+   "id": "date",
+   "kind": "date",
+   "label": "Date",
+   "scope": "page",
+   "skipped": false,
+   "text": "Updated on June 24, 2026",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Updated on June 24, 2026"
+    }
+   ]
+  },
+  {
+   "id": "author",
+   "kind": "author",
+   "label": "Author",
+   "scope": "page",
+   "skipped": false,
+   "text": "Author avatar\nSergey Matikaynen / CTO\nArticle author\nSergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.\nView profile",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Author avatar",
+     "src": "https://gogloby.com/wp-content/uploads/2024/02/1706550966241.jpeg",
+     "file": "1706550966241.jpeg",
+     "alt": "Author avatar",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen / CTO",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Article author",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "View profile",
+     "links": [
+      {
+       "href": "https://gogloby.com/author/sergey/",
+       "text": "View profile"
+      }
+     ],
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "toc",
+   "kind": "toc",
+   "label": "Table of contents",
+   "scope": "page",
+   "skipped": false,
+   "text": "Table of Contents\nWhat Is Agentic AI in Finance?\nHow Does Agentic AI Work in Finance?\nWhat Are the Top Agentic AI Use Cases in Finance?\nWhat Are the Key Benefits of Agentic AI in Finance?\nWhat Real-World Agentic AI Examples Show Their Value in Finance?\nWhat Risks and Challenges Does Agentic AI Face in Finance?\nWhat Is the Future of Agentic AI in Finance?\nHow Can GoGloby Help Finance Teams Use Agentic AI Without Losing Control?\nConclusion\nReady to Apply Agentic AI in Finance Without Added Process Risk?\nFAQs",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Table of Contents",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "What Is Agentic AI in Finance?",
+     "links": [
+      {
+       "href": "#what-is-agentic-ai-in-finance",
+       "text": "What Is Agentic AI in Finance?"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "How Does Agentic AI Work in Finance?",
+     "links": [
+      {
+       "href": "#how-does-agentic-ai-work-in-finance",
+       "text": "How Does Agentic AI Work in Finance?"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "What Are the Top Agentic AI Use Cases in Finance?",
+     "links": [
+      {
+       "href": "#what-are-the-top-agentic-ai-use-cases-in-finance",
+       "text": "What Are the Top Agentic AI Use Cases in Finance?"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "What Are the Key Benefits of Agentic AI in Finance?",
+     "links": [
+      {
+       "href": "#what-are-the-key-benefits-of-agentic-ai-in-finance",
+       "text": "What Are the Key Benefits of Agentic AI in Finance?"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "What Real-World Agentic AI Examples Show Their Value in Finance?",
+     "links": [
+      {
+       "href": "#what-real-world-agentic-ai-examples-show-their-value-in-finance",
+       "text": "What Real-World Agentic AI Examples Show Their Value in Finance?"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "What Risks and Challenges Does Agentic AI Face in Finance?",
+     "links": [
+      {
+       "href": "#what-risks-and-challenges-does-agentic-ai-face-in-finance",
+       "text": "What Risks and Challenges Does Agentic AI Face in Finance?"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "What Is the Future of Agentic AI in Finance?",
+     "links": [
+      {
+       "href": "#what-is-the-future-of-agentic-ai-in-finance",
+       "text": "What Is the Future of Agentic AI in Finance?"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "How Can GoGloby Help Finance Teams Use Agentic AI Without Losing Control?",
+     "links": [
+      {
+       "href": "#how-can-gogloby-help-finance-teams-use-agentic-ai-without-losing-control",
+       "text": "How Can GoGloby Help Finance Teams Use Agentic AI Without Losing Control?"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Conclusion",
+     "links": [
+      {
+       "href": "#conclusion",
+       "text": "Conclusion"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "Ready to Apply Agentic AI in Finance Without Added Process Risk?",
+     "links": [
+      {
+       "href": "#ready-to-apply-agentic-ai-in-finance-without-added-process-risk",
+       "text": "Ready to Apply Agentic AI in Finance Without Added Process Risk?"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "FAQs",
+     "links": [
+      {
+       "href": "#faqs",
+       "text": "FAQs"
+      }
+     ],
+     "index": 11
+    }
+   ]
+  },
+  {
+   "id": "article:intro",
+   "kind": "article_section",
+   "label": "Intro",
+   "scope": "page",
+   "skipped": false,
+   "text": "Finance teams now want systems that can move work forward, not only generate text. That is where agentic AI in finance matters. It becomes more useful when teams need to handle multi-step work across documents, systems, and review stages without losing control. Gartner reports that 59% of finance leaders already use AI in the finance function.\nThe next shift is narrower and more practical. The value is not in longer answers. The value is in handling multi-step work with limits, approvals, and visible evidence. That matters in finance because tasks often move across documents, systems, queues, and reviewers before anything is approved.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "Finance teams now want systems that can move work forward, not only generate text. That is where agentic AI in finance matters. It becomes more useful when teams need to handle multi-step work across documents, systems, and review stages without losing control. Gartner reports that 59% of finance leaders already use AI in the finance function.",
+     "links": [
+      {
+       "href": "https://www.gartner.com/en/newsroom/press-releases/2025-11-18-gartner-survey-shows-finance-ai-adoption-remains-steady-in-2025",
+       "text": "Gartner"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The next shift is narrower and more practical. The value is not in longer answers. The value is in handling multi-step work with limits, approvals, and visible evidence. That matters in finance because tasks often move across documents, systems, queues, and reviewers before anything is approved.",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "article:what-is-agentic-ai-in-finance",
+   "kind": "article_section",
+   "label": "What Is Agentic AI in Finance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Is Agentic AI in Finance?\nAgentic AI in finance means AI systems that can plan steps, retrieve context, use tools, and complete limited parts of a workflow. It goes beyond a one-shot prompt. It helps move work from one stage to the next.\nA basic assistant can summarize a report. An agentic system can gather files, compare records, extract facts, prepare a draft, and route the result for review. That is the practical answer to what is agentic AI in finance. In finance, this works best when the workflow is narrow, the rules are clear, and human approval stays in place for higher-risk actions.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Is Agentic AI in Finance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Agentic AI in finance means AI systems that can plan steps, retrieve context, use tools, and complete limited parts of a workflow. It goes beyond a one-shot prompt. It helps move work from one stage to the next.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "A basic assistant can summarize a report. An agentic system can gather files, compare records, extract facts, prepare a draft, and route the result for review. That is the practical answer to what is agentic AI in finance. In finance, this works best when the workflow is narrow, the rules are clear, and human approval stays in place for higher-risk actions.",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "article:how-does-agentic-ai-work-in-finance",
+   "kind": "article_section",
+   "label": "How Does Agentic AI Work in Finance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Does Agentic AI Work in Finance?\nGlass workflow panels showing agentic AI finance process steps from input to audit trail in a bright modern office\nAgentic AI in finance works by taking a task, pulling the right context, reasoning through the next step, and preparing an action or output within set limits. Sensitive moves still stay behind review.\nContext retrieval: The agent pulls records from approved sources such as internal documents, research platforms, filings, ERP systems, invoices, or customer messages.\nStructured reasoning: The system compares inputs, finds missing pieces, groups evidence, and prepares a useful next step instead of only giving one answer.\nBounded action: The agent drafts a note, assembles a case, flags an exception, or routes a task while humans keep decision rights on higher-risk steps.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Does Agentic AI Work in Finance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "Glass workflow panels showing agentic AI finance process steps from input to audit trail in a bright modern office",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/image-7-1024x683.png",
+     "file": "image-7-1024x683.png",
+     "alt": "Glass workflow panels showing agentic AI finance process steps from input to audit trail in a bright modern office",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Agentic AI in finance works by taking a task, pulling the right context, reasoning through the next step, and preparing an action or output within set limits. Sensitive moves still stay behind review.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Context retrieval: The agent pulls records from approved sources such as internal documents, research platforms, filings, ERP systems, invoices, or customer messages.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Structured reasoning: The system compares inputs, finds missing pieces, groups evidence, and prepares a useful next step instead of only giving one answer.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Bounded action: The agent drafts a note, assembles a case, flags an exception, or routes a task while humans keep decision rights on higher-risk steps.",
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-the-top-agentic-ai-use-cases-in-finance",
+   "kind": "article_section",
+   "label": "What Are the Top Agentic AI Use Cases in Finance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are the Top Agentic AI Use Cases in Finance?\nThe best agentic AI use cases in finance appear in workflows with clear inputs, repeated steps, and visible review rules. These workflows create friction because teams spend too much time collecting context before they can make a decision.\nCredit Appraisal\nTata Capital used Azure OpenAI and Azure AI Document Intelligence to automate sections of its credit appraisal note. Credit managers had to sift through 300+ pages of documents in a manual process that was slow and error-prone. Credit appraisal automation shows how an agent can support instant generation of the Credit Appraisal Note, reduce turnaround time, and improve accuracy before analyst review starts.\nFinancial Analysis\nEndex is developing an AI Analyst that retrieves, synthesizes, and reasons through complex financial data. Financial analysis support is a strong fit for analyst workflows that begin with scattered information and a long source review. In blind user testing, 70% of users preferred responses generated by OpenAI’s o1 model.\nFinance Operations\nFinance leakage detection is a clean example of agentic AI in finance operations because the workflow depends on extraction, matching, and exception review. The system processed 60 million documents, analyzed over $500 billion in transactions, and helped identify $1 billion in savings.\nAccounting Support\nCampfire says its Claude-powered workflows cut monthly close time by three days, reduced bank reconciliation time by 90%, and reduced reporting time by 50%. Accounting close acceleration shows how agentic systems can reduce repeated month-end work.\nCustomer Support\nHero FinCorp used Azure OpenAI to handle more than 50,000 multilingual customer queries. Grounded finance support shows how agentic workflows help service teams respond faster at scale while keeping responses more consistent across high-volume customer interactions.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are the Top Agentic AI Use Cases in Finance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The best agentic AI use cases in finance appear in workflows with clear inputs, repeated steps, and visible review rules. These workflows create friction because teams spend too much time collecting context before they can make a decision.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Credit Appraisal",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Tata Capital used Azure OpenAI and Azure AI Document Intelligence to automate sections of its credit appraisal note. Credit managers had to sift through 300+ pages of documents in a manual process that was slow and error-prone. Credit appraisal automation shows how an agent can support instant generation of the Credit Appraisal Note, reduce turnaround time, and improve accuracy before analyst review starts.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12160",
+       "text": "Credit appraisal automation"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Financial Analysis",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Endex is developing an AI Analyst that retrieves, synthesizes, and reasons through complex financial data. Financial analysis support is a strong fit for analyst workflows that begin with scattered information and a long source review. In blind user testing, 70% of users preferred responses generated by OpenAI’s o1 model.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12257",
+       "text": "Financial analysis support"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Finance Operations",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Finance leakage detection is a clean example of agentic AI in finance operations because the workflow depends on extraction, matching, and exception review. The system processed 60 million documents, analyzed over $500 billion in transactions, and helped identify $1 billion in savings.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12257",
+       "text": "Finance leakage detection"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Accounting Support",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Campfire says its Claude-powered workflows cut monthly close time by three days, reduced bank reconciliation time by 90%, and reduced reporting time by 50%. Accounting close acceleration shows how agentic systems can reduce repeated month-end work.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/10818",
+       "text": "Accounting close acceleration"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Customer Support",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Hero FinCorp used Azure OpenAI to handle more than 50,000 multilingual customer queries. Grounded finance support shows how agentic workflows help service teams respond faster at scale while keeping responses more consistent across high-volume customer interactions.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12013",
+       "text": "Grounded finance support"
+      }
+     ],
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-the-key-benefits-of-agentic-ai-in-finan",
+   "kind": "article_section",
+   "label": "What Are the Key Benefits of Agentic AI in Finance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are the Key Benefits of Agentic AI in Finance?\nBright white data atrium visualizing the key benefits of agentic AI in finance through structured workflow paths\nThe key benefits of agentic AI in finance include lower manual effort, more consistent task execution, cleaner review flow, better audit readiness, and less setup work before real decisions begin. This helps finance teams move faster while keeping work easier to review and trace.\nLess setup work: Agents gather context before a person starts the real decision.\nLower manual effort: Teams spend less time on repeated review, drafting, and routine handling.\nMore consistency: Strong systems follow the same structure each time across repeated tasks.\nCleaner review flow: Evidence stays closer to the output, which makes review easier.\nBetter audit readiness: Approval points and structured outputs make finance work easier to trace.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are the Key Benefits of Agentic AI in Finance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "Bright white data atrium visualizing the key benefits of agentic AI in finance through structured workflow paths",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/image-8-1024x683.png",
+     "file": "image-8-1024x683.png",
+     "alt": "Bright white data atrium visualizing the key benefits of agentic AI in finance through structured workflow paths",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The key benefits of agentic AI in finance include lower manual effort, more consistent task execution, cleaner review flow, better audit readiness, and less setup work before real decisions begin. This helps finance teams move faster while keeping work easier to review and trace.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Less setup work: Agents gather context before a person starts the real decision.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Lower manual effort: Teams spend less time on repeated review, drafting, and routine handling.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "More consistency: Strong systems follow the same structure each time across repeated tasks.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Cleaner review flow: Evidence stays closer to the output, which makes review easier.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Better audit readiness: Approval points and structured outputs make finance work easier to trace.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:what-real-world-agentic-ai-examples-show-their-v",
+   "kind": "article_section",
+   "label": "What Real-World Agentic AI Examples Show Their Value in Finance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Real-World Agentic AI Examples Show Their Value in Finance?\nReal-world agentic AI examples in finance include workflow automation, investment research, investor guidance, and faster credit access. These cases show value through faster execution, large-scale document search, broader user support, and shorter decision timelines.\nWorkflow Automation\nModel ML is building an AI infrastructure that transforms how leading financial services firms operate. End-to-end workflow automation stands out because it points to a broader operating model, not one narrow task, with work that once took days or weeks now completed in minutes.\nInvestment Research\nRogo integrates datasets such as S&P Global, Crunchbase, and FactSet to deliver real-time financial intelligence to thousands of professionals. Dataset-driven investment research is a strong example of agentic support in finance, with a search across 50 million documents.\nInvestor Guidance\nB3 launched an AI assistant that supports 10,000 users day with investing questions and financial terms. Investor guidance support shows how AI can scale financial education safely across a much broader investor base, while making financial information easier to understand for first-time participants.\nFaster Credit Access\nAgricover built a digital platform that lets farmers access credit within 24 hours instead of the previous 10 working days. Faster credit access is a clean example of workflow compression with a measurable outcome because it shows how AI can reduce delay in decision-heavy financial processes.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Real-World Agentic AI Examples Show Their Value in Finance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Real-world agentic AI examples in finance include workflow automation, investment research, investor guidance, and faster credit access. These cases show value through faster execution, large-scale document search, broader user support, and shorter decision timelines.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Workflow Automation",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Model ML is building an AI infrastructure that transforms how leading financial services firms operate. End-to-end workflow automation stands out because it points to a broader operating model, not one narrow task, with work that once took days or weeks now completed in minutes.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/11582",
+       "text": "End-to-end workflow automation"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Investment Research",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Rogo integrates datasets such as S&P Global, Crunchbase, and FactSet to deliver real-time financial intelligence to thousands of professionals. Dataset-driven investment research is a strong example of agentic support in finance, with a search across 50 million documents.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/11142",
+       "text": "Dataset-driven investment research"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Investor Guidance",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "B3 launched an AI assistant that supports 10,000 users day with investing questions and financial terms. Investor guidance support shows how AI can scale financial education safely across a much broader investor base, while making financial information easier to understand for first-time participants.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12412",
+       "text": "Investor guidance support"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Faster Credit Access",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Agricover built a digital platform that lets farmers access credit within 24 hours instead of the previous 10 working days. Faster credit access is a clean example of workflow compression with a measurable outcome because it shows how AI can reduce delay in decision-heavy financial processes.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12130",
+       "text": "Faster credit access"
+      }
+     ],
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:what-risks-and-challenges-does-agentic-ai-face-i",
+   "kind": "article_section",
+   "label": "What Risks and Challenges Does Agentic AI Face in Finance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Risks and Challenges Does Agentic AI Face in Finance?\nBright AI finance workspace with risk icons, analytics reports, and compliance signals on a modern desk\nThe main risks of agentic AI in finance are weak grounding, loose permissions, poor workflow design, and integration friction across disconnected systems. These issues can lead to wrong outputs, unsafe access, slower review, and delays in real finance workflows.\nWeak grounding\nIf retrieval misses an important record, the output can look polished but still be wrong. This is why review gates still matter in lending, analysis, accounting, and operations-heavy workflows, especially where decisions depend on complete source context.\nLoose permissions\nAgents need strict limits on which systems they can access and what they can do. Finance data is sensitive. Permissions, policy controls, and traceability cannot be optional, particularly when workflows touch customer data, payment records, or internal financial documents.\nPoor workflow design\nEven a strong model fails in a weak process. If the agent does not know when to stop, escalate, or request review, rework goes up fast. Good workflow design matters as much as model quality, because unclear handoffs quickly reduce speed and trust.\nIntegration friction\nFinance work still spans legacy systems, spreadsheets, emails, and private databases. When IDs do not match or the context is split, the value takes longer to appear, and teams often lose time fixing gaps between disconnected systems.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Risks and Challenges Does Agentic AI Face in Finance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "Bright AI finance workspace with risk icons, analytics reports, and compliance signals on a modern desk",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/image-6-1024x683.png",
+     "file": "image-6-1024x683.png",
+     "alt": "Bright AI finance workspace with risk icons, analytics reports, and compliance signals on a modern desk",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The main risks of agentic AI in finance are weak grounding, loose permissions, poor workflow design, and integration friction across disconnected systems. These issues can lead to wrong outputs, unsafe access, slower review, and delays in real finance workflows.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Weak grounding",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "If retrieval misses an important record, the output can look polished but still be wrong. This is why review gates still matter in lending, analysis, accounting, and operations-heavy workflows, especially where decisions depend on complete source context.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Loose permissions",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Agents need strict limits on which systems they can access and what they can do. Finance data is sensitive. Permissions, policy controls, and traceability cannot be optional, particularly when workflows touch customer data, payment records, or internal financial documents.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Poor workflow design",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Even a strong model fails in a weak process. If the agent does not know when to stop, escalate, or request review, rework goes up fast. Good workflow design matters as much as model quality, because unclear handoffs quickly reduce speed and trust.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Integration friction",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Finance work still spans legacy systems, spreadsheets, emails, and private databases. When IDs do not match or the context is split, the value takes longer to appear, and teams often lose time fixing gaps between disconnected systems.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:what-is-the-future-of-agentic-ai-in-finance",
+   "kind": "article_section",
+   "label": "What Is the Future of Agentic AI in Finance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Is the Future of Agentic AI in Finance?\nThe future of agentic AI in finance points to more research support, more operations support, and more bounded service workflows. Teams will use agents to prepare analysis faster, handle finance tasks more consistently, and support customers or investors within clear limits.\nMore research support: Agents will assemble evidence, compare records, and prepare structured analysis faster.\nMore operations support: Teams will use agents to review invoices, contracts, payment records, and accounting tasks with better consistency.\nMore bounded service workflows: Institutions will keep using grounded assistants and workflow agents for customer and investor support.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Is the Future of Agentic AI in Finance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The future of agentic AI in finance points to more research support, more operations support, and more bounded service workflows. Teams will use agents to prepare analysis faster, handle finance tasks more consistently, and support customers or investors within clear limits.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "More research support: Agents will assemble evidence, compare records, and prepare structured analysis faster.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "More operations support: Teams will use agents to review invoices, contracts, payment records, and accounting tasks with better consistency.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "More bounded service workflows: Institutions will keep using grounded assistants and workflow agents for customer and investor support.",
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "article:how-can-gogloby-help-finance-teams-use-agentic-a",
+   "kind": "article_section",
+   "label": "How Can GoGloby Help Finance Teams Use Agentic AI Without Losing Cont…",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Can GoGloby Help Finance Teams Use Agentic AI Without Losing Control?\nAgentic AI in finance becomes risky when systems move across records, tools, and workflow steps without clear limits. A polished output is not enough if the agent used the wrong source, touched the wrong system, or moved too far before review. In finance, the requirement is controlled execution within sensitive workflows.\nGoGloby helps finance teams implement agentic AI through a structured operating model built for bounded execution, secure access, and measurable performance. Instead of treating it as a broad automation layer, GoGloby applies it within narrow finance workflows where rules, review paths, and approval points are already clear. With a shortlist typically delivered in 3-5 days and a production-ready team embedded in under 4 weeks, the model moves from idea to controlled rollout faster without turning finance operations into open-ended AI experimentation.\nWorkflow Design Around Real Finance Tasks\nAgentic systems work best when they support specific tasks with known inputs, known rules, and visible handoffs. In finance, that includes document comparison, exception handling, draft preparation, research support, and other review-heavy processes. This keeps the focus on moving work forward inside a defined workflow rather than pushing toward broad autonomy.\nClear Limits Before Expansion\nAn agent should know what it can access, what it can produce, and where it must stop for human review. Scope, escalation logic, and review checkpoints need to be defined before a workflow goes live. This helps reduce drift, protect approval quality, and make expansion easier to control as usage grows. GoGloby’s Agentic Workflow is built to eliminate ungoverned AI usage and support a more predictable, auditable way of working from day one.\nSecure Interaction With Systems and Data\nFinance workflows often depend on internal records, contracts, payment data, and connected platforms. Agentic execution, therefore, requires controlled system access, clear tool boundaries, and strict handling of sensitive information. GoGloby helps teams keep that interaction inside governed environments, so speed does not come at the cost of weaker control. The Secure Development Environment keeps AI-assisted work inside the client’s own perimeter, with zero IP exposure, which is especially important where internal financial data and approval workflows are tightly controlled.\nMeasurement That Goes Beyond Speed\nMore output does not automatically mean better financial operations. Teams also need visibility into review load, exception patterns, output consistency, and workflow stability. GoGloby helps finance teams measure agentic adoption through operational signals that show whether workflows are improving in a reliable and reviewable way. Through the Performance Center, teams get sprint-by-sprint telemetry, including Agentic AI commit-rate benchmarks of 35-45% by month 2 and 60-70% by month 6.\nGoGloby helps finance organisations introduce agentic AI through structured workflow design, bounded execution, secure system interaction, and measurable operating discipline. Only 4% of Applied AI engineer applicants pass GoGloby’s multi-layer assessment, supporting a higher bar for quality and control in sensitive finance workflows. This makes it easier to expand agentic use cases without weakening auditability, review standards, or internal control.\nRead more: AI in Finance: Best AI Use Cases, Benefits, Examples and Generative AI in Finance: Best AI Use Cases, Benefits, Examples.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Can GoGloby Help Finance Teams Use Agentic AI Without Losing Control?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Agentic AI in finance becomes risky when systems move across records, tools, and workflow steps without clear limits. A polished output is not enough if the agent used the wrong source, touched the wrong system, or moved too far before review. In finance, the requirement is controlled execution within sensitive workflows.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby helps finance teams implement agentic AI through a structured operating model built for bounded execution, secure access, and measurable performance. Instead of treating it as a broad automation layer, GoGloby applies it within narrow finance workflows where rules, review paths, and approval points are already clear. With a shortlist typically delivered in 3-5 days and a production-ready team embedded in under 4 weeks, the model moves from idea to controlled rollout faster without turning finance operations into open-ended AI experimentation.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Workflow Design Around Real Finance Tasks",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Agentic systems work best when they support specific tasks with known inputs, known rules, and visible handoffs. In finance, that includes document comparison, exception handling, draft preparation, research support, and other review-heavy processes. This keeps the focus on moving work forward inside a defined workflow rather than pushing toward broad autonomy.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Clear Limits Before Expansion",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "An agent should know what it can access, what it can produce, and where it must stop for human review. Scope, escalation logic, and review checkpoints need to be defined before a workflow goes live. This helps reduce drift, protect approval quality, and make expansion easier to control as usage grows. GoGloby’s Agentic Workflow is built to eliminate ungoverned AI usage and support a more predictable, auditable way of working from day one.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Secure Interaction With Systems and Data",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Finance workflows often depend on internal records, contracts, payment data, and connected platforms. Agentic execution, therefore, requires controlled system access, clear tool boundaries, and strict handling of sensitive information. GoGloby helps teams keep that interaction inside governed environments, so speed does not come at the cost of weaker control. The Secure Development Environment keeps AI-assisted work inside the client’s own perimeter, with zero IP exposure, which is especially important where internal financial data and approval workflows are tightly controlled.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Measurement That Goes Beyond Speed",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "More output does not automatically mean better financial operations. Teams also need visibility into review load, exception patterns, output consistency, and workflow stability. GoGloby helps finance teams measure agentic adoption through operational signals that show whether workflows are improving in a reliable and reviewable way. Through the Performance Center, teams get sprint-by-sprint telemetry, including Agentic AI commit-rate benchmarks of 35-45% by month 2 and 60-70% by month 6.",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby helps finance organisations introduce agentic AI through structured workflow design, bounded execution, secure system interaction, and measurable operating discipline. Only 4% of Applied AI engineer applicants pass GoGloby’s multi-layer assessment, supporting a higher bar for quality and control in sensitive finance workflows. This makes it easier to expand agentic use cases without weakening auditability, review standards, or internal control.",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Read more: AI in Finance: Best AI Use Cases, Benefits, Examples and Generative AI in Finance: Best AI Use Cases, Benefits, Examples.",
+     "links": [
+      {
+       "href": "https://gogloby.com/use-cases/ai-use-cases-in-finance/",
+       "text": "AI in Finance: Best AI Use Cases, Benefits, Examples"
+      },
+      {
+       "href": "https://gogloby.com/use-cases/generative-ai-use-cases-in-finance/",
+       "text": "Generative AI in Finance: Best AI Use Cases, Benefits, Examples"
+      }
+     ],
+     "index": 8
+    }
+   ]
+  },
+  {
+   "id": "article:conclusion",
+   "kind": "article_section",
+   "label": "Conclusion",
+   "scope": "page",
+   "skipped": false,
+   "text": "Conclusion\nAgentic AI matters in finance because it turns AI from a writing layer into a workflow layer. It helps teams gather context, compare evidence, prepare outputs, and move work toward a decision with more structure and less manual effort. The strongest use cases already appear in credit appraisal, financial research, finance operations, accounting, and service workflows.\nIts value is highest where work follows clear steps, depends on multiple records, and still needs human review at key points. That is why the most effective finance teams are not using agents for open-ended autonomy. They are using them to reduce delay, improve consistency, and make complex workflows easier to review, trace, and scale.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Conclusion",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Agentic AI matters in finance because it turns AI from a writing layer into a workflow layer. It helps teams gather context, compare evidence, prepare outputs, and move work toward a decision with more structure and less manual effort. The strongest use cases already appear in credit appraisal, financial research, finance operations, accounting, and service workflows.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Its value is highest where work follows clear steps, depends on multiple records, and still needs human review at key points. That is why the most effective finance teams are not using agents for open-ended autonomy. They are using them to reduce delay, improve consistency, and make complex workflows easier to review, trace, and scale.",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "article:faqs",
+   "kind": "article_section",
+   "label": "FAQs",
+   "scope": "page",
+   "skipped": false,
+   "text": "FAQs\nWhat is agentic AI in finance?\nIt is AI that can plan steps, retrieve context, use approved tools, and complete limited parts of a finance workflow. It goes beyond simple prompting or summarizing by helping move work from one stage to the next.\nHow does agentic AI work in finance?\nIt usually follows a loop of retrieval, reasoning, action, and review. The system works inside clear limits and stops at approval points when risk is higher, which helps keep execution controlled.\nWhat are the top agentic AI use cases in finance?\nThe clearest ones are credit appraisal, financial research, finance operations, accounting support, and customer or investor service. These workflows have repeated steps and measurable outcomes, which makes them easier to structure and review.\nWhat are some examples of agentic AI in finance?\nStrong examples include Model ML for workflow automation, Rogo for investment research, B3 for investor guidance, and Agricover for faster credit access. These cases show how agentic systems can support different finance functions with clear operational value.\nWhat is the main risk of agentic AI in finance?\nThe main risk is letting a system move too far without enough evidence, control, or review. In finance, grounding, permissions, and approval gates still matter because small errors can affect real decisions and live workflows.\nAuthor avatar\nSergey Matikaynen / CTO\nArticle author\nSergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.\nView profile",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "FAQs",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "What is agentic AI in finance?",
+     "area": "item 1",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "It is AI that can plan steps, retrieve context, use approved tools, and complete limited parts of a finance workflow. It goes beyond simple prompting or summarizing by helping move work from one stage to the next.",
+     "area": "item 1",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "How does agentic AI work in finance?",
+     "area": "item 1",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "It usually follows a loop of retrieval, reasoning, action, and review. The system works inside clear limits and stops at approval points when risk is higher, which helps keep execution controlled.",
+     "area": "item 1",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "What are the top agentic AI use cases in finance?",
+     "area": "item 1",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "The clearest ones are credit appraisal, financial research, finance operations, accounting support, and customer or investor service. These workflows have repeated steps and measurable outcomes, which makes them easier to structure and review.",
+     "area": "item 1",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "What are some examples of agentic AI in finance?",
+     "area": "item 1",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Strong examples include Model ML for workflow automation, Rogo for investment research, B3 for investor guidance, and Agricover for faster credit access. These cases show how agentic systems can support different finance functions with clear operational value.",
+     "area": "item 1",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "What is the main risk of agentic AI in finance?",
+     "area": "item 1",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "The main risk is letting a system move too far without enough evidence, control, or review. In finance, grounding, permissions, and approval gates still matter because small errors can affect real decisions and live workflows.",
+     "area": "item 1",
+     "index": 10
+    },
+    {
+     "type": "image",
+     "text": "Author avatar",
+     "src": "https://gogloby.com/wp-content/uploads/2024/02/1706550966241.jpeg",
+     "file": "1706550966241.jpeg",
+     "alt": "Author avatar",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen / CTO",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "Article author",
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.",
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "View profile",
+     "links": [
+      {
+       "href": "https://gogloby.com/author/sergey/",
+       "text": "View profile"
+      }
+     ],
+     "index": 14
+    }
+   ]
+  },
+  {
+   "id": "banner_cta",
+   "kind": "banner_cta",
+   "label": "Banner CTA",
+   "scope": "page",
+   "skipped": false,
+   "text": "Ready to Apply Agentic AI in Finance Without Added Process Risk?\nGoGloby supports finance teams with structured agentic workflows built for review-heavy tasks, sensitive data, and real operating constraints.\nContact GoGloby Now",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Ready to Apply Agentic AI in Finance Without Added Process Risk?",
+     "area": "block-main",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby supports finance teams with structured agentic workflows built for review-heavy tasks, sensitive data, and real operating constraints.",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Contact GoGloby Now",
+     "area": "block-aside",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "modals",
+   "kind": "modals",
+   "label": "Forms and modals",
+   "scope": "shared",
+   "skipped": false,
+   "text": "Thank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend\nThank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "site_header",
+   "kind": "site_header",
+   "label": "Site header",
+   "scope": "page",
+   "skipped": true,
+   "text": "Site logo\nSolutions\nAI Engineering Visibility\nForward Deployed Engineering\nServices\nAI Engineers Staff Augmentation\nHire AI Engineers\nAI Development Services\nGenerative AI Consulting Services\nAgentic AI Consulting Services\nAI Production Engineering\nGenerative AI Development Services\nAI Agent Development Services\nAI Custom Software Development Services\nRAG Application Development Services\nLLM Development Services\nApplication AI Modernization Services\nLegacy Application Modernization Services\nSoftware Maintenance Services\nCompany\nAbout us\nJobs\nResources\nInsights\nUse Cases\nPodcast\nContact\nTalk to Us",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Site logo",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/globy-logo-1-01.svg",
+     "file": "globy-logo-1-01.svg",
+     "alt": "Site logo",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Solutions",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineering Visibility",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/ai-engineering-visibility/",
+       "text": "AI Engineering Visibility"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Forward Deployed Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/forward-deployed-engineering/",
+       "text": "Forward Deployed Engineering"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineers Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Engineers Staff Augmentation"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "link",
+     "text": "AI Development Services",
+     "href": "https://gogloby.com/services/ai-development/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-development/",
+       "text": "AI Development Services"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-consulting/",
+       "text": "Generative AI Consulting Services"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Agentic AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/agentic-ai-consulting/",
+       "text": "Agentic AI Consulting Services"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "AI Production Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "AI Production Engineering"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "AI Agent Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-agent-development/",
+       "text": "AI Agent Development Services"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "AI Custom Software Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-custom-software-development/",
+       "text": "AI Custom Software Development Services"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "RAG Application Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/rag-application-development/",
+       "text": "RAG Application Development Services"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "LLM Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/llm-development/",
+       "text": "LLM Development Services"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "link",
+     "text": "Application AI Modernization Services",
+     "href": "https://gogloby.com/services/application-modernization/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/application-modernization/",
+       "text": "Application AI Modernization Services"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Legacy Application Modernization Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/legacy-application-modernization/",
+       "text": "Legacy Application Modernization Services"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "Software Maintenance Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/software-maintenance/",
+       "text": "Software Maintenance Services"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "Talk to Us",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "site_footer",
+   "kind": "site_footer",
+   "label": "Site footer",
+   "scope": "page",
+   "skipped": true,
+   "text": "Background logo\nServices\nApplied AI Engineering\nAI Staff Augmentation\nHire AI Engineers\nGenerative AI Development Services\nCompany\nAbout us\nJobs\nContact\nPrivacy Policy and Candidate Privacy Notice\nTerms and Conditions\nResources\nInsights\nUse Cases\nPodcast\nCase Studies\nConnections\nCrunchbase\nLinkedIn\nX\nG2\nClutch\nTrustpilot\nDesignRush\nGitHub\nFacebook\nYouTube\n© Copyright 2026, GoGloby. All Rights Reserved.",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background logo",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/logos/globy-logo-outline-1-01.svg",
+     "file": "globy-logo-outline-1-01.svg",
+     "alt": "Background logo",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Applied AI Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "Applied AI Engineering"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Staff Augmentation"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Privacy Policy and Candidate Privacy Notice",
+     "links": [
+      {
+       "href": "https://gogloby.com/privacy-policy/",
+       "text": "Privacy Policy and Candidate Privacy Notice"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Terms and Conditions",
+     "links": [
+      {
+       "href": "https://gogloby.com/terms-and-conditions/",
+       "text": "Terms and Conditions"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "Case Studies",
+     "links": [
+      {
+       "href": "https://gogloby.com/case-study/",
+       "text": "Case Studies"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Connections",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Crunchbase",
+     "links": [
+      {
+       "href": "https://www.crunchbase.com/organization/gogloby",
+       "text": "Crunchbase"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "LinkedIn",
+     "links": [
+      {
+       "href": "https://www.linkedin.com/company/gogloby/",
+       "text": "LinkedIn"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "X",
+     "links": [
+      {
+       "href": "https://x.com/GoGloby",
+       "text": "X"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "list_item",
+     "text": "G2",
+     "links": [
+      {
+       "href": "https://www.g2.com/products/gogloby/reviews",
+       "text": "G2"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Clutch",
+     "links": [
+      {
+       "href": "https://clutch.co/profile/gogloby",
+       "text": "Clutch"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Trustpilot",
+     "links": [
+      {
+       "href": "https://www.trustpilot.com/review/gogloby.com",
+       "text": "Trustpilot"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "DesignRush",
+     "links": [
+      {
+       "href": "https://www.designrush.com/agency/profile/gogloby",
+       "text": "DesignRush"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "list_item",
+     "text": "GitHub",
+     "links": [
+      {
+       "href": "https://github.com/gogloby",
+       "text": "GitHub"
+      }
+     ],
+     "index": 21
+    },
+    {
+     "type": "list_item",
+     "text": "Facebook",
+     "links": [
+      {
+       "href": "https://www.facebook.com/gogloby",
+       "text": "Facebook"
+      }
+     ],
+     "index": 22
+    },
+    {
+     "type": "list_item",
+     "text": "YouTube",
+     "links": [
+      {
+       "href": "https://www.youtube.com/@DefaultGlobal",
+       "text": "YouTube"
+      }
+     ],
+     "index": 23
+    },
+    {
+     "type": "paragraph",
+     "text": "© Copyright 2026, GoGloby. All Rights Reserved.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "related",
+   "kind": "related",
+   "label": "Related content",
+   "scope": "page",
+   "skipped": true,
+   "text": "Related News\nGenerative AI in Healthcare: Best AI Use Cases, Benefits, Examples\nGenerative AI in Healthcare: Best AI Use Cases, Benefits, Examples\nApril 7,2026\nAgentic AI in Healthcare: Best AI Use Cases, Benefits, Examples\nApril 7,2026\nAI in Healthcare: Best AI Use Cases, Benefits, Examples\nAI in Healthcare: Best AI Use Cases, Benefits, Examples\nApril 7,2026\nGenerative AI in Finance: Best AI Use Cases, Benefits, Examples\nGenerative AI in Finance: Best AI Use Cases, Benefits, Examples\nApril 6,2026\nAI in Finance: Best AI Use Cases, Benefits, Examples\nAI in Finance: Best AI Use Cases, Benefits, Examples\nApril 6,2026\nAgentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples\nAgentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples\nMarch 6,2026",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Related News",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "Generative AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/medical-artificial-intelligence-scaled.jpg",
+     "file": "medical-artificial-intelligence-scaled.jpg",
+     "alt": "Generative AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Generative AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "April 7,2026",
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Agentic AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "April 7,2026",
+     "area": "slide 2",
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2025/08/AI-use-cases-in-healthcare-scaled.png",
+     "file": "AI-use-cases-in-healthcare-scaled.png",
+     "alt": "AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 3",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "April 7,2026",
+     "area": "slide 3",
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "Generative AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/Generative-AI-in-finance-2.png",
+     "file": "Generative-AI-in-finance-2.png",
+     "alt": "Generative AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 4",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Generative AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 4",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "April 6,2026",
+     "area": "slide 4",
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/AI-use-cases-in-Finance-scaled.webp",
+     "file": "AI-use-cases-in-Finance-scaled.webp",
+     "alt": "AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 5",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 5",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "April 6,2026",
+     "area": "slide 5",
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "Agentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2026/03/4.jpg",
+     "file": "4.jpg",
+     "alt": "Agentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 6",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Agentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 6",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "March 6,2026",
+     "area": "slide 6",
+     "index": 6
+    }
+   ]
+  }
+ ],
+ "warnings": []
+}

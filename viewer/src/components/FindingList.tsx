@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import type { Finding, FixWhere } from "../types.js";
 import { SeverityBadge } from "./Badges.js";
-import { GEO_STYLE_KINDS, ruleDocId } from "../labels.js";
+import { GEO_STYLE_KINDS, isGeoAbsence, ruleDocId } from "../labels.js";
 import { fragmentAllowed, showOnPageUrl } from "../utils.js";
 
 const SEV_ORDER: Record<string, number> = { high: 0, medium: 1, low: 2, "": 3 };
@@ -14,7 +14,14 @@ export function groupProblems(list: Finding[]): Finding[][] {
     const key = `${f.layer}|${f.kind}|${f.title}|${f.issue}`;
     m.set(key, [...(m.get(key) ?? []), f]);
   }
-  return [...m.values()].sort((a, b) => SEV_ORDER[a[0]!.severity]! - SEV_ORDER[b[0]!.severity]!);
+  // worst first; among equals the problem with more places comes first
+  return [...m.values()].sort((a, b) => SEV_ORDER[a[0]!.severity]! - SEV_ORDER[b[0]!.severity]! || b.length - a.length);
+}
+
+/** The cards the list shows: a problem seen both on the page and in the author profile is two cards, so the counters count it twice. */
+export function countCards(findings: Finding[]): number {
+  const kinds = new Set(findings.map((f) => f.fix_where ?? "page"));
+  return [...kinds].reduce((n, w) => n + groupProblems(findings.filter((f) => (f.fix_where ?? "page") === w)).length, 0);
 }
 
 /** One line of a problem: the places that share a quote (title, meta, og) are one line. */
@@ -98,8 +105,10 @@ function PlaceLine({ place, hideZone }: { place: Place; hideZone?: boolean }) {
   const { f } = place;
   const headKind = headBadge(f.zone_id);
   const where = [hideZone ? "" : place.labels.join(", "), place.place || humanPart(place.part)].filter(Boolean).join(", ");
-  const link = f.url !== "site" ? showOnPageUrl(f.url, f.fragment) : null;
-  const quote = displayQuote(f);
+  const link = f.url !== "site" && !isGeoAbsence(f.layer, f.kind) ? showOnPageUrl(f.url, f.fragment) : null;
+  // "does not use X" answers: the quote is only the nearest text, so say where the model looked and show no quote or link
+  const absence = isGeoAbsence(f.layer, f.kind);
+  const quote = absence ? "" : displayQuote(f);
   // SEO values are measurements ("61 characters (max 60)"), not quotes from the page
   const measured = f.layer === "seo";
   return (
@@ -107,7 +116,7 @@ function PlaceLine({ place, hideZone }: { place: Place; hideZone?: boolean }) {
       <div className="flex flex-wrap items-baseline gap-x-2">
         {where && (
           <>
-            <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">Where</span>
+            <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">{isGeoAbsence(f.layer, f.kind) ? "Checked in" : "Where"}</span>
             <span className="font-medium">{where}</span>
           </>
         )}

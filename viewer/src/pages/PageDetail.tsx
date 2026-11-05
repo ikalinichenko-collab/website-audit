@@ -4,7 +4,7 @@ import { useRunContext } from "../context/RunContext.js";
 import { getIndex, getPage, getPageFindings } from "../data.js";
 import type { Finding, GeoAnswerView, Layer, PageIndexEntry, PageReport } from "../types.js";
 import { ActionBadge } from "../components/Badges.js";
-import { FindingList, FindingsByZone, groupProblems } from "../components/FindingList.js";
+import { countCards, FindingList, FindingsByZone, groupProblems } from "../components/FindingList.js";
 import { ACTION_HELP, GEO_LABELS, GEO_STYLE_KINDS, LAYER_LABELS, variantLabel } from "../labels.js";
 import { defaultSort } from "../utils.js";
 
@@ -13,6 +13,15 @@ type Tab = Layer | "review";
 const REST_LABEL = { pass: "Passed", na: "Not applicable", none: "Not answered", unconfirmed: "Not confirmed" } as const;
 const REST_CLASS = {
   pass: "text-emerald-600 dark:text-emerald-400",
+  na: "text-slate-400",
+  none: "text-amber-600",
+  unconfirmed: "text-amber-600",
+} as const;
+
+const QA_LABEL = { yes: "Yes", no: "No", na: "Not applicable", none: "Not answered", unconfirmed: "No, not confirmed" } as const;
+const QA_CLASS = {
+  yes: "text-emerald-600 dark:text-emerald-400",
+  no: "text-red-600 dark:text-red-400",
   na: "text-slate-400",
   none: "text-amber-600",
   unconfirmed: "text-amber-600",
@@ -79,7 +88,8 @@ export function PageDetail() {
     seo: !!page.seo.skipped,
   };
   const problems = (layer: Layer) => groupProblems(of(layer));
-  const count = (layer: Layer) => (off[layer] ? null : problems(layer).length);
+  const cards = (list: Finding[]) => countCards(list);
+  const count = (layer: Layer) => (off[layer] ? null : cards(of(layer)));
 
   // open on the first layer that has something to read
   const layers: Layer[] = ["compliance", "geo", "seo"];
@@ -119,15 +129,15 @@ export function PageDetail() {
   const geoStyle = of("geo").filter((f) => GEO_STYLE_KINDS.includes(f.kind));
   // a "no" the question wanted confirmed, and the second answer differed: not a finding, listed here
   const geoUnconfirmed = (a: GeoAnswerView) => a.answer === "no" && a.needs_confirm && a.confirmed === false;
+  // every question with its answer, the "no" ones too: the same text as the finding, in one table
+  const geoQa = geoAnswers.map((a) => ({
+    id: a.id,
+    title: a.title ?? GEO_LABELS[a.id] ?? a.id,
+    state: geoUnconfirmed(a) ? ("unconfirmed" as const) : a.answer,
+    note: [a.value && a.value !== a.id ? `(${a.value})` : "", a.note].filter(Boolean).join(" "),
+    fix: a.answer === "no" ? (a.fix ?? "") : "",
+  }));
   const geoRest: { id: string; title: string; state: "pass" | "na" | "none" | "unconfirmed"; text: string }[] = [
-    ...geoAnswers
-      .filter((a) => a.answer !== "no" || geoUnconfirmed(a))
-      .map((a) => ({
-        id: a.id,
-        title: a.title ?? GEO_LABELS[a.id] ?? a.id,
-        state: geoUnconfirmed(a) ? ("unconfirmed" as const) : a.answer === "yes" ? ("pass" as const) : a.answer === "none" ? ("none" as const) : ("na" as const),
-        text: [a.value && a.value !== a.id ? `(${a.value})` : "", a.note].filter(Boolean).join(" "),
-      })),
     ...(page.geo.code ?? [])
       .filter((c) => c.status !== "fail")
       .map((c) => ({ id: c.id, title: GEO_LABELS[c.id] ?? c.id, state: c.status === "pass" ? ("pass" as const) : ("na" as const), text: c.status === "na" ? "" : c.value })),
@@ -334,17 +344,45 @@ export function PageDetail() {
             {geoStyle.length > 0 && (
               <details open={geoFailing.length === 0}>
                 <summary className="cursor-pointer text-sm font-semibold text-slate-800 dark:text-slate-200">
-                  Style ({groupProblems(geoStyle).length}), low priority
+                  Style ({cards(geoStyle)}), low priority
                 </summary>
                 <div className="mt-2">
                   <FindingList findings={geoStyle} empty="" />
                 </div>
               </details>
             )}
+            {geoQa.length > 0 && (
+              <details open>
+                <summary className="cursor-pointer text-sm font-semibold text-slate-800 dark:text-slate-200">
+                  Questions and answers ({geoQa.length})
+                </summary>
+                <p className="mt-1 text-xs text-slate-500">
+                  What the model answered about this page. Yes is the good answer; a no is a finding above.
+                </p>
+                <table className="mt-2 w-full text-left text-sm">
+                  <tbody>
+                    {geoQa.map((r) => (
+                      <tr key={r.id} className="border-t border-slate-100 align-top dark:border-slate-800">
+                        <td className={`whitespace-nowrap py-1.5 pr-3 text-xs font-semibold uppercase ${QA_CLASS[r.state]}`}>{QA_LABEL[r.state]}</td>
+                        <td className="py-1.5 pr-3 font-medium">{r.title}</td>
+                        <td className="py-1.5 text-slate-600 dark:text-slate-400">
+                          {r.note}
+                          {r.fix && (
+                            <span className="block">
+                              <span className="font-medium">What to do:</span> {r.fix}
+                            </span>
+                          )}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </details>
+            )}
             {geoRest.length > 0 && (
               <details>
                 <summary className="cursor-pointer text-sm font-semibold text-slate-800 dark:text-slate-200">
-                  Passed, not applicable or not confirmed ({geoRest.length})
+                  Code checks without problems ({geoRest.length})
                 </summary>
                 <ul className="mt-2 space-y-1 text-sm">
                   {geoRest.map((r) => (

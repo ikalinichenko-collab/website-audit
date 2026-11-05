@@ -1,0 +1,2274 @@
+{
+  "schema_version": 2,
+  "url": "https://gogloby.com/use-cases/ai-in-it/",
+  "final_url": "https://gogloby.com/use-cases/ai-in-it/",
+  "status": 200,
+  "title": "AI in IT: 140+ Use Cases and Case Studies 2025 | GoGloby",
+  "category": "Resources",
+  "subsection": "Use cases",
+  "profile": "article",
+  "geo_type": "article",
+  "template": "article",
+  "checked_at": "2026-11-05T13:19:57.220Z",
+  "zones": [
+    {
+      "id": "title",
+      "label": "Title",
+      "kind": "title"
+    },
+    {
+      "id": "meta_description",
+      "label": "Meta description",
+      "kind": "meta_description"
+    },
+    {
+      "id": "og_title",
+      "label": "og:title",
+      "kind": "og_title"
+    },
+    {
+      "id": "og_description",
+      "label": "og:description",
+      "kind": "og_description"
+    },
+    {
+      "id": "json_ld",
+      "label": "Structured data (JSON-LD)",
+      "kind": "json_ld"
+    },
+    {
+      "id": "h1",
+      "label": "H1",
+      "kind": "h1"
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "kind": "date"
+    },
+    {
+      "id": "author",
+      "label": "Author",
+      "kind": "author"
+    },
+    {
+      "id": "toc",
+      "label": "Table of contents",
+      "kind": "toc"
+    },
+    {
+      "id": "article:intro",
+      "label": "Intro",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-are-ai-use-cases-in-it",
+      "label": "What are AI use cases in IT?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-are-the-most-impactful-ai-use-cases-in-it",
+      "label": "What are the most impactful AI use cases in IT?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:complete-map-of-140-ai-use-cases-in-it-categorie",
+      "label": "Complete map of 140+ AI Use Cases in IT & Categories",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:1-sales-revops-copilots",
+      "label": "1. Sales & RevOps Copilots",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:3-employee-productivity-knowledge-work",
+      "label": "3. Employee Productivity & Knowledge Work",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:4-data-platforms-rag-decision-intelligence",
+      "label": "4. Data Platforms, RAG & Decision Intelligence",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:5-ai-assistants-agents",
+      "label": "5. AI Assistants & Agents",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:6-general-ai-adoption-in-it-services",
+      "label": "6. General AI Adoption in IT Services",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:pros-cons-of-ai-in-it",
+      "label": "Pros & Cons of AI in IT",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:the-future-of-ai-in-it",
+      "label": "The Future of AI in IT",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:conclusion-how-to-turn-ai-in-it-into-lasting-adv",
+      "label": "Conclusion: How to Turn AI in IT Into Lasting Advantage",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:about-gogloby",
+      "label": "About GoGloby",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:faqs",
+      "label": "FAQs",
+      "kind": "article_section"
+    },
+    {
+      "id": "banner_cta",
+      "label": "Banner CTA",
+      "kind": "banner_cta"
+    }
+  ],
+  "zone_warnings": [],
+  "shared_variants": [
+    "modals@1"
+  ],
+  "compliance": {
+    "hash": "6c70e0283e3274c52894bcef235a8f478067817e0ef52761670c9360a26848dc",
+    "cached": false,
+    "action": "fix",
+    "model_action": "fix",
+    "summary": "The article’s GoGloby sections and CTAs position the company as a provider of AI implementation squads, rather than a staffing and recruiting agency. They also include unsupported guarantees, credentials, and service claims that need correction.",
+    "llm_problems": [
+      {
+        "title": "Squads sell implementation services",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Fact Sheet: Identity and Services; Glossary §1 and §2",
+        "rule_verified": true,
+        "issue": "These passages present GoGloby as supplying squads to build or execute AI solutions, while the sources describe a staffing and recruiting agency that recruits or embeds engineers for clients to direct.",
+        "fix": "Replace the implementation-squad positioning with the approved company description and the documented recruiting or staffing service model.",
+        "subject": "GoGloby service model",
+        "page_value": "AI implementation squads and solutions",
+        "source_value": "Staffing and recruiting Data & AI Engineers",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "article:conclusion-how-to-turn-ai-in-it-into-lasting-adv",
+            "part": "paragraph 4",
+            "quote": "GoGloby fields nearshore squads with senior, FAANG-level engineers",
+            "verified": true,
+            "reason": "This describes GoGloby as supplying squads to execute the buyer’s AI initiatives, not as staffing engineers for client-directed work."
+          },
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "we don’t just fill roles — we embed FAANG-caliber AI engineering squads",
+            "verified": true,
+            "reason": "This contrasts recruiting and staffing with squad-based delivery, contrary to the documented service model."
+          },
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 3",
+            "quote": "Our squads solve this by delivering production-grade solutions inside your existing stack.",
+            "verified": true,
+            "reason": "This promises delivery of production solutions, whereas the sources say clients run the engineers’ work."
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "We embed FAANG-level AI engineers who build production-grade assistants and automations",
+            "verified": true,
+            "reason": "This offers engineers to build AI products and automations rather than the documented recruiting and staffing services."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Old 4x Applied AI offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The author bio presents “4x Applied AI Engineering” as a GoGloby engineering standard, using an old product name the glossary says not to use.",
+        "fix": "Remove the old product name and any positioning of it as a GoGloby offer or standard.",
+        "subject": "4x Applied AI Engineering",
+        "page_value": "4x Applied AI Engineering",
+        "source_value": "Old product name; not an approved offer",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "the engineering standard behind 4x Applied AI Engineering",
+            "verified": true,
+            "reason": "This presents the discontinued name as the standard behind GoGloby’s engineering offer."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 17",
+            "quote": "the engineering standard behind 4x Applied AI Engineering",
+            "verified": true,
+            "reason": "The repeated author bio again presents the discontinued name as a GoGloby engineering standard."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsupported FAANG-level engineers",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Identity and Services",
+        "rule_verified": true,
+        "issue": "The page describes GoGloby’s engineers as FAANG-level, a qualification not stated in the company sources.",
+        "fix": "Remove the FAANG-level qualification unless GoGloby verifies and approves it.",
+        "subject": "GoGloby engineers",
+        "page_value": "FAANG-level",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:conclusion-how-to-turn-ai-in-it-into-lasting-adv",
+            "part": "paragraph 4",
+            "quote": "senior, FAANG-level engineers",
+            "verified": true,
+            "reason": "This asserts a FAANG-level qualification for the engineers that the company sources do not substantiate."
+          },
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "FAANG-caliber AI engineering squads",
+            "verified": true,
+            "reason": "This claims FAANG-caliber expertise for the squads without support in the company sources."
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "FAANG-level AI engineers",
+            "verified": true,
+            "reason": "This makes the same unsupported qualification in the banner description."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified ROI outcome claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §7",
+        "rule_verified": true,
+        "issue": "The page promises measurable ROI from GoGloby’s engagements, but the sources do not establish an ROI guarantee or outcome claim.",
+        "fix": "Remove the ROI outcome promise unless it is substantiated and approved.",
+        "subject": "GoGloby engagement outcomes",
+        "page_value": "measurable ROI",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "securely, faster, and with measurable ROI",
+            "verified": true,
+            "reason": "This promises measurable ROI as part of GoGloby’s service without a supporting company claim."
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "with measurable ROI",
+            "verified": true,
+            "reason": "This also promises measurable ROI from the AI assistants and automations offered in the banner."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported compliant contract claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §2",
+        "rule_verified": true,
+        "issue": "The page claims GoGloby provides a single compliant contract, a contract arrangement not specified in the sources.",
+        "fix": "Remove this contract claim unless GoGloby verifies and approves it.",
+        "subject": "GoGloby contract terms",
+        "page_value": "one compliant contract",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:conclusion-how-to-turn-ai-in-it-into-lasting-adv",
+            "part": "paragraph 4",
+            "quote": "under one compliant contract",
+            "verified": true,
+            "reason": "This asserts a particular contract arrangement that the company sources do not describe."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unlisted Zero-Lock Contract",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §2",
+        "rule_verified": true,
+        "issue": "The page names a “Zero-Lock Contract,” which is not listed in the company sources.",
+        "fix": "Remove the contract name unless GoGloby verifies and approves it.",
+        "subject": "Zero-Lock Contract",
+        "page_value": "Zero-Lock Contract",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "Every engagement comes with our Zero-Lock Contract",
+            "verified": true,
+            "reason": "This promises a named contract term that the company sources do not mention."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Guarantee applied to every engagement",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page promises a 120-day free-replacement guarantee for every engagement, but the sources specify different conditions for recruiting and nearshore staffing.",
+        "fix": "State only the guarantee and conditions that apply to the relevant service.",
+        "subject": "120-day replacement guarantee",
+        "page_value": "Every engagement gets a 120-Day Free-Replacement Guarantee",
+        "source_value": "Recruiting: 120-day free replacement; staffing: performance-based replacement and cancellation terms",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "120-Day Free-Replacement Guarantee",
+            "verified": true,
+            "reason": "The phrase presents a universal guarantee, although the sources define different guarantees for recruiting and staffing."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Cyber insurance described as guarantee",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Legal and security",
+        "rule_verified": true,
+        "issue": "The page calls the $3M cyber-liability coverage a guarantee, while the sources describe a $3M data and cyber-liability insurance policy.",
+        "fix": "Describe the coverage using the documented insurance type and scope.",
+        "subject": "Data and cyber-liability coverage",
+        "page_value": "$3M Cyber-Liability Guarantee",
+        "source_value": "$3M data and cyber liability insurance",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "$3M Cyber-Liability Guarantee",
+            "verified": true,
+            "reason": "This labels the coverage a guarantee and omits data liability, whereas the source identifies it as insurance."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Sergey’s experience years differ",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The bio says Sergey has 16+ years of experience, while the Fact Sheet says he has spent 17 years building software systems, engineering organizations, and production platforms.",
+        "fix": "Correct the experience figure to match the Fact Sheet.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "16+ years",
+        "source_value": "17 years",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "reason": "The bio gives a different experience figure from the Fact Sheet."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 17",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "reason": "The repeated bio gives the same conflicting experience figure."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified Sergey credentials",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page attributes a LinkedIn Top Voice distinction in software development to Sergey, but the Fact Sheet does not list that recognition for him.",
+        "fix": "Remove the recognition claim unless it is verified and approved for Sergey.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "LinkedIn Top Voice in software development",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "reason": "The bio attributes this recognition to Sergey, while the Fact Sheet lists LinkedIn Top Voice status for Vit Koval."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 17",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "reason": "The repeated bio again attributes the unlisted recognition to Sergey."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified Agentic SDLC certification",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders; Glossary §4",
+        "rule_verified": true,
+        "issue": "The bio claims Sergey has certified Agentic SDLC mastery, a certification or credential not stated in the sources.",
+        "fix": "Remove the certification claim unless it is verified and approved.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "certified Agentic SDLC mastery",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "including certified Agentic SDLC mastery",
+            "verified": true,
+            "reason": "This presents a specific certification or credential that the company sources do not document."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 17",
+            "quote": "including certified Agentic SDLC mastery",
+            "verified": true,
+            "reason": "The repeated bio makes the same unsupported certification claim."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unapproved GoGloby CTA",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §2 and §7",
+        "rule_verified": true,
+        "issue": "The banner CTA directs visitors to build an AI team through the page’s implementation-squad offer instead of using the documented service CTAs.",
+        "fix": "Replace this CTA with the applicable documented recruiting or staffing call to action.",
+        "subject": "Banner call to action",
+        "page_value": "Build your AI team with GoGloby",
+        "source_value": "Get vetted profiles; Start a search",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 2",
+            "quote": "Build your AI team with GoGloby",
+            "verified": true,
+            "reason": "This CTA sells the page’s squad-building offer rather than directing buyers to the documented staffing or recruiting action."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      }
+    ],
+    "problems": [
+      {
+        "title": "Squads sell implementation services",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Fact Sheet: Identity and Services; Glossary §1 and §2",
+        "rule_verified": true,
+        "issue": "These passages present GoGloby as supplying squads to build or execute AI solutions, while the sources describe a staffing and recruiting agency that recruits or embeds engineers for clients to direct.",
+        "fix": "Replace the implementation-squad positioning with the approved company description and the documented recruiting or staffing service model.",
+        "subject": "GoGloby service model",
+        "page_value": "AI implementation squads and solutions",
+        "source_value": "Staffing and recruiting Data & AI Engineers",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "article:conclusion-how-to-turn-ai-in-it-into-lasting-adv",
+            "part": "paragraph 4",
+            "quote": "GoGloby fields nearshore squads with senior, FAANG-level engineers",
+            "verified": true,
+            "reason": "This describes GoGloby as supplying squads to execute the buyer’s AI initiatives, not as staffing engineers for client-directed work.",
+            "fragment": "GoGloby fields nearshore squads with senior,",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "we don’t just fill roles — we embed FAANG-caliber AI engineering squads",
+            "verified": true,
+            "reason": "This contrasts recruiting and staffing with squad-based delivery, contrary to the documented service model.",
+            "fragment": "we don’t just fill roles",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 3",
+            "quote": "Our squads solve this by delivering production-grade solutions inside your existing stack.",
+            "verified": true,
+            "reason": "This promises delivery of production solutions, whereas the sources say clients run the engineers’ work.",
+            "fragment": "Our squads solve this by delivering",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "We embed FAANG-level AI engineers who build production-grade assistants and automations",
+            "verified": true,
+            "reason": "This offers engineers to build AI products and automations rather than the documented recruiting and staffing services.",
+            "fragment": "We embed FAANG-level AI engineers who",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Old 4x Applied AI offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The author bio presents “4x Applied AI Engineering” as a GoGloby engineering standard, using an old product name the glossary says not to use.",
+        "fix": "Remove the old product name and any positioning of it as a GoGloby offer or standard.",
+        "subject": "4x Applied AI Engineering",
+        "page_value": "4x Applied AI Engineering",
+        "source_value": "Old product name; not an approved offer",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "the engineering standard behind 4x Applied AI Engineering",
+            "verified": true,
+            "reason": "This presents the discontinued name as the standard behind GoGloby’s engineering offer.",
+            "fragment": "the engineering standard behind 4x Applied",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 17",
+            "quote": "the engineering standard behind 4x Applied AI Engineering",
+            "verified": true,
+            "reason": "The repeated author bio again presents the discontinued name as a GoGloby engineering standard.",
+            "fragment": "the engineering standard behind 4x Applied",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsupported FAANG-level engineers",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Identity and Services",
+        "rule_verified": true,
+        "issue": "The page describes GoGloby’s engineers as FAANG-level, a qualification not stated in the company sources.",
+        "fix": "Remove the FAANG-level qualification unless GoGloby verifies and approves it.",
+        "subject": "GoGloby engineers",
+        "page_value": "FAANG-level",
+        "source_value": "not in Fact Sheet",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:conclusion-how-to-turn-ai-in-it-into-lasting-adv",
+            "part": "paragraph 4",
+            "quote": "senior, FAANG-level engineers",
+            "verified": true,
+            "reason": "This asserts a FAANG-level qualification for the engineers that the company sources do not substantiate.",
+            "fragment": "senior, FAANG-level engineers",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "FAANG-caliber AI engineering squads",
+            "verified": true,
+            "reason": "This claims FAANG-caliber expertise for the squads without support in the company sources.",
+            "fragment": "FAANG-caliber AI engineering squads",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "FAANG-level AI engineers",
+            "verified": true,
+            "reason": "This makes the same unsupported qualification in the banner description.",
+            "fragment": "FAANG-level AI engineers",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified ROI outcome claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §7",
+        "rule_verified": true,
+        "issue": "The page promises measurable ROI from GoGloby’s engagements, but the sources do not establish an ROI guarantee or outcome claim.",
+        "fix": "Remove the ROI outcome promise unless it is substantiated and approved.",
+        "subject": "GoGloby engagement outcomes",
+        "page_value": "measurable ROI",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "securely, faster, and with measurable ROI",
+            "verified": true,
+            "reason": "This promises measurable ROI as part of GoGloby’s service without a supporting company claim.",
+            "fragment": "securely, faster, and with measurable",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "with measurable ROI",
+            "verified": true,
+            "reason": "This also promises measurable ROI from the AI assistants and automations offered in the banner.",
+            "fragment": "security, and development-,with measurable,-ROI.",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported compliant contract claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §2",
+        "rule_verified": true,
+        "issue": "The page claims GoGloby provides a single compliant contract, a contract arrangement not specified in the sources.",
+        "fix": "Remove this contract claim unless GoGloby verifies and approves it.",
+        "subject": "GoGloby contract terms",
+        "page_value": "one compliant contract",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:conclusion-how-to-turn-ai-in-it-into-lasting-adv",
+            "part": "paragraph 4",
+            "quote": "under one compliant contract",
+            "verified": true,
+            "reason": "This asserts a particular contract arrangement that the company sources do not describe.",
+            "fragment": "under one compliant contract",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unlisted Zero-Lock Contract",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §2",
+        "rule_verified": true,
+        "issue": "The page names a “Zero-Lock Contract,” which is not listed in the company sources.",
+        "fix": "Remove the contract name unless GoGloby verifies and approves it.",
+        "subject": "Zero-Lock Contract",
+        "page_value": "Zero-Lock Contract",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "Every engagement comes with our Zero-Lock Contract",
+            "verified": true,
+            "reason": "This promises a named contract term that the company sources do not mention.",
+            "fragment": null,
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Guarantee applied to every engagement",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page promises a 120-day free-replacement guarantee for every engagement, but the sources specify different conditions for recruiting and nearshore staffing.",
+        "fix": "State only the guarantee and conditions that apply to the relevant service.",
+        "subject": "120-day replacement guarantee",
+        "page_value": "Every engagement gets a 120-Day Free-Replacement Guarantee",
+        "source_value": "Recruiting: 120-day free replacement; staffing: performance-based replacement and cancellation terms",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "120-Day Free-Replacement Guarantee",
+            "verified": true,
+            "reason": "The phrase presents a universal guarantee, although the sources define different guarantees for recruiting and staffing.",
+            "fragment": null,
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Cyber insurance described as guarantee",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Legal and security",
+        "rule_verified": true,
+        "issue": "The page calls the $3M cyber-liability coverage a guarantee, while the sources describe a $3M data and cyber-liability insurance policy.",
+        "fix": "Describe the coverage using the documented insurance type and scope.",
+        "subject": "Data and cyber-liability coverage",
+        "page_value": "$3M Cyber-Liability Guarantee",
+        "source_value": "$3M data and cyber liability insurance",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "$3M Cyber-Liability Guarantee",
+            "verified": true,
+            "reason": "This labels the coverage a guarantee and omits data liability, whereas the source identifies it as insurance.",
+            "fragment": null,
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Sergey’s experience years differ",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The bio says Sergey has 16+ years of experience, while the Fact Sheet says he has spent 17 years building software systems, engineering organizations, and production platforms.",
+        "fix": "Correct the experience figure to match the Fact Sheet.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "16+ years",
+        "source_value": "17 years",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "reason": "The bio gives a different experience figure from the Fact Sheet.",
+            "fragment": "He has spent 16+ years building",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 17",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "reason": "The repeated bio gives the same conflicting experience figure.",
+            "fragment": "He has spent 16+ years building",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified Sergey credentials",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page attributes a LinkedIn Top Voice distinction in software development to Sergey, but the Fact Sheet does not list that recognition for him.",
+        "fix": "Remove the recognition claim unless it is verified and approved for Sergey.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "LinkedIn Top Voice in software development",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "reason": "The bio attributes this recognition to Sergey, while the Fact Sheet lists LinkedIn Top Voice status for Vit Koval.",
+            "fragment": "He is a LinkedIn Top Voice",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 17",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "reason": "The repeated bio again attributes the unlisted recognition to Sergey.",
+            "fragment": "He is a LinkedIn Top Voice",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified Agentic SDLC certification",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders; Glossary §4",
+        "rule_verified": true,
+        "issue": "The bio claims Sergey has certified Agentic SDLC mastery, a certification or credential not stated in the sources.",
+        "fix": "Remove the certification claim unless it is verified and approved.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "certified Agentic SDLC mastery",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "including certified Agentic SDLC mastery",
+            "verified": true,
+            "reason": "This presents a specific certification or credential that the company sources do not document.",
+            "fragment": "including certified Agentic SDLC",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 17",
+            "quote": "including certified Agentic SDLC mastery",
+            "verified": true,
+            "reason": "The repeated bio makes the same unsupported certification claim.",
+            "fragment": "including certified Agentic SDLC",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unapproved GoGloby CTA",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §2 and §7",
+        "rule_verified": true,
+        "issue": "The banner CTA directs visitors to build an AI team through the page’s implementation-squad offer instead of using the documented service CTAs.",
+        "fix": "Replace this CTA with the applicable documented recruiting or staffing call to action.",
+        "subject": "Banner call to action",
+        "page_value": "Build your AI team with GoGloby",
+        "source_value": "Get vetted profiles; Start a search",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 2",
+            "quote": "Build your AI team with GoGloby",
+            "verified": true,
+            "reason": "This CTA sells the page’s squad-building offer rather than directing buyers to the documented staffing or recruiting action.",
+            "fragment": "Build your AI team with GoGloby",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Term not used: AI staffing (alone)",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "Use \"AI engineer staffing\" or the service name, not \"AI staffing\" on its own.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "AI staffing (alone)",
+        "page_value": null,
+        "source_value": null,
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "AI staffing",
+            "verified": true,
+            "fragment": "AI staffing",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      },
+      {
+        "title": "Term not used: 4x (product name)",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"4x (product name)\" is a term or name the company no longer uses.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "4x (product name)",
+        "page_value": null,
+        "source_value": null,
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "4x Applied",
+            "verified": true,
+            "fragment": "4x Applied",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 17",
+            "quote": "4x Applied",
+            "verified": true,
+            "fragment": "4x Applied",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      }
+    ],
+    "usage": {
+      "input": 25843,
+      "cached_input": 10166,
+      "output": 6784
+    },
+    "error": null
+  },
+  "geo": {
+    "hash": "86965fa04cb7926c09d0575b1b8c98710fcd525bf8c93f0d09fd7b0f2107f9b8",
+    "cached": false,
+    "code": [
+      {
+        "id": "trap_terms",
+        "status": "pass",
+        "value": "none in title, H1, meta, og",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "em_dash",
+        "status": "fail",
+        "value": "147 found",
+        "places": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "value": "— | …ss the US, Canada, and Europe — software architecture, agile …"
+          },
+          {
+            "zone_id": "article:what-are-the-most-impactful-ai-use-cases-in-it",
+            "part": "paragraph 3",
+            "value": "— | …pipeline-integrated workflows — whether in CRM, DevOps, or se…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 1",
+            "value": "— | Visma — Visma, a leading software com…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 2",
+            "value": "— | PA Consulting — PA Consulting, as an early ad…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 3",
+            "value": "— | tl;dv — tl;dv, initially a meeting re…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 4",
+            "value": "— | Otter — In the rapidly evolving Infor…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 5",
+            "value": "— | You.com — You.com, co-founded by AI exp…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 6",
+            "value": "— | Notion — Notion, a leader in connected…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 7",
+            "value": "— | Rox — Rox has harnessed OpenAI’s GP…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 8",
+            "value": "— | Salesforce — Salesforce partnered with Ope…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 9",
+            "value": "— | Atera — Atera, based in Tel Aviv, Isr…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 10",
+            "value": "— | HP — HP aimed to enhance its softw…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 11",
+            "value": "— | Moveworks — Moveworks has developed a con…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 12",
+            "value": "— | Softcat — Softcat, the UK’s largest Mic…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 13",
+            "value": "— | Visier — Visier embarked on a mission …"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 14",
+            "value": "— | Staffbase — Staffbase, a leader in inform…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 15",
+            "value": "— | Mitie — In response to rising demands…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 16",
+            "value": "— | Insight — Insight Enterprises, a promin…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 17",
+            "value": "— | Wrtn — Wrtn Technologies, a South Ko…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 18",
+            "value": "— | Capita — Capita, an Information Techno…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 19",
+            "value": "— | EY — In the rapidly evolving field…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 20",
+            "value": "— | Capita — Capita embarked on a journey …"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 21",
+            "value": "— | KPMG — For nearly a decade, KPMG Aus…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 22",
+            "value": "— | Deploy — The case study explores the d…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 23",
+            "value": "— | Customer — In a strategic move to enhanc…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 24",
+            "value": "— | Modal Labs — Modal Labs, recognized by Win…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 25",
+            "value": "— | Rewiring — McKinsey’s integration of Lil…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 26",
+            "value": "— | Cubic — Cubic, founded by former Inst…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 27",
+            "value": "— | NRI — Nomura Research Institute (NR…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 28",
+            "value": "— | JetBrains — JetBrains, a leader in IDEs, …"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 29",
+            "value": "— | Vanta — Vanta, a leader in trust mana…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 30",
+            "value": "— | Quantium — Quantium, a leader in data an…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 31",
+            "value": "— | Lovable — Lovable has harnessed the pow…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 32",
+            "value": "— | Sentry — Sentry, a leader in software …"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 33",
+            "value": "— | Bito — In 2023, Bito launched its AI…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 34",
+            "value": "— | Augment — Augment Code employs Claude o…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 35",
+            "value": "— | LaunchNotes — LaunchNotes, operating in the…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 36",
+            "value": "— | Replit — Replit, a leader in software …"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 37",
+            "value": "— | CodeRabbit — CodeRabbit embarked on a miss…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 38",
+            "value": "— | Graphite — Graphite, an innovative devel…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 39",
+            "value": "— | Lazy AI — Lazy AI has transformed the s…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 40",
+            "value": "— | StackBlitz — StackBlitz has redefined web …"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 41",
+            "value": "— | Asana — Asana, a prominent enterprise…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 42",
+            "value": "— | Tabnine — Tabnine, a leading AI coding …"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 43",
+            "value": "— | Sourcegraph — Sourcegraph, a leader in code…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 44",
+            "value": "— | Sourcegraph — In 2023, Sourcegraph launched…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 45",
+            "value": "— | Factory — Factory, founded in 2023, is …"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 46",
+            "value": "— | A121 — AI21’s collaboration with Sno…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 47",
+            "value": "— | CodeRabbit — CodeRabbit, founded by former…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 48",
+            "value": "— | …Streamlines Workflows with AI — Lambda, a leader in GPU cloud…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 49",
+            "value": "— | Notion and OpenAI — Notion, a leading connected w…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 50",
+            "value": "— | Borderless AI — Borderless AI, headquartered …"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 51",
+            "value": "— | Factory — Factory, founded in 2023 by M…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 52",
+            "value": "— | Intel 3DAT AI — Intel’s 3DAT AI architecture …"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 53",
+            "value": "— | JetBrains — JetBrains, renowned for its i…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 54",
+            "value": "— | Windsurf — Windsurf, a leading AI coding…"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "list_item 55",
+            "value": "— | Zapier— Zapier, a leader in AI orches…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 1",
+            "value": "— | Toshiba — Toshiba’s revitalization plan…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 2",
+            "value": "— | XP Inc. — XP Inc., operating in the inf…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 3",
+            "value": "— | YAMASHITA — YAMASHITA, aiming to become a…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 4",
+            "value": "— | mci group — mci group is focused on expan…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 5",
+            "value": "— | Datadog — In the rapidly evolving lands…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 6",
+            "value": "— | Virbe — Virbe, a forward-thinking Pol…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 7",
+            "value": "— | Fujitsu — Fujitsu, a leader in the Info…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 8",
+            "value": "— | Syensqo.AI — Syensqo.AI, a division of the…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 9",
+            "value": "— | Document360 — Document360, in the Informati…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 10",
+            "value": "— | Impact Observatory— Impact Observatory, in collab…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 11",
+            "value": "— | CDW — CDW Corporation, a leading pr…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 12",
+            "value": "— | EPAM — EPAM, a leader in cutting-edg…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 13",
+            "value": "— | KMS Lighthouse — KMS Lighthouse, a leader in k…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 14",
+            "value": "— | PKSHA — PKSHA Technology, a leader in…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 15",
+            "value": "— | Softchoice — In 2023, Softchoice, a promin…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 16",
+            "value": "— | Presidio — Presidio, a global leader in …"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 17",
+            "value": "— | Cassidy — Cassidy, founded by Justin Fi…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 18",
+            "value": "— | Insight — Insight, a leader in the Info…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 19",
+            "value": "— | KPMG — KPMG Australia has been at th…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 20",
+            "value": "— | PKSHA — PKSHA Technology, a leader in…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 21",
+            "value": "— | Softchoice — Softchoice, a prominent IT so…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 22",
+            "value": "— | NRI — Nomura Research Institute (NR…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 23",
+            "value": "— | Cohere — Cohere Inc., a leading enterp…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 23",
+            "value": "— | …hat fit its existing toolchain—so R&D cycles wouldn’t be cons…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 24",
+            "value": "— | Western Digital — Western Digital faced signifi…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 25",
+            "value": "— | Cohere and Oracle — Cohere, a leader in generativ…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 26",
+            "value": "— | Grafana — Grafana Labs, a leader in dat…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 27",
+            "value": "— | Dust — Dust’s platform, leveraging C…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 28",
+            "value": "— | Lokalise — Lokalise, a leading localizat…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 29",
+            "value": "— | Canva — Canva, a leading design and c…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 30",
+            "value": "— | Snowflake — Snowflake’s partnership with …"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 31",
+            "value": "— | Zoom — Zoom’s AI-first work platform…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 32",
+            "value": "— | GitLab — GitLab, a leader in the DevSe…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 33",
+            "value": "— | StudyGitLab — GitLab, a leader in AI-powere…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 34",
+            "value": "— | AI21 and NVIDIA — AI21, in collaboration with N…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 35",
+            "value": "— | …tion Challenges and Solutions — The GenAI Adoption Challenges…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 36",
+            "value": "— | AI21 Labs — AI21 Labs, a leader in enterp…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 37",
+            "value": "— | AI21 Labs — AI21 Labs partnered with Amaz…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 38",
+            "value": "— | AI21 Labs — AI21 Labs has partnered with …"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 39",
+            "value": "— | AI21 Labs — AI21 Labs launched the Summar…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 40",
+            "value": "— | AI21 Labs — AI21 Labs, a pioneer in langu…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 41",
+            "value": "— | Wordtune — Wordtune Read is a groundbrea…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 42",
+            "value": "— | Fujitsu — Fujitsu, a leader in digital …"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 43",
+            "value": "— | Oracle — Oracle, a leader in the tech …"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 44",
+            "value": "— | Atomicwork — Atomicwork, a leading IT serv…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 45",
+            "value": "— | LaunchDarkly — LaunchDarkly’s approach to AI…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 46",
+            "value": "— | Genspark — Genspark’s journey with Super…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 47",
+            "value": "— | AI21 Labs — In the rapidly evolving field…"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "list_item 48",
+            "value": "— | Arthur D. Little — Arthur D. Little, a leader in…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 1",
+            "value": "— | PageGroup — PageGroup, an industry leader…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 2",
+            "value": "— | Perplexity.AI — Perplexity.AI developed Perpl…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 3",
+            "value": "— | Commerce.AI — Commerce.AI has been at the f…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 4",
+            "value": "— | IWG — IWG faced challenges in effic…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 5",
+            "value": "— | Sweco Group — In a bid to enhance productiv…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 6",
+            "value": "— | WeTransact — WeTransact identified a signi…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 7",
+            "value": "— | ServiceTitan — ServiceTitan, a leader in sol…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 7",
+            "value": "— | …n their lead management system—unreviewed and rejected leads …"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 8",
+            "value": "— | Inflection AI — Inflection AI, a leader in co…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 9",
+            "value": "— | Kantar — Kantar, a leader in Informati…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 10",
+            "value": "— | PA Consulting — PA Consulting, a leader in IT…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 11",
+            "value": "— | Docusign — Docusign, a leader in agreeme…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 12",
+            "value": "— | Lionbridge Technologies — Lionbridge Technologies, a le…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 13",
+            "value": "— | ITOCHU — ITOCHU Corporation embarked o…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 14",
+            "value": "— | EY — In the fast-evolving field of…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 15",
+            "value": "— | Kantar — Kantar, a leader in its field…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 16",
+            "value": "— | ITOCHU — ITOCHU Corporation embarked o…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 17",
+            "value": "— | ERP — ERP Suites, a leader in Infor…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 18",
+            "value": "— | Viatick — Viatick, a leader in IoT solu…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 19",
+            "value": "— | EZ Cloud — EZ Cloud, a leader in automat…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 20",
+            "value": "— | CrewDog — CrewDog, a video-first staffi…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 21",
+            "value": "— | Fireworks AI — Fireworks AI, a platform empo…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 22",
+            "value": "— | Sam.ai — Sam.ai, leveraging Oracle MyS…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 23",
+            "value": "— | TensorGo — TensorGo, a leader in compute…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 24",
+            "value": "— | UniQreate — UniQreate, a data-extraction …"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 25",
+            "value": "— | Mitigating — In the information technology…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 26",
+            "value": "— | Genspark — Genspark, an IT services comp…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 27",
+            "value": "— | Braintrust — Braintrust, an AI-powered rec…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 28",
+            "value": "— | Notion — In the competitive landscape …"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 29",
+            "value": "— | Headstart — Headstart, founded by Nicole …"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 30",
+            "value": "— | Gamma — Gamma, an AI-powered presenta…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 31",
+            "value": "— | Perplexity — Perplexity, a conversational …"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 32",
+            "value": "— | Maestro — In the rapidly evolving lands…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "list_item 33",
+            "value": "— | …e end of the Transformer Era? — In the Information Technology…"
+          },
+          {
+            "zone_id": "article:5-ai-assistants-agents",
+            "part": "list_item 1",
+            "value": "— | Claude AI — The recruitment landscape is …"
+          },
+          {
+            "zone_id": "article:6-general-ai-adoption-in-it-services",
+            "part": "list_item 1",
+            "value": "— | Copilot for Microsoft 365 — Atos has embarked on a missio…"
+          },
+          {
+            "zone_id": "article:6-general-ai-adoption-in-it-services",
+            "part": "list_item 2",
+            "value": "— | Wix — Wix, a leader in website crea…"
+          },
+          {
+            "zone_id": "article:6-general-ai-adoption-in-it-services",
+            "part": "list_item 3",
+            "value": "— | Superhuman — Superhuman, a frontrunner in …"
+          },
+          {
+            "zone_id": "article:6-general-ai-adoption-in-it-services",
+            "part": "list_item 4",
+            "value": "— | AWS Inferentia — InfoJobs, part of Adevinta gr…"
+          },
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "value": "— | …rms, we don’t just fill roles — we embed FAANG-caliber AI eng…"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 17",
+            "value": "— | …ss the US, Canada, and Europe — software architecture, agile …"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "ampersand",
+        "status": "fail",
+        "value": "21 found",
+        "places": [
+          {
+            "zone_id": "h1",
+            "value": "& | AI in IT: 140+ Use Cases & Case Studies"
+          },
+          {
+            "zone_id": "article:what-are-the-most-impactful-ai-use-cases-in-it",
+            "part": "table_cell 4",
+            "value": "& | …I in IT sales assistants (CRM & pipeline)",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:complete-map-of-140-ai-use-cases-in-it-categorie",
+            "part": "heading 1",
+            "value": "& | …ap of 140+ AI Use Cases in IT & Categories"
+          },
+          {
+            "zone_id": "article:complete-map-of-140-ai-use-cases-in-it-categorie",
+            "part": "table_cell 3",
+            "value": "& | 1. Sales & RevOps AI assistants",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:complete-map-of-140-ai-use-cases-in-it-categorie",
+            "part": "table_cell 5",
+            "value": "& | 2. Developer Productivity & SDLC Automation",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:complete-map-of-140-ai-use-cases-in-it-categorie",
+            "part": "table_cell 7",
+            "value": "& | 3. Employee Productivity & Knowledge Work",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:complete-map-of-140-ai-use-cases-in-it-categorie",
+            "part": "table_cell 9",
+            "value": "& | 4. Data Platforms, RAG & Decision Intelligence",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:complete-map-of-140-ai-use-cases-in-it-categorie",
+            "part": "table_cell 11",
+            "value": "& | 5. AI Assistants & Agents",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "heading 1",
+            "value": "& | 1. Sales & RevOps Copilots"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "image 1",
+            "value": "& | Sales & RevOps Copilots AI in IT use …"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "heading 2",
+            "value": "& | 2. Developer Productivity & SDLC Automation"
+          },
+          {
+            "zone_id": "article:1-sales-revops-copilots",
+            "part": "image 2",
+            "value": "& | Developer Productivity & SDLC Automation AI in IT use …"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "heading 1",
+            "value": "& | 3. Employee Productivity & Knowledge Work"
+          },
+          {
+            "zone_id": "article:3-employee-productivity-knowledge-work",
+            "part": "image 1",
+            "value": "& | Employee Productivity & Knowledge Work AI in IT use c…"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "heading 1",
+            "value": "& | 4. Data Platforms, RAG & Decision Intelligence"
+          },
+          {
+            "zone_id": "article:4-data-platforms-rag-decision-intelligence",
+            "part": "image 1",
+            "value": "& | Data Platforms, RAG & Decision Intelligence AI in I…"
+          },
+          {
+            "zone_id": "article:5-ai-assistants-agents",
+            "part": "heading 1",
+            "value": "& | 5. AI Assistants & Agents"
+          },
+          {
+            "zone_id": "article:5-ai-assistants-agents",
+            "part": "image 1",
+            "value": "& | AI Assistants & Agents (Claude/Bedrock) AI in…"
+          },
+          {
+            "zone_id": "article:pros-cons-of-ai-in-it",
+            "part": "heading 1",
+            "value": "& | Pros & Cons of AI in IT"
+          },
+          {
+            "zone_id": "article:pros-cons-of-ai-in-it",
+            "part": "list_item 6",
+            "value": "& | Data governance & compliance: Sensitive enterpr…"
+          },
+          {
+            "zone_id": "article:pros-cons-of-ai-in-it",
+            "part": "list_item 7",
+            "value": "& | Model reliability & bias: Algorithms trained on i…"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "uk_spelling",
+        "status": "pass",
+        "value": "none",
+        "places": [],
+        "severity": "low"
+      }
+    ],
+    "llm": [
+      {
+        "id": "answer_first",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "AI in IT helps with practical wins: fewer noisy alerts, faster root cause, cleaner ticket flow, safer code changes, and clearer visibility on costs.",
+        "note": "The opening describes some benefits but does not answer the H1’s promise of 140+ use cases and case studies.",
+        "fix": "Revise the first two sentences to directly answer the H1 by summarizing the use cases and case studies covered.",
+        "evidence_verified": true,
+        "title": "Opening does not answer the H1",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "4f1c472fa77bbb70212d1944c2b9dbcc7b03dc2c17747a7d58b5661e18a7bd57",
+        "fragment": "& Cons of-,AI in IT"
+      },
+      {
+        "id": "recruiting_firm_early",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "This is an informational article about AI use cases in IT, not a recruiting page or case study.",
+        "fix": null,
+        "evidence_verified": null,
+        "title": "Does not say early that GoGloby is a recruiting firm",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "9798e3d177389eb7a9079bb92ff60e8834a35e0aeb1b87d23768f7e60645e0f0"
+      },
+      {
+        "id": "buyer_ready",
+        "answer": "no",
+        "value": "informational",
+        "zone_id": "page",
+        "evidence": "What are AI use cases in IT?",
+        "note": "The article mainly explains AI use cases and shares examples for readers learning about AI in IT rather than companies ready to hire engineers.",
+        "fix": "Refocus the article on companies looking to hire Data and AI engineers and the services that address that need.",
+        "evidence_verified": true,
+        "title": "Not written for buyers ready to hire",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "c973ae1286bf828297b658f7671857735e0cf7f389439b1f74764d728aba8adf",
+        "fragment": "What are AI use cases in,-IT?"
+      },
+      {
+        "id": "target_keyword",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "None of the target terms in Glossary §6 best matches this informational AI-in-IT use-cases article.",
+        "fix": null,
+        "evidence_verified": null,
+        "title": "No matching search term",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "2a4349f111a6fd5c37a57defa47fadb794d0a221a55473f8e243d2de7b6898c3"
+      },
+      {
+        "id": "uses_data",
+        "answer": "yes",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "An EY India survey projects 43–45% productivity gains across the industry within five years, with software development seeing boosts up to 60%.",
+        "note": "The article gives quotable figures and names the EY India survey as their source nearby.",
+        "fix": null,
+        "evidence_verified": true,
+        "title": "No quotable data",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "3ae8bded7da3795730e15c57aa8413e9c23615f6b4c9933a75b97dac61dc5946",
+        "fragment": "EY India survey"
+      },
+      {
+        "id": "proof_background",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:faqs",
+        "evidence": "He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe",
+        "note": "The author bio mentions software-team experience but does not use GoGloby’s Data Science and engineering-team background as proof.",
+        "fix": "Add relevant proof based on GoGloby’s Data Science and engineering-team background.",
+        "evidence_verified": true,
+        "title": "Does not use founders' background as proof",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "9a28b54c0814fbf8b6dd41efdc345ef1983b39c3f3d1f87c96ec74419c36d90e",
+        "fragment": "He has spent 16+ years building"
+      },
+      {
+        "id": "sell_against_open_role",
+        "answer": "no",
+        "value": null,
+        "zone_id": "conclusion-how-to-turn-ai-in-it-into-lasting-adv",
+        "evidence": "GoGloby fields nearshore squads with senior, FAANG-level engineers under one compliant contract so you can stand up pilots quickly, govern data access, and scale what works.",
+        "note": "The conclusion promotes nearshore squads but does not compare them with the cost and wait of filling an open full-time US role.",
+        "fix": "Compare hiring through GoGloby with the cost and time involved in filling an open full-time US role.",
+        "evidence_verified": false,
+        "title": "Does not compare with an open full-time role",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "8a6b108f9bca5f409ee7ae859962225456d1c58f1f8ef5f5dc046775f066a44f"
+      }
+    ],
+    "placement": null,
+    "usage": {
+      "input": 24861,
+      "cached_input": 8950,
+      "output": 1115
+    },
+    "error": null
+  },
+  "seo": {
+    "checks": [
+      {
+        "id": "http_status",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "200",
+        "severity": "high"
+      },
+      {
+        "id": "title_length",
+        "status": "pass",
+        "zone_id": "title",
+        "value": "56 characters",
+        "severity": "medium"
+      },
+      {
+        "id": "meta_present",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "137 characters",
+        "severity": "high"
+      },
+      {
+        "id": "meta_length",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "137 characters (120-158)",
+        "severity": "low"
+      },
+      {
+        "id": "h1_count",
+        "status": "pass",
+        "zone_id": "h1",
+        "value": "1",
+        "severity": "high"
+      },
+      {
+        "id": "title_h1_match",
+        "status": "pass",
+        "zone_id": "title",
+        "value": "Title and H1 agree",
+        "severity": "low"
+      },
+      {
+        "id": "canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "https://gogloby.com/use-cases/ai-in-it/",
+        "severity": "high"
+      },
+      {
+        "id": "indexable",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "severity": "high"
+      },
+      {
+        "id": "schema_required",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "present",
+        "severity": "medium"
+      },
+      {
+        "id": "schema_recommended",
+        "status": "fail",
+        "zone_id": "json_ld",
+        "value": "missing: BreadcrumbList",
+        "severity": "medium"
+      },
+      {
+        "id": "author",
+        "status": "pass",
+        "zone_id": "author",
+        "value": "Sergey Matikaynen",
+        "severity": "medium"
+      },
+      {
+        "id": "dates",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "published: 2025-09-29T20:54:32+03:00; modified: 2025-10-07T13:52:15+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "date_mismatch",
+        "status": "pass",
+        "zone_id": "date",
+        "value": "visible \"Updated on October 7, 2025\" vs dateModified 2025-10-07T13:52:15+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "broken_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "1 checked",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "redirecting_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "none",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "link_to_services",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "no link to /services/*",
+        "severity": "medium"
+      },
+      {
+        "id": "alt_missing",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without alt",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_empty",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 with empty alt",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "image_dimensions",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "2 without width/height",
+        "places": [
+          {
+            "zone_id": "author",
+            "part": "image 1",
+            "value": "1706550966241.jpeg"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "image 1",
+            "value": "1706550966241.jpeg"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "heading_order",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "og_present",
+        "status": "pass",
+        "zone_id": "og_title",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "og_url_canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "og:url https://gogloby.com/use-cases/ai-in-it/ vs canonical https://gogloby.com/use-cases/ai-in-it/",
+        "severity": "low"
+      },
+      {
+        "id": "twitter_card",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "summary_large_image",
+        "severity": "low"
+      },
+      {
+        "id": "html_lang",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "en-US",
+        "severity": "low"
+      },
+      {
+        "id": "viewport",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "jsonld_valid",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "4 block(s)",
+        "severity": "high"
+      },
+      {
+        "id": "article_fields",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "anchors_resolve",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "1 dead",
+        "places": [
+          {
+            "zone_id": "article:complete-map-of-140-ai-use-cases-in-it-categorie",
+            "part": "table_cell 5",
+            "value": "#2-developer-productivity-sdlc-automation"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "faq_schema_matches_dom",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "accordion block: true, FAQPage schema: true",
+        "severity": "low"
+      }
+    ]
+  }
+}

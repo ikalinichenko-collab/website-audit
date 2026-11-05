@@ -1,0 +1,2135 @@
+{
+ "template": "article",
+ "zones": [
+  {
+   "id": "title",
+   "kind": "title",
+   "label": "Title",
+   "scope": "page",
+   "skipped": false,
+   "text": "Generative AI in Healthcare: Best AI Use Cases, Benefits",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Generative AI in Healthcare: Best AI Use Cases, Benefits"
+    }
+   ]
+  },
+  {
+   "id": "meta_description",
+   "kind": "meta_description",
+   "label": "Meta description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Learn what generative AI in healthcare is, how it’s used, top use cases, benefits, risks, and real examples across clinical and operational workflows.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Learn what generative AI in healthcare is, how it’s used, top use cases, benefits, risks, and real examples across clinical and operational workflows."
+    }
+   ]
+  },
+  {
+   "id": "og_title",
+   "kind": "og_title",
+   "label": "og:title",
+   "scope": "page",
+   "skipped": false,
+   "text": "Generative AI in Healthcare: Best AI Use Cases, Benefits",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Generative AI in Healthcare: Best AI Use Cases, Benefits"
+    }
+   ]
+  },
+  {
+   "id": "og_description",
+   "kind": "og_description",
+   "label": "og:description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Learn what generative AI in healthcare is, how it’s used, top use cases, benefits, risks, and real examples across clinical and operational workflows.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Learn what generative AI in healthcare is, how it’s used, top use cases, benefits, risks, and real examples across clinical and operational workflows."
+    }
+   ]
+  },
+  {
+   "id": "json_ld",
+   "kind": "json_ld",
+   "label": "Structured data (JSON-LD)",
+   "scope": "page",
+   "skipped": false,
+   "text": "Generative AI in Healthcare: Best AI Use Cases, Benefits, Examples\nGenerative AI in Healthcare: Best AI Use Cases, Benefits, Examples\nLearn what generative AI in healthcare is, how it’s used, top use cases, benefits, risks, and real\nSergey Matikaynen\nGoGloby\nWhat healthcare tasks are the best fit for generative AI?\nThe best-fit healthcare tasks are repetitive, text-heavy, and easy to review before final use. Common examples include note drafting, discharge instructions, patient messaging, long-record summarization, appeals, billing support, and medical writing.\nWhere does generative AI add the most value in healthcare workflows?\nGenerative AI adds the most value where teams spend too much time turning unstructured information into usable output. It is especially useful in documentation, communication, record review, administrative drafting, and research support workflows.\nWhat healthcare workflows still need close human review?\nHealthcare workflows that affect diagnosis, treatment, reimbursement, compliance, or sensitive patient communication still need close human review. Generative AI can support these tasks, but people must validate the output before it is used.\nHow do healthcare organizations measure generative AI success?\nHealthcare organizations usually measure success through reduced documentation time, faster turnaround, lower administrative burden, improved throughput, better consistency, and high reviewer approval rates. The strongest use cases are tied to workflow metrics that teams can monitor over time.\nWhat are the biggest risks of generative AI in healthcare?\nThe biggest risks include hallucinated content, privacy issues, biased output, weak accountability, and overreliance on fluent but incorrect text. These risks become more serious when organizations use generative AI without strong review, governance, and access controls.",
+   "parts": [
+    {
+     "type": "field",
+     "text": "Generative AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "area": "Article.name",
+     "index": 1
+    },
+    {
+     "type": "field",
+     "text": "Generative AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "area": "Article.headline",
+     "index": 2
+    },
+    {
+     "type": "field",
+     "text": "Learn what generative AI in healthcare is, how it’s used, top use cases, benefits, risks, and real",
+     "area": "Article.description",
+     "index": 3
+    },
+    {
+     "type": "field",
+     "text": "Sergey Matikaynen",
+     "area": "Person.name",
+     "index": 4
+    },
+    {
+     "type": "field",
+     "text": "GoGloby",
+     "area": "Organization.name",
+     "index": 5
+    },
+    {
+     "type": "field",
+     "text": "What healthcare tasks are the best fit for generative AI?",
+     "area": "Question.name",
+     "index": 6
+    },
+    {
+     "type": "field",
+     "text": "The best-fit healthcare tasks are repetitive, text-heavy, and easy to review before final use. Common examples include note drafting, discharge instructions, patient messaging, long-record summarization, appeals, billing support, and medical writing.",
+     "area": "Answer.text",
+     "index": 7
+    },
+    {
+     "type": "field",
+     "text": "Where does generative AI add the most value in healthcare workflows?",
+     "area": "Question.name",
+     "index": 8
+    },
+    {
+     "type": "field",
+     "text": "Generative AI adds the most value where teams spend too much time turning unstructured information into usable output. It is especially useful in documentation, communication, record review, administrative drafting, and research support workflows.",
+     "area": "Answer.text",
+     "index": 9
+    },
+    {
+     "type": "field",
+     "text": "What healthcare workflows still need close human review?",
+     "area": "Question.name",
+     "index": 10
+    },
+    {
+     "type": "field",
+     "text": "Healthcare workflows that affect diagnosis, treatment, reimbursement, compliance, or sensitive patient communication still need close human review. Generative AI can support these tasks, but people must validate the output before it is used.",
+     "area": "Answer.text",
+     "index": 11
+    },
+    {
+     "type": "field",
+     "text": "How do healthcare organizations measure generative AI success?",
+     "area": "Question.name",
+     "index": 12
+    },
+    {
+     "type": "field",
+     "text": "Healthcare organizations usually measure success through reduced documentation time, faster turnaround, lower administrative burden, improved throughput, better consistency, and high reviewer approval rates. The strongest use cases are tied to workflow metrics that teams can monitor over time.",
+     "area": "Answer.text",
+     "index": 13
+    },
+    {
+     "type": "field",
+     "text": "What are the biggest risks of generative AI in healthcare?",
+     "area": "Question.name",
+     "index": 14
+    },
+    {
+     "type": "field",
+     "text": "The biggest risks include hallucinated content, privacy issues, biased output, weak accountability, and overreliance on fluent but incorrect text. These risks become more serious when organizations use generative AI without strong review, governance, and access controls.",
+     "area": "Answer.text",
+     "index": 15
+    }
+   ]
+  },
+  {
+   "id": "h1",
+   "kind": "h1",
+   "label": "H1",
+   "scope": "page",
+   "skipped": false,
+   "text": "Generative AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Generative AI in Healthcare: Best AI Use Cases, Benefits, Examples"
+    }
+   ]
+  },
+  {
+   "id": "date",
+   "kind": "date",
+   "label": "Date",
+   "scope": "page",
+   "skipped": false,
+   "text": "Updated on June 24, 2026",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Updated on June 24, 2026"
+    }
+   ]
+  },
+  {
+   "id": "author",
+   "kind": "author",
+   "label": "Author",
+   "scope": "page",
+   "skipped": false,
+   "text": "Author avatar\nSergey Matikaynen / CTO\nArticle author\nSergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.\nView profile",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Author avatar",
+     "src": "https://gogloby.com/wp-content/uploads/2024/02/1706550966241.jpeg",
+     "file": "1706550966241.jpeg",
+     "alt": "Author avatar",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen / CTO",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Article author",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "View profile",
+     "links": [
+      {
+       "href": "https://gogloby.com/author/sergey/",
+       "text": "View profile"
+      }
+     ],
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "toc",
+   "kind": "toc",
+   "label": "Table of contents",
+   "scope": "page",
+   "skipped": false,
+   "text": "Table of Contents\nWhat Is Generative AI in Healthcare?\nHow Is Generative AI Used in Healthcare?\nWhat Are the Best Generative AI Use Cases in Healthcare?\nWhat Are the Benefits of Generative AI in Healthcare?\nWhat Are Real Examples of Generative AI in Healthcare?\nWhat Are the Risks and Drawbacks of Generative AI in Healthcare?\nIs Generative AI Safe for Healthcare?\nHow Is Generative AI Adoption and Competition Changing in Healthcare?\nWhat Is the Future of Generative AI in Healthcare?\nHow Can GoGloby Help You Adopt Generative AI in Healthcare?\nConclusion\nNeed Generative AI That Fits Real Healthcare Workflows?\nFAQs",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Table of Contents",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "What Is Generative AI in Healthcare?",
+     "links": [
+      {
+       "href": "#what-is-generative-ai-in-healthcare",
+       "text": "What Is Generative AI in Healthcare?"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "How Is Generative AI Used in Healthcare?",
+     "links": [
+      {
+       "href": "#how-is-generative-ai-used-in-healthcare",
+       "text": "How Is Generative AI Used in Healthcare?"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "What Are the Best Generative AI Use Cases in Healthcare?",
+     "links": [
+      {
+       "href": "#what-are-the-best-generative-ai-use-cases-in-healthcare",
+       "text": "What Are the Best Generative AI Use Cases in Healthcare?"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "What Are the Benefits of Generative AI in Healthcare?",
+     "links": [
+      {
+       "href": "#what-are-the-benefits-of-generative-ai-in-healthcare",
+       "text": "What Are the Benefits of Generative AI in Healthcare?"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "What Are Real Examples of Generative AI in Healthcare?",
+     "links": [
+      {
+       "href": "#what-are-real-examples-of-generative-ai-in-healthcare",
+       "text": "What Are Real Examples of Generative AI in Healthcare?"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "What Are the Risks and Drawbacks of Generative AI in Healthcare?",
+     "links": [
+      {
+       "href": "#what-are-the-risks-and-drawbacks-of-generative-ai-in-healthcare",
+       "text": "What Are the Risks and Drawbacks of Generative AI in Healthcare?"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Is Generative AI Safe for Healthcare?",
+     "links": [
+      {
+       "href": "#is-generative-ai-safe-for-healthcare",
+       "text": "Is Generative AI Safe for Healthcare?"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "How Is Generative AI Adoption and Competition Changing in Healthcare?",
+     "links": [
+      {
+       "href": "#how-is-generative-ai-adoption-and-competition-changing-in-healthcare",
+       "text": "How Is Generative AI Adoption and Competition Changing in Healthcare?"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "What Is the Future of Generative AI in Healthcare?",
+     "links": [
+      {
+       "href": "#what-is-the-future-of-generative-ai-in-healthcare",
+       "text": "What Is the Future of Generative AI in Healthcare?"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "How Can GoGloby Help You Adopt Generative AI in Healthcare?",
+     "links": [
+      {
+       "href": "#how-can-gogloby-help-you-adopt-generative-ai-in-healthcare",
+       "text": "How Can GoGloby Help You Adopt Generative AI in Healthcare?"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "Conclusion",
+     "links": [
+      {
+       "href": "#conclusion",
+       "text": "Conclusion"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Need Generative AI That Fits Real Healthcare Workflows?",
+     "links": [
+      {
+       "href": "#need-generative-ai-that-fits-real-healthcare-workflows",
+       "text": "Need Generative AI That Fits Real Healthcare Workflows?"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "FAQs",
+     "links": [
+      {
+       "href": "#faqs",
+       "text": "FAQs"
+      }
+     ],
+     "index": 13
+    }
+   ]
+  },
+  {
+   "id": "article:intro",
+   "kind": "article_section",
+   "label": "Intro",
+   "scope": "page",
+   "skipped": false,
+   "text": "Generative AI in healthcare is gaining traction because much of healthcare work depends on text, context, and communication. Critical information is often buried in clinical notes, referral letters, patient messages, billing records, and long medical histories. Teams lose time turning that material into clear, structured, and usable output.\nInterest is rising quickly. Deloitte reported that more than 80% of surveyed health system executives expected generative AI to have a significant or moderate impact on their organizations in 2025. This reflects growing pressure to use AI where documentation, coordination, and information review already slow care delivery.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "Generative AI in healthcare is gaining traction because much of healthcare work depends on text, context, and communication. Critical information is often buried in clinical notes, referral letters, patient messages, billing records, and long medical histories. Teams lose time turning that material into clear, structured, and usable output.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Interest is rising quickly. Deloitte reported that more than 80% of surveyed health system executives expected generative AI to have a significant or moderate impact on their organizations in 2025. This reflects growing pressure to use AI where documentation, coordination, and information review already slow care delivery.",
+     "links": [
+      {
+       "href": "https://www.deloitte.com/us/en/insights/industry/health-care/life-sciences-and-health-care-industry-outlooks/2025-global-health-care-executive-outlook.html",
+       "text": "Deloitte"
+      }
+     ],
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "article:what-is-generative-ai-in-healthcare",
+   "kind": "article_section",
+   "label": "What Is Generative AI in Healthcare?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Is Generative AI in Healthcare?\nGenerative AI in healthcare means using AI systems that create new content from healthcare inputs. In practice, these tools draft, summarize, explain, and reorganize information so clinical and operational teams can work with it faster. Many generative AI applications in healthcare are built around notes, messages, records, reports, and other forms of unstructured content.\nThis is different from traditional AI, which usually predicts, classifies, detects, or scores. Generative systems produce discharge summaries, patient replies, appeal letters, long-record summaries, and other structured outputs from messy source material. Human review still matters because fluent output can still contain errors, so the safest model in healthcare is draft first, human final.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Is Generative AI in Healthcare?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Generative AI in healthcare means using AI systems that create new content from healthcare inputs. In practice, these tools draft, summarize, explain, and reorganize information so clinical and operational teams can work with it faster. Many generative AI applications in healthcare are built around notes, messages, records, reports, and other forms of unstructured content.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "This is different from traditional AI, which usually predicts, classifies, detects, or scores. Generative systems produce discharge summaries, patient replies, appeal letters, long-record summaries, and other structured outputs from messy source material. Human review still matters because fluent output can still contain errors, so the safest model in healthcare is draft first, human final.",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "article:how-is-generative-ai-used-in-healthcare",
+   "kind": "article_section",
+   "label": "How Is Generative AI Used in Healthcare?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Is Generative AI Used in Healthcare?\nGenerative AI is used in healthcare in clinical, operational, and research work. It helps teams draft notes, write discharge instructions, prepare billing and appeals documents, and support patient communication. It also helps with literature reviews, trial matching, and document summaries. It works best in text-heavy tasks that repeat often and take a lot of time. A first draft can save effort and speed up routine work. But some outputs still need close human review, especially in diagnosis, treatment, reimbursement, compliance, and sensitive patient communication.\nClinical workflows: note drafting, discharge instructions, long-record summarization, and patient-facing communication\nOperational workflows: billing drafts, prior authorization support, appeals, intake, routing, and admin documentation\nResearch workflows: literature review, trial matching, document summarization, and evidence synthesis\nWhere generation adds value: repetitive, text-heavy, high-volume work where a first draft saves time\nWhere outputs must stay reviewable: diagnosis, treatment, reimbursement, compliance, and any sensitive patient communication.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Is Generative AI Used in Healthcare?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Generative AI is used in healthcare in clinical, operational, and research work. It helps teams draft notes, write discharge instructions, prepare billing and appeals documents, and support patient communication. It also helps with literature reviews, trial matching, and document summaries. It works best in text-heavy tasks that repeat often and take a lot of time. A first draft can save effort and speed up routine work. But some outputs still need close human review, especially in diagnosis, treatment, reimbursement, compliance, and sensitive patient communication.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Clinical workflows: note drafting, discharge instructions, long-record summarization, and patient-facing communication",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Operational workflows: billing drafts, prior authorization support, appeals, intake, routing, and admin documentation",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Research workflows: literature review, trial matching, document summarization, and evidence synthesis",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Where generation adds value: repetitive, text-heavy, high-volume work where a first draft saves time",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Where outputs must stay reviewable: diagnosis, treatment, reimbursement, compliance, and any sensitive patient communication.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-the-best-generative-ai-use-cases-in-hea",
+   "kind": "article_section",
+   "label": "What Are the Best Generative AI Use Cases in Healthcare?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are the Best Generative AI Use Cases in Healthcare?\nDoctor makes a diagnosis using AI\nThe strongest generative AI use cases in healthcare are the ones that reduce routine work but still keep the final decision with people. They help teams move faster without giving up control. The best generative AI in healthcare use cases are usually narrow, repeatable, and tied to clear outcomes such as faster documentation, shorter review time, and more consistent workflow execution. That is why the most practical use cases of generative AI in healthcare tend to appear in text-heavy and reviewable tasks.\nClinical Documentation and Note Drafting\nClinical documentation is one of the clearest applications of generative AI in healthcare. Generative models turn visits, dictation, and care context into notes, summaries, and follow-up items. This reduces clerical work and helps keep routine documentation more consistent across teams. That pattern is visible in real-time patient document generation at scale that supports care, research, and operations across a major hospital system. It is also reflected in AI-generated discharge letter automation designed to reduce manual documentation workload in hospital settings.\nPatient Messaging and Portal Replies\nPatient messaging is another high-fit use case because many incoming requests are repetitive, time-sensitive, and easy to route after a first draft. Generative models can draft replies, explain next steps, and support escalation when a case needs staff review. This is one of the most practical generative AI applications in healthcare because it improves speed without removing human control. A strong example is health engagement messaging with gamified support that encourages healthier habits through personalized communication flows.\nClinical Summarization for Decision Support\nLong records are difficult to review quickly, especially when relevant facts are spread across referral packets, medical histories, and mixed clinical documents. Generative tools help summarize that material and make record-heavy workflows easier to manage. This is one of the most useful applications of generative AI in healthcare for specialists who work with dense case histories. That is visible in long-record summarization for oncology care that reduced review burden and helped surface prior results faster.\nRevenue Cycle Drafting and Billing Workflows\nRevenue cycle work often depends on repetitive drafting. Appeals, letters, coding support, and billing-related summaries are strong fits for supervised generation because they are high volume and still easy to review before submission. This makes them one of the most measurable generative AI use cases in healthcare in operational settings. A strong example is AI-assisted appeals workflows with measurable nursing-hour savings and high approval rates in a regulated healthcare process.\nTrial Matching and Medical Knowledge Search\nResearch and oncology workflows often require teams to compare patient records against trial criteria or summarize large knowledge sets. Generative tools reduce manual reading and make relevant information easier to use inside clinical and research workflows. That makes trial matching and evidence search some of the most practical generative AI use cases in healthcare for research-heavy organizations. This is reflected in patient data interpretation with foundation models designed to process and make sense of dense healthcare data.\nRadiology AI Development and Model Training\nRadiology AI development and model training are more advanced but still important generative AI in healthcare examples. Generative models can support training workflows, synthetic data preparation, and other development tasks that depend on speed, scale, and structured medical inputs. This shows how generative AI can contribute beyond documentation and messaging in healthcare environments. That is reflected in radiology model training in healthcare AI development.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are the Best Generative AI Use Cases in Healthcare?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "Doctor makes a diagnosis using AI",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/ai-healthcare-doctor-utilizing-artificial-intelligence-diagnosis-1024x687.jpg",
+     "file": "ai-healthcare-doctor-utilizing-artificial-intelligence-diagnosis-1024x687.jpg",
+     "alt": "Doctor makes a diagnosis using AI",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The strongest generative AI use cases in healthcare are the ones that reduce routine work but still keep the final decision with people. They help teams move faster without giving up control. The best generative AI in healthcare use cases are usually narrow, repeatable, and tied to clear outcomes such as faster documentation, shorter review time, and more consistent workflow execution. That is why the most practical use cases of generative AI in healthcare tend to appear in text-heavy and reviewable tasks.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Clinical Documentation and Note Drafting",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Clinical documentation is one of the clearest applications of generative AI in healthcare. Generative models turn visits, dictation, and care context into notes, summaries, and follow-up items. This reduces clerical work and helps keep routine documentation more consistent across teams. That pattern is visible in real-time patient document generation at scale that supports care, research, and operations across a major hospital system. It is also reflected in AI-generated discharge letter automation designed to reduce manual documentation workload in hospital settings.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12177",
+       "text": "real-time patient document generation at scale"
+      },
+      {
+       "href": "https://casestudy.gogloby.com/case-study/10282",
+       "text": "AI-generated discharge letter automation"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Patient Messaging and Portal Replies",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Patient messaging is another high-fit use case because many incoming requests are repetitive, time-sensitive, and easy to route after a first draft. Generative models can draft replies, explain next steps, and support escalation when a case needs staff review. This is one of the most practical generative AI applications in healthcare because it improves speed without removing human control. A strong example is health engagement messaging with gamified support that encourages healthier habits through personalized communication flows.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12432",
+       "text": "health engagement messaging with gamified support"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Clinical Summarization for Decision Support",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Long records are difficult to review quickly, especially when relevant facts are spread across referral packets, medical histories, and mixed clinical documents. Generative tools help summarize that material and make record-heavy workflows easier to manage. This is one of the most useful applications of generative AI in healthcare for specialists who work with dense case histories. That is visible in long-record summarization for oncology care that reduced review burden and helped surface prior results faster.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9438",
+       "text": "long-record summarization for oncology care"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Revenue Cycle Drafting and Billing Workflows",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Revenue cycle work often depends on repetitive drafting. Appeals, letters, coding support, and billing-related summaries are strong fits for supervised generation because they are high volume and still easy to review before submission. This makes them one of the most measurable generative AI use cases in healthcare in operational settings. A strong example is AI-assisted appeals workflows with measurable nursing-hour savings and high approval rates in a regulated healthcare process.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9412",
+       "text": "AI-assisted appeals workflows"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Trial Matching and Medical Knowledge Search",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Research and oncology workflows often require teams to compare patient records against trial criteria or summarize large knowledge sets. Generative tools reduce manual reading and make relevant information easier to use inside clinical and research workflows. That makes trial matching and evidence search some of the most practical generative AI use cases in healthcare for research-heavy organizations. This is reflected in patient data interpretation with foundation models designed to process and make sense of dense healthcare data.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12312",
+       "text": "patient data interpretation"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Radiology AI Development and Model Training",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Radiology AI development and model training are more advanced but still important generative AI in healthcare examples. Generative models can support training workflows, synthetic data preparation, and other development tasks that depend on speed, scale, and structured medical inputs. This shows how generative AI can contribute beyond documentation and messaging in healthcare environments. That is reflected in radiology model training in healthcare AI development.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/10057",
+       "text": "radiology model training"
+      }
+     ],
+     "index": 7
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-the-benefits-of-generative-ai-in-health",
+   "kind": "article_section",
+   "label": "What Are the Benefits of Generative AI in Healthcare?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are the Benefits of Generative AI in Healthcare?\nGenerative AI in healthcare can reduce time spent on documentation. It also helps teams handle admin work faster. It makes it easier to find useful guidance in long or complex records. Routine work can become more consistent as well. In some cases, it also helps create more personalized patient messages, engagement content, and wellness support.\nLower documentation burden: Teams spend less time writing notes, summaries, and other repetitive text.\nFaster administrative throughput: appeals, billing drafts, and operational documents move faster.\nBetter access to guidance: long records and complex patient information become easier to summarize and use.\nMore consistent routine outputs: repeated tasks follow a clearer structure from one draft to the next.\nMore personalized communication: wellness, engagement, and patient messaging become more adaptive at scale.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are the Benefits of Generative AI in Healthcare?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Generative AI in healthcare can reduce time spent on documentation. It also helps teams handle admin work faster. It makes it easier to find useful guidance in long or complex records. Routine work can become more consistent as well. In some cases, it also helps create more personalized patient messages, engagement content, and wellness support.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Lower documentation burden: Teams spend less time writing notes, summaries, and other repetitive text.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Faster administrative throughput: appeals, billing drafts, and operational documents move faster.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Better access to guidance: long records and complex patient information become easier to summarize and use.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "More consistent routine outputs: repeated tasks follow a clearer structure from one draft to the next.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "More personalized communication: wellness, engagement, and patient messaging become more adaptive at scale.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-real-examples-of-generative-ai-in-healt",
+   "kind": "article_section",
+   "label": "What Are Real Examples of Generative AI in Healthcare?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are Real Examples of Generative AI in Healthcare?\nThe best examples of generative AI in healthcare are those linked to clear workflow results, measurable savings, or faster execution in routine healthcare work. In real settings, these examples show how hospitals, health platforms, and medical organizations already use generative systems to reduce workload and improve efficiency.\nMontpellier University Hospital\nMontpellier University Hospital is a strong example of generative AI applied to hospital documentation and data organization across a large clinical environment. Its system helps structure medical information, supports 12,000 staff, and connects care, research, and operations within one hospital setting.\nKry (Digital Healthcare Platform)\nKry, a digital healthcare platform, shows how generative AI can support clinical note analysis and reduce admin burden in care delivery. The company achieved a 4.8 out of 5.0 patient satisfaction rating and enabled 10,000 additional patient appointments per month through greater efficiency.\nRadarFit\nRadarFit highlights the role of AI in patient and wellness communication. The platform reached 1 million users, increased its corporate client base from 27 to 59, and reported a 50% reduction in health complaints within six months.\nAcentra Health\nAcentra Health provides a strong operational example in healthcare administration. Its MedScribe solution saved 11,000 nursing hours and nearly $800,000, while helping each nurse process 20 to 30 letters a day with a 99% approval rate for generated letters.\nLaerdal Medical\nLaerdal Medical reflects how generative AI can support healthcare training through virtual patient voice creation. The company reduced the time needed to create voices for virtual patients and providers from two months to less than 24 hours.\nCity of Hope\nCity of Hope shows how generative AI can reduce review time in oncology and other record-heavy care settings. Its platform summarizes hundreds of pages of patient history documents, helping doctors move through complex records faster.\nOxford University Hospitals\nOxford University Hospitals demonstrates how generative AI can improve administrative productivity in healthcare settings. Staff saved one to two hours per week, 10% of users reported saving three to four hours weekly, and some administrative tasks dropped from 15–20 minutes to seconds.\nMorula Health\nMorula Health is a good example of generative AI in regulatory and clinical medical writing. The company used AI to improve speed and productivity in tailored medical writing workflows while maintaining data security in a highly regulated environment.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are Real Examples of Generative AI in Healthcare?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The best examples of generative AI in healthcare are those linked to clear workflow results, measurable savings, or faster execution in routine healthcare work. In real settings, these examples show how hospitals, health platforms, and medical organizations already use generative systems to reduce workload and improve efficiency.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Montpellier University Hospital",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Montpellier University Hospital is a strong example of generative AI applied to hospital documentation and data organization across a large clinical environment. Its system helps structure medical information, supports 12,000 staff, and connects care, research, and operations within one hospital setting.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12177",
+       "text": "hospital documentation"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Kry (Digital Healthcare Platform)",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Kry, a digital healthcare platform, shows how generative AI can support clinical note analysis and reduce admin burden in care delivery. The company achieved a 4.8 out of 5.0 patient satisfaction rating and enabled 10,000 additional patient appointments per month through greater efficiency.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9508",
+       "text": "clinical note analysis"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "RadarFit",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "RadarFit highlights the role of AI in patient and wellness communication. The platform reached 1 million users, increased its corporate client base from 27 to 59, and reported a 50% reduction in health complaints within six months.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Acentra Health",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Acentra Health provides a strong operational example in healthcare administration. Its MedScribe solution saved 11,000 nursing hours and nearly $800,000, while helping each nurse process 20 to 30 letters a day with a 99% approval rate for generated letters.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Laerdal Medical",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Laerdal Medical reflects how generative AI can support healthcare training through virtual patient voice creation. The company reduced the time needed to create voices for virtual patients and providers from two months to less than 24 hours.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9557",
+       "text": "virtual patient voice creation"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "City of Hope",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "City of Hope shows how generative AI can reduce review time in oncology and other record-heavy care settings. Its platform summarizes hundreds of pages of patient history documents, helping doctors move through complex records faster.",
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "Oxford University Hospitals",
+     "level": 3,
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Oxford University Hospitals demonstrates how generative AI can improve administrative productivity in healthcare settings. Staff saved one to two hours per week, 10% of users reported saving three to four hours weekly, and some administrative tasks dropped from 15–20 minutes to seconds.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9617",
+       "text": "administrative productivity"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "heading",
+     "text": "Morula Health",
+     "level": 3,
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Morula Health is a good example of generative AI in regulatory and clinical medical writing. The company used AI to improve speed and productivity in tailored medical writing workflows while maintaining data security in a highly regulated environment.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9818",
+       "text": "regulatory and clinical medical writing"
+      }
+     ],
+     "index": 9
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-the-risks-and-drawbacks-of-generative-a",
+   "kind": "article_section",
+   "label": "What Are the Risks and Drawbacks of Generative AI in Healthcare?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are the Risks and Drawbacks of Generative AI in Healthcare?\nGenerative AI can make healthcare work faster and more scalable, but it also introduces risks that affect accuracy, safety, privacy, and accountability. The main drawbacks appear when fluent output is trusted too quickly or used in sensitive workflows without strong review and control.\nRisks\nDrawbacks\nHallucinations in generated output\nConfident language can hide wrong or incomplete information\nBias from training data\nOutputs may reflect weak or unbalanced source material\nPrivacy and data security concerns\nRecords, prompts, and messages require strict protection\nWeak accountability in sensitive workflows\nResponsibility becomes unclear without defined review owners\nOverreliance on generated content\nStaff may trust fluent output too quickly",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are the Risks and Drawbacks of Generative AI in Healthcare?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Generative AI can make healthcare work faster and more scalable, but it also introduces risks that affect accuracy, safety, privacy, and accountability. The main drawbacks appear when fluent output is trusted too quickly or used in sensitive workflows without strong review and control.",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Risks",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Drawbacks",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "Hallucinations in generated output",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "Confident language can hide wrong or incomplete information",
+     "index": 4
+    },
+    {
+     "type": "table_cell",
+     "text": "Bias from training data",
+     "index": 5
+    },
+    {
+     "type": "table_cell",
+     "text": "Outputs may reflect weak or unbalanced source material",
+     "index": 6
+    },
+    {
+     "type": "table_cell",
+     "text": "Privacy and data security concerns",
+     "index": 7
+    },
+    {
+     "type": "table_cell",
+     "text": "Records, prompts, and messages require strict protection",
+     "index": 8
+    },
+    {
+     "type": "table_cell",
+     "text": "Weak accountability in sensitive workflows",
+     "index": 9
+    },
+    {
+     "type": "table_cell",
+     "text": "Responsibility becomes unclear without defined review owners",
+     "index": 10
+    },
+    {
+     "type": "table_cell",
+     "text": "Overreliance on generated content",
+     "index": 11
+    },
+    {
+     "type": "table_cell",
+     "text": "Staff may trust fluent output too quickly",
+     "index": 12
+    }
+   ]
+  },
+  {
+   "id": "article:is-generative-ai-safe-for-healthcare",
+   "kind": "article_section",
+   "label": "Is Generative AI Safe for Healthcare?",
+   "scope": "page",
+   "skipped": false,
+   "text": "Is Generative AI Safe for Healthcare?\nGenerative AI can be safe for healthcare when it is used in draft mode, reviewed by people before use, kept inside controlled systems, and supported by monitoring, audit trails, and clear governance for prompts and workflow changes. It is safest when the model creates the first version and clinicians or operational teams make the final decision.\nDraft mode instead of final action: the model should create the first version, not the final decision\nHuman-in-the-loop review: clinicians, reviewers, and operations teams validate outputs before use\nControlled environments and access rules: prompts, records, and outputs stay inside approved systems\nMonitoring and audit trails: teams can track what was generated, reviewed, and changed\nGovernance for prompts and workflow changes: prompt logic and workflow updates need clear approval paths.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Is Generative AI Safe for Healthcare?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Generative AI can be safe for healthcare when it is used in draft mode, reviewed by people before use, kept inside controlled systems, and supported by monitoring, audit trails, and clear governance for prompts and workflow changes. It is safest when the model creates the first version and clinicians or operational teams make the final decision.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Draft mode instead of final action: the model should create the first version, not the final decision",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Human-in-the-loop review: clinicians, reviewers, and operations teams validate outputs before use",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Controlled environments and access rules: prompts, records, and outputs stay inside approved systems",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Monitoring and audit trails: teams can track what was generated, reviewed, and changed",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Governance for prompts and workflow changes: prompt logic and workflow updates need clear approval paths.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:how-is-generative-ai-adoption-and-competition-ch",
+   "kind": "article_section",
+   "label": "How Is Generative AI Adoption and Competition Changing in Healthcare?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Is Generative AI Adoption and Competition Changing in Healthcare?\nGenerative AI adoption in healthcare is growing through EHR integration, patient portal tools, and documentation assistants that fit into everyday clinical and operational work. Competition is also increasing as startups, enterprise platforms, and major healthcare vendors all build products around the same high-value workflows.\nEHR and Clinical Software Integration\nHealthcare vendors are embedding generation into note drafting, communication, and workflow support. This makes deployment more practical because teams can use the model inside their main systems instead of moving between separate tools.\nPatient Portal Tools\nPatient portal messaging is becoming a major category because the work is repetitive, high volume, and easy to measure. Faster replies and better routing also make the business value easier to see in day-to-day operations.\nDocumentation Assistants\nDocumentation remains one of the most crowded categories because it directly affects the clinician’s workload. Productivity gains are one of the clearest reasons healthcare organizations keep expanding generative AI adoption in this area.\nHealthcare Startups and Major Vendors\nThe competitive field now includes startups, enterprise platforms, EHR-linked assistants, and workflow copilots. AlphaSense’s healthcare review highlighted the same pattern around Epic-linked workflows, Google Med-PaLM, Nuance, and Suki, showing how many vendors now compete around similar healthcare tasks.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Is Generative AI Adoption and Competition Changing in Healthcare?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Generative AI adoption in healthcare is growing through EHR integration, patient portal tools, and documentation assistants that fit into everyday clinical and operational work. Competition is also increasing as startups, enterprise platforms, and major healthcare vendors all build products around the same high-value workflows.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "EHR and Clinical Software Integration",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Healthcare vendors are embedding generation into note drafting, communication, and workflow support. This makes deployment more practical because teams can use the model inside their main systems instead of moving between separate tools.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Patient Portal Tools",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Patient portal messaging is becoming a major category because the work is repetitive, high volume, and easy to measure. Faster replies and better routing also make the business value easier to see in day-to-day operations.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Documentation Assistants",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Documentation remains one of the most crowded categories because it directly affects the clinician’s workload. Productivity gains are one of the clearest reasons healthcare organizations keep expanding generative AI adoption in this area.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Healthcare Startups and Major Vendors",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "The competitive field now includes startups, enterprise platforms, EHR-linked assistants, and workflow copilots. AlphaSense’s healthcare review highlighted the same pattern around Epic-linked workflows, Google Med-PaLM, Nuance, and Suki, showing how many vendors now compete around similar healthcare tasks.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:what-is-the-future-of-generative-ai-in-healthcar",
+   "kind": "article_section",
+   "label": "What Is the Future of Generative AI in Healthcare?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Is the Future of Generative AI in Healthcare?\nThe future of generative AI in healthcare points to broader workflow use, stronger multimodal support, and tighter governance. More systems will turn conversations into notes, combine text with imaging and lab data, and pair predictive models with generative tools, while human oversight, secure deployment, and auditability remain essential.\nAmbient documentation growth: more systems will turn conversations into notes and summaries.\nMultimodal care workflows: text, imaging, labs, and other signals will work together more often.\nPredictive and generative systems together: one system will surface risk while another explains or drafts the next step.\nStricter governance and regulation: secure deployment, approval logic, and auditability will matter more.\nHuman oversight as a lasting requirement: high-impact decisions will still need accountable human review.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Is the Future of Generative AI in Healthcare?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The future of generative AI in healthcare points to broader workflow use, stronger multimodal support, and tighter governance. More systems will turn conversations into notes, combine text with imaging and lab data, and pair predictive models with generative tools, while human oversight, secure deployment, and auditability remain essential.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Ambient documentation growth: more systems will turn conversations into notes and summaries.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Multimodal care workflows: text, imaging, labs, and other signals will work together more often.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Predictive and generative systems together: one system will surface risk while another explains or drafts the next step.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Stricter governance and regulation: secure deployment, approval logic, and auditability will matter more.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Human oversight as a lasting requirement: high-impact decisions will still need accountable human review.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+   "kind": "article_section",
+   "label": "How Can GoGloby Help You Adopt Generative AI in Healthcare?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Can GoGloby Help You Adopt Generative AI in Healthcare?\nAI helps doctors in medicine\nMost healthcare teams already understand the value of generative AI in documentation, patient communication, record summarization, and administrative drafting. The real challenge is not access to the model itself. It is introducing generative AI into live healthcare workflows in a way that remains reviewable, controlled, and safe as usage expands.\nGoGloby helps healthcare organisations move from isolated generative AI experiments to a structured implementation model. Instead of treating generation as a standalone tool, GoGloby helps teams place it inside real workflows with defined owners, approved use cases, and clear operating boundaries. As a 4x Applied AI Engineering Partner, GoGloby typically presents a qualified shortlist in 3–5 days and can embed a production-ready team in under 4 weeks, which helps healthcare organisations move from pilot thinking to governed implementation faster.\nPractical Workflow Implementation\nGoGloby supports generative AI adoption in practical, high-volume workflows where draft output can reduce manual effort without removing human accountability. This keeps deployment tied to real operational needs such as documentation, patient messaging, record review, and administrative drafting rather than broad, uncontrolled experimentation. Only 4% of Applied AI engineer applicants pass GoGloby’s multi-layer assessment, which helps healthcare teams introduce generative AI with a higher bar for technical depth, AI proficiency, and workflow discipline from the start.\nReview and Change Control\nGenerative AI works best in healthcare when prompts, outputs, and workflow changes move through defined review paths. GoGloby helps teams establish that structure so that generated drafts, approval steps, and workflow updates remain controlled as adoption grows. This reduces inconsistency and makes it easier to scale usage without weakening oversight. GoGloby’s Agentic Workflow is designed to eliminate ungoverned AI usage and support a more predictable operating model from day one.\nProtected Deployment\nHealthcare teams need more than a capable model. They need a controlled environment for records, prompts, documents, and generated output. GoGloby helps organisations implement generative AI inside approved systems with stronger access boundaries, clearer oversight, and safer handling of sensitive information. The Secure Development Environment keeps AI-assisted work inside the client’s controlled perimeter with zero IP exposure, and GoGloby includes $3M in data and cyber liability coverage in its model.\nMeasurable Adoption\nGenerative AI should improve workflow performance in visible ways. GoGloby helps teams measure adoption through operational signals such as turnaround time, approval rate, documentation burden, routing accuracy, and output stability. This helps organisations improve throughput while keeping review quality in place. Through the Performance Center, GoGloby tracks sprint-by-sprint adoption signals, including Agentic AI commit-rate benchmarks of 35–45% by month 2 and 60–70% by month 6.\nGoGloby’s role is to help healthcare teams turn generative AI into a governed workflow capability rather than just another disconnected tool.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Can GoGloby Help You Adopt Generative AI in Healthcare?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "AI helps doctors in medicine",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/doctor-is-holding-tablet-with-words-technology-screen-1024x574.jpg",
+     "file": "doctor-is-holding-tablet-with-words-technology-screen-1024x574.jpg",
+     "alt": "AI helps doctors in medicine",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Most healthcare teams already understand the value of generative AI in documentation, patient communication, record summarization, and administrative drafting. The real challenge is not access to the model itself. It is introducing generative AI into live healthcare workflows in a way that remains reviewable, controlled, and safe as usage expands.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby helps healthcare organisations move from isolated generative AI experiments to a structured implementation model. Instead of treating generation as a standalone tool, GoGloby helps teams place it inside real workflows with defined owners, approved use cases, and clear operating boundaries. As a 4x Applied AI Engineering Partner, GoGloby typically presents a qualified shortlist in 3–5 days and can embed a production-ready team in under 4 weeks, which helps healthcare organisations move from pilot thinking to governed implementation faster.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Practical Workflow Implementation",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby supports generative AI adoption in practical, high-volume workflows where draft output can reduce manual effort without removing human accountability. This keeps deployment tied to real operational needs such as documentation, patient messaging, record review, and administrative drafting rather than broad, uncontrolled experimentation. Only 4% of Applied AI engineer applicants pass GoGloby’s multi-layer assessment, which helps healthcare teams introduce generative AI with a higher bar for technical depth, AI proficiency, and workflow discipline from the start.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Review and Change Control",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Generative AI works best in healthcare when prompts, outputs, and workflow changes move through defined review paths. GoGloby helps teams establish that structure so that generated drafts, approval steps, and workflow updates remain controlled as adoption grows. This reduces inconsistency and makes it easier to scale usage without weakening oversight. GoGloby’s Agentic Workflow is designed to eliminate ungoverned AI usage and support a more predictable operating model from day one.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Protected Deployment",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Healthcare teams need more than a capable model. They need a controlled environment for records, prompts, documents, and generated output. GoGloby helps organisations implement generative AI inside approved systems with stronger access boundaries, clearer oversight, and safer handling of sensitive information. The Secure Development Environment keeps AI-assisted work inside the client’s controlled perimeter with zero IP exposure, and GoGloby includes $3M in data and cyber liability coverage in its model.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Measurable Adoption",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Generative AI should improve workflow performance in visible ways. GoGloby helps teams measure adoption through operational signals such as turnaround time, approval rate, documentation burden, routing accuracy, and output stability. This helps organisations improve throughput while keeping review quality in place. Through the Performance Center, GoGloby tracks sprint-by-sprint adoption signals, including Agentic AI commit-rate benchmarks of 35–45% by month 2 and 60–70% by month 6.",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby’s role is to help healthcare teams turn generative AI into a governed workflow capability rather than just another disconnected tool.",
+     "index": 7
+    }
+   ]
+  },
+  {
+   "id": "article:conclusion",
+   "kind": "article_section",
+   "label": "Conclusion",
+   "scope": "page",
+   "skipped": false,
+   "text": "Conclusion\nGenerative AI in healthcare is most useful when it reduces manual work without removing human judgment. It already supports documentation, patient communication, record review, appeals, medical writing, and training across clinical and operational workflows. The strongest results appear in tasks that are repetitive, text-heavy, and easy to review before final use.\nIts value depends on how it is deployed. Safe adoption requires draft-first use, human review, controlled systems, audit trails, and clear workflow governance. As healthcare organizations expand into multimodal workflows and deeper software integration, generative AI is likely to become a practical layer inside everyday care and administration rather than a separate experimental tool.\nRead more: AI in Healthcare: Best AI Use Cases, Benefits, Examples & Agentic AI in Healthcare: Best AI Use Cases, Benefits, Examples.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Conclusion",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Generative AI in healthcare is most useful when it reduces manual work without removing human judgment. It already supports documentation, patient communication, record review, appeals, medical writing, and training across clinical and operational workflows. The strongest results appear in tasks that are repetitive, text-heavy, and easy to review before final use.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Its value depends on how it is deployed. Safe adoption requires draft-first use, human review, controlled systems, audit trails, and clear workflow governance. As healthcare organizations expand into multimodal workflows and deeper software integration, generative AI is likely to become a practical layer inside everyday care and administration rather than a separate experimental tool.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Read more: AI in Healthcare: Best AI Use Cases, Benefits, Examples & Agentic AI in Healthcare: Best AI Use Cases, Benefits, Examples.",
+     "links": [
+      {
+       "href": "https://gogloby.com/use-cases/ai-in-healthcare-best-ai-use-cases-benefits-examples/",
+       "text": "AI in Healthcare: Best AI Use Cases, Benefits, Examples"
+      },
+      {
+       "href": "https://gogloby.com/use-cases/agentic-ai-use-cases-in-healthcare/",
+       "text": "Agentic AI in Healthcare: Best AI Use Cases, Benefits, Examples"
+      }
+     ],
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "article:faqs",
+   "kind": "article_section",
+   "label": "FAQs",
+   "scope": "page",
+   "skipped": false,
+   "text": "FAQs\nWhat healthcare tasks are the best fit for generative AI?\nThe best-fit healthcare tasks are repetitive, text-heavy, and easy to review before final use. Common examples include note drafting, discharge instructions, patient messaging, long-record summarization, appeals, billing support, and medical writing.\nWhere does generative AI add the most value in healthcare workflows?\nGenerative AI adds the most value where teams spend too much time turning unstructured information into usable output. It is especially useful in documentation, communication, record review, administrative drafting, and research support workflows.\nWhat healthcare workflows still need close human review?\nHealthcare workflows that affect diagnosis, treatment, reimbursement, compliance, or sensitive patient communication still need close human review. Generative AI can support these tasks, but people must validate the output before it is used.\nHow do healthcare organizations measure generative AI success?\nHealthcare organizations usually measure success through reduced documentation time, faster turnaround, lower administrative burden, improved throughput, better consistency, and high reviewer approval rates. The strongest use cases are tied to workflow metrics that teams can monitor over time.\nWhat are the biggest risks of generative AI in healthcare?\nThe biggest risks include hallucinated content, privacy issues, biased output, weak accountability, and overreliance on fluent but incorrect text. These risks become more serious when organizations use generative AI without strong review, governance, and access controls.\nAuthor avatar\nSergey Matikaynen / CTO\nArticle author\nSergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.\nView profile",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "FAQs",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "What healthcare tasks are the best fit for generative AI?",
+     "area": "item 1",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The best-fit healthcare tasks are repetitive, text-heavy, and easy to review before final use. Common examples include note drafting, discharge instructions, patient messaging, long-record summarization, appeals, billing support, and medical writing.",
+     "area": "item 1",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Where does generative AI add the most value in healthcare workflows?",
+     "area": "item 1",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Generative AI adds the most value where teams spend too much time turning unstructured information into usable output. It is especially useful in documentation, communication, record review, administrative drafting, and research support workflows.",
+     "area": "item 1",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "What healthcare workflows still need close human review?",
+     "area": "item 1",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Healthcare workflows that affect diagnosis, treatment, reimbursement, compliance, or sensitive patient communication still need close human review. Generative AI can support these tasks, but people must validate the output before it is used.",
+     "area": "item 1",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "How do healthcare organizations measure generative AI success?",
+     "area": "item 1",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Healthcare organizations usually measure success through reduced documentation time, faster turnaround, lower administrative burden, improved throughput, better consistency, and high reviewer approval rates. The strongest use cases are tied to workflow metrics that teams can monitor over time.",
+     "area": "item 1",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "What are the biggest risks of generative AI in healthcare?",
+     "area": "item 1",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "The biggest risks include hallucinated content, privacy issues, biased output, weak accountability, and overreliance on fluent but incorrect text. These risks become more serious when organizations use generative AI without strong review, governance, and access controls.",
+     "area": "item 1",
+     "index": 10
+    },
+    {
+     "type": "image",
+     "text": "Author avatar",
+     "src": "https://gogloby.com/wp-content/uploads/2024/02/1706550966241.jpeg",
+     "file": "1706550966241.jpeg",
+     "alt": "Author avatar",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen / CTO",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "Article author",
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.",
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "View profile",
+     "links": [
+      {
+       "href": "https://gogloby.com/author/sergey/",
+       "text": "View profile"
+      }
+     ],
+     "index": 14
+    }
+   ]
+  },
+  {
+   "id": "banner_cta",
+   "kind": "banner_cta",
+   "label": "Banner CTA",
+   "scope": "page",
+   "skipped": false,
+   "text": "Need Generative AI That Fits Real Healthcare Workflows?\nGoGloby helps healthcare teams deploy applied AI with governed workflows, human review, secure access, and clear accountability across clinical and operational use cases.\nContact GoGloby Now",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Need Generative AI That Fits Real Healthcare Workflows?",
+     "area": "block-main",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby helps healthcare teams deploy applied AI with governed workflows, human review, secure access, and clear accountability across clinical and operational use cases.",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Contact GoGloby Now",
+     "area": "block-aside",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "modals",
+   "kind": "modals",
+   "label": "Forms and modals",
+   "scope": "shared",
+   "skipped": false,
+   "text": "Thank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend\nThank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "site_header",
+   "kind": "site_header",
+   "label": "Site header",
+   "scope": "page",
+   "skipped": true,
+   "text": "Site logo\nSolutions\nAI Engineering Visibility\nForward Deployed Engineering\nServices\nAI Engineers Staff Augmentation\nHire AI Engineers\nAI Development Services\nGenerative AI Consulting Services\nAgentic AI Consulting Services\nAI Production Engineering\nGenerative AI Development Services\nAI Agent Development Services\nAI Custom Software Development Services\nRAG Application Development Services\nLLM Development Services\nApplication AI Modernization Services\nLegacy Application Modernization Services\nSoftware Maintenance Services\nCompany\nAbout us\nJobs\nResources\nInsights\nUse Cases\nPodcast\nContact\nTalk to Us",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Site logo",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/globy-logo-1-01.svg",
+     "file": "globy-logo-1-01.svg",
+     "alt": "Site logo",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Solutions",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineering Visibility",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/ai-engineering-visibility/",
+       "text": "AI Engineering Visibility"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Forward Deployed Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/forward-deployed-engineering/",
+       "text": "Forward Deployed Engineering"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineers Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Engineers Staff Augmentation"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "link",
+     "text": "AI Development Services",
+     "href": "https://gogloby.com/services/ai-development/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-development/",
+       "text": "AI Development Services"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-consulting/",
+       "text": "Generative AI Consulting Services"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Agentic AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/agentic-ai-consulting/",
+       "text": "Agentic AI Consulting Services"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "AI Production Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "AI Production Engineering"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "AI Agent Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-agent-development/",
+       "text": "AI Agent Development Services"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "AI Custom Software Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-custom-software-development/",
+       "text": "AI Custom Software Development Services"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "RAG Application Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/rag-application-development/",
+       "text": "RAG Application Development Services"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "LLM Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/llm-development/",
+       "text": "LLM Development Services"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "link",
+     "text": "Application AI Modernization Services",
+     "href": "https://gogloby.com/services/application-modernization/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/application-modernization/",
+       "text": "Application AI Modernization Services"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Legacy Application Modernization Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/legacy-application-modernization/",
+       "text": "Legacy Application Modernization Services"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "Software Maintenance Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/software-maintenance/",
+       "text": "Software Maintenance Services"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "Talk to Us",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "site_footer",
+   "kind": "site_footer",
+   "label": "Site footer",
+   "scope": "page",
+   "skipped": true,
+   "text": "Background logo\nServices\nApplied AI Engineering\nAI Staff Augmentation\nHire AI Engineers\nGenerative AI Development Services\nCompany\nAbout us\nJobs\nContact\nPrivacy Policy and Candidate Privacy Notice\nTerms and Conditions\nResources\nInsights\nUse Cases\nPodcast\nCase Studies\nConnections\nCrunchbase\nLinkedIn\nX\nG2\nClutch\nTrustpilot\nDesignRush\nGitHub\nFacebook\nYouTube\n© Copyright 2026, GoGloby. All Rights Reserved.",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background logo",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/logos/globy-logo-outline-1-01.svg",
+     "file": "globy-logo-outline-1-01.svg",
+     "alt": "Background logo",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Applied AI Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "Applied AI Engineering"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Staff Augmentation"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Privacy Policy and Candidate Privacy Notice",
+     "links": [
+      {
+       "href": "https://gogloby.com/privacy-policy/",
+       "text": "Privacy Policy and Candidate Privacy Notice"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Terms and Conditions",
+     "links": [
+      {
+       "href": "https://gogloby.com/terms-and-conditions/",
+       "text": "Terms and Conditions"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "Case Studies",
+     "links": [
+      {
+       "href": "https://gogloby.com/case-study/",
+       "text": "Case Studies"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Connections",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Crunchbase",
+     "links": [
+      {
+       "href": "https://www.crunchbase.com/organization/gogloby",
+       "text": "Crunchbase"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "LinkedIn",
+     "links": [
+      {
+       "href": "https://www.linkedin.com/company/gogloby/",
+       "text": "LinkedIn"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "X",
+     "links": [
+      {
+       "href": "https://x.com/GoGloby",
+       "text": "X"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "list_item",
+     "text": "G2",
+     "links": [
+      {
+       "href": "https://www.g2.com/products/gogloby/reviews",
+       "text": "G2"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Clutch",
+     "links": [
+      {
+       "href": "https://clutch.co/profile/gogloby",
+       "text": "Clutch"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Trustpilot",
+     "links": [
+      {
+       "href": "https://www.trustpilot.com/review/gogloby.com",
+       "text": "Trustpilot"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "DesignRush",
+     "links": [
+      {
+       "href": "https://www.designrush.com/agency/profile/gogloby",
+       "text": "DesignRush"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "list_item",
+     "text": "GitHub",
+     "links": [
+      {
+       "href": "https://github.com/gogloby",
+       "text": "GitHub"
+      }
+     ],
+     "index": 21
+    },
+    {
+     "type": "list_item",
+     "text": "Facebook",
+     "links": [
+      {
+       "href": "https://www.facebook.com/gogloby",
+       "text": "Facebook"
+      }
+     ],
+     "index": 22
+    },
+    {
+     "type": "list_item",
+     "text": "YouTube",
+     "links": [
+      {
+       "href": "https://www.youtube.com/@DefaultGlobal",
+       "text": "YouTube"
+      }
+     ],
+     "index": 23
+    },
+    {
+     "type": "paragraph",
+     "text": "© Copyright 2026, GoGloby. All Rights Reserved.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "related",
+   "kind": "related",
+   "label": "Related content",
+   "scope": "page",
+   "skipped": true,
+   "text": "Related News\nAgentic AI in Healthcare: Best AI Use Cases, Benefits, Examples\nApril 7,2026\nAI in Healthcare: Best AI Use Cases, Benefits, Examples\nAI in Healthcare: Best AI Use Cases, Benefits, Examples\nApril 7,2026\nAgentic AI in Finance: Best AI Use Cases, Benefits, Examples\nAgentic AI in Finance: Best AI Use Cases, Benefits, Examples\nApril 6,2026\nGenerative AI in Finance: Best AI Use Cases, Benefits, Examples\nGenerative AI in Finance: Best AI Use Cases, Benefits, Examples\nApril 6,2026\nAI in Finance: Best AI Use Cases, Benefits, Examples\nAI in Finance: Best AI Use Cases, Benefits, Examples\nApril 6,2026\nAgentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples\nAgentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples\nMarch 6,2026",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Related News",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Agentic AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "April 7,2026",
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2025/08/AI-use-cases-in-healthcare-scaled.png",
+     "file": "AI-use-cases-in-healthcare-scaled.png",
+     "alt": "AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 2",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "April 7,2026",
+     "area": "slide 2",
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "Agentic AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/Офісна-нарада-з-фінансовим-AI.png",
+     "file": "%D0%9E%D1%84%D1%96%D1%81%D0%BD%D0%B0-%D0%BD%D0%B0%D1%80%D0%B0%D0%B4%D0%B0-%D0%B7-%D1%84%D1%96%D0%BD%D0%B0%D0%BD%D1%81%D0%BE%D0%B2%D0%B8%D0%BC-AI.png",
+     "alt": "Agentic AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 3",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Agentic AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "April 6,2026",
+     "area": "slide 3",
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "Generative AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/Generative-AI-in-finance-2.png",
+     "file": "Generative-AI-in-finance-2.png",
+     "alt": "Generative AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 4",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Generative AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 4",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "April 6,2026",
+     "area": "slide 4",
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/AI-use-cases-in-Finance-scaled.webp",
+     "file": "AI-use-cases-in-Finance-scaled.webp",
+     "alt": "AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 5",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 5",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "April 6,2026",
+     "area": "slide 5",
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "Agentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2026/03/4.jpg",
+     "file": "4.jpg",
+     "alt": "Agentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 6",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Agentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 6",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "March 6,2026",
+     "area": "slide 6",
+     "index": 6
+    }
+   ]
+  }
+ ],
+ "warnings": []
+}

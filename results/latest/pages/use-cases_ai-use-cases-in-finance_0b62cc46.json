@@ -1,0 +1,1415 @@
+{
+  "schema_version": 2,
+  "url": "https://gogloby.com/use-cases/ai-use-cases-in-finance/",
+  "final_url": "https://gogloby.com/use-cases/ai-use-cases-in-finance/",
+  "status": 200,
+  "title": "AI in Finance: Best AI Use Cases, Benefits, Examples",
+  "category": "Resources",
+  "subsection": "Use cases",
+  "profile": "article",
+  "geo_type": "article",
+  "template": "article",
+  "checked_at": "2026-11-05T13:22:56.118Z",
+  "zones": [
+    {
+      "id": "title",
+      "label": "Title",
+      "kind": "title"
+    },
+    {
+      "id": "meta_description",
+      "label": "Meta description",
+      "kind": "meta_description"
+    },
+    {
+      "id": "og_title",
+      "label": "og:title",
+      "kind": "og_title"
+    },
+    {
+      "id": "og_description",
+      "label": "og:description",
+      "kind": "og_description"
+    },
+    {
+      "id": "json_ld",
+      "label": "Structured data (JSON-LD)",
+      "kind": "json_ld"
+    },
+    {
+      "id": "h1",
+      "label": "H1",
+      "kind": "h1"
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "kind": "date"
+    },
+    {
+      "id": "author",
+      "label": "Author",
+      "kind": "author"
+    },
+    {
+      "id": "toc",
+      "label": "Table of contents",
+      "kind": "toc"
+    },
+    {
+      "id": "article:intro",
+      "label": "Intro",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-is-ai-in-finance",
+      "label": "What Is AI in Finance?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:how-does-ai-work-in-finance",
+      "label": "How Does AI Work in Finance?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-are-the-best-ai-use-cases-in-finance",
+      "label": "What Are the Best AI Use Cases in Finance?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:why-use-ai-in-finance-main-benefits",
+      "label": "Why Use AI in Finance? Main Benefits",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-are-real-examples-of-ai-in-finance",
+      "label": "What Are Real Examples of AI in Finance?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:how-is-ai-used-in-banking-and-payments",
+      "label": "How Is AI Used in Banking and Payments?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:how-is-ai-used-for-risk-and-compliance",
+      "label": "How Is AI Used for Risk and Compliance?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-are-the-risks-of-ai-in-finance",
+      "label": "What Are the Risks of AI in Finance?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:how-should-responsible-ai-and-governance-work-in",
+      "label": "How Should Responsible AI and Governance Work in Finance?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-is-the-future-of-ai-in-finance",
+      "label": "What Is the Future of AI in Finance?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:how-can-gogloby-help-finance-teams-move-faster",
+      "label": "How Can GoGloby Help Finance Teams Move Faster?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:conclusion",
+      "label": "Conclusion",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:faqs",
+      "label": "FAQs",
+      "kind": "article_section"
+    },
+    {
+      "id": "banner_cta",
+      "label": "Banner CTA",
+      "kind": "banner_cta"
+    }
+  ],
+  "zone_warnings": [],
+  "shared_variants": [
+    "modals@1"
+  ],
+  "compliance": {
+    "hash": "276989eab25e2347e50363c0a1a50695edb7156f6a18df76d3ab7e9d3a09b1cf",
+    "cached": false,
+    "action": "fix",
+    "model_action": "fix",
+    "summary": "The article’s general finance content is not the main issue, but its GoGloby section sells AI adoption, workflow implementation, and legacy tools rather than the company’s recruiting and staffing services. It also includes unsupported claims about timelines, security, performance targets, and the founder’s credentials.",
+    "llm_problems": [
+      {
+        "title": "Applied AI implementation positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Fact Sheet: Identity and Services",
+        "rule_verified": true,
+        "issue": "The page positions GoGloby as an Applied AI engineering and finance-workflow implementation provider, rather than a staffing and recruiting agency specializing in hiring Data & AI Engineers.",
+        "fix": "Reposition the GoGloby section around the approved company description and its recruiting and staffing services.",
+        "subject": "GoGloby positioning",
+        "page_value": "Applied AI engineering and finance AI adoption",
+        "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 2",
+            "quote": "GoGloby approaches AI adoption in finance as an Applied AI Engineering problem",
+            "verified": true,
+            "reason": "This describes GoGloby as an Applied AI engineering provider instead of the approved staffing and recruiting agency."
+          },
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 4",
+            "quote": "GoGloby helps establish a repeatable operating model for testing, reviewing, validating, and documenting",
+            "verified": true,
+            "reason": "This presents GoGloby as providing AI workflow implementation and operational consulting."
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "GoGloby can help finance teams plan and run AI adoption",
+            "verified": true,
+            "reason": "This offers AI adoption planning and execution rather than recruiting or staffing engineers."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsupported shortlist timeline",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page promises qualified engineer shortlists in 3–5 days, a timeline not stated in the sources.",
+        "fix": "Remove the unsupported timeline or verify it with the company before retaining it.",
+        "subject": "Recruiting shortlist timeline",
+        "page_value": "3–5 days",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 2",
+            "quote": "qualified engineer shortlists are typically presented in 3–5 days",
+            "verified": true,
+            "reason": "This promises a shortlist delivery time that the company documents do not provide."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported team setup timeline",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page promises a fully embedded team in under 4 weeks; the Fact Sheet gives a 2–3 week start time for nearshore staffing, not this team setup claim.",
+        "fix": "Replace the unsupported team setup promise with the documented service timeline or remove it.",
+        "subject": "Embedded team setup timeline",
+        "page_value": "under 4 weeks",
+        "source_value": "2–3 weeks to start for Nearshore Data & AI Engineers Staffing",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 2",
+            "quote": "a fully embedded team can be in place in under 4 weeks",
+            "verified": true,
+            "reason": "This gives a team setup promise not stated in the sources."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Legacy development environment offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Glossary §7; Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page promotes a Secure Development Environment, an old product name, and describes GoGloby as providing that environment.",
+        "fix": "Remove the legacy product offer and describe only the documented client-environment and security practices where relevant.",
+        "subject": "Secure Development Environment",
+        "page_value": "Secure Development Environment",
+        "source_value": "Engineers work inside the client's secure development environment; source code is never hosted on GoGloby infrastructure",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 5",
+            "quote": "GoGloby’s Secure Development Environment keeps client code and data inside the client’s controlled perimeter",
+            "verified": true,
+            "reason": "This presents a discontinued product name and says GoGloby provides a development environment."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsupported zero IP exposure claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page claims zero IP exposure, which is not stated in the security information in the sources.",
+        "fix": "Remove the absolute claim or replace it with a verified description of the documented IP and security practices.",
+        "subject": "IP exposure",
+        "page_value": "zero IP exposure",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 5",
+            "quote": "with zero IP exposure",
+            "verified": true,
+            "reason": "This makes an absolute security claim that the sources do not substantiate."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Legacy Performance Center offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Glossary §7; Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page presents Performance Center, an old product name, as a GoGloby performance-tracking offer.",
+        "fix": "Remove the legacy product offer and refer to the AI Development Intelligence Layer only in its documented nearshore staffing context.",
+        "subject": "Performance Center",
+        "page_value": "Performance Center",
+        "source_value": "AI Development Intelligence Layer, bundled only with nearshore staffing",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 6",
+            "quote": "Performance Center adds sprint-by-sprint telemetry",
+            "verified": true,
+            "reason": "This promotes a discontinued product name as a GoGloby tracking offer."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsupported commit-rate targets",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §10",
+        "rule_verified": true,
+        "issue": "The page gives specific Agentic AI commit-rate targets that are not in the company sources.",
+        "fix": "Remove the targets or verify them with the company before publishing.",
+        "subject": "Agentic AI commit-rate targets",
+        "page_value": "35–45% by month 2 and 60–70% by month 6",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 6",
+            "quote": "Agentic AI commit-rate targets of 35–45% by month 2 and 60–70% by month 6",
+            "verified": true,
+            "reason": "These specific performance targets are not documented in the sources."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified founder geography",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page claims Sergey Matikaynen built and led software teams for companies across the US, Canada, and Europe, which the sources do not establish.",
+        "fix": "Remove the geographic experience claim or verify it with the company.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "companies across the US, Canada, and Europe",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "for companies across the US, Canada, and Europe",
+            "verified": true,
+            "reason": "This specifies a geographic work history for Sergey that is not in the Fact Sheet."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 15",
+            "quote": "for companies across the US, Canada, and Europe",
+            "verified": true,
+            "reason": "This repeats a geographic work history for Sergey that is not in the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified Sergey Top Voice claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page says Sergey Matikaynen is a LinkedIn Top Voice in software development, a recognition not stated for him in the sources.",
+        "fix": "Remove the recognition claim or verify it with the company.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "LinkedIn Top Voice in software development",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "reason": "This attributes a recognition to Sergey that the Fact Sheet does not confirm."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 15",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "reason": "This repeats a recognition claim about Sergey that the Fact Sheet does not confirm."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified Agentic SDLC certification",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders; Glossary §4",
+        "rule_verified": true,
+        "issue": "The page claims certified Agentic SDLC mastery as a hiring standard, but the sources contain no such certification or standard.",
+        "fix": "Remove the certification claim or verify it with the company.",
+        "subject": "Agentic SDLC certification",
+        "page_value": "certified Agentic SDLC mastery",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "including certified Agentic SDLC mastery",
+            "verified": true,
+            "reason": "This claims a certification or mastery standard not documented in the sources."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 15",
+            "quote": "including certified Agentic SDLC mastery",
+            "verified": true,
+            "reason": "This repeats a certification or mastery standard not documented in the sources."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Finance leaders as target buyers",
+        "category": "wrong_audience",
+        "severity": "medium",
+        "rule": "Glossary §5 and §9; Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page courts finance leaders for AI implementation, while the documented buyers are engineering and AI leaders, founders, and heads of talent.",
+        "fix": "Address the documented buyers for GoGloby's recruiting and staffing services instead.",
+        "subject": "Finance leaders",
+        "page_value": "Finance leaders seeking AI implementation",
+        "source_value": "Founder, CTO, VP of Engineering, Head of Talent, and Head of AI buyers",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 7",
+            "quote": "For finance leaders who want better execution without added operational risk",
+            "verified": true,
+            "reason": "This addresses finance leaders seeking AI execution support rather than the documented recruiting and staffing buyers."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "CTA does not match service wording",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §2 and §7",
+        "rule_verified": true,
+        "issue": "The CTA directs readers to contact GoGloby about AI adoption support instead of using the documented recruiting or staffing calls to action.",
+        "fix": "Use the applicable documented CTA: “Start a search” for recruiting or “Get vetted profiles” for staffing.",
+        "subject": "Banner CTA",
+        "page_value": "Contact GoGloby",
+        "source_value": "Start a search / Get vetted profiles",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 2",
+            "quote": "Contact GoGloby",
+            "verified": true,
+            "reason": "This CTA is not the documented recruiting or staffing CTA and follows a pitch for AI adoption support."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      }
+    ],
+    "problems": [
+      {
+        "title": "Applied AI implementation positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Fact Sheet: Identity and Services",
+        "rule_verified": true,
+        "issue": "The page positions GoGloby as an Applied AI engineering and finance-workflow implementation provider, rather than a staffing and recruiting agency specializing in hiring Data & AI Engineers.",
+        "fix": "Reposition the GoGloby section around the approved company description and its recruiting and staffing services.",
+        "subject": "GoGloby positioning",
+        "page_value": "Applied AI engineering and finance AI adoption",
+        "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 2",
+            "quote": "GoGloby approaches AI adoption in finance as an Applied AI Engineering problem",
+            "verified": true,
+            "reason": "This describes GoGloby as an Applied AI engineering provider instead of the approved staffing and recruiting agency.",
+            "fragment": "GoGloby approaches AI adoption in finance",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 4",
+            "quote": "GoGloby helps establish a repeatable operating model for testing, reviewing, validating, and documenting",
+            "verified": true,
+            "reason": "This presents GoGloby as providing AI workflow implementation and operational consulting.",
+            "fragment": "GoGloby helps establish a repeatable operating",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "GoGloby can help finance teams plan and run AI adoption",
+            "verified": true,
+            "reason": "This offers AI adoption planning and execution rather than recruiting or staffing engineers.",
+            "fragment": "GoGloby can help finance teams plan",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsupported shortlist timeline",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page promises qualified engineer shortlists in 3–5 days, a timeline not stated in the sources.",
+        "fix": "Remove the unsupported timeline or verify it with the company before retaining it.",
+        "subject": "Recruiting shortlist timeline",
+        "page_value": "3–5 days",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 2",
+            "quote": "qualified engineer shortlists are typically presented in 3–5 days",
+            "verified": true,
+            "reason": "This promises a shortlist delivery time that the company documents do not provide.",
+            "fragment": "qualified engineer shortlists are typically presented",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unsupported team setup timeline",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page promises a fully embedded team in under 4 weeks; the Fact Sheet gives a 2–3 week start time for nearshore staffing, not this team setup claim.",
+        "fix": "Replace the unsupported team setup promise with the documented service timeline or remove it.",
+        "subject": "Embedded team setup timeline",
+        "page_value": "under 4 weeks",
+        "source_value": "2–3 weeks to start for Nearshore Data & AI Engineers Staffing",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 2",
+            "quote": "a fully embedded team can be in place in under 4 weeks",
+            "verified": true,
+            "reason": "This gives a team setup promise not stated in the sources.",
+            "fragment": "a fully embedded team can be",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Legacy development environment offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Glossary §7; Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page promotes a Secure Development Environment, an old product name, and describes GoGloby as providing that environment.",
+        "fix": "Remove the legacy product offer and describe only the documented client-environment and security practices where relevant.",
+        "subject": "Secure Development Environment",
+        "page_value": "Secure Development Environment",
+        "source_value": "Engineers work inside the client's secure development environment; source code is never hosted on GoGloby infrastructure",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 5",
+            "quote": "GoGloby’s Secure Development Environment keeps client code and data inside the client’s controlled perimeter",
+            "verified": true,
+            "reason": "This presents a discontinued product name and says GoGloby provides a development environment.",
+            "fragment": "GoGloby’s Secure Development Environment keeps client",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsupported zero IP exposure claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page claims zero IP exposure, which is not stated in the security information in the sources.",
+        "fix": "Remove the absolute claim or replace it with a verified description of the documented IP and security practices.",
+        "subject": "IP exposure",
+        "page_value": "zero IP exposure",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 5",
+            "quote": "with zero IP exposure",
+            "verified": true,
+            "reason": "This makes an absolute security claim that the sources do not substantiate.",
+            "fragment": "with zero IP",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Legacy Performance Center offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Glossary §7; Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page presents Performance Center, an old product name, as a GoGloby performance-tracking offer.",
+        "fix": "Remove the legacy product offer and refer to the AI Development Intelligence Layer only in its documented nearshore staffing context.",
+        "subject": "Performance Center",
+        "page_value": "Performance Center",
+        "source_value": "AI Development Intelligence Layer, bundled only with nearshore staffing",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 6",
+            "quote": "Performance Center adds sprint-by-sprint telemetry",
+            "verified": true,
+            "reason": "This promotes a discontinued product name as a GoGloby tracking offer.",
+            "fragment": "Performance Center adds sprint-by-sprint",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsupported commit-rate targets",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §10",
+        "rule_verified": true,
+        "issue": "The page gives specific Agentic AI commit-rate targets that are not in the company sources.",
+        "fix": "Remove the targets or verify them with the company before publishing.",
+        "subject": "Agentic AI commit-rate targets",
+        "page_value": "35–45% by month 2 and 60–70% by month 6",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 6",
+            "quote": "Agentic AI commit-rate targets of 35–45% by month 2 and 60–70% by month 6",
+            "verified": true,
+            "reason": "These specific performance targets are not documented in the sources.",
+            "fragment": "Agentic AI commit-rate targets of 35–45%",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified founder geography",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page claims Sergey Matikaynen built and led software teams for companies across the US, Canada, and Europe, which the sources do not establish.",
+        "fix": "Remove the geographic experience claim or verify it with the company.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "companies across the US, Canada, and Europe",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "for companies across the US, Canada, and Europe",
+            "verified": true,
+            "reason": "This specifies a geographic work history for Sergey that is not in the Fact Sheet.",
+            "fragment": "for companies across the US, Canada,",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 15",
+            "quote": "for companies across the US, Canada, and Europe",
+            "verified": true,
+            "reason": "This repeats a geographic work history for Sergey that is not in the Fact Sheet.",
+            "fragment": "for companies across the US, Canada,",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified Sergey Top Voice claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page says Sergey Matikaynen is a LinkedIn Top Voice in software development, a recognition not stated for him in the sources.",
+        "fix": "Remove the recognition claim or verify it with the company.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "LinkedIn Top Voice in software development",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "reason": "This attributes a recognition to Sergey that the Fact Sheet does not confirm.",
+            "fragment": "He is a LinkedIn Top Voice",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 15",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "reason": "This repeats a recognition claim about Sergey that the Fact Sheet does not confirm.",
+            "fragment": "He is a LinkedIn Top Voice",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified Agentic SDLC certification",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders; Glossary §4",
+        "rule_verified": true,
+        "issue": "The page claims certified Agentic SDLC mastery as a hiring standard, but the sources contain no such certification or standard.",
+        "fix": "Remove the certification claim or verify it with the company.",
+        "subject": "Agentic SDLC certification",
+        "page_value": "certified Agentic SDLC mastery",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "including certified Agentic SDLC mastery",
+            "verified": true,
+            "reason": "This claims a certification or mastery standard not documented in the sources.",
+            "fragment": "including certified Agentic SDLC",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 15",
+            "quote": "including certified Agentic SDLC mastery",
+            "verified": true,
+            "reason": "This repeats a certification or mastery standard not documented in the sources.",
+            "fragment": "including certified Agentic SDLC",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Finance leaders as target buyers",
+        "category": "wrong_audience",
+        "severity": "medium",
+        "rule": "Glossary §5 and §9; Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page courts finance leaders for AI implementation, while the documented buyers are engineering and AI leaders, founders, and heads of talent.",
+        "fix": "Address the documented buyers for GoGloby's recruiting and staffing services instead.",
+        "subject": "Finance leaders",
+        "page_value": "Finance leaders seeking AI implementation",
+        "source_value": "Founder, CTO, VP of Engineering, Head of Talent, and Head of AI buyers",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 7",
+            "quote": "For finance leaders who want better execution without added operational risk",
+            "verified": true,
+            "reason": "This addresses finance leaders seeking AI execution support rather than the documented recruiting and staffing buyers.",
+            "fragment": "For finance leaders who want better",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "CTA does not match service wording",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §2 and §7",
+        "rule_verified": true,
+        "issue": "The CTA directs readers to contact GoGloby about AI adoption support instead of using the documented recruiting or staffing calls to action.",
+        "fix": "Use the applicable documented CTA: “Start a search” for recruiting or “Get vetted profiles” for staffing.",
+        "subject": "Banner CTA",
+        "page_value": "Contact GoGloby",
+        "source_value": "Start a search / Get vetted profiles",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 2",
+            "quote": "Contact GoGloby",
+            "verified": true,
+            "reason": "This CTA is not the documented recruiting or staffing CTA and follows a pitch for AI adoption support.",
+            "fragment": "Contact GoGloby",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Term not used: Performance Dashboard / Center",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"Performance Dashboard / Center\" is a term or name the company no longer uses.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "Performance Dashboard / Center",
+        "page_value": null,
+        "source_value": null,
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 6",
+            "quote": "Performance Center",
+            "verified": true,
+            "fragment": "Performance Center",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      },
+      {
+        "title": "Term not used: Secure Development Environment",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"Secure Development Environment\" is a term or name the company no longer uses.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "Secure Development Environment",
+        "page_value": null,
+        "source_value": null,
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 5",
+            "quote": "Secure Development Environment",
+            "verified": true,
+            "fragment": "Secure Development Environment",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      },
+      {
+        "title": "Term not used: 4x (product name)",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"4x (product name)\" is a term or name the company no longer uses.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "4x (product name)",
+        "page_value": null,
+        "source_value": null,
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "4x Applied",
+            "verified": true,
+            "fragment": "4x Applied",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 15",
+            "quote": "4x Applied",
+            "verified": true,
+            "fragment": "4x Applied",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      }
+    ],
+    "usage": {
+      "input": 6243,
+      "cached_input": 10166,
+      "output": 6618
+    },
+    "error": null
+  },
+  "geo": {
+    "hash": "86965fa04cb7926c09d0575b1b8c98710fcd525bf8c93f0d09fd7b0f2107f9b8",
+    "cached": false,
+    "code": [
+      {
+        "id": "trap_terms",
+        "status": "pass",
+        "value": "none in title, H1, meta, og",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "em_dash",
+        "status": "fail",
+        "value": "2 found",
+        "places": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "value": "— | …ss the US, Canada, and Europe — software architecture, agile …"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 15",
+            "value": "— | …ss the US, Canada, and Europe — software architecture, agile …"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "ampersand",
+        "status": "fail",
+        "value": "1 found",
+        "places": [
+          {
+            "zone_id": "article:what-is-ai-in-finance",
+            "part": "paragraph 2",
+            "value": "& | …ealth management, treasury, FP&A, accounting, and compliance.…"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "uk_spelling",
+        "status": "fail",
+        "value": "4 found",
+        "places": [
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 2",
+            "value": "organisations | … 4 weeks, which gives finance organisations a faster path from idea to co…"
+          },
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 3",
+            "value": "organisation | …ing, internal analysis, queue organisation, risk review, and compliance-…"
+          },
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 3",
+            "value": "summarisation | … AI can speed up preparation, summarisation, and triage, while final deci…"
+          },
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 5",
+            "value": "organisations | …nerated output. GoGloby helps organisations keep AI-assisted work inside …"
+          }
+        ],
+        "severity": "low"
+      }
+    ],
+    "llm": [
+      {
+        "id": "answer_first",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "AI in finance uses machine learning, language models, and automation tools to work with financial data. It helps teams make decisions faster, cut manual work",
+        "note": "The first two sentences define AI in finance and its benefits but do not answer which use cases are best.",
+        "fix": "Revise the first two sentences to directly identify the best AI use cases in finance.",
+        "evidence_verified": true,
+        "title": "Opening does not answer the H1",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "3ae8e45e23c90ff6371784e0dec45e8f051c0e678e24a3b772e17f108a228824",
+        "fragment": "Ready To Adopt-,AI in Finance,-Without Adding Hidden"
+      },
+      {
+        "id": "recruiting_firm_early",
+        "answer": "na",
+        "value": null,
+        "zone_id": "page",
+        "evidence": "AI in Finance: Best AI Use Cases, Benefits, Examples",
+        "note": "This is an informational article about AI use cases in finance, not a recruiting page.",
+        "fix": null,
+        "evidence_verified": true,
+        "title": "Does not say early that GoGloby is a recruiting firm",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "32ae9ac7e9c4f40dce5c067aac855359c411e7d7856aa5eeec1300acfd2d95eb",
+        "fragment": "AI in Finance: Best AI Use,-Cases, Benefits, Examples"
+      },
+      {
+        "id": "buyer_ready",
+        "answer": "no",
+        "value": "informational",
+        "zone_id": "page",
+        "evidence": "This guide explains how AI is used in finance today and where the strongest use cases are.",
+        "note": "The page is written as a general guide to AI use cases rather than for companies ready to hire Data and AI engineers.",
+        "fix": "Refocus the article on company buyers who are ready to hire Data and AI engineers.",
+        "evidence_verified": true,
+        "title": "Not written for buyers ready to hire",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "1d676498d953f96468ae8f8fd35d26615b3829b7656cf061740c957041215372",
+        "fragment": "This guide explains how AI is"
+      },
+      {
+        "id": "target_keyword",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "The page focuses on AI use cases in finance, and no matching term from Glossary §6 applies.",
+        "fix": null,
+        "evidence_verified": null,
+        "title": "No matching search term",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "6d2d43c9c148e07e4351f6296fbda55b7ff3f6eddcd56c471e869e82aebd9511"
+      },
+      {
+        "id": "uses_data",
+        "answer": "yes",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "McKinsey’s 2025 CFO survey shows how fast this is moving. It found that 44% of organizations were already using generative AI",
+        "note": "The article provides quotable statistics and identifies the 2025 McKinsey CFO survey as their source.",
+        "fix": null,
+        "evidence_verified": true,
+        "title": "No quotable data",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "56bfd4a46220d758b19aafc4d7b3b4c4a67bba346fac8063b3c0e929ae1fc39b",
+        "fragment": "McKinsey’s 2025 CFO survey"
+      },
+      {
+        "id": "proof_background",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:faqs",
+        "evidence": "He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe",
+        "note": "The author bio mentions software-team experience but does not use GoGloby’s Data Science and engineering-team background as proof.",
+        "fix": "Add the relevant GoGloby background about building and leading Data Science and engineering teams.",
+        "evidence_verified": true,
+        "title": "Does not use founders' background as proof",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "41c0b24413c13076c8da022f2336abc6d307d071516ab9cf20734ca98130c108",
+        "fragment": "He has spent 16+ years building"
+      },
+      {
+        "id": "sell_against_open_role",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+        "evidence": "qualified engineer shortlists are typically presented in 3–5 days, and a fully embedded team can be in place in under 4 weeks",
+        "note": "The GoGloby section gives shortlist and team-start timelines but does not compare them with the cost and wait for an open full-time US role.",
+        "fix": "Compare hiring through GoGloby with the cost and time to fill an open full-time US role.",
+        "evidence_verified": true,
+        "title": "Does not compare with an open full-time role",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "e0fd0c99b99aa5d81ba5db0448e08b9e567c35541f293b8d48886da925eea5fc",
+        "fragment": "qualified engineer shortlists are typically presented"
+      }
+    ],
+    "placement": null,
+    "usage": {
+      "input": 5455,
+      "cached_input": 8950,
+      "output": 1494
+    },
+    "error": null
+  },
+  "seo": {
+    "checks": [
+      {
+        "id": "http_status",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "200",
+        "severity": "high"
+      },
+      {
+        "id": "title_length",
+        "status": "pass",
+        "zone_id": "title",
+        "value": "52 characters",
+        "severity": "medium"
+      },
+      {
+        "id": "meta_present",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "140 characters",
+        "severity": "high"
+      },
+      {
+        "id": "meta_length",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "140 characters (120-158)",
+        "severity": "low"
+      },
+      {
+        "id": "h1_count",
+        "status": "pass",
+        "zone_id": "h1",
+        "value": "1",
+        "severity": "high"
+      },
+      {
+        "id": "title_h1_match",
+        "status": "pass",
+        "zone_id": "title",
+        "value": "Title and H1 agree",
+        "severity": "low"
+      },
+      {
+        "id": "canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "https://gogloby.com/use-cases/ai-use-cases-in-finance/",
+        "severity": "high"
+      },
+      {
+        "id": "indexable",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "severity": "high"
+      },
+      {
+        "id": "schema_required",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "present",
+        "severity": "medium"
+      },
+      {
+        "id": "schema_recommended",
+        "status": "fail",
+        "zone_id": "json_ld",
+        "value": "missing: BreadcrumbList",
+        "severity": "medium"
+      },
+      {
+        "id": "author",
+        "status": "pass",
+        "zone_id": "author",
+        "value": "Sergey Matikaynen",
+        "severity": "medium"
+      },
+      {
+        "id": "dates",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "published: 2026-04-06T13:09:27+03:00; modified: 2026-08-11T15:38:47+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "date_mismatch",
+        "status": "pass",
+        "zone_id": "date",
+        "value": "visible \"Updated on August 11, 2026\" vs dateModified 2026-08-11T15:38:47+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "broken_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "3 checked",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "redirecting_internal_links",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "2 redirect",
+        "places": [
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 8",
+            "value": "https://gogloby.com/case-studies/generative-ai-use-cases-in-finance/ -> https://gogloby.com/use-cases/generative-ai-use-cases-in-finance/"
+          },
+          {
+            "zone_id": "article:how-can-gogloby-help-finance-teams-move-faster",
+            "part": "paragraph 8",
+            "value": "https://gogloby.com/case-studies/agentic-ai-use-cases-in-finance/ -> https://gogloby.com/use-cases/agentic-ai-use-cases-in-finance/"
+          }
+        ],
+        "severity": "medium"
+      },
+      {
+        "id": "link_to_services",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "no link to /services/*",
+        "severity": "medium"
+      },
+      {
+        "id": "alt_missing",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without alt",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_empty",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 with empty alt",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "image_dimensions",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "2 without width/height",
+        "places": [
+          {
+            "zone_id": "author",
+            "part": "image 1",
+            "value": "1706550966241.jpeg"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "image 1",
+            "value": "1706550966241.jpeg"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "heading_order",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "og_present",
+        "status": "pass",
+        "zone_id": "og_title",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "og_url_canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "og:url https://gogloby.com/use-cases/ai-use-cases-in-finance/ vs canonical https://gogloby.com/use-cases/ai-use-cases-in-finance/",
+        "severity": "low"
+      },
+      {
+        "id": "twitter_card",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "summary_large_image",
+        "severity": "low"
+      },
+      {
+        "id": "html_lang",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "en-US",
+        "severity": "low"
+      },
+      {
+        "id": "viewport",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "jsonld_valid",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "4 block(s)",
+        "severity": "high"
+      },
+      {
+        "id": "article_fields",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "anchors_resolve",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "14 checked",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "faq_schema_matches_dom",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "accordion block: true, FAQPage schema: true",
+        "severity": "low"
+      }
+    ]
+  }
+}

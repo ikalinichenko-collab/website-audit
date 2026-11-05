@@ -1,0 +1,2185 @@
+{
+ "template": "article",
+ "zones": [
+  {
+   "id": "title",
+   "kind": "title",
+   "label": "Title",
+   "scope": "page",
+   "skipped": false,
+   "text": "Generative AI in Finance: Best AI Use Cases, Benefits",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Generative AI in Finance: Best AI Use Cases, Benefits"
+    }
+   ]
+  },
+  {
+   "id": "meta_description",
+   "kind": "meta_description",
+   "label": "Meta description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Learn what generative AI in finance is, where it creates the most value, the best use cases across financial services and accounting, and real examples with measurable results.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Learn what generative AI in finance is, where it creates the most value, the best use cases across financial services and accounting, and real examples with measurable results."
+    }
+   ]
+  },
+  {
+   "id": "og_title",
+   "kind": "og_title",
+   "label": "og:title",
+   "scope": "page",
+   "skipped": false,
+   "text": "Generative AI in Finance: Best AI Use Cases, Benefits",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Generative AI in Finance: Best AI Use Cases, Benefits"
+    }
+   ]
+  },
+  {
+   "id": "og_description",
+   "kind": "og_description",
+   "label": "og:description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Learn what generative AI in finance is, where it creates the most value, the best use cases across financial services and accounting, and real examples with measurable results.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Learn what generative AI in finance is, where it creates the most value, the best use cases across financial services and accounting, and real examples with measurable results."
+    }
+   ]
+  },
+  {
+   "id": "json_ld",
+   "kind": "json_ld",
+   "label": "Structured data (JSON-LD)",
+   "scope": "page",
+   "skipped": false,
+   "text": "Generative AI in Finance: Best AI Use Cases, Benefits, Examples\nGenerative AI in Finance: Best AI Use Cases, Benefits, Examples\nLearn what generative AI in finance is, where it creates the most value, the best use cases across f\nSergey Matikaynen\nGoGloby\nWhat is generative AI in finance?\nGenerative AI in finance uses models that create summaries, drafts, explanations, and answers from financial content such as reports, documents, notes, and internal knowledge. It helps teams move faster through text-heavy work.\nWhat are the best generative AI use cases in finance?\nThe best use cases usually include reporting support, document review, customer and investor communication, internal knowledge assistance, and finance and accounting support. These tasks are easier to control and easier to review.\nHow is generative AI used in finance and accounting?\nIt is used to support close work, variance explanations, invoice and billing workflows, financial statement support, and conversational reporting. The model helps create better first drafts while people keep responsibility for review and sign-off.\nWhat are the main benefits of generative AI in finance?\nThe main benefits are faster turnaround, lower manual workload, and more consistent output. Teams can spend less time rewriting and searching and more time reviewing, deciding, and acting.",
+   "parts": [
+    {
+     "type": "field",
+     "text": "Generative AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "area": "Article.name",
+     "index": 1
+    },
+    {
+     "type": "field",
+     "text": "Generative AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "area": "Article.headline",
+     "index": 2
+    },
+    {
+     "type": "field",
+     "text": "Learn what generative AI in finance is, where it creates the most value, the best use cases across f",
+     "area": "Article.description",
+     "index": 3
+    },
+    {
+     "type": "field",
+     "text": "Sergey Matikaynen",
+     "area": "Person.name",
+     "index": 4
+    },
+    {
+     "type": "field",
+     "text": "GoGloby",
+     "area": "Organization.name",
+     "index": 5
+    },
+    {
+     "type": "field",
+     "text": "What is generative AI in finance?",
+     "area": "Question.name",
+     "index": 6
+    },
+    {
+     "type": "field",
+     "text": "Generative AI in finance uses models that create summaries, drafts, explanations, and answers from financial content such as reports, documents, notes, and internal knowledge. It helps teams move faster through text-heavy work.",
+     "area": "Answer.text",
+     "index": 7
+    },
+    {
+     "type": "field",
+     "text": "What are the best generative AI use cases in finance?",
+     "area": "Question.name",
+     "index": 8
+    },
+    {
+     "type": "field",
+     "text": "The best use cases usually include reporting support, document review, customer and investor communication, internal knowledge assistance, and finance and accounting support. These tasks are easier to control and easier to review.",
+     "area": "Answer.text",
+     "index": 9
+    },
+    {
+     "type": "field",
+     "text": "How is generative AI used in finance and accounting?",
+     "area": "Question.name",
+     "index": 10
+    },
+    {
+     "type": "field",
+     "text": "It is used to support close work, variance explanations, invoice and billing workflows, financial statement support, and conversational reporting. The model helps create better first drafts while people keep responsibility for review and sign-off.",
+     "area": "Answer.text",
+     "index": 11
+    },
+    {
+     "type": "field",
+     "text": "What are the main benefits of generative AI in finance?",
+     "area": "Question.name",
+     "index": 12
+    },
+    {
+     "type": "field",
+     "text": "The main benefits are faster turnaround, lower manual workload, and more consistent output. Teams can spend less time rewriting and searching and more time reviewing, deciding, and acting.",
+     "area": "Answer.text",
+     "index": 13
+    }
+   ]
+  },
+  {
+   "id": "h1",
+   "kind": "h1",
+   "label": "H1",
+   "scope": "page",
+   "skipped": false,
+   "text": "Generative AI in Finance: Best AI Use Cases, Benefits, Examples",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Generative AI in Finance: Best AI Use Cases, Benefits, Examples"
+    }
+   ]
+  },
+  {
+   "id": "date",
+   "kind": "date",
+   "label": "Date",
+   "scope": "page",
+   "skipped": false,
+   "text": "Updated on April 8, 2026",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Updated on April 8, 2026"
+    }
+   ]
+  },
+  {
+   "id": "author",
+   "kind": "author",
+   "label": "Author",
+   "scope": "page",
+   "skipped": false,
+   "text": "Author avatar\nSergey Matikaynen / CTO\nArticle author\nSergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.\nView profile",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Author avatar",
+     "src": "https://gogloby.com/wp-content/uploads/2024/02/1706550966241.jpeg",
+     "file": "1706550966241.jpeg",
+     "alt": "Author avatar",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen / CTO",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Article author",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "View profile",
+     "links": [
+      {
+       "href": "https://gogloby.com/author/sergey/",
+       "text": "View profile"
+      }
+     ],
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "toc",
+   "kind": "toc",
+   "label": "Table of contents",
+   "scope": "page",
+   "skipped": false,
+   "text": "Table of Contents\nWhat Is Generative AI in Finance?\nHow Can Generative AI Be Used in Finance?\nWhat Are the Best Generative AI Use Cases in Finance?\nHow Does Generative AI Work in Finance?\nHow Is Generative AI Used in Finance and Accounting?\nWhat Are the Benefits of Generative AI in Finance?\nWhat Are Real Generative AI Examples in Finance?\nWhat Are the Risks of Generative AI in Finance?\nWhat Are the Best Practices for Generative AI in Finance?\nWhat Trends Are Shaping Generative AI in Finance?\nWhat Is the Future of Generative AI in Finance?\nHow Can GoGloby Help Finance Teams Use Generative AI Safely?\nConclusion\nReady to Apply Generative AI in Finance Without Losing Control?\nFAQs",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Table of Contents",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "What Is Generative AI in Finance?",
+     "links": [
+      {
+       "href": "#what-is-generative-ai-in-finance",
+       "text": "What Is Generative AI in Finance?"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "How Can Generative AI Be Used in Finance?",
+     "links": [
+      {
+       "href": "#how-can-generative-ai-be-used-in-finance",
+       "text": "How Can Generative AI Be Used in Finance?"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "What Are the Best Generative AI Use Cases in Finance?",
+     "links": [
+      {
+       "href": "#what-are-the-best-generative-ai-use-cases-in-finance",
+       "text": "What Are the Best Generative AI Use Cases in Finance?"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "How Does Generative AI Work in Finance?",
+     "links": [
+      {
+       "href": "#how-does-generative-ai-work-in-finance",
+       "text": "How Does Generative AI Work in Finance?"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "How Is Generative AI Used in Finance and Accounting?",
+     "links": [
+      {
+       "href": "#how-is-generative-ai-used-in-finance-and-accounting",
+       "text": "How Is Generative AI Used in Finance and Accounting?"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "What Are the Benefits of Generative AI in Finance?",
+     "links": [
+      {
+       "href": "#what-are-the-benefits-of-generative-ai-in-finance",
+       "text": "What Are the Benefits of Generative AI in Finance?"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "What Are Real Generative AI Examples in Finance?",
+     "links": [
+      {
+       "href": "#what-are-real-generative-ai-examples-in-finance",
+       "text": "What Are Real Generative AI Examples in Finance?"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "What Are the Risks of Generative AI in Finance?",
+     "links": [
+      {
+       "href": "#what-are-the-risks-of-generative-ai-in-finance",
+       "text": "What Are the Risks of Generative AI in Finance?"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "What Are the Best Practices for Generative AI in Finance?",
+     "links": [
+      {
+       "href": "#what-are-the-best-practices-for-generative-ai-in-finance",
+       "text": "What Are the Best Practices for Generative AI in Finance?"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "What Trends Are Shaping Generative AI in Finance?",
+     "links": [
+      {
+       "href": "#what-trends-are-shaping-generative-ai-in-finance",
+       "text": "What Trends Are Shaping Generative AI in Finance?"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "What Is the Future of Generative AI in Finance?",
+     "links": [
+      {
+       "href": "#what-is-the-future-of-generative-ai-in-finance",
+       "text": "What Is the Future of Generative AI in Finance?"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "How Can GoGloby Help Finance Teams Use Generative AI Safely?",
+     "links": [
+      {
+       "href": "#how-can-gogloby-help-finance-teams-use-generative-ai-safely",
+       "text": "How Can GoGloby Help Finance Teams Use Generative AI Safely?"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "Conclusion",
+     "links": [
+      {
+       "href": "#conclusion",
+       "text": "Conclusion"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "Ready to Apply Generative AI in Finance Without Losing Control?",
+     "links": [
+      {
+       "href": "#ready-to-apply-generative-ai-in-finance-without-losing-control",
+       "text": "Ready to Apply Generative AI in Finance Without Losing Control?"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "FAQs",
+     "links": [
+      {
+       "href": "#faqs",
+       "text": "FAQs"
+      }
+     ],
+     "index": 15
+    }
+   ]
+  },
+  {
+   "id": "article:intro",
+   "kind": "article_section",
+   "label": "Intro",
+   "scope": "page",
+   "skipped": false,
+   "text": "Finance teams spend a lot of time turning scattered inputs into usable output. Work often begins with emails, contracts, invoices, research notes, policy documents, credit files, and meeting summaries, then moves through review, rewriting, and approval. That slows down reporting, service, analysis, and operations. According to Vic.ai’s AI Momentum Report, 72% of organizations now use some form of AI in their finance operations. That matters because generative AI is most useful where teams lose time to drafting, summarizing, explaining, and finding the right information before the real decision even begins.\nIt also helps when finance staff need to turn long, messy, or repetitive materials into clear outputs that others can review and act on faster. This makes generative AI especially relevant in functions where speed, clarity, and consistency affect both internal workflows and customer-facing work.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "Finance teams spend a lot of time turning scattered inputs into usable output. Work often begins with emails, contracts, invoices, research notes, policy documents, credit files, and meeting summaries, then moves through review, rewriting, and approval. That slows down reporting, service, analysis, and operations. According to Vic.ai’s AI Momentum Report, 72% of organizations now use some form of AI in their finance operations. That matters because generative AI is most useful where teams lose time to drafting, summarizing, explaining, and finding the right information before the real decision even begins.",
+     "links": [
+      {
+       "href": "https://www.vic.ai/blog/ai-use-in-finance-is-now-mainstream",
+       "text": "According to Vic.ai’s AI Momentum Report"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "It also helps when finance staff need to turn long, messy, or repetitive materials into clear outputs that others can review and act on faster. This makes generative AI especially relevant in functions where speed, clarity, and consistency affect both internal workflows and customer-facing work.",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "article:what-is-generative-ai-in-finance",
+   "kind": "article_section",
+   "label": "What Is Generative AI in Finance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Is Generative AI in Finance?\nGenerative AI in finance is the use of AI models to turn financial content into usable output. In practice, it can draft summaries, generate explanations, answer questions over internal knowledge, structure large document sets, and help teams move faster through text-heavy work.\nThis is what makes generative AI in finance different from older rule-based automation. Traditional automation usually follows fixed logic. Generative models work better with unstructured material such as contracts, credit notes, research files, operating commentary, or client correspondence. That is why many generative AI applications in finance start in workflows where people already spend too much time reading, searching, rewriting, and reformatting.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Is Generative AI in Finance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Generative AI in finance is the use of AI models to turn financial content into usable output. In practice, it can draft summaries, generate explanations, answer questions over internal knowledge, structure large document sets, and help teams move faster through text-heavy work.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "This is what makes generative AI in finance different from older rule-based automation. Traditional automation usually follows fixed logic. Generative models work better with unstructured material such as contracts, credit notes, research files, operating commentary, or client correspondence. That is why many generative AI applications in finance start in workflows where people already spend too much time reading, searching, rewriting, and reformatting.",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "article:how-can-generative-ai-be-used-in-finance",
+   "kind": "article_section",
+   "label": "How Can Generative AI Be Used in Finance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Can Generative AI Be Used in Finance?\nThe strongest generative AI in finance use cases appear where work is repetitive, high-volume, and still reviewable. In these settings, generative AI in financial services helps teams create first drafts faster, surface the right information sooner, and reduce manual effort around communication, analysis, and document handling.\nThis is why many generative AI use cases in finance focus on internal reporting, policy-heavy workflows, service operations, and other text-heavy tasks. It can improve service workflows, support staff as they work through complex internal requirements, and make finance operations easier to scale. In practice, the best generative AI finance use cases do not replace judgment. They reduce the time spent reaching the point where judgment occurs.\nA few common applications of generative AI in finance stand out:\nDocument-heavy workflow support: Teams can move faster when models summarise source material, draft sections, and pull key details from large files.\nInternal knowledge assistance: Staff can get quicker answers from approved policies, product material, and process documentation.\nClient and advisor communication support: Models can help prepare clearer, faster responses in high-volume service environments.\nReporting and explanation support: Finance teams can draft commentary, working notes, and narrative summaries with less manual rewriting.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Can Generative AI Be Used in Finance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/image-3-1024x683.png",
+     "file": "image-3-1024x683.png",
+     "alt": "",
+     "alt_state": "empty",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The strongest generative AI in finance use cases appear where work is repetitive, high-volume, and still reviewable. In these settings, generative AI in financial services helps teams create first drafts faster, surface the right information sooner, and reduce manual effort around communication, analysis, and document handling.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "This is why many generative AI use cases in finance focus on internal reporting, policy-heavy workflows, service operations, and other text-heavy tasks. It can improve service workflows, support staff as they work through complex internal requirements, and make finance operations easier to scale. In practice, the best generative AI finance use cases do not replace judgment. They reduce the time spent reaching the point where judgment occurs.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "A few common applications of generative AI in finance stand out:",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Document-heavy workflow support: Teams can move faster when models summarise source material, draft sections, and pull key details from large files.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Internal knowledge assistance: Staff can get quicker answers from approved policies, product material, and process documentation.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Client and advisor communication support: Models can help prepare clearer, faster responses in high-volume service environments.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Reporting and explanation support: Finance teams can draft commentary, working notes, and narrative summaries with less manual rewriting.",
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-the-best-generative-ai-use-cases-in-fin",
+   "kind": "article_section",
+   "label": "What Are the Best Generative AI Use Cases in Finance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are the Best Generative AI Use Cases in Finance?\nThe best generative AI use cases in finance are the ones with clear scope, clear owners, and clear review steps. They improve speed and consistency first. They do not try to remove judgment from financial work. The strongest results usually appear in workflows where teams already know what good output looks like and can review it quickly. That is why generative AI works best in drafting, summarizing, extraction, support, and structured research tasks.\nReporting and Commentary Support\nFinance teams often turn raw inputs into updates, summaries, and explanations. Generative AI helps create cleaner drafts and cut repetitive writing. This is where credit appraisal drafting and conversational accounting reporting fit naturally. In one case, AI cut bank reconciliation time by 90% and reporting time by 50%. Review stays in place while manual drafting drops.\nDocument Review and Information Extraction\nMany finance workflows slow down because key details sit inside long files. Generative AI helps pull out the relevant points faster and turn them into usable summaries. That is why contract and invoice review is such a strong example. In that case, AI helped process 60 million documents and identify over $1 billion in savings.\nCustomer and Investor Support\nFinancial services teams often answer recurring questions and guide users through products or onboarding. Generative AI supports that work when it uses approved knowledge. This is visible in investor question support, which helped 10,000 users a day, multilingual customer query handling, which addressed 50,000+ queries, and context-aware support responses, which reduced agent handovers by 35%.\nResearch and Investment Support\nGenerative AI helps investment teams summarise findings and reduce research time. That makes AI-driven financial research, which searched 50 million documents, investment diligence support, which reached 45% adoption, and lean-team investment analysis, strong examples of generative AI in banking and finance.\nWorkflow Automation Support\nSome finance use cases are less about writing and more about moving work through review-heavy processes faster. This is where M&A redaction automation, which cuts redaction time by 80%, and client lifecycle workflow automation, which reduces manual work by 75%, add value. They show how AI can speed up finance operations without removing oversight.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are the Best Generative AI Use Cases in Finance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The best generative AI use cases in finance are the ones with clear scope, clear owners, and clear review steps. They improve speed and consistency first. They do not try to remove judgment from financial work. The strongest results usually appear in workflows where teams already know what good output looks like and can review it quickly. That is why generative AI works best in drafting, summarizing, extraction, support, and structured research tasks.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Reporting and Commentary Support",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Finance teams often turn raw inputs into updates, summaries, and explanations. Generative AI helps create cleaner drafts and cut repetitive writing. This is where credit appraisal drafting and conversational accounting reporting fit naturally. In one case, AI cut bank reconciliation time by 90% and reporting time by 50%. Review stays in place while manual drafting drops.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12160",
+       "text": "credit appraisal drafting"
+      },
+      {
+       "href": "https://casestudy.gogloby.com/case-study/10818",
+       "text": "conversational accounting reporting"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Document Review and Information Extraction",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Many finance workflows slow down because key details sit inside long files. Generative AI helps pull out the relevant points faster and turn them into usable summaries. That is why contract and invoice review is such a strong example. In that case, AI helped process 60 million documents and identify over $1 billion in savings.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12257",
+       "text": "contract and invoice review"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Customer and Investor Support",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Financial services teams often answer recurring questions and guide users through products or onboarding. Generative AI supports that work when it uses approved knowledge. This is visible in investor question support, which helped 10,000 users a day, multilingual customer query handling, which addressed 50,000+ queries, and context-aware support responses, which reduced agent handovers by 35%.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12412",
+       "text": "investor question support"
+      },
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12013",
+       "text": "multilingual customer query handling"
+      },
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12057",
+       "text": "context-aware support responses"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Research and Investment Support",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Generative AI helps investment teams summarise findings and reduce research time. That makes AI-driven financial research, which searched 50 million documents, investment diligence support, which reached 45% adoption, and lean-team investment analysis, strong examples of generative AI in banking and finance.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/11142",
+       "text": "AI-driven financial research"
+      },
+      {
+       "href": "https://casestudy.gogloby.com/case-study/11110",
+       "text": "investment diligence support"
+      },
+      {
+       "href": "https://casestudy.gogloby.com/case-study/10853",
+       "text": "lean-team investment analysis"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Workflow Automation Support",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Some finance use cases are less about writing and more about moving work through review-heavy processes faster. This is where M&A redaction automation, which cuts redaction time by 80%, and client lifecycle workflow automation, which reduces manual work by 75%, add value. They show how AI can speed up finance operations without removing oversight.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/11893",
+       "text": "M&A redaction automation"
+      },
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9701",
+       "text": "client lifecycle workflow automation"
+      }
+     ],
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "article:how-does-generative-ai-work-in-finance",
+   "kind": "article_section",
+   "label": "How Does Generative AI Work in Finance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Does Generative AI Work in Finance?\nBright modern finance workspace with AI insights panels, reports, and analytics dashboards on a conference table\nGenerative AI in finance works by taking in reports, documents, emails, contracts, and other internal content. It then follows a prompt and creates an answer, summary, explanation, or draft. It works best when it uses trusted internal sources, search tools, and access controls. Human review still matters. Financial accountability stays with the team.\nSource material goes in: Reports, documents, emails, notes, contracts, policy text, or internal data provide the input.\nTrusted internal content improves quality: With trusted finance data in NLP workflows, results are stronger when the system uses approved internal sources.\nThe model follows a prompt: It uses the instruction to process the material for a specific task.\nThe system produces output: That output can be an answer, summary, explanation, or draft.\nSearch and permissions keep it grounded: Many teams combine models with retrieval, search, and access controls, which support verified finance answers from approved content.\nHuman review still stays in place: Generative AI reduces reading, writing, and summarizing work, but it does not remove review, sign-off, or financial accountability.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Does Generative AI Work in Finance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "Bright modern finance workspace with AI insights panels, reports, and analytics dashboards on a conference table",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/image-4-1024x683.png",
+     "file": "image-4-1024x683.png",
+     "alt": "Bright modern finance workspace with AI insights panels, reports, and analytics dashboards on a conference table",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Generative AI in finance works by taking in reports, documents, emails, contracts, and other internal content. It then follows a prompt and creates an answer, summary, explanation, or draft. It works best when it uses trusted internal sources, search tools, and access controls. Human review still matters. Financial accountability stays with the team.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Source material goes in: Reports, documents, emails, notes, contracts, policy text, or internal data provide the input.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Trusted internal content improves quality: With trusted finance data in NLP workflows, results are stronger when the system uses approved internal sources.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12495",
+       "text": "trusted finance data in NLP workflows"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "The model follows a prompt: It uses the instruction to process the material for a specific task.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "The system produces output: That output can be an answer, summary, explanation, or draft.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Search and permissions keep it grounded: Many teams combine models with retrieval, search, and access controls, which support verified finance answers from approved content.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9621",
+       "text": "verified finance answers from approved content"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Human review still stays in place: Generative AI reduces reading, writing, and summarizing work, but it does not remove review, sign-off, or financial accountability.",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "article:how-is-generative-ai-used-in-finance-and-account",
+   "kind": "article_section",
+   "label": "How Is Generative AI Used in Finance and Accounting?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Is Generative AI Used in Finance and Accounting?\nGenerative AI in finance and accounting is most useful in repeatable, text-heavy workflows where teams need speed, consistency, and clear review. It works best in tasks where the structure is already known, and the output still passes through human checks before sign-off.\nBilling, Invoicing, and Revenue Accounting\nMany generative AI use cases in finance and accounting appear in billing, invoicing, and revenue accounting. Models help draft explanations, organise notes, and reduce manual rewriting before review.\nClose Support and Financial Statement Preparation\nGenerative AI also fits naturally into close support and financial statement preparation. It helps teams move faster through draft creation, commentary support, and account-level explanations during reporting cycles.\nVariance Commentary and Email-Heavy Work\nIt is also useful in variance commentary and repetitive email-heavy operations. Models help structure explanations, summarise issues, and prepare clearer first drafts while people keep control over accuracy and sign-off.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Is Generative AI Used in Finance and Accounting?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Generative AI in finance and accounting is most useful in repeatable, text-heavy workflows where teams need speed, consistency, and clear review. It works best in tasks where the structure is already known, and the output still passes through human checks before sign-off.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Billing, Invoicing, and Revenue Accounting",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Many generative AI use cases in finance and accounting appear in billing, invoicing, and revenue accounting. Models help draft explanations, organise notes, and reduce manual rewriting before review.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Close Support and Financial Statement Preparation",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Generative AI also fits naturally into close support and financial statement preparation. It helps teams move faster through draft creation, commentary support, and account-level explanations during reporting cycles.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Variance Commentary and Email-Heavy Work",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "It is also useful in variance commentary and repetitive email-heavy operations. Models help structure explanations, summarise issues, and prepare clearer first drafts while people keep control over accuracy and sign-off.",
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-the-benefits-of-generative-ai-in-financ",
+   "kind": "article_section",
+   "label": "What Are the Benefits of Generative AI in Finance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are the Benefits of Generative AI in Finance?\nThe main benefits of generative AI in finance come from faster execution, less repetitive drafting, and better use of skilled time. The strongest gains appear when teams apply it to narrow workflows that already have stable inputs and clear review rules.\nBenefit\nWhat It Means in Finance\nFaster turnaround\nFinance teams can move through summarizing, drafting, and document review faster when the first version is created automatically.\nLower manual workload\nStaff spend less time on repetitive language-heavy work and more time on judgment, review, and decision support.\nMore consistent output\nReports, explanations, and internal responses become easier to standardise when teams use repeatable prompts and review patterns.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are the Benefits of Generative AI in Finance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The main benefits of generative AI in finance come from faster execution, less repetitive drafting, and better use of skilled time. The strongest gains appear when teams apply it to narrow workflows that already have stable inputs and clear review rules.",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Benefit",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "What It Means in Finance",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "Faster turnaround",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "Finance teams can move through summarizing, drafting, and document review faster when the first version is created automatically.",
+     "index": 4
+    },
+    {
+     "type": "table_cell",
+     "text": "Lower manual workload",
+     "index": 5
+    },
+    {
+     "type": "table_cell",
+     "text": "Staff spend less time on repetitive language-heavy work and more time on judgment, review, and decision support.",
+     "index": 6
+    },
+    {
+     "type": "table_cell",
+     "text": "More consistent output",
+     "index": 7
+    },
+    {
+     "type": "table_cell",
+     "text": "Reports, explanations, and internal responses become easier to standardise when teams use repeatable prompts and review patterns.",
+     "index": 8
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-real-generative-ai-examples-in-finance",
+   "kind": "article_section",
+   "label": "What Are Real Generative AI Examples in Finance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are Real Generative AI Examples in Finance?\nGenAI already helps real finance teams. It shows up most in workflows where people spend too much time drafting, reviewing, and structuring information. It can speed up routine work, improve consistency, and surface useful context earlier. That matters in consumer finance, financial services, and investment management.\nWorkflow efficiency with measurable gains\nIn finance operations, workflow efficiency with measurable gains shows how generative AI can reduce repetitive work. In this case, Moneyview reported a 35% increase in operational efficiency and a 30% boost in team productivity.\nBroader adoption with gradual rollout\nAI is already common in financial services, and broad finance adoption with gradual rollout shows that generative AI is still expanding into wider daily use. The example notes that 85% of financial services companies already use AI in some form.\nTighter deployment with clearer limits\nSome of the strongest results come from narrow, controlled deployment. That pattern is visible in enterprise rollout through tighter deployment with clearer limits. The example also shows that infrastructure costs ran 40% to 60% higher than projected, while integration timelines stretched 2 to 3 times longer than expected.\nInvestment support across complex data\nGenAI is also useful in data-heavy investment environments where teams work through large datasets, long documents, and dense market context. Here, investment support across complex data shows where that value appears. Clearwater reported a 20% increase in assets under management without increasing operational headcount.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are Real Generative AI Examples in Finance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GenAI already helps real finance teams. It shows up most in workflows where people spend too much time drafting, reviewing, and structuring information. It can speed up routine work, improve consistency, and surface useful context earlier. That matters in consumer finance, financial services, and investment management.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Workflow efficiency with measurable gains",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "In finance operations, workflow efficiency with measurable gains shows how generative AI can reduce repetitive work. In this case, Moneyview reported a 35% increase in operational efficiency and a 30% boost in team productivity.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12145",
+       "text": "workflow efficiency with measurable gains"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Broader adoption with gradual rollout",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "AI is already common in financial services, and broad finance adoption with gradual rollout shows that generative AI is still expanding into wider daily use. The example notes that 85% of financial services companies already use AI in some form.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/11030",
+       "text": "broad finance adoption with gradual rollout"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Tighter deployment with clearer limits",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Some of the strongest results come from narrow, controlled deployment. That pattern is visible in enterprise rollout through tighter deployment with clearer limits. The example also shows that infrastructure costs ran 40% to 60% higher than projected, while integration timelines stretched 2 to 3 times longer than expected.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/10983",
+       "text": "tighter deployment with clearer limits"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Investment support across complex data",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "GenAI is also useful in data-heavy investment environments where teams work through large datasets, long documents, and dense market context. Here, investment support across complex data shows where that value appears. Clearwater reported a 20% increase in assets under management without increasing operational headcount.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/10887",
+       "text": "investment support across complex data"
+      }
+     ],
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-the-risks-of-generative-ai-in-finance",
+   "kind": "article_section",
+   "label": "What Are the Risks of Generative AI in Finance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are the Risks of Generative AI in Finance?\nAI risk management concept in finance with warning icons, compliance alerts, and financial documents on an office desk\nThe main risks of generative AI in finance are inaccurate or weakly grounded output, data leakage, control gaps, regulatory exposure, and over-automation. A model can sound correct while being wrong, sensitive data can be exposed without strong access controls, and weak review can undermine accountability.\nHallucinations and weak grounding: A model can sound confident while still being wrong, incomplete, or out of date.\nData leakage risk: Finance teams often work with sensitive internal, customer, and transaction data that needs stronger access controls.\nControl gaps: If outputs move without clear review, accountability weakens, and error risk rises.\nRegulatory exposure: Financial services teams face stricter expectations around records, review, and responsible decision support.\nOver-automation: The model should support a workflow, not silently replace the people responsible for the outcome.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are the Risks of Generative AI in Finance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "AI risk management concept in finance with warning icons, compliance alerts, and financial documents on an office desk",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/image-5-1024x683.png",
+     "file": "image-5-1024x683.png",
+     "alt": "AI risk management concept in finance with warning icons, compliance alerts, and financial documents on an office desk",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The main risks of generative AI in finance are inaccurate or weakly grounded output, data leakage, control gaps, regulatory exposure, and over-automation. A model can sound correct while being wrong, sensitive data can be exposed without strong access controls, and weak review can undermine accountability.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Hallucinations and weak grounding: A model can sound confident while still being wrong, incomplete, or out of date.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Data leakage risk: Finance teams often work with sensitive internal, customer, and transaction data that needs stronger access controls.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Control gaps: If outputs move without clear review, accountability weakens, and error risk rises.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Regulatory exposure: Financial services teams face stricter expectations around records, review, and responsible decision support.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Over-automation: The model should support a workflow, not silently replace the people responsible for the outcome.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-the-best-practices-for-generative-ai-in",
+   "kind": "article_section",
+   "label": "What Are the Best Practices for Generative AI in Finance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are the Best Practices for Generative AI in Finance?\nThe best practices for generative AI in finance are to start with high-volume, low-ambiguity work, ground the model in approved content, and keep review and ownership visible. The safest deployments use known workflows, trusted internal sources, and clear human accountability from prompt to sign-off.\nStart with High-Volume and Low-Ambiguity Work\nThe first use case should be a task where the structure is already known. Reporting support, summarisation, service drafting, and controlled document review are usually safer starting points than complex discretionary judgment.\nGround the Model in Approved Content\nFinance teams should connect models to trusted internal material wherever possible. The output becomes more reliable when the model works from current policies, approved documents, and the right permissions.\nKeep Review and Ownership Visible\nEvery workflow needs a clear owner. That includes prompt design, output review, exception handling, and sign-off. Better speed is only useful when teams can still see what changed, who checked it, and why it moved forward.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are the Best Practices for Generative AI in Finance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The best practices for generative AI in finance are to start with high-volume, low-ambiguity work, ground the model in approved content, and keep review and ownership visible. The safest deployments use known workflows, trusted internal sources, and clear human accountability from prompt to sign-off.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Start with High-Volume and Low-Ambiguity Work",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "The first use case should be a task where the structure is already known. Reporting support, summarisation, service drafting, and controlled document review are usually safer starting points than complex discretionary judgment.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Ground the Model in Approved Content",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Finance teams should connect models to trusted internal material wherever possible. The output becomes more reliable when the model works from current policies, approved documents, and the right permissions.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Keep Review and Ownership Visible",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Every workflow needs a clear owner. That includes prompt design, output review, exception handling, and sign-off. Better speed is only useful when teams can still see what changed, who checked it, and why it moved forward.",
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "article:what-trends-are-shaping-generative-ai-in-finance",
+   "kind": "article_section",
+   "label": "What Trends Are Shaping Generative AI in Finance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Trends Are Shaping Generative AI in Finance?\nThe main trends shaping generative AI in finance are more grounded workflows, more operational use, and more pressure on governance. Finance teams are moving away from broad AI experiments and toward systems tied to real work, trusted retrieval, and stricter review and control.\nMore grounded workflows: Retrieval, search, and permission-aware systems are becoming more important.\nMore operational use: Teams are applying models inside service, reporting, accounting, and analysis workflows instead of treating them as standalone demos.\nMore pressure on governance: As use expands, review discipline, traceability, and secure deployment matter more.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Trends Are Shaping Generative AI in Finance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The main trends shaping generative AI in finance are more grounded workflows, more operational use, and more pressure on governance. Finance teams are moving away from broad AI experiments and toward systems tied to real work, trusted retrieval, and stricter review and control.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "More grounded workflows: Retrieval, search, and permission-aware systems are becoming more important.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "More operational use: Teams are applying models inside service, reporting, accounting, and analysis workflows instead of treating them as standalone demos.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "More pressure on governance: As use expands, review discipline, traceability, and secure deployment matter more.",
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "article:what-is-the-future-of-generative-ai-in-finance",
+   "kind": "article_section",
+   "label": "What Is the Future of Generative AI in Finance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Is the Future of Generative AI in Finance?\nThe future of generative AI in finance will be shaped by fit, not novelty. More teams will use it in reporting, operations, service, and investment support, with the strongest systems tied to real workflows. Use cases will likely stay narrow at first. Teams will focus on tasks that are easy to measure and review, while deployment becomes more mature.\nMore Workflow-Level Integration\nGenerative AI will move deeper into the systems finance teams already use. It will not sit off to the side for long. It will be embedded in search, reporting, approval, and communication flows, making support more continuous inside daily work.\nMore Accounting and Operations Support\nAs tooling improves, more generative AI in finance and accounting use will likely appear in close support, internal documentation, working notes, and explainability around financial records. That will make it more useful in routine operational work where teams need speed, structure, and consistent first drafts.\nMore Demand for Safe Deployment\nThe more valuable these systems become, the more companies will need stronger controls around prompts, data access, review, and output quality. Safe deployment will become part of the product, not an afterthought.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Is the Future of Generative AI in Finance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The future of generative AI in finance will be shaped by fit, not novelty. More teams will use it in reporting, operations, service, and investment support, with the strongest systems tied to real workflows. Use cases will likely stay narrow at first. Teams will focus on tasks that are easy to measure and review, while deployment becomes more mature.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "More Workflow-Level Integration",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Generative AI will move deeper into the systems finance teams already use. It will not sit off to the side for long. It will be embedded in search, reporting, approval, and communication flows, making support more continuous inside daily work.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "More Accounting and Operations Support",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "As tooling improves, more generative AI in finance and accounting use will likely appear in close support, internal documentation, working notes, and explainability around financial records. That will make it more useful in routine operational work where teams need speed, structure, and consistent first drafts.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "More Demand for Safe Deployment",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "The more valuable these systems become, the more companies will need stronger controls around prompts, data access, review, and output quality. Safe deployment will become part of the product, not an afterthought.",
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "article:how-can-gogloby-help-finance-teams-use-generativ",
+   "kind": "article_section",
+   "label": "How Can GoGloby Help Finance Teams Use Generative AI Safely?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Can GoGloby Help Finance Teams Use Generative AI Safely?\nGenerative AI can improve reporting, document review, service support, and other finance workflows. But in production, value comes from control, reviewability, and fit with real operating processes, not from output volume alone. Finance teams need generative AI to work inside trusted workflows, approved data boundaries, and visible review paths.\nGoGloby helps finance organisations apply generative AI as a governed workflow capability rather than a standalone tool. The focus stays on practical finance tasks where draft output can reduce manual effort, while ownership, sign-off, and internal control remain with the team. With GoGloby, a qualified shortlist is typically delivered in 3–5 days, and a production-ready team can be embedded in under 4 weeks, which gives finance teams a faster path from experimentation to controlled rollout.\nAI Built Around Real Finance Processes\nGoGloby helps finance teams introduce generative AI into real operating workflows such as reporting support, internal knowledge retrieval, document-heavy review, service response drafting, and other text-heavy tasks. This keeps deployment tied to work that already has a clear purpose, a defined owner, and an output that can be reviewed before use. Only 4% of Applied AI engineer applicants pass GoGloby’s multi-layer assessment, which supports a higher bar for technical depth, workflow discipline, and safe AI usage in sensitive operating environments.\nWorkflow Design That Keeps Accountability Clear\nFinance work depends on clear ownership, approvals, and traceability. GoGloby helps structure generative AI workflows so prompts, outputs, edits, review steps, and escalation paths remain visible. This supports faster execution without weakening accountability in reporting, operations, or customer-facing finance processes. The Agentic Workflow is designed to eliminate ungoverned AI usage and give teams one consistent, auditable way of working from day one.\nSafer Deployment for Sensitive Financial Content\nMany finance teams work with internal records, customer information, policy material, and regulated documents. GoGloby helps organisations keep generative AI inside controlled environments with tighter access boundaries, approved content sources, and safer handling of sensitive financial information. The Secure Development Environment keeps AI-assisted work inside the client’s own perimeter with zero IP exposure, and GoGloby states that $3M in data and cyber liability coverage is included in its model.\nMeasurable Gains Inside Daily Operations\nThe goal is not to generate more text. The goal is to reduce manual effort in tasks that slow finance teams down. GoGloby helps organisations focus on measurable outcomes such as faster turnaround, lower rework, a lighter review burden, and stronger consistency. Through the Performance Center, teams get sprint-by-sprint telemetry and board-ready proof, including Agentic AI commit-rate targets of 35–45% by month 2 and 60–70% by month 6.\nGoGloby helps finance teams use generative AI in a way that is practical, reviewable, and aligned with real operating controls. This makes it easier to improve speed without weakening governance. Clients also report 4x engineering velocity and 30-40% lower engineering costs, while the core value remains governed workflow design, measurable adoption, and tighter operational control.\nRead more: AI in Finance: Best AI Use Cases, Benefits, Examples and Agentic AI in Finance: Best AI Use Cases, Benefits, Examples.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Can GoGloby Help Finance Teams Use Generative AI Safely?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Generative AI can improve reporting, document review, service support, and other finance workflows. But in production, value comes from control, reviewability, and fit with real operating processes, not from output volume alone. Finance teams need generative AI to work inside trusted workflows, approved data boundaries, and visible review paths.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby helps finance organisations apply generative AI as a governed workflow capability rather than a standalone tool. The focus stays on practical finance tasks where draft output can reduce manual effort, while ownership, sign-off, and internal control remain with the team. With GoGloby, a qualified shortlist is typically delivered in 3–5 days, and a production-ready team can be embedded in under 4 weeks, which gives finance teams a faster path from experimentation to controlled rollout.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "AI Built Around Real Finance Processes",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby helps finance teams introduce generative AI into real operating workflows such as reporting support, internal knowledge retrieval, document-heavy review, service response drafting, and other text-heavy tasks. This keeps deployment tied to work that already has a clear purpose, a defined owner, and an output that can be reviewed before use. Only 4% of Applied AI engineer applicants pass GoGloby’s multi-layer assessment, which supports a higher bar for technical depth, workflow discipline, and safe AI usage in sensitive operating environments.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Workflow Design That Keeps Accountability Clear",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Finance work depends on clear ownership, approvals, and traceability. GoGloby helps structure generative AI workflows so prompts, outputs, edits, review steps, and escalation paths remain visible. This supports faster execution without weakening accountability in reporting, operations, or customer-facing finance processes. The Agentic Workflow is designed to eliminate ungoverned AI usage and give teams one consistent, auditable way of working from day one.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Safer Deployment for Sensitive Financial Content",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Many finance teams work with internal records, customer information, policy material, and regulated documents. GoGloby helps organisations keep generative AI inside controlled environments with tighter access boundaries, approved content sources, and safer handling of sensitive financial information. The Secure Development Environment keeps AI-assisted work inside the client’s own perimeter with zero IP exposure, and GoGloby states that $3M in data and cyber liability coverage is included in its model.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Measurable Gains Inside Daily Operations",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "The goal is not to generate more text. The goal is to reduce manual effort in tasks that slow finance teams down. GoGloby helps organisations focus on measurable outcomes such as faster turnaround, lower rework, a lighter review burden, and stronger consistency. Through the Performance Center, teams get sprint-by-sprint telemetry and board-ready proof, including Agentic AI commit-rate targets of 35–45% by month 2 and 60–70% by month 6.",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby helps finance teams use generative AI in a way that is practical, reviewable, and aligned with real operating controls. This makes it easier to improve speed without weakening governance. Clients also report 4x engineering velocity and 30-40% lower engineering costs, while the core value remains governed workflow design, measurable adoption, and tighter operational control.",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Read more: AI in Finance: Best AI Use Cases, Benefits, Examples and Agentic AI in Finance: Best AI Use Cases, Benefits, Examples.",
+     "links": [
+      {
+       "href": "https://gogloby.com/case-studies/ai-use-cases-in-finance/",
+       "text": "AI in Finance: Best AI Use Cases, Benefits, Examples"
+      },
+      {
+       "href": "https://gogloby.com/case-studies/agentic-ai-use-cases-in-finance/",
+       "text": "Agentic AI in Finance: Best AI Use Cases, Benefits, Examples"
+      }
+     ],
+     "index": 8
+    }
+   ]
+  },
+  {
+   "id": "article:conclusion",
+   "kind": "article_section",
+   "label": "Conclusion",
+   "scope": "page",
+   "skipped": false,
+   "text": "Conclusion\nGenerative AI is becoming useful in finance because so much financial work depends on reading, drafting, structuring, and explaining information. That is true across financial services, banking, accounting, operations, and investment support. The strongest results usually appear in narrow, high-volume workflows where teams already know what good output looks like.\nThe path forward is practical. Start with one use case. Keep the task narrow. Ground the model in trusted content. Hold the review in place. Then scale only when speed and control improve together.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Conclusion",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Generative AI is becoming useful in finance because so much financial work depends on reading, drafting, structuring, and explaining information. That is true across financial services, banking, accounting, operations, and investment support. The strongest results usually appear in narrow, high-volume workflows where teams already know what good output looks like.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The path forward is practical. Start with one use case. Keep the task narrow. Ground the model in trusted content. Hold the review in place. Then scale only when speed and control improve together.",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "article:faqs",
+   "kind": "article_section",
+   "label": "FAQs",
+   "scope": "page",
+   "skipped": false,
+   "text": "FAQs\nWhat is generative AI in finance?\nGenerative AI in finance uses models that create summaries, drafts, explanations, and answers from financial content such as reports, documents, notes, and internal knowledge. It helps teams move faster through text-heavy work.\nWhat are the best generative AI use cases in finance?\nThe best use cases usually include reporting support, document review, customer and investor communication, internal knowledge assistance, and finance and accounting support. These tasks are easier to control and easier to review.\nHow is generative AI used in finance and accounting?\nIt is used to support close work, variance explanations, invoice and billing workflows, financial statement support, and conversational reporting. The model helps create better first drafts while people keep responsibility for review and sign-off.\nWhat are the main benefits of generative AI in finance?\nThe main benefits are faster turnaround, lower manual workload, and more consistent output. Teams can spend less time rewriting and searching and more time reviewing, deciding, and acting.\nAuthor avatar\nSergey Matikaynen / CTO\nArticle author\nSergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.\nView profile",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "FAQs",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "What is generative AI in finance?",
+     "area": "item 1",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Generative AI in finance uses models that create summaries, drafts, explanations, and answers from financial content such as reports, documents, notes, and internal knowledge. It helps teams move faster through text-heavy work.",
+     "area": "item 1",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "What are the best generative AI use cases in finance?",
+     "area": "item 1",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "The best use cases usually include reporting support, document review, customer and investor communication, internal knowledge assistance, and finance and accounting support. These tasks are easier to control and easier to review.",
+     "area": "item 1",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "How is generative AI used in finance and accounting?",
+     "area": "item 1",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "It is used to support close work, variance explanations, invoice and billing workflows, financial statement support, and conversational reporting. The model helps create better first drafts while people keep responsibility for review and sign-off.",
+     "area": "item 1",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "What are the main benefits of generative AI in finance?",
+     "area": "item 1",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "The main benefits are faster turnaround, lower manual workload, and more consistent output. Teams can spend less time rewriting and searching and more time reviewing, deciding, and acting.",
+     "area": "item 1",
+     "index": 8
+    },
+    {
+     "type": "image",
+     "text": "Author avatar",
+     "src": "https://gogloby.com/wp-content/uploads/2024/02/1706550966241.jpeg",
+     "file": "1706550966241.jpeg",
+     "alt": "Author avatar",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen / CTO",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Article author",
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "View profile",
+     "links": [
+      {
+       "href": "https://gogloby.com/author/sergey/",
+       "text": "View profile"
+      }
+     ],
+     "index": 12
+    }
+   ]
+  },
+  {
+   "id": "banner_cta",
+   "kind": "banner_cta",
+   "label": "Banner CTA",
+   "scope": "page",
+   "skipped": false,
+   "text": "Ready to Apply Generative AI in Finance Without Losing Control?\nGoGloby helps finance teams deploy generative AI in real workflows with clearer review, safer data use, and measurable operational impact.\nContact GoGloby",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Ready to Apply Generative AI in Finance Without Losing Control?",
+     "area": "block-main",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby helps finance teams deploy generative AI in real workflows with clearer review, safer data use, and measurable operational impact.",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Contact GoGloby",
+     "area": "block-aside",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "modals",
+   "kind": "modals",
+   "label": "Forms and modals",
+   "scope": "shared",
+   "skipped": false,
+   "text": "Thank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend\nThank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "site_header",
+   "kind": "site_header",
+   "label": "Site header",
+   "scope": "page",
+   "skipped": true,
+   "text": "Site logo\nSolutions\nAI Engineering Visibility\nForward Deployed Engineering\nServices\nAI Engineers Staff Augmentation\nHire AI Engineers\nAI Development Services\nGenerative AI Consulting Services\nAgentic AI Consulting Services\nAI Production Engineering\nGenerative AI Development Services\nAI Agent Development Services\nAI Custom Software Development Services\nRAG Application Development Services\nLLM Development Services\nApplication AI Modernization Services\nLegacy Application Modernization Services\nSoftware Maintenance Services\nCompany\nAbout us\nJobs\nResources\nInsights\nUse Cases\nPodcast\nContact\nTalk to Us",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Site logo",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/globy-logo-1-01.svg",
+     "file": "globy-logo-1-01.svg",
+     "alt": "Site logo",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Solutions",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineering Visibility",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/ai-engineering-visibility/",
+       "text": "AI Engineering Visibility"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Forward Deployed Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/forward-deployed-engineering/",
+       "text": "Forward Deployed Engineering"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineers Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Engineers Staff Augmentation"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "link",
+     "text": "AI Development Services",
+     "href": "https://gogloby.com/services/ai-development/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-development/",
+       "text": "AI Development Services"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-consulting/",
+       "text": "Generative AI Consulting Services"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Agentic AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/agentic-ai-consulting/",
+       "text": "Agentic AI Consulting Services"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "AI Production Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "AI Production Engineering"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "AI Agent Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-agent-development/",
+       "text": "AI Agent Development Services"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "AI Custom Software Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-custom-software-development/",
+       "text": "AI Custom Software Development Services"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "RAG Application Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/rag-application-development/",
+       "text": "RAG Application Development Services"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "LLM Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/llm-development/",
+       "text": "LLM Development Services"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "link",
+     "text": "Application AI Modernization Services",
+     "href": "https://gogloby.com/services/application-modernization/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/application-modernization/",
+       "text": "Application AI Modernization Services"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Legacy Application Modernization Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/legacy-application-modernization/",
+       "text": "Legacy Application Modernization Services"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "Software Maintenance Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/software-maintenance/",
+       "text": "Software Maintenance Services"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "Talk to Us",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "site_footer",
+   "kind": "site_footer",
+   "label": "Site footer",
+   "scope": "page",
+   "skipped": true,
+   "text": "Background logo\nServices\nApplied AI Engineering\nAI Staff Augmentation\nHire AI Engineers\nGenerative AI Development Services\nCompany\nAbout us\nJobs\nContact\nPrivacy Policy and Candidate Privacy Notice\nTerms and Conditions\nResources\nInsights\nUse Cases\nPodcast\nCase Studies\nConnections\nCrunchbase\nLinkedIn\nX\nG2\nClutch\nTrustpilot\nDesignRush\nGitHub\nFacebook\nYouTube\n© Copyright 2026, GoGloby. All Rights Reserved.",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background logo",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/logos/globy-logo-outline-1-01.svg",
+     "file": "globy-logo-outline-1-01.svg",
+     "alt": "Background logo",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Applied AI Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "Applied AI Engineering"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Staff Augmentation"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Privacy Policy and Candidate Privacy Notice",
+     "links": [
+      {
+       "href": "https://gogloby.com/privacy-policy/",
+       "text": "Privacy Policy and Candidate Privacy Notice"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Terms and Conditions",
+     "links": [
+      {
+       "href": "https://gogloby.com/terms-and-conditions/",
+       "text": "Terms and Conditions"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "Case Studies",
+     "links": [
+      {
+       "href": "https://gogloby.com/case-study/",
+       "text": "Case Studies"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Connections",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Crunchbase",
+     "links": [
+      {
+       "href": "https://www.crunchbase.com/organization/gogloby",
+       "text": "Crunchbase"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "LinkedIn",
+     "links": [
+      {
+       "href": "https://www.linkedin.com/company/gogloby/",
+       "text": "LinkedIn"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "X",
+     "links": [
+      {
+       "href": "https://x.com/GoGloby",
+       "text": "X"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "list_item",
+     "text": "G2",
+     "links": [
+      {
+       "href": "https://www.g2.com/products/gogloby/reviews",
+       "text": "G2"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Clutch",
+     "links": [
+      {
+       "href": "https://clutch.co/profile/gogloby",
+       "text": "Clutch"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Trustpilot",
+     "links": [
+      {
+       "href": "https://www.trustpilot.com/review/gogloby.com",
+       "text": "Trustpilot"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "DesignRush",
+     "links": [
+      {
+       "href": "https://www.designrush.com/agency/profile/gogloby",
+       "text": "DesignRush"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "list_item",
+     "text": "GitHub",
+     "links": [
+      {
+       "href": "https://github.com/gogloby",
+       "text": "GitHub"
+      }
+     ],
+     "index": 21
+    },
+    {
+     "type": "list_item",
+     "text": "Facebook",
+     "links": [
+      {
+       "href": "https://www.facebook.com/gogloby",
+       "text": "Facebook"
+      }
+     ],
+     "index": 22
+    },
+    {
+     "type": "list_item",
+     "text": "YouTube",
+     "links": [
+      {
+       "href": "https://www.youtube.com/@DefaultGlobal",
+       "text": "YouTube"
+      }
+     ],
+     "index": 23
+    },
+    {
+     "type": "paragraph",
+     "text": "© Copyright 2026, GoGloby. All Rights Reserved.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "related",
+   "kind": "related",
+   "label": "Related content",
+   "scope": "page",
+   "skipped": true,
+   "text": "Related News\nGenerative AI in Healthcare: Best AI Use Cases, Benefits, Examples\nGenerative AI in Healthcare: Best AI Use Cases, Benefits, Examples\nApril 7,2026\nAgentic AI in Healthcare: Best AI Use Cases, Benefits, Examples\nApril 7,2026\nAI in Healthcare: Best AI Use Cases, Benefits, Examples\nAI in Healthcare: Best AI Use Cases, Benefits, Examples\nApril 7,2026\nAgentic AI in Finance: Best AI Use Cases, Benefits, Examples\nAgentic AI in Finance: Best AI Use Cases, Benefits, Examples\nApril 6,2026\nAI in Finance: Best AI Use Cases, Benefits, Examples\nAI in Finance: Best AI Use Cases, Benefits, Examples\nApril 6,2026\nAgentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples\nAgentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples\nMarch 6,2026",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Related News",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "Generative AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/medical-artificial-intelligence-scaled.jpg",
+     "file": "medical-artificial-intelligence-scaled.jpg",
+     "alt": "Generative AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Generative AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "April 7,2026",
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Agentic AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "April 7,2026",
+     "area": "slide 2",
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2025/08/AI-use-cases-in-healthcare-scaled.png",
+     "file": "AI-use-cases-in-healthcare-scaled.png",
+     "alt": "AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 3",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "April 7,2026",
+     "area": "slide 3",
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "Agentic AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/Офісна-нарада-з-фінансовим-AI.png",
+     "file": "%D0%9E%D1%84%D1%96%D1%81%D0%BD%D0%B0-%D0%BD%D0%B0%D1%80%D0%B0%D0%B4%D0%B0-%D0%B7-%D1%84%D1%96%D0%BD%D0%B0%D0%BD%D1%81%D0%BE%D0%B2%D0%B8%D0%BC-AI.png",
+     "alt": "Agentic AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 4",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Agentic AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 4",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "April 6,2026",
+     "area": "slide 4",
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/AI-use-cases-in-Finance-scaled.webp",
+     "file": "AI-use-cases-in-Finance-scaled.webp",
+     "alt": "AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 5",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 5",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "April 6,2026",
+     "area": "slide 5",
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "Agentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2026/03/4.jpg",
+     "file": "4.jpg",
+     "alt": "Agentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 6",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Agentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 6",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "March 6,2026",
+     "area": "slide 6",
+     "index": 6
+    }
+   ]
+  }
+ ],
+ "warnings": []
+}

@@ -1,5 +1,24 @@
 [
   {
+    "id": "2026-11-05T13-18-29-815Z",
+    "started_at": "2026-11-05T13:18:29.816Z",
+    "ended_at": "2026-11-05T13:24:34.888Z",
+    "pages_checked": 13,
+    "cost_usd": 0.07969354000000001,
+    "tokens": {
+      "input": 202968,
+      "cached_input": 249724,
+      "output": 113799
+    },
+    "model": "gpt-6-luna",
+    "layers": {
+      "compliance": true,
+      "geo": true,
+      "seo": true
+    },
+    "format": 2
+  },
+  {
     "id": "2026-11-05T12-28-43-410Z",
     "started_at": "2026-11-05T12:28:43.411Z",
     "ended_at": "2026-11-05T12:28:46.282Z",

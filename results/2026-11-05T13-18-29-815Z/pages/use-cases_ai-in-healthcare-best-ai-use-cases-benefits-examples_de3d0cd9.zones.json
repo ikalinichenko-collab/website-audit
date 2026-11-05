@@ -1,0 +1,2448 @@
+{
+ "template": "article",
+ "zones": [
+  {
+   "id": "title",
+   "kind": "title",
+   "label": "Title",
+   "scope": "page",
+   "skipped": false,
+   "text": "AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "AI in Healthcare: Best AI Use Cases, Benefits, Examples"
+    }
+   ]
+  },
+  {
+   "id": "meta_description",
+   "kind": "meta_description",
+   "label": "Meta description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Learn what AI in healthcare is, how it’s used, key use cases, benefits, risks, and real examples across clinical and operational workflows.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Learn what AI in healthcare is, how it’s used, key use cases, benefits, risks, and real examples across clinical and operational workflows."
+    }
+   ]
+  },
+  {
+   "id": "og_title",
+   "kind": "og_title",
+   "label": "og:title",
+   "scope": "page",
+   "skipped": false,
+   "text": "AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "AI in Healthcare: Best AI Use Cases, Benefits, Examples"
+    }
+   ]
+  },
+  {
+   "id": "og_description",
+   "kind": "og_description",
+   "label": "og:description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Learn what AI in healthcare is, how it’s used, key use cases, benefits, risks, and real examples across clinical and operational workflows.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Learn what AI in healthcare is, how it’s used, key use cases, benefits, risks, and real examples across clinical and operational workflows."
+    }
+   ]
+  },
+  {
+   "id": "json_ld",
+   "kind": "json_ld",
+   "label": "Structured data (JSON-LD)",
+   "scope": "page",
+   "skipped": false,
+   "text": "AI in Healthcare: Best AI Use Cases, Benefits, Examples\nAI in Healthcare: Best AI Use Cases, Benefits, Examples\nLearn what AI in healthcare is, how it’s used, key use cases, benefits, risks, and real examples a\nSergey Matikaynen\nGoGloby\nWhat is AI in healthcare used for most often?\nAI in healthcare is most often used for documentation drafting, imaging support, patient messaging automation, and revenue cycle workflows where volume is high, and outputs can be reviewed. Common uses include note generation, intake routing, coding assistance, and guidance retrieval.\nHow is AI used in healthcare without increasing risk?\nAI is used safely when outputs stay in draft mode, high-impact actions require approval, access controls protect sensitive data, and monitoring detects drift. Risk stays lower when teams define a clear scope and keep humans in the loop.\nHow does AI work in healthcare for unstructured data?\nText-heavy workflows usually use NLP, LLMs, and retrieval to extract structure from notes and documents, then route results to humans for validation. These systems summarize records, extract fields, classify content, and surface relevant context.\nWhat are the biggest benefits of AI in healthcare?\nThe biggest benefits are time savings in documentation and back-office workflows, faster access to guidance, improved consistency, and scalable patient support. AI also reduces repetitive manual work and improves throughput in high-volume processes.\nWhat are the main pros and cons of AI in healthcare?\nPros include efficiency, consistency, faster processing, and better support for repetitive tasks. Cons include hallucinations, bias, privacy constraints, integration complexity, and the need for human review in sensitive decisions.",
+   "parts": [
+    {
+     "type": "field",
+     "text": "AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "area": "Article.name",
+     "index": 1
+    },
+    {
+     "type": "field",
+     "text": "AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "area": "Article.headline",
+     "index": 2
+    },
+    {
+     "type": "field",
+     "text": "Learn what AI in healthcare is, how it’s used, key use cases, benefits, risks, and real examples a",
+     "area": "Article.description",
+     "index": 3
+    },
+    {
+     "type": "field",
+     "text": "Sergey Matikaynen",
+     "area": "Person.name",
+     "index": 4
+    },
+    {
+     "type": "field",
+     "text": "GoGloby",
+     "area": "Organization.name",
+     "index": 5
+    },
+    {
+     "type": "field",
+     "text": "What is AI in healthcare used for most often?",
+     "area": "Question.name",
+     "index": 6
+    },
+    {
+     "type": "field",
+     "text": "AI in healthcare is most often used for documentation drafting, imaging support, patient messaging automation, and revenue cycle workflows where volume is high, and outputs can be reviewed. Common uses include note generation, intake routing, coding assistance, and guidance retrieval.",
+     "area": "Answer.text",
+     "index": 7
+    },
+    {
+     "type": "field",
+     "text": "How is AI used in healthcare without increasing risk?",
+     "area": "Question.name",
+     "index": 8
+    },
+    {
+     "type": "field",
+     "text": "AI is used safely when outputs stay in draft mode, high-impact actions require approval, access controls protect sensitive data, and monitoring detects drift. Risk stays lower when teams define a clear scope and keep humans in the loop.",
+     "area": "Answer.text",
+     "index": 9
+    },
+    {
+     "type": "field",
+     "text": "How does AI work in healthcare for unstructured data?",
+     "area": "Question.name",
+     "index": 10
+    },
+    {
+     "type": "field",
+     "text": "Text-heavy workflows usually use NLP, LLMs, and retrieval to extract structure from notes and documents, then route results to humans for validation. These systems summarize records, extract fields, classify content, and surface relevant context.",
+     "area": "Answer.text",
+     "index": 11
+    },
+    {
+     "type": "field",
+     "text": "What are the biggest benefits of AI in healthcare?",
+     "area": "Question.name",
+     "index": 12
+    },
+    {
+     "type": "field",
+     "text": "The biggest benefits are time savings in documentation and back-office workflows, faster access to guidance, improved consistency, and scalable patient support. AI also reduces repetitive manual work and improves throughput in high-volume processes.",
+     "area": "Answer.text",
+     "index": 13
+    },
+    {
+     "type": "field",
+     "text": "What are the main pros and cons of AI in healthcare?",
+     "area": "Question.name",
+     "index": 14
+    },
+    {
+     "type": "field",
+     "text": "Pros include efficiency, consistency, faster processing, and better support for repetitive tasks. Cons include hallucinations, bias, privacy constraints, integration complexity, and the need for human review in sensitive decisions.",
+     "area": "Answer.text",
+     "index": 15
+    }
+   ]
+  },
+  {
+   "id": "h1",
+   "kind": "h1",
+   "label": "H1",
+   "scope": "page",
+   "skipped": false,
+   "text": "AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "AI in Healthcare: Best AI Use Cases, Benefits, Examples"
+    }
+   ]
+  },
+  {
+   "id": "date",
+   "kind": "date",
+   "label": "Date",
+   "scope": "page",
+   "skipped": false,
+   "text": "Updated on June 24, 2026",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Updated on June 24, 2026"
+    }
+   ]
+  },
+  {
+   "id": "author",
+   "kind": "author",
+   "label": "Author",
+   "scope": "page",
+   "skipped": false,
+   "text": "Author avatar\nSergey Matikaynen / CTO\nArticle author\nSergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.\nView profile",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Author avatar",
+     "src": "https://gogloby.com/wp-content/uploads/2024/02/1706550966241.jpeg",
+     "file": "1706550966241.jpeg",
+     "alt": "Author avatar",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen / CTO",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Article author",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "View profile",
+     "links": [
+      {
+       "href": "https://gogloby.com/author/sergey/",
+       "text": "View profile"
+      }
+     ],
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "toc",
+   "kind": "toc",
+   "label": "Table of contents",
+   "scope": "page",
+   "skipped": false,
+   "text": "Table of Contents\nWhat Is AI in Healthcare?\nHow Is AI Used in Healthcare?\nWhat Are the Best AI Use Cases in Healthcare?\nWhat Real Examples Show AI in Healthcare Today?\nHow Does AI Work in Healthcare?\nWhat Are the Benefits of AI in Healthcare?\nWhat Are the Pros and Cons of AI in Healthcare?\nWhy Does Responsible AI in Healthcare Matter?\nWhat Is the Future of AI in Healthcare?\nHow Can GoGloby Help You Adopt AI for Healthcare?\nConclusion\nReady To Adopt AI In Healthcare Without Adding Workflow Risk?\nFAQs",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Table of Contents",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "What Is AI in Healthcare?",
+     "links": [
+      {
+       "href": "#what-is-ai-in-healthcare",
+       "text": "What Is AI in Healthcare?"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "How Is AI Used in Healthcare?",
+     "links": [
+      {
+       "href": "#how-is-ai-used-in-healthcare",
+       "text": "How Is AI Used in Healthcare?"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "What Are the Best AI Use Cases in Healthcare?",
+     "links": [
+      {
+       "href": "#what-are-the-best-ai-use-cases-in-healthcare",
+       "text": "What Are the Best AI Use Cases in Healthcare?"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "What Real Examples Show AI in Healthcare Today?",
+     "links": [
+      {
+       "href": "#what-real-examples-show-ai-in-healthcare-today",
+       "text": "What Real Examples Show AI in Healthcare Today?"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "How Does AI Work in Healthcare?",
+     "links": [
+      {
+       "href": "#how-does-ai-work-in-healthcare",
+       "text": "How Does AI Work in Healthcare?"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "What Are the Benefits of AI in Healthcare?",
+     "links": [
+      {
+       "href": "#what-are-the-benefits-of-ai-in-healthcare",
+       "text": "What Are the Benefits of AI in Healthcare?"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "What Are the Pros and Cons of AI in Healthcare?",
+     "links": [
+      {
+       "href": "#what-are-the-pros-and-cons-of-ai-in-healthcare",
+       "text": "What Are the Pros and Cons of AI in Healthcare?"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Why Does Responsible AI in Healthcare Matter?",
+     "links": [
+      {
+       "href": "#why-does-responsible-ai-in-healthcare-matter",
+       "text": "Why Does Responsible AI in Healthcare Matter?"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "What Is the Future of AI in Healthcare?",
+     "links": [
+      {
+       "href": "#what-is-the-future-of-ai-in-healthcare",
+       "text": "What Is the Future of AI in Healthcare?"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "How Can GoGloby Help You Adopt AI for Healthcare?",
+     "links": [
+      {
+       "href": "#how-can-gogloby-help-you-adopt-ai-for-healthcare",
+       "text": "How Can GoGloby Help You Adopt AI for Healthcare?"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "Conclusion",
+     "links": [
+      {
+       "href": "#conclusion",
+       "text": "Conclusion"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Ready To Adopt AI In Healthcare Without Adding Workflow Risk?",
+     "links": [
+      {
+       "href": "#ready-to-adopt-ai-in-healthcare-without-adding-workflow-risk",
+       "text": "Ready To Adopt AI In Healthcare Without Adding Workflow Risk?"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "FAQs",
+     "links": [
+      {
+       "href": "#faqs",
+       "text": "FAQs"
+      }
+     ],
+     "index": 13
+    }
+   ]
+  },
+  {
+   "id": "article:intro",
+   "kind": "article_section",
+   "label": "Intro",
+   "scope": "page",
+   "skipped": false,
+   "text": "AI in healthcare applies machine learning and generative models to streamline care workflows and reduce manual effort in clinical and administrative processes. Adoption is accelerating as providers face growing demand and tighter capacity. Grand View Research reports that the global AI in healthcare market was USD 36.67 billion in 2025 and projects it will reach USD 505.59 billion by 2033, with a 38.90 percent CAGR from 2026 to 2033.\nThis article breaks down practical AI use cases in healthcare and the metrics that define success in real workflows. It also outlines safe rollout boundaries and provides examples of AI in healthcare tied to measurable results.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "AI in healthcare applies machine learning and generative models to streamline care workflows and reduce manual effort in clinical and administrative processes. Adoption is accelerating as providers face growing demand and tighter capacity. Grand View Research reports that the global AI in healthcare market was USD 36.67 billion in 2025 and projects it will reach USD 505.59 billion by 2033, with a 38.90 percent CAGR from 2026 to 2033.",
+     "links": [
+      {
+       "href": "https://www.grandviewresearch.com/industry-analysis/artificial-intelligence-ai-healthcare-market",
+       "text": "Grand View Research"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "This article breaks down practical AI use cases in healthcare and the metrics that define success in real workflows. It also outlines safe rollout boundaries and provides examples of AI in healthcare tied to measurable results.",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "article:what-is-ai-in-healthcare",
+   "kind": "article_section",
+   "label": "What Is AI in Healthcare?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Is AI in Healthcare?\nAI in healthcare means using machine learning and generative models inside clinical and operational work. These tools help classify information, predict outcomes, summarize records, and support next steps. They learn from past examples and apply that pattern to new data. That data can include imaging, clinical notes, lab results, claims, and patient messages. This helps teams spot risk earlier, cut down manual review, and make routine output more consistent.\nMost AI solutions in healthcare fall into three practical types.\nPrediction models: Estimate risk, demand, or deterioration from structured signals.\nClassification models: Assign labels to diagnoses, documents, and images to support triage and routing.\nGenerative models: Produce drafts of notes, letters, summaries, and structured fields, with human review before approval.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Is AI in Healthcare?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI in healthcare means using machine learning and generative models inside clinical and operational work. These tools help classify information, predict outcomes, summarize records, and support next steps. They learn from past examples and apply that pattern to new data. That data can include imaging, clinical notes, lab results, claims, and patient messages. This helps teams spot risk earlier, cut down manual review, and make routine output more consistent.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Most AI solutions in healthcare fall into three practical types.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Prediction models: Estimate risk, demand, or deterioration from structured signals.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Classification models: Assign labels to diagnoses, documents, and images to support triage and routing.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Generative models: Produce drafts of notes, letters, summaries, and structured fields, with human review before approval.",
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "article:how-is-ai-used-in-healthcare",
+   "kind": "article_section",
+   "label": "How Is AI Used in Healthcare?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Is AI Used in Healthcare?\nAI in healthcare is used across clinical, operational, and research workflows based on the task, the data type, and the level of human review required before action. Clinical workflows use AI for documentation, imaging support, and triage assistance. Operational workflows use AI for contact centers, scheduling, claims, coding, audits, and compliance, while research workflows use it for trial matching and record review.\nText and Documents\nText-based AI tools work with clinical notes, referral letters, policy documents, and EOB files. Teams often use them to summarize information, pull out key fields, sort content, and draft routine text. These workflows can cut down manual review time. They also help make both admin and clinical work more consistent.\nImages\nImage-based AI tools are used in radiology and pathology workflows. They help spot patterns, flag possible problems, and sort cases before a person reviews them. Their role is usually supportive, not final. Clinical staff still make the diagnostic decision.\nVoice\nVoice-based AI tools work with clinician-patient conversations, dictation, and payer calls. They turn speech into structured text that teams can use for notes, coding, and follow-up work. This helps reduce administrative tasks after the visit. It also makes record completion faster.\nStructured Data\nStructured-data AI tools work with claims, utilization signals, staffing metrics, and other operational data. They support forecasting, routing, anomaly detection, and planning. They work best when inputs are standardized, and outputs can be checked against clear rules.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Is AI Used in Healthcare?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI in healthcare is used across clinical, operational, and research workflows based on the task, the data type, and the level of human review required before action. Clinical workflows use AI for documentation, imaging support, and triage assistance. Operational workflows use AI for contact centers, scheduling, claims, coding, audits, and compliance, while research workflows use it for trial matching and record review.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Text and Documents",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Text-based AI tools work with clinical notes, referral letters, policy documents, and EOB files. Teams often use them to summarize information, pull out key fields, sort content, and draft routine text. These workflows can cut down manual review time. They also help make both admin and clinical work more consistent.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Images",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Image-based AI tools are used in radiology and pathology workflows. They help spot patterns, flag possible problems, and sort cases before a person reviews them. Their role is usually supportive, not final. Clinical staff still make the diagnostic decision.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Voice",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Voice-based AI tools work with clinician-patient conversations, dictation, and payer calls. They turn speech into structured text that teams can use for notes, coding, and follow-up work. This helps reduce administrative tasks after the visit. It also makes record completion faster.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Structured Data",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Structured-data AI tools work with claims, utilization signals, staffing metrics, and other operational data. They support forecasting, routing, anomaly detection, and planning. They work best when inputs are standardized, and outputs can be checked against clear rules.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-the-best-ai-use-cases-in-healthcare",
+   "kind": "article_section",
+   "label": "What Are the Best AI Use Cases in Healthcare?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are the Best AI Use Cases in Healthcare?\nThe best AI use cases in healthcare concentrate on high-volume work with clear review steps and measurable outcomes. Each use case below uses a consistent format, so it stays visible when skimming.\nClinical Documentation and Patient Note Drafting\nClinical documentation automation uses AI to turn visits, conversations, and care context into notes, summaries, and follow-up items. Clinicians still review and sign everything before it becomes final. The results are usually better when the draft also uses recent visits, problem lists, medications, and past notes. That helps keep the output more consistent and cuts down on extra editing later.\nDocumentation time reduction: Clinicians spend an average of 56% less time documenting during encounters because the system captures and drafts structured notes that providers review, edit, and sign.\nClinician-facing documentation assistant: Clinicians saved an average of 5.67 minutes per encounter, while 74% reported improved patient experience and 96% rated usability positively because the copilot keeps drafting inside the workflow and preserves clinician review and final sign-off.\nCare delivery documentation at scale: AI-assisted documentation at scale supports 12,000 staff and generates real-time patient documents while structuring medical data outputs across care and operations, keeping teams aligned on consistent documentation practices.\nMedical Imaging Analysis and Screening Support\nImaging AI helps in radiology and screening by sorting cases, marking suspicious areas, and making results easier for clinicians to review. It can help teams work faster and keep the process more consistent. Results are usually better when teams track a few clear measures. These include detection rates, turnaround time, workload, and how closely different readers agree. Clinicians still make the final decision.\nHigher cancer detection in screening: The screening solution reports a 12% increase in breast cancer detection and up to 30% workload reduction, improving coverage while keeping final reads with clinicians.\nImaging copilots across radiology: Multimodal models support radiology copilots on Azure AI, and imaging copilots across radiology target measurable workload and consistency gains in a workflow where about 80% of hospital visits include at least one imaging exam.\nDigitized pathology collaboration: PathoCam speeds up digital pathology review. It cuts diagnostic time from 7–15 minutes to just a few minutes. It also reduces second-opinion wait times from days or weeks to real time.\nClinical Decision Support for Diagnostics and Triage\nHand in medical glove pointing to virtual screen medical technology\nDiagnostic AI helps with triage by pulling useful signals from symptoms, lab results, and clinical notes. It then turns that information into outputs that clinicians review before making decisions. Results tend to improve when teams set clear limits, track how fast the system returns an answer, and compare performance with outcomes checked by clinicians.\nRapid UTI diagnostics: The AMRx platform gives diagnostic results in 5 minutes. This helps teams make decisions earlier and reduces delays caused by manual interpretation.\nSymptom analysis uplift: The system is reported to perform 25% better than traditional symptom checkers. It is used to support triage, not to replace clinical judgment.\nCritical-care decision support at scale: LLM-based support helps critical care teams move faster. It is especially useful when specialist access is limited. It also supports tele-ICU decision support across more than 200 hospitals in nine states.\nRevenue Cycle Automation for Coding, Claims, and Billing Integrity\nRevenue cycle automation uses AI to pull out information, build structured drafts, and reduce manual review in coding, claims, audits, and billing work. It helps teams move through routine tasks faster. It also makes the work more consistent from one case to the next. Results are usually better when teams track error rates, time per item, and approval rates. Human sign-off still stays in place before anything is submitted.\nCoding quality improvement: The bot automates extraction and coding from medical records and reports a 40% reduction in coding errors compared to manual coding, reducing rework and downstream denials.\nEOB processing automation: AI automates EOB extraction and review, updates billing and patient records in real time, and standardizes follow-ups. The workflow delivers a 40–60% reduction in EOB processing time and saves hundreds of hours per month.\nBilling compliance expansion: The Trisus platform integrates Azure OpenAI to expand AI capabilities that reduce manual processes, reduce compliance risk, and support accurate billing.\nPatient Engagement and Contact Center Automation\nPatient engagement AI automates routine conversations, intake, and routing so staff can focus on more urgent patient needs. It helps handle common requests faster and keeps basic interactions moving. Results are usually better when teams set clear escalation rules and limit what the system can answer. It also helps to track deflection rate, response time, and resolution quality.\nReal-time contact center automation: The solution automates patient conversations at scale, and patient communication automation supports consistent routing and responses across channels while handling 50 million patient communications per month.\nIn-app patient support: AskAI chatbot handles patient inquiries and daily nudges, keeping guidance contextual to the condition while routing complex needs to clinical staff.\nBilling query deflection: The self-help bot deflects 5% of customer billing queries and provides faster support for common questions, reducing pressure on staff queues.\nResearch Operations, Trial Matching, and Medical Knowledge Access\nResearch and knowledge workflows use AI to cut down manual review. They help match patients to trials and turn large sets of documents into structured, searchable information. Results improve when retrieval stays grounded in approved sources and outputs remain reviewable by clinicians and research staff.\nTrial screening speed: AI trial matching screens 6,000 patient records monthly and generates 80% of trial enrollments before visits, improving screening throughput for oncology teams.\nResearch admin automation: At Institut Curie, which treats 56,000 patients annually, the Copilot for Researcher agent speeds up literature search and paper summarisation while handling routine coordination tasks, reducing admin load for research teams.\nGuidance search at scale: The solution provides access to more than 3,800 critical care guidance documents in real time, reports 98% response accuracy, and handles more than 800 queries per week, supporting clinical efficiency and compliance.\nPlatform Modernization for Reliable AI Delivery\nPlatform modernization helps AI work better in real systems. It improves the setup behind the scenes, makes deployments smoother, strengthens security, and keeps workflows stable as more people use them. Results are easier to manage when teams track a few clear signals. These include hosting costs, deployment speed, uptime, incident rates, and system performance under heavy use.\nLower hosting cost and faster releases: The modernization program reduced hosting costs by 35% and deployment time by 25% while sustaining 100% uptime in the U.S., which keeps production rollouts predictable under load.\nGovernance-ready scaling for clinical AI: A standardized cloud AI foundation supports secure deployment, monitoring, and responsible clinical AI observability and monitoring so teams can expand AI across workflows without breaking reliability.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are the Best AI Use Cases in Healthcare?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The best AI use cases in healthcare concentrate on high-volume work with clear review steps and measurable outcomes. Each use case below uses a consistent format, so it stays visible when skimming.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Clinical Documentation and Patient Note Drafting",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Clinical documentation automation uses AI to turn visits, conversations, and care context into notes, summaries, and follow-up items. Clinicians still review and sign everything before it becomes final. The results are usually better when the draft also uses recent visits, problem lists, medications, and past notes. That helps keep the output more consistent and cuts down on extra editing later.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Documentation time reduction: Clinicians spend an average of 56% less time documenting during encounters because the system captures and drafts structured notes that providers review, edit, and sign.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9523",
+       "text": "Documentation time reduction"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Clinician-facing documentation assistant: Clinicians saved an average of 5.67 minutes per encounter, while 74% reported improved patient experience and 96% rated usability positively because the copilot keeps drafting inside the workflow and preserves clinician review and final sign-off.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/11941",
+       "text": "Clinician-facing documentation assistant"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Care delivery documentation at scale: AI-assisted documentation at scale supports 12,000 staff and generates real-time patient documents while structuring medical data outputs across care and operations, keeping teams aligned on consistent documentation practices.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12177",
+       "text": "AI-assisted documentation at scale"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Medical Imaging Analysis and Screening Support",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Imaging AI helps in radiology and screening by sorting cases, marking suspicious areas, and making results easier for clinicians to review. It can help teams work faster and keep the process more consistent. Results are usually better when teams track a few clear measures. These include detection rates, turnaround time, workload, and how closely different readers agree. Clinicians still make the final decision.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Higher cancer detection in screening: The screening solution reports a 12% increase in breast cancer detection and up to 30% workload reduction, improving coverage while keeping final reads with clinicians.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12427",
+       "text": "Higher cancer detection in screening"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Imaging copilots across radiology: Multimodal models support radiology copilots on Azure AI, and imaging copilots across radiology target measurable workload and consistency gains in a workflow where about 80% of hospital visits include at least one imaging exam.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12429",
+       "text": "imaging copilots across radiology"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Digitized pathology collaboration: PathoCam speeds up digital pathology review. It cuts diagnostic time from 7–15 minutes to just a few minutes. It also reduces second-opinion wait times from days or weeks to real time.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9360",
+       "text": "Digitized pathology collaboration"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Clinical Decision Support for Diagnostics and Triage",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "Hand in medical glove pointing to virtual screen medical technology",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/hand-medical-glove-pointing-virtual-screen-medical-technology-1024x683.jpg",
+     "file": "hand-medical-glove-pointing-virtual-screen-medical-technology-1024x683.jpg",
+     "alt": "Hand in medical glove pointing to virtual screen medical technology",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Diagnostic AI helps with triage by pulling useful signals from symptoms, lab results, and clinical notes. It then turns that information into outputs that clinicians review before making decisions. Results tend to improve when teams set clear limits, track how fast the system returns an answer, and compare performance with outcomes checked by clinicians.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Rapid UTI diagnostics: The AMRx platform gives diagnostic results in 5 minutes. This helps teams make decisions earlier and reduces delays caused by manual interpretation.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12426",
+       "text": "Rapid UTI diagnostics"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Symptom analysis uplift: The system is reported to perform 25% better than traditional symptom checkers. It is used to support triage, not to replace clinical judgment.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/11979",
+       "text": "Symptom analysis uplift"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Critical-care decision support at scale: LLM-based support helps critical care teams move faster. It is especially useful when specialist access is limited. It also supports tele-ICU decision support across more than 200 hospitals in nine states.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/11328",
+       "text": "tele-ICU decision support"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "heading",
+     "text": "Revenue Cycle Automation for Coding, Claims, and Billing Integrity",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Revenue cycle automation uses AI to pull out information, build structured drafts, and reduce manual review in coding, claims, audits, and billing work. It helps teams move through routine tasks faster. It also makes the work more consistent from one case to the next. Results are usually better when teams track error rates, time per item, and approval rates. Human sign-off still stays in place before anything is submitted.",
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Coding quality improvement: The bot automates extraction and coding from medical records and reports a 40% reduction in coding errors compared to manual coding, reducing rework and downstream denials.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12180",
+       "text": "Coding quality improvement"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "EOB processing automation: AI automates EOB extraction and review, updates billing and patient records in real time, and standardizes follow-ups. The workflow delivers a 40–60% reduction in EOB processing time and saves hundreds of hours per month.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12265",
+       "text": "EOB processing automation"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Billing compliance expansion: The Trisus platform integrates Azure OpenAI to expand AI capabilities that reduce manual processes, reduce compliance risk, and support accurate billing.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12189",
+       "text": "Billing compliance expansion"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "heading",
+     "text": "Patient Engagement and Contact Center Automation",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Patient engagement AI automates routine conversations, intake, and routing so staff can focus on more urgent patient needs. It helps handle common requests faster and keeps basic interactions moving. Results are usually better when teams set clear escalation rules and limit what the system can answer. It also helps to track deflection rate, response time, and resolution quality.",
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Real-time contact center automation: The solution automates patient conversations at scale, and patient communication automation supports consistent routing and responses across channels while handling 50 million patient communications per month.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/11944",
+       "text": "patient communication automation supports"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "In-app patient support: AskAI chatbot handles patient inquiries and daily nudges, keeping guidance contextual to the condition while routing complex needs to clinical staff.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/11949",
+       "text": "AskAI chatbot"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "Billing query deflection: The self-help bot deflects 5% of customer billing queries and provides faster support for common questions, reducing pressure on staff queues.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9467",
+       "text": "Billing query deflection"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "heading",
+     "text": "Research Operations, Trial Matching, and Medical Knowledge Access",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Research and knowledge workflows use AI to cut down manual review. They help match patients to trials and turn large sets of documents into structured, searchable information. Results improve when retrieval stays grounded in approved sources and outputs remain reviewable by clinicians and research staff.",
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Trial screening speed: AI trial matching screens 6,000 patient records monthly and generates 80% of trial enrollments before visits, improving screening throughput for oncology teams.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12190",
+       "text": "AI trial matching"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "list_item",
+     "text": "Research admin automation: At Institut Curie, which treats 56,000 patients annually, the Copilot for Researcher agent speeds up literature search and paper summarisation while handling routine coordination tasks, reducing admin load for research teams.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12368",
+       "text": "Research admin automation"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Guidance search at scale: The solution provides access to more than 3,800 critical care guidance documents in real time, reports 98% response accuracy, and handles more than 800 queries per week, supporting clinical efficiency and compliance.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9435",
+       "text": "Guidance search at scale"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "heading",
+     "text": "Platform Modernization for Reliable AI Delivery",
+     "level": 3,
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Platform modernization helps AI work better in real systems. It improves the setup behind the scenes, makes deployments smoother, strengthens security, and keeps workflows stable as more people use them. Results are easier to manage when teams track a few clear signals. These include hosting costs, deployment speed, uptime, incident rates, and system performance under heavy use.",
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Lower hosting cost and faster releases: The modernization program reduced hosting costs by 35% and deployment time by 25% while sustaining 100% uptime in the U.S., which keeps production rollouts predictable under load.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12181",
+       "text": "Lower hosting cost and faster releases"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "Governance-ready scaling for clinical AI: A standardized cloud AI foundation supports secure deployment, monitoring, and responsible clinical AI observability and monitoring so teams can expand AI across workflows without breaking reliability.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9451",
+       "text": "clinical AI observability and monitoring"
+      }
+     ],
+     "index": 20
+    }
+   ]
+  },
+  {
+   "id": "article:what-real-examples-show-ai-in-healthcare-today",
+   "kind": "article_section",
+   "label": "What Real Examples Show AI in Healthcare Today?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Real Examples Show AI in Healthcare Today?\nAI in healthcare already shows measurable results in diagnostics, administration, reporting, emergency operations, and oncology review. These examples show that the strongest outcomes usually come from faster document handling, shorter review time, better workflow control, and more scalable support across clinical and operational teams.\nOperational Throughput Gains in High-Volume Admin Work\neClinicalWorks uses document AI to scan, sort, and match incoming faxes to the right patient files, reducing manual routing work and helping keep records current across 427 practices while processing nearly 2.2 million faxes with 75–85% matching accuracy through fax-to-record matching automation that keeps intake structured.\nProductivity Improvements That Scale Across Distributed Care Networks\nIntermountain uses a standardized cloud AI foundation with deployment monitoring and governance controls to scale clinical AI responsibly across workflows. The same approach reports 4,300 hours saved through Microsoft 365 and Copilot workflows, supported by governance-ready scaling for clinical AI that keeps deployment controlled.\nFaster Report Preparation With Fewer Manual Errors\nOperation Smile uses Azure OpenAI, Fabric, and Power Apps to reduce manual data entry in multilingual reporting workflows. The same workflow cuts translation errors by about 90% and reduces report preparation time from 4–5 hours to 15–20 minutes, using AI-supported reporting automation to improve speed and consistency.\nShorter Patient Wait Times in Emergency Workflows\nHero AI uses Azure AI Foundry and Azure OpenAI services to improve healthcare operations with a broad set of AI tools and workflow support. The solution led to a 55% decrease in patient wait times and added 200 hours of emergency room capacity, using operational AI support to improve flow and release constrained clinical capacity.\nFaster Clinical History Review for Oncology Teams\nCity of Hope uses Azure OpenAI Services to summarize extensive patient medical histories for oncology teams. The platform supported more than 150,000 patients, reduced document review time, and helped lower redundant tests, scans, and biopsies by surfacing prior results faster, using long-record summarization for oncology care to support faster clinical review.\nEasier Access to Patient Data Across Fragmented Records\nShriners Children’s developed an AI platform that helps clinicians securely navigate patient data in one place instead of searching across disconnected records. The same approach improves efficiency in care delivery by making relevant information easier to find and use inside clinical workflows, using unified patient data access to support faster navigation across fragmented records.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Real Examples Show AI in Healthcare Today?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI in healthcare already shows measurable results in diagnostics, administration, reporting, emergency operations, and oncology review. These examples show that the strongest outcomes usually come from faster document handling, shorter review time, better workflow control, and more scalable support across clinical and operational teams.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Operational Throughput Gains in High-Volume Admin Work",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "eClinicalWorks uses document AI to scan, sort, and match incoming faxes to the right patient files, reducing manual routing work and helping keep records current across 427 practices while processing nearly 2.2 million faxes with 75–85% matching accuracy through fax-to-record matching automation that keeps intake structured.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9416",
+       "text": "fax-to-record matching automation"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Productivity Improvements That Scale Across Distributed Care Networks",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Intermountain uses a standardized cloud AI foundation with deployment monitoring and governance controls to scale clinical AI responsibly across workflows. The same approach reports 4,300 hours saved through Microsoft 365 and Copilot workflows, supported by governance-ready scaling for clinical AI that keeps deployment controlled.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9451",
+       "text": "governance-ready scaling for clinical AI"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Faster Report Preparation With Fewer Manual Errors",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Operation Smile uses Azure OpenAI, Fabric, and Power Apps to reduce manual data entry in multilingual reporting workflows. The same workflow cuts translation errors by about 90% and reduces report preparation time from 4–5 hours to 15–20 minutes, using AI-supported reporting automation to improve speed and consistency.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9694",
+       "text": "AI-supported reporting automation"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Shorter Patient Wait Times in Emergency Workflows",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Hero AI uses Azure AI Foundry and Azure OpenAI services to improve healthcare operations with a broad set of AI tools and workflow support. The solution led to a 55% decrease in patient wait times and added 200 hours of emergency room capacity, using operational AI support to improve flow and release constrained clinical capacity.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9502",
+       "text": "operational AI support"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "heading",
+     "text": "Faster Clinical History Review for Oncology Teams",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "City of Hope uses Azure OpenAI Services to summarize extensive patient medical histories for oncology teams. The platform supported more than 150,000 patients, reduced document review time, and helped lower redundant tests, scans, and biopsies by surfacing prior results faster, using long-record summarization for oncology care to support faster clinical review.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9438",
+       "text": "long-record summarization for oncology care"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "heading",
+     "text": "Easier Access to Patient Data Across Fragmented Records",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Shriners Children’s developed an AI platform that helps clinicians securely navigate patient data in one place instead of searching across disconnected records. The same approach improves efficiency in care delivery by making relevant information easier to find and use inside clinical workflows, using unified patient data access to support faster navigation across fragmented records.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9626",
+       "text": "unified patient data access"
+      }
+     ],
+     "index": 9
+    }
+   ]
+  },
+  {
+   "id": "article:how-does-ai-work-in-healthcare",
+   "kind": "article_section",
+   "label": "How Does AI Work in Healthcare?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Does AI Work in Healthcare?\nAI in healthcare follows a step-by-step process. It starts with collecting data, then preparing it, running the model, and checking the output before anyone uses it in a real workflow. The best setups connect AI to live records and use the right model for the right task. People still make the final call. That part does not go away.\nData intake from healthcare systems: AI systems pull inputs from EHRs, messages, imaging, forms, and operational records before any model can act on them. PointClickCare supports this layer at scale across 200 million patients and 1 million data tables.\nData is structured and prepared for downstream use: Raw records and clinical documents need extraction and organization before they can support oncology data structuring. Ontada processed 150 million documents and unlocked 70% of previously unused data.\nTask-specific model selection: Teams match the system to the job, such as note generation or workflow assistance. Doctolib reduces consultation summarization to 15 seconds.\nAI runs inside a live workflow and produces usable output: Once deployed, the model generates drafts, summaries, guidance, or recommendations inside the process where staff already work, using workflow-embedded AI output to support real-time execution. Dynamic Health Systems reports a 71% reduction in A&E attendances.\nFeedback helps improve future output quality: Repeated use and workflow outcomes create workflow feedback loops that improve future performance. At BaptistCare, staff save 2 to 8 hours per week.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Does AI Work in Healthcare?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI in healthcare follows a step-by-step process. It starts with collecting data, then preparing it, running the model, and checking the output before anyone uses it in a real workflow. The best setups connect AI to live records and use the right model for the right task. People still make the final call. That part does not go away.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Data intake from healthcare systems: AI systems pull inputs from EHRs, messages, imaging, forms, and operational records before any model can act on them. PointClickCare supports this layer at scale across 200 million patients and 1 million data tables.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9517",
+       "text": "Data intake from healthcare systems"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Data is structured and prepared for downstream use: Raw records and clinical documents need extraction and organization before they can support oncology data structuring. Ontada processed 150 million documents and unlocked 70% of previously unused data.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9724",
+       "text": "oncology data structuring"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Task-specific model selection: Teams match the system to the job, such as note generation or workflow assistance. Doctolib reduces consultation summarization to 15 seconds.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9649",
+       "text": "Task-specific model selection"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "AI runs inside a live workflow and produces usable output: Once deployed, the model generates drafts, summaries, guidance, or recommendations inside the process where staff already work, using workflow-embedded AI output to support real-time execution. Dynamic Health Systems reports a 71% reduction in A&E attendances.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9576",
+       "text": "workflow-embedded AI output"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Feedback helps improve future output quality: Repeated use and workflow outcomes create workflow feedback loops that improve future performance. At BaptistCare, staff save 2 to 8 hours per week.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9414",
+       "text": "workflow feedback loops"
+      }
+     ],
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-the-benefits-of-ai-in-healthcare",
+   "kind": "article_section",
+   "label": "What Are the Benefits of AI in Healthcare?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are the Benefits of AI in Healthcare?\nDoctor using AI technology to analyze patient health data, enabling faster diagnosis, personalized treatment plans, and improved healthcare outcomes\nAI in healthcare improves speed, reduces manual workload, and makes routine clinical and administrative work more consistent. Its main benefits come from less documentation burden, faster operational processing, quicker access to guidance, more standardized outputs, and scalable support for common patient requests.\nLower Documentation Burden\nAI reduces documentation work by drafting notes, summaries, and structured records from existing inputs. This reduces charting time and helps clinicians spend less time on repetitive administrative tasks. The effect is strongest in workflows with heavy daily documentation volume.\nHigher Operational Throughput\nAI accelerates billing, auditing, appeals, and claims processing. It handles repetitive first-pass tasks faster than manual teams alone, which helps reduce backlogs, improve processing capacity, and keep routine administrative work moving more consistently.\nBetter Access to Guidance\nAI helps staff find the right policy, protocol, or care guidance faster. RAG systems pull answers from approved internal sources and reduce manual searching. This improves speed in workflows where accurate information must be retrieved quickly, especially when clinical literature access helps teams find and summarize medical information faster.\nImproved Consistency\nAI creates more standardized drafts and summaries across teams and shifts. This reduces variation in routine outputs and makes review easier. More consistency also supports clearer workflow control, especially in tasks such as documentation, routing, and first-pass administrative review, where teams need the same structure and level of detail every time.\nScalable Patient Support\nAI handles routine patient questions, basic triage, and routing tasks at scale. This reduces pressure on staff and improves response speed for common requests. It is most useful in high-volume support environments where AI-powered patient support helps teams respond faster without adding the same level of manual workload.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are the Benefits of AI in Healthcare?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "Doctor using AI technology to analyze patient health data, enabling faster diagnosis, personalized treatment plans, and improved healthcare outcomes",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/doctor-using-ai-technology-analyze-patient-health-data-enabling-faster-diagnosis-personalized-treatment-plans-improved-healthcare-outcomes-1024x682.jpg",
+     "file": "doctor-using-ai-technology-analyze-patient-health-data-enabling-faster-diagnosis-personalized-treatment-plans-improved-healthcare-outcomes-1024x682.jpg",
+     "alt": "Doctor using AI technology to analyze patient health data, enabling faster diagnosis, personalized treatment plans, and improved healthcare outcomes",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI in healthcare improves speed, reduces manual workload, and makes routine clinical and administrative work more consistent. Its main benefits come from less documentation burden, faster operational processing, quicker access to guidance, more standardized outputs, and scalable support for common patient requests.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Lower Documentation Burden",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "AI reduces documentation work by drafting notes, summaries, and structured records from existing inputs. This reduces charting time and helps clinicians spend less time on repetitive administrative tasks. The effect is strongest in workflows with heavy daily documentation volume.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Higher Operational Throughput",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "AI accelerates billing, auditing, appeals, and claims processing. It handles repetitive first-pass tasks faster than manual teams alone, which helps reduce backlogs, improve processing capacity, and keep routine administrative work moving more consistently.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Better Access to Guidance",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "AI helps staff find the right policy, protocol, or care guidance faster. RAG systems pull answers from approved internal sources and reduce manual searching. This improves speed in workflows where accurate information must be retrieved quickly, especially when clinical literature access helps teams find and summarize medical information faster.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/10034",
+       "text": "clinical literature access"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Improved Consistency",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "AI creates more standardized drafts and summaries across teams and shifts. This reduces variation in routine outputs and makes review easier. More consistency also supports clearer workflow control, especially in tasks such as documentation, routing, and first-pass administrative review, where teams need the same structure and level of detail every time.",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Scalable Patient Support",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "AI handles routine patient questions, basic triage, and routing tasks at scale. This reduces pressure on staff and improves response speed for common requests. It is most useful in high-volume support environments where AI-powered patient support helps teams respond faster without adding the same level of manual workload.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9554",
+       "text": "AI-powered patient support"
+      }
+     ],
+     "index": 7
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-the-pros-and-cons-of-ai-in-healthcare",
+   "kind": "article_section",
+   "label": "What Are the Pros and Cons of AI in Healthcare?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are the Pros and Cons of AI in Healthcare?\nAI in healthcare offers clear workflow gains, but those gains come with technical and governance tradeoffs. The table below shows the main advantages and limitations, focusing on speed, consistency, scalability, safety, and implementation risk.\nPros\nCons\nFaster document processing\nHallucinations in generative outputs\nMore consistent drafts\nBias risks from training data\nImproved throughput in staffing-constrained workflows\nPrivacy and data locality constraints\nBetter support for repetitive administrative tasks\nIntegration complexity with EHR systems and clinical operations\nQuicker access to relevant information and guidance\nNeed for human review in sensitive clinical and financial decisions",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are the Pros and Cons of AI in Healthcare?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI in healthcare offers clear workflow gains, but those gains come with technical and governance tradeoffs. The table below shows the main advantages and limitations, focusing on speed, consistency, scalability, safety, and implementation risk.",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Pros",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "Cons",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "Faster document processing",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "Hallucinations in generative outputs",
+     "index": 4
+    },
+    {
+     "type": "table_cell",
+     "text": "More consistent drafts",
+     "index": 5
+    },
+    {
+     "type": "table_cell",
+     "text": "Bias risks from training data",
+     "index": 6
+    },
+    {
+     "type": "table_cell",
+     "text": "Improved throughput in staffing-constrained workflows",
+     "index": 7
+    },
+    {
+     "type": "table_cell",
+     "text": "Privacy and data locality constraints",
+     "index": 8
+    },
+    {
+     "type": "table_cell",
+     "text": "Better support for repetitive administrative tasks",
+     "index": 9
+    },
+    {
+     "type": "table_cell",
+     "text": "Integration complexity with EHR systems and clinical operations",
+     "index": 10
+    },
+    {
+     "type": "table_cell",
+     "text": "Quicker access to relevant information and guidance",
+     "index": 11
+    },
+    {
+     "type": "table_cell",
+     "text": "Need for human review in sensitive clinical and financial decisions",
+     "index": 12
+    }
+   ]
+  },
+  {
+   "id": "article:why-does-responsible-ai-in-healthcare-matter",
+   "kind": "article_section",
+   "label": "Why Does Responsible AI in Healthcare Matter?",
+   "scope": "page",
+   "skipped": false,
+   "text": "Why Does Responsible AI in Healthcare Matter?\nResponsible AI in healthcare matters because model outputs can affect care decisions, billing actions, compliance exposure, and patient trust. Safe adoption depends on clear scope, protected data handling, human approval for sensitive outputs, and monitoring that keeps quality stable as workflows change.\nData Security\nHealthcare AI works with sensitive records that require secure access, clear permissions, and defined use rules. Responsible use starts with protected environments and clear boundaries for what the model can process or generate. This is especially important when secure patient data processing supports regulated clinical interpretation.\nHuman Oversight\nHealthcare teams cannot treat model output as final when it may influence treatment, reimbursement, or compliance actions. Responsible AI keeps clinicians and operations teams in the loop so drafts and recommendations are reviewed before action. In regulated workflows, human-in-the-loop governance keeps speed from replacing accountability.\nSystem Monitoring\nAI quality can drop when data changes, workflows shift, or inputs become inconsistent. Responsible AI, therefore, depends on monitoring, audit trails, and controls that make outputs easier to track and improve over time. This works better when a governance-ready system control supports oversight across 12 systems with 57% lower infrastructure costs.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Why Does Responsible AI in Healthcare Matter?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Responsible AI in healthcare matters because model outputs can affect care decisions, billing actions, compliance exposure, and patient trust. Safe adoption depends on clear scope, protected data handling, human approval for sensitive outputs, and monitoring that keeps quality stable as workflows change.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Data Security",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Healthcare AI works with sensitive records that require secure access, clear permissions, and defined use rules. Responsible use starts with protected environments and clear boundaries for what the model can process or generate. This is especially important when secure patient data processing supports regulated clinical interpretation.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12312",
+       "text": "secure patient data processing"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Human Oversight",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Healthcare teams cannot treat model output as final when it may influence treatment, reimbursement, or compliance actions. Responsible AI keeps clinicians and operations teams in the loop so drafts and recommendations are reviewed before action. In regulated workflows, human-in-the-loop governance keeps speed from replacing accountability.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9818",
+       "text": "human-in-the-loop governance"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "System Monitoring",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "AI quality can drop when data changes, workflows shift, or inputs become inconsistent. Responsible AI, therefore, depends on monitoring, audit trails, and controls that make outputs easier to track and improve over time. This works better when a governance-ready system control supports oversight across 12 systems with 57% lower infrastructure costs.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12165",
+       "text": "governance-ready system control"
+      }
+     ],
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "article:what-is-the-future-of-ai-in-healthcare",
+   "kind": "article_section",
+   "label": "What Is the Future of AI in Healthcare?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Is the Future of AI in Healthcare?\nThe future of AI in healthcare points to broader workflow use, stronger multimodal support, deeper operational forecasting, and wider use of generative tools for communication. At the same time, stricter governance and continued human review will remain essential as AI handles more repeatable tasks.\nAmbient clinical documentation will expand: More systems will turn conversations into notes and summaries. Clinical AI note automation already shows this direction with a 41% reduction in documentation time and 66 minutes saved per day.\nMultimodal AI will combine more data: Future tools will work across text, imaging, labs, and device data. This will strengthen diagnostics and care planning.\nPredictive models will move deeper into operations: More hospitals will use AI for planning and capacity decisions. AI-driven bed utilization forecasting already points in this direction.\nGenerative tools will support communication: More teams will use AI for summaries, reports, letters, and routine communication across workflows.\nGovernance requirements will become stricter: Security, auditability, approvals, and deployment controls will matter more as healthcare AI scales.\nHuman review will remain essential: AI will handle narrow, repeatable tasks, while professionals remain responsible for judgment and accountability.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Is the Future of AI in Healthcare?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The future of AI in healthcare points to broader workflow use, stronger multimodal support, deeper operational forecasting, and wider use of generative tools for communication. At the same time, stricter governance and continued human review will remain essential as AI handles more repeatable tasks.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Ambient clinical documentation will expand: More systems will turn conversations into notes and summaries. Clinical AI note automation already shows this direction with a 41% reduction in documentation time and 66 minutes saved per day.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/10051",
+       "text": "Clinical AI note automation"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Multimodal AI will combine more data: Future tools will work across text, imaging, labs, and device data. This will strengthen diagnostics and care planning.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Predictive models will move deeper into operations: More hospitals will use AI for planning and capacity decisions. AI-driven bed utilization forecasting already points in this direction.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12175",
+       "text": "AI-driven bed utilization forecasting"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Generative tools will support communication: More teams will use AI for summaries, reports, letters, and routine communication across workflows.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Governance requirements will become stricter: Security, auditability, approvals, and deployment controls will matter more as healthcare AI scales.",
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Human review will remain essential: AI will handle narrow, repeatable tasks, while professionals remain responsible for judgment and accountability.",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "article:how-can-gogloby-help-you-adopt-ai-for-healthcare",
+   "kind": "article_section",
+   "label": "How Can GoGloby Help You Adopt AI for Healthcare?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Can GoGloby Help You Adopt AI for Healthcare?\nMost healthcare teams already see where AI can improve documentation, revenue cycle workflows, patient communication, and research operations. The harder part is introducing AI into live healthcare environments without creating inconsistent output, unclear approval paths, compliance exposure, or unmanaged tool usage.\nThat is why GoGloby treats healthcare AI adoption as an Applied AI Engineering problem, not just a tooling choice. As a 4x Applied AI Engineering Partner, GoGloby helps healthcare organisations implement AI through an integrated system built around Applied AI Software Engineers, Agentic Workflow, Performance Center, and a Secure Development Environment. This approach brings AI into real workflows with stronger control, clearer accountability, and measurable performance visibility.\nApplied AI Software Engineers\nGoGloby embeds Applied AI Software Engineers directly into the client’s team, tools, and sprint structure. These are senior, production-proven engineers with certified Agentic SDLC mastery who can help introduce AI into regulated environments without turning sensitive workflows into experiments. Only 4% of applicants pass GoGloby’s multi-layer assessment, which supports a higher bar for quality and consistency from the start.\nAgentic Workflow\nGoGloby deploys a unified Agentic Workflow that standardises how AI is used across the team from day one. Instead of fragmented tool usage, healthcare organisations get one consistent and auditable process with clear review boundaries, documented changes, and stronger operational control. The workflow is built to eliminate ungoverned AI usage and support more predictable delivery within secure engineering environments.\nSecure Development Environment\nAll AI-assisted work runs inside the client’s Secure Development Environment. Prompts, outputs, code, and development activity stay inside a fully isolated setup under the client’s control, with nothing hosted on GoGloby infrastructure. This gives healthcare teams a safer foundation for AI adoption in environments where data handling, security, and compliance require tighter control.\nPerformance Center\nThe Performance Center provides sprint-by-sprint telemetry and board-ready proof showing how AI affects output, engineering velocity, quality signals, and usage patterns across the team. This helps healthcare leaders see whether faster execution is improving performance without weakening oversight. GoGloby tracks concrete adoption signals such as Agentic AI commit rate, with benchmark targets of 35–45% by month 2 and 60–70% by month 6.\nWhy Does This Model Fit Healthcare?\nHealthcare teams do not need unmanaged acceleration. They need a system that helps them introduce AI into real workflows while preserving accountability, review quality, and operational control. GoGloby provides that through embedded Applied AI Software Engineers, a standardised Agentic Workflow, a Secure Development Environment, and measurable performance visibility through the Performance Center.\nFor healthcare organisations that want AI to improve execution without destabilising clinical or operational processes, GoGloby provides a controlled path to adoption built for quality, security, and measurable performance.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Can GoGloby Help You Adopt AI for Healthcare?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Most healthcare teams already see where AI can improve documentation, revenue cycle workflows, patient communication, and research operations. The harder part is introducing AI into live healthcare environments without creating inconsistent output, unclear approval paths, compliance exposure, or unmanaged tool usage.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "That is why GoGloby treats healthcare AI adoption as an Applied AI Engineering problem, not just a tooling choice. As a 4x Applied AI Engineering Partner, GoGloby helps healthcare organisations implement AI through an integrated system built around Applied AI Software Engineers, Agentic Workflow, Performance Center, and a Secure Development Environment. This approach brings AI into real workflows with stronger control, clearer accountability, and measurable performance visibility.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Applied AI Software Engineers",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby embeds Applied AI Software Engineers directly into the client’s team, tools, and sprint structure. These are senior, production-proven engineers with certified Agentic SDLC mastery who can help introduce AI into regulated environments without turning sensitive workflows into experiments. Only 4% of applicants pass GoGloby’s multi-layer assessment, which supports a higher bar for quality and consistency from the start.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Agentic Workflow",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby deploys a unified Agentic Workflow that standardises how AI is used across the team from day one. Instead of fragmented tool usage, healthcare organisations get one consistent and auditable process with clear review boundaries, documented changes, and stronger operational control. The workflow is built to eliminate ungoverned AI usage and support more predictable delivery within secure engineering environments.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Secure Development Environment",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "All AI-assisted work runs inside the client’s Secure Development Environment. Prompts, outputs, code, and development activity stay inside a fully isolated setup under the client’s control, with nothing hosted on GoGloby infrastructure. This gives healthcare teams a safer foundation for AI adoption in environments where data handling, security, and compliance require tighter control.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Performance Center",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "The Performance Center provides sprint-by-sprint telemetry and board-ready proof showing how AI affects output, engineering velocity, quality signals, and usage patterns across the team. This helps healthcare leaders see whether faster execution is improving performance without weakening oversight. GoGloby tracks concrete adoption signals such as Agentic AI commit rate, with benchmark targets of 35–45% by month 2 and 60–70% by month 6.",
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "Why Does This Model Fit Healthcare?",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Healthcare teams do not need unmanaged acceleration. They need a system that helps them introduce AI into real workflows while preserving accountability, review quality, and operational control. GoGloby provides that through embedded Applied AI Software Engineers, a standardised Agentic Workflow, a Secure Development Environment, and measurable performance visibility through the Performance Center.",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "For healthcare organisations that want AI to improve execution without destabilising clinical or operational processes, GoGloby provides a controlled path to adoption built for quality, security, and measurable performance.",
+     "index": 8
+    }
+   ]
+  },
+  {
+   "id": "article:conclusion",
+   "kind": "article_section",
+   "label": "Conclusion",
+   "scope": "page",
+   "skipped": false,
+   "text": "Conclusion\nAI in healthcare delivers the strongest results when it is applied to high-volume, reviewable workflows with clear operational value. The most practical use cases include documentation, imaging support, diagnostics, revenue cycle work, patient communication, and knowledge access, where teams can measure speed, consistency, and quality against real workflow outcomes.\nThe long-term direction is not uncontrolled automation. It is governed by the use of AI inside clinical and administrative systems, with secure data handling, human oversight, and measurable performance. Healthcare teams that treat AI as a workflow implementation problem rather than a standalone tool decision are more likely to improve throughput without weakening accountability or trust.\nRead more: Generative AI in Healthcare: Best AI Use Cases, Benefits, Examples & Agentic AI in Healthcare: Best AI Use Cases, Benefits, Examples.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Conclusion",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI in healthcare delivers the strongest results when it is applied to high-volume, reviewable workflows with clear operational value. The most practical use cases include documentation, imaging support, diagnostics, revenue cycle work, patient communication, and knowledge access, where teams can measure speed, consistency, and quality against real workflow outcomes.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The long-term direction is not uncontrolled automation. It is governed by the use of AI inside clinical and administrative systems, with secure data handling, human oversight, and measurable performance. Healthcare teams that treat AI as a workflow implementation problem rather than a standalone tool decision are more likely to improve throughput without weakening accountability or trust.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Read more: Generative AI in Healthcare: Best AI Use Cases, Benefits, Examples & Agentic AI in Healthcare: Best AI Use Cases, Benefits, Examples.",
+     "links": [
+      {
+       "href": "https://gogloby.com/use-cases/generative-ai-in-healthcare-best-ai-use-cases-benefits-examples/",
+       "text": "Generative AI in Healthcare: Best AI Use Cases, Benefits, Examples"
+      },
+      {
+       "href": "https://gogloby.com/use-cases/agentic-ai-use-cases-in-healthcare/",
+       "text": "Agentic AI in Healthcare: Best AI Use Cases, Benefits, Examples"
+      }
+     ],
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "article:faqs",
+   "kind": "article_section",
+   "label": "FAQs",
+   "scope": "page",
+   "skipped": false,
+   "text": "FAQs\nWhat is AI in healthcare used for most often?\nAI in healthcare is most often used for documentation drafting, imaging support, patient messaging automation, and revenue cycle workflows where volume is high, and outputs can be reviewed. Common uses include note generation, intake routing, coding assistance, and guidance retrieval.\nHow is AI used in healthcare without increasing risk?\nAI is used safely when outputs stay in draft mode, high-impact actions require approval, access controls protect sensitive data, and monitoring detects drift. Risk stays lower when teams define a clear scope and keep humans in the loop.\nHow does AI work in healthcare for unstructured data?\nText-heavy workflows usually use NLP, LLMs, and retrieval to extract structure from notes and documents, then route results to humans for validation. These systems summarize records, extract fields, classify content, and surface relevant context.\nWhat are the biggest benefits of AI in healthcare?\nThe biggest benefits are time savings in documentation and back-office workflows, faster access to guidance, improved consistency, and scalable patient support. AI also reduces repetitive manual work and improves throughput in high-volume processes.\nWhat are the main pros and cons of AI in healthcare?\nPros include efficiency, consistency, faster processing, and better support for repetitive tasks. Cons include hallucinations, bias, privacy constraints, integration complexity, and the need for human review in sensitive decisions.\nAuthor avatar\nSergey Matikaynen / CTO\nArticle author\nSergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.\nView profile",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "FAQs",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "What is AI in healthcare used for most often?",
+     "area": "item 1",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI in healthcare is most often used for documentation drafting, imaging support, patient messaging automation, and revenue cycle workflows where volume is high, and outputs can be reviewed. Common uses include note generation, intake routing, coding assistance, and guidance retrieval.",
+     "area": "item 1",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "How is AI used in healthcare without increasing risk?",
+     "area": "item 1",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "AI is used safely when outputs stay in draft mode, high-impact actions require approval, access controls protect sensitive data, and monitoring detects drift. Risk stays lower when teams define a clear scope and keep humans in the loop.",
+     "area": "item 1",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "How does AI work in healthcare for unstructured data?",
+     "area": "item 1",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Text-heavy workflows usually use NLP, LLMs, and retrieval to extract structure from notes and documents, then route results to humans for validation. These systems summarize records, extract fields, classify content, and surface relevant context.",
+     "area": "item 1",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "What are the biggest benefits of AI in healthcare?",
+     "area": "item 1",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "The biggest benefits are time savings in documentation and back-office workflows, faster access to guidance, improved consistency, and scalable patient support. AI also reduces repetitive manual work and improves throughput in high-volume processes.",
+     "area": "item 1",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "What are the main pros and cons of AI in healthcare?",
+     "area": "item 1",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Pros include efficiency, consistency, faster processing, and better support for repetitive tasks. Cons include hallucinations, bias, privacy constraints, integration complexity, and the need for human review in sensitive decisions.",
+     "area": "item 1",
+     "index": 10
+    },
+    {
+     "type": "image",
+     "text": "Author avatar",
+     "src": "https://gogloby.com/wp-content/uploads/2024/02/1706550966241.jpeg",
+     "file": "1706550966241.jpeg",
+     "alt": "Author avatar",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen / CTO",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "Article author",
+     "index": 12
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.",
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "View profile",
+     "links": [
+      {
+       "href": "https://gogloby.com/author/sergey/",
+       "text": "View profile"
+      }
+     ],
+     "index": 14
+    }
+   ]
+  },
+  {
+   "id": "banner_cta",
+   "kind": "banner_cta",
+   "label": "Banner CTA",
+   "scope": "page",
+   "skipped": false,
+   "text": "Ready To Adopt AI In Healthcare Without Adding Workflow Risk?\nGoGloby can help teams implement AI through governed delivery, secure environments, and measurable operational KPIs. This keeps execution faster without weakening oversight, accountability, or review quality.\nContact GoGloby Today",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Ready To Adopt AI In Healthcare Without Adding Workflow Risk?",
+     "area": "block-main",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby can help teams implement AI through governed delivery, secure environments, and measurable operational KPIs. This keeps execution faster without weakening oversight, accountability, or review quality.",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Contact GoGloby Today",
+     "area": "block-aside",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "modals",
+   "kind": "modals",
+   "label": "Forms and modals",
+   "scope": "shared",
+   "skipped": false,
+   "text": "Thank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend\nThank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "site_header",
+   "kind": "site_header",
+   "label": "Site header",
+   "scope": "page",
+   "skipped": true,
+   "text": "Site logo\nSolutions\nAI Engineering Visibility\nForward Deployed Engineering\nServices\nAI Engineers Staff Augmentation\nHire AI Engineers\nAI Development Services\nGenerative AI Consulting Services\nAgentic AI Consulting Services\nAI Production Engineering\nGenerative AI Development Services\nAI Agent Development Services\nAI Custom Software Development Services\nRAG Application Development Services\nLLM Development Services\nApplication AI Modernization Services\nLegacy Application Modernization Services\nSoftware Maintenance Services\nCompany\nAbout us\nJobs\nResources\nInsights\nUse Cases\nPodcast\nContact\nTalk to Us",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Site logo",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/globy-logo-1-01.svg",
+     "file": "globy-logo-1-01.svg",
+     "alt": "Site logo",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Solutions",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineering Visibility",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/ai-engineering-visibility/",
+       "text": "AI Engineering Visibility"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Forward Deployed Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/forward-deployed-engineering/",
+       "text": "Forward Deployed Engineering"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineers Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Engineers Staff Augmentation"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "link",
+     "text": "AI Development Services",
+     "href": "https://gogloby.com/services/ai-development/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-development/",
+       "text": "AI Development Services"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-consulting/",
+       "text": "Generative AI Consulting Services"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Agentic AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/agentic-ai-consulting/",
+       "text": "Agentic AI Consulting Services"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "AI Production Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "AI Production Engineering"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "AI Agent Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-agent-development/",
+       "text": "AI Agent Development Services"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "AI Custom Software Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-custom-software-development/",
+       "text": "AI Custom Software Development Services"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "RAG Application Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/rag-application-development/",
+       "text": "RAG Application Development Services"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "LLM Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/llm-development/",
+       "text": "LLM Development Services"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "link",
+     "text": "Application AI Modernization Services",
+     "href": "https://gogloby.com/services/application-modernization/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/application-modernization/",
+       "text": "Application AI Modernization Services"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Legacy Application Modernization Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/legacy-application-modernization/",
+       "text": "Legacy Application Modernization Services"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "Software Maintenance Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/software-maintenance/",
+       "text": "Software Maintenance Services"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "Talk to Us",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "site_footer",
+   "kind": "site_footer",
+   "label": "Site footer",
+   "scope": "page",
+   "skipped": true,
+   "text": "Background logo\nServices\nApplied AI Engineering\nAI Staff Augmentation\nHire AI Engineers\nGenerative AI Development Services\nCompany\nAbout us\nJobs\nContact\nPrivacy Policy and Candidate Privacy Notice\nTerms and Conditions\nResources\nInsights\nUse Cases\nPodcast\nCase Studies\nConnections\nCrunchbase\nLinkedIn\nX\nG2\nClutch\nTrustpilot\nDesignRush\nGitHub\nFacebook\nYouTube\n© Copyright 2026, GoGloby. All Rights Reserved.",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background logo",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/logos/globy-logo-outline-1-01.svg",
+     "file": "globy-logo-outline-1-01.svg",
+     "alt": "Background logo",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Applied AI Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "Applied AI Engineering"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Staff Augmentation"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Privacy Policy and Candidate Privacy Notice",
+     "links": [
+      {
+       "href": "https://gogloby.com/privacy-policy/",
+       "text": "Privacy Policy and Candidate Privacy Notice"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Terms and Conditions",
+     "links": [
+      {
+       "href": "https://gogloby.com/terms-and-conditions/",
+       "text": "Terms and Conditions"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "Case Studies",
+     "links": [
+      {
+       "href": "https://gogloby.com/case-study/",
+       "text": "Case Studies"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Connections",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Crunchbase",
+     "links": [
+      {
+       "href": "https://www.crunchbase.com/organization/gogloby",
+       "text": "Crunchbase"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "LinkedIn",
+     "links": [
+      {
+       "href": "https://www.linkedin.com/company/gogloby/",
+       "text": "LinkedIn"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "X",
+     "links": [
+      {
+       "href": "https://x.com/GoGloby",
+       "text": "X"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "list_item",
+     "text": "G2",
+     "links": [
+      {
+       "href": "https://www.g2.com/products/gogloby/reviews",
+       "text": "G2"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Clutch",
+     "links": [
+      {
+       "href": "https://clutch.co/profile/gogloby",
+       "text": "Clutch"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Trustpilot",
+     "links": [
+      {
+       "href": "https://www.trustpilot.com/review/gogloby.com",
+       "text": "Trustpilot"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "DesignRush",
+     "links": [
+      {
+       "href": "https://www.designrush.com/agency/profile/gogloby",
+       "text": "DesignRush"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "list_item",
+     "text": "GitHub",
+     "links": [
+      {
+       "href": "https://github.com/gogloby",
+       "text": "GitHub"
+      }
+     ],
+     "index": 21
+    },
+    {
+     "type": "list_item",
+     "text": "Facebook",
+     "links": [
+      {
+       "href": "https://www.facebook.com/gogloby",
+       "text": "Facebook"
+      }
+     ],
+     "index": 22
+    },
+    {
+     "type": "list_item",
+     "text": "YouTube",
+     "links": [
+      {
+       "href": "https://www.youtube.com/@DefaultGlobal",
+       "text": "YouTube"
+      }
+     ],
+     "index": 23
+    },
+    {
+     "type": "paragraph",
+     "text": "© Copyright 2026, GoGloby. All Rights Reserved.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "related",
+   "kind": "related",
+   "label": "Related content",
+   "scope": "page",
+   "skipped": true,
+   "text": "Related News\nGenerative AI in Healthcare: Best AI Use Cases, Benefits, Examples\nGenerative AI in Healthcare: Best AI Use Cases, Benefits, Examples\nApril 7,2026\nAgentic AI in Healthcare: Best AI Use Cases, Benefits, Examples\nApril 7,2026\nAgentic AI in Finance: Best AI Use Cases, Benefits, Examples\nAgentic AI in Finance: Best AI Use Cases, Benefits, Examples\nApril 6,2026\nGenerative AI in Finance: Best AI Use Cases, Benefits, Examples\nGenerative AI in Finance: Best AI Use Cases, Benefits, Examples\nApril 6,2026\nAI in Finance: Best AI Use Cases, Benefits, Examples\nAI in Finance: Best AI Use Cases, Benefits, Examples\nApril 6,2026\nAgentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples\nAgentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples\nMarch 6,2026",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Related News",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "Generative AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/medical-artificial-intelligence-scaled.jpg",
+     "file": "medical-artificial-intelligence-scaled.jpg",
+     "alt": "Generative AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Generative AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "April 7,2026",
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Agentic AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "April 7,2026",
+     "area": "slide 2",
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "Agentic AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/Офісна-нарада-з-фінансовим-AI.png",
+     "file": "%D0%9E%D1%84%D1%96%D1%81%D0%BD%D0%B0-%D0%BD%D0%B0%D1%80%D0%B0%D0%B4%D0%B0-%D0%B7-%D1%84%D1%96%D0%BD%D0%B0%D0%BD%D1%81%D0%BE%D0%B2%D0%B8%D0%BC-AI.png",
+     "alt": "Agentic AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 3",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Agentic AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "April 6,2026",
+     "area": "slide 3",
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "Generative AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/Generative-AI-in-finance-2.png",
+     "file": "Generative-AI-in-finance-2.png",
+     "alt": "Generative AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 4",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Generative AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 4",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "April 6,2026",
+     "area": "slide 4",
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/AI-use-cases-in-Finance-scaled.webp",
+     "file": "AI-use-cases-in-Finance-scaled.webp",
+     "alt": "AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 5",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 5",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "April 6,2026",
+     "area": "slide 5",
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "Agentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2026/03/4.jpg",
+     "file": "4.jpg",
+     "alt": "Agentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 6",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Agentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 6",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "March 6,2026",
+     "area": "slide 6",
+     "index": 6
+    }
+   ]
+  }
+ ],
+ "warnings": []
+}

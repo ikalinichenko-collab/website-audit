@@ -86,6 +86,20 @@ export const GEO_LABELS: Record<string, string> = {
 /** GEO checks about style only: shown apart from the questions. */
 export const GEO_STYLE_KINDS = ["em_dash", "ampersand", "uk_spelling"];
 
+/** GEO code checks and site checks: their quote is the text that broke the rule. */
+const GEO_CODE_KINDS = ["home_title_exact", "trap_terms", "nearshore_not_first", "faq_present", "target_keyword_placement", "robots_ai_bots", "llms_txt", ...GEO_STYLE_KINDS];
+
+/** Questions whose "no" is about the text the model quotes (the opening, the FAQ answers). */
+const GEO_QUOTE_IS_PROBLEM = ["answer_first", "buyer_problem", "lead_with_hire", "faq_quality"];
+
+/**
+ * A "no" to a question about something the page lacks (founders' background, a comparison): the model's quote is only the
+ * nearest text, not the problem, so the finding shows where the model looked instead.
+ */
+export function isGeoAbsence(layer: string, kind: string): boolean {
+  return layer === "geo" && !GEO_CODE_KINDS.includes(kind) && !GEO_QUOTE_IS_PROBLEM.includes(kind);
+}
+
 /** Company document ids (see src/resources.ts) by how a rule names them. */
 export function ruleDocId(part: string): string | null {
   if (/^fact sheet/i.test(part)) return "fact-sheet";

@@ -76,7 +76,16 @@ function cleanQuestion(q: GeoQuestion): GeoQuestion {
   };
 }
 
-type Tried = { state: "loading" } | { state: "error"; text: string } | { state: "done"; result: GeoTryResult };
+/** The id is internal (it keys the cached answer), so a new question gets one made up and the author never types it. */
+function newQuestionId(existing: GeoQuestion[]): string {
+  const used = new Set(existing.map((q) => q.id));
+  let id: string;
+  do id = `q_${Math.random().toString(36).slice(2, 8)}`;
+  while (used.has(id) || !/^q_[a-z0-9]{6}$/.test(id));
+  return id;
+}
+
+type Tried ={ state: "loading" } | { state: "error"; text: string } | { state: "done"; result: GeoTryResult };
 
 function TryResult({ t }: { t: Tried }) {
   if (t.state === "loading") return <p className="text-sm text-slate-500">Asking the model on the live page...</p>;
@@ -186,12 +195,6 @@ export function GeoQuestionsEditor() {
               <div key={i} className="space-y-2 rounded-lg border border-slate-200 bg-white p-3 dark:border-slate-700 dark:bg-slate-900">
                 <div className="flex flex-wrap items-center gap-2">
                   <input
-                    className={`${field} w-56 font-mono`}
-                    value={q.id}
-                    placeholder="question_id"
-                    onChange={(e) => update(i, { id: e.target.value })}
-                  />
-                  <input
                     className={`${field} min-w-64 flex-1`}
                     value={q.title ?? ""}
                     placeholder="Finding title when the answer is no"
@@ -276,7 +279,7 @@ export function GeoQuestionsEditor() {
             <button
               type="button"
               className={buttonClass}
-              onClick={() => setQs([...qs, { id: "", question: "", applies_to: ["article"] }])}
+              onClick={() => setQs([...qs, { id: newQuestionId(qs), question: "", applies_to: ["article"] }])}
             >
               Add question
             </button>

@@ -1,0 +1,1726 @@
+{
+  "schema_version": 2,
+  "url": "https://gogloby.com/use-cases/ai-in-marketing/",
+  "final_url": "https://gogloby.com/use-cases/ai-in-marketing/",
+  "status": 200,
+  "title": "AI in Marketing: 20+ Use Cases, Examples & ROI | GoGloby",
+  "category": "Resources",
+  "subsection": "Use cases",
+  "profile": "article",
+  "geo_type": "article",
+  "template": "article",
+  "checked_at": "2026-11-05T13:22:27.126Z",
+  "zones": [
+    {
+      "id": "title",
+      "label": "Title",
+      "kind": "title"
+    },
+    {
+      "id": "meta_description",
+      "label": "Meta description",
+      "kind": "meta_description"
+    },
+    {
+      "id": "og_title",
+      "label": "og:title",
+      "kind": "og_title"
+    },
+    {
+      "id": "og_description",
+      "label": "og:description",
+      "kind": "og_description"
+    },
+    {
+      "id": "json_ld",
+      "label": "Structured data (JSON-LD)",
+      "kind": "json_ld"
+    },
+    {
+      "id": "h1",
+      "label": "H1",
+      "kind": "h1"
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "kind": "date"
+    },
+    {
+      "id": "author",
+      "label": "Author",
+      "kind": "author"
+    },
+    {
+      "id": "toc",
+      "label": "Table of contents",
+      "kind": "toc"
+    },
+    {
+      "id": "article:intro",
+      "label": "Intro",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-are-ai-use-cases-in-marketing",
+      "label": "What are AI use cases in Marketing?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-are-the-most-impactful-ai-in-marketing-use-",
+      "label": "What are the most impactful AI in Marketing use cases?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+      "label": "Complete map of 20+ AI use cases & categories in marketing",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:pros-and-cons-of-ai-in-marketing",
+      "label": "Pros and Cons of AI in Marketing",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:the-future-of-ai-in-marketing",
+      "label": "The Future of AI in Marketing",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:from-experimentation-to-execution-capturing-valu",
+      "label": "From Experimentation to Execution: Capturing Value from AI in Marketi…",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:about-gogloby",
+      "label": "About GoGloby",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:faq-ai-in-marketing",
+      "label": "FAQ: AI in Marketing",
+      "kind": "article_section"
+    },
+    {
+      "id": "banner_cta",
+      "label": "Banner CTA",
+      "kind": "banner_cta"
+    }
+  ],
+  "zone_warnings": [],
+  "shared_variants": [
+    "modals@1"
+  ],
+  "compliance": {
+    "hash": "48b6b6480d522fe948ef761f07208fd588c4dc542b7c4f14986b2e2202c5dc40",
+    "cached": false,
+    "action": "needs_decision",
+    "model_action": "needs_decision",
+    "summary": "The page presents GoGloby as an AI development provider and sells marketing-focused AI implementation, an offer that conflicts with its staffing and recruiting services. It also contains unsupported or inaccurate claims about guarantees and Sergey Matikaynen.",
+    "llm_problems": [
+      {
+        "title": "AI development company positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The page positions GoGloby as an AI development company offering Applied AI engineering rather than the approved staffing and recruiting agency.",
+        "fix": "Change GoGloby’s positioning to match its approved staffing and recruiting description.",
+        "subject": "GoGloby positioning",
+        "page_value": "AI development company and Applied AI Engineering",
+        "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "engineering standard behind 4x Applied AI Engineering",
+            "verified": true,
+            "reason": "This describes GoGloby through its old Applied AI Engineering positioning."
+          },
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "Applied AI Software Engineers are vetted against",
+            "verified": true,
+            "reason": "This refers to GoGloby’s engineers using an old Applied AI service framing."
+          },
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "GoGloby is an AI development company",
+            "verified": true,
+            "reason": "This directly identifies GoGloby as a development company instead of a staffing and recruiting agency."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Marketing AI development offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §2",
+        "rule_verified": true,
+        "issue": "The page offers to build and integrate marketing AI solutions, but GoGloby’s listed services are recruiting and staffing engineers, with clients running the work.",
+        "fix": "Remove the development-services offer and align the page’s offer with GoGloby’s current services.",
+        "subject": "Marketing AI development services",
+        "page_value": "Building marketing AI solutions",
+        "source_value": "US Data & AI Engineers Recruiting; Nearshore Data & AI Engineers Staffing",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 3",
+            "quote": "We solve this by embedding AI engineers, data scientists, and MLOps specialists",
+            "verified": true,
+            "reason": "This presents an embedded team as a way to build marketing solutions, rather than as GoGloby’s defined staffing service."
+          },
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 3",
+            "quote": "Every solution is built to scale, integrate with your stack, and deliver measurable ROI.",
+            "verified": true,
+            "reason": "This promises GoGloby will build and deliver solutions for clients."
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "We build gen-AI content pipelines and DCO that boost output while your voice stays consistent.",
+            "verified": true,
+            "reason": "This directly sells development of marketing content pipelines and ad optimization."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Marketing buyer audience",
+        "category": "wrong_audience",
+        "severity": "medium",
+        "rule": "Glossary §§5, 9",
+        "rule_verified": true,
+        "issue": "The page courts marketing leaders and marketing organizations rather than companies seeking to hire Data & AI Engineers.",
+        "fix": "Refocus the page’s audience on buyers seeking GoGloby’s recruiting or staffing services.",
+        "subject": "Marketing leaders and organizations",
+        "page_value": "Marketing leaders, CMOs, and growth-stage marketing organizations",
+        "source_value": "Companies hiring Data & AI Engineers",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 1",
+            "quote": "Marketing leaders are under pressure to do more with less",
+            "verified": true,
+            "reason": "This addresses marketing leaders about their marketing challenges rather than engineering hiring needs."
+          },
+          {
+            "zone_id": "article:pros-and-cons-of-ai-in-marketing",
+            "part": "paragraph 1",
+            "quote": "CMOs and growth executives can adopt AI strategically",
+            "verified": true,
+            "reason": "This addresses CMOs and growth executives seeking guidance on AI adoption."
+          },
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "martech providers, creative agencies, and growth-stage SaaS companies",
+            "verified": true,
+            "reason": "This names the audience for GoGloby’s marketing AI development offer, not its stated hiring services."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified Zero-Lock Contract",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §10",
+        "rule_verified": true,
+        "issue": "The page claims every engagement includes a Zero-Lock Contract, which is not described in the company sources.",
+        "fix": "Remove the contract claim or verify it with the company before using it.",
+        "subject": "Zero-Lock Contract",
+        "page_value": "Zero-Lock Contract",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "Every engagement comes with our Zero-Lock Contract",
+            "verified": true,
+            "reason": "This promises a contract term that the company sources do not document."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Overbroad replacement guarantee",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page promises a 120-day free replacement on every engagement, while the 120-day free replacement applies to recruiting; staffing has a different performance-based replacement and cancellation policy.",
+        "fix": "Correct the guarantee claim to distinguish the terms for recruiting and staffing.",
+        "subject": "120-day replacement guarantee",
+        "page_value": "120-Day Free-Replacement Guarantee for every engagement",
+        "source_value": "Recruiting: 120-day free replacement; staffing: performance-based replacement and cancellation within the first 120 days",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "120-Day Free-Replacement Guarantee",
+            "verified": true,
+            "reason": "The page presents the recruiting guarantee as a general guarantee for every engagement."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Cyber insurance called a guarantee",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Legal and security",
+        "rule_verified": true,
+        "issue": "The page describes $3M cyber-liability coverage as a guarantee, but the sources specify a $3M data and cyber-liability insurance policy, not a guarantee.",
+        "fix": "Correct the description to reflect the documented insurance policy rather than promising a guarantee.",
+        "subject": "$3M data and cyber-liability coverage",
+        "page_value": "$3M Cyber-Liability Guarantee",
+        "source_value": "$3M data and cyber-liability insurance policy",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "$3M Cyber-Liability Guarantee",
+            "verified": true,
+            "reason": "This labels the documented insurance coverage as a guarantee."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Sergey experience years differ",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page says Sergey Matikaynen has 16+ years of experience, while the Fact Sheet says 17 years.",
+        "fix": "Correct the experience figure to match the Fact Sheet.",
+        "subject": "Sergey Matikaynen experience",
+        "page_value": "16+ years",
+        "source_value": "17 years",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "reason": "This gives Sergey’s experience as 16+ years rather than the Fact Sheet’s 17 years."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified career geography",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page claims Sergey built and led software teams across the US, Canada, and Europe, which the sources do not state.",
+        "fix": "Remove the geographic career claim or verify it with the company.",
+        "subject": "Sergey Matikaynen career history",
+        "page_value": "US, Canada, and Europe",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "for companies across the US, Canada, and Europe",
+            "verified": true,
+            "reason": "This names regions of Sergey’s career history that are not documented in the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified Sergey Top Voice claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page calls Sergey Matikaynen a LinkedIn Top Voice, a distinction the sources do not attribute to him.",
+        "fix": "Remove the distinction or verify it with the company.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "LinkedIn Top Voice in software development",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "reason": "This attributes a LinkedIn Top Voice distinction to Sergey that the Fact Sheet does not confirm."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified certification claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: How we vet; Glossary §10",
+        "rule_verified": true,
+        "issue": "The page claims certified Agentic SDLC mastery is part of GoGloby’s assessment standard, but no such certification is documented.",
+        "fix": "Remove the certification claim or verify it with the company.",
+        "subject": "Agentic SDLC certification",
+        "page_value": "certified Agentic SDLC mastery",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "including certified Agentic SDLC mastery",
+            "verified": true,
+            "reason": "This claims a certified assessment standard that the company sources do not describe."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified marketing trend tracking",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Identity and Services",
+        "rule_verified": true,
+        "issue": "The page claims GoGloby tracks marketing shifts in real time and surfaces case studies, stacks, and results, a company capability not documented in the sources.",
+        "fix": "Remove this company capability claim or verify it with the company.",
+        "subject": "GoGloby marketing trend tracking",
+        "page_value": "Real-time tracking of marketing shifts",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:from-experimentation-to-execution-capturing-valu",
+            "part": "paragraph 3",
+            "quote": "At GoGloby, we track these shifts in real time",
+            "verified": true,
+            "reason": "This claims GoGloby provides real-time tracking of AI marketing trends, which the sources do not state."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "CTA wording does not match services",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §§2, 7",
+        "rule_verified": true,
+        "issue": "The calls to action invite buyers to discuss or start an unspecified marketing AI offer instead of using the documented hiring CTAs.",
+        "fix": "Replace these CTAs with wording appropriate to GoGloby’s recruiting or staffing services.",
+        "subject": "Calls to action",
+        "page_value": "Talk to our team; Start today",
+        "source_value": "Start a search; Get vetted profiles",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:from-experimentation-to-execution-capturing-valu",
+            "part": "paragraph 4",
+            "quote": "Talk to our team.",
+            "verified": true,
+            "reason": "This CTA invites discussion of the marketing AI implementation offer rather than a recruiting search or staffing profiles."
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 2",
+            "quote": "Start today",
+            "verified": true,
+            "reason": "This CTA directs visitors toward the outdated marketing AI development offer."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      }
+    ],
+    "problems": [
+      {
+        "title": "AI development company positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The page positions GoGloby as an AI development company offering Applied AI engineering rather than the approved staffing and recruiting agency.",
+        "fix": "Change GoGloby’s positioning to match its approved staffing and recruiting description.",
+        "subject": "GoGloby positioning",
+        "page_value": "AI development company and Applied AI Engineering",
+        "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "engineering standard behind 4x Applied AI Engineering",
+            "verified": true,
+            "reason": "This describes GoGloby through its old Applied AI Engineering positioning.",
+            "fragment": "engineering standard behind 4x Applied AI",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "Applied AI Software Engineers are vetted against",
+            "verified": true,
+            "reason": "This refers to GoGloby’s engineers using an old Applied AI service framing.",
+            "fragment": "Applied AI Software Engineers are vetted",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "GoGloby is an AI development company",
+            "verified": true,
+            "reason": "This directly identifies GoGloby as a development company instead of a staffing and recruiting agency.",
+            "fragment": "GoGloby is an AI development company",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Marketing AI development offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §2",
+        "rule_verified": true,
+        "issue": "The page offers to build and integrate marketing AI solutions, but GoGloby’s listed services are recruiting and staffing engineers, with clients running the work.",
+        "fix": "Remove the development-services offer and align the page’s offer with GoGloby’s current services.",
+        "subject": "Marketing AI development services",
+        "page_value": "Building marketing AI solutions",
+        "source_value": "US Data & AI Engineers Recruiting; Nearshore Data & AI Engineers Staffing",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 3",
+            "quote": "We solve this by embedding AI engineers, data scientists, and MLOps specialists",
+            "verified": true,
+            "reason": "This presents an embedded team as a way to build marketing solutions, rather than as GoGloby’s defined staffing service.",
+            "fragment": "We solve this by embedding AI",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 3",
+            "quote": "Every solution is built to scale, integrate with your stack, and deliver measurable ROI.",
+            "verified": true,
+            "reason": "This promises GoGloby will build and deliver solutions for clients.",
+            "fragment": "Every solution is built to scale,",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "We build gen-AI content pipelines and DCO that boost output while your voice stays consistent.",
+            "verified": true,
+            "reason": "This directly sells development of marketing content pipelines and ad optimization.",
+            "fragment": "We build gen-AI content pipelines and",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Marketing buyer audience",
+        "category": "wrong_audience",
+        "severity": "medium",
+        "rule": "Glossary §§5, 9",
+        "rule_verified": true,
+        "issue": "The page courts marketing leaders and marketing organizations rather than companies seeking to hire Data & AI Engineers.",
+        "fix": "Refocus the page’s audience on buyers seeking GoGloby’s recruiting or staffing services.",
+        "subject": "Marketing leaders and organizations",
+        "page_value": "Marketing leaders, CMOs, and growth-stage marketing organizations",
+        "source_value": "Companies hiring Data & AI Engineers",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 1",
+            "quote": "Marketing leaders are under pressure to do more with less",
+            "verified": true,
+            "reason": "This addresses marketing leaders about their marketing challenges rather than engineering hiring needs.",
+            "fragment": "Marketing leaders are under pressure to",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:pros-and-cons-of-ai-in-marketing",
+            "part": "paragraph 1",
+            "quote": "CMOs and growth executives can adopt AI strategically",
+            "verified": true,
+            "reason": "This addresses CMOs and growth executives seeking guidance on AI adoption.",
+            "fragment": "CMOs and growth executives can adopt",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "martech providers, creative agencies, and growth-stage SaaS companies",
+            "verified": true,
+            "reason": "This names the audience for GoGloby’s marketing AI development offer, not its stated hiring services.",
+            "fragment": "martech providers, creative agencies, and growth-stage",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified Zero-Lock Contract",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §10",
+        "rule_verified": true,
+        "issue": "The page claims every engagement includes a Zero-Lock Contract, which is not described in the company sources.",
+        "fix": "Remove the contract claim or verify it with the company before using it.",
+        "subject": "Zero-Lock Contract",
+        "page_value": "Zero-Lock Contract",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "Every engagement comes with our Zero-Lock Contract",
+            "verified": true,
+            "reason": "This promises a contract term that the company sources do not document.",
+            "fragment": null,
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Overbroad replacement guarantee",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page promises a 120-day free replacement on every engagement, while the 120-day free replacement applies to recruiting; staffing has a different performance-based replacement and cancellation policy.",
+        "fix": "Correct the guarantee claim to distinguish the terms for recruiting and staffing.",
+        "subject": "120-day replacement guarantee",
+        "page_value": "120-Day Free-Replacement Guarantee for every engagement",
+        "source_value": "Recruiting: 120-day free replacement; staffing: performance-based replacement and cancellation within the first 120 days",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "120-Day Free-Replacement Guarantee",
+            "verified": true,
+            "reason": "The page presents the recruiting guarantee as a general guarantee for every engagement.",
+            "fragment": null,
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Cyber insurance called a guarantee",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Legal and security",
+        "rule_verified": true,
+        "issue": "The page describes $3M cyber-liability coverage as a guarantee, but the sources specify a $3M data and cyber-liability insurance policy, not a guarantee.",
+        "fix": "Correct the description to reflect the documented insurance policy rather than promising a guarantee.",
+        "subject": "$3M data and cyber-liability coverage",
+        "page_value": "$3M Cyber-Liability Guarantee",
+        "source_value": "$3M data and cyber-liability insurance policy",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "$3M Cyber-Liability Guarantee",
+            "verified": true,
+            "reason": "This labels the documented insurance coverage as a guarantee.",
+            "fragment": null,
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Sergey experience years differ",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page says Sergey Matikaynen has 16+ years of experience, while the Fact Sheet says 17 years.",
+        "fix": "Correct the experience figure to match the Fact Sheet.",
+        "subject": "Sergey Matikaynen experience",
+        "page_value": "16+ years",
+        "source_value": "17 years",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "reason": "This gives Sergey’s experience as 16+ years rather than the Fact Sheet’s 17 years.",
+            "fragment": "He has spent 16+ years building",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified career geography",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page claims Sergey built and led software teams across the US, Canada, and Europe, which the sources do not state.",
+        "fix": "Remove the geographic career claim or verify it with the company.",
+        "subject": "Sergey Matikaynen career history",
+        "page_value": "US, Canada, and Europe",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "for companies across the US, Canada, and Europe",
+            "verified": true,
+            "reason": "This names regions of Sergey’s career history that are not documented in the Fact Sheet.",
+            "fragment": "for companies across the US, Canada,",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified Sergey Top Voice claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page calls Sergey Matikaynen a LinkedIn Top Voice, a distinction the sources do not attribute to him.",
+        "fix": "Remove the distinction or verify it with the company.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "LinkedIn Top Voice in software development",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "reason": "This attributes a LinkedIn Top Voice distinction to Sergey that the Fact Sheet does not confirm.",
+            "fragment": "He is a LinkedIn Top Voice",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified certification claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: How we vet; Glossary §10",
+        "rule_verified": true,
+        "issue": "The page claims certified Agentic SDLC mastery is part of GoGloby’s assessment standard, but no such certification is documented.",
+        "fix": "Remove the certification claim or verify it with the company.",
+        "subject": "Agentic SDLC certification",
+        "page_value": "certified Agentic SDLC mastery",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "including certified Agentic SDLC mastery",
+            "verified": true,
+            "reason": "This claims a certified assessment standard that the company sources do not describe.",
+            "fragment": "including certified Agentic SDLC",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified marketing trend tracking",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Identity and Services",
+        "rule_verified": true,
+        "issue": "The page claims GoGloby tracks marketing shifts in real time and surfaces case studies, stacks, and results, a company capability not documented in the sources.",
+        "fix": "Remove this company capability claim or verify it with the company.",
+        "subject": "GoGloby marketing trend tracking",
+        "page_value": "Real-time tracking of marketing shifts",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:from-experimentation-to-execution-capturing-valu",
+            "part": "paragraph 3",
+            "quote": "At GoGloby, we track these shifts in real time",
+            "verified": true,
+            "reason": "This claims GoGloby provides real-time tracking of AI marketing trends, which the sources do not state.",
+            "fragment": "At GoGloby, we track these shifts",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "CTA wording does not match services",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §§2, 7",
+        "rule_verified": true,
+        "issue": "The calls to action invite buyers to discuss or start an unspecified marketing AI offer instead of using the documented hiring CTAs.",
+        "fix": "Replace these CTAs with wording appropriate to GoGloby’s recruiting or staffing services.",
+        "subject": "Calls to action",
+        "page_value": "Talk to our team; Start today",
+        "source_value": "Start a search; Get vetted profiles",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:from-experimentation-to-execution-capturing-valu",
+            "part": "paragraph 4",
+            "quote": "Talk to our team.",
+            "verified": true,
+            "reason": "This CTA invites discussion of the marketing AI implementation offer rather than a recruiting search or staffing profiles.",
+            "fragment": "Talk to our",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 2",
+            "quote": "Start today",
+            "verified": true,
+            "reason": "This CTA directs visitors toward the outdated marketing AI development offer.",
+            "fragment": "Start today",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Term not used: 4x (product name)",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"4x (product name)\" is a term or name the company no longer uses.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "4x (product name)",
+        "page_value": null,
+        "source_value": null,
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "4x Applied",
+            "verified": true,
+            "fragment": "4x Applied",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faq-ai-in-marketing",
+            "part": "paragraph 19",
+            "quote": "4x Applied",
+            "verified": true,
+            "fragment": "4x Applied",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      }
+    ],
+    "usage": {
+      "input": 8023,
+      "cached_input": 10166,
+      "output": 5365
+    },
+    "error": null
+  },
+  "geo": {
+    "hash": "86965fa04cb7926c09d0575b1b8c98710fcd525bf8c93f0d09fd7b0f2107f9b8",
+    "cached": false,
+    "code": [
+      {
+        "id": "trap_terms",
+        "status": "pass",
+        "value": "none in title, H1, meta, og",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "em_dash",
+        "status": "fail",
+        "value": "56 found",
+        "places": [
+          {
+            "zone_id": "meta_description",
+            "value": "— | …gital, email, content, and B2B—what works and how to drive RO…"
+          },
+          {
+            "zone_id": "og_description",
+            "value": "— | …gital, email, content, and B2B—what works and how to drive RO…"
+          },
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "value": "— | …ss the US, Canada, and Europe — software architecture, agile …"
+          },
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 1",
+            "value": "— | … pressure to do more with less—scaling campaigns, personalizi…"
+          },
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 2",
+            "value": "— | …ck 5–15% in productivity gains—worth $463 billion annually. T…"
+          },
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 2",
+            "value": "— | …3% apply it to task automation—freeing bandwidth for strategy…"
+          },
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 3",
+            "value": "— | …imization, or sales enablement—and what measurable benefits c…"
+          },
+          {
+            "zone_id": "article:what-are-ai-use-cases-in-marketing",
+            "part": "paragraph 1",
+            "value": "— | …e cases go beyond experiments — they’re embedded into daily w…"
+          },
+          {
+            "zone_id": "article:what-are-the-most-impactful-ai-in-marketing-use-",
+            "part": "paragraph 1",
+            "value": "— | …ectly move the revenue needle — accelerating decision-making,…"
+          },
+          {
+            "zone_id": "article:what-are-the-most-impactful-ai-in-marketing-use-",
+            "part": "paragraph 3",
+            "value": "— | …ive, targeting, and analytics — not from replacing people. Wi…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 1",
+            "value": "— | …isn’t confined to experiments — it’s powering production-read…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 4",
+            "value": "— | …nes the entire creative cycle — from brainstorming and drafti…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 4",
+            "value": "— | …ting to multi-format delivery — while keeping brand voice and…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 6",
+            "value": "— | 1. Dotdigital — Dotdigital’s marketers were h…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 8",
+            "value": "— | 2. Four Agency — Serving clients across PR, di…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 9",
+            "value": "— | 3. NC Fusion — To expand its youth soccer pr…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 10",
+            "value": "— | 4. TRY — Norway’s largest communicatio…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 11",
+            "value": "— | 5. Copy.ai — B2B marketers using Copy.ai f…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 11",
+            "value": "— | …e with larger rivals. 6. Tome — Tome’s sales reps spent more …"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 14",
+            "value": "— | … every message feels relevant — without draining hours from y…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 16",
+            "value": "— | 7. Apollo — Apollo’s sales platform serve…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 17",
+            "value": "— | 8. Quillit — Market researchers at Quillit…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 18",
+            "value": "— | 9. Clay (OpenAI) — Clay set out to solve the pro…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 18",
+            "value": "— | …T-4 for both cost and accuracy—using efficient data extractio…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 18",
+            "value": "— | …he emergence of “Claygencies” — small, high-efficiency GTM te…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 21",
+            "value": "— | 10. Clay (Claude) — Building on Claygent’s founda…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 23",
+            "value": "— | … personalization, and adoption—both for customers and interna…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 24",
+            "value": "— | 11. Unify — Marketers using Unify were wa…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 27",
+            "value": "— | …personalize creative at scale — proving the tangible benefits…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 29",
+            "value": "— | 12. Dentsu — Campaign teams at Dentsu ofte…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 30",
+            "value": "— | 13. Epsilon — Epsilon’s direct-mail campaig…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 31",
+            "value": "— | 14. Power Digital — Managing data across multiple…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 32",
+            "value": "— | 15. Merkle — Brands working with Merkle ne…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 33",
+            "value": "— | 16. Yieldmo — Yieldmo’s ad exchange aimed t…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 34",
+            "value": "— | 17. Searchmetrics — SEO analysts at Searchmetrics…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 35",
+            "value": "— | 18. PwC — PwC sought to deliver persona…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 35",
+            "value": "— | …gement. 19. Lamar Advertising — The company’s billboard netwo…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 38",
+            "value": "— | …t, and protect brand identity — while delivering measurable i…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 40",
+            "value": "— | 20. Advolve — Advolve, a B2B SaaS company, …"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 43",
+            "value": "— | 21. Brand.ai — Brand.ai transforms static br…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 46",
+            "value": "— | …se tools go beyond efficiency — they help marketing teams str…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 48",
+            "value": "— | 22. CIPIO.ai — Brands wanted to tap their co…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 51",
+            "value": "— | 23. Local Falcon — Agencies managing local SEO n…"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "paragraph 54",
+            "value": "— | 24. Tweet Hunter — Social media managers need to…"
+          },
+          {
+            "zone_id": "article:pros-and-cons-of-ai-in-marketing",
+            "part": "paragraph 1",
+            "value": "— | …I in marketing are compelling — faster campaign cycles, sharp…"
+          },
+          {
+            "zone_id": "article:pros-and-cons-of-ai-in-marketing",
+            "part": "paragraph 1",
+            "value": "— | … and personalization at scale — but there are also risks lead…"
+          },
+          {
+            "zone_id": "article:pros-and-cons-of-ai-in-marketing",
+            "part": "paragraph 2",
+            "value": "— | … upside isn’t just efficiency — it’s faster speed to market, …"
+          },
+          {
+            "zone_id": "article:the-future-of-ai-in-marketing",
+            "part": "paragraph 1",
+            "value": "— | … optimize marketing workflows — it will run large portions of…"
+          },
+          {
+            "zone_id": "article:the-future-of-ai-in-marketing",
+            "part": "paragraph 2",
+            "value": "— | …yper-personalization at scale — AI that dynamically tailors c…"
+          },
+          {
+            "zone_id": "article:the-future-of-ai-in-marketing",
+            "part": "paragraph 7",
+            "value": "— | …0, AI won’t just reduce costs — it will unlock new revenue st…"
+          },
+          {
+            "zone_id": "article:from-experimentation-to-execution-capturing-valu",
+            "part": "paragraph 1",
+            "value": "— | …imenting with AI in marketing — they’re embedding it at the c…"
+          },
+          {
+            "zone_id": "article:from-experimentation-to-execution-capturing-valu",
+            "part": "paragraph 2",
+            "value": "— | …llenge isn’t finding examples — it’s choosing the AI use case…"
+          },
+          {
+            "zone_id": "article:from-experimentation-to-execution-capturing-valu",
+            "part": "paragraph 4",
+            "value": "— | …o embedded marketing workflows—content, analytics, sales, and…"
+          },
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 2",
+            "value": "— | …but fail to operationalize it — a barrier two-thirds of compa…"
+          },
+          {
+            "zone_id": "article:faq-ai-in-marketing",
+            "part": "paragraph 14",
+            "value": "— | …rs also face a learning curve — balancing the speed of AI-gen…"
+          },
+          {
+            "zone_id": "article:faq-ai-in-marketing",
+            "part": "paragraph 19",
+            "value": "— | …ss the US, Canada, and Europe — software architecture, agile …"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "ampersand",
+        "status": "fail",
+        "value": "23 found",
+        "places": [
+          {
+            "zone_id": "title",
+            "value": "& | …ting: 20+ Use Cases, Examples & ROI | GoGloby"
+          },
+          {
+            "zone_id": "og_title",
+            "value": "& | …ting: 20+ Use Cases, Examples & ROI | GoGloby"
+          },
+          {
+            "zone_id": "h1",
+            "value": "& | …I in Marketing: 20+ Use Cases & Case Studies in 2025"
+          },
+          {
+            "zone_id": "article:what-are-the-most-impactful-ai-in-marketing-use-",
+            "part": "table_cell 4",
+            "value": "& | Generative AI for Content & Campaign Creation",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:what-are-the-most-impactful-ai-in-marketing-use-",
+            "part": "table_cell 7",
+            "value": "& | AI-Driven Sales & Outreach Automation",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:what-are-the-most-impactful-ai-in-marketing-use-",
+            "part": "table_cell 10",
+            "value": "& | AI for Marketing Analytics & Optimization",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:what-are-the-most-impactful-ai-in-marketing-use-",
+            "part": "table_cell 13",
+            "value": "& | AI in Brand & Advertising Automation",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:what-are-the-most-impactful-ai-in-marketing-use-",
+            "part": "table_cell 16",
+            "value": "& | AI for Social Engagement & Community Growth",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "heading 1",
+            "value": "& | …plete map of 20+ AI use cases & categories in marketing"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "table_cell 3",
+            "value": "& | 1. Generative AI for Content & Campaign Creation",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "table_cell 5",
+            "value": "& | 2. AI-Driven Sales & Outreach Automation",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "table_cell 7",
+            "value": "& | 3. AI for Marketing Analytics & Optimization",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "table_cell 9",
+            "value": "& | 4. AI in Brand & Advertising Automation",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "table_cell 11",
+            "value": "& | 5. AI for Social Engagement & Community Growth",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "heading 2",
+            "value": "& | 1. Generative AI for Content & Campaign Creation"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "heading 3",
+            "value": "& | 2. AI-Driven Sales & Outreach Automation"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "heading 4",
+            "value": "& | 3. AI for Marketing Analytics & Optimization"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "heading 5",
+            "value": "& | 4. AI in Brand & Advertising Automation"
+          },
+          {
+            "zone_id": "article:complete-map-of-20-ai-use-cases-categories-in-ma",
+            "part": "heading 6",
+            "value": "& | 5. AI for Social Engagement & Community Growth"
+          },
+          {
+            "zone_id": "article:the-future-of-ai-in-marketing",
+            "part": "heading 2",
+            "value": "& | Generative AI for Content & Personalization"
+          },
+          {
+            "zone_id": "article:the-future-of-ai-in-marketing",
+            "part": "heading 3",
+            "value": "& | AI-Driven Marketing Analytics & ROI Optimization"
+          },
+          {
+            "zone_id": "article:the-future-of-ai-in-marketing",
+            "part": "heading 4",
+            "value": "& | AI for Social & Community Engagement"
+          },
+          {
+            "zone_id": "article:the-future-of-ai-in-marketing",
+            "part": "heading 5",
+            "value": "& | Brand Integrity & Compliance Automation"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "uk_spelling",
+        "status": "pass",
+        "value": "none",
+        "places": [],
+        "severity": "low"
+      }
+    ],
+    "llm": [
+      {
+        "id": "answer_first",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "Marketing leaders are under pressure to do more with less—scaling campaigns, personalizing outreach, and proving ROI while budgets stay flat.",
+        "note": "The opening describes pressure on marketing leaders but does not answer the H1 by summarizing the use cases and case studies.",
+        "fix": "Rewrite the first two sentences to directly answer the H1 with a concise summary of the article’s use cases and case studies.",
+        "evidence_verified": true,
+        "title": "Opening does not answer the H1",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "ae116d61a34bd50f9e3cc24099c82d91003524581ed6285dfc9d09b66bf9431d",
+        "fragment": "Marketing leaders are under pressure to"
+      },
+      {
+        "id": "recruiting_firm_early",
+        "answer": "na",
+        "value": null,
+        "zone_id": "page",
+        "evidence": null,
+        "note": "This article covers AI in marketing use cases rather than recruiting.",
+        "fix": null,
+        "evidence_verified": null,
+        "title": "Does not say early that GoGloby is a recruiting firm",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "4ae927c73ee71cbadf6cb5af66d976cf082e39ce59f5b355fb01ec1351acd056"
+      },
+      {
+        "id": "buyer_ready",
+        "answer": "no",
+        "value": "informational",
+        "zone_id": "page",
+        "evidence": "In this guide, we’ll explore 20+ AI in marketing use cases and examples, from content creation and email marketing to B2B lead generation and automation.",
+        "note": "The page is an informational guide for marketing audiences, not content for companies ready to hire Data and AI engineers.",
+        "fix": "Rework the page to address companies ready to hire Data and AI engineers rather than readers seeking AI marketing use cases.",
+        "evidence_verified": true,
+        "title": "Not written for buyers ready to hire",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "9326b1f86957acfac4a1549dd4cdd842d52b3fa5657ec4b6321099fcaf6c9e59",
+        "fragment": "AI in,-Marketing: 20+ Use"
+      },
+      {
+        "id": "target_keyword",
+        "answer": "na",
+        "value": null,
+        "zone_id": "page",
+        "evidence": null,
+        "note": "None of the target terms in Glossary §6 matches this AI marketing use-cases article.",
+        "fix": null,
+        "evidence_verified": null,
+        "title": "No matching search term",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "df230fc8572952d1f1c8e9120a5523a2d9c7eee402bad37295330e742129e52b"
+      },
+      {
+        "id": "uses_data",
+        "answer": "yes",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "McKinsey estimates that applying generative AI in marketing could unlock 5–15% in productivity gains—worth $463 billion annually.",
+        "note": "The article gives quotable figures and attributes this estimate to McKinsey nearby.",
+        "fix": null,
+        "evidence_verified": true,
+        "title": "No quotable data",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "52991f5470042b679c0dd8d7f6a80d1e1ca138995a4f8b037bb19c60405a821f",
+        "fragment": "AI in,-Marketing: 20+ Use"
+      },
+      {
+        "id": "proof_background",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:about-gogloby",
+        "evidence": "GoGloby is an AI development company that helps martech providers, creative agencies, and growth-stage SaaS companies move from AI pilot to market-ready solutions faster, secure, and with measurable ROI.",
+        "note": "The company description does not use its Data Science and engineering-team background as proof.",
+        "fix": "Add GoGloby’s Data Science and engineering-team background as proof of its expertise.",
+        "evidence_verified": true,
+        "title": "Does not use founders' background as proof",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "08a13b69b095d53ab7d7914d0a6db349f69ab590b981f0234522b39014bc9a10",
+        "fragment": "GoGloby is an AI development company"
+      },
+      {
+        "id": "sell_against_open_role",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:about-gogloby",
+        "evidence": "We embed AI engineering teams with marketing domain expertise directly into your organization, ensuring rapid delivery and seamless collaboration.",
+        "note": "The page describes embedded teams but does not compare GoGloby with the cost and wait of an open full-time US role.",
+        "fix": "Add a comparison with the cost and hiring timeline of an open full-time US role.",
+        "evidence_verified": true,
+        "title": "Does not compare with an open full-time role",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "0f3017b469258ffb9086f3516de6eef2398ca1233d7c29e07d205d2b345fe4f6",
+        "fragment": "We embed AI engineering teams with"
+      }
+    ],
+    "placement": null,
+    "usage": {
+      "input": 7217,
+      "cached_input": 8950,
+      "output": 1627
+    },
+    "error": null
+  },
+  "seo": {
+    "checks": [
+      {
+        "id": "http_status",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "200",
+        "severity": "high"
+      },
+      {
+        "id": "title_length",
+        "status": "pass",
+        "zone_id": "title",
+        "value": "56 characters",
+        "severity": "medium"
+      },
+      {
+        "id": "meta_present",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "119 characters",
+        "severity": "high"
+      },
+      {
+        "id": "meta_length",
+        "status": "fail",
+        "zone_id": "meta_description",
+        "value": "119 characters (120-158)",
+        "severity": "low"
+      },
+      {
+        "id": "h1_count",
+        "status": "pass",
+        "zone_id": "h1",
+        "value": "1",
+        "severity": "high"
+      },
+      {
+        "id": "title_h1_match",
+        "status": "pass",
+        "zone_id": "title",
+        "value": "Title and H1 agree",
+        "severity": "low"
+      },
+      {
+        "id": "canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "https://gogloby.com/use-cases/ai-in-marketing/",
+        "severity": "high"
+      },
+      {
+        "id": "indexable",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "severity": "high"
+      },
+      {
+        "id": "schema_required",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "present",
+        "severity": "medium"
+      },
+      {
+        "id": "schema_recommended",
+        "status": "fail",
+        "zone_id": "json_ld",
+        "value": "missing: BreadcrumbList",
+        "severity": "medium"
+      },
+      {
+        "id": "author",
+        "status": "pass",
+        "zone_id": "author",
+        "value": "Sergey Matikaynen",
+        "severity": "medium"
+      },
+      {
+        "id": "dates",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "published: 2025-08-21T01:19:33+03:00; modified: 2026-06-24T11:47:15+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "date_mismatch",
+        "status": "pass",
+        "zone_id": "date",
+        "value": "visible \"Updated on June 24, 2026\" vs dateModified 2026-06-24T11:47:15+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "broken_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "2 checked",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "redirecting_internal_links",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "1 redirect",
+        "places": [
+          {
+            "zone_id": "article:from-experimentation-to-execution-capturing-valu",
+            "part": "paragraph 4",
+            "value": "https://gogloby.com/services/claude-in-production/ -> https://gogloby.com/services/applied-ai-engineering/"
+          }
+        ],
+        "severity": "medium"
+      },
+      {
+        "id": "link_to_services",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "yes",
+        "severity": "medium"
+      },
+      {
+        "id": "alt_missing",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without alt",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_empty",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 with empty alt",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "image_dimensions",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "2 without width/height",
+        "places": [
+          {
+            "zone_id": "author",
+            "part": "image 1",
+            "value": "1706550966241.jpeg"
+          },
+          {
+            "zone_id": "article:faq-ai-in-marketing",
+            "part": "image 1",
+            "value": "1706550966241.jpeg"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "heading_order",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "og_present",
+        "status": "pass",
+        "zone_id": "og_title",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "og_url_canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "og:url https://gogloby.com/use-cases/ai-in-marketing/ vs canonical https://gogloby.com/use-cases/ai-in-marketing/",
+        "severity": "low"
+      },
+      {
+        "id": "twitter_card",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "summary_large_image",
+        "severity": "low"
+      },
+      {
+        "id": "html_lang",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "en-US",
+        "severity": "low"
+      },
+      {
+        "id": "viewport",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "jsonld_valid",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "4 block(s)",
+        "severity": "high"
+      },
+      {
+        "id": "article_fields",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "anchors_resolve",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "15 checked",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "faq_schema_matches_dom",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "accordion block: true, FAQPage schema: true",
+        "severity": "low"
+      }
+    ]
+  }
+}

@@ -1,0 +1,482 @@
+{
+  "schema_version": 2,
+  "pages": [
+    {
+      "slug": "use-cases_agentic-ai-use-cases-in-cybersecurity_1ba30271",
+      "url": "https://gogloby.com/use-cases/agentic-ai-use-cases-in-cybersecurity/",
+      "title": "Agentic AI in Cybersecurity: Use Cases and Examples",
+      "group": "Resources",
+      "subsection": "Use cases",
+      "profile": "article",
+      "template": "article",
+      "action": "fix",
+      "summary": "The article’s GoGloby section promotes agentic AI design and delivery through an integrated engineering system, an offer not listed in the company documents. It also contains outdated product names, unsupported company and author claims, and a CTA that does not use the approved service wording.",
+      "compliance": {
+        "high": 3,
+        "medium": 8,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 6,
+        "high": 0,
+        "medium": 4,
+        "low": 2,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 0
+      },
+      "checked_at": "2026-11-05T13:19:50.343Z"
+    },
+    {
+      "slug": "use-cases_agentic-ai-use-cases-in-finance_67a3b751",
+      "url": "https://gogloby.com/use-cases/agentic-ai-use-cases-in-finance/",
+      "title": "Agentic AI in Finance: Best AI Use Cases, Benefits",
+      "group": "Resources",
+      "subsection": "Use cases",
+      "profile": "article",
+      "template": "article",
+      "action": "fix",
+      "summary": "The article’s finance use-case content can remain, but its GoGloby section presents implementation services and tools that are not among the company’s recruiting and staffing offers. It also makes unverified claims about timelines, security, performance, and the founder’s credentials.",
+      "compliance": {
+        "high": 4,
+        "medium": 12,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 6,
+        "high": 0,
+        "medium": 4,
+        "low": 2,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 0
+      },
+      "checked_at": "2026-11-05T13:21:43.145Z"
+    },
+    {
+      "slug": "use-cases_agentic-ai-use-cases-in-healthcare_4a7fb8d7",
+      "url": "https://gogloby.com/use-cases/agentic-ai-use-cases-in-healthcare/",
+      "title": "Agentic AI in Healthcare: Best AI Use Cases, Benefits",
+      "group": "Resources",
+      "subsection": "Use cases",
+      "profile": "article",
+      "template": "article",
+      "action": "fix",
+      "summary": "The article’s healthcare use-case content is not the main issue; its GoGloby section presents the company as an AI implementation provider with a bundled engineering and software offering. Remove or replace that positioning and correct the unsupported product, security, credential, and performance claims.",
+      "compliance": {
+        "high": 2,
+        "medium": 11,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 7,
+        "high": 0,
+        "medium": 4,
+        "low": 3,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 0
+      },
+      "checked_at": "2026-11-05T13:22:21.858Z"
+    },
+    {
+      "slug": "use-cases_ai-in-customer-experience_de23800b",
+      "url": "https://gogloby.com/use-cases/ai-in-customer-experience/",
+      "title": "AI in Customer Experience: 20+ Use Cases 2025 | GoGloby",
+      "group": "Resources",
+      "subsection": "Use cases",
+      "profile": "article",
+      "template": "article",
+      "action": "fix",
+      "summary": "The article’s About GoGloby block and CTA sell AI implementation squads for CX BPO providers, rather than GoGloby’s documented Data & AI recruiting and staffing services. The page also contains unsupported or conflicting claims about guarantees, security coverage, timelines, and the author’s credentials.",
+      "compliance": {
+        "high": 5,
+        "medium": 11,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 7,
+        "high": 0,
+        "medium": 4,
+        "low": 3,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 0
+      },
+      "checked_at": "2026-11-05T13:20:01.444Z"
+    },
+    {
+      "slug": "use-cases_ai-in-ecommerce_05360e33",
+      "url": "https://gogloby.com/use-cases/ai-in-ecommerce/",
+      "title": "AI in eCommerce: Use Cases, Tools & Future Trends | GoGloby",
+      "group": "Resources",
+      "subsection": "Use cases",
+      "profile": "article",
+      "template": "article",
+      "action": "fix",
+      "summary": "The article presents GoGloby as an AI development company that delivers eCommerce solutions, rather than a staffing and recruiting agency. It also contains unsupported founder claims, promises an outdated development offer, targets retail audiences outside the stated ICP, and uses CTAs that do not match the approved wording.",
+      "compliance": {
+        "high": 5,
+        "medium": 5,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 8,
+        "high": 0,
+        "medium": 5,
+        "low": 3,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 0
+      },
+      "checked_at": "2026-11-05T13:23:29.834Z"
+    },
+    {
+      "slug": "use-cases_ai-in-healthcare-best-ai-use-cases-benefits-examples_de3d0cd9",
+      "url": "https://gogloby.com/use-cases/ai-in-healthcare-best-ai-use-cases-benefits-examples/",
+      "title": "AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+      "group": "Resources",
+      "subsection": "Use cases",
+      "profile": "article",
+      "template": "article",
+      "action": "fix",
+      "summary": "The healthcare promotion presents GoGloby as an AI implementation provider selling a bundled workflow and monitoring system, rather than a staffing and recruiting agency. It also contains unsupported claims about the assessment, security setup, performance targets, and the author.",
+      "compliance": {
+        "high": 2,
+        "medium": 11,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 7,
+        "high": 0,
+        "medium": 4,
+        "low": 3,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 0
+      },
+      "checked_at": "2026-11-05T13:21:24.699Z"
+    },
+    {
+      "slug": "use-cases_ai-in-it_61b887c7",
+      "url": "https://gogloby.com/use-cases/ai-in-it/",
+      "title": "AI in IT: 140+ Use Cases and Case Studies 2025 | GoGloby",
+      "group": "Resources",
+      "subsection": "Use cases",
+      "profile": "article",
+      "template": "article",
+      "action": "fix",
+      "summary": "The article’s GoGloby sections and CTAs position the company as a provider of AI implementation squads, rather than a staffing and recruiting agency. They also include unsupported guarantees, credentials, and service claims that need correction.",
+      "compliance": {
+        "high": 5,
+        "medium": 9,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 6,
+        "high": 0,
+        "medium": 4,
+        "low": 2,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 1
+      },
+      "checked_at": "2026-11-05T13:19:57.220Z"
+    },
+    {
+      "slug": "use-cases_ai-in-marketing_f4691f6c",
+      "url": "https://gogloby.com/use-cases/ai-in-marketing/",
+      "title": "AI in Marketing: 20+ Use Cases, Examples & ROI | GoGloby",
+      "group": "Resources",
+      "subsection": "Use cases",
+      "profile": "article",
+      "template": "article",
+      "action": "needs_decision",
+      "summary": "The page presents GoGloby as an AI development provider and sells marketing-focused AI implementation, an offer that conflicts with its staffing and recruiting services. It also contains unsupported or inaccurate claims about guarantees and Sergey Matikaynen.",
+      "compliance": {
+        "high": 5,
+        "medium": 8,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 6,
+        "high": 0,
+        "medium": 4,
+        "low": 2,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 1
+      },
+      "checked_at": "2026-11-05T13:22:27.126Z"
+    },
+    {
+      "slug": "use-cases_ai-use-cases-in-cybersecurity_d898ed93",
+      "url": "https://gogloby.com/use-cases/ai-use-cases-in-cybersecurity/",
+      "title": "AI in Cybersecurity: Best AI Use Cases and Examples",
+      "group": "Resources",
+      "subsection": "Use cases",
+      "profile": "article",
+      "template": "article",
+      "action": "needs_decision",
+      "summary": "The GoGloby section and CTA sell AI implementation, rollout, and related tooling rather than the company’s staffing and recruiting services. Decide whether to remove or reposition that offer before retaining the page’s GoGloby claims.",
+      "compliance": {
+        "high": 2,
+        "medium": 11,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 7,
+        "high": 0,
+        "medium": 5,
+        "low": 2,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 1
+      },
+      "checked_at": "2026-11-05T13:20:10.324Z"
+    },
+    {
+      "slug": "use-cases_ai-use-cases-in-finance_0b62cc46",
+      "url": "https://gogloby.com/use-cases/ai-use-cases-in-finance/",
+      "title": "AI in Finance: Best AI Use Cases, Benefits, Examples",
+      "group": "Resources",
+      "subsection": "Use cases",
+      "profile": "article",
+      "template": "article",
+      "action": "fix",
+      "summary": "The article’s general finance content is not the main issue, but its GoGloby section sells AI adoption, workflow implementation, and legacy tools rather than the company’s recruiting and staffing services. It also includes unsupported claims about timelines, security, performance targets, and the founder’s credentials.",
+      "compliance": {
+        "high": 3,
+        "medium": 12,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 7,
+        "high": 0,
+        "medium": 4,
+        "low": 3,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 2,
+        "low": 0
+      },
+      "checked_at": "2026-11-05T13:22:56.118Z"
+    },
+    {
+      "slug": "use-cases_generative-ai-in-healthcare-best-ai-use-cases-benefits-examples_67346b59",
+      "url": "https://gogloby.com/use-cases/generative-ai-in-healthcare-best-ai-use-cases-benefits-examples/",
+      "title": "Generative AI in Healthcare: Best AI Use Cases, Benefits",
+      "group": "Resources",
+      "subsection": "Use cases",
+      "profile": "article",
+      "template": "article",
+      "action": "fix",
+      "summary": "The article’s GoGloby section presents the company as a generative-AI implementation and monitoring provider rather than a staffing and recruiting agency. It also includes unverified timelines, product claims, author credentials, and performance metrics that should be corrected or removed.",
+      "compliance": {
+        "high": 6,
+        "medium": 14,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 7,
+        "high": 0,
+        "medium": 4,
+        "low": 3,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 0
+      },
+      "checked_at": "2026-11-05T13:22:52.267Z"
+    },
+    {
+      "slug": "use-cases_generative-ai-use-cases-in-cybersecurity_4df85a35",
+      "url": "https://gogloby.com/use-cases/generative-ai-use-cases-in-cybersecurity/",
+      "title": "Generative AI in Cybersecurity: Use Cases and Examples",
+      "group": "Resources",
+      "subsection": "Use cases",
+      "profile": "article",
+      "template": "article",
+      "action": "fix",
+      "summary": "The article’s cybersecurity explainer can remain, but its GoGloby section and author bio use outdated delivery positioning and include unsupported or conflicting claims. Update those claims and align the banner CTA with the approved service CTAs.",
+      "compliance": {
+        "high": 6,
+        "medium": 7,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 6,
+        "high": 0,
+        "medium": 4,
+        "low": 2,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 1,
+        "low": 0
+      },
+      "checked_at": "2026-11-05T13:21:11.915Z"
+    },
+    {
+      "slug": "use-cases_generative-ai-use-cases-in-finance_220308b4",
+      "url": "https://gogloby.com/use-cases/generative-ai-use-cases-in-finance/",
+      "title": "Generative AI in Finance: Best AI Use Cases, Benefits",
+      "group": "Resources",
+      "subsection": "Use cases",
+      "profile": "article",
+      "template": "article",
+      "action": "fix",
+      "summary": "The GoGloby section presents the company as a generative-AI deployment and workflow-design provider, rather than a staffing and recruiting agency. It also promotes unsupported timelines, credentials, performance claims, and legacy tools that should be corrected or removed.",
+      "compliance": {
+        "high": 6,
+        "medium": 14,
+        "low": 0,
+        "error": null
+      },
+      "geo": {
+        "to_fix": 6,
+        "high": 0,
+        "medium": 4,
+        "low": 2,
+        "error": null
+      },
+      "seo": {
+        "high": 0,
+        "medium": 2,
+        "low": 2
+      },
+      "checked_at": "2026-11-05T13:21:21.788Z"
+    }
+  ],
+  "totals": {
+    "pages": 13,
+    "compliance": {
+      "high": 54,
+      "medium": 133,
+      "low": 0
+    },
+    "geo": 86,
+    "geo_sev": {
+      "high": 0,
+      "medium": 54,
+      "low": 32
+    },
+    "seo": {
+      "high": 0,
+      "medium": 15,
+      "low": 5
+    },
+    "actions": {
+      "fix": 11,
+      "needs_decision": 2
+    }
+  },
+  "by_group": {
+    "Resources": {
+      "pages": 13,
+      "compliance": {
+        "high": 54,
+        "medium": 133,
+        "low": 0
+      },
+      "geo": 86,
+      "geo_sev": {
+        "high": 0,
+        "medium": 54,
+        "low": 32
+      },
+      "seo": {
+        "high": 0,
+        "medium": 15,
+        "low": 5
+      },
+      "actions": {
+        "fix": 11,
+        "needs_decision": 2
+      }
+    }
+  },
+  "by_subsection": {
+    "Resources/Use cases": {
+      "pages": 13,
+      "compliance": {
+        "high": 54,
+        "medium": 133,
+        "low": 0
+      },
+      "geo": 86,
+      "geo_sev": {
+        "high": 0,
+        "medium": 54,
+        "low": 32
+      },
+      "seo": {
+        "high": 0,
+        "medium": 15,
+        "low": 5
+      },
+      "actions": {
+        "fix": 11,
+        "needs_decision": 2
+      }
+    }
+  },
+  "site": {
+    "compliance": {
+      "high": 8,
+      "medium": 14,
+      "low": 0
+    },
+    "seo": 3,
+    "geo": 0
+  },
+  "layers": {
+    "compliance": true,
+    "geo": true,
+    "seo": true
+  }
+}

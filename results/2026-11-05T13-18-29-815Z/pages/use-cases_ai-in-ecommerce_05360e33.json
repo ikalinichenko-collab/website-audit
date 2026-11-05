@@ -1,0 +1,1585 @@
+{
+  "schema_version": 2,
+  "url": "https://gogloby.com/use-cases/ai-in-ecommerce/",
+  "final_url": "https://gogloby.com/use-cases/ai-in-ecommerce/",
+  "status": 200,
+  "title": "AI in eCommerce: Use Cases, Tools & Future Trends | GoGloby",
+  "category": "Resources",
+  "subsection": "Use cases",
+  "profile": "article",
+  "geo_type": "article",
+  "template": "article",
+  "checked_at": "2026-11-05T13:23:29.834Z",
+  "zones": [
+    {
+      "id": "title",
+      "label": "Title",
+      "kind": "title"
+    },
+    {
+      "id": "meta_description",
+      "label": "Meta description",
+      "kind": "meta_description"
+    },
+    {
+      "id": "og_title",
+      "label": "og:title",
+      "kind": "og_title"
+    },
+    {
+      "id": "og_description",
+      "label": "og:description",
+      "kind": "og_description"
+    },
+    {
+      "id": "json_ld",
+      "label": "Structured data (JSON-LD)",
+      "kind": "json_ld"
+    },
+    {
+      "id": "h1",
+      "label": "H1",
+      "kind": "h1"
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "kind": "date"
+    },
+    {
+      "id": "author",
+      "label": "Author",
+      "kind": "author"
+    },
+    {
+      "id": "toc",
+      "label": "Table of contents",
+      "kind": "toc"
+    },
+    {
+      "id": "article:intro",
+      "label": "Intro",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-are-ai-use-cases-in-ecommerce",
+      "label": "What are AI use cases in eCommerce?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-are-the-most-impactful-ai-in-ecommerce-use-",
+      "label": "What are the most impactful AI in eCommerce use cases?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+      "label": "Complete Map of 40+ AI Use Cases & Categories in eCommerce",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:pros-and-cons-of-ai-in-ecommerce",
+      "label": "Pros and Cons of AI in eCommerce",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:the-future-of-ai-in-ecommerce",
+      "label": "The Future of AI in eCommerce",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:conclusion",
+      "label": "Conclusion",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:about-gogloby",
+      "label": "About GoGloby",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:faqs-on-ai-use-cases-in-ecommerce",
+      "label": "FAQs on AI Use Cases in eCommerce",
+      "kind": "article_section"
+    },
+    {
+      "id": "banner_cta",
+      "label": "Banner CTA",
+      "kind": "banner_cta"
+    }
+  ],
+  "zone_warnings": [],
+  "shared_variants": [
+    "modals@1"
+  ],
+  "compliance": {
+    "hash": "c606f3f116e0d4e4afdec9d4e854f460876362b79b7fa39010e8762ccd134dc1",
+    "cached": false,
+    "action": "fix",
+    "model_action": "fix",
+    "summary": "The article presents GoGloby as an AI development company that delivers eCommerce solutions, rather than a staffing and recruiting agency. It also contains unsupported founder claims, promises an outdated development offer, targets retail audiences outside the stated ICP, and uses CTAs that do not match the approved wording.",
+    "llm_problems": [
+      {
+        "title": "AI development company positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The page describes GoGloby as an AI development company and uses Applied AI Engineering positioning instead of the approved staffing and recruiting description.",
+        "fix": "Replace the development-company positioning with the approved company description and current service positioning.",
+        "subject": "GoGloby",
+        "page_value": "AI development company; 4x Applied AI Engineering",
+        "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "GoGloby is an AI development company",
+            "verified": true,
+            "reason": "This identifies GoGloby as a development company, contrary to its approved description as a staffing and recruiting agency."
+          },
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "the engineering standard behind 4x Applied AI Engineering",
+            "verified": true,
+            "reason": "This presents GoGloby through the old Applied AI Engineering positioning rather than its staffing and recruiting services."
+          },
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "Applied AI Software Engineers are vetted against",
+            "verified": true,
+            "reason": "This describes GoGloby's engineering standard as applying to an Applied AI Software Engineers offer, not its current services."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Custom AI development offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity and Services; Glossary §1 and §2",
+        "rule_verified": true,
+        "issue": "The page promises GoGloby will build and deliver eCommerce AI solutions, while the company recruits and staffs engineers and clients run the work.",
+        "fix": "Remove the custom AI solution-delivery offer and describe only the current recruiting and staffing services.",
+        "subject": "AI solution development",
+        "page_value": "GoGloby delivers eCommerce AI solutions",
+        "source_value": "GoGloby recruits and staffs engineers; clients run the work",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "who deliver solutions like personalized recommendation engines, demand forecasting, dynamic pricing algorithms",
+            "verified": true,
+            "reason": "This promises that GoGloby's embedded engineers deliver specific AI solutions for clients."
+          },
+          {
+            "zone_id": "article:conclusion",
+            "part": "paragraph 5",
+            "quote": "turn these insights into production results, roadmapped, governed, and integrated with your stack",
+            "verified": true,
+            "reason": "This invites readers to buy implementation and integration work from GoGloby."
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "We’ll help you ship production-grade recommendations, support automation, and pricing/forecasting",
+            "verified": true,
+            "reason": "This offers GoGloby's delivery of production AI features rather than recruiting or staffing engineers."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsupported founder experience",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page says Sergey Matikaynen has 16+ years of experience, while the Fact Sheet says he has spent 17 years building software systems, engineering organizations and production platforms.",
+        "fix": "Correct the experience claim to match the Fact Sheet.",
+        "subject": "Sergey Matikaynen's experience",
+        "page_value": "16+ years",
+        "source_value": "17 years",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "reason": "The author bio gives a different experience figure from the Fact Sheet."
+          },
+          {
+            "zone_id": "article:faqs-on-ai-use-cases-in-ecommerce",
+            "part": "paragraph 19",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "reason": "The repeated author bio gives a different experience figure from the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified founder credentials",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page attributes a LinkedIn Top Voice distinction in software development and certified Agentic SDLC mastery to Sergey, neither of which is in the Fact Sheet.",
+        "fix": "Verify these credentials with the company or remove the unsupported claims.",
+        "subject": "Sergey Matikaynen's credentials",
+        "page_value": "LinkedIn Top Voice; certified Agentic SDLC mastery",
+        "source_value": "not in Fact Sheet",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "including certified Agentic SDLC mastery",
+            "verified": true,
+            "reason": "This claims a certification or mastery credential for Sergey that the Fact Sheet does not document."
+          },
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "reason": "This attributes a LinkedIn Top Voice distinction to Sergey that the Fact Sheet does not document."
+          },
+          {
+            "zone_id": "article:faqs-on-ai-use-cases-in-ecommerce",
+            "part": "paragraph 19",
+            "quote": "including certified Agentic SDLC mastery",
+            "verified": true,
+            "reason": "The repeated author bio claims a certification or mastery credential for Sergey that the Fact Sheet does not document."
+          },
+          {
+            "zone_id": "article:faqs-on-ai-use-cases-in-ecommerce",
+            "part": "paragraph 19",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "reason": "The repeated author bio attributes a LinkedIn Top Voice distinction to Sergey that the Fact Sheet does not document."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified contract and guarantee",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services and Legal and security",
+        "rule_verified": true,
+        "issue": "The page claims every engagement includes a Zero-Lock Contract, which is not described in the company sources.",
+        "fix": "Verify the contract claim with the company or remove it.",
+        "subject": "Zero-Lock Contract",
+        "page_value": "Every engagement includes a Zero-Lock Contract",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "Every engagement includes our Zero-Lock Contract",
+            "verified": true,
+            "reason": "This promises a contract feature that is not documented in the company sources."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Overgeneralized replacement guarantee",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page promises a 120-day free-replacement guarantee for every engagement, but the Fact Sheet gives that guarantee for recruiting and a different performance-based replacement and cancellation policy for staffing.",
+        "fix": "State the guarantee separately and accurately for each service, or remove the blanket claim.",
+        "subject": "Replacement guarantee",
+        "page_value": "120-day Free-Replacement Guarantee for every engagement",
+        "source_value": "Recruiting: 120-day free replacement; staffing: performance-based replacement and cancellation within the first 120 days",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "Every engagement includes our Zero-Lock Contract, 120-Day Free-Replacement Guarantee",
+            "verified": true,
+            "reason": "This applies the recruiting replacement guarantee to every engagement, including staffing."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Insurance described as guarantee",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page calls the $3M cyber-liability coverage a guarantee, while the source describes a $3M data and cyber-liability insurance policy.",
+        "fix": "Describe the coverage as insurance and use the Fact Sheet's scope.",
+        "subject": "$3M insurance coverage",
+        "page_value": "$3M Cyber-Liability Guarantee",
+        "source_value": "$3M data and cyber liability insurance",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "$3M Cyber-Liability Guarantee",
+            "verified": true,
+            "reason": "This presents the insurance coverage as a guarantee and omits the Fact Sheet's data-liability scope."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Retail audience outside ICP",
+        "category": "wrong_audience",
+        "severity": "medium",
+        "rule": "Glossary §5 and §9",
+        "rule_verified": true,
+        "issue": "The introduction directly targets retail and DTC leaders, while the Glossary excludes non-tech retail businesses from GoGloby's target audience.",
+        "fix": "Refocus the article's audience on in-scope technology companies or remove the buyer-targeting language.",
+        "subject": "Retail and DTC leaders",
+        "page_value": "Leaders in retail and DTC brands",
+        "source_value": "Non-tech enterprises, including retail, are not targeted",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 3",
+            "quote": "For leaders in retail, B2B marketplaces, and DTC brands",
+            "verified": true,
+            "reason": "This explicitly addresses retail and DTC leaders, an audience the Glossary excludes when they are non-tech enterprises."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unapproved call-to-action wording",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §2 and §7",
+        "rule_verified": true,
+        "issue": "The page uses generic CTAs instead of the approved service-specific wording, “Get vetted profiles” for staffing and “Start a search” for recruiting.",
+        "fix": "Replace the generic CTAs with the approved CTA wording for the service being promoted.",
+        "subject": "Calls to action",
+        "page_value": "Talk to our team; Start today",
+        "source_value": "Get vetted profiles; Start a search",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:conclusion",
+            "part": "paragraph 5",
+            "quote": "talk to our team",
+            "verified": true,
+            "reason": "This CTA does not use the approved wording for either current service."
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 2",
+            "quote": "Start today",
+            "verified": true,
+            "reason": "This CTA does not use the approved wording for either current service."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      }
+    ],
+    "problems": [
+      {
+        "title": "AI development company positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The page describes GoGloby as an AI development company and uses Applied AI Engineering positioning instead of the approved staffing and recruiting description.",
+        "fix": "Replace the development-company positioning with the approved company description and current service positioning.",
+        "subject": "GoGloby",
+        "page_value": "AI development company; 4x Applied AI Engineering",
+        "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "GoGloby is an AI development company",
+            "verified": true,
+            "reason": "This identifies GoGloby as a development company, contrary to its approved description as a staffing and recruiting agency.",
+            "fragment": "GoGloby is an AI development company",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "the engineering standard behind 4x Applied AI Engineering",
+            "verified": true,
+            "reason": "This presents GoGloby through the old Applied AI Engineering positioning rather than its staffing and recruiting services.",
+            "fragment": "the engineering standard behind 4x Applied",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "Applied AI Software Engineers are vetted against",
+            "verified": true,
+            "reason": "This describes GoGloby's engineering standard as applying to an Applied AI Software Engineers offer, not its current services.",
+            "fragment": "Applied AI Software Engineers are vetted",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Custom AI development offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Identity and Services; Glossary §1 and §2",
+        "rule_verified": true,
+        "issue": "The page promises GoGloby will build and deliver eCommerce AI solutions, while the company recruits and staffs engineers and clients run the work.",
+        "fix": "Remove the custom AI solution-delivery offer and describe only the current recruiting and staffing services.",
+        "subject": "AI solution development",
+        "page_value": "GoGloby delivers eCommerce AI solutions",
+        "source_value": "GoGloby recruits and staffs engineers; clients run the work",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "who deliver solutions like personalized recommendation engines, demand forecasting, dynamic pricing algorithms",
+            "verified": true,
+            "reason": "This promises that GoGloby's embedded engineers deliver specific AI solutions for clients.",
+            "fragment": "who deliver solutions like personalized recommendation",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:conclusion",
+            "part": "paragraph 5",
+            "quote": "turn these insights into production results, roadmapped, governed, and integrated with your stack",
+            "verified": true,
+            "reason": "This invites readers to buy implementation and integration work from GoGloby.",
+            "fragment": "turn these insights into production results,",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "We’ll help you ship production-grade recommendations, support automation, and pricing/forecasting",
+            "verified": true,
+            "reason": "This offers GoGloby's delivery of production AI features rather than recruiting or staffing engineers.",
+            "fragment": "We’ll help you ship production-grade recommendations,",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unsupported founder experience",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page says Sergey Matikaynen has 16+ years of experience, while the Fact Sheet says he has spent 17 years building software systems, engineering organizations and production platforms.",
+        "fix": "Correct the experience claim to match the Fact Sheet.",
+        "subject": "Sergey Matikaynen's experience",
+        "page_value": "16+ years",
+        "source_value": "17 years",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "reason": "The author bio gives a different experience figure from the Fact Sheet.",
+            "fragment": "He has spent 16+ years building",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs-on-ai-use-cases-in-ecommerce",
+            "part": "paragraph 19",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "reason": "The repeated author bio gives a different experience figure from the Fact Sheet.",
+            "fragment": "He has spent 16+ years building",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified founder credentials",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page attributes a LinkedIn Top Voice distinction in software development and certified Agentic SDLC mastery to Sergey, neither of which is in the Fact Sheet.",
+        "fix": "Verify these credentials with the company or remove the unsupported claims.",
+        "subject": "Sergey Matikaynen's credentials",
+        "page_value": "LinkedIn Top Voice; certified Agentic SDLC mastery",
+        "source_value": "not in Fact Sheet",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "including certified Agentic SDLC mastery",
+            "verified": true,
+            "reason": "This claims a certification or mastery credential for Sergey that the Fact Sheet does not document.",
+            "fragment": "including certified Agentic SDLC",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "reason": "This attributes a LinkedIn Top Voice distinction to Sergey that the Fact Sheet does not document.",
+            "fragment": "He is a LinkedIn Top Voice",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs-on-ai-use-cases-in-ecommerce",
+            "part": "paragraph 19",
+            "quote": "including certified Agentic SDLC mastery",
+            "verified": true,
+            "reason": "The repeated author bio claims a certification or mastery credential for Sergey that the Fact Sheet does not document.",
+            "fragment": "including certified Agentic SDLC",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs-on-ai-use-cases-in-ecommerce",
+            "part": "paragraph 19",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "reason": "The repeated author bio attributes a LinkedIn Top Voice distinction to Sergey that the Fact Sheet does not document.",
+            "fragment": "He is a LinkedIn Top Voice",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified contract and guarantee",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services and Legal and security",
+        "rule_verified": true,
+        "issue": "The page claims every engagement includes a Zero-Lock Contract, which is not described in the company sources.",
+        "fix": "Verify the contract claim with the company or remove it.",
+        "subject": "Zero-Lock Contract",
+        "page_value": "Every engagement includes a Zero-Lock Contract",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "Every engagement includes our Zero-Lock Contract",
+            "verified": true,
+            "reason": "This promises a contract feature that is not documented in the company sources.",
+            "fragment": "Every engagement includes our Zero-Lock",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Overgeneralized replacement guarantee",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page promises a 120-day free-replacement guarantee for every engagement, but the Fact Sheet gives that guarantee for recruiting and a different performance-based replacement and cancellation policy for staffing.",
+        "fix": "State the guarantee separately and accurately for each service, or remove the blanket claim.",
+        "subject": "Replacement guarantee",
+        "page_value": "120-day Free-Replacement Guarantee for every engagement",
+        "source_value": "Recruiting: 120-day free replacement; staffing: performance-based replacement and cancellation within the first 120 days",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "Every engagement includes our Zero-Lock Contract, 120-Day Free-Replacement Guarantee",
+            "verified": true,
+            "reason": "This applies the recruiting replacement guarantee to every engagement, including staffing.",
+            "fragment": "Every engagement includes our Zero-Lock Contract,",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Insurance described as guarantee",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page calls the $3M cyber-liability coverage a guarantee, while the source describes a $3M data and cyber-liability insurance policy.",
+        "fix": "Describe the coverage as insurance and use the Fact Sheet's scope.",
+        "subject": "$3M insurance coverage",
+        "page_value": "$3M Cyber-Liability Guarantee",
+        "source_value": "$3M data and cyber liability insurance",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "quote": "$3M Cyber-Liability Guarantee",
+            "verified": true,
+            "reason": "This presents the insurance coverage as a guarantee and omits the Fact Sheet's data-liability scope.",
+            "fragment": "$3M Cyber-Liability",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Retail audience outside ICP",
+        "category": "wrong_audience",
+        "severity": "medium",
+        "rule": "Glossary §5 and §9",
+        "rule_verified": true,
+        "issue": "The introduction directly targets retail and DTC leaders, while the Glossary excludes non-tech retail businesses from GoGloby's target audience.",
+        "fix": "Refocus the article's audience on in-scope technology companies or remove the buyer-targeting language.",
+        "subject": "Retail and DTC leaders",
+        "page_value": "Leaders in retail and DTC brands",
+        "source_value": "Non-tech enterprises, including retail, are not targeted",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:intro",
+            "part": "paragraph 3",
+            "quote": "For leaders in retail, B2B marketplaces, and DTC brands",
+            "verified": true,
+            "reason": "This explicitly addresses retail and DTC leaders, an audience the Glossary excludes when they are non-tech enterprises.",
+            "fragment": "For leaders in retail, B2B marketplaces,",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unapproved call-to-action wording",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §2 and §7",
+        "rule_verified": true,
+        "issue": "The page uses generic CTAs instead of the approved service-specific wording, “Get vetted profiles” for staffing and “Start a search” for recruiting.",
+        "fix": "Replace the generic CTAs with the approved CTA wording for the service being promoted.",
+        "subject": "Calls to action",
+        "page_value": "Talk to our team; Start today",
+        "source_value": "Get vetted profiles; Start a search",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:conclusion",
+            "part": "paragraph 5",
+            "quote": "talk to our team",
+            "verified": true,
+            "reason": "This CTA does not use the approved wording for either current service.",
+            "fragment": null,
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 2",
+            "quote": "Start today",
+            "verified": true,
+            "reason": "This CTA does not use the approved wording for either current service.",
+            "fragment": "Start today",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Term not used: 4x (product name)",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"4x (product name)\" is a term or name the company no longer uses.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "4x (product name)",
+        "page_value": null,
+        "source_value": null,
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "4x Applied",
+            "verified": true,
+            "fragment": "4x Applied",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs-on-ai-use-cases-in-ecommerce",
+            "part": "paragraph 19",
+            "quote": "4x Applied",
+            "verified": true,
+            "fragment": "4x Applied",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      }
+    ],
+    "usage": {
+      "input": 9376,
+      "cached_input": 10166,
+      "output": 5700
+    },
+    "error": null
+  },
+  "geo": {
+    "hash": "86965fa04cb7926c09d0575b1b8c98710fcd525bf8c93f0d09fd7b0f2107f9b8",
+    "cached": false,
+    "code": [
+      {
+        "id": "trap_terms",
+        "status": "pass",
+        "value": "none in title, H1, meta, og",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "em_dash",
+        "status": "fail",
+        "value": "36 found",
+        "places": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "value": "— | …ss the US, Canada, and Europe — software architecture, agile …"
+          },
+          {
+            "zone_id": "article:what-are-the-most-impactful-ai-in-ecommerce-use-",
+            "part": "paragraph 2",
+            "value": "— | …peline-integrated deployments — copilots for code and ops, co…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 5",
+            "value": "— | 1. ESW — Cross‑border e‑commerce provi…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 6",
+            "value": "— | 2. The Rider Firm — Direct‑to‑consumer bike compa…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 7",
+            "value": "— | …. Rakuten Group (Claude Code) — With more than 70 businesses …"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 8",
+            "value": "— | 4. Gumroad — Remote‑first marketplace Gumr…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 8",
+            "value": "— | …ng for engineers. New features—including keyboard shortcuts, …"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 8",
+            "value": "— | …advanced sorting and analytics—were delivered by non‑engineer…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 9",
+            "value": "— | 5. AI21 Labs – Jamba 1.6 — AI21’s Jamba 1.6 introduces a…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 10",
+            "value": "— | …LLM Product Development Guide — AI21 shares a blueprint for b…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 11",
+            "value": "— | 7. Wayfair — Furniture retailer Wayfair us…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 12",
+            "value": "— | …mbedding AI across departments—from engineering to legal—redu…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 12",
+            "value": "— | …ents—from engineering to legal—reduces technical debt and pav…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 13",
+            "value": "— | … SageMaker (iProperty.com.my) — Malaysian real‑estate marketp…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 14",
+            "value": "— | 9. Mercado Libre (Verdi) — Latin America’s largest e‑com…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 17",
+            "value": "— | 10. Grab — Southeast‑Asian super‑app Gra…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 18",
+            "value": "— | 11. Tidio — Customer‑service platform Tid…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 19",
+            "value": "— | 12. Zapia — Latin‑American start‑up Zapia…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 20",
+            "value": "— | 13. Mercari — Japanese resale marketplace M…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 21",
+            "value": "— | 14. Zalando — European fashion platform Zal…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 24",
+            "value": "— | …dwill OC – Expands E‑Commerce — Non‑profit retailer Goodwill …"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 25",
+            "value": "— | …l OC – Boosts Revenue with AI — A follow‑on effort at Goodwil…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 26",
+            "value": "— | …nerative AI in E‑commerce SEO — AI21 outlines how generative …"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 29",
+            "value": "— | 18. Triple Whale — E‑commerce analytics platform…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 30",
+            "value": "— | 19. Rakuten Group (OpenAI) — Beyond code generation, Rakut…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 33",
+            "value": "— | 20. Clearly — Online eyewear retailer Clear…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 35",
+            "value": "— | …1 Labs – CV Profile Generator — AI21 demonstrates how to buil…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 35",
+            "value": "— | …engths succinctly. 22. Upwork — Freelance marketplace Upwork …"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 36",
+            "value": "— | 23. Indeed — Job site Indeed wanted to pro…"
+          },
+          {
+            "zone_id": "article:the-future-of-ai-in-ecommerce",
+            "part": "paragraph 2",
+            "value": "— | …yer of the retail value chain — from customer engagement and …"
+          },
+          {
+            "zone_id": "article:conclusion",
+            "part": "paragraph 1",
+            "value": "— | …use cases mapped in this guide—from recommendation engines an…"
+          },
+          {
+            "zone_id": "article:conclusion",
+            "part": "paragraph 1",
+            "value": "— | …fraud analytics and agentic AI—show that retailers embedding …"
+          },
+          {
+            "zone_id": "article:conclusion",
+            "part": "paragraph 4",
+            "value": "— | …ivering real ROI in eCommerce — from recommendation engines a…"
+          },
+          {
+            "zone_id": "article:about-gogloby",
+            "part": "paragraph 1",
+            "value": "— | …ventory, and customer service — a challenge widely reported a…"
+          },
+          {
+            "zone_id": "article:faqs-on-ai-use-cases-in-ecommerce",
+            "part": "paragraph 19",
+            "value": "— | …ss the US, Canada, and Europe — software architecture, agile …"
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "value": "— | …ation, and pricing/forecasting—secure, governed, and integrat…"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "ampersand",
+        "status": "fail",
+        "value": "26 found",
+        "places": [
+          {
+            "zone_id": "title",
+            "value": "& | …n eCommerce: Use Cases, Tools & Future Trends | GoGloby"
+          },
+          {
+            "zone_id": "og_title",
+            "value": "& | …n eCommerce: Use Cases, Tools & Future Trends | GoGloby"
+          },
+          {
+            "zone_id": "h1",
+            "value": "& | …n eCommerce: 20+ AI Use Cases & Case Studies in 2025"
+          },
+          {
+            "zone_id": "article:what-are-the-most-impactful-ai-in-ecommerce-use-",
+            "part": "table_cell 13",
+            "value": "& | Conversational shopping & discovery",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:what-are-the-most-impactful-ai-in-ecommerce-use-",
+            "part": "table_cell 19",
+            "value": "& | Attribute & taxonomy extraction",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:what-are-the-most-impactful-ai-in-ecommerce-use-",
+            "part": "table_cell 22",
+            "value": "& | Autonomous analytics & insights",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:what-are-the-most-impactful-ai-in-ecommerce-use-",
+            "part": "table_cell 28",
+            "value": "& | Fraud detection & trust scoring",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:what-are-the-most-impactful-ai-in-ecommerce-use-",
+            "part": "table_cell 31",
+            "value": "& | Dispute mediation & case handling",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:what-are-the-most-impactful-ai-in-ecommerce-use-",
+            "part": "table_cell 34",
+            "value": "& | Job‑post generation & assistive hiring",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:what-are-the-most-impactful-ai-in-ecommerce-use-",
+            "part": "table_cell 37",
+            "value": "& | Candidate matching & explanations",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "heading 1",
+            "value": "& | …plete Map of 40+ AI Use Cases & Categories in eCommerce"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "table_cell 3",
+            "value": "& | 1. Developer & Operational Efficiency",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "table_cell 5",
+            "value": "& | 2. Customer & Merchant Support",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "table_cell 7",
+            "value": "& | 3. Content & Listing Automation",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "table_cell 9",
+            "value": "& | 4. Analytics & Insights",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "table_cell 11",
+            "value": "& | 5. Fraud & Trust Management",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "table_cell 13",
+            "value": "& | 6. Job Matching & Recruitment",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "heading 2",
+            "value": "& | 1. Developer & Operational Efficiency"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "heading 3",
+            "value": "& | 2. Customer & Merchant Support"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "heading 4",
+            "value": "& | 3. Content & Listing Automation"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "heading 5",
+            "value": "& | 4. Analytics & Insights"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "heading 6",
+            "value": "& | 5. Fraud & Trust Management"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "heading 7",
+            "value": "& | 6. Job Matching & Recruitment"
+          },
+          {
+            "zone_id": "article:the-future-of-ai-in-ecommerce",
+            "part": "heading 3",
+            "value": "& | Multimodal Discovery & Conversational Commerce"
+          },
+          {
+            "zone_id": "article:the-future-of-ai-in-ecommerce",
+            "part": "heading 4",
+            "value": "& | Decision Intelligence & Predictive Analytics"
+          },
+          {
+            "zone_id": "article:the-future-of-ai-in-ecommerce",
+            "part": "heading 5",
+            "value": "& | Real-Time Fraud & Risk Analytics"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "uk_spelling",
+        "status": "fail",
+        "value": "14 found",
+        "places": [
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 6",
+            "value": "organised | …to keep its growing inventory organised across spreadsheets and e‑com…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 6",
+            "value": "summarise | …pilot, managers now use AI to summarise meeting notes, create invento…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 7",
+            "value": "modernise | …rs, Japan’s Rakuten needed to modernise and refactor massive codebase…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 10",
+            "value": "emphasising | …arge‑language‑model products, emphasising preparation, stakeholder alig…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 10",
+            "value": "organisations | …product development, enabling organisations to build secure, cost‑effecti…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 11",
+            "value": "optimise | …e retailer Wayfair uses AI to optimise everything from marketing spe…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 11",
+            "value": "personalised | …w uses models to design hyper‑personalised shopping experiences and mode…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 11",
+            "value": "modernise | …ised shopping experiences and modernise legacy code. Generative AI ac…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 14",
+            "value": "summarise | …itles into local dialects and summarise reviews to drive orders. Verd…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 18",
+            "value": "monetise | … enterprise‑grade service and monetise conversations without upfront…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 27",
+            "value": "summarising | …e previously out of reach. By summarising reviews, analysing creative p…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 31",
+            "value": "behaviour | …in real time, flag suspicious behaviour and automate decisioning with…"
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 34",
+            "value": "personalises | …following entries show how AI personalises the hiring journey."
+          },
+          {
+            "zone_id": "article:complete-map-of-40-ai-use-cases-categories-in-ec",
+            "part": "paragraph 36",
+            "value": "Personalised | …lized messages daily. Result: Personalised explanations drove more appli…"
+          }
+        ],
+        "severity": "low"
+      }
+    ],
+    "llm": [
+      {
+        "id": "answer_first",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "Margins are shrinking, acquisition costs keep climbing, and shoppers expect personalized, real-time experiences across every channel. That’s why AI in eCommerce is no longer experimental, it’s actually a growth engine.",
+        "note": "The opening sets context but does not answer the H1 by summarizing the use cases or case studies covered.",
+        "fix": "Revise the first two sentences to directly answer the H1 with a summary of the use cases and case studies covered.",
+        "evidence_verified": true,
+        "title": "Opening does not answer the H1",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "896ef60c2559376e87fd9972c2ca93fbb8876854fdf4b46b2d8525a44ed647a3",
+        "fragment": "AI in,-eCommerce: 20+ AI"
+      },
+      {
+        "id": "recruiting_firm_early",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "This is an informational article about AI in eCommerce, not a page about GoGloby's recruiting service.",
+        "fix": null,
+        "evidence_verified": null,
+        "title": "Does not say early that GoGloby is a recruiting firm",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "acb1f390fb813f3c74484b1ba991ea664acbf17b8023a80f6938adb7b4d717a9"
+      },
+      {
+        "id": "buyer_ready",
+        "answer": "no",
+        "value": "not_targeted",
+        "zone_id": "page",
+        "evidence": "For leaders in retail, B2B marketplaces, and DTC brands, the question isn’t if AI belongs in your business model, it’s where to start.",
+        "note": "The article targets retail, marketplace, and DTC leaders seeking information about AI use cases rather than companies ready to hire Data and AI engineers.",
+        "fix": "Refocus the page audience on companies ready to hire Data and AI engineers.",
+        "evidence_verified": true,
+        "title": "Not written for buyers ready to hire",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "12ed5672c76990821741d8a75bc1cbc5168be94d64f3b51c6d57515362934ee0",
+        "fragment": "where to"
+      },
+      {
+        "id": "target_keyword",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "The article's eCommerce use-case topic does not match a hiring-focused term from Glossary §6.",
+        "fix": null,
+        "evidence_verified": null,
+        "title": "No matching search term",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "f1701f81907cd1d2967c720a79ca31ae813eb116d1883037c89c55a3a1d67d1f"
+      },
+      {
+        "id": "uses_data",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "Nearly 89% of retailers are already testing or deploying AI in their operations, with the global market projected to grow from $9.01B in 2025 to $64B by 2034.",
+        "note": "The article includes numerical claims, but this example has no source or date near the figures, and the other claims are similarly unsourced.",
+        "fix": "Add a source or date near each numerical claim the article presents.",
+        "evidence_verified": true,
+        "title": "No quotable data",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "828c650c9ce7823ab5afa4f28c245033b70a75994deb8fd6bd65683da1ddac01",
+        "fragment": "AI in,-eCommerce: 20+ AI"
+      },
+      {
+        "id": "proof_background",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:faqs-on-ai-use-cases-in-ecommerce",
+        "evidence": "He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe",
+        "note": "The author bio mentions individual software leadership experience but does not use the founders' Data Science and engineering-team background as proof.",
+        "fix": "Use the founders' Data Science and engineering-team background as proof in the article.",
+        "evidence_verified": true,
+        "title": "Does not use founders' background as proof",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "b502747faa2b13b369250260a2aab6e0dcd4faa9b89972bb0544f68461219611",
+        "fragment": "He has spent 16+ years building"
+      },
+      {
+        "id": "sell_against_open_role",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:about-gogloby",
+        "evidence": "We embed AI engineering teams with eCommerce domain knowledge into your organization, ready to integrate with your workflows within weeks.",
+        "note": "The page mentions integration within weeks but does not compare GoGloby's service with the cost and wait of an open full-time US role.",
+        "fix": "Add a comparison with the cost and wait of filling an open full-time US role.",
+        "evidence_verified": false,
+        "title": "Does not compare with an open full-time role",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "96dc6b44f1df3b7c02b39118a7535c60e596a11b25a6ce95178707270fe9ba6f"
+      }
+    ],
+    "placement": null,
+    "usage": {
+      "input": 8337,
+      "cached_input": 8950,
+      "output": 1582
+    },
+    "error": null
+  },
+  "seo": {
+    "checks": [
+      {
+        "id": "http_status",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "200",
+        "severity": "high"
+      },
+      {
+        "id": "title_length",
+        "status": "pass",
+        "zone_id": "title",
+        "value": "59 characters",
+        "severity": "medium"
+      },
+      {
+        "id": "meta_present",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "138 characters",
+        "severity": "high"
+      },
+      {
+        "id": "meta_length",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "138 characters (120-158)",
+        "severity": "low"
+      },
+      {
+        "id": "h1_count",
+        "status": "pass",
+        "zone_id": "h1",
+        "value": "1",
+        "severity": "high"
+      },
+      {
+        "id": "title_h1_match",
+        "status": "pass",
+        "zone_id": "title",
+        "value": "Title and H1 agree",
+        "severity": "low"
+      },
+      {
+        "id": "canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "https://gogloby.com/use-cases/ai-in-ecommerce/",
+        "severity": "high"
+      },
+      {
+        "id": "indexable",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "severity": "high"
+      },
+      {
+        "id": "schema_required",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "present",
+        "severity": "medium"
+      },
+      {
+        "id": "schema_recommended",
+        "status": "fail",
+        "zone_id": "json_ld",
+        "value": "missing: BreadcrumbList",
+        "severity": "medium"
+      },
+      {
+        "id": "author",
+        "status": "pass",
+        "zone_id": "author",
+        "value": "Sergey Matikaynen",
+        "severity": "medium"
+      },
+      {
+        "id": "dates",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "published: 2025-08-25T23:22:42+03:00; modified: 2026-08-11T15:40:27+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "date_mismatch",
+        "status": "pass",
+        "zone_id": "date",
+        "value": "visible \"Updated on August 11, 2026\" vs dateModified 2026-08-11T15:40:27+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "broken_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "4 checked",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "redirecting_internal_links",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "1 redirect",
+        "places": [
+          {
+            "zone_id": "article:conclusion",
+            "part": "paragraph 5",
+            "value": "https://gogloby.com/services/claude-in-production/ -> https://gogloby.com/services/applied-ai-engineering/"
+          }
+        ],
+        "severity": "medium"
+      },
+      {
+        "id": "link_to_services",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "yes",
+        "severity": "medium"
+      },
+      {
+        "id": "alt_missing",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without alt",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_empty",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 with empty alt",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "image_dimensions",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "2 without width/height",
+        "places": [
+          {
+            "zone_id": "author",
+            "part": "image 1",
+            "value": "1706550966241.jpeg"
+          },
+          {
+            "zone_id": "article:faqs-on-ai-use-cases-in-ecommerce",
+            "part": "image 1",
+            "value": "1706550966241.jpeg"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "heading_order",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "og_present",
+        "status": "pass",
+        "zone_id": "og_title",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "og_url_canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "og:url https://gogloby.com/use-cases/ai-in-ecommerce/ vs canonical https://gogloby.com/use-cases/ai-in-ecommerce/",
+        "severity": "low"
+      },
+      {
+        "id": "twitter_card",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "summary_large_image",
+        "severity": "low"
+      },
+      {
+        "id": "html_lang",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "en-US",
+        "severity": "low"
+      },
+      {
+        "id": "viewport",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "jsonld_valid",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "4 block(s)",
+        "severity": "high"
+      },
+      {
+        "id": "article_fields",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "anchors_resolve",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "16 checked",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "faq_schema_matches_dom",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "accordion block: true, FAQPage schema: true",
+        "severity": "low"
+      }
+    ]
+  }
+}

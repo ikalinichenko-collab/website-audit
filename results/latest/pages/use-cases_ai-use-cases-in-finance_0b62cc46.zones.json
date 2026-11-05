@@ -1,0 +1,2450 @@
+{
+ "template": "article",
+ "zones": [
+  {
+   "id": "title",
+   "kind": "title",
+   "label": "Title",
+   "scope": "page",
+   "skipped": false,
+   "text": "AI in Finance: Best AI Use Cases, Benefits, Examples",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "AI in Finance: Best AI Use Cases, Benefits, Examples"
+    }
+   ]
+  },
+  {
+   "id": "meta_description",
+   "kind": "meta_description",
+   "label": "Meta description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Learn how AI in finance is used for fraud detection, lending, payments, compliance, and automation, with real examples, risks, and benefits.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Learn how AI in finance is used for fraud detection, lending, payments, compliance, and automation, with real examples, risks, and benefits."
+    }
+   ]
+  },
+  {
+   "id": "og_title",
+   "kind": "og_title",
+   "label": "og:title",
+   "scope": "page",
+   "skipped": false,
+   "text": "AI in Finance: Best AI Use Cases, Benefits, Examples",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "AI in Finance: Best AI Use Cases, Benefits, Examples"
+    }
+   ]
+  },
+  {
+   "id": "og_description",
+   "kind": "og_description",
+   "label": "og:description",
+   "scope": "page",
+   "skipped": false,
+   "text": "Learn how AI in finance is used for fraud detection, lending, payments, compliance, and automation, with real examples, risks, and benefits.",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Learn how AI in finance is used for fraud detection, lending, payments, compliance, and automation, with real examples, risks, and benefits."
+    }
+   ]
+  },
+  {
+   "id": "json_ld",
+   "kind": "json_ld",
+   "label": "Structured data (JSON-LD)",
+   "scope": "page",
+   "skipped": false,
+   "text": "AI in Finance: Best AI Use Cases, Benefits, Examples\nAI in Finance: Best AI Use Cases, Benefits, Examples\nLearn how AI in finance is used for fraud detection, lending, payments, compliance, and automation,\nSergey Matikaynen\nGoGloby\nWhat is AI in finance?\nAI in finance is the use of machine learning, language models, and automation to help financial teams score risk, detect fraud, summarize documents, and automate repetitive work. It supports decision-making rather than replacing financial judgment. A good next step is to identify one workflow where finance staff spends too much time on repetitive review.\nHow is AI used in finance today?\nThe most common live deployments are in fraud detection, underwriting support, AML triage, customer service automation, reporting support, and back-office document workflows. Most successful teams begin with a narrow queue rather than a broad enterprise rollout. The next step is to choose one measurable use case and define a success metric before selecting tools.\nWhat are the main benefits of AI in finance?\nThe strongest benefits are faster decisions, lower fraud losses, fewer false positives, better service speed, and lower manual effort. In many teams, the first visible value comes from improved throughput and better prioritization rather than full automation. The next step is to baseline current handling time, error rate, and review volume.\nWhat are the biggest risks of AI in finance?\nThe main risks are bias, opacity, data leakage, hallucinations, drift, and over-automation in sensitive workflows. These risks increase when teams deploy AI without strong approval gates or clear monitoring. The next step is to write a simple governance checklist before launching any pilot.\nHow can AI be used in finance without adding too much risk?\nUse AI in low-risk, high-volume workflows first, keep humans in the loop, and log every important output or action. Recommendation mode is often safer than full automation at the start. The next step is to choose a pilot where AI can assist rather than decide.\nWhat is the future of AI in finance?\nThe future of AI in finance will likely include more real-time decisioning, stronger document intelligence, better AI support for analysts, and more tightly controlled agent workflows. Adoption will continue, but governance maturity will matter more as systems scale. The next step is to treat governance and workflow fit as part of product design, not as a later compliance task.",
+   "parts": [
+    {
+     "type": "field",
+     "text": "AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "area": "Article.name",
+     "index": 1
+    },
+    {
+     "type": "field",
+     "text": "AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "area": "Article.headline",
+     "index": 2
+    },
+    {
+     "type": "field",
+     "text": "Learn how AI in finance is used for fraud detection, lending, payments, compliance, and automation,",
+     "area": "Article.description",
+     "index": 3
+    },
+    {
+     "type": "field",
+     "text": "Sergey Matikaynen",
+     "area": "Person.name",
+     "index": 4
+    },
+    {
+     "type": "field",
+     "text": "GoGloby",
+     "area": "Organization.name",
+     "index": 5
+    },
+    {
+     "type": "field",
+     "text": "What is AI in finance?",
+     "area": "Question.name",
+     "index": 6
+    },
+    {
+     "type": "field",
+     "text": "AI in finance is the use of machine learning, language models, and automation to help financial teams score risk, detect fraud, summarize documents, and automate repetitive work. It supports decision-making rather than replacing financial judgment. A good next step is to identify one workflow where finance staff spends too much time on repetitive review.",
+     "area": "Answer.text",
+     "index": 7
+    },
+    {
+     "type": "field",
+     "text": "How is AI used in finance today?",
+     "area": "Question.name",
+     "index": 8
+    },
+    {
+     "type": "field",
+     "text": "The most common live deployments are in fraud detection, underwriting support, AML triage, customer service automation, reporting support, and back-office document workflows. Most successful teams begin with a narrow queue rather than a broad enterprise rollout. The next step is to choose one measurable use case and define a success metric before selecting tools.",
+     "area": "Answer.text",
+     "index": 9
+    },
+    {
+     "type": "field",
+     "text": "What are the main benefits of AI in finance?",
+     "area": "Question.name",
+     "index": 10
+    },
+    {
+     "type": "field",
+     "text": "The strongest benefits are faster decisions, lower fraud losses, fewer false positives, better service speed, and lower manual effort. In many teams, the first visible value comes from improved throughput and better prioritization rather than full automation. The next step is to baseline current handling time, error rate, and review volume.",
+     "area": "Answer.text",
+     "index": 11
+    },
+    {
+     "type": "field",
+     "text": "What are the biggest risks of AI in finance?",
+     "area": "Question.name",
+     "index": 12
+    },
+    {
+     "type": "field",
+     "text": "The main risks are bias, opacity, data leakage, hallucinations, drift, and over-automation in sensitive workflows. These risks increase when teams deploy AI without strong approval gates or clear monitoring. The next step is to write a simple governance checklist before launching any pilot.",
+     "area": "Answer.text",
+     "index": 13
+    },
+    {
+     "type": "field",
+     "text": "How can AI be used in finance without adding too much risk?",
+     "area": "Question.name",
+     "index": 14
+    },
+    {
+     "type": "field",
+     "text": "Use AI in low-risk, high-volume workflows first, keep humans in the loop, and log every important output or action. Recommendation mode is often safer than full automation at the start. The next step is to choose a pilot where AI can assist rather than decide.",
+     "area": "Answer.text",
+     "index": 15
+    },
+    {
+     "type": "field",
+     "text": "What is the future of AI in finance?",
+     "area": "Question.name",
+     "index": 16
+    },
+    {
+     "type": "field",
+     "text": "The future of AI in finance will likely include more real-time decisioning, stronger document intelligence, better AI support for analysts, and more tightly controlled agent workflows. Adoption will continue, but governance maturity will matter more as systems scale. The next step is to treat governance and workflow fit as part of product design, not as a later compliance task.",
+     "area": "Answer.text",
+     "index": 17
+    }
+   ]
+  },
+  {
+   "id": "h1",
+   "kind": "h1",
+   "label": "H1",
+   "scope": "page",
+   "skipped": false,
+   "text": "AI in Finance: Best AI Use Cases, Benefits, Examples",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "AI in Finance: Best AI Use Cases, Benefits, Examples"
+    }
+   ]
+  },
+  {
+   "id": "date",
+   "kind": "date",
+   "label": "Date",
+   "scope": "page",
+   "skipped": false,
+   "text": "Updated on August 11, 2026",
+   "parts": [
+    {
+     "type": "field",
+     "index": 1,
+     "text": "Updated on August 11, 2026"
+    }
+   ]
+  },
+  {
+   "id": "author",
+   "kind": "author",
+   "label": "Author",
+   "scope": "page",
+   "skipped": false,
+   "text": "Author avatar\nSergey Matikaynen / CTO\nArticle author\nSergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.\nView profile",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Author avatar",
+     "src": "https://gogloby.com/wp-content/uploads/2024/02/1706550966241.jpeg",
+     "file": "1706550966241.jpeg",
+     "alt": "Author avatar",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen / CTO",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Article author",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "View profile",
+     "links": [
+      {
+       "href": "https://gogloby.com/author/sergey/",
+       "text": "View profile"
+      }
+     ],
+     "index": 4
+    }
+   ]
+  },
+  {
+   "id": "toc",
+   "kind": "toc",
+   "label": "Table of contents",
+   "scope": "page",
+   "skipped": false,
+   "text": "Table of Contents\nWhat Is AI in Finance?\nHow Does AI Work in Finance?\nWhat Are the Best AI Use Cases in Finance?\nWhy Use AI in Finance? Main Benefits\nWhat Are Real Examples of AI in Finance?\nHow Is AI Used in Banking and Payments?\nHow Is AI Used for Risk and Compliance?\nWhat Are the Risks of AI in Finance?\nHow Should Responsible AI and Governance Work in Finance?\nWhat Is the Future of AI in Finance?\nHow Can GoGloby Help Finance Teams Move Faster?\nConclusion\nReady To Adopt AI in Finance Without Adding Hidden Risk?\nFAQs",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Table of Contents",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "What Is AI in Finance?",
+     "links": [
+      {
+       "href": "#what-is-ai-in-finance",
+       "text": "What Is AI in Finance?"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "How Does AI Work in Finance?",
+     "links": [
+      {
+       "href": "#how-does-ai-work-in-finance",
+       "text": "How Does AI Work in Finance?"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "What Are the Best AI Use Cases in Finance?",
+     "links": [
+      {
+       "href": "#what-are-the-best-ai-use-cases-in-finance",
+       "text": "What Are the Best AI Use Cases in Finance?"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Why Use AI in Finance? Main Benefits",
+     "links": [
+      {
+       "href": "#why-use-ai-in-finance-main-benefits",
+       "text": "Why Use AI in Finance? Main Benefits"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "What Are Real Examples of AI in Finance?",
+     "links": [
+      {
+       "href": "#what-are-real-examples-of-ai-in-finance",
+       "text": "What Are Real Examples of AI in Finance?"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "How Is AI Used in Banking and Payments?",
+     "links": [
+      {
+       "href": "#how-is-ai-used-in-banking-and-payments",
+       "text": "How Is AI Used in Banking and Payments?"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "How Is AI Used for Risk and Compliance?",
+     "links": [
+      {
+       "href": "#how-is-ai-used-for-risk-and-compliance",
+       "text": "How Is AI Used for Risk and Compliance?"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "What Are the Risks of AI in Finance?",
+     "links": [
+      {
+       "href": "#what-are-the-risks-of-ai-in-finance",
+       "text": "What Are the Risks of AI in Finance?"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "How Should Responsible AI and Governance Work in Finance?",
+     "links": [
+      {
+       "href": "#how-should-responsible-ai-and-governance-work-in-finance",
+       "text": "How Should Responsible AI and Governance Work in Finance?"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "What Is the Future of AI in Finance?",
+     "links": [
+      {
+       "href": "#what-is-the-future-of-ai-in-finance",
+       "text": "What Is the Future of AI in Finance?"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "How Can GoGloby Help Finance Teams Move Faster?",
+     "links": [
+      {
+       "href": "#how-can-gogloby-help-finance-teams-move-faster",
+       "text": "How Can GoGloby Help Finance Teams Move Faster?"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Conclusion",
+     "links": [
+      {
+       "href": "#conclusion",
+       "text": "Conclusion"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "Ready To Adopt AI in Finance Without Adding Hidden Risk?",
+     "links": [
+      {
+       "href": "#ready-to-adopt-ai-in-finance-without-adding-hidden-risk",
+       "text": "Ready To Adopt AI in Finance Without Adding Hidden Risk?"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "FAQs",
+     "links": [
+      {
+       "href": "#faqs",
+       "text": "FAQs"
+      }
+     ],
+     "index": 14
+    }
+   ]
+  },
+  {
+   "id": "article:intro",
+   "kind": "article_section",
+   "label": "Intro",
+   "scope": "page",
+   "skipped": false,
+   "text": "AI in finance uses machine learning, language models, and automation tools to work with financial data. It helps teams make decisions faster, cut manual work, and improve speed, accuracy, and control across banking, payments, lending, investing, and other finance tasks. Adoption is rising because finance teams need to catch fraud sooner, handle more data, improve customer service, and get more done with leaner teams. McKinsey’s 2025 CFO survey shows how fast this is moving. It found that 44% of organizations were already using generative AI in more than five use cases, up from 7% a year earlier, and 65% planned to increase investment in 2025.\nThis guide explains how AI is used in finance today and where the strongest use cases are. It also looks at the main risks, the role of governance, and the future of AI in finance. The article covers the basics, how the technology works, and where it creates the most value. It also reviews key benefits, real examples, implementation issues, and the controls teams need as adoption grows.",
+   "parts": [
+    {
+     "type": "paragraph",
+     "text": "AI in finance uses machine learning, language models, and automation tools to work with financial data. It helps teams make decisions faster, cut manual work, and improve speed, accuracy, and control across banking, payments, lending, investing, and other finance tasks. Adoption is rising because finance teams need to catch fraud sooner, handle more data, improve customer service, and get more done with leaner teams. McKinsey’s 2025 CFO survey shows how fast this is moving. It found that 44% of organizations were already using generative AI in more than five use cases, up from 7% a year earlier, and 65% planned to increase investment in 2025.",
+     "links": [
+      {
+       "href": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/how-finance-teams-are-putting-ai-to-work-today",
+       "text": "McKinsey’s 2025 CFO survey"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "This guide explains how AI is used in finance today and where the strongest use cases are. It also looks at the main risks, the role of governance, and the future of AI in finance. The article covers the basics, how the technology works, and where it creates the most value. It also reviews key benefits, real examples, implementation issues, and the controls teams need as adoption grows.",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "article:what-is-ai-in-finance",
+   "kind": "article_section",
+   "label": "What Is AI in Finance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Is AI in Finance?\nAI in finance uses software to learn from financial data. This helps teams work more quickly. The software can sort information and find patterns. It makes predictions and summarizes content. It also takes care of routine tasks. In everyday finance, AI helps with fraud checks. It supports underwriting and investor research. AI improves customer service and reviews documents. It also streamlines back-office processes.\nIts use is broader than it may seem at first. AI is used in banking, card and ACH payments, lending, insurance, capital markets, wealth management, treasury, FP&A, accounting, and compliance. It includes both predictive and generative tools. Some models score risk, detect unusual activity, and forecast outcomes. Others work with text, emails, notes, and documents to draft, summarize, and explain information.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Is AI in Finance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI in finance uses software to learn from financial data. This helps teams work more quickly. The software can sort information and find patterns. It makes predictions and summarizes content. It also takes care of routine tasks. In everyday finance, AI helps with fraud checks. It supports underwriting and investor research. AI improves customer service and reviews documents. It also streamlines back-office processes.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Its use is broader than it may seem at first. AI is used in banking, card and ACH payments, lending, insurance, capital markets, wealth management, treasury, FP&A, accounting, and compliance. It includes both predictive and generative tools. Some models score risk, detect unusual activity, and forecast outcomes. Others work with text, emails, notes, and documents to draft, summarize, and explain information.",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "article:how-does-ai-work-in-finance",
+   "kind": "article_section",
+   "label": "How Does AI Work in Finance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Does AI Work in Finance?\nAI in finance takes financial data and turns it into useful signals. It can create scores, classifications, summaries, alerts, or recommendations for people to review. This system does not replace human judgment. Instead, it helps teams process information faster. It gives outputs that people can check before taking action.\nHere’s a simple flow of how it works:\nIngestion: Gather data from transaction systems, core banking, CRM, case tools, statements, invoices, contracts, market feeds, and service logs.\nFeature creation: Find patterns like payment frequency, merchant behavior, delinquency trends, customer activity, or language markers in documents.\nTraining and inference: Train a model using past examples, then use it on new data.\nHybrid decisioning: Combine rules with machine learning. This helps the system handle clear cases quickly and escalate unclear ones.\nHuman review: Send difficult cases, sensitive actions, and exceptions to analysts for review.\nMonitoring: Keep an eye on drift, false positives, and the stability of outputs over time.\nThis approach matters. Using AI in finance works best when it is not a black box. Finance teams need approvals, audit trails, exception handling, and clear rollback paths.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Does AI Work in Finance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI in finance takes financial data and turns it into useful signals. It can create scores, classifications, summaries, alerts, or recommendations for people to review. This system does not replace human judgment. Instead, it helps teams process information faster. It gives outputs that people can check before taking action.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Here’s a simple flow of how it works:",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Ingestion: Gather data from transaction systems, core banking, CRM, case tools, statements, invoices, contracts, market feeds, and service logs.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Feature creation: Find patterns like payment frequency, merchant behavior, delinquency trends, customer activity, or language markers in documents.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Training and inference: Train a model using past examples, then use it on new data.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Hybrid decisioning: Combine rules with machine learning. This helps the system handle clear cases quickly and escalate unclear ones.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Human review: Send difficult cases, sensitive actions, and exceptions to analysts for review.",
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Monitoring: Keep an eye on drift, false positives, and the stability of outputs over time.",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "This approach matters. Using AI in finance works best when it is not a black box. Finance teams need approvals, audit trails, exception handling, and clear rollback paths.",
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-the-best-ai-use-cases-in-finance",
+   "kind": "article_section",
+   "label": "What Are the Best AI Use Cases in Finance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are the Best AI Use Cases in Finance?\nThe best AI applications in finance are usually tied to high-volume decisions, repeatable reviews, and measurable business outcomes. That is where adoption tends to create value fastest. Teams usually get the best results when they start with one workflow, one queue, and one clear KPI.\nFraud Detection and Transaction Monitoring\nFraud detection is one of the most established AI use cases in finance. AI reviews card, ACH, account, and payment behavior to spot unusual patterns earlier and reduce false positives. Models usually score transactions with device, merchant, velocity, account, and behavioral signals.\nTransaction scoring at scale: AI helps rank suspicious activity faster across large payment flows.\nBehavior-based anomaly review: Models compare live activity with normal customer behavior to surface unusual events sooner.\nFaster signal prioritization: Similar logic also appears in AI-powered auditing workflows, where teams review 150 meetings per hour and cut monthly audit costs by 96%.\nCredit Scoring and Underwriting Support\nCredit and underwriting workflows are a strong fit for AI because they involve structured data, supporting documents, and repeatable review steps. AI helps teams assess borrower risk, flag weak files, and surface inconsistencies in applications or records. This is one of the clearest answers to how AI is used in finance in day-to-day lending work.\nBorrower file review support: AI helps organize financial records, statements, and application materials for faster credit analysis.\nDocument-based underwriting support: It can extract and structure data from supporting files before analyst review, as seen in credit appraisal automation.\nFaster financing decisions: AI-supported lending platforms can cut credit access from 10 working days to 24 hours and scale to 10,000+ farmers.\nAML Triage and Alert Reduction\nAML is one of the most practical answers to how AI can be used in finance because the work is high-volume and labor-intensive. AI helps compliance teams rank suspicious activity alerts, cluster related cases, and extract useful evidence from records. That reduces wasted analyst time and improves queue handling.\nAlert prioritization: AI helps surface higher-risk cases before analysts begin full review and deeper case investigation.\nWorkflow acceleration in compliance-heavy environments: AI-powered AML compliance workflows can speed up delivery and cut costs, with one finance case showing 3X faster delivery and a 70% cost reduction.\nEvidence extraction: Models pull relevant details from transaction and customer records faster for compliance review and escalation.\nSignal prioritization at scale: Similar ranking logic also appears in AI-driven decision intelligence workflows, where AI achieves 94% accuracy across 200 million titles.\nCustomer Service Automation and Agent Assist\nCustomer service is one of the most visible AI in finance use cases. AI supports chat, help-center search, multilingual service, and context-aware response drafting. This improves speed and consistency while reducing repetitive work for support teams.\nCustomer support copilot workflows: AI-powered service copilots help agents work faster, cutting handovers by 35% and raising chat CSAT by 900 bps.\nHigh-volume multilingual support: AI can handle cross-language support through multilingual customer service automation, with one finance case managing 50,000+ queries.\nBanking app assistance: Conversational agents can support everyday financial and administrative tasks, with one case assisting 1,000+ users daily across 7 languages.\nResearch, Portfolio, and Investment Support\nResearch and investment teams use AI to search, compare, synthesize, and organize large financial datasets. This is where AI in finance examples often show value through faster analysis rather than direct automation. The strongest systems help professionals spend less time digging through documents and more time making judgments.\nComplex financial analysis support: AI can work through large financial datasets, with one case showing a 70% preference for AI-generated responses.\nInvestment diligence support: This is reflected in AI assistants for investment diligence, which helped drive 45% initial adoption and save hours per search.\nLean-team portfolio analysis: AI also helps smaller investment teams work through large document sets at scale through AI support for lean investment teams.\nBack-Office Automation\nBack-office finance is often the easiest place to start because the work is repetitive and the outcome is measurable. This use case covers reconciliations, exception handling, document review, evidence extraction, reporting support, and internal productivity work. It is one of the most practical forms of AI in finance.\nManual analysis reduction: AI can support data-based decision-making and reduce repetitive internal analysis, with one case delivering 20% faster rollout and 20+ new data products.\nTrading workflow automation: This is reflected in AI for trading workflow automation, which reduced manual work by 75% and helped clients trade up to 5x faster.\nInternal productivity gains: AI copilots can reduce routine work across finance teams, driving 10%–20% productivity gains, saving 2,300+ person-hours, and cutting report writing time by 30%.\nAccounting and Finance Operations Automation\nAccounting is another strong use case because much of the work is rules-based, document-heavy, and repetitive. AI helps teams process invoices, billing records, financial statements, and reporting tasks more efficiently. In many cases, this is where the fastest operational gains appear.\nAccounting close support: This is reflected in AI for accounting close automation, which cuts close time by 3 days, bank reconciliation time by 90%, and reporting time by 50%.\nSpend and expense workflow automation: This is reflected in AI for spend management automation, which automated 60% of expenses and improved compliance to 94%.\nRoutine task productivity: This is reflected in Copilot tools for routine finance work, where 78% of users reported time savings.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are the Best AI Use Cases in Finance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The best AI applications in finance are usually tied to high-volume decisions, repeatable reviews, and measurable business outcomes. That is where adoption tends to create value fastest. Teams usually get the best results when they start with one workflow, one queue, and one clear KPI.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Fraud Detection and Transaction Monitoring",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Fraud detection is one of the most established AI use cases in finance. AI reviews card, ACH, account, and payment behavior to spot unusual patterns earlier and reduce false positives. Models usually score transactions with device, merchant, velocity, account, and behavioral signals.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Transaction scoring at scale: AI helps rank suspicious activity faster across large payment flows.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Behavior-based anomaly review: Models compare live activity with normal customer behavior to surface unusual events sooner.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Faster signal prioritization: Similar logic also appears in AI-powered auditing workflows, where teams review 150 meetings per hour and cut monthly audit costs by 96%.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9415",
+       "text": "AI-powered auditing workflows"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Credit Scoring and Underwriting Support",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Credit and underwriting workflows are a strong fit for AI because they involve structured data, supporting documents, and repeatable review steps. AI helps teams assess borrower risk, flag weak files, and surface inconsistencies in applications or records. This is one of the clearest answers to how AI is used in finance in day-to-day lending work.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Borrower file review support: AI helps organize financial records, statements, and application materials for faster credit analysis.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Document-based underwriting support: It can extract and structure data from supporting files before analyst review, as seen in credit appraisal automation.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12160",
+       "text": "credit appraisal automation"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Faster financing decisions: AI-supported lending platforms can cut credit access from 10 working days to 24 hours and scale to 10,000+ farmers.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12130",
+       "text": "Faster financing decisions"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "heading",
+     "text": "AML Triage and Alert Reduction",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "AML is one of the most practical answers to how AI can be used in finance because the work is high-volume and labor-intensive. AI helps compliance teams rank suspicious activity alerts, cluster related cases, and extract useful evidence from records. That reduces wasted analyst time and improves queue handling.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Alert prioritization: AI helps surface higher-risk cases before analysts begin full review and deeper case investigation.",
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Workflow acceleration in compliance-heavy environments: AI-powered AML compliance workflows can speed up delivery and cut costs, with one finance case showing 3X faster delivery and a 70% cost reduction.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/10273",
+       "text": "AI-powered AML compliance workflows"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Evidence extraction: Models pull relevant details from transaction and customer records faster for compliance review and escalation.",
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "Signal prioritization at scale: Similar ranking logic also appears in AI-driven decision intelligence workflows, where AI achieves 94% accuracy across 200 million titles.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/10811",
+       "text": "AI-driven decision intelligence workflows"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "heading",
+     "text": "Customer Service Automation and Agent Assist",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Customer service is one of the most visible AI in finance use cases. AI supports chat, help-center search, multilingual service, and context-aware response drafting. This improves speed and consistency while reducing repetitive work for support teams.",
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Customer support copilot workflows: AI-powered service copilots help agents work faster, cutting handovers by 35% and raising chat CSAT by 900 bps.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12057",
+       "text": "AI-powered service copilots"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "High-volume multilingual support: AI can handle cross-language support through multilingual customer service automation, with one finance case managing 50,000+ queries.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12013",
+       "text": "multilingual customer service automation"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "Banking app assistance: Conversational agents can support everyday financial and administrative tasks, with one case assisting 1,000+ users daily across 7 languages.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9479",
+       "text": "Banking app assistance"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "heading",
+     "text": "Research, Portfolio, and Investment Support",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Research and investment teams use AI to search, compare, synthesize, and organize large financial datasets. This is where AI in finance examples often show value through faster analysis rather than direct automation. The strongest systems help professionals spend less time digging through documents and more time making judgments.",
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Complex financial analysis support: AI can work through large financial datasets, with one case showing a 70% preference for AI-generated responses.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/11138",
+       "text": "Complex financial analysis support"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "Investment diligence support: This is reflected in AI assistants for investment diligence, which helped drive 45% initial adoption and save hours per search.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/11110",
+       "text": "AI assistants for investment diligence"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "Lean-team portfolio analysis: AI also helps smaller investment teams work through large document sets at scale through AI support for lean investment teams.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/10853",
+       "text": "AI support for lean investment teams"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "heading",
+     "text": "Back-Office Automation",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Back-office finance is often the easiest place to start because the work is repetitive and the outcome is measurable. This use case covers reconciliations, exception handling, document review, evidence extraction, reporting support, and internal productivity work. It is one of the most practical forms of AI in finance.",
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Manual analysis reduction: AI can support data-based decision-making and reduce repetitive internal analysis, with one case delivering 20% faster rollout and 20+ new data products.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12150",
+       "text": "Manual analysis reduction"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Trading workflow automation: This is reflected in AI for trading workflow automation, which reduced manual work by 75% and helped clients trade up to 5x faster.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9701",
+       "text": "AI for trading workflow automation"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Internal productivity gains: AI copilots can reduce routine work across finance teams, driving 10%–20% productivity gains, saving 2,300+ person-hours, and cutting report writing time by 30%.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9359",
+       "text": "Internal productivity gains"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "heading",
+     "text": "Accounting and Finance Operations Automation",
+     "level": 3,
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "Accounting is another strong use case because much of the work is rules-based, document-heavy, and repetitive. AI helps teams process invoices, billing records, financial statements, and reporting tasks more efficiently. In many cases, this is where the fastest operational gains appear.",
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Accounting close support: This is reflected in AI for accounting close automation, which cuts close time by 3 days, bank reconciliation time by 90%, and reporting time by 50%.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/10818",
+       "text": "AI for accounting close automation"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "list_item",
+     "text": "Spend and expense workflow automation: This is reflected in AI for spend management automation, which automated 60% of expenses and improved compliance to 94%.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/10771",
+       "text": "Spend and expense workflow automation"
+      }
+     ],
+     "index": 21
+    },
+    {
+     "type": "list_item",
+     "text": "Routine task productivity: This is reflected in Copilot tools for routine finance work, where 78% of users reported time savings.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/9597",
+       "text": "Copilot tools for routine finance work"
+      }
+     ],
+     "index": 22
+    }
+   ]
+  },
+  {
+   "id": "article:why-use-ai-in-finance-main-benefits",
+   "kind": "article_section",
+   "label": "Why Use AI in Finance? Main Benefits",
+   "scope": "page",
+   "skipped": false,
+   "text": "Why Use AI in Finance? Main Benefits\nAI is used in finance to help teams make decisions faster and handle routine work with less manual effort. It also improves prioritization and helps teams manage large workflows in a more consistent way. This matters most in areas where volumes are high, and speed affects service, risk, or operational performance.\nThe main benefits usually show up in faster review, better organization, and higher throughput. Finance teams often get the most value when AI helps them sort work more clearly, surface the right signals earlier, and reduce repetitive tasks that slow teams down.\nBenefit\nWhat It Improves\nFaster decisions\nAI helps teams rank cases, surface risk signals, and shorten review time across fraud, lending, and service workflows.\nBetter prioritization\nAI sorts alerts, requests, and cases by relevance or risk so teams can focus on the highest-value work first.\nHigher consistency\nAI applies the same review logic across large volumes of documents, transactions, and customer interactions.\nHigher throughput\nTeams can process more alerts, files, and requests without increasing manual effort at the same pace.\nLower manual workload\nAI reduces repetitive work such as drafting, extracting data, sorting documents, and summarizing records.\nCleaner evidence\nAI turns contracts, invoices, reports, emails, and other records into more structured review material.\nFewer false positives\nBetter scoring and filtering reduce time spent on weak alerts and low-value cases.\nBetter customer experience\nFaster responses, improved routing, and stronger agent support help service teams handle requests more efficiently.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Why Use AI in Finance? Main Benefits",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI is used in finance to help teams make decisions faster and handle routine work with less manual effort. It also improves prioritization and helps teams manage large workflows in a more consistent way. This matters most in areas where volumes are high, and speed affects service, risk, or operational performance.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The main benefits usually show up in faster review, better organization, and higher throughput. Finance teams often get the most value when AI helps them sort work more clearly, surface the right signals earlier, and reduce repetitive tasks that slow teams down.",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "Benefit",
+     "index": 1
+    },
+    {
+     "type": "table_cell",
+     "text": "What It Improves",
+     "index": 2
+    },
+    {
+     "type": "table_cell",
+     "text": "Faster decisions",
+     "index": 3
+    },
+    {
+     "type": "table_cell",
+     "text": "AI helps teams rank cases, surface risk signals, and shorten review time across fraud, lending, and service workflows.",
+     "index": 4
+    },
+    {
+     "type": "table_cell",
+     "text": "Better prioritization",
+     "index": 5
+    },
+    {
+     "type": "table_cell",
+     "text": "AI sorts alerts, requests, and cases by relevance or risk so teams can focus on the highest-value work first.",
+     "index": 6
+    },
+    {
+     "type": "table_cell",
+     "text": "Higher consistency",
+     "index": 7
+    },
+    {
+     "type": "table_cell",
+     "text": "AI applies the same review logic across large volumes of documents, transactions, and customer interactions.",
+     "index": 8
+    },
+    {
+     "type": "table_cell",
+     "text": "Higher throughput",
+     "index": 9
+    },
+    {
+     "type": "table_cell",
+     "text": "Teams can process more alerts, files, and requests without increasing manual effort at the same pace.",
+     "index": 10
+    },
+    {
+     "type": "table_cell",
+     "text": "Lower manual workload",
+     "index": 11
+    },
+    {
+     "type": "table_cell",
+     "text": "AI reduces repetitive work such as drafting, extracting data, sorting documents, and summarizing records.",
+     "index": 12
+    },
+    {
+     "type": "table_cell",
+     "text": "Cleaner evidence",
+     "index": 13
+    },
+    {
+     "type": "table_cell",
+     "text": "AI turns contracts, invoices, reports, emails, and other records into more structured review material.",
+     "index": 14
+    },
+    {
+     "type": "table_cell",
+     "text": "Fewer false positives",
+     "index": 15
+    },
+    {
+     "type": "table_cell",
+     "text": "Better scoring and filtering reduce time spent on weak alerts and low-value cases.",
+     "index": 16
+    },
+    {
+     "type": "table_cell",
+     "text": "Better customer experience",
+     "index": 17
+    },
+    {
+     "type": "table_cell",
+     "text": "Faster responses, improved routing, and stronger agent support help service teams handle requests more efficiently.",
+     "index": 18
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-real-examples-of-ai-in-finance",
+   "kind": "article_section",
+   "label": "What Are Real Examples of AI in Finance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are Real Examples of AI in Finance?\nAI finance concept with analytics dashboards, financial documents, and security icons on a clean modern workspace\nExamples of AI in finance are strongest when they show a narrow workflow, a measurable improvement, and a clear role for human oversight. The most useful cases are not broad claims about transformation. They are specific examples where AI helps teams process information faster, reduce repetitive work, improve decision support, or handle larger volumes without the same increase in manual effort.\nConversational Investor Support\nOne assistant helps answer investing questions through conversational investor support. It serves 10,000 users per day, while the broader investor base has grown from 600,000 to 5 million since 2017.\nContract and Invoice Intelligence\nAI can scan contracts, invoices, and payment records through contract and invoice intelligence. In one case, it helped uncover more than $1 billion in customer savings, analyzing over $500 billion in transactions and processing 60 million documents.\nCredit Access Acceleration\nOne financing platform used AI to improve turnaround time through credit access acceleration. It reduced credit access from 10 working days to 24 hours and scaled support to 10,000+ farmers, making the workflow much faster and easier to scale.\nOperations Productivity\nAI also improves internal workflows through operational productivity. One case reported 35% higher operational efficiency and a 30% increase in team productivity, showing that routine processes can move faster with better support.\nCustomer and Investor Response Automation\nSome teams use AI to manage large email volumes through customer and investor response automation. In one case, it saved two person-months of repetitive work and improved response handling, which reduced pressure on internal teams.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are Real Examples of AI in Finance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "AI finance concept with analytics dashboards, financial documents, and security icons on a clean modern workspace",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/image-2-1024x683.png",
+     "file": "image-2-1024x683.png",
+     "alt": "AI finance concept with analytics dashboards, financial documents, and security icons on a clean modern workspace",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Examples of AI in finance are strongest when they show a narrow workflow, a measurable improvement, and a clear role for human oversight. The most useful cases are not broad claims about transformation. They are specific examples where AI helps teams process information faster, reduce repetitive work, improve decision support, or handle larger volumes without the same increase in manual effort.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Conversational Investor Support",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "One assistant helps answer investing questions through conversational investor support. It serves 10,000 users per day, while the broader investor base has grown from 600,000 to 5 million since 2017.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12412",
+       "text": "conversational investor support"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Contract and Invoice Intelligence",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "AI can scan contracts, invoices, and payment records through contract and invoice intelligence. In one case, it helped uncover more than $1 billion in customer savings, analyzing over $500 billion in transactions and processing 60 million documents.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12257",
+       "text": "contract and invoice intelligence"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Credit Access Acceleration",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "One financing platform used AI to improve turnaround time through credit access acceleration. It reduced credit access from 10 working days to 24 hours and scaled support to 10,000+ farmers, making the workflow much faster and easier to scale.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12130",
+       "text": "credit access acceleration"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Operations Productivity",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "AI also improves internal workflows through operational productivity. One case reported 35% higher operational efficiency and a 30% increase in team productivity, showing that routine processes can move faster with better support.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12145",
+       "text": "operational productivity"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Customer and Investor Response Automation",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "Some teams use AI to manage large email volumes through customer and investor response automation. In one case, it saved two person-months of repetitive work and improved response handling, which reduced pressure on internal teams.",
+     "links": [
+      {
+       "href": "https://casestudy.gogloby.com/case-study/12143",
+       "text": "customer and investor response automation"
+      }
+     ],
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "article:how-is-ai-used-in-banking-and-payments",
+   "kind": "article_section",
+   "label": "How Is AI Used in Banking and Payments?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Is AI Used in Banking and Payments?\nAI is used in banking and payments to detect fraud, score risk, automate service tasks, and improve payment routing. Card and ACH flows create large amounts of data, which makes them a strong fit for pattern detection and real-time scoring.\nBanks and payment teams use AI for:\nCard and ACH fraud patterns: AI detects unusual transaction behavior and flags suspicious activity earlier.\nDevice and behavioral signals: AI analyzes device data, login context, and user behavior to identify anomalies.\nReal-time payments routing: AI helps route transactions based on speed, risk, and payment context.\nChargeback and dispute handling: AI organizes dispute data, classifies cases, and reduces manual review.\nMerchant risk scoring and monitoring: AI assesses merchant activity and helps identify higher-risk accounts sooner.\nThis is one of the clearest answers to how AI is used in finance because the gains are immediate: fewer manual reviews, faster routing, and earlier detection of suspicious behavior.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Is AI Used in Banking and Payments?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI is used in banking and payments to detect fraud, score risk, automate service tasks, and improve payment routing. Card and ACH flows create large amounts of data, which makes them a strong fit for pattern detection and real-time scoring.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Banks and payment teams use AI for:",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Card and ACH fraud patterns: AI detects unusual transaction behavior and flags suspicious activity earlier.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Device and behavioral signals: AI analyzes device data, login context, and user behavior to identify anomalies.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Real-time payments routing: AI helps route transactions based on speed, risk, and payment context.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Chargeback and dispute handling: AI organizes dispute data, classifies cases, and reduces manual review.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Merchant risk scoring and monitoring: AI assesses merchant activity and helps identify higher-risk accounts sooner.",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "This is one of the clearest answers to how AI is used in finance because the gains are immediate: fewer manual reviews, faster routing, and earlier detection of suspicious behavior.",
+     "index": 3
+    }
+   ]
+  },
+  {
+   "id": "article:how-is-ai-used-for-risk-and-compliance",
+   "kind": "article_section",
+   "label": "How Is AI Used for Risk and Compliance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Is AI Used for Risk and Compliance?\nAI is used in risk and compliance to prioritize review work, detect weak signals earlier, and improve consistency in regulated workflows. The most common areas are AML/KYC, credit risk monitoring, market risk support, covenant tracking, and model monitoring.\nAML, KYC, and Transaction Review\nAI helps teams review alerts, customer records, and transaction activity more efficiently. It can surface unusual patterns earlier and reduce the amount of low-value manual review.\nThis is also where modern AML software tools can support compliance teams by organizing alerts, prioritizing higher-risk cases, and improving review consistency.\nCredit and Market Risk Monitoring\nAI supports ongoing risk monitoring by tracking changes in borrower behavior, portfolio signals, and market conditions. This helps teams spot emerging issues sooner and respond with more consistent analysis.\nCovenant Tracking and Model Oversight\nAI can help monitor covenant terms, reporting deadlines, and model behavior across regulated workflows. It also supports internal checks by making exceptions, drift, or weak performance easier to detect.\nFinancial authorities are also paying close attention to this area. The FSB says AI adoption in finance creates benefits, but also raises vulnerabilities around third-party dependence, cyber risk, model risk, governance, and monitoring. It also notes that supervisory monitoring of AI in finance is still at an early stage.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Is AI Used for Risk and Compliance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI is used in risk and compliance to prioritize review work, detect weak signals earlier, and improve consistency in regulated workflows. The most common areas are AML/KYC, credit risk monitoring, market risk support, covenant tracking, and model monitoring.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "AML, KYC, and Transaction Review",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "AI helps teams review alerts, customer records, and transaction activity more efficiently. It can surface unusual patterns earlier and reduce the amount of low-value manual review.",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "This is also where modern AML software tools can support compliance teams by organizing alerts, prioritizing higher-risk cases, and improving review consistency.",
+     "links": [
+      {
+       "href": "http://seon.io/resources/comparisons/aml-software-tools",
+       "text": "AML software tools"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Credit and Market Risk Monitoring",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "AI supports ongoing risk monitoring by tracking changes in borrower behavior, portfolio signals, and market conditions. This helps teams spot emerging issues sooner and respond with more consistent analysis.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Covenant Tracking and Model Oversight",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "AI can help monitor covenant terms, reporting deadlines, and model behavior across regulated workflows. It also supports internal checks by making exceptions, drift, or weak performance easier to detect.",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Financial authorities are also paying close attention to this area. The FSB says AI adoption in finance creates benefits, but also raises vulnerabilities around third-party dependence, cyber risk, model risk, governance, and monitoring. It also notes that supervisory monitoring of AI in finance is still at an early stage.",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "article:what-are-the-risks-of-ai-in-finance",
+   "kind": "article_section",
+   "label": "What Are the Risks of AI in Finance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Are the Risks of AI in Finance?\nThe risks of AI in finance are practical and immediate. The main problems include bias, low explainability, data leakage, hallucinations in generative AI, over-automation, and performance drift over time.\nThe most common failure points are:\nUnseen edge cases: The model may fail when it meets patterns it was not trained on.\nPoor or messy data: Weak labels and low-quality source data can reduce accuracy.\nFalse confidence in outputs: Teams may trust model results too quickly, even when they are wrong.\nWeak approval gates: Poor review controls can let bad decisions move forward.\nUse outside the intended scope: A model can break down when teams apply it to tasks it was not built for.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Are the Risks of AI in Finance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The risks of AI in finance are practical and immediate. The main problems include bias, low explainability, data leakage, hallucinations in generative AI, over-automation, and performance drift over time.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The most common failure points are:",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Unseen edge cases: The model may fail when it meets patterns it was not trained on.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Poor or messy data: Weak labels and low-quality source data can reduce accuracy.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "False confidence in outputs: Teams may trust model results too quickly, even when they are wrong.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Weak approval gates: Poor review controls can let bad decisions move forward.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Use outside the intended scope: A model can break down when teams apply it to tasks it was not built for.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:how-should-responsible-ai-and-governance-work-in",
+   "kind": "article_section",
+   "label": "How Should Responsible AI and Governance Work in Finance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Should Responsible AI and Governance Work in Finance?\nResponsible AI in finance should be built around privacy, access control, explainability, approval gates, vendor review, and monitoring. Governance should match the level of workflow risk. A customer service assistant does not need the same controls as a credit model or an AML triage engine.\nHuman Approval and Workflow Controls\nTeams should decide which workflows need human approval before anything moves forward. This matters most in lending, fraud, and compliance, where decisions can create serious financial, legal, or regulatory risk.\nData Access and Audit Evidence\nGovernance should set clear rules for what data a model can use, who can see it, and what must be logged. These rules support privacy, better traceability, stronger oversight, internal review, and audit readiness.\nMonitoring and Drift Detection\nModels can become less reliable as patterns change over time. Teams need clear rules for performance checks, drift monitoring, and retraining when results start to weaken in live production environments.\nVendor Review and Oversight\nThird-party models and vendors should be reviewed for security, data handling, and reliability. This matters because governance is becoming a competitive differentiator as finance firms move from testing AI to using it in production.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Should Responsible AI and Governance Work in Finance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Responsible AI in finance should be built around privacy, access control, explainability, approval gates, vendor review, and monitoring. Governance should match the level of workflow risk. A customer service assistant does not need the same controls as a credit model or an AML triage engine.",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Human Approval and Workflow Controls",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Teams should decide which workflows need human approval before anything moves forward. This matters most in lending, fraud, and compliance, where decisions can create serious financial, legal, or regulatory risk.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Data Access and Audit Evidence",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Governance should set clear rules for what data a model can use, who can see it, and what must be logged. These rules support privacy, better traceability, stronger oversight, internal review, and audit readiness.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Monitoring and Drift Detection",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Models can become less reliable as patterns change over time. Teams need clear rules for performance checks, drift monitoring, and retraining when results start to weaken in live production environments.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Vendor Review and Oversight",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Third-party models and vendors should be reviewed for security, data handling, and reliability. This matters because governance is becoming a competitive differentiator as finance firms move from testing AI to using it in production.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "article:what-is-the-future-of-ai-in-finance",
+   "kind": "article_section",
+   "label": "What Is the Future of AI in Finance?",
+   "scope": "page",
+   "skipped": false,
+   "text": "What Is the Future of AI in Finance?\nThe future of AI in finance will likely center on real-time decisioning, stronger document intelligence, multimodal risk signals, and tightly controlled agent workflows. Finance teams are moving from isolated pilots toward systems that combine automation, retrieval, and AI-assisted decisions across multiple functions.\nMore real-time scoring in payments and fraud: AI will support faster decisions as transaction volumes grow and risk signals need to be evaluated instantly.\nMore document-heavy automation in accounting and compliance: Teams will use AI more often to process reports, policies, filings, and other dense documents.\nStronger AI support for analyst and advisor workflows: AI will help summarize information, surface insights, and reduce manual review work.\nMore agent-style orchestration with stricter controls: Firms will test more connected AI workflows, but with tighter approval gates and clearer oversight.\nMore governance maturity as adoption scales: Governance frameworks will become more detailed as AI moves deeper into production use.\nThe direction is clear. AI is not staying at the pilot stage. Finance teams are increasing investment, broadening use cases, and tying adoption more directly to measurable business value.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "What Is the Future of AI in Finance?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The future of AI in finance will likely center on real-time decisioning, stronger document intelligence, multimodal risk signals, and tightly controlled agent workflows. Finance teams are moving from isolated pilots toward systems that combine automation, retrieval, and AI-assisted decisions across multiple functions.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "More real-time scoring in payments and fraud: AI will support faster decisions as transaction volumes grow and risk signals need to be evaluated instantly.",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "More document-heavy automation in accounting and compliance: Teams will use AI more often to process reports, policies, filings, and other dense documents.",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Stronger AI support for analyst and advisor workflows: AI will help summarize information, surface insights, and reduce manual review work.",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "More agent-style orchestration with stricter controls: Firms will test more connected AI workflows, but with tighter approval gates and clearer oversight.",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "More governance maturity as adoption scales: Governance frameworks will become more detailed as AI moves deeper into production use.",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "The direction is clear. AI is not staying at the pilot stage. Finance teams are increasing investment, broadening use cases, and tying adoption more directly to measurable business value.",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "article:how-can-gogloby-help-finance-teams-move-faster",
+   "kind": "article_section",
+   "label": "How Can GoGloby Help Finance Teams Move Faster?",
+   "scope": "page",
+   "skipped": false,
+   "text": "How Can GoGloby Help Finance Teams Move Faster?\nFinance teams usually know where AI can create value. The harder part is introducing it into live workflows without weakening control, ownership, or review quality. In finance, that risk appears quickly, teams may use AI in inconsistent ways, sensitive data may move outside approved boundaries, and outputs may begin shaping decisions before proper review is in place.\nThat is why GoGloby approaches AI adoption in finance as an Applied AI Engineering problem rather than a standalone tooling choice. The goal is not broader experimentation. It is faster execution inside governed workflows that still preserve accountability, auditability, and control. With GoGloby, qualified engineer shortlists are typically presented in 3–5 days, and a fully embedded team can be in place in under 4 weeks, which gives finance organisations a faster path from idea to controlled rollout.\nClear Workflow Fit\nGoGloby helps finance teams introduce AI where the workflow is already defined, and the output can be reviewed. This includes areas such as reporting support, document handling, internal analysis, queue organisation, risk review, and compliance-related operations. AI can speed up preparation, summarisation, and triage, while final decisions remain with the finance team.\nConsistent Execution Model\nFinance teams get more value from AI when usage follows one structured process instead of ad hoc habits across different users. GoGloby helps establish a repeatable operating model for testing, reviewing, validating, and documenting AI-assisted output before it affects live work. This makes the rollout easier to scale across sensitive workflows such as approvals, reporting, and risk monitoring. The Agentic Workflow is designed to eliminate ungoverned AI usage and support more predictable, auditable delivery from day one.\nControlled Environment\nAI adoption in finance depends on strong boundaries around data, documents, and generated output. GoGloby helps organisations keep AI-assisted work inside controlled environments with clearer access rules, stronger oversight, and safer handling of internal financial information. This supports privacy, governance, and audit readiness as usage expands. GoGloby’s Secure Development Environment keeps client code and data inside the client’s controlled perimeter, with zero IP exposure.\nResults That Can Be Measured\nGoGloby helps finance teams connect AI adoption to day-to-day operational outcomes. Instead of measuring usage as activity alone, teams can track impact through cycle time, review speed, exception handling, manual workload, and output consistency. This makes it easier to improve one workflow at a time with one KPI and one accountable owner. Performance Center adds sprint-by-sprint telemetry, including Agentic AI commit-rate targets of 35–45% by month 2 and 60–70% by month 6, so leaders can see whether adoption is scaling in a controlled way.\nFor finance leaders who want better execution without added operational risk, GoGloby offers a more controlled path from workflow design to measurable implementation. Only 4% of Applied AI engineer applicants pass GoGloby’s multi-layer assessment, supporting a higher bar for quality and consistency in sensitive environments.\nRead more: Generative AI in Finance: Best AI Use Cases, Benefits, Examples and Agentic AI in Finance: Best AI Use Cases, Benefits, Examples.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "How Can GoGloby Help Finance Teams Move Faster?",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Finance teams usually know where AI can create value. The harder part is introducing it into live workflows without weakening control, ownership, or review quality. In finance, that risk appears quickly, teams may use AI in inconsistent ways, sensitive data may move outside approved boundaries, and outputs may begin shaping decisions before proper review is in place.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "That is why GoGloby approaches AI adoption in finance as an Applied AI Engineering problem rather than a standalone tooling choice. The goal is not broader experimentation. It is faster execution inside governed workflows that still preserve accountability, auditability, and control. With GoGloby, qualified engineer shortlists are typically presented in 3–5 days, and a fully embedded team can be in place in under 4 weeks, which gives finance organisations a faster path from idea to controlled rollout.",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "Clear Workflow Fit",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby helps finance teams introduce AI where the workflow is already defined, and the output can be reviewed. This includes areas such as reporting support, document handling, internal analysis, queue organisation, risk review, and compliance-related operations. AI can speed up preparation, summarisation, and triage, while final decisions remain with the finance team.",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Consistent Execution Model",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "Finance teams get more value from AI when usage follows one structured process instead of ad hoc habits across different users. GoGloby helps establish a repeatable operating model for testing, reviewing, validating, and documenting AI-assisted output before it affects live work. This makes the rollout easier to scale across sensitive workflows such as approvals, reporting, and risk monitoring. The Agentic Workflow is designed to eliminate ungoverned AI usage and support more predictable, auditable delivery from day one.",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Controlled Environment",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "AI adoption in finance depends on strong boundaries around data, documents, and generated output. GoGloby helps organisations keep AI-assisted work inside controlled environments with clearer access rules, stronger oversight, and safer handling of internal financial information. This supports privacy, governance, and audit readiness as usage expands. GoGloby’s Secure Development Environment keeps client code and data inside the client’s controlled perimeter, with zero IP exposure.",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Results That Can Be Measured",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby helps finance teams connect AI adoption to day-to-day operational outcomes. Instead of measuring usage as activity alone, teams can track impact through cycle time, review speed, exception handling, manual workload, and output consistency. This makes it easier to improve one workflow at a time with one KPI and one accountable owner. Performance Center adds sprint-by-sprint telemetry, including Agentic AI commit-rate targets of 35–45% by month 2 and 60–70% by month 6, so leaders can see whether adoption is scaling in a controlled way.",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "For finance leaders who want better execution without added operational risk, GoGloby offers a more controlled path from workflow design to measurable implementation. Only 4% of Applied AI engineer applicants pass GoGloby’s multi-layer assessment, supporting a higher bar for quality and consistency in sensitive environments.",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "Read more: Generative AI in Finance: Best AI Use Cases, Benefits, Examples and Agentic AI in Finance: Best AI Use Cases, Benefits, Examples.",
+     "links": [
+      {
+       "href": "https://gogloby.com/case-studies/generative-ai-use-cases-in-finance/",
+       "text": "Generative AI in Finance: Best AI Use Cases, Benefits, Examples"
+      },
+      {
+       "href": "https://gogloby.com/case-studies/agentic-ai-use-cases-in-finance/",
+       "text": "Agentic AI in Finance: Best AI Use Cases, Benefits, Examples"
+      }
+     ],
+     "index": 8
+    }
+   ]
+  },
+  {
+   "id": "article:conclusion",
+   "kind": "article_section",
+   "label": "Conclusion",
+   "scope": "page",
+   "skipped": false,
+   "text": "Conclusion\nAI in finance is moving beyond the pilot stage. It is already helping teams detect fraud faster, handle documents more efficiently, improve service quality, and reduce manual work across core workflows. In many cases, the value appears first in speed, prioritization, and more consistent execution.\nThe strongest results usually come from narrow use cases with clear goals, defined review steps, and measurable business value. Teams that combine AI adoption with good governance, human oversight, and practical workflow design are more likely to get stable long-term results as usage expands across finance functions.",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Conclusion",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI in finance is moving beyond the pilot stage. It is already helping teams detect fraud faster, handle documents more efficiently, improve service quality, and reduce manual work across core workflows. In many cases, the value appears first in speed, prioritization, and more consistent execution.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "The strongest results usually come from narrow use cases with clear goals, defined review steps, and measurable business value. Teams that combine AI adoption with good governance, human oversight, and practical workflow design are more likely to get stable long-term results as usage expands across finance functions.",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "article:faqs",
+   "kind": "article_section",
+   "label": "FAQs",
+   "scope": "page",
+   "skipped": false,
+   "text": "FAQs\nWhat is AI in finance?\nAI in finance is the use of machine learning, language models, and automation to help financial teams score risk, detect fraud, summarize documents, and automate repetitive work. It supports decision-making rather than replacing financial judgment. A good next step is to identify one workflow where finance staff spends too much time on repetitive review.\nHow is AI used in finance today?\nThe most common live deployments are in fraud detection, underwriting support, AML triage, customer service automation, reporting support, and back-office document workflows. Most successful teams begin with a narrow queue rather than a broad enterprise rollout. The next step is to choose one measurable use case and define a success metric before selecting tools.\nWhat are the main benefits of AI in finance?\nThe strongest benefits are faster decisions, lower fraud losses, fewer false positives, better service speed, and lower manual effort. In many teams, the first visible value comes from improved throughput and better prioritization rather than full automation. The next step is to baseline current handling time, error rate, and review volume.\nWhat are the biggest risks of AI in finance?\nThe main risks are bias, opacity, data leakage, hallucinations, drift, and over-automation in sensitive workflows. These risks increase when teams deploy AI without strong approval gates or clear monitoring. The next step is to write a simple governance checklist before launching any pilot.\nHow can AI be used in finance without adding too much risk?\nUse AI in low-risk, high-volume workflows first, keep humans in the loop, and log every important output or action. Recommendation mode is often safer than full automation at the start. The next step is to choose a pilot where AI can assist rather than decide.\nWhat is the future of AI in finance?\nThe future of AI in finance will likely include more real-time decisioning, stronger document intelligence, better AI support for analysts, and more tightly controlled agent workflows. Adoption will continue, but governance maturity will matter more as systems scale. The next step is to treat governance and workflow fit as part of product design, not as a later compliance task.\nAuthor avatar\nSergey Matikaynen / CTO\nArticle author\nSergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.\nView profile",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "FAQs",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "What is AI in finance?",
+     "area": "item 1",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "AI in finance is the use of machine learning, language models, and automation to help financial teams score risk, detect fraud, summarize documents, and automate repetitive work. It supports decision-making rather than replacing financial judgment. A good next step is to identify one workflow where finance staff spends too much time on repetitive review.",
+     "area": "item 1",
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "How is AI used in finance today?",
+     "area": "item 1",
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "The most common live deployments are in fraud detection, underwriting support, AML triage, customer service automation, reporting support, and back-office document workflows. Most successful teams begin with a narrow queue rather than a broad enterprise rollout. The next step is to choose one measurable use case and define a success metric before selecting tools.",
+     "area": "item 1",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "What are the main benefits of AI in finance?",
+     "area": "item 1",
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "The strongest benefits are faster decisions, lower fraud losses, fewer false positives, better service speed, and lower manual effort. In many teams, the first visible value comes from improved throughput and better prioritization rather than full automation. The next step is to baseline current handling time, error rate, and review volume.",
+     "area": "item 1",
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "What are the biggest risks of AI in finance?",
+     "area": "item 1",
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "The main risks are bias, opacity, data leakage, hallucinations, drift, and over-automation in sensitive workflows. These risks increase when teams deploy AI without strong approval gates or clear monitoring. The next step is to write a simple governance checklist before launching any pilot.",
+     "area": "item 1",
+     "index": 8
+    },
+    {
+     "type": "paragraph",
+     "text": "How can AI be used in finance without adding too much risk?",
+     "area": "item 1",
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Use AI in low-risk, high-volume workflows first, keep humans in the loop, and log every important output or action. Recommendation mode is often safer than full automation at the start. The next step is to choose a pilot where AI can assist rather than decide.",
+     "area": "item 1",
+     "index": 10
+    },
+    {
+     "type": "paragraph",
+     "text": "What is the future of AI in finance?",
+     "area": "item 1",
+     "index": 11
+    },
+    {
+     "type": "paragraph",
+     "text": "The future of AI in finance will likely include more real-time decisioning, stronger document intelligence, better AI support for analysts, and more tightly controlled agent workflows. Adoption will continue, but governance maturity will matter more as systems scale. The next step is to treat governance and workflow fit as part of product design, not as a later compliance task.",
+     "area": "item 1",
+     "index": 12
+    },
+    {
+     "type": "image",
+     "text": "Author avatar",
+     "src": "https://gogloby.com/wp-content/uploads/2024/02/1706550966241.jpeg",
+     "file": "1706550966241.jpeg",
+     "alt": "Author avatar",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen / CTO",
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Article author",
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Sergey Matikaynen is Co-Founder and CTO of GoGloby, where he owns the engineering standard behind 4x Applied AI Engineering. He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe — software architecture, agile delivery, and engineering leadership. At GoGloby, he sets the technical bar that Applied AI Software Engineers are vetted against, including certified Agentic SDLC mastery. He is a LinkedIn Top Voice in software development.",
+     "index": 15
+    },
+    {
+     "type": "paragraph",
+     "text": "View profile",
+     "links": [
+      {
+       "href": "https://gogloby.com/author/sergey/",
+       "text": "View profile"
+      }
+     ],
+     "index": 16
+    }
+   ]
+  },
+  {
+   "id": "banner_cta",
+   "kind": "banner_cta",
+   "label": "Banner CTA",
+   "scope": "page",
+   "skipped": false,
+   "text": "Ready To Adopt AI in Finance Without Adding Hidden Risk?\nGoGloby can help finance teams plan and run AI adoption in a way that stays measurable, practical, and well-controlled. It supports secure rollout, clear workflow design, and stronger governance across finance operations.\nContact GoGloby",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Ready To Adopt AI in Finance Without Adding Hidden Risk?",
+     "area": "block-main",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "GoGloby can help finance teams plan and run AI adoption in a way that stays measurable, practical, and well-controlled. It supports secure rollout, clear workflow design, and stronger governance across finance operations.",
+     "area": "block-main",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Contact GoGloby",
+     "area": "block-aside",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "id": "modals",
+   "kind": "modals",
+   "label": "Forms and modals",
+   "scope": "shared",
+   "skipped": false,
+   "text": "Thank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend\nThank you!\nYour message has been received. We will respond within one business day.\nI have read and accepted the Terms & Conditions and Privacy Policy\nSend",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Thank you!",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Your message has been received. We will respond within one business day.",
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "I have read and accepted the Terms & Conditions and Privacy Policy",
+     "links": [
+      {
+       "href": "/terms-and-conditions/",
+       "text": "Terms & Conditions"
+      },
+      {
+       "href": "/privacy-policy/",
+       "text": "Privacy Policy"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "Send",
+     "index": 6
+    }
+   ]
+  },
+  {
+   "id": "site_header",
+   "kind": "site_header",
+   "label": "Site header",
+   "scope": "page",
+   "skipped": true,
+   "text": "Site logo\nSolutions\nAI Engineering Visibility\nForward Deployed Engineering\nServices\nAI Engineers Staff Augmentation\nHire AI Engineers\nAI Development Services\nGenerative AI Consulting Services\nAgentic AI Consulting Services\nAI Production Engineering\nGenerative AI Development Services\nAI Agent Development Services\nAI Custom Software Development Services\nRAG Application Development Services\nLLM Development Services\nApplication AI Modernization Services\nLegacy Application Modernization Services\nSoftware Maintenance Services\nCompany\nAbout us\nJobs\nResources\nInsights\nUse Cases\nPodcast\nContact\nTalk to Us",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Site logo",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/globy-logo-1-01.svg",
+     "file": "globy-logo-1-01.svg",
+     "alt": "Site logo",
+     "alt_state": "text",
+     "dims": true,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Solutions",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineering Visibility",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/ai-engineering-visibility/",
+       "text": "AI Engineering Visibility"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Forward Deployed Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/solutions/forward-deployed-engineering/",
+       "text": "Forward Deployed Engineering"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "AI Engineers Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Engineers Staff Augmentation"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "link",
+     "text": "AI Development Services",
+     "href": "https://gogloby.com/services/ai-development/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-development/",
+       "text": "AI Development Services"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-consulting/",
+       "text": "Generative AI Consulting Services"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Agentic AI Consulting Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/agentic-ai-consulting/",
+       "text": "Agentic AI Consulting Services"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "AI Production Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "AI Production Engineering"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "AI Agent Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-agent-development/",
+       "text": "AI Agent Development Services"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "list_item",
+     "text": "AI Custom Software Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-custom-software-development/",
+       "text": "AI Custom Software Development Services"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "RAG Application Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/rag-application-development/",
+       "text": "RAG Application Development Services"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "LLM Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/llm-development/",
+       "text": "LLM Development Services"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "link",
+     "text": "Application AI Modernization Services",
+     "href": "https://gogloby.com/services/application-modernization/",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/application-modernization/",
+       "text": "Application AI Modernization Services"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Legacy Application Modernization Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/legacy-application-modernization/",
+       "text": "Legacy Application Modernization Services"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "list_item",
+     "text": "Software Maintenance Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/software-maintenance/",
+       "text": "Software Maintenance Services"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "paragraph",
+     "text": "Talk to Us",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "site_footer",
+   "kind": "site_footer",
+   "label": "Site footer",
+   "scope": "page",
+   "skipped": true,
+   "text": "Background logo\nServices\nApplied AI Engineering\nAI Staff Augmentation\nHire AI Engineers\nGenerative AI Development Services\nCompany\nAbout us\nJobs\nContact\nPrivacy Policy and Candidate Privacy Notice\nTerms and Conditions\nResources\nInsights\nUse Cases\nPodcast\nCase Studies\nConnections\nCrunchbase\nLinkedIn\nX\nG2\nClutch\nTrustpilot\nDesignRush\nGitHub\nFacebook\nYouTube\n© Copyright 2026, GoGloby. All Rights Reserved.",
+   "parts": [
+    {
+     "type": "image",
+     "text": "Background logo",
+     "src": "https://gogloby.com/wp-content/themes/gogloby-theme/assets/images/logos/globy-logo-outline-1-01.svg",
+     "file": "globy-logo-outline-1-01.svg",
+     "alt": "Background logo",
+     "alt_state": "text",
+     "dims": false,
+     "index": 1
+    },
+    {
+     "type": "paragraph",
+     "text": "Services",
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "Applied AI Engineering",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/applied-ai-engineering/",
+       "text": "Applied AI Engineering"
+      }
+     ],
+     "index": 1
+    },
+    {
+     "type": "list_item",
+     "text": "AI Staff Augmentation",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/ai-staff-augmentation/",
+       "text": "AI Staff Augmentation"
+      }
+     ],
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "Hire AI Engineers",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/hire-ai-engineers/",
+       "text": "Hire AI Engineers"
+      }
+     ],
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Generative AI Development Services",
+     "links": [
+      {
+       "href": "https://gogloby.com/services/generative-ai-development/",
+       "text": "Generative AI Development Services"
+      }
+     ],
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "Company",
+     "index": 2
+    },
+    {
+     "type": "list_item",
+     "text": "About us",
+     "links": [
+      {
+       "href": "https://gogloby.com/about/",
+       "text": "About us"
+      }
+     ],
+     "index": 5
+    },
+    {
+     "type": "list_item",
+     "text": "Jobs",
+     "links": [
+      {
+       "href": "https://gogloby.com/jobs/",
+       "text": "Jobs"
+      }
+     ],
+     "index": 6
+    },
+    {
+     "type": "list_item",
+     "text": "Contact",
+     "links": [
+      {
+       "href": "https://gogloby.com/contacts/",
+       "text": "Contact"
+      }
+     ],
+     "index": 7
+    },
+    {
+     "type": "list_item",
+     "text": "Privacy Policy and Candidate Privacy Notice",
+     "links": [
+      {
+       "href": "https://gogloby.com/privacy-policy/",
+       "text": "Privacy Policy and Candidate Privacy Notice"
+      }
+     ],
+     "index": 8
+    },
+    {
+     "type": "list_item",
+     "text": "Terms and Conditions",
+     "links": [
+      {
+       "href": "https://gogloby.com/terms-and-conditions/",
+       "text": "Terms and Conditions"
+      }
+     ],
+     "index": 9
+    },
+    {
+     "type": "paragraph",
+     "text": "Resources",
+     "index": 3
+    },
+    {
+     "type": "list_item",
+     "text": "Insights",
+     "links": [
+      {
+       "href": "https://gogloby.com/insights/",
+       "text": "Insights"
+      }
+     ],
+     "index": 10
+    },
+    {
+     "type": "list_item",
+     "text": "Use Cases",
+     "links": [
+      {
+       "href": "/use-cases/",
+       "text": "Use Cases"
+      }
+     ],
+     "index": 11
+    },
+    {
+     "type": "list_item",
+     "text": "Podcast",
+     "links": [
+      {
+       "href": "https://gogloby.com/podcast/",
+       "text": "Podcast"
+      }
+     ],
+     "index": 12
+    },
+    {
+     "type": "list_item",
+     "text": "Case Studies",
+     "links": [
+      {
+       "href": "https://gogloby.com/case-study/",
+       "text": "Case Studies"
+      }
+     ],
+     "index": 13
+    },
+    {
+     "type": "paragraph",
+     "text": "Connections",
+     "index": 4
+    },
+    {
+     "type": "list_item",
+     "text": "Crunchbase",
+     "links": [
+      {
+       "href": "https://www.crunchbase.com/organization/gogloby",
+       "text": "Crunchbase"
+      }
+     ],
+     "index": 14
+    },
+    {
+     "type": "list_item",
+     "text": "LinkedIn",
+     "links": [
+      {
+       "href": "https://www.linkedin.com/company/gogloby/",
+       "text": "LinkedIn"
+      }
+     ],
+     "index": 15
+    },
+    {
+     "type": "list_item",
+     "text": "X",
+     "links": [
+      {
+       "href": "https://x.com/GoGloby",
+       "text": "X"
+      }
+     ],
+     "index": 16
+    },
+    {
+     "type": "list_item",
+     "text": "G2",
+     "links": [
+      {
+       "href": "https://www.g2.com/products/gogloby/reviews",
+       "text": "G2"
+      }
+     ],
+     "index": 17
+    },
+    {
+     "type": "list_item",
+     "text": "Clutch",
+     "links": [
+      {
+       "href": "https://clutch.co/profile/gogloby",
+       "text": "Clutch"
+      }
+     ],
+     "index": 18
+    },
+    {
+     "type": "list_item",
+     "text": "Trustpilot",
+     "links": [
+      {
+       "href": "https://www.trustpilot.com/review/gogloby.com",
+       "text": "Trustpilot"
+      }
+     ],
+     "index": 19
+    },
+    {
+     "type": "list_item",
+     "text": "DesignRush",
+     "links": [
+      {
+       "href": "https://www.designrush.com/agency/profile/gogloby",
+       "text": "DesignRush"
+      }
+     ],
+     "index": 20
+    },
+    {
+     "type": "list_item",
+     "text": "GitHub",
+     "links": [
+      {
+       "href": "https://github.com/gogloby",
+       "text": "GitHub"
+      }
+     ],
+     "index": 21
+    },
+    {
+     "type": "list_item",
+     "text": "Facebook",
+     "links": [
+      {
+       "href": "https://www.facebook.com/gogloby",
+       "text": "Facebook"
+      }
+     ],
+     "index": 22
+    },
+    {
+     "type": "list_item",
+     "text": "YouTube",
+     "links": [
+      {
+       "href": "https://www.youtube.com/@DefaultGlobal",
+       "text": "YouTube"
+      }
+     ],
+     "index": 23
+    },
+    {
+     "type": "paragraph",
+     "text": "© Copyright 2026, GoGloby. All Rights Reserved.",
+     "index": 5
+    }
+   ]
+  },
+  {
+   "id": "related",
+   "kind": "related",
+   "label": "Related content",
+   "scope": "page",
+   "skipped": true,
+   "text": "Related News\nGenerative AI in Healthcare: Best AI Use Cases, Benefits, Examples\nGenerative AI in Healthcare: Best AI Use Cases, Benefits, Examples\nApril 7,2026\nAgentic AI in Healthcare: Best AI Use Cases, Benefits, Examples\nApril 7,2026\nAI in Healthcare: Best AI Use Cases, Benefits, Examples\nAI in Healthcare: Best AI Use Cases, Benefits, Examples\nApril 7,2026\nAgentic AI in Finance: Best AI Use Cases, Benefits, Examples\nAgentic AI in Finance: Best AI Use Cases, Benefits, Examples\nApril 6,2026\nGenerative AI in Finance: Best AI Use Cases, Benefits, Examples\nGenerative AI in Finance: Best AI Use Cases, Benefits, Examples\nApril 6,2026\nAgentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples\nAgentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples\nMarch 6,2026",
+   "parts": [
+    {
+     "type": "heading",
+     "text": "Related News",
+     "area": "block-header",
+     "level": 2,
+     "index": 1
+    },
+    {
+     "type": "image",
+     "text": "Generative AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/medical-artificial-intelligence-scaled.jpg",
+     "file": "medical-artificial-intelligence-scaled.jpg",
+     "alt": "Generative AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Generative AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 1",
+     "level": 3,
+     "index": 2
+    },
+    {
+     "type": "paragraph",
+     "text": "April 7,2026",
+     "area": "slide 1",
+     "index": 1
+    },
+    {
+     "type": "heading",
+     "text": "Agentic AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 2",
+     "level": 3,
+     "index": 3
+    },
+    {
+     "type": "paragraph",
+     "text": "April 7,2026",
+     "area": "slide 2",
+     "index": 2
+    },
+    {
+     "type": "image",
+     "text": "AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2025/08/AI-use-cases-in-healthcare-scaled.png",
+     "file": "AI-use-cases-in-healthcare-scaled.png",
+     "alt": "AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 3",
+     "index": 2
+    },
+    {
+     "type": "heading",
+     "text": "AI in Healthcare: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 3",
+     "level": 3,
+     "index": 4
+    },
+    {
+     "type": "paragraph",
+     "text": "April 7,2026",
+     "area": "slide 3",
+     "index": 3
+    },
+    {
+     "type": "image",
+     "text": "Agentic AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/Офісна-нарада-з-фінансовим-AI.png",
+     "file": "%D0%9E%D1%84%D1%96%D1%81%D0%BD%D0%B0-%D0%BD%D0%B0%D1%80%D0%B0%D0%B4%D0%B0-%D0%B7-%D1%84%D1%96%D0%BD%D0%B0%D0%BD%D1%81%D0%BE%D0%B2%D0%B8%D0%BC-AI.png",
+     "alt": "Agentic AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 4",
+     "index": 3
+    },
+    {
+     "type": "heading",
+     "text": "Agentic AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 4",
+     "level": 3,
+     "index": 5
+    },
+    {
+     "type": "paragraph",
+     "text": "April 6,2026",
+     "area": "slide 4",
+     "index": 4
+    },
+    {
+     "type": "image",
+     "text": "Generative AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2026/04/Generative-AI-in-finance-2.png",
+     "file": "Generative-AI-in-finance-2.png",
+     "alt": "Generative AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 5",
+     "index": 4
+    },
+    {
+     "type": "heading",
+     "text": "Generative AI in Finance: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 5",
+     "level": 3,
+     "index": 6
+    },
+    {
+     "type": "paragraph",
+     "text": "April 6,2026",
+     "area": "slide 5",
+     "index": 5
+    },
+    {
+     "type": "image",
+     "text": "Agentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples",
+     "src": "https://gogloby.com/wp-content/uploads/2026/03/4.jpg",
+     "file": "4.jpg",
+     "alt": "Agentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples",
+     "alt_state": "text",
+     "dims": true,
+     "area": "slide 6",
+     "index": 5
+    },
+    {
+     "type": "heading",
+     "text": "Agentic AI in Cybersecurity: Best AI Use Cases, Benefits, Examples",
+     "area": "slide 6",
+     "level": 3,
+     "index": 7
+    },
+    {
+     "type": "paragraph",
+     "text": "March 6,2026",
+     "area": "slide 6",
+     "index": 6
+    }
+   ]
+  }
+ ],
+ "warnings": []
+}

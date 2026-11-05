@@ -1,0 +1,1825 @@
+{
+  "schema_version": 2,
+  "url": "https://gogloby.com/use-cases/generative-ai-in-healthcare-best-ai-use-cases-benefits-examples/",
+  "final_url": "https://gogloby.com/use-cases/generative-ai-in-healthcare-best-ai-use-cases-benefits-examples/",
+  "status": 200,
+  "title": "Generative AI in Healthcare: Best AI Use Cases, Benefits",
+  "category": "Resources",
+  "subsection": "Use cases",
+  "profile": "article",
+  "geo_type": "article",
+  "template": "article",
+  "checked_at": "2026-11-05T13:22:52.267Z",
+  "zones": [
+    {
+      "id": "title",
+      "label": "Title",
+      "kind": "title"
+    },
+    {
+      "id": "meta_description",
+      "label": "Meta description",
+      "kind": "meta_description"
+    },
+    {
+      "id": "og_title",
+      "label": "og:title",
+      "kind": "og_title"
+    },
+    {
+      "id": "og_description",
+      "label": "og:description",
+      "kind": "og_description"
+    },
+    {
+      "id": "json_ld",
+      "label": "Structured data (JSON-LD)",
+      "kind": "json_ld"
+    },
+    {
+      "id": "h1",
+      "label": "H1",
+      "kind": "h1"
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "kind": "date"
+    },
+    {
+      "id": "author",
+      "label": "Author",
+      "kind": "author"
+    },
+    {
+      "id": "toc",
+      "label": "Table of contents",
+      "kind": "toc"
+    },
+    {
+      "id": "article:intro",
+      "label": "Intro",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-is-generative-ai-in-healthcare",
+      "label": "What Is Generative AI in Healthcare?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:how-is-generative-ai-used-in-healthcare",
+      "label": "How Is Generative AI Used in Healthcare?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-are-the-best-generative-ai-use-cases-in-hea",
+      "label": "What Are the Best Generative AI Use Cases in Healthcare?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-are-the-benefits-of-generative-ai-in-health",
+      "label": "What Are the Benefits of Generative AI in Healthcare?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-are-real-examples-of-generative-ai-in-healt",
+      "label": "What Are Real Examples of Generative AI in Healthcare?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-are-the-risks-and-drawbacks-of-generative-a",
+      "label": "What Are the Risks and Drawbacks of Generative AI in Healthcare?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:is-generative-ai-safe-for-healthcare",
+      "label": "Is Generative AI Safe for Healthcare?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:how-is-generative-ai-adoption-and-competition-ch",
+      "label": "How Is Generative AI Adoption and Competition Changing in Healthcare?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-is-the-future-of-generative-ai-in-healthcar",
+      "label": "What Is the Future of Generative AI in Healthcare?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+      "label": "How Can GoGloby Help You Adopt Generative AI in Healthcare?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:conclusion",
+      "label": "Conclusion",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:faqs",
+      "label": "FAQs",
+      "kind": "article_section"
+    },
+    {
+      "id": "banner_cta",
+      "label": "Banner CTA",
+      "kind": "banner_cta"
+    }
+  ],
+  "zone_warnings": [],
+  "shared_variants": [
+    "modals@1"
+  ],
+  "compliance": {
+    "hash": "3a1c969097f1d82d52bc992f222bd41367657d35213c0838d09f53315b580282",
+    "cached": false,
+    "action": "fix",
+    "model_action": "fix",
+    "summary": "The article’s GoGloby section presents the company as a generative-AI implementation and monitoring provider rather than a staffing and recruiting agency. It also includes unverified timelines, product claims, author credentials, and performance metrics that should be corrected or removed.",
+    "llm_problems": [
+      {
+        "title": "GoGloby positioned as implementer",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The GoGloby section presents the company as helping healthcare organizations implement and govern generative AI, rather than as a staffing and recruiting agency specializing in hiring Data & AI Engineers.",
+        "fix": "Rework the GoGloby section to describe only the approved staffing and recruiting services and their supported capabilities.",
+        "subject": "GoGloby positioning",
+        "page_value": "Generative-AI implementation provider",
+        "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 6,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 2",
+            "quote": "GoGloby helps healthcare organisations move from isolated generative AI experiments to a structured implementation model.",
+            "verified": true,
+            "reason": "This describes GoGloby as providing generative-AI implementation, which is not its approved company description or service."
+          },
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 4",
+            "quote": "GoGloby helps teams establish that structure",
+            "verified": true,
+            "reason": "This presents GoGloby as providing workflow governance services rather than recruiting or staffing engineers."
+          },
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 5",
+            "quote": "GoGloby helps organisations implement generative AI inside approved systems",
+            "verified": true,
+            "reason": "This promises generative-AI implementation services that are not among GoGloby’s documented services."
+          },
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 6",
+            "quote": "GoGloby helps teams measure adoption through operational signals",
+            "verified": true,
+            "reason": "This presents GoGloby as measuring adoption of healthcare AI workflows, a service not described in the company documents."
+          },
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 7",
+            "quote": "GoGloby’s role is to help healthcare teams turn generative AI into a governed workflow capability",
+            "verified": true,
+            "reason": "This describes GoGloby’s role as workflow implementation and governance, not engineering staffing or recruiting."
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "GoGloby helps healthcare teams deploy applied AI with governed workflows",
+            "verified": true,
+            "reason": "This promotes applied-AI deployment and workflow governance rather than GoGloby’s documented staffing and recruiting services."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Healthcare organizations as target buyers",
+        "category": "wrong_audience",
+        "severity": "medium",
+        "rule": "Glossary §5 and §9",
+        "rule_verified": true,
+        "issue": "The pitch courts healthcare organizations seeking AI adoption and implementation, rather than companies seeking to hire or staff Data & AI Engineers.",
+        "fix": "Direct the GoGloby pitch to the documented buyers for its recruiting and staffing services.",
+        "subject": "Target audience",
+        "page_value": "Healthcare organizations seeking AI implementation",
+        "source_value": "Companies seeking Data & AI Engineer recruiting or staffing",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 2",
+            "quote": "healthcare organisations move from isolated generative AI experiments to a structured implementation model",
+            "verified": true,
+            "reason": "This addresses healthcare organizations seeking implementation support, not buyers seeking GoGloby’s recruiting or staffing services."
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "heading 1",
+            "quote": "Need Generative AI That Fits Real Healthcare Workflows?",
+            "verified": true,
+            "reason": "This addresses organizations seeking a healthcare AI solution rather than companies looking to hire engineers."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Shortlist timeline is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §10",
+        "rule_verified": true,
+        "issue": "The page promises a qualified shortlist in 3–5 days, a timeline not stated in the company documents.",
+        "fix": "Remove the shortlist timeline or verify it with the company before publication.",
+        "subject": "Shortlist timeline",
+        "page_value": "3–5 days",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 2",
+            "quote": "typically presents a qualified shortlist in 3–5 days",
+            "verified": true,
+            "reason": "This gives a specific shortlist-delivery timeline that the sources do not provide."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Team embedding timeline is unsupported",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page promises a production-ready team can be embedded in under four weeks, while the documented nearshore service states a 2–3 week start time and does not promise production-ready teams.",
+        "fix": "Replace this claim with the documented service timeline and engagement description, or remove it.",
+        "subject": "Team embedding timeline",
+        "page_value": "Under 4 weeks",
+        "source_value": "2–3 weeks to start",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 2",
+            "quote": "can embed a production-ready team in under 4 weeks",
+            "verified": true,
+            "reason": "This promises a team-embedding timeline and outcome not stated for either documented service."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Sergey experience figure differs",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page says Sergey has 16+ years of experience, while the Fact Sheet says he has spent 17 years building software systems, engineering organizations, and production platforms.",
+        "fix": "Use the Fact Sheet’s experience figure.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "16+ years",
+        "source_value": "17 years",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "reason": "This gives a different experience figure from the Fact Sheet."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 13",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "reason": "This repeated author bio gives a different experience figure from the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified engineering background details",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The author bio adds claims about Sergey’s work for companies across three regions and specific areas of expertise that are not in the company documents.",
+        "fix": "Verify these biography details or remove them.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "Companies across the US, Canada, and Europe; software architecture, agile delivery, and engineering leadership",
+        "source_value": "not in Fact Sheet",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "for companies across the US, Canada, and Europe",
+            "verified": true,
+            "reason": "The Fact Sheet does not provide this account of the companies or regions where Sergey worked."
+          },
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "software architecture, agile delivery, and engineering leadership",
+            "verified": true,
+            "reason": "These specific areas of experience are not stated in the founder information in the Fact Sheet."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 13",
+            "quote": "for companies across the US, Canada, and Europe",
+            "verified": true,
+            "reason": "The repeated author bio includes career geography not provided in the company documents."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 13",
+            "quote": "software architecture, agile delivery, and engineering leadership",
+            "verified": true,
+            "reason": "The repeated author bio claims specific expertise that the company documents do not provide."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified Sergey LinkedIn credential",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page calls Sergey a LinkedIn Top Voice, a credential not stated for him in the company documents.",
+        "fix": "Verify this credential or remove it.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "LinkedIn Top Voice in software development",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "reason": "The Fact Sheet does not identify Sergey as a LinkedIn Top Voice."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 13",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "reason": "The repeated author bio includes a LinkedIn credential not stated for Sergey in the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified Agentic SDLC certification",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders; Glossary §7",
+        "rule_verified": true,
+        "issue": "The author bio claims a certified Agentic SDLC mastery standard, which is not documented in the sources.",
+        "fix": "Verify the certification claim or remove it.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "certified Agentic SDLC mastery",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "including certified Agentic SDLC mastery",
+            "verified": true,
+            "reason": "The sources do not document this certification or mastery standard."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 13",
+            "quote": "including certified Agentic SDLC mastery",
+            "verified": true,
+            "reason": "The repeated author bio claims a certification not documented in the sources."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Old Applied AI positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The page uses the old 4x Applied AI Engineering Partner positioning instead of the approved staffing and recruiting description.",
+        "fix": "Remove the old positioning and use the approved company description.",
+        "subject": "GoGloby positioning",
+        "page_value": "4x Applied AI Engineering Partner",
+        "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "the engineering standard behind 4x Applied AI Engineering",
+            "verified": true,
+            "reason": "This describes GoGloby through the disallowed 4x Applied AI Engineering positioning."
+          },
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 2",
+            "quote": "As a 4x Applied AI Engineering Partner",
+            "verified": true,
+            "reason": "This labels GoGloby with the disallowed Applied AI Engineering Partner positioning."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 13",
+            "quote": "the engineering standard behind 4x Applied AI Engineering",
+            "verified": true,
+            "reason": "The repeated author bio uses the old 4x Applied AI Engineering positioning."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified GoGloby engineering standard",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page claims GoGloby has an engineering standard that Sergey owns, but the sources do not describe that standard or this responsibility.",
+        "fix": "Verify this company and founder claim or remove it.",
+        "subject": "GoGloby engineering standard",
+        "page_value": "Sergey owns the engineering standard",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "where he owns the engineering standard",
+            "verified": true,
+            "reason": "The Fact Sheet does not state that Sergey owns an engineering standard at GoGloby."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 13",
+            "quote": "where he owns the engineering standard",
+            "verified": true,
+            "reason": "The repeated author bio assigns Sergey a responsibility not stated in the Fact Sheet."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unlisted Agentic Workflow offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §7 and §10",
+        "rule_verified": true,
+        "issue": "The page presents an Agentic Workflow as a GoGloby offer, but the documented services do not include this product or service.",
+        "fix": "Remove the Agentic Workflow offer and its associated product claims.",
+        "subject": "Agentic Workflow",
+        "page_value": "Agentic Workflow",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 4",
+            "quote": "GoGloby’s Agentic Workflow is designed to eliminate ungoverned AI usage",
+            "verified": true,
+            "reason": "This presents an unlisted GoGloby workflow product as an offer."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Old Secure Development Environment name",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The page uses Secure Development Environment, an old product name, and presents it as part of the current model.",
+        "fix": "Remove the old product name and describe only documented security practices.",
+        "subject": "Secure Development Environment",
+        "page_value": "Secure Development Environment",
+        "source_value": "Client environment; engineers work inside the client's environment",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 5",
+            "quote": "The Secure Development Environment keeps AI-assisted work inside the client’s controlled perimeter",
+            "verified": true,
+            "reason": "This names an old product and presents it as a current GoGloby offer."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified zero-IP-exposure claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page promises zero IP exposure, a guarantee not stated in the sources.",
+        "fix": "Remove the absolute guarantee or replace it with only the documented IP and security facts.",
+        "subject": "IP exposure",
+        "page_value": "zero IP exposure",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 5",
+            "quote": "with zero IP exposure",
+            "verified": true,
+            "reason": "The Fact Sheet describes client IP ownership and source-code handling but does not promise zero IP exposure."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Old Performance Center product",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The page presents Performance Center, an old product name, as the tool GoGloby currently uses.",
+        "fix": "Remove the old product name and refer only to the documented AI Development Intelligence Layer where applicable.",
+        "subject": "Performance Center",
+        "page_value": "Performance Center",
+        "source_value": "AI Development Intelligence Layer",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 6",
+            "quote": "Through the Performance Center, GoGloby tracks sprint-by-sprint adoption signals",
+            "verified": true,
+            "reason": "This names an old product as a current GoGloby tracking tool."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified adoption tracking metrics",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §7",
+        "rule_verified": true,
+        "issue": "The page claims GoGloby tracks Agentic AI commit-rate benchmarks with specific month-by-month targets, which are not in the sources.",
+        "fix": "Remove these performance metrics or verify them with the company before publication.",
+        "subject": "Agentic AI commit-rate targets",
+        "page_value": "35–45% by month 2; 60–70% by month 6",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 6",
+            "quote": "Agentic AI commit-rate benchmarks of 35–45% by month 2 and 60–70% by month 6",
+            "verified": true,
+            "reason": "Neither these targets nor this commit-rate tracking claim appears in the company documents."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Contact CTA does not match",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The CTA uses generic contact wording instead of the documented recruiting or staffing CTA wording.",
+        "fix": "Use the appropriate documented CTA for the service being promoted.",
+        "subject": "Call to action",
+        "page_value": "Contact GoGloby Now",
+        "source_value": "Get vetted profiles; Start a search",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 2",
+            "quote": "Contact GoGloby Now",
+            "verified": true,
+            "reason": "This CTA does not use the documented wording for staffing or recruiting."
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      }
+    ],
+    "problems": [
+      {
+        "title": "GoGloby positioned as implementer",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "decisions.md: Company description; Fact Sheet: Identity",
+        "rule_verified": true,
+        "issue": "The GoGloby section presents the company as helping healthcare organizations implement and govern generative AI, rather than as a staffing and recruiting agency specializing in hiring Data & AI Engineers.",
+        "fix": "Rework the GoGloby section to describe only the approved staffing and recruiting services and their supported capabilities.",
+        "subject": "GoGloby positioning",
+        "page_value": "Generative-AI implementation provider",
+        "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 6,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 2",
+            "quote": "GoGloby helps healthcare organisations move from isolated generative AI experiments to a structured implementation model.",
+            "verified": true,
+            "reason": "This describes GoGloby as providing generative-AI implementation, which is not its approved company description or service.",
+            "fragment": "GoGloby helps healthcare organisations move from",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 4",
+            "quote": "GoGloby helps teams establish that structure",
+            "verified": true,
+            "reason": "This presents GoGloby as providing workflow governance services rather than recruiting or staffing engineers.",
+            "fragment": "GoGloby helps teams establish that structure",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 5",
+            "quote": "GoGloby helps organisations implement generative AI inside approved systems",
+            "verified": true,
+            "reason": "This promises generative-AI implementation services that are not among GoGloby’s documented services.",
+            "fragment": "GoGloby helps organisations implement generative AI",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 6",
+            "quote": "GoGloby helps teams measure adoption through operational signals",
+            "verified": true,
+            "reason": "This presents GoGloby as measuring adoption of healthcare AI workflows, a service not described in the company documents.",
+            "fragment": "GoGloby helps teams measure adoption through",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 7",
+            "quote": "GoGloby’s role is to help healthcare teams turn generative AI into a governed workflow capability",
+            "verified": true,
+            "reason": "This describes GoGloby’s role as workflow implementation and governance, not engineering staffing or recruiting.",
+            "fragment": "GoGloby’s role is to help healthcare",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 1",
+            "quote": "GoGloby helps healthcare teams deploy applied AI with governed workflows",
+            "verified": true,
+            "reason": "This promotes applied-AI deployment and workflow governance rather than GoGloby’s documented staffing and recruiting services.",
+            "fragment": "GoGloby helps healthcare teams deploy applied",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Healthcare organizations as target buyers",
+        "category": "wrong_audience",
+        "severity": "medium",
+        "rule": "Glossary §5 and §9",
+        "rule_verified": true,
+        "issue": "The pitch courts healthcare organizations seeking AI adoption and implementation, rather than companies seeking to hire or staff Data & AI Engineers.",
+        "fix": "Direct the GoGloby pitch to the documented buyers for its recruiting and staffing services.",
+        "subject": "Target audience",
+        "page_value": "Healthcare organizations seeking AI implementation",
+        "source_value": "Companies seeking Data & AI Engineer recruiting or staffing",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 2",
+            "quote": "healthcare organisations move from isolated generative AI experiments to a structured implementation model",
+            "verified": true,
+            "reason": "This addresses healthcare organizations seeking implementation support, not buyers seeking GoGloby’s recruiting or staffing services.",
+            "fragment": "healthcare organisations move from isolated generative",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "banner_cta",
+            "part": "heading 1",
+            "quote": "Need Generative AI That Fits Real Healthcare Workflows?",
+            "verified": true,
+            "reason": "This addresses organizations seeking a healthcare AI solution rather than companies looking to hire engineers.",
+            "fragment": "Need Generative AI That Fits Real,-Healthcare Workflows?",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Shortlist timeline is unverified",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §10",
+        "rule_verified": true,
+        "issue": "The page promises a qualified shortlist in 3–5 days, a timeline not stated in the company documents.",
+        "fix": "Remove the shortlist timeline or verify it with the company before publication.",
+        "subject": "Shortlist timeline",
+        "page_value": "3–5 days",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 2",
+            "quote": "typically presents a qualified shortlist in 3–5 days",
+            "verified": true,
+            "reason": "This gives a specific shortlist-delivery timeline that the sources do not provide.",
+            "fragment": "typically presents a qualified shortlist in",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Team embedding timeline is unsupported",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services",
+        "rule_verified": true,
+        "issue": "The page promises a production-ready team can be embedded in under four weeks, while the documented nearshore service states a 2–3 week start time and does not promise production-ready teams.",
+        "fix": "Replace this claim with the documented service timeline and engagement description, or remove it.",
+        "subject": "Team embedding timeline",
+        "page_value": "Under 4 weeks",
+        "source_value": "2–3 weeks to start",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 2",
+            "quote": "can embed a production-ready team in under 4 weeks",
+            "verified": true,
+            "reason": "This promises a team-embedding timeline and outcome not stated for either documented service.",
+            "fragment": "can embed a production-ready team in",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Sergey experience figure differs",
+        "category": "company_facts",
+        "severity": "high",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page says Sergey has 16+ years of experience, while the Fact Sheet says he has spent 17 years building software systems, engineering organizations, and production platforms.",
+        "fix": "Use the Fact Sheet’s experience figure.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "16+ years",
+        "source_value": "17 years",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "reason": "This gives a different experience figure from the Fact Sheet.",
+            "fragment": "He has spent 16+ years building",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 13",
+            "quote": "He has spent 16+ years building and leading software teams",
+            "verified": true,
+            "reason": "This repeated author bio gives a different experience figure from the Fact Sheet.",
+            "fragment": "He has spent 16+ years building",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified engineering background details",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The author bio adds claims about Sergey’s work for companies across three regions and specific areas of expertise that are not in the company documents.",
+        "fix": "Verify these biography details or remove them.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "Companies across the US, Canada, and Europe; software architecture, agile delivery, and engineering leadership",
+        "source_value": "not in Fact Sheet",
+        "count": 4,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "for companies across the US, Canada, and Europe",
+            "verified": true,
+            "reason": "The Fact Sheet does not provide this account of the companies or regions where Sergey worked.",
+            "fragment": "for companies across the US, Canada,",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "software architecture, agile delivery, and engineering leadership",
+            "verified": true,
+            "reason": "These specific areas of experience are not stated in the founder information in the Fact Sheet.",
+            "fragment": "software architecture, agile delivery, and engineering",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 13",
+            "quote": "for companies across the US, Canada, and Europe",
+            "verified": true,
+            "reason": "The repeated author bio includes career geography not provided in the company documents.",
+            "fragment": "for companies across the US, Canada,",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 13",
+            "quote": "software architecture, agile delivery, and engineering leadership",
+            "verified": true,
+            "reason": "The repeated author bio claims specific expertise that the company documents do not provide.",
+            "fragment": "software architecture, agile delivery, and engineering",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified Sergey LinkedIn credential",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page calls Sergey a LinkedIn Top Voice, a credential not stated for him in the company documents.",
+        "fix": "Verify this credential or remove it.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "LinkedIn Top Voice in software development",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "reason": "The Fact Sheet does not identify Sergey as a LinkedIn Top Voice.",
+            "fragment": "He is a LinkedIn Top Voice",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 13",
+            "quote": "He is a LinkedIn Top Voice in software development.",
+            "verified": true,
+            "reason": "The repeated author bio includes a LinkedIn credential not stated for Sergey in the Fact Sheet.",
+            "fragment": "He is a LinkedIn Top Voice",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unverified Agentic SDLC certification",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders; Glossary §7",
+        "rule_verified": true,
+        "issue": "The author bio claims a certified Agentic SDLC mastery standard, which is not documented in the sources.",
+        "fix": "Verify the certification claim or remove it.",
+        "subject": "Sergey Matikaynen",
+        "page_value": "certified Agentic SDLC mastery",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "including certified Agentic SDLC mastery",
+            "verified": true,
+            "reason": "The sources do not document this certification or mastery standard.",
+            "fragment": "including certified Agentic SDLC",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 13",
+            "quote": "including certified Agentic SDLC mastery",
+            "verified": true,
+            "reason": "The repeated author bio claims a certification not documented in the sources.",
+            "fragment": "including certified Agentic SDLC",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Old Applied AI positioning",
+        "category": "positioning",
+        "severity": "high",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The page uses the old 4x Applied AI Engineering Partner positioning instead of the approved staffing and recruiting description.",
+        "fix": "Remove the old positioning and use the approved company description.",
+        "subject": "GoGloby positioning",
+        "page_value": "4x Applied AI Engineering Partner",
+        "source_value": "Staffing and recruiting agency specializing in hiring Data & AI Engineers",
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "the engineering standard behind 4x Applied AI Engineering",
+            "verified": true,
+            "reason": "This describes GoGloby through the disallowed 4x Applied AI Engineering positioning.",
+            "fragment": "the engineering standard behind 4x Applied",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 2",
+            "quote": "As a 4x Applied AI Engineering Partner",
+            "verified": true,
+            "reason": "This labels GoGloby with the disallowed Applied AI Engineering Partner positioning.",
+            "fragment": "As a 4x Applied AI Engineering",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 13",
+            "quote": "the engineering standard behind 4x Applied AI Engineering",
+            "verified": true,
+            "reason": "The repeated author bio uses the old 4x Applied AI Engineering positioning.",
+            "fragment": "the engineering standard behind 4x Applied",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified GoGloby engineering standard",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Founders",
+        "rule_verified": true,
+        "issue": "The page claims GoGloby has an engineering standard that Sergey owns, but the sources do not describe that standard or this responsibility.",
+        "fix": "Verify this company and founder claim or remove it.",
+        "subject": "GoGloby engineering standard",
+        "page_value": "Sergey owns the engineering standard",
+        "source_value": "not in Fact Sheet",
+        "count": 2,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "where he owns the engineering standard",
+            "verified": true,
+            "reason": "The Fact Sheet does not state that Sergey owns an engineering standard at GoGloby.",
+            "fragment": "where he owns the engineering standard",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 13",
+            "quote": "where he owns the engineering standard",
+            "verified": true,
+            "reason": "The repeated author bio assigns Sergey a responsibility not stated in the Fact Sheet.",
+            "fragment": "where he owns the engineering standard",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Unlisted Agentic Workflow offer",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Fact Sheet: Services; Glossary §7 and §10",
+        "rule_verified": true,
+        "issue": "The page presents an Agentic Workflow as a GoGloby offer, but the documented services do not include this product or service.",
+        "fix": "Remove the Agentic Workflow offer and its associated product claims.",
+        "subject": "Agentic Workflow",
+        "page_value": "Agentic Workflow",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 4",
+            "quote": "GoGloby’s Agentic Workflow is designed to eliminate ungoverned AI usage",
+            "verified": true,
+            "reason": "This presents an unlisted GoGloby workflow product as an offer.",
+            "fragment": "GoGloby’s Agentic Workflow is designed to",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Old Secure Development Environment name",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The page uses Secure Development Environment, an old product name, and presents it as part of the current model.",
+        "fix": "Remove the old product name and describe only documented security practices.",
+        "subject": "Secure Development Environment",
+        "page_value": "Secure Development Environment",
+        "source_value": "Client environment; engineers work inside the client's environment",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 5",
+            "quote": "The Secure Development Environment keeps AI-assisted work inside the client’s controlled perimeter",
+            "verified": true,
+            "reason": "This names an old product and presents it as a current GoGloby offer.",
+            "fragment": "The Secure Development Environment keeps AI-assisted",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified zero-IP-exposure claim",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Legal and security",
+        "rule_verified": true,
+        "issue": "The page promises zero IP exposure, a guarantee not stated in the sources.",
+        "fix": "Remove the absolute guarantee or replace it with only the documented IP and security facts.",
+        "subject": "IP exposure",
+        "page_value": "zero IP exposure",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 5",
+            "quote": "with zero IP exposure",
+            "verified": true,
+            "reason": "The Fact Sheet describes client IP ownership and source-code handling but does not promise zero IP exposure.",
+            "fragment": "with zero IP",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Old Performance Center product",
+        "category": "discontinued_offer",
+        "severity": "high",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The page presents Performance Center, an old product name, as the tool GoGloby currently uses.",
+        "fix": "Remove the old product name and refer only to the documented AI Development Intelligence Layer where applicable.",
+        "subject": "Performance Center",
+        "page_value": "Performance Center",
+        "source_value": "AI Development Intelligence Layer",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 6",
+            "quote": "Through the Performance Center, GoGloby tracks sprint-by-sprint adoption signals",
+            "verified": true,
+            "reason": "This names an old product as a current GoGloby tracking tool.",
+            "fragment": "Through the Performance Center, GoGloby tracks",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Unverified adoption tracking metrics",
+        "category": "company_facts",
+        "severity": "medium",
+        "rule": "Fact Sheet: Services; Glossary §7",
+        "rule_verified": true,
+        "issue": "The page claims GoGloby tracks Agentic AI commit-rate benchmarks with specific month-by-month targets, which are not in the sources.",
+        "fix": "Remove these performance metrics or verify them with the company before publication.",
+        "subject": "Agentic AI commit-rate targets",
+        "page_value": "35–45% by month 2; 60–70% by month 6",
+        "source_value": "not in Fact Sheet",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 6",
+            "quote": "Agentic AI commit-rate benchmarks of 35–45% by month 2 and 60–70% by month 6",
+            "verified": true,
+            "reason": "Neither these targets nor this commit-rate tracking claim appears in the company documents.",
+            "fragment": "Agentic AI commit-rate benchmarks of 35–45%",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": true,
+        "basis": "not_in_sources"
+      },
+      {
+        "title": "Contact CTA does not match",
+        "category": "cta",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "The CTA uses generic contact wording instead of the documented recruiting or staffing CTA wording.",
+        "fix": "Use the appropriate documented CTA for the service being promoted.",
+        "subject": "Call to action",
+        "page_value": "Contact GoGloby Now",
+        "source_value": "Get vetted profiles; Start a search",
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "banner_cta",
+            "part": "paragraph 2",
+            "quote": "Contact GoGloby Now",
+            "verified": true,
+            "reason": "This CTA does not use the documented wording for staffing or recruiting.",
+            "fragment": "Contact GoGloby Now",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "llm",
+        "unverified": false,
+        "basis": "contradicts"
+      },
+      {
+        "title": "Term not used: Applied AI Engineering partner",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"Applied AI Engineering partner\" is no longer how GoGloby describes itself.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "Applied AI Engineering partner",
+        "page_value": null,
+        "source_value": null,
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 2",
+            "quote": "Applied AI Engineering Partner",
+            "verified": true,
+            "fragment": "As a 4x-,Applied AI Engineering,-Partner, GoGloby typically",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      },
+      {
+        "title": "Term not used: Performance Dashboard / Center",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"Performance Dashboard / Center\" is a term or name the company no longer uses.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "Performance Dashboard / Center",
+        "page_value": null,
+        "source_value": null,
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 6",
+            "quote": "Performance Center",
+            "verified": true,
+            "fragment": null,
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      },
+      {
+        "title": "Term not used: Secure Development Environment",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"Secure Development Environment\" is a term or name the company no longer uses.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "Secure Development Environment",
+        "page_value": null,
+        "source_value": null,
+        "count": 1,
+        "locations": [
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 5",
+            "quote": "Secure Development Environment",
+            "verified": true,
+            "fragment": "Secure Development Environment",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      },
+      {
+        "title": "Term not used: 4x (product name)",
+        "category": "old_terms",
+        "severity": "medium",
+        "rule": "Glossary §7",
+        "rule_verified": true,
+        "issue": "\"4x (product name)\" is a term or name the company no longer uses.",
+        "fix": "Remove it or replace it as the Glossary says.",
+        "subject": "4x (product name)",
+        "page_value": null,
+        "source_value": null,
+        "count": 3,
+        "locations": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "quote": "4x Applied",
+            "verified": true,
+            "fragment": "engineering standard behind-,4x Applied,-AI Engineering. He",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 2",
+            "quote": "4x Applied",
+            "verified": true,
+            "fragment": "boundaries. As a-,4x Applied,-AI Engineering Partner,",
+            "place": null,
+            "locator": 3
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 13",
+            "quote": "4x Applied",
+            "verified": true,
+            "fragment": "engineering standard behind-,4x Applied,-AI Engineering. He",
+            "place": null,
+            "locator": 3
+          }
+        ],
+        "location_unverified": false,
+        "source": "code",
+        "unverified": false,
+        "basis": null
+      }
+    ],
+    "usage": {
+      "input": 5017,
+      "cached_input": 10166,
+      "output": 8456
+    },
+    "error": null
+  },
+  "geo": {
+    "hash": "86965fa04cb7926c09d0575b1b8c98710fcd525bf8c93f0d09fd7b0f2107f9b8",
+    "cached": false,
+    "code": [
+      {
+        "id": "trap_terms",
+        "status": "pass",
+        "value": "none in title, H1, meta, og",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "em_dash",
+        "status": "fail",
+        "value": "2 found",
+        "places": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "value": "— | …ss the US, Canada, and Europe — software architecture, agile …"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 13",
+            "value": "— | …ss the US, Canada, and Europe — software architecture, agile …"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "ampersand",
+        "status": "fail",
+        "value": "1 found",
+        "places": [
+          {
+            "zone_id": "article:conclusion",
+            "part": "paragraph 3",
+            "value": "& | …Use Cases, Benefits, Examples & Agentic AI in Healthcare: Bes…"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "uk_spelling",
+        "status": "fail",
+        "value": "4 found",
+        "places": [
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 2",
+            "value": "organisations | GoGloby helps healthcare organisations move from isolated generative…"
+          },
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 2",
+            "value": "organisations | …weeks, which helps healthcare organisations move from pilot thinking to g…"
+          },
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 5",
+            "value": "organisations | …nerated output. GoGloby helps organisations implement generative AI insid…"
+          },
+          {
+            "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+            "part": "paragraph 6",
+            "value": "organisations | … output stability. This helps organisations improve throughput while keep…"
+          }
+        ],
+        "severity": "low"
+      }
+    ],
+    "llm": [
+      {
+        "id": "answer_first",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "Generative AI in healthcare is gaining traction because much of healthcare work depends on text, context, and communication.",
+        "note": "The opening explains why generative AI is gaining traction but does not answer which use cases, benefits, and examples the H1 promises.",
+        "fix": "Revise the first two sentences to directly summarize the use cases, benefits, and examples covered by the article.",
+        "evidence_verified": true,
+        "title": "Opening does not answer the H1",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "ffd03ad69b51832b8ec0998d24811047d0ed16c4dae9362f80b4eac99f3f050f",
+        "fragment": "Generative AI in,-Healthcare: Best AI"
+      },
+      {
+        "id": "recruiting_firm_early",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "This is an informational article about generative AI in healthcare, not a recruiting page or case study.",
+        "fix": null,
+        "evidence_verified": null,
+        "title": "Does not say early that GoGloby is a recruiting firm",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "4af6d7f5688777d55cc63543792dfc872f10859bf68e04901a1c0c60fb6d849d"
+      },
+      {
+        "id": "buyer_ready",
+        "answer": "no",
+        "value": "informational",
+        "zone_id": "page",
+        "evidence": "Generative AI in healthcare means using AI systems that create new content from healthcare inputs.",
+        "note": "The page explains generative AI in healthcare for an informational audience rather than addressing companies ready to hire Data and AI engineers.",
+        "fix": "Rework the page for companies actively seeking to hire Data and AI engineers.",
+        "evidence_verified": true,
+        "title": "Not written for buyers ready to hire",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "04cc55f3160106f9a5bac4242af1fa1ad7279e3e5f25fa3cf80b15b916bb3feb",
+        "fragment": "Generative AI in,-Healthcare: Best AI"
+      },
+      {
+        "id": "target_keyword",
+        "answer": "na",
+        "value": null,
+        "zone_id": null,
+        "evidence": null,
+        "note": "None of the Glossary §6 terms is a suitable match for this informational article about generative AI use cases in healthcare.",
+        "fix": null,
+        "evidence_verified": null,
+        "title": "No matching search term",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "e137575f70468f3f2a447ab725dcbd0a2344bcf1cacc0876a60646eb550b3cf2"
+      },
+      {
+        "id": "uses_data",
+        "answer": "yes",
+        "value": null,
+        "zone_id": "article:intro",
+        "evidence": "Deloitte reported that more than 80% of surveyed health system executives expected generative AI to have a significant or moderate impact on their organizations in 2025.",
+        "note": "The article includes a quotable statistic with its source and date stated nearby.",
+        "fix": null,
+        "evidence_verified": true,
+        "title": "No quotable data",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "badbc1359e7073e8860e5bf8015e9b40a99e3f8f6cf787bb2e64f2d465a4d3e7",
+        "fragment": "Deloitte reported that more than 80%"
+      },
+      {
+        "id": "proof_background",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:faqs",
+        "evidence": "He has spent 16+ years building and leading software teams for companies across the US, Canada, and Europe",
+        "note": "The author bio mentions software-team leadership but does not use the founders’ Data Science and engineering-team background as proof.",
+        "fix": "Add the founders’ Data Science and engineering-team experience as proof in the article.",
+        "evidence_verified": true,
+        "title": "Does not use founders' background as proof",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "713e77e0b4e73dfe23a48e21b25e6132992a6bdeb191028605434fc7b3734973",
+        "fragment": "He has spent 16+ years building"
+      },
+      {
+        "id": "sell_against_open_role",
+        "answer": "no",
+        "value": null,
+        "zone_id": "article:how-can-gogloby-help-you-adopt-generative-ai-in-",
+        "evidence": "The real challenge is not access to the model itself. It is introducing generative AI into live healthcare workflows in a way that remains reviewable, controlled, and safe as usage expands.",
+        "note": "The page focuses on healthcare workflow implementation and does not compare GoGloby with the cost and wait of an open full-time US role.",
+        "fix": "Add a comparison with the cost and hiring wait for an open full-time US role.",
+        "evidence_verified": true,
+        "title": "Does not compare with an open full-time role",
+        "severity": "medium",
+        "needs_confirm": false,
+        "qhash": "9d7cdae6ab7f1b2b68769da20f7e4a64eb69fc2f6b7f9abf0176d6526543e9b9",
+        "fragment": "The real challenge is not access"
+      }
+    ],
+    "placement": null,
+    "usage": {
+      "input": 4337,
+      "cached_input": 8950,
+      "output": 1551
+    },
+    "error": null
+  },
+  "seo": {
+    "checks": [
+      {
+        "id": "http_status",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "200",
+        "severity": "high"
+      },
+      {
+        "id": "title_length",
+        "status": "pass",
+        "zone_id": "title",
+        "value": "56 characters",
+        "severity": "medium"
+      },
+      {
+        "id": "meta_present",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "150 characters",
+        "severity": "high"
+      },
+      {
+        "id": "meta_length",
+        "status": "pass",
+        "zone_id": "meta_description",
+        "value": "150 characters (120-158)",
+        "severity": "low"
+      },
+      {
+        "id": "h1_count",
+        "status": "pass",
+        "zone_id": "h1",
+        "value": "1",
+        "severity": "high"
+      },
+      {
+        "id": "title_h1_match",
+        "status": "pass",
+        "zone_id": "title",
+        "value": "Title and H1 agree",
+        "severity": "low"
+      },
+      {
+        "id": "canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "https://gogloby.com/use-cases/generative-ai-in-healthcare-best-ai-use-cases-benefits-examples/",
+        "severity": "high"
+      },
+      {
+        "id": "indexable",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "severity": "high"
+      },
+      {
+        "id": "schema_required",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "present",
+        "severity": "medium"
+      },
+      {
+        "id": "schema_recommended",
+        "status": "fail",
+        "zone_id": "json_ld",
+        "value": "missing: BreadcrumbList",
+        "severity": "medium"
+      },
+      {
+        "id": "author",
+        "status": "pass",
+        "zone_id": "author",
+        "value": "Sergey Matikaynen",
+        "severity": "medium"
+      },
+      {
+        "id": "dates",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "published: 2026-04-07T13:58:54+03:00; modified: 2026-06-24T11:20:06+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "date_mismatch",
+        "status": "pass",
+        "zone_id": "date",
+        "value": "visible \"Updated on June 24, 2026\" vs dateModified 2026-06-24T11:20:06+03:00",
+        "severity": "medium"
+      },
+      {
+        "id": "broken_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "3 checked",
+        "places": [],
+        "severity": "high"
+      },
+      {
+        "id": "redirecting_internal_links",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "none",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "link_to_services",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "no link to /services/*",
+        "severity": "medium"
+      },
+      {
+        "id": "alt_missing",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 without alt",
+        "places": [],
+        "severity": "medium"
+      },
+      {
+        "id": "alt_empty",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "0 with empty alt",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "image_dimensions",
+        "status": "fail",
+        "zone_id": "page",
+        "value": "2 without width/height",
+        "places": [
+          {
+            "zone_id": "author",
+            "part": "image 1",
+            "value": "1706550966241.jpeg"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "image 1",
+            "value": "1706550966241.jpeg"
+          }
+        ],
+        "severity": "low"
+      },
+      {
+        "id": "heading_order",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "og_present",
+        "status": "pass",
+        "zone_id": "og_title",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "og_url_canonical",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "og:url https://gogloby.com/use-cases/generative-ai-in-healthcare-best-ai-use-cases-benefits-examples/ vs canonical https://gogloby.com/use-cases/generative-ai-in-healthcare-best-ai-use-cases-benefits-examples/",
+        "severity": "low"
+      },
+      {
+        "id": "twitter_card",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "summary_large_image",
+        "severity": "low"
+      },
+      {
+        "id": "html_lang",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "en-US",
+        "severity": "low"
+      },
+      {
+        "id": "viewport",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "jsonld_valid",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "4 block(s)",
+        "severity": "high"
+      },
+      {
+        "id": "article_fields",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "ok",
+        "severity": "medium"
+      },
+      {
+        "id": "anchors_resolve",
+        "status": "pass",
+        "zone_id": "page",
+        "value": "13 checked",
+        "places": [],
+        "severity": "low"
+      },
+      {
+        "id": "faq_schema_matches_dom",
+        "status": "pass",
+        "zone_id": "json_ld",
+        "value": "accordion block: true, FAQPage schema: true",
+        "severity": "low"
+      }
+    ]
+  }
+}
