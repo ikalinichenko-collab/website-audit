@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { GeoQuestionsEditor, SeoEditor, ComplianceEditor } from "../components/StructuredEditors.js";
 import { TextEditor } from "../components/ResourceEditor.js";
+import { confirmLeave } from "../unsaved.js";
 
 const TABS = [
   { key: "geo", label: "GEO questions" },
@@ -33,7 +34,7 @@ export function Settings() {
           <button
             key={t.key}
             type="button"
-            onClick={() => setTab(t.key)}
+            onClick={() => confirmLeave() && setTab(t.key)}
             className={`-mb-px border-b-2 px-3 py-2 text-sm ${
               tab === t.key ? "border-blue-600 font-semibold" : "border-transparent text-slate-500"
             }`}

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Layout } from "./components/Layout.js";
 import { RunProvider } from "./context/RunContext.js";
@@ -8,8 +9,10 @@ import { SiteView } from "./pages/SiteView.js";
 import { RunPage } from "./pages/RunPage.js";
 import { Sources } from "./pages/Sources.js";
 import { Settings } from "./pages/Settings.js";
+import { installLeaveGuard } from "./unsaved.js";
 
 export function App() {
+  useEffect(() => installLeaveGuard(), []);
   return (
     <RunProvider>
       <HashRouter>

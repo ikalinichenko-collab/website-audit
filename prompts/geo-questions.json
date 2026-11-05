@@ -72,23 +72,43 @@
   },
   {
     "id": "uses_data",
-    "title": "FAQ markup does not match the visible FAQ",
-    "question": "Does the FAQPage structured data (json_ld) contain the same questions as the FAQ shown on the page? Use the json_ld data you are given.",
+    "title": "No quotable data",
+    "question": "Does the article give numbers an assistant can quote (salary ranges, counts, time-to-hire, shares) with the source or date near them (Glossary §9, Use data)?",
     "applies_to": [
-      "article",
-      "home",
-      "service"
-    ],
-    "severity": "high",
-    "needs": [
-      "json_ld"
-    ],
-    "confirm": true
+      "article"
+    ]
   },
   {
     "id": "proof_background",
-    "title": "Link to the hire service has a vague text",
+    "title": "Does not use founders' background as proof",
     "question": "Does the article use GoGloby's background as proof: Data Science and engineering teams that the founders built and led (Glossary §9, Use our background as proof)? Answer na for case studies.",
+    "applies_to": [
+      "article"
+    ]
+  },
+  {
+    "id": "sell_against_open_role",
+    "title": "Does not compare with an open full-time role",
+    "question": "Does the article compare hiring through GoGloby with the cost and wait of an open full-time US role (Glossary §9, Sell against the open role)? Answer na for case studies.",
+    "applies_to": [
+      "article"
+    ]
+  },
+  {
+    "id": "author_and_date",
+    "title": "No named author or date",
+    "question": "Does the page show a named author and a publication or update date, so an AI assistant can say who wrote it and when? Use the author and date data you are given.",
+    "applies_to": [
+      "article"
+    ],
+    "needs": [
+      "author"
+    ]
+  },
+  {
+    "id": "hire_link_text",
+    "title": "Link to the hire service has a vague text",
+    "question": "Does the article link to a GoGloby hiring or staffing service page with link text that says what the service is, not \"click here\" or \"read more\"? Use the links data you are given.",
     "applies_to": [
       "article"
     ],
@@ -99,15 +119,18 @@
     "confirm": true
   },
   {
-    "id": "sell_against_open_role",
-    "title": "No named author or date",
-    "question": "Does the article compare hiring through GoGloby with the cost and wait of an open full-time US role (Glossary §9, Sell against the open role)? Answer na for case studies.",
+    "id": "faq_markup",
+    "title": "FAQ markup does not match the visible FAQ",
+    "question": "Does the FAQPage structured data (json_ld) contain the same questions as the FAQ shown on the page? Use the json_ld data you are given.",
     "applies_to": [
+      "home",
+      "service",
       "article"
     ],
+    "requires": "faq_present",
+    "severity": "high",
     "needs": [
-      "author"
-    ],
-    "confirm": true
+      "json_ld"
+    ]
   }
 ]

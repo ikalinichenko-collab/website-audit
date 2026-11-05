@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { api, type ResourceInfo } from "../api.js";
+import { useUnsaved } from "../unsaved.js";
 
 export const buttonClass =
   "rounded border border-slate-300 px-3 py-1.5 text-sm hover:bg-slate-100 disabled:opacity-50 dark:border-slate-600 dark:hover:bg-slate-800";
@@ -183,6 +184,7 @@ function offsetTopOf(ta: HTMLTextAreaElement, index: number): number {
 /** Plain text editor for a file, with upload, save and history. `focus` is a rule: the editor opens at the section it names. */
 export function TextEditor({ id, rows = 18, upload = false, focus }: { id: string; rows?: number; upload?: boolean; focus?: string | null }) {
   const r = useResource(id);
+  useUnsaved(r.dirty);
   const file = useRef<HTMLInputElement>(null);
   const area = useRef<HTMLTextAreaElement>(null);
   const loaded = r.info?.id;

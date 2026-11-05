@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { api, type GeoTryResult } from "../api.js";
 import { Notice, HistoryList, buttonClass, primaryClass, useResource } from "./ResourceEditor.js";
+import { useUnsaved } from "../unsaved.js";
 
 const field = "rounded border border-slate-300 bg-white px-2 py-1 text-sm dark:border-slate-600 dark:bg-slate-900";
 const SEVERITIES = ["high", "medium", "low"];
@@ -14,6 +15,7 @@ function parse<T>(text: string): T | null {
 }
 
 function SaveBar({ r, onSave, dirty }: { r: ReturnType<typeof useResource>; onSave: () => void; dirty: boolean }) {
+  useUnsaved(dirty);
   return (
     <div className="space-y-2">
       <div className="flex items-center gap-2">
