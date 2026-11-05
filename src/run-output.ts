@@ -2,7 +2,7 @@ import * as fs from "node:fs";
 import path from "node:path";
 import type { Layers, RunMeta, Settings } from "./types.js";
 import type { PageReport, SiteReport } from "./report-types.js";
-import { countBy, fragmentAllowed, pageFindings, siteFindings, type Finding } from "./findings.js";
+import { countBy, fragmentAllowed, pageFindings, siteFindings, totalOf, type Finding } from "./findings.js";
 import { buildFindingsCsv, buildSummaryCsv, renderPageReport, renderSiteReport } from "./render.js";
 import { fragmentForQuote, tablePlaceOfPart } from "./quote-fragments.js";
 import { projectRoot } from "./utils.js";
@@ -20,7 +20,8 @@ export interface PageIndexEntry {
   action: string | null;
   summary: string | null;
   compliance: { high: number; medium: number; low: number; error: string | null };
-  geo: { to_fix: number; error: string | null };
+  /** `to_fix` counts every GEO finding; the severity split is absent in runs made before GEO had severities */
+  geo: { to_fix: number; high?: number; medium?: number; low?: number; error: string | null };
   seo: { high: number; medium: number; low: number };
   checked_at: string;
 }
@@ -29,6 +30,7 @@ export interface GroupTotals {
   pages: number;
   compliance: { high: number; medium: number; low: number };
   geo: number;
+  geo_sev?: { high: number; medium: number; low: number };
   seo: { high: number; medium: number; low: number };
   actions: Record<string, number>;
 }
@@ -62,6 +64,7 @@ function emptyTotals(): GroupTotals {
     pages: 0,
     compliance: { high: 0, medium: 0, low: 0 },
     geo: 0,
+    geo_sev: { high: 0, medium: 0, low: 0 },
     seo: { high: 0, medium: 0, low: 0 },
     actions: {},
   };
@@ -73,6 +76,11 @@ function addTo(t: GroupTotals, e: PageIndexEntry): void {
   t.compliance.medium += e.compliance.medium;
   t.compliance.low += e.compliance.low;
   t.geo += e.geo.to_fix;
+  if (t.geo_sev) {
+    t.geo_sev.high += e.geo.high ?? 0;
+    t.geo_sev.medium += e.geo.medium ?? 0;
+    t.geo_sev.low += e.geo.low ?? 0;
+  }
   t.seo.high += e.seo.high;
   t.seo.medium += e.seo.medium;
   t.seo.low += e.seo.low;
@@ -153,6 +161,7 @@ export function writeRunOutputs(runPath: string, settings: Settings): { pages: n
     reports.push(report);
     const c = countBy(f, "compliance");
     const s = countBy(f, "seo");
+    const g = countBy(f, "geo");
     entries.push({
       slug,
       url: report.final_url,
@@ -164,7 +173,7 @@ export function writeRunOutputs(runPath: string, settings: Settings): { pages: n
       action: report.compliance.error ? null : report.compliance.action,
       summary: report.compliance.summary,
       compliance: { high: c.high, medium: c.medium, low: c.low, error: report.compliance.error },
-      geo: { to_fix: countBy(f, "geo").other, error: report.geo.error },
+      geo: { to_fix: totalOf(g), high: g.high, medium: g.medium, low: g.low, error: report.geo.error },
       seo: { high: s.high, medium: s.medium, low: s.low },
       checked_at: report.checked_at,
     });
@@ -186,7 +195,7 @@ export function writeRunOutputs(runPath: string, settings: Settings): { pages: n
     fs.writeFileSync(path.join(runPath, "site.findings.json"), JSON.stringify(sf, null, 1));
     allFindings.push(...sf);
     const c = countBy(sf, "compliance");
-    siteCounts = { compliance: { high: c.high, medium: c.medium, low: c.low }, seo: countBy(sf, "seo").high + countBy(sf, "seo").medium + countBy(sf, "seo").low, geo: countBy(sf, "geo").other };
+    siteCounts = { compliance: { high: c.high, medium: c.medium, low: c.low }, seo: countBy(sf, "seo").high + countBy(sf, "seo").medium + countBy(sf, "seo").low, geo: totalOf(countBy(sf, "geo")) };
     fs.writeFileSync(path.join(runPath, "site.md"), renderSiteReport(site, reports));
     fs.writeFileSync(path.join(runPath, "site-sources.json"), JSON.stringify(buildSiteSources(runPath, site, loaded), null, 1));
   }

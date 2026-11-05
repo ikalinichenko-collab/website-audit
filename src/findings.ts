@@ -10,7 +10,7 @@ export interface Finding {
   group: string;
   subsection: string;
   layer: Layer;
-  /** GEO findings have no severity */
+  /** empty only for the site-wide GEO findings (robots.txt, llms.txt) */
   severity: Severity | "";
   /** compliance category, GEO or SEO check id */
   kind: string;
@@ -189,18 +189,20 @@ function pageFindingDrafts(r: PageReport, site: SiteReport | null): FindingDraft
 
   for (const a of r.geo.llm) {
     if (a.answer !== "no") continue;
+    // a second answer that differed means the first one is not confirmed: listed apart, not a finding
+    if (a.needs_confirm && a.confirmed === false) continue;
     out.push({
       ...base(r),
       layer: "geo",
-      severity: "",
+      severity: a.severity ?? "medium",
       kind: a.id,
-      title: GEO_LABELS[a.id] ?? a.id,
+      title: a.title || GEO_LABELS[a.id] || a.id,
       zone_id: a.zone_id ?? "page",
       zone_label: zoneLabel(r, a.zone_id ?? "page"),
       part: "",
       quote: a.evidence ?? "",
       issue: a.note,
-      fix: "",
+      fix: a.fix ?? "",
       rule: "",
       verified: a.evidence_verified !== false,
       fragment: a.fragment ?? null,
@@ -214,7 +216,7 @@ function pageFindingDrafts(r: PageReport, site: SiteReport | null): FindingDraft
         out.push({
           ...base(r),
           layer: "geo",
-          severity: "",
+          severity: c.severity ?? "medium",
           kind: c.id,
           title: GEO_LABELS[c.id]!,
           zone_id: slot,
@@ -235,7 +237,7 @@ function pageFindingDrafts(r: PageReport, site: SiteReport | null): FindingDraft
       out.push({
         ...base(r),
         layer: "geo",
-        severity: "",
+        severity: c.severity ?? "medium",
         kind: c.id,
         title: GEO_LABELS[c.id] ?? c.id,
         zone_id: pl.zone_id,
@@ -384,8 +386,13 @@ export interface LayerCounts {
   high: number;
   medium: number;
   low: number;
-  /** findings without severity (GEO) */
+  /** findings without severity (site-wide GEO findings) */
   other: number;
+}
+
+/** All distinct findings of a count, whatever their severity. */
+export function totalOf(c: LayerCounts): number {
+  return c.high + c.medium + c.low + c.other;
 }
 
 /** Counts distinct findings, not places: a compliance problem with 9 places counts once, a check once. */

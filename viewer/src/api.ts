@@ -61,6 +61,23 @@ export interface SaveResult {
   running_job?: string | null;
 }
 
+export interface GeoTryResult {
+  url: string;
+  geo_type: string;
+  model: string;
+  answer: {
+    answer: "yes" | "no" | "na";
+    value: string | null;
+    zone_id: string | null;
+    evidence: string | null;
+    evidence_verified: boolean | null;
+    note: string;
+    fix: string | null;
+  };
+  usage: { input: number; cached_input: number; output: number };
+  cost_usd: number;
+}
+
 export class ApiError extends Error {}
 
 async function call<T>(method: string, path: string, body?: unknown): Promise<T> {
@@ -109,5 +126,7 @@ export const api = {
   jobs: () => call<JobSummary[]>("GET", "/api/jobs"),
   job: (id: string, from: number) => call<JobDetail>("GET", `/api/jobs/${id}?from=${from}`),
   stopJob: (id: string) => call<{ stopped: boolean }>("POST", `/api/jobs/${id}/stop`),
+  geoTry: (body: { url: string; question: string; id?: string; needs?: string[]; model?: string }) =>
+    call<GeoTryResult>("POST", "/api/geo-try", body),
   deleteRun: (id: string) => call<{ deleted: string }>("DELETE", `/api/runs/${encodeURIComponent(id)}`),
 };

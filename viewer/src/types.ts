@@ -55,7 +55,8 @@ export interface PageIndexEntry {
   action: string | null;
   summary: string | null;
   compliance: Sev & { error: string | null };
-  geo: { to_fix: number; error: string | null };
+  /** the severity split is absent in runs made before GEO had severities */
+  geo: { to_fix: number; high?: number; medium?: number; low?: number; error: string | null };
   seo: Sev;
   checked_at: string;
 }
@@ -64,6 +65,7 @@ export interface GroupTotals {
   pages: number;
   compliance: Sev;
   geo: number;
+  geo_sev?: Sev;
   seo: Sev;
   actions: Record<string, number>;
 }
@@ -110,9 +112,16 @@ export type FixWhere = "template" | "page" | "author";
 
 export interface GeoAnswerView {
   id: string;
-  answer: "yes" | "no" | "na";
+  answer: "yes" | "no" | "na" | "none";
   value: string | null;
   note: string;
+  /** what to change, only for "no" */
+  fix?: string | null;
+  /** absent in runs made before the questions had titles */
+  title?: string;
+  severity?: "high" | "medium" | "low";
+  needs_confirm?: boolean;
+  confirmed?: boolean;
 }
 
 export interface PageReport {

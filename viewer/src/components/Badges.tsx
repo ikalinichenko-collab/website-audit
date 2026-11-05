@@ -23,6 +23,13 @@ export function SeverityBadge({ severity }: { severity: string }) {
   return <span className={`${pill} ${SEV_CLASS[severity]}`}>{severity}</span>;
 }
 
+/** GEO counts: split by severity when the run has it, the plain number for runs made before GEO had severities. */
+export function GeoCounts({ total, sev, off }: { total: number; sev?: { high: number; medium: number; low: number }; off?: boolean }) {
+  if (off) return <Counts high={0} medium={0} low={0} off />;
+  if (!sev) return <span className="tabular-nums">{total}</span>;
+  return <Counts {...sev} />;
+}
+
 export function Counts({ high, medium, low, off }: { high: number; medium: number; low: number; off?: boolean }) {
   if (off) return <span className="text-xs text-slate-400 dark:text-slate-500">off</span>;
   const cls = (n: number, c: string) => (n === 0 ? "text-slate-400 dark:text-slate-500" : c);

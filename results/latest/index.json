@@ -2,33 +2,6 @@
   "schema_version": 2,
   "pages": [
     {
-      "slug": "home_ffe28d62",
-      "url": "https://gogloby.com/",
-      "title": "Applied AI Company for Established Software | GoGloby",
-      "group": "Company",
-      "subsection": "Home",
-      "profile": "home",
-      "template": "block",
-      "action": null,
-      "summary": null,
-      "compliance": {
-        "high": 0,
-        "medium": 0,
-        "low": 0,
-        "error": "Layer turned off for this run"
-      },
-      "geo": {
-        "to_fix": 3,
-        "error": "LLM skipped for this run"
-      },
-      "seo": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      },
-      "checked_at": "2026-11-05T12:05:57.866Z"
-    },
-    {
       "slug": "insights_top-executive-search-firms_c276aedd",
       "url": "https://gogloby.com/insights/top-executive-search-firms/",
       "title": "Top 18 Executive Search Firms: USA Rankings, Fees & Picks",
@@ -46,6 +19,9 @@
       },
       "geo": {
         "to_fix": 3,
+        "high": 1,
+        "medium": 0,
+        "low": 2,
         "error": "LLM skipped for this run"
       },
       "seo": {
@@ -53,44 +29,32 @@
         "medium": 0,
         "low": 0
       },
-      "checked_at": "2026-11-05T12:05:57.849Z"
+      "checked_at": "2026-11-05T12:28:44.992Z"
     }
   ],
   "totals": {
-    "pages": 2,
+    "pages": 1,
     "compliance": {
       "high": 0,
       "medium": 0,
       "low": 0
     },
-    "geo": 6,
+    "geo": 3,
+    "geo_sev": {
+      "high": 1,
+      "medium": 0,
+      "low": 2
+    },
     "seo": {
       "high": 0,
       "medium": 0,
       "low": 0
     },
     "actions": {
-      "not_checked": 2
+      "not_checked": 1
     }
   },
   "by_group": {
-    "Company": {
-      "pages": 1,
-      "compliance": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      },
-      "geo": 3,
-      "seo": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      },
-      "actions": {
-        "not_checked": 1
-      }
-    },
     "Resources": {
       "pages": 1,
       "compliance": {
@@ -99,6 +63,11 @@
         "low": 0
       },
       "geo": 3,
+      "geo_sev": {
+        "high": 1,
+        "medium": 0,
+        "low": 2
+      },
       "seo": {
         "high": 0,
         "medium": 0,
@@ -110,23 +79,6 @@
     }
   },
   "by_subsection": {
-    "Company/Home": {
-      "pages": 1,
-      "compliance": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      },
-      "geo": 3,
-      "seo": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      },
-      "actions": {
-        "not_checked": 1
-      }
-    },
     "Resources/Insights": {
       "pages": 1,
       "compliance": {
@@ -135,6 +87,11 @@
         "low": 0
       },
       "geo": 3,
+      "geo_sev": {
+        "high": 1,
+        "medium": 0,
+        "low": 2
+      },
       "seo": {
         "high": 0,
         "medium": 0,

@@ -12,6 +12,16 @@
     { "term": "remote AI developers", "pattern": "\\bremote AI developers?\\b" }
   ],
   "nearshore_words": ["nearshore", "latin america", "latam"],
+  "severity": {
+    "home_title_exact": "high",
+    "trap_terms": "high",
+    "nearshore_not_first": "medium",
+    "faq_present": "medium",
+    "target_keyword_placement": "medium",
+    "em_dash": "low",
+    "ampersand": "low",
+    "uk_spelling": "low"
+  },
   "faq_min_question_headings": 3,
   "ampersand_allowlist": ["Data & AI", "Q&A", "R&D", "M&A", "AT&T", "Johnson & Johnson", "S&P", "P&G", "P&L", "B&B", "H&M"],
   "uk_spelling_words": [

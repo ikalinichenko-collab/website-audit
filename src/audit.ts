@@ -18,8 +18,8 @@ import { classifyUrl, filterBySubsections, filterInScope, OUT_OF_SCOPE, sampleAc
 import { buildZones, jsonLdZone } from "./zones.js";
 import { runSeoChecks } from "./seo.js";
 import { seoSiteChecks } from "./seo-site.js";
-import { checkTargetKeywordPlacement, geoTypeOf, runGeoCodeChecks } from "./geo-code.js";
-import { geoPayload, runGeoLlm } from "./geo-llm.js";
+import { geoTypeOf, runGeoCodeChecks, withSeverity } from "./geo-code.js";
+import { runGeoLlm } from "./geo-llm.js";
 import { compliancePayload, deriveAction, finalizeCompliance, runComplianceLayer, sharedPayload } from "./compliance.js";
 import { createOpenAiClient } from "./llm.js";
 import { detectSiteWideFingerprints, fingerprintJsonLdNode } from "./schema-fingerprint.js";
@@ -85,7 +85,7 @@ async function pool<T>(items: T[], n: number, fn: (item: T, i: number) => Promis
   await Promise.all(Array.from({ length: Math.max(1, n) }, worker));
 }
 
-function loadSavedSiteWideFingerprints(): Set<string> {
+export function loadSavedSiteWideFingerprints(): Set<string> {
   // a single-page run writes no file of its own, so results/latest may point to a run without one
   const data = readJson<{ fingerprints: string[] }>(siteWideFingerprintsPath())
     ?? readJson<{ fingerprints: string[] }>(path.join(latestPointerPath(), "site-wide-fingerprints.json"));
@@ -231,7 +231,7 @@ export async function runAudit(options: AuditOptions): Promise<string> {
     [settings.llm.model, reasoning(settings, "compliance"), settings.report_language],
   );
   const geoFp = layerFingerprint(
-    ["prompts/geo-llm.md", "prompts/geo-questions.json", ...SOURCE_FILES],
+    ["prompts/geo-llm.md", ...SOURCE_FILES],
     [settings.llm.model, reasoning(settings, "geo"), settings.report_language],
   );
 
@@ -317,32 +317,28 @@ export async function runAudit(options: AuditOptions): Promise<string> {
       };
     }
 
-    // geo (code checks always live, LLM answers cached)
-    const passed = geoCode.filter((c) => c.status === "pass").map((c) => c.id).sort();
-    const gHash = sha256(geoFp + geoType + passed.join(",") + JSON.stringify(geoPayload(finalUrl, geoType, zones)));
+    // geo (code checks always live; LLM answers cached one by one, see runGeoLlm)
     let geo: GeoLayerResult;
     if (!layers.geo) {
-      geo = { hash: gHash, cached: false, skipped: true, code: [], llm: [], placement: null, usage: null, error: LAYER_OFF };
-    } else if (prev && prev.geo.hash === gHash && !prev.geo.error) {
-      const kw = prev.geo.llm.find((a) => a.id === "target_keyword");
-      geo = {
-        hash: gHash,
-        cached: true,
-        code: geoCode,
-        llm: prev.geo.llm,
-        placement: kw && kw.answer === "yes" ? checkTargetKeywordPlacement(zones, kw.value) : null,
-        usage: prev.geo.usage,
-        error: null,
-      };
-      cachedLayers++;
+      geo = { hash: geoFp, cached: false, skipped: true, code: [], llm: [], placement: null, usage: null, error: LAYER_OFF };
     } else if (client) {
-      const out = await runGeoLlm(client, settings, finalUrl, geoType, zones, geoCode);
-      if (out.usage.input + out.usage.cached_input + out.usage.output > 0) llmCalls++;
+      const out = await runGeoLlm({ client, settings, url: finalUrl, geoType, zones, codeChecks: geoCode, prev: prev?.geo.llm ?? null, fingerprint: geoFp });
+      llmCalls += out.calls;
       if (out.error) llmErrors++;
       tokens = add(tokens, out.usage);
-      geo = { hash: gHash, cached: false, code: geoCode, llm: out.answers, placement: out.placement, usage: out.usage, error: out.error };
+      const answered = out.answers.length > 0;
+      if (answered && out.calls === 0 && !out.error) cachedLayers++;
+      geo = {
+        hash: geoFp,
+        cached: answered && out.calls === 0 && !out.error,
+        code: geoCode,
+        llm: out.answers,
+        placement: out.placement ? withSeverity(out.placement, geoCfg) : null,
+        usage: out.calls ? out.usage : (prev?.geo.usage ?? null),
+        error: out.error,
+      };
     } else {
-      geo = { hash: gHash, cached: false, code: geoCode, llm: [], placement: null, usage: null, error: options.noLlm ? "LLM skipped for this run" : "OPENAI_API_KEY not set" };
+      geo = { hash: geoFp, cached: false, code: geoCode, llm: [], placement: null, usage: null, error: options.noLlm ? "LLM skipped for this run" : "OPENAI_API_KEY not set" };
     }
 
     const report: PageReport = {

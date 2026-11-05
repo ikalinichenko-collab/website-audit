@@ -18,8 +18,9 @@ export const geoZoneSchema = {
           zone_id: { type: ["string", "null"] },
           evidence: { type: ["string", "null"] },
           note: { type: "string" },
+          fix: { type: ["string", "null"] },
         },
-        required: ["id", "answer", "value", "zone_id", "evidence", "note"],
+        required: ["id", "answer", "value", "zone_id", "evidence", "note", "fix"],
         additionalProperties: false,
       },
     },
@@ -212,7 +213,10 @@ export interface GeoLlmAnswer {
   value: string | null;
   zone_id: string | null;
   evidence: string | null;
+  /** why the answer is what it is */
   note: string;
+  /** what to change, only for a "no" answer */
+  fix: string | null;
 }
 
 /** Zone-based GEO call: payload is `{url, geo_type, answer_first, zones}`. */

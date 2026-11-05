@@ -6,7 +6,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import dotenv from "dotenv";
-import { loadSettings, loadGeoCodeConfig, loadSourcesText, loadGeoLlmInstruction } from "../src/config.js";
+import { loadSettings, loadGeoCodeConfig, loadSourcesText, geoQuestionsFor, geoInstruction } from "../src/config.js";
 import { extractFromHtml, flattenJsonLd } from "../src/extract.js";
 import { buildZones } from "../src/zones.js";
 import { classifyUrl } from "../src/scope.js";
@@ -46,7 +46,8 @@ const prepared = PAGES.map((url) => {
   for (const n of flattenJsonLd(page.json_ld)) [n["@type"]].flat().forEach((t) => typeof t === "string" && types.add(t));
   const gt = geoTypeOf(scope.profile);
   const code = runGeoCodeChecks(zones, gt, config, types);
-  const pack = loadGeoLlmInstruction(settings.report_language, gt, new Set(code.filter((c) => c.status === "pass").map((c) => c.id)));
+  const qs = geoQuestionsFor(gt, new Set(code.filter((c) => c.status === "pass").map((c) => c.id)));
+  const pack = qs.length ? { questions: qs, instruction: geoInstruction(settings.report_language, qs) } : null;
   const payloadChars = JSON.stringify(geoPayload(url, gt, zones)).length;
   const tokens = Math.round((sourcesChars + (pack?.instruction.length ?? 0) + payloadChars) / 4);
   estIn += tokens * runs;
@@ -71,7 +72,8 @@ for (const p of prepared) {
   all[p.url] = {};
   placements[p.url] = [];
   for (let r = 0; r < runs; r++) {
-    const out = await runGeoLlm(client, settings, p.url, p.gt, p.zones, p.code);
+    // no earlier answers: every run asks every question
+    const out = await runGeoLlm({ client, settings, url: p.url, geoType: p.gt, zones: p.zones, codeChecks: p.code, prev: null, fingerprint: "stability" });
     if (out.error) {
       console.error(p.url, "error:", out.error);
       continue;

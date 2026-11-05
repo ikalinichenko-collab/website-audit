@@ -41,6 +41,8 @@ export interface GeoCodeConfig {
   uk_spelling_words: string[];
   uk_spelling_stems: string[];
   uk_spelling_endings: string[];
+  /** severity of each code check; medium when a check is not listed */
+  severity?: Record<string, "high" | "medium" | "low">;
 }
 
 export function loadGeoCodeConfig(): GeoCodeConfig {
@@ -98,33 +100,40 @@ export function loadComplianceConfig(): ComplianceConfig {
   return JSON.parse(readFileSync(path.join(ROOT, "config", "compliance.json"), "utf8")) as ComplianceConfig;
 }
 
+/** Extra page data a question may ask to see, beyond the page text. */
+export const GEO_NEEDS = ["json_ld", "og", "author", "links"] as const;
+export type GeoNeed = (typeof GEO_NEEDS)[number];
+
 export interface GeoLlmQuestion {
   id: string;
   question: string;
   applies_to: string[];
   /** Code check that must pass first (for example faq_present). */
   requires?: string;
+  /** Title of the finding when the answer is no (the id when absent). */
+  title?: string;
+  /** Severity of the finding; medium when absent. */
+  severity?: "high" | "medium" | "low";
+  /** Extra data the model gets for this question; by default only the text zones. */
+  needs?: GeoNeed[];
+  /** Ask a second time when the answer is no; the finding stands only if the second answer is no too. */
+  confirm?: boolean;
 }
 
-/** Zone-based GEO questions for one GEO type; questions with `requires` are kept only when that code check passed. */
-export function loadGeoLlmInstruction(
-  reportLanguage: string,
-  geoType: string,
-  passedCodeChecks: Set<string>,
-): { instruction: string; questions: GeoLlmQuestion[] } | null {
-  const all = JSON.parse(
-    readFileSync(path.join(ROOT, "prompts", "geo-questions.json"), "utf8"),
-  ) as GeoLlmQuestion[];
-  const questions = all.filter(
-    (q) => q.applies_to.includes(geoType) && (!q.requires || passedCodeChecks.has(q.requires)),
-  );
-  if (!questions.length) return null;
+export function loadGeoQuestions(): GeoLlmQuestion[] {
+  return JSON.parse(readFileSync(path.join(ROOT, "prompts", "geo-questions.json"), "utf8")) as GeoLlmQuestion[];
+}
+
+/** Questions for one GEO type; questions with `requires` are kept only when that code check passed. */
+export function geoQuestionsFor(geoType: string, passedCodeChecks: Set<string>): GeoLlmQuestion[] {
+  return loadGeoQuestions().filter((q) => q.applies_to.includes(geoType) && (!q.requires || passedCodeChecks.has(q.requires)));
+}
+
+/** The instruction for the GEO call, with the given questions filled in. */
+export function geoInstruction(reportLanguage: string, questions: GeoLlmQuestion[]): string {
   const block = questions.map((q) => `- ${q.id}: ${q.question}`).join("\n");
   const raw = readFileSync(path.join(ROOT, "prompts", "geo-llm.md"), "utf8");
-  return {
-    instruction: raw.replace(/\{\{report_language\}\}/g, reportLanguage).replace(/\{\{questions\}\}/g, block),
-    questions,
-  };
+  return raw.replace(/\{\{report_language\}\}/g, reportLanguage).replace(/\{\{questions\}\}/g, block);
 }
 
 /** Hash of the listed project files plus extra strings: the cache key part that covers prompts, config and sources of one layer. */

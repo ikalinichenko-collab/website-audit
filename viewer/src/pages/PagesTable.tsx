@@ -3,7 +3,7 @@ import { Link, useSearchParams } from "react-router-dom";
 import { useRunContext } from "../context/RunContext.js";
 import { getIndex } from "../data.js";
 import type { PageIndexEntry, RunIndexFile } from "../types.js";
-import { ActionBadge, Counts } from "../components/Badges.js";
+import { ActionBadge, Counts, GeoCounts } from "../components/Badges.js";
 import { actionKey, defaultSort } from "../utils.js";
 import { ACTION_COLUMNS, GROUP_ORDER } from "../labels.js";
 
@@ -119,7 +119,13 @@ export function PagesTable() {
                 <td className="px-3 py-2">
                   <Counts {...e.compliance} off={!layers.compliance} />
                 </td>
-                <td className="px-3 py-2 tabular-nums">{layers.geo ? e.geo.to_fix : <Counts high={0} medium={0} low={0} off />}</td>
+                <td className="px-3 py-2">
+                  <GeoCounts
+                    total={e.geo.to_fix}
+                    sev={e.geo.high === undefined ? undefined : { high: e.geo.high, medium: e.geo.medium ?? 0, low: e.geo.low ?? 0 }}
+                    off={!layers.geo}
+                  />
+                </td>
                 <td className="px-3 py-2">
                   <Counts {...e.seo} off={!layers.seo} />
                 </td>

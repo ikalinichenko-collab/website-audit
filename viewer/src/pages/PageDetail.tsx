@@ -2,13 +2,21 @@ import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useRunContext } from "../context/RunContext.js";
 import { getIndex, getPage, getPageFindings } from "../data.js";
-import type { Finding, Layer, PageIndexEntry, PageReport } from "../types.js";
+import type { Finding, GeoAnswerView, Layer, PageIndexEntry, PageReport } from "../types.js";
 import { ActionBadge } from "../components/Badges.js";
 import { FindingList, FindingsByZone, groupProblems } from "../components/FindingList.js";
 import { ACTION_HELP, GEO_LABELS, GEO_STYLE_KINDS, LAYER_LABELS, variantLabel } from "../labels.js";
 import { defaultSort } from "../utils.js";
 
 type Tab = Layer | "review";
+
+const REST_LABEL = { pass: "Passed", na: "Not applicable", none: "Not answered", unconfirmed: "Not confirmed" } as const;
+const REST_CLASS = {
+  pass: "text-emerald-600 dark:text-emerald-400",
+  na: "text-slate-400",
+  none: "text-amber-600",
+  unconfirmed: "text-amber-600",
+} as const;
 
 const NOT_FOUND_HINT =
   "The model quoted text or a rule that could not be matched with this page or with a document heading. Check these by hand before acting on them.";
@@ -109,17 +117,20 @@ export function PageDetail() {
   const geoAnswers = page.geo.llm;
   const geoFailing = of("geo").filter((f) => !GEO_STYLE_KINDS.includes(f.kind));
   const geoStyle = of("geo").filter((f) => GEO_STYLE_KINDS.includes(f.kind));
-  const geoRest = [
+  // a "no" the question wanted confirmed, and the second answer differed: not a finding, listed here
+  const geoUnconfirmed = (a: GeoAnswerView) => a.answer === "no" && a.needs_confirm && a.confirmed === false;
+  const geoRest: { id: string; title: string; state: "pass" | "na" | "none" | "unconfirmed"; text: string }[] = [
     ...geoAnswers
-      .filter((a) => a.answer !== "no")
+      .filter((a) => a.answer !== "no" || geoUnconfirmed(a))
       .map((a) => ({
         id: a.id,
-        ok: a.answer === "yes",
+        title: a.title ?? GEO_LABELS[a.id] ?? a.id,
+        state: geoUnconfirmed(a) ? ("unconfirmed" as const) : a.answer === "yes" ? ("pass" as const) : a.answer === "none" ? ("none" as const) : ("na" as const),
         text: [a.value && a.value !== a.id ? `(${a.value})` : "", a.note].filter(Boolean).join(" "),
       })),
     ...(page.geo.code ?? [])
       .filter((c) => c.status !== "fail")
-      .map((c) => ({ id: c.id, ok: c.status === "pass", text: c.status === "na" ? "" : c.value })),
+      .map((c) => ({ id: c.id, title: GEO_LABELS[c.id] ?? c.id, state: c.status === "pass" ? ("pass" as const) : ("na" as const), text: c.status === "na" ? "" : c.value })),
   ];
 
   const layerBody = (layer: Layer, body: ReactNode) => {
@@ -333,15 +344,13 @@ export function PageDetail() {
             {geoRest.length > 0 && (
               <details>
                 <summary className="cursor-pointer text-sm font-semibold text-slate-800 dark:text-slate-200">
-                  Passed or not applicable ({geoRest.length})
+                  Passed, not applicable or not confirmed ({geoRest.length})
                 </summary>
                 <ul className="mt-2 space-y-1 text-sm">
                   {geoRest.map((r) => (
                     <li key={r.id}>
-                      <span className={r.ok ? "text-emerald-600 dark:text-emerald-400" : "text-slate-400"}>
-                        {r.ok ? "Passed" : "Not applicable"}
-                      </span>{" "}
-                      <span className="font-medium">{GEO_LABELS[r.id] ?? r.id}.</span>{" "}
+                      <span className={REST_CLASS[r.state]}>{REST_LABEL[r.state]}</span>{" "}
+                      <span className="font-medium">{r.title}.</span>{" "}
                       <span className="text-slate-600 dark:text-slate-400">{r.text}</span>
                     </li>
                   ))}

@@ -37,6 +37,13 @@ export interface GeoCodeCheck {
   places?: GeoPlace[];
   /** Target keyword placement: zones where the term is missing. */
   missing?: string[];
+  /** from `severity` in config/geo.json; set when the checks are run */
+  severity?: "high" | "medium" | "low";
+}
+
+/** The check with the severity its id has in config/geo.json (medium when not listed). */
+export function withSeverity(check: GeoCodeCheck, config: GeoCodeConfig): GeoCodeCheck {
+  return { ...check, severity: config.severity?.[check.id] ?? "medium" };
 }
 
 const STYLE_SKIP_KINDS = new Set(["toc", "date"]);
@@ -241,7 +248,7 @@ export function runGeoCodeChecks(
   const ukRe = new RegExp(`\\b(?:${[...words, ...stems].join("|")})\\b`, "i");
   checks.push(checkOf("uk_spelling", scan(page, ukRe, STYLE_SKIP_KINDS, shown), "none"));
 
-  return checks;
+  return checks.map((c) => withSeverity(c, config));
 }
 
 /** Placement of the LLM-chosen term in title, H1, first paragraph, meta description and an H2. */

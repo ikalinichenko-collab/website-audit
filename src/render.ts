@@ -1,5 +1,5 @@
 import type { PageReport, SiteReport } from "./report-types.js";
-import { countBy, FIX_WHERE_LABELS, kindLabel, pageFindings, siteFindings, type Finding, type Layer } from "./findings.js";
+import { countBy, FIX_WHERE_LABELS, kindLabel, pageFindings, siteFindings, totalOf, type Finding, type Layer } from "./findings.js";
 import { textFragmentUrl } from "./quote-fragments.js";
 import { categoryLabel } from "./categories.js";
 
@@ -27,9 +27,7 @@ function placeLine(f: Finding): string {
 
 function counts(findings: Finding[], layer: Layer): string {
   const c = countBy(findings, layer);
-  return layer === "geo"
-    ? `${c.other}`
-    : `${c.high} high, ${c.medium} medium, ${c.low} low`;
+  return `${c.high} high, ${c.medium} medium, ${c.low} low${layer === "geo" && c.other ? `, ${c.other} without severity` : ""}`;
 }
 
 /** Group findings of one layer into "problems": same kind, title and issue. */
@@ -76,7 +74,7 @@ export function renderPageReport(r: PageReport, site: SiteReport | null): string
   else L.push(`Compliance action: **${r.compliance.action ?? "keep"}**. ${r.compliance.summary ?? ""}`);
   L.push("");
   L.push(`- Compliance: ${counts(findings, "compliance")}`);
-  L.push(`- GEO: ${counts(findings, "geo")} to fix`);
+  L.push(`- GEO: ${counts(findings, "geo")}`);
   L.push(`- SEO: ${counts(findings, "seo")}`);
   if (r.shared_variants.length) L.push(`- Shared zones on this page: ${r.shared_variants.join(", ")} (checked in the site report)`);
   const authorPlaces = findings.filter((f) => f.fix_where === "author").length;
@@ -100,8 +98,9 @@ export function renderPageReport(r: PageReport, site: SiteReport | null): string
   if (llm.length) {
     L.push("Questions", "");
     for (const a of llm) {
-      const mark = a.answer === "yes" ? "yes" : a.answer === "no" ? "NO" : "n/a";
-      L.push(`- ${mark}: ${a.id}${a.value ? ` (${a.value})` : ""}. ${a.note}`);
+      const unconfirmed = a.answer === "no" && a.needs_confirm && a.confirmed === false;
+      const mark = a.answer === "yes" ? "yes" : a.answer === "none" ? "NO ANSWER" : unconfirmed ? "no (not confirmed)" : a.answer === "no" ? "NO" : "n/a";
+      L.push(`- ${mark}: ${a.title}${a.value ? ` (${a.value})` : ""}. ${a.note}${a.answer === "no" && a.fix ? ` To do: ${a.fix}` : ""}`);
     }
     L.push("");
   }
@@ -206,7 +205,7 @@ export function buildSummaryCsv(reports: PageReport[], site: SiteReport | null):
   const rows = [
     csvRow([
       "url", "group", "subsection", "action", "compliance_high", "compliance_medium", "compliance_low",
-      "geo_to_fix", "seo_high", "seo_medium", "seo_low", "summary",
+      "geo_to_fix", "geo_high", "geo_medium", "geo_low", "seo_high", "seo_medium", "seo_low", "summary",
     ]),
   ];
   for (const r of reports) {
@@ -214,7 +213,7 @@ export function buildSummaryCsv(reports: PageReport[], site: SiteReport | null):
     const c = countBy(f, "compliance");
     const g = countBy(f, "geo");
     const s = countBy(f, "seo");
-    rows.push(csvRow([r.final_url, r.category, r.subsection, r.compliance.error ? "not_checked" : (r.compliance.action ?? "keep"), c.high, c.medium, c.low, g.other, s.high, s.medium, s.low, r.compliance.summary ?? ""]));
+    rows.push(csvRow([r.final_url, r.category, r.subsection, r.compliance.error ? "not_checked" : (r.compliance.action ?? "keep"), c.high, c.medium, c.low, totalOf(g), g.high, g.medium, g.low, s.high, s.medium, s.low, r.compliance.summary ?? ""]));
   }
   return rows.join("\n") + "\n";
 }

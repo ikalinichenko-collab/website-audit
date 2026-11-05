@@ -18,6 +18,7 @@ import {
   writeResource,
 } from "./resources.js";
 import { getJob, listJobs, parseUrls, requestStop, runningJob, startJob, type JobOptions } from "./jobs.js";
+import { tryGeoQuestion } from "./geo-try.js";
 import { resolveLatestRunId, runDir, setLatestRun } from "./paths.js";
 import { writeRunsManifest } from "./run-output.js";
 
@@ -238,6 +239,20 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
       send(res, 200, { stopped: requestStop(job.id) });
       return;
     }
+  }
+
+  // ---- try one GEO question on one page (one model call, nothing is saved) --------
+  if (parts[0] === "geo-try" && parts.length === 1 && method === "POST") {
+    const body = await readJson<{ url?: string; question?: string; id?: string; needs?: string[]; model?: string }>(req);
+    const { urls } = parseUrls(String(body.url ?? ""));
+    if (urls.length !== 1) throw new ValidationError("Give one page address on the site");
+    if (!process.env.OPENAI_API_KEY) throw new ValidationError("OPENAI_API_KEY is not set");
+    try {
+      send(res, 200, await tryGeoQuestion({ url: urls[0]!, question: String(body.question ?? ""), id: body.id, needs: body.needs, model: body.model }));
+    } catch (e) {
+      throw new ValidationError(e instanceof Error ? e.message : String(e));
+    }
+    return;
   }
 
   // ---- runs ---------------------------------------------------------------------

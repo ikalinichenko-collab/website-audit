@@ -4,7 +4,7 @@ import { useRunContext } from "../context/RunContext.js";
 import { getIndex, getRun } from "../data.js";
 import type { GroupTotals, Layers, RunIndexFile, RunMeta } from "../types.js";
 import { ACTION_COLUMNS, GROUP_ORDER } from "../labels.js";
-import { Counts } from "../components/Badges.js";
+import { Counts, GeoCounts } from "../components/Badges.js";
 import { formatDuration, formatTokens } from "../utils.js";
 
 function Card({ title, children }: { title: string; children: React.ReactNode }) {
@@ -28,7 +28,9 @@ function Row({ name, t, link, layers }: { name: string; t: GroupTotals; link: st
       <td className="px-3 py-2">
         <Counts {...t.compliance} off={!layers.compliance} />
       </td>
-      <td className="px-3 py-2 tabular-nums">{layers.geo ? t.geo : <Counts high={0} medium={0} low={0} off />}</td>
+      <td className="px-3 py-2">
+        <GeoCounts total={t.geo} sev={t.geo_sev} off={!layers.geo} />
+      </td>
       <td className="px-3 py-2">
         <Counts {...t.seo} off={!layers.seo} />
       </td>
@@ -72,7 +74,9 @@ export function Overview() {
         <Card title="Compliance (high / medium / low)">
           <Counts {...t.compliance} off={!layers.compliance} />
         </Card>
-        <Card title="GEO to fix">{layers.geo ? t.geo : <Counts high={0} medium={0} low={0} off />}</Card>
+        <Card title={t.geo_sev ? "GEO (high / medium / low)" : "GEO to fix"}>
+          <GeoCounts total={t.geo} sev={t.geo_sev} off={!layers.geo} />
+        </Card>
         <Card title="SEO (high / medium / low)">
           <Counts {...t.seo} off={!layers.seo} />
         </Card>

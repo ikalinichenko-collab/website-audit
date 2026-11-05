@@ -1,6 +1,7 @@
 [
   {
     "id": "answer_first",
+    "title": "Opening does not answer the H1",
     "question": "The page gives you answer_first.text: the first two sentences of the first content zone. Do they answer the question asked by the H1, so an AI assistant could quote them alone? Evidence comes from that text.",
     "applies_to": [
       "home",
@@ -10,6 +11,7 @@
   },
   {
     "id": "buyer_problem",
+    "title": "Page does not open with a buyer problem",
     "question": "Does the page open with one of the three buyer problems from Glossary §1: finding an AI engineer with production experience takes too long; standard interviews cannot test real AI skills; after the hire there is no way to see an engineer's velocity, output quality or AI token efficiency? Slow engineering delivery or AI ROI in general is not one of them. Judge only what the page opens with, never facts.",
     "applies_to": [
       "home",
@@ -18,6 +20,7 @@
   },
   {
     "id": "lead_with_hire",
+    "title": "Page does not lead with the hire",
     "question": "Does the page lead with the hire (who GoGloby places, from where, how fast), then proof, assessment, guarantees and the Intelligence Layer, in that order (Glossary §9)? Do not judge wording of claims, only the order and what comes first.",
     "applies_to": [
       "home",
@@ -26,6 +29,7 @@
   },
   {
     "id": "recruiting_firm_early",
+    "title": "Does not say early that GoGloby is a recruiting firm",
     "question": "If the page is about recruiting, does it say in the first lines that GoGloby is a recruiting firm (Glossary §9)? Answer na if the page is not about recruiting, and always na for case studies.",
     "applies_to": [
       "home",
@@ -35,6 +39,7 @@
   },
   {
     "id": "faq_quality",
+    "title": "FAQ answers are not direct",
     "question": "The page has an FAQ. Are its answers direct and can each be quoted alone? Judge directness only, never offers or facts.",
     "applies_to": [
       "home",
@@ -46,6 +51,7 @@
   },
   {
     "id": "buyer_ready",
+    "title": "Not written for buyers ready to hire",
     "question": "Is the page written for a company ready to hire Data and AI engineers (Glossary §9), not for job seekers, learners or audiences GoGloby does not target (Glossary §5)? Judge the audience only, not the positioning: a page aimed at engineering buyers with outdated positioning is still buyer_ready. In value write buyer_ready, informational or not_targeted. Use zone_id page.",
     "applies_to": [
       "home",
@@ -56,6 +62,7 @@
   },
   {
     "id": "target_keyword",
+    "title": "No matching search term",
     "question": "Which term from Glossary §6 best matches this page? Put it in value and answer yes, or answer na with value null if none fits. Trap terms from Glossary §8 are never the answer. Placement of the term is checked in code, not by you.",
     "applies_to": [
       "home",
@@ -65,6 +72,7 @@
   },
   {
     "id": "uses_data",
+    "title": "No quotable data",
     "question": "Does the article give numbers an assistant can quote (salary ranges, counts, time-to-hire, shares) with the source or date near them (Glossary §9, Use data)?",
     "applies_to": [
       "article"
@@ -72,6 +80,7 @@
   },
   {
     "id": "proof_background",
+    "title": "Does not use founders' background as proof",
     "question": "Does the article use GoGloby's background as proof: Data Science and engineering teams that the founders built and led (Glossary §9, Use our background as proof)? Answer na for case studies.",
     "applies_to": [
       "article"
@@ -79,6 +88,7 @@
   },
   {
     "id": "sell_against_open_role",
+    "title": "Does not compare with an open full-time role",
     "question": "Does the article compare hiring through GoGloby with the cost and wait of an open full-time US role (Glossary §9, Sell against the open role)? Answer na for case studies.",
     "applies_to": [
       "article"
