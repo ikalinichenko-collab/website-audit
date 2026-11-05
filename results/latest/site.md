@@ -1,9 +1,10 @@
 # Site report
 
-Run 2026-11-05T12-02-21-857Z
+Run 2026-11-05T12-05-54-760Z
 
 ## Scope
 
+- Company/Home: 1 pages
 - Resources/Insights: 1 pages
 
 ## Site checks

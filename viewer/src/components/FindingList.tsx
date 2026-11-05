@@ -61,6 +61,32 @@ function displayQuote(f: Finding): string {
   return f.quote;
 }
 
+/** The matched word of a code check ("match | surrounding text", trap terms "[term] match | ..."), to highlight in the quote. */
+function matchOf(f: Finding): string {
+  if (f.kind === "trap_terms") return f.quote.match(/^\[[^\]]*\]\s([^|]*?)\s*\|/)?.[1] ?? "";
+  if (GEO_STYLE_KINDS.includes(f.kind)) return f.quote.split(" | ")[0] ?? "";
+  return "";
+}
+
+function Highlighted({ text, match }: { text: string; match: string }) {
+  if (!match) return <>{text}</>;
+  const escaped = match.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const parts = text.split(new RegExp(`(${escaped})`, "i"));
+  return (
+    <>
+      {parts.map((t, i) =>
+        i % 2 === 1 ? (
+          <mark key={i} className="rounded bg-amber-200 px-0.5 font-semibold not-italic text-slate-900 dark:bg-amber-500/40 dark:text-amber-50">
+            {t}
+          </mark>
+        ) : (
+          t
+        ),
+      )}
+    </>
+  );
+}
+
 /** Zones that live in the page head: the badge tells the reader to look in the source, not on the page. */
 function headBadge(zoneId: string): string | null {
   if (/^(title|meta_description|og_title|og_description)$/.test(zoneId)) return "in meta tags";
@@ -115,7 +141,7 @@ function PlaceLine({ place, hideZone }: { place: Place; hideZone?: boolean }) {
           <p className="mt-1 text-slate-700 dark:text-slate-300">{quote}</p>
         ) : (
           <p className="mt-1 border-l-2 border-slate-300 pl-2 italic text-slate-700 dark:border-slate-600 dark:text-slate-300">
-            &ldquo;{quote}&rdquo;
+            &ldquo;<Highlighted text={quote} match={matchOf(f)} />&rdquo;
           </p>
         ))}
       {f.reason && (

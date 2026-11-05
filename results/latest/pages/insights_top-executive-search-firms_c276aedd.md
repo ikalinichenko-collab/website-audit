@@ -1,6 +1,6 @@
 # Top 18 Executive Search Firms: USA Rankings, Fees & Picks
 
-https://gogloby.com/insights/top-executive-search-firms/ | Resources / Insights | template: article | checked 2026-11-05T12:02:23.499Z
+https://gogloby.com/insights/top-executive-search-firms/ | Resources / Insights | template: article | checked 2026-11-05T12:05:57.849Z
 
 Compliance: not checked (Layer turned off for this run)
 
@@ -25,23 +25,23 @@ Rule: Glossary §8
 - og:description: "[executive search] executive search | See which executive search firms lead in 2026: USA ranki…"
 - H1: "[executive search] Executive Search | Top 18 Executive Search Firms in the USA | 2026 Ranki…"
 
-### Em dash, 12 places
+### Em dash, 9 places
 Rule: Glossary §9
-- Structured data (JSON-LD), field 7: "— | …023–2033), with 6% job growth — faster than average. At the s…"
-- Structured data (JSON-LD), field 11: "— | …iver stronger finalist slates — especially when the mandate i…"
-- Structured data (JSON-LD), field 18: "— | …earch vs recruitment agencies — what’s the difference?"
 - Author, paragraph 3: "— | …ss the US, Canada, and Europe — software architecture, agile …"
 - Top 18 Executive Search Firms in 2026, paragraph 2: "— | …oven executive leadership fast—without the rigidity of tradit…"
-- and 7 more (see findings.csv)
+- Top 18 Executive Search Firms in 2026, paragraph 3: "— | …d, compliance, and reliability—helping you hire C-suite and V…"
+- Top 18 Executive Search Firms in 2026, paragraph 20: "— | …ct/engineering, and operations—ideal when you need speed, off…"
+- How to Evaluate an Executive Search Partner (C-suite edition), paragraph 1: "— | …tive search partner in minutes—not weeks."
+- and 4 more (see findings.csv)
 
-### "&" instead of "and", 40 places
+### "&" instead of "and", 31 places
 Rule: Glossary §9
 - Title: "& | …rch Firms: USA Rankings, Fees & Picks"
 - og:title: "& | …rch Firms: USA Rankings, Fees & Picks"
-- Structured data (JSON-LD), field 1: "& | …the USA | 2026 Rankings, Fees &amp; Picks"
-- Structured data (JSON-LD), field 2: "& | …the USA | 2026 Rankings, Fees &amp; Picks"
-- Structured data (JSON-LD), field 13: "& | …with capital allocation and FP&amp;A fluency. Product/technol…"
-- and 35 more (see findings.csv)
+- H1: "& | …the USA | 2026 Rankings, Fees & Picks"
+- Top 18 Executive Search Firms in 2026, table_cell 26: "& | 5. Heidrick & Struggles"
+- Top 18 Executive Search Firms in 2026, table_cell 67: "& | Finance & tech leadership with crisp pr…"
+- and 26 more (see findings.csv)
 
 ## SEO
 

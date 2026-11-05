@@ -9,7 +9,7 @@
   "profile": "article",
   "geo_type": "article",
   "template": "article",
-  "checked_at": "2026-11-05T12:02:23.499Z",
+  "checked_at": "2026-11-05T12:05:57.849Z",
   "zones": [
     {
       "id": "title",
@@ -159,23 +159,8 @@
       {
         "id": "em_dash",
         "status": "fail",
-        "value": "12 found",
+        "value": "9 found",
         "places": [
-          {
-            "zone_id": "json_ld",
-            "part": "field 7",
-            "value": "— | …023–2033), with 6% job growth — faster than average. At the s…"
-          },
-          {
-            "zone_id": "json_ld",
-            "part": "field 11",
-            "value": "— | …iver stronger finalist slates — especially when the mandate i…"
-          },
-          {
-            "zone_id": "json_ld",
-            "part": "field 18",
-            "value": "— | …earch vs recruitment agencies — what’s the difference?"
-          },
           {
             "zone_id": "author",
             "part": "paragraph 3",
@@ -226,7 +211,7 @@
       {
         "id": "ampersand",
         "status": "fail",
-        "value": "40 found",
+        "value": "31 found",
         "places": [
           {
             "zone_id": "title",
@@ -235,51 +220,6 @@
           {
             "zone_id": "og_title",
             "value": "& | …rch Firms: USA Rankings, Fees & Picks"
-          },
-          {
-            "zone_id": "json_ld",
-            "part": "field 1",
-            "value": "& | …the USA | 2026 Rankings, Fees &amp; Picks"
-          },
-          {
-            "zone_id": "json_ld",
-            "part": "field 2",
-            "value": "& | …the USA | 2026 Rankings, Fees &amp; Picks"
-          },
-          {
-            "zone_id": "json_ld",
-            "part": "field 13",
-            "value": "& | …with capital allocation and FP&amp;A fluency. Product/technol…"
-          },
-          {
-            "zone_id": "json_ld",
-            "part": "field 21",
-            "value": "& | …ly a pass/fail test: outcomes &amp; ownership, plan &amp; pro…"
-          },
-          {
-            "zone_id": "json_ld",
-            "part": "field 21",
-            "value": "& | …utcomes &amp; ownership, plan &amp; proof, access &amp; asses…"
-          },
-          {
-            "zone_id": "json_ld",
-            "part": "field 21",
-            "value": "& | …hip, plan &amp; proof, access &amp; assessment, confidentiali…"
-          },
-          {
-            "zone_id": "json_ld",
-            "part": "field 21",
-            "value": "& | …; assessment, confidentiality &amp; conflicts, money &amp; ou…"
-          },
-          {
-            "zone_id": "json_ld",
-            "part": "field 21",
-            "value": "& | …iality &amp; conflicts, money &amp; outcomes. Firms unable to…"
-          },
-          {
-            "zone_id": "json_ld",
-            "part": "field 25",
-            "value": "& | …t, Russell Reynolds, Heidrick &amp; Struggles, and a category…"
           },
           {
             "zone_id": "h1",

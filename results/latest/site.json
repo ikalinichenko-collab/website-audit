@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "run_id": "2026-11-05T12-02-21-857Z",
+  "run_id": "2026-11-05T12-05-54-760Z",
   "basics": {
     "robots": {
       "value": "all allowed",
@@ -25,7 +25,8 @@
     }
   },
   "scope_counts": {
-    "Resources/Insights": 1
+    "Resources/Insights": 1,
+    "Company/Home": 1
   },
   "shared": {
     "variants": [],

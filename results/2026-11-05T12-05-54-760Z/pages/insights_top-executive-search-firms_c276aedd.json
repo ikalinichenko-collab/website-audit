@@ -1,0 +1,389 @@
+{
+  "schema_version": 2,
+  "url": "https://gogloby.com/insights/top-executive-search-firms/",
+  "final_url": "https://gogloby.com/insights/top-executive-search-firms/",
+  "status": 200,
+  "title": "Top 18 Executive Search Firms: USA Rankings, Fees & Picks",
+  "category": "Resources",
+  "subsection": "Insights",
+  "profile": "article",
+  "geo_type": "article",
+  "template": "article",
+  "checked_at": "2026-11-05T12:05:57.849Z",
+  "zones": [
+    {
+      "id": "title",
+      "label": "Title",
+      "kind": "title"
+    },
+    {
+      "id": "meta_description",
+      "label": "Meta description",
+      "kind": "meta_description"
+    },
+    {
+      "id": "og_title",
+      "label": "og:title",
+      "kind": "og_title"
+    },
+    {
+      "id": "og_description",
+      "label": "og:description",
+      "kind": "og_description"
+    },
+    {
+      "id": "json_ld",
+      "label": "Structured data (JSON-LD)",
+      "kind": "json_ld"
+    },
+    {
+      "id": "h1",
+      "label": "H1",
+      "kind": "h1"
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "kind": "date"
+    },
+    {
+      "id": "author",
+      "label": "Author",
+      "kind": "author"
+    },
+    {
+      "id": "toc",
+      "label": "Table of contents",
+      "kind": "toc"
+    },
+    {
+      "id": "article:intro",
+      "label": "Intro",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:where-do-top-executive-recruiters-add-real-value",
+      "label": "Where do top executive recruiters add real value vs in-house?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:top-18-executive-search-firms-in-2026",
+      "label": "Top 18 Executive Search Firms in 2026",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:how-to-evaluate-an-executive-search-partner-c-su",
+      "label": "How to Evaluate an Executive Search Partner (C-suite edition)",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:what-does-a-good-confidential-search-look-like",
+      "label": "What does a good confidential search look like?",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:why-choose-retained-search-vs-doing-it-in-house-",
+      "label": "Why Choose Retained Search vs Doing It In-House (Time and Risk)",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:fees-terms",
+      "label": "Fees & Terms",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:conclusion",
+      "label": "Conclusion",
+      "kind": "article_section"
+    },
+    {
+      "id": "article:faqs",
+      "label": "FAQs",
+      "kind": "article_section"
+    },
+    {
+      "id": "banner_cta",
+      "label": "Banner CTA",
+      "kind": "banner_cta"
+    },
+    {
+      "id": "modals",
+      "label": "Forms and modals",
+      "kind": "modals"
+    }
+  ],
+  "zone_warnings": [],
+  "shared_variants": [],
+  "compliance": {
+    "hash": "8fe97906637d605c3cea5a46897e99559e87efb2bcc498a18a85a89ec725c284",
+    "cached": false,
+    "skipped": true,
+    "action": null,
+    "summary": null,
+    "llm_problems": [],
+    "problems": [],
+    "usage": null,
+    "error": "Layer turned off for this run"
+  },
+  "geo": {
+    "hash": "1286ae8de08707b579f315448bd0d6967547a890f61d5060a35c766f6203f1e6",
+    "cached": false,
+    "code": [
+      {
+        "id": "trap_terms",
+        "status": "fail",
+        "value": "5 found",
+        "places": [
+          {
+            "zone_id": "title",
+            "value": "[executive search] Executive Search | Top 18 Executive Search Firms: USA Rankings, Fees & P…"
+          },
+          {
+            "zone_id": "meta_description",
+            "value": "[executive search] executive search | See which executive search firms lead in 2026: USA ranki…"
+          },
+          {
+            "zone_id": "og_title",
+            "value": "[executive search] Executive Search | Top 18 Executive Search Firms: USA Rankings, Fees & P…"
+          },
+          {
+            "zone_id": "og_description",
+            "value": "[executive search] executive search | See which executive search firms lead in 2026: USA ranki…"
+          },
+          {
+            "zone_id": "h1",
+            "value": "[executive search] Executive Search | Top 18 Executive Search Firms in the USA | 2026 Ranki…"
+          }
+        ]
+      },
+      {
+        "id": "em_dash",
+        "status": "fail",
+        "value": "9 found",
+        "places": [
+          {
+            "zone_id": "author",
+            "part": "paragraph 3",
+            "value": "— | …ss the US, Canada, and Europe — software architecture, agile …"
+          },
+          {
+            "zone_id": "article:top-18-executive-search-firms-in-2026",
+            "part": "paragraph 2",
+            "value": "— | …oven executive leadership fast—without the rigidity of tradit…"
+          },
+          {
+            "zone_id": "article:top-18-executive-search-firms-in-2026",
+            "part": "paragraph 3",
+            "value": "— | …d, compliance, and reliability—helping you hire C-suite and V…"
+          },
+          {
+            "zone_id": "article:top-18-executive-search-firms-in-2026",
+            "part": "paragraph 20",
+            "value": "— | …ct/engineering, and operations—ideal when you need speed, off…"
+          },
+          {
+            "zone_id": "article:how-to-evaluate-an-executive-search-partner-c-su",
+            "part": "paragraph 1",
+            "value": "— | …tive search partner in minutes—not weeks."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 2",
+            "value": "— | …023–2033), with 6% job growth — faster than average. At the s…"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 6",
+            "value": "— | …iver stronger finalist slates — especially when the mandate i…"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 13",
+            "value": "— | …earch vs recruitment agencies — what’s the difference?"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 25",
+            "value": "— | …ss the US, Canada, and Europe — software architecture, agile …"
+          }
+        ]
+      },
+      {
+        "id": "ampersand",
+        "status": "fail",
+        "value": "31 found",
+        "places": [
+          {
+            "zone_id": "title",
+            "value": "& | …rch Firms: USA Rankings, Fees & Picks"
+          },
+          {
+            "zone_id": "og_title",
+            "value": "& | …rch Firms: USA Rankings, Fees & Picks"
+          },
+          {
+            "zone_id": "h1",
+            "value": "& | …the USA | 2026 Rankings, Fees & Picks"
+          },
+          {
+            "zone_id": "article:top-18-executive-search-firms-in-2026",
+            "part": "table_cell 26",
+            "value": "& | 5. Heidrick & Struggles",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:top-18-executive-search-firms-in-2026",
+            "part": "table_cell 67",
+            "value": "& | Finance & tech leadership with crisp pr…",
+            "place": "table, row \"13. Caldwell\""
+          },
+          {
+            "zone_id": "article:top-18-executive-search-firms-in-2026",
+            "part": "table_cell 81",
+            "value": "& | Major Lindsey & Africa (MLA)",
+            "place": "table"
+          },
+          {
+            "zone_id": "article:top-18-executive-search-firms-in-2026",
+            "part": "heading 2",
+            "value": "& | Category #1 – Flexible & Cross-Border Executive Search"
+          },
+          {
+            "zone_id": "article:top-18-executive-search-firms-in-2026",
+            "part": "heading 4",
+            "value": "& | …Multi-Industry Leaders (Board & C-Suite Depth)"
+          },
+          {
+            "zone_id": "article:top-18-executive-search-firms-in-2026",
+            "part": "heading 8",
+            "value": "& | 5) Heidrick & Struggles"
+          },
+          {
+            "zone_id": "article:top-18-executive-search-firms-in-2026",
+            "part": "image 5",
+            "value": "& | …ecutive search firms Heidrick & Struggles"
+          },
+          {
+            "zone_id": "article:top-18-executive-search-firms-in-2026",
+            "part": "heading 10",
+            "value": "& | Category #3 – Data-Driven & High-Growth Specialists"
+          },
+          {
+            "zone_id": "article:top-18-executive-search-firms-in-2026",
+            "part": "list_item 25",
+            "value": "& | Best for: Multinational & mid-market C-suite/senior lea…"
+          },
+          {
+            "zone_id": "article:top-18-executive-search-firms-in-2026",
+            "part": "heading 15",
+            "value": "& | …ry #4 – Healthcare, Education & Mission-Driven"
+          },
+          {
+            "zone_id": "article:top-18-executive-search-firms-in-2026",
+            "part": "heading 17",
+            "value": "& | Category #5 – Global & North-American Partner-Led Fi…"
+          },
+          {
+            "zone_id": "article:top-18-executive-search-firms-in-2026",
+            "part": "list_item 37",
+            "value": "& | Best for: Finance & technology leadership; board …"
+          },
+          {
+            "zone_id": "article:top-18-executive-search-firms-in-2026",
+            "part": "heading 21",
+            "value": "& | Category #6 – PE, Finance & Legal Specialists"
+          },
+          {
+            "zone_id": "article:top-18-executive-search-firms-in-2026",
+            "part": "heading 23",
+            "value": "& | 16) Major, Lindsey & Africa (MLA)"
+          },
+          {
+            "zone_id": "article:top-18-executive-search-firms-in-2026",
+            "part": "image 16",
+            "value": "& | Major, Lindsey & Africa Executive Search Firm"
+          },
+          {
+            "zone_id": "article:top-18-executive-search-firms-in-2026",
+            "part": "list_item 49",
+            "value": "& | Best for: Front-office & senior FS roles"
+          },
+          {
+            "zone_id": "article:why-choose-retained-search-vs-doing-it-in-house-",
+            "part": "list_item 4",
+            "value": "& | Confidentiality & access (the two biggest failu…"
+          },
+          {
+            "zone_id": "article:why-choose-retained-search-vs-doing-it-in-house-",
+            "part": "list_item 5",
+            "value": "& | Governance & accountability: Retained sear…"
+          },
+          {
+            "zone_id": "article:fees-terms",
+            "part": "heading 1",
+            "value": "& | Fees & Terms"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "list_item 2",
+            "value": "& | …with capital allocation and FP&A fluency."
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 16",
+            "value": "& | …ly a pass/fail test: outcomes & ownership, plan & proof, acce…"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 16",
+            "value": "& | …t: outcomes & ownership, plan & proof, access & assessment, c…"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 16",
+            "value": "& | …nership, plan & proof, access & assessment, confidentiality &…"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 16",
+            "value": "& | …& assessment, confidentiality & conflicts, money & outcomes. …"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 16",
+            "value": "& | …dentiality & conflicts, money & outcomes. Firms unable to sho…"
+          },
+          {
+            "zone_id": "article:faqs",
+            "part": "paragraph 20",
+            "value": "& | …t, Russell Reynolds, Heidrick & Struggles, and a category fit…"
+          },
+          {
+            "zone_id": "modals",
+            "part": "paragraph 2",
+            "value": "& | …e read and accepted the Terms & Conditions and Privacy Policy"
+          },
+          {
+            "zone_id": "modals",
+            "part": "paragraph 5",
+            "value": "& | …e read and accepted the Terms & Conditions and Privacy Policy"
+          }
+        ]
+      },
+      {
+        "id": "uk_spelling",
+        "status": "pass",
+        "value": "none",
+        "places": []
+      }
+    ],
+    "llm": [],
+    "placement": null,
+    "usage": null,
+    "error": "LLM skipped for this run"
+  },
+  "seo": {
+    "checks": [],
+    "skipped": true
+  }
+}

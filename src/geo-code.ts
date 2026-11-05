@@ -51,13 +51,43 @@ function snippet(text: string, index: number, len: number): string {
   return `${from > 0 ? "…" : ""}${text.slice(from, to).replace(/\s+/g, " ")}${to < text.length ? "…" : ""}`;
 }
 
+/** JSON-LD text as plain words: tags stripped, entities decoded ("Fees &amp; Picks" is "Fees & Picks"). */
+function plainLd(s: string): string {
+  return s
+    .replace(/<[^>]*>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#0?39;|&apos;/g, "'")
+    .replace(/&amp;/g, "&")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function squash(s: string): string {
+  return s.replace(/\s+/g, "").toLowerCase();
+}
+
+/** The visible text of the page as one string without whitespace, to find out whether JSON-LD only repeats it. */
+function visibleKey(zones: Zone[]): string {
+  return zones.filter((z) => z.kind !== "json_ld").map((z) => squash(z.text)).join("|");
+}
+
+/** A style match in JSON-LD is a duplicate when the words around it also stand in the visible text: it is one edit, reported there. */
+function repeatsVisible(text: string, index: number, len: number, shown: string): boolean {
+  const ctx = text.slice(Math.max(0, index - 30), index + len + 30);
+  return shown.includes(squash(ctx));
+}
+
 /** Find all regex matches inside parts of the given zones. */
-function scan(zones: Zone[], re: RegExp, skipKinds?: Set<string>): GeoPlace[] {
+function scan(zones: Zone[], re: RegExp, skipKinds?: Set<string>, shown?: string): GeoPlace[] {
   const out: GeoPlace[] = [];
   const g = new RegExp(re.source, re.flags.includes("g") ? re.flags : `${re.flags}g`);
   for (const z of zones) {
     if (skipKinds?.has(z.kind)) continue;
-    for (const p of z.parts) {
+    for (const part of z.parts) {
+      const p = shown !== undefined && z.kind === "json_ld" ? { ...part, text: plainLd(part.text) } : part;
       g.lastIndex = 0;
       let m: RegExpExecArray | null;
       while ((m = g.exec(p.text)) !== null) {
@@ -65,6 +95,7 @@ function scan(zones: Zone[], re: RegExp, skipKinds?: Set<string>): GeoPlace[] {
           g.lastIndex++;
           continue;
         }
+        if (shown !== undefined && z.kind === "json_ld" && repeatsVisible(p.text, m.index, m[0].length, shown)) continue;
         out.push({
           zone_id: z.id,
           part: p.type === "field" && z.parts.length === 1 ? undefined : `${p.type} ${p.index}`,
@@ -176,7 +207,8 @@ export function runGeoCodeChecks(
   }
 
   // ---- writing rules (all in-scope pages) --------------------------------------
-  const emDash = scan(page, /—/, STYLE_SKIP_KINDS);
+  const shown = visibleKey(page);
+  const emDash = scan(page, /—/, STYLE_SKIP_KINDS, shown);
   checks.push(checkOf("em_dash", emDash, "none"));
 
   const allow = config.ampersand_allowlist.map(escapeRe);
@@ -184,10 +216,15 @@ export function runGeoCodeChecks(
   const allowRe = new RegExp(allow.join("|"), "g");
   for (const z of page) {
     if (STYLE_SKIP_KINDS.has(z.kind)) continue;
-    for (const p of z.parts) {
+    for (const part of z.parts) {
+      const p = z.kind === "json_ld" ? { ...part, text: plainLd(part.text) } : part;
       const masked = p.text.replace(allowRe, (m) => " ".repeat(m.length));
       let i = masked.indexOf("&");
       while (i !== -1) {
+        if (z.kind === "json_ld" && repeatsVisible(p.text, i, 1, shown)) {
+          i = masked.indexOf("&", i + 1);
+          continue;
+        }
         amp.push({
           zone_id: z.id,
           part: p.type === "field" && z.parts.length === 1 ? undefined : `${p.type} ${p.index}`,
@@ -202,7 +239,7 @@ export function runGeoCodeChecks(
   const words = config.uk_spelling_words.map(escapeRe);
   const stems = config.uk_spelling_stems.map((s) => `${s}(?:${config.uk_spelling_endings.join("|")})`);
   const ukRe = new RegExp(`\\b(?:${[...words, ...stems].join("|")})\\b`, "i");
-  checks.push(checkOf("uk_spelling", scan(page, ukRe, STYLE_SKIP_KINDS), "none"));
+  checks.push(checkOf("uk_spelling", scan(page, ukRe, STYLE_SKIP_KINDS, shown), "none"));
 
   return checks;
 }
