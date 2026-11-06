@@ -22,6 +22,7 @@ import {
 import { getJob, listJobs, markInterrupted, parseUrls, requestStop, runningJobId, startJob, type JobOptions } from "./jobs.js";
 import { tryGeoQuestion } from "./geo-try.js";
 import { migrate } from "./db.js";
+import { rememberUser } from "./users.js";
 import { authRequired, checkAuthConfig, currentUser, handleAuth, sameOrigin, type User } from "./auth.js";
 import * as store from "./store.js";
 
@@ -99,7 +100,7 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
   const parts = url.pathname.replace(/^\/api\/?/, "").split("/").filter(Boolean).map(decodeURIComponent);
 
   if (parts[0] === "me" && method === "GET") {
-    send(res, 200, { email: user.email, name: user.name, sign_in: authRequired() });
+    send(res, 200, { email: user.email, name: user.email ? await rememberUser(user.email, user.name) : user.name, sign_in: authRequired() });
     return;
   }
 
@@ -353,6 +354,7 @@ async function handleRequest(req: http.IncomingMessage, res: http.ServerResponse
       send(res, 403, { error: "Request from another site" });
       return;
     }
+    if (user.email) await rememberUser(user.email, user.name);
     handleApi(req, res, url, user).catch((e) => {
       if (e instanceof ValidationError) send(res, 400, { error: e.message });
       else {

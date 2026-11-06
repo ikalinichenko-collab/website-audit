@@ -1,6 +1,7 @@
 import type { Layers, RunMeta, Settings } from "./types.js";
 import type { PageReport, SiteReport } from "./report-types.js";
 import { db } from "./db.js";
+import { shownName } from "./users.js";
 import { FINDING_STATUSES, pageFindings, siteFindings, type Finding, type FindingStatus, type Layer } from "./findings.js";
 import { buildFindingsCsv, buildSummaryCsv, renderPageReport, renderSiteReport } from "./render.js";
 import { attachFragments, buildRunIndex, pageIndexEntry, type PageIndexEntry, type RunIndexFile, type RunListEntry, type StoredZones } from "./run-output.js";
@@ -123,7 +124,7 @@ export async function listRuns(): Promise<RunListEntry[]> {
     meta: RunMeta | null;
     started_by: string | null;
     pages: string;
-  }>(`SELECT r.id, r.status, r.started_at, r.ended_at, r.model, r.layers, r.meta, r.started_by, (SELECT count(*) FROM pages p WHERE p.run_id = r.id) AS pages
+  }>(`SELECT r.id, r.status, r.started_at, r.ended_at, r.model, r.layers, r.meta, CASE WHEN r.started_by IS NULL THEN NULL ELSE ${shownName("r.started_by")} END AS started_by, (SELECT count(*) FROM pages p WHERE p.run_id = r.id) AS pages
       FROM runs r ORDER BY r.started_at DESC`);
   return r.rows.map((x) => ({
     id: x.id,
@@ -267,7 +268,7 @@ async function withStatuses(findings: Finding[], runStart: Date | null): Promise
   if (!findings.length) return findings;
   const rows = (
     await db().query<{ fid: string; status: FindingStatus; note: string | null; set_by: string | null; set_at: Date }>(
-      "SELECT fid, status, note, set_by, set_at FROM finding_status WHERE fid = ANY($1)",
+      `SELECT fid, status, note, CASE WHEN set_by IS NULL THEN NULL ELSE ${shownName("set_by")} END AS set_by, set_at FROM finding_status WHERE fid = ANY($1)`,
       [[...new Set(findings.map((f) => f.fid))]],
     )
   ).rows;

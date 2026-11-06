@@ -1,6 +1,7 @@
 import * as fs from "node:fs";
 import path from "node:path";
 import { db } from "./db.js";
+import { shownName } from "./users.js";
 import { projectRoot } from "./utils.js";
 
 /**
@@ -97,7 +98,7 @@ export async function loadResourceSnapshot(list: ResourceRef[]): Promise<string[
 /** Earlier versions of a resource, newest first (the current one is not listed). */
 export async function listVersions(r: ResourceRef): Promise<VersionInfo[]> {
   const rows = (
-    await db().query<{ ts: string; size: number; author: string | null }>("SELECT ts, octet_length(content) AS size, author FROM resource_versions WHERE resource_id = $1 ORDER BY ts DESC OFFSET 1", [r.id])
+    await db().query<{ ts: string; size: number; author: string | null }>(`SELECT ts, octet_length(content) AS size, CASE WHEN author IS NULL OR author IN ('seed', 'history') THEN NULL ELSE ${shownName("author")} END AS author FROM resource_versions WHERE resource_id = $1 ORDER BY ts DESC OFFSET 1`, [r.id])
   ).rows;
   return rows.map((x) => ({ ts: x.ts, size: Number(x.size), author: x.author }));
 }

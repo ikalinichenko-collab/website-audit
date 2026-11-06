@@ -12,6 +12,12 @@ export function countCellClass(value: number, kind: "high" | "medium" | "default
   return "tabular-nums";
 }
 
+/** How a run is named in lists: who started it and when, in the viewer's local time ("Igor K., 06.11.2026 13:21"). */
+export function runLabel(r: { started_at: string; started_by?: string }): string {
+  const when = new Date(r.started_at).toLocaleString([], { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit" });
+  return r.started_by ? `${r.started_by}, ${when}` : when;
+}
+
 export function formatTokens(n: number): string {
   return n.toLocaleString();
 }

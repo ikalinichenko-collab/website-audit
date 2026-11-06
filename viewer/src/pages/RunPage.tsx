@@ -4,6 +4,7 @@ import { api, type AppState, type JobDetail, type ModelOption, type ScopeGroup }
 import type { Layers } from "../types.js";
 import { useRunContext } from "../context/RunContext.js";
 import { Notice, buttonClass, primaryClass } from "../components/ResourceEditor.js";
+import { runLabel } from "../utils.js";
 
 type Mode = "urls" | "scope";
 
@@ -377,7 +378,7 @@ function RunList({
   onSelect,
   onDeleted,
 }: {
-  runs: { id: string; pages_checked: number; started_at: string; model?: string; cost_usd?: number | null; format?: 1 | 2 }[];
+  runs: { id: string; pages_checked: number; started_at: string; started_by?: string; model?: string; cost_usd?: number | null; format?: 1 | 2 }[];
   onSelect: (id: string) => void;
   onDeleted: () => void;
 }) {
@@ -390,7 +391,7 @@ function RunList({
       <ul className="divide-y divide-slate-100 rounded-lg border border-slate-200 bg-white text-sm dark:divide-slate-800 dark:border-slate-700 dark:bg-slate-900">
         {runs.map((r) => (
           <li key={r.id} className="flex items-center gap-3 px-3 py-2">
-            <span className="tabular-nums">{r.id.replace(/T/, " ").slice(0, 19)}</span>
+            <span className="tabular-nums">{runLabel(r)}</span>
             <span className="text-slate-500">{r.pages_checked} pages</span>
             {r.model && <span className="text-xs text-slate-500">{r.model}</span>}
             {r.cost_usd != null && r.cost_usd > 0 && <span className="text-xs text-slate-500">${r.cost_usd.toFixed(r.cost_usd < 1 ? 3 : 2)}</span>}
