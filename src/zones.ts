@@ -416,6 +416,8 @@ export function buildZones(
   const authorEl = $d("main .post-author").first();
   if (authorEl.length) {
     zones.push(makeZone("author", "author", "Author", collectParts(authorEl.get(0) as unknown as DomNode, pageUrl)));
+    // recorded here, so it must not land again in the last article section
+    authorEl.remove();
   }
 
   let template: PageZones["template"] = "unknown";

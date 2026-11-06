@@ -156,6 +156,9 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
     }
     return true;
   });
+  if (redirectOnly.length) {
+    log(`${redirectOnly.length} URL(s) redirect to another URL of the list and are not audited as pages (see Site, sitemap hygiene)`);
+  }
 
   // ---- 3. site-wide schema fingerprints ----------------------------------------
   let siteWide = multi ? new Set<string>() : await loadSavedFingerprints();

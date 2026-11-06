@@ -5,3 +5,4 @@ data/
 *.log
 .history/
 results/
+docs/
