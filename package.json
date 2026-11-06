@@ -7,7 +7,9 @@
     "scan": "tsx src/cli.ts",
     "report": "tsx src/report-cli.ts",
     "viewer": "vite --config viewer/vite.config.ts",
-    "app": "vite build --config viewer/vite.config.ts && tsx src/server.ts",
+    "build": "vite build --config viewer/vite.config.ts",
+    "start": "tsx src/server.ts",
+    "app": "pnpm build && pnpm start",
     "server": "tsx src/server.ts"
   },
   "engines": {
@@ -19,7 +21,8 @@
     "fast-xml-parser": "^4.5.1",
     "google-auth-library": "^11.3.3",
     "openai": "^4.77.0",
-    "pg": "^8.23.1"
+    "pg": "^8.23.1",
+    "tsx": "^4.19.2"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
@@ -33,7 +36,6 @@
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.1.1",
     "tailwindcss": "^3.4.17",
-    "tsx": "^4.19.2",
     "typescript": "^5.7.2",
     "vite": "^6.0.6"
   }

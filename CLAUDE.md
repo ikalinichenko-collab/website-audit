@@ -6,9 +6,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Internal audit tool for gogloby.com. It crawls the audited part of the site, splits every page into zones, and runs three separate layers on each page: **Compliance** (LLM, against the company documents in `sources/`), **GEO** (LLM questions plus code checks) and **SEO** (code only). Every finding names its zone, so the report says where to change something. Node 20+, pnpm, ESM TypeScript run directly with `tsx` (no build step, imports use `.js` suffixes). Needs `OPENAI_API_KEY` and `DATABASE_URL` (Postgres) in `.env`; sign-in with Google needs `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `SESSION_SECRET`, `PUBLIC_URL` (see `.env.example`); locally `docker compose up -d` starts the database (see `.env.example`). Migrations in `migrations/*.sql` run at start of the server and the CLI.
 
-The full design, the decisions behind it and the measured results are in `docs/zones.md`. Read it before changing a layer.
+The full design, the decisions behind it and the measured results are in `docs/zones.md` (a local file of the maintainer, not in git: ask for it before changing a layer if it is missing).
 
-The plan for the database, Google sign-in and deploy (stages B and C) and what is already done is in `docs/roadmap.md`.
+The plan for the database, Google sign-in and deploy (stages B and C) and what is already done is in `docs/roadmap.md` (also local, not in git).
 
 ## Commands
 
@@ -21,7 +21,7 @@ The plan for the database, Google sign-in and deploy (stages B and C) and what i
 - `pnpm scan ... --model <id>` — model from `llm.models` in `config/settings.json` (default `llm.model`); cost is computed from that model's price
 - `pnpm scan ... --no-llm` — skip the LLM calls but keep the layers (SEO and GEO code checks, term list, zones and site pass only)
 - `pnpm report [run_id]` — recompute text-fragment links, page rows and counts of a stored run (default: the latest)
-- `pnpm app` — build the viewer and start the app server (`src/server.ts`, http://127.0.0.1:8787): run audits, edit documents and settings, browse results. `PORT=...` changes the port
+- `pnpm build` builds the viewer into `viewer/dist`; `pnpm start` starts the server alone (what a deployment runs). `pnpm app` — build the viewer and start the app server (`src/server.ts`, http://127.0.0.1:8787): run audits, edit documents and settings, browse results. `PORT=...` changes the port
 - `pnpm viewer` — Vite dev server for `viewer/` with hot reload (proxies `/api` to the app server on 8787, so start `pnpm server` too)
 - `npx tsc --noEmit` and `npx tsc -p viewer/tsconfig.json --noEmit` — type-check (no test runner or linter is configured)
 - `scripts/zones-scan.ts`, `seo-scan.ts`, `geo-scan.ts`, `geo-stability.ts`, `compliance-run.ts` — diagnostics over a cache folder of fetched pages; the LLM ones are dry runs unless `--run` is given
