@@ -13,7 +13,7 @@ export interface ComplianceLocation {
   verified: boolean;
   /** text-fragment value for a link to the live page, set when reports are built */
   fragment?: string | null;
-  /** why this place is a problem, in the model's words; absent in reports made before it existed and for term-list hits */
+  /** why this place is a problem, in the model's words (term-list hits get a fixed sentence from code); absent in reports made before it existed */
   reason?: string;
   /** readable place for a table cell, set with the fragment */
   place?: string | null;
@@ -230,6 +230,7 @@ function termProblems(scan: Zone[], zones: PageZones, cfg: ComplianceConfig): Co
             part: p.type === "field" && p.area ? p.area : p.type === "field" ? null : `${p.type} ${p.index}`,
             quote: m[0],
             verified: true,
+            reason: `The page uses "${m[0]}", which the company documents list as no longer used (${t.rule}).`,
           });
         }
       }

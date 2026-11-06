@@ -118,10 +118,14 @@ page says about GoGloby.
   a problem, and never combine text from two zones. List a place only if the
   quote shows the problem by itself; do not list text that is merely nearby or
   related.
-- reason (inside each location): one sentence for that place alone. Say what
-  this text states or promises and why that is the problem. Be specific to the
-  quote: a meta description and a paragraph are different reasons, even when
-  the issue is the same. Do not repeat the issue sentence.
+- reason (inside each location): at most two short sentences for that place
+  alone, in plain everyday words. First say what this text states or promises.
+  Then say what the company documents say about it and where: name the
+  document and its section and give the point in a few words (for example
+  "Fact Sheet, Identity: GoGloby is a staffing and recruiting agency"). When
+  basis is not_in_sources say instead that the documents do not mention it.
+  Be specific to the quote: a meta description and a paragraph are different
+  reasons, even when the issue is the same. Do not repeat the issue sentence.
 - subject: the company, person or thing the problem is about (e.g. "Hasbro",
   "Staffing start time"), or null.
 - page_value: the value on the page, short (e.g. "$4.7B revenue"), or null.
