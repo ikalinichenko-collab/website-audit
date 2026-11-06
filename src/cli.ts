@@ -1,6 +1,7 @@
 import { runAudit } from "./audit.js";
 import { closeDb, migrate } from "./db.js";
 import { loadSettings } from "./config.js";
+import { loadResources } from "./resources.js";
 import { scopeGroups } from "./scope.js";
 import { ALL_LAYERS, type Layers } from "./types.js";
 
@@ -75,6 +76,7 @@ if (!opts.all && !opts.limit && !opts.urls.length && !opts.subsections) {
 }
 
 migrate()
+  .then(() => loadResources())
   .then(() => runAudit(opts))
   .then((runId) => console.log(`Run: ${runId} (open it in the app: pnpm app)`))
   .catch((e) => {

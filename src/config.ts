@@ -1,13 +1,10 @@
-import { readFileSync } from "node:fs";
-import path from "node:path";
 import type { ModelInfo, Settings, TokenUsage } from "./types.js";
 import type { SeoConfig } from "./seo.js";
-import { projectRoot, sha256 } from "./utils.js";
-
-const ROOT = projectRoot();
+import { resourceText } from "./resource-store.js";
+import { sha256 } from "./utils.js";
 
 export function loadSettings(): Settings {
-  const raw = readFileSync(path.join(ROOT, "config", "settings.json"), "utf8");
+  const raw = resourceText("config/settings.json");
   return JSON.parse(raw) as Settings;
 }
 
@@ -26,7 +23,7 @@ export function usageCost(u: TokenUsage, m: ModelInfo): number {
 }
 
 export function loadSeoConfig(): SeoConfig {
-  const raw = readFileSync(path.join(ROOT, "config", "seo.json"), "utf8");
+  const raw = resourceText("config/seo.json");
   return JSON.parse(raw) as SeoConfig;
 }
 
@@ -46,7 +43,7 @@ export interface GeoCodeConfig {
 }
 
 export function loadGeoCodeConfig(): GeoCodeConfig {
-  const raw = readFileSync(path.join(ROOT, "config", "geo.json"), "utf8");
+  const raw = resourceText("config/geo.json");
   return JSON.parse(raw) as GeoCodeConfig;
 }
 
@@ -67,13 +64,13 @@ export function resetSourcesCache(): void {
 export function loadSourcesText(): string {
   if (sourcesTextCache !== null) return sourcesTextCache;
   const headings = ["# decisions.md", "# GoGloby Fact Sheet.md", "# GoGloby Glossary.md"];
-  const parts = SOURCE_FILES.map((rel) => readFileSync(path.join(ROOT, rel), "utf8"));
+  const parts = SOURCE_FILES.map((rel) => resourceText(rel));
   sourcesTextCache = headings.map((h, i) => `${h}\n\n${parts[i]}`).join("\n\n---\n\n");
   return sourcesTextCache;
 }
 
 export function loadComplianceZonesInstruction(reportLanguage: string): string {
-  const raw = readFileSync(path.join(ROOT, "prompts", "compliance-zones.md"), "utf8");
+  const raw = resourceText("prompts/compliance-zones.md");
   return raw.replace(/\{\{report_language\}\}/g, reportLanguage);
 }
 
@@ -97,7 +94,7 @@ export interface ComplianceConfig {
 }
 
 export function loadComplianceConfig(): ComplianceConfig {
-  return JSON.parse(readFileSync(path.join(ROOT, "config", "compliance.json"), "utf8")) as ComplianceConfig;
+  return JSON.parse(resourceText("config/compliance.json")) as ComplianceConfig;
 }
 
 /** Extra page data a question may ask to see, beyond the page text. */
@@ -123,7 +120,7 @@ export interface GeoLlmQuestion {
 }
 
 export function loadGeoQuestions(): GeoLlmQuestion[] {
-  return JSON.parse(readFileSync(path.join(ROOT, "prompts", "geo-questions.json"), "utf8")) as GeoLlmQuestion[];
+  return JSON.parse(resourceText("prompts/geo-questions.json")) as GeoLlmQuestion[];
 }
 
 /** Questions for one GEO type; questions with `requires` are kept only when that code check passed. */
@@ -134,14 +131,14 @@ export function geoQuestionsFor(geoType: string, passedCodeChecks: Set<string>):
 /** The instruction for the GEO call, with the given questions filled in. */
 export function geoInstruction(reportLanguage: string, questions: GeoLlmQuestion[]): string {
   const block = questions.map((q) => `- ${q.id}: ${q.question}`).join("\n");
-  const raw = readFileSync(path.join(ROOT, "prompts", "geo-llm.md"), "utf8");
+  const raw = resourceText("prompts/geo-llm.md");
   return raw.replace(/\{\{report_language\}\}/g, reportLanguage).replace(/\{\{questions\}\}/g, block);
 }
 
 /** Hash of the listed project files plus extra strings: the cache key part that covers prompts, config and sources of one layer. */
 export function layerFingerprint(files: string[], extra: string[]): string {
   let acc = "";
-  for (const f of files) acc += readFileSync(path.join(ROOT, f), "utf8");
+  for (const f of files) acc += resourceText(f);
   return sha256(acc + "|" + extra.join("|"));
 }
 

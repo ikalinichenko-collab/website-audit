@@ -1,6 +1,7 @@
 import * as fs from "node:fs";
 import path from "node:path";
 import { projectRoot } from "./utils.js";
+import { listVersions, loadResourceSnapshot, readVersion, resourceMeta, resourceText, saveVersion, type VersionInfo } from "./resource-store.js";
 import { GEO_NEEDS, resetSourcesCache } from "./config.js";
 import { resetHeadingCache } from "./compliance.js";
 
@@ -97,10 +98,7 @@ export const RESOURCES: Resource[] = [
   },
 ];
 
-const ROOT = projectRoot();
-const HISTORY = path.join(ROOT, ".history");
 const MAX_BYTES = 2 * 1024 * 1024;
-const MAX_VERSIONS = 30;
 
 const GEO_TYPES = ["home", "service", "article", "company", "legal", "podcast"];
 const SEVERITIES = ["high", "medium", "low"];
@@ -110,23 +108,12 @@ export function findResource(id: string): Resource | undefined {
   return RESOURCES.find((r) => r.id === id);
 }
 
-function abs(r: Resource): string {
-  return path.join(ROOT, r.file);
-}
-
 export function listResources(): (Resource & { size: number; modified: string | null })[] {
-  return RESOURCES.map((r) => {
-    try {
-      const st = fs.statSync(abs(r));
-      return { ...r, size: st.size, modified: st.mtime.toISOString() };
-    } catch {
-      return { ...r, size: 0, modified: null };
-    }
-  });
+  return RESOURCES.map((r) => ({ ...r, ...resourceMeta(r.file) }));
 }
 
 export function readResource(r: Resource): string {
-  return fs.readFileSync(abs(r), "utf8");
+  return resourceText(r.file);
 }
 
 function fail(msg: string): never {
@@ -163,7 +150,7 @@ function checkRegexes(patterns: string[], what: string): void {
 
 function seoProfiles(): string[] {
   try {
-    const seo = JSON.parse(fs.readFileSync(path.join(ROOT, "config/seo.json"), "utf8")) as { profiles?: Record<string, unknown> };
+    const seo = JSON.parse(resourceText("config/seo.json")) as { profiles?: Record<string, unknown> };
     return Object.keys(seo.profiles ?? {});
   } catch {
     return [];
@@ -308,26 +295,14 @@ export function validateResource(r: Resource, content: string): void {
   }
 }
 
-function historyDir(r: Resource): string {
-  return path.join(HISTORY, r.id);
+export function listHistory(r: Resource): Promise<VersionInfo[]> {
+  return listVersions(r);
 }
 
-export function listHistory(r: Resource): { ts: string; size: number }[] {
-  const dir = historyDir(r);
-  if (!fs.existsSync(dir)) return [];
-  return fs
-    .readdirSync(dir)
-    .map((f) => ({ ts: f, size: fs.statSync(path.join(dir, f)).size }))
-    .sort((a, b) => b.ts.localeCompare(a.ts));
+export function readHistory(r: Resource, ts: string): Promise<string | null> {
+  return readVersion(r, ts);
 }
 
-export function readHistory(r: Resource, ts: string): string | null {
-  if (!/^[0-9T-]+Z$/.test(ts)) return null;
-  const p = path.join(historyDir(r), ts);
-  return fs.existsSync(p) ? fs.readFileSync(p, "utf8") : null;
-}
-
-/** Validates, keeps the previous version in .history and replaces the file. */
 /** Key order does not matter when comparing a locked question with the saved one. */
 function stable(v: unknown): string {
   if (Array.isArray(v)) return `[${v.map(stable).join(",")}]`;
@@ -340,8 +315,7 @@ function stable(v: unknown): string {
  * the saved file is the definition. Editing the file by hand is the way to change them.
  */
 function checkLockedQuestions(r: Resource, questions: Record<string, unknown>[]): void {
-  const file = abs(r);
-  const saved: Record<string, unknown>[] = fs.existsSync(file) ? (JSON.parse(fs.readFileSync(file, "utf8")) as Record<string, unknown>[]) : [];
+  const saved = JSON.parse(resourceText(r.file)) as Record<string, unknown>[];
   const lockedOld = new Map(saved.filter((q) => q.locked === true).map((q) => [String(q.id), q]));
   const lockedNew = new Map(questions.filter((q) => q.locked === true).map((q) => [String(q.id), q]));
   for (const [id, old] of lockedOld) {
@@ -352,21 +326,46 @@ function checkLockedQuestions(r: Resource, questions: Record<string, unknown>[])
   for (const id of lockedNew.keys()) if (!lockedOld.has(id)) fail(`Question "${id}" cannot be marked built in from the app`);
 }
 
-export function writeResource(r: Resource, content: string): { changed: boolean } {
+/** Validates, stores the text as a new version (the earlier ones stay in history) and updates the snapshot. */
+export async function writeResource(r: Resource, content: string, author: string | null = null): Promise<{ changed: boolean }> {
   validateResource(r, content);
   const normalized = content.replace(/\r\n/g, "\n");
-  const file = abs(r);
-  const prev = fs.existsSync(file) ? fs.readFileSync(file, "utf8") : null;
-  if (prev !== null && prev.replace(/\r\n/g, "\n") === normalized) return { changed: false };
-  if (prev !== null) {
-    fs.mkdirSync(historyDir(r), { recursive: true });
-    fs.writeFileSync(path.join(historyDir(r), new Date().toISOString().replace(/[:.]/g, "-")), prev);
-    for (const old of listHistory(r).slice(MAX_VERSIONS)) fs.rmSync(path.join(historyDir(r), old.ts));
-  }
-  fs.writeFileSync(file, normalized);
+  if (resourceText(r.file).replace(/\r\n/g, "\n") === normalized) return { changed: false };
+  await saveVersion(r, normalized, author);
   if (r.group === "sources") {
     resetSourcesCache();
     resetHeadingCache();
   }
   return { changed: true };
+}
+
+/**
+ * Loads the snapshot of all editable files from the database (seeding the ones it does not have), then lets the
+ * repo file define the built-in GEO questions: the app cannot change them, so the file stays their source.
+ */
+export async function loadResources(): Promise<void> {
+  const seeded = await loadResourceSnapshot(RESOURCES);
+  if (seeded.length) console.log(`Editable files copied into the database: ${seeded.join(", ")}`);
+  await syncLockedQuestions();
+}
+
+async function syncLockedQuestions(): Promise<void> {
+  const r = findResource("geo-questions")!;
+  let fromFile: Record<string, unknown>[];
+  try {
+    fromFile = JSON.parse(fs.readFileSync(path.join(projectRoot(), r.file), "utf8")) as Record<string, unknown>[];
+  } catch {
+    return;
+  }
+  const stored = JSON.parse(resourceText(r.file)) as Record<string, unknown>[];
+  const locked = fromFile.filter((q) => q.locked === true);
+  const same = stable(stored.filter((q) => q.locked === true)) === stable(locked);
+  if (same) return;
+  // locked questions come from the file and keep their place; new ones go first, removed ones go away, others stay as edited
+  const lockedById = new Map(locked.map((q) => [String(q.id), q]));
+  const kept = stored.filter((q) => q.locked !== true || lockedById.has(String(q.id))).map((q) => (q.locked === true ? lockedById.get(String(q.id))! : q));
+  const have = new Set(kept.map((q) => String(q.id)));
+  const merged = [...locked.filter((q) => !have.has(String(q.id))), ...kept];
+  await saveVersion(r, JSON.stringify(merged, null, 2) + "\n", "seed");
+  console.log("Built-in GEO questions updated from prompts/geo-questions.json");
 }

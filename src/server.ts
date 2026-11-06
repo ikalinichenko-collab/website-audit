@@ -13,6 +13,7 @@ import {
   findResource,
   listHistory,
   listResources,
+  loadResources,
   readHistory,
   readResource,
   writeResource,
@@ -128,29 +129,29 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
       const body = await readJson<{ content?: string }>(req);
       if (typeof body.content !== "string") throw new ValidationError("content is required");
       const before = readResource(r).length;
-      const out = writeResource(r, body.content);
+      const out = await writeResource(r, body.content);
       const warnings: string[] = [];
       if (r.group === "sources" && before > 0 && body.content.length < before * 0.5) {
-        warnings.push("The new file is less than half the size of the old one. The previous version is kept in history.");
+        warnings.push("The new file is less than half the size of the old one. The previous version is kept in the version list.");
       }
       send(res, 200, { ...out, warnings, running_job: runningJobId() });
       return;
     }
     if (parts[2] === "history" && parts.length === 3 && method === "GET") {
-      send(res, 200, listHistory(r));
+      send(res, 200, await listHistory(r));
       return;
     }
     if (parts[2] === "history" && parts.length === 4 && method === "GET") {
-      const content = readHistory(r, parts[3]!);
+      const content = await readHistory(r, parts[3]!);
       if (content === null) send(res, 404, { error: "Version not found" });
       else send(res, 200, { content });
       return;
     }
     if (parts[2] === "restore" && method === "POST") {
       const body = await readJson<{ ts?: string }>(req);
-      const content = readHistory(r, String(body.ts ?? ""));
+      const content = await readHistory(r, String(body.ts ?? ""));
       if (content === null) throw new ValidationError("Version not found");
-      send(res, 200, writeResource(r, content));
+      send(res, 200, await writeResource(r, content));
       return;
     }
   }
@@ -328,6 +329,7 @@ const server = http.createServer((req, res) => {
 async function start(): Promise<void> {
   const applied = await migrate();
   if (applied.length) console.log(`Database migrations applied: ${applied.join(", ")}`);
+  await loadResources();
   await markInterrupted();
   server.listen(PORT, HOST, () => {
     console.log(`Audit app: http://${HOST}:${PORT}  (${RESOURCES.length} editable files, results in the database)`);
