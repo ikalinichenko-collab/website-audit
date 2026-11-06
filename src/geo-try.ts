@@ -7,7 +7,7 @@ import { buildZones } from "./zones.js";
 import { createOpenAiClient } from "./llm.js";
 import { geoTypeOf, type GeoType } from "./geo-code.js";
 import { askGeoQuestions, verifyEvidence, type GeoLlmResult } from "./geo-llm.js";
-import { loadSavedSiteWideFingerprints } from "./audit.js";
+import { loadSavedFingerprints } from "./store.js";
 
 export interface GeoTryInput {
   url: string;
@@ -42,7 +42,7 @@ export async function tryGeoQuestion(input: GeoTryInput): Promise<GeoTryResult> 
 
   const fetched = await httpGet(input.url, settings);
   if (fetched.status < 200 || fetched.status >= 300 || !fetched.html) throw new Error(`The page answered with status ${fetched.status}`);
-  const page = extractFromHtml(fetched.html, input.url, settings, fetched, loadSavedSiteWideFingerprints());
+  const page = extractFromHtml(fetched.html, input.url, settings, fetched, await loadSavedFingerprints());
   const zones = buildZones(fetched.html, fetched.finalUrl, settings, page.page_json_ld);
   const scope = classifyUrl(fetched.finalUrl, settings);
   const geoType: GeoType = scope ? geoTypeOf(scope.profile) : "article";

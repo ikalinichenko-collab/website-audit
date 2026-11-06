@@ -17,18 +17,18 @@ import {
   readResource,
   writeResource,
 } from "./resources.js";
-import { getJob, listJobs, parseUrls, requestStop, runningJob, startJob, type JobOptions } from "./jobs.js";
+import { getJob, listJobs, markInterrupted, parseUrls, requestStop, runningJobId, startJob, type JobOptions } from "./jobs.js";
 import { tryGeoQuestion } from "./geo-try.js";
-import { resolveLatestRunId, runDir, setLatestRun } from "./paths.js";
-import { writeRunsManifest } from "./run-output.js";
+import { migrate } from "./db.js";
+import * as store from "./store.js";
 
 const ROOT = projectRoot();
 dotenv.config({ path: path.join(ROOT, ".env") });
 
 const PORT = Number(process.env.PORT ?? 8787);
-const HOST = "127.0.0.1";
+// local only unless HOST says otherwise (a deployed server sets HOST=0.0.0.0 and sits behind sign-in)
+const HOST = process.env.HOST ?? "127.0.0.1";
 const VIEWER_DIST = path.join(ROOT, "viewer", "dist");
-const RESULTS = path.join(ROOT, "results");
 const MAX_BODY = 5 * 1024 * 1024;
 
 const TYPES: Record<string, string> = {
@@ -97,14 +97,13 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
 
   if (parts[0] === "state" && method === "GET") {
     const s = loadSettings();
-    const running = runningJob();
     send(res, 200, {
       base_url: s.base_url,
       model: s.llm.model,
       models: s.llm.models.map((m) => ({ id: m.id, label: m.label, price_per_million_tokens: m.price_per_million_tokens })),
       has_api_key: Boolean(process.env.OPENAI_API_KEY),
-      running_job: running?.id ?? null,
-      latest_run: resolveLatestRunId(),
+      running_job: runningJobId(),
+      latest_run: await store.latestRunId(),
     });
     return;
   }
@@ -134,7 +133,7 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
       if (r.group === "sources" && before > 0 && body.content.length < before * 0.5) {
         warnings.push("The new file is less than half the size of the old one. The previous version is kept in history.");
       }
-      send(res, 200, { ...out, warnings, running_job: runningJob()?.id ?? null });
+      send(res, 200, { ...out, warnings, running_job: runningJobId() });
       return;
     }
     if (parts[2] === "history" && parts.length === 3 && method === "GET") {
@@ -175,7 +174,7 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
 
   if (parts[0] === "jobs") {
     if (parts.length === 1 && method === "GET") {
-      send(res, 200, listJobs());
+      send(res, 200, await listJobs());
       return;
     }
     if (parts.length === 1 && method === "POST") {
@@ -216,15 +215,15 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
       if (!options.noLlm && (layers.compliance || layers.geo) && !process.env.OPENAI_API_KEY) {
         throw new ValidationError("OPENAI_API_KEY is not set in .env. Turn off Compliance and GEO, or add the key.");
       }
-      if (runningJob()) {
+      if (runningJobId()) {
         send(res, 409, { error: "Another audit is already running" });
         return;
       }
-      const job = startJob(options);
+      const job = await startJob(options);
       send(res, 202, { id: job.id, rejected });
       return;
     }
-    const job = getJob(parts[1] ?? "");
+    const job = await getJob(parts[1] ?? "");
     if (!job) {
       send(res, 404, { error: "Unknown job" });
       return;
@@ -236,7 +235,7 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
       return;
     }
     if (parts[2] === "stop" && method === "POST") {
-      send(res, 200, { stopped: requestStop(job.id) });
+      send(res, 200, { stopped: await requestStop(job.id) });
       return;
     }
   }
@@ -255,22 +254,51 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
     return;
   }
 
-  // ---- runs ---------------------------------------------------------------------
-  if (parts[0] === "runs" && parts.length === 2 && method === "DELETE") {
-    const id = parts[1]!;
-    if (!/^[0-9TZ-]+$/.test(id)) throw new ValidationError("Bad run id");
-    if (runningJob()) throw new ValidationError("An audit is running; wait until it finishes");
-    const dir = runDir(id);
-    if (!fs.existsSync(dir)) {
-      send(res, 404, { error: "Run not found" });
+  // ---- runs (read from the database; files are built when asked for) -----------------------
+  if (parts[0] === "runs") {
+    if (parts.length === 1 && method === "GET") {
+      send(res, 200, await store.listRuns());
       return;
     }
-    fs.rmSync(dir, { recursive: true, force: true });
-    const runs = writeRunsManifest();
-    if (runs[0]) setLatestRun(runs[0].id);
-    else fs.rmSync(path.join(RESULTS, "latest"), { recursive: true, force: true });
-    send(res, 200, { deleted: id });
-    return;
+    const id = parts[1] ?? "";
+    if (!/^[0-9TZ-]+$/.test(id)) throw new ValidationError("Bad run id");
+    if (parts.length === 2 && method === "DELETE") {
+      if (runningJobId()) throw new ValidationError("An audit is running; wait until it finishes");
+      if (!(await store.deleteRun(id))) {
+        send(res, 404, { error: "Run not found" });
+        return;
+      }
+      send(res, 200, { deleted: id });
+      return;
+    }
+    if (method === "GET") {
+      const what = parts[2];
+      const json = (v: unknown): void => {
+        if (v === null) send(res, 404, { error: "Not found" });
+        else send(res, 200, v);
+      };
+      const text = (body: string | null, type: string): void => {
+        if (body === null) {
+          send(res, 404, { error: "Not found" });
+          return;
+        }
+        res.writeHead(200, { "Content-Type": type, "Cache-Control": "no-store" });
+        res.end(body);
+      };
+      if (parts.length === 3 && what === "run") return json(await store.getRunMeta(id));
+      if (parts.length === 3 && what === "index") return json(await store.getRunIndex(id));
+      if (parts.length === 3 && what === "site") return json(await store.getSite(id));
+      if (parts.length === 3 && what === "site-findings") return json(await store.getSiteFindings(id));
+      if (parts.length === 3 && what === "site-sources") return json(await store.getSiteSources(id));
+      if (parts.length === 4 && what === "pages" && !parts[3]!.endsWith(".md")) return json(await store.getPage(id, parts[3]!));
+      if (parts.length === 5 && what === "pages" && parts[4] === "findings") return json(await store.getPageFindings(id, parts[3]!));
+      if (parts.length === 3 && what === "findings.csv") return text(await store.findingsCsv(id), TYPES[".csv"]!);
+      if (parts.length === 3 && what === "summary.csv") return text(await store.summaryCsv(id), TYPES[".csv"]!);
+      if (parts.length === 3 && what === "site.md") return text(await store.siteMarkdown(id), TYPES[".md"]!);
+      if (parts.length === 4 && what === "pages" && parts[3]!.endsWith(".md")) {
+        return text(await store.pageMarkdown(id, parts[3]!.slice(0, -3)), TYPES[".md"]!);
+      }
+    }
   }
 
   send(res, 404, { error: "Not found" });
@@ -288,12 +316,6 @@ const server = http.createServer((req, res) => {
     });
     return;
   }
-  if (url.pathname.startsWith("/data/")) {
-    const file = safeJoin(RESULTS, decodeURIComponent(url.pathname.replace(/^\/data\//, "")));
-    if (file && serveFile(res, file)) return;
-    send(res, 404, { error: "Not found" });
-    return;
-  }
   const rel = decodeURIComponent(url.pathname === "/" ? "index.html" : url.pathname.slice(1));
   const file = safeJoin(VIEWER_DIST, rel);
   if (file && serveFile(res, file)) return;
@@ -303,6 +325,16 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(PORT, HOST, () => {
-  console.log(`Audit app: http://${HOST}:${PORT}  (${RESOURCES.length} editable files, results in ${RESULTS})`);
+async function start(): Promise<void> {
+  const applied = await migrate();
+  if (applied.length) console.log(`Database migrations applied: ${applied.join(", ")}`);
+  await markInterrupted();
+  server.listen(PORT, HOST, () => {
+    console.log(`Audit app: http://${HOST}:${PORT}  (${RESOURCES.length} editable files, results in the database)`);
+  });
+}
+
+start().catch((e) => {
+  console.error(e instanceof Error ? e.message : e);
+  process.exit(1);
 });

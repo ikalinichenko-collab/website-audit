@@ -1,13 +1,8 @@
-import * as fs from "node:fs";
-import path from "node:path";
 import type { Layers, RunMeta, Settings } from "./types.js";
 import type { PageReport, SiteReport } from "./report-types.js";
-import { countBy, fragmentAllowed, pageFindings, siteFindings, totalOf, type Finding } from "./findings.js";
-import { buildFindingsCsv, buildSummaryCsv, renderPageReport, renderSiteReport } from "./render.js";
+import { countBy, fragmentAllowed, siteFindings, totalOf, type Finding } from "./findings.js";
 import { fragmentForQuote, tablePlaceOfPart } from "./quote-fragments.js";
-import { projectRoot } from "./utils.js";
-import { readJson } from "./paths.js";
-import { buildSiteSources } from "./site-sources.js";
+
 
 export interface PageIndexEntry {
   slug: string;
@@ -55,7 +50,9 @@ export interface RunListEntry {
   tokens: RunMeta["tokens"];
   model?: string;
   layers?: Layers;
-  /** 2 = readable by the viewer; 1 = made before the zone redesign */
+  /** running, done, stopped, error or interrupted (the server restarted during the run) */
+  status?: string;
+  /** 2 = readable by the viewer; 1 = made before the zone redesign (no longer stored) */
   format: 1 | 2;
 }
 
@@ -88,29 +85,17 @@ function addTo(t: GroupTotals, e: PageIndexEntry): void {
   t.actions[a] = (t.actions[a] ?? 0) + 1;
 }
 
-function loadReports(runPath: string): { slug: string; report: PageReport }[] {
-  const dir = path.join(runPath, "pages");
-  if (!fs.existsSync(dir)) return [];
-  const out: { slug: string; report: PageReport }[] = [];
-  for (const f of fs.readdirSync(dir)) {
-    if (!f.endsWith(".json") || f.endsWith(".zones.json") || f.endsWith(".findings.json")) continue;
-    const r = readJson<PageReport>(path.join(dir, f));
-    if (r?.schema_version === 2) out.push({ slug: f.replace(/\.json$/, ""), report: r });
-  }
-  return out;
-}
 
 /** Bump when `fragmentForQuote` changes: stored fragments are recomputed on the next report build. */
 const LOCATOR_VERSION = 3;
 
-/** Attach text-fragment values for quotes found in the visible page text, then save the page JSON. */
-function attachFragments(runPath: string, slug: string, r: PageReport, settings: Settings): boolean {
-  const htmlPath = path.join(runPath, "pages", `${slug}.html`);
-  if (!fs.existsSync(htmlPath)) return false;
-  const html = fs.readFileSync(htmlPath, "utf8");
-  const zones = readJson<{ zones: { id: string; parts?: { type: string; index: number; text: string }[] }[] }>(
-    path.join(runPath, "pages", `${slug}.zones.json`),
-  )?.zones;
+export interface StoredZones {
+  zones: { id: string; label?: string; text?: string; parts?: { type: string; index: number; text: string }[] }[];
+}
+
+/** Attach text-fragment values for quotes found in the visible page text. Changes the report in place. */
+export function attachFragments(r: PageReport, html: string, zonesFile: StoredZones | null, settings: Settings): boolean {
+  const zones = zonesFile?.zones;
   let changed = false;
   for (const p of r.compliance.problems) {
     for (const l of p.locations) {
@@ -142,96 +127,45 @@ function attachFragments(runPath: string, slug: string, r: PageReport, settings:
   return changed;
 }
 
-/** Rebuild per-page `.md`, `site.md`, both CSV files and the viewer index from the JSON in a run folder. */
-export function writeRunOutputs(runPath: string, settings: Settings): { pages: number } {
-  const site = readJson<SiteReport>(path.join(runPath, "site.json"));
-  const loaded = loadReports(runPath);
-  const entries: PageIndexEntry[] = [];
-  const allFindings: Finding[] = [];
-  const reports: PageReport[] = [];
+/** One row of the page list, counted from the page's findings. */
+export function pageIndexEntry(slug: string, report: PageReport, findings: Finding[]): PageIndexEntry {
+  const c = countBy(findings, "compliance");
+  const s = countBy(findings, "seo");
+  const g = countBy(findings, "geo");
+  return {
+    slug,
+    url: report.final_url,
+    title: report.title || report.final_url,
+    group: report.category,
+    subsection: report.subsection,
+    profile: report.profile,
+    template: report.template,
+    action: report.compliance.error ? null : report.compliance.action,
+    summary: report.compliance.summary,
+    compliance: { high: c.high, medium: c.medium, low: c.low, error: report.compliance.error },
+    geo: { to_fix: totalOf(g), high: g.high, medium: g.medium, low: g.low, error: report.geo.error },
+    seo: { high: s.high, medium: s.medium, low: s.low },
+    checked_at: report.checked_at,
+  };
+}
 
-  for (const { slug, report } of loaded) {
-    if (attachFragments(runPath, slug, report, settings)) {
-      fs.writeFileSync(path.join(runPath, "pages", `${slug}.json`), JSON.stringify(report, null, 2));
-    }
-    fs.writeFileSync(path.join(runPath, "pages", `${slug}.md`), renderPageReport(report, site));
-    const f = pageFindings(report, site);
-    fs.writeFileSync(path.join(runPath, "pages", `${slug}.findings.json`), JSON.stringify(f, null, 1));
-    allFindings.push(...f);
-    reports.push(report);
-    const c = countBy(f, "compliance");
-    const s = countBy(f, "seo");
-    const g = countBy(f, "geo");
-    entries.push({
-      slug,
-      url: report.final_url,
-      title: report.title || report.final_url,
-      group: report.category,
-      subsection: report.subsection,
-      profile: report.profile,
-      template: report.template,
-      action: report.compliance.error ? null : report.compliance.action,
-      summary: report.compliance.summary,
-      compliance: { high: c.high, medium: c.medium, low: c.low, error: report.compliance.error },
-      geo: { to_fix: totalOf(g), high: g.high, medium: g.medium, low: g.low, error: report.geo.error },
-      seo: { high: s.high, medium: s.medium, low: s.low },
-      checked_at: report.checked_at,
-    });
-  }
-  entries.sort((a, b) => a.url.localeCompare(b.url));
-
+/** The viewer index of a run: page rows, totals per group and subsection, site counts. */
+export function buildRunIndex(entries: PageIndexEntry[], site: SiteReport | null, layers: Layers | undefined): RunIndexFile {
+  const sorted = [...entries].sort((a, b) => a.url.localeCompare(b.url));
   const totals = emptyTotals();
   const byGroup: Record<string, GroupTotals> = {};
   const bySub: Record<string, GroupTotals> = {};
-  for (const e of entries) {
+  for (const e of sorted) {
     addTo(totals, e);
     addTo((byGroup[e.group] ??= emptyTotals()), e);
     addTo((bySub[`${e.group}/${e.subsection}`] ??= emptyTotals()), e);
   }
-
   let siteCounts: RunIndexFile["site"] = { compliance: { high: 0, medium: 0, low: 0 }, seo: 0, geo: 0 };
   if (site) {
     const sf = siteFindings(site);
-    fs.writeFileSync(path.join(runPath, "site.findings.json"), JSON.stringify(sf, null, 1));
-    allFindings.push(...sf);
     const c = countBy(sf, "compliance");
-    siteCounts = { compliance: { high: c.high, medium: c.medium, low: c.low }, seo: countBy(sf, "seo").high + countBy(sf, "seo").medium + countBy(sf, "seo").low, geo: totalOf(countBy(sf, "geo")) };
-    fs.writeFileSync(path.join(runPath, "site.md"), renderSiteReport(site, reports));
-    fs.writeFileSync(path.join(runPath, "site-sources.json"), JSON.stringify(buildSiteSources(runPath, site, loaded), null, 1));
+    const seo = countBy(sf, "seo");
+    siteCounts = { compliance: { high: c.high, medium: c.medium, low: c.low }, seo: seo.high + seo.medium + seo.low, geo: totalOf(countBy(sf, "geo")) };
   }
-
-  fs.writeFileSync(path.join(runPath, "summary.csv"), buildSummaryCsv(reports, site));
-  fs.writeFileSync(path.join(runPath, "findings.csv"), buildFindingsCsv(allFindings));
-  const layers = readJson<RunMeta>(path.join(runPath, "run.json"))?.layers;
-  const index: RunIndexFile = { schema_version: 2, pages: entries, totals, by_group: byGroup, by_subsection: bySub, site: siteCounts, ...(layers ? { layers } : {}) };
-  fs.writeFileSync(path.join(runPath, "index.json"), JSON.stringify(index, null, 2));
-  writeRunsManifest();
-  return { pages: entries.length };
-}
-
-export function writeRunsManifest(): RunListEntry[] {
-  const resultsRoot = path.join(projectRoot(), "results");
-  fs.mkdirSync(resultsRoot, { recursive: true });
-  const runs: RunListEntry[] = [];
-  for (const name of fs.readdirSync(resultsRoot)) {
-    if (name === "latest" || name === "runs.json") continue;
-    const runPath = path.join(resultsRoot, name);
-    if (!fs.statSync(runPath).isDirectory()) continue;
-    const meta = readJson<RunMeta>(path.join(runPath, "run.json"));
-    if (!meta) continue;
-    runs.push({
-      id: name,
-      started_at: meta.started_at,
-      ended_at: meta.ended_at,
-      pages_checked: meta.pages_checked,
-      cost_usd: meta.cost_usd,
-      tokens: meta.tokens,
-      ...(meta.model ? { model: meta.model } : {}),
-      ...(meta.layers ? { layers: meta.layers } : {}),
-      format: readJson<{ schema_version?: number }>(path.join(runPath, "index.json"))?.schema_version === 2 ? 2 : 1,
-    });
-  }
-  runs.sort((a, b) => b.started_at.localeCompare(a.started_at));
-  fs.writeFileSync(path.join(resultsRoot, "runs.json"), JSON.stringify(runs, null, 2));
-  return runs;
+  return { schema_version: 2, pages: sorted, totals, by_group: byGroup, by_subsection: bySub, site: siteCounts, ...(layers ? { layers } : {}) };
 }

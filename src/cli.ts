@@ -1,4 +1,5 @@
 import { runAudit } from "./audit.js";
+import { closeDb, migrate } from "./db.js";
 import { loadSettings } from "./config.js";
 import { scopeGroups } from "./scope.js";
 import { ALL_LAYERS, type Layers } from "./types.js";
@@ -73,9 +74,11 @@ if (!opts.all && !opts.limit && !opts.urls.length && !opts.subsections) {
   process.exit(1);
 }
 
-runAudit(opts)
-  .then((runId) => console.log(`Run: results/${runId}`))
+migrate()
+  .then(() => runAudit(opts))
+  .then((runId) => console.log(`Run: ${runId} (open it in the app: pnpm app)`))
   .catch((e) => {
-    console.error(e);
-    process.exit(1);
-  });
+    console.error(e instanceof Error ? e.message : e);
+    process.exitCode = 1;
+  })
+  .finally(() => closeDb());

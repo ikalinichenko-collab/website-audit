@@ -1,9 +1,6 @@
-import fs from "node:fs";
-import path from "node:path";
 import { flattenJsonLd, parseJsonLdBlocks } from "./extract.js";
 import { fingerprintJsonLdNode } from "./schema-fingerprint.js";
-import type { PageReport, SiteReport } from "./report-types.js";
-import { readJson } from "./paths.js";
+import type { SiteReport } from "./report-types.js";
 
 /** Raw material behind the site-level findings, so the viewer can show where each one lives. */
 export interface SiteSources {
@@ -23,21 +20,33 @@ function nodeType(node: Record<string, unknown>): string {
   return Array.isArray(t) ? t.join(", ") : typeof t === "string" ? t : "Unknown";
 }
 
-/** Site-wide JSON-LD nodes (by saved fingerprint) and the text of each shared zone variant, taken from a run folder. */
-export function buildSiteSources(runPath: string, site: SiteReport, loaded: { slug: string; report: PageReport }[]): SiteSources {
-  const fps = new Set(readJson<{ fingerprints: string[] }>(path.join(runPath, "site-wide-fingerprints.json"))?.fingerprints ?? []);
+/** A page of the run: its addresses and its saved HTML. */
+export interface SourcePage {
+  slug: string;
+  url: string;
+  final_url: string;
+  html: string;
+}
+
+/** Site-wide JSON-LD nodes (by saved fingerprint) and the text of each shared zone variant. `zonesOf` reads the zones of one page. */
+export async function buildSiteSources(
+  fingerprints: string[],
+  site: SiteReport,
+  pages: AsyncIterable<SourcePage>,
+  zonesOf: (slug: string) => Promise<{ id: string; label: string; text: string }[] | undefined>,
+): Promise<SiteSources> {
+  const fps = new Set(fingerprints);
   const found = new Map<string, { node: Record<string, unknown>; pages: Set<string>; sample: string }>();
-  if (fps.size) {
-    for (const { slug, report } of loaded) {
-      const htmlPath = path.join(runPath, "pages", `${slug}.html`);
-      if (!fs.existsSync(htmlPath)) continue;
-      for (const node of flattenJsonLd(parseJsonLdBlocks(fs.readFileSync(htmlPath, "utf8")))) {
-        const fp = fingerprintJsonLdNode(node);
-        if (!fps.has(fp)) continue;
-        const e = found.get(fp) ?? { node, pages: new Set<string>(), sample: report.final_url };
-        e.pages.add(report.final_url);
-        found.set(fp, e);
-      }
+  const loaded: { slug: string; url: string; final_url: string }[] = [];
+  for await (const page of pages) {
+    loaded.push({ slug: page.slug, url: page.url, final_url: page.final_url });
+    if (!fps.size) continue;
+    for (const node of flattenJsonLd(parseJsonLdBlocks(page.html))) {
+      const fp = fingerprintJsonLdNode(node);
+      if (!fps.has(fp)) continue;
+      const e = found.get(fp) ?? { node, pages: new Set<string>(), sample: page.final_url };
+      e.pages.add(page.final_url);
+      found.set(fp, e);
     }
   }
   // flattenJsonLd also yields nested typed nodes (Offer inside Service); keep only nodes that are not inside another one
@@ -55,8 +64,8 @@ export function buildSiteSources(runPath: string, site: SiteReport, loaded: { sl
 
   const variants: SiteSources["variants"] = [];
   for (const v of site.shared.variants) {
-    const first = loaded.find((l) => l.report.final_url === v.pages[0] || l.report.url === v.pages[0]);
-    const zones = first ? readJson<{ zones: { id: string; label: string; text: string }[] }>(path.join(runPath, "pages", `${first.slug}.zones.json`))?.zones : undefined;
+    const first = loaded.find((l) => l.final_url === v.pages[0] || l.url === v.pages[0]);
+    const zones = first ? await zonesOf(first.slug) : undefined;
     const z = zones?.find((x) => x.id === v.zone);
     variants.push({ id: v.id, zone: v.zone, label: z?.label ?? v.zone, text: z?.text ?? "", pages: v.pages });
   }

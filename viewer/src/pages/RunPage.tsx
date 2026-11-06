@@ -401,13 +401,13 @@ function RunList({
                 <button type="button" className="text-blue-600 hover:underline dark:text-blue-400" onClick={() => onSelect(r.id)}>
                   open
                 </button>
-                <a className="text-blue-600 hover:underline dark:text-blue-400" href={`/data/${r.id}/findings.csv`} download>
+                <a className="text-blue-600 hover:underline dark:text-blue-400" href={`/api/runs/${r.id}/findings.csv`} download>
                   findings.csv
                 </a>
-                <a className="text-blue-600 hover:underline dark:text-blue-400" href={`/data/${r.id}/summary.csv`} download>
+                <a className="text-blue-600 hover:underline dark:text-blue-400" href={`/api/runs/${r.id}/summary.csv`} download>
                   summary.csv
                 </a>
-                <a className="text-blue-600 hover:underline dark:text-blue-400" href={`/data/${r.id}/site.md`} target="_blank" rel="noreferrer">
+                <a className="text-blue-600 hover:underline dark:text-blue-400" href={`/api/runs/${r.id}/site.md`} target="_blank" rel="noreferrer">
                   site.md
                 </a>
               </>

@@ -1,17 +1,19 @@
-import path from "node:path";
-import { projectRoot } from "./utils.js";
-import { resolveLatestRunId, runDir } from "./paths.js";
 import { loadSettings } from "./config.js";
-import { writeRunOutputs } from "./run-output.js";
+import { closeDb, migrate } from "./db.js";
+import { latestRunId, rebuildRun } from "./store.js";
 
-function runPathFromArg(): string {
-  const arg = process.argv[2];
-  if (arg) return path.isAbsolute(arg) ? arg : path.join(projectRoot(), "results", arg);
-  const latest = resolveLatestRunId();
-  if (!latest) throw new Error("No results run found");
-  return runDir(latest);
+/** Recomputes text-fragment links, page rows and counts of a stored run (after a change in the locator or the findings). */
+async function main(): Promise<void> {
+  await migrate();
+  const runId = process.argv[2] || (await latestRunId());
+  if (!runId) throw new Error("No run found");
+  const pages = await rebuildRun(runId, loadSettings());
+  console.log(`Rebuilt ${pages} pages of run ${runId}`);
 }
 
-const runPath = runPathFromArg();
-const { pages } = writeRunOutputs(runPath, loadSettings());
-console.log(`Reports rebuilt for ${pages} pages in ${runPath}`);
+main()
+  .catch((e) => {
+    console.error(e instanceof Error ? e.message : e);
+    process.exitCode = 1;
+  })
+  .finally(() => closeDb());

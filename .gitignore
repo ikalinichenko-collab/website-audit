@@ -4,3 +4,4 @@ viewer/dist/
 data/
 *.log
 .history/
+results/
