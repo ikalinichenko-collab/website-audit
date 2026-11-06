@@ -2,8 +2,9 @@ import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useRunContext } from "../context/RunContext.js";
 import { getIndex, getPage, getPageFindings } from "../data.js";
-import type { Finding, GeoAnswerView, Layer, PageIndexEntry, PageReport } from "../types.js";
+import type { Finding, Layer, PageIndexEntry, PageReport } from "../types.js";
 import { ActionBadge } from "../components/Badges.js";
+import { GeoQuestions } from "../components/GeoQuestions.js";
 import { countCards, FindingList, FindingsByZone, groupProblems } from "../components/FindingList.js";
 import { ACTION_HELP, GEO_LABELS, GEO_STYLE_KINDS, LAYER_LABELS, variantLabel } from "../labels.js";
 import { defaultSort } from "../utils.js";
@@ -13,15 +14,6 @@ type Tab = Layer | "review";
 const REST_LABEL = { pass: "Passed", na: "Not applicable", none: "Not answered", unconfirmed: "Not confirmed" } as const;
 const REST_CLASS = {
   pass: "text-emerald-600 dark:text-emerald-400",
-  na: "text-slate-400",
-  none: "text-amber-600",
-  unconfirmed: "text-amber-600",
-} as const;
-
-const QA_LABEL = { yes: "Yes", no: "No", na: "Not applicable", none: "Not answered", unconfirmed: "No, not confirmed" } as const;
-const QA_CLASS = {
-  yes: "text-emerald-600 dark:text-emerald-400",
-  no: "text-red-600 dark:text-red-400",
   na: "text-slate-400",
   none: "text-amber-600",
   unconfirmed: "text-amber-600",
@@ -125,19 +117,11 @@ export function PageDetail() {
   const unconfirmed = compliance.filter((f) => f.basis === "not in sources");
 
   const geoAnswers = page.geo.llm;
-  const geoFailing = of("geo").filter((f) => !GEO_STYLE_KINDS.includes(f.kind));
-  const geoStyle = of("geo").filter((f) => GEO_STYLE_KINDS.includes(f.kind));
-  // a "no" the question wanted confirmed, and the second answer differed: not a finding, listed here
-  const geoUnconfirmed = (a: GeoAnswerView) => a.answer === "no" && a.needs_confirm && a.confirmed === false;
-  // every question with its answer, the "no" ones too: the same text as the finding, in one table
-  const geoQa = geoAnswers.map((a) => ({
-    id: a.id,
-    // the title is worded as the problem, so it belongs to a no; the other answers show the question itself
-    title: a.answer === "no" || !a.question ? (a.title ?? GEO_LABELS[a.id] ?? a.id) : a.question,
-    state: geoUnconfirmed(a) ? ("unconfirmed" as const) : a.answer,
-    note: [a.value && a.value !== a.id ? `(${a.value})` : "", a.note].filter(Boolean).join(" "),
-    fix: a.answer === "no" ? (a.fix ?? "") : "",
-  }));
+  const questionIds = new Set(geoAnswers.map((a) => a.id));
+  // findings of the questions from Settings go to their cards; the rest are code checks
+  const geoQuestionFindings = of("geo").filter((f) => questionIds.has(f.kind));
+  const geoCodeFailing = of("geo").filter((f) => !questionIds.has(f.kind) && !GEO_STYLE_KINDS.includes(f.kind));
+  const geoStyle = of("geo").filter((f) => !questionIds.has(f.kind) && GEO_STYLE_KINDS.includes(f.kind));
   const geoRest: { id: string; title: string; state: "pass" | "na" | "none" | "unconfirmed"; text: string }[] = [
     ...(page.geo.code ?? [])
       .filter((c) => c.status !== "fail")
@@ -336,49 +320,26 @@ export function PageDetail() {
           "geo",
           <div className="space-y-6">
             {page.geo.error && <Note>Not fully checked: {page.geo.error}</Note>}
-            {geoFailing.length === 0 && geoStyle.length === 0 && <Note>No GEO problems.</Note>}
-            {geoFailing.length > 0 && (
-              <Section title="To fix" hint="Questions an AI answer engine would ask of this page, and checks of the approved wording.">
-                <FindingList findings={geoFailing} empty="" />
-              </Section>
-            )}
-            {geoStyle.length > 0 && (
-              <details open={geoFailing.length === 0}>
-                <summary className="cursor-pointer text-sm font-semibold text-slate-800 dark:text-slate-200">
-                  Style ({cards(geoStyle)}), low priority
-                </summary>
-                <div className="mt-2">
-                  <FindingList findings={geoStyle} empty="" />
+            {geoAnswers.length === 0 && geoCodeFailing.length === 0 && geoStyle.length === 0 && <Note>No GEO problems.</Note>}
+            <GeoQuestions answers={geoAnswers} findings={geoQuestionFindings} />
+            {(geoCodeFailing.length > 0 || geoRest.length > 0 || geoStyle.length > 0) && (
+              <div className="space-y-3 border-t border-slate-200 pt-4 dark:border-slate-700">
+                <div>
+                  <h3 className="text-sm font-semibold text-slate-800 dark:text-slate-200">Code checks</h3>
+                  <Note>Fixed checks made by code, not by the model and not from your questions: the approved wording, trap terms, FAQ, style.</Note>
                 </div>
-              </details>
-            )}
-            {geoQa.length > 0 && (
-              <details open>
-                <summary className="cursor-pointer text-sm font-semibold text-slate-800 dark:text-slate-200">
-                  Questions and answers ({geoQa.length})
-                </summary>
-                <p className="mt-1 text-xs text-slate-500">
-                  What the model answered about this page. Yes is the good answer; a no is a finding above.
-                </p>
-                <table className="mt-2 w-full text-left text-sm">
-                  <tbody>
-                    {geoQa.map((r) => (
-                      <tr key={r.id} className="border-t border-slate-100 align-top dark:border-slate-800">
-                        <td className={`whitespace-nowrap py-1.5 pr-3 text-xs font-semibold uppercase ${QA_CLASS[r.state]}`}>{QA_LABEL[r.state]}</td>
-                        <td className="py-1.5 pr-3 font-medium">{r.title}</td>
-                        <td className="py-1.5 text-slate-600 dark:text-slate-400">
-                          {r.note}
-                          {r.fix && (
-                            <span className="block">
-                              <span className="font-medium">What to do:</span> {r.fix}
-                            </span>
-                          )}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </details>
+                {geoCodeFailing.length > 0 && <FindingList findings={geoCodeFailing} empty="" />}
+                {geoStyle.length > 0 && (
+                  <details open={geoCodeFailing.length === 0}>
+                    <summary className="cursor-pointer text-sm font-semibold text-slate-800 dark:text-slate-200">
+                      Style ({cards(geoStyle)}), low priority
+                    </summary>
+                    <div className="mt-2">
+                      <FindingList findings={geoStyle} empty="" />
+                    </div>
+                  </details>
+                )}
+              </div>
             )}
             {geoRest.length > 0 && (
               <details>

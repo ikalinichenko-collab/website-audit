@@ -188,6 +188,27 @@ function RuleLine({ rule }: { rule: string }) {
   );
 }
 
+/** The places of one problem, one line each (first 5, the rest on request). */
+export function PlaceList({ group }: { group: Finding[] }) {
+  const [all, setAll] = useState(false);
+  const places = mergePlaces(group);
+  const shown = all ? places : places.slice(0, 5);
+  return (
+    <>
+      <ul className="space-y-2">
+        {shown.map((p, i) => (
+          <PlaceLine key={i} place={p} />
+        ))}
+      </ul>
+      {places.length > 5 && (
+        <button type="button" className="mt-1 text-xs text-blue-600 hover:underline dark:text-blue-400" onClick={() => setAll(!all)}>
+          {all ? "show first 5" : `show all ${places.length}`}
+        </button>
+      )}
+    </>
+  );
+}
+
 const BASIS_CHIP: Record<string, string> = {
   "contradicts sources": "Contradicts the documents",
   "not in sources": "Not in the documents",
