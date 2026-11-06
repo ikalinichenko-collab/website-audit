@@ -1,9 +1,10 @@
-import { useEffect, useMemo, useState, type ReactNode } from "react";
+import { useCallback, useEffect, useMemo, useState, type ReactNode } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useRunContext } from "../context/RunContext.js";
 import { getIndex, getPage, getPageFindings } from "../data.js";
-import type { Finding, Layer, PageIndexEntry, PageReport } from "../types.js";
-import { ActionBadge } from "../components/Badges.js";
+import type { Finding, Layer, PageCompare, PageIndexEntry, PageReport } from "../types.js";
+import { ActionBadge, SeverityBadge } from "../components/Badges.js";
+import { FindingActionsContext } from "../components/FindingActions.js";
 import { GeoQuestions } from "../components/GeoQuestions.js";
 import { countCards, FindingList, FindingsByZone, groupProblems } from "../components/FindingList.js";
 import { ACTION_HELP, GEO_LABELS, GEO_STYLE_KINDS, LAYER_LABELS, variantLabel } from "../labels.js";
@@ -43,6 +44,8 @@ export function PageDetail() {
   const { runId, runs } = useRunContext();
   const [page, setPage] = useState<PageReport | null>(null);
   const [findings, setFindings] = useState<Finding[]>([]);
+  const [compare, setCompare] = useState<PageCompare | null>(null);
+  const [showClosed, setShowClosed] = useState(false);
   const [siblings, setSiblings] = useState<PageIndexEntry[]>([]);
   const [picked, setPicked] = useState<Tab | null>(null);
   const [byZone, setByZone] = useState(false);
@@ -55,9 +58,21 @@ export function PageDetail() {
     getPage(runId, slug)
       .then(setPage)
       .catch((e) => setError(String(e)));
+    loadFindings();
+  }, [runId, slug]);
+
+  /** Also called after a decision is saved. */
+  const loadFindings = useCallback(() => {
+    if (!runId) return;
     getPageFindings(runId, slug)
-      .then(setFindings)
-      .catch(() => setFindings([]));
+      .then((r) => {
+        setFindings(r.findings);
+        setCompare(r.compare);
+      })
+      .catch(() => {
+        setFindings([]);
+        setCompare(null);
+      });
   }, [runId, slug]);
 
   useEffect(() => {
@@ -67,8 +82,12 @@ export function PageDetail() {
       .catch(() => setSiblings([]));
   }, [runId]);
 
-  const ok = useMemo(() => findings.filter((f) => f.verified), [findings]);
-  const review = useMemo(() => findings.filter((f) => !f.verified), [findings]);
+  // closed findings (accepted, false positive, fixed) are left out of the lists and counts unless asked for
+  const okAll = useMemo(() => findings.filter((f) => f.verified), [findings]);
+  const closedCount = useMemo(() => countCards(findings.filter((f) => f.status)), [findings]);
+  const visible = useMemo(() => (showClosed ? findings : findings.filter((f) => !f.status)), [findings, showClosed]);
+  const ok = useMemo(() => visible.filter((f) => f.verified), [visible]);
+  const review = useMemo(() => visible.filter((f) => !f.verified), [visible]);
 
   if (error) return <p className="text-red-600">{error}</p>;
   if (!page) return <p className="text-slate-500">Loading...</p>;
@@ -119,7 +138,8 @@ export function PageDetail() {
   const geoAnswers = page.geo.llm;
   const questionIds = new Set(geoAnswers.map((a) => a.id));
   // findings of the questions from Settings go to their cards; the rest are code checks
-  const geoQuestionFindings = of("geo").filter((f) => questionIds.has(f.kind));
+  // question cards always show, closed or not: a card with no "no" would read as a pass
+  const geoQuestionFindings = okAll.filter((f) => f.layer === "geo" && questionIds.has(f.kind));
   const geoCodeFailing = of("geo").filter((f) => !questionIds.has(f.kind) && !GEO_STYLE_KINDS.includes(f.kind));
   const geoStyle = of("geo").filter((f) => !questionIds.has(f.kind) && GEO_STYLE_KINDS.includes(f.kind));
   const geoRest: { id: string; title: string; state: "pass" | "na" | "none" | "unconfirmed"; text: string }[] = [
@@ -136,6 +156,7 @@ export function PageDetail() {
   };
 
   return (
+    <FindingActionsContext.Provider value={{ runId, slug, reload: loadFindings }}>
     <div className="space-y-4">
       <div className="flex flex-wrap items-center gap-3 text-sm">
         <Link to="/pages" className="text-blue-600 hover:underline dark:text-blue-400">
@@ -247,6 +268,16 @@ export function PageDetail() {
       {page.zone_warnings.length > 0 && (
         <p className="rounded bg-amber-50 p-2 text-sm text-amber-800 dark:bg-amber-950 dark:text-amber-200">
           Could not split the page cleanly: {page.zone_warnings.join("; ")}
+        </p>
+      )}
+
+      <ComparisonNote compare={compare} />
+      {closedCount > 0 && (
+        <p className="text-xs text-slate-500">
+          {closedCount} closed {closedCount === 1 ? "problem is" : "problems are"} {showClosed ? "shown" : "hidden"} (accepted, false positive or fixed).{" "}
+          <button type="button" className="text-blue-600 hover:underline dark:text-blue-400" onClick={() => setShowClosed(!showClosed)}>
+            {showClosed ? "Hide closed" : "Show closed"}
+          </button>
         </p>
       )}
 
@@ -366,6 +397,39 @@ export function PageDetail() {
           <Note>{NOT_FOUND_HINT}</Note>
           <FindingList findings={review} empty="Nothing here: every quote and rule was found." />
         </div>
+      )}
+    </div>
+    </FindingActionsContext.Provider>
+  );
+}
+
+/** What changed against the previous run of this page: new problems are chipped on their cards, the gone ones are listed here. */
+function ComparisonNote({ compare }: { compare: PageCompare | null }) {
+  if (!compare) return <p className="text-xs text-slate-500">No earlier run of this page to compare with.</p>;
+  const gone = groupProblems(compare.resolved);
+  const skipped = (["compliance", "geo", "seo"] as Layer[]).filter((l) => !compare.layers.includes(l));
+  return (
+    <div className="space-y-1 text-xs text-slate-500">
+      <p>
+        Compared with the run of {new Date(compare.previous_at).toLocaleString()}:{" "}
+        <b>{gone.length}</b> {gone.length === 1 ? "problem" : "problems"} gone, new ones are marked <span className="font-semibold text-violet-700 dark:text-violet-300">New</span>.
+        {skipped.length > 0 && ` Not compared (off or failed in one of the runs): ${skipped.map((l) => LAYER_LABELS[l]).join(", ")}.`}
+        {" "}Compliance wording can differ between runs of the model, so a problem may show as gone and new at once.
+      </p>
+      {gone.length > 0 && (
+        <details>
+          <summary className="cursor-pointer font-medium text-slate-700 dark:text-slate-300">Gone since the previous run ({gone.length})</summary>
+          <ul className="mt-1 space-y-1">
+            {gone.map((g, i) => (
+              <li key={i} className="flex flex-wrap items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+                <span className="rounded bg-slate-100 px-1.5 py-0.5 text-xs uppercase text-slate-600 dark:bg-slate-800 dark:text-slate-400">{g[0]!.layer}</span>
+                <SeverityBadge severity={g[0]!.severity} />
+                <span>{g[0]!.title}</span>
+                {g.length > 1 && <span className="text-xs text-slate-500">{g.length} places</span>}
+              </li>
+            ))}
+          </ul>
+        </details>
       )}
     </div>
   );

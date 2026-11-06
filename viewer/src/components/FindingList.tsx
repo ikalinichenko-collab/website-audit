@@ -4,6 +4,7 @@ import type { Finding, FixWhere } from "../types.js";
 import { SeverityBadge } from "./Badges.js";
 import { GEO_STYLE_KINDS, isGeoAbsence, ruleDocId } from "../labels.js";
 import { fragmentAllowed, showOnPageUrl } from "../utils.js";
+import { StatusBar } from "./FindingActions.js";
 
 const SEV_ORDER: Record<string, number> = { high: 0, medium: 1, low: 2, "": 3 };
 
@@ -260,6 +261,11 @@ function ProblemCard({ group }: { group: Finding[] }) {
         <SeverityBadge severity={f.severity} />
         {chip && <span className={`rounded px-1.5 py-0.5 text-xs ${CHIP_CLASS[f.basis!]}`}>{chip}</span>}
         <span className="font-semibold">{f.title}</span>
+        {group.every((x) => x.change === "new") && (
+          <span className="rounded bg-violet-100 px-1.5 py-0.5 text-xs font-semibold text-violet-700 dark:bg-violet-950 dark:text-violet-300" title="Not in the previous run of this page">
+            New
+          </span>
+        )}
         {places.length > 1 && <span className="text-xs text-slate-500">{places.length} places</span>}
       </div>
       <Compared f={f} />
@@ -280,6 +286,7 @@ function ProblemCard({ group }: { group: Finding[] }) {
           {all ? "show first 5" : `show all ${places.length}`}
         </button>
       )}
+      <StatusBar group={group} />
     </div>
   );
 }

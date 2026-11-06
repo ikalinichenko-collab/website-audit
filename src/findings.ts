@@ -1,11 +1,26 @@
 import type { PageReport, SiteReport } from "./report-types.js";
 import { categoryLabel } from "./categories.js";
+import { sha256 } from "./utils.js";
 
 export type Layer = "compliance" | "geo" | "seo";
 export type Severity = "high" | "medium" | "low";
 
 /** One place of one finding: the unit of findings.csv and of the viewer lists. */
+export type FindingStatus = "accepted" | "false_positive" | "fixed";
+export const FINDING_STATUSES: FindingStatus[] = ["accepted", "false_positive", "fixed"];
+
 export interface Finding {
+  /** stable id of this place: the same finding in another run of the same page has the same id (status and comparison use it) */
+  fid: string;
+  /** set when the finding is read: the person's decision, if any */
+  status?: FindingStatus;
+  status_note?: string;
+  status_by?: string | null;
+  status_at?: string;
+  /** marked fixed, but present again in a run made after that */
+  reopened?: boolean;
+  /** against the previous run of the page: absent in the previous one */
+  change?: "new";
   url: string;
   group: string;
   subsection: string;
@@ -48,6 +63,15 @@ export const FIX_WHERE_LABELS: Record<FixWhere, string> = {
 };
 
 type FindingDraft = Omit<Finding, "fix_where">;
+
+/**
+ * Stable id of one place. The quote is part of it only where it names the place itself (a compliance quote, a link, a match
+ * of a style check); answers and measurements change between runs while the finding stays the same.
+ */
+export function fidOf(url: string, layer: Layer, kind: string, zone: string, quote: string | null): string {
+  const q = quote ? quote.toLowerCase().replace(/\s+/g, " ").trim().slice(0, 200) : "";
+  return sha256(`${url}|${layer}|${kind}|${zone}|${q}`).slice(0, 16);
+}
 
 export const SEO_LABELS: Record<string, string> = {
   http_status: "Page does not return a clean 200",
@@ -181,6 +205,7 @@ function pageFindingDrafts(r: PageReport, site: SiteReport | null): FindingDraft
         rule: p.rule,
         verified: l.verified && p.rule_verified,
         fragment: l.fragment ?? null,
+        fid: fidOf(r.final_url, "compliance", p.category, l.zone_id, l.quote),
         basis: basisOf(p),
         ...compared(p),
       });
@@ -206,6 +231,7 @@ function pageFindingDrafts(r: PageReport, site: SiteReport | null): FindingDraft
       rule: "",
       verified: a.evidence_verified !== false,
       fragment: a.fragment ?? null,
+      fid: fidOf(r.final_url, "geo", a.id, "page", null),
     });
   }
   const geoChecks = [...r.geo.code, ...(r.geo.placement ? [r.geo.placement] : [])];
@@ -224,6 +250,7 @@ function pageFindingDrafts(r: PageReport, site: SiteReport | null): FindingDraft
           part: "",
           quote: "",
           issue: `"${c.value}" is missing in ${slot}`,
+          fid: fidOf(r.final_url, "geo", c.id, slot, null),
           fix: "",
           rule: "Glossary §6",
           verified: true,
@@ -246,6 +273,7 @@ function pageFindingDrafts(r: PageReport, site: SiteReport | null): FindingDraft
         ...(pl.place ? { place: pl.place } : {}),
         quote: pl.value,
         issue: c.places?.length ? "" : c.value,
+        fid: fidOf(r.final_url, "geo", c.id, pl.zone_id, c.places?.length ? pl.value : null),
         fix: "",
         rule: GEO_CODE_RULES[c.id] ?? "",
         verified: true,
@@ -269,6 +297,7 @@ function pageFindingDrafts(r: PageReport, site: SiteReport | null): FindingDraft
         part: pl.part ?? "",
         quote: pl.value,
         issue: c.places?.length ? c.value : "",
+        fid: fidOf(r.final_url, "seo", c.id, pl.zone_id, c.places?.length ? pl.value : null),
         fix: "",
         rule: "",
         verified: true,
@@ -308,6 +337,7 @@ function siteFindingDrafts(site: SiteReport): FindingDraft[] {
           rule: p.rule,
           verified: l.verified && p.rule_verified,
           fragment: null,
+          fid: fidOf("site", "compliance", p.category, l.zone_id, l.quote),
           basis: basisOf(p),
           ...compared(p),
         });
@@ -330,6 +360,7 @@ function siteFindingDrafts(site: SiteReport): FindingDraft[] {
       zone_label: `${c.profile} pages`,
       part: "",
       quote: c.value,
+      fid: fidOf("site", "seo", c.id, c.profile, null),
       issue: `Fails on ${c.pages_failing} of ${c.pages_total} ${c.profile} pages`,
       fix: "",
       rule: "",
@@ -348,6 +379,7 @@ function siteFindingDrafts(site: SiteReport): FindingDraft[] {
       zone_label: "",
       part: "",
       quote: d.value,
+      fid: fidOf("site", "seo", d.id, "", d.value),
       issue: `Same value on ${d.urls.length} pages: ${d.urls.join(", ")}`,
       fix: "",
       rule: "",
@@ -366,6 +398,7 @@ function siteFindingDrafts(site: SiteReport): FindingDraft[] {
       zone_label: "",
       part: "",
       quote: h.url,
+      fid: fidOf("site", "seo", "sitemap_hygiene", "", h.url),
       issue: h.problem,
       fix: "",
       rule: "",
@@ -374,10 +407,10 @@ function siteFindingDrafts(site: SiteReport): FindingDraft[] {
     });
   }
   if (!site.basics.robots.ok) {
-    out.push({ ...baseSite, layer: "geo", severity: "", kind: "robots_ai_bots", title: "robots.txt blocks AI bots", zone_id: "", zone_label: "", part: "", quote: site.basics.robots.value, issue: site.basics.robots.value, fix: "", rule: "", verified: true, fragment: null });
+    out.push({ ...baseSite, layer: "geo", severity: "", kind: "robots_ai_bots", fid: fidOf("site", "geo", "robots_ai_bots", "", null), title: "robots.txt blocks AI bots", zone_id: "", zone_label: "", part: "", quote: site.basics.robots.value, issue: site.basics.robots.value, fix: "", rule: "", verified: true, fragment: null });
   }
   if (!site.basics.llms_txt.ok) {
-    out.push({ ...baseSite, layer: "geo", severity: "", kind: "llms_txt", title: "llms.txt missing or empty", zone_id: "", zone_label: "", part: "", quote: site.basics.llms_txt.value, issue: site.basics.llms_txt.value, fix: "", rule: "", verified: true, fragment: null });
+    out.push({ ...baseSite, layer: "geo", severity: "", kind: "llms_txt", fid: fidOf("site", "geo", "llms_txt", "", null), title: "llms.txt missing or empty", zone_id: "", zone_label: "", part: "", quote: site.basics.llms_txt.value, issue: site.basics.llms_txt.value, fix: "", rule: "", verified: true, fragment: null });
   }
   return out;
 }

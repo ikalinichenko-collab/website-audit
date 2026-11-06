@@ -1,6 +1,7 @@
 import type { Finding, GeoAnswerView } from "../types.js";
 import { SeverityBadge } from "./Badges.js";
 import { PlaceList } from "./FindingList.js";
+import { StatusBar } from "./FindingActions.js";
 import { GEO_LABELS } from "../labels.js";
 
 type State = "no" | "unconfirmed" | "none" | "yes" | "na";
@@ -75,6 +76,7 @@ function Card({ a, state, places }: { a: GeoAnswerView; state: State; places: Fi
           <PlaceList group={places} />
         </div>
       )}
+      {isNo && places.length > 0 && <StatusBar group={places} />}
     </div>
   );
 }

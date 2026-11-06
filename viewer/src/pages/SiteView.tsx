@@ -4,6 +4,7 @@ import { useRunContext } from "../context/RunContext.js";
 import { getSite, getSiteFindings, getSiteSources } from "../data.js";
 import type { Finding, SiteReport, SiteSources } from "../types.js";
 import { FindingList } from "../components/FindingList.js";
+import { FindingActionsContext } from "../components/FindingActions.js";
 import { SchemaNodeCard, VariantCard, findingsInNode } from "../components/SourceCards.js";
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
@@ -23,6 +24,10 @@ export function SiteView() {
   const [findings, setFindings] = useState<Finding[]>([]);
   const [sources, setSources] = useState<SiteSources | null>(null);
 
+  const reload = () => {
+    if (runId) getSiteFindings(runId).then(setFindings).catch(() => setFindings([]));
+  };
+
   useEffect(() => {
     if (!runId) return;
     getSite(runId)
@@ -41,6 +46,7 @@ export function SiteView() {
   const sub = (s: string) => findings.filter((f) => f.subsection === s);
 
   return (
+    <FindingActionsContext.Provider value={{ runId, slug: null, reload }}>
     <div className="space-y-8">
       <Section title="Site checks">
         <ul className="text-sm">
@@ -170,5 +176,6 @@ export function SiteView() {
         </Link>
       </p>
     </div>
+    </FindingActionsContext.Provider>
   );
 }

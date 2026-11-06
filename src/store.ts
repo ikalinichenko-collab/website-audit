@@ -1,7 +1,7 @@
 import type { Layers, RunMeta, Settings } from "./types.js";
 import type { PageReport, SiteReport } from "./report-types.js";
 import { db } from "./db.js";
-import { pageFindings, siteFindings, type Finding } from "./findings.js";
+import { FINDING_STATUSES, pageFindings, siteFindings, type Finding, type FindingStatus, type Layer } from "./findings.js";
 import { buildFindingsCsv, buildSummaryCsv, renderPageReport, renderSiteReport } from "./render.js";
 import { attachFragments, buildRunIndex, pageIndexEntry, type PageIndexEntry, type RunIndexFile, type RunListEntry, type StoredZones } from "./run-output.js";
 import { buildSiteSources, type SiteSources } from "./site-sources.js";
@@ -172,7 +172,7 @@ export async function getSite(runId: string): Promise<SiteReport | null> {
 
 export async function getSiteFindings(runId: string): Promise<Finding[] | null> {
   const site = await runSite(runId);
-  return site ? siteFindings(site) : null;
+  return site ? withStatuses(siteFindings(site), await runStartedAt(runId)) : null;
 }
 
 export async function getSiteSources(runId: string): Promise<SiteSources | null> {
@@ -192,9 +192,118 @@ export async function getPage(runId: string, slug: string): Promise<PageReport |
   return r.rows[0]?.report ?? null;
 }
 
-export async function getPageFindings(runId: string, slug: string): Promise<Finding[] | null> {
+/** What changed on a page since the previous run of the same URL. */
+export interface PageCompare {
+  previous_run: string;
+  previous_at: string;
+  /** layers that ran cleanly in both runs; the others are not compared */
+  layers: Layer[];
+  /** findings of the previous run that are gone now */
+  resolved: Finding[];
+}
+
+export interface PageFindingsResult {
+  findings: Finding[];
+  /** null when the page has no earlier run */
+  compare: PageCompare | null;
+}
+
+export async function getPageFindings(runId: string, slug: string): Promise<PageFindingsResult | null> {
   const report = await getPage(runId, slug);
-  return report ? pageFindings(report, await runSite(runId)) : null;
+  if (!report) return null;
+  const startedAt = await runStartedAt(runId);
+  const findings = pageFindings(report, await runSite(runId));
+  const compare = await compareWithPrevious(runId, startedAt, report, findings);
+  return { findings: await withStatuses(findings, startedAt), compare };
+}
+
+const LAYERS: Layer[] = ["compliance", "geo", "seo"];
+
+/** A layer can be compared when it ran without error in the report. */
+function layerRan(r: PageReport, layer: Layer): boolean {
+  const l = r[layer] as { skipped?: boolean; error?: string | null };
+  return !l.skipped && !l.error;
+}
+
+async function compareWithPrevious(runId: string, startedAt: Date | null, report: PageReport, findings: Finding[]): Promise<PageCompare | null> {
+  if (!startedAt) return null;
+  const prev = (
+    await db().query<{ id: string; started_at: Date; site: SiteReport | null; report: PageReport }>(
+      `SELECT r.id, r.started_at, r.site, p.report FROM pages p JOIN runs r ON r.id = p.run_id
+       WHERE p.url = $1 AND r.id <> $2 AND r.started_at < $3 AND p.report->>'schema_version' = '2'
+       ORDER BY r.started_at DESC LIMIT 1`,
+      [report.url, runId, startedAt],
+    )
+  ).rows[0];
+  if (!prev) return null;
+  const layers = LAYERS.filter((l) => layerRan(report, l) && layerRan(prev.report, l));
+  const before = pageFindings(prev.report, prev.site).filter((f) => layers.includes(f.layer));
+  const beforeIds = new Set(before.map((f) => f.fid));
+  const nowIds = new Set(findings.map((f) => f.fid));
+  for (const f of findings) if (layers.includes(f.layer) && !beforeIds.has(f.fid)) f.change = "new";
+  return {
+    previous_run: prev.id,
+    previous_at: prev.started_at.toISOString(),
+    layers,
+    resolved: await withStatuses(before.filter((f) => !nowIds.has(f.fid)), prev.started_at),
+  };
+}
+
+// ---- finding status -----------------------------------------------------------------------------
+
+async function runStartedAt(runId: string): Promise<Date | null> {
+  const r = await db().query<{ started_at: Date }>("SELECT started_at FROM runs WHERE id = $1", [runId]);
+  return r.rows[0]?.started_at ?? null;
+}
+
+/**
+ * Adds the stored decision to each finding. A finding marked fixed counts as open again in a run that started after the
+ * mark: it is still there.
+ */
+async function withStatuses(findings: Finding[], runStart: Date | null): Promise<Finding[]> {
+  if (!findings.length) return findings;
+  const rows = (
+    await db().query<{ fid: string; status: FindingStatus; note: string | null; set_by: string | null; set_at: Date }>(
+      "SELECT fid, status, note, set_by, set_at FROM finding_status WHERE fid = ANY($1)",
+      [[...new Set(findings.map((f) => f.fid))]],
+    )
+  ).rows;
+  const byFid = new Map(rows.map((r) => [r.fid, r]));
+  return findings.map((f) => {
+    const s = byFid.get(f.fid);
+    if (!s) return f;
+    if (s.status === "fixed" && runStart && runStart > s.set_at) return { ...f, reopened: true };
+    return { ...f, status: s.status, ...(s.note ? { status_note: s.note } : {}), status_by: s.set_by, status_at: s.set_at.toISOString() };
+  });
+}
+
+/** Sets or clears (status null) the decision for the given places of a page or of the site pass. */
+export async function setFindingStatus(
+  runId: string,
+  slug: string | null,
+  fids: string[],
+  status: FindingStatus | null,
+  note: string,
+  by: string | null,
+): Promise<number> {
+  if (status !== null && !FINDING_STATUSES.includes(status)) throw new Error("Unknown status");
+  const all = slug ? (await getPageFindings(runId, slug))?.findings : await getSiteFindings(runId);
+  if (!all) throw new Error("Page or run not found");
+  const wanted = new Set(fids);
+  const places = [...new Map(all.filter((f) => wanted.has(f.fid)).map((f) => [f.fid, f])).values()];
+  if (!places.length) throw new Error("None of these findings is in that run");
+  if (status === null) {
+    await db().query("DELETE FROM finding_status WHERE fid = ANY($1)", [places.map((f) => f.fid)]);
+    return places.length;
+  }
+  for (const f of places) {
+    await db().query(
+      `INSERT INTO finding_status (fid, status, note, set_by, set_at, url, layer, kind, title, zone_id, quote) VALUES ($1, $2, $3, $4, now(), $5, $6, $7, $8, $9, $10)
+       ON CONFLICT (fid) DO UPDATE SET status = $2, note = $3, set_by = $4, set_at = now()`,
+      [f.fid, status, note || null, by, f.url, f.layer, f.kind, f.title, f.zone_id, f.quote.slice(0, 300)],
+    );
+  }
+  return places.length;
 }
 
 async function allReports(runId: string): Promise<PageReport[]> {

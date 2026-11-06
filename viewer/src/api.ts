@@ -1,4 +1,4 @@
-import type { Layers } from "./types.js";
+import type { FindingStatus, Layers } from "./types.js";
 
 export interface ResourceInfo {
   id: string;
@@ -128,5 +128,8 @@ export const api = {
   stopJob: (id: string) => call<{ stopped: boolean }>("POST", `/api/jobs/${id}/stop`),
   geoTry: (body: { url: string; question: string; id?: string; needs?: string[]; model?: string }) =>
     call<GeoTryResult>("POST", "/api/geo-try", body),
+  /** Sets (or with status null clears) the decision for places of a page; slug null is the site pass. */
+  setFindingStatus: (runId: string, slug: string | null, fids: string[], status: FindingStatus | null, note: string) =>
+    call<{ updated: number }>("POST", "/api/findings/status", { run_id: runId, slug, fids, status, note }),
   deleteRun: (id: string) => call<{ deleted: string }>("DELETE", `/api/runs/${encodeURIComponent(id)}`),
 };

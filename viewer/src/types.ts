@@ -83,7 +83,18 @@ export interface RunIndexFile {
 export type Layer = "compliance" | "geo" | "seo";
 
 /** Same shape as `Finding` in src/findings.ts. */
+export type FindingStatus = "accepted" | "false_positive" | "fixed";
+
 export interface Finding {
+  fid: string;
+  status?: FindingStatus;
+  status_note?: string;
+  status_by?: string | null;
+  status_at?: string;
+  /** marked fixed earlier, found again in a later run */
+  reopened?: boolean;
+  /** not in the previous run of the page */
+  change?: "new";
   url: string;
   group: string;
   subsection: string;
@@ -106,6 +117,20 @@ export interface Finding {
   page_value?: string;
   source_value?: string;
   fix_where: FixWhere;
+}
+
+export interface PageCompare {
+  previous_run: string;
+  previous_at: string;
+  /** layers compared: those that ran cleanly in both runs */
+  layers: Layer[];
+  /** findings of the previous run that are gone now */
+  resolved: Finding[];
+}
+
+export interface PageFindingsResult {
+  findings: Finding[];
+  compare: PageCompare | null;
 }
 
 export type FixWhere = "template" | "page" | "author";

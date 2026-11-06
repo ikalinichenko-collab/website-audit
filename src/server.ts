@@ -7,6 +7,7 @@ import { loadSettings } from "./config.js";
 import { collectSitemapUrls } from "./sitemap.js";
 import { classifyUrl, filterInScope, scopeGroups, subsectionKey } from "./scope.js";
 import { ALL_LAYERS, type Layers } from "./types.js";
+import { FINDING_STATUSES, type FindingStatus } from "./findings.js";
 import {
   RESOURCES,
   ValidationError,
@@ -249,6 +250,23 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
     if (!process.env.OPENAI_API_KEY) throw new ValidationError("OPENAI_API_KEY is not set");
     try {
       send(res, 200, await tryGeoQuestion({ url: urls[0]!, question: String(body.question ?? ""), id: body.id, needs: body.needs, model: body.model }));
+    } catch (e) {
+      throw new ValidationError(e instanceof Error ? e.message : String(e));
+    }
+    return;
+  }
+
+  // ---- decisions about findings: accepted, false positive, fixed (status null clears it) ----
+  if (parts[0] === "findings" && parts[1] === "status" && parts.length === 2 && method === "POST") {
+    const body = await readJson<{ run_id?: string; slug?: string | null; fids?: string[]; status?: string | null; note?: string }>(req);
+    const runId = String(body.run_id ?? "");
+    if (!/^[0-9TZ-]+$/.test(runId)) throw new ValidationError("Bad run id");
+    if (!Array.isArray(body.fids) || !body.fids.length || body.fids.some((x) => typeof x !== "string")) throw new ValidationError("fids is required");
+    const status = body.status ?? null;
+    if (status !== null && !FINDING_STATUSES.includes(status as FindingStatus)) throw new ValidationError("status must be accepted, false_positive, fixed or null");
+    try {
+      const n = await store.setFindingStatus(runId, body.slug ? String(body.slug) : null, body.fids, status as FindingStatus | null, String(body.note ?? "").slice(0, 500), null);
+      send(res, 200, { updated: n });
     } catch (e) {
       throw new ValidationError(e instanceof Error ? e.message : String(e));
     }
