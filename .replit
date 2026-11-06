@@ -1,4 +1,4 @@
-modules = ["nodejs-20"]
+modules = ["nodejs-20", "postgresql-16"]
 
 run = "pnpm build && pnpm start"
 
@@ -33,3 +33,6 @@ args = "pnpm build && pnpm start"
 
 [workflows.workflow.metadata]
 outputType = "console"
+
+[nix]
+channel = "stable-25_05"
