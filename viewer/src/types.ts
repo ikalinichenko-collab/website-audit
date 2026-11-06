@@ -35,6 +35,7 @@ export interface RunListEntry {
   tokens: TokenUsage;
   model?: string;
   layers?: Layers;
+  started_by?: string;
   format?: 1 | 2;
 }
 

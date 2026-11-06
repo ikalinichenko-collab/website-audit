@@ -1,5 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { api, type Me } from "../api.js";
 import { useRunContext } from "../context/RunContext.js";
 
 const NAV = [
@@ -13,6 +14,11 @@ const NAV = [
 
 export function Layout() {
   const { runs, runId, setRunId, loading, error } = useRunContext();
+  const [me, setMe] = useState<Me | null>(null);
+
+  useEffect(() => {
+    api.me().then(setMe).catch(() => setMe(null));
+  }, []);
 
   useEffect(() => {
     const stored = localStorage.getItem("audit-viewer-theme");
@@ -62,7 +68,7 @@ export function Layout() {
               {runs.length === 0 && <option value="">no runs yet</option>}
               {runs.map((r) => (
                 <option key={r.id} value={r.id}>
-                  {r.id.replace(/T/g, " ").slice(0, 19)} ({r.pages_checked} pages)
+                  {r.id.replace(/T/g, " ").slice(0, 19)} ({r.pages_checked} pages{r.started_by ? `, ${r.started_by.split("@")[0]}` : ""})
                 </option>
               ))}
             </select>
@@ -73,6 +79,14 @@ export function Layout() {
             >
               Theme
             </button>
+            {me?.sign_in && (
+              <form method="post" action="/auth/logout" className="flex items-center gap-2 text-xs text-slate-500">
+                <span title={me.name}>{me.email}</span>
+                <button type="submit" className="rounded border border-slate-300 px-2 py-1 dark:border-slate-600">
+                  Sign out
+                </button>
+              </form>
+            )}
           </div>
         </div>
         {error && (

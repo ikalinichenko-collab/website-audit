@@ -39,6 +39,8 @@ export interface AuditOptions {
   /** Model id from `llm.models` in settings (default `llm.model`). */
   model?: string;
   force?: boolean;
+  /** Email of the person who started the run (null for the command line). */
+  startedBy?: string | null;
   /** Skip both LLM layers (smoke tests, SEO and GEO code checks only). */
   noLlm?: boolean;
   /** Progress lines (also printed to the console). */
@@ -102,8 +104,8 @@ export async function runAudit(options: AuditOptions): Promise<string> {
   if (!layers.compliance && !layers.geo && !layers.seo) throw new Error("Turn on at least one layer");
   const runId = runIdNow();
   const startedAt = new Date().toISOString();
-  const { onLog: _onLog, isCancelled: _isCancelled, ...saved } = options;
-  await createRun({ id: runId, startedAt, model: model.id, layers, options: saved });
+  const { onLog: _onLog, isCancelled: _isCancelled, startedBy, ...saved } = options;
+  await createRun({ id: runId, startedAt, model: model.id, layers, options: saved, startedBy });
   try {
     return await executeRun(options, runId, startedAt);
   } catch (e) {

@@ -50,6 +50,8 @@ export interface RunListEntry {
   tokens: RunMeta["tokens"];
   model?: string;
   layers?: Layers;
+  /** email of the person who started the run; absent for command-line runs */
+  started_by?: string;
   /** running, done, stopped, error or interrupted (the server restarted during the run) */
   status?: string;
   /** 2 = readable by the viewer; 1 = made before the zone redesign (no longer stored) */

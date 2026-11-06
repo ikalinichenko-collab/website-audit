@@ -80,6 +80,19 @@ export interface GeoTryResult {
 
 export class ApiError extends Error {}
 
+/** The session ended (or never started): go through Google sign-in and come back. */
+export function toSignIn(): never {
+  window.location.href = `/auth/login?next=${encodeURIComponent(window.location.pathname)}`;
+  throw new ApiError("Sign in required");
+}
+
+export interface Me {
+  email: string | null;
+  name: string;
+  /** false on a local server without sign-in */
+  sign_in: boolean;
+}
+
 async function call<T>(method: string, path: string, body?: unknown): Promise<T> {
   let res: Response;
   try {
@@ -91,6 +104,7 @@ async function call<T>(method: string, path: string, body?: unknown): Promise<T>
   } catch {
     throw new ApiError("The app server is not reachable. Start it with: pnpm app");
   }
+  if (res.status === 401) toSignIn();
   const text = await res.text();
   let data: unknown = null;
   try {
@@ -107,10 +121,11 @@ async function call<T>(method: string, path: string, body?: unknown): Promise<T>
 
 export const api = {
   state: () => call<AppState>("GET", "/api/state"),
+  me: () => call<Me>("GET", "/api/me"),
   resources: () => call<ResourceInfo[]>("GET", "/api/resources"),
   resource: (id: string) => call<ResourceInfo & { content: string }>("GET", `/api/resources/${id}`),
   save: (id: string, content: string) => call<SaveResult>("PUT", `/api/resources/${id}`, { content }),
-  history: (id: string) => call<{ ts: string; size: number }[]>("GET", `/api/resources/${id}/history`),
+  history: (id: string) => call<{ ts: string; size: number; author: string | null }[]>("GET", `/api/resources/${id}/history`),
   historyContent: (id: string, ts: string) => call<{ content: string }>("GET", `/api/resources/${id}/history/${ts}`),
   restore: (id: string, ts: string) => call<SaveResult>("POST", `/api/resources/${id}/restore`, { ts }),
   scope: () => call<{ total: number; groups: ScopeGroup[] }>("GET", "/api/scope"),

@@ -31,7 +31,7 @@ export function useResource(id: string) {
   const [text, setText] = useState("");
   const [msg, setMsg] = useState<{ kind: "ok" | "warn" | "error"; text: string } | null>(null);
   const [saving, setSaving] = useState(false);
-  const [history, setHistory] = useState<{ ts: string; size: number }[]>([]);
+  const [history, setHistory] = useState<{ ts: string; size: number; author: string | null }[]>([]);
 
   async function load() {
     setMsg(null);
@@ -92,7 +92,7 @@ export function HistoryList({
   onRestore,
 }: {
   id: string;
-  history: { ts: string; size: number }[];
+  history: { ts: string; size: number; author: string | null }[];
   onRestore: (ts: string) => void;
 }) {
   const [open, setOpen] = useState(false);
@@ -108,7 +108,7 @@ export function HistoryList({
           {history.map((h) => (
             <li key={h.ts} className="flex flex-wrap items-center gap-2">
               <span className="tabular-nums">{formatTs(h.ts)}</span>
-              <span className="text-xs text-slate-500">{formatSize(h.size)}</span>
+              <span className="text-xs text-slate-500">{formatSize(h.size)}{h.author && h.author !== "seed" && h.author !== "history" ? `, ${h.author}` : ""}</span>
               <button
                 type="button"
                 className="text-xs text-blue-600 hover:underline dark:text-blue-400"

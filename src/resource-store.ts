@@ -29,6 +29,7 @@ export interface ResourceRef {
 export interface VersionInfo {
   ts: string;
   size: number;
+  author: string | null;
 }
 
 export const tsNow = (): string => new Date().toISOString().replace(/[:.]/g, "-");
@@ -96,9 +97,9 @@ export async function loadResourceSnapshot(list: ResourceRef[]): Promise<string[
 /** Earlier versions of a resource, newest first (the current one is not listed). */
 export async function listVersions(r: ResourceRef): Promise<VersionInfo[]> {
   const rows = (
-    await db().query<{ ts: string; size: number }>("SELECT ts, octet_length(content) AS size FROM resource_versions WHERE resource_id = $1 ORDER BY ts DESC OFFSET 1", [r.id])
+    await db().query<{ ts: string; size: number; author: string | null }>("SELECT ts, octet_length(content) AS size, author FROM resource_versions WHERE resource_id = $1 ORDER BY ts DESC OFFSET 1", [r.id])
   ).rows;
-  return rows.map((x) => ({ ts: x.ts, size: Number(x.size) }));
+  return rows.map((x) => ({ ts: x.ts, size: Number(x.size), author: x.author }));
 }
 
 export async function readVersion(r: ResourceRef, ts: string): Promise<string | null> {

@@ -22,6 +22,7 @@ import {
 import { getJob, listJobs, markInterrupted, parseUrls, requestStop, runningJobId, startJob, type JobOptions } from "./jobs.js";
 import { tryGeoQuestion } from "./geo-try.js";
 import { migrate } from "./db.js";
+import { authRequired, checkAuthConfig, currentUser, handleAuth, sameOrigin, type User } from "./auth.js";
 import * as store from "./store.js";
 
 const ROOT = projectRoot();
@@ -93,9 +94,14 @@ function safeJoin(root: string, rel: string): string | null {
   return p === root || p.startsWith(root + path.sep) ? p : null;
 }
 
-async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, url: URL): Promise<void> {
+async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, url: URL, user: User): Promise<void> {
   const method = req.method ?? "GET";
   const parts = url.pathname.replace(/^\/api\/?/, "").split("/").filter(Boolean).map(decodeURIComponent);
+
+  if (parts[0] === "me" && method === "GET") {
+    send(res, 200, { email: user.email, name: user.name, sign_in: authRequired() });
+    return;
+  }
 
   if (parts[0] === "state" && method === "GET") {
     const s = loadSettings();
@@ -130,7 +136,7 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
       const body = await readJson<{ content?: string }>(req);
       if (typeof body.content !== "string") throw new ValidationError("content is required");
       const before = readResource(r).length;
-      const out = await writeResource(r, body.content);
+      const out = await writeResource(r, body.content, user.email);
       const warnings: string[] = [];
       if (r.group === "sources" && before > 0 && body.content.length < before * 0.5) {
         warnings.push("The new file is less than half the size of the old one. The previous version is kept in the version list.");
@@ -152,7 +158,7 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
       const body = await readJson<{ ts?: string }>(req);
       const content = await readHistory(r, String(body.ts ?? ""));
       if (content === null) throw new ValidationError("Version not found");
-      send(res, 200, await writeResource(r, content));
+      send(res, 200, await writeResource(r, content, user.email));
       return;
     }
   }
@@ -221,7 +227,7 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
         send(res, 409, { error: "Another audit is already running" });
         return;
       }
-      const job = await startJob(options);
+      const job = await startJob(options, user.email);
       send(res, 202, { id: job.id, rejected });
       return;
     }
@@ -265,7 +271,7 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
     const status = body.status ?? null;
     if (status !== null && !FINDING_STATUSES.includes(status as FindingStatus)) throw new ValidationError("status must be accepted, false_positive, fixed or null");
     try {
-      const n = await store.setFindingStatus(runId, body.slug ? String(body.slug) : null, body.fids, status as FindingStatus | null, String(body.note ?? "").slice(0, 500), null);
+      const n = await store.setFindingStatus(runId, body.slug ? String(body.slug) : null, body.fids, status as FindingStatus | null, String(body.note ?? "").slice(0, 500), user.email);
       send(res, 200, { updated: n });
     } catch (e) {
       throw new ValidationError(e instanceof Error ? e.message : String(e));
@@ -325,8 +331,29 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
 
 const server = http.createServer((req, res) => {
   const url = new URL(req.url ?? "/", `http://${HOST}:${PORT}`);
+  handleRequest(req, res, url).catch((e) => {
+    console.error(e);
+    if (!res.headersSent) send(res, 500, { error: "Server error" });
+  });
+});
+
+async function handleRequest(req: http.IncomingMessage, res: http.ServerResponse, url: URL): Promise<void> {
+  if (await handleAuth(req, res, url)) return;
+  const user = currentUser(req);
+  if (!user) {
+    if (url.pathname.startsWith("/api/")) send(res, 401, { error: "Sign in required" });
+    else {
+      res.writeHead(302, { Location: `/auth/login?next=${encodeURIComponent(url.pathname)}`, "Cache-Control": "no-store" });
+      res.end();
+    }
+    return;
+  }
   if (url.pathname.startsWith("/api/")) {
-    handleApi(req, res, url).catch((e) => {
+    if (req.method !== "GET" && req.method !== "HEAD" && !sameOrigin(req)) {
+      send(res, 403, { error: "Request from another site" });
+      return;
+    }
+    handleApi(req, res, url, user).catch((e) => {
       if (e instanceof ValidationError) send(res, 400, { error: e.message });
       else {
         console.error(e);
@@ -342,9 +369,10 @@ const server = http.createServer((req, res) => {
     res.writeHead(503, { "Content-Type": "text/plain; charset=utf-8" });
     res.end("The viewer is not built. Run: pnpm app");
   }
-});
+}
 
 async function start(): Promise<void> {
+  checkAuthConfig(HOST);
   const applied = await migrate();
   if (applied.length) console.log(`Database migrations applied: ${applied.join(", ")}`);
   await loadResources();

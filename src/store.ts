@@ -13,13 +13,14 @@ const FINGERPRINTS_KEY = "site_wide_fingerprints";
 
 // ---- writing a run -------------------------------------------------------------
 
-export async function createRun(run: { id: string; startedAt: string; model: string; layers: Layers; options: unknown }): Promise<void> {
-  await db().query("INSERT INTO runs (id, status, started_at, model, layers, options) VALUES ($1, 'running', $2, $3, $4, $5)", [
+export async function createRun(run: { id: string; startedAt: string; model: string; layers: Layers; options: unknown; startedBy?: string | null }): Promise<void> {
+  await db().query("INSERT INTO runs (id, status, started_at, model, layers, options, started_by) VALUES ($1, 'running', $2, $3, $4, $5, $6)", [
     run.id,
     run.startedAt,
     run.model,
     JSON.stringify(run.layers),
     JSON.stringify(run.options),
+    run.startedBy ?? null,
   ]);
 }
 
@@ -120,8 +121,9 @@ export async function listRuns(): Promise<RunListEntry[]> {
     model: string | null;
     layers: Layers | null;
     meta: RunMeta | null;
+    started_by: string | null;
     pages: string;
-  }>(`SELECT r.id, r.status, r.started_at, r.ended_at, r.model, r.layers, r.meta, (SELECT count(*) FROM pages p WHERE p.run_id = r.id) AS pages
+  }>(`SELECT r.id, r.status, r.started_at, r.ended_at, r.model, r.layers, r.meta, r.started_by, (SELECT count(*) FROM pages p WHERE p.run_id = r.id) AS pages
       FROM runs r ORDER BY r.started_at DESC`);
   return r.rows.map((x) => ({
     id: x.id,
@@ -133,6 +135,7 @@ export async function listRuns(): Promise<RunListEntry[]> {
     tokens: x.meta?.tokens ?? ZERO_TOKENS,
     ...(x.model ? { model: x.model } : {}),
     ...(x.layers ? { layers: x.layers } : {}),
+    ...(x.started_by ? { started_by: x.started_by } : {}),
     format: 2 as const,
   }));
 }

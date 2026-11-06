@@ -107,10 +107,10 @@ export function parseUrls(text: string): { urls: string[]; rejected: string[] } 
 }
 
 /** Starts a job in the background. Only one job runs at a time. */
-export async function startJob(options: JobOptions): Promise<Job> {
+export async function startJob(options: JobOptions, startedBy: string | null = null): Promise<Job> {
   if (runningId) throw new Error("Another audit is already running");
   const started = new Date();
-  const ins = await db().query<{ id: string }>("INSERT INTO jobs (status, started_at, options) VALUES ('running', $1, $2) RETURNING id::text", [started, JSON.stringify(options)]);
+  const ins = await db().query<{ id: string }>("INSERT INTO jobs (status, started_at, options, started_by) VALUES ('running', $1, $2, $3) RETURNING id::text", [started, JSON.stringify(options), startedBy]);
   const id = ins.rows[0]!.id;
   runningId = id;
   stopRequested = false;
@@ -122,7 +122,7 @@ export async function startJob(options: JobOptions): Promise<Job> {
   };
   const onLog = (line: string): void => queue("UPDATE jobs SET log = log || $2::jsonb WHERE id = $1", [id, JSON.stringify([line])]);
 
-  runAudit({ ...options, onLog, isCancelled: () => stopRequested })
+  runAudit({ ...options, startedBy, onLog, isCancelled: () => stopRequested })
     .then((runId) => queue("UPDATE jobs SET run_id = $2, status = $3, ended_at = now() WHERE id = $1", [id, runId, stopRequested ? "stopped" : "done"]))
     .catch((e) => {
       const message = e instanceof Error ? e.message : String(e);

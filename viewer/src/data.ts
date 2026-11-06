@@ -1,7 +1,9 @@
+import { toSignIn } from "./api.js";
 import type { Finding, PageFindingsResult, PageReport, RunIndexFile, RunListEntry, RunMeta, SiteReport, SiteSources } from "./types.js";
 
 async function fetchJson<T>(path: string): Promise<T> {
   const res = await fetch(path);
+  if (res.status === 401) toSignIn();
   if (!res.ok) throw new Error(`Failed to load ${path}: ${res.status}`);
   return res.json() as Promise<T>;
 }
