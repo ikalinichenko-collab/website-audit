@@ -1,6 +1,6 @@
 import type OpenAI from "openai";
 import type { PageZones, Settings, TokenUsage, Zone } from "./types.js";
-import { GEO_NEEDS, geoInstruction, geoQuestionsFor, type GeoLlmQuestion, type GeoNeed } from "./config.js";
+import { geoInstruction, geoQuestionsFor, type GeoLlmQuestion, type GeoNeed } from "./config.js";
 import { runGeoZones, type GeoLlmAnswer } from "./llm.js";
 import { checkTargetKeywordPlacement, firstParagraph, type GeoCodeCheck, type GeoType } from "./geo-code.js";
 import { sha256 } from "./utils.js";
@@ -20,7 +20,7 @@ export interface GeoLlmResult extends Omit<GeoLlmAnswer, "answer"> {
   needs_confirm: boolean;
   /** the second answer was no too (true), differed (false), or was not asked (absent) */
   confirmed?: boolean;
-  /** hash of the question, its data and the page: the answer is reused while it is unchanged */
+  /** hash of the question and the page data: the answer is reused while it is unchanged */
   qhash?: string;
 }
 
@@ -86,24 +86,16 @@ export function geoExtras(zones: PageZones): Record<GeoNeed, unknown> {
   };
 }
 
-/** The part of the payload every question sees. */
-export function geoCorePayload(url: string, geoType: GeoType, zones: PageZones): Record<string, unknown> {
+/** What every question sees: the text zones plus the extra page data (json_ld, og, author, links). */
+export function geoPayload(url: string, geoType: GeoType, zones: PageZones): Record<string, unknown> {
   const pageZones: Zone[] = zones.zones.filter((z) => !z.skipped && z.scope === "page" && PAYLOAD_KINDS.has(z.kind));
   return {
     url,
     geo_type: geoType,
     answer_first: answerFirstText(zones),
     zones: pageZones.map((z) => ({ id: z.id, label: z.label, text: z.text })),
+    ...geoExtras(zones),
   };
-}
-
-export function geoPayload(url: string, geoType: GeoType, zones: PageZones, needs: Iterable<GeoNeed> = []): Record<string, unknown> {
-  const core = geoCorePayload(url, geoType, zones);
-  const wanted = new Set(needs);
-  if (!wanted.size) return core;
-  const extras = geoExtras(zones);
-  for (const n of GEO_NEEDS) if (wanted.has(n)) core[n] = extras[n];
-  return core;
 }
 
 export function verifyEvidence(answer: GeoLlmAnswer, zones: PageZones, firstText: string | null): boolean | null {
@@ -167,7 +159,7 @@ export interface GeoAsk {
   error: string | null;
 }
 
-/** One model call for the given questions; the payload carries the union of the data they ask for. */
+/** One model call for the given questions; the payload is the same for all of them. */
 export async function askGeoQuestions(
   client: OpenAI,
   settings: Settings,
@@ -176,8 +168,7 @@ export async function askGeoQuestions(
   zones: PageZones,
   questions: GeoLlmQuestion[],
 ): Promise<GeoAsk> {
-  const needs = new Set<GeoNeed>(questions.flatMap((q) => q.needs ?? []));
-  const res = await runGeoZones(client, settings, geoInstruction(settings.report_language, questions), geoPayload(url, geoType, zones, needs));
+  const res = await runGeoZones(client, settings, geoInstruction(settings.report_language, questions), geoPayload(url, geoType, zones));
   const asked = new Set(questions.map((q) => q.id));
   return { answers: res.answers.filter((a) => asked.has(a.id)), usage: res.usage, error: res.error };
 }
@@ -202,13 +193,9 @@ export async function runGeoLlm(input: GeoRunInput): Promise<GeoLlmOutput> {
   const none: GeoLlmOutput = { answers: [], placement: null, usage: ZERO, calls: 0, error: null };
   if (!questions.length) return none;
 
-  const core = JSON.stringify(geoCorePayload(url, geoType, zones));
-  const extras = geoExtras(zones);
+  const payload = JSON.stringify(geoPayload(url, geoType, zones));
   const firstText = (answerFirstText(zones)?.text) ?? null;
-  const keyOf = (q: GeoLlmQuestion): string => {
-    const needs = [...(q.needs ?? [])].sort();
-    return sha256([fingerprint, q.id, q.question, needs.join(","), core, JSON.stringify(needs.map((n) => extras[n]))].join("\u0001"));
-  };
+  const keyOf = (q: GeoLlmQuestion): string => sha256([fingerprint, q.id, q.question, payload].join("\u0001"));
 
   const prevById = new Map((prev ?? []).map((a) => [a.id, a]));
   const done = new Map<string, GeoLlmResult>();

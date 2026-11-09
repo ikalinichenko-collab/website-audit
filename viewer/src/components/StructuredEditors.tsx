@@ -38,7 +38,6 @@ interface GeoQuestion {
   applies_to: string[];
   requires?: string;
   severity?: "high" | "medium" | "low";
-  needs?: string[];
   confirm?: boolean;
   /** built in: the server refuses any change to it */
   locked?: boolean;
@@ -51,13 +50,6 @@ const GEO_TYPES = [
   ["company", "Company"],
   ["legal", "Legal"],
   ["podcast", "Podcast"],
-] as const;
-
-const GEO_NEEDS = [
-  ["json_ld", "Structured data (JSON-LD)"],
-  ["og", "Social tags (og)"],
-  ["author", "Author and date"],
-  ["links", "Links"],
 ] as const;
 
 const GEO_HELP: Record<string, string> = {
@@ -76,7 +68,6 @@ function cleanQuestion(q: GeoQuestion): GeoQuestion {
     applies_to: q.applies_to,
     ...(q.requires ? { requires: q.requires } : {}),
     ...(q.severity && q.severity !== "medium" ? { severity: q.severity } : {}),
-    ...(q.needs?.length ? { needs: q.needs } : {}),
     ...(q.confirm ? { confirm: true } : {}),
   };
 }
@@ -108,7 +99,6 @@ function LockedQuestion({ q, tried, onTry }: { q: GeoQuestion; tried?: Tried; on
       <p className="whitespace-pre-wrap text-sm text-slate-700 dark:text-slate-300">{q.question}</p>
       <p className="text-xs text-slate-500">
         Applies to: {types.join(", ")}
-        {q.needs?.length ? `. Also shown to the model: ${q.needs.join(", ")}` : ""}
         {GEO_HELP[q.id] ? `. ${GEO_HELP[q.id]}` : ""}
       </p>
       {tried && <TryResult t={tried} />}
@@ -186,7 +176,7 @@ export function GeoQuestionsEditor() {
     const q = qs[i]!;
     setTried((t) => ({ ...t, [i]: { state: "loading" } }));
     try {
-      const result = await api.geoTry({ url: tryUrl.trim() || `${baseUrl}/`, question: q.question, id: q.id || undefined, needs: q.needs });
+      const result = await api.geoTry({ url: tryUrl.trim() || `${baseUrl}/`, question: q.question, id: q.id || undefined });
       setTried((t) => ({ ...t, [i]: { state: "done", result } }));
     } catch (e) {
       setTried((t) => ({ ...t, [i]: { state: "error", text: e instanceof Error ? e.message : String(e) } }));
@@ -272,23 +262,6 @@ export function GeoQuestionsEditor() {
                         checked={q.applies_to.includes(key)}
                         onChange={(e) =>
                           update(i, { applies_to: e.target.checked ? [...q.applies_to, key] : q.applies_to.filter((t) => t !== key) })
-                        }
-                      />
-                      {label}
-                    </label>
-                  ))}
-                </div>
-                <div className="flex flex-wrap items-center gap-3 text-sm">
-                  <span className="text-slate-500" title="By default the model sees the page text only: title, meta description, H1, blocks and article sections.">
-                    Also show the model:
-                  </span>
-                  {GEO_NEEDS.map(([key, label]) => (
-                    <label key={key} className="flex items-center gap-1">
-                      <input
-                        type="checkbox"
-                        checked={(q.needs ?? []).includes(key)}
-                        onChange={(e) =>
-                          update(i, { needs: e.target.checked ? [...(q.needs ?? []), key] : (q.needs ?? []).filter((n) => n !== key) })
                         }
                       />
                       {label}

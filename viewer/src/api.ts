@@ -141,7 +141,7 @@ export const api = {
   jobs: () => call<JobSummary[]>("GET", "/api/jobs"),
   job: (id: string, from: number) => call<JobDetail>("GET", `/api/jobs/${id}?from=${from}`),
   stopJob: (id: string) => call<{ stopped: boolean }>("POST", `/api/jobs/${id}/stop`),
-  geoTry: (body: { url: string; question: string; id?: string; needs?: string[]; model?: string }) =>
+  geoTry: (body: { url: string; question: string; id?: string; model?: string }) =>
     call<GeoTryResult>("POST", "/api/geo-try", body),
   /** Sets (or with status null clears) the decision for places of a page; slug null is the site pass. */
   setFindingStatus: (runId: string, slug: string | null, fids: string[], status: FindingStatus | null, note: string) =>

@@ -97,7 +97,7 @@ export function loadComplianceConfig(): ComplianceConfig {
   return JSON.parse(resourceText("config/compliance.json")) as ComplianceConfig;
 }
 
-/** Extra page data a question may ask to see, beyond the page text. */
+/** Extra page data every question gets, beyond the page text. */
 export const GEO_NEEDS = ["json_ld", "og", "author", "links"] as const;
 export type GeoNeed = (typeof GEO_NEEDS)[number];
 
@@ -111,8 +111,6 @@ export interface GeoLlmQuestion {
   title?: string;
   /** Severity of the finding; medium when absent. */
   severity?: "high" | "medium" | "low";
-  /** Extra data the model gets for this question; by default only the text zones. */
-  needs?: GeoNeed[];
   /** Ask a second time when the answer is no; the finding stands only if the second answer is no too. */
   confirm?: boolean;
   /** built in: code depends on it, the app does not let anyone change it */

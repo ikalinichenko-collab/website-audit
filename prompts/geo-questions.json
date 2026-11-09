@@ -100,9 +100,6 @@
     "question": "Does the page show a named author and a publication or update date, so an AI assistant can say who wrote it and when? Use the author and date data you are given.",
     "applies_to": [
       "article"
-    ],
-    "needs": [
-      "author"
     ]
   },
   {
@@ -113,9 +110,6 @@
       "article"
     ],
     "severity": "low",
-    "needs": [
-      "links"
-    ],
     "confirm": true
   },
   {
@@ -128,9 +122,6 @@
       "article"
     ],
     "requires": "faq_present",
-    "severity": "high",
-    "needs": [
-      "json_ld"
-    ]
+    "severity": "high"
   }
 ]

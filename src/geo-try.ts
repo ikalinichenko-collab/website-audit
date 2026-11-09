@@ -1,5 +1,5 @@
 import type { Settings, TokenUsage } from "./types.js";
-import { GEO_NEEDS, loadSettings, resolveModel, usageCost, type GeoLlmQuestion, type GeoNeed } from "./config.js";
+import { loadSettings, resolveModel, usageCost, type GeoLlmQuestion } from "./config.js";
 import { extractFromHtml } from "./extract.js";
 import { httpGet } from "./fetch.js";
 import { classifyUrl } from "./scope.js";
@@ -16,7 +16,6 @@ export interface GeoTryInput {
   id?: string;
   title?: string;
   severity?: GeoLlmQuestion["severity"];
-  needs?: string[];
   model?: string;
 }
 
@@ -38,7 +37,6 @@ export async function tryGeoQuestion(input: GeoTryInput): Promise<GeoTryResult> 
   if (!client) throw new Error("OPENAI_API_KEY is not set");
   const text = input.question.trim();
   if (text.length < 10) throw new Error("Write the question first (at least 10 characters)");
-  const needs = (input.needs ?? []).filter((n): n is GeoNeed => (GEO_NEEDS as readonly string[]).includes(n));
 
   const fetched = await httpGet(input.url, settings);
   if (fetched.status < 200 || fetched.status >= 300 || !fetched.html) throw new Error(`The page answered with status ${fetched.status}`);
@@ -48,7 +46,7 @@ export async function tryGeoQuestion(input: GeoTryInput): Promise<GeoTryResult> 
   const geoType: GeoType = scope ? geoTypeOf(scope.profile) : "article";
 
   const id = input.id?.trim() || "try";
-  const q: GeoLlmQuestion = { id, question: text, applies_to: [geoType], needs };
+  const q: GeoLlmQuestion = { id, question: text, applies_to: [geoType] };
   const res = await askGeoQuestions(client, settings, fetched.finalUrl, geoType, zones, [q]);
   if (res.error) throw new Error(res.error);
   const a = res.answers.find((x) => x.id === id);

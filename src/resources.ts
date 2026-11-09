@@ -2,7 +2,7 @@ import * as fs from "node:fs";
 import path from "node:path";
 import { projectRoot } from "./utils.js";
 import { listVersions, loadResourceSnapshot, readVersion, resourceMeta, resourceText, saveVersion, type VersionInfo } from "./resource-store.js";
-import { GEO_NEEDS, resetSourcesCache } from "./config.js";
+import { resetSourcesCache } from "./config.js";
 import { resetHeadingCache } from "./compliance.js";
 
 /** Files the interface may read and replace. Names are fixed here; nothing else is reachable. */
@@ -193,7 +193,6 @@ export function validateResource(r: Resource, content: string): void {
         if (q.requires !== undefined && !CODE_CHECKS.includes(String(q.requires))) fail(`Question "${id}": unknown code check "${String(q.requires)}"`);
         if (q.title !== undefined && (typeof q.title !== "string" || q.title.length > 120)) fail(`Question "${id}": title must be text up to 120 characters`);
         if (q.severity !== undefined && !SEVERITIES.includes(String(q.severity))) fail(`Question "${id}": severity must be high, medium or low`);
-        if (q.needs !== undefined) for (const n of strArray(q.needs, `Question "${id}": needs`)) if (!GEO_NEEDS.includes(n as never)) fail(`Question "${id}": unknown data "${n}"`);
         if (q.confirm !== undefined && typeof q.confirm !== "boolean") fail(`Question "${id}": confirm must be true or false`);
       }
       checkLockedQuestions(r, data as Record<string, unknown>[]);

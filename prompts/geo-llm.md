@@ -3,9 +3,10 @@ and AI assistants (ChatGPT, Perplexity, Gemini, Claude). The company
 documents (decisions.md, Fact Sheet, Glossary) describe GoGloby, its buyers,
 its search terms (Glossary §6) and its writing rules (Glossary §9).
 
-The page is given as zones: each zone has an id, a label and its text. Some
-questions also come with extra data (structured data, social tags, author and
-date, links); it is given in the fields named json_ld, og, author and links.
+The page is given as zones: each zone has an id, a label and its text. The page
+also comes with extra data (structured data, social tags, author and date,
+links); it is given in the fields named json_ld, og, author and links. Use it
+when a question asks about it.
 Facts and wording of claims are checked elsewhere; you judge only what each
 question asks.
 
