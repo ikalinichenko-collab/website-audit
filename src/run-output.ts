@@ -89,7 +89,7 @@ function addTo(t: GroupTotals, e: PageIndexEntry): void {
 
 
 /** Bump when `fragmentForQuote` changes: stored fragments are recomputed on the next report build. */
-const LOCATOR_VERSION = 3;
+const LOCATOR_VERSION = 4;
 
 export interface StoredZones {
   zones: { id: string; label?: string; text?: string; parts?: { type: string; index: number; text: string }[] }[];

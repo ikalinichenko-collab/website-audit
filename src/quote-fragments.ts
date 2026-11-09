@@ -195,8 +195,10 @@ function findFragmentForQuote(html: string, settings: Settings, quoteText: strin
   // (the same words also sit in the table of contents and headings)
   const normPart = partText ? normalizeText(partText) : "";
   const own = normPart ? matches.filter((el) => normalizeText(node(el).text()) === normPart) : [];
-  const minimal = (own.length ? own : matches).filter((el) => {
-    for (const other of matches) {
+  // "minimal" is judged inside the pool: the own element must not be dropped because a <strong> or <a> inside it also matches
+  const pool = own.length ? own : matches;
+  const minimal = pool.filter((el) => {
+    for (const other of pool) {
       if (other === el) continue;
       if (node(el).find(other as never).length > 0) return false;
     }
