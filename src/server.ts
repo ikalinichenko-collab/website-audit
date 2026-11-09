@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 import { projectRoot } from "./utils.js";
 import { loadSettings } from "./config.js";
 import { collectSitemapUrls } from "./sitemap.js";
-import { classifyUrl, filterInScope, scopeGroups, subsectionKey } from "./scope.js";
+import { classifyUrl, filterInScope, geoTypeGroups, scopeGroups, subsectionKey } from "./scope.js";
 import { ALL_LAYERS, type Layers } from "./types.js";
 import { FINDING_STATUSES, type FindingStatus } from "./findings.js";
 import {
@@ -178,6 +178,12 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
       subsections: g.subsections.map((s) => ({ ...s, count: by[s.key] ?? 0 })),
     }));
     send(res, 200, { total: urls.length, groups });
+    return;
+  }
+
+  // which pages get which GEO page type (the legend of "Applies to" in the question editor)
+  if (parts[0] === "geo-types" && parts.length === 1 && method === "GET") {
+    send(res, 200, geoTypeGroups(loadSettings()));
     return;
   }
 

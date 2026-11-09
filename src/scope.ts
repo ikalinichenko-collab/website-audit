@@ -1,4 +1,5 @@
 import type { ScopeRule, Settings } from "./types.js";
+import { geoTypeOf, type GeoType } from "./geo-code.js";
 
 export interface UrlScope {
   category: string;
@@ -91,4 +92,19 @@ export function sampleAcrossSubsections(urls: string[], limit: number, settings:
     if (!added) break;
   }
   return picked;
+}
+
+const GEO_TYPE_ORDER: GeoType[] = ["home", "service", "article", "company", "legal", "podcast"];
+
+/** The GEO page types and the scope rules (subsection and paths) that give a page each type. A type with no rule has no pages in scope. */
+export function geoTypeGroups(settings: Settings): { type: GeoType; items: { name: string; paths: string[] }[] }[] {
+  return GEO_TYPE_ORDER.map((type) => ({
+    type,
+    items: settings.scope
+      .filter((r) => geoTypeOf(r.profile) === type)
+      .map((r) => ({
+        name: r.subsection,
+        paths: [...(r.path_equals !== undefined ? [r.path_equals] : []), ...(r.path_starts_with ?? []).map((p) => `${p}*`)],
+      })),
+  }));
 }

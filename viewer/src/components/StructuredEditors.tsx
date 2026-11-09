@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { api, type GeoTryResult } from "../api.js";
+import { api, type GeoTryResult, type GeoTypeGroup } from "../api.js";
 import { Notice, HistoryList, buttonClass, primaryClass, useResource } from "./ResourceEditor.js";
 import { useUnsaved } from "../unsaved.js";
 
@@ -58,6 +58,12 @@ const GEO_HELP: Record<string, string> = {
   buyer_ready: "Its value must be buyer_ready, informational or not_targeted: the yes/no answer is derived from it.",
 };
 
+/** "/services/, /solutions/": the paths of one type, shown under its name. */
+function typePages(g: GeoTypeGroup | undefined): string {
+  if (!g || !g.items.length) return "No pages of this type in the audited scope";
+  return g.items.flatMap((x) => x.paths.map((p) => p.replace(/\*$/, ""))).join(", ");
+}
+
 /** Drops empty and default fields, so the file stays short and "unsaved changes" compares like with like. */
 function cleanQuestion(q: GeoQuestion): GeoQuestion {
   if (q.locked) return q;
@@ -82,8 +88,7 @@ function newQuestionId(existing: GeoQuestion[]): string {
 }
 
 /** A question the code depends on: shown so the author knows it is asked, but nothing can be changed (the server refuses too). */
-function LockedQuestion({ q, tried, onTry }: { q: GeoQuestion; tried?: Tried; onTry: () => void }) {
-  const types = GEO_TYPES.filter(([k]) => q.applies_to.includes(k)).map(([, label]) => label);
+function LockedQuestion({ q, tried, onTry, groups }: { q: GeoQuestion; tried?: Tried; onTry: () => void; groups: GeoTypeGroup[] }) {
   return (
     <div className="space-y-2 rounded-lg border border-slate-200 bg-slate-50 p-3 dark:border-slate-700 dark:bg-slate-800/40">
       <div className="flex flex-wrap items-center gap-2">
@@ -97,10 +102,16 @@ function LockedQuestion({ q, tried, onTry }: { q: GeoQuestion; tried?: Tried; on
         </button>
       </div>
       <p className="whitespace-pre-wrap text-sm text-slate-700 dark:text-slate-300">{q.question}</p>
-      <p className="text-xs text-slate-500">
-        Applies to: {types.join(", ")}
-        {GEO_HELP[q.id] ? `. ${GEO_HELP[q.id]}` : ""}
-      </p>
+      <div className="flex flex-wrap items-start gap-x-6 gap-y-2 text-sm">
+        <span className="text-slate-500">Applies to:</span>
+        {GEO_TYPES.filter(([k]) => q.applies_to.includes(k)).map(([k, label]) => (
+          <span key={k} className="max-w-56">
+            {label}
+            <span className="block text-xs text-slate-500">{typePages(groups.find((g) => g.type === k))}</span>
+          </span>
+        ))}
+      </div>
+      {GEO_HELP[q.id] && <p className="text-xs text-slate-500">{GEO_HELP[q.id]}</p>}
       {tried && <TryResult t={tried} />}
     </div>
   );
@@ -153,6 +164,11 @@ export function GeoQuestionsEditor() {
   const [tryUrl, setTryUrl] = useState("");
   const [baseUrl, setBaseUrl] = useState("https://gogloby.com");
   const [tried, setTried] = useState<Record<number, Tried>>({});
+  const [typeGroups, setTypeGroups] = useState<GeoTypeGroup[]>([]);
+
+  useEffect(() => {
+    api.geoTypes().then(setTypeGroups).catch(() => undefined);
+  }, []);
 
   useEffect(() => {
     if (r.info) setQs(parse<GeoQuestion[]>(r.info.content) ?? []);
@@ -214,7 +230,7 @@ export function GeoQuestionsEditor() {
           <div className="space-y-3">
             {qs.map((q, i) =>
               q.locked ? (
-                <LockedQuestion key={i} q={q} tried={tried[i]} onTry={() => tryQuestion(i)} />
+                <LockedQuestion key={i} q={q} tried={tried[i]} onTry={() => tryQuestion(i)} groups={typeGroups} />
               ) : (
               <div key={i} className="space-y-2 rounded-lg border border-slate-200 bg-white p-3 dark:border-slate-700 dark:bg-slate-900">
                 <div className="flex flex-wrap items-center gap-2">
@@ -253,11 +269,12 @@ export function GeoQuestionsEditor() {
                   placeholder='Write it so that "yes" means the page is fine.'
                   onChange={(e) => update(i, { question: e.target.value })}
                 />
-                <div className="flex flex-wrap items-center gap-3 text-sm">
+                <div className="flex flex-wrap items-start gap-x-6 gap-y-2 text-sm">
                   <span className="text-slate-500">Applies to:</span>
                   {GEO_TYPES.map(([key, label]) => (
-                    <label key={key} className="flex items-center gap-1">
+                    <label key={key} className="grid max-w-56 grid-cols-[auto_1fr] gap-x-1">
                       <input
+                        className="mt-1"
                         type="checkbox"
                         checked={q.applies_to.includes(key)}
                         onChange={(e) =>
@@ -265,6 +282,7 @@ export function GeoQuestionsEditor() {
                         }
                       />
                       {label}
+                      <span className="col-start-2 text-xs text-slate-500">{typePages(typeGroups.find((g) => g.type === key))}</span>
                     </label>
                   ))}
                 </div>

@@ -17,6 +17,11 @@ export interface ModelOption {
   price_per_million_tokens: { input: number; cached_input: number; output: number };
 }
 
+export interface GeoTypeGroup {
+  type: string;
+  items: { name: string; paths: string[] }[];
+}
+
 export interface ScopeGroup {
   category: string;
   subsections: { key: string; name: string; count: number }[];
@@ -129,6 +134,7 @@ export const api = {
   historyContent: (id: string, ts: string) => call<{ content: string }>("GET", `/api/resources/${id}/history/${ts}`),
   restore: (id: string, ts: string) => call<SaveResult>("POST", `/api/resources/${id}/restore`, { ts }),
   scope: () => call<{ total: number; groups: ScopeGroup[] }>("GET", "/api/scope"),
+  geoTypes: () => call<GeoTypeGroup[]>("GET", "/api/geo-types"),
   startJob: (body: {
     text?: string;
     all?: boolean;
