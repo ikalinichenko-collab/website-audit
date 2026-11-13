@@ -11,6 +11,8 @@ export interface SeoProfile {
   author: boolean;
   dates: boolean;
   link_to_services: boolean;
+  /** Fewer words in the content zones than this is thin content; absent means not checked on this profile. */
+  min_words?: number;
 }
 
 export interface SeoConfig {
@@ -25,6 +27,8 @@ export interface SeoConfig {
   service_path_prefix: string;
   /** Profiles whose pages must be linked from the content of another page (menu-only pages such as services and legal are not checked). */
   orphan_profiles?: string[];
+  /** Section roots and other listing pages: item cards, not articles, so the word count does not apply. */
+  thin_content_skip_paths?: string[];
   profiles: Record<string, SeoProfile>;
 }
 
@@ -214,6 +218,12 @@ export async function runSeoChecks(input: SeoInput): Promise<SeoResult> {
     zone_id: "page",
     value: page.meta_robots || "no robots meta",
   });
+
+  // ---- thin content ----------------------------------------------------------
+  if (profile.min_words && !(config.thin_content_skip_paths ?? []).includes(new URL(finalUrl).pathname)) {
+    const words = contentZones.reduce((n, z) => n + z.text.split(/\s+/).filter(Boolean).length, 0);
+    add({ id: "thin_content", status: words >= profile.min_words ? "pass" : "fail", zone_id: "page", value: `${words} words (at least ${profile.min_words})` });
+  }
 
   // ---- schema ---------------------------------------------------------------
   const present = schemaTypes(page.json_ld);

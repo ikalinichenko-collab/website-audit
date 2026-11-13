@@ -214,12 +214,14 @@ export function validateResource(r: Resource, content: string): void {
       strArray(data.article_schema_fields, "article_schema_fields");
       strArray(data.skip_link_patterns, "skip_link_patterns");
       if (data.orphan_profiles !== undefined) strArray(data.orphan_profiles, "orphan_profiles");
+      if (data.thin_content_skip_paths !== undefined) strArray(data.thin_content_skip_paths, "thin_content_skip_paths");
       if (!isObj(data.profiles) || !Object.keys(data.profiles).length) fail("profiles must have at least one profile");
       for (const [name, p] of Object.entries(data.profiles)) {
         if (!isObj(p)) fail(`profile ${name} must be an object`);
         strArray(p.schema_required, `profile ${name}.schema_required`).length;
         strArray(p.schema_recommended, `profile ${name}.schema_recommended`).length;
         for (const f of ["author", "dates", "link_to_services"]) if (typeof p[f] !== "boolean") fail(`profile ${name}.${f} must be true or false`);
+        if (p.min_words !== undefined && (typeof p.min_words !== "number" || !Number.isInteger(p.min_words) || p.min_words < 1)) fail(`profile ${name}.min_words must be a whole number above 0`);
       }
       return;
     }

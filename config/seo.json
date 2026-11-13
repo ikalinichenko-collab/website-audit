@@ -33,7 +33,8 @@
     "faq_schema_matches_dom": "low",
     "duplicate_meta": "medium",
     "duplicate_title": "medium",
-    "duplicate_h1": "medium"
+    "duplicate_h1": "medium",
+    "thin_content": "medium"
   },
   "title": { "max": 60, "min": 30 },
   "meta": { "min": 120, "max": 158 },
@@ -41,14 +42,15 @@
   "article_schema_fields": ["headline", "datePublished", "dateModified", "author", "image", "publisher"],
   "skip_link_patterns": ["/cdn-cgi/l/email-protection"],
   "orphan_profiles": ["article", "case_study", "podcast"],
+  "thin_content_skip_paths": ["/insights/", "/podcast/", "/case-study/", "/use-cases/", "/services/", "/solutions/"],
   "service_path_prefix": "/services/",
   "profiles": {
-    "home": { "schema_required": ["Organization", "WebSite"], "schema_recommended": [], "author": false, "dates": false, "link_to_services": true },
+    "home": { "schema_required": ["Organization", "WebSite"], "schema_recommended": [], "author": false, "dates": false, "link_to_services": true, "min_words": 300 },
     "company": { "schema_required": [], "schema_recommended": ["BreadcrumbList"], "author": false, "dates": false, "link_to_services": false },
     "legal": { "schema_required": [], "schema_recommended": [], "author": false, "dates": false, "link_to_services": false },
-    "service": { "schema_required": ["Service"], "schema_recommended": ["BreadcrumbList"], "author": false, "dates": false, "link_to_services": false },
-    "article": { "schema_required": ["Article"], "schema_recommended": ["BreadcrumbList"], "author": true, "dates": true, "link_to_services": true },
-    "case_study": { "schema_required": ["Article"], "schema_recommended": ["BreadcrumbList"], "author": false, "dates": true, "link_to_services": true },
-    "podcast": { "schema_required": ["Article"], "schema_recommended": ["PodcastEpisode", "BreadcrumbList"], "author": false, "dates": true, "link_to_services": false }
+    "service": { "schema_required": ["Service"], "schema_recommended": ["BreadcrumbList"], "author": false, "dates": false, "link_to_services": false, "min_words": 300 },
+    "article": { "schema_required": ["Article"], "schema_recommended": ["BreadcrumbList"], "author": true, "dates": true, "link_to_services": true, "min_words": 500 },
+    "case_study": { "schema_required": ["Article"], "schema_recommended": ["BreadcrumbList"], "author": false, "dates": true, "link_to_services": true, "min_words": 500 },
+    "podcast": { "schema_required": ["Article"], "schema_recommended": ["PodcastEpisode", "BreadcrumbList"], "author": false, "dates": true, "link_to_services": false, "min_words": 300 }
   }
 }

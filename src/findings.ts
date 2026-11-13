@@ -95,6 +95,7 @@ export const SEO_LABELS: Record<string, string> = {
   image_dimensions: "Image without width and height",
   heading_order: "Heading level skipped",
   og_present: "Open Graph tags missing",
+  thin_content: "Thin content: too few words",
   og_url_canonical: "og:url differs from canonical",
   twitter_card: "twitter:card missing",
   html_lang: "html lang missing",
@@ -410,7 +411,7 @@ function siteFindingDrafts(site: SiteReport): FindingDraft[] {
     out.push({
       ...baseSite,
       layer: "seo",
-      severity: "high",
+      severity: h.severity ?? "high",
       kind: "sitemap_hygiene",
       title: "Sitemap URL is not a clean 200",
       zone_id: "",

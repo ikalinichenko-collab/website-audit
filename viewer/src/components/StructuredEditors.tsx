@@ -371,6 +371,7 @@ const SEO_LABELS: Record<string, string> = {
   article_fields: "Article schema fields missing",
   anchors_resolve: "Anchor link has no target",
   faq_schema_matches_dom: "FAQ markup and schema disagree",
+  thin_content: "Thin content: too few words",
   duplicate_meta: "Duplicate meta description",
   duplicate_title: "Duplicate title",
   duplicate_h1: "Duplicate H1",

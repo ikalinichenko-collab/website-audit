@@ -76,7 +76,7 @@ export interface SeoSiteResult {
   /** identical failures across a profile, one entry instead of N */
   collapsed: { id: string; profile: string; pages_failing: number; pages_total: number; value: string }[];
   /** in-scope URLs that redirect, return non-2xx or are noindex */
-  sitemap_hygiene: { url: string; problem: string }[];
+  sitemap_hygiene: { url: string; problem: string; severity?: "high" | "medium" }[];
   /** pages of the checked profiles that no other in-scope page links to (absent in older runs) */
   orphans?: string[];
   /** why orphans were not worked out */

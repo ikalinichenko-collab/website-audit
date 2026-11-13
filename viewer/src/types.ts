@@ -210,7 +210,7 @@ export interface SiteReport {
   seo: {
     collapsed: { id: string; profile: string; pages_failing: number; pages_total: number; value: string }[];
     duplicates: { id: string; value: string; urls: string[]; others_as_of?: string }[];
-    sitemap_hygiene: { url: string; problem: string }[];
+    sitemap_hygiene: { url: string; problem: string; severity?: "high" | "medium" }[];
     orphans?: string[];
     orphans_note?: string;
   };

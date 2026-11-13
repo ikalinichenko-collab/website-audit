@@ -1,4 +1,5 @@
 import type { PageReport, SeoSiteResult } from "./report-types.js";
+import { urlsMatch } from "./utils.js";
 
 /** Failing checks that are collapsed per profile when they fail on (nearly) every page of it. */
 const COLLAPSE_IDS = new Set(["schema_recommended", "schema_required", "image_dimensions", "heading_order", "link_to_services"]);
@@ -56,6 +57,17 @@ export function seoSiteChecks(reports: PageReport[], slots: TextSlots[]): SeoSit
 
   const sitemap_hygiene: SeoSiteResult["sitemap_hygiene"] = [];
   for (const r of reports) {
+    // a sitemap lists the pages that are their own canonical; one whose canonical is another URL is a hygiene problem
+    const canon = r.seo.checks.find((c) => c.id === "canonical");
+    if (canon && canon.value && canon.value !== "missing") {
+      let target = "";
+      try {
+        target = new URL(canon.value, r.final_url).href;
+      } catch {
+        /* not a URL: the canonical check reports it */
+      }
+      if (target && !urlsMatch(target, r.final_url)) sitemap_hygiene.push({ url: r.url, problem: `canonical points to ${target}`, severity: "medium" });
+    }
     const http = r.seo.checks.find((c) => c.id === "http_status");
     if (http?.status === "fail") sitemap_hygiene.push({ url: r.url, problem: http.value });
     const idx = r.seo.checks.find((c) => c.id === "indexable");
