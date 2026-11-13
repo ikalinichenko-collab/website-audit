@@ -9,9 +9,15 @@ export interface TextSlots {
   title: string;
   meta: string;
   h1: string;
+  /** Set on a page taken from the site map (not fetched in this run): when it was last fetched. */
+  map_checked_at?: string;
 }
 
-/** Site-level SEO checks computed from the page reports (duplicates, collapsed failures, sitemap hygiene). */
+/**
+ * Site-level SEO checks computed from the page reports (duplicates, collapsed failures, sitemap hygiene).
+ * `slots` holds the pages of this run plus, in a partial run, the site map pages it did not fetch; a duplicate is
+ * kept only when it involves a page of this run, so a small run does not repeat old duplicates between other pages.
+ */
 export function seoSiteChecks(reports: PageReport[], slots: TextSlots[]): SeoSiteResult {
   const duplicates: SeoSiteResult["duplicates"] = [];
   for (const [key, id] of [
@@ -25,7 +31,12 @@ export function seoSiteChecks(reports: PageReport[], slots: TextSlots[]): SeoSit
       if (!v) continue;
       m.set(v, [...(m.get(v) ?? []), s.url]);
     }
-    for (const [value, urls] of m) if (urls.length > 1) duplicates.push({ id, value, urls });
+    for (const [value, urls] of m) {
+      if (urls.length < 2) continue;
+      const mapped = urls.map((u) => slots.find((s) => s.url === u)!.map_checked_at).filter((t): t is string => !!t);
+      if (mapped.length === urls.length) continue;
+      duplicates.push({ id, value, urls, ...(mapped.length ? { others_as_of: mapped.sort()[0]! } : {}) });
+    }
   }
 
   const collapsed: SeoSiteResult["collapsed"] = [];

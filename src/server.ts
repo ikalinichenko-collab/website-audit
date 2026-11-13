@@ -199,24 +199,29 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
         limit?: number;
         force?: boolean;
         noLlm?: boolean;
+        /** the free whole-site check: whole scope, no LLM, Compliance off */
+        siteScan?: boolean;
         subsections?: string[];
         layers?: Partial<Layers>;
         model?: string;
       }>(req);
       const settings = loadSettings();
       const layers: Layers = { ...ALL_LAYERS, ...(body.layers ?? {}) };
-      const common = { layers, model: body.model || settings.llm.model, force: body.force, noLlm: body.noLlm };
+      const siteScan = body.siteScan === true;
+      const common = siteScan
+        ? { layers: { compliance: false, geo: true, seo: true }, model: settings.llm.model, noLlm: true, kind: "site_scan" as const }
+        : { layers, model: body.model || settings.llm.model, force: body.force, noLlm: body.noLlm };
       if (!settings.llm.models.some((m) => m.id === common.model)) throw new ValidationError(`Unknown model "${common.model}"`);
       if (!layers.compliance && !layers.geo && !layers.seo) throw new ValidationError("Turn on at least one layer");
       let options: JobOptions;
       let rejected: string[] = [];
-      if (body.subsections?.length) {
+      if (!siteScan && body.subsections?.length) {
         const known = new Set(scopeGroups(settings).flatMap((g) => g.subsections.map((s) => s.key)));
         const bad = body.subsections.filter((k) => !known.has(k));
         if (bad.length) throw new ValidationError(`Unknown subsection: ${bad.join(", ")}`);
         const limit = body.limit ? Math.max(1, Math.min(500, Number(body.limit))) : undefined;
         options = { ...common, urls: [], subsections: body.subsections, limit };
-      } else if (body.all) {
+      } else if (body.all || siteScan) {
         options = { ...common, urls: [], all: true };
       } else if (body.limit) {
         options = { ...common, urls: [], limit: Math.max(1, Math.min(500, Number(body.limit))) };

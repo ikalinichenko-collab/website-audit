@@ -71,11 +71,35 @@ export interface SharedVariant {
 }
 
 export interface SeoSiteResult {
-  duplicates: { id: "duplicate_title" | "duplicate_meta" | "duplicate_h1"; value: string; urls: string[] }[];
+  /** `others_as_of`: some of the URLs come from the site map, last fetched at the oldest of these times */
+  duplicates: { id: "duplicate_title" | "duplicate_meta" | "duplicate_h1"; value: string; urls: string[]; others_as_of?: string }[];
   /** identical failures across a profile, one entry instead of N */
   collapsed: { id: string; profile: string; pages_failing: number; pages_total: number; value: string }[];
   /** in-scope URLs that redirect, return non-2xx or are noindex */
   sitemap_hygiene: { url: string; problem: string }[];
+  /** pages of the checked profiles that no other in-scope page links to (absent in older runs) */
+  orphans?: string[];
+  /** why orphans were not worked out */
+  orphans_note?: string;
+}
+
+/** One URL of the sitemap: where it is, whether the scope covers it, and what the site knows about it. */
+export interface SitemapRow {
+  url: string;
+  /** the sitemap file it comes from (short name) */
+  sitemap: string;
+  /** "Category/Subsection", or null when the scope does not cover the URL */
+  scope: string | null;
+  /** matches `exclude_url_patterns`: never audited */
+  excluded: boolean;
+  /** fetched in this run */
+  in_run: boolean;
+  /** HTTP status of the fetch in this run */
+  status: number | null;
+  /** when the site map last fetched this URL (any run) */
+  last_fetched: string | null;
+  /** how many other in-scope pages link to it from their content; null when the link graph is not complete */
+  inbound?: number | null;
 }
 
 export interface SiteReport {
@@ -87,6 +111,8 @@ export interface SiteReport {
     sitemaps: Record<string, number>;
   };
   scope_counts: Record<string, number>;
+  /** every sitemap URL (absent in runs made before the table existed) */
+  sitemap?: SitemapRow[];
   shared: {
     variants: SharedVariant[];
     compliance: ComplianceLayerResult | null;

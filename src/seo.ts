@@ -23,6 +23,8 @@ export interface SeoConfig {
   skip_link_patterns: string[];
   /** A link whose path starts with this counts as a link to a service page. */
   service_path_prefix: string;
+  /** Profiles whose pages must be linked from the content of another page (menu-only pages such as services and legal are not checked). */
+  orphan_profiles?: string[];
   profiles: Record<string, SeoProfile>;
 }
 

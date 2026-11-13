@@ -52,6 +52,8 @@ export interface RunListEntry {
   layers?: Layers;
   /** email of the person who started the run; absent for command-line runs */
   started_by?: string;
+  /** the free whole-site check (no LLM), as opposed to an audit */
+  kind?: "site_scan";
   /** running, done, stopped, error or interrupted (the server restarted during the run) */
   status?: string;
   /** 2 = readable by the viewer; 1 = made before the zone redesign (no longer stored) */

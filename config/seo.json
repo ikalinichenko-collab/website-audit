@@ -40,6 +40,7 @@
   "title_h1": { "min_overlap": 0.5, "skip_profiles": ["home"] },
   "article_schema_fields": ["headline", "datePublished", "dateModified", "author", "image", "publisher"],
   "skip_link_patterns": ["/cdn-cgi/l/email-protection"],
+  "orphan_profiles": ["article", "case_study", "podcast"],
   "service_path_prefix": "/services/",
   "profiles": {
     "home": { "schema_required": ["Organization", "WebSite"], "schema_recommended": [], "author": false, "dates": false, "link_to_services": true },

@@ -1,7 +1,7 @@
 import path from "node:path";
 import dotenv from "dotenv";
 import { ALL_LAYERS, type ExtractedPage, type Layers, type PageZones, type RunMeta, type Settings, type TokenUsage, type Zone } from "./types.js";
-import type { PageReport, SiteReport, ComplianceLayerResult, GeoLayerResult, SharedVariant } from "./report-types.js";
+import type { PageReport, SiteReport, ComplianceLayerResult, GeoLayerResult, SharedVariant, SitemapRow } from "./report-types.js";
 import {
   resolveModel,
   usageCost,
@@ -12,18 +12,19 @@ import {
 } from "./config.js";
 import { extractFromHtml, flattenJsonLd, parseJsonLdBlocks } from "./extract.js";
 import { httpGet, headOrGetStatus, type FetchResult } from "./fetch.js";
-import { collectSitemapUrls } from "./sitemap.js";
+import { collectSitemapEntries, collectSitemapUrls, shouldExcludeUrl } from "./sitemap.js";
 import { classifyUrl, filterBySubsections, filterInScope, OUT_OF_SCOPE, sampleAcrossSubsections, type UrlScope } from "./scope.js";
 import { buildZones, jsonLdZone } from "./zones.js";
 import { runSeoChecks } from "./seo.js";
 import { seoSiteChecks } from "./seo-site.js";
+import { graphUrl, listingLinks, mainContentLinks, nextListingPage, orphanPages } from "./links.js";
 import { geoTypeOf, runGeoCodeChecks, withSeverity } from "./geo-code.js";
 import { runGeoLlm } from "./geo-llm.js";
 import { compliancePayload, deriveAction, finalizeCompliance, runComplianceLayer, sharedPayload } from "./compliance.js";
 import { createOpenAiClient } from "./llm.js";
 import { detectSiteWideFingerprints, fingerprintJsonLdNode } from "./schema-fingerprint.js";
 import { runSiteBasics } from "./site.js";
-import { createRun, finishRun, loadSavedFingerprints, previousReport, saveRunFingerprints, savePage } from "./store.js";
+import { createRun, finishRun, loadSavedFingerprints, addSiteLinks, loadSiteLinks, loadSiteMapExcept, loadSiteMapTimes, previousReport, saveRunFingerprints, savePage, saveSitePage } from "./store.js";
 import { projectRoot, runIdNow, sha256, sleep, urlToSlug } from "./utils.js";
 
 dotenv.config({ path: path.join(projectRoot(), ".env") });
@@ -43,6 +44,8 @@ export interface AuditOptions {
   startedBy?: string | null;
   /** Skip both LLM layers (smoke tests, SEO and GEO code checks only). */
   noLlm?: boolean;
+  /** "site_scan": the free whole-site check (no LLM); stored with the run so lists can tell it from an audit. */
+  kind?: "site_scan";
   /** Progress lines (also printed to the console). */
   onLog?: (line: string) => void;
   /** Checked between pages: when true, no new page is started and the finished ones are saved. */
@@ -53,6 +56,8 @@ const SOURCE_FILES = ["sources/decisions.md", "sources/GoGloby Fact Sheet.md", "
 const SHARED_IDS = ["banner_cta", "modals"];
 /** A shared-zone text carried by fewer pages than this is page-specific (many article banners are written per article) and is audited with its page. */
 const SHARED_MIN_PAGES = 2;
+/** Safety limit for the pages of one listing read for their links. */
+const MAX_LISTING_PAGES = 80;
 const LAYER_OFF = "Layer turned off for this run";
 const ZERO: TokenUsage = { input: 0, cached_input: 0, output: 0 };
 
@@ -158,6 +163,12 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
     }
     return true;
   });
+  // such a URL is fetched and has no links of its own: recorded as known, so the link graph does not wait for it
+  for (const { url, fetched } of fetchedAll) {
+    if (redirectOnly.some((r) => r.url === url)) {
+      await saveSitePage(runId, { url, final_url: fetched.finalUrl, title: "", meta: "", h1: "", links_out: [], checked_at: new Date().toISOString() });
+    }
+  }
   if (redirectOnly.length) {
     log(`${redirectOnly.length} URL(s) redirect to another URL of the list and are not audited as pages (see Site, sitemap hygiene)`);
   }
@@ -362,6 +373,15 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
       seo: { checks: seo.checks, ...(layers.seo ? {} : { skipped: true }) },
     };
     await savePage(runId, urlToSlug(url), report, fetched.html, zones, settings);
+    await saveSitePage(runId, {
+      url,
+      final_url: finalUrl,
+      title: page.title,
+      meta: page.meta_description,
+      h1: page.h1[0] ?? "",
+      links_out: mainContentLinks(zones, finalUrl, settings.base_url, seoCfg.skip_link_patterns),
+      checked_at: report.checked_at,
+    });
     reports.push(report);
     done++;
     const high = compliance.problems.filter((p) => p.severity === "high").length;
@@ -371,6 +391,29 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
   });
 
   // ---- 6. site pass -------------------------------------------------------------------
+  // A listing (its page links to <listing>/page/2/) shows its items over several pages that the scope leaves out.
+  // They are fetched only for their links, which count as links of the listing, so the link graph sees every item.
+  const listings = new Set<string>();
+  if (layers.seo) {
+    for (const prep of preps) {
+      const listing = prep.fetched.finalUrl;
+      let next = nextListingPage(prep.fetched.html, listing, listing, 2);
+      if (!next) continue;
+      listings.add(graphUrl(prep.url));
+      const extra = new Set(listingLinks(prep.fetched.html, listing, settings.base_url, seoCfg.skip_link_patterns));
+      let n = 2;
+      for (; next && n <= MAX_LISTING_PAGES && !cancelled(); n++) {
+        await sleep(settings.fetch.delay_ms);
+        const f = await httpGet(next, settings);
+        if (f.status < 200 || f.status >= 300) break;
+        for (const l of listingLinks(f.html, f.finalUrl, settings.base_url, seoCfg.skip_link_patterns)) extra.add(l);
+        next = nextListingPage(f.html, f.finalUrl, listing, n + 1);
+      }
+      await addSiteLinks(prep.url, [...extra]);
+      log(`Listing ${listing.replace(settings.base_url, "") || "/"}: read ${n - 2} more page(s) for links, ${extra.size} link(s)`);
+    }
+  }
+
   const basics = await runSiteBasics(settings, geoCfg);
   if (!layers.geo) {
     basics.robots = { value: "not checked (GEO off)", ok: true };
@@ -416,11 +459,11 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
     }
   }
 
+  // a run of some pages also compares them with the site map (pages it did not fetch); a run of the whole scope has all of them
+  const runSlots = preps.map((p) => ({ url: p.fetched.finalUrl, title: p.page.title, meta: p.page.meta_description, h1: p.page.h1[0] ?? "" }));
+  const mapSlots = layers.seo && !options.all ? (await loadSiteMapExcept(runSlots.map((s) => s.url))).map((m) => ({ ...m, map_checked_at: m.checked_at })) : [];
   const seoSite: SiteReport["seo"] = layers.seo
-    ? seoSiteChecks(
-        reports,
-        preps.map((p) => ({ url: p.fetched.finalUrl, title: p.page.title, meta: p.page.meta_description, h1: p.page.h1[0] ?? "" })),
-      )
+    ? seoSiteChecks(reports, [...runSlots, ...mapSlots.map(({ checked_at: _c, ...m }) => m)])
     : { duplicates: [], collapsed: [], sitemap_hygiene: [] };
   if (layers.seo) seoSite.sitemap_hygiene.push(...redirectOnly);
 
@@ -430,11 +473,54 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
     scopeCounts[k] = (scopeCounts[k] ?? 0) + 1;
   }
 
+  // every sitemap URL: in scope or not, fetched in this run or not, and when it was last fetched
+  const norm = (u: string): string => u.replace(/\/$/, "");
+  const fetchedNow = new Map(reports.map((r) => [norm(r.url), r]));
+  const times = await loadSiteMapTimes();
+  const sitemap: SitemapRow[] = await collectSitemapEntries(settings)
+    .then((entries) =>
+      entries.map((e) => {
+        const scope = classifyUrl(e.url, settings);
+        const r = fetchedNow.get(norm(e.url));
+        return {
+          url: e.url,
+          sitemap: e.sitemap.replace(/^https?:\/\/[^/]+/, ""),
+          scope: scope ? `${scope.category}/${scope.subsection}` : null,
+          excluded: shouldExcludeUrl(e.url, settings.exclude_url_patterns),
+          in_run: !!r,
+          status: r?.status ?? null,
+          last_fetched: times.get(e.url) ?? null,
+        };
+      }),
+    )
+    .catch(() => []);
+
+  // link graph: inbound pages per URL and the pages nobody links to (only worked out when every in-scope page has stored links)
+  const redirected = new Set(redirectOnly.map((r) => graphUrl(r.url)));
+  const rowOf = new Map(sitemap.map((r) => [graphUrl(r.url), r]));
+  const graph =
+    layers.seo && sitemap.length
+      ? orphanPages(
+          sitemap
+            .filter((r) => r.scope && !r.excluded)
+            .map((r) => ({ url: graphUrl(r.url), profile: classifyUrl(r.url, settings)!.profile, inRun: r.in_run, skip: redirected.has(graphUrl(r.url)), exempt: listings.has(graphUrl(r.url)) })),
+          await loadSiteLinks(),
+          seoCfg.orphan_profiles ?? ["article", "case_study", "podcast"],
+          !options.all,
+        )
+      : null;
+  if (graph) {
+    for (const r of sitemap) r.inbound = graph.inbound?.get(graphUrl(r.url)) ?? null;
+    seoSite.orphans = graph.orphans.map((u) => rowOf.get(u)?.url ?? u);
+    if (graph.note) seoSite.orphans_note = graph.note;
+  }
+
   const site: SiteReport = {
     schema_version: 2,
     run_id: runId,
     basics,
     scope_counts: scopeCounts,
+    sitemap,
     shared: { variants, compliance: sharedCompliance },
     site_schema: siteSchema,
     seo: seoSite,

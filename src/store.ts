@@ -36,6 +36,55 @@ export async function savePage(runId: string, slug: string, report: PageReport, 
   );
 }
 
+/** Refreshes the site map row of a page the run has just fetched. */
+export async function saveSitePage(
+  runId: string,
+  row: { url: string; final_url: string; title: string; meta: string; h1: string; links_out: string[]; checked_at: string },
+): Promise<void> {
+  await db().query(
+    `INSERT INTO site_pages (url, final_url, title, meta, h1, links_out, run_id, checked_at) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+     ON CONFLICT (url) DO UPDATE SET final_url = $2, title = $3, meta = $4, h1 = $5, links_out = $6, run_id = $7, checked_at = $8`,
+    [row.url, row.final_url, row.title, row.meta, row.h1, JSON.stringify(row.links_out), runId, row.checked_at],
+  );
+}
+
+export interface SiteMapRow {
+  url: string;
+  title: string;
+  meta: string;
+  h1: string;
+  checked_at: string;
+}
+
+/** The site map without the URLs a run has just fetched (it knows those better). Empty when no site check has been made. */
+export async function loadSiteMapExcept(finalUrls: string[]): Promise<SiteMapRow[]> {
+  const r = await db().query<{ final_url: string; title: string; meta: string; h1: string; checked_at: Date }>(
+    "SELECT final_url, title, meta, h1, checked_at FROM site_pages WHERE NOT (final_url = ANY($1::text[]))",
+    [finalUrls],
+  );
+  return r.rows.map((x) => ({ url: x.final_url, title: x.title, meta: x.meta, h1: x.h1, checked_at: x.checked_at.toISOString() }));
+}
+
+/** Adds links to a page's stored list (the pages of a listing count as part of the listing page). */
+export async function addSiteLinks(url: string, links: string[]): Promise<void> {
+  const cur = await db().query<{ links_out: string[] | null }>("SELECT links_out FROM site_pages WHERE url = $1", [url]);
+  if (!cur.rows[0]) return;
+  const merged = [...new Set([...(cur.rows[0].links_out ?? []), ...links])];
+  await db().query("UPDATE site_pages SET links_out = $2 WHERE url = $1", [url, JSON.stringify(merged)]);
+}
+
+/** Stored main-content links of every page that has them, by the requested URL as a graph URL (no trailing slash). */
+export async function loadSiteLinks(): Promise<Map<string, string[]>> {
+  const r = await db().query<{ url: string; links_out: string[] }>("SELECT url, links_out FROM site_pages WHERE links_out IS NOT NULL");
+  return new Map(r.rows.map((x) => [x.url.split("#")[0]!.replace(/\/$/, ""), x.links_out]));
+}
+
+/** When the site map last fetched each URL (by the requested URL). */
+export async function loadSiteMapTimes(): Promise<Map<string, string>> {
+  const r = await db().query<{ url: string; checked_at: Date }>("SELECT url, checked_at FROM site_pages");
+  return new Map(r.rows.map((x) => [x.url, x.checked_at.toISOString()]));
+}
+
 export async function saveRunFingerprints(runId: string, fingerprints: string[]): Promise<void> {
   const value = JSON.stringify({ fingerprints });
   await db().query("UPDATE runs SET fingerprints = $2 WHERE id = $1", [runId, value]);
@@ -100,6 +149,7 @@ export async function previousReport(url: string, layer: "compliance" | "geo"): 
   const r = await db().query<{ report: PageReport }>(
     `SELECT p.report FROM pages p JOIN runs r ON r.id = p.run_id
      WHERE p.url = $1 AND p.report->>'schema_version' = '2' AND COALESCE(p.report->$2->>'skipped', 'false') <> 'true'
+       AND COALESCE(p.report->$2->>'error', '') NOT LIKE 'LLM skipped%'
      ORDER BY r.started_at DESC LIMIT 1`,
     [url, layer],
   );
@@ -123,8 +173,9 @@ export async function listRuns(): Promise<RunListEntry[]> {
     layers: Layers | null;
     meta: RunMeta | null;
     started_by: string | null;
+    kind: string | null;
     pages: string;
-  }>(`SELECT r.id, r.status, r.started_at, r.ended_at, r.model, r.layers, r.meta, CASE WHEN r.started_by IS NULL THEN NULL ELSE ${shownName("r.started_by")} END AS started_by, (SELECT count(*) FROM pages p WHERE p.run_id = r.id) AS pages
+  }>(`SELECT r.id, r.status, r.started_at, r.ended_at, r.model, r.layers, r.meta, r.options->>'kind' AS kind, CASE WHEN r.started_by IS NULL THEN NULL ELSE ${shownName("r.started_by")} END AS started_by, (SELECT count(*) FROM pages p WHERE p.run_id = r.id) AS pages
       FROM runs r ORDER BY r.started_at DESC`);
   return r.rows.map((x) => ({
     id: x.id,
@@ -137,6 +188,7 @@ export async function listRuns(): Promise<RunListEntry[]> {
     ...(x.model ? { model: x.model } : {}),
     ...(x.layers ? { layers: x.layers } : {}),
     ...(x.started_by ? { started_by: x.started_by } : {}),
+    ...(x.kind === "site_scan" ? { kind: "site_scan" as const } : {}),
     format: 2 as const,
   }));
 }

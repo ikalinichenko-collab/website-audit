@@ -143,6 +143,7 @@ export const api = {
     subsections?: string[];
     layers?: Layers;
     model?: string;
+    siteScan?: boolean;
   }) => call<{ id: string; rejected: string[] }>("POST", "/api/jobs", body),
   jobs: () => call<JobSummary[]>("GET", "/api/jobs"),
   job: (id: string, from: number) => call<JobDetail>("GET", `/api/jobs/${id}?from=${from}`),

@@ -14,6 +14,7 @@ export interface JobOptions {
   model?: string;
   force?: boolean;
   noLlm?: boolean;
+  kind?: "site_scan";
 }
 
 export interface Job {

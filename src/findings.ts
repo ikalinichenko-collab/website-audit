@@ -380,8 +380,27 @@ function siteFindingDrafts(site: SiteReport): FindingDraft[] {
       part: "",
       quote: d.value,
       fid: fidOf("site", "seo", d.id, "", d.value),
-      issue: `Same value on ${d.urls.length} pages: ${d.urls.join(", ")}`,
+      issue: `Same value on ${d.urls.length} pages: ${d.urls.join(", ")}${d.others_as_of ? ` (pages not fetched in this run: as last fetched on ${d.others_as_of.slice(0, 16).replace("T", " ")} UTC)` : ""}`,
       fix: "",
+      rule: "",
+      verified: true,
+      fragment: null,
+    });
+  }
+  for (const url of site.seo.orphans ?? []) {
+    out.push({
+      ...baseSite,
+      layer: "seo",
+      severity: "medium",
+      kind: "orphan_page",
+      title: "Orphan page: no other page links to it",
+      zone_id: "",
+      zone_label: "",
+      part: "",
+      quote: url,
+      fid: fidOf("site", "seo", "orphan_page", "", url),
+      issue: "No in-scope page links to it from its content (menu, footer and related-content widgets do not count)",
+      fix: "Link to it from a relevant page, or remove it if it is obsolete",
       rule: "",
       verified: true,
       fragment: null,

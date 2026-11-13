@@ -37,25 +37,32 @@ async function fetchTextUrl(url: string, settings: Settings): Promise<string> {
   }
 }
 
-export async function collectSitemapUrls(settings: Settings): Promise<string[]> {
+/** Every page URL of the sitemap with the sitemap file it comes from, nothing filtered out (first file wins for a repeated URL). */
+export async function collectSitemapEntries(settings: Settings): Promise<{ url: string; sitemap: string }[]> {
   const xml = await fetchTextUrl(settings.sitemap, settings);
   const parsed = parser.parse(xml);
   const allLocs = [...new Set(extractLocs(parsed))];
   const sitemapUrls = allLocs.filter((u) => u.endsWith(".xml"));
-  const pageUrls: string[] = [];
+  const entries: { url: string; sitemap: string }[] = [];
   const toFetch = sitemapUrls.length > 0 ? sitemapUrls : [settings.sitemap];
   for (const sm of toFetch) {
     if (sm === settings.sitemap && sitemapUrls.length === 0) {
-      pageUrls.push(...allLocs.filter((u) => !u.endsWith(".xml")));
+      entries.push(...allLocs.filter((u) => !u.endsWith(".xml")).map((url) => ({ url, sitemap: sm })));
       continue;
     }
     if (!sm.endsWith(".xml")) continue;
     try {
       const inner = await fetchTextUrl(sm, settings);
-      pageUrls.push(...extractLocs(parser.parse(inner)).filter((u) => !u.endsWith(".xml")));
+      entries.push(...extractLocs(parser.parse(inner)).filter((u) => !u.endsWith(".xml")).map((url) => ({ url, sitemap: sm })));
     } catch {
       /* skip */
     }
   }
-  return [...new Set(pageUrls)].filter((u) => !shouldExcludeUrl(u, settings.exclude_url_patterns));
+  const seen = new Set<string>();
+  return entries.filter((e) => !seen.has(e.url) && !!seen.add(e.url));
+}
+
+export async function collectSitemapUrls(settings: Settings): Promise<string[]> {
+  const entries = await collectSitemapEntries(settings);
+  return entries.map((e) => e.url).filter((u) => !shouldExcludeUrl(u, settings.exclude_url_patterns));
 }

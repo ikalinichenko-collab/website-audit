@@ -213,6 +213,7 @@ export function validateResource(r: Resource, content: string): void {
       if (typeof data.service_path_prefix !== "string" || !data.service_path_prefix.startsWith("/")) fail("service_path_prefix must start with /");
       strArray(data.article_schema_fields, "article_schema_fields");
       strArray(data.skip_link_patterns, "skip_link_patterns");
+      if (data.orphan_profiles !== undefined) strArray(data.orphan_profiles, "orphan_profiles");
       if (!isObj(data.profiles) || !Object.keys(data.profiles).length) fail("profiles must have at least one profile");
       for (const [name, p] of Object.entries(data.profiles)) {
         if (!isObj(p)) fail(`profile ${name} must be an object`);

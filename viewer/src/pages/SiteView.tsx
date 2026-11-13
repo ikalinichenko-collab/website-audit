@@ -1,8 +1,10 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { api } from "../api.js";
+import { buttonClass } from "../components/ResourceEditor.js";
 import { useRunContext } from "../context/RunContext.js";
 import { getSite, getSiteFindings, getSiteSources } from "../data.js";
-import type { Finding, SiteReport, SiteSources } from "../types.js";
+import type { Finding, SiteReport, SiteSources, SitemapRow } from "../types.js";
 import { FindingList } from "../components/FindingList.js";
 import { FindingActionsContext } from "../components/FindingActions.js";
 import { SchemaNodeCard, VariantCard, findingsInNode } from "../components/SourceCards.js";
@@ -17,6 +19,147 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 }
 
 const short = (u: string) => u.replace(/^https:\/\/[^/]+/, "") || "/";
+
+/** The free whole-site check: fetches every page of the scope without the LLM and opens the result here. */
+function SiteCheckBar() {
+  const { reload, setRunId } = useRunContext();
+  const [jobId, setJobId] = useState<string | null>(null);
+  const [line, setLine] = useState("");
+  const [error, setError] = useState<string | null>(null);
+  const [busy, setBusy] = useState(false);
+
+  useEffect(() => {
+    api.state().then((s) => s.running_job && setBusy(true)).catch(() => undefined);
+  }, []);
+
+  const start = useCallback(async () => {
+    setError(null);
+    try {
+      const r = await api.startJob({ siteScan: true });
+      setJobId(r.id);
+      setBusy(true);
+    } catch (e) {
+      setError(String(e instanceof Error ? e.message : e));
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!jobId) return;
+    const t = setInterval(async () => {
+      try {
+        const j = await api.job(jobId, 0);
+        setLine(j.log[j.log.length - 1] ?? "");
+        if (j.status !== "running") {
+          clearInterval(t);
+          setJobId(null);
+          setBusy(false);
+          if (j.run_id) {
+            await reload();
+            setRunId(j.run_id);
+          }
+          if (j.error) setError(j.error);
+        }
+      } catch {
+        /* server restarted */
+      }
+    }, 1500);
+    return () => clearInterval(t);
+  }, [jobId, reload, setRunId]);
+
+  return (
+    <div className="flex flex-wrap items-center gap-3 text-sm">
+      <button type="button" className={buttonClass} disabled={busy} onClick={() => void start()}>
+        {jobId ? "Checking the site..." : "Check the whole site (no LLM)"}
+      </button>
+      {jobId && <button type="button" className={buttonClass} onClick={() => void api.stopJob(jobId)}>Stop</button>}
+      <span className="text-slate-500">
+        {line || "Fetches every page in scope and checks SEO and GEO code rules. Free: no model calls."}
+      </span>
+      {error && <span className="text-red-600 dark:text-red-400">{error}</span>}
+    </div>
+  );
+}
+
+type MapFilter = "all" | "in_scope" | "out_of_scope" | "not_fetched" | "problems";
+
+/** Every sitemap URL: what the scope covers, what this run fetched and what is not known yet. */
+function SitemapTable({ site }: { site: SiteReport }) {
+  const rows = site.sitemap ?? [];
+  const [filter, setFilter] = useState<MapFilter>("in_scope");
+  if (!rows.length) return <p className="text-sm text-slate-500">This run has no sitemap list. Run the site check to get it.</p>;
+
+  const problems = new Map(site.seo.sitemap_hygiene.map((h) => [h.url.replace(/\/$/, ""), h.problem]));
+  const problemOf = (r: SitemapRow) => problems.get(r.url.replace(/\/$/, "")) ?? (r.in_run && r.status != null && r.status >= 400 ? `HTTP ${r.status}` : "");
+  const inScope = rows.filter((r) => r.scope && !r.excluded);
+  const fetched = inScope.filter((r) => r.in_run).length;
+  const neverFetched = inScope.filter((r) => !r.in_run && !r.last_fetched).length;
+  const shown = rows.filter((r) => {
+    if (filter === "in_scope") return r.scope && !r.excluded;
+    if (filter === "out_of_scope") return !r.scope || r.excluded;
+    if (filter === "not_fetched") return r.scope && !r.excluded && !r.in_run;
+    if (filter === "problems") return !!problemOf(r);
+    return true;
+  });
+  const when = (t: string | null) => (t ? new Date(t).toLocaleDateString([], { day: "2-digit", month: "2-digit", year: "numeric" }) : "never");
+  const th = "px-2 py-1 text-left font-medium";
+
+  return (
+    <div className="space-y-2 text-sm">
+      <p>
+        <b>{rows.length}</b> URLs in the sitemap, <b>{inScope.length}</b> in scope. This run fetched{" "}
+        <b>
+          {fetched} of {inScope.length}
+        </b>{" "}
+        in-scope URLs
+        {fetched < inScope.length ? ` (${neverFetched} never fetched; site checks such as duplicates are only as complete as the fetched pages and the site map)` : ""}.{" "}
+        {rows.length - inScope.length} are outside the scope or excluded by URL patterns and are not audited.
+      </p>
+      <label className="flex items-center gap-2">
+        Show
+        <select className="rounded border border-slate-300 bg-white px-2 py-1 dark:border-slate-600 dark:bg-slate-900" value={filter} onChange={(e) => setFilter(e.target.value as MapFilter)}>
+          <option value="in_scope">in scope</option>
+          <option value="not_fetched">in scope, not fetched in this run</option>
+          <option value="problems">with a problem</option>
+          <option value="out_of_scope">outside the scope</option>
+          <option value="all">all</option>
+        </select>
+        <span className="text-slate-500">{shown.length} rows</span>
+      </label>
+      <div className="max-h-96 overflow-auto rounded border border-slate-200 dark:border-slate-700">
+        <table className="w-full text-xs">
+          <thead className="sticky top-0 bg-slate-100 dark:bg-slate-800">
+            <tr>
+              <th className={th}>URL</th>
+              <th className={th}>Sitemap file</th>
+              <th className={th}>Scope</th>
+              <th className={th}>This run</th>
+              <th className={th} title="Other in-scope pages that link to it from their content">Inbound</th>
+              <th className={th}>Last fetched</th>
+              <th className={th}>Problem</th>
+            </tr>
+          </thead>
+          <tbody>
+            {shown.map((r) => (
+              <tr key={r.url} className="border-t border-slate-200 dark:border-slate-700">
+                <td className="px-2 py-1">
+                  <a href={r.url} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline dark:text-blue-400">
+                    {short(r.url)}
+                  </a>
+                </td>
+                <td className="px-2 py-1 text-slate-500">{r.sitemap.replace(/^\//, "")}</td>
+                <td className="px-2 py-1">{r.excluded ? "excluded by pattern" : (r.scope ?? "outside scope")}</td>
+                <td className="px-2 py-1">{r.in_run ? `fetched${r.status ? ` (${r.status})` : ""}` : "-"}</td>
+                <td className="px-2 py-1 tabular-nums">{r.scope && !r.excluded && r.inbound != null ? r.inbound : "-"}</td>
+                <td className="px-2 py-1 tabular-nums">{when(r.last_fetched)}</td>
+                <td className="px-2 py-1 text-red-600 dark:text-red-400">{problemOf(r)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
 
 export function SiteView() {
   const { runId } = useRunContext();
@@ -48,6 +191,7 @@ export function SiteView() {
   return (
     <FindingActionsContext.Provider value={{ runId, slug: null, reload }}>
     <div className="space-y-8">
+      <SiteCheckBar />
       <Section title="Site checks">
         <ul className="text-sm">
           <li>
@@ -67,6 +211,7 @@ export function SiteView() {
             ))}
           </ul>
         </details>
+        <SitemapTable site={site} />
         <ul className="text-sm text-slate-600 dark:text-slate-400">
           {Object.entries(site.scope_counts)
             .sort()
@@ -157,6 +302,22 @@ export function SiteView() {
                   {short(u)}
                 </span>
               ))}
+              {d.others_as_of && <span className="text-xs text-slate-500">(pages not fetched in this run: as last fetched {d.others_as_of.slice(0, 16).replace("T", " ")} UTC)</span>}
+            </li>
+          ))}
+        </ul>
+        <h3 className="text-sm font-semibold">Orphan pages</h3>
+        <p className="text-xs text-slate-500">
+          Articles, case studies and podcasts that no other in-scope page links to from its content (menu, footer and related-content widgets do not count).
+        </p>
+        <ul className="text-sm">
+          {site.seo.orphans_note && <li className="text-slate-500">{site.seo.orphans_note}</li>}
+          {!site.seo.orphans_note && (site.seo.orphans ?? []).length === 0 && <li className="text-slate-500">none</li>}
+          {(site.seo.orphans ?? []).map((u) => (
+            <li key={u}>
+              <a href={u} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline dark:text-blue-400">
+                {short(u)}
+              </a>
             </li>
           ))}
         </ul>

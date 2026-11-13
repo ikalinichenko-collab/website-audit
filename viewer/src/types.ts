@@ -36,6 +36,7 @@ export interface RunListEntry {
   model?: string;
   layers?: Layers;
   started_by?: string;
+  kind?: "site_scan";
   format?: 1 | 2;
 }
 
@@ -174,6 +175,18 @@ export interface PageReport {
   seo: { skipped?: boolean };
 }
 
+/** Same shape as `SitemapRow` in src/report-types.ts. */
+export interface SitemapRow {
+  url: string;
+  sitemap: string;
+  scope: string | null;
+  excluded: boolean;
+  in_run: boolean;
+  status: number | null;
+  last_fetched: string | null;
+  inbound?: number | null;
+}
+
 export interface SiteReport {
   run_id: string;
   basics: {
@@ -182,11 +195,14 @@ export interface SiteReport {
     sitemaps: Record<string, number>;
   };
   scope_counts: Record<string, number>;
+  sitemap?: SitemapRow[];
   shared: { variants: { id: string; zone: string; pages: string[] }[] };
   seo: {
     collapsed: { id: string; profile: string; pages_failing: number; pages_total: number; value: string }[];
-    duplicates: { id: string; value: string; urls: string[] }[];
+    duplicates: { id: string; value: string; urls: string[]; others_as_of?: string }[];
     sitemap_hygiene: { url: string; problem: string }[];
+    orphans?: string[];
+    orphans_note?: string;
   };
 }
 
