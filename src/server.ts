@@ -328,6 +328,7 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
       if (parts.length === 3 && what === "site-findings") return json(await store.getSiteFindings(id));
       if (parts.length === 3 && what === "site-sources") return json(await store.getSiteSources(id));
       if (parts.length === 4 && what === "pages" && !parts[3]!.endsWith(".md")) return json(await store.getPage(id, parts[3]!));
+      if (parts.length === 5 && what === "pages" && parts[4] === "site-check") return json(await store.getSiteCheck(id, parts[3]!));
       if (parts.length === 5 && what === "pages" && parts[4] === "findings") return json(await store.getPageFindings(id, parts[3]!));
       if (parts.length === 3 && what === "findings.csv") return text(await store.findingsCsv(id), TYPES[".csv"]!);
       if (parts.length === 3 && what === "summary.csv") return text(await store.summaryCsv(id), TYPES[".csv"]!);

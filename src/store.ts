@@ -6,6 +6,8 @@ import { FINDING_STATUSES, pageFindings, siteFindings, type Finding, type Findin
 import { buildFindingsCsv, buildSummaryCsv, renderPageReport, renderSiteReport } from "./render.js";
 import { attachFragments, buildRunIndex, pageIndexEntry, type PageIndexEntry, type RunIndexFile, type RunListEntry, type StoredZones } from "./run-output.js";
 import { buildSiteSources, type SiteSources } from "./site-sources.js";
+import { loadSeoConfig } from "./config.js";
+import { graphUrl } from "./links.js";
 
 export type RunStatus = "running" | "done" | "stopped" | "error" | "interrupted";
 
@@ -43,7 +45,7 @@ export async function saveSitePage(
 ): Promise<void> {
   await db().query(
     `INSERT INTO site_pages (url, final_url, title, meta, h1, links_out, run_id, checked_at) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
-     ON CONFLICT (url) DO UPDATE SET final_url = $2, title = $3, meta = $4, h1 = $5, links_out = $6, run_id = $7, checked_at = $8`,
+     ON CONFLICT (url) DO UPDATE SET final_url = $2, title = $3, meta = $4, h1 = $5, links_out = $6, listing = false, run_id = $7, checked_at = $8`,
     [row.url, row.final_url, row.title, row.meta, row.h1, JSON.stringify(row.links_out), runId, row.checked_at],
   );
 }
@@ -70,7 +72,7 @@ export async function addSiteLinks(url: string, links: string[]): Promise<void> 
   const cur = await db().query<{ links_out: string[] | null }>("SELECT links_out FROM site_pages WHERE url = $1", [url]);
   if (!cur.rows[0]) return;
   const merged = [...new Set([...(cur.rows[0].links_out ?? []), ...links])];
-  await db().query("UPDATE site_pages SET links_out = $2 WHERE url = $1", [url, JSON.stringify(merged)]);
+  await db().query("UPDATE site_pages SET links_out = $2, listing = true WHERE url = $1", [url, JSON.stringify(merged)]);
 }
 
 /** Stored main-content links of every page that has them, by the requested URL as a graph URL (no trailing slash). */
@@ -246,6 +248,46 @@ export async function getRunIndex(runId: string): Promise<RunIndexFile | null> {
 export async function getPage(runId: string, slug: string): Promise<PageReport | null> {
   const r = await db().query<{ report: PageReport }>("SELECT report FROM pages WHERE run_id = $1 AND slug = $2", [runId, slug]);
   return r.rows[0]?.report ?? null;
+}
+
+/** A page against the site map: duplicates and who links to it, as of the last time each page was fetched. */
+export interface SiteCheck {
+  /** false when the site map has no row for the page (it was never fetched by a run that fills the map) */
+  available: boolean;
+  as_of: string | null;
+  /** how many pages the site map knows */
+  map_pages: number;
+  duplicates: { field: "title" | "meta" | "h1"; value: string; urls: string[] }[];
+  /** other pages whose content links to this one */
+  inbound: { url: string; title: string }[];
+  /** the page's profile is one whose pages must be linked from other pages (orphan_profiles) */
+  orphan_checked: boolean;
+}
+
+/** The page of a run against the site map (live: what the map knows now, not what it knew at the run). */
+export async function getSiteCheck(runId: string, slug: string): Promise<SiteCheck | null> {
+  const pg = await db().query<{ url: string; profile: string }>("SELECT url, report->>'profile' AS profile FROM pages WHERE run_id = $1 AND slug = $2", [runId, slug]);
+  const page = pg.rows[0];
+  if (!page) return null;
+  const own = (await db().query<{ title: string; meta: string; h1: string; listing: boolean; checked_at: Date }>("SELECT title, meta, h1, listing, checked_at FROM site_pages WHERE url = $1", [page.url])).rows[0];
+  const total = Number((await db().query<{ n: string }>("SELECT count(*) AS n FROM site_pages")).rows[0]!.n);
+  if (!own) return { available: false, as_of: null, map_pages: total, duplicates: [], inbound: [], orphan_checked: false };
+  const duplicates: SiteCheck["duplicates"] = [];
+  for (const field of ["title", "meta", "h1"] as const) {
+    const value = own[field].trim();
+    if (!value) continue;
+    const r = await db().query<{ url: string }>(`SELECT url FROM site_pages WHERE ${field} = $1 AND url <> $2 ORDER BY url`, [own[field], page.url]);
+    if (r.rows.length) duplicates.push({ field, value, urls: r.rows.map((x) => x.url) });
+  }
+  const inbound = await db().query<{ url: string; title: string }>("SELECT url, title FROM site_pages WHERE url <> $2 AND links_out @> $1::jsonb ORDER BY url", [JSON.stringify([graphUrl(page.url)]), page.url]);
+  return {
+    available: true,
+    as_of: own.checked_at.toISOString(),
+    map_pages: total,
+    duplicates,
+    inbound: inbound.rows,
+    orphan_checked: !own.listing && (loadSeoConfig().orphan_profiles ?? []).includes(page.profile),
+  };
 }
 
 /** What changed on a page since the previous run of the same URL. */

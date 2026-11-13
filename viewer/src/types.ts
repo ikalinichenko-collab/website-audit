@@ -187,6 +187,16 @@ export interface SitemapRow {
   inbound?: number | null;
 }
 
+/** Same shape as `SiteCheck` in src/store.ts. */
+export interface SiteCheck {
+  available: boolean;
+  as_of: string | null;
+  map_pages: number;
+  duplicates: { field: "title" | "meta" | "h1"; value: string; urls: string[] }[];
+  inbound: { url: string; title: string }[];
+  orphan_checked: boolean;
+}
+
 export interface SiteReport {
   run_id: string;
   basics: {

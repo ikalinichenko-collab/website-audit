@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useMemo, useState, type ReactNode } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useRunContext } from "../context/RunContext.js";
-import { getIndex, getPage, getPageFindings } from "../data.js";
-import type { Finding, Layer, PageCompare, PageIndexEntry, PageReport } from "../types.js";
+import { getIndex, getPage, getPageFindings, getSiteCheck } from "../data.js";
+import type { Finding, Layer, PageCompare, PageIndexEntry, PageReport, SiteCheck } from "../types.js";
 import { ActionBadge, SeverityBadge } from "../components/Badges.js";
 import { FindingActionsContext } from "../components/FindingActions.js";
 import { GeoQuestions } from "../components/GeoQuestions.js";
@@ -272,6 +272,7 @@ export function PageDetail() {
       )}
 
       <ComparisonNote compare={compare} />
+      <SiteCheckBlock runId={runId} slug={slug} />
       {closedCount > 0 && (
         <p className="text-xs text-slate-500">
           {closedCount} closed {closedCount === 1 ? "problem is" : "problems are"} {showClosed ? "shown" : "hidden"} (accepted, false positive or fixed).{" "}
@@ -404,6 +405,79 @@ export function PageDetail() {
 }
 
 /** What changed against the previous run of this page: new problems are chipped on their cards, the gone ones are listed here. */
+const shortUrl = (u: string) => u.replace(/^https:\/\/[^/]+/, "") || "/";
+const FIELD_LABEL = { title: "Title", meta: "Meta description", h1: "H1" } as const;
+
+/** The page against the whole site: duplicates and who links to it. Read from the site map, so it shows what is known now. */
+function SiteCheckBlock({ runId, slug }: { runId: string; slug: string }) {
+  const [check, setCheck] = useState<SiteCheck | null>(null);
+  useEffect(() => {
+    setCheck(null);
+    getSiteCheck(runId, slug)
+      .then(setCheck)
+      .catch(() => setCheck(null));
+  }, [runId, slug]);
+  // without a site map the page is checked on its own, as before
+  if (!check || !check.available) return null;
+
+  const when = check.as_of ? new Date(check.as_of).toLocaleString([], { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit" }) : "";
+  const orphan = check.orphan_checked && check.inbound.length === 0;
+  const link = "text-blue-600 hover:underline dark:text-blue-400";
+  return (
+    <details className="rounded border border-slate-200 p-3 text-sm dark:border-slate-700" open={orphan || check.duplicates.length > 0}>
+      <summary className="cursor-pointer font-medium">
+        Against the site{" "}
+        <span className="font-normal text-slate-500">
+          {check.duplicates.length ? `${check.duplicates.length} duplicate${check.duplicates.length > 1 ? "s" : ""}, ` : "no duplicates, "}
+          {orphan ? "orphan" : `${check.inbound.length} page${check.inbound.length === 1 ? "" : "s"} link here`}
+        </span>
+      </summary>
+      <div className="mt-2 space-y-2">
+        <p className="text-xs text-slate-500">
+          From the site map ({check.map_pages} pages known; this page last fetched {when}). Other pages are as last fetched, so run the site check on the{" "}
+          <Link to="/site" className={link}>
+            Site
+          </Link>{" "}
+          page to refresh them.
+        </p>
+        {check.duplicates.length === 0 && <p>No other known page has the same title, meta description or H1.</p>}
+        {check.duplicates.map((d) => (
+          <div key={d.field}>
+            <b>{FIELD_LABEL[d.field]}</b> is also on {d.urls.length} other page{d.urls.length > 1 ? "s" : ""}: <i>&ldquo;{d.value.slice(0, 90)}&rdquo;</i>
+            <div className="text-xs">
+              {d.urls.slice(0, 8).map((u) => (
+                <a key={u} href={u} target="_blank" rel="noreferrer" className={`mr-2 ${link}`}>
+                  {shortUrl(u)}
+                </a>
+              ))}
+              {d.urls.length > 8 && <span className="text-slate-500">and {d.urls.length - 8} more</span>}
+            </div>
+          </div>
+        ))}
+        {orphan && (
+          <p className="text-red-600 dark:text-red-400">
+            Orphan: no other page links to this one from its content (menu, footer and related-content widgets do not count).
+          </p>
+        )}
+        {check.inbound.length > 0 && (
+          <div>
+            <b>Linked from {check.inbound.length} page{check.inbound.length > 1 ? "s" : ""}</b>
+            <div className="text-xs">
+              {check.inbound.slice(0, 12).map((i) => (
+                <a key={i.url} href={i.url} target="_blank" rel="noreferrer" className={`mr-2 ${link}`}>
+                  {shortUrl(i.url)}
+                </a>
+              ))}
+              {check.inbound.length > 12 && <span className="text-slate-500">and {check.inbound.length - 12} more</span>}
+            </div>
+          </div>
+        )}
+        {!check.orphan_checked && check.inbound.length === 0 && <p className="text-slate-500">No page links here from its content. This page type is reached from the menu, so it is not counted as an orphan.</p>}
+      </div>
+    </details>
+  );
+}
+
 function ComparisonNote({ compare }: { compare: PageCompare | null }) {
   if (!compare) return <p className="text-xs text-slate-500">No earlier run of this page to compare with.</p>;
   const gone = groupProblems(compare.resolved);
