@@ -16,15 +16,50 @@ const FINGERPRINTS_KEY = "site_wide_fingerprints";
 
 // ---- writing a run -------------------------------------------------------------
 
-export async function createRun(run: { id: string; startedAt: string; model: string; layers: Layers; options: unknown; startedBy?: string | null }): Promise<void> {
-  await db().query("INSERT INTO runs (id, status, started_at, model, layers, options, started_by) VALUES ($1, 'running', $2, $3, $4, $5, $6)", [
+export type RunKind = "pages" | "site";
+
+export async function createRun(run: {
+  id: string;
+  startedAt: string;
+  model: string;
+  layers: Layers;
+  options: unknown;
+  startedBy?: string | null;
+  kind: RunKind;
+  /** the snapshot a run of pages is read against */
+  siteRunId?: string | null;
+}): Promise<void> {
+  await db().query("INSERT INTO runs (id, status, started_at, model, layers, options, started_by, kind, site_run_id) VALUES ($1, 'running', $2, $3, $4, $5, $6, $7, $8)", [
     run.id,
     run.startedAt,
     run.model,
     JSON.stringify(run.layers),
     JSON.stringify(run.options),
     run.startedBy ?? null,
+    run.kind,
+    run.siteRunId ?? null,
   ]);
+}
+
+/** The latest finished snapshot of the whole site: what page runs and the Site page read. */
+export interface Snapshot {
+  id: string;
+  started_at: string;
+  site: SiteReport;
+  fingerprints: string[];
+}
+
+export async function isSnapshot(runId: string): Promise<boolean> {
+  const r = await db().query("SELECT 1 FROM runs WHERE id = $1 AND kind = 'site' AND status = 'done' AND site IS NOT NULL", [runId]);
+  return r.rows.length > 0;
+}
+
+export async function latestSnapshot(): Promise<Snapshot | null> {
+  const r = await db().query<{ id: string; started_at: Date; site: SiteReport; fingerprints: { fingerprints: string[] } | null }>(
+    "SELECT id, started_at, site, fingerprints FROM runs WHERE kind = 'site' AND status = 'done' AND site IS NOT NULL ORDER BY started_at DESC LIMIT 1",
+  );
+  const x = r.rows[0];
+  return x ? { id: x.id, started_at: x.started_at.toISOString(), site: x.site, fingerprints: x.fingerprints?.fingerprints ?? [] } : null;
 }
 
 /** Saves one finished page. The run can be read from now on, the page already counts in its index. */
@@ -93,21 +128,26 @@ export async function saveRunFingerprints(runId: string, fingerprints: string[])
   await db().query("INSERT INTO kv (key, value) VALUES ($1, $2) ON CONFLICT (key) DO UPDATE SET value = $2", [FINGERPRINTS_KEY, value]);
 }
 
-/** Site-wide JSON-LD fingerprints of the last multi-page run: single-page runs reuse them. */
+/** Site-wide JSON-LD fingerprints saved by the last snapshot (older databases: of the last multi-page run). Page runs reuse them. */
 export async function loadSavedFingerprints(): Promise<Set<string>> {
   const r = await db().query<{ value: { fingerprints: string[] } }>("SELECT value FROM kv WHERE key = $1", [FINGERPRINTS_KEY]);
   return new Set(r.rows[0]?.value.fingerprints ?? []);
 }
 
-/** Ends a run: saves the site pass, recomputes the page rows with it and builds the site sources. */
-export async function finishRun(runId: string, status: RunStatus, meta: RunMeta | null, site: SiteReport | null): Promise<void> {
+/**
+ * Ends a run. `site` is the run's own site pass (a snapshot); `context` is the site report the page rows are counted against
+ * (a run of pages reads the snapshot; a snapshot reads its own).
+ */
+export async function finishRun(runId: string, status: RunStatus, meta: RunMeta | null, site: SiteReport | null, context: SiteReport | null = site): Promise<void> {
   const pool = db();
-  if (site) {
+  if (context) {
     const rows = await pool.query<{ slug: string; report: PageReport }>("SELECT slug, report FROM pages WHERE run_id = $1", [runId]);
     for (const { slug, report } of rows.rows) {
-      const entry = pageIndexEntry(slug, report, pageFindings(report, site));
+      const entry = pageIndexEntry(slug, report, pageFindings(report, context));
       await pool.query("UPDATE pages SET entry = $3 WHERE run_id = $1 AND slug = $2", [runId, slug, JSON.stringify(entry)]);
     }
+  }
+  if (site) {
     const fps = (await pool.query<{ fingerprints: { fingerprints: string[] } | null }>("SELECT fingerprints FROM runs WHERE id = $1", [runId])).rows[0]?.fingerprints?.fingerprints ?? [];
     const sources = await buildSiteSources(fps, site, pagesOfRun(runId), async (slug) => {
       const z = await pool.query<{ zones: { zones: { id: string; label: string; text: string }[] } }>("SELECT zones FROM pages WHERE run_id = $1 AND slug = $2", [runId, slug]);
@@ -132,8 +172,8 @@ async function* pagesOfRun(runId: string): AsyncGenerator<{ slug: string; url: s
 /** Recomputes fragments, page rows and site sources of a finished run (after a change in `fragmentForQuote` or the findings). */
 export async function rebuildRun(runId: string, settings: Settings): Promise<number> {
   const pool = db();
-  const run = (await pool.query<{ site: SiteReport | null }>("SELECT site FROM runs WHERE id = $1", [runId])).rows[0];
-  if (!run) throw new Error(`No run ${runId}`);
+  if (!(await pool.query("SELECT 1 FROM runs WHERE id = $1", [runId])).rows[0]) throw new Error(`No run ${runId}`);
+  const run = { site: await runSite(runId) };
   const slugs = (await pool.query<{ slug: string }>("SELECT slug FROM pages WHERE run_id = $1", [runId])).rows;
   for (const { slug } of slugs) {
     const r = (await pool.query<{ report: PageReport; html: string; zones: StoredZones }>("SELECT report, html, zones FROM pages WHERE run_id = $1 AND slug = $2", [runId, slug])).rows[0]!;
@@ -175,9 +215,10 @@ export async function listRuns(): Promise<RunListEntry[]> {
     layers: Layers | null;
     meta: RunMeta | null;
     started_by: string | null;
-    kind: string | null;
+    kind: RunKind;
+    site_run_id: string | null;
     pages: string;
-  }>(`SELECT r.id, r.status, r.started_at, r.ended_at, r.model, r.layers, r.meta, r.options->>'kind' AS kind, CASE WHEN r.started_by IS NULL THEN NULL ELSE ${shownName("r.started_by")} END AS started_by, (SELECT count(*) FROM pages p WHERE p.run_id = r.id) AS pages
+  }>(`SELECT r.id, r.status, r.started_at, r.ended_at, r.model, r.layers, r.meta, r.kind, r.site_run_id, CASE WHEN r.started_by IS NULL THEN NULL ELSE ${shownName("r.started_by")} END AS started_by, (SELECT count(*) FROM pages p WHERE p.run_id = r.id) AS pages
       FROM runs r ORDER BY r.started_at DESC`);
   return r.rows.map((x) => ({
     id: x.id,
@@ -190,7 +231,8 @@ export async function listRuns(): Promise<RunListEntry[]> {
     ...(x.model ? { model: x.model } : {}),
     ...(x.layers ? { layers: x.layers } : {}),
     ...(x.started_by ? { started_by: x.started_by } : {}),
-    ...(x.kind === "site_scan" ? { kind: "site_scan" as const } : {}),
+    kind: x.kind,
+    ...(x.site_run_id ? { site_run_id: x.site_run_id } : {}),
     format: 2 as const,
   }));
 }
@@ -219,17 +261,27 @@ export async function getRunMeta(runId: string): Promise<RunMeta | null> {
   };
 }
 
-async function runSite(runId: string): Promise<SiteReport | null> {
+/** The run's own site pass: only a snapshot has one. */
+async function ownSite(runId: string): Promise<SiteReport | null> {
   const r = await db().query<{ site: SiteReport | null }>("SELECT site FROM runs WHERE id = $1", [runId]);
   return r.rows[0]?.site ?? null;
 }
 
+/** The site report a run's pages are read against: its own, or the snapshot a run of pages was made with. */
+async function runSite(runId: string): Promise<SiteReport | null> {
+  const r = await db().query<{ site: SiteReport | null }>(
+    "SELECT COALESCE(r.site, s.site) AS site FROM runs r LEFT JOIN runs s ON s.id = r.site_run_id WHERE r.id = $1",
+    [runId],
+  );
+  return r.rows[0]?.site ?? null;
+}
+
 export async function getSite(runId: string): Promise<SiteReport | null> {
-  return runSite(runId);
+  return ownSite(runId);
 }
 
 export async function getSiteFindings(runId: string): Promise<Finding[] | null> {
-  const site = await runSite(runId);
+  const site = await ownSite(runId);
   return site ? withStatuses(siteFindings(site), await runStartedAt(runId)) : null;
 }
 
@@ -327,7 +379,7 @@ async function compareWithPrevious(runId: string, startedAt: Date | null, report
   if (!startedAt) return null;
   const prev = (
     await db().query<{ id: string; started_at: Date; site: SiteReport | null; report: PageReport }>(
-      `SELECT r.id, r.started_at, r.site, p.report FROM pages p JOIN runs r ON r.id = p.run_id
+      `SELECT r.id, r.started_at, COALESCE(r.site, s.site) AS site, p.report FROM pages p JOIN runs r ON r.id = p.run_id LEFT JOIN runs s ON s.id = r.site_run_id
        WHERE p.url = $1 AND r.id <> $2 AND r.started_at < $3 AND p.report->>'schema_version' = '2'
        ORDER BY r.started_at DESC LIMIT 1`,
       [report.url, runId, startedAt],
@@ -417,7 +469,7 @@ export async function pageMarkdown(runId: string, slug: string): Promise<string 
 }
 
 export async function siteMarkdown(runId: string): Promise<string | null> {
-  const site = await runSite(runId);
+  const site = await ownSite(runId);
   return site ? renderSiteReport(site, await allReports(runId)) : null;
 }
 
@@ -427,8 +479,9 @@ export async function summaryCsv(runId: string): Promise<string> {
 
 export async function findingsCsv(runId: string): Promise<string> {
   const site = await runSite(runId);
+  const own = await ownSite(runId);
   const all = (await allReports(runId)).flatMap((r) => pageFindings(r, site));
-  return buildFindingsCsv([...all, ...(site ? siteFindings(site) : [])]);
+  return buildFindingsCsv([...all, ...(own ? siteFindings(own) : [])]);
 }
 
 // ---- deleting ---------------------------------------------------------------------------------

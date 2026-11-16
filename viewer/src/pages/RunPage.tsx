@@ -378,7 +378,7 @@ function RunList({
   onSelect,
   onDeleted,
 }: {
-  runs: { id: string; pages_checked: number; started_at: string; started_by?: string; model?: string; cost_usd?: number | null; format?: 1 | 2 }[];
+  runs: { id: string; pages_checked: number; started_at: string; started_by?: string; kind?: "pages" | "site"; model?: string; cost_usd?: number | null; format?: 1 | 2 }[];
   onSelect: (id: string) => void;
   onDeleted: () => void;
 }) {
@@ -408,9 +408,11 @@ function RunList({
                 <a className="text-blue-600 hover:underline dark:text-blue-400" href={`/api/runs/${r.id}/summary.csv`} download>
                   summary.csv
                 </a>
-                <a className="text-blue-600 hover:underline dark:text-blue-400" href={`/api/runs/${r.id}/site.md`} target="_blank" rel="noreferrer">
-                  site.md
-                </a>
+                {r.kind === "site" && (
+                  <a className="text-blue-600 hover:underline dark:text-blue-400" href={`/api/runs/${r.id}/site.md`} target="_blank" rel="noreferrer">
+                    site.md
+                  </a>
+                )}
               </>
             )}
             <button

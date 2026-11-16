@@ -1,30 +1,32 @@
 import path from "node:path";
 import dotenv from "dotenv";
-import { ALL_LAYERS, type ExtractedPage, type Layers, type PageZones, type RunMeta, type Settings, type TokenUsage, type Zone } from "./types.js";
+import { ALL_LAYERS, type ExtractedPage, type Layers, type PageZones, type RunMeta, type TokenUsage, type Zone } from "./types.js";
 import type { PageReport, SiteReport, ComplianceLayerResult, GeoLayerResult, SharedVariant, SitemapRow } from "./report-types.js";
 import {
-  resolveModel,
+  reasoningEffort as reasoning,
+  settingsForModel,
+  SOURCE_FILES,
   usageCost,
   layerFingerprint,
   loadGeoCodeConfig,
   loadSeoConfig,
-  loadSettings,
 } from "./config.js";
 import { extractFromHtml, flattenJsonLd, parseJsonLdBlocks } from "./extract.js";
 import { httpGet, headOrGetStatus, type FetchResult } from "./fetch.js";
 import { collectSitemapEntries, collectSitemapUrls, shouldExcludeUrl } from "./sitemap.js";
 import { classifyUrl, filterBySubsections, filterInScope, OUT_OF_SCOPE, sampleAcrossSubsections, type UrlScope } from "./scope.js";
-import { buildZones, jsonLdZone } from "./zones.js";
+import { buildZones } from "./zones.js";
 import { runSeoChecks } from "./seo.js";
 import { seoSiteChecks } from "./seo-site.js";
 import { graphUrl, listingLinks, mainContentLinks, nextListingPage, orphanPages } from "./links.js";
 import { geoTypeOf, runGeoCodeChecks, withSeverity } from "./geo-code.js";
 import { runGeoLlm } from "./geo-llm.js";
-import { compliancePayload, deriveAction, finalizeCompliance, runComplianceLayer, sharedPayload } from "./compliance.js";
+import { compliancePayload, deriveAction, finalizeCompliance, runComplianceLayer } from "./compliance.js";
 import { createOpenAiClient } from "./llm.js";
 import { detectSiteWideFingerprints, fingerprintJsonLdNode } from "./schema-fingerprint.js";
 import { runSiteBasics } from "./site.js";
-import { createRun, finishRun, loadSavedFingerprints, addSiteLinks, loadSiteLinks, loadSiteMapExcept, loadSiteMapTimes, previousReport, saveRunFingerprints, savePage, saveSitePage } from "./store.js";
+import { runSiteLlm } from "./site-llm.js";
+import { createRun, finishRun, latestSnapshot, loadSavedFingerprints, type Snapshot, addSiteLinks, loadSiteLinks, loadSiteMapExcept, loadSiteMapTimes, previousReport, saveRunFingerprints, savePage, saveSitePage } from "./store.js";
 import { projectRoot, runIdNow, sha256, sleep, urlToSlug } from "./utils.js";
 
 dotenv.config({ path: path.join(projectRoot(), ".env") });
@@ -32,6 +34,7 @@ dotenv.config({ path: path.join(projectRoot(), ".env") });
 export interface AuditOptions {
   urls: string[];
   limit?: number;
+  /** The whole scope. Such a run is a snapshot of the site: it makes the site pass that runs of pages and the Site page read. */
   all?: boolean;
   /** "Category/Subsection" keys: audit the in-scope URLs of these subsections (with `limit`, a sample of them). */
   subsections?: string[];
@@ -44,15 +47,12 @@ export interface AuditOptions {
   startedBy?: string | null;
   /** Skip both LLM layers (smoke tests, SEO and GEO code checks only). */
   noLlm?: boolean;
-  /** "site_scan": the free whole-site check (no LLM); stored with the run so lists can tell it from an audit. */
-  kind?: "site_scan";
   /** Progress lines (also printed to the console). */
   onLog?: (line: string) => void;
   /** Checked between pages: when true, no new page is started and the finished ones are saved. */
   isCancelled?: () => boolean;
 }
 
-const SOURCE_FILES = ["sources/decisions.md", "sources/GoGloby Fact Sheet.md", "sources/GoGloby Glossary.md"];
 const SHARED_IDS = ["banner_cta", "modals"];
 /** A shared-zone text carried by fewer pages than this is page-specific (many article banners are written per article) and is audited with its page. */
 const SHARED_MIN_PAGES = 2;
@@ -64,18 +64,6 @@ const ZERO: TokenUsage = { input: 0, cached_input: 0, output: 0 };
 function add(a: TokenUsage, b: TokenUsage | null | undefined): TokenUsage {
   if (!b) return a;
   return { input: a.input + b.input, cached_input: a.cached_input + b.cached_input, output: a.output + b.output };
-}
-
-/** Settings with the run's model in `llm.model`, so every fingerprint and LLM call uses it. */
-function settingsForModel(modelId?: string): { settings: Settings; model: ReturnType<typeof resolveModel> } {
-  const base = loadSettings();
-  const model = resolveModel(base, modelId);
-  return { settings: { ...base, llm: { ...base.llm, model: model.id } }, model };
-}
-
-function reasoning(settings: Settings, layer: "compliance" | "geo"): string {
-  const r = settings.llm.reasoning_effort;
-  return typeof r === "string" ? r : (r?.[layer] ?? "");
 }
 
 async function pool<T>(items: T[], n: number, fn: (item: T, i: number) => Promise<void>): Promise<void> {
@@ -110,16 +98,18 @@ export async function runAudit(options: AuditOptions): Promise<string> {
   const runId = runIdNow();
   const startedAt = new Date().toISOString();
   const { onLog: _onLog, isCancelled: _isCancelled, startedBy, ...saved } = options;
-  await createRun({ id: runId, startedAt, model: model.id, layers, options: saved, startedBy });
+  // a run of pages reads the site-wide results of the latest snapshot; a run of the whole scope makes a new one
+  const snapshot = options.all ? null : await latestSnapshot();
+  await createRun({ id: runId, startedAt, model: model.id, layers, options: saved, startedBy, kind: options.all ? "site" : "pages", siteRunId: snapshot?.id ?? null });
   try {
-    return await executeRun(options, runId, startedAt);
+    return await executeRun(options, runId, startedAt, snapshot);
   } catch (e) {
     await finishRun(runId, "error", null, null).catch(() => undefined);
     throw e;
   }
 }
 
-async function executeRun(options: AuditOptions, runId: string, startedAt: string): Promise<string> {
+async function executeRun(options: AuditOptions, runId: string, startedAt: string, snapshot: Snapshot | null): Promise<string> {
   const { settings, model } = settingsForModel(options.model);
   const layers = options.layers ?? ALL_LAYERS;
   const seoCfg = loadSeoConfig();
@@ -140,7 +130,7 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
     if (subsections) inScope = filterBySubsections(inScope, subsections, settings);
     urls = options.limit && !options.all ? sampleAcrossSubsections(inScope, options.limit, settings) : inScope;
   }
-  const multi = urls.length > 1;
+  const isSnapshot = !!options.all;
   const layerNames = (["compliance", "geo", "seo"] as const).filter((l) => layers[l]).join(", ");
   log(`Auditing ${urls.length} URL(s), run ${runId}, model ${model.id}, layers: ${layerNames}`);
 
@@ -174,8 +164,9 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
   }
 
   // ---- 3. site-wide schema fingerprints ----------------------------------------
-  let siteWide = multi ? new Set<string>() : await loadSavedFingerprints();
-  if (multi) {
+  // a snapshot finds the site-wide nodes; a run of pages takes those of the latest snapshot
+  let siteWide = isSnapshot ? new Set<string>() : snapshot ? new Set(snapshot.fingerprints) : await loadSavedFingerprints();
+  if (isSnapshot) {
     const counts = new Map<string, Set<string>>();
     for (const { url, fetched } of fetchedPages) {
       for (const node of flattenJsonLd(parseJsonLdBlocks(fetched.html))) {
@@ -201,7 +192,19 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
   const variants: SharedVariant[] = [];
   const variantZones: Zone[] = [];
   const variantsByPage = new Map<Prep, string[]>();
-  for (const id of SHARED_IDS) {
+  // a run of pages does not look for variants: a shared text of one of its pages is the snapshot's variant with the same text
+  // (audited once on the Site page); any other is audited with the page
+  for (const id of isSnapshot ? [] : SHARED_IDS) {
+    for (const p of preps) {
+      const z = p.zones.zones.find((x) => x.id === id && x.scope === "shared");
+      if (!z || !z.text) continue;
+      const h = zoneHash(z);
+      const known = snapshot?.site.shared.variants.find((v) => v.zone === id && v.text_hash === h);
+      if (known) variantsByPage.set(p, [...(variantsByPage.get(p) ?? []), known.id]);
+      else z.scope = "page";
+    }
+  }
+  for (const id of isSnapshot ? SHARED_IDS : []) {
     const groups = new Map<string, { zone: Zone; preps: Prep[] }>();
     for (const p of preps) {
       const z = p.zones.zones.find((x) => x.id === id && x.scope === "shared");
@@ -414,49 +417,33 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
     }
   }
 
+  // a run of pages has no site pass of its own: its pages are counted against the latest snapshot
+  if (!isSnapshot) {
+    const meta: RunMeta = {
+      run_id: runId,
+      started_at: startedAt,
+      ended_at: new Date().toISOString(),
+      pages_checked: reports.length,
+      pages_skipped: cachedLayers,
+      llm_calls: llmCalls,
+      llm_errors: llmErrors,
+      tokens,
+      cost_usd: usageCost(tokens, model),
+      model: model.id,
+      layers,
+      ...(subsections ? { subsections } : {}),
+    };
+    await finishRun(runId, cancelled() ? "stopped" : "done", meta, null, snapshot?.site ?? null);
+    log(
+      `${cancelled() ? "Stopped" : "Done"}. ${reports.length} pages, ${llmCalls} LLM calls (${llmErrors} errors), ${cachedLayers} cached layers. Tokens in ${tokens.input}, cached ${tokens.cached_input}, out ${tokens.output}. Cost $${meta.cost_usd!.toFixed(4)} (${model.id})${snapshot ? "" : ". No site snapshot yet: run the whole-site check on the Site page"}`,
+    );
+    return runId;
+  }
+
   const basics = await runSiteBasics(settings, geoCfg);
   if (!layers.geo) {
     basics.robots = { value: "not checked (GEO off)", ok: true };
     basics.llms_txt = { value: "not checked (GEO off)", ok: true };
-  }
-
-  let sharedCompliance: ComplianceLayerResult | null = null;
-  if (variantZones.length && client && layers.compliance) {
-    const zonesObj: PageZones = { template: "unknown", zones: variantZones, warnings: [] };
-    llmCalls++;
-    const r = await runComplianceLayer(client, settings, sharedPayload(zonesObj), zonesObj);
-    if (r.error) llmErrors++;
-    tokens = add(tokens, r.usage);
-    sharedCompliance = { hash: "", cached: false, action: r.action, summary: r.summary, llm_problems: r.problems, problems: finalizeCompliance(r.problems, zonesObj, variantZones), usage: r.usage, error: r.error };
-  }
-
-  let siteSchema: ComplianceLayerResult | null = null;
-  if (multi && siteWide.size && client && layers.compliance) {
-    const nodes: Record<string, unknown>[] = [];
-    const seen = new Set<string>();
-    for (const p of preps) {
-      for (const node of flattenJsonLd(p.page.json_ld)) {
-        const fp = fingerprintJsonLdNode(node);
-        if (siteWide.has(fp) && !seen.has(fp)) {
-          seen.add(fp);
-          nodes.push(node);
-        }
-      }
-    }
-    const z = jsonLdZone(nodes);
-    if (z) {
-      const zonesObj: PageZones = { template: "unknown", zones: [z], warnings: [] };
-      llmCalls++;
-      const r = await runComplianceLayer(
-        client,
-        settings,
-        { url: "site-wide", page_type: "site_schema", zones: [{ id: z.id, label: z.label, text: z.text }] },
-        zonesObj,
-      );
-      if (r.error) llmErrors++;
-      tokens = add(tokens, r.usage);
-      siteSchema = { hash: "", cached: false, action: r.action, summary: r.summary, llm_problems: r.problems, problems: finalizeCompliance(r.problems, zonesObj, [z]), usage: r.usage, error: r.error };
-    }
   }
 
   // a run of some pages also compares them with the site map (pages it did not fetch); a run of the whole scope has all of them
@@ -521,12 +508,11 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
     basics,
     scope_counts: scopeCounts,
     sitemap,
-    shared: { variants, compliance: sharedCompliance },
-    site_schema: siteSchema,
+    shared: { variants, compliance: null },
+    site_schema: null,
     seo: seoSite,
   };
 
-  const cost = usageCost(tokens, model);
   const meta: RunMeta = {
     run_id: runId,
     started_at: startedAt,
@@ -536,12 +522,20 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
     llm_calls: llmCalls,
     llm_errors: llmErrors,
     tokens,
-    cost_usd: cost,
+    cost_usd: usageCost(tokens, model),
     model: model.id,
     layers,
     ...(subsections ? { subsections } : {}),
   };
   await finishRun(runId, cancelled() ? "stopped" : "done", meta, site);
+  // the banner and form variants and the site-wide JSON-LD are asked once on the stored snapshot (the same call as the Site page button)
+  if (client && layers.compliance && !cancelled()) {
+    const r = await runSiteLlm(runId, { model: model.id, onLog: log, isCancelled: cancelled });
+    tokens = add(tokens, r.usage);
+    llmCalls += r.calls;
+    llmErrors += r.errors;
+  }
+  const cost = usageCost(tokens, model);
   log(
     `${cancelled() ? "Stopped" : "Done"}. ${reports.length} pages, ${llmCalls} LLM calls (${llmErrors} errors), ${cachedLayers} cached layers. Tokens in ${tokens.input}, cached ${tokens.cached_input}, out ${tokens.output}. Cost $${cost.toFixed(4)} (${model.id})`,
   );

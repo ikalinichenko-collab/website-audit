@@ -16,6 +16,18 @@ export function resolveModel(settings: Settings, id?: string): ModelInfo {
   return m;
 }
 
+/** Settings with the run's model in `llm.model`, so every fingerprint and LLM call uses it. */
+export function settingsForModel(modelId?: string): { settings: Settings; model: ModelInfo } {
+  const base = loadSettings();
+  const model = resolveModel(base, modelId);
+  return { settings: { ...base, llm: { ...base.llm, model: model.id } }, model };
+}
+
+export function reasoningEffort(settings: Settings, layer: "compliance" | "geo"): string {
+  const r = settings.llm.reasoning_effort;
+  return typeof r === "string" ? r : (r?.[layer] ?? "");
+}
+
 /** Dollar cost of the tokens at the model's price. */
 export function usageCost(u: TokenUsage, m: ModelInfo): number {
   const p = m.price_per_million_tokens;
@@ -47,7 +59,8 @@ export function loadGeoCodeConfig(): GeoCodeConfig {
   return JSON.parse(raw) as GeoCodeConfig;
 }
 
-const SOURCE_FILES = [
+/** The company documents the LLM layers compare against (part of every layer fingerprint). */
+export const SOURCE_FILES = [
   "sources/decisions.md",
   "sources/GoGloby Fact Sheet.md",
   "sources/GoGloby Glossary.md",

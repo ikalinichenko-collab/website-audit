@@ -5,7 +5,7 @@ import { getIndex, getRun } from "../data.js";
 import type { GroupTotals, Layers, RunIndexFile, RunMeta } from "../types.js";
 import { ACTION_COLUMNS, GROUP_ORDER } from "../labels.js";
 import { Counts, GeoCounts } from "../components/Badges.js";
-import { formatDuration, formatTokens } from "../utils.js";
+import { formatDuration, formatTokens, runLabel } from "../utils.js";
 
 function Card({ title, children }: { title: string; children: React.ReactNode }) {
   return (
@@ -44,7 +44,9 @@ function Row({ name, t, link, layers }: { name: string; t: GroupTotals; link: st
 }
 
 export function Overview() {
-  const { runId } = useRunContext();
+  const { runId, runs } = useRunContext();
+  const run = runs.find((r) => r.id === runId);
+  const snapshot = run?.site_run_id ? runs.find((r) => r.id === run.site_run_id) : undefined;
   const [index, setIndex] = useState<RunIndexFile | null>(null);
   const [meta, setMeta] = useState<RunMeta | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -82,7 +84,16 @@ export function Overview() {
         </Card>
       </div>
       <p className="text-sm text-slate-600 dark:text-slate-400">
-        Site report: Compliance <Counts {...index.site.compliance} />, SEO {index.site.seo}, GEO {index.site.geo}.{" "}
+        {run?.kind === "site" || !run?.kind ? (
+          <>
+            Site report: Compliance <Counts {...index.site.compliance} />, SEO {index.site.seo}, GEO {index.site.geo}.{" "}
+          </>
+        ) : (
+          <>
+            This run has no site report of its own.{" "}
+            {snapshot ? `Its pages were read against the site snapshot of ${runLabel(snapshot)}.` : "There was no site snapshot then: run the whole-site check on the Site page."}{" "}
+          </>
+        )}
         <Link to="/site" className="text-blue-600 hover:underline dark:text-blue-400">
           Open the site report
         </Link>

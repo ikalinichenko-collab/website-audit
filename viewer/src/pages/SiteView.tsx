@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import { api } from "../api.js";
 import { buttonClass } from "../components/ResourceEditor.js";
 import { useRunContext } from "../context/RunContext.js";
-import { getSite, getSiteFindings, getSiteSources } from "../data.js";
-import type { Finding, SiteReport, SiteSources, SitemapRow } from "../types.js";
+import { getRun, getSite, getSiteFindings, getSiteSources } from "../data.js";
+import type { Finding, RunListEntry, RunMeta, SiteReport, SiteSources, SitemapRow } from "../types.js";
+import { runLabel } from "../utils.js";
 import { FindingList } from "../components/FindingList.js";
 import { FindingActionsContext } from "../components/FindingActions.js";
 import { SchemaNodeCard, VariantCard, findingsInNode } from "../components/SourceCards.js";
@@ -20,22 +21,49 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 
 const short = (u: string) => u.replace(/^https:\/\/[^/]+/, "") || "/";
 
-/** The free whole-site check: fetches every page of the scope without the LLM and opens the result here. */
-function SiteCheckBar() {
-  const { reload, setRunId } = useRunContext();
+/** A snapshot older than this gets a warning: the site has probably changed since. */
+const STALE_DAYS = 14;
+
+/**
+ * The snapshot of the whole site this page shows, and the two actions on it: make a new one (free, no model) and ask the model
+ * about its shared blocks (banner and form variants, site-wide JSON-LD).
+ */
+function SnapshotBar({
+  snapshots,
+  snapshot,
+  meta,
+  onPick,
+  onChanged,
+}: {
+  snapshots: RunListEntry[];
+  snapshot: RunListEntry | undefined;
+  meta: RunMeta | null;
+  onPick: (id: string) => void;
+  onChanged: (runId: string) => void;
+}) {
+  const { reload } = useRunContext();
   const [jobId, setJobId] = useState<string | null>(null);
+  const [what, setWhat] = useState<"scan" | "llm">("scan");
   const [line, setLine] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
+  const [hasKey, setHasKey] = useState(true);
 
   useEffect(() => {
-    api.state().then((s) => s.running_job && setBusy(true)).catch(() => undefined);
+    api
+      .state()
+      .then((s) => {
+        if (s.running_job) setBusy(true);
+        setHasKey(s.has_api_key);
+      })
+      .catch(() => undefined);
   }, []);
 
-  const start = useCallback(async () => {
+  const start = useCallback(async (kind: "scan" | "llm", body: Parameters<typeof api.startJob>[0]) => {
     setError(null);
     try {
-      const r = await api.startJob({ siteScan: true });
+      const r = await api.startJob(body);
+      setWhat(kind);
       setJobId(r.id);
       setBusy(true);
     } catch (e) {
@@ -55,7 +83,7 @@ function SiteCheckBar() {
           setBusy(false);
           if (j.run_id) {
             await reload();
-            setRunId(j.run_id);
+            onChanged(j.run_id);
           }
           if (j.error) setError(j.error);
         }
@@ -64,18 +92,69 @@ function SiteCheckBar() {
       }
     }, 1500);
     return () => clearInterval(t);
-  }, [jobId, reload, setRunId]);
+  }, [jobId, reload, onChanged]);
+
+  const ageDays = snapshot ? (Date.now() - new Date(snapshot.started_at).getTime()) / 86_400_000 : 0;
+  const stop = jobId ? (
+    <button type="button" className={buttonClass} onClick={() => void api.stopJob(jobId)}>
+      Stop
+    </button>
+  ) : null;
 
   return (
-    <div className="flex flex-wrap items-center gap-3 text-sm">
-      <button type="button" className={buttonClass} disabled={busy} onClick={() => void start()}>
-        {jobId ? "Checking the site..." : "Check the whole site (no LLM)"}
-      </button>
-      {jobId && <button type="button" className={buttonClass} onClick={() => void api.stopJob(jobId)}>Stop</button>}
-      <span className="text-slate-500">
-        {line || "Fetches every page in scope and checks SEO and GEO code rules. Free: no model calls."}
-      </span>
-      {error && <span className="text-red-600 dark:text-red-400">{error}</span>}
+    <div className="space-y-2 text-sm">
+      <div className="flex flex-wrap items-center gap-3">
+        <button type="button" className={buttonClass} disabled={busy} onClick={() => void start("scan", { siteScan: true })}>
+          {jobId && what === "scan" ? "Checking the site..." : "Check the whole site (no LLM)"}
+        </button>
+        <button
+          type="button"
+          className={buttonClass}
+          disabled={busy || !snapshot || !hasKey}
+          title={hasKey ? "One or two model calls on the banner and form texts and the site-wide JSON-LD. An unchanged text is not asked again." : "OPENAI_API_KEY is not set in .env"}
+          onClick={() => snapshot && void start("llm", { siteLlm: { run_id: snapshot.id } })}
+        >
+          {jobId && what === "llm" ? "Asking the model..." : "Check shared blocks with the model"}
+        </button>
+        {stop}
+        <span className="text-slate-500">{line || "The whole-site check fetches every page in scope and checks SEO and GEO code rules. It is free: no model calls."}</span>
+        {error && <span className="text-red-600 dark:text-red-400">{error}</span>}
+      </div>
+      {snapshot ? (
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-slate-600 dark:text-slate-400">
+          <span>
+            Snapshot of the site:{" "}
+            {snapshots.length > 1 ? (
+              <select
+                className="rounded border border-slate-300 bg-white px-2 py-1 dark:border-slate-600 dark:bg-slate-900"
+                value={snapshot.id}
+                onChange={(e) => onPick(e.target.value)}
+              >
+                {snapshots.map((s) => (
+                  <option key={s.id} value={s.id}>
+                    {runLabel(s).replace(" (site snapshot)", "")} ({s.pages_checked} pages)
+                  </option>
+                ))}
+              </select>
+            ) : (
+              <b>
+                {runLabel(snapshot).replace(" (site snapshot)", "")} ({snapshot.pages_checked} pages)
+              </b>
+            )}
+            . Page runs read the latest one.
+          </span>
+          {snapshot.id === snapshots[0]?.id && ageDays > STALE_DAYS && (
+            <span className="text-amber-600 dark:text-amber-400">{Math.floor(ageDays)} days old: the site has probably changed, check it again.</span>
+          )}
+          <span>
+            {meta?.site_llm
+              ? `Shared blocks checked by the model (${meta.site_llm.model}, ${new Date(meta.site_llm.at).toLocaleDateString([], { day: "2-digit", month: "2-digit", year: "numeric" })}).`
+              : "Shared blocks are not checked by the model yet."}
+          </span>
+        </div>
+      ) : (
+        <p className="text-slate-600 dark:text-slate-400">There is no snapshot of the site yet. Run the whole-site check: page runs and this page read it.</p>
+      )}
     </div>
   );
 }
@@ -161,9 +240,17 @@ function SitemapTable({ site }: { site: SiteReport }) {
   );
 }
 
+/** The Site page shows a snapshot of the whole site, whichever run is open elsewhere: the latest one unless another is picked. */
 export function SiteView() {
-  const { runId } = useRunContext();
+  const { runs, loading } = useRunContext();
+  const snapshots = runs.filter((r) => r.kind === "site" && r.status === "done");
+  const [picked, setPicked] = useState<string | null>(null);
+  const snapshot = snapshots.find((r) => r.id === picked) ?? snapshots[0];
+  const runId = snapshot?.id ?? "";
+  // bumped when the snapshot was changed under the same id (the model checked its shared blocks)
+  const [version, setVersion] = useState(0);
   const [site, setSite] = useState<SiteReport | null>(null);
+  const [meta, setMeta] = useState<RunMeta | null>(null);
   const [findings, setFindings] = useState<Finding[]>([]);
   const [sources, setSources] = useState<SiteSources | null>(null);
 
@@ -172,18 +259,37 @@ export function SiteView() {
   };
 
   useEffect(() => {
-    if (!runId) return;
+    if (!runId) {
+      setSite(null);
+      return;
+    }
     getSite(runId)
       .then(setSite)
       .catch(() => setSite(null));
+    getRun(runId)
+      .then(setMeta)
+      .catch(() => setMeta(null));
     getSiteSources(runId)
       .then(setSources)
       .catch(() => setSources(null));
     getSiteFindings(runId)
       .then(setFindings)
       .catch(() => setFindings([]));
-  }, [runId]);
+  }, [runId, version]);
 
+  const bar = (
+    <SnapshotBar
+      snapshots={snapshots}
+      snapshot={snapshot}
+      meta={meta}
+      onPick={setPicked}
+      onChanged={(id) => {
+        setPicked(id);
+        setVersion((v) => v + 1);
+      }}
+    />
+  );
+  if (!snapshot) return loading ? <p className="text-slate-500">Loading...</p> : bar;
   if (!site) return <p className="text-slate-500">Loading...</p>;
   const origin = Object.keys(site.basics.sitemaps)[0]?.match(/^https?:\/\/[^/]+/)?.[0] ?? "";
   const sub = (s: string) => findings.filter((f) => f.subsection === s);
@@ -191,7 +297,7 @@ export function SiteView() {
   return (
     <FindingActionsContext.Provider value={{ runId, slug: null, reload }}>
     <div className="space-y-8">
-      <SiteCheckBar />
+      {bar}
       <Section title="Site checks">
         <ul className="text-sm">
           <li>

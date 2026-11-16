@@ -1,4 +1,5 @@
 import { runAudit } from "./audit.js";
+import { runSiteLlm } from "./site-llm.js";
 import { loadSettings } from "./config.js";
 import { db } from "./db.js";
 import type { Layers } from "./types.js";
@@ -14,7 +15,9 @@ export interface JobOptions {
   model?: string;
   force?: boolean;
   noLlm?: boolean;
-  kind?: "site_scan";
+  /** "site_llm": ask the model about the shared blocks of the snapshot `runId` (no pages are fetched) */
+  kind?: "site_llm";
+  runId?: string;
 }
 
 export interface Job {
@@ -123,7 +126,11 @@ export async function startJob(options: JobOptions, startedBy: string | null = n
   };
   const onLog = (line: string): void => queue("UPDATE jobs SET log = log || $2::jsonb WHERE id = $1", [id, JSON.stringify([line])]);
 
-  runAudit({ ...options, startedBy, onLog, isCancelled: () => stopRequested })
+  const work =
+    options.kind === "site_llm"
+      ? runSiteLlm(options.runId ?? "", { model: options.model, onLog, isCancelled: () => stopRequested }).then(() => options.runId ?? "")
+      : runAudit({ ...options, startedBy, onLog, isCancelled: () => stopRequested });
+  work
     .then((runId) => queue("UPDATE jobs SET run_id = $2, status = $3, ended_at = now() WHERE id = $1", [id, runId, stopRequested ? "stopped" : "done"]))
     .catch((e) => {
       const message = e instanceof Error ? e.message : String(e);

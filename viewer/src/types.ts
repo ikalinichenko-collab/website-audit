@@ -18,6 +18,8 @@ export interface RunMeta {
   model?: string;
   layers?: Layers;
   subsections?: string[];
+  /** a snapshot whose shared blocks were checked by the model afterwards */
+  site_llm?: { model: string; at: string };
 }
 
 export interface Layers {
@@ -36,7 +38,11 @@ export interface RunListEntry {
   model?: string;
   layers?: Layers;
   started_by?: string;
-  kind?: "site_scan";
+  /** "site": a snapshot of the whole site (what the Site page shows); "pages": a run of some pages */
+  kind?: "pages" | "site";
+  /** for a run of pages: the snapshot its pages were read against */
+  site_run_id?: string;
+  status?: string;
   format?: 1 | 2;
 }
 

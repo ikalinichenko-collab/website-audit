@@ -201,15 +201,33 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
         noLlm?: boolean;
         /** the free whole-site check: whole scope, no LLM, Compliance off */
         siteScan?: boolean;
+        /** ask the model about the shared blocks (banner and form variants, site-wide JSON-LD) of this snapshot */
+        siteLlm?: { run_id?: string };
         subsections?: string[];
         layers?: Partial<Layers>;
         model?: string;
       }>(req);
       const settings = loadSettings();
       const layers: Layers = { ...ALL_LAYERS, ...(body.layers ?? {}) };
+      if (body.siteLlm) {
+        const runId = String(body.siteLlm.run_id ?? "");
+        if (!/^[0-9TZ-]+$/.test(runId)) throw new ValidationError("Bad run id");
+        const model = body.model || settings.llm.model;
+        if (!settings.llm.models.some((m) => m.id === model)) throw new ValidationError(`Unknown model "${model}"`);
+        if (!process.env.OPENAI_API_KEY) throw new ValidationError("OPENAI_API_KEY is not set in .env");
+        if (!(await store.isSnapshot(runId))) throw new ValidationError("That run is not a site snapshot");
+        if (runningJobId()) {
+          send(res, 409, { error: "Another audit is already running" });
+          return;
+        }
+        const job = await startJob({ urls: [], kind: "site_llm", runId, model }, user.email);
+        send(res, 202, { id: job.id, rejected: [] });
+        return;
+      }
       const siteScan = body.siteScan === true;
+      // the free whole-site check: the whole scope, no model, Compliance off; it makes a site snapshot
       const common = siteScan
-        ? { layers: { compliance: false, geo: true, seo: true }, model: settings.llm.model, noLlm: true, kind: "site_scan" as const }
+        ? { layers: { compliance: false, geo: true, seo: true }, model: settings.llm.model, noLlm: true }
         : { layers, model: body.model || settings.llm.model, force: body.force, noLlm: body.noLlm };
       if (!settings.llm.models.some((m) => m.id === common.model)) throw new ValidationError(`Unknown model "${common.model}"`);
       if (!layers.compliance && !layers.geo && !layers.seo) throw new ValidationError("Turn on at least one layer");

@@ -144,6 +144,8 @@ export const api = {
     layers?: Layers;
     model?: string;
     siteScan?: boolean;
+    /** ask the model about the shared blocks of this snapshot */
+    siteLlm?: { run_id: string };
   }) => call<{ id: string; rejected: string[] }>("POST", "/api/jobs", body),
   jobs: () => call<JobSummary[]>("GET", "/api/jobs"),
   job: (id: string, from: number) => call<JobDetail>("GET", `/api/jobs/${id}?from=${from}`),

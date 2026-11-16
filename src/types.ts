@@ -180,4 +180,6 @@ export interface RunMeta {
   layers?: Layers;
   /** "Category/Subsection" keys when the run was started for chosen subsections. */
   subsections?: string[];
+  /** a snapshot whose shared blocks (banner and form variants, site-wide JSON-LD) were checked by the model afterwards */
+  site_llm?: { model: string; at: string };
 }
