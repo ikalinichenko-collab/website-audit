@@ -2,6 +2,7 @@ import type { PageReport, SiteReport } from "./report-types.js";
 import { countBy, FIX_WHERE_LABELS, kindLabel, pageFindings, siteFindings, totalOf, type Finding, type Layer } from "./findings.js";
 import { textFragmentUrl } from "./quote-fragments.js";
 import { categoryLabel } from "./categories.js";
+import type { SiteAudit } from "./site-audit.js";
 
 const SEVERITY_ORDER = { high: 0, medium: 1, low: 2, "": 3 } as const;
 
@@ -189,6 +190,60 @@ export function renderSiteReport(site: SiteReport, reports: PageReport[]): strin
   }
   L.push("");
   return L.join("\n");
+}
+
+/** What a Site Checks CSV is limited to: one check, a severity, a layer, a page type. The same filters the audit table has. */
+export interface AuditCsvFilter {
+  check?: string;
+  severity?: string;
+  layer?: string;
+  profile?: string;
+}
+
+/** Excel reads a UTF-8 file as text in another code page unless it starts with a byte order mark. */
+const BOM = "\uFEFF";
+
+const AUDIT_HEADER = ["check_id", "check", "layer", "group", "severity", "fix_where", "how_to_fix", "page_url", "page_type", "detail"];
+
+/**
+ * Every failing page of the audit, one row per page and check (a group of pages that share a duplicate title is one row per page).
+ * Style checks are in it too: filter on the group column.
+ */
+export function buildAuditCsv(audit: SiteAudit, f: AuditCsvFilter = {}): string {
+  const groupTitle = new Map(audit.groups.map((g) => [g.key, g.title]));
+  const rows = [csvRow(AUDIT_HEADER)];
+  for (const r of audit.rows) {
+    if (r.status !== "fail") continue;
+    if (f.check && r.id !== f.check) continue;
+    if (f.severity && r.severity !== f.severity) continue;
+    if (f.layer && r.layer !== f.layer) continue;
+    for (const it of r.items) {
+      if (f.profile && it.profile !== f.profile && !it.profiles?.includes(f.profile)) continue;
+      const pageType = it.profile ?? (it.profiles?.length === 1 ? it.profiles[0]! : "");
+      for (const u of it.urls?.length ? it.urls : [it.url]) {
+        rows.push(csvRow([r.id, r.title, r.layer.toUpperCase(), groupTitle.get(r.group) ?? r.group, r.severity, FIX_WHERE_LABELS[r.where], r.fix, u, pageType, it.value]));
+      }
+    }
+    // the audit keeps at most 1000 pages per check
+    if (r.more > 0 && !f.profile) rows.push(csvRow([r.id, r.title, r.layer.toUpperCase(), groupTitle.get(r.group) ?? r.group, r.severity, FIX_WHERE_LABELS[r.where], r.fix, "", "", `${r.more} more pages are not listed`]));
+  }
+  return BOM + rows.join("\n") + "\n";
+}
+
+const AUDIT_CHECKS_HEADER = ["check_id", "check", "layer", "group", "severity", "status", "pages_failing", "pages_total", "places", "new_since_previous", "fixed_since_previous", "fix_where", "why_it_matters", "how_to_fix"];
+
+/** Every check of the audit, one row each, passing ones too: the table behind the summary. */
+export function buildAuditChecksCsv(audit: SiteAudit, f: AuditCsvFilter = {}): string {
+  const groupTitle = new Map(audit.groups.map((g) => [g.key, g.title]));
+  const rows = [csvRow(AUDIT_CHECKS_HEADER)];
+  for (const r of audit.rows) {
+    if (f.severity && r.severity !== f.severity) continue;
+    if (f.layer && r.layer !== f.layer) continue;
+    rows.push(
+      csvRow([r.id, r.title, r.layer.toUpperCase(), groupTitle.get(r.group) ?? r.group, r.severity, r.status === "not_checked" ? "not checked" : r.status === "fail" ? "failing" : "passing", r.failing, r.total, r.places, r.change?.added ?? "", r.change?.fixed ?? "", FIX_WHERE_LABELS[r.where], r.why, r.fix]),
+    );
+  }
+  return BOM + rows.join("\n") + "\n";
 }
 
 const FINDINGS_HEADER = ["url", "group", "layer", "severity", "category", "zone", "part", "quote", "issue", "fix", "rule", "basis", "fix_where"];

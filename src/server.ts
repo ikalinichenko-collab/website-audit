@@ -332,12 +332,12 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
         if (v === null) send(res, 404, { error: "Not found" });
         else send(res, 200, v);
       };
-      const text = (body: string | null, type: string): void => {
+      const text = (body: string | null, type: string, filename?: string): void => {
         if (body === null) {
           send(res, 404, { error: "Not found" });
           return;
         }
-        res.writeHead(200, { "Content-Type": type, "Cache-Control": "no-store" });
+        res.writeHead(200, { "Content-Type": type, "Cache-Control": "no-store", ...(filename ? { "Content-Disposition": `attachment; filename="${filename}"` } : {}) });
         res.end(body);
       };
       if (parts.length === 3 && what === "run") return json(await store.getRunMeta(id));
@@ -345,6 +345,19 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
       if (parts.length === 3 && what === "site") return json(await store.getSite(id));
       if (parts.length === 3 && what === "site-findings") return json(await store.getSiteFindings(id));
       if (parts.length === 3 && what === "site-audit") return json(await store.getSiteAudit(id));
+      if (parts.length === 3 && (what === "audit.csv" || what === "audit-checks.csv")) {
+        // the same filters the audit table has; a check id and a page type are names, nothing else
+        const pick = (k: string, ok: RegExp): string | undefined => {
+          const v = url.searchParams.get(k);
+          if (v === null || v === "") return undefined;
+          if (!ok.test(v)) throw new ValidationError(`Bad ${k}`);
+          return v;
+        };
+        const filter = { check: pick("check", /^[a-z0-9_]+$/), severity: pick("severity", /^(high|medium|low)$/), layer: pick("layer", /^(seo|geo)$/), profile: pick("profile", /^[a-z0-9_]+$/) };
+        const stamp = id.replace(/[^0-9T-]/g, "").slice(0, 16);
+        const name = `${what === "audit.csv" ? "site-audit" : "site-audit-checks"}${filter.check ? `-${filter.check}` : ""}-${stamp}.csv`;
+        return text(what === "audit.csv" ? await store.auditCsv(id, filter) : await store.auditChecksCsv(id, filter), TYPES[".csv"]!, name);
+      }
       if (parts.length === 3 && what === "site-sources") return json(await store.getSiteSources(id));
       if (parts.length === 4 && what === "pages" && !parts[3]!.endsWith(".md")) return json(await store.getPage(id, parts[3]!));
       if (parts.length === 5 && what === "pages" && parts[4] === "site-check") return json(await store.getSiteCheck(id, parts[3]!));

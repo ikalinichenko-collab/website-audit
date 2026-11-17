@@ -21,6 +21,20 @@ const short = (u: string) => {
 };
 
 const pretty = (s: string) => s.replace(/_/g, " ");
+
+/**
+ * Link to a CSV of the audit. `audit` is one row per failing page, `checks` one row per check. The filters of the table go with it,
+ * so the file holds what is on the screen; `check` limits it to one check.
+ */
+function csvHref(runId: string, what: "audit" | "checks", f?: Partial<Filters>, check?: string): string {
+  const q = new URLSearchParams();
+  if (check) q.set("check", check);
+  if (f?.sev && f.sev !== "all") q.set("severity", f.sev);
+  if (f?.layer && f.layer !== "all") q.set("layer", f.layer);
+  if (what === "audit" && f?.profile && f.profile !== "all") q.set("profile", f.profile);
+  const s = q.toString();
+  return `/api/runs/${encodeURIComponent(runId)}/${what === "audit" ? "audit.csv" : "audit-checks.csv"}${s ? `?${s}` : ""}`;
+}
 const ITEMS_SHOWN = 30;
 const field = "rounded border border-slate-300 bg-white px-2 py-1 text-sm dark:border-slate-600 dark:bg-slate-900";
 
@@ -60,12 +74,21 @@ function Change({ row }: { row: AuditRow }) {
 }
 
 /** One check: its result in a line, and on click why it matters, how to fix it and which pages fail. */
-function CheckRow({ row, showChange }: { row: AuditRow; showChange: boolean }) {
+function CheckRow({ row, showChange, runId, filters, slugs }: { row: AuditRow; showChange: boolean; runId: string; filters: Filters; slugs: Record<string, string> }) {
   const [open, setOpen] = useState(false);
   const [all, setAll] = useState(false);
   const navigate = useNavigate();
   // the bridge to Page Checks: the failing pages of this check, as links to check with the model
   const pageUrls = [...new Set(row.items.flatMap((it) => it.urls ?? [it.url]).filter((u) => /^https?:\/\//.test(u)))];
+  // the report of a page inside the app, in a new tab so the audit stays as it is (the address may differ from the stored one by a final slash)
+  const reportLink = (u: string) => {
+    const slug = slugs[u] ?? slugs[u.endsWith("/") ? u.slice(0, -1) : `${u}/`];
+    return slug ? (
+      <a href={`#/pages/${encodeURIComponent(slug)}?run=${encodeURIComponent(runId)}`} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline dark:text-blue-400" title="The report of this page in this snapshot">
+        report
+      </a>
+    ) : null;
+  };
   const sendToRun = () => {
     try {
       sessionStorage.setItem(RUN_PREFILL_KEY, JSON.stringify({ urls: pageUrls.slice(0, RUN_PREFILL_MAX), from: row.title }));
@@ -121,18 +144,33 @@ function CheckRow({ row, showChange }: { row: AuditRow; showChange: boolean }) {
                     Check {pageUrls.length > RUN_PREFILL_MAX ? `the first ${RUN_PREFILL_MAX} of ${pageUrls.length}` : `these ${pageUrls.length}`} {pageUrls.length === 1 ? "page" : "pages"} with the model
                   </button>
                 )}
+                <a href={csvHref(runId, "audit", { profile: filters.profile }, row.id)} download className="ml-3 font-normal normal-case tracking-normal text-blue-600 hover:underline dark:text-blue-400">
+                  Download CSV
+                </a>
               </p>
               <ul className="space-y-0.5 text-xs">
                 {items.map((it, i) => (
                   <li key={`${it.url}-${i}`} className="flex flex-wrap gap-x-2">
                     {/^https?:/.test(it.url) ? (
-                      <a href={it.url} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline dark:text-blue-400">
-                        {short(it.url)}
-                      </a>
+                      <>
+                        <a href={it.url} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline dark:text-blue-400" title="The live page">
+                          {short(it.url)}
+                        </a>
+                        {reportLink(it.url)}
+                      </>
                     ) : (
                       <span>{it.url}</span>
                     )}
-                    {it.urls && it.urls.length > 1 && <span className="text-slate-500">+ {it.urls.slice(1).map(short).join(", ")}</span>}
+                    {it.urls && it.urls.length > 1 && (
+                      <span className="flex flex-wrap gap-x-2 text-slate-500">
+                        also:
+                        {it.urls.slice(1).map((u) => (
+                          <span key={u}>
+                            {short(u)} {reportLink(u)}
+                          </span>
+                        ))}
+                      </span>
+                    )}
                     {it.profile && <span className="text-slate-400">{pretty(it.profile)}</span>}
                     <span className="text-slate-500">{it.value}</span>
                   </li>
@@ -152,7 +190,7 @@ function CheckRow({ row, showChange }: { row: AuditRow; showChange: boolean }) {
   );
 }
 
-function Group({ title, blurb, rows, defaultOpen, showChange }: { title: string; blurb: string; rows: AuditRow[]; defaultOpen: boolean; showChange: boolean }) {
+function Group({ title, blurb, rows, defaultOpen, showChange, runId, filters, slugs }: { title: string; blurb: string; rows: AuditRow[]; defaultOpen: boolean; showChange: boolean; runId: string; filters: Filters; slugs: Record<string, string> }) {
   const failing = rows.filter((r) => r.status === "fail");
   const passed = rows.filter((r) => r.status !== "fail");
   const [showPassed, setShowPassed] = useState(false);
@@ -167,14 +205,14 @@ function Group({ title, blurb, rows, defaultOpen, showChange }: { title: string;
       </summary>
       <div className="border-t border-slate-200 dark:border-slate-700">
         {failing.map((r) => (
-          <CheckRow key={r.id} row={r} showChange={showChange} />
+          <CheckRow key={r.id} row={r} showChange={showChange} runId={runId} filters={filters} slugs={slugs} />
         ))}
         {passed.length > 0 && (
           <div className="border-t border-slate-200 dark:border-slate-700">
             <button type="button" className="w-full px-3 py-2 text-left text-sm text-emerald-700 hover:bg-slate-50 dark:text-emerald-400 dark:hover:bg-slate-800/60" onClick={() => setShowPassed(!showPassed)}>
               {showPassed ? "Hide" : "Show"} {passed.length} passing {passed.length === 1 ? "check" : "checks"}
             </button>
-            {showPassed && passed.map((r) => <CheckRow key={r.id} row={r} showChange={showChange} />)}
+            {showPassed && passed.map((r) => <CheckRow key={r.id} row={r} showChange={showChange} runId={runId} filters={filters} slugs={slugs} />)}
           </div>
         )}
       </div>
@@ -414,13 +452,22 @@ export function AuditGroups({ audit }: { audit: SiteAudit }) {
         <span className="text-slate-500">
           {visible.length} of {audit.rows.length} checks
         </span>
+        <span className="ml-auto flex flex-wrap items-center gap-x-3 text-slate-500">
+          Download CSV{filtered ? " (with these filters)" : ""}:
+          <a className="text-blue-600 hover:underline dark:text-blue-400" href={csvHref(audit.run_id, "audit", f)} download>
+            failing pages
+          </a>
+          <a className="text-blue-600 hover:underline dark:text-blue-400" href={csvHref(audit.run_id, "checks", f)} download>
+            checks overview
+          </a>
+        </span>
       </div>
       {f.profile !== "all" && <p className="text-xs text-slate-500">Showing only {pretty(f.profile)} pages. Checks that exist for the whole site (robots.txt, sitemap, llms.txt) are hidden. The summary above stays for the whole site.</p>}
       {audit.groups.map((g) => {
         const rows = visible.filter((r) => r.group === g.key);
         if (!rows.length) return null;
         const auto = !g.apart && rows.some((r) => r.status === "fail");
-        return <Group key={`${g.key}-${expand.n}`} title={g.title} blurb={g.blurb} rows={rows} defaultOpen={expand.mode === "all" ? true : expand.mode === "none" ? false : auto} showChange={f.profile === "all"} />;
+        return <Group key={`${g.key}-${expand.n}`} title={g.title} blurb={g.blurb} rows={rows} defaultOpen={expand.mode === "all" ? true : expand.mode === "none" ? false : auto} showChange={f.profile === "all"} runId={audit.run_id} filters={f} slugs={audit.slugs} />;
       })}
       {visible.length === 0 && <p className="text-sm text-slate-500">No check matches these filters.</p>}
     </div>

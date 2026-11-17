@@ -72,6 +72,8 @@ export interface SiteAudit {
   coverage: { sitemap_urls: number | null; in_scope: number | null; outside_scope: number | null };
   /** plain-language text under each block (config/checks.json) */
   blocks: Record<string, string>;
+  /** page address to its slug in this snapshot: `#/pages/<slug>?run=<run_id>` is the page's report */
+  slugs: Record<string, string>;
   /** pages per profile, for the page type filter */
   profiles: { profile: string; pages: number }[];
   /** the snapshot before this one, when there is one to compare with */
@@ -102,6 +104,8 @@ export interface AuditOptions {
   llmsUrl: string;
   /** profiles whose pages must be linked from another page */
   orphanProfiles: string[];
+  /** page address (requested and final) to the slug the page has in the snapshot, so a page of a check opens its report */
+  slugs?: Record<string, string>;
 }
 
 const SEV_RANK: Record<Severity, number> = { high: 0, medium: 1, low: 2 };
@@ -341,6 +345,7 @@ export function buildSiteAudit(site: SiteReport, reports: PageReport[], opts: Au
     run_id: site.run_id,
     groups: cfg.groups,
     blocks: cfg.blocks ?? {},
+    slugs: opts.slugs ?? {},
     pages: reports.length,
     profiles: [...profileTotals].map(([profile, pages]) => ({ profile, pages })).sort((a, b) => b.pages - a.pages),
     coverage: { sitemap_urls: map?.length ?? null, in_scope: inScope, outside_scope: map && inScope !== null ? map.length - inScope : null },

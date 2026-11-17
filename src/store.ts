@@ -3,7 +3,7 @@ import type { PageReport, SiteReport } from "./report-types.js";
 import { db } from "./db.js";
 import { shownName } from "./users.js";
 import { FINDING_STATUSES, pageFindings, siteFindings, type Finding, type FindingStatus, type Layer } from "./findings.js";
-import { buildFindingsCsv, buildSummaryCsv, renderPageReport, renderSiteReport } from "./render.js";
+import { buildAuditChecksCsv, buildAuditCsv, buildFindingsCsv, buildSummaryCsv, renderPageReport, renderSiteReport, type AuditCsvFilter } from "./render.js";
 import { attachFragments, buildRunIndex, pageIndexEntry, type PageIndexEntry, type RunIndexFile, type RunListEntry, type StoredZones } from "./run-output.js";
 import { buildSiteSources, type SiteSources } from "./site-sources.js";
 import { loadGeoCodeConfig, loadSeoConfig, loadSettings } from "./config.js";
@@ -320,6 +320,11 @@ export async function getSiteAudit(runId: string): Promise<SiteAudit | null> {
   if (!site) return null;
   const geo = loadGeoCodeConfig();
   const opts = { aiBots: geo.ai_bots, llmsUrl: geo.llms_txt_url, orphanProfiles: loadSeoConfig().orphan_profiles ?? [] };
+  const slugs: Record<string, string> = {};
+  for (const r of (await db().query<{ slug: string; url: string; final_url: string }>("SELECT slug, url, report->>'final_url' AS final_url FROM pages WHERE run_id = $1", [runId])).rows) {
+    slugs[r.url] = r.slug;
+    if (r.final_url) slugs[r.final_url] = r.slug;
+  }
   // the snapshot before this one, to say what was fixed and what is new
   const prev = (
     await db().query<{ id: string; started_at: Date; site: SiteReport }>(
@@ -332,7 +337,7 @@ export async function getSiteAudit(runId: string): Promise<SiteAudit | null> {
     const reports = await allReports(prev.id);
     previous = { audit: buildSiteAudit(prev.site, reports, opts), started_at: prev.started_at.toISOString(), urls: new Set(reports.map((r) => r.final_url)) };
   }
-  return buildSiteAudit(site, await allReports(runId), opts, previous);
+  return buildSiteAudit(site, await allReports(runId), { ...opts, slugs }, previous);
 }
 
 export async function getSiteSources(runId: string): Promise<SiteSources | null> {
@@ -525,6 +530,18 @@ export async function siteMarkdown(runId: string): Promise<string | null> {
 
 export async function summaryCsv(runId: string): Promise<string> {
   return buildSummaryCsv(await allReports(runId), await runSite(runId));
+}
+
+/** The failing pages of a snapshot's audit as CSV (null when the run has no audit). */
+export async function auditCsv(runId: string, filter: AuditCsvFilter): Promise<string | null> {
+  const audit = await getSiteAudit(runId);
+  return audit ? buildAuditCsv(audit, filter) : null;
+}
+
+/** The checks of a snapshot's audit as CSV, one row per check. */
+export async function auditChecksCsv(runId: string, filter: AuditCsvFilter): Promise<string | null> {
+  const audit = await getSiteAudit(runId);
+  return audit ? buildAuditChecksCsv(audit, filter) : null;
 }
 
 export async function findingsCsv(runId: string): Promise<string> {

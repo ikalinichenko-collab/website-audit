@@ -278,6 +278,8 @@ export interface SiteAudit {
   pages: number;
   coverage: { sitemap_urls: number | null; in_scope: number | null; outside_scope: number | null };
   blocks: Record<string, string>;
+  /** page address to its slug in this snapshot */
+  slugs: Record<string, string>;
   profiles: { profile: string; pages: number }[];
   previous: { run_id: string; started_at: string; pages: number; fixed: number; added: number; checks_cleared: number; checks_broken: number } | null;
   summary: {
