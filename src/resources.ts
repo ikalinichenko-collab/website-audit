@@ -269,6 +269,10 @@ export function validateResource(r: Resource, content: string): void {
         if (groupKeys.has(g.key as string)) fail(`group key "${String(g.key)}" is used twice`);
         groupKeys.add(g.key as string);
       }
+      if (data.blocks !== undefined) {
+        if (!isObj(data.blocks)) fail("blocks must be an object of texts");
+        for (const [k, v] of Object.entries(data.blocks)) if (typeof v !== "string") fail(`blocks.${k} must be text`);
+      }
       if (!isObj(data.checks) || !Object.keys(data.checks).length) fail("checks must list at least one check");
       for (const [id, c] of Object.entries(data.checks)) {
         if (!isObj(c)) fail(`check "${id}" must be an object`);

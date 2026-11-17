@@ -1,5 +1,5 @@
 import { catalogEntry, loadChecksConfig, type CatalogEntry, type CheckGroupDef } from "./check-catalog.js";
-import type { FixWhere } from "./findings.js";
+import { siteFindings, type FixWhere } from "./findings.js";
 import type { PageReport, SiteReport } from "./report-types.js";
 
 type Severity = "high" | "medium" | "low";
@@ -11,6 +11,8 @@ export interface AuditItem {
   value: string;
   /** a group of pages sharing the item (duplicates) */
   urls?: string[];
+  /** profiles of the pages of a group */
+  profiles?: string[];
 }
 
 /** One check over the whole site: what it is, how many pages fail it and which. */
@@ -34,6 +36,24 @@ export interface AuditRow {
   /** how many items were left out of `items` */
   more: number;
   note?: string;
+  /** against the previous snapshot: pages that now fail (that passed or were not failing) and pages that were fixed */
+  change?: { added: number; fixed: number; prev_failing: number };
+}
+
+/** One problem the model found in the texts shared by many pages, once, with every place it appears. */
+export interface TemplateIssue {
+  title: string;
+  kind: string;
+  severity: Severity;
+  basis: string;
+  /** "Banner CTA (variant 2)", "Forms (variant 1)", "Site-wide structured data" */
+  places: string[];
+  /** distinct pages the places appear on; site-wide markup is on every page */
+  pages: number;
+  quote: string;
+  issue: string;
+  fix: string;
+  rule: string;
 }
 
 export interface AuditCounts {
@@ -50,15 +70,31 @@ export interface SiteAudit {
   groups: CheckGroupDef[];
   pages: number;
   coverage: { sitemap_urls: number | null; in_scope: number | null; outside_scope: number | null };
+  /** plain-language text under each block (config/checks.json) */
+  blocks: Record<string, string>;
+  /** pages per profile, for the page type filter */
+  profiles: { profile: string; pages: number }[];
+  /** the snapshot before this one, when there is one to compare with */
+  previous: { run_id: string; started_at: string; pages: number; fixed: number; added: number; checks_cleared: number; checks_broken: number } | null;
   summary: {
     seo: AuditCounts;
     geo: AuditCounts;
     style: { checks: number; failing: number; pages: number; places: number };
+    /** what the model found in banners, forms and site-wide markup; `checked` is false until the model has run on this snapshot */
+    template: { checked: boolean; findings: number; high: number; medium: number; low: number; issues: TemplateIssue[] };
     /** the failing checks to fix first: severity, then pages affected */
     first: { id: string; title: string; severity: Severity; failing: number; total: number; where: FixWhere; fix: string }[];
     not_checked: string[];
   };
   rows: AuditRow[];
+}
+
+/** The previous snapshot, already worked out, to say what changed. */
+export interface AuditPrevious {
+  audit: SiteAudit;
+  started_at: string;
+  /** final URLs of the pages it checked */
+  urls: Set<string>;
 }
 
 export interface AuditOptions {
@@ -97,7 +133,7 @@ function finish(id: string, a: Acc): AuditRow {
     failing,
     total: a.total,
     places: a.places,
-    by_profile: [...a.profiles].map(([profile, v]) => ({ profile, ...v })).filter((p) => p.failing).sort((x, y) => y.failing - x.failing),
+    by_profile: [...a.profiles].map(([profile, v]) => ({ profile, ...v })).sort((x, y) => y.failing - x.failing || y.total - x.total),
     items: a.items.slice(0, MAX_ITEMS),
     more: Math.max(0, a.items.length - MAX_ITEMS),
   };
@@ -107,7 +143,7 @@ function finish(id: string, a: Acc): AuditRow {
  * The whole-site view of a snapshot: every page check summed over the pages, plus the checks that only exist for the
  * site (robots, llms.txt, duplicates, orphans, sitemap hygiene). Computed from the stored reports, nothing is fetched.
  */
-export function buildSiteAudit(site: SiteReport, reports: PageReport[], opts: AuditOptions): SiteAudit {
+export function buildSiteAudit(site: SiteReport, reports: PageReport[], opts: AuditOptions, previous: AuditPrevious | null = null): SiteAudit {
   const cfg = loadChecksConfig();
   // groups kept out of the summary counts (writing style)
   const apart = new Set(cfg.groups.filter((g) => g.apart).map((g) => g.key));
@@ -189,7 +225,7 @@ export function buildSiteAudit(site: SiteReport, reports: PageReport[], opts: Au
   for (const id of ["duplicate_title", "duplicate_meta", "duplicate_h1"] as const) {
     const groups = site.seo.duplicates.filter((d) => d.id === id);
     rows.push(
-      siteRow(id, "medium", reports.length, groups.map((d) => ({ url: d.urls[0]!, urls: d.urls, value: `"${clip(d.value, 90)}" on ${d.urls.length} pages` }))),
+      siteRow(id, "medium", reports.length, groups.map((d) => ({ url: d.urls[0]!, urls: d.urls, profiles: [...new Set(d.urls.map((u) => profileOf.get(norm(u))).filter((p): p is string => !!p))], value: `"${clip(d.value, 90)}" on ${d.urls.length} pages` }))),
     );
   }
   if (site.seo.orphans === undefined) {
@@ -222,6 +258,63 @@ export function buildSiteAudit(site: SiteReport, reports: PageReport[], opts: Au
       b.failing - a.failing,
   );
 
+  // ---- what changed since the previous snapshot ----
+  // A page counts as fixed or new only when both snapshots checked it, so a bigger scope does not look like new problems.
+  const nowUrls = new Set(reports.map((r) => norm(r.final_url)));
+  const keysOf = (r: AuditRow): Set<string> => new Set(r.items.flatMap((it) => it.urls ?? [it.url]).map(norm));
+  let fixedTotal = 0;
+  let addedTotal = 0;
+  let cleared = 0;
+  let broken = 0;
+  if (previous) {
+    const prevUrls = new Set([...previous.urls].map(norm));
+    const prevRows = new Map(previous.audit.rows.map((r) => [r.id, r]));
+    for (const r of rows) {
+      const p = prevRows.get(r.id);
+      if (!p || p.status === "not_checked" || r.status === "not_checked") continue;
+      const before = keysOf(p);
+      const after = keysOf(r);
+      const isPage = (k: string): boolean => /^https?:/.test(k);
+      const fixed = [...before].filter((k) => !after.has(k) && (!isPage(k) || nowUrls.has(k))).length;
+      const added = [...after].filter((k) => !before.has(k) && (!isPage(k) || prevUrls.has(k))).length;
+      if (fixed || added) r.change = { added, fixed, prev_failing: p.failing };
+      if (!apart.has(r.group)) {
+        fixedTotal += fixed;
+        addedTotal += added;
+        if (p.status === "fail" && r.status === "ok") cleared++;
+        if (p.status === "ok" && r.status === "fail") broken++;
+      }
+    }
+  }
+
+  // ---- the model's findings on the shared texts, once per problem ----
+  const modelChecked = !!(site.shared.compliance || site.site_schema);
+  const sharedPages = new Map(site.shared.variants.map((v) => [v.id, v.pages.map(norm)]));
+  const placeLabel = (zone: string): string => {
+    const m = zone.match(/^(banner_cta|modals)@(\d+)$/);
+    return m ? `${m[1] === "banner_cta" ? "Banner CTA" : "Forms"} (variant ${m[2]})` : "Site-wide structured data";
+  };
+  const issues = new Map<string, TemplateIssue & { pageSet: Set<string> }>();
+  let templateFindings = 0;
+  for (const f of siteFindings(site)) {
+    if (f.layer !== "compliance") continue;
+    templateFindings++;
+    const key = `${f.subsection}|${f.kind}|${f.title}`;
+    const sev = (f.severity || "medium") as Severity;
+    let i = issues.get(key);
+    if (!i) {
+      i = { title: f.title, kind: f.kind, severity: sev, basis: f.basis ?? "", places: [], pages: 0, quote: f.quote, issue: f.issue, fix: f.fix, rule: f.rule, pageSet: new Set() };
+      issues.set(key, i);
+    }
+    if (SEV_RANK[sev] < SEV_RANK[i.severity]) i.severity = sev;
+    const label = placeLabel(f.zone_id);
+    if (!i.places.includes(label)) i.places.push(label);
+    for (const u of f.subsection === "schema" ? [...nowUrls] : (sharedPages.get(f.zone_id) ?? [])) i.pageSet.add(u);
+  }
+  const templateIssues: TemplateIssue[] = [...issues.values()]
+    .map(({ pageSet, ...i }) => ({ ...i, pages: pageSet.size }))
+    .sort((a, b) => SEV_RANK[a.severity] - SEV_RANK[b.severity] || b.pages - a.pages);
+
   // ---- summary ----
   const counts = (layer: "seo" | "geo"): AuditCounts => {
     const c: AuditCounts = { high: 0, medium: 0, low: 0, ok: 0, total: 0 };
@@ -247,17 +340,30 @@ export function buildSiteAudit(site: SiteReport, reports: PageReport[], opts: Au
   return {
     run_id: site.run_id,
     groups: cfg.groups,
+    blocks: cfg.blocks ?? {},
     pages: reports.length,
+    profiles: [...profileTotals].map(([profile, pages]) => ({ profile, pages })).sort((a, b) => b.pages - a.pages),
     coverage: { sitemap_urls: map?.length ?? null, in_scope: inScope, outside_scope: map && inScope !== null ? map.length - inScope : null },
+    previous: previous
+      ? { run_id: previous.audit.run_id, started_at: previous.started_at, pages: previous.audit.pages, fixed: fixedTotal, added: addedTotal, checks_cleared: cleared, checks_broken: broken }
+      : null,
     summary: {
       seo: counts("seo"),
       geo: counts("geo"),
       style: { checks: style.length, failing: style.filter((r) => r.status === "fail").length, pages: stylePages.size, places: style.reduce((n, r) => n + r.places, 0) },
+      template: {
+        checked: modelChecked,
+        findings: templateFindings,
+        high: templateIssues.filter((i) => i.severity === "high").length,
+        medium: templateIssues.filter((i) => i.severity === "medium").length,
+        low: templateIssues.filter((i) => i.severity === "low").length,
+        issues: templateIssues,
+      },
       first,
       not_checked: [
-        "Compliance against the company documents (needs the model)",
+        "Compliance of each page against the company documents (needs the model, run it on the Run page)",
         "GEO questions about wording and answers (need the model)",
-        "Shared banner and form texts, site-wide JSON-LD wording (need the model)",
+        ...(modelChecked ? [] : ["Shared banner and form texts, site-wide JSON-LD wording (need the model)"]),
         "Speed, Core Web Vitals and mobile rendering (need a browser)",
       ],
     },

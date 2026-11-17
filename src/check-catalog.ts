@@ -24,6 +24,8 @@ export interface CatalogEntry {
 export interface ChecksConfig {
   groups: CheckGroupDef[];
   checks: Record<string, CatalogEntry>;
+  /** a few plain sentences under each block of the Site page, by block key (snapshot, summary, fix_first, all_checks, template_text, coverage) */
+  blocks?: Record<string, string>;
 }
 
 let cache: { text: string; value: ChecksConfig } | null = null;

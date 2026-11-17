@@ -23,7 +23,18 @@ interface Check {
 interface ChecksConfig {
   groups: Group[];
   checks: Record<string, Check>;
+  blocks?: Record<string, string>;
 }
+
+/** The blocks of the Site page that have a short explanation under their title. */
+const BLOCKS: [string, string][] = [
+  ["snapshot", "Snapshot bar"],
+  ["summary", "Summary"],
+  ["fix_first", "Fix first"],
+  ["all_checks", "All checks"],
+  ["template_text", "Template text (checked by the model)"],
+  ["coverage", "Coverage and sitemap"],
+];
 
 const WHERE: [Check["where"], string][] = [
   ["template", "Site template and settings"],
@@ -58,6 +69,7 @@ export function ChecksEditor() {
   const serialized = JSON.stringify(cfg, null, 2) + "\n";
   const dirty = raw ? r.dirty : serialized.trim() !== JSON.stringify(parse(r.info.content), null, 2).trim();
   const setCheck = (id: string, patch: Partial<Check>) => setCfg({ ...cfg, checks: { ...cfg.checks, [id]: { ...cfg.checks[id]!, ...patch } } });
+  const setBlock = (key: string, text: string) => setCfg({ ...cfg, blocks: { ...(cfg.blocks ?? {}), [key]: text } });
   const setGroup = (key: string, patch: Partial<Group>) => setCfg({ ...cfg, groups: cfg.groups.map((g) => (g.key === key ? { ...g, ...patch } : g)) });
 
   return (
@@ -81,6 +93,16 @@ export function ChecksEditor() {
         </div>
       ) : (
         <>
+          <section className="space-y-2 rounded-lg border border-slate-200 bg-white p-3 dark:border-slate-700 dark:bg-slate-900">
+            <h3 className="font-semibold">Explanations under the blocks of the Site page</h3>
+            <p className="text-xs text-slate-500">A few plain sentences under each block title. Leave one empty to show nothing.</p>
+            {BLOCKS.map(([key, label]) => (
+              <label key={key} className="block space-y-0.5 text-xs text-slate-500">
+                {label}
+                <textarea className={`${field} w-full text-sm text-slate-900 dark:text-slate-100`} rows={3} value={cfg.blocks?.[key] ?? ""} onChange={(e) => setBlock(key, e.target.value)} />
+              </label>
+            ))}
+          </section>
           {cfg.groups.map((g) => {
             const checks = Object.entries(cfg.checks).filter(([, c]) => c.group === g.key);
             return (

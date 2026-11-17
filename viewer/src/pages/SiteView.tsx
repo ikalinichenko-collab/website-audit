@@ -9,12 +9,13 @@ import { runLabel } from "../utils.js";
 import { FindingList } from "../components/FindingList.js";
 import { FindingActionsContext } from "../components/FindingActions.js";
 import { SchemaNodeCard, VariantCard, findingsInNode } from "../components/SourceCards.js";
-import { AuditGroups, AuditSummary } from "../components/SiteAuditPanel.js";
+import { AuditGroups, AuditSummary, Hint, TemplateIssues } from "../components/SiteAuditPanel.js";
 
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
+function Section({ id, title, hint, children }: { id: string; title: string; hint?: string; children: React.ReactNode }) {
   return (
-    <section className="space-y-2">
+    <section id={id} className="scroll-mt-28 space-y-2">
       <h2 className="text-lg font-semibold">{title}</h2>
+      <Hint text={hint} />
       {children}
     </section>
   );
@@ -299,19 +300,34 @@ export function SiteView() {
   const origin = Object.keys(site.basics.sitemaps)[0]?.match(/^https?:\/\/[^/]+/)?.[0] ?? "";
   const sub = (s: string) => findings.filter((f) => f.subsection === s);
 
+  const jump = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+
   return (
     <FindingActionsContext.Provider value={{ runId, slug: null, reload }}>
     <div className="space-y-8">
-      {bar}
+      <div className="space-y-2">
+        {bar}
+        <Hint text={audit?.blocks.snapshot} />
+      </div>
+      <nav className="sticky top-[57px] z-[5] -mx-4 flex flex-wrap gap-1 border-b border-slate-200 bg-white/95 px-4 py-1.5 text-sm backdrop-blur dark:border-slate-800 dark:bg-slate-950/95" aria-label="On this page">
+        {[
+          ["summary", "Summary"],
+          ["checks", "All checks"],
+          ["template", "Template text"],
+          ["coverage", "Coverage and sitemap"],
+        ].map(([id, label]) => (
+          <button key={id} type="button" className="rounded px-2.5 py-1 text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-white" onClick={() => jump(id!)}>
+            {label}
+          </button>
+        ))}
+      </nav>
+
       {audit ? (
         <>
-          <Section title="Summary">
+          <Section id="summary" title="Summary" hint={audit.blocks.summary}>
             <AuditSummary audit={audit} />
           </Section>
-          <Section title="All checks">
-            <p className="text-sm text-slate-500">
-              Every technical SEO and GEO check, run on every page of the snapshot (no model). Open a check to see why it matters, how to fix it and the pages that fail.
-            </p>
+          <Section id="checks" title="All checks" hint={audit.blocks.all_checks}>
             <AuditGroups audit={audit} />
           </Section>
         </>
@@ -319,7 +335,75 @@ export function SiteView() {
         <p className="text-sm text-slate-500">Loading the checks...</p>
       )}
 
-      <Section title="Coverage and sitemap">
+      <Section id="template" title="Template text (checked by the model)" hint={audit?.blocks.template_text}>
+        {audit && <TemplateIssues audit={audit} />}
+        <details className="rounded border border-slate-200 dark:border-slate-700">
+          <summary className="cursor-pointer px-3 py-2 font-medium">Banner by banner and node by node, with decisions</summary>
+          <div className="space-y-6 border-t border-slate-200 p-3 dark:border-slate-700">
+            <div className="space-y-2">
+              <h3 className="font-semibold">Shared zones (banner CTA, forms)</h3>
+              <p className="text-sm text-slate-500">
+                Blocks that come from the site template. Each distinct text is checked once, and one edit in the template fixes every page listed.
+              </p>
+              {sources ? (
+                <div className="space-y-3">
+                  {sources.variants.map((v) => (
+                    <VariantCard key={v.id} variant={v} findings={sub("shared").filter((f) => f.zone_id === v.id)} />
+                  ))}
+                </div>
+              ) : (
+                <>
+                  <ul className="text-sm">
+                    {site.shared.variants.map((v) => (
+                      <li key={v.id}>
+                        <b>{v.id}</b>: {v.pages.length} pages{" "}
+                        <span className="text-slate-500">{v.pages.slice(0, 6).map(short).join(", ")}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <FindingList findings={sub("shared")} empty="No problems." />
+                </>
+              )}
+            </div>
+
+            <div className="space-y-2">
+              <h3 className="font-semibold">Site-wide structured data (JSON-LD)</h3>
+              <p className="text-sm text-slate-500">
+                Nodes that repeat on nearly every page, so they are checked once here and left out of the page reports. Edit them in the SEO plugin or the
+                theme, not page by page.
+              </p>
+              {sources ? (
+                (() => {
+                  const schema = sub("schema");
+                  const placed = new Set<Finding>();
+                  const cards = sources.schema_nodes.map((n, i) => {
+                    const own = findingsInNode(n, schema).filter((f) => !placed.has(f));
+                    own.forEach((f) => placed.add(f));
+                    return <SchemaNodeCard key={i} node={n} findings={own} />;
+                  });
+                  const rest = schema.filter((f) => !placed.has(f));
+                  return (
+                    <div className="space-y-3">
+                      {cards.length === 0 && <p className="text-sm text-slate-500">No site-wide nodes saved for this run.</p>}
+                      {cards}
+                      {rest.length > 0 && (
+                        <>
+                          <h3 className="text-sm font-semibold">Not matched to a node</h3>
+                          <FindingList findings={rest} empty="" />
+                        </>
+                      )}
+                    </div>
+                  );
+                })()
+              ) : (
+                <FindingList findings={sub("schema")} empty="No problems or not checked." />
+              )}
+            </div>
+          </div>
+        </details>
+      </Section>
+
+      <Section id="coverage" title="Coverage and sitemap" hint={audit?.blocks.coverage}>
         {origin && (
           <p className="text-sm">
             Open on the site:{" "}
@@ -331,7 +415,7 @@ export function SiteView() {
           </p>
         )}
         <details className="text-sm">
-          <summary className="cursor-pointer text-slate-500">Sitemaps</summary>
+          <summary className="cursor-pointer text-slate-500">Sitemap files</summary>
           <ul>
             {Object.entries(site.basics.sitemaps).map(([u, n]) => (
               <li key={u}>
@@ -340,7 +424,6 @@ export function SiteView() {
             ))}
           </ul>
         </details>
-        <SitemapTable site={site} />
         <h3 className="text-sm font-semibold">Pages by section</h3>
         <ul className="text-sm text-slate-600 dark:text-slate-400">
           {Object.entries(site.scope_counts)
@@ -351,71 +434,12 @@ export function SiteView() {
               </li>
             ))}
         </ul>
-      </Section>
-
-      <div className="rounded border border-slate-300 bg-slate-50 px-3 py-2 text-sm dark:border-slate-600 dark:bg-slate-800/40">
-        <b>Needs the model.</b>{" "}
-        {meta?.site_llm
-          ? "The two sections below were checked by the model."
-          : "The two sections below are not checked yet: an empty list does not mean there are no problems. Use \"Check shared blocks with the model\" at the top."}
-      </div>
-
-      <Section title="Shared zones (banner CTA, forms)">
-        <p className="text-sm text-slate-500">
-          Blocks that come from the site template. Each distinct text is checked once, and one edit in the template fixes every page listed.
-        </p>
-        {sources ? (
-          <div className="space-y-3">
-            {sources.variants.map((v) => (
-              <VariantCard key={v.id} variant={v} findings={sub("shared").filter((f) => f.zone_id === v.id)} />
-            ))}
+        <details className="rounded border border-slate-200 dark:border-slate-700">
+          <summary className="cursor-pointer px-3 py-2 font-medium">Every sitemap URL: scope, status, inbound links ({site.sitemap?.length ?? 0})</summary>
+          <div className="border-t border-slate-200 p-3 dark:border-slate-700">
+            <SitemapTable site={site} />
           </div>
-        ) : (
-          <>
-            <ul className="text-sm">
-              {site.shared.variants.map((v) => (
-                <li key={v.id}>
-                  <b>{v.id}</b>: {v.pages.length} pages{" "}
-                  <span className="text-slate-500">{v.pages.slice(0, 6).map(short).join(", ")}</span>
-                </li>
-              ))}
-            </ul>
-            <FindingList findings={sub("shared")} empty="No problems." />
-          </>
-        )}
-      </Section>
-
-      <Section title="Site-wide structured data (JSON-LD)">
-        <p className="text-sm text-slate-500">
-          Nodes that repeat on nearly every page, so they are checked once here and left out of the page reports. Edit them in the SEO plugin or the
-          theme, not page by page.
-        </p>
-        {sources ? (
-          (() => {
-            const schema = sub("schema");
-            const placed = new Set<Finding>();
-            const cards = sources.schema_nodes.map((n, i) => {
-              const own = findingsInNode(n, schema).filter((f) => !placed.has(f));
-              own.forEach((f) => placed.add(f));
-              return <SchemaNodeCard key={i} node={n} findings={own} />;
-            });
-            const rest = schema.filter((f) => !placed.has(f));
-            return (
-              <div className="space-y-3">
-                {cards.length === 0 && <p className="text-sm text-slate-500">No site-wide nodes saved for this run.</p>}
-                {cards}
-                {rest.length > 0 && (
-                  <>
-                    <h3 className="text-sm font-semibold">Not matched to a node</h3>
-                    <FindingList findings={rest} empty="" />
-                  </>
-                )}
-              </div>
-            );
-          })()
-        ) : (
-          <FindingList findings={sub("schema")} empty="No problems or not checked." />
-        )}
+        </details>
       </Section>
 
       <p className="text-sm">

@@ -240,9 +240,25 @@ export interface AuditRow {
   total: number;
   places: number;
   by_profile: { profile: string; failing: number; total: number }[];
-  items: { url: string; profile?: string; value: string; urls?: string[] }[];
+  items: { url: string; profile?: string; profiles?: string[]; value: string; urls?: string[] }[];
   more: number;
   note?: string;
+  /** against the previous snapshot */
+  change?: { added: number; fixed: number; prev_failing: number };
+}
+
+/** Same shape as `TemplateIssue` in src/site-audit.ts. */
+export interface TemplateIssue {
+  title: string;
+  kind: string;
+  severity: AuditSeverity;
+  basis: string;
+  places: string[];
+  pages: number;
+  quote: string;
+  issue: string;
+  fix: string;
+  rule: string;
 }
 
 export interface AuditCounts {
@@ -259,10 +275,14 @@ export interface SiteAudit {
   groups: { key: string; title: string; blurb: string; apart?: boolean }[];
   pages: number;
   coverage: { sitemap_urls: number | null; in_scope: number | null; outside_scope: number | null };
+  blocks: Record<string, string>;
+  profiles: { profile: string; pages: number }[];
+  previous: { run_id: string; started_at: string; pages: number; fixed: number; added: number; checks_cleared: number; checks_broken: number } | null;
   summary: {
     seo: AuditCounts;
     geo: AuditCounts;
     style: { checks: number; failing: number; pages: number; places: number };
+    template: { checked: boolean; findings: number; high: number; medium: number; low: number; issues: TemplateIssue[] };
     first: { id: string; title: string; severity: AuditSeverity; failing: number; total: number; where: AuditWhere; fix: string }[];
     not_checked: string[];
   };

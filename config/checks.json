@@ -480,5 +480,13 @@
       "fix": "Use the US spelling.",
       "where": "page"
     }
+  },
+  "blocks": {
+    "snapshot": "A snapshot is a photo of the whole site: the app opened every page once and saved what it found. Everything on this page is worked out from that photo, so reading it is free and quick. If the site has changed since, make a new snapshot. Page runs on the Run page compare each page with the latest snapshot.",
+    "summary": "How many technical checks the site fails, and how serious they are. High: the page cannot rank or be shared properly. Medium: it hurts results, fix soon. Low: small hygiene. SEO is about search engines, GEO is about AI assistants and positioning. Writing style is counted apart, so many small findings do not hide the important ones.",
+    "fix_first": "The most serious problems, the ones that touch more pages first. Start here.",
+    "all_checks": "One line is one check. \"143 of 690\" means the check applies to 690 pages and 143 of them fail it. Red dot: serious, amber: medium, grey: small, green: all good. Open a line to see why it matters, how to fix it and which pages fail. The arrows show what changed since the previous snapshot: green is fixed, red is new.",
+    "template_text": "Banners, forms and site-wide markup repeat on hundreds of pages, so they are checked once, not page by page. The model compares their text with the company documents. Each problem is listed once with every banner, form or markup node where it appears. One fix in the template changes all those pages.",
+    "coverage": "What the check covered: how many addresses the sitemap lists, how many were opened, and which sections they belong to. Pages outside the scope are not audited."
   }
 }

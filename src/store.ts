@@ -7,7 +7,7 @@ import { buildFindingsCsv, buildSummaryCsv, renderPageReport, renderSiteReport }
 import { attachFragments, buildRunIndex, pageIndexEntry, type PageIndexEntry, type RunIndexFile, type RunListEntry, type StoredZones } from "./run-output.js";
 import { buildSiteSources, type SiteSources } from "./site-sources.js";
 import { loadGeoCodeConfig, loadSeoConfig } from "./config.js";
-import { buildSiteAudit, type SiteAudit } from "./site-audit.js";
+import { buildSiteAudit, type AuditPrevious, type SiteAudit } from "./site-audit.js";
 import { graphUrl } from "./links.js";
 
 export type RunStatus = "running" | "done" | "stopped" | "error" | "interrupted";
@@ -291,11 +291,20 @@ export async function getSiteAudit(runId: string): Promise<SiteAudit | null> {
   const site = await ownSite(runId);
   if (!site) return null;
   const geo = loadGeoCodeConfig();
-  return buildSiteAudit(site, await allReports(runId), {
-    aiBots: geo.ai_bots,
-    llmsUrl: geo.llms_txt_url,
-    orphanProfiles: loadSeoConfig().orphan_profiles ?? [],
-  });
+  const opts = { aiBots: geo.ai_bots, llmsUrl: geo.llms_txt_url, orphanProfiles: loadSeoConfig().orphan_profiles ?? [] };
+  // the snapshot before this one, to say what was fixed and what is new
+  const prev = (
+    await db().query<{ id: string; started_at: Date; site: SiteReport }>(
+      "SELECT id, started_at, site FROM runs WHERE kind = 'site' AND status = 'done' AND site IS NOT NULL AND started_at < (SELECT started_at FROM runs WHERE id = $1) ORDER BY started_at DESC LIMIT 1",
+      [runId],
+    )
+  ).rows[0];
+  let previous: AuditPrevious | null = null;
+  if (prev) {
+    const reports = await allReports(prev.id);
+    previous = { audit: buildSiteAudit(prev.site, reports, opts), started_at: prev.started_at.toISOString(), urls: new Set(reports.map((r) => r.final_url)) };
+  }
+  return buildSiteAudit(site, await allReports(runId), opts, previous);
 }
 
 export async function getSiteSources(runId: string): Promise<SiteSources | null> {
