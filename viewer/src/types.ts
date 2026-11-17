@@ -71,6 +71,24 @@ export interface PageIndexEntry {
   geo: { to_fix: number; high?: number; medium?: number; low?: number; error: string | null };
   seo: Sev;
   checked_at: string;
+  /** checked pages only */
+  checked_by?: string | null;
+  model?: string | null;
+  layers?: Layers | null;
+  /** everything spent on this page so far */
+  cost_usd?: number | null;
+  /** the latest snapshot has a different text of the page (null: not known) */
+  changed?: boolean | null;
+  /** the person looking checked it */
+  mine?: boolean;
+}
+
+/** Same shape as `Spending` in src/page-checks.ts. */
+export interface Spending {
+  total: { cost: number; calls: number; checks: number };
+  by_month: { month: string; cost: number; calls: number; checks: number }[];
+  by_person: { person: string; cost: number; calls: number; checks: number }[];
+  recent: { at: string; kind: string; by: string | null; url: string; model: string | null; cost: number; calls: number; tokens: TokenUsage }[];
 }
 
 export interface GroupTotals {
@@ -193,15 +211,16 @@ export interface PageReport {
   zones: { id: string; label: string; kind: string }[];
   zone_warnings: string[];
   shared_variants: string[];
-  compliance: { action: string | null; summary: string | null; error: string | null; cached: boolean; skipped?: boolean };
+  compliance: { action: string | null; summary: string | null; error: string | null; cached: boolean; skipped?: boolean; as_of?: string };
   geo: {
     llm: GeoAnswerView[];
     code?: { id: string; status: "pass" | "fail" | "na"; value: string }[];
     error: string | null;
     cached: boolean;
     skipped?: boolean;
+    as_of?: string;
   };
-  seo: { skipped?: boolean };
+  seo: { skipped?: boolean; as_of?: string };
 }
 
 /** Same shape as `SitemapRow` in src/report-types.ts. */

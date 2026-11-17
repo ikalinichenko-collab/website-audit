@@ -7,9 +7,12 @@ import { createOpenAiClient } from "./llm.js";
 import { jsonLdZone } from "./zones.js";
 import type { SiteSources } from "./site-sources.js";
 import { sha256 } from "./utils.js";
+import { logCheck } from "./page-checks.js";
 
 export interface SiteLlmOptions {
   model?: string;
+  /** who asked (for the log of what the model cost) */
+  by?: string | null;
   onLog?: (line: string) => void;
   isCancelled?: () => boolean;
 }
@@ -110,6 +113,7 @@ export async function runSiteLlm(runId: string, options: SiteLlmOptions = {}): P
   }
 
   out.cost_usd = usageCost(out.usage, model);
+  if (out.calls > 0) await logCheck({ kind: "site_llm", by: options.by ?? null, url: "", model: model.id, layers: null, tokens: out.usage, cost: out.cost_usd, calls: out.calls, fromSnapshot: false });
   const meta = row.meta as Record<string, unknown> | null;
   const tokens = (meta?.tokens as TokenUsage | undefined) ?? { input: 0, cached_input: 0, output: 0 };
   const newMeta = meta

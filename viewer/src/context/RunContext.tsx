@@ -1,31 +1,23 @@
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useMemo,
-  useState,
-  type ReactNode,
-} from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { useSearchParams } from "react-router-dom";
-import { getRuns } from "../data.js";
-import type { RunListEntry } from "../types.js";
+import { getIndex, getRuns } from "../data.js";
+import type { PageIndexEntry, RunListEntry } from "../types.js";
 
 interface RunContextValue {
-  /** Runs the viewer can open (current format). */
+  /** Runs the viewer can open (current format): the snapshots of the site. */
   runs: RunListEntry[];
-  /** Page checks: the runs of chosen pages (what Page Checks shows). */
-  pageRuns: RunListEntry[];
   /** Site snapshots, newest first (what Site Checks shows). */
   snapshots: RunListEntry[];
   /** Every run folder, including old ones that can only be deleted. */
   allRuns: RunListEntry[];
-  runId: string;
-  setRunId: (id: string) => void;
+  /** The checked pages (null until loaded). */
+  checks: PageIndexEntry[] | null;
   loading: boolean;
   error: string | null;
-  /** Reload the run list (after a run finished or was deleted). */
+  /** Reload the run list (after a snapshot finished or was deleted). */
   reload: () => Promise<void>;
+  /** Reload the checked pages (after a check, a recheck or a delete). */
+  reloadChecks: () => Promise<void>;
 }
 
 const RunContext = createContext<RunContextValue | null>(null);
@@ -33,20 +25,15 @@ const RunContext = createContext<RunContextValue | null>(null);
 export function RunProvider({ children }: { children: ReactNode }) {
   const [allRuns, setAllRuns] = useState<RunListEntry[]>([]);
   const runs = useMemo(() => allRuns.filter((r) => r.format !== 1), [allRuns]);
-  const pageRuns = useMemo(() => runs.filter((r) => r.kind !== "site"), [runs]);
   const snapshots = useMemo(() => runs.filter((r) => r.kind === "site"), [runs]);
-  const [runId, setRunId] = useState("");
+  const [checks, setChecks] = useState<PageIndexEntry[] | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   const reload = useCallback(async () => {
     try {
-      const list = await getRuns();
-      setAllRuns(list);
+      setAllRuns(await getRuns());
       setError(null);
-      // the selected run is always a page check: snapshots are opened on Site Checks
-      const readable = list.filter((r) => r.format !== 1 && r.kind !== "site");
-      setRunId((cur) => (cur && readable.some((r) => r.id === cur) ? cur : (readable[0]?.id ?? "")));
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
     } finally {
@@ -54,26 +41,31 @@ export function RunProvider({ children }: { children: ReactNode }) {
     }
   }, []);
 
+  const reloadChecks = useCallback(async () => {
+    try {
+      setChecks((await getIndex(null)).pages);
+    } catch {
+      setChecks((cur) => cur ?? []);
+    }
+  }, []);
+
   useEffect(() => {
     void reload();
-  }, [reload]);
+    void reloadChecks();
+  }, [reload, reloadChecks]);
 
-  const value = useMemo(
-    () => ({ runs, pageRuns, snapshots, allRuns, runId, setRunId, loading, error, reload }),
-    [runs, pageRuns, snapshots, allRuns, runId, loading, error, reload],
-  );
+  const value = useMemo(() => ({ runs, snapshots, allRuns, checks, loading, error, reload, reloadChecks }), [runs, snapshots, allRuns, checks, loading, error, reload, reloadChecks]);
 
   return <RunContext.Provider value={value}>{children}</RunContext.Provider>;
 }
 
 /**
- * The run a page shows: the one named by `?run=` (a page of a snapshot opened from Site Checks), else the selected page check.
+ * The snapshot a page belongs to when it is opened from Site Checks (`?run=<snapshot>`); null for a checked page.
  * Only for components inside the router.
  */
-export function useActiveRunId(): string {
-  const { runId } = useRunContext();
+export function useActiveRunId(): string | null {
   const [params] = useSearchParams();
-  return params.get("run") || runId;
+  return params.get("run") || null;
 }
 
 export function useRunContext(): RunContextValue {

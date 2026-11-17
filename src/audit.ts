@@ -1,7 +1,7 @@
 import path from "node:path";
 import dotenv from "dotenv";
 import { ALL_LAYERS, type ExtractedPage, type Layers, type PageZones, type RunMeta, type TokenUsage, type Zone } from "./types.js";
-import type { PageReport, SiteReport, ComplianceLayerResult, GeoLayerResult, SharedVariant, SitemapRow } from "./report-types.js";
+import type { PageReport, SiteReport, ComplianceLayerResult, GeoLayerResult, SeoLayerResult, SharedVariant, SitemapRow } from "./report-types.js";
 import {
   reasoningEffort as reasoning,
   settingsForModel,
@@ -27,8 +27,9 @@ import { detectSiteWideFingerprints, fingerprintJsonLdNode } from "./schema-fing
 import { runSiteBasics } from "./site.js";
 import { runSiteTech } from "./site-tech.js";
 import { runSiteLlm } from "./site-llm.js";
-import { createRun, finishRun, latestSnapshot, loadSavedFingerprints, type Snapshot, addSiteLinks, loadSiteLinks, loadSiteMapExcept, loadSiteMapTimes, previousReport, saveRunFingerprints, savePage, saveSitePage, loadSnapshotPage } from "./store.js";
-import { projectRoot, runIdNow, sha256, sleep, urlToSlug } from "./utils.js";
+import { createRun, finishRun, latestSnapshot, loadSavedFingerprints, type Snapshot, addSiteLinks, loadSiteLinks, loadSiteMapExcept, loadSiteMapTimes, previousReport, saveRunFingerprints, savePage, saveSitePage, loadSnapshotPage, layerRan } from "./store.js";
+import { contentHash, projectRoot, runIdNow, sha256, sleep, urlToSlug } from "./utils.js";
+import { logCheck, previousCheck, savePageCheck } from "./page-checks.js";
 
 dotenv.config({ path: path.join(projectRoot(), ".env") });
 
@@ -101,12 +102,14 @@ export async function runAudit(options: AuditOptions): Promise<string> {
   const { model } = settingsForModel(options.model);
   const layers = options.layers ?? ALL_LAYERS;
   if (!layers.compliance && !layers.geo && !layers.seo) throw new Error("Turn on at least one layer");
+  // a page check has no run: each page's result goes to its own row (page_checks), read against the latest snapshot
+  if (!options.all) return executeRun(options, "", new Date().toISOString(), await latestSnapshot());
   const runId = runIdNow();
   const startedAt = new Date().toISOString();
   const { onLog: _onLog, isCancelled: _isCancelled, startedBy, ...saved } = options;
-  // a run of pages reads the site-wide results of the latest snapshot; a run of the whole scope makes a new one
-  const snapshot = options.all ? null : await latestSnapshot();
-  await createRun({ id: runId, startedAt, model: model.id, layers, options: saved, startedBy, kind: options.all ? "site" : "pages", siteRunId: snapshot?.id ?? null });
+  // the whole scope makes a snapshot of the site
+  const snapshot: Snapshot | null = null;
+  await createRun({ id: runId, startedAt, model: model.id, layers, options: saved, startedBy, kind: "site", siteRunId: null });
   try {
     return await executeRun(options, runId, startedAt, snapshot);
   } catch (e) {
@@ -138,11 +141,12 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
   }
   const isSnapshot = !!options.all;
   const layerNames = (["compliance", "geo", "seo"] as const).filter((l) => layers[l]).join(", ");
-  log(`Auditing ${urls.length} URL(s), run ${runId}, model ${model.id}, layers: ${layerNames}`);
+  log(runId ? `Auditing ${urls.length} URL(s), run ${runId}, model ${model.id}, layers: ${layerNames}` : `Checking ${urls.length} page(s), model ${model.id}, layers: ${layerNames}`);
 
   // ---- 2. fetch ---------------------------------------------------------------
   const fetchedAll: { url: string; fetched: FetchResult }[] = [];
   let fromCopy = 0;
+  const copied = new Set<string>();
   const useCopy = !!options.fromSnapshot && !options.all;
   if (useCopy && !snapshot) log("No site snapshot yet: the pages are fetched from the live site");
   for (const url of urls) {
@@ -153,6 +157,7 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
     if (copy) {
       fetchedAll.push({ url, fetched: copy });
       fromCopy++;
+      copied.add(url);
       log(`Read ${fetchedAll.length}/${urls.length} from the snapshot copy: ${short}`);
       continue;
     }
@@ -277,10 +282,16 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
   await pool(preps, concurrency, async (prep) => {
     if (cancelled()) return;
     const { page, zones, scope, fetched, url } = prep;
-    // the latest earlier report in which the layer ran, so a run with a layer off does not erase the cache of the others
-    const prevCompliance = options.force || !layers.compliance ? null : await previousReport(url, "compliance");
-    const prevGeo = options.force || !layers.geo ? null : await previousReport(url, "geo");
     const finalUrl = fetched.finalUrl;
+    // a checked page is the page at its final address: the same page whichever way its link was typed
+    const identity = isSnapshot ? url : finalUrl;
+    // the latest earlier report in which the layer ran, so a run with a layer off does not erase the cache of the others
+    const prevCompliance = options.force || !layers.compliance ? null : await previousReport(identity, "compliance");
+    const prevGeo = options.force || !layers.geo ? null : await previousReport(identity, "geo");
+    // a page check overwrites the check before; that one also tells which layer results to keep when this check does not run a layer
+    const prevCheck = isSnapshot ? null : await previousCheck(finalUrl);
+    let pageTokens: TokenUsage = ZERO;
+    let pageCalls = 0;
 
     const tStart = Date.now();
     const seo = layers.seo
@@ -328,6 +339,8 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
       const r = await runComplianceLayer(client, settings, cPayload, zones);
       if (r.error) llmErrors++;
       tokens = add(tokens, r.usage);
+      pageTokens = add(pageTokens, r.usage);
+      pageCalls++;
       const problems = finalizeCompliance(r.problems, zones);
       compliance = {
         hash: cHash,
@@ -363,6 +376,8 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
       llmCalls += out.calls;
       if (out.error) llmErrors++;
       tokens = add(tokens, out.usage);
+      pageTokens = add(pageTokens, out.usage);
+      pageCalls += out.calls;
       const answered = out.answers.length > 0;
       if (answered && out.calls === 0 && !out.error) cachedLayers++;
       geo = {
@@ -379,6 +394,22 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
     }
 
     const tGeo = Date.now() - tStart - tSeo - tCompliance;
+    // A layer this check did not run (turned off, or the model skipped) keeps its result from the check before, marked with that date.
+    // The model's problems are checked again against the text read now, and the term list is applied to it.
+    let seoLayer: SeoLayerResult = { checks: seo.checks, ...(layers.seo ? {} : { skipped: true }) };
+    if (prevCheck) {
+      const pr = prevCheck.report;
+      const asOf = prevCheck.checked_at.toISOString();
+      const llmSkipped = (e: string | null): boolean => !!e && e.startsWith("LLM skipped");
+      if ((!layers.compliance || llmSkipped(compliance.error)) && layerRan(pr, "compliance")) {
+        const problems = finalizeCompliance(pr.compliance.llm_problems, zones);
+        const modelAction = pr.compliance.model_action ?? pr.compliance.action;
+        compliance = { ...pr.compliance, problems, model_action: modelAction, action: deriveAction(modelAction, problems, zones), as_of: pr.compliance.as_of ?? asOf };
+      }
+      if (!layers.geo && layerRan(pr, "geo")) geo = { ...pr.geo, as_of: pr.geo.as_of ?? asOf };
+      else if (llmSkipped(geo.error) && layerRan(pr, "geo")) geo = { ...geo, llm: pr.geo.llm, placement: pr.geo.placement, usage: pr.geo.usage, error: null, as_of: pr.geo.as_of ?? asOf };
+      if (!layers.seo && layerRan(pr, "seo")) seoLayer = { checks: pr.seo.checks, as_of: pr.seo.as_of ?? asOf };
+    }
     const report: PageReport = {
       schema_version: 2,
       url,
@@ -394,11 +425,30 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
       zones: zones.zones.filter((z) => !z.skipped && z.scope === "page").map((z) => ({ id: z.id, label: z.label, kind: z.kind })),
       zone_warnings: zones.warnings,
       shared_variants: variantsByPage.get(prep) ?? [],
+      content_hash: contentHash(zones.zones),
       compliance,
       geo,
-      seo: { checks: seo.checks, ...(layers.seo ? {} : { skipped: true }) },
+      seo: seoLayer,
     };
-    await savePage(runId, urlToSlug(url), report, fetched.html, zones, settings);
+    if (isSnapshot) {
+      await savePage(runId, urlToSlug(url), report, fetched.html, zones, settings);
+    } else {
+      const cost = usageCost(pageTokens, model);
+      await savePageCheck({
+        slug: urlToSlug(finalUrl),
+        report,
+        html: fetched.html,
+        zones,
+        settings,
+        checkedBy: options.startedBy ?? null,
+        model: model.id,
+        layers,
+        snapshot: snapshot ? { id: snapshot.id, site: snapshot.site } : null,
+        prev: prevCheck,
+        cost,
+      });
+      await logCheck({ kind: "page", by: options.startedBy ?? null, url: finalUrl, model: model.id, layers, tokens: pageTokens, cost, calls: pageCalls, fromSnapshot: copied.has(url) });
+    }
     if (isSnapshot) {
       await saveSitePage(runId, {
         url,
@@ -414,7 +464,7 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
     done++;
     const high = compliance.problems.filter((p) => p.severity === "high").length;
     log(
-      `[${done}/${preps.length}] ${finalUrl.replace(settings.base_url, "") || "/"}  compliance ${compliance.problems.length} (${high} high)${compliance.cached ? " cached" : ""}  geo ${geo.llm.length}${geo.cached ? " cached" : ""}  seo ${seo.checks.filter((c) => c.status === "fail").length} fail  (took: seo ${secs(tSeo)}, compliance ${secs(tCompliance)}, geo ${secs(tGeo)})`,
+      `[${done}/${preps.length}] ${finalUrl.replace(settings.base_url, "") || "/"}  compliance ${compliance.problems.length} (${high} high)${compliance.cached ? " cached" : ""}  geo ${geo.llm.length}${geo.cached ? " cached" : ""}  seo ${seoLayer.checks.filter((c) => c.status === "fail").length} fail${compliance.as_of || geo.as_of || seoLayer.as_of ? "  (kept from the check before: " + [compliance.as_of && "compliance", geo.as_of && "geo", seoLayer.as_of && "seo"].filter(Boolean).join(", ") + ")" : ""}  (took: seo ${secs(tSeo)}, compliance ${secs(tCompliance)}, geo ${secs(tGeo)})`,
     );
   });
 
@@ -445,26 +495,10 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
 
   // a run of pages has no site pass of its own: its pages are counted against the latest snapshot
   if (!isSnapshot) {
-    const meta: RunMeta = {
-      run_id: runId,
-      started_at: startedAt,
-      ended_at: new Date().toISOString(),
-      pages_checked: reports.length,
-      pages_skipped: cachedLayers,
-      llm_calls: llmCalls,
-      llm_errors: llmErrors,
-      tokens,
-      cost_usd: usageCost(tokens, model),
-      model: model.id,
-      layers,
-      ...(subsections ? { subsections } : {}),
-      ...(useCopy && snapshot ? { from_snapshot: { id: snapshot.id, used: fromCopy, total: urls.length } } : {}),
-    };
-    await finishRun(runId, cancelled() ? "stopped" : "done", meta, null, snapshot?.site ?? null);
     log(
-      `${cancelled() ? "Stopped" : "Done"}. ${reports.length} pages, ${llmCalls} LLM calls (${llmErrors} errors), ${cachedLayers} cached layers. Tokens in ${tokens.input}, cached ${tokens.cached_input}, out ${tokens.output}. Cost $${meta.cost_usd!.toFixed(4)} (${model.id})${snapshot ? "" : ". No site snapshot yet: run the whole-site check on the Site page"}`,
+      `${cancelled() ? "Stopped" : "Done"}. ${reports.length} page(s) checked${useCopy && snapshot ? `, ${fromCopy} read from the snapshot copy` : ""}, ${llmCalls} LLM calls (${llmErrors} errors), ${cachedLayers} cached layers. Tokens in ${tokens.input}, cached ${tokens.cached_input}, out ${tokens.output}. Cost ${usageCost(tokens, model).toFixed(4)} (${model.id})${snapshot ? "" : ". No site snapshot yet: make one on Site Checks"}`,
     );
-    return runId;
+    return "";
   }
 
   const basics = await runSiteBasics(settings, geoCfg);
@@ -570,7 +604,7 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
   await finishRun(runId, cancelled() ? "stopped" : "done", meta, site);
   // the banner and form variants and the site-wide JSON-LD are asked once on the stored snapshot (the same call as the Site page button)
   if (client && layers.compliance && !cancelled()) {
-    const r = await runSiteLlm(runId, { model: model.id, onLog: log, isCancelled: cancelled });
+    const r = await runSiteLlm(runId, { model: model.id, by: options.startedBy ?? null, onLog: log, isCancelled: cancelled });
     tokens = add(tokens, r.usage);
     llmCalls += r.calls;
     llmErrors += r.errors;

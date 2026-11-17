@@ -95,7 +95,7 @@ function CheckRow({ row, showChange, runId, filters, slugs }: { row: AuditRow; s
     } catch {
       /* no storage: the Run page opens empty */
     }
-    navigate("/run");
+    navigate("/add");
   };
   const failing = row.status === "fail";
   const items = all ? row.items : row.items.slice(0, ITEMS_SHOWN);

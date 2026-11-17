@@ -1,5 +1,8 @@
 import { useCallback, useEffect, useMemo, useState, type ReactNode } from "react";
 import { Link, useParams, useSearchParams } from "react-router-dom";
+import { api, type JobDetail } from "../api.js";
+import { JobBar } from "../components/JobBar.js";
+import { buttonClass } from "../components/ResourceEditor.js";
 import { useActiveRunId, useRunContext } from "../context/RunContext.js";
 import { getIndex, getPage, getPageFindings, getPageShared, getSiteCheck } from "../data.js";
 import type { Finding, Layer, PageCompare, PageIndexEntry, PageReport, PageShared, SinceSnapshot, SiteCheck } from "../types.js";
@@ -41,8 +44,13 @@ function Section({ title, hint, children }: { title: string; hint?: string; chil
 
 export function PageDetail() {
   const { slug = "" } = useParams();
-  const { runs } = useRunContext();
+  const { runs, reloadChecks } = useRunContext();
+  // null: a checked page (its own current check); a run id: a page of that snapshot
   const runId = useActiveRunId();
+  // bumped after a recheck, so everything on the page is read again
+  const [version, setVersion] = useState(0);
+  const [job, setJob] = useState<{ id: string; label: string } | null>(null);
+  const [recheckMsg, setRecheckMsg] = useState<string | null>(null);
   // a page of a snapshot is opened from Site Checks with ?run=<snapshot>: its links keep that and go back there
   const [qs] = useSearchParams();
   const runParam = qs.get("run");
@@ -58,18 +66,16 @@ export function PageDetail() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    if (!runId) return;
     setError(null);
     setPicked(null);
     getPage(runId, slug)
       .then(setPage)
       .catch((e) => setError(String(e)));
     loadFindings();
-  }, [runId, slug]);
+  }, [runId, slug, version]);
 
   /** Also called after a decision is saved. */
   const loadFindings = useCallback(() => {
-    if (!runId) return;
     getPageFindings(runId, slug)
       .then((r) => {
         setFindings(r.findings);
@@ -84,11 +90,10 @@ export function PageDetail() {
   }, [runId, slug]);
 
   useEffect(() => {
-    if (!runId) return;
     getIndex(runId)
       .then((i) => setSiblings([...i.pages].sort(defaultSort)))
       .catch(() => setSiblings([]));
-  }, [runId]);
+  }, [runId, version]);
 
   // closed findings (accepted, false positive, fixed) are left out of the lists and counts unless asked for
   const okAll = useMemo(() => findings.filter((f) => f.verified), [findings]);
@@ -118,6 +123,9 @@ export function PageDetail() {
   const action = page.compliance.error ? "not_checked" : (page.compliance.action ?? "keep");
   const run = runs.find((r) => r.id === runId);
   const pos = siblings.findIndex((s) => s.slug === slug);
+  // a checked page: who checked it, with what (from its row in the list)
+  const entry = siblings[pos];
+  const isCheck = runId === null;
   const prev = pos > 0 ? siblings[pos - 1] : undefined;
   const next = pos >= 0 ? siblings[pos + 1] : undefined;
 
@@ -168,8 +176,27 @@ export function PageDetail() {
     <div className="space-y-4">
       <div className="flex flex-wrap items-center gap-3 text-sm">
         <Link to={runParam ? "/site?tab=pages" : "/pages"} className="text-blue-600 hover:underline dark:text-blue-400">
-          {runParam ? "Back to the pages of the snapshot" : "Back to pages"}
+          {runParam ? "Back to the pages of the snapshot" : "Back to checked pages"}
         </Link>
+        {isCheck && (
+          <button
+            type="button"
+            className={buttonClass}
+            disabled={!!job}
+            title="Checks this page again as it was checked (same layers and model). The model is asked again only if the text changed."
+            onClick={async () => {
+              setRecheckMsg(null);
+              try {
+                const r = await api.startJob({ text: page.url, ...(entry?.layers ? { layers: entry.layers } : {}), ...(entry?.model ? { model: entry.model } : {}) });
+                setJob({ id: r.id, label: "Rechecking this page" });
+              } catch (e) {
+                setRecheckMsg(String(e instanceof Error ? e.message : e));
+              }
+            }}
+          >
+            Recheck
+          </button>
+        )}
         {pos >= 0 && (
           <span className="ml-auto flex items-center gap-3 text-slate-500">
             {prev ? (
@@ -200,11 +227,26 @@ export function PageDetail() {
         </a>
         <p className="mt-1 text-xs text-slate-500">
           {page.category} / {page.subsection}, {page.template} template. Checked {new Date(page.checked_at).toLocaleString()}
-          {run?.model ? ` with ${run.model}` : ""}
-          {page.compliance.cached || page.geo.cached ? ". Part of the LLM result was reused from an earlier run" : ""}.
+          {isCheck && entry?.checked_by ? ` by ${entry.checked_by}` : ""}
+          {(entry?.model ?? run?.model) ? ` with ${entry?.model ?? run?.model}` : ""}
+          {page.compliance.cached || page.geo.cached ? `. Part of the LLM result was reused from an earlier ${isCheck ? "check" : "run"}` : ""}.
         </p>
       </div>
 
+      {job && (
+        <JobBar
+          jobId={job.id}
+          label={job.label}
+          onDone={(j: JobDetail) => {
+            setJob(null);
+            setRecheckMsg(j.status === "done" ? null : j.status === "stopped" ? "Stopped." : `The recheck failed: ${j.error ?? "see the log"}`);
+            setVersion((v) => v + 1);
+            void reloadChecks();
+          }}
+        />
+      )}
+      {recheckMsg && <p className="rounded bg-slate-100 px-3 py-2 text-sm dark:bg-slate-800">{recheckMsg}</p>}
+      <CarriedNote page={page} />
       <SinceSnapshotNote since={since} />
 
       <div className="space-y-3 rounded-lg border border-slate-200 bg-white p-3 dark:border-slate-700 dark:bg-slate-900">
@@ -281,9 +323,9 @@ export function PageDetail() {
         </p>
       )}
 
-      <ComparisonNote compare={compare} />
-      <SharedBlocksBlock runId={runId} slug={slug} />
-      <SiteCheckBlock runId={runId} slug={slug} />
+      <ComparisonNote compare={compare} isCheck={isCheck} />
+      <SharedBlocksBlock key={`shared-${version}`} runId={runId} slug={slug} />
+      <SiteCheckBlock key={`site-${version}`} runId={runId} slug={slug} />
       {closedCount > 0 && (
         <p className="text-xs text-slate-500">
           {closedCount} closed {closedCount === 1 ? "problem is" : "problems are"} {showClosed ? "shown" : "hidden"} (accepted, false positive or fixed).{" "}
@@ -459,7 +501,7 @@ function SinceSnapshotNote({ since }: { since: SinceSnapshot | null }) {
 }
 
 /** The banner and forms this page carries are shared with other pages and were checked once, by the model, on the snapshot. */
-function SharedBlocksBlock({ runId, slug }: { runId: string; slug: string }) {
+function SharedBlocksBlock({ runId, slug }: { runId: string | null; slug: string }) {
   const [shared, setShared] = useState<PageShared | null>(null);
   useEffect(() => {
     setShared(null);
@@ -515,7 +557,7 @@ function SharedBlocksBlock({ runId, slug }: { runId: string; slug: string }) {
   );
 }
 
-function SiteCheckBlock({ runId, slug }: { runId: string; slug: string }) {
+function SiteCheckBlock({ runId, slug }: { runId: string | null; slug: string }) {
   const [check, setCheck] = useState<SiteCheck | null>(null);
   useEffect(() => {
     setCheck(null);
@@ -584,21 +626,38 @@ function SiteCheckBlock({ runId, slug }: { runId: string; slug: string }) {
   );
 }
 
-function ComparisonNote({ compare }: { compare: PageCompare | null }) {
-  if (!compare) return <p className="text-xs text-slate-500">No earlier run of this page to compare with.</p>;
+/** A layer this check did not run keeps the result of the check before: say which and from when. */
+function CarriedNote({ page }: { page: PageReport }) {
+  const parts = ([
+    ["Compliance", page.compliance.as_of],
+    ["GEO answers", page.geo.as_of],
+    ["SEO", page.seo.as_of],
+  ] as const).filter(([, at]) => !!at);
+  if (!parts.length) return null;
+  const at = (iso: string) => new Date(iso).toLocaleString([], { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit" });
+  return (
+    <p className="rounded bg-amber-50 p-2 text-sm text-amber-800 dark:bg-amber-950 dark:text-amber-200">
+      Not rechecked this time, kept from the check before: {parts.map(([name, when]) => `${name} (${at(when!)})`).join(", ")}. If the page text changed since, recheck with the model.
+    </p>
+  );
+}
+
+function ComparisonNote({ compare, isCheck }: { compare: PageCompare | null; isCheck: boolean }) {
+  const noun = isCheck ? "check" : "run";
+  if (!compare) return <p className="text-xs text-slate-500">{isCheck ? "No earlier version of this page's check to compare with yet: it appears after the page changes and is checked again." : "No earlier run of this page to compare with."}</p>;
   const gone = groupProblems(compare.resolved);
   const skipped = (["compliance", "geo", "seo"] as Layer[]).filter((l) => !compare.layers.includes(l));
   return (
     <div className="space-y-1 text-xs text-slate-500">
       <p>
-        Compared with the run of {new Date(compare.previous_at).toLocaleString()}:{" "}
+        Compared with the {noun} of {new Date(compare.previous_at).toLocaleString()}{isCheck ? " (before the page last changed)" : ""}:{" "}
         <b>{gone.length}</b> {gone.length === 1 ? "problem" : "problems"} gone, new ones are marked <span className="font-semibold text-violet-700 dark:text-violet-300">New</span>.
         {skipped.length > 0 && ` Not compared (off or failed in one of the runs): ${skipped.map((l) => LAYER_LABELS[l]).join(", ")}.`}
         {" "}Compliance wording can differ between runs of the model, so a problem may show as gone and new at once.
       </p>
       {gone.length > 0 && (
         <details>
-          <summary className="cursor-pointer font-medium text-slate-700 dark:text-slate-300">Gone since the previous run ({gone.length})</summary>
+          <summary className="cursor-pointer font-medium text-slate-700 dark:text-slate-300">Gone since the previous {noun} ({gone.length})</summary>
           <ul className="mt-1 space-y-1">
             {gone.map((g, i) => (
               <li key={i} className="flex flex-wrap items-center gap-2 text-sm text-slate-700 dark:text-slate-300">

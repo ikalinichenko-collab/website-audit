@@ -21,6 +21,8 @@ export interface ComplianceLayerResult {
   error: string | null;
   /** the layer was turned off for this run (`error` says so too, so readers show "not checked") */
   skipped?: boolean;
+  /** a page check that did not run this layer keeps the result of the check before; this is when that check was made */
+  as_of?: string;
 }
 
 export interface GeoLayerResult {
@@ -33,11 +35,14 @@ export interface GeoLayerResult {
   placement: GeoCodeCheck | null;
   usage: TokenUsage | null;
   error: string | null;
+  /** the result of the check before, kept because this one did not run the layer (see ComplianceLayerResult) */
+  as_of?: string;
 }
 
 export interface SeoLayerResult {
   checks: SeoCheck[];
   skipped?: boolean;
+  as_of?: string;
 }
 
 export interface PageReport {
@@ -57,6 +62,8 @@ export interface PageReport {
   zone_warnings: string[];
   /** ids of the shared-zone variants this page carries (see SiteReport.shared.variants) */
   shared_variants: string[];
+  /** hash of the page's own zones (see contentHash): the same text gives the same value, so a snapshot can tell a checked page changed */
+  content_hash?: string;
   compliance: ComplianceLayerResult;
   geo: GeoLayerResult;
   seo: SeoLayerResult;

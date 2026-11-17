@@ -9,6 +9,7 @@ import { buildSiteSources, type SiteSources } from "./site-sources.js";
 import { loadGeoCodeConfig, loadSeoConfig, loadSettings } from "./config.js";
 import { buildSiteAudit, type AuditPrevious, type SiteAudit } from "./site-audit.js";
 import { graphUrl } from "./links.js";
+import { getCheckFindings, getCheckReport, getCheckSnapshotId } from "./page-checks.js";
 
 export type RunStatus = "running" | "done" | "stopped" | "error" | "interrupted";
 
@@ -226,6 +227,9 @@ export async function rebuildRun(runId: string, settings: Settings): Promise<num
 
 /** The latest saved report of this URL in which the layer was checked (not turned off). */
 export async function previousReport(url: string, layer: "compliance" | "geo"): Promise<PageReport | null> {
+  // the current check of the page is the cache: its answers are reused while the text, the documents and the model are the same
+  const current = (await db().query<{ report: PageReport }>("SELECT report FROM page_checks WHERE url = $1", [url])).rows[0]?.report;
+  if (current && layerRan(current, layer) && !String(current[layer].error ?? "").startsWith("LLM skipped")) return current;
   const r = await db().query<{ report: PageReport }>(
     `SELECT p.report FROM pages p JOIN runs r ON r.id = p.run_id
      WHERE p.url = $1 AND p.report->>'schema_version' = '2' AND COALESCE(p.report->$2->>'skipped', 'false') <> 'true'
@@ -362,7 +366,8 @@ export async function getRunIndex(runId: string): Promise<RunIndexFile | null> {
   return buildRunIndex(rows.rows.map((x) => x.entry), run.rows[0].site, run.rows[0].layers ?? undefined);
 }
 
-export async function getPage(runId: string, slug: string): Promise<PageReport | null> {
+export async function getPage(runId: string | null, slug: string): Promise<PageReport | null> {
+  if (runId === null) return getCheckReport(slug);
   const r = await db().query<{ report: PageReport }>("SELECT report FROM pages WHERE run_id = $1 AND slug = $2", [runId, slug]);
   return r.rows[0]?.report ?? null;
 }
@@ -385,11 +390,14 @@ export interface SiteCheck {
  * The page of a run against the site map, which only snapshots write: the page's own title, description and H1 are the ones this run
  * stored (a page check may have a newer text than the snapshot), and the other pages are as the snapshot saw them.
  */
-export async function getSiteCheck(runId: string, slug: string): Promise<SiteCheck | null> {
-  const pg = await db().query<{ url: string; profile: string; zones: { zones?: { id: string; text?: string }[] } }>("SELECT url, report->>'profile' AS profile, zones FROM pages WHERE run_id = $1 AND slug = $2", [runId, slug]);
+export async function getSiteCheck(runId: string | null, slug: string): Promise<SiteCheck | null> {
+  const pg =
+    runId === null
+      ? await db().query<{ url: string; profile: string; zones: { zones?: { id: string; text?: string }[] } }>("SELECT url, report->>'profile' AS profile, zones FROM page_checks WHERE slug = $1", [slug])
+      : await db().query<{ url: string; profile: string; zones: { zones?: { id: string; text?: string }[] } }>("SELECT url, report->>'profile' AS profile, zones FROM pages WHERE run_id = $1 AND slug = $2", [runId, slug]);
   const page = pg.rows[0];
   if (!page) return null;
-  const own = (await db().query<{ title: string; meta: string; h1: string; listing: boolean; checked_at: Date }>("SELECT title, meta, h1, listing, checked_at FROM site_pages WHERE url = $1", [page.url])).rows[0];
+  const own = (await db().query<{ title: string; meta: string; h1: string; listing: boolean; checked_at: Date }>("SELECT title, meta, h1, listing, checked_at FROM site_pages WHERE url = $1 OR final_url = $1 LIMIT 1", [page.url])).rows[0];
   const total = Number((await db().query<{ n: string }>("SELECT count(*) AS n FROM site_pages")).rows[0]!.n);
   if (!own) return { available: false, as_of: null, map_pages: total, duplicates: [], inbound: [], orphan_checked: false };
   // the stored zones hold the text this run read (they are empty for an old snapshot whose stored pages were removed: then the map row is used)
@@ -448,22 +456,18 @@ export interface PageFindingsResult {
 }
 
 /** The technical findings of a page check against the report the snapshot has for the same page. */
-async function sinceSnapshot(runId: string, report: PageReport, findings: Finding[]): Promise<SinceSnapshot | null> {
-  const run = (
-    await db().query<{ kind: string; site_run_id: string | null; snapshot_at: Date | null; snapshot_site: SiteReport | null }>(
-      "SELECT r.kind, r.site_run_id, s.started_at AS snapshot_at, s.site AS snapshot_site FROM runs r LEFT JOIN runs s ON s.id = r.site_run_id WHERE r.id = $1",
-      [runId],
-    )
-  ).rows[0];
-  if (!run || run.kind === "site" || !run.site_run_id || !run.snapshot_at) return null;
-  const base = (await db().query<{ report: PageReport }>("SELECT report FROM pages WHERE run_id = $1 AND (url = $2 OR report->>'final_url' = $3) LIMIT 1", [run.site_run_id, report.url, report.final_url])).rows[0];
+async function sinceSnapshot(snapshotRunId: string | null, report: PageReport, findings: Finding[]): Promise<SinceSnapshot | null> {
+  if (!snapshotRunId) return null;
+  const run = (await db().query<{ snapshot_at: Date; snapshot_site: SiteReport | null }>("SELECT started_at AS snapshot_at, site AS snapshot_site FROM runs WHERE id = $1", [snapshotRunId])).rows[0];
+  if (!run) return null;
+  const base = (await db().query<{ report: PageReport }>("SELECT report FROM pages WHERE run_id = $1 AND (url = $2 OR report->>'final_url' = $3) LIMIT 1", [snapshotRunId, report.url, report.final_url])).rows[0];
   if (!base) return null;
   const before = pageFindings(base.report, run.snapshot_site).filter(isTechnical);
   const now = findings.filter(isTechnical);
   const beforeIds = new Set(before.map((f) => f.fid));
   const nowIds = new Set(now.map((f) => f.fid));
   return {
-    snapshot_run: run.site_run_id,
+    snapshot_run: snapshotRunId,
     snapshot_at: run.snapshot_at.toISOString(),
     resolved: before.filter((f) => !nowIds.has(f.fid)),
     added: now.filter((f) => !beforeIds.has(f.fid)),
@@ -471,14 +475,20 @@ async function sinceSnapshot(runId: string, report: PageReport, findings: Findin
   };
 }
 
-export async function getPageFindings(runId: string, slug: string): Promise<PageFindingsResult | null> {
+export async function getPageFindings(runId: string | null, slug: string): Promise<PageFindingsResult | null> {
+  if (runId === null) {
+    // a checked page: compared with the check before its last change, and with the snapshot it was read against
+    const c = await getCheckFindings(slug);
+    if (!c) return null;
+    return { findings: c.findings, compare: c.compare, since_snapshot: await sinceSnapshot(c.snapshotRunId, c.report, c.findings) };
+  }
   const report = await getPage(runId, slug);
   if (!report) return null;
   const startedAt = await runStartedAt(runId);
   const findings = pageFindings(report, await runSite(runId));
   const compare = await compareWithPrevious(runId, startedAt, report, findings);
-  const since = await sinceSnapshot(runId, report, findings);
-  return { findings: await withStatuses(findings, startedAt), compare, since_snapshot: since };
+  // a page of a snapshot is the snapshot's own report: there is nothing to compare it with but the snapshot before it
+  return { findings: await withStatuses(findings, startedAt), compare, since_snapshot: null };
 }
 
 /** What the snapshot's model check found in the shared blocks a page carries (the banner, the forms) and in the site-wide markup. */
@@ -492,11 +502,10 @@ export interface PageShared {
   schema: { problems: { title: string; severity: string; basis: string }[] };
 }
 
-export async function getPageShared(runId: string, slug: string): Promise<PageShared | null> {
+export async function getPageShared(runId: string | null, slug: string): Promise<PageShared | null> {
   const report = await getPage(runId, slug);
   if (!report) return null;
-  const run = (await db().query<{ kind: string; site_run_id: string | null }>("SELECT kind, site_run_id FROM runs WHERE id = $1", [runId])).rows[0];
-  const snapId = run?.kind === "site" ? runId : (run?.site_run_id ?? null);
+  const snapId = runId === null ? await getCheckSnapshotId(slug) : runId;
   if (!snapId) return null;
   const snap = (await db().query<{ id: string; started_at: Date; site: SiteReport | null }>("SELECT id, started_at, site FROM runs WHERE id = $1", [snapId])).rows[0];
   if (!snap?.site) return null;
@@ -521,10 +530,10 @@ export async function getPageShared(runId: string, slug: string): Promise<PageSh
   };
 }
 
-const LAYERS: Layer[] = ["compliance", "geo", "seo"];
+export const LAYERS: Layer[] = ["compliance", "geo", "seo"];
 
 /** A layer can be compared when it ran without error in the report. */
-function layerRan(r: PageReport, layer: Layer): boolean {
+export function layerRan(r: PageReport, layer: Layer): boolean {
   const l = r[layer] as { skipped?: boolean; error?: string | null };
   return !l.skipped && !l.error;
 }
@@ -564,7 +573,7 @@ async function runStartedAt(runId: string): Promise<Date | null> {
  * Adds the stored decision to each finding. A finding marked fixed counts as open again in a run that started after the
  * mark: it is still there.
  */
-async function withStatuses(findings: Finding[], runStart: Date | null): Promise<Finding[]> {
+export async function withStatuses(findings: Finding[], runStart: Date | null): Promise<Finding[]> {
   if (!findings.length) return findings;
   const rows = (
     await db().query<{ fid: string; status: FindingStatus; note: string | null; set_by: string | null; set_at: Date }>(
@@ -583,7 +592,7 @@ async function withStatuses(findings: Finding[], runStart: Date | null): Promise
 
 /** Sets or clears (status null) the decision for the given places of a page or of the site pass. */
 export async function setFindingStatus(
-  runId: string,
+  runId: string | null,
   slug: string | null,
   fids: string[],
   status: FindingStatus | null,
@@ -591,7 +600,7 @@ export async function setFindingStatus(
   by: string | null,
 ): Promise<number> {
   if (status !== null && !FINDING_STATUSES.includes(status)) throw new Error("Unknown status");
-  const all = slug ? (await getPageFindings(runId, slug))?.findings : await getSiteFindings(runId);
+  const all = slug ? (await getPageFindings(runId, slug))?.findings : runId ? await getSiteFindings(runId) : null;
   if (!all) throw new Error("Page or run not found");
   const wanted = new Set(fids);
   const places = [...new Map(all.filter((f) => wanted.has(f.fid)).map((f) => [f.fid, f])).values()];

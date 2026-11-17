@@ -130,10 +130,11 @@ export async function startJob(options: JobOptions, startedBy: string | null = n
 
   const work =
     options.kind === "site_llm"
-      ? runSiteLlm(options.runId ?? "", { model: options.model, onLog, isCancelled: () => stopRequested }).then(() => options.runId ?? "")
+      ? runSiteLlm(options.runId ?? "", { model: options.model, by: startedBy, onLog, isCancelled: () => stopRequested }).then(() => options.runId ?? "")
       : runAudit({ ...options, startedBy, onLog, isCancelled: () => stopRequested });
   work
-    .then((runId) => queue("UPDATE jobs SET run_id = $2, status = $3, ended_at = now() WHERE id = $1", [id, runId, stopRequested ? "stopped" : "done"]))
+    // a snapshot or a model check of one has a run id; a page check has none (its pages are the result)
+    .then((runId) => queue("UPDATE jobs SET run_id = $2, status = $3, ended_at = now() WHERE id = $1", [id, runId || null, stopRequested ? "stopped" : "done"]))
     .catch((e) => {
       const message = e instanceof Error ? e.message : String(e);
       onLog(`Error: ${message}`);

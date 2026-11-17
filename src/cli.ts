@@ -82,7 +82,7 @@ if (!opts.all && !opts.limit && !opts.urls.length && !opts.subsections) {
 migrate()
   .then(() => loadResources())
   .then(() => runAudit(opts))
-  .then((runId) => console.log(`Run: ${runId} (open it in the app: pnpm app)`))
+  .then((runId) => console.log(runId ? `Run: ${runId} (open it in the app: pnpm app)` : "Pages checked (open Page Checks in the app: pnpm app)"))
   .catch((e) => {
     console.error(e instanceof Error ? e.message : e);
     process.exitCode = 1;

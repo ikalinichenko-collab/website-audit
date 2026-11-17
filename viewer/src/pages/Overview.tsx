@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { useRunContext } from "../context/RunContext.js";
-import { getIndex, getRun } from "../data.js";
-import type { GroupTotals, Layers, RunIndexFile, RunMeta } from "../types.js";
+import { getIndex, getSpending } from "../data.js";
+import type { GroupTotals, Layers, RunIndexFile, Spending } from "../types.js";
 import { ACTION_COLUMNS, GROUP_ORDER } from "../labels.js";
 import { Counts, GeoCounts } from "../components/Badges.js";
-import { formatDuration, formatTokens, runLabel } from "../utils.js";
+import { formatTokens } from "../utils.js";
 
 function Card({ title, children }: { title: string; children: React.ReactNode }) {
   return (
@@ -43,36 +42,121 @@ function Row({ name, t, link, layers }: { name: string; t: GroupTotals; link: st
   );
 }
 
+const plural = (n: number, one: string, many: string): string => `${n} ${n === 1 ? one : many}`;
+const money = (v: number): string => (v < 0.01 ? (v === 0 ? "$0" : "under $0.01") : `$${v.toFixed(v < 1 ? 3 : 2)}`);
+
+/** The money the model checks cost: totals, by month, by person and the latest ones. */
+function SpendingBlock({ spending }: { spending: Spending }) {
+  const when = (iso: string) => new Date(iso).toLocaleString([], { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit" });
+  return (
+    <details className="rounded-lg border border-slate-200 bg-white p-3 text-sm dark:border-slate-700 dark:bg-slate-900">
+      <summary className="cursor-pointer font-medium">
+        What the model checks cost <span className="font-normal text-slate-500">{money(spending.total.cost)} in {plural(spending.total.checks, "check", "checks")}</span>
+      </summary>
+      <div className="mt-3 space-y-4">
+        <p className="text-xs text-slate-500">
+          One row is one page check or one model check of a snapshot's shared blocks. A check that reused every answer cost nothing. The cost is worked out from the tokens at the price of the model used.
+        </p>
+        <div className="grid gap-4 md:grid-cols-2">
+          <div>
+            <h3 className="mb-1 text-xs font-semibold uppercase tracking-wide text-slate-500">By month</h3>
+            <table className="w-full text-xs">
+              <tbody>
+                {spending.by_month.map((m) => (
+                  <tr key={m.month} className="border-t border-slate-100 dark:border-slate-800">
+                    <td className="py-1">{m.month}</td>
+                    <td className="py-1 tabular-nums">{money(m.cost)}</td>
+                    <td className="py-1 text-slate-500">{plural(m.checks, "check", "checks")}, {plural(m.calls, "model call", "model calls")}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h3 className="mb-1 text-xs font-semibold uppercase tracking-wide text-slate-500">By person</h3>
+            <table className="w-full text-xs">
+              <tbody>
+                {spending.by_person.map((p) => (
+                  <tr key={p.person} className="border-t border-slate-100 dark:border-slate-800">
+                    <td className="py-1">{p.person}</td>
+                    <td className="py-1 tabular-nums">{money(p.cost)}</td>
+                    <td className="py-1 text-slate-500">{plural(p.checks, "check", "checks")}, {plural(p.calls, "model call", "model calls")}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div>
+          <h3 className="mb-1 text-xs font-semibold uppercase tracking-wide text-slate-500">Latest checks</h3>
+          <div className="max-h-72 overflow-auto">
+            <table className="w-full text-xs">
+              <tbody>
+                {spending.recent.map((r, i) => (
+                  <tr key={i} className="border-t border-slate-100 dark:border-slate-800">
+                    <td className="whitespace-nowrap py-1 pr-3 tabular-nums">{when(r.at)}</td>
+                    <td className="py-1 pr-3">{r.by ?? "command line"}</td>
+                    <td className="max-w-md truncate py-1 pr-3">{r.kind === "site_llm" ? "shared blocks of a snapshot" : r.url.replace(/^https:\/\/[^/]+/, "") || "/"}</td>
+                    <td className="py-1 pr-3 tabular-nums">{money(r.cost)}</td>
+                    <td className="py-1 text-slate-500">{r.calls ? `${r.calls} calls, ${formatTokens(r.tokens.input + r.tokens.cached_input)} in, ${formatTokens(r.tokens.output)} out` : "reused every answer"}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </details>
+  );
+}
+
+/** The checked pages as a whole: how many, what is open, how many changed since they were checked, what it cost. */
 export function Overview() {
-  const { runId, runs } = useRunContext();
-  const run = runs.find((r) => r.id === runId);
-  const snapshot = run?.site_run_id ? runs.find((r) => r.id === run.site_run_id) : undefined;
   const [index, setIndex] = useState<RunIndexFile | null>(null);
-  const [meta, setMeta] = useState<RunMeta | null>(null);
+  const [spending, setSpending] = useState<Spending | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    if (!runId) return;
     setError(null);
-    getIndex(runId)
+    getIndex(null)
       .then(setIndex)
       .catch((e) => setError(String(e)));
-    getRun(runId)
-      .then(setMeta)
-      .catch(() => setMeta(null));
-  }, [runId]);
+    getSpending()
+      .then(setSpending)
+      .catch(() => setSpending(null));
+  }, []);
 
   if (error) return <p className="text-red-600">{error}</p>;
   if (!index) return <p className="text-slate-500">Loading...</p>;
+  if (index.pages.length === 0) {
+    return (
+      <div className="space-y-2 rounded-lg border border-slate-200 bg-white p-6 dark:border-slate-700 dark:bg-slate-900">
+        <h1 className="text-lg font-semibold">No pages checked yet</h1>
+        <p className="max-w-2xl text-sm text-slate-600 dark:text-slate-400">
+          Checked pages are the pages you looked at in depth: wording against the company documents, GEO answers and the technical checks of each page. The whole-site picture is on Site Checks.
+        </p>
+        <p className="text-sm">
+          <Link to="/add" className="text-blue-600 hover:underline dark:text-blue-400">
+            Add pages
+          </Link>
+          {" · "}
+          <Link to="/site" className="text-blue-600 hover:underline dark:text-blue-400">
+            Open Site Checks
+          </Link>
+        </p>
+      </div>
+    );
+  }
   const groups = Object.keys(index.by_group).sort((a, b) => GROUP_ORDER.indexOf(a) - GROUP_ORDER.indexOf(b));
   const subs = Object.keys(index.by_subsection).sort();
   const t = index.totals;
   const layers: Layers = index.layers ?? { compliance: true, geo: true, seo: true };
+  const changed = index.pages.filter((p) => p.changed === true).length;
 
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
-        <Card title="Pages">{t.pages}</Card>
+        <Card title="Pages checked">{t.pages}</Card>
         <Card title="Compliance (high / medium / low)">
           <Counts {...t.compliance} off={!layers.compliance} />
         </Card>
@@ -84,19 +168,16 @@ export function Overview() {
         </Card>
       </div>
       <p className="text-sm text-slate-600 dark:text-slate-400">
-        {snapshot ? `Read against the site snapshot of ${runLabel(snapshot).replace(" (site snapshot)", "")}.` : "There was no site snapshot then: make one on Site Checks."}{" "}
-        {meta?.from_snapshot ? `The pages were read from the copy kept in the snapshot (${meta.from_snapshot.used} of ${meta.from_snapshot.total}; the rest from the live site). ` : ""}
-        <Link to="/site" className="text-blue-600 hover:underline dark:text-blue-400">
-          Open Site Checks
-        </Link>
-        {meta && (
-          <span className="ml-3 text-xs text-slate-500">
-            {meta.llm_calls} LLM calls, {formatTokens(meta.tokens.input + meta.tokens.cached_input)} input and{" "}
-            {formatTokens(meta.tokens.output)} output tokens, {formatDuration(meta.started_at, meta.ended_at)}
-            {meta.model && `, model ${meta.model}`}
-            {meta.cost_usd != null && meta.llm_calls > 0 && `, $${meta.cost_usd.toFixed(meta.cost_usd < 1 ? 3 : 2)}`}
-          </span>
+        {changed > 0 ? (
+          <>
+            <b className="text-amber-700 dark:text-amber-400">{changed}</b> {changed === 1 ? "page has" : "pages have"} a different text in the latest snapshot than when {changed === 1 ? "it was" : "they were"} checked.{" "}
+          </>
+        ) : (
+          "No page is known to have changed since it was checked. "
         )}
+        <Link to="/pages" className="text-blue-600 hover:underline dark:text-blue-400">
+          Open the checked pages
+        </Link>
       </p>
       <div className="overflow-x-auto rounded-lg border border-slate-200 bg-white dark:border-slate-700 dark:bg-slate-900">
         <table className="w-full text-left text-sm">
@@ -129,6 +210,7 @@ export function Overview() {
           </tbody>
         </table>
       </div>
+      {spending && spending.total.checks > 0 && <SpendingBlock spending={spending} />}
     </div>
   );
 }

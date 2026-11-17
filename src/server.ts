@@ -25,6 +25,7 @@ import { migrate } from "./db.js";
 import { rememberUser } from "./users.js";
 import { authRequired, checkAuthConfig, currentUser, handleAuth, sameOrigin, type User } from "./auth.js";
 import * as store from "./store.js";
+import { checksCsv, deleteCheck, getChecksIndex, getSpending } from "./page-checks.js";
 
 const ROOT = projectRoot();
 dotenv.config({ path: path.join(ROOT, ".env") });
@@ -297,8 +298,10 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
   // ---- decisions about findings: accepted, false positive, fixed (status null clears it) ----
   if (parts[0] === "findings" && parts[1] === "status" && parts.length === 2 && method === "POST") {
     const body = await readJson<{ run_id?: string; slug?: string | null; fids?: string[]; status?: string | null; note?: string }>(req);
-    const runId = String(body.run_id ?? "");
-    if (!/^[0-9TZ-]+$/.test(runId)) throw new ValidationError("Bad run id");
+    // a page of a snapshot has a run id; a checked page has none (its slug is enough)
+    const runId = body.run_id ? String(body.run_id) : null;
+    if (runId !== null && !/^[0-9TZ-]+$/.test(runId)) throw new ValidationError("Bad run id");
+    if (runId === null && !body.slug) throw new ValidationError("run_id or slug is required");
     if (!Array.isArray(body.fids) || !body.fids.length || body.fids.some((x) => typeof x !== "string")) throw new ValidationError("fids is required");
     const status = body.status ?? null;
     if (status !== null && !FINDING_STATUSES.includes(status as FindingStatus)) throw new ValidationError("status must be accepted, false_positive, fixed or null");
@@ -312,6 +315,42 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
   }
 
   // ---- runs (read from the database; files are built when asked for) -----------------------
+  // ---- checked pages: the current check of each page, no runs ---------------------------
+  if (parts[0] === "checks") {
+    if (method === "GET" && parts.length === 1) {
+      send(res, 200, await getChecksIndex(user.email));
+      return;
+    }
+    if (method === "GET" && parts.length === 2 && parts[1] === "spending") {
+      send(res, 200, await getSpending());
+      return;
+    }
+    if (method === "GET" && parts.length === 2 && (parts[1] === "findings.csv" || parts[1] === "summary.csv")) {
+      const body = await checksCsv(parts[1] === "findings.csv" ? "findings" : "summary");
+      res.writeHead(200, { "Content-Type": TYPES[".csv"]!, "Cache-Control": "no-store", "Content-Disposition": `attachment; filename="checked-pages-${parts[1]}"` });
+      res.end(body);
+      return;
+    }
+    const slug = parts[1];
+    if (slug && /^[A-Za-z0-9._~-]+$/.test(slug)) {
+      const one = (v: unknown): void => {
+        if (v === null) send(res, 404, { error: "Not found" });
+        else send(res, 200, v);
+      };
+      if (method === "GET" && parts.length === 2) return one(await store.getPage(null, slug));
+      if (method === "GET" && parts.length === 3 && parts[2] === "findings") return one(await store.getPageFindings(null, slug));
+      if (method === "GET" && parts.length === 3 && parts[2] === "shared") return one(await store.getPageShared(null, slug));
+      if (method === "GET" && parts.length === 3 && parts[2] === "site-check") return one(await store.getSiteCheck(null, slug));
+      if (method === "DELETE" && parts.length === 2) {
+        if (!(await deleteCheck(slug))) send(res, 404, { error: "Not found" });
+        else send(res, 200, { deleted: slug });
+        return;
+      }
+    }
+    send(res, 404, { error: "Not found" });
+    return;
+  }
+
   if (parts[0] === "runs") {
     if (parts.length === 1 && method === "GET") {
       send(res, 200, await store.listRuns());

@@ -19,6 +19,14 @@ export interface PageIndexEntry {
   geo: { to_fix: number; high?: number; medium?: number; low?: number; error: string | null };
   seo: { high: number; medium: number; low: number };
   checked_at: string;
+  /** page checks only: who checked it, with which model and layers, what it cost, and whether the latest snapshot has a different text of the page (null: not known) */
+  checked_by?: string | null;
+  model?: string | null;
+  layers?: Layers | null;
+  cost_usd?: number | null;
+  changed?: boolean | null;
+  /** page checks only: the person asking checked it */
+  mine?: boolean;
 }
 
 export interface GroupTotals {

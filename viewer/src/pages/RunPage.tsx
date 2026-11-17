@@ -83,7 +83,7 @@ function SnapshotNote({ snapshot }: { snapshot: RunListEntry | undefined }) {
 }
 
 export function RunPage() {
-  const { pageRuns, snapshots, setRunId, reload } = useRunContext();
+  const { snapshots, checks, reloadChecks } = useRunContext();
   const [prefillFrom, setPrefillFrom] = useState<string | null>(null);
   const navigate = useNavigate();
   const [state, setState] = useState<AppState | null>(null);
@@ -154,7 +154,7 @@ export function RunPage() {
         setLog(j.log);
         if (j.status !== "running") {
           jobId.current = null;
-          void reload();
+          void reloadChecks();
           void api.state().then(setState);
         }
       } catch {
@@ -162,7 +162,7 @@ export function RunPage() {
       }
     }, 1500);
     return () => clearInterval(t);
-  }, [reload]);
+  }, [reloadChecks]);
 
   const running = job?.status === "running" || (state?.running_job != null && jobId.current !== null);
   const pages = countUrls(text);
@@ -202,24 +202,24 @@ export function RunPage() {
   }
 
   const progress = progressOf(log);
-  const finishedRun = job && job.status !== "running" ? job.run_id : null;
+  const finished = !!job && job.status !== "running";
 
   function openResults() {
-    if (!finishedRun) return;
-    setRunId(finishedRun);
     navigate("/pages");
   }
+
+  // pages that are already checked are checked again: their result is replaced
+  const known = new Set((checks ?? []).map((c) => c.url));
+  const alreadyChecked = [...new Set(text.split(/[\s,]+/).filter((s) => /^https?:\/\//.test(s)))].filter((u) => known.has(u)).length;
 
   const field = "rounded border border-slate-300 bg-white px-2 py-1 text-sm dark:border-slate-600 dark:bg-slate-900";
 
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-xl font-semibold">Check chosen pages</h1>
+        <h1 className="text-xl font-semibold">Add pages</h1>
         <p className="mt-1 max-w-3xl text-sm text-slate-600 dark:text-slate-400">
-          Pages are fetched from the live site, split into zones and checked by three layers: Compliance and GEO use the LLM,
-          SEO does not. A page whose text, documents and settings did not change is not asked again unless you tick "Ignore
-          saved results".
+          Paste the links of the pages you want to look at in depth. Each is split into zones and checked by three layers: Compliance and GEO use the LLM, SEO does not. The result appears on Checked pages. A page that is already there is checked again and its result is replaced; the model is asked again only if the text, the documents or the settings changed, unless you tick "Ignore saved results".
         </p>
       </div>
 
@@ -316,6 +316,11 @@ export function RunPage() {
               <input type="checkbox" checked={force} onChange={(e) => setForce(e.target.checked)} /> Ignore saved results
             </label>
             <span className="text-slate-500">{pages ? estimate(pages, layers, model) : "Paste at least one link"}</span>
+            {alreadyChecked > 0 && (
+              <span className="text-amber-700 dark:text-amber-400">
+                {alreadyChecked} of these pages {alreadyChecked === 1 ? "is" : "are"} already checked and will be checked again.
+              </span>
+            )}
           </div>
           {pages > 20 && llmLayers && <Notice kind="warn">More than 20 pages with the LLM takes a while and uses many tokens.</Notice>}
           <button
@@ -324,7 +329,7 @@ export function RunPage() {
             disabled={!pages || running || keyMissing || noLayer}
             onClick={() => start({ text, force, ...runOpts })}
           >
-            Run {pages > 1 ? `${pages} pages` : "page"}
+            Check {pages > 1 ? `${pages} pages` : "page"}
           </button>
         </div>
       )}
@@ -407,7 +412,7 @@ export function RunPage() {
               });
             }}
           >
-            Run {plannedPages ? `${plannedPages} page${plannedPages === 1 ? "" : "s"}` : "selected"}
+            Check {plannedPages ? `${plannedPages} page${plannedPages === 1 ? "" : "s"}` : "selected"}
           </button>
         </div>
       )}
@@ -436,9 +441,9 @@ export function RunPage() {
                 Stop
               </button>
             )}
-            {finishedRun && (
+            {finished && (
               <button type="button" className={primaryClass} onClick={openResults}>
-                Open results
+                Open checked pages
               </button>
             )}
           </div>
@@ -447,76 +452,6 @@ export function RunPage() {
         </section>
       )}
 
-      <RunList runs={pageRuns} snapshots={snapshots} onSelect={(id) => { setRunId(id); navigate("/overview"); }} onDeleted={reload} />
     </div>
-  );
-}
-
-function RunList({
-  runs,
-  snapshots,
-  onSelect,
-  onDeleted,
-}: {
-  runs: { id: string; pages_checked: number; started_at: string; started_by?: string; kind?: "pages" | "site"; model?: string; cost_usd?: number | null; format?: 1 | 2; site_run_id?: string }[];
-  snapshots: RunListEntry[];
-  onSelect: (id: string) => void;
-  onDeleted: () => void;
-}) {
-  const [err, setErr] = useState<string | null>(null);
-  if (!runs.length) return null;
-  return (
-    <section className="space-y-2">
-      <h2 className="font-semibold">Earlier page checks</h2>
-      {err && <Notice kind="error">{err}</Notice>}
-      <ul className="divide-y divide-slate-100 rounded-lg border border-slate-200 bg-white text-sm dark:divide-slate-800 dark:border-slate-700 dark:bg-slate-900">
-        {runs.map((r) => (
-          <li key={r.id} className="flex items-center gap-3 px-3 py-2">
-            <span className="tabular-nums">{runLabel(r)}</span>
-            <span className="text-slate-500">{r.pages_checked} pages</span>
-            {r.model && <span className="text-xs text-slate-500">{r.model}</span>}
-            {r.site_run_id && snapshots.find((s) => s.id === r.site_run_id) && (
-              <span className="text-xs text-slate-500">snapshot {runLabel(snapshots.find((s) => s.id === r.site_run_id)!).replace(" (site snapshot)", "")}</span>
-            )}
-            {r.cost_usd != null && r.cost_usd > 0 && <span className="text-xs text-slate-500">${r.cost_usd.toFixed(r.cost_usd < 1 ? 3 : 2)}</span>}
-            {r.format === 1 ? (
-              <span className="text-xs text-slate-500">old format, cannot be opened</span>
-            ) : (
-              <>
-                <button type="button" className="text-blue-600 hover:underline dark:text-blue-400" onClick={() => onSelect(r.id)}>
-                  open
-                </button>
-                <a className="text-blue-600 hover:underline dark:text-blue-400" href={`/api/runs/${r.id}/findings.csv`} download>
-                  findings.csv
-                </a>
-                <a className="text-blue-600 hover:underline dark:text-blue-400" href={`/api/runs/${r.id}/summary.csv`} download>
-                  summary.csv
-                </a>
-                {r.kind === "site" && (
-                  <a className="text-blue-600 hover:underline dark:text-blue-400" href={`/api/runs/${r.id}/site.md`} target="_blank" rel="noreferrer">
-                    site.md
-                  </a>
-                )}
-              </>
-            )}
-            <button
-              type="button"
-              className="ml-auto text-red-600 hover:underline"
-              onClick={async () => {
-                if (!window.confirm(`Delete run ${r.id}? This cannot be undone.`)) return;
-                try {
-                  await api.deleteRun(r.id);
-                  onDeleted();
-                } catch (e) {
-                  setErr(String(e instanceof Error ? e.message : e));
-                }
-              }}
-            >
-              delete
-            </button>
-          </li>
-        ))}
-      </ul>
-    </section>
   );
 }

@@ -23,7 +23,8 @@ export function App() {
             <Route path="pages" element={<PagesTable />} />
             <Route path="pages/:slug" element={<PageDetail />} />
             <Route path="site" element={<SiteView />} />
-            <Route path="run" element={<RunPage />} />
+            <Route path="add" element={<RunPage />} />
+            <Route path="run" element={<Navigate to="/add" replace />} />
             <Route path="sources" element={<Sources />} />
             <Route path="settings" element={<Settings />} />
             <Route path="*" element={<Navigate to="/site" replace />} />

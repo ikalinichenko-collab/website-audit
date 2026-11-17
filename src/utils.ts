@@ -14,6 +14,15 @@ export function urlToSlug(url: string): string {
   }
 }
 
+/**
+ * Hash of what the checks read of a page: the text of its own zones. Used to tell that a page changed since it was checked
+ * (a snapshot and a page check build the zones the same way, so the same text gives the same hash).
+ */
+export function contentHash(zones: { id: string; text: string; scope?: string; skipped?: boolean }[]): string {
+  const own = zones.filter((z) => !z.skipped && (z.scope === undefined || z.scope === "page")).map((z) => [z.id, z.text.replace(/\s+/g, " ").trim()]);
+  return sha256(JSON.stringify(own)).slice(0, 16);
+}
+
 export function sha256(text: string): string {
   return createHash("sha256").update(text).digest("hex");
 }

@@ -2,9 +2,9 @@ import { createContext, useContext, useState } from "react";
 import { api } from "../api.js";
 import type { Finding, FindingStatus } from "../types.js";
 
-/** Where a decision is saved: the page (or the site pass, slug null) of a run, and how to reload its findings afterwards. */
+/** Where a decision is saved: the page of a run or a checked page (runId null), or the site pass (slug null), and how to reload its findings afterwards. */
 export interface FindingActionsValue {
-  runId: string;
+  runId: string | null;
   slug: string | null;
   reload: () => void;
 }
