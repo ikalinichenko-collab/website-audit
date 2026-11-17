@@ -223,6 +223,11 @@ export function validateResource(r: Resource, content: string): void {
       strArray(data.skip_link_patterns, "skip_link_patterns");
       if (data.orphan_profiles !== undefined) strArray(data.orphan_profiles, "orphan_profiles");
       if (data.thin_content_skip_paths !== undefined) strArray(data.thin_content_skip_paths, "thin_content_skip_paths");
+      if (data.html_text_skip_profiles !== undefined) strArray(data.html_text_skip_profiles, "html_text_skip_profiles");
+      for (const k of ["min_html_words", "max_html_bytes"]) {
+        const v = data[k];
+        if (v !== undefined && (typeof v !== "number" || !Number.isInteger(v) || v < 1)) fail(`${k} must be a whole number above 0`);
+      }
       if (!isObj(data.profiles) || !Object.keys(data.profiles).length) fail("profiles must have at least one profile");
       for (const [name, p] of Object.entries(data.profiles)) {
         if (!isObj(p)) fail(`profile ${name} must be an object`);

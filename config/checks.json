@@ -479,6 +479,30 @@
       "why": "House style (Glossary §9).",
       "fix": "Use the US spelling.",
       "where": "page"
+    },
+    "text_in_html": {
+      "layer": "seo",
+      "group": "indexing",
+      "title": "Page has text in the HTML",
+      "why": "AI crawlers and many search bots read the HTML as it is sent and do not run scripts. A page whose text is added by a script looks empty to them and cannot be quoted.",
+      "fix": "Send the text in the HTML (server-side rendering), or add a plain text version of the key content.",
+      "where": "template"
+    },
+    "snippet_allowed": {
+      "layer": "seo",
+      "group": "indexing",
+      "title": "Snippets are allowed (no nosnippet, no max-snippet:0)",
+      "why": "Search engines and AI answers quote a page only when snippets are allowed.",
+      "fix": "Remove nosnippet or max-snippet:0 from the robots meta tag in the SEO plugin.",
+      "where": "page"
+    },
+    "html_weight": {
+      "layer": "seo",
+      "group": "indexing",
+      "title": "HTML page is not too heavy",
+      "why": "Google reads only the first 2 MB of an HTML file. A heavy page loads slower and may be cut.",
+      "fix": "Remove inline scripts, base64 images and repeated blocks from the page template.",
+      "where": "template"
     }
   },
   "blocks": {

@@ -29,6 +29,12 @@ export interface SeoConfig {
   orphan_profiles?: string[];
   /** Section roots and other listing pages: item cards, not articles, so the word count does not apply. */
   thin_content_skip_paths?: string[];
+  /** A page with fewer words than this in its HTML is empty to a crawler that does not run scripts (100 when absent). */
+  min_html_words?: number;
+  /** Profiles the text-in-HTML check skips: listings show cards, not text (hub when absent). */
+  html_text_skip_profiles?: string[];
+  /** An HTML file above this many bytes is reported as heavy (1 000 000 when absent). */
+  max_html_bytes?: number;
   profiles: Record<string, SeoProfile>;
 }
 
@@ -224,6 +230,36 @@ export async function runSeoChecks(input: SeoInput): Promise<SeoResult> {
     const words = contentZones.reduce((n, z) => n + z.text.split(/\s+/).filter(Boolean).length, 0);
     add({ id: "thin_content", status: words >= profile.min_words ? "pass" : "fail", zone_id: "page", value: `${words} words (at least ${profile.min_words})` });
   }
+
+  // ---- what a crawler that does not run scripts gets ---------------------------------------------
+  // AI crawlers and many search bots read the HTML as sent. A page whose text is added by a script (the calculators) is empty to them.
+  if (!(config.html_text_skip_profiles ?? ["hub"]).includes(profileName)) {
+    const htmlWords = contentZones.reduce((n, z) => n + z.text.split(/\s+/).filter(Boolean).length, 0);
+    const need = config.min_html_words ?? 100;
+    add({ id: "text_in_html", status: htmlWords >= need ? "pass" : "fail", zone_id: "page", value: `${htmlWords} words in the HTML (at least ${need})` });
+  }
+
+  // nosnippet and max-snippet:0 stop search engines and AI answers from quoting the page (any robots-type meta tag)
+  const robotsTags = $('meta[name="robots"], meta[name="googlebot"], meta[name="bingbot"], meta[name="google"]')
+    .toArray()
+    .map((el) => $(el).attr("content")?.trim() ?? "")
+    .filter(Boolean);
+  const blockedSnippets = robotsTags.filter((c) => /\bnosnippet\b|\bmax-snippet\s*:\s*0\b/i.test(c));
+  add({
+    id: "snippet_allowed",
+    status: blockedSnippets.length ? "fail" : "pass",
+    zone_id: "page",
+    value: blockedSnippets.length ? blockedSnippets.join(" | ") : robotsTags.length ? "no snippet limit" : "no robots meta",
+  });
+
+  const htmlBytes = Buffer.byteLength(input.html, "utf8");
+  const maxBytes = config.max_html_bytes ?? 1_000_000;
+  add({
+    id: "html_weight",
+    status: htmlBytes > maxBytes ? "fail" : "pass",
+    zone_id: "page",
+    value: `${Math.round(htmlBytes / 1024)} KB (at most ${Math.round(maxBytes / 1024)} KB)`,
+  });
 
   // ---- schema ---------------------------------------------------------------
   const present = schemaTypes(page.json_ld);

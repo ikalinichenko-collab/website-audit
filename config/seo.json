@@ -34,7 +34,10 @@
     "duplicate_meta": "medium",
     "duplicate_title": "medium",
     "duplicate_h1": "medium",
-    "thin_content": "medium"
+    "thin_content": "medium",
+    "text_in_html": "medium",
+    "snippet_allowed": "medium",
+    "html_weight": "low"
   },
   "title": { "max": 60, "min": 30 },
   "meta": { "min": 120, "max": 158 },
@@ -42,6 +45,9 @@
   "article_schema_fields": ["headline", "datePublished", "dateModified", "author", "image", "publisher"],
   "skip_link_patterns": ["/cdn-cgi/l/email-protection"],
   "orphan_profiles": ["article", "case_study", "podcast"],
+  "min_html_words": 100,
+  "html_text_skip_profiles": ["hub"],
+  "max_html_bytes": 1000000,
   "thin_content_skip_paths": ["/insights/", "/podcast/", "/case-study/", "/use-cases/", "/services/", "/solutions/"],
   "service_path_prefix": "/services/",
   "profiles": {
