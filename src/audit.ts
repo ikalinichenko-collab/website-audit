@@ -401,7 +401,8 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
     for (const prep of preps) {
       const listing = prep.fetched.finalUrl;
       let next = nextListingPage(prep.fetched.html, listing, listing, 2);
-      if (!next) continue;
+      // a hub is a listing even when all its items fit on one page
+      if (!next && classifyUrl(prep.url, settings)?.profile !== "hub") continue;
       listings.add(graphUrl(prep.url));
       const extra = new Set(listingLinks(prep.fetched.html, listing, settings.base_url, seoCfg.skip_link_patterns));
       let n = 2;

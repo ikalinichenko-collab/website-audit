@@ -414,7 +414,10 @@ export async function runSeoChecks(input: SeoInput): Promise<SeoResult> {
   });
   add({ id: "anchors_resolve", status: deadAnchors.length ? "fail" : "pass", zone_id: "page", value: deadAnchors.length ? `${deadAnchors.length} dead` : `${hashLinks.length} checked`, places: deadAnchors });
 
-  const faqDom = pageZones.some((z) => z.id.startsWith("block:accordion") || /^article:(faq|frequently)/.test(z.id));
+  // an accordion inside article.post-content (hire pages) is not a block zone: its text is part of an article section
+  const faqDom =
+    pageZones.some((z) => z.id.startsWith("block:accordion") || /^article:(faq|frequently)/.test(z.id)) ||
+    $('main section.gg-block[class*="gg-block__accordion"]').length > 0;
   const faqSchema = present.has("FAQPage");
   add({ id: "faq_schema_matches_dom", status: faqDom === faqSchema ? "pass" : "fail", zone_id: "json_ld", value: `accordion block: ${faqDom}, FAQPage schema: ${faqSchema}` });
 

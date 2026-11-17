@@ -53,11 +53,14 @@ export function listingLinks(html: string, pageUrl: string, baseUrl: string, ski
   return [...out];
 }
 
-/** The address of page `n` of a listing: a link on `html` to `<listing path>/page/<n>/`, or null when the page has none. */
+/**
+ * The address of page `n` of a listing: a link on `html` to `<listing path>/page/<n>/`, or null when the page has none.
+ * Some listings (glossary, country guides, hire) show no pagination links; they only name the next page in `<link rel="next">`.
+ */
 export function nextListingPage(html: string, pageUrl: string, listingUrl: string, n: number): string | null {
   const base = new URL(listingUrl);
   const want = `${base.pathname.replace(/\/$/, "")}/page/${n}`;
-  const re = /<a\b[^>]*?\bhref\s*=\s*["']([^"']+)["']/gi;
+  const re = /<(?:a|link)\b[^>]*?\bhref\s*=\s*["']([^"']+)["']/gi;
   for (let m = re.exec(html); m; m = re.exec(html)) {
     try {
       const u = new URL(m[1]!, pageUrl);
