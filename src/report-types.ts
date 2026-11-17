@@ -3,6 +3,7 @@ import type { ComplianceFinding } from "./compliance.js";
 import type { GeoCodeCheck } from "./geo-code.js";
 import type { GeoLlmResult } from "./geo-llm.js";
 import type { SeoCheck } from "./seo.js";
+import type { TechCheck } from "./site-tech.js";
 
 /** Result format of a page in a run (schema_version 2): three separate layers. */
 export interface ComplianceLayerResult {
@@ -111,6 +112,8 @@ export interface SiteReport {
     sitemaps: Record<string, number>;
   };
   scope_counts: Record<string, number>;
+  /** checks that exist only for the whole site (absent in snapshots made before they existed) */
+  tech?: TechCheck[];
   /** every sitemap URL (absent in runs made before the table existed) */
   sitemap?: SitemapRow[];
   shared: {

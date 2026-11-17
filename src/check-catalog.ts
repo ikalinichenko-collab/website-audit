@@ -1,7 +1,7 @@
 import type { FixWhere } from "./findings.js";
 
 /** Groups of the Site page's check table, in display order. `style` is kept apart: it never counts in the summary. */
-export type CheckGroup = "indexing" | "meta" | "schema" | "links" | "images" | "ai" | "positioning" | "style";
+export type CheckGroup = "indexing" | "meta" | "schema" | "links" | "images" | "ai" | "positioning" | "freshness" | "style";
 
 export const CHECK_GROUPS: { key: CheckGroup; title: string; blurb: string }[] = [
   { key: "indexing", title: "Crawling, indexing and page basics", blurb: "Can search engines reach, read and index every page?" },
@@ -11,6 +11,7 @@ export const CHECK_GROUPS: { key: CheckGroup; title: string; blurb: string }[] =
   { key: "images", title: "Images", blurb: "Alt text and sizes." },
   { key: "ai", title: "AI access (GEO)", blurb: "Can AI crawlers read the site?" },
   { key: "positioning", title: "Positioning in the markup (GEO)", blurb: "Approved wording where AI answers and search results read it first." },
+  { key: "freshness", title: "Content freshness (GEO)", blurb: "AI answers and search results prefer pages that are kept up to date." },
   { key: "style", title: "Writing style (GEO)", blurb: "House style rules. Many small findings: kept apart so they do not hide the important ones." },
 ];
 
@@ -73,6 +74,17 @@ export const CHECK_CATALOG: Record<string, CatalogEntry> = {
   // ---- AI access (GEO) ----
   robots_ai_bots: geo("ai", "robots.txt lets AI bots in", "A blocked bot cannot read the site and cannot cite it.", "Remove the Disallow rule for the bot in robots.txt.", "template"),
   llms_txt: geo("ai", "llms.txt is present", "A file that tells AI assistants what the site is and which pages matter.", "Publish /llms.txt.", "template"),
+  // ---- checks that only exist for the whole site ----
+  robots_txt: seo("indexing", "robots.txt is served and names the sitemap", "Crawlers read robots.txt first; a missing file or sitemap line slows discovery.", "Serve /robots.txt as plain text and add a Sitemap: line.", "template"),
+  robots_crawlers: seo("indexing", "Search crawlers can reach every section", "A Disallow rule on a section hides it from search.", "Remove or narrow the Disallow rule in robots.txt.", "template"),
+  site_https: seo("indexing", "http and www redirect to the one HTTPS address", "Several addresses for one site split links and rankings between them.", "Redirect http and the other host to https://gogloby.com/ with one permanent (301) redirect.", "template"),
+  soft_404: seo("indexing", "Missing pages answer 404", "A 200 on a missing page (a soft 404) fills the index with empty pages.", "Make the theme send a 404 status on the not-found page.", "template"),
+  sitemap_lastmod: seo("indexing", "Sitemap files carry lastmod", "Search engines use lastmod to decide what to recrawl.", "Turn lastmod on in the sitemap plugin.", "template"),
+  sitemap_urls_clean: seo("indexing", "Sitemap lists each URL once, on the main host over HTTPS", "Repeated, http or foreign-host entries make the sitemap untrustworthy.", "Remove the entries from the sitemap source.", "template"),
+  llms_txt_format: geo("ai", "llms.txt is a real text file that names pages", "An HTML error page or an empty file gives an AI assistant nothing to follow.", "Publish llms.txt as plain text with links to the key pages.", "template"),
+  llms_txt_links: geo("ai", "Links in llms.txt work", "A broken link in llms.txt sends AI assistants to an error.", "Fix or remove the link.", "template"),
+  llms_full_txt: geo("ai", "llms-full.txt is present (optional)", "A single file with the full text of the key pages is easy for AI assistants to read.", "Publish /llms-full.txt if you want it.", "template"),
+  content_stale: geo("freshness", "Content was modified in the last 12 months", "AI answers and search results prefer pages that are kept up to date.", "Review the page and update it, then change its modified date.", "page"),
   // ---- positioning in the markup (GEO) ----
   home_title_exact: geo("positioning", "Home title is the approved one", "The home title is the first thing search results and AI answers say about the company.", "Set the approved title in the SEO plugin.", "page"),
   trap_terms: geo("positioning", "No trap term in title, H1, meta or og", "These terms position the company wrongly (Glossary §8).", "Rewrite the title, H1 or description without the term.", "page"),

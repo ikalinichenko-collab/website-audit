@@ -176,6 +176,8 @@ export function buildSiteAudit(site: SiteReport, reports: PageReport[], opts: Au
   };
 
   const blocked = site.basics.robots.ok ? [] : site.basics.robots.value.replace(/^blocked:\s*/i, "").split(",").map((s) => s.trim()).filter(Boolean);
+  // snapshots made before the site checks existed only know the crude robots.txt result
+  if (!(site.tech ?? []).some((c) => c.id === "robots_ai_bots"))
   rows.push(
     siteRow("robots_ai_bots", "high", opts.aiBots.length, blocked.map((b) => ({ url: b, value: "blocked in robots.txt" })), {
       note: `Checked: ${opts.aiBots.join(", ")}. ${blocked.length ? `Blocked: ${blocked.join(", ")}.` : "All allowed."}`,
@@ -197,6 +199,10 @@ export function buildSiteAudit(site: SiteReport, reports: PageReport[], opts: Au
   } else {
     const total = reports.filter((r) => opts.orphanProfiles.includes(r.profile)).length;
     rows.push(siteRow("orphan_page", "medium", total, site.seo.orphans.map((u) => ({ url: u, profile: profileOf.get(norm(u)), value: "no page links to it from its content" }))));
+  }
+  for (const c of site.tech ?? []) {
+    if (!CHECK_CATALOG[c.id]) continue;
+    rows.push(siteRow(c.id, c.severity, c.total, c.items, { note: c.note, ...(c.status === "na" ? { status: "not_checked" as const } : {}) }));
   }
   const hygiene = site.seo.sitemap_hygiene;
   rows.push(

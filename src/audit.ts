@@ -25,6 +25,7 @@ import { compliancePayload, deriveAction, finalizeCompliance, runComplianceLayer
 import { createOpenAiClient } from "./llm.js";
 import { detectSiteWideFingerprints, fingerprintJsonLdNode } from "./schema-fingerprint.js";
 import { runSiteBasics } from "./site.js";
+import { runSiteTech } from "./site-tech.js";
 import { runSiteLlm } from "./site-llm.js";
 import { createRun, finishRun, latestSnapshot, loadSavedFingerprints, type Snapshot, addSiteLinks, loadSiteLinks, loadSiteMapExcept, loadSiteMapTimes, previousReport, saveRunFingerprints, savePage, saveSitePage } from "./store.js";
 import { projectRoot, runIdNow, sha256, sleep, urlToSlug } from "./utils.js";
@@ -503,10 +504,23 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
     if (graph.note) seoSite.orphans_note = graph.note;
   }
 
+  // checks that exist only for the whole site: robots.txt rules on real section paths, llms.txt, addresses, sitemap files, freshness
+  const probe = new Map<string, string>();
+  for (const r of sitemap) if (r.scope && !r.excluded && !probe.has(r.scope)) probe.set(r.scope, r.url);
+  const modifiedOf = new Map(preps.map((p) => [p.fetched.finalUrl, p.page.date_modified ?? p.page.date_published]));
+  const tech = await runSiteTech(
+    settings,
+    geoCfg,
+    { probeUrls: [...probe.values()], pages: reports.map((r) => ({ url: r.final_url, profile: r.profile, modified: modifiedOf.get(r.final_url) ?? null })) },
+    layers,
+    log,
+  );
+
   const site: SiteReport = {
     schema_version: 2,
     run_id: runId,
     basics,
+    tech,
     scope_counts: scopeCounts,
     sitemap,
     shared: { variants, compliance: null },
