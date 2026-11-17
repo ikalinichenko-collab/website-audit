@@ -6,7 +6,8 @@ import { FINDING_STATUSES, pageFindings, siteFindings, type Finding, type Findin
 import { buildFindingsCsv, buildSummaryCsv, renderPageReport, renderSiteReport } from "./render.js";
 import { attachFragments, buildRunIndex, pageIndexEntry, type PageIndexEntry, type RunIndexFile, type RunListEntry, type StoredZones } from "./run-output.js";
 import { buildSiteSources, type SiteSources } from "./site-sources.js";
-import { loadSeoConfig } from "./config.js";
+import { loadGeoCodeConfig, loadSeoConfig } from "./config.js";
+import { buildSiteAudit, type SiteAudit } from "./site-audit.js";
 import { graphUrl } from "./links.js";
 
 export type RunStatus = "running" | "done" | "stopped" | "error" | "interrupted";
@@ -283,6 +284,18 @@ export async function getSite(runId: string): Promise<SiteReport | null> {
 export async function getSiteFindings(runId: string): Promise<Finding[] | null> {
   const site = await ownSite(runId);
   return site ? withStatuses(siteFindings(site), await runStartedAt(runId)) : null;
+}
+
+/** The whole-site view of a snapshot: every page check summed over its pages, plus the site-only checks. */
+export async function getSiteAudit(runId: string): Promise<SiteAudit | null> {
+  const site = await ownSite(runId);
+  if (!site) return null;
+  const geo = loadGeoCodeConfig();
+  return buildSiteAudit(site, await allReports(runId), {
+    aiBots: geo.ai_bots,
+    llmsUrl: geo.llms_txt_url,
+    orphanProfiles: loadSeoConfig().orphan_profiles ?? [],
+  });
 }
 
 export async function getSiteSources(runId: string): Promise<SiteSources | null> {

@@ -222,6 +222,53 @@ export interface SiteReport {
   };
 }
 
+export type AuditSeverity = "high" | "medium" | "low";
+export type AuditWhere = "template" | "page" | "author";
+
+/** Same shape as `AuditRow` in src/site-audit.ts. */
+export interface AuditRow {
+  id: string;
+  layer: "seo" | "geo";
+  group: string;
+  title: string;
+  why: string;
+  fix: string;
+  where: AuditWhere;
+  severity: AuditSeverity;
+  status: "ok" | "fail" | "not_checked";
+  failing: number;
+  total: number;
+  places: number;
+  by_profile: { profile: string; failing: number; total: number }[];
+  items: { url: string; profile?: string; value: string; urls?: string[] }[];
+  more: number;
+  note?: string;
+}
+
+export interface AuditCounts {
+  high: number;
+  medium: number;
+  low: number;
+  ok: number;
+  total: number;
+}
+
+/** Same shape as `SiteAudit` in src/site-audit.ts. */
+export interface SiteAudit {
+  run_id: string;
+  groups: { key: string; title: string; blurb: string }[];
+  pages: number;
+  coverage: { sitemap_urls: number | null; in_scope: number | null; outside_scope: number | null };
+  summary: {
+    seo: AuditCounts;
+    geo: AuditCounts;
+    style: { checks: number; failing: number; pages: number; places: number };
+    first: { id: string; title: string; severity: AuditSeverity; failing: number; total: number; where: AuditWhere; fix: string }[];
+    not_checked: string[];
+  };
+  rows: AuditRow[];
+}
+
 export type ActionKey = "rewrite" | "needs_decision" | "fix" | "keep" | "not_checked";
 
 /** Same shape as `SiteSources` in src/site-sources.ts. */

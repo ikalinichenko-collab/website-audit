@@ -3,12 +3,13 @@ import { Link } from "react-router-dom";
 import { api } from "../api.js";
 import { buttonClass } from "../components/ResourceEditor.js";
 import { useRunContext } from "../context/RunContext.js";
-import { getRun, getSite, getSiteFindings, getSiteSources } from "../data.js";
-import type { Finding, RunListEntry, RunMeta, SiteReport, SiteSources, SitemapRow } from "../types.js";
+import { getRun, getSite, getSiteAudit, getSiteFindings, getSiteSources } from "../data.js";
+import type { Finding, RunListEntry, RunMeta, SiteAudit, SiteReport, SiteSources, SitemapRow } from "../types.js";
 import { runLabel } from "../utils.js";
 import { FindingList } from "../components/FindingList.js";
 import { FindingActionsContext } from "../components/FindingActions.js";
 import { SchemaNodeCard, VariantCard, findingsInNode } from "../components/SourceCards.js";
+import { AuditGroups, AuditSummary } from "../components/SiteAuditPanel.js";
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
@@ -253,6 +254,7 @@ export function SiteView() {
   const [meta, setMeta] = useState<RunMeta | null>(null);
   const [findings, setFindings] = useState<Finding[]>([]);
   const [sources, setSources] = useState<SiteSources | null>(null);
+  const [audit, setAudit] = useState<SiteAudit | null>(null);
 
   const reload = () => {
     if (runId) getSiteFindings(runId).then(setFindings).catch(() => setFindings([]));
@@ -269,6 +271,9 @@ export function SiteView() {
     getRun(runId)
       .then(setMeta)
       .catch(() => setMeta(null));
+    getSiteAudit(runId)
+      .then(setAudit)
+      .catch(() => setAudit(null));
     getSiteSources(runId)
       .then(setSources)
       .catch(() => setSources(null));
@@ -298,15 +303,33 @@ export function SiteView() {
     <FindingActionsContext.Provider value={{ runId, slug: null, reload }}>
     <div className="space-y-8">
       {bar}
-      <Section title="Site checks">
-        <ul className="text-sm">
-          <li>
-            robots.txt AI bots: <b>{site.basics.robots.value}</b>{origin && <> <a href={`${origin}/robots.txt`} target="_blank" rel="noreferrer" className="text-xs text-blue-600 hover:underline dark:text-blue-400">open</a></>}
-          </li>
-          <li>
-            llms.txt: <b>{site.basics.llms_txt.value}</b>{origin && <> <a href={`${origin}/llms.txt`} target="_blank" rel="noreferrer" className="text-xs text-blue-600 hover:underline dark:text-blue-400">open</a></>}
-          </li>
-        </ul>
+      {audit ? (
+        <>
+          <Section title="Summary">
+            <AuditSummary audit={audit} />
+          </Section>
+          <Section title="All checks">
+            <p className="text-sm text-slate-500">
+              Every technical SEO and GEO check, run on every page of the snapshot (no model). Open a check to see why it matters, how to fix it and the pages that fail.
+            </p>
+            <AuditGroups audit={audit} />
+          </Section>
+        </>
+      ) : (
+        <p className="text-sm text-slate-500">Loading the checks...</p>
+      )}
+
+      <Section title="Coverage and sitemap">
+        {origin && (
+          <p className="text-sm">
+            Open on the site:{" "}
+            {["robots.txt", "llms.txt", "sitemap_index.xml"].map((f) => (
+              <a key={f} href={`${origin}/${f}`} target="_blank" rel="noreferrer" className="mr-3 text-blue-600 hover:underline dark:text-blue-400">
+                {f}
+              </a>
+            ))}
+          </p>
+        )}
         <details className="text-sm">
           <summary className="cursor-pointer text-slate-500">Sitemaps</summary>
           <ul>
@@ -318,6 +341,7 @@ export function SiteView() {
           </ul>
         </details>
         <SitemapTable site={site} />
+        <h3 className="text-sm font-semibold">Pages by section</h3>
         <ul className="text-sm text-slate-600 dark:text-slate-400">
           {Object.entries(site.scope_counts)
             .sort()
@@ -328,6 +352,13 @@ export function SiteView() {
             ))}
         </ul>
       </Section>
+
+      <div className="rounded border border-slate-300 bg-slate-50 px-3 py-2 text-sm dark:border-slate-600 dark:bg-slate-800/40">
+        <b>Needs the model.</b>{" "}
+        {meta?.site_llm
+          ? "The two sections below were checked by the model."
+          : "The two sections below are not checked yet: an empty list does not mean there are no problems. Use \"Check shared blocks with the model\" at the top."}
+      </div>
 
       <Section title="Shared zones (banner CTA, forms)">
         <p className="text-sm text-slate-500">
@@ -387,56 +418,6 @@ export function SiteView() {
         )}
       </Section>
 
-      <Section title="SEO across pages">
-        <h3 className="text-sm font-semibold">Failing on nearly every page of a type</h3>
-        <ul className="text-sm">
-          {site.seo.collapsed.length === 0 && <li className="text-slate-500">none</li>}
-          {site.seo.collapsed.map((c) => (
-            <li key={`${c.id}-${c.profile}`}>
-              {c.id} on {c.pages_failing} of {c.pages_total} {c.profile} pages: <span className="text-slate-500">{c.value}</span>
-            </li>
-          ))}
-        </ul>
-        <h3 className="text-sm font-semibold">Duplicates</h3>
-        <ul className="text-sm">
-          {site.seo.duplicates.length === 0 && <li className="text-slate-500">none</li>}
-          {site.seo.duplicates.map((d, i) => (
-            <li key={i}>
-              {d.id}: <i>&ldquo;{d.value.slice(0, 90)}&rdquo;</i>{" "}
-              {d.urls.map((u) => (
-                <span key={u} className="mr-1 text-slate-500">
-                  {short(u)}
-                </span>
-              ))}
-              {d.others_as_of && <span className="text-xs text-slate-500">(pages not fetched in this run: as last fetched {d.others_as_of.slice(0, 16).replace("T", " ")} UTC)</span>}
-            </li>
-          ))}
-        </ul>
-        <h3 className="text-sm font-semibold">Orphan pages</h3>
-        <p className="text-xs text-slate-500">
-          Articles, case studies and podcasts that no other in-scope page links to from its content (menu, footer and related-content widgets do not count).
-        </p>
-        <ul className="text-sm">
-          {site.seo.orphans_note && <li className="text-slate-500">{site.seo.orphans_note}</li>}
-          {!site.seo.orphans_note && (site.seo.orphans ?? []).length === 0 && <li className="text-slate-500">none</li>}
-          {(site.seo.orphans ?? []).map((u) => (
-            <li key={u}>
-              <a href={u} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline dark:text-blue-400">
-                {short(u)}
-              </a>
-            </li>
-          ))}
-        </ul>
-        <h3 className="text-sm font-semibold">Sitemap hygiene</h3>
-        <ul className="text-sm">
-          {site.seo.sitemap_hygiene.length === 0 && <li className="text-slate-500">none</li>}
-          {site.seo.sitemap_hygiene.map((h) => (
-            <li key={h.url}>
-              {short(h.url)}: {h.problem}
-            </li>
-          ))}
-        </ul>
-      </Section>
       <p className="text-sm">
         <Link to="/pages" className="text-blue-600 hover:underline dark:text-blue-400">
           Back to pages
