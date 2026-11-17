@@ -199,6 +199,8 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
         limit?: number;
         force?: boolean;
         noLlm?: boolean;
+        /** read the pages from the copy kept in the latest snapshot */
+        fromSnapshot?: boolean;
         /** the free whole-site check: whole scope, no LLM, Compliance off */
         siteScan?: boolean;
         /** ask the model about the shared blocks (banner and form variants, site-wide JSON-LD) of this snapshot */
@@ -228,7 +230,7 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
       // the free whole-site check: the whole scope, no model, Compliance off; it makes a site snapshot
       const common = siteScan
         ? { layers: { compliance: false, geo: true, seo: true }, model: settings.llm.model, noLlm: true }
-        : { layers, model: body.model || settings.llm.model, force: body.force, noLlm: body.noLlm };
+        : { layers, model: body.model || settings.llm.model, force: body.force, noLlm: body.noLlm, fromSnapshot: body.fromSnapshot === true };
       if (!settings.llm.models.some((m) => m.id === common.model)) throw new ValidationError(`Unknown model "${common.model}"`);
       if (!layers.compliance && !layers.geo && !layers.seo) throw new ValidationError("Turn on at least one layer");
       let options: JobOptions;
@@ -361,6 +363,7 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
       if (parts.length === 3 && what === "site-sources") return json(await store.getSiteSources(id));
       if (parts.length === 4 && what === "pages" && !parts[3]!.endsWith(".md")) return json(await store.getPage(id, parts[3]!));
       if (parts.length === 5 && what === "pages" && parts[4] === "site-check") return json(await store.getSiteCheck(id, parts[3]!));
+      if (parts.length === 5 && what === "pages" && parts[4] === "shared") return json(await store.getPageShared(id, parts[3]!));
       if (parts.length === 5 && what === "pages" && parts[4] === "findings") return json(await store.getPageFindings(id, parts[3]!));
       if (parts.length === 3 && what === "findings.csv") return text(await store.findingsCsv(id), TYPES[".csv"]!);
       if (parts.length === 3 && what === "summary.csv") return text(await store.summaryCsv(id), TYPES[".csv"]!);

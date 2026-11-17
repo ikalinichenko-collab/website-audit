@@ -186,4 +186,6 @@ export interface RunMeta {
   site_llm?: { model: string; at: string };
   /** an old snapshot whose stored HTML and zones were removed (only its reports are kept) */
   pruned_at?: string;
+  /** a page check that read its pages from the copy kept in the latest snapshot: how many of its pages came from there */
+  from_snapshot?: { id: string; used: number; total: number };
 }

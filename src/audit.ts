@@ -27,7 +27,7 @@ import { detectSiteWideFingerprints, fingerprintJsonLdNode } from "./schema-fing
 import { runSiteBasics } from "./site.js";
 import { runSiteTech } from "./site-tech.js";
 import { runSiteLlm } from "./site-llm.js";
-import { createRun, finishRun, latestSnapshot, loadSavedFingerprints, type Snapshot, addSiteLinks, loadSiteLinks, loadSiteMapExcept, loadSiteMapTimes, previousReport, saveRunFingerprints, savePage, saveSitePage } from "./store.js";
+import { createRun, finishRun, latestSnapshot, loadSavedFingerprints, type Snapshot, addSiteLinks, loadSiteLinks, loadSiteMapExcept, loadSiteMapTimes, previousReport, saveRunFingerprints, savePage, saveSitePage, loadSnapshotPage } from "./store.js";
 import { projectRoot, runIdNow, sha256, sleep, urlToSlug } from "./utils.js";
 
 dotenv.config({ path: path.join(projectRoot(), ".env") });
@@ -48,6 +48,8 @@ export interface AuditOptions {
   startedBy?: string | null;
   /** Skip both LLM layers (smoke tests, SEO and GEO code checks only). */
   noLlm?: boolean;
+  /** A run of pages reads each page from the copy kept in the latest snapshot (the text the audit saw, no request to the site); a page without a copy is fetched live. */
+  fromSnapshot?: boolean;
   /** Progress lines (also printed to the console). */
   onLog?: (line: string) => void;
   /** Checked between pages: when true, no new page is started and the finished ones are saved. */
@@ -59,6 +61,9 @@ const SHARED_IDS = ["banner_cta", "modals"];
 const SHARED_MIN_PAGES = 2;
 /** Safety limit for the pages of one listing read for their links. */
 const MAX_LISTING_PAGES = 80;
+/** Seconds, one decimal, for the timings in the log. */
+const secs = (ms: number): string => `${(ms / 1000).toFixed(1)}s`;
+
 const LAYER_OFF = "Layer turned off for this run";
 const ZERO: TokenUsage = { input: 0, cached_input: 0, output: 0 };
 
@@ -137,11 +142,23 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
 
   // ---- 2. fetch ---------------------------------------------------------------
   const fetchedAll: { url: string; fetched: FetchResult }[] = [];
+  let fromCopy = 0;
+  const useCopy = !!options.fromSnapshot && !options.all;
+  if (useCopy && !snapshot) log("No site snapshot yet: the pages are fetched from the live site");
   for (const url of urls) {
     if (cancelled()) break;
+    const short = url.replace(settings.base_url, "") || "/";
+    // the copy of the page kept in the latest snapshot: the text the audit saw, and no request to the site
+    const copy = useCopy && snapshot ? await loadSnapshotPage(snapshot.id, url) : null;
+    if (copy) {
+      fetchedAll.push({ url, fetched: copy });
+      fromCopy++;
+      log(`Read ${fetchedAll.length}/${urls.length} from the snapshot copy: ${short}`);
+      continue;
+    }
     await sleep(settings.fetch.delay_ms);
     fetchedAll.push({ url, fetched: await httpGet(url, settings) });
-    log(`Fetched ${fetchedAll.length}/${urls.length}: ${url.replace(settings.base_url, "") || "/"}`);
+    log(`Fetched ${fetchedAll.length}/${urls.length}${useCopy && snapshot ? " (no copy in the snapshot)" : ""}: ${short}`);
   }
   // a sitemap URL that redirects to another URL of the list is a sitemap problem, not a second page
   const requested = new Set(urls.map((u) => u.replace(/\/$/, "")));
@@ -156,7 +173,8 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
   });
   // such a URL is fetched and has no links of its own: recorded as known, so the link graph does not wait for it
   for (const { url, fetched } of fetchedAll) {
-    if (redirectOnly.some((r) => r.url === url)) {
+    // the site map is written by snapshots only, so a page check never changes what Site Checks and the page's own site block read
+    if (isSnapshot && redirectOnly.some((r) => r.url === url)) {
       await saveSitePage(runId, { url, final_url: fetched.finalUrl, title: "", meta: "", h1: "", links_out: [], checked_at: new Date().toISOString() });
     }
   }
@@ -264,6 +282,7 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
     const prevGeo = options.force || !layers.geo ? null : await previousReport(url, "geo");
     const finalUrl = fetched.finalUrl;
 
+    const tStart = Date.now();
     const seo = layers.seo
       ? await runSeoChecks({
           html: fetched.html,
@@ -276,6 +295,7 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
           linkChecker,
         })
       : { checks: [] };
+    const tSeo = Date.now() - tStart;
 
     const geoType = geoTypeOf(scope.profile);
     const types = new Set<string>();
@@ -333,6 +353,7 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
       };
     }
 
+    const tCompliance = Date.now() - tStart - tSeo;
     // geo (code checks always live; LLM answers cached one by one, see runGeoLlm)
     let geo: GeoLayerResult;
     if (!layers.geo) {
@@ -357,6 +378,7 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
       geo = { hash: geoFp, cached: false, code: geoCode, llm: [], placement: null, usage: null, error: options.noLlm ? "LLM skipped for this run" : "OPENAI_API_KEY not set" };
     }
 
+    const tGeo = Date.now() - tStart - tSeo - tCompliance;
     const report: PageReport = {
       schema_version: 2,
       url,
@@ -377,20 +399,22 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
       seo: { checks: seo.checks, ...(layers.seo ? {} : { skipped: true }) },
     };
     await savePage(runId, urlToSlug(url), report, fetched.html, zones, settings);
-    await saveSitePage(runId, {
-      url,
-      final_url: finalUrl,
-      title: page.title,
-      meta: page.meta_description,
-      h1: page.h1[0] ?? "",
-      links_out: mainContentLinks(zones, finalUrl, settings.base_url, seoCfg.skip_link_patterns),
-      checked_at: report.checked_at,
-    });
+    if (isSnapshot) {
+      await saveSitePage(runId, {
+        url,
+        final_url: finalUrl,
+        title: page.title,
+        meta: page.meta_description,
+        h1: page.h1[0] ?? "",
+        links_out: mainContentLinks(zones, finalUrl, settings.base_url, seoCfg.skip_link_patterns),
+        checked_at: report.checked_at,
+      });
+    }
     reports.push(report);
     done++;
     const high = compliance.problems.filter((p) => p.severity === "high").length;
     log(
-      `[${done}/${preps.length}] ${finalUrl.replace(settings.base_url, "") || "/"}  compliance ${compliance.problems.length} (${high} high)${compliance.cached ? " cached" : ""}  geo ${geo.llm.length}${geo.cached ? " cached" : ""}  seo ${seo.checks.filter((c) => c.status === "fail").length} fail`,
+      `[${done}/${preps.length}] ${finalUrl.replace(settings.base_url, "") || "/"}  compliance ${compliance.problems.length} (${high} high)${compliance.cached ? " cached" : ""}  geo ${geo.llm.length}${geo.cached ? " cached" : ""}  seo ${seo.checks.filter((c) => c.status === "fail").length} fail  (took: seo ${secs(tSeo)}, compliance ${secs(tCompliance)}, geo ${secs(tGeo)})`,
     );
   });
 
@@ -398,7 +422,7 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
   // A listing (its page links to <listing>/page/2/) shows its items over several pages that the scope leaves out.
   // They are fetched only for their links, which count as links of the listing, so the link graph sees every item.
   const listings = new Set<string>();
-  if (layers.seo) {
+  if (layers.seo && isSnapshot) {
     for (const prep of preps) {
       const listing = prep.fetched.finalUrl;
       let next = nextListingPage(prep.fetched.html, listing, listing, 2);
@@ -434,6 +458,7 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
       model: model.id,
       layers,
       ...(subsections ? { subsections } : {}),
+      ...(useCopy && snapshot ? { from_snapshot: { id: snapshot.id, used: fromCopy, total: urls.length } } : {}),
     };
     await finishRun(runId, cancelled() ? "stopped" : "done", meta, null, snapshot?.site ?? null);
     log(

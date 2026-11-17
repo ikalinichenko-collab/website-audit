@@ -11,6 +11,7 @@ function parseArgs(argv: string[]): {
   all?: boolean;
   force?: boolean;
   noLlm?: boolean;
+  fromSnapshot?: boolean;
   layers: Layers;
   model?: string;
   subsections?: string[];
@@ -20,6 +21,7 @@ function parseArgs(argv: string[]): {
   let all = false;
   let force = false;
   let noLlm = false;
+  let fromSnapshot = false;
   let model: string | undefined;
   const layers: Layers = { ...ALL_LAYERS };
   const subsections: string[] = [];
@@ -38,6 +40,8 @@ function parseArgs(argv: string[]): {
       force = true;
     } else if (a === "--no-llm") {
       noLlm = true;
+    } else if (a === "--from-snapshot") {
+      fromSnapshot = true;
     } else if (a === "--no-compliance") {
       layers.compliance = false;
     } else if (a === "--no-geo") {
@@ -63,14 +67,14 @@ function parseArgs(argv: string[]): {
       fail(`Unknown option: ${a}`);
     }
   }
-  return { urls, limit, all, force, noLlm, layers, model, subsections: subsections.length ? [...new Set(subsections)] : undefined };
+  return { urls, limit, all, force, noLlm, fromSnapshot, layers, model, subsections: subsections.length ? [...new Set(subsections)] : undefined };
 }
 
 const opts = parseArgs(process.argv.slice(2));
 if (!opts.all && !opts.limit && !opts.urls.length && !opts.subsections) {
   console.error(
     "Usage: pnpm scan <url>... | --limit N | --all | --category <name>... | --subsection <name>...\n" +
-      "       [--force] [--no-llm] [--no-compliance] [--no-geo] [--no-seo] [--model <id>]",
+      "       [--force] [--no-llm] [--from-snapshot] [--no-compliance] [--no-geo] [--no-seo] [--model <id>]",
   );
   process.exit(1);
 }

@@ -146,7 +146,7 @@ export function fragmentAllowed(zoneId: string): boolean {
   return !NO_FRAGMENT_ZONES.test(zoneId);
 }
 
-function variantLabel(zoneId: string): string | null {
+export function variantLabel(zoneId: string): string | null {
   const v = zoneId.match(/^(banner_cta|modals)@(\d+)$/);
   return v ? `${v[1] === "banner_cta" ? "Banner CTA" : "Forms"} (variant ${v[2]})` : null;
 }

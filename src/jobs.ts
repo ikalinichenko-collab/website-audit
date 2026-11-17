@@ -15,6 +15,8 @@ export interface JobOptions {
   model?: string;
   force?: boolean;
   noLlm?: boolean;
+  /** read the pages from the copy kept in the latest snapshot instead of the live site */
+  fromSnapshot?: boolean;
   /** "site_llm": ask the model about the shared blocks of the snapshot `runId` (no pages are fetched) */
   kind?: "site_llm";
   runId?: string;

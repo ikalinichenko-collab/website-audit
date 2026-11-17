@@ -2,7 +2,7 @@ import type { Layers, RunMeta, Settings } from "./types.js";
 import type { PageReport, SiteReport } from "./report-types.js";
 import { db } from "./db.js";
 import { shownName } from "./users.js";
-import { FINDING_STATUSES, pageFindings, siteFindings, type Finding, type FindingStatus, type Layer } from "./findings.js";
+import { FINDING_STATUSES, pageFindings, siteFindings, variantLabel, type Finding, type FindingStatus, type Layer } from "./findings.js";
 import { buildAuditChecksCsv, buildAuditCsv, buildFindingsCsv, buildSummaryCsv, renderPageReport, renderSiteReport, type AuditCsvFilter } from "./render.js";
 import { attachFragments, buildRunIndex, pageIndexEntry, type PageIndexEntry, type RunIndexFile, type RunListEntry, type StoredZones } from "./run-output.js";
 import { buildSiteSources, type SiteSources } from "./site-sources.js";
@@ -101,6 +101,16 @@ export async function loadSiteMapExcept(finalUrls: string[]): Promise<SiteMapRow
     [finalUrls],
   );
   return r.rows.map((x) => ({ url: x.final_url, title: x.title, meta: x.meta, h1: x.h1, checked_at: x.checked_at.toISOString() }));
+}
+
+/** The copy of a page kept in a snapshot (null when the snapshot has none: not in it, or its stored pages were removed). */
+export async function loadSnapshotPage(snapshotId: string, url: string): Promise<{ html: string; finalUrl: string; status: number } | null> {
+  const r = await db().query<{ html: string; final_url: string; status: number | null }>(
+    "SELECT html, report->>'final_url' AS final_url, (report->>'status')::int AS status FROM pages WHERE run_id = $1 AND (url = $2 OR report->>'final_url' = $2) AND html <> '' LIMIT 1",
+    [snapshotId, url],
+  );
+  const x = r.rows[0];
+  return x ? { html: x.html, finalUrl: x.final_url, status: x.status ?? 200 } : null;
 }
 
 /** Adds links to a page's stored list (the pages of a listing count as part of the listing page). */
@@ -371,19 +381,25 @@ export interface SiteCheck {
   orphan_checked: boolean;
 }
 
-/** The page of a run against the site map (live: what the map knows now, not what it knew at the run). */
+/**
+ * The page of a run against the site map, which only snapshots write: the page's own title, description and H1 are the ones this run
+ * stored (a page check may have a newer text than the snapshot), and the other pages are as the snapshot saw them.
+ */
 export async function getSiteCheck(runId: string, slug: string): Promise<SiteCheck | null> {
-  const pg = await db().query<{ url: string; profile: string }>("SELECT url, report->>'profile' AS profile FROM pages WHERE run_id = $1 AND slug = $2", [runId, slug]);
+  const pg = await db().query<{ url: string; profile: string; zones: { zones?: { id: string; text?: string }[] } }>("SELECT url, report->>'profile' AS profile, zones FROM pages WHERE run_id = $1 AND slug = $2", [runId, slug]);
   const page = pg.rows[0];
   if (!page) return null;
   const own = (await db().query<{ title: string; meta: string; h1: string; listing: boolean; checked_at: Date }>("SELECT title, meta, h1, listing, checked_at FROM site_pages WHERE url = $1", [page.url])).rows[0];
   const total = Number((await db().query<{ n: string }>("SELECT count(*) AS n FROM site_pages")).rows[0]!.n);
   if (!own) return { available: false, as_of: null, map_pages: total, duplicates: [], inbound: [], orphan_checked: false };
+  // the stored zones hold the text this run read (they are empty for an old snapshot whose stored pages were removed: then the map row is used)
+  const zoneText = (id: string): string | undefined => page.zones?.zones?.find((z) => z.id === id)?.text?.trim() || undefined;
+  const mine = { title: zoneText("title") ?? own.title, meta: zoneText("meta_description") ?? own.meta, h1: zoneText("h1") ?? own.h1 };
   const duplicates: SiteCheck["duplicates"] = [];
   for (const field of ["title", "meta", "h1"] as const) {
-    const value = own[field].trim();
+    const value = mine[field].trim();
     if (!value) continue;
-    const r = await db().query<{ url: string }>(`SELECT url FROM site_pages WHERE ${field} = $1 AND url <> $2 ORDER BY url`, [own[field], page.url]);
+    const r = await db().query<{ url: string }>(`SELECT url FROM site_pages WHERE ${field} = $1 AND url <> $2 ORDER BY url`, [value, page.url]);
     if (r.rows.length) duplicates.push({ field, value, urls: r.rows.map((x) => x.url) });
   }
   const inbound = await db().query<{ url: string; title: string }>("SELECT url, title FROM site_pages WHERE url <> $2 AND links_out @> $1::jsonb ORDER BY url", [JSON.stringify([graphUrl(page.url)]), page.url]);
@@ -407,10 +423,52 @@ export interface PageCompare {
   resolved: Finding[];
 }
 
+/** GEO checks that are plain code rules, so a snapshot (no model) has them too. The keyword placement needs the model's chosen term and is left out. */
+const TECHNICAL_GEO_KINDS = new Set(["home_title_exact", "trap_terms", "nearshore_not_first", "faq_present", "em_dash", "ampersand", "uk_spelling"]);
+const isTechnical = (f: Finding): boolean => f.layer === "seo" || (f.layer === "geo" && TECHNICAL_GEO_KINDS.has(f.kind));
+
+/** What changed in a page's technical checks since the site snapshot its check was read against. */
+export interface SinceSnapshot {
+  snapshot_run: string;
+  snapshot_at: string;
+  /** failing in the snapshot, not now */
+  resolved: Finding[];
+  /** failing now, not in the snapshot */
+  added: Finding[];
+  /** failing in both */
+  unchanged: number;
+}
+
 export interface PageFindingsResult {
   findings: Finding[];
   /** null when the page has no earlier run */
   compare: PageCompare | null;
+  /** null for a page of a snapshot, and when the snapshot has no copy of this page */
+  since_snapshot: SinceSnapshot | null;
+}
+
+/** The technical findings of a page check against the report the snapshot has for the same page. */
+async function sinceSnapshot(runId: string, report: PageReport, findings: Finding[]): Promise<SinceSnapshot | null> {
+  const run = (
+    await db().query<{ kind: string; site_run_id: string | null; snapshot_at: Date | null; snapshot_site: SiteReport | null }>(
+      "SELECT r.kind, r.site_run_id, s.started_at AS snapshot_at, s.site AS snapshot_site FROM runs r LEFT JOIN runs s ON s.id = r.site_run_id WHERE r.id = $1",
+      [runId],
+    )
+  ).rows[0];
+  if (!run || run.kind === "site" || !run.site_run_id || !run.snapshot_at) return null;
+  const base = (await db().query<{ report: PageReport }>("SELECT report FROM pages WHERE run_id = $1 AND (url = $2 OR report->>'final_url' = $3) LIMIT 1", [run.site_run_id, report.url, report.final_url])).rows[0];
+  if (!base) return null;
+  const before = pageFindings(base.report, run.snapshot_site).filter(isTechnical);
+  const now = findings.filter(isTechnical);
+  const beforeIds = new Set(before.map((f) => f.fid));
+  const nowIds = new Set(now.map((f) => f.fid));
+  return {
+    snapshot_run: run.site_run_id,
+    snapshot_at: run.snapshot_at.toISOString(),
+    resolved: before.filter((f) => !nowIds.has(f.fid)),
+    added: now.filter((f) => !beforeIds.has(f.fid)),
+    unchanged: now.filter((f) => beforeIds.has(f.fid)).length,
+  };
 }
 
 export async function getPageFindings(runId: string, slug: string): Promise<PageFindingsResult | null> {
@@ -419,7 +477,48 @@ export async function getPageFindings(runId: string, slug: string): Promise<Page
   const startedAt = await runStartedAt(runId);
   const findings = pageFindings(report, await runSite(runId));
   const compare = await compareWithPrevious(runId, startedAt, report, findings);
-  return { findings: await withStatuses(findings, startedAt), compare };
+  const since = await sinceSnapshot(runId, report, findings);
+  return { findings: await withStatuses(findings, startedAt), compare, since_snapshot: since };
+}
+
+/** What the snapshot's model check found in the shared blocks a page carries (the banner, the forms) and in the site-wide markup. */
+export interface PageShared {
+  snapshot_run: string;
+  snapshot_at: string;
+  /** false until the model has run on the snapshot's shared blocks */
+  checked: boolean;
+  variants: { id: string; label: string; pages: number; problems: { title: string; severity: string; basis: string }[] }[];
+  /** the site-wide structured data is on every page */
+  schema: { problems: { title: string; severity: string; basis: string }[] };
+}
+
+export async function getPageShared(runId: string, slug: string): Promise<PageShared | null> {
+  const report = await getPage(runId, slug);
+  if (!report) return null;
+  const run = (await db().query<{ kind: string; site_run_id: string | null }>("SELECT kind, site_run_id FROM runs WHERE id = $1", [runId])).rows[0];
+  const snapId = run?.kind === "site" ? runId : (run?.site_run_id ?? null);
+  if (!snapId) return null;
+  const snap = (await db().query<{ id: string; started_at: Date; site: SiteReport | null }>("SELECT id, started_at, site FROM runs WHERE id = $1", [snapId])).rows[0];
+  if (!snap?.site) return null;
+  const site = snap.site;
+  const found = siteFindings(site).filter((f) => f.layer === "compliance");
+  const distinct = (list: Finding[]): PageShared["schema"]["problems"] => {
+    const seen = new Map<string, { title: string; severity: string; basis: string }>();
+    for (const f of list) if (!seen.has(`${f.title}|${f.severity}`)) seen.set(`${f.title}|${f.severity}`, { title: f.title, severity: f.severity, basis: f.basis ?? "" });
+    return [...seen.values()];
+  };
+  const variants = report.shared_variants.flatMap((id) => {
+    const v = site.shared.variants.find((x) => x.id === id);
+    if (!v) return [];
+    return [{ id, label: variantLabel(id) ?? id, pages: v.pages.length, problems: distinct(found.filter((f) => f.subsection === "shared" && f.zone_id === id)) }];
+  });
+  return {
+    snapshot_run: snap.id,
+    snapshot_at: snap.started_at.toISOString(),
+    checked: !!(site.shared.compliance || site.site_schema),
+    variants,
+    schema: { problems: distinct(found.filter((f) => f.subsection === "schema")) },
+  };
 }
 
 const LAYERS: Layer[] = ["compliance", "geo", "seo"];

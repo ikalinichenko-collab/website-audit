@@ -20,6 +20,8 @@ export interface RunMeta {
   subsections?: string[];
   /** a snapshot whose shared blocks were checked by the model afterwards */
   site_llm?: { model: string; at: string };
+  /** a page check that read its pages from the copy kept in the latest snapshot */
+  from_snapshot?: { id: string; used: number; total: number };
 }
 
 export interface Layers {
@@ -138,9 +140,28 @@ export interface PageCompare {
   resolved: Finding[];
 }
 
+/** Same shape as `SinceSnapshot` in src/store.ts. */
+export interface SinceSnapshot {
+  snapshot_run: string;
+  snapshot_at: string;
+  resolved: Finding[];
+  added: Finding[];
+  unchanged: number;
+}
+
+/** Same shape as `PageShared` in src/store.ts. */
+export interface PageShared {
+  snapshot_run: string;
+  snapshot_at: string;
+  checked: boolean;
+  variants: { id: string; label: string; pages: number; problems: { title: string; severity: string; basis: string }[] }[];
+  schema: { problems: { title: string; severity: string; basis: string }[] };
+}
+
 export interface PageFindingsResult {
   findings: Finding[];
   compare: PageCompare | null;
+  since_snapshot: SinceSnapshot | null;
 }
 
 export type FixWhere = "template" | "page" | "author";

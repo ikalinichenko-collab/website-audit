@@ -85,6 +85,7 @@ export function Overview() {
       </div>
       <p className="text-sm text-slate-600 dark:text-slate-400">
         {snapshot ? `Read against the site snapshot of ${runLabel(snapshot).replace(" (site snapshot)", "")}.` : "There was no site snapshot then: make one on Site Checks."}{" "}
+        {meta?.from_snapshot ? `The pages were read from the copy kept in the snapshot (${meta.from_snapshot.used} of ${meta.from_snapshot.total}; the rest from the live site). ` : ""}
         <Link to="/site" className="text-blue-600 hover:underline dark:text-blue-400">
           Open Site Checks
         </Link>

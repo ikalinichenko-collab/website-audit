@@ -90,6 +90,8 @@ export function RunPage() {
   const [mode, setMode] = useState<Mode>("urls");
   const [text, setText] = useState("");
   const [force, setForce] = useState(false);
+  // the live site is what a page says now (after a change); the snapshot copy is the text the audit saw
+  const [fromSnapshot, setFromSnapshot] = useState(false);
   const [layers, setLayers] = useState<Layers>({ compliance: true, geo: true, seo: true });
   const [modelId, setModelId] = useState("");
   const [scope, setScope] = useState<{ total: number; groups: ScopeGroup[] } | null>(null);
@@ -168,7 +170,7 @@ export function RunPage() {
   const keyMissing = state !== null && !state.has_api_key && llmLayers;
   const model = state?.models.find((m) => m.id === modelId);
   const noLayer = !layers.compliance && !layers.geo && !layers.seo;
-  const runOpts = { layers, model: modelId || undefined };
+  const runOpts = { layers, model: modelId || undefined, fromSnapshot: fromSnapshot && !!snapshots[0] && !snapshots[0].details_removed };
   const allKeys = scope ? scope.groups.flatMap((g) => g.subsections.map((x) => x.key)) : [];
   const pickedPages = scope ? scope.groups.flatMap((g) => g.subsections).filter((x) => picked.has(x.key)).reduce((n, x) => n + x.count, 0) : 0;
   const sampleN = Number(limit) || 0;
@@ -222,6 +224,24 @@ export function RunPage() {
       </div>
 
       <SnapshotNote snapshot={snapshots[0]} />
+      {snapshots[0] && (
+        <label className="flex flex-wrap items-center gap-2 text-sm">
+          Read the pages from
+          <select
+            className="rounded border border-slate-300 bg-white px-2 py-1 text-sm dark:border-slate-600 dark:bg-slate-900"
+            value={fromSnapshot && !snapshots[0].details_removed ? "copy" : "live"}
+            onChange={(e) => setFromSnapshot(e.target.value === "copy")}
+          >
+            <option value="live">the live site (what the page says now)</option>
+            <option value="copy" disabled={!!snapshots[0].details_removed}>
+              the copy in the snapshot (what the audit saw)
+            </option>
+          </select>
+          <span className="text-slate-500">
+            {fromSnapshot ? "The same text the audit saw, and no request to the site. A page missing from the snapshot is still fetched live." : "Choose this to check a page after you changed it."}
+          </span>
+        </label>
+      )}
       {prefillFrom && <Notice kind="ok">The links below come from the check “{prefillFrom}” on Site Checks. Change them if you like, then run.</Notice>}
 
       {state && !state.has_api_key && (

@@ -140,6 +140,8 @@ export const api = {
     all?: boolean;
     limit?: number;
     force?: boolean;
+    /** read the pages from the copy kept in the latest snapshot */
+    fromSnapshot?: boolean;
     subsections?: string[];
     layers?: Layers;
     model?: string;

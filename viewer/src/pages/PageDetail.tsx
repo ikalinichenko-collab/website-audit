@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useMemo, useState, type ReactNode } from "react";
 import { Link, useParams, useSearchParams } from "react-router-dom";
 import { useActiveRunId, useRunContext } from "../context/RunContext.js";
-import { getIndex, getPage, getPageFindings, getSiteCheck } from "../data.js";
-import type { Finding, Layer, PageCompare, PageIndexEntry, PageReport, SiteCheck } from "../types.js";
+import { getIndex, getPage, getPageFindings, getPageShared, getSiteCheck } from "../data.js";
+import type { Finding, Layer, PageCompare, PageIndexEntry, PageReport, PageShared, SinceSnapshot, SiteCheck } from "../types.js";
 import { ActionBadge, SeverityBadge } from "../components/Badges.js";
 import { FindingActionsContext } from "../components/FindingActions.js";
 import { GeoQuestions } from "../components/GeoQuestions.js";
@@ -50,6 +50,7 @@ export function PageDetail() {
   const [page, setPage] = useState<PageReport | null>(null);
   const [findings, setFindings] = useState<Finding[]>([]);
   const [compare, setCompare] = useState<PageCompare | null>(null);
+  const [since, setSince] = useState<SinceSnapshot | null>(null);
   const [showClosed, setShowClosed] = useState(false);
   const [siblings, setSiblings] = useState<PageIndexEntry[]>([]);
   const [picked, setPicked] = useState<Tab | null>(null);
@@ -73,10 +74,12 @@ export function PageDetail() {
       .then((r) => {
         setFindings(r.findings);
         setCompare(r.compare);
+        setSince(r.since_snapshot);
       })
       .catch(() => {
         setFindings([]);
         setCompare(null);
+        setSince(null);
       });
   }, [runId, slug]);
 
@@ -202,6 +205,8 @@ export function PageDetail() {
         </p>
       </div>
 
+      <SinceSnapshotNote since={since} />
+
       <div className="space-y-3 rounded-lg border border-slate-200 bg-white p-3 dark:border-slate-700 dark:bg-slate-900">
         <div className="flex flex-wrap items-start gap-3">
           <ActionBadge action={action} />
@@ -277,6 +282,7 @@ export function PageDetail() {
       )}
 
       <ComparisonNote compare={compare} />
+      <SharedBlocksBlock runId={runId} slug={slug} />
       <SiteCheckBlock runId={runId} slug={slug} />
       {closedCount > 0 && (
         <p className="text-xs text-slate-500">
@@ -414,6 +420,101 @@ const shortUrl = (u: string) => u.replace(/^https:\/\/[^/]+/, "") || "/";
 const FIELD_LABEL = { title: "Title", meta: "Meta description", h1: "H1" } as const;
 
 /** The page against the whole site: duplicates and who links to it. Read from the site map, so it shows what is known now. */
+const SEV_TEXT: Record<string, string> = { high: "text-red-600 dark:text-red-400", medium: "text-amber-600 dark:text-amber-400", low: "text-slate-500" };
+
+/** What changed in this page's technical checks since the site snapshot it was read against: did the fix help? */
+function SinceSnapshotNote({ since }: { since: SinceSnapshot | null }) {
+  if (!since) return null;
+  const when = new Date(since.snapshot_at).toLocaleString([], { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit" });
+  const none = since.resolved.length === 0 && since.added.length === 0;
+  const row = (f: Finding, mark: string, cls: string) => (
+    <li key={`${f.fid}`} className="flex flex-wrap gap-x-2">
+      <span className={cls}>{mark}</span>
+      <span className="font-medium">{f.title}</span>
+      {f.zone_label && <span className="text-slate-500">{f.zone_label}</span>}
+      <span className={SEV_TEXT[f.severity] ?? "text-slate-500"}>{f.severity}</span>
+    </li>
+  );
+  return (
+    <div className="space-y-1 rounded border border-slate-200 p-3 text-sm dark:border-slate-700">
+      <p>
+        <b>Since the site snapshot of {when}</b> <span className="text-slate-500">(technical checks: SEO and GEO rules)</span>:{" "}
+        {none ? (
+          <span>nothing changed. {since.unchanged} {since.unchanged === 1 ? "problem is" : "problems are"} the same as in the snapshot.</span>
+        ) : (
+          <>
+            <span className="text-emerald-700 dark:text-emerald-400">{since.resolved.length} fixed</span>,{" "}
+            <span className={since.added.length ? "text-red-600 dark:text-red-400" : ""}>{since.added.length} new</span>, {since.unchanged} unchanged.
+          </>
+        )}
+      </p>
+      {!none && (
+        <ul className="space-y-0.5 text-xs">
+          {since.resolved.map((f) => row(f, "fixed", "text-emerald-700 dark:text-emerald-400"))}
+          {since.added.map((f) => row(f, "new", "text-red-600 dark:text-red-400"))}
+        </ul>
+      )}
+    </div>
+  );
+}
+
+/** The banner and forms this page carries are shared with other pages and were checked once, by the model, on the snapshot. */
+function SharedBlocksBlock({ runId, slug }: { runId: string; slug: string }) {
+  const [shared, setShared] = useState<PageShared | null>(null);
+  useEffect(() => {
+    setShared(null);
+    getPageShared(runId, slug)
+      .then(setShared)
+      .catch(() => setShared(null));
+  }, [runId, slug]);
+  if (!shared) return null;
+  const link = "text-blue-600 hover:underline dark:text-blue-400";
+  const total = shared.variants.reduce((n, v) => n + v.problems.length, 0) + shared.schema.problems.length;
+  const when = new Date(shared.snapshot_at).toLocaleString([], { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit" });
+  const list = (problems: { title: string; severity: string; basis: string }[]) => (
+    <ul className="ml-4 list-disc text-xs">
+      {problems.map((p) => (
+        <li key={p.title + p.severity}>
+          <span className={SEV_TEXT[p.severity] ?? ""}>{p.severity}</span> {p.title}
+        </li>
+      ))}
+    </ul>
+  );
+  return (
+    <details className="rounded border border-slate-200 p-3 text-sm dark:border-slate-700" open={shared.checked && total > 0}>
+      <summary className="cursor-pointer font-medium">
+        Shared blocks on this page{" "}
+        <span className="font-normal text-slate-500">
+          {shared.checked ? (total ? `${total} problem${total === 1 ? "" : "s"} found by the model` : "no problems found by the model") : "not checked by the model yet"}
+        </span>
+      </summary>
+      <div className="mt-2 space-y-2">
+        <p className="text-xs text-slate-500">
+          The banner and forms below are the same on other pages, so they are checked once on the snapshot of {when}, not with this page. The site-wide markup is on every page. Details and decisions are on{" "}
+          <Link to="/site" className={link}>
+            Site Checks
+          </Link>
+          .
+        </p>
+        {!shared.checked && <p>The model has not run on the shared blocks of this snapshot. Use “Check shared blocks with the model” on Site Checks (an unchanged text is answered from the earlier check without a new call).</p>}
+        {shared.variants.length === 0 && <p className="text-slate-500">This page carries no shared banner or form text that other pages repeat.</p>}
+        {shared.variants.map((v) => (
+          <div key={v.id}>
+            <b>{v.label}</b> <span className="text-slate-500">on {v.pages} pages</span>
+            {shared.checked && (v.problems.length ? list(v.problems) : <p className="ml-4 text-xs text-slate-500">no problems found</p>)}
+          </div>
+        ))}
+        {shared.checked && (
+          <div>
+            <b>Site-wide structured data</b> <span className="text-slate-500">on every page</span>
+            {shared.schema.problems.length ? list(shared.schema.problems) : <p className="ml-4 text-xs text-slate-500">no problems found</p>}
+          </div>
+        )}
+      </div>
+    </details>
+  );
+}
+
 function SiteCheckBlock({ runId, slug }: { runId: string; slug: string }) {
   const [check, setCheck] = useState<SiteCheck | null>(null);
   useEffect(() => {
@@ -439,11 +540,11 @@ function SiteCheckBlock({ runId, slug }: { runId: string; slug: string }) {
       </summary>
       <div className="mt-2 space-y-2">
         <p className="text-xs text-slate-500">
-          From the site map ({check.map_pages} pages known; this page last fetched {when}). Other pages are as last fetched, so run the site check on the{" "}
+          This page's title, description and H1 are the ones this check read. The other {check.map_pages - 1} pages are as the site snapshot of {when} saw them: make a new snapshot on{" "}
           <Link to="/site" className={link}>
-            Site
+            Site Checks
           </Link>{" "}
-          page to refresh them.
+          to refresh them.
         </p>
         {check.duplicates.length === 0 && <p>No other known page has the same title, meta description or H1.</p>}
         {check.duplicates.map((d) => (
