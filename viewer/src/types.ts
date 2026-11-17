@@ -256,7 +256,7 @@ export interface AuditCounts {
 /** Same shape as `SiteAudit` in src/site-audit.ts. */
 export interface SiteAudit {
   run_id: string;
-  groups: { key: string; title: string; blurb: string }[];
+  groups: { key: string; title: string; blurb: string; apart?: boolean }[];
   pages: number;
   coverage: { sitemap_urls: number | null; in_scope: number | null; outside_scope: number | null };
   summary: {

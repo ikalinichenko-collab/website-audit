@@ -65,6 +65,14 @@ export const RESOURCES: Resource[] = [
     description: "Home title, trap terms, nearshore words, ampersand allow-list, UK spellings, AI bots.",
   },
   {
+    id: "checks",
+    group: "settings",
+    label: "Check texts",
+    file: "config/checks.json",
+    kind: "json",
+    description: "What the Site page says about each technical check: name, why it matters, how to fix it, where to edit; and the groups they are shown in.",
+  },
+  {
     id: "compliance",
     group: "settings",
     label: "Compliance severity",
@@ -245,6 +253,31 @@ export function validateResource(r: Resource, content: string): void {
       checkRegexes(patterns, "trap_terms");
       checkRegexes((data.uk_spelling_stems as string[]).map((s) => `${s}(?:e)`), "uk_spelling_stems");
       if (data.severity !== undefined) severityMap(data.severity, "severity");
+      if (data.stale_after_days !== undefined && (typeof data.stale_after_days !== "number" || !Number.isInteger(data.stale_after_days) || data.stale_after_days < 1)) fail("stale_after_days must be a whole number of days above 0");
+      if (data.stale_profiles !== undefined) strArray(data.stale_profiles, "stale_profiles");
+      return;
+    }
+    case "checks": {
+      if (!isObj(data)) fail("Expected an object with groups and checks");
+      if (!Array.isArray(data.groups) || !data.groups.length) fail("groups must be a non-empty list");
+      const groupKeys = new Set<string>();
+      for (const [i, g] of (data.groups as unknown[]).entries()) {
+        if (!isObj(g) || typeof g.key !== "string" || !/^[a-z][a-z0-9_]*$/.test(g.key)) fail(`group ${i + 1}: key must be lower case letters, digits and underscores`);
+        if (typeof g.title !== "string" || !g.title.trim()) fail(`group "${String(g.key)}" needs a title`);
+        if (typeof g.blurb !== "string") fail(`group "${String(g.key)}": blurb must be text`);
+        if (g.apart !== undefined && typeof g.apart !== "boolean") fail(`group "${String(g.key)}": apart must be true or false`);
+        if (groupKeys.has(g.key as string)) fail(`group key "${String(g.key)}" is used twice`);
+        groupKeys.add(g.key as string);
+      }
+      if (!isObj(data.checks) || !Object.keys(data.checks).length) fail("checks must list at least one check");
+      for (const [id, c] of Object.entries(data.checks)) {
+        if (!isObj(c)) fail(`check "${id}" must be an object`);
+        if (c.layer !== "seo" && c.layer !== "geo") fail(`check "${id}": layer must be seo or geo`);
+        if (typeof c.group !== "string" || !groupKeys.has(c.group)) fail(`check "${id}": group "${String(c.group)}" is not in groups`);
+        if (typeof c.title !== "string" || !c.title.trim()) fail(`check "${id}" needs a title`);
+        if (typeof c.why !== "string" || typeof c.fix !== "string") fail(`check "${id}": why and fix must be text`);
+        if (!["template", "page", "author"].includes(String(c.where))) fail(`check "${id}": where must be template, page or author`);
+      }
       return;
     }
     case "compliance": {

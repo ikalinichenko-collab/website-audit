@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { GeoQuestionsEditor, SeoEditor, ComplianceEditor } from "../components/StructuredEditors.js";
+import { ChecksEditor } from "../components/ChecksEditor.js";
 import { TextEditor } from "../components/ResourceEditor.js";
 import { confirmLeave } from "../unsaved.js";
 
@@ -8,6 +9,7 @@ const TABS = [
   { key: "seo", label: "SEO" },
   { key: "compliance", label: "Compliance severity" },
   { key: "geo-code", label: "GEO code checks" },
+  { key: "checks", label: "Check texts" },
   { key: "prompts", label: "Prompts" },
   { key: "general", label: "General and scope" },
 ] as const;
@@ -49,9 +51,10 @@ export function Settings() {
       {tab === "geo-code" && (
         <Raw
           id="geo"
-          note="Home title, trap terms (regular expressions), words that must not lead the hero, the list of allowed ampersands, UK spellings to catch, AI bots for robots.txt. Saved only if every pattern is a valid regular expression. In JSON a backslash must be doubled."
+          note="Home title, trap terms (regular expressions), words that must not lead the hero, the list of allowed ampersands, UK spellings to catch, AI bots for robots.txt, and when a page counts as stale (stale_after_days, stale_profiles). Saved only if every pattern is a valid regular expression. In JSON a backslash must be doubled."
         />
       )}
+      {tab === "checks" && <ChecksEditor />}
       {tab === "prompts" && (
         <div className="space-y-8">
           <Raw id="compliance-prompt" note="Instruction for the Compliance call. It must keep the {{report_language}} placeholder." />

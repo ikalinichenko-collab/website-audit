@@ -1,4 +1,4 @@
-import { CHECK_CATALOG, CHECK_GROUPS, type CatalogEntry, type CheckGroup } from "./check-catalog.js";
+import { catalogEntry, loadChecksConfig, type CatalogEntry, type CheckGroupDef } from "./check-catalog.js";
 import type { FixWhere } from "./findings.js";
 import type { PageReport, SiteReport } from "./report-types.js";
 
@@ -17,7 +17,7 @@ export interface AuditItem {
 export interface AuditRow {
   id: string;
   layer: "seo" | "geo";
-  group: CheckGroup;
+  group: string;
   title: string;
   why: string;
   fix: string;
@@ -47,7 +47,7 @@ export interface AuditCounts {
 
 export interface SiteAudit {
   run_id: string;
-  groups: { key: CheckGroup; title: string; blurb: string }[];
+  groups: CheckGroupDef[];
   pages: number;
   coverage: { sitemap_urls: number | null; in_scope: number | null; outside_scope: number | null };
   summary: {
@@ -82,11 +82,6 @@ interface Acc {
   profiles: Map<string, { failing: number; total: number }>;
 }
 
-const FALLBACK: Record<"seo" | "geo", CatalogEntry> = {
-  seo: { layer: "seo", group: "indexing", title: "", why: "", fix: "", where: "page" },
-  geo: { layer: "geo", group: "positioning", title: "", why: "", fix: "", where: "page" },
-};
-
 function finish(id: string, a: Acc): AuditRow {
   const failing = a.items.length;
   return {
@@ -113,6 +108,9 @@ function finish(id: string, a: Acc): AuditRow {
  * site (robots, llms.txt, duplicates, orphans, sitemap hygiene). Computed from the stored reports, nothing is fetched.
  */
 export function buildSiteAudit(site: SiteReport, reports: PageReport[], opts: AuditOptions): SiteAudit {
+  const cfg = loadChecksConfig();
+  // groups kept out of the summary counts (writing style)
+  const apart = new Set(cfg.groups.filter((g) => g.apart).map((g) => g.key));
   const accs = new Map<string, Acc>();
   const profileOf = new Map<string, string>();
   const profileTotals = new Map<string, number>();
@@ -131,7 +129,7 @@ export function buildSiteAudit(site: SiteReport, reports: PageReport[], opts: Au
       if (c.status === "na") continue;
       let a = accs.get(c.id);
       if (!a) {
-        a = { entry: CHECK_CATALOG[c.id] ?? FALLBACK[c.layer], severity: c.severity ?? "medium", total: 0, places: 0, items: [], profiles: new Map() };
+        a = { entry: catalogEntry(cfg, c.id, c.layer), severity: c.severity ?? "medium", total: 0, places: 0, items: [], profiles: new Map() };
         accs.set(c.id, a);
       }
       a.total++;
@@ -149,7 +147,7 @@ export function buildSiteAudit(site: SiteReport, reports: PageReport[], opts: Au
 
   // ---- site-only checks ----
   const siteRow = (id: string, severity: Severity, total: number, items: AuditItem[], extra: Partial<AuditRow> = {}): AuditRow => {
-    const e = CHECK_CATALOG[id]!;
+    const e = catalogEntry(cfg, id, "seo");
     const byProfile = new Map<string, number>();
     for (const it of items) for (const u of it.urls ?? [it.url]) {
       const p = profileOf.get(norm(u));
@@ -201,7 +199,6 @@ export function buildSiteAudit(site: SiteReport, reports: PageReport[], opts: Au
     rows.push(siteRow("orphan_page", "medium", total, site.seo.orphans.map((u) => ({ url: u, profile: profileOf.get(norm(u)), value: "no page links to it from its content" }))));
   }
   for (const c of site.tech ?? []) {
-    if (!CHECK_CATALOG[c.id]) continue;
     rows.push(siteRow(c.id, c.severity, c.total, c.items, { note: c.note, ...(c.status === "na" ? { status: "not_checked" as const } : {}) }));
   }
   const hygiene = site.seo.sitemap_hygiene;
@@ -215,11 +212,11 @@ export function buildSiteAudit(site: SiteReport, reports: PageReport[], opts: Au
   );
 
   // ---- order: group, then problems first ----
-  const groupRank = new Map(CHECK_GROUPS.map((g, i) => [g.key, i]));
+  const groupRank = new Map(cfg.groups.map((g, i) => [g.key, i]));
   const statusRank = { fail: 0, ok: 1, not_checked: 2 } as const;
   rows.sort(
     (a, b) =>
-      groupRank.get(a.group)! - groupRank.get(b.group)! ||
+      (groupRank.get(a.group) ?? 999) - (groupRank.get(b.group) ?? 999) ||
       statusRank[a.status] - statusRank[b.status] ||
       SEV_RANK[a.severity] - SEV_RANK[b.severity] ||
       b.failing - a.failing,
@@ -229,18 +226,18 @@ export function buildSiteAudit(site: SiteReport, reports: PageReport[], opts: Au
   const counts = (layer: "seo" | "geo"): AuditCounts => {
     const c: AuditCounts = { high: 0, medium: 0, low: 0, ok: 0, total: 0 };
     for (const r of rows) {
-      if (r.layer !== layer || r.group === "style" || r.status === "not_checked") continue;
+      if (r.layer !== layer || apart.has(r.group) || r.status === "not_checked") continue;
       c.total++;
       if (r.status === "ok") c.ok++;
       else c[r.severity]++;
     }
     return c;
   };
-  const style = rows.filter((r) => r.group === "style" && r.status !== "not_checked");
+  const style = rows.filter((r) => apart.has(r.group) && r.status !== "not_checked");
   const stylePages = new Set<string>();
   for (const r of style) for (const it of r.items) stylePages.add(it.url);
   const first = rows
-    .filter((r) => r.status === "fail" && r.group !== "style")
+    .filter((r) => r.status === "fail" && !apart.has(r.group))
     .sort((a, b) => SEV_RANK[a.severity] - SEV_RANK[b.severity] || b.failing - a.failing)
     .slice(0, 7)
     .map((r) => ({ id: r.id, title: r.title, severity: r.severity, failing: r.failing, total: r.total, where: r.where, fix: r.fix }));
@@ -249,7 +246,7 @@ export function buildSiteAudit(site: SiteReport, reports: PageReport[], opts: Au
   const inScope = map ? map.filter((r) => r.scope && !r.excluded).length : null;
   return {
     run_id: site.run_id,
-    groups: CHECK_GROUPS,
+    groups: cfg.groups,
     pages: reports.length,
     coverage: { sitemap_urls: map?.length ?? null, in_scope: inScope, outside_scope: map && inScope !== null ? map.length - inScope : null },
     summary: {

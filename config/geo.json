@@ -23,6 +23,8 @@
     "uk_spelling": "low"
   },
   "faq_min_question_headings": 3,
+  "stale_after_days": 365,
+  "stale_profiles": ["article", "case_study", "guide", "country_guide"],
   "ampersand_allowlist": ["Data & AI", "Q&A", "R&D", "M&A", "AT&T", "Johnson & Johnson", "S&P", "P&G", "P&L", "B&B", "H&M"],
   "uk_spelling_words": [
     "colour", "colours", "coloured", "favour", "favours", "favourite", "favourites", "behaviour", "behaviours",

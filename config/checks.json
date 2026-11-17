@@ -1,0 +1,484 @@
+{
+  "groups": [
+    {
+      "key": "indexing",
+      "title": "Crawling, indexing and page basics",
+      "blurb": "Can search engines reach, read and index every page?"
+    },
+    {
+      "key": "meta",
+      "title": "Titles, descriptions and headings",
+      "blurb": "What search results and link previews show for each page."
+    },
+    {
+      "key": "schema",
+      "title": "Structured data",
+      "blurb": "Machine-readable markup that search engines and AI answers rely on."
+    },
+    {
+      "key": "links",
+      "title": "Links and site structure",
+      "blurb": "Whether pages are connected and the links work."
+    },
+    {
+      "key": "images",
+      "title": "Images",
+      "blurb": "Alt text and sizes."
+    },
+    {
+      "key": "ai",
+      "title": "AI access (GEO)",
+      "blurb": "Can AI crawlers read the site?"
+    },
+    {
+      "key": "positioning",
+      "title": "Positioning in the markup (GEO)",
+      "blurb": "Approved wording where AI answers and search results read it first."
+    },
+    {
+      "key": "freshness",
+      "title": "Content freshness (GEO)",
+      "blurb": "AI answers and search results prefer pages that are kept up to date."
+    },
+    {
+      "key": "style",
+      "title": "Writing style (GEO)",
+      "blurb": "House style rules. Many small findings: kept apart so they do not hide the important ones.",
+      "apart": true
+    }
+  ],
+  "checks": {
+    "http_status": {
+      "layer": "seo",
+      "group": "indexing",
+      "title": "Page answers 200",
+      "why": "A page that redirects or errors cannot rank and wastes crawl budget.",
+      "fix": "Fix the URL, or put the final URL in the sitemap and links.",
+      "where": "page"
+    },
+    "canonical": {
+      "layer": "seo",
+      "group": "indexing",
+      "title": "Canonical points to the page itself",
+      "why": "A wrong canonical tells search engines to index a different URL.",
+      "fix": "Set a self-referencing canonical in the SEO plugin.",
+      "where": "template"
+    },
+    "indexable": {
+      "layer": "seo",
+      "group": "indexing",
+      "title": "Page can be indexed (no noindex)",
+      "why": "A noindex page drops out of search and AI answers.",
+      "fix": "Remove noindex in the page's SEO settings.",
+      "where": "page"
+    },
+    "html_lang": {
+      "layer": "seo",
+      "group": "indexing",
+      "title": "Page language is declared",
+      "why": "Search engines and AI use it to pick the language of the answer.",
+      "fix": "Set the lang attribute of <html> in the theme.",
+      "where": "template"
+    },
+    "viewport": {
+      "layer": "seo",
+      "group": "indexing",
+      "title": "Mobile viewport is set",
+      "why": "Without it the page is treated as not mobile-friendly.",
+      "fix": "Add the viewport meta tag to the theme.",
+      "where": "template"
+    },
+    "sitemap_hygiene": {
+      "layer": "seo",
+      "group": "indexing",
+      "title": "Sitemap lists only clean pages",
+      "why": "A sitemap should list pages that answer 200, are indexable and are their own canonical.",
+      "fix": "Remove the URL from the sitemap or fix the page it points to.",
+      "where": "template"
+    },
+    "title_length": {
+      "layer": "seo",
+      "group": "meta",
+      "title": "Title is 30 to 60 characters",
+      "why": "Longer titles are cut in search results; very short ones say too little.",
+      "fix": "Rewrite the title. For a templated section (glossary, hire) change the title pattern once.",
+      "where": "page"
+    },
+    "meta_present": {
+      "layer": "seo",
+      "group": "meta",
+      "title": "Meta description is present",
+      "why": "Search engines show their own random excerpt when it is missing.",
+      "fix": "Write a meta description in the page's SEO settings.",
+      "where": "page"
+    },
+    "meta_length": {
+      "layer": "seo",
+      "group": "meta",
+      "title": "Meta description is 120 to 158 characters",
+      "why": "Outside this range it is cut or looks thin in results.",
+      "fix": "Rewrite the meta description. For a templated section change the pattern once.",
+      "where": "page"
+    },
+    "h1_count": {
+      "layer": "seo",
+      "group": "meta",
+      "title": "Exactly one H1",
+      "why": "The H1 tells search engines and AI what the page is about.",
+      "fix": "Make the main heading the only H1.",
+      "where": "page"
+    },
+    "title_h1_match": {
+      "layer": "seo",
+      "group": "meta",
+      "title": "Title and H1 say the same thing",
+      "why": "A title and H1 about different things confuse search engines.",
+      "fix": "Align the title and the H1.",
+      "where": "page"
+    },
+    "heading_order": {
+      "layer": "seo",
+      "group": "meta",
+      "title": "No heading level is skipped",
+      "why": "Skipped levels (H2 to H4) blur the page outline for search engines and screen readers.",
+      "fix": "Fix the heading levels in the content.",
+      "where": "page"
+    },
+    "thin_content": {
+      "layer": "seo",
+      "group": "meta",
+      "title": "Page has enough text",
+      "why": "Very short pages rarely rank and give AI little to quote.",
+      "fix": "Add real content, or merge or remove the page.",
+      "where": "page"
+    },
+    "og_present": {
+      "layer": "seo",
+      "group": "meta",
+      "title": "Open Graph tags are present",
+      "why": "They control the title, text and image of a shared link.",
+      "fix": "Set og:title, og:description and og:image in the SEO plugin.",
+      "where": "template"
+    },
+    "og_url_canonical": {
+      "layer": "seo",
+      "group": "meta",
+      "title": "og:url equals the canonical",
+      "why": "A different og:url splits shares between two URLs.",
+      "fix": "Fix og:url in the SEO plugin.",
+      "where": "template"
+    },
+    "twitter_card": {
+      "layer": "seo",
+      "group": "meta",
+      "title": "twitter:card is present",
+      "why": "Without it shared links on X look plain.",
+      "fix": "Set twitter:card in the SEO plugin.",
+      "where": "template"
+    },
+    "duplicate_title": {
+      "layer": "seo",
+      "group": "meta",
+      "title": "Titles are unique",
+      "why": "The same title on several pages makes them compete with each other.",
+      "fix": "Give each page its own title.",
+      "where": "page"
+    },
+    "duplicate_meta": {
+      "layer": "seo",
+      "group": "meta",
+      "title": "Meta descriptions are unique",
+      "why": "The same description on several pages makes them look alike in results.",
+      "fix": "Give each page its own description.",
+      "where": "page"
+    },
+    "duplicate_h1": {
+      "layer": "seo",
+      "group": "meta",
+      "title": "H1 headings are unique",
+      "why": "The same H1 on several pages makes them compete with each other.",
+      "fix": "Give each page its own H1.",
+      "where": "page"
+    },
+    "jsonld_valid": {
+      "layer": "seo",
+      "group": "schema",
+      "title": "JSON-LD parses",
+      "why": "Broken JSON-LD is ignored by search engines.",
+      "fix": "Fix the markup in the theme or the SEO plugin.",
+      "where": "template"
+    },
+    "schema_required": {
+      "layer": "seo",
+      "group": "schema",
+      "title": "Required structured data is present",
+      "why": "The page type needs this markup (for example Article or Service) to be understood and shown properly.",
+      "fix": "Add the missing type in the SEO plugin or the theme.",
+      "where": "template"
+    },
+    "schema_recommended": {
+      "layer": "seo",
+      "group": "schema",
+      "title": "Recommended structured data is present",
+      "why": "Markup such as BreadcrumbList helps search engines show the page's place on the site.",
+      "fix": "Turn it on in the SEO plugin; usually one change for the whole page type.",
+      "where": "template"
+    },
+    "article_fields": {
+      "layer": "seo",
+      "group": "schema",
+      "title": "Article markup has all its fields",
+      "why": "Headline, dates, author, image and publisher are what Article results need.",
+      "fix": "Fill the missing fields in the page or the SEO plugin.",
+      "where": "page"
+    },
+    "author": {
+      "layer": "seo",
+      "group": "schema",
+      "title": "Author is named",
+      "why": "A named author is a trust signal for search engines and AI answers.",
+      "fix": "Set the post author.",
+      "where": "author"
+    },
+    "dates": {
+      "layer": "seo",
+      "group": "schema",
+      "title": "Publication and modified dates are in the markup",
+      "why": "Fresh, dated content is preferred by search engines and AI answers.",
+      "fix": "Make the template output datePublished and dateModified.",
+      "where": "template"
+    },
+    "date_mismatch": {
+      "layer": "seo",
+      "group": "schema",
+      "title": "Visible date matches dateModified",
+      "why": "A visible date that differs from the markup looks careless and can mislead.",
+      "fix": "Make the visible date and dateModified come from the same field.",
+      "where": "template"
+    },
+    "faq_schema_matches_dom": {
+      "layer": "seo",
+      "group": "schema",
+      "title": "FAQ markup matches the page",
+      "why": "FAQ markup without a visible FAQ (or the reverse) is ignored or penalised.",
+      "fix": "Show the FAQ on the page, or remove the FAQPage markup.",
+      "where": "page"
+    },
+    "broken_internal_links": {
+      "layer": "seo",
+      "group": "links",
+      "title": "Internal links work",
+      "why": "Broken links waste crawl budget and frustrate visitors.",
+      "fix": "Update or remove the link.",
+      "where": "page"
+    },
+    "redirecting_internal_links": {
+      "layer": "seo",
+      "group": "links",
+      "title": "Internal links go straight to the page",
+      "why": "A link through a redirect is slower and loses a little ranking signal.",
+      "fix": "Link to the final URL.",
+      "where": "page"
+    },
+    "link_to_services": {
+      "layer": "seo",
+      "group": "links",
+      "title": "Page links to a service page",
+      "why": "Content pages should lead readers and search engines to what the company sells.",
+      "fix": "Add a link to the most relevant /services/ page.",
+      "where": "page"
+    },
+    "anchors_resolve": {
+      "layer": "seo",
+      "group": "links",
+      "title": "Anchor links have a target",
+      "why": "A #link with no matching id does nothing.",
+      "fix": "Fix the anchor or the id.",
+      "where": "page"
+    },
+    "orphan_page": {
+      "layer": "seo",
+      "group": "links",
+      "title": "Every page is linked from another page",
+      "why": "A page nothing links to is hard for search engines to find and looks unimportant.",
+      "fix": "Link to it from a relevant page or a listing, or remove it if obsolete.",
+      "where": "page"
+    },
+    "alt_missing": {
+      "layer": "seo",
+      "group": "images",
+      "title": "Images have an alt attribute",
+      "why": "Alt text is how search engines and screen readers understand an image.",
+      "fix": "Add alt text.",
+      "where": "page"
+    },
+    "alt_empty": {
+      "layer": "seo",
+      "group": "images",
+      "title": "Images have non-empty alt text",
+      "why": "An empty alt tells search engines the image is decoration.",
+      "fix": "Describe meaningful images; leave it empty only for decoration.",
+      "where": "page"
+    },
+    "image_dimensions": {
+      "layer": "seo",
+      "group": "images",
+      "title": "Images have width and height",
+      "why": "Without sizes the page jumps while loading (a layout shift).",
+      "fix": "Output width and height attributes in the theme.",
+      "where": "template"
+    },
+    "robots_ai_bots": {
+      "layer": "geo",
+      "group": "ai",
+      "title": "robots.txt lets AI bots in",
+      "why": "A blocked bot cannot read the site and cannot cite it.",
+      "fix": "Remove the Disallow rule for the bot in robots.txt.",
+      "where": "template"
+    },
+    "llms_txt": {
+      "layer": "geo",
+      "group": "ai",
+      "title": "llms.txt is present",
+      "why": "A file that tells AI assistants what the site is and which pages matter.",
+      "fix": "Publish /llms.txt.",
+      "where": "template"
+    },
+    "robots_txt": {
+      "layer": "seo",
+      "group": "indexing",
+      "title": "robots.txt is served and names the sitemap",
+      "why": "Crawlers read robots.txt first; a missing file or sitemap line slows discovery.",
+      "fix": "Serve /robots.txt as plain text and add a Sitemap: line.",
+      "where": "template"
+    },
+    "robots_crawlers": {
+      "layer": "seo",
+      "group": "indexing",
+      "title": "Search crawlers can reach every section",
+      "why": "A Disallow rule on a section hides it from search.",
+      "fix": "Remove or narrow the Disallow rule in robots.txt.",
+      "where": "template"
+    },
+    "site_https": {
+      "layer": "seo",
+      "group": "indexing",
+      "title": "http and www redirect to the one HTTPS address",
+      "why": "Several addresses for one site split links and rankings between them.",
+      "fix": "Redirect http and the other host to https://gogloby.com/ with one permanent (301) redirect.",
+      "where": "template"
+    },
+    "soft_404": {
+      "layer": "seo",
+      "group": "indexing",
+      "title": "Missing pages answer 404",
+      "why": "A 200 on a missing page (a soft 404) fills the index with empty pages.",
+      "fix": "Make the theme send a 404 status on the not-found page.",
+      "where": "template"
+    },
+    "sitemap_lastmod": {
+      "layer": "seo",
+      "group": "indexing",
+      "title": "Sitemap files carry lastmod",
+      "why": "Search engines use lastmod to decide what to recrawl.",
+      "fix": "Turn lastmod on in the sitemap plugin.",
+      "where": "template"
+    },
+    "sitemap_urls_clean": {
+      "layer": "seo",
+      "group": "indexing",
+      "title": "Sitemap lists each URL once, on the main host over HTTPS",
+      "why": "Repeated, http or foreign-host entries make the sitemap untrustworthy.",
+      "fix": "Remove the entries from the sitemap source.",
+      "where": "template"
+    },
+    "llms_txt_format": {
+      "layer": "geo",
+      "group": "ai",
+      "title": "llms.txt is a real text file that names pages",
+      "why": "An HTML error page or an empty file gives an AI assistant nothing to follow.",
+      "fix": "Publish llms.txt as plain text with links to the key pages.",
+      "where": "template"
+    },
+    "llms_txt_links": {
+      "layer": "geo",
+      "group": "ai",
+      "title": "Links in llms.txt work",
+      "why": "A broken link in llms.txt sends AI assistants to an error.",
+      "fix": "Fix or remove the link.",
+      "where": "template"
+    },
+    "llms_full_txt": {
+      "layer": "geo",
+      "group": "ai",
+      "title": "llms-full.txt is present (optional)",
+      "why": "A single file with the full text of the key pages is easy for AI assistants to read.",
+      "fix": "Publish /llms-full.txt if you want it.",
+      "where": "template"
+    },
+    "content_stale": {
+      "layer": "geo",
+      "group": "freshness",
+      "title": "Content is kept up to date",
+      "why": "AI answers and search results prefer pages that are kept up to date.",
+      "fix": "Review the page and update it, then change its modified date.",
+      "where": "page"
+    },
+    "home_title_exact": {
+      "layer": "geo",
+      "group": "positioning",
+      "title": "Home title is the approved one",
+      "why": "The home title is the first thing search results and AI answers say about the company.",
+      "fix": "Set the approved title in the SEO plugin.",
+      "where": "page"
+    },
+    "trap_terms": {
+      "layer": "geo",
+      "group": "positioning",
+      "title": "No trap term in title, H1, meta or og",
+      "why": "These terms position the company wrongly (Glossary §8).",
+      "fix": "Rewrite the title, H1 or description without the term.",
+      "where": "page"
+    },
+    "nearshore_not_first": {
+      "layer": "geo",
+      "group": "positioning",
+      "title": "No nearshore or LatAm in the hero",
+      "why": "The hero must not lead with nearshore wording (Glossary §9).",
+      "fix": "Rewrite the hero.",
+      "where": "page"
+    },
+    "faq_present": {
+      "layer": "geo",
+      "group": "positioning",
+      "title": "Home and service pages have an FAQ",
+      "why": "FAQ answers are what AI assistants quote most.",
+      "fix": "Add a FAQ section.",
+      "where": "page"
+    },
+    "em_dash": {
+      "layer": "geo",
+      "group": "style",
+      "title": "No em dash",
+      "why": "House style (Glossary §9).",
+      "fix": "Replace the dash with a comma, a colon or a new sentence.",
+      "where": "page"
+    },
+    "ampersand": {
+      "layer": "geo",
+      "group": "style",
+      "title": "\"and\" instead of \"&\"",
+      "why": "House style (Glossary §9); \"Data & AI\" and brand names are allowed.",
+      "fix": "Write \"and\", or add the name to the allow-list in GEO settings.",
+      "where": "page"
+    },
+    "uk_spelling": {
+      "layer": "geo",
+      "group": "style",
+      "title": "US spelling",
+      "why": "House style (Glossary §9).",
+      "fix": "Use the US spelling.",
+      "where": "page"
+    }
+  }
+}

@@ -221,7 +221,7 @@ export function AuditGroups({ audit }: { audit: SiteAudit }) {
       {audit.groups.map((g) => {
         const rows = audit.rows.filter((r) => r.group === g.key);
         if (!rows.length) return null;
-        return <Group key={g.key} title={g.title} blurb={g.blurb} rows={rows} defaultOpen={g.key !== "style" && rows.some((r) => r.status === "fail")} />;
+        return <Group key={g.key} title={g.title} blurb={g.blurb} rows={rows} defaultOpen={!g.apart && rows.some((r) => r.status === "fail")} />;
       })}
     </div>
   );

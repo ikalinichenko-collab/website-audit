@@ -22,7 +22,7 @@ export interface TechContext {
   pages: { url: string; profile: string; modified: string | null }[];
 }
 
-/** A page of these profiles older than this is reported as stale. */
+/** Defaults of the freshness check; `stale_after_days` and `stale_profiles` in config/geo.json override them. */
 const STALE_DAYS = 365;
 const STALE_PROFILES = ["article", "case_study", "guide", "country_guide"];
 const LINK_CAP = 150;
@@ -271,12 +271,14 @@ async function sitemapChecks(settings: Settings): Promise<TechCheck[]> {
 
 // ---- freshness --------------------------------------------------------------------------------
 
-function freshnessCheck(ctx: TechContext): TechCheck {
+function freshnessCheck(ctx: TechContext, geo: GeoCodeConfig): TechCheck {
   const now = Date.now();
+  const days = geo.stale_after_days ?? STALE_DAYS;
+  const profiles = geo.stale_profiles ?? STALE_PROFILES;
   const dated = ctx.pages
-    .filter((p) => STALE_PROFILES.includes(p.profile) && p.modified && !Number.isNaN(Date.parse(p.modified)))
+    .filter((p) => profiles.includes(p.profile) && p.modified && !Number.isNaN(Date.parse(p.modified)))
     .map((p) => ({ url: p.url, at: Date.parse(p.modified!) }));
-  const stale = dated.filter((p) => (now - p.at) / 86_400_000 > STALE_DAYS).sort((a, b) => a.at - b.at);
+  const stale = dated.filter((p) => (now - p.at) / 86_400_000 > days).sort((a, b) => a.at - b.at);
   return {
     id: "content_stale",
     layer: "geo",
@@ -284,7 +286,7 @@ function freshnessCheck(ctx: TechContext): TechCheck {
     severity: "low",
     total: dated.length,
     items: stale.map((p) => ({ url: p.url, value: `last modified ${new Date(p.at).toISOString().slice(0, 10)} (${Math.round((now - p.at) / (30.4 * 86_400_000))} months ago)` })),
-    note: `Pages of ${STALE_PROFILES.join(", ")} not modified for over ${STALE_DAYS} days.`,
+    note: `Pages of ${profiles.join(", ")} not modified for over ${days} days (stale_after_days in GEO settings).`,
   };
 }
 
@@ -304,6 +306,6 @@ export async function runSiteTech(settings: Settings, geo: GeoCodeConfig, ctx: T
     await attempt("addresses", () => addressChecks(settings));
     await attempt("sitemap", () => sitemapChecks(settings));
   }
-  if (layers.geo) out.push(freshnessCheck(ctx));
+  if (layers.geo) out.push(freshnessCheck(ctx, geo));
   return out.filter((c) => (c.layer === "seo" ? layers.seo : layers.geo));
 }

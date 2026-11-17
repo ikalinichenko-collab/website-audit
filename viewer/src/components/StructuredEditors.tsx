@@ -14,7 +14,7 @@ function parse<T>(text: string): T | null {
   }
 }
 
-function SaveBar({ r, onSave, dirty }: { r: ReturnType<typeof useResource>; onSave: () => void; dirty: boolean }) {
+export function SaveBar({ r, onSave, dirty }: { r: ReturnType<typeof useResource>; onSave: () => void; dirty: boolean }) {
   useUnsaved(dirty);
   return (
     <div className="space-y-2">

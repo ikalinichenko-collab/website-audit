@@ -52,6 +52,9 @@ export interface GeoCodeConfig {
   uk_spelling_endings: string[];
   /** severity of each code check; medium when a check is not listed */
   severity?: Record<string, "high" | "medium" | "low">;
+  /** a page of `stale_profiles` not modified for more days than this is reported as stale (365 and the four content profiles when absent) */
+  stale_after_days?: number;
+  stale_profiles?: string[];
 }
 
 export function loadGeoCodeConfig(): GeoCodeConfig {
