@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { RUN_PREFILL_KEY, RUN_PREFILL_MAX } from "../utils.js";
 import type { AuditCounts, AuditRow, AuditSeverity, AuditWhere, SiteAudit, TemplateIssue } from "../types.js";
 import { Counts, SeverityBadge } from "./Badges.js";
 
@@ -61,6 +63,17 @@ function Change({ row }: { row: AuditRow }) {
 function CheckRow({ row, showChange }: { row: AuditRow; showChange: boolean }) {
   const [open, setOpen] = useState(false);
   const [all, setAll] = useState(false);
+  const navigate = useNavigate();
+  // the bridge to Page Checks: the failing pages of this check, as links to check with the model
+  const pageUrls = [...new Set(row.items.flatMap((it) => it.urls ?? [it.url]).filter((u) => /^https?:\/\//.test(u)))];
+  const sendToRun = () => {
+    try {
+      sessionStorage.setItem(RUN_PREFILL_KEY, JSON.stringify({ urls: pageUrls.slice(0, RUN_PREFILL_MAX), from: row.title }));
+    } catch {
+      /* no storage: the Run page opens empty */
+    }
+    navigate("/run");
+  };
   const failing = row.status === "fail";
   const items = all ? row.items : row.items.slice(0, ITEMS_SHOWN);
   return (
@@ -103,6 +116,11 @@ function CheckRow({ row, showChange }: { row: AuditRow; showChange: boolean }) {
               <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-slate-500">
                 {row.id === "robots_ai_bots" || row.id === "llms_txt" ? "Problem" : "Pages"} ({row.failing}
                 {row.places > row.failing ? `, ${row.places} places` : ""})
+                {pageUrls.length > 0 && (
+                  <button type="button" className="ml-3 font-normal normal-case tracking-normal text-blue-600 hover:underline dark:text-blue-400" onClick={sendToRun}>
+                    Check {pageUrls.length > RUN_PREFILL_MAX ? `the first ${RUN_PREFILL_MAX} of ${pageUrls.length}` : `these ${pageUrls.length}`} {pageUrls.length === 1 ? "page" : "pages"} with the model
+                  </button>
+                )}
               </p>
               <ul className="space-y-0.5 text-xs">
                 {items.map((it, i) => (

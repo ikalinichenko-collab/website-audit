@@ -6,7 +6,7 @@ import { FINDING_STATUSES, pageFindings, siteFindings, type Finding, type Findin
 import { buildFindingsCsv, buildSummaryCsv, renderPageReport, renderSiteReport } from "./render.js";
 import { attachFragments, buildRunIndex, pageIndexEntry, type PageIndexEntry, type RunIndexFile, type RunListEntry, type StoredZones } from "./run-output.js";
 import { buildSiteSources, type SiteSources } from "./site-sources.js";
-import { loadGeoCodeConfig, loadSeoConfig } from "./config.js";
+import { loadGeoCodeConfig, loadSeoConfig, loadSettings } from "./config.js";
 import { buildSiteAudit, type AuditPrevious, type SiteAudit } from "./site-audit.js";
 import { graphUrl } from "./links.js";
 
@@ -157,6 +157,31 @@ export async function finishRun(runId: string, status: RunStatus, meta: RunMeta 
     await pool.query("UPDATE runs SET site = $2, site_sources = $3 WHERE id = $1", [runId, JSON.stringify(site), JSON.stringify(sources)]);
   }
   await pool.query("UPDATE runs SET status = $2, ended_at = now(), meta = $3 WHERE id = $1", [runId, status, meta ? JSON.stringify(meta) : null]);
+  // a new snapshot is there: the older ones no longer need their stored pages
+  if (site && status === "done") await pruneSnapshots();
+}
+
+/** How many of the newest snapshots keep their stored HTML and zones: `snapshot_keep_full` in config/settings.json, 3 when absent. */
+export function snapshotsKeptFull(): number {
+  const n = loadSettings().snapshot_keep_full;
+  return typeof n === "number" && Number.isInteger(n) && n >= 1 ? n : 3;
+}
+
+/**
+ * Drops the stored HTML and zones of every finished snapshot but the newest `keep`. Their reports stay, and the reports are all the
+ * Site page, the comparison between snapshots and the page views read (about 2 of 37 MB). Returns how many snapshots were cleaned.
+ */
+export async function pruneSnapshots(keep = snapshotsKeptFull()): Promise<number> {
+  const old = await db().query<{ id: string }>(
+    `SELECT id FROM (SELECT id, meta FROM runs WHERE kind = 'site' AND status = 'done' ORDER BY started_at DESC OFFSET $1) o
+      WHERE NOT (COALESCE(meta, '{}'::jsonb) ? 'pruned_at')`,
+    [keep],
+  );
+  for (const { id } of old.rows) {
+    await db().query("UPDATE pages SET html = '', zones = '{}'::jsonb WHERE run_id = $1", [id]);
+    await db().query("UPDATE runs SET meta = COALESCE(meta, '{}'::jsonb) || jsonb_build_object('pruned_at', now()::text) WHERE id = $1", [id]);
+  }
+  return old.rows.length;
 }
 
 async function* pagesOfRun(runId: string): AsyncGenerator<{ slug: string; url: string; final_url: string; html: string }> {
@@ -178,6 +203,8 @@ export async function rebuildRun(runId: string, settings: Settings): Promise<num
   const slugs = (await pool.query<{ slug: string }>("SELECT slug FROM pages WHERE run_id = $1", [runId])).rows;
   for (const { slug } of slugs) {
     const r = (await pool.query<{ report: PageReport; html: string; zones: StoredZones }>("SELECT report, html, zones FROM pages WHERE run_id = $1 AND slug = $2", [runId, slug])).rows[0]!;
+    // the stored page of an old snapshot was removed: its report stays as it is
+    if (!r.html) continue;
     attachFragments(r.report, r.html, r.zones, settings);
     const entry = pageIndexEntry(slug, r.report, pageFindings(r.report, run.site));
     await pool.query("UPDATE pages SET report = $3, entry = $4 WHERE run_id = $1 AND slug = $2", [runId, slug, JSON.stringify(r.report), JSON.stringify(entry)]);
@@ -234,6 +261,7 @@ export async function listRuns(): Promise<RunListEntry[]> {
     ...(x.started_by ? { started_by: x.started_by } : {}),
     kind: x.kind,
     ...(x.site_run_id ? { site_run_id: x.site_run_id } : {}),
+    ...(x.meta?.pruned_at ? { details_removed: true } : {}),
     format: 2 as const,
   }));
 }

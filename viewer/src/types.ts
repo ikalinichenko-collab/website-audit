@@ -44,6 +44,8 @@ export interface RunListEntry {
   site_run_id?: string;
   status?: string;
   format?: 1 | 2;
+  /** an old snapshot whose stored pages were removed: its reports still open, the model cannot be asked about it */
+  details_removed?: boolean;
 }
 
 export interface Sev {

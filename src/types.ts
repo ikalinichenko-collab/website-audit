@@ -31,6 +31,8 @@ export interface Layers {
 export const ALL_LAYERS: Layers = { compliance: true, geo: true, seo: true };
 
 export interface Settings {
+  /** how many of the newest snapshots keep their stored HTML and zones (3 when absent) */
+  snapshot_keep_full?: number;
   base_url: string;
   sitemap: string;
   exclude_url_patterns: string[];
@@ -182,4 +184,6 @@ export interface RunMeta {
   subsections?: string[];
   /** a snapshot whose shared blocks (banner and form variants, site-wide JSON-LD) were checked by the model afterwards */
   site_llm?: { model: string; at: string };
+  /** an old snapshot whose stored HTML and zones were removed (only its reports are kept) */
+  pruned_at?: string;
 }

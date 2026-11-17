@@ -1,10 +1,10 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { api, type AppState, type JobDetail, type ModelOption, type ScopeGroup } from "../api.js";
-import type { Layers } from "../types.js";
+import type { Layers, RunListEntry } from "../types.js";
 import { useRunContext } from "../context/RunContext.js";
 import { Notice, buttonClass, primaryClass } from "../components/ResourceEditor.js";
-import { runLabel } from "../utils.js";
+import { RUN_PREFILL_KEY, runLabel } from "../utils.js";
 
 type Mode = "urls" | "scope";
 
@@ -44,8 +44,47 @@ function progressOf(log: string[]): { done: number; total: number } | null {
   return null;
 }
 
+const SNAPSHOT_STALE_DAYS = 14;
+
+/** Page checks read the latest site snapshot: say which, and warn (never block) when there is none or it is old. */
+function SnapshotNote({ snapshot }: { snapshot: RunListEntry | undefined }) {
+  const linkCls = "text-blue-600 hover:underline dark:text-blue-400";
+  if (!snapshot) {
+    return (
+      <Notice kind="warn">
+        There is no site snapshot yet. A page check reads the latest snapshot for the shared banners and forms, duplicate titles and who links to a page; without it those parts are skipped.{" "}
+        <Link to="/site" className={linkCls}>
+          Make a snapshot on Site Checks
+        </Link>
+        , or run anyway: the pages themselves are checked either way.
+      </Notice>
+    );
+  }
+  const days = Math.floor((Date.now() - new Date(snapshot.started_at).getTime()) / 86_400_000);
+  if (days > SNAPSHOT_STALE_DAYS) {
+    return (
+      <Notice kind="warn">
+        The latest site snapshot is {days} days old ({runLabel(snapshot).replace(" (site snapshot)", "")}), so the site may have changed since. The pages will be read against it anyway.{" "}
+        <Link to="/site" className={linkCls}>
+          Make a new snapshot on Site Checks
+        </Link>
+        .
+      </Notice>
+    );
+  }
+  return (
+    <p className="text-sm text-slate-600 dark:text-slate-400">
+      The pages will be read against the site snapshot of <b>{runLabel(snapshot).replace(" (site snapshot)", "")}</b> ({snapshot.pages_checked} pages).{" "}
+      <Link to="/site" className={linkCls}>
+        Site Checks
+      </Link>
+    </p>
+  );
+}
+
 export function RunPage() {
-  const { allRuns, setRunId, reload } = useRunContext();
+  const { pageRuns, snapshots, setRunId, reload } = useRunContext();
+  const [prefillFrom, setPrefillFrom] = useState<string | null>(null);
   const navigate = useNavigate();
   const [state, setState] = useState<AppState | null>(null);
   const [mode, setMode] = useState<Mode>("urls");
@@ -62,6 +101,23 @@ export function RunPage() {
   const [job, setJob] = useState<JobDetail | null>(null);
   const [log, setLog] = useState<string[]>([]);
   const jobId = useRef<string | null>(null);
+
+  // pages handed over by a check on Site Checks
+  useEffect(() => {
+    try {
+      const raw = sessionStorage.getItem(RUN_PREFILL_KEY);
+      if (!raw) return;
+      sessionStorage.removeItem(RUN_PREFILL_KEY);
+      const p = JSON.parse(raw) as { urls?: string[]; from?: string };
+      if (p.urls?.length) {
+        setMode("urls");
+        setText(p.urls.join("\n"));
+        setPrefillFrom(p.from ?? "a check");
+      }
+    } catch {
+      /* no storage or a broken value: the form stays empty */
+    }
+  }, []);
 
   useEffect(() => {
     api
@@ -157,13 +213,16 @@ export function RunPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-xl font-semibold">Run an audit</h1>
+        <h1 className="text-xl font-semibold">Check chosen pages</h1>
         <p className="mt-1 max-w-3xl text-sm text-slate-600 dark:text-slate-400">
           Pages are fetched from the live site, split into zones and checked by three layers: Compliance and GEO use the LLM,
           SEO does not. A page whose text, documents and settings did not change is not asked again unless you tick "Ignore
           saved results".
         </p>
       </div>
+
+      <SnapshotNote snapshot={snapshots[0]} />
+      {prefillFrom && <Notice kind="ok">The links below come from the check “{prefillFrom}” on Site Checks. Change them if you like, then run.</Notice>}
 
       {state && !state.has_api_key && (
         <Notice kind="warn">OPENAI_API_KEY is not set in .env. You can still run with "Skip LLM" (SEO and code checks only).</Notice>
@@ -368,17 +427,19 @@ export function RunPage() {
         </section>
       )}
 
-      <RunList runs={allRuns} onSelect={(id) => { setRunId(id); navigate("/"); }} onDeleted={reload} />
+      <RunList runs={pageRuns} snapshots={snapshots} onSelect={(id) => { setRunId(id); navigate("/overview"); }} onDeleted={reload} />
     </div>
   );
 }
 
 function RunList({
   runs,
+  snapshots,
   onSelect,
   onDeleted,
 }: {
-  runs: { id: string; pages_checked: number; started_at: string; started_by?: string; kind?: "pages" | "site"; model?: string; cost_usd?: number | null; format?: 1 | 2 }[];
+  runs: { id: string; pages_checked: number; started_at: string; started_by?: string; kind?: "pages" | "site"; model?: string; cost_usd?: number | null; format?: 1 | 2; site_run_id?: string }[];
+  snapshots: RunListEntry[];
   onSelect: (id: string) => void;
   onDeleted: () => void;
 }) {
@@ -386,7 +447,7 @@ function RunList({
   if (!runs.length) return null;
   return (
     <section className="space-y-2">
-      <h2 className="font-semibold">Earlier runs</h2>
+      <h2 className="font-semibold">Earlier page checks</h2>
       {err && <Notice kind="error">{err}</Notice>}
       <ul className="divide-y divide-slate-100 rounded-lg border border-slate-200 bg-white text-sm dark:divide-slate-800 dark:border-slate-700 dark:bg-slate-900">
         {runs.map((r) => (
@@ -394,6 +455,9 @@ function RunList({
             <span className="tabular-nums">{runLabel(r)}</span>
             <span className="text-slate-500">{r.pages_checked} pages</span>
             {r.model && <span className="text-xs text-slate-500">{r.model}</span>}
+            {r.site_run_id && snapshots.find((s) => s.id === r.site_run_id) && (
+              <span className="text-xs text-slate-500">snapshot {runLabel(snapshots.find((s) => s.id === r.site_run_id)!).replace(" (site snapshot)", "")}</span>
+            )}
             {r.cost_usd != null && r.cost_usd > 0 && <span className="text-xs text-slate-500">${r.cost_usd.toFixed(r.cost_usd < 1 ? 3 : 2)}</span>}
             {r.format === 1 ? (
               <span className="text-xs text-slate-500">old format, cannot be opened</span>

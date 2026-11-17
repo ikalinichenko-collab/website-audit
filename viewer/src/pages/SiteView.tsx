@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import { api } from "../api.js";
 import { buttonClass } from "../components/ResourceEditor.js";
 import { useRunContext } from "../context/RunContext.js";
@@ -10,6 +10,7 @@ import { FindingList } from "../components/FindingList.js";
 import { FindingActionsContext } from "../components/FindingActions.js";
 import { SchemaNodeCard, VariantCard, findingsInNode } from "../components/SourceCards.js";
 import { AuditGroups, AuditSummary, Hint, TemplateIssues } from "../components/SiteAuditPanel.js";
+import { PagesTable } from "./PagesTable.js";
 
 function Section({ id, title, hint, children }: { id: string; title: string; hint?: string; children: React.ReactNode }) {
   return (
@@ -112,8 +113,14 @@ function SnapshotBar({
         <button
           type="button"
           className={buttonClass}
-          disabled={busy || !snapshot || !hasKey}
-          title={hasKey ? "One or two model calls on the banner and form texts and the site-wide JSON-LD. An unchanged text is not asked again." : "OPENAI_API_KEY is not set in .env"}
+          disabled={busy || !snapshot || !hasKey || !!snapshot?.details_removed}
+          title={
+            snapshot?.details_removed
+              ? "The stored pages of this snapshot were removed to save space. Ask the model on a newer snapshot."
+              : hasKey
+                ? "One or two model calls on the banner and form texts and the site-wide JSON-LD. An unchanged text is not asked again."
+                : "OPENAI_API_KEY is not set in .env"
+          }
           onClick={() => snapshot && void start("llm", { siteLlm: { run_id: snapshot.id } })}
         >
           {jobId && what === "llm" ? "Asking the model..." : "Check shared blocks with the model"}
@@ -242,10 +249,80 @@ function SitemapTable({ site }: { site: SiteReport }) {
   );
 }
 
-/** The Site page shows a snapshot of the whole site, whichever run is open elsewhere: the latest one unless another is picked. */
+type Tab = "audit" | "pages" | "snapshots";
+const TABS: { key: Tab; label: string }[] = [
+  { key: "audit", label: "Audit" },
+  { key: "pages", label: "Pages in the snapshot" },
+  { key: "snapshots", label: "Snapshots" },
+];
+
+/** Every snapshot: when, who, how big, whether its stored pages were cleaned; open it, download it or delete it. */
+function SnapshotList({ snapshots, currentId, onOpen, onPages }: { snapshots: RunListEntry[]; currentId: string; onOpen: (id: string) => void; onPages: (id: string) => void }) {
+  const { reload } = useRunContext();
+  const [err, setErr] = useState<string | null>(null);
+  const link = "text-blue-600 hover:underline dark:text-blue-400";
+  return (
+    <section className="space-y-2">
+      <h2 className="text-lg font-semibold">Snapshots</h2>
+      <p className="max-w-3xl text-sm text-slate-600 dark:text-slate-400">
+        Every whole-site check is kept here. The newest few keep the stored pages; of older ones only the results stay (they still open, and the Audit compares each snapshot with the one before it),
+        which saves space. Page checks read the newest snapshot.
+      </p>
+      {err && <p className="text-sm text-red-600 dark:text-red-400">{err}</p>}
+      <ul className="divide-y divide-slate-100 rounded-lg border border-slate-200 bg-white text-sm dark:divide-slate-800 dark:border-slate-700 dark:bg-slate-900">
+        {snapshots.map((s, i) => (
+          <li key={s.id} className="flex flex-wrap items-center gap-x-3 gap-y-1 px-3 py-2">
+            <span className="tabular-nums font-medium">{runLabel(s).replace(" (site snapshot)", "")}</span>
+            {i === 0 && <span className="rounded bg-emerald-100 px-1.5 py-0.5 text-xs text-emerald-800 dark:bg-emerald-950 dark:text-emerald-200">latest</span>}
+            {s.id === currentId && <span className="text-xs text-slate-500">shown on the Audit</span>}
+            <span className="text-slate-500">{s.pages_checked} pages</span>
+            {s.details_removed && <span className="text-xs text-slate-500">stored pages removed</span>}
+            <button type="button" className={link} onClick={() => onOpen(s.id)}>
+              open audit
+            </button>
+            <button type="button" className={link} onClick={() => onPages(s.id)}>
+              pages
+            </button>
+            <a className={link} href={`/api/runs/${s.id}/findings.csv`} download>
+              findings.csv
+            </a>
+            <a className={link} href={`/api/runs/${s.id}/site.md`} target="_blank" rel="noreferrer">
+              site.md
+            </a>
+            <button
+              type="button"
+              className="ml-auto text-red-600 hover:underline"
+              onClick={async () => {
+                if (!window.confirm(`Delete the snapshot of ${runLabel(s).replace(" (site snapshot)", "")}? This cannot be undone.`)) return;
+                try {
+                  await api.deleteRun(s.id);
+                  await reload();
+                } catch (e) {
+                  setErr(String(e instanceof Error ? e.message : e));
+                }
+              }}
+            >
+              delete
+            </button>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+/** Site Checks: the snapshot of the whole site, whichever page check is open elsewhere: the latest one unless another is picked. */
 export function SiteView() {
-  const { runs, loading } = useRunContext();
-  const snapshots = runs.filter((r) => r.kind === "site" && r.status === "done");
+  const { snapshots: allSnapshots, loading } = useRunContext();
+  const snapshots = allSnapshots.filter((r) => r.status === "done");
+  const [params, setParams] = useSearchParams();
+  const tab: Tab = (TABS.find((t) => t.key === params.get("tab"))?.key ?? "audit") as Tab;
+  const setTab = (t: Tab) => {
+    const next = new URLSearchParams(params);
+    if (t === "audit") next.delete("tab");
+    else next.set("tab", t);
+    setParams(next, { replace: true });
+  };
   const [picked, setPicked] = useState<string | null>(null);
   const snapshot = snapshots.find((r) => r.id === picked) ?? snapshots[0];
   const runId = snapshot?.id ?? "";
@@ -309,6 +386,37 @@ export function SiteView() {
         {bar}
         <Hint text={audit?.blocks.snapshot} />
       </div>
+      <div className="flex gap-1 border-b border-slate-200 dark:border-slate-700" role="tablist">
+        {TABS.map((t) => (
+          <button
+            key={t.key}
+            type="button"
+            role="tab"
+            aria-selected={tab === t.key}
+            onClick={() => setTab(t.key)}
+            className={`-mb-px border-b-2 px-3 py-2 text-sm ${tab === t.key ? "border-blue-600 font-semibold" : "border-transparent text-slate-500"}`}
+          >
+            {t.label}
+          </button>
+        ))}
+      </div>
+      {tab === "pages" ? (
+        <PagesTable runId={runId} />
+      ) : tab === "snapshots" ? (
+        <SnapshotList
+          snapshots={snapshots}
+          currentId={runId}
+          onOpen={(id) => {
+            setPicked(id);
+            setTab("audit");
+          }}
+          onPages={(id) => {
+            setPicked(id);
+            setTab("pages");
+          }}
+        />
+      ) : (
+      <>
       <nav className="sticky top-[57px] z-[5] -mx-4 flex flex-wrap gap-1 border-b border-slate-200 bg-white/95 px-4 py-1.5 text-sm backdrop-blur dark:border-slate-800 dark:bg-slate-950/95" aria-label="On this page">
         {[
           ["summary", "Summary"],
@@ -442,11 +550,8 @@ export function SiteView() {
         </details>
       </Section>
 
-      <p className="text-sm">
-        <Link to="/pages" className="text-blue-600 hover:underline dark:text-blue-400">
-          Back to pages
-        </Link>
-      </p>
+      </>
+      )}
     </div>
     </FindingActionsContext.Provider>
   );

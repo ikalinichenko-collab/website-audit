@@ -410,6 +410,8 @@ async function start(): Promise<void> {
   if (applied.length) console.log(`Database migrations applied: ${applied.join(", ")}`);
   await loadResources();
   await markInterrupted();
+  const cleaned = await store.pruneSnapshots();
+  if (cleaned) console.log(`Old snapshots cleaned (stored pages removed, reports kept): ${cleaned}`);
   server.listen(PORT, HOST, () => {
     console.log(`Audit app: http://${HOST}:${PORT}  (${RESOURCES.length} editable files, results in the database)`);
   });

@@ -19,6 +19,11 @@ export function runLabel(r: { started_at: string; started_by?: string; kind?: "p
   return r.kind === "site" ? `${label} (site snapshot)` : label;
 }
 
+/** Where Site Checks hands pages to Page Checks (sessionStorage): {urls, from}. Read and cleared by the Run page. */
+export const RUN_PREFILL_KEY = "run-prefill";
+/** At most this many pages are handed over at once: a model check of more takes long and costs a lot. */
+export const RUN_PREFILL_MAX = 100;
+
 export function formatTokens(n: number): string {
   return n.toLocaleString();
 }

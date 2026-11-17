@@ -84,18 +84,9 @@ export function Overview() {
         </Card>
       </div>
       <p className="text-sm text-slate-600 dark:text-slate-400">
-        {run?.kind === "site" || !run?.kind ? (
-          <>
-            Site report: Compliance <Counts {...index.site.compliance} />, SEO {index.site.seo}, GEO {index.site.geo}.{" "}
-          </>
-        ) : (
-          <>
-            This run has no site report of its own.{" "}
-            {snapshot ? `Its pages were read against the site snapshot of ${runLabel(snapshot)}.` : "There was no site snapshot then: run the whole-site check on the Site page."}{" "}
-          </>
-        )}
+        {snapshot ? `Read against the site snapshot of ${runLabel(snapshot).replace(" (site snapshot)", "")}.` : "There was no site snapshot then: make one on Site Checks."}{" "}
         <Link to="/site" className="text-blue-600 hover:underline dark:text-blue-400">
-          Open the site report
+          Open Site Checks
         </Link>
         {meta && (
           <span className="ml-3 text-xs text-slate-500">

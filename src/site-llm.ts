@@ -63,6 +63,7 @@ export async function runSiteLlm(runId: string, options: SiteLlmOptions = {}): P
   ).rows[0];
   if (!row) throw new Error(`No run ${runId}`);
   if (row.kind !== "site" || !row.site) throw new Error("This run is not a site snapshot");
+  if (row.meta?.pruned_at) throw new Error("The stored pages of this snapshot were removed to save space. Ask the model on a newer snapshot.");
   const client = createOpenAiClient();
   if (!client) throw new Error("OPENAI_API_KEY not set");
 

@@ -1,4 +1,5 @@
 {
+  "snapshot_keep_full": 3,
   "base_url": "https://gogloby.com",
   "sitemap": "https://gogloby.com/sitemap_index.xml",
   "exclude_url_patterns": [

@@ -18,14 +18,15 @@ export function App() {
       <HashRouter>
         <Routes>
           <Route element={<Layout />}>
-            <Route index element={<Overview />} />
+            <Route index element={<Navigate to="/site" replace />} />
+            <Route path="overview" element={<Overview />} />
             <Route path="pages" element={<PagesTable />} />
             <Route path="pages/:slug" element={<PageDetail />} />
             <Route path="site" element={<SiteView />} />
             <Route path="run" element={<RunPage />} />
             <Route path="sources" element={<Sources />} />
             <Route path="settings" element={<Settings />} />
-            <Route path="*" element={<Navigate to="/" replace />} />
+            <Route path="*" element={<Navigate to="/site" replace />} />
           </Route>
         </Routes>
       </HashRouter>

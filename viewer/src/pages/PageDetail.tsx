@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState, type ReactNode } from "react";
-import { Link, useParams } from "react-router-dom";
-import { useRunContext } from "../context/RunContext.js";
+import { Link, useParams, useSearchParams } from "react-router-dom";
+import { useActiveRunId, useRunContext } from "../context/RunContext.js";
 import { getIndex, getPage, getPageFindings, getSiteCheck } from "../data.js";
 import type { Finding, Layer, PageCompare, PageIndexEntry, PageReport, SiteCheck } from "../types.js";
 import { ActionBadge, SeverityBadge } from "../components/Badges.js";
@@ -41,7 +41,12 @@ function Section({ title, hint, children }: { title: string; hint?: string; chil
 
 export function PageDetail() {
   const { slug = "" } = useParams();
-  const { runId, runs } = useRunContext();
+  const { runs } = useRunContext();
+  const runId = useActiveRunId();
+  // a page of a snapshot is opened from Site Checks with ?run=<snapshot>: its links keep that and go back there
+  const [qs] = useSearchParams();
+  const runParam = qs.get("run");
+  const suffix = runParam ? `?run=${encodeURIComponent(runParam)}` : "";
   const [page, setPage] = useState<PageReport | null>(null);
   const [findings, setFindings] = useState<Finding[]>([]);
   const [compare, setCompare] = useState<PageCompare | null>(null);
@@ -159,13 +164,13 @@ export function PageDetail() {
     <FindingActionsContext.Provider value={{ runId, slug, reload: loadFindings }}>
     <div className="space-y-4">
       <div className="flex flex-wrap items-center gap-3 text-sm">
-        <Link to="/pages" className="text-blue-600 hover:underline dark:text-blue-400">
-          Back to pages
+        <Link to={runParam ? "/site?tab=pages" : "/pages"} className="text-blue-600 hover:underline dark:text-blue-400">
+          {runParam ? "Back to the pages of the snapshot" : "Back to pages"}
         </Link>
         {pos >= 0 && (
           <span className="ml-auto flex items-center gap-3 text-slate-500">
             {prev ? (
-              <Link to={`/pages/${prev.slug}`} className="text-blue-600 hover:underline dark:text-blue-400">
+              <Link to={`/pages/${prev.slug}${suffix}`} className="text-blue-600 hover:underline dark:text-blue-400">
                 Previous
               </Link>
             ) : (
@@ -175,7 +180,7 @@ export function PageDetail() {
               {pos + 1} of {siblings.length}, worst first
             </span>
             {next ? (
-              <Link to={`/pages/${next.slug}`} className="text-blue-600 hover:underline dark:text-blue-400">
+              <Link to={`/pages/${next.slug}${suffix}`} className="text-blue-600 hover:underline dark:text-blue-400">
                 Next
               </Link>
             ) : (

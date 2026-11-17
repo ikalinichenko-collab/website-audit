@@ -320,6 +320,7 @@ export function validateResource(r: Resource, content: string): void {
       }
       if (!(models as { id: string }[]).some((m) => m.id === llm.model)) fail("llm.model must be one of llm.models");
       if (!isObj(data.fetch) || typeof data.fetch.delay_ms !== "number") fail("fetch.delay_ms is required");
+      if (data.snapshot_keep_full !== undefined && (typeof data.snapshot_keep_full !== "number" || !Number.isInteger(data.snapshot_keep_full) || data.snapshot_keep_full < 1)) fail("snapshot_keep_full must be a whole number of snapshots, 1 or more");
       if (!Array.isArray(data.scope) || !data.scope.length) fail("scope must be a non-empty list");
       const profiles = seoProfiles();
       for (const [i, s] of (data.scope as unknown[]).entries()) {

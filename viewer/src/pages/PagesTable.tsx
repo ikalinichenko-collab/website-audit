@@ -1,14 +1,17 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
-import { useRunContext } from "../context/RunContext.js";
+import { useActiveRunId } from "../context/RunContext.js";
 import { getIndex } from "../data.js";
 import type { PageIndexEntry, RunIndexFile } from "../types.js";
 import { ActionBadge, Counts, GeoCounts } from "../components/Badges.js";
 import { actionKey, defaultSort } from "../utils.js";
 import { ACTION_COLUMNS, GROUP_ORDER } from "../labels.js";
 
-export function PagesTable() {
-  const { runId } = useRunContext();
+/** The pages of a run. `runId` is given when it is shown inside Site Checks (a snapshot): the page links then carry it. */
+export function PagesTable({ runId: given }: { runId?: string } = {}) {
+  const active = useActiveRunId();
+  const runId = given ?? active;
+  const runQuery = given ? `?run=${encodeURIComponent(given)}` : "";
   const [params, setParams] = useSearchParams();
   const [index, setIndex] = useState<RunIndexFile | null>(null);
 
@@ -46,6 +49,7 @@ export function PagesTable() {
   if (!index) return <p className="text-slate-500">Loading...</p>;
   const layers = index.layers ?? { compliance: true, geo: true, seo: true };
   const groups = Object.keys(index.by_group).sort((a, b) => GROUP_ORDER.indexOf(a) - GROUP_ORDER.indexOf(b));
+  const showCompliance = layers.compliance;
   const field = "rounded border border-slate-300 bg-white px-2 py-1 text-sm dark:border-slate-600 dark:bg-slate-900";
 
   return (
@@ -69,14 +73,16 @@ export function PagesTable() {
               </option>
             ))}
         </select>
-        <select className={field} value={params.get("action") ?? ""} onChange={(e) => set("action", e.target.value)}>
-          <option value="">Any action</option>
-          {ACTION_COLUMNS.map((a) => (
-            <option key={a.key} value={a.key}>
-              {a.label}
-            </option>
-          ))}
-        </select>
+        {showCompliance && (
+          <select className={field} value={params.get("action") ?? ""} onChange={(e) => set("action", e.target.value)}>
+            <option value="">Any action</option>
+            {ACTION_COLUMNS.map((a) => (
+              <option key={a.key} value={a.key}>
+                {a.label}
+              </option>
+            ))}
+          </select>
+        )}
         <label className="flex items-center gap-1 text-sm">
           <input type="checkbox" checked={params.get("high") === "1"} onChange={(e) => set("high", e.target.checked ? "1" : "")} />
           Has high findings
@@ -95,8 +101,8 @@ export function PagesTable() {
             <tr>
               <th className="px-3 py-2">Page</th>
               <th className="px-3 py-2">Group</th>
-              <th className="px-3 py-2">Action</th>
-              <th className="px-3 py-2">Compliance</th>
+              {showCompliance && <th className="px-3 py-2">Action</th>}
+              {showCompliance && <th className="px-3 py-2">Compliance</th>}
               <th className="px-3 py-2">GEO</th>
               <th className="px-3 py-2">SEO</th>
             </tr>
@@ -105,7 +111,7 @@ export function PagesTable() {
             {list.map((e) => (
               <tr key={e.slug} className="border-t border-slate-100 dark:border-slate-800">
                 <td className="max-w-md px-3 py-2">
-                  <Link to={`/pages/${encodeURIComponent(e.slug)}`} className="text-blue-600 hover:underline dark:text-blue-400">
+                  <Link to={`/pages/${encodeURIComponent(e.slug)}${runQuery}`} className="text-blue-600 hover:underline dark:text-blue-400">
                     {e.title}
                   </Link>
                   <div className="truncate text-xs text-slate-500">{e.url}</div>
@@ -113,12 +119,16 @@ export function PagesTable() {
                 <td className="px-3 py-2 text-slate-600 dark:text-slate-400">
                   {e.group} / {e.subsection}
                 </td>
-                <td className="px-3 py-2">
-                  <ActionBadge action={actionKey(e)} />
-                </td>
-                <td className="px-3 py-2">
-                  <Counts {...e.compliance} off={!layers.compliance} />
-                </td>
+                {showCompliance && (
+                  <td className="px-3 py-2">
+                    <ActionBadge action={actionKey(e)} />
+                  </td>
+                )}
+                {showCompliance && (
+                  <td className="px-3 py-2">
+                    <Counts {...e.compliance} off={!layers.compliance} />
+                  </td>
+                )}
                 <td className="px-3 py-2">
                   <GeoCounts
                     total={e.geo.to_fix}

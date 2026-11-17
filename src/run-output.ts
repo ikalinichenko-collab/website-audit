@@ -60,6 +60,8 @@ export interface RunListEntry {
   status?: string;
   /** 2 = readable by the viewer; 1 = made before the zone redesign (no longer stored) */
   format: 1 | 2;
+  /** an old snapshot whose stored HTML and zones were removed: its reports and audit still open, the model cannot be asked about it */
+  details_removed?: boolean;
 }
 
 function emptyTotals(): GroupTotals {
