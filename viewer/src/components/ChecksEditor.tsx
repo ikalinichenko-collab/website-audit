@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { HistoryList, Notice, useResource } from "./ResourceEditor.js";
 import { SaveBar } from "./StructuredEditors.js";
+import { Loading } from "./Loading.js";
 
 const field = "rounded border border-slate-300 bg-white px-2 py-1 text-sm dark:border-slate-600 dark:bg-slate-900";
 
@@ -63,7 +64,7 @@ export function ChecksEditor() {
     if (r.info) setCfg(parse(r.info.content));
   }, [r.info]);
 
-  if (!r.info) return r.msg ? <Notice kind="error">{r.msg.text}</Notice> : <p className="text-slate-500">Loading...</p>;
+  if (!r.info) return r.msg ? <Notice kind="error">{r.msg.text}</Notice> : <Loading />;
   if (!cfg) return <Notice kind="error">config/checks.json is not valid JSON. Fix it in the raw editor.</Notice>;
 
   const serialized = JSON.stringify(cfg, null, 2) + "\n";

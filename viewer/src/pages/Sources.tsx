@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { api, type ResourceInfo } from "../api.js";
 import { TextEditor } from "../components/ResourceEditor.js";
+import { Help } from "../components/Help.js";
 
 export function Sources() {
   const [items, setItems] = useState<ResourceInfo[]>([]);
@@ -28,11 +29,12 @@ export function Sources() {
     <div className="space-y-4">
       <div>
         <h1 className="text-xl font-semibold">Company documents</h1>
-        <p className="mt-1 max-w-3xl text-sm text-slate-600 dark:text-slate-400">
-          The audit compares every page with these three files. If they disagree, decisions.md wins, then the Fact Sheet, then
-          the Glossary. Edit the text here or upload a new version of a file. The old version is kept in history. After a change,
-          the next run asks the LLM again for every page; pages are not rechecked until you run them.
-        </p>
+        <div className="mt-2">
+          <Help id="documents">
+            <p>The audit compares every page with these three files. If they disagree, decisions.md wins, then the Fact Sheet, then the Glossary.</p>
+            <p>Edit the text here or upload a new version of a file. The old version is kept in history. After a change, the next check asks the model again for every page; pages are not rechecked until you run them.</p>
+          </Help>
+        </div>
       </div>
       <div className="flex flex-wrap gap-2 border-b border-slate-200 dark:border-slate-700">
         {items.map((i, n) => (

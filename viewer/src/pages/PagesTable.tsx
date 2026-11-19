@@ -9,10 +9,25 @@ import { JobBar } from "../components/JobBar.js";
 import { buttonClass } from "../components/ResourceEditor.js";
 import { actionKey, defaultSort } from "../utils.js";
 import { ACTION_COLUMNS, GROUP_ORDER } from "../labels.js";
+import { Loading } from "../components/Loading.js";
+import { Help } from "../components/Help.js";
 
 const when = (iso: string) => new Date(iso).toLocaleString([], { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit" });
 const money = (v: number) => (v === 0 ? "$0" : v < 0.01 ? "<$0.01" : `$${v.toFixed(v < 1 ? 3 : 2)}`);
 const shortPath = (u: string) => u.replace(/^https?:\/\/[^/]+/, "") || "/";
+
+/** What each sortable column sorts by. */
+const sev = (c: { high: number; medium: number; low: number }): number => c.high * 1e6 + c.medium * 1e3 + c.low;
+const SORTS: Record<string, (e: PageIndexEntry) => string | number> = {
+  title: (e) => e.title.toLowerCase(),
+  group: (e) => `${e.group}/${e.subsection}`,
+  action: (e) => ACTION_COLUMNS.findIndex((a) => a.key === actionKey(e)),
+  compliance: (e) => sev(e.compliance),
+  geo: (e) => e.geo.to_fix,
+  seo: (e) => sev(e.seo),
+  brief: (e) => (e.brief ? e.brief.partial + e.brief.missing : -1),
+  checked: (e) => Date.parse(e.checked_at),
+};
 
 /** The brief of a page in the list: none, loaded, or checked with what is left to fix. Opens the Brief tab of the page. */
 function BriefCell({ to, brief }: { to: string; brief: BriefListState | null }) {
@@ -92,8 +107,27 @@ export function PagesTable({ runId: given }: { runId?: string } = {}) {
     if (brief === "unchecked") l = l.filter((e) => e.brief && !e.brief.checked_at);
     if (brief === "outdated") l = l.filter((e) => e.brief?.stale);
     if (q) l = l.filter((e) => e.title.toLowerCase().includes(q) || e.url.toLowerCase().includes(q));
-    return l.sort(defaultSort);
+    const sort = params.get("sort");
+    if (!sort || !SORTS[sort]) return l.sort(defaultSort);
+    const sign = params.get("dir") === "asc" ? 1 : -1;
+    const key = SORTS[sort]!;
+    return l.sort((a, b) => {
+      const x = key(a);
+      const y = key(b);
+      return (typeof x === "string" && typeof y === "string" ? x.localeCompare(y) : Number(x) - Number(y)) * sign || defaultSort(a, b);
+    });
   }, [index, params]);
+
+  /** Clicking a column title sorts by it, clicking it again flips the order (kept in the address, like the filters). */
+  function sortBy(k: string) {
+    const next = new URLSearchParams(params);
+    if (params.get("sort") === k) next.set("dir", params.get("dir") === "asc" ? "desc" : "asc");
+    else {
+      next.set("sort", k);
+      next.set("dir", k === "title" || k === "group" ? "asc" : "desc");
+    }
+    setParams(next, { replace: true });
+  }
 
   function set(key: string, value: string) {
     const next = new URLSearchParams(params);
@@ -158,7 +192,7 @@ export function PagesTable({ runId: given }: { runId?: string } = {}) {
     }
   }
 
-  if (!index) return <p className="text-slate-500">Loading...</p>;
+  if (!index) return <Loading />;
   if (checkMode && index.pages.length === 0) {
     return (
       <div className="space-y-2 rounded-lg border border-slate-200 bg-white p-6 dark:border-slate-700 dark:bg-slate-900">
@@ -182,13 +216,26 @@ export function PagesTable({ runId: given }: { runId?: string } = {}) {
   const selectedEntries = index.pages.filter((e) => selected.has(e.slug));
   const busy = !!job || !!briefBusy;
   const allShown = list.length > 0 && list.every((e) => selected.has(e.slug));
+  const sortedBy = params.get("sort");
+  const arrow = (k: string) => (sortedBy === k ? (params.get("dir") === "asc" ? " ▲" : " ▼") : "");
+  /** A column title that sorts the table. */
+  const th = (k: string, label: string) => (
+    <th className="px-3 py-2" aria-sort={sortedBy === k ? (params.get("dir") === "asc" ? "ascending" : "descending") : "none"}>
+      <button type="button" className="font-semibold uppercase hover:text-slate-900 dark:hover:text-slate-100" onClick={() => sortBy(k)} title="Sort by this column">
+        {label}
+        {arrow(k)}
+      </button>
+    </th>
+  );
 
   return (
     <div className="space-y-4">
       {checkMode && (
-        <p className="max-w-3xl text-sm text-slate-600 dark:text-slate-400">
-          The pages you checked in depth, one line each. A recheck replaces the result of a page; the model is asked again only about what changed, and what the edit fixed is shown on the page. Choose several pages to recheck them together.
-        </p>
+        <Help id="checked-pages">
+          <p>The pages you checked in depth, one line each. They are read against the latest site snapshot.</p>
+          <p>A recheck replaces the result of a page: the model is asked again only about what changed, and what the edit fixed is shown on the page. Tick several pages to recheck them together, or to check them against their briefs.</p>
+          <p>Click a column title to sort by it.</p>
+        </Help>
       )}
       <div className="flex flex-wrap items-center gap-2">
         <select className={field} value={params.get("group") ?? ""} onChange={(e) => set("group", e.target.value)}>
@@ -247,17 +294,27 @@ export function PagesTable({ runId: given }: { runId?: string } = {}) {
       </div>
 
       {checkMode && (
-        <div className="flex flex-wrap items-center gap-3 text-sm">
-          <button type="button" className={buttonClass} disabled={busy || selectedEntries.length === 0} onClick={() => void recheck(selectedEntries)}>
-            Recheck selected ({selectedEntries.length})
-          </button>
-          <button type="button" className={buttonClass} disabled={busy || changedEntries.length === 0} onClick={() => void recheck(changedEntries)} title="Pages whose text in the latest snapshot differs from when they were checked">
-            Recheck changed ({changedEntries.length})
-          </button>
-          <button type="button" className={buttonClass} disabled={busy || selectedEntries.every((e) => !e.brief)} onClick={() => void checkBriefs(selectedEntries)} title="Separate from the recheck: one model call per page that has a brief">
-            {briefBusy ? `Checking briefs ${briefBusy}...` : `Check by brief (${selectedEntries.filter((e) => e.brief).length})`}
-          </button>
-          <span className="text-xs text-slate-500">Several pages are rechecked with all layers and the default model.</span>
+        <div className="flex min-h-[2rem] flex-wrap items-center gap-3 text-sm">
+          {selectedEntries.length > 0 && (
+            <>
+              <span className="font-medium">{selectedEntries.length} selected</span>
+              <button type="button" className={buttonClass} disabled={busy} onClick={() => void recheck(selectedEntries)}>
+                Recheck
+              </button>
+              <button type="button" className={buttonClass} disabled={busy || selectedEntries.every((e) => !e.brief)} onClick={() => void checkBriefs(selectedEntries)} title="Separate from the recheck: one model call per page that has a brief">
+                {briefBusy ? `Checking briefs ${briefBusy}...` : `Check by brief (${selectedEntries.filter((e) => e.brief).length})`}
+              </button>
+              <button type="button" className="text-slate-600 hover:underline dark:text-slate-400" onClick={() => setSelected(new Set())}>
+                Clear
+              </button>
+              <span className="text-xs text-slate-500">Several pages are rechecked with all layers and the default model.</span>
+            </>
+          )}
+          {changedEntries.length > 0 && (
+            <button type="button" className={buttonClass} disabled={busy} onClick={() => void recheck(changedEntries)} title="Pages whose text in the latest snapshot differs from when they were checked">
+              Recheck changed ({changedEntries.length})
+            </button>
+          )}
           <span className="ml-auto flex gap-3">
             <a className="text-blue-600 hover:underline dark:text-blue-400" href="/api/checks/findings.csv" download>
               findings.csv
@@ -271,9 +328,9 @@ export function PagesTable({ runId: given }: { runId?: string } = {}) {
       {job && <JobBar jobId={job.id} label={job.label} onDone={jobDone} />}
       {msg && <p className="rounded bg-slate-100 px-3 py-2 text-sm dark:bg-slate-800">{msg}</p>}
 
-      <div className="overflow-x-auto rounded-lg border border-slate-200 bg-white dark:border-slate-700 dark:bg-slate-900">
+      <div className="overflow-x-clip rounded-lg border border-slate-200 bg-white dark:border-slate-700 dark:bg-slate-900">
         <table className="w-full text-left text-sm">
-          <thead className="bg-slate-50 text-xs uppercase text-slate-500 dark:bg-slate-800">
+          <thead className="sticky z-[5] bg-slate-50 text-xs uppercase text-slate-500 shadow-[0_1px_0_0_rgb(226,232,240)] dark:bg-slate-800 dark:shadow-[0_1px_0_0_rgb(51,65,85)]" style={{ top: checkMode ? "5.4rem" : "3.4rem" }}>
             <tr>
               {checkMode && (
                 <th className="w-8 px-3 py-2">
@@ -285,14 +342,14 @@ export function PagesTable({ runId: given }: { runId?: string } = {}) {
                   />
                 </th>
               )}
-              <th className="px-3 py-2">Page</th>
-              <th className="px-3 py-2">Group</th>
-              {showCompliance && <th className="px-3 py-2">Action</th>}
-              {showCompliance && <th className="px-3 py-2">Compliance</th>}
-              <th className="px-3 py-2">GEO</th>
-              <th className="px-3 py-2">SEO</th>
-              {checkMode && <th className="px-3 py-2">Brief</th>}
-              {checkMode && <th className="px-3 py-2">Checked</th>}
+              {th("title", "Page")}
+              {th("group", "Group")}
+              {showCompliance && th("action", "Action")}
+              {showCompliance && th("compliance", "Compliance")}
+              {th("geo", "GEO")}
+              {th("seo", "SEO")}
+              {checkMode && th("brief", "Brief")}
+              {checkMode && th("checked", "Checked")}
               {checkMode && <th className="px-3 py-2" />}
             </tr>
           </thead>

@@ -13,6 +13,7 @@ import { GeoQuestions } from "../components/GeoQuestions.js";
 import { countCards, FindingList, FindingsByZone, groupProblems } from "../components/FindingList.js";
 import { ACTION_HELP, GEO_LABELS, GEO_STYLE_KINDS, LAYER_LABELS, variantLabel } from "../labels.js";
 import { defaultSort } from "../utils.js";
+import { Loading } from "../components/Loading.js";
 
 type Tab = Layer | "review" | "brief";
 
@@ -117,8 +118,12 @@ export function PageDetail() {
   const ok = useMemo(() => visible.filter((f) => f.verified), [visible]);
   const review = useMemo(() => visible.filter((f) => !f.verified), [visible]);
 
+  useEffect(() => {
+    if (page) document.title = `${page.title} · Site Audit`;
+  }, [page]);
+
   if (error) return <p className="text-red-600">{error}</p>;
-  if (!page) return <p className="text-slate-500">Loading...</p>;
+  if (!page) return <Loading />;
 
   const of = (layer: Layer) => ok.filter((f) => f.layer === layer);
   const off: Record<Layer, boolean> = {

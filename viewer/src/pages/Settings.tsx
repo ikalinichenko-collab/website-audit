@@ -3,6 +3,7 @@ import { GeoQuestionsEditor, SeoEditor, ComplianceEditor } from "../components/S
 import { ChecksEditor } from "../components/ChecksEditor.js";
 import { TextEditor } from "../components/ResourceEditor.js";
 import { confirmLeave } from "../unsaved.js";
+import { Help } from "../components/Help.js";
 
 const TABS = [
   { key: "geo", label: "GEO questions" },
@@ -19,7 +20,9 @@ type Tab = (typeof TABS)[number]["key"];
 function Raw({ id, note }: { id: string; note: string }) {
   return (
     <div className="space-y-2">
-      <p className="max-w-3xl text-sm text-slate-600 dark:text-slate-400">{note}</p>
+      <Help id={`settings-${id}`}>
+        <p>{note}</p>
+      </Help>
       <TextEditor key={id} id={id} rows={26} />
     </div>
   );

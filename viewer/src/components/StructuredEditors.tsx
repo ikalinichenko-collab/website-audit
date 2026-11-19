@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { api, type GeoTryResult, type GeoTypeGroup } from "../api.js";
 import { Notice, HistoryList, buttonClass, primaryClass, useResource } from "./ResourceEditor.js";
 import { useUnsaved } from "../unsaved.js";
+import { Loading } from "./Loading.js";
 
 const field = "rounded border border-slate-300 bg-white px-2 py-1 text-sm dark:border-slate-600 dark:bg-slate-900";
 const SEVERITIES = ["high", "medium", "low"];
@@ -181,7 +182,7 @@ export function GeoQuestionsEditor() {
       .catch(() => undefined);
   }, []);
 
-  if (!r.info) return r.msg ? <Notice kind="error">{r.msg.text}</Notice> : <p className="text-slate-500">Loading...</p>;
+  if (!r.info) return r.msg ? <Notice kind="error">{r.msg.text}</Notice> : <Loading />;
   const serialized = JSON.stringify(qs.map(cleanQuestion), null, 2) + "\n";
   const saved = (parse<GeoQuestion[]>(r.info.content) ?? []).map(cleanQuestion);
   const dirty = raw ? r.dirty : serialized.trim() !== JSON.stringify(saved, null, 2).trim();
@@ -391,7 +392,7 @@ export function SeoEditor() {
     if (r.info) setCfg(parse<SeoConfig>(r.info.content));
   }, [r.info]);
 
-  if (!r.info) return r.msg ? <Notice kind="error">{r.msg.text}</Notice> : <p className="text-slate-500">Loading...</p>;
+  if (!r.info) return r.msg ? <Notice kind="error">{r.msg.text}</Notice> : <Loading />;
   if (!cfg) return <Notice kind="error">config/seo.json is not valid JSON. Fix it in the raw editor.</Notice>;
 
   const serialized = JSON.stringify(cfg, null, 2) + "\n";
@@ -549,7 +550,7 @@ export function ComplianceEditor() {
     if (r.info) setCfg(parse<ComplianceConfig>(r.info.content));
   }, [r.info]);
 
-  if (!r.info) return r.msg ? <Notice kind="error">{r.msg.text}</Notice> : <p className="text-slate-500">Loading...</p>;
+  if (!r.info) return r.msg ? <Notice kind="error">{r.msg.text}</Notice> : <Loading />;
   if (!cfg) return <Notice kind="error">config/compliance.json is not valid JSON.</Notice>;
   const serialized = JSON.stringify(cfg, null, 2) + "\n";
   const dirty = serialized.trim() !== JSON.stringify(parse(r.info.content), null, 2).trim();

@@ -5,6 +5,7 @@ import type { Layers, RunListEntry } from "../types.js";
 import { useRunContext } from "../context/RunContext.js";
 import { Notice, buttonClass, primaryClass } from "../components/ResourceEditor.js";
 import { RUN_PREFILL_KEY, runLabel } from "../utils.js";
+import { Help } from "../components/Help.js";
 
 type Mode = "urls" | "scope";
 
@@ -218,9 +219,12 @@ export function RunPage() {
     <div className="space-y-6">
       <div>
         <h1 className="text-xl font-semibold">Add pages</h1>
-        <p className="mt-1 max-w-3xl text-sm text-slate-600 dark:text-slate-400">
-          Paste the links of the pages you want to look at in depth. Each is split into zones and checked by three layers: Compliance and GEO use the LLM, SEO does not. The result appears on Checked pages. A page that is already there is checked again and its result is replaced; the model is asked again only if the text, the documents or the settings changed, unless you tick "Ignore saved results".
-        </p>
+        <div className="mt-2">
+          <Help id="add-pages">
+            <p>Paste the links of the pages you want to look at in depth. Each page is split into zones and checked by three layers: Compliance and GEO use the model, SEO does not. The result appears on Checked pages.</p>
+            <p>A page that is already there is checked again and its result is replaced. The model is asked again only if the text, the documents or the settings changed, unless you tick "Ignore saved results".</p>
+          </Help>
+        </div>
       </div>
 
       <SnapshotNote snapshot={snapshots[0]} />

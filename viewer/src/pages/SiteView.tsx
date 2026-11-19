@@ -11,6 +11,8 @@ import { FindingActionsContext } from "../components/FindingActions.js";
 import { SchemaNodeCard, VariantCard, findingsInNode } from "../components/SourceCards.js";
 import { AuditGroups, AuditSummary, Hint, TemplateIssues } from "../components/SiteAuditPanel.js";
 import { PagesTable } from "./PagesTable.js";
+import { Loading } from "../components/Loading.js";
+import { Help } from "../components/Help.js";
 
 function Section({ id, title, hint, children }: { id: string; title: string; hint?: string; children: React.ReactNode }) {
   return (
@@ -264,10 +266,10 @@ function SnapshotList({ snapshots, currentId, onOpen, onPages }: { snapshots: Ru
   return (
     <section className="space-y-2">
       <h2 className="text-lg font-semibold">Snapshots</h2>
-      <p className="max-w-3xl text-sm text-slate-600 dark:text-slate-400">
-        Every whole-site check is kept here. The newest few keep the stored pages; of older ones only the results stay (they still open, and the Audit compares each snapshot with the one before it),
-        which saves space. Page checks read the newest snapshot.
-      </p>
+      <Help id="snapshots">
+        <p>Every whole-site check is kept here. The newest few keep the stored pages; of older ones only the results stay. They still open, and the Audit compares each snapshot with the one before it.</p>
+        <p>Page checks read the newest snapshot.</p>
+      </Help>
       {err && <p className="text-sm text-red-600 dark:text-red-400">{err}</p>}
       <ul className="divide-y divide-slate-100 rounded-lg border border-slate-200 bg-white text-sm dark:divide-slate-800 dark:border-slate-700 dark:bg-slate-900">
         {snapshots.map((s, i) => (
@@ -372,8 +374,8 @@ export function SiteView() {
       }}
     />
   );
-  if (!snapshot) return loading ? <p className="text-slate-500">Loading...</p> : bar;
-  if (!site) return <p className="text-slate-500">Loading...</p>;
+  if (!snapshot) return loading ? <Loading /> : bar;
+  if (!site) return <Loading />;
   const origin = Object.keys(site.basics.sitemaps)[0]?.match(/^https?:\/\/[^/]+/)?.[0] ?? "";
   const sub = (s: string) => findings.filter((f) => f.subsection === s);
 

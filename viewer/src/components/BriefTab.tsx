@@ -3,6 +3,7 @@ import { api, type AppState } from "../api.js";
 import type { BriefCheckRecord, BriefInfo, BriefStatus } from "../types.js";
 import { headBadge, inAccordion, showOnPageUrl } from "../utils.js";
 import { buttonClass, primaryClass } from "./ResourceEditor.js";
+import { Loading } from "./Loading.js";
 
 const when = (iso: string) => new Date(iso).toLocaleString([], { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit" });
 
@@ -265,7 +266,7 @@ export function BriefTab({
 
   const modelLabel = useMemo(() => (id: string) => state?.models.find((m) => m.id === id)?.label ?? id, [state]);
 
-  if (!info) return error ? <p className="text-red-600">{error}</p> : <p className="text-slate-500">Loading...</p>;
+  if (!info) return error ? <p className="text-red-600">{error}</p> : <Loading />;
   const b = info.current;
   const newest = info.versions[0]?.id;
 

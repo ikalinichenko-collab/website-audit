@@ -10,6 +10,16 @@ const PAGE_CHECKS_TABS = [
   { to: "/overview", label: "Overview" },
 ];
 
+/** The title of the browser tab for each screen (a page report sets its own). */
+const TITLES: Record<string, string> = {
+  "/site": "Site Checks",
+  "/pages": "Checked pages",
+  "/add": "Add pages",
+  "/overview": "Overview",
+  "/sources": "Documents",
+  "/settings": "Settings",
+};
+
 const link = (active: boolean) =>
   `rounded px-2.5 py-1 ${
     active
@@ -38,6 +48,12 @@ export function Layout() {
     localStorage.setItem("audit-viewer-theme", next ? "dark" : "light");
   }
 
+  useEffect(() => {
+    // a page report names the tab after the page: its own effect runs first, so leave /pages/<slug> alone
+    if (pathname.startsWith("/pages/")) return;
+    document.title = `${TITLES[pathname] ?? "Audit"} · Site Audit`;
+  }, [pathname]);
+
   const on = (to: string) => pathname === to || pathname.startsWith(`${to}/`);
   // a page of a snapshot opened from Site Checks (?run=<snapshot>) is not part of Page Checks
   const fromSnapshot = snapshots.some((s) => s.id === params.get("run"));
@@ -48,7 +64,7 @@ export function Layout() {
   return (
     <div className="min-h-screen">
       <header className="sticky top-0 z-10 border-b border-slate-200 bg-white/95 backdrop-blur dark:border-slate-800 dark:bg-slate-950/95">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-4 px-4 py-3">
+        <div className="mx-auto flex max-w-screen-2xl flex-wrap items-center gap-4 px-4 py-3">
           <span className="text-lg font-semibold tracking-tight">Site Audit</span>
           <nav className="flex gap-1 text-sm">
             <Link to="/site" className={link(on("/site") || fromSnapshot)}>
@@ -83,20 +99,19 @@ export function Layout() {
           </div>
         </div>
         {inPageChecks && !fromSnapshot && (
-          <div className="mx-auto flex max-w-7xl gap-1 border-t border-slate-100 px-4 py-1.5 text-sm dark:border-slate-800">
+          <div className="mx-auto flex max-w-screen-2xl gap-1 border-t border-slate-100 px-4 py-1.5 text-sm dark:border-slate-800">
             {PAGE_CHECKS_TABS.map((t) => (
               <Link key={t.to} to={t.to} className={link(on(t.to))}>
                 {t.label}
               </Link>
             ))}
-            <span className="ml-3 self-center text-xs text-slate-500">The pages you checked in depth, with the model. They are read against the latest site snapshot.</span>
           </div>
         )}
         {error && (
           <p className="bg-red-50 px-4 py-2 text-sm text-red-700 dark:bg-red-950 dark:text-red-200">{error}</p>
         )}
       </header>
-      <main className="mx-auto max-w-7xl px-4 py-6">
+      <main className="mx-auto max-w-screen-2xl px-4 py-6">
         <Outlet />
       </main>
     </div>

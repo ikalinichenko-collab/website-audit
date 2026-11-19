@@ -5,3 +5,11 @@
 body {
   @apply antialiased;
 }
+
+/* Small grey text was hard to read on white: one step darker in the light theme. */
+:root:not(.dark) .text-slate-400 {
+  color: rgb(100 116 139);
+}
+:root:not(.dark) .text-slate-500 {
+  color: rgb(71 85 105);
+}

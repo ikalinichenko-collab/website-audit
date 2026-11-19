@@ -5,6 +5,7 @@ import type { GroupTotals, Layers, RunIndexFile, Spending } from "../types.js";
 import { ACTION_COLUMNS, GROUP_ORDER } from "../labels.js";
 import { Counts, GeoCounts } from "../components/Badges.js";
 import { formatTokens } from "../utils.js";
+import { Loading } from "../components/Loading.js";
 
 function Card({ title, children }: { title: string; children: React.ReactNode }) {
   return (
@@ -127,7 +128,7 @@ export function Overview() {
   }, []);
 
   if (error) return <p className="text-red-600">{error}</p>;
-  if (!index) return <p className="text-slate-500">Loading...</p>;
+  if (!index) return <Loading />;
   if (index.pages.length === 0) {
     return (
       <div className="space-y-2 rounded-lg border border-slate-200 bg-white p-6 dark:border-slate-700 dark:bg-slate-900">

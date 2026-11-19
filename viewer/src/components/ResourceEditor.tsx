@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { api, type ResourceInfo } from "../api.js";
 import { useUnsaved } from "../unsaved.js";
+import { Loading } from "./Loading.js";
 
 export const buttonClass =
   "rounded border border-slate-300 px-3 py-1.5 text-sm hover:bg-slate-100 disabled:opacity-50 dark:border-slate-600 dark:hover:bg-slate-800";
@@ -199,7 +200,7 @@ export function TextEditor({ id, rows = 18, upload = false, focus }: { id: strin
     ta.scrollTop = Math.max(0, offsetTopOf(ta, at.start) - 24);
     ta.scrollIntoView({ block: "nearest" });
   }, [loaded, focus]);
-  if (!r.info) return r.msg ? <Notice kind="error">{r.msg.text}</Notice> : <p className="text-slate-500">Loading...</p>;
+  if (!r.info) return r.msg ? <Notice kind="error">{r.msg.text}</Notice> : <Loading />;
 
   return (
     <div className="space-y-2">
