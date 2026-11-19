@@ -85,6 +85,21 @@ export interface PageIndexEntry {
   brief?: BriefListState | null;
 }
 
+/** Same shapes as `Trends` and `TrendSnapshot` in src/store.ts: the whole-site audit of each snapshot, side by side. */
+export interface TrendSnapshot {
+  id: string;
+  started_at: string;
+  pages: number;
+  seo: { high: number; medium: number; low: number; ok: number; total: number };
+  geo: { high: number; medium: number; low: number; ok: number; total: number };
+  checks: Record<string, { failing: number; total: number }>;
+}
+
+export interface SiteTrends {
+  snapshots: TrendSnapshot[];
+  checks: Record<string, { title: string; layer: "seo" | "geo"; severity: "high" | "medium" | "low"; group: string }>;
+}
+
 /** Same shape as `TaskItem` in src/page-checks.ts: one place of a finding of a checked page, with its decision. */
 export interface TaskItem {
   fid: string;

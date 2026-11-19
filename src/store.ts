@@ -7,7 +7,7 @@ import { buildAuditChecksCsv, buildAuditCsv, buildFindingsCsv, buildSummaryCsv, 
 import { attachFragments, buildRunIndex, pageIndexEntry, type PageIndexEntry, type RunIndexFile, type RunListEntry, type StoredZones } from "./run-output.js";
 import { buildSiteSources, type SiteSources } from "./site-sources.js";
 import { loadGeoCodeConfig, loadSeoConfig, loadSettings } from "./config.js";
-import { buildSiteAudit, type AuditPrevious, type SiteAudit } from "./site-audit.js";
+import { buildSiteAudit, type AuditCounts, type AuditPrevious, type SiteAudit } from "./site-audit.js";
 import { graphUrl } from "./links.js";
 import { getCheckFindings, getCheckReport, getCheckSnapshotId } from "./page-checks.js";
 
@@ -352,6 +352,62 @@ export async function getSiteAudit(runId: string): Promise<SiteAudit | null> {
     previous = { audit: buildSiteAudit(prev.site, reports, opts), started_at: prev.started_at.toISOString(), urls: new Set(reports.map((r) => r.final_url)) };
   }
   return buildSiteAudit(site, await allReports(runId), { ...opts, slugs }, previous);
+}
+
+// ---- trends: the whole-site audit of each snapshot side by side ---------------------------
+
+/** What one snapshot says, in the few numbers a trend needs. */
+export interface TrendSnapshot {
+  id: string;
+  started_at: string;
+  pages: number;
+  seo: AuditCounts;
+  geo: AuditCounts;
+  /** per check: pages that fail it, of the pages it applies to (checks that did not run are absent) */
+  checks: Record<string, { failing: number; total: number }>;
+}
+
+export interface Trends {
+  /** oldest first */
+  snapshots: TrendSnapshot[];
+  /** the checks of the newest snapshot: name, layer and severity for the table */
+  checks: Record<string, { title: string; layer: "seo" | "geo"; severity: "high" | "medium" | "low"; group: string }>;
+}
+
+// A finished snapshot does not change, and working its audit out is the slow part: keep each one.
+const trendCache = new Map<string, TrendSnapshot>();
+
+/** The audit of the newest snapshots, one set of numbers each. Nothing is fetched: it is worked out from the stored reports. */
+export async function getSiteTrends(limit = 20): Promise<Trends> {
+  const runs = (
+    await db().query<{ id: string; started_at: Date }>(
+      "SELECT id, started_at FROM runs WHERE kind = 'site' AND status = 'done' AND site IS NOT NULL ORDER BY started_at DESC LIMIT $1",
+      [limit],
+    )
+  ).rows.reverse();
+  const geo = loadGeoCodeConfig();
+  const opts = { aiBots: geo.ai_bots, llmsUrl: geo.llms_txt_url, orphanProfiles: loadSeoConfig().orphan_profiles ?? [] };
+  const snapshots: TrendSnapshot[] = [];
+  let latest: SiteAudit | null = null;
+  for (const [i, run] of runs.entries()) {
+    const cached = trendCache.get(run.id);
+    if (cached && i < runs.length - 1) {
+      snapshots.push(cached);
+      continue;
+    }
+    const site = await ownSite(run.id);
+    if (!site) continue;
+    const audit = buildSiteAudit(site, await allReports(run.id), opts);
+    if (i === runs.length - 1) latest = audit;
+    const checks: TrendSnapshot["checks"] = {};
+    for (const r of audit.rows) if (r.status !== "not_checked") checks[r.id] = { failing: r.failing, total: r.total };
+    const snap: TrendSnapshot = { id: run.id, started_at: run.started_at.toISOString(), pages: audit.pages, seo: audit.summary.seo, geo: audit.summary.geo, checks };
+    trendCache.set(run.id, snap);
+    snapshots.push(snap);
+  }
+  const names: Trends["checks"] = {};
+  for (const r of latest?.rows ?? []) names[r.id] = { title: r.title, layer: r.layer, severity: r.severity, group: r.group };
+  return { snapshots, checks: names };
 }
 
 export async function getSiteSources(runId: string): Promise<SiteSources | null> {

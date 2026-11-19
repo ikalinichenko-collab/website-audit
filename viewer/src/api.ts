@@ -1,4 +1,4 @@
-import type { BriefCheckRecord, BriefInfo, FindingStatus, Layers, TaskItem } from "./types.js";
+import type { BriefCheckRecord, BriefInfo, FindingStatus, Layers, SiteTrends, TaskItem } from "./types.js";
 
 export interface ResourceInfo {
   id: string;
@@ -155,6 +155,8 @@ export const api = {
   geoTry: (body: { url: string; question: string; id?: string; model?: string }) =>
     call<GeoTryResult>("POST", "/api/geo-try", body),
   /** Sets (or with status null clears) the decision for places of a page; slug null is the site pass. */
+  /** The audit of the newest snapshots side by side. */
+  siteTrends: () => call<SiteTrends>("GET", "/api/site-trends"),
   /** Every finding of every checked page with its decision. */
   tasks: () => call<TaskItem[]>("GET", "/api/tasks"),
   setFindingStatus: (runId: string | null, slug: string | null, fids: string[], status: FindingStatus | null, note: string) =>

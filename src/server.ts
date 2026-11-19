@@ -368,6 +368,11 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
 
   // ---- runs (read from the database; files are built when asked for) -----------------------
   // ---- checked pages: the current check of each page, no runs ---------------------------
+  // the audit of the newest snapshots side by side: the trends on Site Checks
+  if (parts[0] === "site-trends" && method === "GET" && parts.length === 1) {
+    send(res, 200, await store.getSiteTrends());
+    return;
+  }
   // every finding of every checked page with its decision: the Tasks screen
   if (parts[0] === "tasks" && method === "GET" && parts.length === 1) {
     send(res, 200, await getTasks(user.email));

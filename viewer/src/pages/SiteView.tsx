@@ -13,6 +13,7 @@ import { AuditGroups, AuditSummary, Hint, TemplateIssues } from "../components/S
 import { PagesTable } from "./PagesTable.js";
 import { Loading } from "../components/Loading.js";
 import { Help } from "../components/Help.js";
+import { SiteTrends } from "../components/SiteTrends.js";
 
 function Section({ id, title, hint, children }: { id: string; title: string; hint?: string; children: React.ReactNode }) {
   return (
@@ -252,10 +253,11 @@ function SitemapTable({ site }: { site: SiteReport }) {
 }
 
 /** One row of tabs: the four parts of the audit, then the pages and the snapshots themselves. */
-type Tab = "summary" | "checks" | "template" | "coverage" | "pages" | "snapshots";
+type Tab = "summary" | "checks" | "trends" | "template" | "coverage" | "pages" | "snapshots";
 const TABS: { key: Tab; label: string }[] = [
   { key: "summary", label: "Summary" },
   { key: "checks", label: "All checks" },
+  { key: "trends", label: "Trends" },
   { key: "template", label: "Template text" },
   { key: "coverage", label: "Coverage and sitemap" },
   { key: "pages", label: "Pages in the snapshot" },
@@ -443,6 +445,8 @@ export function SiteView() {
         ) : (
           <Loading />
         ))}
+
+      {tab === "trends" && <SiteTrends />}
 
       {tab === "template" && (
       <Section id="template" title="Template text (checked by the model)" hint={audit?.blocks.template_text}>
