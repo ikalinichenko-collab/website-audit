@@ -2,7 +2,8 @@ import { useCallback, useEffect, useMemo, useState, type ReactNode } from "react
 import { Link, useParams, useSearchParams } from "react-router-dom";
 import { api, type JobDetail } from "../api.js";
 import { JobBar } from "../components/JobBar.js";
-import { buttonClass } from "../components/ResourceEditor.js";
+import { primaryClass } from "../components/ResourceEditor.js";
+import { Chip, LayerTile, SevChip, SidePanel } from "../components/ReportParts.js";
 import { useActiveRunId, useRunContext } from "../context/RunContext.js";
 import { getIndex, getPage, getPageFindings, getPageShared, getSiteCheck } from "../data.js";
 import type { BriefCheckRecord, Finding, Layer, PageCompare, PageIndexEntry, PageReport, PageShared, SinceSnapshot, SiteCheck } from "../types.js";
@@ -16,6 +17,17 @@ import { defaultSort } from "../utils.js";
 import { Loading } from "../components/Loading.js";
 
 type Tab = Layer | "review" | "brief";
+
+/** The coloured edge of the verdict card, by what the page needs. */
+const VERDICT_EDGE: Record<string, string> = {
+  rewrite: "border-l-red-500",
+  needs_decision: "border-l-purple-500",
+  fix: "border-l-amber-500",
+  keep: "border-l-emerald-500",
+  not_checked: "border-l-slate-400",
+};
+
+const shortDate = (iso: string) => new Date(iso).toLocaleDateString([], { day: "2-digit", month: "2-digit", year: "numeric" });
 
 const REST_LABEL = { pass: "Passed", na: "Not applicable", none: "Not answered", unconfirmed: "Not confirmed" } as const;
 const REST_CLASS = {
@@ -64,6 +76,9 @@ export function PageDetail() {
   const [showClosed, setShowClosed] = useState(false);
   const [siblings, setSiblings] = useState<PageIndexEntry[]>([]);
   const [picked, setPicked] = useState<Tab | null>(null);
+  // the chip under the title that is open: what changed since the snapshot, or since the earlier check
+  const [detail, setDetail] = useState<"since" | "compare" | null>(null);
+  const [verdictOpen, setVerdictOpen] = useState(false);
   const [byZone, setByZone] = useState(false);
   // the page's brief: rows loaded (null: none) and the stored check against it, for the summary tile and the tab
   const [briefRows, setBriefRows] = useState<number | null>(null);
@@ -84,6 +99,7 @@ export function PageDetail() {
   useEffect(() => {
     setError(null);
     setPicked(null);
+    setDetail(null);
     getPage(runId, slug)
       .then(setPage)
       .catch((e) => setError(String(e)));
@@ -155,22 +171,23 @@ export function PageDetail() {
   const topHigh = ranked.filter((g) => g[0]!.severity === "high");
   const top = (topHigh.length ? topHigh : ranked.filter((g) => g[0]!.severity === "medium")).slice(0, 3);
 
-  const tabs: { key: Tab; label: string; n: number | null }[] = [
-    { key: "compliance", label: LAYER_LABELS.compliance, n: count("compliance") },
-    { key: "geo", label: LAYER_LABELS.geo, n: count("geo") },
-    { key: "seo", label: LAYER_LABELS.seo, n: count("seo") },
-    { key: "review", label: "Not found on page", n: review.length },
-  ];
-
   // the brief is its own check (own file, own button, own cost): a fourth tile and a tab apart from the layers
   const briefToFix = briefCheck ? briefCheck.result.rows.filter((r) => r.status === "partial" || r.status === "missing").length : null;
   const briefLabel = briefRows === null ? "none" : briefToFix === null ? "not checked" : briefToFix === 0 ? "all done" : `${briefToFix} to fix`;
 
-  const layerTiles: { layer: Layer; hint: string }[] = [
-    { layer: "compliance", hint: "against the company documents" },
-    { layer: "geo", hint: "readiness for AI answers" },
-    { layer: "seo", hint: "technical SEO" },
-  ];
+  /** "1 high", "2 medium" under a layer's number, from its problems as the list shows them. */
+  const sevChips = (layer: Layer) => {
+    const c = { high: 0, medium: 0, low: 0 };
+    for (const g of problems(layer)) c[g[0]!.severity === "high" || g[0]!.severity === "medium" ? g[0]!.severity : "low"]++;
+    return (["high", "medium", "low"] as const).filter((k) => c[k] > 0).map((k) => <SevChip key={k} kind={k} n={c[k]} />);
+  };
+  const pickLayer = (t: Tab) => {
+    setByZone(false);
+    setPicked(t);
+  };
+  const noun = isCheck ? "check" : "run";
+  const goneCount = compare ? groupProblems(compare.resolved).length : 0;
+  const summaryText = page.compliance.error ? `Not checked: ${page.compliance.error}` : (page.compliance.summary ?? "");
 
   const compliance = of("compliance");
   const contradicts = compliance.filter((f) => f.basis !== "not in sources");
@@ -199,14 +216,41 @@ export function PageDetail() {
   return (
     <FindingActionsContext.Provider value={{ runId, slug, reload: loadFindings }}>
     <div className="space-y-4">
-      <div className="flex flex-wrap items-center gap-3 text-sm">
-        <Link to={runParam ? "/site?tab=pages" : "/pages"} className="text-blue-600 hover:underline dark:text-blue-400">
-          {runParam ? "Back to the pages of the snapshot" : "Back to checked pages"}
+      <div
+        className="sticky z-10 -mx-4 flex flex-wrap items-center gap-x-3 gap-y-1 border-b border-slate-200 bg-white/95 px-4 py-2 backdrop-blur dark:border-slate-800 dark:bg-slate-950/95"
+        style={{ top: runParam ? "3.4rem" : "5.4rem" }}
+      >
+        <Link to={runParam ? "/site?tab=pages" : "/pages"} className="shrink-0 text-sm text-blue-600 hover:underline dark:text-blue-400">
+          &lsaquo; {runParam ? "Back to the snapshot pages" : "Back to checked pages"}
         </Link>
+        <h1 className="min-w-0 flex-1 truncate text-lg font-semibold" title={page.title}>
+          {page.title}
+        </h1>
+        {pos >= 0 && (
+          <span className="flex shrink-0 items-center gap-3 text-sm text-slate-500">
+            {prev ? (
+              <Link to={`/pages/${prev.slug}${suffix}`} className="text-blue-600 hover:underline dark:text-blue-400">
+                &lsaquo; Previous
+              </Link>
+            ) : (
+              <span className="text-slate-300 dark:text-slate-600">&lsaquo; Previous</span>
+            )}
+            <span className="tabular-nums">
+              {pos + 1} of {siblings.length}, worst first
+            </span>
+            {next ? (
+              <Link to={`/pages/${next.slug}${suffix}`} className="text-blue-600 hover:underline dark:text-blue-400">
+                Next &rsaquo;
+              </Link>
+            ) : (
+              <span className="text-slate-300 dark:text-slate-600">Next &rsaquo;</span>
+            )}
+          </span>
+        )}
         {isCheck && (
           <button
             type="button"
-            className={buttonClass}
+            className={primaryClass}
             disabled={!!job}
             title="Checks this page again as it was checked (same layers and model). The model is asked again only if the text changed."
             onClick={async () => {
@@ -222,40 +266,46 @@ export function PageDetail() {
             Recheck
           </button>
         )}
-        {pos >= 0 && (
-          <span className="ml-auto flex items-center gap-3 text-slate-500">
-            {prev ? (
-              <Link to={`/pages/${prev.slug}${suffix}`} className="text-blue-600 hover:underline dark:text-blue-400">
-                Previous
-              </Link>
-            ) : (
-              <span className="text-slate-300 dark:text-slate-600">Previous</span>
-            )}
-            <span className="tabular-nums">
-              {pos + 1} of {siblings.length}, worst first
-            </span>
-            {next ? (
-              <Link to={`/pages/${next.slug}${suffix}`} className="text-blue-600 hover:underline dark:text-blue-400">
-                Next
-              </Link>
-            ) : (
-              <span className="text-slate-300 dark:text-slate-600">Next</span>
-            )}
-          </span>
-        )}
       </div>
 
-      <div>
-        <h1 className="text-xl font-semibold">{page.title}</h1>
-        <a href={page.final_url} target="_blank" rel="noreferrer" className="text-sm text-slate-500 hover:underline">
-          {page.final_url}
-        </a>
-        <p className="mt-1 text-xs text-slate-500">
-          {page.category} / {page.subsection}, {page.template} template. Checked {new Date(page.checked_at).toLocaleString()}
-          {isCheck && entry?.checked_by ? ` by ${entry.checked_by}` : ""}
-          {(entry?.model ?? run?.model) ? ` with ${entry?.model ?? run?.model}` : ""}
-          {page.compliance.cached || page.geo.cached ? `. Part of the LLM result was reused from an earlier ${isCheck ? "check" : "run"}` : ""}.
-        </p>
+      <div className="space-y-2">
+        <div className="flex flex-wrap items-baseline gap-x-3 text-sm">
+          <a href={page.final_url} target="_blank" rel="noreferrer" className="text-slate-500 hover:underline">
+            {page.final_url}
+          </a>
+          <span className="text-xs text-slate-500">
+            {page.category} / {page.subsection}, {page.template} template
+          </span>
+        </div>
+        <div className="flex flex-wrap gap-2">
+          <Chip title="When the page was checked, by whom and with which model">
+            Checked {new Date(page.checked_at).toLocaleString([], { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit" })}
+            {isCheck && entry?.checked_by ? ` by ${entry.checked_by}` : ""}
+            {(entry?.model ?? run?.model) ? `, ${entry?.model ?? run?.model}` : ""}
+          </Chip>
+          {since && (
+            <Chip
+              tone={since.added.length > 0 ? "warn" : "good"}
+              active={detail === "since"}
+              onClick={() => setDetail(detail === "since" ? null : "since")}
+              title="Technical checks (SEO and GEO rules) of this page against the site snapshot it was read against"
+            >
+              {since.resolved.length === 0 && since.added.length === 0
+                ? `Same as the site snapshot of ${shortDate(since.snapshot_at)}`
+                : `${since.resolved.length} fixed, ${since.added.length} new since the snapshot of ${shortDate(since.snapshot_at)}`}
+            </Chip>
+          )}
+          {compare ? (
+            <Chip active={detail === "compare"} onClick={() => setDetail(detail === "compare" ? null : "compare")} title={`Compared with the ${noun} of ${new Date(compare.previous_at).toLocaleString()}`}>
+              {goneCount} {goneCount === 1 ? "problem" : "problems"} gone since the earlier {noun}
+            </Chip>
+          ) : (
+            <Chip title={isCheck ? "It appears after the page changes and is checked again." : "There is no earlier run of this page."}>No earlier {noun} to compare with</Chip>
+          )}
+          {(page.compliance.cached || page.geo.cached) && <Chip title="The model was asked again only about what changed">Part of the model result reused from an earlier {noun}</Chip>}
+        </div>
+        {detail === "since" && <SinceSnapshotNote since={since} />}
+        {detail === "compare" && <ComparisonNote compare={compare} isCheck={isCheck} />}
       </div>
 
       {job && (
@@ -272,147 +322,62 @@ export function PageDetail() {
       )}
       {recheckMsg && <p className="rounded bg-slate-100 px-3 py-2 text-sm dark:bg-slate-800">{recheckMsg}</p>}
       <CarriedNote page={page} />
-      <SinceSnapshotNote since={since} />
+      {page.zone_warnings.length > 0 && (
+        <p className="rounded bg-amber-50 p-2 text-sm text-amber-800 dark:bg-amber-950 dark:text-amber-200">Could not split the page cleanly: {page.zone_warnings.join("; ")}</p>
+      )}
 
-      <div className="space-y-3 rounded-lg border border-slate-200 bg-white p-3 dark:border-slate-700 dark:bg-slate-900">
-        <div className="flex flex-wrap items-start gap-3">
-          <ActionBadge action={action} />
-          <div className="min-w-0 flex-1 space-y-1">
-            <p className="text-sm font-medium">{ACTION_HELP[action]}</p>
-            <p className="text-sm text-slate-600 dark:text-slate-400">
-              {page.compliance.error ? `Not checked: ${page.compliance.error}` : page.compliance.summary}
-            </p>
-          </div>
+      <div className={`flex items-start gap-3 rounded-lg border border-l-4 border-slate-200 bg-white p-3 dark:border-slate-700 dark:bg-slate-900 ${VERDICT_EDGE[action] ?? VERDICT_EDGE.not_checked}`}>
+        <ActionBadge action={action} />
+        <div className="min-w-0 flex-1">
+          <p className="font-semibold">{ACTION_HELP[action]}</p>
+          <p className={`max-w-4xl text-sm text-slate-600 dark:text-slate-400 ${verdictOpen ? "" : "line-clamp-2"}`}>{summaryText}</p>
+          {summaryText.length > 200 && (
+            <button type="button" className="text-sm text-blue-600 hover:underline dark:text-blue-400" onClick={() => setVerdictOpen(!verdictOpen)}>
+              {verdictOpen ? "Show less" : "Read more"}
+            </button>
+          )}
         </div>
-        <div className="grid gap-2 sm:grid-cols-4">
-          {layerTiles.map(({ layer, hint }) => {
-            const n = count(layer);
-            return (
-              <button
-                key={layer}
-                type="button"
-                onClick={() => {
-                  setByZone(false);
-                  setPicked(layer);
-                }}
-                className="rounded border border-slate-200 p-2 text-left hover:bg-slate-50 dark:border-slate-700 dark:hover:bg-slate-800"
-              >
-                <div className="flex items-baseline justify-between">
-                  <span className="text-sm font-semibold">{LAYER_LABELS[layer]}</span>
-                  <span className="text-sm tabular-nums">
-                    {n === null ? (
-                      <span className="text-slate-400">off</span>
-                    ) : n === 0 ? (
-                      <span className="text-emerald-600 dark:text-emerald-400">no problems</span>
-                    ) : (
-                      <span className="font-medium">{n} to fix</span>
-                    )}
-                  </span>
-                </div>
-                <div className="text-xs text-slate-500">{hint}</div>
-              </button>
-            );
-          })}
-          <button
-            type="button"
-            onClick={() => {
-              setByZone(false);
-              setPicked("brief");
-            }}
-            className="rounded border border-violet-300 bg-violet-50/70 p-2 text-left hover:bg-violet-100/70 dark:border-violet-800 dark:bg-violet-950/30 dark:hover:bg-violet-950/50"
-            title="A separate check: its own file, button and cost. It is not part of the page's verdict."
-          >
-            <div className="flex items-baseline justify-between">
-              <span className="text-sm font-semibold text-violet-800 dark:text-violet-200">Brief</span>
-              <span className="text-sm tabular-nums">
-                {briefToFix === 0 ? (
-                  <span className="text-emerald-600 dark:text-emerald-400">{briefLabel}</span>
-                ) : briefToFix === null ? (
-                  <span className="text-slate-400">{briefLabel}</span>
-                ) : (
-                  <span className="font-medium text-violet-800 dark:text-violet-200">{briefLabel}</span>
-                )}
-              </span>
-            </div>
-            <div className="text-xs text-violet-700/80 dark:text-violet-300/80">
-              {briefRows === null ? "separate check: upload the content brief" : "separate check, against the content brief"}
-              {briefCheck?.stale && <span className="text-amber-600 dark:text-amber-400"> · outdated</span>}
-            </div>
-          </button>
-        </div>
-        {top.length > 0 && (
-          <div className="border-t border-slate-100 pt-2 dark:border-slate-800">
-            <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Start with</p>
-            <ul className="mt-1 list-disc space-y-0.5 pl-5 text-sm">
-              {top.map((g, i) => (
-                <li key={i}>
-                  {g[0]!.title}
-                  <span className="text-slate-500">
-                    {" "}
-                    ({LAYER_LABELS[g[0]!.layer]}, {g[0]!.severity})
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
       </div>
 
-      {page.shared_variants.length > 0 && (
-        <p className="text-xs text-slate-500">
-          Shared parts of this page ({page.shared_variants.map(variantLabel).join(", ")}) are the same on many pages. They are
-          checked once, on the{" "}
-          <Link to="/site" className="text-blue-600 hover:underline dark:text-blue-400">
-            Site
-          </Link>{" "}
-          page.
-        </p>
-      )}
-      {page.zone_warnings.length > 0 && (
-        <p className="rounded bg-amber-50 p-2 text-sm text-amber-800 dark:bg-amber-950 dark:text-amber-200">
-          Could not split the page cleanly: {page.zone_warnings.join("; ")}
-        </p>
-      )}
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-[repeat(3,minmax(0,1fr))_1.25rem_minmax(0,1fr)]">
+        <LayerTile
+          kind="compliance"
+          name="Compliance"
+          tag="model"
+          hint="Wording against the company documents"
+          count={count("compliance")}
+          sev={sevChips("compliance")}
+          selected={!byZone && tab === "compliance"}
+          onClick={() => pickLayer("compliance")}
+        />
+        <LayerTile kind="geo" name="GEO" tag="model + code" hint="Readiness for AI answers" count={count("geo")} sev={sevChips("geo")} selected={!byZone && tab === "geo"} onClick={() => pickLayer("geo")} />
+        <LayerTile kind="seo" name="SEO" tag="code" hint="Technical SEO" count={count("seo")} sev={sevChips("seo")} selected={!byZone && tab === "seo"} onClick={() => pickLayer("seo")} />
+        <div aria-hidden className="hidden border-l-2 border-dashed border-slate-300 lg:mx-auto lg:block dark:border-slate-600" />
+        <LayerTile
+          kind="brief"
+          name="Brief"
+          tag="separate check"
+          hint={briefRows === null ? "Upload the content brief" : "Against the content brief"}
+          extra={briefCheck?.stale ? <span className="font-semibold text-amber-600 dark:text-amber-400"> · outdated</span> : undefined}
+          count={briefRows === null ? "none" : briefToFix === null ? "not checked" : briefToFix}
+          sev={
+            briefCheck ? (
+              <>
+                <SevChip kind="partly" n={briefCheck.result.rows.filter((r) => r.status === "partial").length} label="partly" />
+                {briefCheck.result.rows.some((r) => r.status === "missing") && <SevChip kind="high" n={briefCheck.result.rows.filter((r) => r.status === "missing").length} label="missing" />}
+              </>
+            ) : undefined
+          }
+          selected={!byZone && tab === "brief"}
+          onClick={() => pickLayer("brief")}
+          title="A separate check: its own file, button and cost. It is not part of the page's verdict."
+        />
+      </div>
 
-      <ComparisonNote compare={compare} isCheck={isCheck} />
-      <SharedBlocksBlock key={`shared-${version}`} runId={runId} slug={slug} />
-      <SiteCheckBlock key={`site-${version}`} runId={runId} slug={slug} />
-      {closedCount > 0 && (
-        <p className="text-xs text-slate-500">
-          {closedCount} closed {closedCount === 1 ? "problem is" : "problems are"} {showClosed ? "shown" : "hidden"} (accepted, false positive or fixed).{" "}
-          <button type="button" className="text-blue-600 hover:underline dark:text-blue-400" onClick={() => setShowClosed(!showClosed)}>
-            {showClosed ? "Hide closed" : "Show closed"}
-          </button>
-        </p>
-      )}
-
-      <div className="flex flex-wrap items-center gap-2 border-b border-slate-200 dark:border-slate-700">
-        {!byZone &&
-          tabs.map((t) => (
-            <button
-              key={t.key}
-              type="button"
-              onClick={() => setPicked(t.key)}
-              className={`-mb-px border-b-2 px-3 py-2 text-sm ${
-                tab === t.key ? "border-blue-600 font-semibold" : "border-transparent text-slate-500"
-              }`}
-            >
-              {t.label} <span className="text-xs text-slate-400">{t.n === null ? "off" : t.n}</span>
-            </button>
-          ))}
-        {!byZone && (
-          <button
-            type="button"
-            onClick={() => setPicked("brief")}
-            className={`-mb-px ml-2 border-b-2 border-l border-l-slate-200 px-3 py-2 text-sm dark:border-l-slate-700 ${
-              tab === "brief" ? "border-b-violet-600 font-semibold text-violet-800 dark:text-violet-200" : "border-b-transparent text-violet-700/80 dark:text-violet-300/80"
-            }`}
-          >
-            Brief <span className="text-xs text-slate-400">{briefLabel}</span>
-            {briefCheck?.stale && <span className="text-xs text-amber-600 dark:text-amber-400"> · outdated</span>}
-          </button>
-        )}
-        <div className={`ml-auto flex items-center gap-2 pb-2 text-sm ${!byZone && tab === "brief" ? "invisible" : ""}`}>
+      <div className="grid items-start gap-5 xl:grid-cols-[minmax(0,1fr)_22rem]">
+      <main className="min-w-0 space-y-4">
+      {(byZone || (tab !== "brief" && tab !== "review")) && (
+        <div className="flex items-center justify-end gap-2 text-sm">
           <span className="text-slate-500">Show</span>
           <div className="inline-flex overflow-hidden rounded border border-slate-300 dark:border-slate-600">
             {[
@@ -423,17 +388,14 @@ export function PageDetail() {
                 key={o.label}
                 type="button"
                 onClick={() => setByZone(o.v)}
-                className={`px-2.5 py-1 text-xs ${
-                  byZone === o.v ? "bg-blue-600 font-semibold text-white" : "bg-white text-slate-600 dark:bg-slate-900 dark:text-slate-300"
-                }`}
+                className={`px-2.5 py-1 text-xs ${byZone === o.v ? "bg-blue-600 font-semibold text-white" : "bg-white text-slate-600 dark:bg-slate-900 dark:text-slate-300"}`}
               >
                 {o.label}
               </button>
             ))}
           </div>
         </div>
-      </div>
-
+      )}
       {byZone ? (
         <FindingsByZone
           findings={ok}
@@ -517,6 +479,46 @@ export function PageDetail() {
           <FindingList findings={review} empty="Nothing here: every quote and rule was found." />
         </div>
       )}
+      </main>
+
+      <aside className="space-y-3 xl:sticky xl:max-h-[calc(100vh-10rem)] xl:overflow-y-auto" style={{ top: runParam ? "7.5rem" : "9.5rem" }}>
+        {top.length > 0 && (
+          <SidePanel title="Start with">
+            <ul className="list-disc space-y-1 pl-4">
+              {top.map((g, i) => (
+                <li key={i}>
+                  <b>{g[0]!.title}</b>
+                  <span className="text-slate-500">
+                    {" "}
+                    ({LAYER_LABELS[g[0]!.layer]}, {g[0]!.severity})
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </SidePanel>
+        )}
+        <SiteCheckBlock key={`site-${version}`} runId={runId} slug={slug} />
+        <SharedBlocksBlock key={`shared-${version}`} runId={runId} slug={slug} />
+        {(review.length > 0 || tab === "review") && (
+          <SidePanel title="Not found on page">
+            <p className="text-slate-600 dark:text-slate-400">The model quoted text or a rule that could not be matched with this page.</p>
+            <button type="button" className="mt-1 text-blue-600 hover:underline dark:text-blue-400" onClick={() => pickLayer("review")}>
+              Check these by hand ({review.length})
+            </button>
+          </SidePanel>
+        )}
+        {closedCount > 0 && (
+          <SidePanel title="Closed findings">
+            <p className="text-slate-600 dark:text-slate-400">
+              {closedCount} closed {closedCount === 1 ? "problem is" : "problems are"} {showClosed ? "shown" : "hidden"} (accepted, false positive or fixed).
+            </p>
+            <button type="button" className="mt-1 text-blue-600 hover:underline dark:text-blue-400" onClick={() => setShowClosed(!showClosed)}>
+              {showClosed ? "Hide closed" : "Show closed"}
+            </button>
+          </SidePanel>
+        )}
+      </aside>
+      </div>
     </div>
     </FindingActionsContext.Provider>
   );
