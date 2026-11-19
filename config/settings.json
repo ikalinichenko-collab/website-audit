@@ -21,10 +21,42 @@
     "max_output_tokens": 16000,
     "concurrency": 4,
     "models": [
-      { "id": "gpt-6-luna", "label": "GPT-6 Luna", "price_per_million_tokens": { "input": 0.1, "cached_input": 0.01, "output": 0.5 } },
-      { "id": "gpt-6.1-terra", "label": "GPT-6.1 Terra", "price_per_million_tokens": { "input": 1, "cached_input": 0.05, "output": 5 } },
-      { "id": "gpt-6.1-sol", "label": "GPT-6.1 Sol", "price_per_million_tokens": { "input": 2, "cached_input": 0.1, "output": 10 } },
-      { "id": "gpt-6-astra", "label": "GPT-6 Astra", "price_per_million_tokens": { "input": 10, "cached_input": 1, "output": 50 } }
+      {
+        "id": "gpt-6-luna",
+        "label": "GPT-6 Luna",
+        "price_per_million_tokens": {
+          "input": 0.1,
+          "cached_input": 0.01,
+          "output": 0.5
+        }
+      },
+      {
+        "id": "gpt-6.1-terra",
+        "label": "GPT-6.1 Terra",
+        "price_per_million_tokens": {
+          "input": 1,
+          "cached_input": 0.05,
+          "output": 5
+        }
+      },
+      {
+        "id": "gpt-6.1-sol",
+        "label": "GPT-6.1 Sol",
+        "price_per_million_tokens": {
+          "input": 2,
+          "cached_input": 0.1,
+          "output": 10
+        }
+      },
+      {
+        "id": "gpt-6-astra",
+        "label": "GPT-6 Astra",
+        "price_per_million_tokens": {
+          "input": 10,
+          "cached_input": 1,
+          "output": 50
+        }
+      }
     ]
   },
   "fetch": {
@@ -45,17 +77,200 @@
     ]
   },
   "scope": [
-    { "category": "Services", "subsection": "Services", "profile": "service", "path_starts_with": ["/services/"] },
-    { "category": "Company", "subsection": "Home", "profile": "home", "path_equals": "/" },
-    { "category": "Company", "subsection": "About", "profile": "company", "path_equals": "/about/" },
-    { "category": "Company", "subsection": "Contacts", "profile": "company", "path_equals": "/contacts/" },
-    { "category": "Company", "subsection": "Privacy", "profile": "legal", "path_equals": "/privacy-policy/" },
-    { "category": "Company", "subsection": "Terms", "profile": "legal", "path_equals": "/terms-and-conditions/" },
-    { "category": "Resources", "subsection": "Insights", "profile": "article", "path_starts_with": ["/insights/"] },
-    { "category": "Resources", "subsection": "Use cases", "profile": "article", "path_starts_with": ["/use-cases/"], "exclude_path_equals": ["/use-cases/"] },
-    { "category": "Resources", "subsection": "Podcast", "profile": "podcast", "path_starts_with": ["/podcast/"] },
-    { "category": "Resources", "subsection": "Case studies", "profile": "case_study", "path_starts_with": ["/case-study/"] },
-    { "category": "Solutions", "subsection": "Solutions", "profile": "service", "path_starts_with": ["/solutions/"] }
+    {
+      "category": "Services",
+      "subsection": "Services",
+      "profile": "service",
+      "path_starts_with": [
+        "/services/"
+      ]
+    },
+    {
+      "category": "Company",
+      "subsection": "Home",
+      "profile": "home",
+      "path_equals": "/"
+    },
+    {
+      "category": "Company",
+      "subsection": "About",
+      "profile": "company",
+      "path_equals": "/about/"
+    },
+    {
+      "category": "Company",
+      "subsection": "Contacts",
+      "profile": "company",
+      "path_equals": "/contacts/"
+    },
+    {
+      "category": "Company",
+      "subsection": "Privacy",
+      "profile": "legal",
+      "path_equals": "/privacy-policy/"
+    },
+    {
+      "category": "Company",
+      "subsection": "Terms",
+      "profile": "legal",
+      "path_equals": "/terms-and-conditions/"
+    },
+    {
+      "category": "Resources",
+      "subsection": "Insights",
+      "profile": "article",
+      "path_starts_with": [
+        "/insights/"
+      ],
+      "exclude_path_equals": [
+        "/insights/"
+      ]
+    },
+    {
+      "category": "Resources",
+      "subsection": "Use cases",
+      "profile": "article",
+      "path_starts_with": [
+        "/use-cases/"
+      ],
+      "exclude_path_equals": [
+        "/use-cases/"
+      ]
+    },
+    {
+      "category": "Resources",
+      "subsection": "Podcast",
+      "profile": "podcast",
+      "path_starts_with": [
+        "/podcast/"
+      ],
+      "exclude_path_equals": [
+        "/podcast/"
+      ]
+    },
+    {
+      "category": "Resources",
+      "subsection": "Case studies",
+      "profile": "case_study",
+      "path_starts_with": [
+        "/case-study/"
+      ],
+      "exclude_path_equals": [
+        "/case-study/"
+      ]
+    },
+    {
+      "category": "Solutions",
+      "subsection": "Solutions",
+      "profile": "service",
+      "path_starts_with": [
+        "/solutions/"
+      ]
+    },
+    {
+      "category": "Services",
+      "subsection": "Hire",
+      "profile": "hire",
+      "path_starts_with": [
+        "/hire/"
+      ],
+      "exclude_path_equals": [
+        "/hire/"
+      ]
+    },
+    {
+      "category": "Resources",
+      "subsection": "Glossary",
+      "profile": "glossary",
+      "path_starts_with": [
+        "/glossary/"
+      ],
+      "exclude_path_equals": [
+        "/glossary/"
+      ]
+    },
+    {
+      "category": "Resources",
+      "subsection": "AI glossary",
+      "profile": "glossary",
+      "path_starts_with": [
+        "/ai-glossary/"
+      ],
+      "exclude_path_equals": [
+        "/ai-glossary/"
+      ]
+    },
+    {
+      "category": "Resources",
+      "subsection": "Country guides",
+      "profile": "country_guide",
+      "path_starts_with": [
+        "/country-guides/"
+      ],
+      "exclude_path_equals": [
+        "/country-guides/"
+      ]
+    },
+    {
+      "category": "Resources",
+      "subsection": "Guides",
+      "profile": "guide",
+      "path_starts_with": [
+        "/guides/"
+      ],
+      "exclude_path_equals": [
+        "/guides/"
+      ]
+    },
+    {
+      "category": "Company",
+      "subsection": "Jobs",
+      "profile": "job",
+      "path_starts_with": [
+        "/jobs/"
+      ],
+      "exclude_path_equals": [
+        "/jobs/"
+      ]
+    },
+    {
+      "category": "Company",
+      "subsection": "Authors",
+      "profile": "author",
+      "path_starts_with": [
+        "/author/"
+      ]
+    },
+    {
+      "category": "Company",
+      "subsection": "Tools",
+      "profile": "tool",
+      "path_starts_with": [
+        "/salary-insights/",
+        "/talent-matching-tool/",
+        "/country-match/",
+        "/discover-model-location/",
+        "/captive-team-calculation/",
+        "/contractor-hiring-cost-estimation/"
+      ]
+    },
+    {
+      "category": "Resources",
+      "subsection": "Hubs",
+      "profile": "hub",
+      "path_starts_with": [
+        "/hire/",
+        "/glossary/",
+        "/ai-glossary/",
+        "/country-guides/",
+        "/guides/",
+        "/jobs/",
+        "/use-cases/",
+        "/insights/",
+        "/podcast/",
+        "/case-study/"
+      ]
+    }
   ],
   "site_wide_schema_share": 0.8,
   "page_types": [

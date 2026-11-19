@@ -44,7 +44,7 @@
   "title_h1": { "min_overlap": 0.5, "skip_profiles": ["home"] },
   "article_schema_fields": ["headline", "datePublished", "dateModified", "author", "image", "publisher"],
   "skip_link_patterns": ["/cdn-cgi/l/email-protection"],
-  "orphan_profiles": ["article", "case_study", "podcast"],
+  "orphan_profiles": ["article", "case_study", "podcast", "hire", "glossary", "country_guide", "guide"],
   "min_html_words": 100,
   "html_text_skip_profiles": ["hub"],
   "max_html_bytes": 1000000,
@@ -57,6 +57,14 @@
     "service": { "schema_required": ["Service"], "schema_recommended": ["BreadcrumbList"], "author": false, "dates": false, "link_to_services": false, "min_words": 300 },
     "article": { "schema_required": ["Article"], "schema_recommended": ["BreadcrumbList"], "author": true, "dates": true, "link_to_services": true, "min_words": 500 },
     "case_study": { "schema_required": ["Article"], "schema_recommended": ["BreadcrumbList"], "author": false, "dates": true, "link_to_services": true, "min_words": 500 },
-    "podcast": { "schema_required": ["Article"], "schema_recommended": ["PodcastEpisode", "BreadcrumbList"], "author": false, "dates": true, "link_to_services": false, "min_words": 300 }
+    "podcast": { "schema_required": ["Article"], "schema_recommended": ["PodcastEpisode", "BreadcrumbList"], "author": false, "dates": true, "link_to_services": false, "min_words": 300 },
+    "hub": { "schema_required": [], "schema_recommended": ["CollectionPage"], "author": false, "dates": false, "link_to_services": false },
+    "hire": { "schema_required": ["Article"], "schema_recommended": [], "author": false, "dates": true, "link_to_services": false, "min_words": 500 },
+    "glossary": { "schema_required": ["Article"], "schema_recommended": [], "author": false, "dates": false, "link_to_services": false, "min_words": 800 },
+    "country_guide": { "schema_required": ["Article"], "schema_recommended": [], "author": true, "dates": true, "link_to_services": false, "min_words": 800 },
+    "guide": { "schema_required": ["Article"], "schema_recommended": [], "author": true, "dates": true, "link_to_services": false, "min_words": 500 },
+    "job": { "schema_required": [], "schema_recommended": ["JobPosting"], "author": false, "dates": false, "link_to_services": false, "min_words": 300 },
+    "tool": { "schema_required": [], "schema_recommended": [], "author": false, "dates": false, "link_to_services": false },
+    "author": { "schema_required": [], "schema_recommended": ["ProfilePage"], "author": false, "dates": false, "link_to_services": false }
   }
 }
