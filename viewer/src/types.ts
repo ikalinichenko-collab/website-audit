@@ -406,7 +406,8 @@ export interface BriefCheckRecord {
       /** "seo:<check id>" or "geo:<check id>" */
       covered_by: string | null;
       points: { text: string; status: "done" | "partial" | "missing"; note: string }[];
-      evidence: { zone_id: string; part: string | null; quote: string; verified: boolean }[];
+      /** `fragment`: text-fragment value for a link to the live page (null: the quote is not in the visible text) */
+      evidence: { zone_id: string; part: string | null; quote: string; verified: boolean; fragment?: string | null; place?: string | null }[];
     }[];
   };
 }

@@ -46,8 +46,12 @@ function encodeDirectivePart(text: string): string {
   return encodeURIComponent(text).replace(/-/g, "%2D").replace(/,/g, "%2C").replace(/&/g, "%26");
 }
 
-/** Same rule as `encodeTextFragment` in src/quote-fragments.ts: the `-,` and `,-` separators of `prefix-,text,-suffix` stay literal. */
+/** Same rule as `encodeTextFragment` in src/quote-fragments.ts: the `-,` and `,-` separators of `prefix-,text,-suffix` stay literal; a fragment with a line break is a range `first line,last line`. */
 export function encodeTextFragment(text: string): string {
+  if (text.includes("\n")) {
+    const lines = text.split(/\n+/).map((l) => l.trim()).filter(Boolean);
+    if (lines.length > 1) return encodeDirectivePart(lines[0]!) + "," + encodeDirectivePart(lines[lines.length - 1]!);
+  }
   const m = text.match(/^(?:([\s\S]*?)-,)?([\s\S]*?)(?:,-([\s\S]*))?$/)!;
   const [, prefix, main, suffix] = m;
   return (prefix !== undefined ? encodeDirectivePart(prefix) + "-," : "") + encodeDirectivePart(main!) + (suffix !== undefined ? ",-" + encodeDirectivePart(suffix) : "");
@@ -55,6 +59,18 @@ export function encodeTextFragment(text: string): string {
 
 export function showOnPageUrl(pageUrl: string, fragment: string | null): string | null {
   return fragment ? `${pageUrl}#:~:text=${encodeTextFragment(fragment)}` : null;
+}
+
+/** Zones that live in the page head: the badge tells the reader to look in the source, not on the page. */
+export function headBadge(zoneId: string): string | null {
+  if (/^(title|meta_description|og_title|og_description)$/.test(zoneId)) return "in meta tags";
+  if (zoneId === "json_ld") return "in structured data";
+  return null;
+}
+
+/** Text in a FAQ accordion is closed on load: the browser cannot highlight it until the item is opened. */
+export function inAccordion(zoneId: string): boolean {
+  return /^block:accordion/.test(zoneId);
 }
 
 /** Same rule as `fragmentAllowed` in src/findings.ts: these zones are not visible text, so a text fragment cannot find them. */

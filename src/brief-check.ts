@@ -5,6 +5,8 @@ import { loadChecksConfig } from "./check-catalog.js";
 import { loadSettings, settingsForModel, usageCost } from "./config.js";
 import { locate } from "./compliance.js";
 import { parseJsonLdBlocks } from "./extract.js";
+import { fragmentAllowed } from "./findings.js";
+import { fragmentForQuote } from "./quote-fragments.js";
 import { createOpenAiClient, runBriefCheck, type BriefCheckRaw } from "./llm.js";
 import { logCheck } from "./page-checks.js";
 import { resourceText } from "./resource-store.js";
@@ -23,6 +25,10 @@ export interface BriefEvidence {
   part: string | null;
   quote: string;
   verified: boolean;
+  /** text-fragment value for a link to the live page; null when the quote is not in the visible text. Absent in results stored before it existed: set when they are first read. */
+  fragment?: string | null;
+  /** readable place for a table cell */
+  place?: string | null;
 }
 
 export interface BriefRowResult {
@@ -231,6 +237,36 @@ function verify(raw: BriefCheckRaw, rows: string[][], zones: PageZones): BriefCh
   return { summary: raw.summary, rows: out };
 }
 
+/** A quote of several lines sits in several blocks of the page (a card's label and its title): its link is a range, first line to last, with a line break in the value. */
+const spansBlocks = (quote: string): boolean => quote.split(/\n+/).filter((l) => l.trim()).length > 1;
+
+/** Whether a quote still needs its link: it has none yet, or it spans blocks and was linked as one run of text (that never matches). */
+function needsFragment(e: BriefEvidence): boolean {
+  if (!e.verified || !fragmentAllowed(e.zone_id)) return false;
+  return e.fragment === undefined || (spansBlocks(e.quote) && !(e.fragment ?? "").includes("\n"));
+}
+
+/** Links to the live page for the quotes of a result: the stored HTML is searched, as for the places of a Compliance finding. Quotes that already have one are left as they are. */
+function attachFragments(result: BriefCheckResult, src: Source): BriefCheckResult {
+  if (!src.html) return result;
+  const settings = loadSettings();
+  const rows = result.rows.map((r) => ({
+    ...r,
+    evidence: r.evidence.map((e) => {
+      if (!needsFragment(e)) return e;
+      if (spansBlocks(e.quote)) {
+        const lines = e.quote.split(/\n+/).map((l) => l.trim()).filter(Boolean);
+        return { ...e, fragment: `${lines[0]}\n${lines[lines.length - 1]}`, place: null };
+      }
+      // the text of the part the quote was found in, so the link goes to that element and not to the first one with the same words
+      const partText = e.part ? src.zones.zones.find((z) => z.id === e.zone_id)?.parts?.find((x) => `${x.type} ${x.index}` === e.part)?.text : undefined;
+      const found = fragmentForQuote(src.html!, settings, e.quote, partText);
+      return { ...e, fragment: found.fragment, place: found.place };
+    }),
+  }));
+  return { ...result, rows };
+}
+
 /** The stored check of a page and whether it is still current (the brief and the page text are the ones it was made from). */
 export async function getBriefCheck(slug: string, runId: string | null): Promise<BriefCheckRecord | null> {
   const r = await db().query<{ brief_id: string; hash: string; model: string; result: BriefCheckResult; usage: TokenUsage; cost_usd: string; checked_at: Date; checked_by: string | null }>(
@@ -242,8 +278,14 @@ export async function getBriefCheck(slug: string, runId: string | null): Promise
   const brief = (await getBrief(slug)).current;
   const src = await loadSource(slug, runId);
   const zs = src ? pageZones(src.zones) : [];
+  // a result stored before the links existed gets them now, once (the search of the page is slow: a second per few quotes)
+  let result = x.result;
+  if (src && result.rows.some((r) => r.evidence.some(needsFragment))) {
+    result = attachFragments(result, src);
+    await db().query("UPDATE brief_checks SET result = $3 WHERE slug = $1 AND source = $2", [slug, runId ?? "", JSON.stringify(result)]);
+  }
   const stale = !brief || !src || keyOf(brief.rows, zs, await allFacts(slug, runId, src, zs), x.model, resourceText("prompts/brief-check.md")) !== x.hash;
-  return { slug, source: runId ?? "", brief_id: Number(x.brief_id), model: x.model, checked_at: x.checked_at.toISOString(), checked_by: x.checked_by, cost_usd: Number(x.cost_usd), usage: x.usage, stale, result: x.result };
+  return { slug, source: runId ?? "", brief_id: Number(x.brief_id), model: x.model, checked_at: x.checked_at.toISOString(), checked_by: x.checked_by, cost_usd: Number(x.cost_usd), usage: x.usage, stale, result };
 }
 
 /** Checks the page against the latest version of its brief. The same inputs as the stored check give the stored result at no cost, unless `force`. */
@@ -274,7 +316,7 @@ export async function checkAgainstBrief(slug: string, runId: string | null, opts
   };
   const res = await runBriefCheck(client, settings, instruction + checkCatalog(), briefText(brief.rows), payload);
   if (res.error || !res.data) throw new Error(res.error ?? "Empty response from the model");
-  const result = verify(res.data, brief.rows, src.zones);
+  const result = attachFragments(verify(res.data, brief.rows, src.zones), src);
   const cost = usageCost(res.usage, model);
   await db().query(
     `INSERT INTO brief_checks (slug, source, brief_id, hash, model, result, usage, cost_usd, checked_at, checked_by, content_hash) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, now(), $9, $10)

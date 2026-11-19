@@ -314,22 +314,23 @@ export function PageDetail() {
               setByZone(false);
               setPicked("brief");
             }}
-            className="rounded border border-slate-200 p-2 text-left hover:bg-slate-50 dark:border-slate-700 dark:hover:bg-slate-800"
+            className="rounded border border-violet-300 bg-violet-50/70 p-2 text-left hover:bg-violet-100/70 dark:border-violet-800 dark:bg-violet-950/30 dark:hover:bg-violet-950/50"
+            title="A separate check: its own file, button and cost. It is not part of the page's verdict."
           >
             <div className="flex items-baseline justify-between">
-              <span className="text-sm font-semibold">Brief</span>
+              <span className="text-sm font-semibold text-violet-800 dark:text-violet-200">Brief</span>
               <span className="text-sm tabular-nums">
                 {briefToFix === 0 ? (
                   <span className="text-emerald-600 dark:text-emerald-400">{briefLabel}</span>
                 ) : briefToFix === null ? (
                   <span className="text-slate-400">{briefLabel}</span>
                 ) : (
-                  <span className="font-medium">{briefLabel}</span>
+                  <span className="font-medium text-violet-800 dark:text-violet-200">{briefLabel}</span>
                 )}
               </span>
             </div>
-            <div className="text-xs text-slate-500">
-              {briefRows === null ? "upload the content brief" : "against the content brief"}
+            <div className="text-xs text-violet-700/80 dark:text-violet-300/80">
+              {briefRows === null ? "separate check: upload the content brief" : "separate check, against the content brief"}
               {briefCheck?.stale && <span className="text-amber-600 dark:text-amber-400"> · outdated</span>}
             </div>
           </button>
@@ -399,7 +400,7 @@ export function PageDetail() {
             type="button"
             onClick={() => setPicked("brief")}
             className={`-mb-px ml-2 border-b-2 border-l border-l-slate-200 px-3 py-2 text-sm dark:border-l-slate-700 ${
-              tab === "brief" ? "border-b-blue-600 font-semibold" : "border-b-transparent text-slate-500"
+              tab === "brief" ? "border-b-violet-600 font-semibold text-violet-800 dark:text-violet-200" : "border-b-transparent text-violet-700/80 dark:text-violet-300/80"
             }`}
           >
             Brief <span className="text-xs text-slate-400">{briefLabel}</span>

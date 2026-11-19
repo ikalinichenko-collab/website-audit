@@ -23,7 +23,7 @@ function BriefCell({ to, brief }: { to: string; brief: BriefListState | null }) 
       {brief.checked_at ? (
         <Link
           to={to}
-          className={`hover:underline ${toFix === 0 ? "text-emerald-600 dark:text-emerald-400" : "font-medium"}`}
+          className={`hover:underline ${toFix === 0 ? "text-emerald-600 dark:text-emerald-400" : "font-medium text-violet-700 dark:text-violet-300"}`}
           title={`${brief.done} done, ${brief.partial} partly, ${brief.missing} missing. Checked ${when(brief.checked_at)}`}
         >
           {toFix === 0 ? "all done" : `${toFix} to fix`}

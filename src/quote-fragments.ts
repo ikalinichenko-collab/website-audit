@@ -233,8 +233,15 @@ function encodeDirectivePart(text: string): string {
     .replace(/&/g, "%26");
 }
 
-/** `prefix-,text,-suffix` keeps its `-,` and `,-` separators literal; only the parts are encoded (encoded separators would be searched as text). */
+/**
+ * `prefix-,text,-suffix` keeps its `-,` and `,-` separators literal; only the parts are encoded (encoded separators would be searched as text).
+ * A fragment with a line break is a range over several blocks: the first and the last line become `start,end` (one match cannot span blocks, a range can).
+ */
 export function encodeTextFragment(text: string): string {
+  if (text.includes("\n")) {
+    const lines = text.split(/\n+/).map((l) => l.trim()).filter(Boolean);
+    if (lines.length > 1) return encodeDirectivePart(lines[0]!) + "," + encodeDirectivePart(lines[lines.length - 1]!);
+  }
   const m = text.match(/^(?:([\s\S]*?)-,)?([\s\S]*?)(?:,-([\s\S]*))?$/)!;
   const [, prefix, main, suffix] = m;
   return (prefix !== undefined ? encodeDirectivePart(prefix) + "-," : "") + encodeDirectivePart(main!) + (suffix !== undefined ? ",-" + encodeDirectivePart(suffix) : "");

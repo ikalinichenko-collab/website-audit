@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import type { Finding, FixWhere } from "../types.js";
 import { SeverityBadge } from "./Badges.js";
 import { GEO_STYLE_KINDS, isGeoAbsence, ruleDocId } from "../labels.js";
-import { fragmentAllowed, showOnPageUrl } from "../utils.js";
+import { fragmentAllowed, headBadge, inAccordion, showOnPageUrl } from "../utils.js";
 import { StatusBar } from "./FindingActions.js";
 
 const SEV_ORDER: Record<string, number> = { high: 0, medium: 1, low: 2, "": 3 };
@@ -95,13 +95,6 @@ function Highlighted({ text, match }: { text: string; match: string }) {
   );
 }
 
-/** Zones that live in the page head: the badge tells the reader to look in the source, not on the page. */
-function headBadge(zoneId: string): string | null {
-  if (/^(title|meta_description|og_title|og_description)$/.test(zoneId)) return "in meta tags";
-  if (zoneId === "json_ld") return "in structured data";
-  return null;
-}
-
 function PlaceLine({ place, hideZone }: { place: Place; hideZone?: boolean }) {
   const { f } = place;
   const headKind = headBadge(f.zone_id);
@@ -133,7 +126,7 @@ function PlaceLine({ place, hideZone }: { place: Place; hideZone?: boolean }) {
         <span className="ml-auto text-xs">
           {link ? (
             <>
-              {/^block:accordion/.test(f.zone_id) && (
+              {inAccordion(f.zone_id) && (
                 <span className="mr-2 text-slate-400" title="The browser cannot highlight text inside a closed accordion item: open the item first.">
                   in a FAQ item: open it first
                 </span>

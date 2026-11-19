@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { api, type AppState } from "../api.js";
 import type { BriefCheckRecord, BriefInfo, BriefStatus } from "../types.js";
+import { headBadge, inAccordion, showOnPageUrl } from "../utils.js";
 import { buttonClass, primaryClass } from "./ResourceEditor.js";
 
 const when = (iso: string) => new Date(iso).toLocaleString([], { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit" });
@@ -15,6 +16,33 @@ const STATUS: Record<BriefStatus, { label: string; mark: string; cls: string }> 
 const POINT_MARK = { done: STATUS.done, partial: STATUS.partial, missing: STATUS.missing } as const;
 
 type Row = BriefCheckRecord["result"]["rows"][number];
+type Evidence = Row["evidence"][number];
+
+/** Where a quote sits on the page: a link that highlights it, or a note when the browser cannot (page head, closed FAQ item). */
+function ShowOnPage({ url, e }: { url: string; e: Evidence }) {
+  const head = headBadge(e.zone_id);
+  if (head) {
+    return (
+      <span className="rounded bg-violet-100 px-1.5 py-0.5 font-medium text-violet-700 dark:bg-violet-950/60 dark:text-violet-300" title="This text is in the page head, not in the visible text, so the page cannot highlight it.">
+        {head}
+      </span>
+    );
+  }
+  const link = e.verified && e.fragment ? showOnPageUrl(url, e.fragment) : null;
+  if (!link) return null;
+  return (
+    <>
+      {inAccordion(e.zone_id) && (
+        <span className="text-slate-400" title="The browser cannot highlight text inside a closed accordion item: open the item first.">
+          in a FAQ item: open it first
+        </span>
+      )}
+      <a href={link} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline dark:text-blue-400">
+        show on page
+      </a>
+    </>
+  );
+}
 
 /** The audit check a row is covered by: "seo:canonical" is the SEO tab, "geo:..." the GEO tab. */
 function CoveredBy({ id, onOpen }: { id: string; onOpen: (tab: "seo" | "geo") => void }) {
@@ -27,7 +55,7 @@ function CoveredBy({ id, onOpen }: { id: string; onOpen: (tab: "seo" | "geo") =>
   );
 }
 
-function RowCard({ r, onOpen }: { r: Row; onOpen: (tab: "seo" | "geo") => void }) {
+function RowCard({ r, url, onOpen }: { r: Row; url: string; onOpen: (tab: "seo" | "geo") => void }) {
   const s = STATUS[r.status];
   return (
     <li id={`brief-row-${r.row}`} className="rounded border border-slate-200 p-3 dark:border-slate-700">
@@ -62,9 +90,14 @@ function RowCard({ r, onOpen }: { r: Row; onOpen: (tab: "seo" | "geo") => void }
       {r.evidence.length > 0 && (
         <ul className="mt-2 space-y-1 text-xs text-slate-600 dark:text-slate-400">
           {r.evidence.map((e, i) => (
-            <li key={i}>
-              <span className="text-slate-400">{e.zone_id}{e.part ? `, ${e.part}` : ""}:</span> “{e.quote}”
-              {!e.verified && <span className="ml-1 text-amber-600"> (not found in this zone, check by hand)</span>}
+            <li key={i} className="flex flex-wrap items-baseline gap-x-2">
+              <span>
+                <span className="text-slate-400">{e.zone_id}{e.part ? `, ${e.part}` : ""}{e.place ? `, ${e.place}` : ""}:</span> “{e.quote}”
+                {!e.verified && <span className="ml-1 text-amber-600"> (not found in this zone, check by hand)</span>}
+              </span>
+              <span className="ml-auto flex items-baseline gap-2">
+                <ShowOnPage url={url} e={e} />
+              </span>
             </li>
           ))}
         </ul>
@@ -74,7 +107,7 @@ function RowCard({ r, onOpen }: { r: Row; onOpen: (tab: "seo" | "geo") => void }
 }
 
 /** The result of a check against the brief: a short checklist on top, then every row with its explanation. */
-function CheckResult({ c, onOpen }: { c: BriefCheckRecord; onOpen: (tab: "seo" | "geo") => void }) {
+function CheckResult({ c, url, onOpen }: { c: BriefCheckRecord; url: string; onOpen: (tab: "seo" | "geo") => void }) {
   const rows = c.result.rows;
   const judged = rows.filter((r) => r.status !== "not_applicable");
   const count = (s: BriefStatus) => rows.filter((r) => r.status === s).length;
@@ -104,7 +137,7 @@ function CheckResult({ c, onOpen }: { c: BriefCheckRecord; onOpen: (tab: "seo" |
       </div>
       <ul className="space-y-3">
         {judged.map((r) => (
-          <RowCard key={r.row} r={r} onOpen={onOpen} />
+          <RowCard key={r.row} r={r} url={url} onOpen={onOpen} />
         ))}
       </ul>
       {skipped.length > 0 && (
@@ -321,7 +354,7 @@ export function BriefTab({
             </p>
           )}
 
-          {check && <CheckResult c={check} onOpen={onOpenTab} />}
+          {check && <CheckResult c={check} url={url} onOpen={onOpenTab} />}
 
           {info.versions.length > 1 && (
             <details className="text-sm">
