@@ -27,6 +27,19 @@ export interface PageIndexEntry {
   changed?: boolean | null;
   /** page checks only: the person asking checked it */
   mine?: boolean;
+  /** page checks only: the page's content brief and the check against it (null: no brief) */
+  brief?: BriefListState | null;
+}
+
+/** What the list of checked pages shows about a page's brief. `stale`: the brief or the page text changed since the check. */
+export interface BriefListState {
+  rows: number;
+  uploaded_at: string;
+  checked_at: string | null;
+  done: number;
+  partial: number;
+  missing: number;
+  stale: boolean;
 }
 
 export interface GroupTotals {

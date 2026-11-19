@@ -5,7 +5,7 @@ import { JobBar } from "../components/JobBar.js";
 import { buttonClass } from "../components/ResourceEditor.js";
 import { useActiveRunId, useRunContext } from "../context/RunContext.js";
 import { getIndex, getPage, getPageFindings, getPageShared, getSiteCheck } from "../data.js";
-import type { Finding, Layer, PageCompare, PageIndexEntry, PageReport, PageShared, SinceSnapshot, SiteCheck } from "../types.js";
+import type { BriefCheckRecord, Finding, Layer, PageCompare, PageIndexEntry, PageReport, PageShared, SinceSnapshot, SiteCheck } from "../types.js";
 import { ActionBadge, SeverityBadge } from "../components/Badges.js";
 import { FindingActionsContext } from "../components/FindingActions.js";
 import { BriefTab } from "../components/BriefTab.js";
@@ -64,15 +64,20 @@ export function PageDetail() {
   const [siblings, setSiblings] = useState<PageIndexEntry[]>([]);
   const [picked, setPicked] = useState<Tab | null>(null);
   const [byZone, setByZone] = useState(false);
-  // rows of the page's brief (null: none loaded), for the tab label
+  // the page's brief: rows loaded (null: none) and the stored check against it, for the summary tile and the tab
   const [briefRows, setBriefRows] = useState<number | null>(null);
+  const [briefCheck, setBriefCheck] = useState<BriefCheckRecord | null>(null);
 
   useEffect(() => {
     api
       .brief(slug)
       .then((i) => setBriefRows(i.versions[0]?.row_count ?? null))
       .catch(() => setBriefRows(null));
-  }, [slug]);
+    api
+      .briefCheck(slug, runId)
+      .then(setBriefCheck)
+      .catch(() => setBriefCheck(null));
+  }, [slug, runId, version]);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -128,7 +133,8 @@ export function PageDetail() {
   // open on the first layer that has something to read
   const layers: Layer[] = ["compliance", "geo", "seo"];
   const firstWithFindings = layers.find((l) => !off[l] && of(l).length > 0) ?? "compliance";
-  const tab: Tab = picked ?? firstWithFindings;
+  // the list of checked pages links to ?tab=brief
+  const tab: Tab = picked ?? (qs.get("tab") === "brief" ? "brief" : firstWithFindings);
 
   const action = page.compliance.error ? "not_checked" : (page.compliance.action ?? "keep");
   const run = runs.find((r) => r.id === runId);
@@ -148,9 +154,12 @@ export function PageDetail() {
     { key: "compliance", label: LAYER_LABELS.compliance, n: count("compliance") },
     { key: "geo", label: LAYER_LABELS.geo, n: count("geo") },
     { key: "seo", label: LAYER_LABELS.seo, n: count("seo") },
-    { key: "brief", label: "Brief", n: briefRows },
     { key: "review", label: "Not found on page", n: review.length },
   ];
+
+  // the brief is its own check (own file, own button, own cost): a fourth tile and a tab apart from the layers
+  const briefToFix = briefCheck ? briefCheck.result.rows.filter((r) => r.status === "partial" || r.status === "missing").length : null;
+  const briefLabel = briefRows === null ? "none" : briefToFix === null ? "not checked" : briefToFix === 0 ? "all done" : `${briefToFix} to fix`;
 
   const layerTiles: { layer: Layer; hint: string }[] = [
     { layer: "compliance", hint: "against the company documents" },
@@ -270,7 +279,7 @@ export function PageDetail() {
             </p>
           </div>
         </div>
-        <div className="grid gap-2 sm:grid-cols-3">
+        <div className="grid gap-2 sm:grid-cols-4">
           {layerTiles.map(({ layer, hint }) => {
             const n = count(layer);
             return (
@@ -299,6 +308,31 @@ export function PageDetail() {
               </button>
             );
           })}
+          <button
+            type="button"
+            onClick={() => {
+              setByZone(false);
+              setPicked("brief");
+            }}
+            className="rounded border border-slate-200 p-2 text-left hover:bg-slate-50 dark:border-slate-700 dark:hover:bg-slate-800"
+          >
+            <div className="flex items-baseline justify-between">
+              <span className="text-sm font-semibold">Brief</span>
+              <span className="text-sm tabular-nums">
+                {briefToFix === 0 ? (
+                  <span className="text-emerald-600 dark:text-emerald-400">{briefLabel}</span>
+                ) : briefToFix === null ? (
+                  <span className="text-slate-400">{briefLabel}</span>
+                ) : (
+                  <span className="font-medium">{briefLabel}</span>
+                )}
+              </span>
+            </div>
+            <div className="text-xs text-slate-500">
+              {briefRows === null ? "upload the content brief" : "against the content brief"}
+              {briefCheck?.stale && <span className="text-amber-600 dark:text-amber-400"> · outdated</span>}
+            </div>
+          </button>
         </div>
         {top.length > 0 && (
           <div className="border-t border-slate-100 pt-2 dark:border-slate-800">
@@ -357,11 +391,22 @@ export function PageDetail() {
                 tab === t.key ? "border-blue-600 font-semibold" : "border-transparent text-slate-500"
               }`}
             >
-              {t.label}{" "}
-              <span className="text-xs text-slate-400">{t.key === "brief" ? (t.n === null ? "none" : `${t.n} rows`) : t.n === null ? "off" : t.n}</span>
+              {t.label} <span className="text-xs text-slate-400">{t.n === null ? "off" : t.n}</span>
             </button>
           ))}
-        <div className="ml-auto flex items-center gap-2 pb-2 text-sm">
+        {!byZone && (
+          <button
+            type="button"
+            onClick={() => setPicked("brief")}
+            className={`-mb-px ml-2 border-b-2 border-l border-l-slate-200 px-3 py-2 text-sm dark:border-l-slate-700 ${
+              tab === "brief" ? "border-b-blue-600 font-semibold" : "border-b-transparent text-slate-500"
+            }`}
+          >
+            Brief <span className="text-xs text-slate-400">{briefLabel}</span>
+            {briefCheck?.stale && <span className="text-xs text-amber-600 dark:text-amber-400"> · outdated</span>}
+          </button>
+        )}
+        <div className={`ml-auto flex items-center gap-2 pb-2 text-sm ${!byZone && tab === "brief" ? "invisible" : ""}`}>
           <span className="text-slate-500">Show</span>
           <div className="inline-flex overflow-hidden rounded border border-slate-300 dark:border-slate-600">
             {[
@@ -459,7 +504,7 @@ export function PageDetail() {
       ) : tab === "seo" ? (
         layerBody("seo", <FindingList findings={of("seo")} empty="No SEO problems." />)
       ) : tab === "brief" ? (
-        <BriefTab slug={slug} url={page.final_url || page.url} runId={runId} onRows={setBriefRows} onOpenTab={setPicked} />
+        <BriefTab slug={slug} url={page.final_url || page.url} runId={runId} check={briefCheck} onCheck={setBriefCheck} onRows={setBriefRows} onOpenTab={setPicked} />
       ) : (
         <div className="space-y-2">
           <Note>{NOT_FOUND_HINT}</Note>

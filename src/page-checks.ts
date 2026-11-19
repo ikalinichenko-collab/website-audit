@@ -1,7 +1,7 @@
 import { db } from "./db.js";
 import type { PageReport, SiteReport } from "./report-types.js";
 import { pageFindings, type Finding, type Layer } from "./findings.js";
-import { attachFragments, buildRunIndex, pageIndexEntry, type PageIndexEntry, type RunIndexFile, type StoredZones } from "./run-output.js";
+import { attachFragments, buildRunIndex, pageIndexEntry, type BriefListState, type PageIndexEntry, type RunIndexFile, type StoredZones } from "./run-output.js";
 import { shownName } from "./users.js";
 import type { Layers, Settings, TokenUsage } from "./types.js";
 import { buildFindingsCsv, buildSummaryCsv } from "./render.js";
@@ -133,8 +133,8 @@ export async function deleteCheck(slug: string): Promise<boolean> {
  */
 export async function listChecks(forEmail: string | null): Promise<PageIndexEntry[]> {
   const rows = (
-    await db().query<{ entry: PageIndexEntry; checked_by: string | null; checked_by_name: string | null; content_hash: string | null; checked_at: Date; url: string }>(
-      `SELECT entry, checked_by, CASE WHEN checked_by IS NULL THEN NULL ELSE ${shownName("checked_by")} END AS checked_by_name, content_hash, checked_at, url FROM page_checks`,
+    await db().query<{ slug: string; entry: PageIndexEntry; checked_by: string | null; checked_by_name: string | null; content_hash: string | null; checked_at: Date; url: string }>(
+      `SELECT slug, entry, checked_by, CASE WHEN checked_by IS NULL THEN NULL ELSE ${shownName("checked_by")} END AS checked_by_name, content_hash, checked_at, url FROM page_checks`,
     )
   ).rows;
   const snap = (await db().query<{ id: string; started_at: Date }>("SELECT id, started_at FROM runs WHERE kind = 'site' AND status = 'done' AND site IS NOT NULL ORDER BY started_at DESC LIMIT 1")).rows[0];
@@ -143,11 +143,40 @@ export async function listChecks(forEmail: string | null): Promise<PageIndexEntr
     const h = await db().query<{ url: string; h: string | null }>("SELECT report->>'final_url' AS url, report->>'content_hash' AS h FROM pages WHERE run_id = $1 AND report->>'final_url' = ANY($2)", [snap.id, rows.map((r) => r.url)]);
     for (const x of h.rows) hashes.set(x.url, x.h);
   }
+  const briefs = await briefStates(rows);
   return rows.map((r) => {
     const snapHash = hashes.get(r.url) ?? null;
     const changed = snap && snap.started_at > r.checked_at && r.content_hash && snapHash ? r.content_hash !== snapHash : null;
-    return { ...r.entry, checked_by: r.checked_by_name, mine: !!forEmail && r.checked_by === forEmail, changed };
+    return { ...r.entry, checked_by: r.checked_by_name, mine: !!forEmail && r.checked_by === forEmail, changed, brief: briefs.get(r.slug) ?? null };
   });
+}
+
+/**
+ * The brief of each checked page and its check. A check is out of date when a newer brief version was uploaded, or the page text
+ * differs from the one it was made from (a check made before the hash was kept is judged by the date of the page check).
+ */
+async function briefStates(pages: { slug: string; content_hash: string | null; checked_at: Date }[]): Promise<Map<string, BriefListState>> {
+  const out = new Map<string, BriefListState>();
+  if (!pages.length) return out;
+  const slugs = pages.map((p) => p.slug);
+  const b = await db().query<{ slug: string; id: string; rows: number; uploaded_at: Date }>(
+    "SELECT DISTINCT ON (slug) slug, id, jsonb_array_length(rows) AS rows, uploaded_at FROM page_briefs WHERE slug = ANY($1) ORDER BY slug, id DESC",
+    [slugs],
+  );
+  const c = await db().query<{ slug: string; brief_id: string; checked_at: Date; content_hash: string | null; statuses: string[] }>(
+    "SELECT slug, brief_id, checked_at, content_hash, ARRAY(SELECT x->>'status' FROM jsonb_array_elements(result->'rows') x) AS statuses FROM brief_checks WHERE slug = ANY($1) AND source = ''",
+    [slugs],
+  );
+  const checks = new Map(c.rows.map((x) => [x.slug, x]));
+  const page = new Map(pages.map((p) => [p.slug, p]));
+  for (const x of b.rows) {
+    const k = checks.get(x.slug);
+    const p = page.get(x.slug)!;
+    const count = (s: string): number => k?.statuses.filter((v) => v === s).length ?? 0;
+    const stale = !k ? false : Number(k.brief_id) !== Number(x.id) || (k.content_hash ? k.content_hash !== p.content_hash : p.checked_at > k.checked_at);
+    out.set(x.slug, { rows: Number(x.rows), uploaded_at: x.uploaded_at.toISOString(), checked_at: k ? k.checked_at.toISOString() : null, done: count("done"), partial: count("partial"), missing: count("missing"), stale });
+  }
+  return out;
 }
 
 /** The list in the shape of a run's index: totals and groups for the Overview, rows for the table. */

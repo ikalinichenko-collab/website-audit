@@ -129,6 +129,8 @@ export function BriefTab({
   slug,
   url,
   runId,
+  check,
+  onCheck,
   onRows,
   onOpenTab,
 }: {
@@ -136,11 +138,13 @@ export function BriefTab({
   url: string;
   /** the snapshot the page is read from; null for a checked page */
   runId: string | null;
+  /** the stored check, kept by the page so the summary tile and this tab show the same */
+  check: BriefCheckRecord | null;
+  onCheck: (c: BriefCheckRecord | null) => void;
   onRows: (rows: number | null) => void;
   onOpenTab: (tab: "seo" | "geo") => void;
 }) {
   const [info, setInfo] = useState<BriefInfo | null>(null);
-  const [check, setCheck] = useState<BriefCheckRecord | null>(null);
   const [state, setState] = useState<AppState | null>(null);
   const [model, setModel] = useState<string | undefined>(undefined);
   const [busy, setBusy] = useState(false);
@@ -163,12 +167,10 @@ export function BriefTab({
 
   useEffect(() => {
     setInfo(null);
-    setCheck(null);
     setWarning(null);
     setError(null);
     void load();
-    api.briefCheck(slug, runId).then(setCheck).catch(() => setCheck(null));
-  }, [load, slug, runId]);
+  }, [load, slug]);
 
   useEffect(() => {
     api.state().then((s) => { setState(s); setModel((m) => m ?? s.model); }).catch(() => undefined);
@@ -184,7 +186,7 @@ export function BriefTab({
       setWarning(r.warning);
       await load();
       // a new version: the stored check says it is out of date
-      api.briefCheck(slug, runId).then(setCheck).catch(() => undefined);
+      api.briefCheck(slug, runId).then(onCheck).catch(() => undefined);
     } catch (e) {
       setError(String(e instanceof Error ? e.message : e));
     } finally {
@@ -211,7 +213,7 @@ export function BriefTab({
     setChecking(true);
     setError(null);
     try {
-      setCheck(await api.runBriefCheck(slug, runId, model, force));
+      onCheck(await api.runBriefCheck(slug, runId, model, force));
     } catch (e) {
       setError(String(e instanceof Error ? e.message : e));
     } finally {
@@ -252,60 +254,61 @@ export function BriefTab({
         </div>
       ) : (
         <>
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
-            <span>
-              <span className="font-medium">{b.filename}</span>{" "}
-              <span className="text-slate-500">
-                version {info.versions.length - info.versions.findIndex((v) => v.id === b.id)} of {info.versions.length}, {b.row_count} rows, uploaded{" "}
-                {when(b.uploaded_at)}
-                {b.uploaded_by ? ` by ${b.uploaded_by}` : ""}
+          <div className="divide-y divide-slate-200 rounded border border-slate-200 text-sm dark:divide-slate-700 dark:border-slate-700">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 p-3">
+              <span>
+                <span className="font-medium">{b.filename}</span>{" "}
+                <span className="text-slate-500">
+                  version {info.versions.length - info.versions.findIndex((v) => v.id === b.id)} of {info.versions.length}, {b.row_count} rows, uploaded{" "}
+                  {when(b.uploaded_at)}
+                  {b.uploaded_by ? ` by ${b.uploaded_by}` : ""}
+                </span>
               </span>
-            </span>
-            {b.id !== newest && (
-              <button type="button" className="text-blue-600 hover:underline dark:text-blue-400" onClick={() => void load()}>
-                Show the latest
-              </button>
-            )}
-            <span className="ml-auto flex gap-2">
-              {picker("Upload a new version", false)}
-              <button type="button" disabled={busy} className={buttonClass} onClick={() => void remove()}>
-                Remove brief
-              </button>
-            </span>
-          </div>
-
-          <div className="flex flex-wrap items-center gap-3 rounded border border-slate-200 p-3 text-sm dark:border-slate-700">
-            <button type="button" disabled={checking || busy} className={primaryClass} onClick={() => void runCheck(false)}>
-              {checking ? "Checking..." : check ? "Check again" : "Check by brief"}
-            </button>
-            {state && (
-              <label className="flex items-center gap-2 text-slate-600 dark:text-slate-400">
-                Model
-                <select
-                  value={model ?? state.model}
-                  disabled={checking}
-                  onChange={(e) => setModel(e.target.value)}
-                  className="rounded border border-slate-300 bg-white px-2 py-1 text-sm dark:border-slate-600 dark:bg-slate-900"
-                >
-                  {state.models.map((m) => (
-                    <option key={m.id} value={m.id}>
-                      {m.label}
-                      {m.id === state.model ? " (default)" : ""}
-                    </option>
-                  ))}
-                </select>
-              </label>
-            )}
-            {checking && <span className="text-slate-500">One model call over the whole brief, usually under a minute.</span>}
-            {check && !checking && (
-              <span className="text-slate-500">
-                Checked {when(check.checked_at)}
-                {check.checked_by ? ` by ${check.checked_by}` : ""} with {modelLabel(check.model)}, ${check.cost_usd.toFixed(4)}.{" "}
-                <button type="button" className="text-blue-600 hover:underline dark:text-blue-400" onClick={() => void runCheck(true)}>
-                  Ask the model again
+              {b.id !== newest && (
+                <button type="button" className="text-blue-600 hover:underline dark:text-blue-400" onClick={() => void load()}>
+                  Show the latest
+                </button>
+              )}
+              <span className="ml-auto flex gap-2">
+                {picker("Upload a new version", false)}
+                <button type="button" disabled={busy} className={buttonClass} onClick={() => void remove()}>
+                  Remove brief
                 </button>
               </span>
-            )}
+            </div>
+            <div className="flex flex-wrap items-center gap-3 p-3">
+              <button type="button" disabled={checking || busy} className={primaryClass} onClick={() => void runCheck(false)}>
+                {checking ? "Checking..." : check ? "Check again" : "Check by brief"}
+              </button>
+              {state && (
+                <label className="flex items-center gap-2 text-slate-600 dark:text-slate-400">
+                  Model
+                  <select
+                    value={model ?? state.model}
+                    disabled={checking}
+                    onChange={(e) => setModel(e.target.value)}
+                    className="rounded border border-slate-300 bg-white px-2 py-1 text-sm dark:border-slate-600 dark:bg-slate-900"
+                  >
+                    {state.models.map((m) => (
+                      <option key={m.id} value={m.id}>
+                        {m.label}
+                        {m.id === state.model ? " (default)" : ""}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+              )}
+              {checking && <span className="text-slate-500">One model call over the whole brief, usually under a minute.</span>}
+              {check && !checking && (
+                <span className="text-slate-500">
+                  Checked {when(check.checked_at)}
+                  {check.checked_by ? ` by ${check.checked_by}` : ""} with {modelLabel(check.model)}, ${check.cost_usd.toFixed(4)}.{" "}
+                  <button type="button" className="text-blue-600 hover:underline dark:text-blue-400" onClick={() => void runCheck(true)}>
+                    Ask the model again
+                  </button>
+                </span>
+              )}
+            </div>
           </div>
           {check?.stale && (
             <p className="max-w-3xl rounded border border-amber-300 bg-amber-50 px-3 py-2 text-sm text-amber-800 dark:border-amber-700 dark:bg-amber-950 dark:text-amber-200">

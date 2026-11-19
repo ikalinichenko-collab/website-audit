@@ -179,10 +179,12 @@ interface Source {
   zones: PageZones;
   html: string | null;
   seo_checks: { id: string; status: string; value?: unknown }[] | null;
+  /** hash of the page's own text (see contentHash), as the check stored it */
+  content_hash: string | null;
 }
 
 async function loadSource(slug: string, runId: string | null): Promise<Source | null> {
-  const cols = "url, report->>'profile' AS profile, zones, html, report->'seo'->'checks' AS seo_checks";
+  const cols = "url, report->>'profile' AS profile, zones, html, report->'seo'->'checks' AS seo_checks, report->>'content_hash' AS content_hash";
   const r =
     runId === null
       ? await db().query<Source>(`SELECT ${cols} FROM page_checks WHERE slug = $1`, [slug])
@@ -275,9 +277,9 @@ export async function checkAgainstBrief(slug: string, runId: string | null, opts
   const result = verify(res.data, brief.rows, src.zones);
   const cost = usageCost(res.usage, model);
   await db().query(
-    `INSERT INTO brief_checks (slug, source, brief_id, hash, model, result, usage, cost_usd, checked_at, checked_by) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, now(), $9)
-     ON CONFLICT (slug, source) DO UPDATE SET brief_id = $3, hash = $4, model = $5, result = $6, usage = $7, cost_usd = $8, checked_at = now(), checked_by = $9`,
-    [slug, runId ?? "", brief.id, hash, model.id, JSON.stringify(result), JSON.stringify(res.usage), cost, opts.by],
+    `INSERT INTO brief_checks (slug, source, brief_id, hash, model, result, usage, cost_usd, checked_at, checked_by, content_hash) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, now(), $9, $10)
+     ON CONFLICT (slug, source) DO UPDATE SET brief_id = $3, hash = $4, model = $5, result = $6, usage = $7, cost_usd = $8, checked_at = now(), checked_by = $9, content_hash = $10`,
+    [slug, runId ?? "", brief.id, hash, model.id, JSON.stringify(result), JSON.stringify(res.usage), cost, opts.by, src.content_hash],
   );
   await logCheck({ kind: "brief", by: opts.by, url: src.url, model: model.id, layers: null, tokens: res.usage, cost, calls: 1, fromSnapshot: runId !== null });
   return (await getBriefCheck(slug, runId))!;

@@ -3,7 +3,7 @@ import { Link, useSearchParams } from "react-router-dom";
 import { api, type JobDetail } from "../api.js";
 import { useRunContext } from "../context/RunContext.js";
 import { getIndex } from "../data.js";
-import type { PageIndexEntry, RunIndexFile } from "../types.js";
+import type { BriefListState, PageIndexEntry, RunIndexFile } from "../types.js";
 import { ActionBadge, Counts, GeoCounts } from "../components/Badges.js";
 import { JobBar } from "../components/JobBar.js";
 import { buttonClass } from "../components/ResourceEditor.js";
@@ -13,6 +13,36 @@ import { ACTION_COLUMNS, GROUP_ORDER } from "../labels.js";
 const when = (iso: string) => new Date(iso).toLocaleString([], { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit" });
 const money = (v: number) => (v === 0 ? "$0" : v < 0.01 ? "<$0.01" : `$${v.toFixed(v < 1 ? 3 : 2)}`);
 const shortPath = (u: string) => u.replace(/^https?:\/\/[^/]+/, "") || "/";
+
+/** The brief of a page in the list: none, loaded, or checked with what is left to fix. Opens the Brief tab of the page. */
+function BriefCell({ to, brief }: { to: string; brief: BriefListState | null }) {
+  if (!brief) return <span className="text-slate-300 dark:text-slate-600" title="No brief is loaded for this page">-</span>;
+  const toFix = brief.partial + brief.missing;
+  return (
+    <div className="text-xs">
+      {brief.checked_at ? (
+        <Link
+          to={to}
+          className={`hover:underline ${toFix === 0 ? "text-emerald-600 dark:text-emerald-400" : "font-medium"}`}
+          title={`${brief.done} done, ${brief.partial} partly, ${brief.missing} missing. Checked ${when(brief.checked_at)}`}
+        >
+          {toFix === 0 ? "all done" : `${toFix} to fix`}
+        </Link>
+      ) : (
+        <Link to={to} className="text-slate-500 hover:underline" title={`${brief.rows} rows loaded ${when(brief.uploaded_at)}`}>
+          not checked
+        </Link>
+      )}
+      {brief.stale && (
+        <div>
+          <span className="inline-block rounded bg-amber-100 px-1.5 py-0.5 font-medium text-amber-900 dark:bg-amber-950 dark:text-amber-200" title="The brief or the page text changed since this check">
+            outdated
+          </span>
+        </div>
+      )}
+    </div>
+  );
+}
 
 /**
  * The pages of a snapshot (`runId` given: shown inside Site Checks, the page links carry it), or the checked pages: the current
@@ -27,6 +57,8 @@ export function PagesTable({ runId: given }: { runId?: string } = {}) {
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [job, setJob] = useState<{ id: string; label: string } | null>(null);
   const [msg, setMsg] = useState<string | null>(null);
+  // progress of the brief checks started from the list ("2 of 5"), null when none runs
+  const [briefBusy, setBriefBusy] = useState<string | null>(null);
 
   const load = useCallback(async () => {
     try {
@@ -54,6 +86,11 @@ export function PagesTable({ runId: given }: { runId?: string } = {}) {
     if (highOnly) l = l.filter((e) => e.compliance.high + e.seo.high > 0);
     if (params.get("mine") === "1") l = l.filter((e) => e.mine);
     if (params.get("changed") === "1") l = l.filter((e) => e.changed === true);
+    const brief = params.get("brief");
+    if (brief === "has") l = l.filter((e) => e.brief);
+    if (brief === "none") l = l.filter((e) => !e.brief);
+    if (brief === "unchecked") l = l.filter((e) => e.brief && !e.brief.checked_at);
+    if (brief === "outdated") l = l.filter((e) => e.brief?.stale);
     if (q) l = l.filter((e) => e.title.toLowerCase().includes(q) || e.url.toLowerCase().includes(q));
     return l.sort(defaultSort);
   }, [index, params]);
@@ -79,6 +116,27 @@ export function PagesTable({ runId: given }: { runId?: string } = {}) {
     } catch (e) {
       setMsg(String(e instanceof Error ? e.message : e));
     }
+  }
+
+  /** The brief check is its own call per page (one model call each); a result that is still current costs nothing. */
+  async function checkBriefs(entries: PageIndexEntry[]) {
+    const withBrief = entries.filter((e) => e.brief);
+    if (!withBrief.length) return;
+    const many = withBrief.length > 1;
+    if (!window.confirm(`Check ${withBrief.length} ${many ? "pages" : "page"} against ${many ? "their briefs" : "its brief"}? One model call each, about $0.006; a result that is still current is reused.`)) return;
+    setMsg(null);
+    const failed: string[] = [];
+    for (const [i, e] of withBrief.entries()) {
+      setBriefBusy(`${i + 1} of ${withBrief.length}`);
+      try {
+        await api.runBriefCheck(e.slug, null, undefined, false);
+      } catch (err) {
+        failed.push(`${shortPath(e.url)}: ${err instanceof Error ? err.message : String(err)}`);
+      }
+    }
+    setBriefBusy(null);
+    await load();
+    setMsg(failed.length ? `Brief check failed for ${failed.length}: ${failed.join("; ")}` : `Brief checked for ${withBrief.length} ${many ? "pages" : "page"}.`);
   }
 
   function jobDone(j: JobDetail) {
@@ -122,7 +180,7 @@ export function PagesTable({ runId: given }: { runId?: string } = {}) {
   const field = "rounded border border-slate-300 bg-white px-2 py-1 text-sm dark:border-slate-600 dark:bg-slate-900";
   const changedEntries = index.pages.filter((e) => e.changed === true);
   const selectedEntries = index.pages.filter((e) => selected.has(e.slug));
-  const busy = !!job;
+  const busy = !!job || !!briefBusy;
   const allShown = list.length > 0 && list.every((e) => selected.has(e.slug));
 
   return (
@@ -175,6 +233,13 @@ export function PagesTable({ runId: given }: { runId?: string } = {}) {
               <input type="checkbox" checked={params.get("changed") === "1"} onChange={(e) => set("changed", e.target.checked ? "1" : "")} />
               Changed since checked ({changedEntries.length})
             </label>
+            <select className={field} value={params.get("brief") ?? ""} onChange={(e) => set("brief", e.target.value)} title="The content brief of the page">
+              <option value="">Any brief</option>
+              <option value="has">Has a brief</option>
+              <option value="none">No brief</option>
+              <option value="unchecked">Brief not checked</option>
+              <option value="outdated">Brief check outdated</option>
+            </select>
           </>
         )}
         <input className={`${field} w-64`} placeholder="Search title or URL" value={params.get("q") ?? ""} onChange={(e) => set("q", e.target.value)} />
@@ -188,6 +253,9 @@ export function PagesTable({ runId: given }: { runId?: string } = {}) {
           </button>
           <button type="button" className={buttonClass} disabled={busy || changedEntries.length === 0} onClick={() => void recheck(changedEntries)} title="Pages whose text in the latest snapshot differs from when they were checked">
             Recheck changed ({changedEntries.length})
+          </button>
+          <button type="button" className={buttonClass} disabled={busy || selectedEntries.every((e) => !e.brief)} onClick={() => void checkBriefs(selectedEntries)} title="Separate from the recheck: one model call per page that has a brief">
+            {briefBusy ? `Checking briefs ${briefBusy}...` : `Check by brief (${selectedEntries.filter((e) => e.brief).length})`}
           </button>
           <span className="text-xs text-slate-500">Several pages are rechecked with all layers and the default model.</span>
           <span className="ml-auto flex gap-3">
@@ -223,6 +291,7 @@ export function PagesTable({ runId: given }: { runId?: string } = {}) {
               {showCompliance && <th className="px-3 py-2">Compliance</th>}
               <th className="px-3 py-2">GEO</th>
               <th className="px-3 py-2">SEO</th>
+              {checkMode && <th className="px-3 py-2">Brief</th>}
               {checkMode && <th className="px-3 py-2">Checked</th>}
               {checkMode && <th className="px-3 py-2" />}
             </tr>
@@ -262,7 +331,7 @@ export function PagesTable({ runId: given }: { runId?: string } = {}) {
                   </td>
                 )}
                 {showCompliance && (
-                  <td className="px-3 py-2">
+                  <td className="whitespace-nowrap px-3 py-2">
                     {e.compliance.error && checkMode ? (
                       <span className="text-xs text-slate-400" title={e.compliance.error}>
                         not checked
@@ -272,7 +341,7 @@ export function PagesTable({ runId: given }: { runId?: string } = {}) {
                     )}
                   </td>
                 )}
-                <td className="px-3 py-2">
+                <td className="whitespace-nowrap px-3 py-2">
                   {e.geo.error && checkMode ? (
                     <span className="text-xs text-slate-400" title={e.geo.error}>
                       not checked
@@ -285,9 +354,14 @@ export function PagesTable({ runId: given }: { runId?: string } = {}) {
                     />
                   )}
                 </td>
-                <td className="px-3 py-2">
+                <td className="whitespace-nowrap px-3 py-2">
                   <Counts {...e.seo} off={!layers.seo} />
                 </td>
+                {checkMode && (
+                  <td className="whitespace-nowrap px-3 py-2">
+                    <BriefCell to={`/pages/${encodeURIComponent(e.slug)}?tab=brief`} brief={e.brief ?? null} />
+                  </td>
+                )}
                 {checkMode && (
                   <td className="whitespace-nowrap px-3 py-2">
                     <div className="tabular-nums">{when(e.checked_at)}</div>

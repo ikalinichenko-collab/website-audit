@@ -81,6 +81,20 @@ export interface PageIndexEntry {
   changed?: boolean | null;
   /** the person looking checked it */
   mine?: boolean;
+  /** checked pages only: the page's content brief and the check against it (null: no brief) */
+  brief?: BriefListState | null;
+}
+
+/** Same shape as `BriefListState` in src/run-output.ts. */
+export interface BriefListState {
+  rows: number;
+  uploaded_at: string;
+  checked_at: string | null;
+  done: number;
+  partial: number;
+  missing: number;
+  /** the brief or the page text changed since the check */
+  stale: boolean;
 }
 
 /** Same shape as `Spending` in src/page-checks.ts. */
