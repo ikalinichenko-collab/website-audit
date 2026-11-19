@@ -13,7 +13,10 @@ export function db(): pg.Pool {
   if (!pool) {
     const url = process.env.DATABASE_URL;
     if (!url) throw new Error("DATABASE_URL is not set. Start the local database (docker compose up -d) and add DATABASE_URL to .env");
-    pool = new pg.Pool({ connectionString: url, max: 8 });
+    // a hosted Postgres may close connections (restart, scale to zero): drop idle ones early and keep the rest alive
+    pool = new pg.Pool({ connectionString: url, max: 8, keepAlive: true, idleTimeoutMillis: 30_000 });
+    // an idle client that the server closed emits "error" on the pool: unhandled, it would stop the process
+    pool.on("error", (e) => console.error("database connection error (idle client):", e.message));
   }
   return pool;
 }

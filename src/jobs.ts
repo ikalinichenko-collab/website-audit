@@ -115,9 +115,17 @@ export function parseUrls(text: string): { urls: string[]; rejected: string[] } 
 /** Starts a job in the background. Only one job runs at a time. */
 export async function startJob(options: JobOptions, startedBy: string | null = null): Promise<Job> {
   if (runningId) throw new Error("Another audit is already running");
+  // take the slot before the first await: two quick requests must not both pass the check
+  runningId = "starting";
   const started = new Date();
-  const ins = await db().query<{ id: string }>("INSERT INTO jobs (status, started_at, options, started_by) VALUES ('running', $1, $2, $3) RETURNING id::text", [started, JSON.stringify(options), startedBy]);
-  const id = ins.rows[0]!.id;
+  let id: string;
+  try {
+    const ins = await db().query<{ id: string }>("INSERT INTO jobs (status, started_at, options, started_by) VALUES ('running', $1, $2, $3) RETURNING id::text", [started, JSON.stringify(options), startedBy]);
+    id = ins.rows[0]!.id;
+  } catch (e) {
+    runningId = null;
+    throw e;
+  }
   runningId = id;
   stopRequested = false;
 
