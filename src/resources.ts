@@ -402,9 +402,34 @@ export async function loadResources(): Promise<void> {
   if (seeded.length) console.log(`Editable files copied into the database: ${seeded.join(", ")}`);
   await syncLockedQuestions();
   await addMissingKeys();
+  await syncRepoOwned();
 }
 
-const KEY_SYNCED = ["seo", "geo", "checks", "compliance", "settings"];
+/** Owned by the repo on a deployment: people there do not edit these, so the repo file wins at every start. */
+const REPO_OWNED = ["compliance-prompt", "geo-prompt", "brief-prompt", "geo", "checks", "settings"];
+
+/**
+ * With RESOURCES_FROM_REPO=1 (set on the deployment only; locally the app's edits live in the database until they
+ * are exported to the files) the repo-owned files replace the stored text when they differ. The earlier text stays
+ * in the history. Documents, GEO questions, SEO and compliance severity belong to the people there and are not touched.
+ */
+async function syncRepoOwned(): Promise<void> {
+  if (process.env.RESOURCES_FROM_REPO !== "1") return;
+  for (const id of REPO_OWNED) {
+    const r = findResource(id)!;
+    try {
+      const text = fs.readFileSync(path.join(projectRoot(), r.file), "utf8").replace(/\r\n/g, "\n");
+      if (resourceText(r.file).replace(/\r\n/g, "\n") === text) continue;
+      validateResource(r, text);
+      await saveVersion(r, text, "seed");
+      console.log(`${r.file}: replaced from the repo file`);
+    } catch (e) {
+      console.warn(`${r.file}: not replaced from the repo file (${(e as Error).message})`);
+    }
+  }
+}
+
+const KEY_SYNCED = ["seo", "compliance"];
 
 /** Adds the keys of `base` that `saved` lacks, at any depth in objects; arrays and existing values stay as saved. */
 function fillMissing(saved: Record<string, unknown>, base: Record<string, unknown>, at: string, added: string[]): void {
