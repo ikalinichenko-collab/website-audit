@@ -225,11 +225,19 @@ export function fragmentForQuote(html: string, settings: Settings, quote: string
   return findFragmentForQuote(html, settings, quote, partText);
 }
 
-export function encodeTextFragment(text: string): string {
+/** Percent-encodes one part of a text directive: `-`, `,` and `&` are the directive's own syntax. */
+function encodeDirectivePart(text: string): string {
   return encodeURIComponent(text)
     .replace(/-/g, "%2D")
     .replace(/,/g, "%2C")
     .replace(/&/g, "%26");
+}
+
+/** `prefix-,text,-suffix` keeps its `-,` and `,-` separators literal; only the parts are encoded (encoded separators would be searched as text). */
+export function encodeTextFragment(text: string): string {
+  const m = text.match(/^(?:([\s\S]*?)-,)?([\s\S]*?)(?:,-([\s\S]*))?$/)!;
+  const [, prefix, main, suffix] = m;
+  return (prefix !== undefined ? encodeDirectivePart(prefix) + "-," : "") + encodeDirectivePart(main!) + (suffix !== undefined ? ",-" + encodeDirectivePart(suffix) : "");
 }
 
 export function textFragmentUrl(pageUrl: string, fragmentText: string): string {

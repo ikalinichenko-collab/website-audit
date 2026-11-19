@@ -2,7 +2,7 @@ import OpenAI from "openai";
 import type { Settings, TokenUsage } from "./types.js";
 import { loadSourcesText } from "./config.js";
 
-export type LlmLayer = "compliance" | "geo";
+export type LlmLayer = "compliance" | "geo" | "brief";
 
 export const geoZoneSchema = {
   type: "object",
@@ -137,7 +137,8 @@ function reasoningForLayer(settings: Settings, layer: LlmLayer): string | undefi
   const re = settings.llm.reasoning_effort;
   if (!re) return undefined;
   if (typeof re === "string") return re;
-  return re[layer];
+  // the brief check has no setting of its own unless one is added: it reads like Compliance does
+  return re[layer] ?? (layer === "brief" ? re.compliance : undefined);
 }
 
 function parseUsage(completion: OpenAI.Chat.ChatCompletion): TokenUsage {
@@ -248,4 +249,89 @@ export function createOpenAiClient(): OpenAI | null {
   const key = process.env.OPENAI_API_KEY;
   if (!key) return null;
   return new OpenAI({ apiKey: key });
+}
+
+export const briefCheckSchema = {
+  type: "object",
+  properties: {
+    summary: { type: "string" },
+    rows: {
+      type: "array",
+      items: {
+        type: "object",
+        properties: {
+          row: { type: "integer" },
+          title: { type: "string" },
+          status: { type: "string", enum: ["done", "partial", "missing", "not_applicable", "covered"] },
+          explanation: { type: "string" },
+          fix: { type: ["string", "null"] },
+          covered_by: { type: ["string", "null"] },
+          points: {
+            type: "array",
+            items: {
+              type: "object",
+              properties: {
+                text: { type: "string" },
+                status: { type: "string", enum: ["done", "partial", "missing"] },
+                note: { type: "string" },
+              },
+              required: ["text", "status", "note"],
+              additionalProperties: false,
+            },
+          },
+          evidence: {
+            type: "array",
+            items: {
+              type: "object",
+              properties: { zone_id: { type: "string" }, quote: { type: "string" } },
+              required: ["zone_id", "quote"],
+              additionalProperties: false,
+            },
+          },
+        },
+        required: ["row", "title", "status", "explanation", "fix", "covered_by", "points", "evidence"],
+        additionalProperties: false,
+      },
+    },
+  },
+  required: ["summary", "rows"],
+  additionalProperties: false,
+} as const;
+
+export interface BriefCheckRaw {
+  summary: string;
+  rows: {
+    row: number;
+    title: string;
+    status: "done" | "partial" | "missing" | "not_applicable" | "covered";
+    explanation: string;
+    fix: string | null;
+    covered_by: string | null;
+    points: { text: string; status: "done" | "partial" | "missing"; note: string }[];
+    evidence: { zone_id: string; quote: string }[];
+  }[];
+}
+
+/**
+ * The check of a page against its brief: one call. The brief goes in the stable system part (with the instruction),
+ * the page in the user message, so a repeat check of the same brief is cached by the provider.
+ */
+export async function runBriefCheck(
+  client: OpenAI,
+  settings: Settings,
+  instruction: string,
+  briefText: string,
+  payload: Record<string, unknown>,
+): Promise<{ data: BriefCheckRaw | null; usage: TokenUsage; error: string | null }> {
+  try {
+    const { data, usage } = await withRetry(() =>
+      callStructured<BriefCheckRaw>(client, settings, "brief", instruction, payload, briefText, {
+        name: "audit_brief_check",
+        schema: briefCheckSchema as unknown as Record<string, unknown>,
+      }),
+    );
+    return { data, usage, error: null };
+  } catch (e) {
+    return { data: null, usage: { input: 0, cached_input: 0, output: 0 }, error: e instanceof Error ? e.message : String(e) };
+  }
 }

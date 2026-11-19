@@ -104,6 +104,14 @@ export const RESOURCES: Resource[] = [
     kind: "markdown",
     description: "Instruction for the GEO LLM call. Keep {{report_language}} and {{questions}}.",
   },
+  {
+    id: "brief-prompt",
+    group: "prompts",
+    label: "Brief check prompt",
+    file: "prompts/brief-check.md",
+    kind: "markdown",
+    description: "Instruction for the check of a page against its brief. Keep {{report_language}}.",
+  },
 ];
 
 const MAX_BYTES = 2 * 1024 * 1024;
@@ -171,6 +179,7 @@ export function validateResource(r: Resource, content: string): void {
   if (!content.trim()) fail("File is empty");
   if (r.kind === "markdown") {
     if (r.id === "compliance-prompt" && !content.includes("{{report_language}}")) fail("The prompt must keep the {{report_language}} placeholder");
+    if (r.id === "brief-prompt" && !content.includes("{{report_language}}")) fail("The prompt must keep the {{report_language}} placeholder");
     if (r.id === "geo-prompt") {
       if (!content.includes("{{report_language}}")) fail("The prompt must keep the {{report_language}} placeholder");
       if (!content.includes("{{questions}}")) fail("The prompt must keep the {{questions}} placeholder");

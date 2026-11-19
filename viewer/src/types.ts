@@ -367,3 +367,32 @@ export interface BriefInfo {
   current: Brief | null;
   versions: BriefVersion[];
 }
+
+export type BriefStatus = "done" | "partial" | "missing" | "not_applicable" | "covered";
+
+/** The check of a page against its brief (src/brief-check.ts). */
+export interface BriefCheckRecord {
+  slug: string;
+  source: string;
+  brief_id: number;
+  model: string;
+  checked_at: string;
+  checked_by: string | null;
+  cost_usd: number;
+  /** the brief or the page changed since this check */
+  stale: boolean;
+  result: {
+    summary: string;
+    rows: {
+      row: number;
+      title: string;
+      status: BriefStatus;
+      explanation: string;
+      fix: string | null;
+      /** "seo:<check id>" or "geo:<check id>" */
+      covered_by: string | null;
+      points: { text: string; status: "done" | "partial" | "missing"; note: string }[];
+      evidence: { zone_id: string; part: string | null; quote: string; verified: boolean }[];
+    }[];
+  };
+}

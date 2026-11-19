@@ -42,8 +42,15 @@ export function defaultSort(a: PageIndexEntry, b: PageIndexEntry): number {
   return b.compliance.high - a.compliance.high;
 }
 
-export function encodeTextFragment(text: string): string {
+function encodeDirectivePart(text: string): string {
   return encodeURIComponent(text).replace(/-/g, "%2D").replace(/,/g, "%2C").replace(/&/g, "%26");
+}
+
+/** Same rule as `encodeTextFragment` in src/quote-fragments.ts: the `-,` and `,-` separators of `prefix-,text,-suffix` stay literal. */
+export function encodeTextFragment(text: string): string {
+  const m = text.match(/^(?:([\s\S]*?)-,)?([\s\S]*?)(?:,-([\s\S]*))?$/)!;
+  const [, prefix, main, suffix] = m;
+  return (prefix !== undefined ? encodeDirectivePart(prefix) + "-," : "") + encodeDirectivePart(main!) + (suffix !== undefined ? ",-" + encodeDirectivePart(suffix) : "");
 }
 
 export function showOnPageUrl(pageUrl: string, fragment: string | null): string | null {

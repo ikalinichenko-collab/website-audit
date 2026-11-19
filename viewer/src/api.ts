@@ -1,4 +1,4 @@
-import type { BriefInfo, FindingStatus, Layers } from "./types.js";
+import type { BriefCheckRecord, BriefInfo, FindingStatus, Layers } from "./types.js";
 
 export interface ResourceInfo {
   id: string;
@@ -163,6 +163,11 @@ export const api = {
   /** Uploads the CSV of a brief as a new version; the warning says when the file does not seem to be for this page. */
   saveBrief: (slug: string, url: string, filename: string, content: string) =>
     call<{ id: number; rows: number; warning: string | null }>("PUT", `/api/briefs/${encodeURIComponent(slug)}`, { url, filename, content }),
+  briefCheck: (slug: string, runId: string | null) =>
+    call<BriefCheckRecord | null>("GET", `/api/briefs/${encodeURIComponent(slug)}/check${runId ? `?run=${encodeURIComponent(runId)}` : ""}`),
+  /** One model call; the same brief, page text and model give the stored result back at no cost unless `force`. */
+  runBriefCheck: (slug: string, runId: string | null, model: string | undefined, force: boolean) =>
+    call<BriefCheckRecord>("POST", `/api/briefs/${encodeURIComponent(slug)}/check`, { ...(runId ? { run_id: runId } : {}), ...(model ? { model } : {}), force }),
   deleteBrief: (slug: string) => call<{ deleted: string }>("DELETE", `/api/briefs/${encodeURIComponent(slug)}`),
   deleteRun: (id: string) => call<{ deleted: string }>("DELETE", `/api/runs/${encodeURIComponent(id)}`),
 };

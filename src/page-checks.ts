@@ -196,7 +196,7 @@ export async function getCheckFindings(slug: string): Promise<{ findings: Findin
 // ---- what the checks cost -------------------------------------------------------------------
 
 export interface LogCheck {
-  kind: "page" | "site_llm";
+  kind: "page" | "site_llm" | "brief";
   by: string | null;
   url: string;
   model: string | null;

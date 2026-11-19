@@ -132,9 +132,16 @@ function PlaceLine({ place, hideZone }: { place: Place; hideZone?: boolean }) {
         {!f.verified && <span className="text-xs text-amber-600">not found in this zone</span>}
         <span className="ml-auto text-xs">
           {link ? (
-            <a href={link} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline dark:text-blue-400">
-              show on page
-            </a>
+            <>
+              {/^block:accordion/.test(f.zone_id) && (
+                <span className="mr-2 text-slate-400" title="The browser cannot highlight text inside a closed accordion item: open the item first.">
+                  in a FAQ item: open it first
+                </span>
+              )}
+              <a href={link} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline dark:text-blue-400">
+                show on page
+              </a>
+            </>
           ) : (
             f.url !== "site" &&
             !headKind &&

@@ -26,6 +26,7 @@ import { rememberUser } from "./users.js";
 import { authRequired, checkAuthConfig, currentUser, handleAuth, sameOrigin, type User } from "./auth.js";
 import * as store from "./store.js";
 import { deleteBrief, getBrief, saveBrief } from "./briefs.js";
+import { checkAgainstBrief, getBriefCheck } from "./brief-check.js";
 import { checksCsv, deleteCheck, getChecksIndex, getSpending } from "./page-checks.js";
 
 const ROOT = projectRoot();
@@ -338,6 +339,29 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
     if (method === "DELETE") {
       if (!(await deleteBrief(slug))) send(res, 404, { error: "Not found" });
       else send(res, 200, { deleted: slug });
+      return;
+    }
+  }
+
+  // the check of a page against its brief: the stored result (GET) and a new check (POST, one model call)
+  if (parts[0] === "briefs" && parts[1] && /^[A-Za-z0-9._~-]+$/.test(parts[1]) && parts.length === 3 && parts[2] === "check") {
+    const slug = parts[1];
+    const runOf = (v: unknown): string | null => {
+      if (v === undefined || v === null || v === "") return null;
+      if (typeof v !== "string" || !/^[0-9TZ-]+$/.test(v)) throw new ValidationError("Bad run id");
+      return v;
+    };
+    if (method === "GET") {
+      send(res, 200, await getBriefCheck(slug, runOf(url.searchParams.get("run"))));
+      return;
+    }
+    if (method === "POST") {
+      const body = await readJson<{ run_id?: string; model?: string; force?: boolean }>(req);
+      try {
+        send(res, 200, await checkAgainstBrief(slug, runOf(body.run_id), { ...(body.model ? { model: String(body.model) } : {}), force: body.force === true, by: user.email }));
+      } catch (e) {
+        throw new ValidationError(e instanceof Error ? e.message : String(e));
+      }
       return;
     }
   }

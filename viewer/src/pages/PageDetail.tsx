@@ -459,7 +459,7 @@ export function PageDetail() {
       ) : tab === "seo" ? (
         layerBody("seo", <FindingList findings={of("seo")} empty="No SEO problems." />)
       ) : tab === "brief" ? (
-        <BriefTab slug={slug} url={page.final_url || page.url} onRows={setBriefRows} />
+        <BriefTab slug={slug} url={page.final_url || page.url} runId={runId} onRows={setBriefRows} onOpenTab={setPicked} />
       ) : (
         <div className="space-y-2">
           <Note>{NOT_FOUND_HINT}</Note>

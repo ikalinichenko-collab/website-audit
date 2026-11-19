@@ -126,7 +126,7 @@ export function verifyRule(rule: string): boolean {
   return sourceHeadings().some((h) => r.includes(h));
 }
 
-function locate(zone: Zone | undefined, quote: string): { verified: boolean; part: string | null } {
+export function locate(zone: Zone | undefined, quote: string): { verified: boolean; part: string | null } {
   if (!zone) return { verified: false, part: null };
   const q = norm(quote);
   if (!q) return { verified: false, part: null };

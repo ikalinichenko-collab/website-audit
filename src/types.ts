@@ -33,6 +33,8 @@ export const ALL_LAYERS: Layers = { compliance: true, geo: true, seo: true };
 export interface Settings {
   /** how many of the newest snapshots keep their stored HTML and zones (3 when absent) */
   snapshot_keep_full?: number;
+  /** the check against a brief: `skip_from` lists headings of brief blocks that are not about the page; the model never sees that row or the rows after it */
+  brief?: { skip_from?: string[] };
   base_url: string;
   sitemap: string;
   exclude_url_patterns: string[];
@@ -40,7 +42,7 @@ export interface Settings {
   llm: {
     provider: string;
     model: string;
-    reasoning_effort?: string | { compliance?: string; geo?: string };
+    reasoning_effort?: string | { compliance?: string; geo?: string; brief?: string };
     max_output_tokens: number;
     /** Pages processed in parallel (LLM calls are slow). */
     concurrency?: number;
