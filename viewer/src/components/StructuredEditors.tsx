@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { api, type GeoTryResult, type GeoTypeGroup } from "../api.js";
 import { Notice, HistoryList, buttonClass, primaryClass, useResource } from "./ResourceEditor.js";
 import { useUnsaved } from "../unsaved.js";
@@ -65,6 +65,25 @@ function typePages(g: GeoTypeGroup | undefined): string {
   return g.items.flatMap((x) => x.paths.map((p) => p.replace(/\*$/, ""))).join(", ");
 }
 
+/** The paths behind the page types of a question, folded: the type names are enough for most readers. */
+function TypePagesList({ groups, keys }: { groups: GeoTypeGroup[]; keys: readonly string[] }) {
+  return (
+    <details className="w-full text-xs text-slate-500">
+      <summary className="cursor-pointer hover:text-slate-700 dark:hover:text-slate-300">Which pages are these?</summary>
+      <dl className="mt-1 grid gap-x-4 gap-y-1 sm:grid-cols-[max-content_1fr]">
+        {GEO_TYPES.filter(([k]) => keys.includes(k)).map(([k, label]) => (
+          <Fragment key={k}>
+            <dt className="font-medium text-slate-700 dark:text-slate-300">{label}</dt>
+            <dd className="break-words">{typePages(groups.find((g) => g.type === k))}</dd>
+          </Fragment>
+        ))}
+      </dl>
+    </details>
+  );
+}
+
+const TYPE_CHIP = "rounded-full border border-slate-300 px-2.5 py-0.5 text-xs font-medium dark:border-slate-600";
+
 /** Drops empty and default fields, so the file stays short and "unsaved changes" compares like with like. */
 function cleanQuestion(q: GeoQuestion): GeoQuestion {
   if (q.locked) return q;
@@ -103,14 +122,14 @@ function LockedQuestion({ q, tried, onTry, groups }: { q: GeoQuestion; tried?: T
         </button>
       </div>
       <p className="whitespace-pre-wrap text-sm text-slate-700 dark:text-slate-300">{q.question}</p>
-      <div className="flex flex-wrap items-start gap-x-6 gap-y-2 text-sm">
+      <div className="flex flex-wrap items-center gap-2 text-sm">
         <span className="text-slate-500">Applies to:</span>
         {GEO_TYPES.filter(([k]) => q.applies_to.includes(k)).map(([k, label]) => (
-          <span key={k} className="max-w-56">
+          <span key={k} className={`${TYPE_CHIP} bg-slate-50 dark:bg-slate-800`} title={typePages(groups.find((g) => g.type === k))}>
             {label}
-            <span className="block text-xs text-slate-500">{typePages(groups.find((g) => g.type === k))}</span>
           </span>
         ))}
+        <TypePagesList groups={groups} keys={q.applies_to} />
       </div>
       {GEO_HELP[q.id] && <p className="text-xs text-slate-500">{GEO_HELP[q.id]}</p>}
       {tried && <TryResult t={tried} />}
@@ -270,12 +289,15 @@ export function GeoQuestionsEditor() {
                   placeholder='Write it so that "yes" means the page is fine.'
                   onChange={(e) => update(i, { question: e.target.value })}
                 />
-                <div className="flex flex-wrap items-start gap-x-6 gap-y-2 text-sm">
+                <div className="flex flex-wrap items-center gap-2 text-sm">
                   <span className="text-slate-500">Applies to:</span>
                   {GEO_TYPES.map(([key, label]) => (
-                    <label key={key} className="grid max-w-56 grid-cols-[auto_1fr] gap-x-1">
+                    <label
+                      key={key}
+                      title={typePages(typeGroups.find((g) => g.type === key))}
+                      className={`${TYPE_CHIP} flex cursor-pointer items-center gap-1.5 ${q.applies_to.includes(key) ? "border-blue-500 bg-blue-50 text-blue-800 dark:bg-blue-950/40 dark:text-blue-200" : "text-slate-600 dark:text-slate-400"}`}
+                    >
                       <input
-                        className="mt-1"
                         type="checkbox"
                         checked={q.applies_to.includes(key)}
                         onChange={(e) =>
@@ -283,9 +305,9 @@ export function GeoQuestionsEditor() {
                         }
                       />
                       {label}
-                      <span className="col-start-2 text-xs text-slate-500">{typePages(typeGroups.find((g) => g.type === key))}</span>
                     </label>
                   ))}
+                  <TypePagesList groups={typeGroups} keys={GEO_TYPES.map(([k]) => k)} />
                 </div>
                 <div className="flex flex-wrap items-center gap-3 text-sm">
                   <label className="flex items-center gap-1" title="Asks the question a second time when the answer is no. The finding stands only if the second answer is no too. One extra model call on every page where the first answer is no.">

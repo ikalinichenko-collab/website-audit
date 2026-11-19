@@ -11,6 +11,7 @@ import { actionKey, defaultSort } from "../utils.js";
 import { ACTION_COLUMNS, GROUP_ORDER } from "../labels.js";
 import { Loading } from "../components/Loading.js";
 import { Help } from "../components/Help.js";
+import { LAYER_HEAD, type TileKind } from "../components/ReportParts.js";
 
 const when = (iso: string) => new Date(iso).toLocaleString([], { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit" });
 const money = (v: number) => (v === 0 ? "$0" : v < 0.01 ? "<$0.01" : `$${v.toFixed(v < 1 ? 3 : 2)}`);
@@ -219,8 +220,8 @@ export function PagesTable({ runId: given }: { runId?: string } = {}) {
   const sortedBy = params.get("sort");
   const arrow = (k: string) => (sortedBy === k ? (params.get("dir") === "asc" ? " ▲" : " ▼") : "");
   /** A column title that sorts the table. */
-  const th = (k: string, label: string) => (
-    <th className="px-3 py-2" aria-sort={sortedBy === k ? (params.get("dir") === "asc" ? "ascending" : "descending") : "none"}>
+  const th = (k: string, label: string, kind?: TileKind) => (
+    <th className={`px-3 py-2 ${kind ? LAYER_HEAD[kind] : ""}`} aria-sort={sortedBy === k ? (params.get("dir") === "asc" ? "ascending" : "descending") : "none"}>
       <button type="button" className="font-semibold uppercase hover:text-slate-900 dark:hover:text-slate-100" onClick={() => sortBy(k)} title="Sort by this column">
         {label}
         {arrow(k)}
@@ -345,10 +346,10 @@ export function PagesTable({ runId: given }: { runId?: string } = {}) {
               {th("title", "Page")}
               {th("group", "Group")}
               {showCompliance && th("action", "Action")}
-              {showCompliance && th("compliance", "Compliance")}
-              {th("geo", "GEO")}
-              {th("seo", "SEO")}
-              {checkMode && th("brief", "Brief")}
+              {showCompliance && th("compliance", "Compliance", "compliance")}
+              {th("geo", "GEO", "geo")}
+              {th("seo", "SEO", "seo")}
+              {checkMode && th("brief", "Brief", "brief")}
               {checkMode && th("checked", "Checked")}
               {checkMode && <th className="px-3 py-2" />}
             </tr>

@@ -30,6 +30,22 @@ const STYLE: Record<TileKind, { top: string; name: string; selected: string; tag
   },
 };
 
+/** The colour of a layer in table headers: an inner edge on top (a border would merge with its neighbours in a table) and the name in the layer's colour. */
+export const LAYER_HEAD: Record<TileKind, string> = {
+  compliance: "shadow-[inset_0_3px_0_0_#2563eb] text-blue-700 dark:text-blue-300",
+  geo: "shadow-[inset_0_3px_0_0_#0d9488] text-teal-700 dark:text-teal-300",
+  seo: "shadow-[inset_0_3px_0_0_#475569] text-slate-700 dark:text-slate-300",
+  brief: "shadow-[inset_0_3px_0_0_#7c3aed] text-violet-700 dark:text-violet-300",
+};
+
+/** The same for a card: a coloured edge on top. */
+export const LAYER_CARD: Record<TileKind, string> = {
+  compliance: "border-t-4 border-t-blue-600 text-blue-700 dark:text-blue-300",
+  geo: "border-t-4 border-t-teal-600 text-teal-700 dark:text-teal-300",
+  seo: "border-t-4 border-t-slate-600 text-slate-700 dark:text-slate-300",
+  brief: "border-t-4 border-t-violet-600 text-violet-700 dark:text-violet-300",
+};
+
 const SEV: Record<string, string> = {
   high: "bg-red-100 text-red-800 dark:bg-red-950 dark:text-red-200",
   medium: "bg-amber-100 text-amber-900 dark:bg-amber-950 dark:text-amber-200",

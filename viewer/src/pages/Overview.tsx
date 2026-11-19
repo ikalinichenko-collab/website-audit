@@ -6,11 +6,12 @@ import { ACTION_COLUMNS, GROUP_ORDER } from "../labels.js";
 import { Counts, GeoCounts } from "../components/Badges.js";
 import { formatTokens } from "../utils.js";
 import { Loading } from "../components/Loading.js";
+import { LAYER_CARD, LAYER_HEAD, type TileKind } from "../components/ReportParts.js";
 
-function Card({ title, children }: { title: string; children: React.ReactNode }) {
+function Card({ title, kind, children }: { title: string; kind?: TileKind; children: React.ReactNode }) {
   return (
-    <div className="rounded-lg border border-slate-200 bg-white p-4 dark:border-slate-700 dark:bg-slate-900">
-      <div className="text-xs uppercase text-slate-500">{title}</div>
+    <div className={`rounded-lg border border-slate-200 bg-white p-4 dark:border-slate-700 dark:bg-slate-900 ${kind ? LAYER_CARD[kind] : ""}`}>
+      <div className={`text-xs font-semibold uppercase ${kind ? "" : "text-slate-500"}`}>{title}</div>
       <div className="mt-1 text-2xl font-semibold">{children}</div>
     </div>
   );
@@ -153,19 +154,31 @@ export function Overview() {
   const t = index.totals;
   const layers: Layers = index.layers ?? { compliance: true, geo: true, seo: true };
   const changed = index.pages.filter((p) => p.changed === true).length;
+  // the brief is a check of its own: pages that have one, and what is left to fix in the checked ones
+  const withBrief = index.pages.filter((p) => p.brief).length;
+  const briefToFix = index.pages.reduce((n, p) => n + (p.brief ? p.brief.partial + p.brief.missing : 0), 0);
 
   return (
     <div className="space-y-6">
-      <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-5">
         <Card title="Pages checked">{t.pages}</Card>
-        <Card title="Compliance (high / medium / low)">
+        <Card kind="compliance" title="Compliance (high / medium / low)">
           <Counts {...t.compliance} off={!layers.compliance} />
         </Card>
-        <Card title={t.geo_sev ? "GEO (high / medium / low)" : "GEO to fix"}>
+        <Card kind="geo" title={t.geo_sev ? "GEO (high / medium / low)" : "GEO to fix"}>
           <GeoCounts total={t.geo} sev={t.geo_sev} off={!layers.geo} />
         </Card>
-        <Card title="SEO (high / medium / low)">
+        <Card kind="seo" title="SEO (high / medium / low)">
           <Counts {...t.seo} off={!layers.seo} />
+        </Card>
+        <Card kind="brief" title="Brief (separate check)">
+          {withBrief === 0 ? (
+            <span className="text-base font-medium text-slate-400">no briefs yet</span>
+          ) : (
+            <>
+              {briefToFix} <small className="text-sm font-medium text-slate-500">to fix on {withBrief} {withBrief === 1 ? "page" : "pages"}</small>
+            </>
+          )}
         </Card>
       </div>
       <p className="text-sm text-slate-600 dark:text-slate-400">
@@ -186,9 +199,9 @@ export function Overview() {
             <tr>
               <th className="px-3 py-2">Group</th>
               <th className="px-3 py-2">Pages</th>
-              <th className="px-3 py-2">Compliance</th>
-              <th className="px-3 py-2">GEO</th>
-              <th className="px-3 py-2">SEO</th>
+              <th className={`px-3 py-2 ${LAYER_HEAD.compliance}`}>Compliance</th>
+              <th className={`px-3 py-2 ${LAYER_HEAD.geo}`}>GEO</th>
+              <th className={`px-3 py-2 ${LAYER_HEAD.seo}`}>SEO</th>
               {ACTION_COLUMNS.map((a) => (
                 <th key={a.key} className="px-3 py-2">
                   {a.label}

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { Fragment, useCallback, useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { api } from "../api.js";
 import { buttonClass } from "../components/ResourceEditor.js";
@@ -251,9 +251,13 @@ function SitemapTable({ site }: { site: SiteReport }) {
   );
 }
 
-type Tab = "audit" | "pages" | "snapshots";
+/** One row of tabs: the four parts of the audit, then the pages and the snapshots themselves. */
+type Tab = "summary" | "checks" | "template" | "coverage" | "pages" | "snapshots";
 const TABS: { key: Tab; label: string }[] = [
-  { key: "audit", label: "Audit" },
+  { key: "summary", label: "Summary" },
+  { key: "checks", label: "All checks" },
+  { key: "template", label: "Template text" },
+  { key: "coverage", label: "Coverage and sitemap" },
   { key: "pages", label: "Pages in the snapshot" },
   { key: "snapshots", label: "Snapshots" },
 ];
@@ -318,10 +322,12 @@ export function SiteView() {
   const { snapshots: allSnapshots, loading } = useRunContext();
   const snapshots = allSnapshots.filter((r) => r.status === "done");
   const [params, setParams] = useSearchParams();
-  const tab: Tab = (TABS.find((t) => t.key === params.get("tab"))?.key ?? "audit") as Tab;
+  // "audit" was the old name of the first tab
+  const asked = params.get("tab") === "audit" ? "summary" : params.get("tab");
+  const tab: Tab = (TABS.find((t) => t.key === asked)?.key ?? "summary") as Tab;
   const setTab = (t: Tab) => {
     const next = new URLSearchParams(params);
-    if (t === "audit") next.delete("tab");
+    if (t === "summary") next.delete("tab");
     else next.set("tab", t);
     setParams(next, { replace: true });
   };
@@ -379,27 +385,31 @@ export function SiteView() {
   const origin = Object.keys(site.basics.sitemaps)[0]?.match(/^https?:\/\/[^/]+/)?.[0] ?? "";
   const sub = (s: string) => findings.filter((f) => f.subsection === s);
 
-  const jump = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
-
   return (
     <FindingActionsContext.Provider value={{ runId, slug: null, reload }}>
     <div className="space-y-8">
       <div className="space-y-2">
         {bar}
-        <Hint text={audit?.blocks.snapshot} />
+        {audit?.blocks.snapshot && (
+          <Help id="site-snapshot" title="What is a snapshot?">
+            <p>{audit.blocks.snapshot}</p>
+          </Help>
+        )}
       </div>
       <div className="flex gap-1 border-b border-slate-200 dark:border-slate-700" role="tablist">
         {TABS.map((t) => (
-          <button
-            key={t.key}
-            type="button"
-            role="tab"
-            aria-selected={tab === t.key}
-            onClick={() => setTab(t.key)}
-            className={`-mb-px border-b-2 px-3 py-2 text-sm ${tab === t.key ? "border-blue-600 font-semibold" : "border-transparent text-slate-500"}`}
-          >
-            {t.label}
-          </button>
+          <Fragment key={t.key}>
+            {t.key === "pages" && <span aria-hidden className="mx-2 my-2 border-l border-slate-300 dark:border-slate-600" />}
+            <button
+              type="button"
+              role="tab"
+              aria-selected={tab === t.key}
+              onClick={() => setTab(t.key)}
+              className={`-mb-px border-b-2 px-3 py-2 text-sm ${tab === t.key ? "border-blue-600 font-semibold" : "border-transparent text-slate-500"}`}
+            >
+              {t.label}
+            </button>
+          </Fragment>
         ))}
       </div>
       {tab === "pages" ? (
@@ -410,7 +420,7 @@ export function SiteView() {
           currentId={runId}
           onOpen={(id) => {
             setPicked(id);
-            setTab("audit");
+            setTab("summary");
           }}
           onPages={(id) => {
             setPicked(id);
@@ -419,32 +429,22 @@ export function SiteView() {
         />
       ) : (
       <>
-      <nav className="sticky top-[57px] z-[5] -mx-4 flex flex-wrap gap-1 border-b border-slate-200 bg-white/95 px-4 py-1.5 text-sm backdrop-blur dark:border-slate-800 dark:bg-slate-950/95" aria-label="On this page">
-        {[
-          ["summary", "Summary"],
-          ["checks", "All checks"],
-          ["template", "Template text"],
-          ["coverage", "Coverage and sitemap"],
-        ].map(([id, label]) => (
-          <button key={id} type="button" className="rounded px-2.5 py-1 text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-white" onClick={() => jump(id!)}>
-            {label}
-          </button>
+      {(tab === "summary" || tab === "checks") &&
+        (audit ? (
+          tab === "summary" ? (
+            <Section id="summary" title="Summary" hint={audit.blocks.summary}>
+              <AuditSummary audit={audit} />
+            </Section>
+          ) : (
+            <Section id="checks" title="All checks" hint={audit.blocks.all_checks}>
+              <AuditGroups audit={audit} />
+            </Section>
+          )
+        ) : (
+          <Loading />
         ))}
-      </nav>
 
-      {audit ? (
-        <>
-          <Section id="summary" title="Summary" hint={audit.blocks.summary}>
-            <AuditSummary audit={audit} />
-          </Section>
-          <Section id="checks" title="All checks" hint={audit.blocks.all_checks}>
-            <AuditGroups audit={audit} />
-          </Section>
-        </>
-      ) : (
-        <p className="text-sm text-slate-500">Loading the checks...</p>
-      )}
-
+      {tab === "template" && (
       <Section id="template" title="Template text (checked by the model)" hint={audit?.blocks.template_text}>
         {audit && <TemplateIssues audit={audit} />}
         <details className="rounded border border-slate-200 dark:border-slate-700">
@@ -512,7 +512,9 @@ export function SiteView() {
           </div>
         </details>
       </Section>
+      )}
 
+      {tab === "coverage" && (
       <Section id="coverage" title="Coverage and sitemap" hint={audit?.blocks.coverage}>
         {origin && (
           <p className="text-sm">
@@ -551,6 +553,7 @@ export function SiteView() {
           </div>
         </details>
       </Section>
+      )}
 
       </>
       )}
