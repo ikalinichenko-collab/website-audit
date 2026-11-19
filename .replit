@@ -1,0 +1,38 @@
+modules = ["nodejs-20", "postgresql-16"]
+
+run = "pnpm build && pnpm start"
+
+[[ports]]
+localPort = 8787
+externalPort = 80
+
+[deployment]
+deploymentTarget = "vm"
+run = ["pnpm", "start"]
+build = ["sh", "-c", "pnpm install && pnpm build"]
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Audit app"
+
+[[workflows.workflow]]
+name = "Audit app"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "pnpm build && pnpm start"
+
+[workflows.workflow.metadata]
+outputType = "console"
+
+[nix]
+channel = "stable-25_05"
