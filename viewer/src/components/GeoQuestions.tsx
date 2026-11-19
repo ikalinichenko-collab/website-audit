@@ -40,7 +40,8 @@ function Card({ a, state, places }: { a: GeoAnswerView; state: State; places: Fi
   const isNo = state === "no";
   return (
     <div
-      className={`rounded-lg border bg-white p-3 dark:bg-slate-900 ${
+      data-fids={places.map((f) => f.fid).join(" ")}
+      className={`rounded-lg border bg-white p-3 transition-shadow dark:bg-slate-900 ${
         isNo ? "border-red-200 dark:border-red-900" : "border-slate-200 dark:border-slate-700"
       }`}
     >

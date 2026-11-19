@@ -222,6 +222,84 @@ export async function getCheckFindings(slug: string): Promise<{ findings: Findin
   return { findings: await withStatuses(findings, row.checked_at), compare, snapshotRunId: row.site_run_id, report: row.report };
 }
 
+// ---- the tasks: every finding of every checked page ----------------------------------------
+
+/** One place of a finding with its page and the decision made on it: the row of the Tasks screen (the screen groups the same problem across pages). */
+export interface TaskItem {
+  fid: string;
+  slug: string;
+  page_title: string;
+  page_url: string;
+  group: string;
+  subsection: string;
+  /** the person asking checked the page */
+  mine: boolean;
+  layer: Finding["layer"];
+  severity: Finding["severity"];
+  kind: string;
+  title: string;
+  issue: string;
+  fix: string;
+  rule: string;
+  basis?: Finding["basis"];
+  zone_id: string;
+  zone_label: string;
+  part: string;
+  place?: string;
+  fix_where: Finding["fix_where"];
+  status?: Finding["status"];
+  status_note?: string;
+  status_by?: string | null;
+  status_at?: string;
+  /** marked fixed, but found again by a later check */
+  reopened?: boolean;
+  change?: Finding["change"];
+}
+
+/**
+ * Every verified finding of every checked page, open or decided. Findings whose quote or rule could not be matched are left out, as the
+ * counts of the page leave them out. Decisions belong to the finding, so they are the ones made anywhere in the app.
+ */
+export async function getTasks(forEmail: string | null): Promise<TaskItem[]> {
+  const out: TaskItem[] = [];
+  for (const e of await listChecks(forEmail)) {
+    const r = await getCheckFindings(e.slug);
+    if (!r) continue;
+    for (const f of r.findings) {
+      if (!f.verified || f.severity === "") continue;
+      out.push({
+        fid: f.fid,
+        slug: e.slug,
+        page_title: e.title,
+        page_url: e.url,
+        group: e.group,
+        subsection: e.subsection,
+        mine: !!e.mine,
+        layer: f.layer,
+        severity: f.severity,
+        kind: f.kind,
+        title: f.title,
+        issue: f.issue,
+        fix: f.fix,
+        rule: f.rule,
+        ...(f.basis ? { basis: f.basis } : {}),
+        zone_id: f.zone_id,
+        zone_label: f.zone_label,
+        part: f.part,
+        ...(f.place ? { place: f.place } : {}),
+        fix_where: f.fix_where,
+        ...(f.status ? { status: f.status } : {}),
+        ...(f.status_note ? { status_note: f.status_note } : {}),
+        ...(f.status_by !== undefined ? { status_by: f.status_by } : {}),
+        ...(f.status_at ? { status_at: f.status_at } : {}),
+        ...(f.reopened ? { reopened: true } : {}),
+        ...(f.change ? { change: f.change } : {}),
+      });
+    }
+  }
+  return out;
+}
+
 // ---- what the checks cost -------------------------------------------------------------------
 
 export interface LogCheck {

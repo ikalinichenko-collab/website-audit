@@ -46,6 +46,18 @@ export const LAYER_CARD: Record<TileKind, string> = {
   brief: "border-t-4 border-t-violet-600 text-violet-700 dark:text-violet-300",
 };
 
+/** The layer's name on a solid tag, and the layer filter chips (on: filled, off: dashed). */
+export const LAYER_TAG: Record<"compliance" | "geo" | "seo", string> = {
+  compliance: "bg-blue-600 text-white",
+  geo: "bg-teal-600 text-white",
+  seo: "bg-slate-600 text-white",
+};
+export const LAYER_CHIP: Record<"compliance" | "geo" | "seo", { on: string; off: string }> = {
+  compliance: { on: "border-blue-600 bg-blue-600 text-white", off: "border-dashed border-blue-600 bg-white text-blue-700 opacity-60 dark:bg-slate-900 dark:text-blue-300" },
+  geo: { on: "border-teal-600 bg-teal-600 text-white", off: "border-dashed border-teal-600 bg-white text-teal-700 opacity-60 dark:bg-slate-900 dark:text-teal-300" },
+  seo: { on: "border-slate-600 bg-slate-600 text-white", off: "border-dashed border-slate-600 bg-white text-slate-700 opacity-60 dark:bg-slate-900 dark:text-slate-300" },
+};
+
 const SEV: Record<string, string> = {
   high: "bg-red-100 text-red-800 dark:bg-red-950 dark:text-red-200",
   medium: "bg-amber-100 text-amber-900 dark:bg-amber-950 dark:text-amber-200",

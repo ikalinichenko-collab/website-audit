@@ -85,6 +85,36 @@ export interface PageIndexEntry {
   brief?: BriefListState | null;
 }
 
+/** Same shape as `TaskItem` in src/page-checks.ts: one place of a finding of a checked page, with its decision. */
+export interface TaskItem {
+  fid: string;
+  slug: string;
+  page_title: string;
+  page_url: string;
+  group: string;
+  subsection: string;
+  mine: boolean;
+  layer: Layer;
+  severity: string;
+  kind: string;
+  title: string;
+  issue: string;
+  fix: string;
+  rule: string;
+  basis?: "contradicts sources" | "not in sources" | "term list";
+  zone_id: string;
+  zone_label: string;
+  part: string;
+  place?: string;
+  fix_where: string;
+  status?: FindingStatus;
+  status_note?: string;
+  status_by?: string | null;
+  status_at?: string;
+  reopened?: boolean;
+  change?: "new";
+}
+
 /** Same shape as `BriefListState` in src/run-output.ts. */
 export interface BriefListState {
   rows: number;

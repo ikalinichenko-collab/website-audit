@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState, type ReactNode } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { Link, useParams, useSearchParams } from "react-router-dom";
 import { api, type JobDetail } from "../api.js";
 import { JobBar } from "../components/JobBar.js";
@@ -138,6 +138,22 @@ export function PageDetail() {
     if (page) document.title = `${page.title} · Site Audit`;
   }, [page]);
 
+  // a link from Tasks (?focus=<finding>) opens the layer of that finding and scrolls to its card, once
+  const focus = qs.get("focus");
+  const focusedKey = useRef<string | null>(null);
+  useEffect(() => {
+    if (!focus || !page || !findings.length || focusedKey.current === `${slug}|${focus}`) return;
+    const t = setTimeout(() => {
+      const el = document.querySelector<HTMLElement>(`[data-fids~="${CSS.escape(focus)}"]`);
+      if (!el) return;
+      focusedKey.current = `${slug}|${focus}`;
+      el.scrollIntoView({ block: "center", behavior: "smooth" });
+      el.classList.add("ring-2", "ring-blue-500");
+      setTimeout(() => el.classList.remove("ring-2", "ring-blue-500"), 2500);
+    }, 200);
+    return () => clearTimeout(t);
+  }, [focus, page, findings, slug, picked]);
+
   if (error) return <p className="text-red-600">{error}</p>;
   if (!page) return <Loading />;
 
@@ -155,7 +171,8 @@ export function PageDetail() {
   const layers: Layer[] = ["compliance", "geo", "seo"];
   const firstWithFindings = layers.find((l) => !off[l] && of(l).length > 0) ?? "compliance";
   // the list of checked pages links to ?tab=brief
-  const tab: Tab = picked ?? (qs.get("tab") === "brief" ? "brief" : firstWithFindings);
+  const focusLayer = focus ? findings.find((f) => f.fid === focus)?.layer : undefined;
+  const tab: Tab = picked ?? (qs.get("tab") === "brief" ? "brief" : (focusLayer ?? firstWithFindings));
 
   const action = page.compliance.error ? "not_checked" : (page.compliance.action ?? "keep");
   const run = runs.find((r) => r.id === runId);

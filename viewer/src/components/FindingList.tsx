@@ -256,7 +256,7 @@ function ProblemCard({ group }: { group: Finding[] }) {
   const chip = f.basis ? BASIS_CHIP[f.basis] : undefined;
   const step = nextStep(f);
   return (
-    <div className="rounded-lg border border-slate-200 bg-white p-3 dark:border-slate-700 dark:bg-slate-900">
+    <div data-fids={group.map((x) => x.fid).join(" ")} className="rounded-lg border border-slate-200 bg-white p-3 transition-shadow dark:border-slate-700 dark:bg-slate-900">
       <div className="mb-1 flex flex-wrap items-center gap-2">
         <SeverityBadge severity={f.severity} />
         {chip && <span className={`rounded px-1.5 py-0.5 text-xs ${CHIP_CLASS[f.basis!]}`}>{chip}</span>}

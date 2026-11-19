@@ -7,6 +7,7 @@ import { useRunContext } from "../context/RunContext.js";
 const PAGE_CHECKS_TABS = [
   { to: "/pages", label: "Checked pages" },
   { to: "/add", label: "Add pages" },
+  { to: "/tasks", label: "Tasks" },
   { to: "/overview", label: "Overview" },
 ];
 
@@ -15,6 +16,7 @@ const TITLES: Record<string, string> = {
   "/site": "Site Checks",
   "/pages": "Checked pages",
   "/add": "Add pages",
+  "/tasks": "Tasks",
   "/overview": "Overview",
   "/sources": "Documents",
   "/settings": "Settings",

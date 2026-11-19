@@ -27,7 +27,7 @@ import { authRequired, checkAuthConfig, currentUser, handleAuth, sameOrigin, typ
 import * as store from "./store.js";
 import { deleteBrief, getBrief, saveBrief } from "./briefs.js";
 import { checkAgainstBrief, getBriefCheck } from "./brief-check.js";
-import { checksCsv, deleteCheck, getChecksIndex, getSpending } from "./page-checks.js";
+import { checksCsv, deleteCheck, getChecksIndex, getSpending, getTasks } from "./page-checks.js";
 
 const ROOT = projectRoot();
 dotenv.config({ path: path.join(ROOT, ".env") });
@@ -368,6 +368,11 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
 
   // ---- runs (read from the database; files are built when asked for) -----------------------
   // ---- checked pages: the current check of each page, no runs ---------------------------
+  // every finding of every checked page with its decision: the Tasks screen
+  if (parts[0] === "tasks" && method === "GET" && parts.length === 1) {
+    send(res, 200, await getTasks(user.email));
+    return;
+  }
   if (parts[0] === "checks") {
     if (method === "GET" && parts.length === 1) {
       send(res, 200, await getChecksIndex(user.email));

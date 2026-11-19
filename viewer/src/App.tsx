@@ -9,6 +9,7 @@ import { SiteView } from "./pages/SiteView.js";
 import { RunPage } from "./pages/RunPage.js";
 import { Sources } from "./pages/Sources.js";
 import { Settings } from "./pages/Settings.js";
+import { Tasks } from "./pages/Tasks.js";
 import { installLeaveGuard } from "./unsaved.js";
 
 export function App() {
@@ -24,6 +25,7 @@ export function App() {
             <Route path="pages/:slug" element={<PageDetail />} />
             <Route path="site" element={<SiteView />} />
             <Route path="add" element={<RunPage />} />
+            <Route path="tasks" element={<Tasks />} />
             <Route path="run" element={<Navigate to="/add" replace />} />
             <Route path="sources" element={<Sources />} />
             <Route path="settings" element={<Settings />} />
