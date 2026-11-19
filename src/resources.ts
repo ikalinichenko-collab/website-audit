@@ -401,6 +401,44 @@ export async function loadResources(): Promise<void> {
   const seeded = await loadResourceSnapshot(RESOURCES);
   if (seeded.length) console.log(`Editable files copied into the database: ${seeded.join(", ")}`);
   await syncLockedQuestions();
+  await addMissingKeys();
+}
+
+const KEY_SYNCED = ["seo", "geo", "checks", "compliance", "settings"];
+
+/** Adds the keys of `base` that `saved` lacks, at any depth in objects; arrays and existing values stay as saved. */
+function fillMissing(saved: Record<string, unknown>, base: Record<string, unknown>, at: string, added: string[]): void {
+  const plain = (v: unknown): v is Record<string, unknown> => typeof v === "object" && v !== null && !Array.isArray(v);
+  for (const [k, v] of Object.entries(base)) {
+    if (!(k in saved)) {
+      saved[k] = v;
+      added.push(at + k);
+    } else if (plain(saved[k]) && plain(v)) fillMissing(saved[k] as Record<string, unknown>, v, `${at}${k}.`, added);
+  }
+}
+
+/**
+ * A deployed database keeps what people edited, so keys that a newer repo file introduced (a threshold, a profile,
+ * a check text) would never arrive. Adds the missing ones from the repo file at start; values already saved are
+ * never changed (a key deleted on purpose in the app comes back, a value never does).
+ */
+async function addMissingKeys(): Promise<void> {
+  for (const id of KEY_SYNCED) {
+    const r = findResource(id)!;
+    try {
+      const base = JSON.parse(fs.readFileSync(path.join(projectRoot(), r.file), "utf8")) as Record<string, unknown>;
+      const saved = JSON.parse(resourceText(r.file)) as Record<string, unknown>;
+      const added: string[] = [];
+      fillMissing(saved, base, "", added);
+      if (!added.length) continue;
+      const text = JSON.stringify(saved, null, 2) + "\n";
+      validateResource(r, text);
+      await saveVersion(r, text, "seed");
+      console.log(`${r.file}: keys added from the repo file: ${added.slice(0, 12).join(", ")}${added.length > 12 ? ` (+${added.length - 12} more)` : ""}`);
+    } catch (e) {
+      console.warn(`${r.file}: missing keys not added (${(e as Error).message})`);
+    }
+  }
 }
 
 async function syncLockedQuestions(): Promise<void> {
