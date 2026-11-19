@@ -25,6 +25,7 @@ import { migrate } from "./db.js";
 import { rememberUser } from "./users.js";
 import { authRequired, checkAuthConfig, currentUser, handleAuth, sameOrigin, type User } from "./auth.js";
 import * as store from "./store.js";
+import { deleteBrief, getBrief, saveBrief } from "./briefs.js";
 import { checksCsv, deleteCheck, getChecksIndex, getSpending } from "./page-checks.js";
 
 const ROOT = projectRoot();
@@ -312,6 +313,33 @@ async function handleApi(req: http.IncomingMessage, res: http.ServerResponse, ur
       throw new ValidationError(e instanceof Error ? e.message : String(e));
     }
     return;
+  }
+
+  // ---- the brief of a page: one CSV per page, versions kept ----------------------------------
+  if (parts[0] === "briefs" && parts[1] && /^[A-Za-z0-9._~-]+$/.test(parts[1]) && parts.length === 2) {
+    const slug = parts[1];
+    if (method === "GET") {
+      const v = url.searchParams.get("version");
+      if (v !== null && !/^\d+$/.test(v)) throw new ValidationError("Bad version");
+      send(res, 200, await getBrief(slug, v === null ? undefined : Number(v)));
+      return;
+    }
+    if (method === "PUT") {
+      const body = await readJson<{ url?: string; filename?: string; content?: string }>(req);
+      if (typeof body.content !== "string" || !body.content.trim()) throw new ValidationError("The file is empty");
+      if (typeof body.url !== "string" || !/^https?:\/\//.test(body.url)) throw new ValidationError("The page address is required");
+      try {
+        send(res, 200, await saveBrief(slug, body.url, String(body.filename ?? "brief.csv"), body.content, user.email));
+      } catch (e) {
+        throw new ValidationError(e instanceof Error ? e.message : String(e));
+      }
+      return;
+    }
+    if (method === "DELETE") {
+      if (!(await deleteBrief(slug))) send(res, 404, { error: "Not found" });
+      else send(res, 200, { deleted: slug });
+      return;
+    }
   }
 
   // ---- runs (read from the database; files are built when asked for) -----------------------

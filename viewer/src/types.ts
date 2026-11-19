@@ -347,3 +347,23 @@ export interface SiteSources {
   }[];
   variants: { id: string; zone: string; label: string; text: string; pages: string[] }[];
 }
+
+/** The brief of a page (src/briefs.ts). */
+export interface BriefVersion {
+  id: number;
+  filename: string;
+  uploaded_at: string;
+  uploaded_by: string | null;
+  row_count: number;
+}
+
+export interface Brief extends BriefVersion {
+  url: string;
+  /** one array of cells per CSV row; the row number is the index + 1 */
+  rows: string[][];
+}
+
+export interface BriefInfo {
+  current: Brief | null;
+  versions: BriefVersion[];
+}

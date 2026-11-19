@@ -1,4 +1,4 @@
-import type { FindingStatus, Layers } from "./types.js";
+import type { BriefInfo, FindingStatus, Layers } from "./types.js";
 
 export interface ResourceInfo {
   id: string;
@@ -159,5 +159,10 @@ export const api = {
     call<{ updated: number }>("POST", "/api/findings/status", { ...(runId ? { run_id: runId } : {}), slug, fids, status, note }),
   /** Removes a page from the checked pages (its decisions stay). */
   deleteCheck: (slug: string) => call<{ deleted: string }>("DELETE", `/api/checks/${encodeURIComponent(slug)}`),
+  brief: (slug: string, version?: number) => call<BriefInfo>("GET", `/api/briefs/${encodeURIComponent(slug)}${version ? `?version=${version}` : ""}`),
+  /** Uploads the CSV of a brief as a new version; the warning says when the file does not seem to be for this page. */
+  saveBrief: (slug: string, url: string, filename: string, content: string) =>
+    call<{ id: number; rows: number; warning: string | null }>("PUT", `/api/briefs/${encodeURIComponent(slug)}`, { url, filename, content }),
+  deleteBrief: (slug: string) => call<{ deleted: string }>("DELETE", `/api/briefs/${encodeURIComponent(slug)}`),
   deleteRun: (id: string) => call<{ deleted: string }>("DELETE", `/api/runs/${encodeURIComponent(id)}`),
 };

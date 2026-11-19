@@ -8,12 +8,13 @@ import { getIndex, getPage, getPageFindings, getPageShared, getSiteCheck } from 
 import type { Finding, Layer, PageCompare, PageIndexEntry, PageReport, PageShared, SinceSnapshot, SiteCheck } from "../types.js";
 import { ActionBadge, SeverityBadge } from "../components/Badges.js";
 import { FindingActionsContext } from "../components/FindingActions.js";
+import { BriefTab } from "../components/BriefTab.js";
 import { GeoQuestions } from "../components/GeoQuestions.js";
 import { countCards, FindingList, FindingsByZone, groupProblems } from "../components/FindingList.js";
 import { ACTION_HELP, GEO_LABELS, GEO_STYLE_KINDS, LAYER_LABELS, variantLabel } from "../labels.js";
 import { defaultSort } from "../utils.js";
 
-type Tab = Layer | "review";
+type Tab = Layer | "review" | "brief";
 
 const REST_LABEL = { pass: "Passed", na: "Not applicable", none: "Not answered", unconfirmed: "Not confirmed" } as const;
 const REST_CLASS = {
@@ -63,6 +64,15 @@ export function PageDetail() {
   const [siblings, setSiblings] = useState<PageIndexEntry[]>([]);
   const [picked, setPicked] = useState<Tab | null>(null);
   const [byZone, setByZone] = useState(false);
+  // rows of the page's brief (null: none loaded), for the tab label
+  const [briefRows, setBriefRows] = useState<number | null>(null);
+
+  useEffect(() => {
+    api
+      .brief(slug)
+      .then((i) => setBriefRows(i.versions[0]?.row_count ?? null))
+      .catch(() => setBriefRows(null));
+  }, [slug]);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -138,6 +148,7 @@ export function PageDetail() {
     { key: "compliance", label: LAYER_LABELS.compliance, n: count("compliance") },
     { key: "geo", label: LAYER_LABELS.geo, n: count("geo") },
     { key: "seo", label: LAYER_LABELS.seo, n: count("seo") },
+    { key: "brief", label: "Brief", n: briefRows },
     { key: "review", label: "Not found on page", n: review.length },
   ];
 
@@ -346,7 +357,8 @@ export function PageDetail() {
                 tab === t.key ? "border-blue-600 font-semibold" : "border-transparent text-slate-500"
               }`}
             >
-              {t.label} <span className="text-xs text-slate-400">{t.n === null ? "off" : t.n}</span>
+              {t.label}{" "}
+              <span className="text-xs text-slate-400">{t.key === "brief" ? (t.n === null ? "none" : `${t.n} rows`) : t.n === null ? "off" : t.n}</span>
             </button>
           ))}
         <div className="ml-auto flex items-center gap-2 pb-2 text-sm">
@@ -446,6 +458,8 @@ export function PageDetail() {
         )
       ) : tab === "seo" ? (
         layerBody("seo", <FindingList findings={of("seo")} empty="No SEO problems." />)
+      ) : tab === "brief" ? (
+        <BriefTab slug={slug} url={page.final_url || page.url} onRows={setBriefRows} />
       ) : (
         <div className="space-y-2">
           <Note>{NOT_FOUND_HINT}</Note>
