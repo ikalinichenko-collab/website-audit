@@ -1,6 +1,7 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { api, type AppState, type JobDetail, type ModelOption, type ScopeGroup } from "../api.js";
+import { api, type AppState, type ModelOption, type ScopeGroup } from "../api.js";
+import { JobPanel, useJob } from "../components/JobPanel.js";
 import type { Layers, RunListEntry } from "../types.js";
 import { useRunContext } from "../context/RunContext.js";
 import { Notice, buttonClass, primaryClass } from "../components/ResourceEditor.js";
@@ -35,14 +36,6 @@ function estimate(pages: number, layers: Layers, model: ModelOption | undefined)
   const cost = (inTok * ((1 - CACHED_SHARE) * p.input + CACHED_SHARE * p.cached_input) + outTok * p.output) / 1_000_000;
   const minutes = Math.max(1, Math.round((pages * SECONDS_PER_PAGE) / 4 / 60));
   return `${word}, about ${llm * pages} LLM calls, roughly ${Math.round(inTok / 1000)} thousand input tokens, about ${money(cost)} on ${model.label}, about ${minutes} min`;
-}
-
-function progressOf(log: string[]): { done: number; total: number } | null {
-  for (let i = log.length - 1; i >= 0; i--) {
-    const m = log[i]!.match(/^\[(\d+)\/(\d+)\]/);
-    if (m) return { done: Number(m[1]), total: Number(m[2]) };
-  }
-  return null;
 }
 
 const SNAPSHOT_STALE_DAYS = 14;
@@ -101,9 +94,7 @@ export function RunPage() {
   const [limit, setLimit] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
-  const [job, setJob] = useState<JobDetail | null>(null);
-  const [log, setLog] = useState<string[]>([]);
-  const jobId = useRef<string | null>(null);
+  const [jobId, setJobId] = useState<string | null>(null);
 
   // pages handed over by a check on Site Checks
   useEffect(() => {
@@ -128,15 +119,20 @@ export function RunPage() {
       .then((s) => {
         setState(s);
         setModelId((cur) => cur || s.model);
-        if (s.running_job) attach(s.running_job);
+        // a whole-site check that is running is shown on Site Checks, not here
+        if (s.running_job) {
+          api
+            .job(s.running_job, 1_000_000)
+            .then((j) => {
+              if (!j.options.all && (j.options as { kind?: string }).kind !== "site_llm") attach(j.id);
+            })
+            .catch(() => undefined);
+        }
       })
       .catch((e) => setError(String(e instanceof Error ? e.message : e)));
   }, []);
 
-  const attach = useCallback((id: string) => {
-    jobId.current = id;
-    setLog([]);
-  }, []);
+  const attach = useCallback((id: string) => setJobId(id), []);
 
   // the subsection list is loaded when the sections tab opens
   useEffect(() => {
@@ -144,28 +140,15 @@ export function RunPage() {
     api.scope().then(setScope).catch((e) => setError(String(e instanceof Error ? e.message : e)));
   }, [mode, scope]);
 
-  // poll the running job
-  useEffect(() => {
-    const t = setInterval(async () => {
-      const id = jobId.current;
-      if (!id) return;
-      try {
-        const j = await api.job(id, 0);
-        setJob(j);
-        setLog(j.log);
-        if (j.status !== "running") {
-          jobId.current = null;
-          void reloadChecks();
-          void api.state().then(setState);
-        }
-      } catch {
-        /* server restarted */
-      }
-    }, 1500);
-    return () => clearInterval(t);
+  const onDone = useCallback(() => {
+    void reloadChecks();
+    void api.state().then(setState);
   }, [reloadChecks]);
+  const view = useJob(jobId, onDone);
+  const job = view.job;
+  const log = view.lines;
 
-  const running = job?.status === "running" || (state?.running_job != null && jobId.current !== null);
+  const running = job?.status === "running" || (state?.running_job != null && jobId !== null);
   const pages = countUrls(text);
   const llmLayers = layers.compliance || layers.geo;
   const keyMissing = state !== null && !state.has_api_key && llmLayers;
@@ -191,7 +174,6 @@ export function RunPage() {
   async function start(body: Parameters<typeof api.startJob>[0]) {
     setError(null);
     setNotice(null);
-    setJob(null);
     try {
       const r = await api.startJob(body);
       if (r.rejected.length) setNotice(`Not accepted (only ${state?.base_url ?? "site"} URLs): ${r.rejected.join(", ")}`);
@@ -202,7 +184,6 @@ export function RunPage() {
     }
   }
 
-  const progress = progressOf(log);
   const finished = !!job && job.status !== "running";
 
   function openResults() {
@@ -424,35 +405,15 @@ export function RunPage() {
       {error && <Notice kind="error">{error}</Notice>}
       {notice && <Notice kind="warn">{notice}</Notice>}
 
-      {(job || log.length > 0) && (
-        <section className="space-y-2 rounded-lg border border-slate-200 bg-white p-3 dark:border-slate-700 dark:bg-slate-900">
-          <div className="flex flex-wrap items-center gap-3">
-            <h2 className="font-semibold">
-              {job?.status === "running" || !job ? "Running" : job.status === "done" ? "Finished" : job.status === "stopped" ? "Stopped" : "Failed"}
-            </h2>
-            {progress && (
-              <span className="text-sm text-slate-600 dark:text-slate-400">
-                {progress.done} of {progress.total} pages
-              </span>
-            )}
-            {progress && (
-              <div className="h-2 w-48 overflow-hidden rounded bg-slate-200 dark:bg-slate-700">
-                <div className="h-full bg-blue-600" style={{ width: `${(progress.done / progress.total) * 100}%` }} />
-              </div>
-            )}
-            {job?.status === "running" && (
-              <button type="button" className={buttonClass} onClick={() => job && api.stopJob(job.id)}>
-                Stop
-              </button>
-            )}
-            {finished && (
-              <button type="button" className={primaryClass} onClick={openResults}>
-                Open checked pages
-              </button>
-            )}
-          </div>
+      {jobId && (
+        <section className="space-y-2">
+          <JobPanel view={view} label={job?.status === "running" || !job ? "Checking pages" : job.status === "done" ? "Finished" : job.status === "stopped" ? "Stopped" : "Failed"} stop open />
           {job?.error && <Notice kind="error">{job.error}</Notice>}
-          <pre className="max-h-72 overflow-auto rounded bg-slate-50 p-2 text-xs dark:bg-slate-950">{log.join("\n")}</pre>
+          {finished && (
+            <button type="button" className={primaryClass} onClick={openResults}>
+              Open checked pages
+            </button>
+          )}
         </section>
       )}
 

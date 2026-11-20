@@ -1,6 +1,7 @@
 import { Fragment, useCallback, useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import { api } from "../api.js";
+import { api, type JobDetail } from "../api.js";
+import { JobPanel, useJob } from "../components/JobPanel.js";
 import { buttonClass } from "../components/ResourceEditor.js";
 import { useRunContext } from "../context/RunContext.js";
 import { getRun, getSite, getSiteAudit, getSiteFindings, getSiteSources } from "../data.js";
@@ -50,7 +51,6 @@ function SnapshotBar({
   const { reload } = useRunContext();
   const [jobId, setJobId] = useState<string | null>(null);
   const [what, setWhat] = useState<"scan" | "llm">("scan");
-  const [line, setLine] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
   const [hasKey, setHasKey] = useState(true);
@@ -58,9 +58,20 @@ function SnapshotBar({
   useEffect(() => {
     api
       .state()
-      .then((s) => {
-        if (s.running_job) setBusy(true);
+      .then(async (s) => {
         setHasKey(s.has_api_key);
+        if (!s.running_job) return;
+        setBusy(true);
+        // a check of the whole site that is already running is followed again (the page was left and opened again); a page check of Add pages is not shown here
+        try {
+          const j = await api.job(s.running_job, 1_000_000);
+          if (j.options.all || (j.options as { kind?: string }).kind === "site_llm") {
+            setWhat((j.options as { kind?: string }).kind === "site_llm" ? "llm" : "scan");
+            setJobId(j.id);
+          }
+        } catch {
+          /* the job ended in between */
+        }
       })
       .catch(() => undefined);
   }, []);
@@ -77,41 +88,26 @@ function SnapshotBar({
     }
   }, []);
 
-  useEffect(() => {
-    if (!jobId) return;
-    const t = setInterval(async () => {
-      try {
-        const j = await api.job(jobId, 0);
-        setLine(j.log[j.log.length - 1] ?? "");
-        if (j.status !== "running") {
-          clearInterval(t);
-          setJobId(null);
-          setBusy(false);
-          if (j.run_id) {
-            await reload();
-            onChanged(j.run_id);
-          }
-          if (j.error) setError(j.error);
-        }
-      } catch {
-        /* server restarted */
+  const onDone = useCallback(
+    (j: JobDetail) => {
+      setBusy(false);
+      if (j.error) setError(j.error);
+      if (j.run_id) {
+        void reload().then(() => onChanged(j.run_id!));
       }
-    }, 1500);
-    return () => clearInterval(t);
-  }, [jobId, reload, onChanged]);
+    },
+    [reload, onChanged],
+  );
+  const view = useJob(jobId, onDone);
+  const running = busy && !!jobId;
 
   const ageDays = snapshot ? (Date.now() - new Date(snapshot.started_at).getTime()) / 86_400_000 : 0;
-  const stop = jobId ? (
-    <button type="button" className={buttonClass} onClick={() => void api.stopJob(jobId)}>
-      Stop
-    </button>
-  ) : null;
 
   return (
     <div className="space-y-2 text-sm">
       <div className="flex flex-wrap items-center gap-3">
         <button type="button" className={buttonClass} disabled={busy} onClick={() => void start("scan", { siteScan: true })}>
-          {jobId && what === "scan" ? "Checking the site..." : "Check the whole site (no LLM)"}
+          {running && what === "scan" ? "Checking the site..." : "Check the whole site (no LLM)"}
         </button>
         <button
           type="button"
@@ -126,12 +122,12 @@ function SnapshotBar({
           }
           onClick={() => snapshot && void start("llm", { siteLlm: { run_id: snapshot.id } })}
         >
-          {jobId && what === "llm" ? "Asking the model..." : "Check shared blocks with the model"}
+          {running && what === "llm" ? "Asking the model..." : "Check shared blocks with the model"}
         </button>
-        {stop}
-        <span className="text-slate-500">{line || "The whole-site check fetches every page in scope and checks SEO and GEO code rules. It is free: no model calls."}</span>
+        {!jobId && <span className="text-slate-500">The whole-site check fetches every page in scope and checks SEO and GEO code rules. It is free: no model calls.</span>}
         {error && <span className="text-red-600 dark:text-red-400">{error}</span>}
       </div>
+      {jobId && <JobPanel view={view} label={what === "scan" ? "Checking the whole site" : "Asking the model"} stop open={false} />}
       {snapshot ? (
         <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-slate-600 dark:text-slate-400">
           <span>

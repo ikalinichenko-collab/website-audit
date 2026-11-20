@@ -173,6 +173,7 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
     fetchedAll.push({ url, fetched: await httpGet(url, settings) });
     log(`Fetched ${fetchedAll.length}/${urls.length}${useCopy && snapshot ? " (no copy in the snapshot)" : ""}: ${short}`);
   }
+  if (!cancelled()) log(`All ${fetchedAll.length} page(s) read. Looking for site-wide markup and building zones (no lines until the first page is checked)...`);
   // a sitemap URL that redirects to another URL of the list is a sitemap problem, not a second page
   const requested = new Set(urls.map((u) => u.replace(/\/$/, "")));
   const redirectOnly: { url: string; problem: string }[] = [];
@@ -287,6 +288,7 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
   let cachedLayers = 0;
   let done = 0;
 
+  log(`Checking ${preps.length} page(s), ${concurrency} at a time (layers: ${layerNames})`);
   await pool(preps, concurrency, async (prep) => {
     if (cancelled()) return;
     const { page, zones, scope, fetched, url } = prep;
@@ -509,6 +511,7 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
     return "";
   }
 
+  log("Pages checked. Site pass: robots.txt, llms.txt, redirects, sitemap...");
   const basics = await runSiteBasics(settings, geoCfg);
   if (!layers.geo) {
     basics.robots = { value: "not checked (GEO off)", ok: true };
@@ -609,6 +612,7 @@ async function executeRun(options: AuditOptions, runId: string, startedAt: strin
     layers,
     ...(subsections ? { subsections } : {}),
   };
+  log("Saving the snapshot...");
   await finishRun(runId, cancelled() ? "stopped" : "done", meta, site);
   // the banner and form variants and the site-wide JSON-LD are asked once on the stored snapshot (the same call as the Site page button)
   if (client && layers.compliance && !cancelled()) {
