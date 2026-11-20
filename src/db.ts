@@ -17,8 +17,37 @@ export function db(): pg.Pool {
     pool = new pg.Pool({ connectionString: url, max: 8, keepAlive: true, idleTimeoutMillis: 30_000 });
     // an idle client that the server closed emits "error" on the pool: unhandled, it would stop the process
     pool.on("error", (e) => console.error("database connection error (idle client):", e.message));
+    withRetry(pool);
   }
   return pool;
+}
+
+/** The server closed the connection (restart, scale to zero, admin shutdown): the same statement on a fresh connection will work. */
+function isConnectionLost(e: unknown): boolean {
+  const err = e as { code?: string; message?: string };
+  if (err.code && (err.code.startsWith("08") || err.code === "57P01" || err.code === "57P02" || err.code === "57P03")) return true;
+  if (err.code === "ECONNRESET" || err.code === "EPIPE" || err.code === "ETIMEDOUT") return true;
+  return /terminating connection|connection terminated|connection error|connection closed/i.test(err.message ?? "");
+}
+
+/** Single statements run through `pool.query` are tried again (3 times, growing pause) when the connection is lost; transactions on a checked-out client are not. */
+function withRetry(p: pg.Pool): void {
+  const original = p.query.bind(p) as (...args: unknown[]) => unknown;
+  (p as unknown as { query: (...args: unknown[]) => unknown }).query = (...args: unknown[]) => {
+    // callback and query-config-with-callback forms are not used in this code base
+    if (typeof args[args.length - 1] === "function") return original(...args);
+    return (async () => {
+      for (let attempt = 1; ; attempt++) {
+        try {
+          return await (original(...args) as Promise<unknown>);
+        } catch (e) {
+          if (attempt >= 4 || !isConnectionLost(e)) throw e;
+          console.error(`database connection lost, retry ${attempt}:`, e instanceof Error ? e.message : String(e));
+          await new Promise((r) => setTimeout(r, 500 * attempt * attempt));
+        }
+      }
+    })();
+  };
 }
 
 export async function closeDb(): Promise<void> {

@@ -75,11 +75,19 @@ function add(a: TokenUsage, b: TokenUsage | null | undefined): TokenUsage {
 
 async function pool<T>(items: T[], n: number, fn: (item: T, i: number) => Promise<void>): Promise<void> {
   let next = 0;
+  let failed = false;
   const worker = async (): Promise<void> => {
     for (;;) {
+      // one failed page ends the job, so the other workers must not go on writing pages after it
+      if (failed) return;
       const i = next++;
       if (i >= items.length) return;
-      await fn(items[i]!, i);
+      try {
+        await fn(items[i]!, i);
+      } catch (e) {
+        failed = true;
+        throw e;
+      }
     }
   };
   await Promise.all(Array.from({ length: Math.max(1, n) }, worker));
